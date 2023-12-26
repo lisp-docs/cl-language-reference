@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"vector"}><b>vector</b></ClLinks> &amp;rest *objects → vector* 
+<DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink> &amp;rest *objects → vector* 
 
 
 
@@ -43,7 +43,7 @@ Creates a *fresh simple general vector* whose size corresponds to the number of 
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
+<DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> 
 
 
 
@@ -51,7 +51,7 @@ Creates a *fresh simple general vector* whose size corresponds to the number of 
 
 
 
-<ClLinks  term={"vector"}><b>vector</b></ClLinks> is analogous to <ClLinks  term={"list"}><b>list</b></ClLinks>. 
+<DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink> is analogous to <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>. 
 
 
 

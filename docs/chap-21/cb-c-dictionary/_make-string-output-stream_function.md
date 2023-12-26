@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks> &amp;key *element-type → string-stream* 
+<DictionaryLink  term={"make-string-output-stream"}><b>make-string-output-stream</b></DictionaryLink> &amp;key *element-type → string-stream* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . The default is <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns an *output string stream* that accepts <ClLinks  term={"character"}><i>characters</i></ClLinks> and makes available (via <ClLinks  term={"get-output-stream-string"}><b>get-output-stream-string</b></ClLinks>) a <ClLinks  term={"string"}><i>string</i></ClLinks> that contains the <ClLinks  term={"character"}><i>characters</i></ClLinks> that were actually output. 
+Returns an *output string stream* that accepts <ClLinks  term={"character"}><i>characters</i></ClLinks> and makes available (via <DictionaryLink  term={"get-output-stream-string"}><b>get-output-stream-string</b></DictionaryLink>) a <ClLinks  term={"string"}><i>string</i></ClLinks> that contains the <ClLinks  term={"character"}><i>characters</i></ClLinks> that were actually output. 
 
 
 
@@ -59,7 +59,7 @@ None..
 
 
 
-<ClLinks  term={"get-output-stream-string"}><b>get-output-stream-string</b></ClLinks>, <ClLinks  term={"with-output-to-string"}><b>with-output-to-string</b></ClLinks> 
+<DictionaryLink  term={"get-output-stream-string"}><b>get-output-stream-string</b></DictionaryLink>, <DictionaryLink  term={"with-output-to-string"}><b>with-output-to-string</b></DictionaryLink> 
 
 
 

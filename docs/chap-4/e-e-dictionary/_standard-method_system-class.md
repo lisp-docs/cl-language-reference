@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks>, <ClLinks  term={"method"}><b>method</b></ClLinks>, <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink>, <DictionaryLink  term={"method"}><b>method</b></DictionaryLink>, <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of <ClLinks  term={"method"}><i>methods</i></ClLinks> defined by the <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> and <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+The <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of <ClLinks  term={"method"}><i>methods</i></ClLinks> defined by the <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> and <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 

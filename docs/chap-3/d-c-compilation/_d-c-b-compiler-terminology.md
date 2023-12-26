@@ -6,11 +6,11 @@ The following terminology is used in this section.
 
 
 
-The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> is a utility that translates code into an <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> form that might be represented or executed efficiently. The term <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> refers to both of the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"compile"}><b>compile</b></ClLinks> and <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>. 
+The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> is a utility that translates code into an <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> form that might be represented or executed efficiently. The term <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> refers to both of the <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> and <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>. 
 
 
 
-The term <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm> refers to <ClLinks  term={"object"}><i>objects</i></ClLinks> representing compiled programs, such as <ClLinks  term={"object"}><i>objects</i></ClLinks> constructed by <ClLinks  term={"compile"}><b>compile</b></ClLinks> or by <ClLinks  term={"load"}><b>load</b></ClLinks> when *loading* a <GlossaryTerm styled={true} term={"compiled file"}><i>compiled file</i></GlossaryTerm>. 
+The term <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm> refers to <ClLinks  term={"object"}><i>objects</i></ClLinks> representing compiled programs, such as <ClLinks  term={"object"}><i>objects</i></ClLinks> constructed by <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> or by <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> when *loading* a <GlossaryTerm styled={true} term={"compiled file"}><i>compiled file</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ The term *literal object* refers to a quoted <ClLinks  term={"object"}><i>object
 
 
 
-The term <ClLinks  term={"coalesce"}><i>coalesce</i></ClLinks> is defined as follows. Suppose A and B are two *literal constants* in the <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm>, and that A’ and B’ are the corresponding <ClLinks  term={"object"}><i>objects</i></ClLinks> in the <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm>. If A’ and B’ are <ClLinks  term={"eql"}><b>eql</b></ClLinks> but A and B are not <ClLinks  term={"eql"}><b>eql</b></ClLinks>, then it is said that A and B have been coalesced by the compiler. 
+The term <ClLinks  term={"coalesce"}><i>coalesce</i></ClLinks> is defined as follows. Suppose A and B are two *literal constants* in the <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm>, and that A’ and B’ are the corresponding <ClLinks  term={"object"}><i>objects</i></ClLinks> in the <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm>. If A’ and B’ are <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> but A and B are not <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, then it is said that A and B have been coalesced by the compiler. 
 
 
 
@@ -50,7 +50,7 @@ The <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation 
 
 
 
-The <GlossaryTerm styled={true} term={"evaluation environment"}><i>evaluation environment</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"run-time environment"}><i>run-time environment</i></GlossaryTerm> in which macro expanders and code specified by <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> to be evaluated are evaluated. All evaluations initiated by the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks>  
+The <GlossaryTerm styled={true} term={"evaluation environment"}><i>evaluation environment</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"run-time environment"}><i>run-time environment</i></GlossaryTerm> in which macro expanders and code specified by <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> to be evaluated are evaluated. All evaluations initiated by the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks>  
 
 
 
@@ -74,7 +74,7 @@ The term <GlossaryTerm styled={true} term={"compile time"}><i>compile time</i></
 
 
 
-The term *compile-time definition* refers to a definition in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm>. For example, when compiling a file, the definition of a function might be retained in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> if it is declared <ClLinks  term={"inline"}><b>inline</b></ClLinks>. This definition might not be available in the <GlossaryTerm styled={true} term={"evaluation environment"}><i>evaluation environment</i></GlossaryTerm>. 
+The term *compile-time definition* refers to a definition in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm>. For example, when compiling a file, the definition of a function might be retained in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> if it is declared <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink>. This definition might not be available in the <GlossaryTerm styled={true} term={"evaluation environment"}><i>evaluation environment</i></GlossaryTerm>. 
 
 
 
@@ -86,7 +86,7 @@ The term <GlossaryTerm styled={true} term={"run-time definition"}><i>run-time de
 
 
 
-The term <GlossaryTerm styled={true} term={"run-time compiler"}><i>run-time compiler</i></GlossaryTerm> refers to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"compile"}><b>compile</b></ClLinks> or <GlossaryTerm styled={true} term={"implicit compilation"}><i>implicit compilation</i></GlossaryTerm>, for which the compilation and run-time <ClLinks  term={"environment"}><i>environments</i></ClLinks> are maintained in the same *Lisp image*. Note that when the <GlossaryTerm styled={true} term={"run-time compiler"}><i>run-time compiler</i></GlossaryTerm> is used, the <GlossaryTerm styled={true} term={"run-time environment"}><i>run-time environment</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"startup environment"}><i>startup environment</i></GlossaryTerm> are the same. 
+The term <GlossaryTerm styled={true} term={"run-time compiler"}><i>run-time compiler</i></GlossaryTerm> refers to the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> or <GlossaryTerm styled={true} term={"implicit compilation"}><i>implicit compilation</i></GlossaryTerm>, for which the compilation and run-time <ClLinks  term={"environment"}><i>environments</i></ClLinks> are maintained in the same *Lisp image*. Note that when the <GlossaryTerm styled={true} term={"run-time compiler"}><i>run-time compiler</i></GlossaryTerm> is used, the <GlossaryTerm styled={true} term={"run-time environment"}><i>run-time environment</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"startup environment"}><i>startup environment</i></GlossaryTerm> are the same. 
 
 
 

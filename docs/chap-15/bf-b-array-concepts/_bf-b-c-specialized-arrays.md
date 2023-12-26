@@ -6,7 +6,7 @@ An <ClLinks  term={"array"}><i>array</i></ClLinks> can be a *general array*, mea
 
 
 
-The phrasing “an *array specialized* to *type hhtype⟩” is sometimes used to emphasize the *element type* of an <ClLinks  term={"array"}><i>array</i></ClLinks>. This phrasing is tolerated even when the ⟨type⟩ is <ClLinks  term={"t"}><b>t</b></ClLinks>, even though an *array specialized* to *type t* is a *general array*, not a *specialized array*. 
+The phrasing “an *array specialized* to *type hhtype⟩” is sometimes used to emphasize the *element type* of an <ClLinks  term={"array"}><i>array</i></ClLinks>. This phrasing is tolerated even when the ⟨type⟩ is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, even though an *array specialized* to *type t* is a *general array*, not a *specialized array*. 
 
 
 

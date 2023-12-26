@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></ClLinks> *array → generalized-boolean* 
+<DictionaryLink  term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></DictionaryLink> *array → generalized-boolean* 
 
 
 
@@ -45,7 +45,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"array"
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -53,7 +53,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"fill-pointer"}><b>fill-pointer</b></ClLinks> 
+<DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink>, <DictionaryLink  term={"fill-pointer"}><b>fill-pointer</b></DictionaryLink> 
 
 
 
@@ -61,7 +61,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-Since <ClLinks  term={"array"}><i>arrays</i></ClLinks> of <ClLinks  term={"rank"}><i>rank</i></ClLinks> other than one cannot have a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , <ClLinks  term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></ClLinks> always returns <ClLinks  term={"nil"}><b>nil</b></ClLinks> when its argument is such an array. 
+Since <ClLinks  term={"array"}><i>arrays</i></ClLinks> of <ClLinks  term={"rank"}><i>rank</i></ClLinks> other than one cannot have a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , <DictionaryLink  term={"array-has-fill-pointer-p"}><b>array-has-fill-pointer-p</b></DictionaryLink> always returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> when its argument is such an array. 
 
 
 

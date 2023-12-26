@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"package-nicknames"}><b>package-nicknames</b></ClLinks> *package → nicknames* 
+<DictionaryLink  term={"package-nicknames"}><b>package-nicknames</b></DictionaryLink> *package → nicknames* 
 
 
 
@@ -38,7 +38,7 @@ Returns the <ClLinks  term={"list"}><i>list</i></ClLinks> of nickname <ClLinks  
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 

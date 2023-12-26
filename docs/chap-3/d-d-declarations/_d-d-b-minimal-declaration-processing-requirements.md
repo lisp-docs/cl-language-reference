@@ -3,15 +3,15 @@
 
 
 
-In general, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is free to ignore <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifiers</i></GlossaryTerm> except for the <ClLinks  term={"declaration"}><b>declaration</b></ClLinks>, <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>, **safety**, and <ClLinks  term={"special"}><b>special</b></ClLinks> <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifiers</i></GlossaryTerm>. 
+In general, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is free to ignore <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifiers</i></GlossaryTerm> except for the <DictionaryLink  term={"declaration"}><b>declaration</b></DictionaryLink>, <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink>, **safety**, and <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifiers</i></GlossaryTerm>. 
 
 
 
-A <ClLinks  term={"declaration"}><b>declaration</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> must suppress warnings about unrecognized <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> of the kind that it declares. If an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> does not produce warnings about unrecognized declarations, it may safely ignore this <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. 
+A <DictionaryLink  term={"declaration"}><b>declaration</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> must suppress warnings about unrecognized <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> of the kind that it declares. If an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> does not produce warnings about unrecognized declarations, it may safely ignore this <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. 
 
 
 
-A <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> must be recognized by any <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that supports inline functions or <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macros</i></GlossaryTerm> in order to disable those facilities. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that does not use inline functions or <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macros</i></GlossaryTerm> may safely ignore this <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. 
+A <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> must be recognized by any <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that supports inline functions or <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macros</i></GlossaryTerm> in order to disable those facilities. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that does not use inline functions or <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macros</i></GlossaryTerm> may safely ignore this <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. 
 
 
 
@@ -19,7 +19,7 @@ A **safety** <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> that in
 
 
 
-A <ClLinks  term={"special"}><b>special</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> must be processed by all <ClLinks  term={"implementation"}><i>implementations</i></ClLinks>. 
+A <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> must be processed by all <ClLinks  term={"implementation"}><i>implementations</i></ClLinks>. 
 
 
 

@@ -30,7 +30,7 @@ A summary of rules concerning <GlossaryTerm styled={true} term={"package marker"
 
 
 
-1\. If there is a single <GlossaryTerm styled={true} term={"package marker"}><i>package marker</i></GlossaryTerm> , and it occurs at the beginning of the <ClLinks  term={"token"}><i>token</i></ClLinks>, then the <ClLinks  term={"token"}><i>token</i></ClLinks> is interpreted as a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. It also sets the <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> of the newly-created <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to that same <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> so that the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> will self-evaluate. 
+1\. If there is a single <GlossaryTerm styled={true} term={"package marker"}><i>package marker</i></GlossaryTerm> , and it occurs at the beginning of the <ClLinks  term={"token"}><i>token</i></ClLinks>, then the <ClLinks  term={"token"}><i>token</i></ClLinks> is interpreted as a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. It also sets the <DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> of the newly-created <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to that same <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> so that the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> will self-evaluate. 
 
 
 

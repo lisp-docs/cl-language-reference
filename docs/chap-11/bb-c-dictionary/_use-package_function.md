@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"use-package"}><b>use-package</b></ClLinks> *packages-to-use* &amp;optional *package →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> *packages-to-use* &amp;optional *package →* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-<ClLinks  term={"use-package"}><b>use-package</b></ClLinks> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to inherit all the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *packages-to-use*. The inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to inherit all the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *packages-to-use*. The inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-*Packages-to-use* are added to the <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks> if they are not there already. All <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> in *packages-to-use* become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm>. <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> does not cause any new <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to be <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> but only makes them <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> by inheritance. 
+*Packages-to-use* are added to the <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks> if they are not there already. All <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> in *packages-to-use* become <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> as <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbols</i></GlossaryTerm>. <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> does not cause any new <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to be <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> but only makes them <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> by inheritance. 
 
 
 
-<ClLinks  term={"use-package"}><b>use-package</b></ClLinks> checks for name conflicts between the newly imported symbols and those already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. A name conflict in <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> between two external symbols inherited by <ClLinks  term={"package"}><i>package</i></ClLinks> from *packages-to-use* may be resolved in favor of either <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by *importing* one of them into <ClLinks  term={"package"}><i>package</i></ClLinks> and making it a shadowing symbol. 
+<DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> checks for name conflicts between the newly imported symbols and those already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. A name conflict in <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> between two external symbols inherited by <ClLinks  term={"package"}><i>package</i></ClLinks> from *packages-to-use* may be resolved in favor of either <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by *importing* one of them into <ClLinks  term={"package"}><i>package</i></ClLinks> and making it a shadowing symbol. 
 
 
 
@@ -59,7 +59,7 @@ The <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm>
 
 
 
-<ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks>, <ClLinks  term={"package-use-list"}><b>package-use-list</b></ClLinks>, Section 11.1 (Package Concepts) 
+<DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink>, <DictionaryLink  term={"package-use-list"}><b>package-use-list</b></DictionaryLink>, Section 11.1 (Package Concepts) 
 
 
 
@@ -83,7 +83,7 @@ It is permissible for a *package P*<sub>1</sub> to <ClLinks  term={"use"}><i>use
 
 
 
-<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> 
+<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> 
 
 
 

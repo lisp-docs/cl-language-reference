@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"conjugate"}><b>conjugate</b></ClLinks> *number → conjugate* 
+<DictionaryLink  term={"conjugate"}><b>conjugate</b></DictionaryLink> *number → conjugate* 
 
 
 

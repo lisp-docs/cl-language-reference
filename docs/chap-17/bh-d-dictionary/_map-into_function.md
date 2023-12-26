@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"map-into"}><b>map-into</b></ClLinks> *result-sequence function* &amp;rest *sequences → result-sequence* 
+<DictionaryLink  term={"map-into"}><b>map-into</b></DictionaryLink> *result-sequence function* &amp;rest *sequences → result-sequence* 
 
 
 
@@ -30,7 +30,7 @@ Destructively modifies *result-sequence* to contain the results of applying <ClL
 
 
 
-*result-sequence* and each element of *sequences* can each be either a <ClLinks  term={"list"}><i>list</i></ClLinks> or a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . If *result-sequence* and each element of *sequences* are not all the same length, the iteration terminates when the shortest *sequence* (of any of the *sequences* or the *result-sequence*) is exhausted. If *result-sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored when deciding how many iterations to perform, and afterwards the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is set to the number of times <ClLinks  term={"function"}><i>function</i></ClLinks> was applied. If *result-sequence* is longer than the shortest element of *sequences*, extra elements at the end of *result-sequence* are left unchanged. If *result-sequence* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, <ClLinks  term={"map-into"}><b>map-into</b></ClLinks> immediately returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>, since <ClLinks  term={"nil"}><b>nil</b></ClLinks> is a *sequence* of length zero. 
+*result-sequence* and each element of *sequences* can each be either a <ClLinks  term={"list"}><i>list</i></ClLinks> or a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . If *result-sequence* and each element of *sequences* are not all the same length, the iteration terminates when the shortest *sequence* (of any of the *sequences* or the *result-sequence*) is exhausted. If *result-sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored when deciding how many iterations to perform, and afterwards the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is set to the number of times <ClLinks  term={"function"}><i>function</i></ClLinks> was applied. If *result-sequence* is longer than the shortest element of *sequences*, extra elements at the end of *result-sequence* are left unchanged. If *result-sequence* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, <DictionaryLink  term={"map-into"}><b>map-into</b></DictionaryLink> immediately returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, since <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is a *sequence* of length zero. 
 
 
 
@@ -53,7 +53,7 @@ a → (#:G9090 #:G9091 #:G9092 #:G9093)
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *result-sequence* is not a *proper sequence*. Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a *proper sequence*. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *result-sequence* is not a *proper sequence*. Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a *proper sequence*. 
 
 
 
@@ -61,7 +61,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<ClLinks  term={"map-into"}><b>map-into</b></ClLinks> differs from <ClLinks  term={"map"}><b>map</b></ClLinks> in that it modifies an existing *sequence* rather than creating a new one. In addition, <ClLinks  term={"map-into"}><b>map-into</b></ClLinks> can be called with only two arguments, while <ClLinks  term={"map"}><b>map</b></ClLinks> requires at least three 
+<DictionaryLink  term={"map-into"}><b>map-into</b></DictionaryLink> differs from <DictionaryLink  term={"map"}><b>map</b></DictionaryLink> in that it modifies an existing *sequence* rather than creating a new one. In addition, <DictionaryLink  term={"map-into"}><b>map-into</b></DictionaryLink> can be called with only two arguments, while <DictionaryLink  term={"map"}><b>map</b></DictionaryLink> requires at least three 
 
 
 
@@ -81,7 +81,7 @@ arguments.
 
 
 
-<ClLinks  term={"map-into"}><b>map-into</b></ClLinks> could be defined by: 
+<DictionaryLink  term={"map-into"}><b>map-into</b></DictionaryLink> could be defined by: 
 
 
 

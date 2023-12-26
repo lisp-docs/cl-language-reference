@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"unsigned-byte"}><b>unsigned-byte</b></ClLinks>, <ClLinks  term={"signed-byte"}><b>signed-byte</b></ClLinks>, <ClLinks  term={"integer"}><b>integer</b></ClLinks>, <ClLinks  term={"rational"}><b>rational</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"unsigned-byte"}><b>unsigned-byte</b></DictionaryLink>, <DictionaryLink  term={"signed-byte"}><b>signed-byte</b></DictionaryLink>, <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink>, <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink>, <DictionaryLink  term={"real"}><b>real</b></DictionaryLink>, <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The atomic <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> <ClLinks  term={"unsigned-byte"}><b>unsigned-byte</b></ClLinks> denotes the same type as is denoted by the <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> (integer 0 \*). 
+The atomic <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> <DictionaryLink  term={"unsigned-byte"}><b>unsigned-byte</b></DictionaryLink> denotes the same type as is denoted by the <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> (integer 0 \*). 
 
 
 
@@ -54,7 +54,7 @@ This denotes the set of non-negative <i>integers</i> that can be represented in 
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> (unsigned-byte 1) is also called <ClLinks  term={"bit"}><b>bit</b></ClLinks>. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> (unsigned-byte 1) is also called <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>. 
 
 
 
@@ -70,7 +70,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> (unsigned-byte 1) is also call
 
 
 
-<ClLinks  term={"mod"}><b>mod</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
+<DictionaryLink  term={"mod"}><b>mod</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -110,7 +110,7 @@ The argument is required, and cannot be **\***.
 
 
 
-The symbol <ClLinks  term={"mod"}><b>mod</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
+The symbol <DictionaryLink  term={"mod"}><b>mod</b></DictionaryLink> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 

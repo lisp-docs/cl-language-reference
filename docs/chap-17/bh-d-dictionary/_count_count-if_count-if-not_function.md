@@ -6,15 +6,15 @@
 
 
 
-<ClLinks  term={"count"}><b>count</b></ClLinks> *item sequence* &amp;key *from-end start end key test test-not → n* 
+<DictionaryLink  term={"count"}><b>count</b></DictionaryLink> *item sequence* &amp;key *from-end start end key test test-not → n* 
 
 
 
-<ClLinks  term={"count-if"}><b>count-if</b></ClLinks> *predicate sequence* &amp;key *from-end start end key → n* 
+<DictionaryLink  term={"count-if"}><b>count-if</b></DictionaryLink> *predicate sequence* &amp;key *from-end start end key → n* 
 
 
 
-<ClLinks  term={"count-if-not"}><b>count-if-not</b></ClLinks> *predicate sequence* &amp;key *from-end start end key → n* 
+<DictionaryLink  term={"count-if-not"}><b>count-if-not</b></DictionaryLink> *predicate sequence* &amp;key *from-end start end key → n* 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<ClLinks  term={"count"}><b>count</b></ClLinks>, <ClLinks  term={"count-if"}><b>count-if</b></ClLinks>, and <ClLinks  term={"count-if-not"}><b>count-if-not</b></ClLinks> count and return the number of <ClLinks  term={"element"}><i>elements</i></ClLinks> in the *sequence bounded* by *start* and *end* that <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm>. 
+<DictionaryLink  term={"count"}><b>count</b></DictionaryLink>, <DictionaryLink  term={"count-if"}><b>count-if</b></DictionaryLink>, and <DictionaryLink  term={"count-if-not"}><b>count-if-not</b></DictionaryLink> count and return the number of <ClLinks  term={"element"}><i>elements</i></ClLinks> in the *sequence bounded* by *start* and *end* that <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm>. 
 
 
 
@@ -72,7 +72,7 @@ The *from-end* has no direct effect on the result. However, if *from-end* is <Cl
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -100,7 +100,7 @@ The :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> is deprecate
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"count-if-not"}><b>count-if-not</b></ClLinks> is deprecated. 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"count-if-not"}><b>count-if-not</b></DictionaryLink> is deprecated. 
 
 
 

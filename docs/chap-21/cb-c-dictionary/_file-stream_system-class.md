@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"file-stream"}><b>file-stream</b></ClLinks>, <ClLinks  term={"stream"}><b>stream</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"file-stream"}><b>file-stream</b></DictionaryLink>, <DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-An <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-stream"}><b>file-stream</b></ClLinks> is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> the direct source or sink of which is a <ClLinks  term={"file"}><i>file</i></ClLinks>. Such a <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created explicitly by <ClLinks  term={"open"}><b>open</b></ClLinks> and <ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks>, and implicitly by <ClLinks  term={"function"}><i>functions</i></ClLinks> such as <ClLinks  term={"load"}><b>load</b></ClLinks> that process <ClLinks  term={"file"}><i>files</i></ClLinks>. 
+An <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-stream"}><b>file-stream</b></DictionaryLink> is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> the direct source or sink of which is a <ClLinks  term={"file"}><i>file</i></ClLinks>. Such a <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created explicitly by <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> and <DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink>, and implicitly by <ClLinks  term={"function"}><i>functions</i></ClLinks> such as <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> that process <ClLinks  term={"file"}><i>files</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ An <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}>
 
 
 
-<ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"open"}><b>open</b></ClLinks>, <ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> 
+<DictionaryLink  term={"load"}><b>load</b></DictionaryLink>, <DictionaryLink  term={"open"}><b>open</b></DictionaryLink>, <DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink> 
 
 
 

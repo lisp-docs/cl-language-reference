@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"list-all-packages"}><b>list-all-packages</b></ClLinks> *⟨no arguments⟩ → packages* 
+<DictionaryLink  term={"list-all-packages"}><b>list-all-packages</b></DictionaryLink> *⟨no arguments⟩ → packages* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"list-all-packages"}><b>list-all-packages</b></ClLinks> returns a *fresh list* of all <GlossaryTerm styled={true} term={"registered package"}><i>registered packages</i></GlossaryTerm>. 
+<DictionaryLink  term={"list-all-packages"}><b>list-all-packages</b></DictionaryLink> returns a *fresh list* of all <GlossaryTerm styled={true} term={"registered package"}><i>registered packages</i></GlossaryTerm>. 
 
 
 
@@ -36,7 +36,7 @@
 
 
 
-<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks>, <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>, <ClLinks  term={"make-package"}><b>make-package</b></ClLinks> 
+<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink>, <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink>, <DictionaryLink  term={"make-package"}><b>make-package</b></DictionaryLink> 
 
 
 

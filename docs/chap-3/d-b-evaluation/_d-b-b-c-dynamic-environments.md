@@ -14,7 +14,7 @@ A <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environmen
 
 
 
-*•* information about <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> established by <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>. 
+*•* information about <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> established by <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink>. 
 
 
 

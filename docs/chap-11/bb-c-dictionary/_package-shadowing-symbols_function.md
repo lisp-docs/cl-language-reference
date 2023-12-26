@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"package-shadowing-symbols"}><b>package-shadowing-symbols</b></ClLinks> *package → symbols* 
+<DictionaryLink  term={"package-shadowing-symbols"}><b>package-shadowing-symbols</b></DictionaryLink> *package → symbols* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have been declared as <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbols</i></GlossaryTerm> in <ClLinks  term={"package"}><i>package</i></ClLinks> by <ClLinks  term={"shadow"}><b>shadow</b></ClLinks> or <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> (or the equivalent <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> options). All <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> on this <ClLinks  term={"list"}><i>list</i></ClLinks> are <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have been declared as <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbols</i></GlossaryTerm> in <ClLinks  term={"package"}><i>package</i></ClLinks> by <DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink> or <DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> (or the equivalent <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> options). All <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> on this <ClLinks  term={"list"}><i>list</i></ClLinks> are <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -43,7 +43,7 @@ Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symb
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
@@ -51,7 +51,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"shadow"}><b>shadow</b></ClLinks>, <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> 
+<DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink>, <DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> 
 
 
 

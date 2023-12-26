@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"float"}><b>float</b></ClLinks> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *prototype ! float* 
+<DictionaryLink  term={"float"}><b>float</b></DictionaryLink> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *prototype ! float* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"float"}><b>float</b></ClLinks> converts a *real* number to a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+<DictionaryLink  term={"float"}><b>float</b></DictionaryLink> converts a *real* number to a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
 
 
 
@@ -58,7 +58,7 @@ If *prototype* is not supplied, then if the <ClLinks  term={"number"}><i>number<
 
 
 
-<ClLinks  term={"coerce"}><b>coerce</b></ClLinks> 
+<DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink> 
 
 
 

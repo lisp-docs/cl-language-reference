@@ -51,7 +51,7 @@ sidebar_position: 97
 
 
 
-**actual array element type** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) the <ClLinks  term={"type"}><i>type</i></ClLinks> for which the <ClLinks  term={"array"}><i>array</i></ClLinks> is actually specialized, which is the <GlossaryTerm styled={true} term={"upgraded array element type"}><i>upgraded array element type</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"array-element-type"}><b>array-element-type</b></ClLinks>. 
+**actual array element type** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) the <ClLinks  term={"type"}><i>type</i></ClLinks> for which the <ClLinks  term={"array"}><i>array</i></ClLinks> is actually specialized, which is the <GlossaryTerm styled={true} term={"upgraded array element type"}><i>upgraded array element type</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"array-element-type"}><b>array-element-type</b></DictionaryLink>. 
 
 
 
@@ -63,7 +63,7 @@ sidebar_position: 97
 
 
 
-**actually adjustable** *adj.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) such that <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks> can adjust its 
+**actually adjustable** *adj.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) such that <DictionaryLink  term={"adjust-array"}><b>adjust-array</b></DictionaryLink> can adjust its 
 
 
 
@@ -111,15 +111,15 @@ characteristics by direct modification. A <GlossaryTerm styled={true} term={"con
 
 
 
-**anonymous** *adj.* 1. (of a <ClLinks  term={"class"}><i>class</i></ClLinks> or <ClLinks  term={"function"}><i>function</i></ClLinks>) having no <ClLinks  term={"name"}><i>name</i></ClLinks> 2. (of a <ClLinks  term={"restart"}><i>restart</i></ClLinks>) having a <ClLinks  term={"name"}><i>name</i></ClLinks> of <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+**anonymous** *adj.* 1. (of a <ClLinks  term={"class"}><i>class</i></ClLinks> or <ClLinks  term={"function"}><i>function</i></ClLinks>) having no <ClLinks  term={"name"}><i>name</i></ClLinks> 2. (of a <ClLinks  term={"restart"}><i>restart</i></ClLinks>) having a <ClLinks  term={"name"}><i>name</i></ClLinks> of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-**apparently uninterned** *adj.* having a <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of <ClLinks  term={"nil"}><b>nil</b></ClLinks>. (An *apparently* 
+**apparently uninterned** *adj.* having a <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. (An *apparently* 
 
 
 
-*uninterned symbol* might or might not be an *uninterned symbol*. *Uninterned symbols* have a <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of <ClLinks  term={"nil"}><b>nil</b></ClLinks>, but <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> which have been <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from their <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> also have a <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of <ClLinks  term={"nil"}><b>nil</b></ClLinks>, even though they might still be <ClLinks  term={"interned"}><i>interned</i></ClLinks> in some other <ClLinks  term={"package"}><i>package</i></ClLinks>.) 
+*uninterned symbol* might or might not be an *uninterned symbol*. *Uninterned symbols* have a <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, but <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> which have been <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from their <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> also have a <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, even though they might still be <ClLinks  term={"interned"}><i>interned</i></ClLinks> in some other <ClLinks  term={"package"}><i>package</i></ClLinks>.) 
 
 
 
@@ -135,11 +135,11 @@ characteristics by direct modification. A <GlossaryTerm styled={true} term={"con
 
 
 
-**applicable restart** *n.* 1. (for a <ClLinks  term={"condition"}><i>condition</i></ClLinks>) an *active handler* for which the associated test returns <ClLinks  term={"true"}><i>true</i></ClLinks> when given the <ClLinks  term={"condition"}><i>condition</i></ClLinks> as an argument. 2. (for no particular <ClLinks  term={"condition"}><i>condition</i></ClLinks>) an *active handler* for which the associated test returns <ClLinks  term={"true"}><i>true</i></ClLinks> when given <ClLinks  term={"nil"}><b>nil</b></ClLinks> as an argument. 
+**applicable restart** *n.* 1. (for a <ClLinks  term={"condition"}><i>condition</i></ClLinks>) an *active handler* for which the associated test returns <ClLinks  term={"true"}><i>true</i></ClLinks> when given the <ClLinks  term={"condition"}><i>condition</i></ClLinks> as an argument. 2. (for no particular <ClLinks  term={"condition"}><i>condition</i></ClLinks>) an *active handler* for which the associated test returns <ClLinks  term={"true"}><i>true</i></ClLinks> when given <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> as an argument. 
 
 
 
-<ClLinks  term={"apply"}><b>apply</b></ClLinks> *v.t.* (a <ClLinks  term={"function"}><i>function</i></ClLinks> to a <ClLinks  term={"list"}><i>list</i></ClLinks>) to <ClLinks  term={"call"}><i>call</i></ClLinks> the <ClLinks  term={"function"}><i>function</i></ClLinks> with arguments that are the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks>. “Applying the function <ClLinks  term={"+"}><b>+</b></ClLinks> to a list of integers returns the sum of the elements of that list.” 
+<DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> *v.t.* (a <ClLinks  term={"function"}><i>function</i></ClLinks> to a <ClLinks  term={"list"}><i>list</i></ClLinks>) to <ClLinks  term={"call"}><i>call</i></ClLinks> the <ClLinks  term={"function"}><i>function</i></ClLinks> with arguments that are the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks>. “Applying the function <ClLinks  term={"+"}><b>+</b></ClLinks> to a list of integers returns the sum of the elements of that list.” 
 
 
 
@@ -159,7 +159,7 @@ characteristics by direct modification. A <GlossaryTerm styled={true} term={"con
 
 
 
-<ClLinks  term={"array"}><b>array</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"array"}><b>array</b></ClLinks>, which serves as a container for other <ClLinks  term={"object"}><i>objects</i></ClLinks> arranged in a Cartesian coordinate system. 
+<DictionaryLink  term={"array"}><b>array</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"array"}><b>array</b></DictionaryLink>, which serves as a container for other <ClLinks  term={"object"}><i>objects</i></ClLinks> arranged in a Cartesian coordinate system. 
 
 
 
@@ -183,7 +183,7 @@ characteristics by direct modification. A <GlossaryTerm styled={true} term={"con
 
 
 
-**assign** *v.t.* (a <ClLinks  term={"variable"}><i>variable</i></ClLinks>) to change the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> in a <ClLinks  term={"binding"}><i>binding</i></ClLinks> that has already been *established*. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <ClLinks  term={"setq"}><b>setq</b></ClLinks>. 
+**assign** *v.t.* (a <ClLinks  term={"variable"}><i>variable</i></ClLinks>) to change the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> in a <ClLinks  term={"binding"}><i>binding</i></ClLinks> that has already been *established*. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>. 
 
 
 
@@ -199,11 +199,11 @@ characteristics by direct modification. A <GlossaryTerm styled={true} term={"con
 
 
 
-<ClLinks  term={"atom"}><b>atom</b></ClLinks> *n.* any <ClLinks  term={"object"}><i>object</i></ClLinks> that is not a <ClLinks  term={"cons"}><i>cons</i></ClLinks>. “A vector is an atom.” 
+<DictionaryLink  term={"atom"}><b>atom</b></DictionaryLink> *n.* any <ClLinks  term={"object"}><i>object</i></ClLinks> that is not a <ClLinks  term={"cons"}><i>cons</i></ClLinks>. “A vector is an atom.” 
 
 
 
-**atomic** *adj.* being an <ClLinks  term={"atom"}><i>atom</i></ClLinks>. “The number 3, the symbol foo, and <ClLinks  term={"nil"}><b>nil</b></ClLinks> are atomic.” 
+**atomic** *adj.* being an <ClLinks  term={"atom"}><i>atom</i></ClLinks>. “The number 3, the symbol foo, and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> are atomic.” 
 
 
 

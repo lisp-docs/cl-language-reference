@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"complexp"}><b>complexp</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink  term={"complexp"}><b>complexp</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"complex"}><b>complex</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -39,7 +39,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"complex"}><b>complex</b></ClLinks> (<ClLinks  term={"function"}><i>function</i></ClLinks> and <ClLinks  term={"type"}><i>type</i></ClLinks>), <ClLinks  term={"typep"}><b>typep</b></ClLinks> 
+<DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> (<ClLinks  term={"function"}><i>function</i></ClLinks> and <ClLinks  term={"type"}><i>type</i></ClLinks>), <DictionaryLink  term={"typep"}><b>typep</b></DictionaryLink> 
 
 
 

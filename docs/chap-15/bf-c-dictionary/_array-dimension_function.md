@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-dimension"}><b>array-dimension</b></ClLinks> *array axis-number → dimension* 
+<DictionaryLink  term={"array-dimension"}><b>array-dimension</b></DictionaryLink> *array axis-number → dimension* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"array-dimension"}><b>array-dimension</b></ClLinks> returns the *axis-number dimension*<sub>1</sub> of <ClLinks  term={"array"}><i>array</i></ClLinks>. (Any <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored.) 
+<DictionaryLink  term={"array-dimension"}><b>array-dimension</b></DictionaryLink> returns the *axis-number dimension*<sub>1</sub> of <ClLinks  term={"array"}><i>array</i></ClLinks>. (Any <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored.) 
 
 **Examples:**
 ```lisp
@@ -45,7 +45,7 @@ None.
 
 
 
-<ClLinks  term={"array-dimensions"}><b>array-dimensions</b></ClLinks>, <ClLinks  term={"length"}><b>length</b></ClLinks> 
+<DictionaryLink  term={"array-dimensions"}><b>array-dimensions</b></DictionaryLink>, <DictionaryLink  term={"length"}><b>length</b></DictionaryLink> 
 
 
 

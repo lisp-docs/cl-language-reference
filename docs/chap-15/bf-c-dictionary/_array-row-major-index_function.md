@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → index* 
+<DictionaryLink  term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → index* 
 
 
 
@@ -46,7 +46,7 @@ Computes the position according to the row-major ordering of <ClLinks  term={"ar
 
 
 
-For a one-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks>, the result of <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> equals *subscript*. <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. 
+For a one-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks>, the result of <DictionaryLink  term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> equals *subscript*. <DictionaryLink  term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. 
 
 
 
@@ -65,7 +65,7 @@ For a one-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks>, the resul
 
 
 
-A possible definition of <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks>, with no error-checking, is 
+A possible definition of <DictionaryLink  term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink>, with no error-checking, is 
 
 
 

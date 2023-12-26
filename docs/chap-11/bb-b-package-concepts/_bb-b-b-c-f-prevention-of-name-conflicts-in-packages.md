@@ -18,35 +18,31 @@ The following rules apply to name conflicts:
 
 
 
-– Every <ClLinks  term={"package"}><i>package</i></ClLinks> has a list of shadowing <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. A shadowing <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> takes precedence over any other <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> of the same name that would otherwise be <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>. A name conflict involving a shadowing symbol is always resolved in favor of the shadowing <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, without signaling an error (except for one exception involving <ClLinks  term={"import"}><b>import</b></ClLinks>). See <ClLinks  term={"shadow"}><b>shadow</b></ClLinks> and <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks>. 
+– Every <ClLinks  term={"package"}><i>package</i></ClLinks> has a list of shadowing <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. A shadowing <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> takes precedence over any other <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> of the same name that would otherwise be <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>. A name conflict involving a shadowing symbol is always resolved in favor of the shadowing <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, without signaling an error (except for one exception involving <DictionaryLink  term={"import"}><b>import</b></DictionaryLink>). See <DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink> and <DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink>. 
 
 
 
-– The functions <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks  term={"import"}><b>import</b></ClLinks>, and <ClLinks  term={"export"}><b>export</b></ClLinks> check for name conflicts. 
+– The functions <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, <DictionaryLink  term={"import"}><b>import</b></DictionaryLink>, and <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> check for name conflicts. 
 
 
 
-– <ClLinks  term={"shadow"}><b>shadow</b></ClLinks> and <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> never signal a name-conflict error. 
+– <DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink> and <DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> never signal a name-conflict error. 
 
 
 
-– <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> and <ClLinks  term={"unexport"}><b>unexport</b></ClLinks> do not need to do any name-conflict checking. <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> does name-conflict checking only when a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> being <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> is a <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbol</i></GlossaryTerm>. 
+– <DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> and <DictionaryLink  term={"unexport"}><b>unexport</b></DictionaryLink> do not need to do any name-conflict checking. <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> does name-conflict checking only when a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> being <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> is a <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbol</i></GlossaryTerm>. 
 
 
 
-– Giving a shadowing symbol to <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> can uncover a name conflict that had previously been resolved by the shadowing. 
+– Giving a shadowing symbol to <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> can uncover a name conflict that had previously been resolved by the shadowing. 
 
 
 
-– Package functions signal name-conflict errors of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> before making any change to the package structure. When multiple changes are to be made, it is permissible for the implementation to process each change separately. For example, when <ClLinks  term={"export"}><b>export</b></ClLinks> is 
-
-
+– Package functions signal name-conflict errors of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> before making any change to the package structure. When multiple changes are to be made, it is permissible for the implementation to process each change separately. For example, when <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> is 
 
 
 
 
-
- 
 
 
 
@@ -54,19 +50,23 @@ The following rules apply to name conflicts:
 
 
 
-given a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, aborting from a name conflict caused by the second <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the <ClLinks  term={"list"}><i>list</i></ClLinks> might still export the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the <ClLinks  term={"list"}><i>list</i></ClLinks>. However, a name-conflict error caused by <ClLinks  term={"export"}><b>export</b></ClLinks> of a single <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> will be signaled before that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks  term={"accessibility"}><i>accessibility</i></ClLinks> in any <ClLinks  term={"package"}><i>package</i></ClLinks> is changed. 
+ 
 
 
 
-– Continuing from a name-conflict error must offer the user a chance to resolve the name conflict in favor of either of the candidates. The <ClLinks  term={"package"}><i>package</i></ClLinks> structure should be altered to reflect the resolution of the name conflict, via <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks>, <ClLinks  term={"unintern"}><b>unintern</b></ClLinks>, or <ClLinks  term={"unexport"}><b>unexport</b></ClLinks>. 
+given a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, aborting from a name conflict caused by the second <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the <ClLinks  term={"list"}><i>list</i></ClLinks> might still export the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in the <ClLinks  term={"list"}><i>list</i></ClLinks>. However, a name-conflict error caused by <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> of a single <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> will be signaled before that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <ClLinks  term={"accessibility"}><i>accessibility</i></ClLinks> in any <ClLinks  term={"package"}><i>package</i></ClLinks> is changed. 
 
 
 
-– A name conflict in <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> between a *symbol present* in the using <ClLinks  term={"package"}><i>package</i></ClLinks> and an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of the used <ClLinks  term={"package"}><i>package</i></ClLinks> is resolved in favor of the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by making it a shadowing <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, or in favor of the second <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by uninterning the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> from the using <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+– Continuing from a name-conflict error must offer the user a chance to resolve the name conflict in favor of either of the candidates. The <ClLinks  term={"package"}><i>package</i></ClLinks> structure should be altered to reflect the resolution of the name conflict, via <DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink>, <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink>, or <DictionaryLink  term={"unexport"}><b>unexport</b></DictionaryLink>. 
 
 
 
-– A name conflict in <ClLinks  term={"export"}><b>export</b></ClLinks> or <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> due to a <ClLinks  term={"package"}><i>package</i></ClLinks>’s inheriting two *distinct symbols* with the *same name* (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) from two other <ClLinks  term={"package"}><i>packages</i></ClLinks> can be resolved in favor of either <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by importing it into the using <ClLinks  term={"package"}><i>package</i></ClLinks> and making it a <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbol</i></GlossaryTerm>, just as with <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. 
+– A name conflict in <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> between a *symbol present* in the using <ClLinks  term={"package"}><i>package</i></ClLinks> and an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of the used <ClLinks  term={"package"}><i>package</i></ClLinks> is resolved in favor of the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by making it a shadowing <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, or in favor of the second <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by uninterning the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> from the using <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+
+
+
+– A name conflict in <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> or <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> due to a <ClLinks  term={"package"}><i>package</i></ClLinks>’s inheriting two *distinct symbols* with the *same name* (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) from two other <ClLinks  term={"package"}><i>packages</i></ClLinks> can be resolved in favor of either <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by importing it into the using <ClLinks  term={"package"}><i>package</i></ClLinks> and making it a <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbol</i></GlossaryTerm>, just as with <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>. 
 
 
 

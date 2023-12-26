@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks> *name → generalized-boolean* 
+<DictionaryLink  term={"fboundp"}><b>fboundp</b></DictionaryLink> *name → generalized-boolean* 
 
 
 
@@ -63,7 +63,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"name"}
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"name"}><i>name</i></ClLinks> is not a *function name*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"name"}><i>name</i></ClLinks> is not a *function name*. 
 
 
 
@@ -71,7 +71,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks>, <ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks>, <ClLinks  term={"fdefinition"}><b>fdefinition</b></ClLinks> 
+<DictionaryLink  term={"symbol-function"}><b>symbol-function</b></DictionaryLink>, <DictionaryLink  term={"fmakunbound"}><b>fmakunbound</b></DictionaryLink>, <DictionaryLink  term={"fdefinition"}><b>fdefinition</b></DictionaryLink> 
 
 
 
@@ -91,11 +91,11 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-It is permissible to call <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> on any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>. 
+It is permissible to call <DictionaryLink  term={"symbol-function"}><b>symbol-function</b></DictionaryLink> on any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>. 
 
 
 
-<ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks> is sometimes used to “guard” an access to the *function cell*, as in: (if (fboundp x) (symbol-function x)) 
+<DictionaryLink  term={"fboundp"}><b>fboundp</b></DictionaryLink> is sometimes used to “guard” an access to the *function cell*, as in: (if (fboundp x) (symbol-function x)) 
 
 
 

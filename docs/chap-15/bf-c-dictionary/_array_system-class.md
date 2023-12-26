@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"array"}><b>array</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -18,7 +18,7 @@ An <i>array</i> contains <i>objects</i> arranged according to a Cartesian coordi
 
 
 
-When an <ClLinks  term={"array"}><i>array</i></ClLinks> is created, the program requesting its creation may declare that all <ClLinks  term={"element"}><i>elements</i></ClLinks> are of a particular <ClLinks  term={"type"}><i>type</i></ClLinks>, called the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm>. The implementation is permitted to <ClLinks  term={"upgrade"}><i>upgrade</i></ClLinks> this type in order to produce the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm>, which is the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks> is actually <ClLinks  term={"specialized"}><i>specialized</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks>. 
+When an <ClLinks  term={"array"}><i>array</i></ClLinks> is created, the program requesting its creation may declare that all <ClLinks  term={"element"}><i>elements</i></ClLinks> are of a particular <ClLinks  term={"type"}><i>type</i></ClLinks>, called the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm>. The implementation is permitted to <ClLinks  term={"upgrade"}><i>upgrade</i></ClLinks> this type in order to produce the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm>, which is the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks> is actually <ClLinks  term={"specialized"}><i>specialized</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink>. 
 
 
 
@@ -90,7 +90,7 @@ If the *dimension-spec* is a <ClLinks  term={"rank"}><i>rank</i></ClLinks>, the 
 
 
 
-<ClLinks  term={"print-array"}><b>\*print-array\*</b></ClLinks>, <ClLinks  term={"aref"}><b>aref</b></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"vector"}><b>vector</b></ClLinks>, Section 2.4.8.12 (Sharpsign A), Section 22.1.3.8 (Printing Other Arrays) 
+<DictionaryLink  term={"print-array"}><b>\*print-array\*</b></DictionaryLink>, <DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink>, <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink>, <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, Section 2.4.8.12 (Sharpsign A), Section 22.1.3.8 (Printing Other Arrays) 
 
 
 
@@ -98,7 +98,7 @@ If the *dimension-spec* is a <ClLinks  term={"rank"}><i>rank</i></ClLinks>, the 
 
 
 
-Note that the type (array t) is a proper <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the type (array \*). The reason is that the type (array t) is the set of <ClLinks  term={"array"}><i>arrays</i></ClLinks> that can hold any <ClLinks  term={"object"}><i>object</i></ClLinks> (the <ClLinks  term={"element"}><i>elements</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>, which includes all <ClLinks  term={"object"}><i>objects</i></ClLinks>). On the other hand, the type (array \*) is the set of all <ClLinks  term={"array"}><i>arrays</i></ClLinks> whatsoever, 
+Note that the type (array t) is a proper <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the type (array \*). The reason is that the type (array t) is the set of <ClLinks  term={"array"}><i>arrays</i></ClLinks> that can hold any <ClLinks  term={"object"}><i>object</i></ClLinks> (the <ClLinks  term={"element"}><i>elements</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, which includes all <ClLinks  term={"object"}><i>objects</i></ClLinks>). On the other hand, the type (array \*) is the set of all <ClLinks  term={"array"}><i>arrays</i></ClLinks> whatsoever, 
 
 
 

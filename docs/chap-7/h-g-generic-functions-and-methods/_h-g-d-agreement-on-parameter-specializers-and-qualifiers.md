@@ -14,7 +14,7 @@ Two <ClLinks  term={"method"}><i>methods</i></ClLinks> are said to agree with ea
 
 
 
-3\. The two <ClLinks  term={"list"}><i>lists</i></ClLinks> of <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> are the <ClLinks  term={"same"}><i>same</i></ClLinks> under <ClLinks  term={"equal"}><b>equal</b></ClLinks>. 
+3\. The two <ClLinks  term={"list"}><i>lists</i></ClLinks> of <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> are the <ClLinks  term={"same"}><i>same</i></ClLinks> under <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>. 
 
 
 

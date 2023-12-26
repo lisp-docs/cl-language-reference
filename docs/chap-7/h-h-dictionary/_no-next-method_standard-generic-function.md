@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> *generic-function method* &amp;rest *args → \{result\}*\* 
+<DictionaryLink  term={"no-next-method"}><b>no-next-method</b></DictionaryLink> *generic-function method* &amp;rest *args → \{result\}*\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> (*generic-function* <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>) 
+<DictionaryLink  term={"no-next-method"}><b>no-next-method</b></DictionaryLink> (*generic-function* <DictionaryLink  term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink>) 
 
 
 
-(<ClLinks  term={"method"}><i>method</i></ClLinks> <ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks>) 
+(<ClLinks  term={"method"}><i>method</i></ClLinks> <DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink>) 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"method"}><i>method</i></ClLinks> – <ClLinks  term={"method"}><i>method</i></ClLinks> that contained the call to <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> for which there is no next <ClLinks  term={"method"}><i>method</i></ClLinks>. *args* – arguments to <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>. 
+<ClLinks  term={"method"}><i>method</i></ClLinks> – <ClLinks  term={"method"}><i>method</i></ClLinks> that contained the call to <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> for which there is no next <ClLinks  term={"method"}><i>method</i></ClLinks>. *args* – arguments to <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink>. 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is called by <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> when there is no <GlossaryTerm styled={true} term={"next method"}><i>next method</i></GlossaryTerm>. 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is called by <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> when there is no <GlossaryTerm styled={true} term={"next method"}><i>next method</i></GlossaryTerm>. 
 
 
 
-The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is not intended to be called by programmers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is not intended to be called by programmers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. 
 
 
 
@@ -58,7 +58,7 @@ The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i
 
 
 
-The system-supplied <ClLinks  term={"method"}><i>method</i></ClLinks> on <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks>. 
+The system-supplied <ClLinks  term={"method"}><i>method</i></ClLinks> on <DictionaryLink  term={"no-next-method"}><b>no-next-method</b></DictionaryLink> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink>. 
 
 
 
@@ -66,7 +66,7 @@ The system-supplied <ClLinks  term={"method"}><i>method</i></ClLinks> on <ClLink
 
 
 
-<ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> 
+<DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"echo-stream"}><b>echo-stream</b></ClLinks>, <ClLinks  term={"stream"}><b>stream</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"echo-stream"}><b>echo-stream</b></DictionaryLink>, <DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -26,7 +26,7 @@ All input taken from the *input stream* is echoed to the *output stream*. Whethe
 
 
 
-**echo-stream-input-stream**, **echo-stream-output-stream**, <ClLinks  term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks> 
+**echo-stream-input-stream**, **echo-stream-output-stream**, <DictionaryLink  term={"make-echo-stream"}><b>make-echo-stream</b></DictionaryLink> 
 
 
 

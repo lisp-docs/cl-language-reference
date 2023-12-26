@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"signed-byte"}><b>signed-byte</b></ClLinks>, <ClLinks  term={"integer"}><b>integer</b></ClLinks>, <ClLinks  term={"rational"}><b>rational</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"signed-byte"}><b>signed-byte</b></DictionaryLink>, <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink>, <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink>, <DictionaryLink  term={"real"}><b>real</b></DictionaryLink>, <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The atomic <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> <ClLinks  term={"signed-byte"}><b>signed-byte</b></ClLinks> denotes the same type as is denoted by the <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> <ClLinks  term={"integer"}><b>integer</b></ClLinks>; however, the list forms of these two <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> have different semantics. 
+The atomic <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> <DictionaryLink  term={"signed-byte"}><b>signed-byte</b></DictionaryLink> denotes the same type as is denoted by the <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink>; however, the list forms of these two <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> have different semantics. 
 
 
 

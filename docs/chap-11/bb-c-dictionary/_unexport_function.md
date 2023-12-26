@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"unexport"}><b>unexport</b></ClLinks> <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> &amp;optional *package →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"unexport"}><b>unexport</b></DictionaryLink> <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> &amp;optional *package →* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks  term={"unexport"}><b>unexport</b></ClLinks> reverts external <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> to internal status; it undoes the effect of <ClLinks  term={"export"}><b>export</b></ClLinks>. 
+<DictionaryLink  term={"unexport"}><b>unexport</b></DictionaryLink> reverts external <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> to internal status; it undoes the effect of <DictionaryLink  term={"export"}><b>export</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"unexport"}><b>unexport</b></ClLinks> works only on *symbols present* in <ClLinks  term={"package"}><i>package</i></ClLinks>, switching them back to internal status. If <ClLinks  term={"unexport"}><b>unexport</b></ClLinks> is given a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> in <ClLinks  term={"package"}><i>package</i></ClLinks>, it does nothing. 
+<DictionaryLink  term={"unexport"}><b>unexport</b></DictionaryLink> works only on *symbols present* in <ClLinks  term={"package"}><i>package</i></ClLinks>, switching them back to internal status. If <DictionaryLink  term={"unexport"}><b>unexport</b></DictionaryLink> is given a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> in <ClLinks  term={"package"}><i>package</i></ClLinks>, it does nothing. 
 
 
 
@@ -64,7 +64,7 @@ Current state of the package system.
 
 
 
-If <ClLinks  term={"unexport"}><b>unexport</b></ClLinks> is given a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> not <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> at all, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
+If <DictionaryLink  term={"unexport"}><b>unexport</b></DictionaryLink> is given a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> not <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks> at all, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -84,7 +84,7 @@ The consequences are undefined if <ClLinks  term={"package"}><i>package</i></ClL
 
 
 
-<ClLinks  term={"export"}><b>export</b></ClLinks>, Section 11.1 (Package Concepts) 
+<DictionaryLink  term={"export"}><b>export</b></DictionaryLink>, Section 11.1 (Package Concepts) 
 
 
 

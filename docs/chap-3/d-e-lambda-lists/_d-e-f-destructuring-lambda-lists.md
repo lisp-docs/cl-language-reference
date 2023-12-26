@@ -2,7 +2,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"destructuring lambda list"}><i>destructuring lambda list</i></GlossaryTerm> is used by <ClLinks  term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks>. 
+A <GlossaryTerm styled={true} term={"destructuring lambda list"}><i>destructuring lambda list</i></GlossaryTerm> is used by <DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink>. 
 
 
 

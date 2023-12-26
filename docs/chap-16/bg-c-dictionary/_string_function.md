@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"string"}><b>string</b></ClLinks> *x → string* 
+<DictionaryLink  term={"string"}><b>string</b></DictionaryLink> *x → string* 
 
 
 
@@ -42,7 +42,7 @@ Returns a <ClLinks  term={"string"}><i>string</i></ClLinks> described by *x*; sp
 
 
 
-*•* <ClLinks  term={"string"}><b>string</b></ClLinks> might perform additional, <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> conversions. 
+*•* <DictionaryLink  term={"string"}><b>string</b></DictionaryLink> might perform additional, <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> conversions. 
 
 
 
@@ -57,7 +57,7 @@ Returns a <ClLinks  term={"string"}><i>string</i></ClLinks> described by *x*; sp
 
 
 
-In the case where a conversion is defined neither by this specification nor by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
+In the case where a conversion is defined neither by this specification nor by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -65,7 +65,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-<ClLinks  term={"coerce"}><b>coerce</b></ClLinks>, <ClLinks  term={"string"}><b>string</b></ClLinks> (<ClLinks  term={"type"}><i>type</i></ClLinks>). 
+<DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink>, <DictionaryLink  term={"string"}><b>string</b></DictionaryLink> (<ClLinks  term={"type"}><i>type</i></ClLinks>). 
 
 
 
@@ -73,7 +73,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-<ClLinks  term={"coerce"}><b>coerce</b></ClLinks> can be used to convert a *sequence* of <ClLinks  term={"character"}><i>characters</i></ClLinks> to a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+<DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink> can be used to convert a *sequence* of <ClLinks  term={"character"}><i>characters</i></ClLinks> to a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -89,7 +89,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-<ClLinks  term={"prin1-to-string"}><b>prin1-to-string</b></ClLinks>, <ClLinks  term={"princ-to-string"}><b>princ-to-string</b></ClLinks>, <ClLinks  term={"write-to-string"}><b>write-to-string</b></ClLinks>, or <ClLinks  term={"format"}><b>format</b></ClLinks> (with a first argument of <ClLinks  term={"nil"}><b>nil</b></ClLinks>) can be used to get a <ClLinks  term={"string"}><i>string</i></ClLinks> representation of a <ClLinks  term={"number"}><i>number</i></ClLinks> or any other <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink  term={"prin1-to-string"}><b>prin1-to-string</b></DictionaryLink>, <DictionaryLink  term={"princ-to-string"}><b>princ-to-string</b></DictionaryLink>, <DictionaryLink  term={"write-to-string"}><b>write-to-string</b></DictionaryLink>, or <DictionaryLink  term={"format"}><b>format</b></DictionaryLink> (with a first argument of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>) can be used to get a <ClLinks  term={"string"}><i>string</i></ClLinks> representation of a <ClLinks  term={"number"}><i>number</i></ClLinks> or any other <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -133,7 +133,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
@@ -153,7 +153,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-**string-upcase** returns a <ClLinks  term={"string"}><i>string</i></ClLinks> just like <ClLinks  term={"string"}><i>string</i></ClLinks> with all lowercase characters replaced by the corresponding uppercase characters. More precisely, each character of the result <ClLinks  term={"string"}><i>string</i></ClLinks> is produced by applying the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"char-upcase"}><b>char-upcase</b></ClLinks> to the corresponding character of <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+**string-upcase** returns a <ClLinks  term={"string"}><i>string</i></ClLinks> just like <ClLinks  term={"string"}><i>string</i></ClLinks> with all lowercase characters replaced by the corresponding uppercase characters. More precisely, each character of the result <ClLinks  term={"string"}><i>string</i></ClLinks> is produced by applying the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"char-upcase"}><b>char-upcase</b></DictionaryLink> to the corresponding character of <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -161,7 +161,7 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-**string-downcase** is like **string-upcase** except that all uppercase characters are replaced by the corresponding lowercase characters (using <ClLinks  term={"char-downcase"}><b>char-downcase</b></ClLinks>). 
+**string-downcase** is like **string-upcase** except that all uppercase characters are replaced by the corresponding lowercase characters (using <DictionaryLink  term={"char-downcase"}><b>char-downcase</b></DictionaryLink>). 
 
 
 
@@ -232,7 +232,7 @@ str → "0123AbcD890a"
 
 
 
-<ClLinks  term={"char-upcase"}><b>char-upcase</b></ClLinks>, <ClLinks  term={"char-downcase"}><b>char-downcase</b></ClLinks> 
+<DictionaryLink  term={"char-upcase"}><b>char-upcase</b></DictionaryLink>, <DictionaryLink  term={"char-downcase"}><b>char-downcase</b></DictionaryLink> 
 
 
 

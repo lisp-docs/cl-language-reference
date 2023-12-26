@@ -15,7 +15,7 @@ sidebar_position: 113
 
 
 
-**query I/O** *n.* the *bidirectional stream* that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> **\*query-io\***. **quoted object** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> which is the second element of a <ClLinks  term={"quote"}><b>quote</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+**query I/O** *n.* the *bidirectional stream* that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> **\*query-io\***. **quoted object** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> which is the second element of a <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 

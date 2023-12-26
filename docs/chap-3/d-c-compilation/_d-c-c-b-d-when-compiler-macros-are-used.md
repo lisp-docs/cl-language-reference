@@ -6,11 +6,11 @@ The presence of a <GlossaryTerm styled={true} term={"compiler macro"}><i>compile
 
 
 
-When the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> encounters a <ClLinks  term={"form"}><i>form</i></ClLinks> during processing that represents a call to a *compiler macro name* (that is not declared <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>), the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> might expand the <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm>, and might use the expansion in place of the original <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+When the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> encounters a <ClLinks  term={"form"}><i>form</i></ClLinks> during processing that represents a call to a *compiler macro name* (that is not declared <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink>), the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> might expand the <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm>, and might use the expansion in place of the original <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-When <ClLinks  term={"eval"}><b>eval</b></ClLinks> encounters a <ClLinks  term={"form"}><i>form</i></ClLinks> during processing that represents a call to a *compiler macro name* (that is not declared <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>), <ClLinks  term={"eval"}><b>eval</b></ClLinks> might expand the <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm>, and might use the expansion in place of the original <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+When <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> encounters a <ClLinks  term={"form"}><i>form</i></ClLinks> during processing that represents a call to a *compiler macro name* (that is not declared <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink>), <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> might expand the <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm>, and might use the expansion in place of the original <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ There are two situations in which a <GlossaryTerm styled={true} term={"compiler 
 
 
 
-*•* The function name has been declared or proclaimed <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> and the call form appears within the scope of the declaration. 
+*•* The function name has been declared or proclaimed <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> and the call form appears within the scope of the declaration. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"package-use-list"}><b>package-use-list</b></ClLinks> *package → use-list* 
+<DictionaryLink  term={"package-use-list"}><b>package-use-list</b></DictionaryLink> *package → use-list* 
 
 
 
@@ -52,7 +52,7 @@ Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of other <ClLinks  term=
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
@@ -60,7 +60,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> 
+<DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, <DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> 
 
 
 

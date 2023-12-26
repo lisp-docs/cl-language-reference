@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"special-operator-p"}><b>special-operator-p</b></ClLinks> *symbol ! generalized-boolean* 
+<DictionaryLink  term={"special-operator-p"}><b>special-operator-p</b></DictionaryLink> *symbol ! generalized-boolean* 
 
 
 
@@ -40,7 +40,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"symbol
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -64,7 +64,7 @@ Historically, this function was called special-form-p. The name was finally decl
 
 
 
-<ClLinks  term={"constantp"}><b>constantp</b></ClLinks> 
+<DictionaryLink  term={"constantp"}><b>constantp</b></DictionaryLink> 
 
 
 

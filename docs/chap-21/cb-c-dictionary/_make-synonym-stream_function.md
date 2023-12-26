@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-synonym-stream"}><b>make-synonym-stream</b></ClLinks> *symbol → synonym-stream* 
+<DictionaryLink  term={"make-synonym-stream"}><b>make-synonym-stream</b></DictionaryLink> *symbol → synonym-stream* 
 
 
 
@@ -48,7 +48,7 @@ Returns a <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream<
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 

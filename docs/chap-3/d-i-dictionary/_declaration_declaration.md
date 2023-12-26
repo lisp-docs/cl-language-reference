@@ -47,7 +47,7 @@ Advises the compiler that each <ClLinks  term={"name"}><i>name</i></ClLinks> is 
 
 
 
-<ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> 
+<DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink>, <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> 
 
 
 

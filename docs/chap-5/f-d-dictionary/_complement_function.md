@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"complement"}><b>complement</b></ClLinks> *function → complement-function* 
+<DictionaryLink  term={"complement"}><b>complement</b></DictionaryLink> *function → complement-function* 
 
 
 
@@ -41,7 +41,7 @@ Returns a <ClLinks  term={"function"}><i>function</i></ClLinks> that takes the s
 
 
 
-<ClLinks  term={"not"}><b>not</b></ClLinks> 
+<DictionaryLink  term={"not"}><b>not</b></DictionaryLink> 
 
 
 
@@ -85,7 +85,7 @@ Data and Control
 
 
 
-Note that since the “*xxx*-if-not” <ClLinks  term={"function"}><i>functions</i></ClLinks> and the :test-not arguments have been deprecated, uses of “*xxx*-if” <ClLinks  term={"function"}><i>functions</i></ClLinks> or :test arguments with <ClLinks  term={"complement"}><b>complement</b></ClLinks> are preferred. 
+Note that since the “*xxx*-if-not” <ClLinks  term={"function"}><i>functions</i></ClLinks> and the :test-not arguments have been deprecated, uses of “*xxx*-if” <ClLinks  term={"function"}><i>functions</i></ClLinks> or :test arguments with <DictionaryLink  term={"complement"}><b>complement</b></DictionaryLink> are preferred. 
 
 
 

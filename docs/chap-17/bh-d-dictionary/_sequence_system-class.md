@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"vector"}><b>vector</b></ClLinks> and the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"list"}><b>list</b></ClLinks> are *disjoint subtypes* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, but are not necessarily an <GlossaryTerm styled={true} term={"exhaustive partition"}><i>exhaustive partition</i></GlossaryTerm> of *sequence*. 
+The <ClLinks  term={"type"}><i>types</i></ClLinks> <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink> and the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"list"}><b>list</b></DictionaryLink> are *disjoint subtypes* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink>, but are not necessarily an <GlossaryTerm styled={true} term={"exhaustive partition"}><i>exhaustive partition</i></GlossaryTerm> of *sequence*. 
 
 
 

@@ -6,19 +6,19 @@
 
 
 
-<ClLinks  term={"short-float"}><b>short-float</b></ClLinks>: <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>: <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>, <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>, <DictionaryLink  term={"real"}><b>real</b></DictionaryLink>, <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"single-float"}><b>single-float</b></ClLinks>: <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>: <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>, <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>, <DictionaryLink  term={"real"}><b>real</b></DictionaryLink>, <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"double-float"}><b>double-float</b></ClLinks>: <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, <ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>: <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>, <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>, <DictionaryLink  term={"real"}><b>real</b></DictionaryLink>, <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"long-float"}><b>long-float</b></ClLinks>: <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>, <ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>: <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>, <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>, <DictionaryLink  term={"real"}><b>real</b></DictionaryLink>, <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-For the four defined <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>, it is true that intermediate between the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"short-float"}><b>short-float</b></ClLinks> and the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"long-float"}><b>long-float</b></ClLinks> are the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> and the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>. The precise definition of these categories is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. The precision (measured in “bits”, computed as *p* log<sub>2</sub>*b*) and the exponent size (also measured in “bits,” computed as log<sub>2</sub>(*n* + 1), where *n* is the maximum exponent value) is recommended to be at least as great as the values in Figure 12–12. Each of the defined <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks> might or might not have a minus zero. 
+For the four defined <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>, it is true that intermediate between the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink> and the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink> are the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink> and the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>. The precise definition of these categories is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. The precision (measured in “bits”, computed as *p* log<sub>2</sub>*b*) and the exponent size (also measured in “bits,” computed as log<sub>2</sub>(*n* + 1), where *n* is the maximum exponent value) is recommended to be at least as great as the values in Figure 12–12. Each of the defined <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"float"}><b>float</b></DictionaryLink> might or might not have a minus zero. 
 
 
 
@@ -48,7 +48,7 @@ There can be fewer than four internal representations for <ClLinks  term={"float
 
 
 
-– If there is only one, it is the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>. In this representation, an <ClLinks  term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, and <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. 
+– If there is only one, it is the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>. In this representation, an <ClLinks  term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks  term={"type"}><i>types</i></ClLinks> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>, <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>, <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>, and <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>. 
 
 
 
@@ -68,11 +68,11 @@ There can be fewer than four internal representations for <ClLinks  term={"float
 
 
 
-*•* Two <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, and <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. 
+*•* Two <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink> and <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>. An <ClLinks  term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks  term={"type"}><i>types</i></ClLinks> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>, <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>, and <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>. 
 
 
 
-*•* Two <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, or <ClLinks  term={"double-float"}><b>double-float</b></ClLinks> and <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. 
+*•* Two <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink> and <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>. An <ClLinks  term={"object"}><i>object</i></ClLinks> is simultaneously of <ClLinks  term={"type"}><i>types</i></ClLinks> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink> and <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>, or <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink> and <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>. 
 
 
 
@@ -80,11 +80,11 @@ There can be fewer than four internal representations for <ClLinks  term={"float
 
 
 
-*•* Three <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, and <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> can simultaneously be of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"double-float"}><b>double-float</b></ClLinks> and <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. 
+*•* Three <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>, <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>, and <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>. An <ClLinks  term={"object"}><i>object</i></ClLinks> can simultaneously be of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink> and <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>. 
 
 
 
-*•* Three <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, and <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> can simultaneously be of <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> and <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>. 
+*•* Three <ClLinks  term={"type"}><i>types</i></ClLinks> are provided: <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>, <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>, and <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>. An <ClLinks  term={"object"}><i>object</i></ClLinks> can simultaneously be of <ClLinks  term={"type"}><i>types</i></ClLinks> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink> and <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>. 
 
 
 
@@ -120,19 +120,19 @@ Abbreviating.
 
 
 
-*short-lower-limit*, *short-upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*short-lower-limit*, *short-upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
-*single-lower-limit*, *single-upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*single-lower-limit*, *single-upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
-*double-lower-limit*, *double-upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*double-lower-limit*, *double-upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
-*long-lower-limit*, *long-upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*long-lower-limit*, *long-upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 

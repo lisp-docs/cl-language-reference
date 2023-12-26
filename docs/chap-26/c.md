@@ -7,7 +7,7 @@ sidebar_position: 99
 
 
 
-<ClLinks  term={"cadr"}><b>cadr</b></ClLinks> [ **ka d*** **r** ], *n.* (of an <ClLinks  term={"object"}><i>object</i></ClLinks>) the <ClLinks  term={"car"}><i>car</i></ClLinks> of the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of that <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink  term={"cadr"}><b>cadr</b></DictionaryLink> [ **ka d*** **r** ], *n.* (of an <ClLinks  term={"object"}><i>object</i></ClLinks>) the <ClLinks  term={"car"}><i>car</i></ClLinks> of the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of that <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -23,7 +23,7 @@ sidebar_position: 99
 
 
 
-initialization form for the slot that was specified in the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form for the new class.” 
+initialization form for the slot that was specified in the <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form for the new class.” 
 
 
 
@@ -39,11 +39,11 @@ initialization form for the slot that was specified in the <ClLinks  term={"defc
 
 
 
-<ClLinks  term={"car"}><b>car</b></ClLinks> *n.* 1. a. (of a <ClLinks  term={"cons"}><i>cons</i></ClLinks>) the component of a <ClLinks  term={"cons"}><i>cons</i></ClLinks> corresponding to the first <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <ClLinks  term={"cons"}><b>cons</b></ClLinks>; the other component is the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> . “The function <ClLinks  term={"rplaca"}><b>rplaca</b></ClLinks> modifies the car of a cons.” b. (of a <ClLinks  term={"list"}><i>list</i></ClLinks>) the first <ClLinks  term={"element"}><i>element</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if the <ClLinks  term={"list"}><i>list</i></ClLinks> is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 2. the <ClLinks  term={"object"}><i>object</i></ClLinks> that is held in the <ClLinks  term={"car"}><i>car</i></ClLinks> <sub>1</sub>. “The function <ClLinks  term={"car"}><b>car</b></ClLinks> returns the car of a cons.” 
+<DictionaryLink  term={"car"}><b>car</b></DictionaryLink> *n.* 1. a. (of a <ClLinks  term={"cons"}><i>cons</i></ClLinks>) the component of a <ClLinks  term={"cons"}><i>cons</i></ClLinks> corresponding to the first <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <DictionaryLink  term={"cons"}><b>cons</b></DictionaryLink>; the other component is the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> . “The function <DictionaryLink  term={"rplaca"}><b>rplaca</b></DictionaryLink> modifies the car of a cons.” b. (of a <ClLinks  term={"list"}><i>list</i></ClLinks>) the first <ClLinks  term={"element"}><i>element</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the <ClLinks  term={"list"}><i>list</i></ClLinks> is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 2. the <ClLinks  term={"object"}><i>object</i></ClLinks> that is held in the <ClLinks  term={"car"}><i>car</i></ClLinks> <sub>1</sub>. “The function <DictionaryLink  term={"car"}><b>car</b></DictionaryLink> returns the car of a cons.” 
 
 
 
-<ClLinks  term={"case"}><b>case</b></ClLinks> *n.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) the property of being either <ClLinks  term={"uppercase"}><i>uppercase</i></ClLinks> or <ClLinks  term={"lowercase"}><i>lowercase</i></ClLinks>. Not all <ClLinks  term={"character"}><i>characters</i></ClLinks> have <ClLinks  term={"case"}><i>case</i></ClLinks>. “The characters #\A and #\a have case, but the character #\$ has no case.” See Section 13.1.4.3 (Characters With Case) and the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"both-case-p"}><b>both-case-p</b></ClLinks>. 
+<DictionaryLink  term={"case"}><b>case</b></DictionaryLink> *n.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) the property of being either <ClLinks  term={"uppercase"}><i>uppercase</i></ClLinks> or <ClLinks  term={"lowercase"}><i>lowercase</i></ClLinks>. Not all <ClLinks  term={"character"}><i>characters</i></ClLinks> have <ClLinks  term={"case"}><i>case</i></ClLinks>. “The characters #\A and #\a have case, but the character #\$ has no case.” See Section 13.1.4.3 (Characters With Case) and the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"both-case-p"}><b>both-case-p</b></DictionaryLink>. 
 
 
 
@@ -55,7 +55,7 @@ initialization form for the slot that was specified in the <ClLinks  term={"defc
 
 
 
-<ClLinks  term={"catch"}><b>catch</b></ClLinks> *n.* an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> which is *established* by a <ClLinks  term={"catch"}><b>catch</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> within the <GlossaryTerm styled={true} term={"dynamic scope"}><i>dynamic scope</i></GlossaryTerm> of its body, which is named by a <GlossaryTerm styled={true} term={"catch tag"}><i>catch tag</i></GlossaryTerm>, and to which control and <ClLinks  term={"value"}><i>values</i></ClLinks> may be *thrown*. 
+<DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> *n.* an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> which is *established* by a <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> within the <GlossaryTerm styled={true} term={"dynamic scope"}><i>dynamic scope</i></GlossaryTerm> of its body, which is named by a <GlossaryTerm styled={true} term={"catch tag"}><i>catch tag</i></GlossaryTerm>, and to which control and <ClLinks  term={"value"}><i>values</i></ClLinks> may be *thrown*. 
 
 
 
@@ -63,11 +63,11 @@ initialization form for the slot that was specified in the <ClLinks  term={"defc
 
 
 
-<ClLinks  term={"cddr"}><b>cddr</b></ClLinks> [ **k\_ud***  **d*** **r** ] or [ **k***  **d\_ud*** **r** ], *n.* (of an <ClLinks  term={"object"}><i>object</i></ClLinks>) the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of that <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink  term={"cddr"}><b>cddr</b></DictionaryLink> [ **k\_ud***  **d*** **r** ] or [ **k***  **d\_ud*** **r** ], *n.* (of an <ClLinks  term={"object"}><i>object</i></ClLinks>) the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of that <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-<ClLinks  term={"cdr"}><b>cdr</b></ClLinks> [ **k\_u d*** **r** ], *n.* 1. a. (of a <ClLinks  term={"cons"}><i>cons</i></ClLinks>) the component of a <ClLinks  term={"cons"}><i>cons</i></ClLinks> corresponding to the second <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <ClLinks  term={"cons"}><b>cons</b></ClLinks>; the other component is the <ClLinks  term={"car"}><i>car</i></ClLinks> . “The function <ClLinks  term={"rplacd"}><b>rplacd</b></ClLinks> modifies the cdr of a cons.” b. (of a *list L*<sub>1</sub>) either the *list L*<sub>2</sub> that contains the <ClLinks  term={"element"}><i>elements</i></ClLinks> of *L*<sub>1</sub> that follow after the first, or else <ClLinks  term={"nil"}><b>nil</b></ClLinks> if *L*<sub>1</sub> is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 2. the <ClLinks  term={"object"}><i>object</i></ClLinks> that is held in the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> <sub>1</sub>. “The function <ClLinks  term={"cdr"}><b>cdr</b></ClLinks> returns the cdr of a cons.” 
+<DictionaryLink  term={"cdr"}><b>cdr</b></DictionaryLink> [ **k\_u d*** **r** ], *n.* 1. a. (of a <ClLinks  term={"cons"}><i>cons</i></ClLinks>) the component of a <ClLinks  term={"cons"}><i>cons</i></ClLinks> corresponding to the second <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <DictionaryLink  term={"cons"}><b>cons</b></DictionaryLink>; the other component is the <ClLinks  term={"car"}><i>car</i></ClLinks> . “The function <DictionaryLink  term={"rplacd"}><b>rplacd</b></DictionaryLink> modifies the cdr of a cons.” b. (of a *list L*<sub>1</sub>) either the *list L*<sub>2</sub> that contains the <ClLinks  term={"element"}><i>elements</i></ClLinks> of *L*<sub>1</sub> that follow after the first, or else <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if *L*<sub>1</sub> is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 2. the <ClLinks  term={"object"}><i>object</i></ClLinks> that is held in the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> <sub>1</sub>. “The function <DictionaryLink  term={"cdr"}><b>cdr</b></DictionaryLink> returns the cdr of a cons.” 
 
 
 
@@ -75,7 +75,7 @@ initialization form for the slot that was specified in the <ClLinks  term={"defc
 
 
 
-<ClLinks  term={"character"}><b>character</b></ClLinks> *n.*, *adj.* 1. *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that represents a unitary token in an aggregate quantity of text; see Section 13.1 (Character Concepts). 2. *adj.* a. (of a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) having an <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> that is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. The most fundamental operation on a *character input stream* is <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> and on a *character output stream* is <ClLinks  term={"write-char"}><b>write-char</b></ClLinks>. See <ClLinks  term={"binary"}><i>binary</i></ClLinks>. b. (of a <ClLinks  term={"file"}><i>file</i></ClLinks>) having been created by opening a *character stream*. (It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether this is an inspectable aspect of the <ClLinks  term={"file"}><i>file</i></ClLinks>, or whether any given *binary file* can be treated as a *character file*.) 
+<DictionaryLink  term={"character"}><b>character</b></DictionaryLink> *n.*, *adj.* 1. *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that represents a unitary token in an aggregate quantity of text; see Section 13.1 (Character Concepts). 2. *adj.* a. (of a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) having an <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> that is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. The most fundamental operation on a *character input stream* is <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> and on a *character output stream* is <DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink>. See <ClLinks  term={"binary"}><i>binary</i></ClLinks>. b. (of a <ClLinks  term={"file"}><i>file</i></ClLinks>) having been created by opening a *character stream*. (It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether this is an inspectable aspect of the <ClLinks  term={"file"}><i>file</i></ClLinks>, or whether any given *binary file* can be treated as a *character file*.) 
 
 
 
@@ -83,7 +83,7 @@ initialization form for the slot that was specified in the <ClLinks  term={"defc
 
 
 
-non-negative *integer* less than the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"char-code-limit"}><b>char-code-limit</b></ClLinks> that is suitable for use as a <GlossaryTerm styled={true} term={"character code"}><i>character code</i></GlossaryTerm><sub>1</sub>. 
+non-negative *integer* less than the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"char-code-limit"}><b>char-code-limit</b></DictionaryLink> that is suitable for use as a <GlossaryTerm styled={true} term={"character code"}><i>character code</i></GlossaryTerm><sub>1</sub>. 
 
 
 
@@ -115,15 +115,15 @@ non-negative *integer* less than the <ClLinks  term={"value"}><i>value</i></ClLi
 
 
 
-<ClLinks  term={"class"}><b>class</b></ClLinks> *n.* 1. an <ClLinks  term={"object"}><i>object</i></ClLinks> that uniquely determines the structure and behavior of a set of other <ClLinks  term={"object"}><i>objects</i></ClLinks> called its <GlossaryTerm styled={true} term={"direct instance"}><i>direct instances</i></GlossaryTerm>, that contributes structure and behavior to a set of other <ClLinks  term={"object"}><i>objects</i></ClLinks> called its <GlossaryTerm styled={true} term={"indirect instance"}><i>indirect instances</i></GlossaryTerm>, and that acts as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a set of objects called its <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instances</i></GlossaryTerm>. “The class <ClLinks  term={"integer"}><b>integer</b></ClLinks> is a subclass of the 
+<DictionaryLink  term={"class"}><b>class</b></DictionaryLink> *n.* 1. an <ClLinks  term={"object"}><i>object</i></ClLinks> that uniquely determines the structure and behavior of a set of other <ClLinks  term={"object"}><i>objects</i></ClLinks> called its <GlossaryTerm styled={true} term={"direct instance"}><i>direct instances</i></GlossaryTerm>, that contributes structure and behavior to a set of other <ClLinks  term={"object"}><i>objects</i></ClLinks> called its <GlossaryTerm styled={true} term={"indirect instance"}><i>indirect instances</i></GlossaryTerm>, and that acts as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a set of objects called its <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instances</i></GlossaryTerm>. “The class <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink> is a subclass of the 
 
 
 
-class <ClLinks  term={"number"}><b>number</b></ClLinks>.” (Note that the phrase “the <ClLinks  term={"class"}><i>class</i></ClLinks> foo” is often substituted for the more precise phrase “the <ClLinks  term={"class"}><i>class</i></ClLinks> named foo”—in both cases, a *class object* (not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) is denoted.) 2. (of an <ClLinks  term={"object"}><i>object</i></ClLinks>) the uniquely determined <ClLinks  term={"class"}><i>class</i></ClLinks> of which the <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"direct instance"}><i>direct instance</i></GlossaryTerm>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"class-of"}><b>class-of</b></ClLinks>. “The class of the object returned by <ClLinks  term={"gensym"}><b>gensym</b></ClLinks> is <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>.” (Note that with this usage a phrase such as “its <ClLinks  term={"class"}><i>class</i></ClLinks> is foo” is often substituted for the more precise phrase “its <ClLinks  term={"class"}><i>class</i></ClLinks> is the <ClLinks  term={"class"}><i>class</i></ClLinks> named foo”—in both cases, a *class object* (not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) is denoted.) 
+class <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>.” (Note that the phrase “the <ClLinks  term={"class"}><i>class</i></ClLinks> foo” is often substituted for the more precise phrase “the <ClLinks  term={"class"}><i>class</i></ClLinks> named foo”—in both cases, a *class object* (not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) is denoted.) 2. (of an <ClLinks  term={"object"}><i>object</i></ClLinks>) the uniquely determined <ClLinks  term={"class"}><i>class</i></ClLinks> of which the <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"direct instance"}><i>direct instance</i></GlossaryTerm>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"class-of"}><b>class-of</b></DictionaryLink>. “The class of the object returned by <DictionaryLink  term={"gensym"}><b>gensym</b></DictionaryLink> is <DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink>.” (Note that with this usage a phrase such as “its <ClLinks  term={"class"}><i>class</i></ClLinks> is foo” is often substituted for the more precise phrase “its <ClLinks  term={"class"}><i>class</i></ClLinks> is the <ClLinks  term={"class"}><i>class</i></ClLinks> named foo”—in both cases, a *class object* (not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) is denoted.) 
 
 
 
-**class designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"class"}><i>class</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"class"}><i>class</i></ClLinks> and that is one of: a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (denoting the <ClLinks  term={"class"}><i>class</i></ClLinks> named by that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>; see the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"find-class"}><b>find-class</b></ClLinks>) or a <ClLinks  term={"class"}><i>class</i></ClLinks> (denoting itself). 
+**class designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"class"}><i>class</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"class"}><i>class</i></ClLinks> and that is one of: a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (denoting the <ClLinks  term={"class"}><i>class</i></ClLinks> named by that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>; see the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"find-class"}><b>find-class</b></DictionaryLink>) or a <ClLinks  term={"class"}><i>class</i></ClLinks> (denoting itself). 
 
 
 
@@ -131,7 +131,7 @@ class <ClLinks  term={"number"}><b>number</b></ClLinks>.” (Note that the phras
 
 
 
-<ClLinks  term={"close"}><b>close</b></ClLinks> *v.t.* (a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) to terminate usage of the <ClLinks  term={"stream"}><i>stream</i></ClLinks> as a source or sink of data, permitting the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to reclaim its internal data structures, and to free any external resources which might have been locked by the <ClLinks  term={"stream"}><i>stream</i></ClLinks> when it was opened. 
+<DictionaryLink  term={"close"}><b>close</b></DictionaryLink> *v.t.* (a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) to terminate usage of the <ClLinks  term={"stream"}><i>stream</i></ClLinks> as a source or sink of data, permitting the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to reclaim its internal data structures, and to free any external resources which might have been locked by the <ClLinks  term={"stream"}><i>stream</i></ClLinks> when it was opened. 
 
 
 
@@ -167,7 +167,7 @@ Terminology).
 
 
 
-<ClLinks  term={"coerce"}><b>coerce</b></ClLinks> *v.t.* (an <ClLinks  term={"object"}><i>object</i></ClLinks> to a <ClLinks  term={"type"}><i>type</i></ClLinks>) to produce an <ClLinks  term={"object"}><i>object</i></ClLinks> from the given <ClLinks  term={"object"}><i>object</i></ClLinks>, without modifying that <ClLinks  term={"object"}><i>object</i></ClLinks>, by following some set of coercion rules that must be specifically stated for any context in which this term is used. The resulting <ClLinks  term={"object"}><i>object</i></ClLinks> is necessarily of the indicated <ClLinks  term={"type"}><i>type</i></ClLinks>, except when that type is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"complex"}><b>complex</b></ClLinks>; in that case, if a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> with an imaginary part of zero would result, the result is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> 
+<DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink> *v.t.* (an <ClLinks  term={"object"}><i>object</i></ClLinks> to a <ClLinks  term={"type"}><i>type</i></ClLinks>) to produce an <ClLinks  term={"object"}><i>object</i></ClLinks> from the given <ClLinks  term={"object"}><i>object</i></ClLinks>, without modifying that <ClLinks  term={"object"}><i>object</i></ClLinks>, by following some set of coercion rules that must be specifically stated for any context in which this term is used. The resulting <ClLinks  term={"object"}><i>object</i></ClLinks> is necessarily of the indicated <ClLinks  term={"type"}><i>type</i></ClLinks>, except when that type is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink>; in that case, if a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> with an imaginary part of zero would result, the result is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> 
 
 
 
@@ -191,15 +191,15 @@ rather than a <ClLinks  term={"complex"}><i>complex</i></ClLinks>—see Section 
 
 
 
-**compilation unit** *n.* an interval during which a single unit of compilation is occurring. See the <ClLinks  term={"macro"}><i>macro</i></ClLinks> <ClLinks  term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks>. 
+**compilation unit** *n.* an interval during which a single unit of compilation is occurring. See the <ClLinks  term={"macro"}><i>macro</i></ClLinks> <DictionaryLink  term={"with-compilation-unit"}><b>with-compilation-unit</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"compile"}><b>compile</b></ClLinks> *v.t.* 1. (<ClLinks  term={"code"}><i>code</i></ClLinks>) to perform semantic preprocessing of the <ClLinks  term={"code"}><i>code</i></ClLinks>, usually 
+<DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> *v.t.* 1. (<ClLinks  term={"code"}><i>code</i></ClLinks>) to perform semantic preprocessing of the <ClLinks  term={"code"}><i>code</i></ClLinks>, usually 
 
 
 
-optimizing one or more qualities of the code, such as run-time speed of *execution* or run-time storage usage. The minimum semantic requirements of compilation are that it must remove all macro calls and arrange for all <GlossaryTerm styled={true} term={"load time value"}><i>load time values</i></GlossaryTerm> to be resolved prior to run time. 2. (a <ClLinks  term={"function"}><i>function</i></ClLinks>) to produce a new <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks> which represents the result of *compiling* the <ClLinks  term={"code"}><i>code</i></ClLinks> represented by the <ClLinks  term={"function"}><i>function</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"compile"}><b>compile</b></ClLinks>. 3. (a <GlossaryTerm styled={true} term={"source file"}><i>source file</i></GlossaryTerm>) to produce a <GlossaryTerm styled={true} term={"compiled file"}><i>compiled file</i></GlossaryTerm> from a <GlossaryTerm styled={true} term={"source file"}><i>source file</i></GlossaryTerm>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>. 
+optimizing one or more qualities of the code, such as run-time speed of *execution* or run-time storage usage. The minimum semantic requirements of compilation are that it must remove all macro calls and arrange for all <GlossaryTerm styled={true} term={"load time value"}><i>load time values</i></GlossaryTerm> to be resolved prior to run time. 2. (a <ClLinks  term={"function"}><i>function</i></ClLinks>) to produce a new <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"compiled-function"}><b>compiled-function</b></DictionaryLink> which represents the result of *compiling* the <ClLinks  term={"code"}><i>code</i></ClLinks> represented by the <ClLinks  term={"function"}><i>function</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>. 3. (a <GlossaryTerm styled={true} term={"source file"}><i>source file</i></GlossaryTerm>) to produce a <GlossaryTerm styled={true} term={"compiled file"}><i>compiled file</i></GlossaryTerm> from a <GlossaryTerm styled={true} term={"source file"}><i>source file</i></GlossaryTerm>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>. 
 
 
 
@@ -223,11 +223,11 @@ optimizing one or more qualities of the code, such as run-time speed of *executi
 
 
 
-**compiled file** *n.* a <ClLinks  term={"file"}><i>file</i></ClLinks> which represents the results of *compiling* the <ClLinks  term={"form"}><i>forms</i></ClLinks> which appeared in a corresponding <GlossaryTerm styled={true} term={"source file"}><i>source file</i></GlossaryTerm>, and which can be *loaded*. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>. 
+**compiled file** *n.* a <ClLinks  term={"file"}><i>file</i></ClLinks> which represents the results of *compiling* the <ClLinks  term={"form"}><i>forms</i></ClLinks> which appeared in a corresponding <GlossaryTerm styled={true} term={"source file"}><i>source file</i></GlossaryTerm>, and which can be *loaded*. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>. 
 
 
 
-**compiled function** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks>, which is a <ClLinks  term={"function"}><i>function</i></ClLinks> that has been *compiled*, which contains no references to <ClLinks  term={"macro"}><i>macros</i></ClLinks> that must be expanded at run time, and which contains no unresolved references to <GlossaryTerm styled={true} term={"load time value"}><i>load time values</i></GlossaryTerm>. 
+**compiled function** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"compiled-function"}><b>compiled-function</b></DictionaryLink>, which is a <ClLinks  term={"function"}><i>function</i></ClLinks> that has been *compiled*, which contains no references to <ClLinks  term={"macro"}><i>macros</i></ClLinks> that must be expanded at run time, and which contains no unresolved references to <GlossaryTerm styled={true} term={"load time value"}><i>load time values</i></GlossaryTerm>. 
 
 
 
@@ -235,7 +235,7 @@ optimizing one or more qualities of the code, such as run-time speed of *executi
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> form that might be represented or *executed* efficiently. The functions <ClLinks  term={"compile"}><b>compile</b></ClLinks> and <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> permit programs to invoke the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> . 
+<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> form that might be represented or *executed* efficiently. The functions <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> and <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> permit programs to invoke the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> . 
 
 
 
@@ -251,7 +251,7 @@ which might perform some additional optimizations. (Unlike a <ClLinks  term={"ma
 
 
 
-**compiler macro form** *n.* a <GlossaryTerm styled={true} term={"function form"}><i>function form</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> whose <ClLinks  term={"operator"}><i>operator</i></ClLinks> has a definition as a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm>, or a <ClLinks  term={"funcall"}><b>funcall</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> whose first <ClLinks  term={"argument"}><i>argument</i></ClLinks> is a <ClLinks  term={"function"}><b>function</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> whose <ClLinks  term={"argument"}><i>argument</i></ClLinks> is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"function"}><i>function</i></ClLinks> that has a definition as a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm>. 
+**compiler macro form** *n.* a <GlossaryTerm styled={true} term={"function form"}><i>function form</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> whose <ClLinks  term={"operator"}><i>operator</i></ClLinks> has a definition as a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm>, or a <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> whose first <ClLinks  term={"argument"}><i>argument</i></ClLinks> is a <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> whose <ClLinks  term={"argument"}><i>argument</i></ClLinks> is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"function"}><i>function</i></ClLinks> that has a definition as a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm>. 
 
 
 
@@ -259,15 +259,15 @@ which might perform some additional optimizations. (Unlike a <ClLinks  term={"ma
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>, that implements <GlossaryTerm styled={true} term={"compiler macro expansion"}><i>compiler macro expansion</i></GlossaryTerm> by producing either a <ClLinks  term={"form"}><i>form</i></ClLinks> to be used in place of the original argument <ClLinks  term={"form"}><i>form</i></ClLinks> or else <ClLinks  term={"nil"}><b>nil</b></ClLinks>, indicating that the original <ClLinks  term={"form"}><i>form</i></ClLinks> should not be replaced. See Section 3.2.2.1 (Compiler Macros). 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>, that implements <GlossaryTerm styled={true} term={"compiler macro expansion"}><i>compiler macro expansion</i></GlossaryTerm> by producing either a <ClLinks  term={"form"}><i>form</i></ClLinks> to be used in place of the original argument <ClLinks  term={"form"}><i>form</i></ClLinks> or else <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, indicating that the original <ClLinks  term={"form"}><i>form</i></ClLinks> should not be replaced. See Section 3.2.2.1 (Compiler Macros). 
 
 
 
-<ClLinks  term={"complex"}><b>complex</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"complex"}><b>complex</b></ClLinks>. 
+<DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink>. 
 
 
 
-**complex float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"complex"}><b>complex</b></ClLinks> which has a <GlossaryTerm styled={true} term={"complex part type"}><i>complex part type</i></GlossaryTerm> that is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"float"}><b>float</b></ClLinks>. A <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm> is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , but it is not a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
+**complex float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> which has a <GlossaryTerm styled={true} term={"complex part type"}><i>complex part type</i></GlossaryTerm> that is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>. A <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm> is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , but it is not a <ClLinks  term={"float"}><i>float</i></ClLinks>. 
 
 
 
@@ -275,7 +275,7 @@ which might perform some additional optimizations. (Unlike a <ClLinks  term={"ma
 
 
 
-**complex rational** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"complex"}><b>complex</b></ClLinks> which has a <GlossaryTerm styled={true} term={"complex part type"}><i>complex part type</i></GlossaryTerm> that is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"rational"}><b>rational</b></ClLinks>. A <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , but it is not a <ClLinks  term={"rational"}><i>rational</i></ClLinks>. No <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> has an imaginary part of zero because such a number is always represented by Common Lisp as an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"rational"}><b>rational</b></ClLinks>; see Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals). 
+**complex rational** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> which has a <GlossaryTerm styled={true} term={"complex part type"}><i>complex part type</i></GlossaryTerm> that is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink>. A <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , but it is not a <ClLinks  term={"rational"}><i>rational</i></ClLinks>. No <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> has an imaginary part of zero because such a number is always represented by Common Lisp as an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink>; see Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals). 
 
 
 
@@ -291,11 +291,11 @@ which might perform some additional optimizations. (Unlike a <ClLinks  term={"ma
 
 
 
-**complex single float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"complex"}><b>complex</b></ClLinks> which has a <GlossaryTerm styled={true} term={"complex part type"}><i>complex part type</i></GlossaryTerm> that is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>. A <GlossaryTerm styled={true} term={"complex single float"}><i>complex single float</i></GlossaryTerm> is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , but it is not a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm>. 
+**complex single float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> which has a <GlossaryTerm styled={true} term={"complex part type"}><i>complex part type</i></GlossaryTerm> that is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>. A <GlossaryTerm styled={true} term={"complex single float"}><i>complex single float</i></GlossaryTerm> is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , but it is not a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm>. 
 
 
 
-**composite stream** *n.* a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is composed of one or more other <ClLinks  term={"stream"}><i>streams</i></ClLinks>. “<ClLinks  term={"make-synonym-stream"}><b>make-synonym-stream</b></ClLinks> creates a composite stream.” 
+**composite stream** *n.* a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is composed of one or more other <ClLinks  term={"stream"}><i>streams</i></ClLinks>. “<DictionaryLink  term={"make-synonym-stream"}><b>make-synonym-stream</b></DictionaryLink> creates a composite stream.” 
 
 
 
@@ -307,11 +307,11 @@ which might perform some additional optimizations. (Unlike a <ClLinks  term={"ma
 
 
 
-**concatenated stream** *n.* an *input stream* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"concatenated-stream"}><b>concatenated-stream</b></ClLinks>. 
+**concatenated stream** *n.* an *input stream* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"concatenated-stream"}><b>concatenated-stream</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"condition"}><b>condition</b></ClLinks> *n.* 1. an <ClLinks  term={"object"}><i>object</i></ClLinks> which represents a <ClLinks  term={"situation"}><i>situation</i></ClLinks>—usually, but not necessarily, during *signaling*. 2. an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"condition"}><b>condition</b></ClLinks>. 
+<DictionaryLink  term={"condition"}><b>condition</b></DictionaryLink> *n.* 1. an <ClLinks  term={"object"}><i>object</i></ClLinks> which represents a <ClLinks  term={"situation"}><i>situation</i></ClLinks>—usually, but not necessarily, during *signaling*. 2. an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"condition"}><b>condition</b></DictionaryLink>. 
 
 
 
@@ -323,11 +323,11 @@ which might perform some additional optimizations. (Unlike a <ClLinks  term={"ma
 
 
 
-**condition reporter** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that describes how a <ClLinks  term={"condition"}><i>condition</i></ClLinks> is to be printed when the *Lisp printer* is invoked while <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks  term={"false"}><i>false</i></ClLinks>. See Section 9.1.3 (Printing Conditions). 
+**condition reporter** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that describes how a <ClLinks  term={"condition"}><i>condition</i></ClLinks> is to be printed when the *Lisp printer* is invoked while <DictionaryLink  term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <ClLinks  term={"false"}><i>false</i></ClLinks>. See Section 9.1.3 (Printing Conditions). 
 
 
 
-**conditional newline** *n.* a point in output where a <ClLinks  term={"newline"}><i>newline</i></ClLinks> might be inserted at the discretion of the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> . There are four kinds of <GlossaryTerm styled={true} term={"conditional newline"}><i>conditional newlines</i></GlossaryTerm>, called “linear-style,” “fill-style,” “miser-style,” and “mandatory-style.” See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"pprint-newline"}><b>pprint-newline</b></ClLinks> and Section 22.2.1.1 (Dynamic Control of the Arrangement of Output). 
+**conditional newline** *n.* a point in output where a <ClLinks  term={"newline"}><i>newline</i></ClLinks> might be inserted at the discretion of the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> . There are four kinds of <GlossaryTerm styled={true} term={"conditional newline"}><i>conditional newlines</i></GlossaryTerm>, called “linear-style,” “fill-style,” “miser-style,” and “mandatory-style.” See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"pprint-newline"}><b>pprint-newline</b></DictionaryLink> and Section 22.2.1.1 (Dynamic Control of the Arrangement of Output). 
 
 
 
@@ -375,7 +375,7 @@ provided that no extension interferes with the correct function of any <Glossary
 
 
 
-<ClLinks  term={"cons"}><b>cons</b></ClLinks> *n.v.* 1. *n.* a compound data <ClLinks  term={"object"}><i>object</i></ClLinks> having two components called the <ClLinks  term={"car"}><i>car</i></ClLinks> and the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> . 2. *v.* to create such an <ClLinks  term={"object"}><i>object</i></ClLinks>. 3. *v. Idiom.* to create any <ClLinks  term={"object"}><i>object</i></ClLinks>, or to allocate storage. 
+<DictionaryLink  term={"cons"}><b>cons</b></DictionaryLink> *n.v.* 1. *n.* a compound data <ClLinks  term={"object"}><i>object</i></ClLinks> having two components called the <ClLinks  term={"car"}><i>car</i></ClLinks> and the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> . 2. *v.* to create such an <ClLinks  term={"object"}><i>object</i></ClLinks>. 3. *v. Idiom.* to create any <ClLinks  term={"object"}><i>object</i></ClLinks>, or to allocate storage. 
 
 
 
@@ -383,11 +383,11 @@ provided that no extension interferes with the correct function of any <Glossary
 
 
 
-**constant form** *n.* any <ClLinks  term={"form"}><i>form</i></ClLinks> for which <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> always <ClLinks  term={"yield"}><i>yields</i></ClLinks> the same <ClLinks  term={"value"}><i>value</i></ClLinks>, that neither affects nor is affected by the <ClLinks  term={"environment"}><i>environment</i></ClLinks> in which it is *evaluated* (except that it is permitted to refer to the names of <GlossaryTerm styled={true} term={"constant variable"}><i>constant variables</i></GlossaryTerm> defined in the <ClLinks  term={"environment"}><i>environment</i></ClLinks>), and that neither affects nor is affected by the state of any <ClLinks  term={"object"}><i>object</i></ClLinks> except those <ClLinks  term={"object"}><i>objects</i></ClLinks> that are <GlossaryTerm styled={true} term={"otherwise inaccessible part"}><i>otherwise inaccessible parts</i></GlossaryTerm> of <ClLinks  term={"object"}><i>objects</i></ClLinks> created by the <ClLinks  term={"form"}><i>form</i></ClLinks> itself. “A <ClLinks  term={"car"}><b>car</b></ClLinks> form in which the argument is a <ClLinks  term={"quote"}><b>quote</b></ClLinks> form is a constant form.” 
+**constant form** *n.* any <ClLinks  term={"form"}><i>form</i></ClLinks> for which <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> always <ClLinks  term={"yield"}><i>yields</i></ClLinks> the same <ClLinks  term={"value"}><i>value</i></ClLinks>, that neither affects nor is affected by the <ClLinks  term={"environment"}><i>environment</i></ClLinks> in which it is *evaluated* (except that it is permitted to refer to the names of <GlossaryTerm styled={true} term={"constant variable"}><i>constant variables</i></GlossaryTerm> defined in the <ClLinks  term={"environment"}><i>environment</i></ClLinks>), and that neither affects nor is affected by the state of any <ClLinks  term={"object"}><i>object</i></ClLinks> except those <ClLinks  term={"object"}><i>objects</i></ClLinks> that are <GlossaryTerm styled={true} term={"otherwise inaccessible part"}><i>otherwise inaccessible parts</i></GlossaryTerm> of <ClLinks  term={"object"}><i>objects</i></ClLinks> created by the <ClLinks  term={"form"}><i>form</i></ClLinks> itself. “A <DictionaryLink  term={"car"}><b>car</b></DictionaryLink> form in which the argument is a <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> form is a constant form.” 
 
 
 
-**constant object** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> that is constrained (*e.g.*, by its context in a <ClLinks  term={"program"}><i>program</i></ClLinks> or by the source from which it was obtained) to be <ClLinks  term={"immutable"}><i>immutable</i></ClLinks>. “A literal object that has been processed by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> is a constant object.” 
+**constant object** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> that is constrained (*e.g.*, by its context in a <ClLinks  term={"program"}><i>program</i></ClLinks> or by the source from which it was obtained) to be <ClLinks  term={"immutable"}><i>immutable</i></ClLinks>. “A literal object that has been processed by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> is a constant object.” 
 
 
 
@@ -395,11 +395,11 @@ provided that no extension interferes with the correct function of any <Glossary
 
 
 
-is, a <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> <sub>1</sub> or a <GlossaryTerm styled={true} term={"named constant"}><i>named constant</i></GlossaryTerm>. “The symbols <ClLinks  term={"t"}><b>t</b></ClLinks>, <ClLinks  term={"nil"}><b>nil</b></ClLinks>, :direction, and 
+is, a <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> <sub>1</sub> or a <GlossaryTerm styled={true} term={"named constant"}><i>named constant</i></GlossaryTerm>. “The symbols <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, :direction, and 
 
 
 
-<ClLinks  term={"most-positive-fixnum"}><b>most-positive-fixnum</b></ClLinks> are constant variables.” 
+<DictionaryLink  term={"most-positive-fixnum"}><b>most-positive-fixnum</b></DictionaryLink> are constant variables.” 
 
 
 
@@ -447,7 +447,7 @@ arithmetic on mixed <ClLinks  term={"type"}><i>types</i></ClLinks> of <ClLinks  
 
 
 
-*leaves* as <ClLinks  term={"t"}><i>T</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"copy-tree"}><b>copy-tree</b></ClLinks>. 5. (of a *random state R*) a *fresh random state* that, if used as an argument to to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"random"}><b>random</b></ClLinks> would produce the same series of “random” values as *R* would produce. 6. (of a *structure S*) a *fresh structure* that has the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *S*, and that has slot values, each of which is the <ClLinks  term={"same"}><i>same</i></ClLinks> as the corresponding slot value of *S*. (Note that since the difference between a <ClLinks  term={"cons"}><i>cons</i></ClLinks>, a <ClLinks  term={"list"}><i>list</i></ClLinks>, and a <ClLinks  term={"tree"}><i>tree</i></ClLinks> is a matter of “view” or “intention,” there can be no general-purpose <ClLinks  term={"function"}><i>function</i></ClLinks> which, based solely on the <ClLinks  term={"type"}><i>type</i></ClLinks> of an <ClLinks  term={"object"}><i>object</i></ClLinks>, can determine which of these distinct meanings is intended. The distinction rests solely on the basis of the text description within this document. For example, phrases like “a <ClLinks  term={"copy"}><i>copy</i></ClLinks> of the given <ClLinks  term={"list"}><i>list</i></ClLinks>” or “copy of the *list x*” imply the second definition.) 
+*leaves* as <ClLinks  term={"t"}><i>T</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"copy-tree"}><b>copy-tree</b></DictionaryLink>. 5. (of a *random state R*) a *fresh random state* that, if used as an argument to to the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> would produce the same series of “random” values as *R* would produce. 6. (of a *structure S*) a *fresh structure* that has the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *S*, and that has slot values, each of which is the <ClLinks  term={"same"}><i>same</i></ClLinks> as the corresponding slot value of *S*. (Note that since the difference between a <ClLinks  term={"cons"}><i>cons</i></ClLinks>, a <ClLinks  term={"list"}><i>list</i></ClLinks>, and a <ClLinks  term={"tree"}><i>tree</i></ClLinks> is a matter of “view” or “intention,” there can be no general-purpose <ClLinks  term={"function"}><i>function</i></ClLinks> which, based solely on the <ClLinks  term={"type"}><i>type</i></ClLinks> of an <ClLinks  term={"object"}><i>object</i></ClLinks>, can determine which of these distinct meanings is intended. The distinction rests solely on the basis of the text description within this document. For example, phrases like “a <ClLinks  term={"copy"}><i>copy</i></ClLinks> of the given <ClLinks  term={"list"}><i>list</i></ClLinks>” or “copy of the *list x*” imply the second definition.) 
 
 
 
@@ -455,7 +455,7 @@ arithmetic on mixed <ClLinks  term={"type"}><i>types</i></ClLinks> of <ClLinks  
 
 
 
-associated with the <ClLinks  term={"error"}><i>error</i></ClLinks> ) capable of being corrected by invoking that <ClLinks  term={"restart"}><i>restart</i></ClLinks>. “The function <ClLinks  term={"cerror"}><b>cerror</b></ClLinks> signals an error that is correctable by the **continue** <ClLinks  term={"restart"}><i>restart</i></ClLinks>.” (Note that correctability is not a property of an *error object*, but rather a property of the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> that is in effect when the <ClLinks  term={"error"}><i>error</i></ClLinks> is *signaled*. Specifically, the <ClLinks  term={"restart"}><i>restart</i></ClLinks> is “associated with” the *error condition object*. See Section 9.1.4.2.4 (Associating a Restart with a Condition).) 2. (when no specific <ClLinks  term={"restart"}><i>restart</i></ClLinks> is mentioned) <ClLinks  term={"correctable"}><i>correctable</i></ClLinks><sub>1</sub> by at least one <ClLinks  term={"restart"}><i>restart</i></ClLinks>. “<ClLinks  term={"import"}><b>import</b></ClLinks> signals a correctable error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> if any of the imported symbols has the same name as some distinct symbol already accessible in the package.” 
+associated with the <ClLinks  term={"error"}><i>error</i></ClLinks> ) capable of being corrected by invoking that <ClLinks  term={"restart"}><i>restart</i></ClLinks>. “The function <DictionaryLink  term={"cerror"}><b>cerror</b></DictionaryLink> signals an error that is correctable by the **continue** <ClLinks  term={"restart"}><i>restart</i></ClLinks>.” (Note that correctability is not a property of an *error object*, but rather a property of the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> that is in effect when the <ClLinks  term={"error"}><i>error</i></ClLinks> is *signaled*. Specifically, the <ClLinks  term={"restart"}><i>restart</i></ClLinks> is “associated with” the *error condition object*. See Section 9.1.4.2.4 (Associating a Restart with a Condition).) 2. (when no specific <ClLinks  term={"restart"}><i>restart</i></ClLinks> is mentioned) <ClLinks  term={"correctable"}><i>correctable</i></ClLinks><sub>1</sub> by at least one <ClLinks  term={"restart"}><i>restart</i></ClLinks>. “<DictionaryLink  term={"import"}><b>import</b></DictionaryLink> signals a correctable error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> if any of the imported symbols has the same name as some distinct symbol already accessible in the package.” 
 
 
 
@@ -463,7 +463,7 @@ associated with the <ClLinks  term={"error"}><i>error</i></ClLinks> ) capable of
 
 
 
-**current logical block** *n.* the context of the innermost lexically enclosing use of <ClLinks  term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks>. 
+**current logical block** *n.* the context of the innermost lexically enclosing use of <DictionaryLink  term={"pprint-logical-block"}><b>pprint-logical-block</b></DictionaryLink>. 
 
 
 
@@ -483,19 +483,19 @@ associated with the <ClLinks  term={"error"}><i>error</i></ClLinks> ) capable of
 
 
 
-**current package** *n.* (in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>) the <ClLinks  term={"package"}><i>package</i></ClLinks> that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> in that <ClLinks  term={"environment"}><i>environment</i></ClLinks>, and that is the default <ClLinks  term={"package"}><i>package</i></ClLinks> employed by the *Lisp reader* and *Lisp printer* , and their related <ClLinks  term={"function"}><i>functions</i></ClLinks>. 
+**current package** *n.* (in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>) the <ClLinks  term={"package"}><i>package</i></ClLinks> that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"package"}><b>\*package\*</b></DictionaryLink> in that <ClLinks  term={"environment"}><i>environment</i></ClLinks>, and that is the default <ClLinks  term={"package"}><i>package</i></ClLinks> employed by the *Lisp reader* and *Lisp printer* , and their related <ClLinks  term={"function"}><i>functions</i></ClLinks>. 
 
 
 
-**current pprint dispatch table** *n.* (in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>) the <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm> that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks> in that <ClLinks  term={"environment"}><i>environment</i></ClLinks>, and that is the default <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm> employed by the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> . 
+**current pprint dispatch table** *n.* (in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>) the <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm> that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></DictionaryLink> in that <ClLinks  term={"environment"}><i>environment</i></ClLinks>, and that is the default <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm> employed by the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> . 
 
 
 
-**current random state** *n.* (in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>) the <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"random-state"}><b>\*random-state\*</b></ClLinks> in that <ClLinks  term={"environment"}><i>environment</i></ClLinks>, and that is the default <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> employed by <ClLinks  term={"random"}><b>random</b></ClLinks>. 
+**current random state** *n.* (in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>) the <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"random-state"}><b>\*random-state\*</b></DictionaryLink> in that <ClLinks  term={"environment"}><i>environment</i></ClLinks>, and that is the default <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> employed by <DictionaryLink  term={"random"}><b>random</b></DictionaryLink>. 
 
 
 
-**current readtable** *n.* (in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>) the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> in that <ClLinks  term={"environment"}><i>environment</i></ClLinks>, and that affects the way in which <ClLinks  term={"expression"}><i>expressions</i></ClLinks><sub>2</sub> are parsed into <ClLinks  term={"object"}><i>objects</i></ClLinks> by the *Lisp reader* . 
+**current readtable** *n.* (in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>) the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"readtable"}><b>\*readtable\*</b></DictionaryLink> in that <ClLinks  term={"environment"}><i>environment</i></ClLinks>, and that affects the way in which <ClLinks  term={"expression"}><i>expressions</i></ClLinks><sub>2</sub> are parsed into <ClLinks  term={"object"}><i>objects</i></ClLinks> by the *Lisp reader* . 
 
 
 

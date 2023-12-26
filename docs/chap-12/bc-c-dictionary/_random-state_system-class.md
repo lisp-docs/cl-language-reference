@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"random-state"}><b>random-state</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"random-state"}><b>random-state</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -18,7 +18,7 @@ A *random state object* contains state information used by the pseudo-random num
 
 
 
-<ClLinks  term={"implementation"}><i>Implementations</i></ClLinks> are required to provide a read syntax for <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"random-state"}><b>random-state</b></ClLinks>, but the specific nature of that syntax is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<ClLinks  term={"implementation"}><i>Implementations</i></ClLinks> are required to provide a read syntax for <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"random-state"}><b>random-state</b></DictionaryLink>, but the specific nature of that syntax is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@ A *random state object* contains state information used by the pseudo-random num
 
 
 
-<ClLinks  term={"random-state"}><b>\*random-state\*</b></ClLinks>, <ClLinks  term={"random"}><b>random</b></ClLinks>, Section 22.1.3.10 (Printing Random States) 
+<DictionaryLink  term={"random-state"}><b>\*random-state\*</b></DictionaryLink>, <DictionaryLink  term={"random"}><b>random</b></DictionaryLink>, Section 22.1.3.10 (Printing Random States) 
 
 
 

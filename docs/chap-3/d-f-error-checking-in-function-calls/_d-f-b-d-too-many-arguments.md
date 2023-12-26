@@ -6,7 +6,7 @@ It is not permitted to supply too many <ClLinks  term={"argument"}><i>arguments<
 
 
 
-If this <ClLinks  term={"situation"}><i>situation</i></ClLinks> occurs in a <GlossaryTerm styled={true} term={"safe call"}><i>safe call</i></GlossaryTerm>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> must be signaled; and in an <GlossaryTerm styled={true} term={"unsafe call"}><i>unsafe call</i></GlossaryTerm> the <ClLinks  term={"situation"}><i>situation</i></ClLinks> has undefined consequences. 
+If this <ClLinks  term={"situation"}><i>situation</i></ClLinks> occurs in a <GlossaryTerm styled={true} term={"safe call"}><i>safe call</i></GlossaryTerm>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> must be signaled; and in an <GlossaryTerm styled={true} term={"unsafe call"}><i>unsafe call</i></GlossaryTerm> the <ClLinks  term={"situation"}><i>situation</i></ClLinks> has undefined consequences. 
 
 
 

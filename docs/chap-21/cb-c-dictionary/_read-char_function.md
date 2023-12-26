@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"read-char"}><b>read-char</b></ClLinks> &amp;optional *input-stream eof-error-p eof-value recursive-p → char* 
+<DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> &amp;optional *input-stream eof-error-p eof-value recursive-p → char* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -38,15 +38,15 @@
 
 
 
-<ClLinks  term={"read-char"}><b>read-char</b></ClLinks> returns the next <ClLinks  term={"character"}><i>character</i></ClLinks> from *input-stream*. 
+<DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> returns the next <ClLinks  term={"character"}><i>character</i></ClLinks> from *input-stream*. 
 
 
 
-When *input-stream* is an <GlossaryTerm styled={true} term={"echo stream"}><i>echo stream</i></GlossaryTerm>, the character is echoed on *input-stream* the first time the character is seen. Characters that are not echoed by <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> are those that were put there by <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks> and hence are assumed to have been echoed already by a previous call to <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>. 
+When *input-stream* is an <GlossaryTerm styled={true} term={"echo stream"}><i>echo stream</i></GlossaryTerm>, the character is echoed on *input-stream* the first time the character is seen. Characters that are not echoed by <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> are those that were put there by <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> and hence are assumed to have been echoed already by a previous call to <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink>. 
 
 
 
-If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <ClLinks  term={"read"}><b>read</b></ClLinks> or a similar <ClLinks  term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
+If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or a similar <ClLinks  term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
 
 
 
@@ -79,7 +79,7 @@ If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></Gloss
 
 
 
-**\*standard-input\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+**\*standard-input\***, <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
 
 
 
@@ -87,7 +87,7 @@ If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></Gloss
 
 
 
-If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs before a character can be read, and *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled. 
+If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs before a character can be read, and *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 
 
 
 
@@ -95,7 +95,7 @@ If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></Gloss
 
 
 
-<ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks>, <ClLinks  term={"read-sequence"}><b>read-sequence</b></ClLinks>, <ClLinks  term={"write-char"}><b>write-char</b></ClLinks>, <ClLinks  term={"read"}><b>read</b></ClLinks> 
+<DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink>, <DictionaryLink  term={"read-sequence"}><b>read-sequence</b></DictionaryLink>, <DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink>, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> 
 
 
 
@@ -103,7 +103,7 @@ If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></Gloss
 
 
 
-The corresponding output function is <ClLinks  term={"write-char"}><b>write-char</b></ClLinks>. 
+The corresponding output function is <DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink>. 
 
 
 

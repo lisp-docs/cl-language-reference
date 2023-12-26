@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> *symbol → value* 
+<DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> *symbol → value* 
 
 
 
@@ -71,7 +71,7 @@ a → 3
 
 
 
-<ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks>, <ClLinks  term={"set"}><b>set</b></ClLinks>, <ClLinks  term={"setq"}><b>setq</b></ClLinks> 
+<DictionaryLink  term={"makunbound"}><b>makunbound</b></DictionaryLink>, <DictionaryLink  term={"set"}><b>set</b></DictionaryLink>, <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> 
 
 
 
@@ -79,11 +79,11 @@ a → 3
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-Should signal <ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"unbound"}><i>unbound</i></ClLinks> and an attempt is made to <ClLinks  term={"read"}><i>read</i></ClLinks> its <ClLinks  term={"value"}><i>value</i></ClLinks>. (No such error is signaled on an attempt to <ClLinks  term={"write"}><i>write</i></ClLinks> its <ClLinks  term={"value"}><i>value</i></ClLinks>.) 
+Should signal <DictionaryLink  term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"unbound"}><i>unbound</i></ClLinks> and an attempt is made to <ClLinks  term={"read"}><i>read</i></ClLinks> its <ClLinks  term={"value"}><i>value</i></ClLinks>. (No such error is signaled on an attempt to <ClLinks  term={"write"}><i>write</i></ClLinks> its <ClLinks  term={"value"}><i>value</i></ClLinks>.) 
 
 
 
@@ -91,7 +91,7 @@ Should signal <ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLin
 
 
 
-<ClLinks  term={"boundp"}><b>boundp</b></ClLinks>, <ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks>, <ClLinks  term={"set"}><b>set</b></ClLinks>, <ClLinks  term={"setq"}><b>setq</b></ClLinks> 
+<DictionaryLink  term={"boundp"}><b>boundp</b></DictionaryLink>, <DictionaryLink  term={"makunbound"}><b>makunbound</b></DictionaryLink>, <DictionaryLink  term={"set"}><b>set</b></DictionaryLink>, <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> 
 
 
 
@@ -99,7 +99,7 @@ Should signal <ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLin
 
 
 
-<ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> can be used to get the value of a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> cannot <ClLinks  term={"access"}><i>access</i></ClLinks> the value of a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm>. 
+<DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> can be used to get the value of a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. <DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> cannot <ClLinks  term={"access"}><i>access</i></ClLinks> the value of a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm>. 
 
 
 

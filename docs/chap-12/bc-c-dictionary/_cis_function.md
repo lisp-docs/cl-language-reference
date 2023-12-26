@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"cis"}><b>cis</b></ClLinks> *radians → number* 
+<DictionaryLink  term={"cis"}><b>cis</b></DictionaryLink> *radians → number* 
 
 
 

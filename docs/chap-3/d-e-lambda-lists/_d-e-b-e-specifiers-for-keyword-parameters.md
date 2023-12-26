@@ -30,11 +30,11 @@ means exactly the same as
 
 
 
-The keyword parameter specifiers are, like all parameter specifiers, effectively processed from left to right. For each keyword parameter specifier, if there is an argument pair whose name matches that specifier’s name (that is, the names are <ClLinks  term={"eq"}><b>eq</b></ClLinks>), then the parameter variable for that specifier is bound to the second item (the value) of that argument pair. If more than one such argument pair 
+The keyword parameter specifiers are, like all parameter specifiers, effectively processed from left to right. For each keyword parameter specifier, if there is an argument pair whose name matches that specifier’s name (that is, the names are <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>), then the parameter variable for that specifier is bound to the second item (the value) of that argument pair. If more than one such argument pair 
 
 
 
-matches, the leftmost argument pair is used. If no such argument pair exists, then the *init-form* for that specifier is evaluated and the parameter variable is bound to that value (or to <ClLinks  term={"nil"}><b>nil</b></ClLinks> if no *init-form* was specified). *supplied-p-parameter* is treated as for **&amp;optional** parameters: it is bound to <ClLinks  term={"true"}><i>true</i></ClLinks> if there was a matching argument pair, and to <ClLinks  term={"false"}><i>false</i></ClLinks> otherwise. 
+matches, the leftmost argument pair is used. If no such argument pair exists, then the *init-form* for that specifier is evaluated and the parameter variable is bound to that value (or to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if no *init-form* was specified). *supplied-p-parameter* is treated as for **&amp;optional** parameters: it is bound to <ClLinks  term={"true"}><i>true</i></ClLinks> if there was a matching argument pair, and to <ClLinks  term={"false"}><i>false</i></ClLinks> otherwise. 
 
 
 

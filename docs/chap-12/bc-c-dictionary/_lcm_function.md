@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"lcm"}><b>lcm</b></ClLinks> &amp;rest *integers → least-common-multiple* 
+<DictionaryLink  term={"lcm"}><b>lcm</b></DictionaryLink> &amp;rest *integers → least-common-multiple* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"lcm"}><b>lcm</b></ClLinks> returns the least common multiple of the *integers*. 
+<DictionaryLink  term={"lcm"}><b>lcm</b></DictionaryLink> returns the least common multiple of the *integers*. 
 
 
 
@@ -87,7 +87,7 @@ For three or more arguments,
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any argument is not an *integer* . 
+Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if any argument is not an *integer* . 
 
 
 
@@ -95,7 +95,7 @@ Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any a
 
 
 
-<ClLinks  term={"gcd"}><b>gcd</b></ClLinks> 
+<DictionaryLink  term={"gcd"}><b>gcd</b></DictionaryLink> 
 
 
 

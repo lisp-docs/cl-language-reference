@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"keyword"}><b>keyword</b></ClLinks>, <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"keyword"}><b>keyword</b></DictionaryLink>, <DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"keyword"}><b>keyword</b></ClLinks> includes all *symbols interned* the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"keyword"}><b>keyword</b></DictionaryLink> includes all *symbols interned* the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"keyword"}><b>
 
 
 
-<ClLinks  term={"keywordp"}><b>keywordp</b></ClLinks> 
+<DictionaryLink  term={"keywordp"}><b>keywordp</b></DictionaryLink> 
 
 
 

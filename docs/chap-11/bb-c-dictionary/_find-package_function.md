@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"find-package"}><b>find-package</b></ClLinks> *name → package* 
+<DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> *name → package* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package object* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package object* or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-If <ClLinks  term={"name"}><i>name</i></ClLinks> is a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> , <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> locates and returns the <ClLinks  term={"package"}><i>package</i></ClLinks> whose name or nickname is <ClLinks  term={"name"}><i>name</i></ClLinks>. This search is case sensitive. If there is no such <ClLinks  term={"package"}><i>package</i></ClLinks>, <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If <ClLinks  term={"name"}><i>name</i></ClLinks> is a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> , <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> locates and returns the <ClLinks  term={"package"}><i>package</i></ClLinks> whose name or nickname is <ClLinks  term={"name"}><i>name</i></ClLinks>. This search is case sensitive. If there is no such <ClLinks  term={"package"}><i>package</i></ClLinks>, <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -48,7 +48,7 @@ The set of <ClLinks  term={"package"}><i>packages</i></ClLinks> created by the <
 
 
 
-<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks>, <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>, <ClLinks  term={"make-package"}><b>make-package</b></ClLinks>, <ClLinks  term={"rename-package"}><b>rename-package</b></ClLinks> 
+<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink>, <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink>, <DictionaryLink  term={"make-package"}><b>make-package</b></DictionaryLink>, <DictionaryLink  term={"rename-package"}><b>rename-package</b></DictionaryLink> 
 
 
 
@@ -56,7 +56,7 @@ The set of <ClLinks  term={"package"}><i>packages</i></ClLinks> created by the <
 
 
 
-<ClLinks  term={"make-package"}><b>make-package</b></ClLinks> 
+<DictionaryLink  term={"make-package"}><b>make-package</b></DictionaryLink> 
 
 
 

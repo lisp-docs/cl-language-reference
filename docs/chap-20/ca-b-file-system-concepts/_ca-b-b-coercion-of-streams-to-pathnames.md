@@ -10,7 +10,7 @@ Normally, when a <GlossaryTerm styled={true} term={"stream associated with a fil
 
 
 
-Some functions, such as <ClLinks  term={"truename"}><b>truename</b></ClLinks> and <ClLinks  term={"delete-file"}><b>delete-file</b></ClLinks>, coerce <ClLinks  term={"stream"}><i>streams</i></ClLinks> to <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> in a different way that involves referring to the actual <ClLinks  term={"file"}><i>file</i></ClLinks> that is open, which might or might not be the file whose name was opened originally. Such special situations are always notated specifically and are not the default. 
+Some functions, such as <DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> and <DictionaryLink  term={"delete-file"}><b>delete-file</b></DictionaryLink>, coerce <ClLinks  term={"stream"}><i>streams</i></ClLinks> to <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> in a different way that involves referring to the actual <ClLinks  term={"file"}><i>file</i></ClLinks> that is open, which might or might not be the file whose name was opened originally. Such special situations are always notated specifically and are not the default. 
 
 
 

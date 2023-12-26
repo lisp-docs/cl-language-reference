@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"symbolp"}><b>symbolp</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink  term={"symbolp"}><b>symbolp</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -43,7 +43,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"keywordp"}><b>keywordp</b></ClLinks>, <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>, <ClLinks  term={"typep"}><b>typep</b></ClLinks> 
+<DictionaryLink  term={"keywordp"}><b>keywordp</b></DictionaryLink>, <DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink>, <DictionaryLink  term={"typep"}><b>typep</b></DictionaryLink> 
 
 
 

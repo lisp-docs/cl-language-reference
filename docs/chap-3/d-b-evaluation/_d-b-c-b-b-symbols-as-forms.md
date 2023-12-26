@@ -6,7 +6,7 @@ If a <ClLinks  term={"form"}><i>form</i></ClLinks> is a <ClLinks  term={"symbol"
 
 
 
-The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> names a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> if there is a <ClLinks  term={"binding"}><i>binding</i></ClLinks> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> as a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> in the current <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> (see <ClLinks  term={"define-symbol-macro"}><b>define-symbol-macro</b></ClLinks> and <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>). If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm>, its expansion function is obtained. The expansion function is a function of two arguments, and is invoked by calling the <GlossaryTerm styled={true} term={"macroexpand hook"}><i>macroexpand hook</i></GlossaryTerm> with the expansion function as its 
+The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> names a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> if there is a <ClLinks  term={"binding"}><i>binding</i></ClLinks> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> as a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> in the current <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> (see <DictionaryLink  term={"define-symbol-macro"}><b>define-symbol-macro</b></DictionaryLink> and <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>). If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm>, its expansion function is obtained. The expansion function is a function of two arguments, and is invoked by calling the <GlossaryTerm styled={true} term={"macroexpand hook"}><i>macroexpand hook</i></GlossaryTerm> with the expansion function as its 
 
 
 
@@ -26,11 +26,11 @@ and <GlossaryTerm styled={true} term={"constant variable"}><i>constant variables
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLinks> should be signaled if an <GlossaryTerm styled={true} term={"unbound variable"}><i>unbound variable</i></GlossaryTerm> is referenced. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink> should be signaled if an <GlossaryTerm styled={true} term={"unbound variable"}><i>unbound variable</i></GlossaryTerm> is referenced. 
 
 
 
-<GlossaryTerm styled={true} term={"non-constant variable"}><i>Non-constant variables</i></GlossaryTerm> can be *assigned* by using <ClLinks  term={"setq"}><b>setq</b></ClLinks> or <ClLinks  term={"bound"}><i>bound</i></ClLinks> <sub>3</sub> by using <ClLinks  term={"let"}><b>let</b></ClLinks>. Figure 3–1 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> that are applicable to assigning, binding, and defining <ClLinks  term={"variable"}><i>variables</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"non-constant variable"}><i>Non-constant variables</i></GlossaryTerm> can be *assigned* by using <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> or <ClLinks  term={"bound"}><i>bound</i></ClLinks> <sub>3</sub> by using <DictionaryLink  term={"let"}><b>let</b></DictionaryLink>. Figure 3–1 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> that are applicable to assigning, binding, and defining <ClLinks  term={"variable"}><i>variables</i></ClLinks>. 
 
 
 

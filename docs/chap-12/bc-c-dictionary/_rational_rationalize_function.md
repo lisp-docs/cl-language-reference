@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"rational"}><b>rational</b></ClLinks> *number → rational* 
+<DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink> *number → rational* 
 
 
 
-<ClLinks  term={"rationalize"}><b>rationalize</b></ClLinks> *number → rational* 
+<DictionaryLink  term={"rationalize"}><b>rationalize</b></DictionaryLink> *number → rational* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"rational"}><b>rational</b></ClLinks> and <ClLinks  term={"rationalize"}><b>rationalize</b></ClLinks> convert *reals* to <ClLinks  term={"rational"}><i>rationals</i></ClLinks>. 
+<DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink> and <DictionaryLink  term={"rationalize"}><b>rationalize</b></DictionaryLink> convert *reals* to <ClLinks  term={"rational"}><i>rationals</i></ClLinks>. 
 
 
 
@@ -38,15 +38,15 @@ If <ClLinks  term={"number"}><i>number</i></ClLinks> is already <ClLinks  term={
 
 
 
-If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks>, <ClLinks  term={"rational"}><b>rational</b></ClLinks> returns a <ClLinks  term={"rational"}><i>rational</i></ClLinks> that is mathematically equal in value to the <ClLinks  term={"float"}><i>float</i></ClLinks>. <ClLinks  term={"rationalize"}><b>rationalize</b></ClLinks> returns a <ClLinks  term={"rational"}><i>rational</i></ClLinks> that approximates the <ClLinks  term={"float"}><i>float</i></ClLinks> to the accuracy of the underlying floating-point representation. 
+If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks>, <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink> returns a <ClLinks  term={"rational"}><i>rational</i></ClLinks> that is mathematically equal in value to the <ClLinks  term={"float"}><i>float</i></ClLinks>. <DictionaryLink  term={"rationalize"}><b>rationalize</b></DictionaryLink> returns a <ClLinks  term={"rational"}><i>rational</i></ClLinks> that approximates the <ClLinks  term={"float"}><i>float</i></ClLinks> to the accuracy of the underlying floating-point representation. 
 
 
 
-<ClLinks  term={"rational"}><b>rational</b></ClLinks> assumes that the <ClLinks  term={"float"}><i>float</i></ClLinks> is completely accurate. 
+<DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink> assumes that the <ClLinks  term={"float"}><i>float</i></ClLinks> is completely accurate. 
 
 
 
-<ClLinks  term={"rationalize"}><b>rationalize</b></ClLinks> assumes that the <ClLinks  term={"float"}><i>float</i></ClLinks> is accurate only to the precision of the floating-point representation. 
+<DictionaryLink  term={"rationalize"}><b>rationalize</b></DictionaryLink> assumes that the <ClLinks  term={"float"}><i>float</i></ClLinks> is accurate only to the precision of the floating-point representation. 
 
 
 
@@ -69,7 +69,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a *real*. Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a *real*. Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
 
 
 

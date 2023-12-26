@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"parse-namestring"}><b>parse-namestring</b></ClLinks> *thing* &amp;optional *host default-pathname* &amp;key *start end junk-allowed → pathname, position* 
+<DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink> *thing* &amp;optional *host default-pathname* &amp;key *start end junk-allowed → pathname, position* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*host*—a <GlossaryTerm styled={true} term={"valid pathname host"}><i>valid pathname host</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*host*—a <GlossaryTerm styled={true} term={"valid pathname host"}><i>valid pathname host</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>. 
+<DictionaryLink  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-<ClLinks  term={"parse-namestring"}><b>parse-namestring</b></ClLinks> 
+<DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink> 
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *thing*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *thing*. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -82,7 +82,7 @@ If *thing* is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, the *host
 
 
 
-Otherwise (if *thing* is a <ClLinks  term={"string"}><i>string</i></ClLinks>), <ClLinks  term={"parse-namestring"}><b>parse-namestring</b></ClLinks> parses the name of a <ClLinks  term={"file"}><i>file</i></ClLinks> within the substring of *thing* bounded by *start* and *end*. 
+Otherwise (if *thing* is a <ClLinks  term={"string"}><i>string</i></ClLinks>), <DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink> parses the name of a <ClLinks  term={"file"}><i>file</i></ClLinks> within the substring of *thing* bounded by *start* and *end*. 
 
 
 
@@ -94,11 +94,11 @@ If *thing* is a <ClLinks  term={"string"}><i>string</i></ClLinks> then the subst
 
 
 
-*•* If *host* is <ClLinks  term={"nil"}><b>nil</b></ClLinks> and *thing* is a syntactically valid *logical pathname namestring* containing an explicit host, then it is parsed as a *logical pathname namestring*. 
+*•* If *host* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> and *thing* is a syntactically valid *logical pathname namestring* containing an explicit host, then it is parsed as a *logical pathname namestring*. 
 
 
 
-*•* If *host* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, *default-pathname* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, and *thing* is a syntactically valid *logical pathname namestring* without an explicit host, then it is parsed as a *logical pathname namestring* on the host that is the host component of *default-pathname*. 
+*•* If *host* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, *default-pathname* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, and *thing* is a syntactically valid *logical pathname namestring* without an explicit host, then it is parsed as a *logical pathname namestring* on the host that is the host component of *default-pathname*. 
 
 
 
@@ -114,7 +114,7 @@ If the host portion of the namestring and *host* are both present and do not mat
 
 
 
-If *junk-allowed* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> parsed or, if no syntactically correct <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> was seen, <ClLinks  term={"nil"}><b>nil</b></ClLinks>. If *junk-allowed* is <ClLinks  term={"false"}><i>false</i></ClLinks>, then the entire substring is scanned, and the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> parsed. 
+If *junk-allowed* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> parsed or, if no syntactically correct <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> was seen, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. If *junk-allowed* is <ClLinks  term={"false"}><i>false</i></ClLinks>, then the entire substring is scanned, and the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> parsed. 
 
 
 
@@ -134,11 +134,11 @@ parse, or the index beyond the substring if the parse terminated at the end of t
 
 
 
-Parsing a *null string* always succeeds, producing a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> with all components (except the host) equal to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+Parsing a *null string* always succeeds, producing a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> with all components (except the host) equal to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-If *thing* contains an explicit host name and no explicit device name, then it is *implementation defined* whether <ClLinks  term={"parse-namestring"}><b>parse-namestring</b></ClLinks> will supply the standard default device for that host as the device component of the resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+If *thing* contains an explicit host name and no explicit device name, then it is *implementation defined* whether <DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink> will supply the standard default device for that host as the device component of the resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
@@ -164,15 +164,15 @@ If *thing* contains an explicit host name and no explicit device name, then it i
 
 
 
-If *junk-allowed* is <ClLinks  term={"false"}><i>false</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"parse-error"}><b>parse-error</b></ClLinks> is signaled if *thing* does not consist entirely of the representation of a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, possibly surrounded on either side by <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> characters if that is appropriate to the cultural conventions of the implementation. 
+If *junk-allowed* is <ClLinks  term={"false"}><i>false</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"parse-error"}><b>parse-error</b></DictionaryLink> is signaled if *thing* does not consist entirely of the representation of a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, possibly surrounded on either side by <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> characters if that is appropriate to the cultural conventions of the implementation. 
 
 
 
-If *host* is supplied and not <ClLinks  term={"nil"}><b>nil</b></ClLinks>, and *thing* contains a manifest host name, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled if the hosts do not match. 
+If *host* is supplied and not <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, and *thing* contains a manifest host name, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled if the hosts do not match. 
 
 
 
-If *thing* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring and if the host portion of the namestring and *host* are both present and do not match, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If *thing* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring and if the host portion of the namestring and *host* are both present and do not match, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
@@ -180,7 +180,7 @@ If *thing* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical
 
 
 
-<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.2.2.2.3 (:UNSPE CIFIC as a Component Value), Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.2.2.2.3 (:UNSPE CIFIC as a Component Value), Section 19.1.2 (Pathnames as Filenames) 
 
 
 
@@ -196,7 +196,7 @@ If *thing* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical
 
 
 
-<ClLinks  term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks> 
+<DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> 
 
 
 

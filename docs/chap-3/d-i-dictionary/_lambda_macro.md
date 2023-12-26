@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"lambda"}><b>lambda</b></ClLinks> *lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → function 
+<DictionaryLink  term={"lambda"}><b>lambda</b></DictionaryLink> *lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → function 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-Provides a shorthand notation for a <ClLinks  term={"function"}><b>function</b></ClLinks> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> involving a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> such that: 
+Provides a shorthand notation for a <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> involving a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> such that: 
 
 
 
@@ -66,7 +66,7 @@ Provides a shorthand notation for a <ClLinks  term={"function"}><b>function</b><
 
 
 
-<ClLinks  term={"lambda"}><b>lambda</b></ClLinks> (symbol) 
+<DictionaryLink  term={"lambda"}><b>lambda</b></DictionaryLink> (symbol) 
 
 
 

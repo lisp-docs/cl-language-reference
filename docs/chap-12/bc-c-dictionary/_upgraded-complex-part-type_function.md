@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks> *typespec* &amp;optional *environment → upgraded-typespec* 
+<DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></DictionaryLink> *typespec* &amp;optional *environment → upgraded-typespec* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the and current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the and current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks> returns the part type of the most specialized <ClLinks  term={"complex"}><i>complex</i></ClLinks> number representation that can hold parts of *type typespec*. 
+<DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></DictionaryLink> returns the part type of the most specialized <ClLinks  term={"complex"}><i>complex</i></ClLinks> number representation that can hold parts of *type typespec*. 
 
 
 
@@ -38,7 +38,7 @@ The *typespec* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of (and 
 
 
 
-The purpose of <ClLinks  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks> is to reveal how an implementation does its *upgrading*. 
+The purpose of <DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></DictionaryLink> is to reveal how an implementation does its *upgrading*. 
 
 
 
@@ -46,7 +46,7 @@ The purpose of <ClLinks  term={"upgraded-complex-part-type"}><b>upgraded-complex
 
 
 
-<ClLinks  term={"complex"}><b>complex</b></ClLinks> (<ClLinks  term={"function"}><i>function</i></ClLinks> and <ClLinks  term={"type"}><i>type</i></ClLinks>) 
+<DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> (<ClLinks  term={"function"}><i>function</i></ClLinks> and <ClLinks  term={"type"}><i>type</i></ClLinks>) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"gentemp"}><b>gentemp</b></ClLinks> &amp;optional *prefix package → new-symbol* 
+<DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> &amp;optional *prefix package → new-symbol* 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks  term={"gentemp"}><b>gentemp</b></ClLinks> creates and returns a *fresh symbol*, <GlossaryTerm styled={true} term={"interned"}><i>interned</i></GlossaryTerm> in the indicated <ClLinks  term={"package"}><i>package</i></ClLinks>. The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is guaranteed to be one that was not previously <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. It is neither <ClLinks  term={"bound"}><i>bound</i></ClLinks> nor <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>, and has a *null property list*. 
+<DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> creates and returns a *fresh symbol*, <GlossaryTerm styled={true} term={"interned"}><i>interned</i></GlossaryTerm> in the indicated <ClLinks  term={"package"}><i>package</i></ClLinks>. The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is guaranteed to be one that was not previously <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. It is neither <ClLinks  term={"bound"}><i>bound</i></ClLinks> nor <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>, and has a *null property list*. 
 
 
 
-The <ClLinks  term={"name"}><i>name</i></ClLinks> of the *new-symbol* is the concatenation of the *prefix* and a suffix, which is taken from an internal counter used only by <ClLinks  term={"gentemp"}><b>gentemp</b></ClLinks>. (If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by that name is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, the counter is incremented as many times as is necessary to produce a <ClLinks  term={"name"}><i>name</i></ClLinks> that is not already the <ClLinks  term={"name"}><i>name</i></ClLinks> of a *symbol accessible* in <ClLinks  term={"package"}><i>package</i></ClLinks>.) 
+The <ClLinks  term={"name"}><i>name</i></ClLinks> of the *new-symbol* is the concatenation of the *prefix* and a suffix, which is taken from an internal counter used only by <DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink>. (If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by that name is already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, the counter is incremented as many times as is necessary to produce a <ClLinks  term={"name"}><i>name</i></ClLinks> that is not already the <ClLinks  term={"name"}><i>name</i></ClLinks> of a *symbol accessible* in <ClLinks  term={"package"}><i>package</i></ClLinks>.) 
 
 
 
@@ -85,7 +85,7 @@ The current state of its internal counter, and the current state of the <ClLinks
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *prefix* is not a <ClLinks  term={"string"}><i>string</i></ClLinks>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *prefix* is not a <ClLinks  term={"string"}><i>string</i></ClLinks>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"package"}><i>package</i></ClLinks> is not a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . 
 
 
 
@@ -93,7 +93,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"gensym"}><b>gensym</b></ClLinks> 
+<DictionaryLink  term={"gensym"}><b>gensym</b></DictionaryLink> 
 
 
 
@@ -101,7 +101,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-The function <ClLinks  term={"gentemp"}><b>gentemp</b></ClLinks> is deprecated. 
+The function <DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> is deprecated. 
 
 
 
@@ -109,11 +109,11 @@ If <ClLinks  term={"package"}><i>package</i></ClLinks> is the KEYWORD <ClLinks  
 
 
 
-The <ClLinks  term={"gentemp"}><b>gentemp</b></ClLinks> internal counter is independent of <ClLinks  term={"gensym-counter"}><b>\*gensym-counter\*</b></ClLinks>, the counter used by <ClLinks  term={"gensym"}><b>gensym</b></ClLinks>. There is no provision for accessing the <ClLinks  term={"gentemp"}><b>gentemp</b></ClLinks> internal counter. 
+The <DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> internal counter is independent of <DictionaryLink  term={"gensym-counter"}><b>\*gensym-counter\*</b></DictionaryLink>, the counter used by <DictionaryLink  term={"gensym"}><b>gensym</b></DictionaryLink>. There is no provision for accessing the <DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> internal counter. 
 
 
 
-Just because <ClLinks  term={"gentemp"}><b>gentemp</b></ClLinks> creates a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which did not previously exist does not mean that such a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> might not be seen in the future (*e.g.*, in a data file—perhaps even created by the same program in another session). As such, this symbol is not truly unique in the same sense as a <ClLinks  term={"gensym"}><i>gensym</i></ClLinks> would be. In particular, programs which do automatic code generation should be careful not to attach global attributes to such generated <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> (*e.g.*, <ClLinks  term={"special"}><b>special</b></ClLinks> <ClLinks  term={"declaration"}><i>declarations</i></ClLinks>) and then write them into a file because such global attributes might, in a different session, end up applying to other <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that were automatically generated on another day for some other purpose. 
+Just because <DictionaryLink  term={"gentemp"}><b>gentemp</b></DictionaryLink> creates a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which did not previously exist does not mean that such a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> might not be seen in the future (*e.g.*, in a data file—perhaps even created by the same program in another session). As such, this symbol is not truly unique in the same sense as a <ClLinks  term={"gensym"}><i>gensym</i></ClLinks> would be. In particular, programs which do automatic code generation should be careful not to attach global attributes to such generated <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> (*e.g.*, <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declarations</i></ClLinks>) and then write them into a file because such global attributes might, in a different session, end up applying to other <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that were automatically generated on another day for some other purpose. 
 
 
 

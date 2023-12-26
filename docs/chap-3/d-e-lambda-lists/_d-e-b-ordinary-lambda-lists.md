@@ -38,7 +38,7 @@ An <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda 
 
 
 
-Each <ClLinks  term={"element"}><i>element</i></ClLinks> of a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> is either a parameter specifier or a <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm>. Implementations are free to provide additional <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm>. For a list of all <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> used by the implementation, see <ClLinks  term={"lambda-list-keywords"}><b>lambda-list-keywords</b></ClLinks>. 
+Each <ClLinks  term={"element"}><i>element</i></ClLinks> of a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> is either a parameter specifier or a <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm>. Implementations are free to provide additional <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm>. For a list of all <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> used by the implementation, see <DictionaryLink  term={"lambda-list-keywords"}><b>lambda-list-keywords</b></DictionaryLink>. 
 
 
 

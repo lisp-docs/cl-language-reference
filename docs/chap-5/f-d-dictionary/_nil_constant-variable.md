@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"nil"}><b>nil</b></ClLinks> represents both <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (and <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>) <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> and the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
+<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> represents both <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (and <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>) <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> and the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@ nil → NIL
 
 
 
-<ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 

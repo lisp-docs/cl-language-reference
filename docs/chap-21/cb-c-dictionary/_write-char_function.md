@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"write-char"}><b>write-char</b></ClLinks> <ClLinks  term={"character"}><i>character</i></ClLinks> &amp;optional *output-stream → character* 
+<DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> <ClLinks  term={"character"}><i>character</i></ClLinks> &amp;optional *output-stream → character* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"write-char"}><b>write-char</b></ClLinks> outputs <ClLinks  term={"character"}><i>character</i></ClLinks> to *output-stream*. 
+<DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> outputs <ClLinks  term={"character"}><i>character</i></ClLinks> to *output-stream*. 
 
 
 
@@ -53,7 +53,7 @@ The *output-stream* is modified.
 
 
 
-**\*standard-output\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+**\*standard-output\***, <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
 
 
 
@@ -61,7 +61,7 @@ The *output-stream* is modified.
 
 
 
-<ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks>, <ClLinks  term={"write-sequence"}><b>write-sequence</b></ClLinks> 
+<DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink>, <DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink>, <DictionaryLink  term={"write-sequence"}><b>write-sequence</b></DictionaryLink> 
 
 
 
@@ -77,7 +77,7 @@ The *output-stream* is modified.
 
 
 
-<ClLinks  term={"read-line"}><b>read-line</b></ClLinks> 
+<DictionaryLink  term={"read-line"}><b>read-line</b></DictionaryLink> 
 
 
 

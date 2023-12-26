@@ -54,15 +54,15 @@ Specifies that the <ClLinks  term={"function"}><i>functions</i></ClLinks> named 
 
 
 
-If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks>), then the declaration applies to that local definition and not to the global function definition. <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations never apply to variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> (see type). 
+If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> or <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink>), then the declaration applies to that local definition and not to the global function definition. <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink> declarations never apply to variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> (see type). 
 
 
 
-The lexically apparent bindings of *function-names* must not be <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions. (This is because <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declares the functional definition of each <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> to be of a particular subtype of <ClLinks  term={"function"}><b>function</b></ClLinks>, and <ClLinks  term={"macro"}><i>macros</i></ClLinks> do not denote <ClLinks  term={"function"}><i>functions</i></ClLinks>.) 
+The lexically apparent bindings of *function-names* must not be <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions. (This is because <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink> declares the functional definition of each <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> to be of a particular subtype of <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, and <ClLinks  term={"macro"}><i>macros</i></ClLinks> do not denote <ClLinks  term={"function"}><i>functions</i></ClLinks>.) 
 
 
 
-<ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations of functions that appear before the body of a <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> that defines that function are <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. Such declarations in other contexts are <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm>. 
+<DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink> declarations of functions that appear before the body of a <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> or <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> that defines that function are <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. Such declarations in other contexts are <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm>. 
 
 
 
@@ -70,7 +70,7 @@ The lexically apparent bindings of *function-names* must not be <ClLinks  term={
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> 
+<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink>, <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> 
 
 
 

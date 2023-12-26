@@ -18,7 +18,7 @@ The upper exclusive bound on the <GlossaryTerm styled={true} term={"array total 
 
 
 
-The actual limit on the <GlossaryTerm styled={true} term={"array total size"}><i>array total size</i></GlossaryTerm> imposed by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might vary according the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>; in this case, the value of <ClLinks  term={"array-total-size-limit"}><b>array-total-size-limit</b></ClLinks> will be the smallest of these possible limits. 
+The actual limit on the <GlossaryTerm styled={true} term={"array total size"}><i>array total size</i></GlossaryTerm> imposed by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might vary according the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>; in this case, the value of <DictionaryLink  term={"array-total-size-limit"}><b>array-total-size-limit</b></DictionaryLink> will be the smallest of these possible limits. 
 
 
 
@@ -26,7 +26,7 @@ The actual limit on the <GlossaryTerm styled={true} term={"array total size"}><i
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"array-element-type"}><b>array-element-type</b></ClLinks> 
+<DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink>, <DictionaryLink  term={"array-element-type"}><b>array-element-type</b></DictionaryLink> 
 
 
 

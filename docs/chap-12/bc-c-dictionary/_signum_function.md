@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"signum"}><b>signum</b></ClLinks> *number → signed-prototype* 
+<DictionaryLink  term={"signum"}><b>signum</b></DictionaryLink> *number → signed-prototype* 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-<ClLinks  term={"signum"}><b>signum</b></ClLinks> determines a numerical value that indicates whether <ClLinks  term={"number"}><i>number</i></ClLinks> is negative, zero, or positive. 
+<DictionaryLink  term={"signum"}><b>signum</b></DictionaryLink> determines a numerical value that indicates whether <ClLinks  term={"number"}><i>number</i></ClLinks> is negative, zero, or positive. 
 
 
 
-For a <ClLinks  term={"rational"}><i>rational</i></ClLinks>, <ClLinks  term={"signum"}><b>signum</b></ClLinks> returns one of -1, 0, or 1 according to whether <ClLinks  term={"number"}><i>number</i></ClLinks> is negative, zero, or positive. For a <ClLinks  term={"float"}><i>float</i></ClLinks>, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same format whose value is minus one, zero, or one. For a <ClLinks  term={"complex"}><i>complex</i></ClLinks> number z, (signum *z*) is a complex number of the same phase but with unit magnitude, unless z is a complex zero, in which case the result is z. 
+For a <ClLinks  term={"rational"}><i>rational</i></ClLinks>, <DictionaryLink  term={"signum"}><b>signum</b></DictionaryLink> returns one of -1, 0, or 1 according to whether <ClLinks  term={"number"}><i>number</i></ClLinks> is negative, zero, or positive. For a <ClLinks  term={"float"}><i>float</i></ClLinks>, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same format whose value is minus one, zero, or one. For a <ClLinks  term={"complex"}><i>complex</i></ClLinks> number z, (signum *z*) is a complex number of the same phase but with unit magnitude, unless z is a complex zero, in which case the result is z. 
 
 
 
-For *rational arguments*, <ClLinks  term={"signum"}><b>signum</b></ClLinks> is a rational function, but it may be irrational for *complex arguments*. 
+For *rational arguments*, <DictionaryLink  term={"signum"}><b>signum</b></DictionaryLink> is a rational function, but it may be irrational for *complex arguments*. 
 
 
 

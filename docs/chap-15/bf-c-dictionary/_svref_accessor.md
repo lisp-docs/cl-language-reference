@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"svref"}><b>svref</b></ClLinks> *simple-vector index → element* 
+<DictionaryLink  term={"svref"}><b>svref</b></DictionaryLink> *simple-vector index → element* 
 
 
 
@@ -63,7 +63,7 @@ v → #(1 NEWCOMER SIRENS)
 
 
 
-<ClLinks  term={"aref"}><b>aref</b></ClLinks>, <ClLinks  term={"sbit"}><b>sbit</b></ClLinks>, <ClLinks  term={"schar"}><b>schar</b></ClLinks>, <ClLinks  term={"vector"}><b>vector</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
+<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink>, <DictionaryLink  term={"sbit"}><b>sbit</b></DictionaryLink>, <DictionaryLink  term={"schar"}><b>schar</b></DictionaryLink>, <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, Section 3.2.1 (Compiler Terminology) 
 
 
 
@@ -71,7 +71,7 @@ v → #(1 NEWCOMER SIRENS)
 
 
 
-<ClLinks  term={"svref"}><b>svref</b></ClLinks> is identical to <ClLinks  term={"aref"}><b>aref</b></ClLinks> except that it requires its first argument to be a <GlossaryTerm styled={true} term={"simple vector"}><i>simple vector</i></GlossaryTerm> . (svref *v i*) *≡* (aref (the simple-vector *v*) *i*) 
+<DictionaryLink  term={"svref"}><b>svref</b></DictionaryLink> is identical to <DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> except that it requires its first argument to be a <GlossaryTerm styled={true} term={"simple vector"}><i>simple vector</i></GlossaryTerm> . (svref *v i*) *≡* (aref (the simple-vector *v*) *i*) 
 
 
 

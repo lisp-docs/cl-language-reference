@@ -2,7 +2,7 @@
 
 
 
-The function supplied as the :test argument to <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> specifies the ‘equivalence test’ for the <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> it creates. 
+The function supplied as the :test argument to <DictionaryLink  term={"make-hash-table"}><b>make-hash-table</b></DictionaryLink> specifies the ‘equivalence test’ for the <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> it creates. 
 
 
 

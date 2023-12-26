@@ -6,15 +6,15 @@
 
 
 
-<ClLinks  term={"case"}><b>case</b></ClLinks> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
+<DictionaryLink  term={"case"}><b>case</b></DictionaryLink> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
 
 
 
-<ClLinks  term={"ccase"}><b>ccase</b></ClLinks> *keyplace \{↓normal-clause\}*\* → \{result\}\* 
+<DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> *keyplace \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
-<ClLinks  term={"ecase"}><b>ecase</b></ClLinks> *keyform \{↓normal-clause\}*\* → \{result\}\* 
+<DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink> *keyform \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<ClLinks  term={"key"}><i>keys</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks>. In the case of <ClLinks  term={"case"}><b>case</b></ClLinks>, the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> and **otherwise** may not be used as the *keys designator* . To refer to these <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> by themselves as <ClLinks  term={"key"}><i>keys</i></ClLinks>, the designators (t) and (otherwise), respectively, must be used instead. 
+<ClLinks  term={"key"}><i>keys</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks>. In the case of <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>, the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> and **otherwise** may not be used as the *keys designator* . To refer to these <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> by themselves as <ClLinks  term={"key"}><i>keys</i></ClLinks>, the designators (t) and (otherwise), respectively, must be used instead. 
 
 
 
@@ -70,11 +70,11 @@ The *keyform* or *keyplace* is *evaluated* to produce the *test-key*.
 
 
 
-Each of the *normal-clauses* is then considered in turn. If the *test-key* is the <ClLinks  term={"same"}><i>same</i></ClLinks> as any <ClLinks  term={"key"}><i>key</i></ClLinks> for that *clause*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <ClLinks  term={"case"}><b>case</b></ClLinks>, <ClLinks  term={"ccase"}><b>ccase</b></ClLinks>, or <ClLinks  term={"ecase"}><b>ecase</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+Each of the *normal-clauses* is then considered in turn. If the *test-key* is the <ClLinks  term={"same"}><i>same</i></ClLinks> as any <ClLinks  term={"key"}><i>key</i></ClLinks> for that *clause*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>, <DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink>, or <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-These <ClLinks  term={"macro"}><i>macros</i></ClLinks> differ only in their *behavior* when no *normal-clause* matches; specifically: <ClLinks  term={"case"}><b>case</b></ClLinks> 
+These <ClLinks  term={"macro"}><i>macros</i></ClLinks> differ only in their *behavior* when no *normal-clause* matches; specifically: <DictionaryLink  term={"case"}><b>case</b></DictionaryLink> 
 
 
 
@@ -94,23 +94,23 @@ If no *normal-clause* matches, and there is an *otherwise-clause*, then that *ot
 
 
 
-automatically matches; the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <ClLinks  term={"case"}><b>case</b></ClLinks>. 
+automatically matches; the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>. 
 
 
 
-If there is no *otherwise-clause*, <ClLinks  term={"case"}><b>case</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If there is no *otherwise-clause*, <DictionaryLink  term={"case"}><b>case</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"ccase"}><b>ccase</b></ClLinks> 
+<DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> 
 
 
 
-If no *normal-clause* matches, a *correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (member *key1 key2* ...). The **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> can be used to correct the error. 
+If no *normal-clause* matches, a *correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (member *key1 key2* ...). The **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> can be used to correct the error. 
 
 
 
-If the **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> is invoked, its <ClLinks  term={"argument"}><i>argument</i></ClLinks> becomes the new *test-key*, and is stored in *keyplace* as if by (setf *keyplace test-key*). Then <ClLinks  term={"ccase"}><b>ccase</b></ClLinks> starts over, considering each *clause* anew. 
+If the **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> is invoked, its <ClLinks  term={"argument"}><i>argument</i></ClLinks> becomes the new *test-key*, and is stored in *keyplace* as if by (setf *keyplace test-key*). Then <DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> starts over, considering each *clause* anew. 
 
 
 
@@ -118,15 +118,15 @@ The subforms of *keyplace* might be evaluated again if none of the cases holds.
 
 
 
-<ClLinks  term={"ecase"}><b>ecase</b></ClLinks> 
+<DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink> 
 
 
 
-If no *normal-clause* matches, a *non-correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. The offending datum is the *test-key* and the expected type is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to (member *key1 key2* ...). 
+If no *normal-clause* matches, a *non-correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to (member *key1 key2* ...). 
 
 
 
-Note that in contrast with <ClLinks  term={"ccase"}><b>ccase</b></ClLinks>, the caller of <ClLinks  term={"ecase"}><b>ecase</b></ClLinks> may rely on the fact that <ClLinks  term={"ecase"}><b>ecase</b></ClLinks> does not return if a *normal-clause* does not match. 
+Note that in contrast with <DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink>, the caller of <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink> may rely on the fact that <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink> does not return if a *normal-clause* does not match. 
 
 
 
@@ -176,7 +176,7 @@ The debugger might be entered. If the **store-value** <ClLinks  term={"restart"}
 
 
 
-<ClLinks  term={"ccase"}><b>ccase</b></ClLinks> and <ClLinks  term={"ecase"}><b>ecase</b></ClLinks>, since they might signal an error, are potentially affected by existing <ClLinks  term={"handler"}><i>handlers</i></ClLinks> and **\*debug-io\***. 
+<DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> and <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink>, since they might signal an error, are potentially affected by existing <ClLinks  term={"handler"}><i>handlers</i></ClLinks> and **\*debug-io\***. 
 
 
 
@@ -184,7 +184,7 @@ The debugger might be entered. If the **store-value** <ClLinks  term={"restart"}
 
 
 
-<ClLinks  term={"ccase"}><b>ccase</b></ClLinks> and <ClLinks  term={"ecase"}><b>ecase</b></ClLinks> signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if no *normal-clause* matches. 
+<DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> and <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink> signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if no *normal-clause* matches. 
 
 
 
@@ -192,7 +192,7 @@ The debugger might be entered. If the **store-value** <ClLinks  term={"restart"}
 
 
 
-<ClLinks  term={"cond"}><b>cond</b></ClLinks>, <ClLinks  term={"typecase"}><b>typecase</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks>, Section 5.1 (Generalized Reference) 
+<DictionaryLink  term={"cond"}><b>cond</b></DictionaryLink>, <DictionaryLink  term={"typecase"}><b>typecase</b></DictionaryLink>, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>, Section 5.1 (Generalized Reference) 
 
 
 
@@ -220,7 +220,7 @@ The debugger might be entered. If the **store-value** <ClLinks  term={"restart"}
 
 
 
-The specific error message used by <ClLinks  term={"ecase"}><b>ecase</b></ClLinks> and <ClLinks  term={"ccase"}><b>ccase</b></ClLinks> can vary between implementations. In situations where control of the specific wording of the error message is important, it is better to use <ClLinks  term={"case"}><b>case</b></ClLinks> with an *otherwise-clause* that explicitly signals an error with an appropriate message. 
+The specific error message used by <DictionaryLink  term={"ecase"}><b>ecase</b></DictionaryLink> and <DictionaryLink  term={"ccase"}><b>ccase</b></DictionaryLink> can vary between implementations. In situations where control of the specific wording of the error message is important, it is better to use <DictionaryLink  term={"case"}><b>case</b></DictionaryLink> with an *otherwise-clause* that explicitly signals an error with an appropriate message. 
 
 
 

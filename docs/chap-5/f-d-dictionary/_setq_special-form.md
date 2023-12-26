@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"setq"}><b>setq</b></ClLinks> *\{↓pair\}*\* → result 
+<DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> *\{↓pair\}*\* → result 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*result*—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of the last <ClLinks  term={"form"}><i>form</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if no *pairs* were supplied. 
+*result*—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of the last <ClLinks  term={"form"}><i>form</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if no *pairs* were supplied. 
 
 
 
@@ -46,11 +46,11 @@ Assigns values to <ClLinks  term={"variable"}><i>variables</i></ClLinks>.
 
 
 
-(setq *var1 form1 var2 form2* ...) is the simple variable assignment statement of Lisp. First *form1* is evaluated and the result is stored in the variable *var1*, then *form2* is evaluated and the result stored in *var2*, and so forth. <ClLinks  term={"setq"}><b>setq</b></ClLinks> may be used for assignment of both lexical and dynamic variables. 
+(setq *var1 form1 var2 form2* ...) is the simple variable assignment statement of Lisp. First *form1* is evaluated and the result is stored in the variable *var1*, then *form2* is evaluated and the result stored in *var2*, and so forth. <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> may be used for assignment of both lexical and dynamic variables. 
 
 
 
-If any *var* refers to a <ClLinks  term={"binding"}><i>binding</i></ClLinks> made by <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, then that *var* is treated as if <ClLinks  term={"setf"}><b>setf</b></ClLinks> (not <ClLinks  term={"setq"}><b>setq</b></ClLinks>) had been used. 
+If any *var* refers to a <ClLinks  term={"binding"}><i>binding</i></ClLinks> made by <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, then that *var* is treated as if <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> (not <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>) had been used. 
 
 
 
@@ -87,7 +87,7 @@ The <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></Glo
 
 
 
-<ClLinks  term={"psetq"}><b>psetq</b></ClLinks>, <ClLinks  term={"set"}><b>set</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks> 
+<DictionaryLink  term={"psetq"}><b>psetq</b></DictionaryLink>, <DictionaryLink  term={"set"}><b>set</b></DictionaryLink>, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> 
 
 
 

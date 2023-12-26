@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"simple-vector-p"}><b>simple-vector-p</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink  term={"simple-vector-p"}><b>simple-vector-p</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-vector"}><b>simple-vector</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>.. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-vector"}><b>simple-vector</b></DictionaryLink>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>.. 
 
 
 
@@ -40,7 +40,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"simple-vector"}><b>simple-vector</b></ClLinks> 
+<DictionaryLink  term={"simple-vector"}><b>simple-vector</b></DictionaryLink> 
 
 
 

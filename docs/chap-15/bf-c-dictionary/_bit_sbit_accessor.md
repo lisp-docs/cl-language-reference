@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"bit"}><b>bit</b></ClLinks> *bit-array* &amp;rest *subscripts → bit* 
+<DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink> *bit-array* &amp;rest *subscripts → bit* 
 
 
 
-<!-- <ClLinks  term={"sbit"}><b>sbit</b></ClLinks> *bit-array* &amp;rest *subscripts → bit*  -->
+<!-- <DictionaryLink  term={"sbit"}><b>sbit</b></DictionaryLink> *bit-array* &amp;rest *subscripts → bit*  -->
 **sbit** *bit-array* &amp;rest *subscripts → bit* 
 
 
@@ -32,7 +32,7 @@
 
 
 
-*bit-array*—for <ClLinks  term={"bit"}><b>bit</b></ClLinks>, a <GlossaryTerm styled={true} term={"bit array"}><i>bit array</i></GlossaryTerm>; for <ClLinks  term={"sbit"}><b>sbit</b></ClLinks>, a <GlossaryTerm styled={true} term={"simple bit array"}><i>simple bit array</i></GlossaryTerm>. 
+*bit-array*—for <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>, a <GlossaryTerm styled={true} term={"bit array"}><i>bit array</i></GlossaryTerm>; for <DictionaryLink  term={"sbit"}><b>sbit</b></DictionaryLink>, a <GlossaryTerm styled={true} term={"simple bit array"}><i>simple bit array</i></GlossaryTerm>. 
 
 
 
@@ -48,7 +48,7 @@
 
 
 
-<ClLinks  term={"bit"}><b>bit</b></ClLinks> and <ClLinks  term={"sbit"}><b>sbit</b></ClLinks> <ClLinks  term={"access"}><i>access</i></ClLinks> the *bit-array element* specified by *subscripts*. 
+<DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink> and <DictionaryLink  term={"sbit"}><b>sbit</b></DictionaryLink> <ClLinks  term={"access"}><i>access</i></ClLinks> the *bit-array element* specified by *subscripts*. 
 
 
 
@@ -75,7 +75,7 @@ These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the <Glossar
 
 
 
-<ClLinks  term={"aref"}><b>aref</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
+<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink>, Section 3.2.1 (Compiler Terminology) 
 
 
 
@@ -83,11 +83,11 @@ These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the <Glossar
 
 
 
-<ClLinks  term={"bit"}><b>bit</b></ClLinks> and <ClLinks  term={"sbit"}><b>sbit</b></ClLinks> are like <ClLinks  term={"aref"}><b>aref</b></ClLinks> except that they require <ClLinks  term={"array"}><i>arrays</i></ClLinks> to be a <GlossaryTerm styled={true} term={"bit array"}><i>bit array</i></GlossaryTerm> and a <GlossaryTerm styled={true} term={"simple bit array"}><i>simple bit array</i></GlossaryTerm>, respectively. 
+<DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink> and <DictionaryLink  term={"sbit"}><b>sbit</b></DictionaryLink> are like <DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> except that they require <ClLinks  term={"array"}><i>arrays</i></ClLinks> to be a <GlossaryTerm styled={true} term={"bit array"}><i>bit array</i></GlossaryTerm> and a <GlossaryTerm styled={true} term={"simple bit array"}><i>simple bit array</i></GlossaryTerm>, respectively. 
 
 
 
-<ClLinks  term={"bit"}><b>bit</b></ClLinks> and <ClLinks  term={"sbit"}><b>sbit</b></ClLinks>, unlike <ClLinks  term={"char"}><b>char</b></ClLinks> and <ClLinks  term={"schar"}><b>schar</b></ClLinks>, allow the first argument to be an <ClLinks  term={"array"}><i>array</i></ClLinks> of any <ClLinks  term={"rank"}><i>rank</i></ClLinks>. 
+<DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink> and <DictionaryLink  term={"sbit"}><b>sbit</b></DictionaryLink>, unlike <DictionaryLink  term={"char"}><b>char</b></DictionaryLink> and <DictionaryLink  term={"schar"}><b>schar</b></DictionaryLink>, allow the first argument to be an <ClLinks  term={"array"}><i>array</i></ClLinks> of any <ClLinks  term={"rank"}><i>rank</i></ClLinks>. 
 
 
 
@@ -151,7 +151,7 @@ These <ClLinks  term={"function"}><i>functions</i></ClLinks> ignore the <Glossar
 
 
 
-*Opt-arg*—a <GlossaryTerm styled={true} term={"bit array"}><i>bit array</i></GlossaryTerm>, or <ClLinks  term={"t"}><b>t</b></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*Opt-arg*—a <GlossaryTerm styled={true} term={"bit array"}><i>bit array</i></GlossaryTerm>, or <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -187,7 +187,7 @@ In the case of **bit-not**, an <ClLinks  term={"array"}><i>array</i></ClLinks> o
 
 
 
-If *opt-arg* is of type (array bit) the contents of the result are destructively placed into *opt-arg*. If *opt-arg* is the symbol <ClLinks  term={"t"}><b>t</b></ClLinks>, *bit-array* or *bit-array1* is replaced with the result; if *opt-arg* is <ClLinks  term={"nil"}><b>nil</b></ClLinks> or omitted, a new <ClLinks  term={"array"}><i>array</i></ClLinks> is created to contain the result. 
+If *opt-arg* is of type (array bit) the contents of the result are destructively placed into *opt-arg*. If *opt-arg* is the symbol <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, *bit-array* or *bit-array1* is replaced with the result; if *opt-arg* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> or omitted, a new <ClLinks  term={"array"}><i>array</i></ClLinks> is created to contain the result. 
 
 
 
@@ -228,7 +228,7 @@ Figure 15–4 indicates the logical operation performed by each of the <ClLinks 
 
 
 
-<ClLinks  term={"lognot"}><b>lognot</b></ClLinks>, <ClLinks  term={"logand"}><b>logand</b></ClLinks> 
+<DictionaryLink  term={"lognot"}><b>lognot</b></DictionaryLink>, <DictionaryLink  term={"logand"}><b>logand</b></DictionaryLink> 
 
 
 

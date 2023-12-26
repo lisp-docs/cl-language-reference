@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> &amp;optional *input-stream →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink  term={"clear-input"}><b>clear-input</b></DictionaryLink> &amp;optional *input-stream →* <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -26,7 +26,7 @@ Clears any available input from *input-stream*.
 
 
 
-If <ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> does not make sense for *input-stream*, then <ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> does nothing. 
+If <DictionaryLink  term={"clear-input"}><b>clear-input</b></DictionaryLink> does not make sense for *input-stream*, then <DictionaryLink  term={"clear-input"}><b>clear-input</b></DictionaryLink> does nothing. 
 
 **Examples:**
 ```lisp
@@ -80,7 +80,7 @@ The *input-stream* is modified.
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *input-stream* is not a <GlossaryTerm styled={true} term={"stream designator"}><i>stream designator</i></GlossaryTerm> . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *input-stream* is not a <GlossaryTerm styled={true} term={"stream designator"}><i>stream designator</i></GlossaryTerm> . 
 
 
 
@@ -88,7 +88,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"clear-output"}><b>clear-output</b></ClLinks> 
+<DictionaryLink  term={"clear-output"}><b>clear-output</b></DictionaryLink> 
 
 
 

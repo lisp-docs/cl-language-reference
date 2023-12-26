@@ -2,7 +2,7 @@
 
 
 
-Wildcard <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> can be used with <ClLinks  term={"directory"}><b>directory</b></ClLinks> but not with <ClLinks  term={"open"}><b>open</b></ClLinks>, and return true from <ClLinks  term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks>. When examining wildcard components of a wildcard <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, conforming programs must be prepared to encounter any of the following additional values in any component or any element of a <ClLinks  term={"list"}><i>list</i></ClLinks> that is the directory component: 
+Wildcard <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> can be used with <DictionaryLink  term={"directory"}><b>directory</b></DictionaryLink> but not with <DictionaryLink  term={"open"}><b>open</b></DictionaryLink>, and return true from <DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink>. When examining wildcard components of a wildcard <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, conforming programs must be prepared to encounter any of the following additional values in any component or any element of a <ClLinks  term={"list"}><i>list</i></ClLinks> that is the directory component: 
 
 
 

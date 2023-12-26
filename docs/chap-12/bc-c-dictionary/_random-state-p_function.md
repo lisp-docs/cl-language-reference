@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"random-state-p"}><b>random-state-p</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink  term={"random-state-p"}><b>random-state-p</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"random-state"}><b>random-state</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"random-state"}><b>random-state</b></DictionaryLink>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -40,7 +40,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"make-random-state"}><b>make-random-state</b></ClLinks>, <ClLinks  term={"random-state"}><b>\*random-state\*</b></ClLinks> 
+<DictionaryLink  term={"make-random-state"}><b>make-random-state</b></DictionaryLink>, <DictionaryLink  term={"random-state"}><b>\*random-state\*</b></DictionaryLink> 
 
 
 

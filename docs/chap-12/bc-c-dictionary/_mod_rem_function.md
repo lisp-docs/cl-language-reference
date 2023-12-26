@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"mod"}><b>mod</b></ClLinks> *number divisor → modulus* 
+<DictionaryLink  term={"mod"}><b>mod</b></DictionaryLink> *number divisor → modulus* 
 
 
 
-<ClLinks  term={"rem"}><b>rem</b></ClLinks> *number divisor → remainder* 
+<DictionaryLink  term={"rem"}><b>rem</b></DictionaryLink> *number divisor → remainder* 
 
 
 
@@ -34,19 +34,19 @@
 
 
 
-<ClLinks  term={"mod"}><b>mod</b></ClLinks> and <ClLinks  term={"rem"}><b>rem</b></ClLinks> are generalizations of the modulus and remainder functions respectively. 
+<DictionaryLink  term={"mod"}><b>mod</b></DictionaryLink> and <DictionaryLink  term={"rem"}><b>rem</b></DictionaryLink> are generalizations of the modulus and remainder functions respectively. 
 
 
 
-<ClLinks  term={"mod"}><b>mod</b></ClLinks> performs the operation <ClLinks  term={"floor"}><b>floor</b></ClLinks> on <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* and returns the remainder of the <ClLinks  term={"floor"}><b>floor</b></ClLinks> operation. 
+<DictionaryLink  term={"mod"}><b>mod</b></DictionaryLink> performs the operation <DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink> on <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* and returns the remainder of the <DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink> operation. 
 
 
 
-<ClLinks  term={"rem"}><b>rem</b></ClLinks> performs the operation <ClLinks  term={"truncate"}><b>truncate</b></ClLinks> on <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* and returns the remainder of the <ClLinks  term={"truncate"}><b>truncate</b></ClLinks> operation. 
+<DictionaryLink  term={"rem"}><b>rem</b></DictionaryLink> performs the operation <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> on <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* and returns the remainder of the <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> operation. 
 
 
 
-<ClLinks  term={"mod"}><b>mod</b></ClLinks> and <ClLinks  term={"rem"}><b>rem</b></ClLinks> are the modulus and remainder functions when <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* are *integers*. 
+<DictionaryLink  term={"mod"}><b>mod</b></DictionaryLink> and <DictionaryLink  term={"rem"}><b>rem</b></DictionaryLink> are the modulus and remainder functions when <ClLinks  term={"number"}><i>number</i></ClLinks> and *divisor* are *integers*. 
 
 **Examples:**
 ```lisp
@@ -71,7 +71,7 @@
 
 
 
-<ClLinks  term={"floor"}><b>floor</b></ClLinks>, <ClLinks  term={"truncate"}><b>truncate</b></ClLinks> 
+<DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink>, <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> 
 
 
 
@@ -79,7 +79,7 @@
 
 
 
-The result of <ClLinks  term={"mod"}><b>mod</b></ClLinks> is either zero or a *real* with the same sign as *divisor*. 
+The result of <DictionaryLink  term={"mod"}><b>mod</b></DictionaryLink> is either zero or a *real* with the same sign as *divisor*. 
 
 
 

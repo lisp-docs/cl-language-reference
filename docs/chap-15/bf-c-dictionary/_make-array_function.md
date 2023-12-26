@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks> <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> &amp;key *element-type* 
+<DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> &amp;key *element-type* 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . The default is <ClLinks  term={"t"}><b>t</b></ClLinks>. 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . The default is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. 
 
 
 
@@ -58,15 +58,15 @@
 
 
 
-<ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*fill-pointer*—a <GlossaryTerm styled={true} term={"valid fill pointer"}><i>valid fill pointer</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks> to be created, or <ClLinks  term={"t"}><b>t</b></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*fill-pointer*—a <GlossaryTerm styled={true} term={"valid fill pointer"}><i>valid fill pointer</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks> to be created, or <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*displaced-to*—an <ClLinks  term={"array"}><i>array</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. This option must not be supplied if either *initial-element* or *initial-contents* is supplied. 
+*displaced-to*—an <ClLinks  term={"array"}><i>array</i></ClLinks> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. This option must not be supplied if either *initial-element* or *initial-contents* is supplied. 
 
 
 
@@ -90,7 +90,7 @@
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
+<DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> 
 
 
 
@@ -98,7 +98,7 @@
 
 
 
-Creates and returns an <ClLinks  term={"array"}><i>array</i></ClLinks> constructed of the most *specialized type* that can accommodate elements of <ClLinks  term={"type"}><i>type</i></ClLinks> given by *element-type*. If <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks> then a zero-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks> is created. 
+Creates and returns an <ClLinks  term={"array"}><i>array</i></ClLinks> constructed of the most *specialized type* that can accommodate elements of <ClLinks  term={"type"}><i>type</i></ClLinks> given by *element-type*. If <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> then a zero-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks> is created. 
 
 
 
@@ -146,23 +146,19 @@ If <ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks> is <ClLinks  term={
 
 
 
-If *fill-pointer* is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, the <ClLinks  term={"array"}><i>array</i></ClLinks> must be one-dimensional; that is, the <ClLinks  term={"array"}><i>array</i></ClLinks> must be a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . If *fill-pointer* is <ClLinks  term={"t"}><b>t</b></ClLinks>, the length of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> is used to initialize the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . If *fill-pointer* is an *integer* , it becomes the initial <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> for the <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
+If *fill-pointer* is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, the <ClLinks  term={"array"}><i>array</i></ClLinks> must be one-dimensional; that is, the <ClLinks  term={"array"}><i>array</i></ClLinks> must be a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . If *fill-pointer* is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, the length of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> is used to initialize the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . If *fill-pointer* is an *integer* , it becomes the initial <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> for the <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
 
 
 
-If *displaced-to* is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> will create a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm> and *displaced-to* is the <ClLinks  term={"target"}><i>target</i></ClLinks> of that <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>. In that case, the consequences are undefined if the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *displaced-to* is not <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks> being created. If *displaced-to* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the <ClLinks  term={"array"}><i>array</i></ClLinks> is not a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>. 
+If *displaced-to* is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> will create a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm> and *displaced-to* is the <ClLinks  term={"target"}><i>target</i></ClLinks> of that <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>. In that case, the consequences are undefined if the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of *displaced-to* is not <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks> being created. If *displaced-to* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the <ClLinks  term={"array"}><i>array</i></ClLinks> is not a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>. 
 
 
 
-The *displaced-index-offset* is made to be the index offset of the <ClLinks  term={"array"}><i>array</i></ClLinks>. When an array A is given as the :displaced-to <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> when creating array B, then array B is said to be 
-
-
+The *displaced-index-offset* is made to be the index offset of the <ClLinks  term={"array"}><i>array</i></ClLinks>. When an array A is given as the :displaced-to <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> when creating array B, then array B is said to be 
 
 
 
 
-
- 
 
 
 
@@ -170,7 +166,11 @@ The *displaced-index-offset* is made to be the index offset of the <ClLinks  ter
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> 
 
 
 
@@ -178,11 +178,11 @@ displaced to array A. The total number of elements in an <ClLinks  term={"array"
 
 
 
-If <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> is called with <ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>, *fill-pointer*, and *displaced-to* each <ClLinks  term={"nil"}><b>nil</b></ClLinks>, then the result is a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>. If <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> is called with one or more of <ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>, *fill-pointer*, or *displaced-to* being <ClLinks  term={"true"}><i>true</i></ClLinks>, whether the resulting <ClLinks  term={"array"}><i>array</i></ClLinks> is a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+If <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> is called with <ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>, *fill-pointer*, and *displaced-to* each <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, then the result is a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>. If <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> is called with one or more of <ClLinks  term={"adjustable"}><i>adjustable</i></ClLinks>, *fill-pointer*, or *displaced-to* being <ClLinks  term={"true"}><i>true</i></ClLinks>, whether the resulting <ClLinks  term={"array"}><i>array</i></ClLinks> is a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
-When an array A is given as the :displaced-to <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> when creating array B, then array B is said to be displaced to array A. The total number of elements in an <ClLinks  term={"array"}><i>array</i></ClLinks>, called the total size of the <ClLinks  term={"array"}><i>array</i></ClLinks>, is calculated as the product of all the dimensions. The consequences are unspecified if the total size of A is smaller than the sum of the total size of B plus the offset n supplied by the *displaced-index-offset*. The effect of displacing is that array B does not have any 
+When an array A is given as the :displaced-to <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> when creating array B, then array B is said to be displaced to array A. The total number of elements in an <ClLinks  term={"array"}><i>array</i></ClLinks>, called the total size of the <ClLinks  term={"array"}><i>array</i></ClLinks>, is calculated as the product of all the dimensions. The consequences are unspecified if the total size of A is smaller than the sum of the total size of B plus the offset n supplied by the *displaced-index-offset*. The effect of displacing is that array B does not have any 
 
 
 
@@ -252,7 +252,7 @@ The last example depends on the fact that *arrays* are, in effect, stored in row
 
 
 
-**adjustable-array-p**, <ClLinks  term={"aref"}><b>aref</b></ClLinks>, <ClLinks  term={"arrayp"}><b>arrayp</b></ClLinks>, <ClLinks  term={"array-element-type"}><b>array-element-type</b></ClLinks>, <ClLinks  term={"array-rank-limit"}><b>array-rank-limit</b></ClLinks>, <ClLinks  term={"array-dimension-limit"}><b>array-dimension-limit</b></ClLinks>, <ClLinks  term={"fill-pointer"}><b>fill-pointer</b></ClLinks>, <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> 
+**adjustable-array-p**, <DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink>, <DictionaryLink  term={"arrayp"}><b>arrayp</b></DictionaryLink>, <DictionaryLink  term={"array-element-type"}><b>array-element-type</b></DictionaryLink>, <DictionaryLink  term={"array-rank-limit"}><b>array-rank-limit</b></DictionaryLink>, <DictionaryLink  term={"array-dimension-limit"}><b>array-dimension-limit</b></DictionaryLink>, <DictionaryLink  term={"fill-pointer"}><b>fill-pointer</b></DictionaryLink>, <DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink> 
 
 
 
@@ -276,7 +276,7 @@ There is no specified way to create an <ClLinks  term={"array"}><i>array</i></Cl
 
 
 
-<ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks> 
+<DictionaryLink  term={"adjust-array"}><b>adjust-array</b></DictionaryLink> 
 
 
 

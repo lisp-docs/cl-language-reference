@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"file-error-pathname"}><b>file-error-pathname</b></ClLinks> *condition → pathspec* 
+<DictionaryLink  term={"file-error-pathname"}><b>file-error-pathname</b></DictionaryLink> *condition → pathspec* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks>. 
+<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the “offending pathname” of a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks>. 
+Returns the “offending pathname” of a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink>. 
 
 
 
@@ -38,7 +38,7 @@ Returns the “offending pathname” of a <ClLinks  term={"condition"}><i>condit
 
 
 
-<ClLinks  term={"file-error"}><b>file-error</b></ClLinks>, Chapter 9 (Conditions) 
+<DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink>, Chapter 9 (Conditions) 
 
 
 

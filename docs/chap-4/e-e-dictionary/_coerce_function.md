@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"coerce"}><b>coerce</b></ClLinks> *object result-type → result* 
+<DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink> *object result-type → result* 
 
 
 
@@ -50,63 +50,63 @@ Otherwise, the <ClLinks  term={"object"}><i>object</i></ClLinks> is *coerced* to
 
 
 
-<ClLinks  term={"coerce"}><b>coerce</b></ClLinks> 
+<DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"sequence"}><b>sequence</b></ClLinks> 
+<DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink> 
 
 
 
-If the *result-type* is a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"list"}><b>list</b></ClLinks>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *sequence*, then the *result* is a <ClLinks  term={"list"}><i>list</i></ClLinks> that has the *same elements* as <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+If the *result-type* is a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *sequence*, then the *result* is a <ClLinks  term={"list"}><i>list</i></ClLinks> that has the *same elements* as <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-If the *result-type* is a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *sequence*, then the *result* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> that has the *same elements* as <ClLinks  term={"object"}><i>object</i></ClLinks>. If *result-type* is a specialized <ClLinks  term={"type"}><i>type</i></ClLinks>, the *result* has an <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> that is the result of *upgrading* the element type part of that *specialized type*. If no element type is specified, the element type defaults to <ClLinks  term={"t"}><b>t</b></ClLinks>. If the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> cannot determine the element type, an error is signaled. 
+If the *result-type* is a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *sequence*, then the *result* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> that has the *same elements* as <ClLinks  term={"object"}><i>object</i></ClLinks>. If *result-type* is a specialized <ClLinks  term={"type"}><i>type</i></ClLinks>, the *result* has an <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> that is the result of *upgrading* the element type part of that *specialized type*. If no element type is specified, the element type defaults to <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. If the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> cannot determine the element type, an error is signaled. 
 
 
 
-<ClLinks  term={"character"}><b>character</b></ClLinks> 
+<DictionaryLink  term={"character"}><b>character</b></DictionaryLink> 
 
 
 
-If the *result-type* is <ClLinks  term={"character"}><b>character</b></ClLinks> and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"character designator"}><i>character designator</i></GlossaryTerm> , the *result* is the <ClLinks  term={"character"}><i>character</i></ClLinks> it denotes. 
+If the *result-type* is <DictionaryLink  term={"character"}><b>character</b></DictionaryLink> and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"character designator"}><i>character designator</i></GlossaryTerm> , the *result* is the <ClLinks  term={"character"}><i>character</i></ClLinks> it denotes. 
 
 
 
-<ClLinks  term={"complex"}><b>complex</b></ClLinks> 
+<DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> 
 
 
 
-If the *result-type* is <ClLinks  term={"complex"}><b>complex</b></ClLinks> and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *real*, then the *result* is obtained by constructing a <ClLinks  term={"complex"}><i>complex</i></ClLinks> whose real part is the <ClLinks  term={"object"}><i>object</i></ClLinks> and whose imaginary part is the result of *coercing* an *integer* zero to the <ClLinks  term={"type"}><i>type</i></ClLinks> of the <ClLinks  term={"object"}><i>object</i></ClLinks> (using <ClLinks  term={"coerce"}><b>coerce</b></ClLinks>). (If the real part is a <ClLinks  term={"rational"}><i>rational</i></ClLinks>, however, then the result must be represented as a <ClLinks  term={"rational"}><i>rational</i></ClLinks> rather than a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; see Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals). So, for example, (coerce 3 ’complex) is permissible, but will return 3, which is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> .) 
+If the *result-type* is <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *real*, then the *result* is obtained by constructing a <ClLinks  term={"complex"}><i>complex</i></ClLinks> whose real part is the <ClLinks  term={"object"}><i>object</i></ClLinks> and whose imaginary part is the result of *coercing* an *integer* zero to the <ClLinks  term={"type"}><i>type</i></ClLinks> of the <ClLinks  term={"object"}><i>object</i></ClLinks> (using <DictionaryLink  term={"coerce"}><b>coerce</b></DictionaryLink>). (If the real part is a <ClLinks  term={"rational"}><i>rational</i></ClLinks>, however, then the result must be represented as a <ClLinks  term={"rational"}><i>rational</i></ClLinks> rather than a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; see Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals). So, for example, (coerce 3 ’complex) is permissible, but will return 3, which is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> .) 
 
 
 
-<ClLinks  term={"float"}><b>float</b></ClLinks> 
+<DictionaryLink  term={"float"}><b>float</b></DictionaryLink> 
 
 
 
-If the *result-type* is any of <ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *real*, then the *result* is a <ClLinks  term={"float"}><i>float</i></ClLinks> of *type result-type* which is equal in sign and magnitude to the <ClLinks  term={"object"}><i>object</i></ClLinks> to whatever degree of representational precision is permitted by that <ClLinks  term={"float"}><i>float</i></ClLinks> representation. (If the *result-type* is <ClLinks  term={"float"}><b>float</b></ClLinks> and <ClLinks  term={"object"}><i>object</i></ClLinks> is not already a <ClLinks  term={"float"}><i>float</i></ClLinks>, then the *result* is a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm>.) 
+If the *result-type* is any of <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>, <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>, <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>, <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>, <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *real*, then the *result* is a <ClLinks  term={"float"}><i>float</i></ClLinks> of *type result-type* which is equal in sign and magnitude to the <ClLinks  term={"object"}><i>object</i></ClLinks> to whatever degree of representational precision is permitted by that <ClLinks  term={"float"}><i>float</i></ClLinks> representation. (If the *result-type* is <DictionaryLink  term={"float"}><b>float</b></DictionaryLink> and <ClLinks  term={"object"}><i>object</i></ClLinks> is not already a <ClLinks  term={"float"}><i>float</i></ClLinks>, then the *result* is a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm>.) 
 
 
 
-<ClLinks  term={"function"}><b>function</b></ClLinks> 
+<DictionaryLink  term={"function"}><b>function</b></DictionaryLink> 
 
 
 
-If the *result-type* is <ClLinks  term={"function"}><b>function</b></ClLinks>, and <ClLinks  term={"object"}><i>object</i></ClLinks> is any <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> that is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> but that is globally defined neither as a <GlossaryTerm styled={true} term={"macro name"}><i>macro name</i></GlossaryTerm> nor as a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , then the *result* is the <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> of <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+If the *result-type* is <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, and <ClLinks  term={"object"}><i>object</i></ClLinks> is any <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> that is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> but that is globally defined neither as a <GlossaryTerm styled={true} term={"macro name"}><i>macro name</i></GlossaryTerm> nor as a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , then the *result* is the <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> of <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-If the *result-type* is <ClLinks  term={"function"}><b>function</b></ClLinks>, and <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>, then the *result* is a <ClLinks  term={"closure"}><i>closure</i></ClLinks> of <ClLinks  term={"object"}><i>object</i></ClLinks> in the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. 
+If the *result-type* is <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, and <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>, then the *result* is a <ClLinks  term={"closure"}><i>closure</i></ClLinks> of <ClLinks  term={"object"}><i>object</i></ClLinks> in the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
-Any <ClLinks  term={"object"}><i>object</i></ClLinks> can be *coerced* to an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>. In this case, the <ClLinks  term={"object"}><i>object</i></ClLinks> is simply returned. 
+Any <ClLinks  term={"object"}><i>object</i></ClLinks> can be *coerced* to an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. In this case, the <ClLinks  term={"object"}><i>object</i></ClLinks> is simply returned. 
 
 **Examples:**
 ```lisp
@@ -132,19 +132,19 @@ All the following *forms* should signal an error:
 
 
 
-If a coercion is not possible, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
+If a coercion is not possible, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
 
 
 
-(coerce x ’nil) always signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks>. 
+(coerce x ’nil) always signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink>. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled if the *result-type* is <ClLinks  term={"function"}><b>function</b></ClLinks> but <ClLinks  term={"object"}><i>object</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is not <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> or if the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> names a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> . 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled if the *result-type* is <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> but <ClLinks  term={"object"}><i>object</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is not <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> or if the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> names a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> . 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> should be signaled if *result-type* specifies the number of elements and <ClLinks  term={"object"}><i>object</i></ClLinks> is of a different length. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if *result-type* specifies the number of elements and <ClLinks  term={"object"}><i>object</i></ClLinks> is of a different length. 
 
 
 
@@ -152,7 +152,7 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-
 
 
 
-<ClLinks  term={"rational"}><b>rational</b></ClLinks>, <ClLinks  term={"floor"}><b>floor</b></ClLinks>, <ClLinks  term={"char-code"}><b>char-code</b></ClLinks>, <ClLinks  term={"char-int"}><b>char-int</b></ClLinks> 
+<DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink>, <DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink>, <DictionaryLink  term={"char-code"}><b>char-code</b></DictionaryLink>, <DictionaryLink  term={"char-int"}><b>char-int</b></DictionaryLink> 
 
 
 
@@ -172,7 +172,7 @@ Coercions from <ClLinks  term={"float"}><i>floats</i></ClLinks> to <ClLinks  ter
 
 
 
-<ClLinks  term={"deftype"}><b>deftype</b></ClLinks> 
+<DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink> 
 
 
 

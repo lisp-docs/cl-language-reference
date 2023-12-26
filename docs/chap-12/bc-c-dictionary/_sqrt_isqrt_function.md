@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks> *number → root* 
+<DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink> *number → root* 
 
 
 
-<ClLinks  term={"isqrt"}><b>isqrt</b></ClLinks> *natural → natural-root* 
+<DictionaryLink  term={"isqrt"}><b>isqrt</b></DictionaryLink> *natural → natural-root* 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-<ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks> and <ClLinks  term={"isqrt"}><b>isqrt</b></ClLinks> compute square roots. 
+<DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink> and <DictionaryLink  term={"isqrt"}><b>isqrt</b></DictionaryLink> compute square roots. 
 
 
 
-<ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks> returns the <ClLinks  term={"principal"}><i>principal</i></ClLinks> square root of <ClLinks  term={"number"}><i>number</i></ClLinks>. If the <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> but is negative, then the result is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
+<DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink> returns the <ClLinks  term={"principal"}><i>principal</i></ClLinks> square root of <ClLinks  term={"number"}><i>number</i></ClLinks>. If the <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> but is negative, then the result is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
 
 
 
-<ClLinks  term={"isqrt"}><b>isqrt</b></ClLinks> returns the greatest *integer* less than or equal to the exact positive square root of *natural*. 
+<DictionaryLink  term={"isqrt"}><b>isqrt</b></DictionaryLink> returns the greatest *integer* less than or equal to the exact positive square root of *natural*. 
 
 
 
@@ -79,11 +79,11 @@ The branch cut for square root lies along the negative real axis, continuous wit
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks> should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink> should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"isqrt"}><b>isqrt</b></ClLinks> should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a non-negative *integer* . The functions <ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks> and <ClLinks  term={"isqrt"}><b>isqrt</b></ClLinks> might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"isqrt"}><b>isqrt</b></DictionaryLink> should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a non-negative *integer* . The functions <DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink> and <DictionaryLink  term={"isqrt"}><b>isqrt</b></DictionaryLink> might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
 
 
 
@@ -91,7 +91,7 @@ The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"isqrt
 
 
 
-<ClLinks  term={"exp"}><b>exp</b></ClLinks>, <ClLinks  term={"log"}><b>log</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
+<DictionaryLink  term={"exp"}><b>exp</b></DictionaryLink>, <DictionaryLink  term={"log"}><b>log</b></DictionaryLink>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 

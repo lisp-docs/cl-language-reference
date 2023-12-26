@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"interactive-stream-p"}><b>interactive-stream-p</b></ClLinks> *stream → generalized-boolean* 
+<DictionaryLink  term={"interactive-stream-p"}><b>interactive-stream-p</b></DictionaryLink> *stream → generalized-boolean* 
 
 
 
@@ -45,7 +45,7 @@ Is it safe to proceed? " error)
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 

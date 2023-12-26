@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"shiftf"}><b>shiftf</b></ClLinks> <ClLinks  term={"place"}><i>\{place\}</i></ClLinks><sup>+</sup> *newvalue ! old-value-1* 
+<DictionaryLink  term={"shiftf"}><b>shiftf</b></DictionaryLink> <ClLinks  term={"place"}><i>\{place\}</i></ClLinks><sup>+</sup> *newvalue ! old-value-1* 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks  term={"shiftf"}><b>shiftf</b></ClLinks> modifies the values of each <ClLinks  term={"place"}><i>place</i></ClLinks> by storing *newvalue* into the last <ClLinks  term={"place"}><i>place</i></ClLinks>, and shifting the values of the second through the last <ClLinks  term={"place"}><i>place</i></ClLinks> into the remaining <ClLinks  term={"place"}><i>places</i></ClLinks>. 
+<DictionaryLink  term={"shiftf"}><b>shiftf</b></DictionaryLink> modifies the values of each <ClLinks  term={"place"}><i>place</i></ClLinks> by storing *newvalue* into the last <ClLinks  term={"place"}><i>place</i></ClLinks>, and shifting the values of the second through the last <ClLinks  term={"place"}><i>place</i></ClLinks> into the remaining <ClLinks  term={"place"}><i>places</i></ClLinks>. 
 
 
 
-If *newvalue* produces more values than there are store variables, the extra values are ignored. If *newvalue* produces fewer values than there are store variables, the missing values are set to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If *newvalue* produces more values than there are store variables, the extra values are ignored. If *newvalue* produces fewer values than there are store variables, the missing values are set to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -68,7 +68,7 @@ x *!* (A Z C D)
 
 
 
-<ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>, **\*macroexpand-hook\*** 
+<DictionaryLink  term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink>, <DictionaryLink  term={"defsetf"}><b>defsetf</b></DictionaryLink>, **\*macroexpand-hook\*** 
 
 
 
@@ -76,7 +76,7 @@ x *!* (A Z C D)
 
 
 
-<ClLinks  term={"setf"}><b>setf</b></ClLinks>, <ClLinks  term={"rotatef"}><b>rotatef</b></ClLinks>, Section 5.1 (Generalized Reference) 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>, <DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink>, Section 5.1 (Generalized Reference) 
 
 
 
@@ -128,7 +128,7 @@ var1)
 
 
 
-except that the latter would evaluate any <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of each place twice, whereas <ClLinks  term={"shiftf"}><b>shiftf</b></ClLinks> evaluates them once. For example, 
+except that the latter would evaluate any <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of each place twice, whereas <DictionaryLink  term={"shiftf"}><b>shiftf</b></DictionaryLink> evaluates them once. For example, 
 
 
 
@@ -164,7 +164,7 @@ x *!* (A B Z D)
 
 
 
-<ClLinks  term={"rotatef"}><b>rotatef</b></ClLinks> 
+<DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink> 
 
 
 

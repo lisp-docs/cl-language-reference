@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> &amp;key *test size rehash-size rehash-threshold → hash-table* 
+<DictionaryLink  term={"make-hash-table"}><b>make-hash-table</b></DictionaryLink> &amp;key *test size rehash-size rehash-threshold → hash-table* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*test*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"eq"}><b>eq</b></ClLinks>, <ClLinks  term={"eql"}><b>eql</b></ClLinks>, <ClLinks  term={"equal"}><b>equal</b></ClLinks>, or <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>. The default is <ClLinks  term={"eql"}><b>eql</b></ClLinks>. *size*—a non-negative *integer* . The default is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+*test*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>, or <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>. The default is <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>. *size*—a non-negative *integer* . The default is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -84,7 +84,7 @@ The <ClLinks  term={"value"}><i>values</i></ClLinks> of *rehash-size* and *rehas
 
 
 
-<ClLinks  term={"gethash"}><b>gethash</b></ClLinks>, <ClLinks  term={"hash-table"}><b>hash-table</b></ClLinks> 
+<DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink>, <DictionaryLink  term={"hash-table"}><b>hash-table</b></DictionaryLink> 
 
 
 

@@ -7,11 +7,11 @@ sidebar_position: 112
 
 
 
-<ClLinks  term={"package"}><b>package</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package"}><b>package</b></ClLinks>. 
+<DictionaryLink  term={"package"}><b>package</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package"}><b>package</b></DictionaryLink>. 
 
 
 
-**package cell** *n. Trad.* (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) The <ClLinks  term={"place"}><i>place</i></ClLinks> in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that holds one of possibly several <ClLinks  term={"package"}><i>packages</i></ClLinks> in which the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"interned"}><i>interned</i></ClLinks>, called the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>, or which holds <ClLinks  term={"nil"}><b>nil</b></ClLinks> if no such <ClLinks  term={"package"}><i>package</i></ClLinks> exists or is known. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks>. 
+**package cell** *n. Trad.* (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) The <ClLinks  term={"place"}><i>place</i></ClLinks> in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that holds one of possibly several <ClLinks  term={"package"}><i>packages</i></ClLinks> in which the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"interned"}><i>interned</i></ClLinks>, called the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>, or which holds <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if no such <ClLinks  term={"package"}><i>package</i></ClLinks> exists or is known. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"symbol-package"}><b>symbol-package</b></DictionaryLink>. 
 
 
 
@@ -27,7 +27,7 @@ sidebar_position: 112
 
 
 
-**package registry** *n.* A mapping of <ClLinks  term={"name"}><i>names</i></ClLinks> to *package objects*. It is possible for there to be a *package object* which is not in this mapping; such a <ClLinks  term={"package"}><i>package</i></ClLinks> is called an <GlossaryTerm styled={true} term={"unregistered package"}><i>unregistered package</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"operator"}><i>Operators</i></GlossaryTerm> such as <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> consult this mapping in order to find a <ClLinks  term={"package"}><i>package</i></ClLinks> from its <ClLinks  term={"name"}><i>name</i></ClLinks>. <ClLinks  term={"operator"}><i>Operators</i></ClLinks> such as <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks>, <ClLinks  term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks>, and <ClLinks  term={"list-all-packages"}><b>list-all-packages</b></ClLinks> operate only on <ClLinks  term={"package"}><i>packages</i></ClLinks> that exist in the <GlossaryTerm styled={true} term={"package registry"}><i>package registry</i></GlossaryTerm>. 
+**package registry** *n.* A mapping of <ClLinks  term={"name"}><i>names</i></ClLinks> to *package objects*. It is possible for there to be a *package object* which is not in this mapping; such a <ClLinks  term={"package"}><i>package</i></ClLinks> is called an <GlossaryTerm styled={true} term={"unregistered package"}><i>unregistered package</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"operator"}><i>Operators</i></GlossaryTerm> such as <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> consult this mapping in order to find a <ClLinks  term={"package"}><i>package</i></ClLinks> from its <ClLinks  term={"name"}><i>name</i></ClLinks>. <ClLinks  term={"operator"}><i>Operators</i></ClLinks> such as <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink>, <DictionaryLink  term={"find-all-symbols"}><b>find-all-symbols</b></DictionaryLink>, and <DictionaryLink  term={"list-all-packages"}><b>list-all-packages</b></DictionaryLink> operate only on <ClLinks  term={"package"}><i>packages</i></ClLinks> that exist in the <GlossaryTerm styled={true} term={"package registry"}><i>package registry</i></GlossaryTerm>. 
 
 
 
@@ -35,7 +35,7 @@ sidebar_position: 112
 
 
 
-**parallel** *adj. Trad.* (of <ClLinks  term={"binding"}><i>binding</i></ClLinks> or *assignment*) done in the style of <ClLinks  term={"psetq"}><b>psetq</b></ClLinks>, <ClLinks  term={"let"}><b>let</b></ClLinks>, or <ClLinks  term={"do"}><b>do</b></ClLinks>; that is, first evaluating all of the <ClLinks  term={"form"}><i>forms</i></ClLinks> that produce <ClLinks  term={"value"}><i>values</i></ClLinks>, and only then *assigning* or <ClLinks  term={"binding"}><i>binding</i></ClLinks> the <ClLinks  term={"variable"}><i>variables</i></ClLinks> (or <ClLinks  term={"place"}><i>places</i></ClLinks>). Note that this does not imply traditional 
+**parallel** *adj. Trad.* (of <ClLinks  term={"binding"}><i>binding</i></ClLinks> or *assignment*) done in the style of <DictionaryLink  term={"psetq"}><b>psetq</b></DictionaryLink>, <DictionaryLink  term={"let"}><b>let</b></DictionaryLink>, or <DictionaryLink  term={"do"}><b>do</b></DictionaryLink>; that is, first evaluating all of the <ClLinks  term={"form"}><i>forms</i></ClLinks> that produce <ClLinks  term={"value"}><i>values</i></ClLinks>, and only then *assigning* or <ClLinks  term={"binding"}><i>binding</i></ClLinks> the <ClLinks  term={"variable"}><i>variables</i></ClLinks> (or <ClLinks  term={"place"}><i>places</i></ClLinks>). Note that this does not imply traditional 
 
 
 
@@ -83,7 +83,7 @@ data flow by a <GlossaryTerm styled={true} term={"format directive"}><i>format d
 
 
 
-<ClLinks  term={"pathname"}><b>pathname</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, which is a structured representation of the name of a <ClLinks  term={"file"}><i>file</i></ClLinks>. A <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> has six components: a “host,” a “device,” a “directory,” a “name,” a “type,” and a “version.” 
+<DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, which is a structured representation of the name of a <ClLinks  term={"file"}><i>file</i></ClLinks>. A <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> has six components: a “host,” a “device,” a “directory,” a “name,” a “type,” and a “version.” 
 
 
 
@@ -131,7 +131,7 @@ conceptual location referred to by such a <ClLinks  term={"place"}><i>place</i><
 
 
 
-**pprint dispatch table** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> that can be the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks> and hence can control how <ClLinks  term={"object"}><i>objects</i></ClLinks> are printed when <ClLinks  term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>. See Section 22.2.1.4 (Pretty Print Dispatch Tables). 
+**pprint dispatch table** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> that can be the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></DictionaryLink> and hence can control how <ClLinks  term={"object"}><i>objects</i></ClLinks> are printed when <DictionaryLink  term={"print-pretty"}><b>\*print-pretty\*</b></DictionaryLink> is <ClLinks  term={"true"}><i>true</i></ClLinks>. See Section 22.2.1.4 (Pretty Print Dispatch Tables). 
 
 
 
@@ -151,11 +151,11 @@ conceptual location referred to by such a <ClLinks  term={"place"}><i>place</i><
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks> onto a <ClLinks  term={"stream"}><i>stream</i></ClLinks> when the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>, and that uses layout techniques (*e.g.*, indentation) that tend to highlight the structure of the <ClLinks  term={"object"}><i>object</i></ClLinks> in a way that makes it easier for human readers to parse visually. See the <ClLinks  term={"variable"}><i>variable</i></ClLinks> <ClLinks  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks> and Section 22.2 (The Lisp Pretty Printer). 
+<ClLinks  term={"object"}><i>object</i></ClLinks> onto a <ClLinks  term={"stream"}><i>stream</i></ClLinks> when the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"print-pretty"}><b>\*print-pretty\*</b></DictionaryLink> is <ClLinks  term={"true"}><i>true</i></ClLinks>, and that uses layout techniques (*e.g.*, indentation) that tend to highlight the structure of the <ClLinks  term={"object"}><i>object</i></ClLinks> in a way that makes it easier for human readers to parse visually. See the <ClLinks  term={"variable"}><i>variable</i></ClLinks> <DictionaryLink  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></DictionaryLink> and Section 22.2 (The Lisp Pretty Printer). 
 
 
 
-**pretty printing stream** *n.* a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that does pretty printing. Such streams are created by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> as a link between the output stream and the logical block. 
+**pretty printing stream** *n.* a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that does pretty printing. Such streams are created by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"pprint-logical-block"}><b>pprint-logical-block</b></DictionaryLink> as a link between the output stream and the logical block. 
 
 
 
@@ -163,7 +163,7 @@ conceptual location referred to by such a <ClLinks  term={"place"}><i>place</i><
 
 
 
-**primary value** *n.* (of <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of a <ClLinks  term={"form"}><i>form</i></ClLinks>) the first <ClLinks  term={"value"}><i>value</i></ClLinks>, if any, or else <ClLinks  term={"nil"}><b>nil</b></ClLinks> if there are no <ClLinks  term={"value"}><i>values</i></ClLinks>. “The primary value returned by <ClLinks  term={"truncate"}><b>truncate</b></ClLinks> is an integer quotient, truncated toward zero.” 
+**primary value** *n.* (of <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of a <ClLinks  term={"form"}><i>form</i></ClLinks>) the first <ClLinks  term={"value"}><i>value</i></ClLinks>, if any, or else <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if there are no <ClLinks  term={"value"}><i>values</i></ClLinks>. “The primary value returned by <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> is an integer quotient, truncated toward zero.” 
 
 
 
@@ -195,11 +195,11 @@ conceptual location referred to by such a <ClLinks  term={"place"}><i>place</i><
 
 
 
-<ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> and <ClLinks  term={"print-readably"}><b>\*print-readably\*</b></ClLinks>. If the value of either <ClLinks  term={"print-readably"}><b>\*print-readably\*</b></ClLinks> 
+<DictionaryLink  term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> and <DictionaryLink  term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink>. If the value of either <DictionaryLink  term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> 
 
 
 
-or <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>, then <GlossaryTerm styled={true} term={"printer escaping"}><i>printer escaping</i></GlossaryTerm> is “enabled”; otherwise (if the values of both <ClLinks  term={"print-readably"}><b>\*print-readably\*</b></ClLinks> and <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> are <ClLinks  term={"false"}><i>false</i></ClLinks>), then <GlossaryTerm styled={true} term={"printer escaping"}><i>printer escaping</i></GlossaryTerm> is “disabled”. 
+or <DictionaryLink  term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <ClLinks  term={"true"}><i>true</i></ClLinks>, then <GlossaryTerm styled={true} term={"printer escaping"}><i>printer escaping</i></GlossaryTerm> is “enabled”; otherwise (if the values of both <DictionaryLink  term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> and <DictionaryLink  term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> are <ClLinks  term={"false"}><i>false</i></ClLinks>), then <GlossaryTerm styled={true} term={"printer escaping"}><i>printer escaping</i></GlossaryTerm> is “disabled”. 
 
 
 
@@ -215,7 +215,7 @@ or <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks
 
 
 
-<ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> *v.t.* (a <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>) to <ClLinks  term={"establish"}><i>establish</i></ClLinks> that <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>. 
+<DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> *v.t.* (a <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>) to <ClLinks  term={"establish"}><i>establish</i></ClLinks> that <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>. 
 
 
 
@@ -243,7 +243,7 @@ or <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks
 
 
 
-**proper name** *n.* (of a <ClLinks  term={"class"}><i>class</i></ClLinks>) a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that <ClLinks  term={"name"}><i>names</i></ClLinks> the <ClLinks  term={"class"}><i>class</i></ClLinks> whose <ClLinks  term={"name"}><i>name</i></ClLinks> is that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. See the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"class-name"}><b>class-name</b></ClLinks> and <ClLinks  term={"find-class"}><b>find-class</b></ClLinks>. 
+**proper name** *n.* (of a <ClLinks  term={"class"}><i>class</i></ClLinks>) a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that <ClLinks  term={"name"}><i>names</i></ClLinks> the <ClLinks  term={"class"}><i>class</i></ClLinks> whose <ClLinks  term={"name"}><i>name</i></ClLinks> is that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. See the <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"class-name"}><b>class-name</b></DictionaryLink> and <DictionaryLink  term={"find-class"}><b>find-class</b></DictionaryLink>. 
 
 
 
@@ -291,7 +291,7 @@ a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></Gloss
 
 
 
-expresses intention to conform, regardless of whether the goal of that intention is realized in practice. For example, language implementations have been known to have bugs, and while an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> of this specification with bugs might not be a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>, it can still *purport to conform*. This is an important distinction in certain specific cases; *e.g.*, see the <ClLinks  term={"variable"}><i>variable</i></ClLinks> <ClLinks  term={"features"}><b>\*features\*</b></ClLinks>. 
+expresses intention to conform, regardless of whether the goal of that intention is realized in practice. For example, language implementations have been known to have bugs, and while an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> of this specification with bugs might not be a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>, it can still *purport to conform*. This is an important distinction in certain specific cases; *e.g.*, see the <ClLinks  term={"variable"}><i>variable</i></ClLinks> <DictionaryLink  term={"features"}><b>\*features\*</b></DictionaryLink>. 
 
 
 

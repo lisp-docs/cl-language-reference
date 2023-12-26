@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"shadow"}><b>shadow</b></ClLinks> *symbol-names* &amp;optional *package →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink> *symbol-names* &amp;optional *package →* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"shadow"}><b>shadow</b></ClLinks> assures that <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> with names given by *symbol-names* are <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink> assures that <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> with names given by *symbol-names* are <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -57,7 +57,7 @@ Specifically, <ClLinks  term={"package"}><i>package</i></ClLinks> is searched fo
 
 
 
-<ClLinks  term={"shadow"}><b>shadow</b></ClLinks> changes the state of the package system in such a way that the package consistency rules do not hold across the change. 
+<DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink> changes the state of the package system in such a way that the package consistency rules do not hold across the change. 
 
 
 
@@ -73,7 +73,7 @@ Current state of the package system.
 
 
 
-<ClLinks  term={"package-shadowing-symbols"}><b>package-shadowing-symbols</b></ClLinks>, Section 11.1 (Package Concepts) 
+<DictionaryLink  term={"package-shadowing-symbols"}><b>package-shadowing-symbols</b></DictionaryLink>, Section 11.1 (Package Concepts) 
 
 
 

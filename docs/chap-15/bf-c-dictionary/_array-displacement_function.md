@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-displacement"}><b>array-displacement</b></ClLinks> *array → displaced-to, displaced-index-offset* 
+<DictionaryLink  term={"array-displacement"}><b>array-displacement</b></DictionaryLink> *array → displaced-to, displaced-index-offset* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*displaced-to*—an <ClLinks  term={"array"}><i>array</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*displaced-to*—an <ClLinks  term={"array"}><i>array</i></ClLinks> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-If the <ClLinks  term={"array"}><i>array</i></ClLinks> is a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>, returns the <ClLinks  term={"value"}><i>values</i></ClLinks> of the :displaced-to and :displaced-index-offset options for the <ClLinks  term={"array"}><i>array</i></ClLinks> (see the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> and <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks>). If the <ClLinks  term={"array"}><i>array</i></ClLinks> is not a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>, <ClLinks  term={"nil"}><b>nil</b></ClLinks> and 0 are returned. 
+If the <ClLinks  term={"array"}><i>array</i></ClLinks> is a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>, returns the <ClLinks  term={"value"}><i>values</i></ClLinks> of the :displaced-to and :displaced-index-offset options for the <ClLinks  term={"array"}><i>array</i></ClLinks> (see the <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> and <DictionaryLink  term={"adjust-array"}><b>adjust-array</b></DictionaryLink>). If the <ClLinks  term={"array"}><i>array</i></ClLinks> is not a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> and 0 are returned. 
 
 
 
-If <ClLinks  term={"array-displacement"}><b>array-displacement</b></ClLinks> is called on an <ClLinks  term={"array"}><i>array</i></ClLinks> for which a *non-nil object* was provided as the :displaced-to <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> or <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks>, it must return that <ClLinks  term={"object"}><i>object</i></ClLinks> as its first value. It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <ClLinks  term={"array-displacement"}><b>array-displacement</b></ClLinks> returns a *non-nil primary value* for any other <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+If <DictionaryLink  term={"array-displacement"}><b>array-displacement</b></DictionaryLink> is called on an <ClLinks  term={"array"}><i>array</i></ClLinks> for which a *non-nil object* was provided as the :displaced-to <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> or <DictionaryLink  term={"adjust-array"}><b>adjust-array</b></DictionaryLink>, it must return that <ClLinks  term={"object"}><i>object</i></ClLinks> as its first value. It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <DictionaryLink  term={"array-displacement"}><b>array-displacement</b></DictionaryLink> returns a *non-nil primary value* for any other <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -57,7 +57,7 @@ If <ClLinks  term={"array-displacement"}><b>array-displacement</b></ClLinks> is 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"array"}><i>array</i></ClLinks> is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"array"}><i>array</i></ClLinks> is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -65,7 +65,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
+<DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> 
 
 
 

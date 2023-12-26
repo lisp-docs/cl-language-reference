@@ -6,7 +6,7 @@
 
 
 
-(dynamic-extent [[ *\{var\}*\* | (<ClLinks  term={"function"}><b>function</b></ClLinks> *fn*)\* ]]) 
+(dynamic-extent [[ *\{var\}*\* | (<DictionaryLink  term={"function"}><b>function</b></DictionaryLink> *fn*)\* ]]) 
 
 
 
@@ -58,7 +58,7 @@ Evaluation and
 
 
 
-<ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> 
+<DictionaryLink  term={"dynamic-extent"}><b>dynamic-extent</b></DictionaryLink> 
 
 
 
@@ -66,11 +66,11 @@ The compiler is permitted to use this information in any way that is appropriate
 
 
 
-<ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. 
+<DictionaryLink  term={"dynamic-extent"}><b>dynamic-extent</b></DictionaryLink> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. 
 
 
 
-The *vars* and *fns* named in a <ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks> declaration must not refer to <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> or <ClLinks  term={"macro"}><i>macro</i></ClLinks> bindings. 
+The *vars* and *fns* named in a <DictionaryLink  term={"dynamic-extent"}><b>dynamic-extent</b></DictionaryLink> declaration must not refer to <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> or <ClLinks  term={"macro"}><i>macro</i></ClLinks> bindings. 
 
 
 
@@ -168,7 +168,7 @@ The following are in error, since the value of x is used outside of its *extent*
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks> 
+<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> 
 
 
 
@@ -196,7 +196,7 @@ It is permissible for an implementation to simply ignore this declaration.
 
 
 
-<ClLinks  term={"type"}><b>type</b></ClLinks> 
+<DictionaryLink  term={"type"}><b>type</b></DictionaryLink> 
 
 
 

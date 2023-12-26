@@ -104,8 +104,8 @@ The uses of these functions are illustrated in Figure 12–13.
 
 **Exceptional Situations:**
 
-Might signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a *real*. Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks> if otherwise unable to fulfill its contract.
+Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a *real*. Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink> if otherwise unable to fulfill its contract.
 
 **Notes:**
 
-<ClLinks  term={"="}><b>=</b></ClLinks> differs from <ClLinks  term={"eql"}><b>eql</b></ClLinks> in that `(= 0.0 -0.0)` is always true, because <ClLinks  term={"="}><b>=</b></ClLinks> compares the mathematical values of its operands, whereas <ClLinks  term={"eql"}><b>eql</b></ClLinks> compares the representational values, so to speak.
+<ClLinks  term={"="}><b>=</b></ClLinks> differs from <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> in that `(= 0.0 -0.0)` is always true, because <ClLinks  term={"="}><b>=</b></ClLinks> compares the mathematical values of its operands, whereas <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> compares the representational values, so to speak.

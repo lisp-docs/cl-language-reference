@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"implementation"}><i>Implementations</i></ClLinks> that extend the language by defining additional acceptable equivalence tests for <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm> (allowing additional values for the :test argument to <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks>) must document the visible components of these tests. 
+<ClLinks  term={"implementation"}><i>Implementations</i></ClLinks> that extend the language by defining additional acceptable equivalence tests for <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm> (allowing additional values for the :test argument to <DictionaryLink  term={"make-hash-table"}><b>make-hash-table</b></DictionaryLink>) must document the visible components of these tests. 
 
 
 

@@ -6,15 +6,15 @@
 
 
 
-<ClLinks  term={"find"}><b>find</b></ClLinks> *item sequence* &amp;key *from-end test test-not start end key → element* 
+<DictionaryLink  term={"find"}><b>find</b></DictionaryLink> *item sequence* &amp;key *from-end test test-not start end key → element* 
 
 
 
-<ClLinks  term={"find-if"}><b>find-if</b></ClLinks> *predicate sequence* &amp;key *from-end start end key → element* 
+<DictionaryLink  term={"find-if"}><b>find-if</b></DictionaryLink> *predicate sequence* &amp;key *from-end start end key → element* 
 
 
 
-<ClLinks  term={"find-if-not"}><b>find-if-not</b></ClLinks> *predicate sequence* &amp;key *from-end start end key → element* 
+<DictionaryLink  term={"find-if-not"}><b>find-if-not</b></DictionaryLink> *predicate sequence* &amp;key *from-end start end key → element* 
 
 
 
@@ -38,15 +38,15 @@
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"element"}><i>element</i></ClLinks>—an <ClLinks  term={"element"}><i>element</i></ClLinks> of the *sequence*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"element"}><i>element</i></ClLinks>—an <ClLinks  term={"element"}><i>element</i></ClLinks> of the *sequence*, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-<ClLinks  term={"find"}><b>find</b></ClLinks>, <ClLinks  term={"find-if"}><b>find-if</b></ClLinks>, and <ClLinks  term={"find-if-not"}><b>find-if-not</b></ClLinks> each search for an <ClLinks  term={"element"}><i>element</i></ClLinks> of the *sequence bounded* by *start* and *end* that *satisfies the predicate predicate* or that *satisfies the test test* or *test-not*, as appropriate. 
+<DictionaryLink  term={"find"}><b>find</b></DictionaryLink>, <DictionaryLink  term={"find-if"}><b>find-if</b></DictionaryLink>, and <DictionaryLink  term={"find-if-not"}><b>find-if-not</b></DictionaryLink> each search for an <ClLinks  term={"element"}><i>element</i></ClLinks> of the *sequence bounded* by *start* and *end* that *satisfies the predicate predicate* or that *satisfies the test test* or *test-not*, as appropriate. 
 
 
 
@@ -74,7 +74,7 @@ If *from-end* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the result 
 
 
 
-If the *sequence* contains an <ClLinks  term={"element"}><i>element</i></ClLinks> that *satisfies the test*, then the leftmost or rightmost *sequence* element, depending on *from-end*, is returned; otherwise <ClLinks  term={"nil"}><b>nil</b></ClLinks> is returned. 
+If the *sequence* contains an <ClLinks  term={"element"}><i>element</i></ClLinks> that *satisfies the test*, then the leftmost or rightmost *sequence* element, depending on *from-end*, is returned; otherwise <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is returned. 
 
 
 
@@ -91,7 +91,7 @@ If the *sequence* contains an <ClLinks  term={"element"}><i>element</i></ClLinks
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -99,7 +99,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<ClLinks  term={"position"}><b>position</b></ClLinks>, Section 17.2 (Rules about Test Functions), Section 3.6 (Traversal Rules and Side Effects) 
+<DictionaryLink  term={"position"}><b>position</b></DictionaryLink>, Section 17.2 (Rules about Test Functions), Section 3.6 (Traversal Rules and Side Effects) 
 
 
 
@@ -111,7 +111,7 @@ The :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> is deprecate
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"find-if-not"}><b>find-if-not</b></ClLinks> is deprecated. 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"find-if-not"}><b>find-if-not</b></DictionaryLink> is deprecated. 
 
 
 

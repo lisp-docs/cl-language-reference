@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"listen"}><b>listen</b></ClLinks> &amp;optional *input-stream → generalized-boolean* 
+<DictionaryLink  term={"listen"}><b>listen</b></DictionaryLink> &amp;optional *input-stream → generalized-boolean* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if there is a character immediately available from *input-stream*; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. On a non-interactive *input-stream*, <ClLinks  term={"listen"}><b>listen</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> except when at <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub>. If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> is encountered, <ClLinks  term={"listen"}><b>listen</b></ClLinks> returns <ClLinks  term={"false"}><i>false</i></ClLinks>. <ClLinks  term={"listen"}><b>listen</b></ClLinks> is intended to be used when *input-stream* obtains characters from an interactive device such as a keyboard. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if there is a character immediately available from *input-stream*; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. On a non-interactive *input-stream*, <DictionaryLink  term={"listen"}><b>listen</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> except when at <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub>. If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> is encountered, <DictionaryLink  term={"listen"}><b>listen</b></DictionaryLink> returns <ClLinks  term={"false"}><i>false</i></ClLinks>. <DictionaryLink  term={"listen"}><b>listen</b></DictionaryLink> is intended to be used when *input-stream* obtains characters from an interactive device such as a keyboard. 
 
 
 
@@ -50,7 +50,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if there is a character im
 
 
 
-<ClLinks  term={"interactive-stream-p"}><b>interactive-stream-p</b></ClLinks>, <ClLinks  term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> 
+<DictionaryLink  term={"interactive-stream-p"}><b>interactive-stream-p</b></DictionaryLink>, <DictionaryLink  term={"read-char-no-hang"}><b>read-char-no-hang</b></DictionaryLink> 
 
 
 
@@ -66,7 +66,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if there is a character im
 
 
 
-<ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> 
+<DictionaryLink  term={"clear-input"}><b>clear-input</b></DictionaryLink> 
 
 
 

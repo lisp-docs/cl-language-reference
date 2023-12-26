@@ -10,23 +10,23 @@ All <GlossaryTerm styled={true} term={"conforming program"}><i>conforming progra
 
 
 
-*•* **Special** proclamations for <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm> must be made in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm>. Any <ClLinks  term={"binding"}><i>binding</i></ClLinks> for which there is no <ClLinks  term={"special"}><b>special</b></ClLinks> declaration or proclamation in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> is treated by the compiler as a <GlossaryTerm styled={true} term={"lexical binding"}><i>lexical binding</i></GlossaryTerm>. 
+*•* **Special** proclamations for <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm> must be made in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm>. Any <ClLinks  term={"binding"}><i>binding</i></ClLinks> for which there is no <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration or proclamation in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> is treated by the compiler as a <GlossaryTerm styled={true} term={"lexical binding"}><i>lexical binding</i></GlossaryTerm>. 
 
 
 
-*•* The definition of a function that is defined and declared <ClLinks  term={"inline"}><b>inline</b></ClLinks> in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must be the same at run time. 
+*•* The definition of a function that is defined and declared <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink> in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must be the same at run time. 
 
 
 
-*•* Within a <ClLinks  term={"function"}><i>function</i></ClLinks> named *F*, the compiler may (but is not required to) assume that an apparent recursive call to a <ClLinks  term={"function"}><i>function</i></ClLinks> named *F* refers to the same definition of *F*, unless that function has been declared <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>. The consequences of redefining such a recursively defined *function F* while it is executing are undefined. 
+*•* Within a <ClLinks  term={"function"}><i>function</i></ClLinks> named *F*, the compiler may (but is not required to) assume that an apparent recursive call to a <ClLinks  term={"function"}><i>function</i></ClLinks> named *F* refers to the same definition of *F*, unless that function has been declared <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink>. The consequences of redefining such a recursively defined *function F* while it is executing are undefined. 
 
 
 
-*•* A call within a file to a named function that is defined in the same file refers to that function, unless that function has been declared <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>. The consequences are unspecified if functions are redefined individually at run time or multiply defined in the same file. 
+*•* A call within a file to a named function that is defined in the same file refers to that function, unless that function has been declared <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink>. The consequences are unspecified if functions are redefined individually at run time or multiply defined in the same file. 
 
 
 
-*•* The argument syntax and number of return values for all functions whose <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> is declared at compile time must remain the same at run time.  
+*•* The argument syntax and number of return values for all functions whose <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink> is declared at compile time must remain the same at run time.  
 
 
 
@@ -38,7 +38,7 @@ All <GlossaryTerm styled={true} term={"conforming program"}><i>conforming progra
 
 
 
-*•* Type definitions made with <ClLinks  term={"deftype"}><b>deftype</b></ClLinks> or <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must retain the same definition at run time. Classes defined by <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must be defined at run time to have the same *superclasses* and same <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>. 
+*•* Type definitions made with <DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink> or <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must retain the same definition at run time. Classes defined by <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must be defined at run time to have the same *superclasses* and same <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@ Except where noted, when a compile-time and a run-time definition are different,
 
 
 
-*•* an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled 
+*•* an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled 
 
 
 

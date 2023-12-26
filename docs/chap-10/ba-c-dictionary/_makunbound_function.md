@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks> *symbol → symbol* 
+<DictionaryLink  term={"makunbound"}><b>makunbound</b></DictionaryLink> *symbol → symbol* 
 
 
 
@@ -46,7 +46,7 @@ The <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryT
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"boundp"}><b>boundp</b></ClLinks>, <ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks> 
+<DictionaryLink  term={"boundp"}><b>boundp</b></DictionaryLink>, <DictionaryLink  term={"fmakunbound"}><b>fmakunbound</b></DictionaryLink> 
 
 
 

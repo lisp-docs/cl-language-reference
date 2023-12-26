@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks> *name → name* 
+<DictionaryLink  term={"fmakunbound"}><b>fmakunbound</b></DictionaryLink> *name → name* 
 
 
 
@@ -45,7 +45,7 @@ Removes the <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  t
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"name"}><i>name</i></ClLinks> is not a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"name"}><i>name</i></ClLinks> is not a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
@@ -57,7 +57,7 @@ The consequences are undefined if <ClLinks  term={"name"}><i>name</i></ClLinks> 
 
 
 
-<ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks>, <ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks> 
+<DictionaryLink  term={"fboundp"}><b>fboundp</b></DictionaryLink>, <DictionaryLink  term={"makunbound"}><b>makunbound</b></DictionaryLink> 
 
 
 

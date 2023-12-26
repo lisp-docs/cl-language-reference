@@ -6,7 +6,7 @@
 
 
 
-When the *token x* is a single <ClLinks  term={"character"}><i>character</i></ClLinks> long, this parses as the literal *character char*. <GlossaryTerm styled={true} term={"uppercase"}><i>Uppercase</i></GlossaryTerm> and <ClLinks  term={"lowercase"}><i>lowercase</i></ClLinks> letters are distinguished after #\; #\A and #\a denote different *character objects*. Any single <ClLinks  term={"character"}><i>character</i></ClLinks> works after #\, even those that are normally special to <ClLinks  term={"read"}><b>read</b></ClLinks>, such as <ClLinks  term={"left-parenthesis"}><i>left-parenthesis</i></ClLinks> and <ClLinks  term={"right-parenthesis"}><i>right-parenthesis</i></ClLinks>. 
+When the *token x* is a single <ClLinks  term={"character"}><i>character</i></ClLinks> long, this parses as the literal *character char*. <GlossaryTerm styled={true} term={"uppercase"}><i>Uppercase</i></GlossaryTerm> and <ClLinks  term={"lowercase"}><i>lowercase</i></ClLinks> letters are distinguished after #\; #\A and #\a denote different *character objects*. Any single <ClLinks  term={"character"}><i>character</i></ClLinks> works after #\, even those that are normally special to <DictionaryLink  term={"read"}><b>read</b></DictionaryLink>, such as <ClLinks  term={"left-parenthesis"}><i>left-parenthesis</i></ClLinks> and <ClLinks  term={"right-parenthesis"}><i>right-parenthesis</i></ClLinks>. 
 
 
 

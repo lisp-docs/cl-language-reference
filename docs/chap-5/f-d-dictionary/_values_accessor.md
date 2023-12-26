@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"values"}><b>values</b></ClLinks> &amp;rest *object ! \{object\}*\* 
+<DictionaryLink  term={"values"}><b>values</b></DictionaryLink> &amp;rest *object ! \{object\}*\* 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks  term={"values"}><b>values</b></ClLinks> returns the <ClLinks  term={"object"}><i>objects</i></ClLinks> as <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub>. 
+<DictionaryLink  term={"values"}><b>values</b></DictionaryLink> returns the <ClLinks  term={"object"}><i>objects</i></ClLinks> as <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub>. 
 
 
 
-<ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"values"}><b>values</b></ClLinks> is used to store the <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub> *new-values* into the <ClLinks  term={"place"}><i>places</i></ClLinks>. See Section 5.1.2.3 (VALUES Forms as Places). 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> is used to store the <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub> *new-values* into the <ClLinks  term={"place"}><i>places</i></ClLinks>. See Section 5.1.2.3 (VALUES Forms as Places). 
 
 
 
@@ -67,7 +67,7 @@ This works because **values** returns exactly one value for each of *args*; as f
 
 
 
-<ClLinks  term={"values-list"}><b>values-list</b></ClLinks>, <ClLinks  term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks>, <ClLinks  term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks>, Section 3.1 (Evaluation) 
+<DictionaryLink  term={"values-list"}><b>values-list</b></DictionaryLink>, <DictionaryLink  term={"multiple-value-bind"}><b>multiple-value-bind</b></DictionaryLink>, <DictionaryLink  term={"multiple-values-limit"}><b>multiple-values-limit</b></DictionaryLink>, Section 3.1 (Evaluation) 
 
 
 
@@ -75,7 +75,7 @@ This works because **values** returns exactly one value for each of *args*; as f
 
 
 
-Since <ClLinks  term={"values"}><b>values</b></ClLinks> is a <ClLinks  term={"function"}><i>function</i></ClLinks>, not a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>, it receives as <ClLinks  term={"argument"}><i>arguments</i></ClLinks> only the <GlossaryTerm styled={true} term={"primary value"}><i>primary values</i></GlossaryTerm> of its *argument forms*. 
+Since <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> is a <ClLinks  term={"function"}><i>function</i></ClLinks>, not a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>, it receives as <ClLinks  term={"argument"}><i>arguments</i></ClLinks> only the <GlossaryTerm styled={true} term={"primary value"}><i>primary values</i></GlossaryTerm> of its *argument forms*. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks> *string → symbols* 
+<DictionaryLink  term={"find-all-symbols"}><b>find-all-symbols</b></DictionaryLink> *string → symbols* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks> searches every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have a <ClLinks  term={"name"}><i>name</i></ClLinks> that is the <ClLinks  term={"same"}><i>same</i></ClLinks> (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as <ClLinks  term={"string"}><i>string</i></ClLinks>. A <ClLinks  term={"list"}><i>list</i></ClLinks> of all such <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is returned. Whether or how the <ClLinks  term={"list"}><i>list</i></ClLinks> is ordered is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<DictionaryLink  term={"find-all-symbols"}><b>find-all-symbols</b></DictionaryLink> searches every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have a <ClLinks  term={"name"}><i>name</i></ClLinks> that is the <ClLinks  term={"same"}><i>same</i></ClLinks> (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as <ClLinks  term={"string"}><i>string</i></ClLinks>. A <ClLinks  term={"list"}><i>list</i></ClLinks> of all such <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is returned. Whether or how the <ClLinks  term={"list"}><i>list</i></ClLinks> is ordered is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -47,7 +47,7 @@
 
 
 
-<ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks> 
+<DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink> 
 
 
 

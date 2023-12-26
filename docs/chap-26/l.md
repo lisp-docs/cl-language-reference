@@ -11,7 +11,7 @@ sidebar_position: 108
 
 
 
-**lambda expression** *n.* a <ClLinks  term={"list"}><i>list</i></ClLinks> which can be used in place of a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> in certain contexts to denote a <ClLinks  term={"function"}><i>function</i></ClLinks> by directly describing its behavior rather than indirectly by referring to the name of an *established function*; its name derives from the fact that its first element is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> lambda. See <ClLinks  term={"lambda"}><b>lambda</b></ClLinks>. 
+**lambda expression** *n.* a <ClLinks  term={"list"}><i>list</i></ClLinks> which can be used in place of a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> in certain contexts to denote a <ClLinks  term={"function"}><i>function</i></ClLinks> by directly describing its behavior rather than indirectly by referring to the name of an *established function*; its name derives from the fact that its first element is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> lambda. See <DictionaryLink  term={"lambda"}><b>lambda</b></DictionaryLink>. 
 
 
 
@@ -59,7 +59,7 @@ parenthesis” or “open parenthesis” See Figure 2–5.
 
 
 
-<ClLinks  term={"length"}><b>length</b></ClLinks> *n.* (of a *sequence*) the number of <ClLinks  term={"element"}><i>elements</i></ClLinks> in the *sequence*. (Note that if the *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , its <ClLinks  term={"length"}><i>length</i></ClLinks> is the same as the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> even though the total allocated size of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> might be larger.) 
+<DictionaryLink  term={"length"}><b>length</b></DictionaryLink> *n.* (of a *sequence*) the number of <ClLinks  term={"element"}><i>elements</i></ClLinks> in the *sequence*. (Note that if the *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , its <ClLinks  term={"length"}><i>length</i></ClLinks> is the same as the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> even though the total allocated size of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> might be larger.) 
 
 
 
@@ -75,7 +75,7 @@ parenthesis” or “open parenthesis” See Figure 2–5.
 
 
 
-ordinary <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of *variable names* to <ClLinks  term={"value"}><i>values</i></ClLinks>, lexically *established bindings* of <GlossaryTerm styled={true} term={"function name"}><i>function names</i></GlossaryTerm> to <ClLinks  term={"function"}><i>functions</i></ClLinks>, <ClLinks  term={"macro"}><i>macros</i></ClLinks>, <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macros</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"block"}><i>blocks</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"tag"}><i>tags</i></GlossaryTerm>, and <GlossaryTerm styled={true} term={"local declaration"}><i>local declarations</i></GlossaryTerm> (see <ClLinks  term={"declare"}><b>declare</b></ClLinks>). 
+ordinary <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of *variable names* to <ClLinks  term={"value"}><i>values</i></ClLinks>, lexically *established bindings* of <GlossaryTerm styled={true} term={"function name"}><i>function names</i></GlossaryTerm> to <ClLinks  term={"function"}><i>functions</i></ClLinks>, <ClLinks  term={"macro"}><i>macros</i></ClLinks>, <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macros</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"block"}><i>blocks</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"tag"}><i>tags</i></GlossaryTerm>, and <GlossaryTerm styled={true} term={"local declaration"}><i>local declarations</i></GlossaryTerm> (see <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>). 
 
 
 
@@ -115,7 +115,7 @@ area that permits the sharing of some but not all <ClLinks  term={"object"}><i>o
 
 
 
-**Lisp printer** *n. Trad.* the procedure that prints the character representation of an <ClLinks  term={"object"}><i>object</i></ClLinks> onto a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. (This procedure is implemented by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"write"}><b>write</b></ClLinks>.) 
+**Lisp printer** *n. Trad.* the procedure that prints the character representation of an <ClLinks  term={"object"}><i>object</i></ClLinks> onto a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. (This procedure is implemented by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"write"}><b>write</b></DictionaryLink>.) 
 
 
 
@@ -123,11 +123,11 @@ area that permits the sharing of some but not all <ClLinks  term={"object"}><i>o
 
 
 
-**Lisp reader** *n. Trad.* the procedure that parses character representations of <ClLinks  term={"object"}><i>objects</i></ClLinks> from a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, producing <ClLinks  term={"object"}><i>objects</i></ClLinks>. (This procedure is implemented by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"read"}><b>read</b></ClLinks>.) 
+**Lisp reader** *n. Trad.* the procedure that parses character representations of <ClLinks  term={"object"}><i>objects</i></ClLinks> from a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, producing <ClLinks  term={"object"}><i>objects</i></ClLinks>. (This procedure is implemented by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"read"}><b>read</b></DictionaryLink>.) 
 
 
 
-<ClLinks  term={"list"}><b>list</b></ClLinks> *n.* 1. a chain of *conses* in which the <ClLinks  term={"car"}><i>car</i></ClLinks> of each <ClLinks  term={"cons"}><i>cons</i></ClLinks> is an <ClLinks  term={"element"}><i>element</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks>, and the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of each <ClLinks  term={"cons"}><i>cons</i></ClLinks> is either the next link in the chain or a terminating <ClLinks  term={"atom"}><i>atom</i></ClLinks>. See also *proper list<ClLinks  term={"t"}><i>, </i></ClLinks>dotted list*, or <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm>. 2. the <ClLinks  term={"type"}><i>type</i></ClLinks> that is the union of <ClLinks  term={"null"}><b>null</b></ClLinks> and <ClLinks  term={"cons"}><b>cons</b></ClLinks>. 
+<DictionaryLink  term={"list"}><b>list</b></DictionaryLink> *n.* 1. a chain of *conses* in which the <ClLinks  term={"car"}><i>car</i></ClLinks> of each <ClLinks  term={"cons"}><i>cons</i></ClLinks> is an <ClLinks  term={"element"}><i>element</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks>, and the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of each <ClLinks  term={"cons"}><i>cons</i></ClLinks> is either the next link in the chain or a terminating <ClLinks  term={"atom"}><i>atom</i></ClLinks>. See also *proper list<ClLinks  term={"t"}><i>, </i></ClLinks>dotted list*, or <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm>. 2. the <ClLinks  term={"type"}><i>type</i></ClLinks> that is the union of <DictionaryLink  term={"null"}><b>null</b></DictionaryLink> and <DictionaryLink  term={"cons"}><b>cons</b></DictionaryLink>. 
 
 
 
@@ -139,11 +139,11 @@ area that permits the sharing of some but not all <ClLinks  term={"object"}><i>o
 
 
 
-**literal** *adj.* (of an <ClLinks  term={"object"}><i>object</i></ClLinks>) referenced directly in a program rather than being computed by the program; that is, appearing as data in a <ClLinks  term={"quote"}><b>quote</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, or, if the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *self evaluating object*, appearing as unquoted data. “In the form (cons "one" ’("two")), the expressions "one", ("two"), and "two" are literal objects.” 
+**literal** *adj.* (of an <ClLinks  term={"object"}><i>object</i></ClLinks>) referenced directly in a program rather than being computed by the program; that is, appearing as data in a <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>, or, if the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *self evaluating object*, appearing as unquoted data. “In the form (cons "one" ’("two")), the expressions "one", ("two"), and "two" are literal objects.” 
 
 
 
-<ClLinks  term={"load"}><b>load</b></ClLinks> *v.t.* (a <ClLinks  term={"file"}><i>file</i></ClLinks>) to cause the <ClLinks  term={"code"}><i>code</i></ClLinks> contained in the <ClLinks  term={"file"}><i>file</i></ClLinks> to be *executed*. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"load"}><b>load</b></ClLinks>. 
+<DictionaryLink  term={"load"}><b>load</b></DictionaryLink> *v.t.* (a <ClLinks  term={"file"}><i>file</i></ClLinks>) to cause the <ClLinks  term={"code"}><i>code</i></ClLinks> contained in the <ClLinks  term={"file"}><i>file</i></ClLinks> to be *executed*. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"load"}><b>load</b></DictionaryLink>. 
 
 
 
@@ -163,19 +163,19 @@ area that permits the sharing of some but not all <ClLinks  term={"object"}><i>o
 
 
 
-**load time value** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> referred to in <ClLinks  term={"code"}><i>code</i></ClLinks> by a <ClLinks  term={"load-time-value"}><b>load-time-value</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. The <ClLinks  term={"value"}><i>value</i></ClLinks> of such a <ClLinks  term={"form"}><i>form</i></ClLinks> is some specific <ClLinks  term={"object"}><i>object</i></ClLinks> which can only be computed in the 
+**load time value** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> referred to in <ClLinks  term={"code"}><i>code</i></ClLinks> by a <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. The <ClLinks  term={"value"}><i>value</i></ClLinks> of such a <ClLinks  term={"form"}><i>form</i></ClLinks> is some specific <ClLinks  term={"object"}><i>object</i></ClLinks> which can only be computed in the 
 
 
 
-run-time <ClLinks  term={"environment"}><i>environment</i></ClLinks>. In the case of *file compilation*, the <ClLinks  term={"value"}><i>value</i></ClLinks> is computed once as part of the process of *loading* the <GlossaryTerm styled={true} term={"compiled file"}><i>compiled file</i></GlossaryTerm>, and not again. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <ClLinks  term={"load-time-value"}><b>load-time-value</b></ClLinks>. 
+run-time <ClLinks  term={"environment"}><i>environment</i></ClLinks>. In the case of *file compilation*, the <ClLinks  term={"value"}><i>value</i></ClLinks> is computed once as part of the process of *loading* the <GlossaryTerm styled={true} term={"compiled file"}><i>compiled file</i></GlossaryTerm>, and not again. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <DictionaryLink  term={"load-time-value"}><b>load-time-value</b></DictionaryLink>. 
 
 
 
-**loader** *n.* a facility that is part of Lisp and that <ClLinks  term={"load"}><i>loads</i></ClLinks> a <ClLinks  term={"file"}><i>file</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"load"}><b>load</b></ClLinks>. 
+**loader** *n.* a facility that is part of Lisp and that <ClLinks  term={"load"}><i>loads</i></ClLinks> a <ClLinks  term={"file"}><i>file</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"load"}><b>load</b></DictionaryLink>. 
 
 
 
-**local declaration** *n.* an <ClLinks  term={"expression"}><i>expression</i></ClLinks> which may appear only in specially designated positions of certain <ClLinks  term={"form"}><i>forms</i></ClLinks>, and which provides information about the code contained within the containing <ClLinks  term={"form"}><i>form</i></ClLinks>; that is, a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>. 
+**local declaration** *n.* an <ClLinks  term={"expression"}><i>expression</i></ClLinks> which may appear only in specially designated positions of certain <ClLinks  term={"form"}><i>forms</i></ClLinks>, and which provides information about the code contained within the containing <ClLinks  term={"form"}><i>form</i></ClLinks>; that is, a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>. 
 
 
 
@@ -187,7 +187,7 @@ run-time <ClLinks  term={"environment"}><i>environment</i></ClLinks>. In the cas
 
 
 
-**logical block** *n.* a conceptual grouping of related output used by the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> . See the <ClLinks  term={"macro"}><i>macro</i></ClLinks> <ClLinks  term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks> and Section 22.2.1.1 (Dynamic Control of the Arrangement of Output). 
+**logical block** *n.* a conceptual grouping of related output used by the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> . See the <ClLinks  term={"macro"}><i>macro</i></ClLinks> <DictionaryLink  term={"pprint-logical-block"}><b>pprint-logical-block</b></DictionaryLink> and Section 22.2.1.1 (Dynamic Control of the Arrangement of Output). 
 
 
 
@@ -199,15 +199,15 @@ run-time <ClLinks  term={"environment"}><i>environment</i></ClLinks>. In the cas
 
 
 
-**logical pathname** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>. 
+**logical pathname** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>. 
 
 
 
-**long float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>. 
+**long float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink>. 
 
 
 
-**loop keyword** *n. Trad.* a symbol that is a specially recognized part of the syntax of an extended <ClLinks  term={"loop"}><b>loop</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. Such symbols are recognized by their <ClLinks  term={"name"}><i>name</i></ClLinks> (using <ClLinks  term={"string"}><b>string=</b></ClLinks>), not by their identity; as such, they may be in any package. A <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> is not a <ClLinks  term={"keyword"}><i>keyword</i></ClLinks>. 
+**loop keyword** *n. Trad.* a symbol that is a specially recognized part of the syntax of an extended <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. Such symbols are recognized by their <ClLinks  term={"name"}><i>name</i></ClLinks> (using <ClLinks  term={"string"}><b>string=</b></ClLinks>), not by their identity; as such, they may be in any package. A <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> is not a <ClLinks  term={"keyword"}><i>keyword</i></ClLinks>. 
 
 
 

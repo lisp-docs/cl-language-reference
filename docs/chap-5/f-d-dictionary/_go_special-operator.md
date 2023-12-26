@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"go"}><b>go</b></ClLinks> *tag →* 
+<DictionaryLink  term={"go"}><b>go</b></DictionaryLink> *tag →* 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-<ClLinks  term={"go"}><b>go</b></ClLinks> transfers control to the point in the body of an enclosing <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> form labeled by a tag <ClLinks  term={"eql"}><b>eql</b></ClLinks> to <ClLinks  term={"tag"}><i>tag</i></ClLinks>. If there is no such <ClLinks  term={"tag"}><i>tag</i></ClLinks> in the body, the bodies of lexically containing <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks> (if any) are examined as well. If several tags are <ClLinks  term={"eql"}><b>eql</b></ClLinks> to <ClLinks  term={"tag"}><i>tag</i></ClLinks>, control is transferred to whichever matching <ClLinks  term={"tag"}><i>tag</i></ClLinks> is contained in the innermost <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> form that contains the <ClLinks  term={"go"}><b>go</b></ClLinks>. The consequences are undefined if there is no matching <ClLinks  term={"tag"}><i>tag</i></ClLinks> lexically visible to the point of the <ClLinks  term={"go"}><b>go</b></ClLinks>. 
+<DictionaryLink  term={"go"}><b>go</b></DictionaryLink> transfers control to the point in the body of an enclosing <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> form labeled by a tag <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> to <ClLinks  term={"tag"}><i>tag</i></ClLinks>. If there is no such <ClLinks  term={"tag"}><i>tag</i></ClLinks> in the body, the bodies of lexically containing <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks> (if any) are examined as well. If several tags are <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> to <ClLinks  term={"tag"}><i>tag</i></ClLinks>, control is transferred to whichever matching <ClLinks  term={"tag"}><i>tag</i></ClLinks> is contained in the innermost <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> form that contains the <DictionaryLink  term={"go"}><b>go</b></DictionaryLink>. The consequences are undefined if there is no matching <ClLinks  term={"tag"}><i>tag</i></ClLinks> lexically visible to the point of the <DictionaryLink  term={"go"}><b>go</b></DictionaryLink>. 
 
 
 
-The transfer of control initiated by <ClLinks  term={"go"}><b>go</b></ClLinks> is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
+The transfer of control initiated by <DictionaryLink  term={"go"}><b>go</b></DictionaryLink> is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
 
 
 
@@ -51,7 +51,7 @@ The following is in error because the **tagbody** is passed over before the **go
 
 
 
-<ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> 
+<DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> 
 
 
 

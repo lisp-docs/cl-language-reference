@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"read-from-string"}><b>read-from-string</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *eof-error-p eof-value* 
+<DictionaryLink  term={"read-from-string"}><b>read-from-string</b></DictionaryLink> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *eof-error-p eof-value* 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
@@ -66,11 +66,11 @@
 
 
 
-Parses the printed representation of an <ClLinks  term={"object"}><i>object</i></ClLinks> from the subsequence of *string bounded* by *start* and *end*, as if <ClLinks  term={"read"}><b>read</b></ClLinks> had been called on an *input stream* containing those same <ClLinks  term={"character"}><i>characters</i></ClLinks>. 
+Parses the printed representation of an <ClLinks  term={"object"}><i>object</i></ClLinks> from the subsequence of *string bounded* by *start* and *end*, as if <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> had been called on an *input stream* containing those same <ClLinks  term={"character"}><i>characters</i></ClLinks>. 
 
 
 
-If *preserve-whitespace* is <ClLinks  term={"true"}><i>true</i></ClLinks>, the operation will preserve <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> as <ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> would do. 
+If *preserve-whitespace* is <ClLinks  term={"true"}><i>true</i></ClLinks>, the operation will preserve <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> as <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> would do. 
 
 
 
@@ -99,7 +99,7 @@ If the end of the supplied substring occurs before an <ClLinks  term={"object"}>
 
 
 
-<ClLinks  term={"read"}><b>read</b></ClLinks>, <ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> 
+<DictionaryLink  term={"read"}><b>read</b></DictionaryLink>, <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> 
 
 
 

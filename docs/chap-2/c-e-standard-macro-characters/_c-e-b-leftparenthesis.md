@@ -2,7 +2,7 @@
 
 
 
-The <ClLinks  term={"left-parenthesis"}><i>left-parenthesis</i></ClLinks> initiates reading of a <ClLinks  term={"list"}><i>list</i></ClLinks>. <ClLinks  term={"read"}><b>read</b></ClLinks> is called recursively to read successive <ClLinks  term={"object"}><i>objects</i></ClLinks> until a right parenthesis is found in the input <ClLinks  term={"stream"}><i>stream</i></ClLinks>. A <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"object"}><i>objects</i></ClLinks> read is returned. Thus 
+The <ClLinks  term={"left-parenthesis"}><i>left-parenthesis</i></ClLinks> initiates reading of a <ClLinks  term={"list"}><i>list</i></ClLinks>. <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> is called recursively to read successive <ClLinks  term={"object"}><i>objects</i></ClLinks> until a right parenthesis is found in the input <ClLinks  term={"stream"}><i>stream</i></ClLinks>. A <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"object"}><i>objects</i></ClLinks> read is returned. Thus 
 
 
 
@@ -26,7 +26,7 @@ If a <ClLinks  term={"token"}><i>token</i></ClLinks> that is just a dot not imme
 
 
 
-This means that the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of the last <ClLinks  term={"cons"}><i>cons</i></ClLinks> in the <ClLinks  term={"list"}><i>list</i></ClLinks> is not <ClLinks  term={"nil"}><b>nil</b></ClLinks>, but rather the <ClLinks  term={"object"}><i>object</i></ClLinks> whose representation followed the dot. The above example might have been the result of evaluating 
+This means that the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> of the last <ClLinks  term={"cons"}><i>cons</i></ClLinks> in the <ClLinks  term={"list"}><i>list</i></ClLinks> is not <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, but rather the <ClLinks  term={"object"}><i>object</i></ClLinks> whose representation followed the dot. The above example might have been the result of evaluating 
 
 
 

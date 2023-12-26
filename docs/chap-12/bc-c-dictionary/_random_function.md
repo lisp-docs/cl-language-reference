@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"random"}><b>random</b></ClLinks> *limit* &amp;optional *random-state → random-number* 
+<DictionaryLink  term={"random"}><b>random</b></DictionaryLink> *limit* &amp;optional *random-state → random-number* 
 
 
 
@@ -61,7 +61,7 @@ The *random-state* is modified.
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *limit* is not a positive *integer* or a positive *real*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *limit* is not a positive *integer* or a positive *real*. 
 
 
 
@@ -69,7 +69,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"make-random-state"}><b>make-random-state</b></ClLinks>, <ClLinks  term={"random-state"}><b>\*random-state\*</b></ClLinks> 
+<DictionaryLink  term={"make-random-state"}><b>make-random-state</b></DictionaryLink>, <DictionaryLink  term={"random-state"}><b>\*random-state\*</b></DictionaryLink> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"bit-vector-p"}><b>bit-vector-p</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink  term={"bit-vector-p"}><b>bit-vector-p</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"bit-vector"}><b>bit-vector</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"bit-vector"}><b>bit-vector</b></DictionaryLink>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"typep"}><b>typep</b></ClLinks> 
+<DictionaryLink  term={"typep"}><b>typep</b></DictionaryLink> 
 
 
 

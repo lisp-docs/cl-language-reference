@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"broadcast-stream-streams"}><b>broadcast-stream-streams</b></ClLinks> *broadcast-stream → streams* 
+<DictionaryLink  term={"broadcast-stream-streams"}><b>broadcast-stream-streams</b></DictionaryLink> *broadcast-stream → streams* 
 
 
 

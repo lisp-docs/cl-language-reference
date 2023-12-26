@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"progv"}><b>progv</b></ClLinks> *symbols values \{form\}*\* → \{result\}\* 
+<DictionaryLink  term={"progv"}><b>progv</b></DictionaryLink> *symbols values \{form\}*\* → \{result\}\* 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks  term={"progv"}><b>progv</b></ClLinks> creates new dynamic variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> and executes each <ClLinks  term={"form"}><i>form</i></ClLinks> using those <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. Each <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated in order. 
+<DictionaryLink  term={"progv"}><b>progv</b></DictionaryLink> creates new dynamic variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> and executes each <ClLinks  term={"form"}><i>form</i></ClLinks> using those <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. Each <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated in order. 
 
 
 
-<ClLinks  term={"progv"}><b>progv</b></ClLinks> allows <ClLinks  term={"binding"}><i>binding</i></ClLinks> one or more dynamic variables whose names may be determined at run time. Each <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated in order with the dynamic variables whose names are in <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> bound to corresponding <ClLinks  term={"value"}><i>values</i></ClLinks>. If too few <ClLinks  term={"value"}><i>values</i></ClLinks> are supplied, the remaining <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are bound and then made to have no value. If too many <ClLinks  term={"value"}><i>values</i></ClLinks> are supplied, the excess values are ignored. The <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the dynamic variables are undone on exit from <ClLinks  term={"progv"}><b>progv</b></ClLinks>. 
+<DictionaryLink  term={"progv"}><b>progv</b></DictionaryLink> allows <ClLinks  term={"binding"}><i>binding</i></ClLinks> one or more dynamic variables whose names may be determined at run time. Each <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated in order with the dynamic variables whose names are in <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> bound to corresponding <ClLinks  term={"value"}><i>values</i></ClLinks>. If too few <ClLinks  term={"value"}><i>values</i></ClLinks> are supplied, the remaining <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are bound and then made to have no value. If too many <ClLinks  term={"value"}><i>values</i></ClLinks> are supplied, the excess values are ignored. The <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the dynamic variables are undone on exit from <DictionaryLink  term={"progv"}><b>progv</b></DictionaryLink>. 
 
 
 
@@ -58,7 +58,7 @@ Assuming \*x\* is not globally special,
 
 
 
-<ClLinks  term={"let"}><b>let</b></ClLinks>, Section 3.1 (Evaluation) 
+<DictionaryLink  term={"let"}><b>let</b></DictionaryLink>, Section 3.1 (Evaluation) 
 
 
 
@@ -66,7 +66,7 @@ Assuming \*x\* is not globally special,
 
 
 
-Among other things, <ClLinks  term={"progv"}><b>progv</b></ClLinks> is useful when writing interpreters for languages embedded in Lisp; it provides a handle on the mechanism for *binding dynamic variables*. 
+Among other things, <DictionaryLink  term={"progv"}><b>progv</b></DictionaryLink> is useful when writing interpreters for languages embedded in Lisp; it provides a handle on the mechanism for *binding dynamic variables*. 
 
 
 

@@ -6,7 +6,7 @@ If two *literal objects* appearing in the source code for a single file processe
 
 
 
-<ClLinks  term={"object"}><i>Objects</i></ClLinks> containing circular references can be <GlossaryTerm styled={true} term={"externalizable object"}><i>externalizable objects</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> is required to preserve <ClLinks  term={"eql"}><b>eql</b></ClLinks>ness of substructures within a <ClLinks  term={"file"}><i>file</i></ClLinks>. Preserving <ClLinks  term={"eql"}><b>eql</b></ClLinks>ness means that subobjects that are the <ClLinks  term={"same"}><i>same</i></ClLinks> in the <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm> must be the <ClLinks  term={"same"}><i>same</i></ClLinks> in the corresponding <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm>. 
+<ClLinks  term={"object"}><i>Objects</i></ClLinks> containing circular references can be <GlossaryTerm styled={true} term={"externalizable object"}><i>externalizable objects</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> is required to preserve <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>ness of substructures within a <ClLinks  term={"file"}><i>file</i></ClLinks>. Preserving <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>ness means that subobjects that are the <ClLinks  term={"same"}><i>same</i></ClLinks> in the <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm> must be the <ClLinks  term={"same"}><i>same</i></ClLinks> in the corresponding <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm>. 
 
 
 
@@ -22,19 +22,19 @@ In addition, the following are constraints on the handling of *literal objects* 
 
 
 
-**packages:** The loader is required to find the corresponding *package object* as if by calling <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> with the package name as an argument. An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled if no <ClLinks  term={"package"}><i>package</i></ClLinks> of that name exists at load time. 
+**packages:** The loader is required to find the corresponding *package object* as if by calling <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> with the package name as an argument. An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled if no <ClLinks  term={"package"}><i>package</i></ClLinks> of that name exists at load time. 
 
 
 
-<ClLinks  term={"random-state"}><b>random-state:</b></ClLinks> A constant <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> object cannot be used as the state argument to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"random"}><b>random</b></ClLinks> because <ClLinks  term={"random"}><b>random</b></ClLinks> modifies this data structure. 
+<ClLinks  term={"random-state"}><b>random-state:</b></ClLinks> A constant <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> object cannot be used as the state argument to the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> because <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> modifies this data structure. 
 
 
 
-**structure, standard-object:** <ClLinks  term={"object"}><i>Objects</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks> and <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> may appear in compiled constants if there is an appropriate <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> method defined for that <ClLinks  term={"type"}><i>type</i></ClLinks>. 
+**structure, standard-object:** <ClLinks  term={"object"}><i>Objects</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"structure-object"}><b>structure-object</b></DictionaryLink> and <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink> may appear in compiled constants if there is an appropriate <DictionaryLink  term={"make-load-form"}><b>make-load-form</b></DictionaryLink> method defined for that <ClLinks  term={"type"}><i>type</i></ClLinks>. 
 
 
 
-The <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> calls <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> on any <ClLinks  term={"object"}><i>object</i></ClLinks> that is referenced as a *literal object* if the <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks>, <ClLinks  term={"condition"}><b>condition</b></ClLinks>, or any of a (possibly empty) <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> set of other *classes*. The <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> only calls <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> once for any given <ClLinks  term={"object"}><i>object</i></ClLinks> within a single <ClLinks  term={"file"}><i>file</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> calls <DictionaryLink  term={"make-load-form"}><b>make-load-form</b></DictionaryLink> on any <ClLinks  term={"object"}><i>object</i></ClLinks> that is referenced as a *literal object* if the <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink>, <DictionaryLink  term={"structure-object"}><b>structure-object</b></DictionaryLink>, <DictionaryLink  term={"condition"}><b>condition</b></DictionaryLink>, or any of a (possibly empty) <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> set of other *classes*. The <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> only calls <DictionaryLink  term={"make-load-form"}><b>make-load-form</b></DictionaryLink> once for any given <ClLinks  term={"object"}><i>object</i></ClLinks> within a single <ClLinks  term={"file"}><i>file</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ The <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></Glo
 
 
 
-1\. The <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> when a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the <ClLinks  term={"file"}><i>file</i></ClLinks> is processed by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> must be the same as the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> when the <ClLinks  term={"code"}><i>code</i></ClLinks> corresponding to that <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"compiled file"}><i>compiled file</i></GlossaryTerm> is executed by <ClLinks  term={"load"}><b>load</b></ClLinks>. In particular: 
+1\. The <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> when a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the <ClLinks  term={"file"}><i>file</i></ClLinks> is processed by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> must be the same as the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> when the <ClLinks  term={"code"}><i>code</i></ClLinks> corresponding to that <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"compiled file"}><i>compiled file</i></GlossaryTerm> is executed by <DictionaryLink  term={"load"}><b>load</b></DictionaryLink>. In particular: 
 
 
 
@@ -54,11 +54,11 @@ a <ClLinks  term={"package"}><i>package</i></ClLinks> of the same <ClLinks  term
 
 
 
-b. If the first *non-atomic top level form* in the <ClLinks  term={"file"}><i>file</i></ClLinks> is not an <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, 
+b. If the first *non-atomic top level form* in the <ClLinks  term={"file"}><i>file</i></ClLinks> is not an <DictionaryLink  term={"in-package"}><b>in-package</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>, 
 
 
 
-then the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at the time <ClLinks  term={"load"}><b>load</b></ClLinks> is called must be a <ClLinks  term={"package"}><i>package</i></ClLinks> with 
+then the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at the time <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> is called must be a <ClLinks  term={"package"}><i>package</i></ClLinks> with 
 
 
 
@@ -66,7 +66,7 @@ the same <ClLinks  term={"name"}><i>name</i></ClLinks> as the package that was t
 
 
 
-<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> was called. 
+<DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> was called. 
 
 
 

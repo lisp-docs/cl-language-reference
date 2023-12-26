@@ -6,15 +6,15 @@
 
 
 
-<ClLinks  term={"finish-output"}><b>finish-output</b></ClLinks> &amp;optional *output-stream →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink  term={"finish-output"}><b>finish-output</b></DictionaryLink> &amp;optional *output-stream →* <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"force-output"}><b>force-output</b></ClLinks> &amp;optional *output-stream →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink  term={"force-output"}><b>force-output</b></DictionaryLink> &amp;optional *output-stream →* <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"clear-output"}><b>clear-output</b></ClLinks> &amp;optional *output-stream →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink  term={"clear-output"}><b>clear-output</b></DictionaryLink> &amp;optional *output-stream →* <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-<ClLinks  term={"finish-output"}><b>finish-output</b></ClLinks>, <ClLinks  term={"force-output"}><b>force-output</b></ClLinks>, and <ClLinks  term={"clear-output"}><b>clear-output</b></ClLinks> exercise control over the internal handling of buffered stream output. 
+<DictionaryLink  term={"finish-output"}><b>finish-output</b></DictionaryLink>, <DictionaryLink  term={"force-output"}><b>force-output</b></DictionaryLink>, and <DictionaryLink  term={"clear-output"}><b>clear-output</b></DictionaryLink> exercise control over the internal handling of buffered stream output. 
 
 
 
-<ClLinks  term={"finish-output"}><b>finish-output</b></ClLinks> attempts to ensure that any buffered output sent to *output-stream* has reached its destination, and then returns. 
+<DictionaryLink  term={"finish-output"}><b>finish-output</b></DictionaryLink> attempts to ensure that any buffered output sent to *output-stream* has reached its destination, and then returns. 
 
 
 
-<ClLinks  term={"force-output"}><b>force-output</b></ClLinks> initiates the emptying of any internal buffers but does not wait for completion or acknowledgment to return. 
+<DictionaryLink  term={"force-output"}><b>force-output</b></DictionaryLink> initiates the emptying of any internal buffers but does not wait for completion or acknowledgment to return. 
 
 
 
-<ClLinks  term={"clear-output"}><b>clear-output</b></ClLinks> attempts to abort any outstanding output operation in progress in order to allow as little output as possible to continue to the destination. 
+<DictionaryLink  term={"clear-output"}><b>clear-output</b></DictionaryLink> attempts to abort any outstanding output operation in progress in order to allow as little output as possible to continue to the destination. 
 
 
 
@@ -84,7 +84,7 @@ If any of these operations does not make sense for *output-stream*, then it does
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *output-stream* is not a <GlossaryTerm styled={true} term={"stream designator"}><i>stream designator</i></GlossaryTerm> . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *output-stream* is not a <GlossaryTerm styled={true} term={"stream designator"}><i>stream designator</i></GlossaryTerm> . 
 
 
 
@@ -92,7 +92,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"clear-input"}><b>clear-input</b></ClLinks> 
+<DictionaryLink  term={"clear-input"}><b>clear-input</b></DictionaryLink> 
 
 
 

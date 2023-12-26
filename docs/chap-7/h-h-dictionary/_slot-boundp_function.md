@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks> *instance slot-name → generalized-boolean* 
+<DictionaryLink  term={"slot-boundp"}><b>slot-boundp</b></DictionaryLink> *instance slot-name → generalized-boolean* 
 
 
 
@@ -38,7 +38,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the <ClLinks  term={"sl
 
 
 
-If no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the *name slot-name* exists in the <ClLinks  term={"instance"}><i>instance</i></ClLinks>, <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is called as follows: 
+If no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the *name slot-name* exists in the <ClLinks  term={"instance"}><i>instance</i></ClLinks>, <DictionaryLink  term={"slot-missing"}><b>slot-missing</b></DictionaryLink> is called as follows: 
 
 
 
@@ -58,7 +58,7 @@ If no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the *name slot-name* exis
 
 
 
-(If <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is invoked and returns a value, a <GlossaryTerm styled={true} term={"boolean equivalent"}><i>boolean equivalent</i></GlossaryTerm> to its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is returned by <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks>.) 
+(If <DictionaryLink  term={"slot-missing"}><b>slot-missing</b></DictionaryLink> is invoked and returns a value, a <GlossaryTerm styled={true} term={"boolean equivalent"}><i>boolean equivalent</i></GlossaryTerm> to its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is returned by <DictionaryLink  term={"slot-boundp"}><b>slot-boundp</b></DictionaryLink>.) 
 
 
 
@@ -74,7 +74,7 @@ If no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the *name slot-name* exis
 
 
 
-The specific behavior depends on <ClLinks  term={"instance"}><i>instance</i></ClLinks>’s <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>. An error is never signaled if <ClLinks  term={"instance"}><i>instance</i></ClLinks> has <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks> <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>. An error is always signaled if <ClLinks  term={"instance"}><i>instance</i></ClLinks> has <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks> <ClLinks  term={"built-in-class"}><b>built-in-class</b></ClLinks>. The consequences are undefined if <ClLinks  term={"instance"}><i>instance</i></ClLinks> has any other <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>–an error might or might not be signaled in this situation. Note in particular that the behavior for <ClLinks  term={"condition"}><i>conditions</i></ClLinks> and <ClLinks  term={"structure"}><i>structures</i></ClLinks> is not specified. 
+The specific behavior depends on <ClLinks  term={"instance"}><i>instance</i></ClLinks>’s <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>. An error is never signaled if <ClLinks  term={"instance"}><i>instance</i></ClLinks> has <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>. An error is always signaled if <ClLinks  term={"instance"}><i>instance</i></ClLinks> has <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks> <DictionaryLink  term={"built-in-class"}><b>built-in-class</b></DictionaryLink>. The consequences are undefined if <ClLinks  term={"instance"}><i>instance</i></ClLinks> has any other <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>–an error might or might not be signaled in this situation. Note in particular that the behavior for <ClLinks  term={"condition"}><i>conditions</i></ClLinks> and <ClLinks  term={"structure"}><i>structures</i></ClLinks> is not specified. 
 
 
 
@@ -82,7 +82,7 @@ The specific behavior depends on <ClLinks  term={"instance"}><i>instance</i></Cl
 
 
 
-<ClLinks  term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks>, <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> 
+<DictionaryLink  term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink>, <DictionaryLink  term={"slot-missing"}><b>slot-missing</b></DictionaryLink> 
 
 
 
@@ -90,11 +90,11 @@ The specific behavior depends on <ClLinks  term={"instance"}><i>instance</i></Cl
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks> allows for writing <GlossaryTerm styled={true} term={"after method"}><i>after methods</i></GlossaryTerm> on <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks> in order to initialize only those <ClLinks  term={"slot"}><i>slots</i></ClLinks> that have not already been bound. 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"slot-boundp"}><b>slot-boundp</b></DictionaryLink> allows for writing <GlossaryTerm styled={true} term={"after method"}><i>after methods</i></GlossaryTerm> on <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink> in order to initialize only those <ClLinks  term={"slot"}><i>slots</i></ClLinks> that have not already been bound. 
 
 
 
-Although no <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to do so, implementors are strongly encouraged to implement the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks> using the <ClLinks  term={"function"}><i>function</i></ClLinks> slot-boundp-using-class described in the *Metaobject Protocol*. 
+Although no <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to do so, implementors are strongly encouraged to implement the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"slot-boundp"}><b>slot-boundp</b></DictionaryLink> using the <ClLinks  term={"function"}><i>function</i></ClLinks> slot-boundp-using-class described in the *Metaobject Protocol*. 
 
 
 

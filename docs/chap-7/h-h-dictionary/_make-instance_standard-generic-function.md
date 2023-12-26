@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> <ClLinks  term={"class"}><i>class</i></ClLinks> &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
+<DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> <ClLinks  term={"class"}><i>class</i></ClLinks> &amp;rest *initargs* &amp;key &amp;allow-other-keys → instance 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> (<ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>) &amp;rest *initargs* 
+<DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> (<ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>) &amp;rest *initargs* 
 
 
 
-<ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> (<ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>) &amp;rest *initargs* 
+<DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> (<ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink>) &amp;rest *initargs* 
 
 
 
@@ -54,19 +54,19 @@
 
 
 
-The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> creates and returns a new <ClLinks  term={"instance"}><i>instance</i></ClLinks> of the given <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> creates and returns a new <ClLinks  term={"instance"}><i>instance</i></ClLinks> of the given <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
-If the second of the above <ClLinks  term={"method"}><i>methods</i></ClLinks> is selected, that <ClLinks  term={"method"}><i>method</i></ClLinks> invokes <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> on the arguments (find-class <ClLinks  term={"class"}><i>class</i></ClLinks>) and *initargs*. 
+If the second of the above <ClLinks  term={"method"}><i>methods</i></ClLinks> is selected, that <ClLinks  term={"method"}><i>method</i></ClLinks> invokes <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> on the arguments (find-class <ClLinks  term={"class"}><i>class</i></ClLinks>) and *initargs*. 
 
 
 
-The initialization arguments are checked within <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>. 
+The initialization arguments are checked within <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink>. 
 
 
 
-The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> may be used as described in Section 7.1 (Object Creation and Initialization). 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> may be used as described in Section 7.1 (Object Creation and Initialization). 
 
 
 
@@ -74,7 +74,7 @@ The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i
 
 
 
-If any of the initialization arguments has not been declared as valid, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If any of the initialization arguments has not been declared as valid, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
@@ -82,7 +82,7 @@ If any of the initialization arguments has not been declared as valid, an error 
 
 
 
-<ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"class-of"}><b>class-of</b></ClLinks>, <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks>, <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>, Section 7.1 (Object Creation and Initialization) 
+<DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, <DictionaryLink  term={"class-of"}><b>class-of</b></DictionaryLink>, <DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink>, <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>, Section 7.1 (Object Creation and Initialization) 
 
 
 

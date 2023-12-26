@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"log"}><b>log</b></ClLinks> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *base → logarithm* 
+<DictionaryLink  term={"log"}><b>log</b></DictionaryLink> <ClLinks  term={"number"}><i>number</i></ClLinks> &amp;optional *base → logarithm* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"log"}><b>log</b></ClLinks> returns the logarithm of <ClLinks  term={"number"}><i>number</i></ClLinks> in base *base*. If *base* is not supplied its value is *e*, the base of the natural logarithms. 
+<DictionaryLink  term={"log"}><b>log</b></DictionaryLink> returns the logarithm of <ClLinks  term={"number"}><i>number</i></ClLinks> in base *base*. If *base* is not supplied its value is *e*, the base of the natural logarithms. 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-<ClLinks  term={"log"}><b>log</b></ClLinks> 
+<DictionaryLink  term={"log"}><b>log</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"log"}><b>log</b></ClLinks> may return a <ClLinks  term={"complex"}><i>complex</i></ClLinks> when given a *real* negative <ClLinks  term={"number"}><i>number</i></ClLinks>. 
+<DictionaryLink  term={"log"}><b>log</b></DictionaryLink> may return a <ClLinks  term={"complex"}><i>complex</i></ClLinks> when given a *real* negative <ClLinks  term={"number"}><i>number</i></ClLinks>. 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-If *base* is zero, <ClLinks  term={"log"}><b>log</b></ClLinks> returns zero. 
+If *base* is zero, <DictionaryLink  term={"log"}><b>log</b></DictionaryLink> returns zero. 
 
 
 
@@ -135,7 +135,7 @@ The implementation.
 
 
 
-<ClLinks  term={"exp"}><b>exp</b></ClLinks>, <ClLinks  term={"expt"}><b>expt</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
+<DictionaryLink  term={"exp"}><b>exp</b></DictionaryLink>, <DictionaryLink  term={"expt"}><b>expt</b></DictionaryLink>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 

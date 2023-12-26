@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"remove-duplicates"}><b>remove-duplicates</b></ClLinks> *sequence* &amp;key *from-end test test-not* 
+<DictionaryLink  term={"remove-duplicates"}><b>remove-duplicates</b></DictionaryLink> *sequence* &amp;key *from-end test test-not* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> *sequence* &amp;key *from-end test test-not* 
+<DictionaryLink  term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> *sequence* &amp;key *from-end test test-not* 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-<ClLinks  term={"remove-duplicates"}><b>remove-duplicates</b></ClLinks> returns a modified copy of *sequence* from which any element that matches another element occurring in *sequence* has been removed. 
+<DictionaryLink  term={"remove-duplicates"}><b>remove-duplicates</b></DictionaryLink> returns a modified copy of *sequence* from which any element that matches another element occurring in *sequence* has been removed. 
 
 
 
@@ -86,7 +86,7 @@ If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the resul
 
 
 
-<ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> is like <ClLinks  term={"remove-duplicates"}><b>remove-duplicates</b></ClLinks>, but <ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> may modify *sequence*. 
+<DictionaryLink  term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> is like <DictionaryLink  term={"remove-duplicates"}><b>remove-duplicates</b></DictionaryLink>, but <DictionaryLink  term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> may modify *sequence*. 
 
 
 
@@ -94,15 +94,15 @@ The elements of *sequence* are compared <ClLinks  term={"pairwise"}><i>pairwise<
 
 
 
-<ClLinks  term={"remove-duplicates"}><b>remove-duplicates</b></ClLinks> and <ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> return a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *sequence* with enough elements removed so that no two of the remaining elements match. The order of the elements remaining in the result is the same as the order in which they appear in *sequence*. 
+<DictionaryLink  term={"remove-duplicates"}><b>remove-duplicates</b></DictionaryLink> and <DictionaryLink  term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> return a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *sequence* with enough elements removed so that no two of the remaining elements match. The order of the elements remaining in the result is the same as the order in which they appear in *sequence*. 
 
 
 
-<ClLinks  term={"remove-duplicates"}><b>remove-duplicates</b></ClLinks> returns a *sequence* that may share with *sequence* or may be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to *sequence* if no elements need to be removed. 
+<DictionaryLink  term={"remove-duplicates"}><b>remove-duplicates</b></DictionaryLink> returns a *sequence* that may share with *sequence* or may be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to *sequence* if no elements need to be removed. 
 
 
 
-<ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks>, when *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, is permitted to <ClLinks  term={"setf"}><b>setf</b></ClLinks> any part, <ClLinks  term={"car"}><b>car</b></ClLinks> or <ClLinks  term={"cdr"}><b>cdr</b></ClLinks>, of the top-level list structure in that *sequence*. When *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , <ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> is permitted to change the dimensions of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> and to slide its elements into new positions without permuting them to produce the resulting <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
+<DictionaryLink  term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink>, when *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, is permitted to <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> any part, <DictionaryLink  term={"car"}><b>car</b></DictionaryLink> or <DictionaryLink  term={"cdr"}><b>cdr</b></DictionaryLink>, of the top-level list structure in that *sequence*. When *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , <DictionaryLink  term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> is permitted to change the dimensions of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> and to slide its elements into new positions without permuting them to produce the resulting <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
 
 
 
@@ -122,7 +122,7 @@ The elements of *sequence* are compared <ClLinks  term={"pairwise"}><i>pairwise<
 
 
 
-<ClLinks  term={"delete-duplicates"}><b>delete-duplicates</b></ClLinks> might destructively modify *sequence*. 
+<DictionaryLink  term={"delete-duplicates"}><b>delete-duplicates</b></DictionaryLink> might destructively modify *sequence*. 
 
 
 
@@ -130,7 +130,7 @@ The elements of *sequence* are compared <ClLinks  term={"pairwise"}><i>pairwise<
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 

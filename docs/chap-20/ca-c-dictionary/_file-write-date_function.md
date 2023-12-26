@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"file-write-date"}><b>file-write-date</b></ClLinks> *pathspec → date* 
+<DictionaryLink  term={"file-write-date"}><b>file-write-date</b></DictionaryLink> *pathspec → date* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*date*—a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*date*—a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm> representing the time at which the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *pathspec* was last written (or created), or returns <ClLinks  term={"nil"}><b>nil</b></ClLinks> if such a time cannot be determined. 
+Returns a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm> representing the time at which the <ClLinks  term={"file"}><i>file</i></ClLinks> specified by *pathspec* was last written (or created), or returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if such a time cannot be determined. 
 
 
 
@@ -57,11 +57,11 @@ The host computer’s file system.
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
 
 
 

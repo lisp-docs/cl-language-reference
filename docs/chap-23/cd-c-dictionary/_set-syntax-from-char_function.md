@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"set-syntax-from-char"}><b>set-syntax-from-char</b></ClLinks> *to-char from-char* &amp;optional *to-readtable from-readtable →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"set-syntax-from-char"}><b>set-syntax-from-char</b></DictionaryLink> *to-char from-char* &amp;optional *to-readtable from-readtable →* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks  term={"set-syntax-from-char"}><b>set-syntax-from-char</b></ClLinks> makes the syntax of *to-char* in *to-readtable* be the same as the syntax of *from-char* in *from-readtable*. 
+<DictionaryLink  term={"set-syntax-from-char"}><b>set-syntax-from-char</b></DictionaryLink> makes the syntax of *to-char* in *to-readtable* be the same as the syntax of *from-char* in *from-readtable*. 
 
 
 
-<ClLinks  term={"set-syntax-from-char"}><b>set-syntax-from-char</b></ClLinks> copies the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax types</i></GlossaryTerm> of *from-char*. If *from-char* is a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> , its <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> is copied also. If the character is a <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> , its entire dispatch table of <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro functions</i></GlossaryTerm> is copied. The <GlossaryTerm styled={true} term={"constituent trait"}><i>constituent traits</i></GlossaryTerm> of *from-char* are not copied. 
+<DictionaryLink  term={"set-syntax-from-char"}><b>set-syntax-from-char</b></DictionaryLink> copies the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax types</i></GlossaryTerm> of *from-char*. If *from-char* is a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> , its <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> is copied also. If the character is a <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> , its entire dispatch table of <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro functions</i></GlossaryTerm> is copied. The <GlossaryTerm styled={true} term={"constituent trait"}><i>constituent traits</i></GlossaryTerm> of *from-char* are not copied. 
 
 
 
@@ -71,7 +71,7 @@ The existing values in the *from-readtable*.
 
 
 
-<ClLinks  term={"set-macro-character"}><b>set-macro-character</b></ClLinks>, <ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks>, Section 2.1.4 (Character Syntax Types) 
+<DictionaryLink  term={"set-macro-character"}><b>set-macro-character</b></DictionaryLink>, <DictionaryLink  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></DictionaryLink>, Section 2.1.4 (Character Syntax Types) 
 
 
 

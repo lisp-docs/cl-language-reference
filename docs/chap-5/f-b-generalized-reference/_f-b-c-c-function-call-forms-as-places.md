@@ -34,11 +34,11 @@ Data and Control
 
 
 
-In the case of <ClLinks  term={"subseq"}><b>subseq</b></ClLinks>, the replacement value must be a *sequence* whose elements might be contained by the sequence argument to <ClLinks  term={"subseq"}><b>subseq</b></ClLinks>, but does not have to be a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the *sequence* of which the subsequence is specified. If the length of the replacement value does not equal the length of the subsequence to be replaced, then the shorter length determines the number of elements to be stored, as for <ClLinks  term={"replace"}><b>replace</b></ClLinks>. 
+In the case of <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink>, the replacement value must be a *sequence* whose elements might be contained by the sequence argument to <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink>, but does not have to be a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the *sequence* of which the subsequence is specified. If the length of the replacement value does not equal the length of the subsequence to be replaced, then the shorter length determines the number of elements to be stored, as for <DictionaryLink  term={"replace"}><b>replace</b></DictionaryLink>. 
 
 
 
-*•* A function call form whose first element is the name of a selector function constructed by <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>. The function name must refer to the global function definition, rather than a locally defined <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+*•* A function call form whose first element is the name of a selector function constructed by <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink>. The function name must refer to the global function definition, rather than a locally defined <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@ In the case of <ClLinks  term={"subseq"}><b>subseq</b></ClLinks>, the replacemen
 
 | :- |
 
-|<p><ClLinks  term={"ldb"}><b>ldb</b></ClLinks> second <ClLinks  term={"dpb"}><b>dpb</b></ClLinks> </p><p><ClLinks  term={"mask-field"}><b>mask-field</b></ClLinks> second <ClLinks  term={"deposit-field"}><b>deposit-field</b></ClLinks> </p><p><ClLinks  term={"getf"}><b>getf</b></ClLinks> first <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks></p>|
+|<p><DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> second <DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> </p><p><DictionaryLink  term={"mask-field"}><b>mask-field</b></DictionaryLink> second <DictionaryLink  term={"deposit-field"}><b>deposit-field</b></DictionaryLink> </p><p><DictionaryLink  term={"getf"}><b>getf</b></DictionaryLink> first <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks></p>|
 
 
 
@@ -72,15 +72,15 @@ In the case of <ClLinks  term={"subseq"}><b>subseq</b></ClLinks>, the replacemen
 
 
 
-During the <ClLinks  term={"setf"}><b>setf</b></ClLinks> expansion of these <ClLinks  term={"form"}><i>forms</i></ClLinks>, it is necessary to call <ClLinks  term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> in order to figure out how the inner, nested generalized variable must be treated. 
+During the <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> expansion of these <ClLinks  term={"form"}><i>forms</i></ClLinks>, it is necessary to call <DictionaryLink  term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink> in order to figure out how the inner, nested generalized variable must be treated. 
 
 
 
-The information from <ClLinks  term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> is used as follows. 
+The information from <DictionaryLink  term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink> is used as follows. 
 
 
 
-<ClLinks  term={"ldb"}><b>ldb</b></ClLinks> 
+<DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> 
 
 
 
@@ -100,11 +100,11 @@ that the update is to the generalized variable specified by *place-form*, not to
 
 
 
-object of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks>. 
+object of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink>. 
 
 
 
-Thus this <ClLinks  term={"setf"}><b>setf</b></ClLinks> should generate code to do the following: 
+Thus this <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> should generate code to do the following: 
 
 
 
@@ -200,15 +200,15 @@ Data and Control
 
 
 
-<ClLinks  term={"mask-field"}><b>mask-field</b></ClLinks> 
+<DictionaryLink  term={"mask-field"}><b>mask-field</b></DictionaryLink> 
 
 
 
-This case is the same as <ClLinks  term={"ldb"}><b>ldb</b></ClLinks> in all essential aspects. 
+This case is the same as <DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> in all essential aspects. 
 
 
 
-<ClLinks  term={"getf"}><b>getf</b></ClLinks> 
+<DictionaryLink  term={"getf"}><b>getf</b></DictionaryLink> 
 
 
 
@@ -232,7 +232,7 @@ the particular <ClLinks  term={"list"}><i>list</i></ClLinks> that is the propert
 
 
 
-Thus this <ClLinks  term={"setf"}><b>setf</b></ClLinks> should generate code to do the following: 
+Thus this <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> should generate code to do the following: 
 
 
 

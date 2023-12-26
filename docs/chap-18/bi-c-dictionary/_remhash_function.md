@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"remhash"}><b>remhash</b></ClLinks> *key hash-table → generalized-boolean* 
+<DictionaryLink  term={"remhash"}><b>remhash</b></DictionaryLink> *key hash-table → generalized-boolean* 
 
 
 
@@ -63,7 +63,7 @@ Hash
 
 
 
-<ClLinks  term={"maphash"}><b>maphash</b></ClLinks> 
+<DictionaryLink  term={"maphash"}><b>maphash</b></DictionaryLink> 
 
 
 

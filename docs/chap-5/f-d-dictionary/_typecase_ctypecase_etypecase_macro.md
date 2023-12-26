@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"typecase"}><b>typecase</b></ClLinks> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
+<DictionaryLink  term={"typecase"}><b>typecase</b></DictionaryLink> *keyform \{↓normal-clause\}*\* [*↓otherwise-clause*] → \{result\}\* 
 
 
 
-<ClLinks  term={"ctypecase"}><b>ctypecase</b></ClLinks> *keyplace \{↓normal-clause\}*\* → \{result\}\* 
+<DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> *keyplace \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"etypecase"}><b>etypecase</b></ClLinks> *keyform \{↓normal-clause\}*\* → \{result\}\* 
+<DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> *keyform \{↓normal-clause\}*\* → \{result\}\* 
 
 
 
@@ -86,7 +86,7 @@ The *keyform* or *keyplace* is *evaluated* to produce the *test-key*.
 
 
 
-Each of the *normal-clauses* is then considered in turn. If the *test-key* is of the <ClLinks  term={"type"}><i>type</i></ClLinks> given by the *clauses*’s <ClLinks  term={"type"}><i>type</i></ClLinks>, the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <ClLinks  term={"typecase"}><b>typecase</b></ClLinks>, <ClLinks  term={"ctypecase"}><b>ctypecase</b></ClLinks>, or <ClLinks  term={"etypecase"}><b>etypecase</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+Each of the *normal-clauses* is then considered in turn. If the *test-key* is of the <ClLinks  term={"type"}><i>type</i></ClLinks> given by the *clauses*’s <ClLinks  term={"type"}><i>type</i></ClLinks>, the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <DictionaryLink  term={"typecase"}><b>typecase</b></DictionaryLink>, <DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink>, or <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -94,23 +94,23 @@ These <ClLinks  term={"macro"}><i>macros</i></ClLinks> differ only in their *beh
 
 
 
-<ClLinks  term={"typecase"}><b>typecase</b></ClLinks> 
+<DictionaryLink  term={"typecase"}><b>typecase</b></DictionaryLink> 
 
 
 
-If no *normal-clause* matches, and there is an *otherwise-clause*, then that *otherwise-clause* automatically matches; the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <ClLinks  term={"typecase"}><b>typecase</b></ClLinks>. 
+If no *normal-clause* matches, and there is an *otherwise-clause*, then that *otherwise-clause* automatically matches; the <ClLinks  term={"form"}><i>forms</i></ClLinks> in that *clause* are *evaluated* as an *implicit progn*, and the <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are returned as the value of the <DictionaryLink  term={"typecase"}><b>typecase</b></DictionaryLink>. 
 
 
 
-If there is no *otherwise-clause*, <ClLinks  term={"typecase"}><b>typecase</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If there is no *otherwise-clause*, <DictionaryLink  term={"typecase"}><b>typecase</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"ctypecase"}><b>ctypecase</b></ClLinks> 
+<DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> 
 
 
 
-If no *normal-clause* matches, a *correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (or *type1 type2* ...). The **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> can be used to correct the error. 
+If no *normal-clause* matches, a *correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (or *type1 type2* ...). The **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> can be used to correct the error. 
 
 
 
@@ -130,7 +130,7 @@ If the **store-value** <ClLinks  term={"restart"}><i>restart</i></ClLinks> is in
 
 
 
-in *keyplace* as if by (setf *keyplace test-key*). Then <ClLinks  term={"ctypecase"}><b>ctypecase</b></ClLinks> starts over, considering each *clause* anew. 
+in *keyplace* as if by (setf *keyplace test-key*). Then <DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> starts over, considering each *clause* anew. 
 
 
 
@@ -142,15 +142,15 @@ The subforms of *keyplace* might be evaluated again if none of the cases holds.
 
 
 
-<ClLinks  term={"etypecase"}><b>etypecase</b></ClLinks> 
+<DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> 
 
 
 
-If no *normal-clause* matches, a *non-correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. The offending datum is the *test-key* and the expected type is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to (or *type1 type2* ...). 
+If no *normal-clause* matches, a *non-correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to (or *type1 type2* ...). 
 
 
 
-Note that in contrast with <ClLinks  term={"ctypecase"}><b>ctypecase</b></ClLinks>, the caller of <ClLinks  term={"etypecase"}><b>etypecase</b></ClLinks> may rely on the fact that <ClLinks  term={"etypecase"}><b>etypecase</b></ClLinks> does not return if a *normal-clause* does not match. 
+Note that in contrast with <DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink>, the caller of <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> may rely on the fact that <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> does not return if a *normal-clause* does not match. 
 
 
 
@@ -202,7 +202,7 @@ x *!* 12
 
 
 
-<ClLinks  term={"ctypecase"}><b>ctypecase</b></ClLinks> and <ClLinks  term={"etypecase"}><b>etypecase</b></ClLinks>, since they might signal an error, are potentially a↵ected by existing <ClLinks  term={"handler"}><i>handlers</i></ClLinks> and **\*debug-io\***. 
+<DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> and <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink>, since they might signal an error, are potentially a↵ected by existing <ClLinks  term={"handler"}><i>handlers</i></ClLinks> and **\*debug-io\***. 
 
 
 
@@ -210,11 +210,11 @@ x *!* 12
 
 
 
-<ClLinks  term={"ctypecase"}><b>ctypecase</b></ClLinks> and <ClLinks  term={"etypecase"}><b>etypecase</b></ClLinks> signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if no *normal-clause* matches. 
+<DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> and <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if no *normal-clause* matches. 
 
 
 
-The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> may choose to issue a warning of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"style-warning"}><b>style-warning</b></ClLinks> if a *clause* will never be selected because it is completely shadowed by earlier clauses. 
+The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> may choose to issue a warning of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"style-warning"}><b>style-warning</b></DictionaryLink> if a *clause* will never be selected because it is completely shadowed by earlier clauses. 
 
 
 
@@ -222,7 +222,7 @@ The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> may choose to issue a 
 
 
 
-<ClLinks  term={"case"}><b>case</b></ClLinks>, <ClLinks  term={"cond"}><b>cond</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks>, Section 5.1 (Generalized Reference) 
+<DictionaryLink  term={"case"}><b>case</b></DictionaryLink>, <DictionaryLink  term={"cond"}><b>cond</b></DictionaryLink>, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>, Section 5.1 (Generalized Reference) 
 
 
 
@@ -250,7 +250,7 @@ The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> may choose to issue a 
 
 
 
-The specific error message used by <ClLinks  term={"etypecase"}><b>etypecase</b></ClLinks> and <ClLinks  term={"ctypecase"}><b>ctypecase</b></ClLinks> can vary between implementations. In situations where control of the specific wording of the error message is important, it is better to use <ClLinks  term={"typecase"}><b>typecase</b></ClLinks> with an *otherwise-clause* that explicitly signals an error with an appropriate message. 
+The specific error message used by <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> and <DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> can vary between implementations. In situations where control of the specific wording of the error message is important, it is better to use <DictionaryLink  term={"typecase"}><b>typecase</b></DictionaryLink> with an *otherwise-clause* that explicitly signals an error with an appropriate message. 
 
 
 

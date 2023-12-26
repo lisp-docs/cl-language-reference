@@ -46,11 +46,11 @@
 
 
 
-A↵ects only variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> and specifies that the *vars* take on values only of the specified *typespec*. In particular, values assigned to the variables by <ClLinks  term={"setq"}><b>setq</b></ClLinks>, as well as the initial values of the *vars* must be of the specified *typespec*. <ClLinks  term={"type"}><b>type</b></ClLinks> declarations never apply to function <ClLinks  term={"binding"}><i>bindings</i></ClLinks> (see <ClLinks  term={"ftype"}><b>ftype</b></ClLinks>). 
+A↵ects only variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> and specifies that the *vars* take on values only of the specified *typespec*. In particular, values assigned to the variables by <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>, as well as the initial values of the *vars* must be of the specified *typespec*. <DictionaryLink  term={"type"}><b>type</b></DictionaryLink> declarations never apply to function <ClLinks  term={"binding"}><i>bindings</i></ClLinks> (see <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink>). 
 
 
 
-A type declaration of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> defined by <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> is equivalent to wrapping a <ClLinks  term={"the"}><b>the</b></ClLinks> expression around the expansion of that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, although the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> is not actually a↵ected. 
+A type declaration of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> defined by <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> is equivalent to wrapping a <DictionaryLink  term={"the"}><b>the</b></DictionaryLink> expression around the expansion of that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, although the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> is not actually a↵ected. 
 
 
 
@@ -66,7 +66,7 @@ A <ClLinks  term={"type"}><i>type</i></ClLinks> declaration is valid in all decl
 
 
 
-2\. During the execution of any <ClLinks  term={"setq"}><b>setq</b></ClLinks> of the declared variable within the scope of the declaration, the consequences are undefined if the newly assigned value of the declared variable is not of the declared <ClLinks  term={"type"}><i>type</i></ClLinks>. 
+2\. During the execution of any <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> of the declared variable within the scope of the declaration, the consequences are undefined if the newly assigned value of the declared variable is not of the declared <ClLinks  term={"type"}><i>type</i></ClLinks>. 
 
 
 
@@ -86,7 +86,7 @@ Evaluation and
 
 
 
-<ClLinks  term={"type"}><b>type</b></ClLinks> 
+<DictionaryLink  term={"type"}><b>type</b></DictionaryLink> 
 
 
 
@@ -102,7 +102,7 @@ If there is a local type declaration for a dynamic variable, and there is also a
 
 
 
-<ClLinks  term={"type"}><b>type</b></ClLinks> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. 
+<DictionaryLink  term={"type"}><b>type</b></DictionaryLink> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. 
 
 
 
@@ -110,7 +110,7 @@ A <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> cannot be both the name of a
 
 
 
-Within the <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> of an <ClLinks  term={"array"}><b>array</b></ClLinks> type declaration, all references to *array elements* are assumed to satisfy the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm> (as opposed to the <GlossaryTerm styled={true} term={"upgraded array element type"}><i>upgraded array element type</i></GlossaryTerm>). A compiler can treat the code within the scope of the <ClLinks  term={"array"}><b>array</b></ClLinks> type declaration as if each <ClLinks  term={"access"}><i>access</i></ClLinks> of an *array element* were surrounded by an appropriate <ClLinks  term={"the"}><b>the</b></ClLinks> form. 
+Within the <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> of an <DictionaryLink  term={"array"}><b>array</b></DictionaryLink> type declaration, all references to *array elements* are assumed to satisfy the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm> (as opposed to the <GlossaryTerm styled={true} term={"upgraded array element type"}><i>upgraded array element type</i></GlossaryTerm>). A compiler can treat the code within the scope of the <DictionaryLink  term={"array"}><b>array</b></DictionaryLink> type declaration as if each <ClLinks  term={"access"}><i>access</i></ClLinks> of an *array element* were surrounded by an appropriate <DictionaryLink  term={"the"}><b>the</b></DictionaryLink> form. 
 
 
 
@@ -164,7 +164,7 @@ Given an implementation in which *fixnums* are 29 bits but **fixnum** *arrays* a
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> 
+<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink>, <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> 
 
 
 
@@ -176,7 +176,7 @@ Given an implementation in which *fixnums* are 29 bits but **fixnum** *arrays* a
 
 
 
-A <ClLinks  term={"type"}><b>type</b></ClLinks> declaration for the arguments to a function does not necessarily imply anything about the type of the result. The following function is not permitted to be compiled using *implementation-dependent fixnum*-only arithmetic: 
+A <DictionaryLink  term={"type"}><b>type</b></DictionaryLink> declaration for the arguments to a function does not necessarily imply anything about the type of the result. The following function is not permitted to be compiled using *implementation-dependent fixnum*-only arithmetic: 
 
 
 

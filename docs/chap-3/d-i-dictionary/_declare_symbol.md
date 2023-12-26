@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks> *\{declaration-specifier\}*\* 
+<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> *\{declaration-specifier\}*\* 
 
 
 
@@ -22,15 +22,11 @@
 
 
 
-A <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>, sometimes called a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, can occur only at the beginning of the bodies of certain <ClLinks  term={"form"}><i>forms</i></ClLinks>; that is, it may be preceded only by other <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expressions</i></ClLinks>, or by a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> if the context permits. 
+A <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>, sometimes called a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, can occur only at the beginning of the bodies of certain <ClLinks  term={"form"}><i>forms</i></ClLinks>; that is, it may be preceded only by other <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expressions</i></ClLinks>, or by a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> if the context permits. 
 
 
 
-A <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks> can occur in a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> or in any of the <ClLinks  term={"form"}><i>forms</i></ClLinks> listed in Figure 3–23. 
-
-
-
- 
+A <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks> can occur in a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> or in any of the <ClLinks  term={"form"}><i>forms</i></ClLinks> listed in Figure 3–23. 
 
 
 
@@ -38,7 +34,11 @@ A <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expressio
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> 
 
 
 
@@ -50,15 +50,15 @@ A <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expressio
 
 
 
-A <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks> can only occur where specified by the syntax of these <ClLinks  term={"form"}><i>forms</i></ClLinks>. The consequences of attempting to evaluate a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks> are undefined. In situations where such <ClLinks  term={"expression"}><i>expressions</i></ClLinks> can appear, explicit checks are made for their presence and they are never actually evaluated; it is for this reason that they are called “<ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expressions</i></ClLinks>” rather than “<ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks>.” 
+A <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks> can only occur where specified by the syntax of these <ClLinks  term={"form"}><i>forms</i></ClLinks>. The consequences of attempting to evaluate a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks> are undefined. In situations where such <ClLinks  term={"expression"}><i>expressions</i></ClLinks> can appear, explicit checks are made for their presence and they are never actually evaluated; it is for this reason that they are called “<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expressions</i></ClLinks>” rather than “<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>.” 
 
 
 
-<GlossaryTerm styled={true} term={"macro form"}><i>Macro forms</i></GlossaryTerm> cannot expand into declarations; <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expressions</i></ClLinks> must appear as actual <ClLinks  term={"subexpression"}><i>subexpressions</i></ClLinks> of the <ClLinks  term={"form"}><i>form</i></ClLinks> to which they refer. 
+<GlossaryTerm styled={true} term={"macro form"}><i>Macro forms</i></GlossaryTerm> cannot expand into declarations; <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expressions</i></ClLinks> must appear as actual <ClLinks  term={"subexpression"}><i>subexpressions</i></ClLinks> of the <ClLinks  term={"form"}><i>form</i></ClLinks> to which they refer. 
 
 
 
-Figure 3–24 shows a list of <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifiers</i></GlossaryTerm> that can be used with <ClLinks  term={"declare"}><b>declare</b></ClLinks>. 
+Figure 3–24 shows a list of <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifiers</i></GlossaryTerm> that can be used with <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>. 
 
 
 
@@ -90,7 +90,7 @@ reference to z in the third call to foo to be a dynamic reference; it does not r
 
 
 
-The consequences of trying to use a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks> as a <ClLinks  term={"form"}><i>form</i></ClLinks> to be *evaluated* are undefined. 
+The consequences of trying to use a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks> as a <ClLinks  term={"form"}><i>form</i></ClLinks> to be *evaluated* are undefined. 
 
 
 
@@ -98,7 +98,7 @@ The consequences of trying to use a <ClLinks  term={"declare"}><b>declare</b></C
 
 
 
-<ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>, Section 4.2.3 (Type Specifiers), <ClLinks  term={"declaration"}><b>declaration</b></ClLinks>, <ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks>, <ClLinks  term={"ftype"}><b>ftype</b></ClLinks>, <ClLinks  term={"ignorable"}><b>ignorable</b></ClLinks>, <ClLinks  term={"ignore"}><b>ignore</b></ClLinks>, <ClLinks  term={"inline"}><b>inline</b></ClLinks>, <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>, <ClLinks  term={"optimize"}><b>optimize</b></ClLinks>, <ClLinks  term={"type"}><b>type</b></ClLinks> 
+<DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink>, Section 4.2.3 (Type Specifiers), <DictionaryLink  term={"declaration"}><b>declaration</b></DictionaryLink>, <DictionaryLink  term={"dynamic-extent"}><b>dynamic-extent</b></DictionaryLink>, <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink>, <DictionaryLink  term={"ignorable"}><b>ignorable</b></DictionaryLink>, <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink>, <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink>, <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink>, <DictionaryLink  term={"optimize"}><b>optimize</b></DictionaryLink>, <DictionaryLink  term={"type"}><b>type</b></DictionaryLink> 
 
 
 

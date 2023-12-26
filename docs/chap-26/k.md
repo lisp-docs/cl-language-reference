@@ -11,11 +11,11 @@ sidebar_position: 107
 
 
 
-<ClLinks  term={"keyword"}><b>keyword</b></ClLinks> *n.* 1. a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of which is the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 2. 
+<DictionaryLink  term={"keyword"}><b>keyword</b></DictionaryLink> *n.* 1. a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of which is the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>. 2. 
 
 
 
-any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, usually but not necessarily in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>, that is used as an identifying marker in keyword-style argument passing. See <ClLinks  term={"lambda"}><b>lambda</b></ClLinks>. 3. *Idiom.* a <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm>. 
+any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, usually but not necessarily in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>, that is used as an identifying marker in keyword-style argument passing. See <DictionaryLink  term={"lambda"}><b>lambda</b></DictionaryLink>. 3. *Idiom.* a <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm>. 
 
 
 

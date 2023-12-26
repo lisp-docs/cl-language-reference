@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"evaluation"}><i>Evaluation</i></ClLinks> is the process by which a <ClLinks  term={"program"}><i>program</i></ClLinks> is *executed* in Common Lisp. The mechanism of <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> is manifested both implicitly through the effect of the *Lisp read-eval-print loop*, and explicitly through the presence of the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"eval"}><b>eval</b></ClLinks>, <ClLinks  term={"compile"}><b>compile</b></ClLinks>, <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, and <ClLinks  term={"load"}><b>load</b></ClLinks>. Any of these facilities might share the same execution strategy, or each might use a different one. 
+<ClLinks  term={"evaluation"}><i>Evaluation</i></ClLinks> is the process by which a <ClLinks  term={"program"}><i>program</i></ClLinks> is *executed* in Common Lisp. The mechanism of <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> is manifested both implicitly through the effect of the *Lisp read-eval-print loop*, and explicitly through the presence of the <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>, <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>, <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>, and <DictionaryLink  term={"load"}><b>load</b></DictionaryLink>. Any of these facilities might share the same execution strategy, or each might use a different one. 
 
 
 
-The behavior of a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks> and by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> might differ; see Section 3.2.2.3 (Semantic Constraints). 
+The behavior of a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> processed by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> and by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> might differ; see Section 3.2.2.3 (Semantic Constraints). 
 
 
 

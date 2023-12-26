@@ -6,7 +6,7 @@ A <GlossaryTerm styled={true} term={"generic function lambda list"}><i>generic f
 
 
 
-A <GlossaryTerm styled={true} term={"generic function lambda list"}><i>generic function lambda list</i></GlossaryTerm> is used by <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>. 
+A <GlossaryTerm styled={true} term={"generic function lambda list"}><i>generic function lambda list</i></GlossaryTerm> is used by <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>. 
 
 
 

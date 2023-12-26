@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"synonym-stream-symbol"}><b>synonym-stream-symbol</b></ClLinks> *synonym-stream → symbol* 
+<DictionaryLink  term={"synonym-stream-symbol"}><b>synonym-stream-symbol</b></DictionaryLink> *synonym-stream → symbol* 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Returns the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> the *synonym-stream* is using. 
+Returns the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> the *synonym-stream* is using. 
 
 
 
@@ -46,7 +46,7 @@ Returns the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <ClLinks  te
 
 
 
-<ClLinks  term={"make-synonym-stream"}><b>make-synonym-stream</b></ClLinks> 
+<DictionaryLink  term={"make-synonym-stream"}><b>make-synonym-stream</b></DictionaryLink> 
 
 
 

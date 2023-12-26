@@ -7,7 +7,7 @@ sidebar_position: 101
 
 
 
-**echo stream** *n.* a <ClLinks  term={"stream"}><i>stream</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"echo-stream"}><b>echo-stream</b></ClLinks>. 
+**echo stream** *n.* a <ClLinks  term={"stream"}><i>stream</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"echo-stream"}><b>echo-stream</b></DictionaryLink>. 
 
 
 
@@ -19,11 +19,11 @@ sidebar_position: 101
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>) a <ClLinks  term={"character"}><i>character</i></ClLinks> or <ClLinks  term={"number"}><i>number</i></ClLinks> (as appropriate to the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>) that is among the ordered series of <ClLinks  term={"object"}><i>objects</i></ClLinks> that can be read from the <ClLinks  term={"stream"}><i>stream</i></ClLinks> (using <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> or <ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks>, as appropriate to the <ClLinks  term={"stream"}><i>stream</i></ClLinks>). 6. (of an *output stream*) a 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>) a <ClLinks  term={"character"}><i>character</i></ClLinks> or <ClLinks  term={"number"}><i>number</i></ClLinks> (as appropriate to the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>) that is among the ordered series of <ClLinks  term={"object"}><i>objects</i></ClLinks> that can be read from the <ClLinks  term={"stream"}><i>stream</i></ClLinks> (using <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> or <DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink>, as appropriate to the <ClLinks  term={"stream"}><i>stream</i></ClLinks>). 6. (of an *output stream*) a 
 
 
 
-<ClLinks  term={"character"}><i>character</i></ClLinks> or <ClLinks  term={"number"}><i>number</i></ClLinks> (as appropriate to the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>) that is among the ordered series of <ClLinks  term={"object"}><i>objects</i></ClLinks> that has been or will be written to the <ClLinks  term={"stream"}><i>stream</i></ClLinks> (using <ClLinks  term={"write-char"}><b>write-char</b></ClLinks> or <ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks>, as appropriate to the <ClLinks  term={"stream"}><i>stream</i></ClLinks>). 7. (of a <ClLinks  term={"class"}><i>class</i></ClLinks>) a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of the <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+<ClLinks  term={"character"}><i>character</i></ClLinks> or <ClLinks  term={"number"}><i>number</i></ClLinks> (as appropriate to the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>) that is among the ordered series of <ClLinks  term={"object"}><i>objects</i></ClLinks> that has been or will be written to the <ClLinks  term={"stream"}><i>stream</i></ClLinks> (using <DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> or <DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink>, as appropriate to the <ClLinks  term={"stream"}><i>stream</i></ClLinks>). 7. (of a <ClLinks  term={"class"}><i>class</i></ClLinks>) a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of the <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -59,11 +59,11 @@ sidebar_position: 101
 
 
 
-**environment** *n.* 1. a set of <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. See Section 3.1.1 (Introduction to Environments). 2. an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. “<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> takes an optional environment argument.” 
+**environment** *n.* 1. a set of <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. See Section 3.1.1 (Introduction to Environments). 2. an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. “<DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> takes an optional environment argument.” 
 
 
 
-**environment object** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> representing a set of <GlossaryTerm styled={true} term={"lexical binding"}><i>lexical bindings</i></GlossaryTerm>, used in the processing of a <ClLinks  term={"form"}><i>form</i></ClLinks> to provide meanings for <ClLinks  term={"name"}><i>names</i></ClLinks> within that <ClLinks  term={"form"}><i>form</i></ClLinks>. “<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> takes an optional environment argument.” (The <ClLinks  term={"object"}><i>object</i></ClLinks> <ClLinks  term={"nil"}><b>nil</b></ClLinks> when used as an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm> denotes the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>; the <ClLinks  term={"value"}><i>values</i></ClLinks> of <GlossaryTerm styled={true} term={"environment parameter"}><i>environment parameters</i></GlossaryTerm> to <GlossaryTerm styled={true} term={"macro function"}><i>macro functions</i></GlossaryTerm> are <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> nature which represent the <ClLinks  term={"environment"}><i>environment</i></ClLinks><sub>1</sub> in which the corresponding <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> is to be expanded.) See Section 3.1.1.4 (Environment Objects). 
+**environment object** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> representing a set of <GlossaryTerm styled={true} term={"lexical binding"}><i>lexical bindings</i></GlossaryTerm>, used in the processing of a <ClLinks  term={"form"}><i>form</i></ClLinks> to provide meanings for <ClLinks  term={"name"}><i>names</i></ClLinks> within that <ClLinks  term={"form"}><i>form</i></ClLinks>. “<DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> takes an optional environment argument.” (The <ClLinks  term={"object"}><i>object</i></ClLinks> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> when used as an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm> denotes the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>; the <ClLinks  term={"value"}><i>values</i></ClLinks> of <GlossaryTerm styled={true} term={"environment parameter"}><i>environment parameters</i></GlossaryTerm> to <GlossaryTerm styled={true} term={"macro function"}><i>macro functions</i></GlossaryTerm> are <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> nature which represent the <ClLinks  term={"environment"}><i>environment</i></ClLinks><sub>1</sub> in which the corresponding <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> is to be expanded.) See Section 3.1.1.4 (Environment Objects). 
 
 
 
@@ -71,7 +71,7 @@ sidebar_position: 101
 
 
 
-<ClLinks  term={"error"}><b>error</b></ClLinks> *n.* 1. (only in the phrase “is an error”) a <ClLinks  term={"situation"}><i>situation</i></ClLinks> in which the semantics of a program are not specified, and in which the consequences are undefined. 2. a <ClLinks  term={"condition"}><i>condition</i></ClLinks> which represents an *error situation*. See Section 1.4.2 (Error Terminology). 3. an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks>. 
+<DictionaryLink  term={"error"}><b>error</b></DictionaryLink> *n.* 1. (only in the phrase “is an error”) a <ClLinks  term={"situation"}><i>situation</i></ClLinks> in which the semantics of a program are not specified, and in which the consequences are undefined. 2. a <ClLinks  term={"condition"}><i>condition</i></ClLinks> which represents an *error situation*. See Section 1.4.2 (Error Terminology). 3. an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink>. 
 
 
 
@@ -87,7 +87,7 @@ sidebar_position: 101
 
 
 
-**establish** *v.t.* to build or bring into being a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm>, a <ClLinks  term={"tag"}><i>tag</i></ClLinks>, a <ClLinks  term={"handler"}><i>handler</i></ClLinks> , a <ClLinks  term={"restart"}><i>restart</i></ClLinks>, or an <ClLinks  term={"environment"}><i>environment</i></ClLinks>. “<ClLinks  term={"let"}><b>let</b></ClLinks> establishes lexical bindings.” 
+**establish** *v.t.* to build or bring into being a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm>, a <ClLinks  term={"tag"}><i>tag</i></ClLinks>, a <ClLinks  term={"handler"}><i>handler</i></ClLinks> , a <ClLinks  term={"restart"}><i>restart</i></ClLinks>, or an <ClLinks  term={"environment"}><i>environment</i></ClLinks>. “<DictionaryLink  term={"let"}><b>let</b></DictionaryLink> establishes lexical bindings.” 
 
 
 
@@ -99,7 +99,7 @@ sidebar_position: 101
 
 
 
-**evaluation environment** *n.* a <GlossaryTerm styled={true} term={"run-time environment"}><i>run-time environment</i></GlossaryTerm> in which macro expanders and code specified by <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> to be evaluated are evaluated. All evaluations initiated by the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> take place in the <GlossaryTerm styled={true} term={"evaluation environment"}><i>evaluation environment</i></GlossaryTerm>. 
+**evaluation environment** *n.* a <GlossaryTerm styled={true} term={"run-time environment"}><i>run-time environment</i></GlossaryTerm> in which macro expanders and code specified by <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> to be evaluated are evaluated. All evaluations initiated by the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> take place in the <GlossaryTerm styled={true} term={"evaluation environment"}><i>evaluation environment</i></GlossaryTerm>. 
 
 
 
@@ -127,11 +127,11 @@ sidebar_position: 101
 
 
 
-**exit point** *n.* a point in a <GlossaryTerm styled={true} term={"control form"}><i>control form</i></GlossaryTerm> from which (*e.g.*, <ClLinks  term={"block"}><b>block</b></ClLinks>), through which (*e.g.*, <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>), or to which (*e.g.*, <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks>) control and possibly <ClLinks  term={"value"}><i>values</i></ClLinks> can be transferred both actively by using another <GlossaryTerm styled={true} term={"control form"}><i>control form</i></GlossaryTerm> and passively through the normal control and data flow of <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks>. “<ClLinks  term={"catch"}><b>catch</b></ClLinks> and <ClLinks  term={"block"}><b>block</b></ClLinks> establish bindings for exit points to which <ClLinks  term={"throw"}><b>throw</b></ClLinks> and <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, respectively, can transfer control and values; <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> establishes a binding for an exit point with lexical extent to which <ClLinks  term={"go"}><b>go</b></ClLinks> can transfer control; and <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> establishes an exit point through which control might be transferred by operators such as <ClLinks  term={"throw"}><b>throw</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, and <ClLinks  term={"go"}><b>go</b></ClLinks>.” 
+**exit point** *n.* a point in a <GlossaryTerm styled={true} term={"control form"}><i>control form</i></GlossaryTerm> from which (*e.g.*, <DictionaryLink  term={"block"}><b>block</b></DictionaryLink>), through which (*e.g.*, <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink>), or to which (*e.g.*, <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink>) control and possibly <ClLinks  term={"value"}><i>values</i></ClLinks> can be transferred both actively by using another <GlossaryTerm styled={true} term={"control form"}><i>control form</i></GlossaryTerm> and passively through the normal control and data flow of <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks>. “<DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> and <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> establish bindings for exit points to which <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> and <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>, respectively, can transfer control and values; <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> establishes a binding for an exit point with lexical extent to which <DictionaryLink  term={"go"}><b>go</b></DictionaryLink> can transfer control; and <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> establishes an exit point through which control might be transferred by operators such as <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>, <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>, and <DictionaryLink  term={"go"}><b>go</b></DictionaryLink>.” 
 
 
 
-**explicit return** *n.* the act of transferring control (and possibly <ClLinks  term={"value"}><i>values</i></ClLinks>) to a <ClLinks  term={"block"}><i>block</i></ClLinks> by using <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> (or <ClLinks  term={"return"}><b>return</b></ClLinks>). 
+**explicit return** *n.* the act of transferring control (and possibly <ClLinks  term={"value"}><i>values</i></ClLinks>) to a <ClLinks  term={"block"}><i>block</i></ClLinks> by using <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> (or <DictionaryLink  term={"return"}><b>return</b></DictionaryLink>). 
 
 
 
@@ -151,7 +151,7 @@ number is to be represented as a double float.”
 
 | :- |
 
-|<p>D or d <ClLinks  term={"double-float"}><b>double-float</b></ClLinks> </p><p>E or e <ClLinks  term={"float"}><b>float</b></ClLinks> (see <ClLinks  term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks>) </p><p>F or f <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> </p><p>L or l <ClLinks  term={"long-float"}><b>long-float</b></ClLinks> </p><p>S or s <ClLinks  term={"short-float"}><b>short-float</b></ClLinks></p>|
+|<p>D or d <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink> </p><p>E or e <DictionaryLink  term={"float"}><b>float</b></DictionaryLink> (see <DictionaryLink  term={"read-default-float-format"}><b>\*read-default-float-format\*</b></DictionaryLink>) </p><p>F or f <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink> </p><p>L or l <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink> </p><p>S or s <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink></p>|
 
 
 
@@ -161,7 +161,7 @@ number is to be represented as a double float.”
 
 
 
-<ClLinks  term={"export"}><b>export</b></ClLinks> *v.t.* (a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) to add the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to the list of <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"export"}><b>export</b></DictionaryLink> *v.t.* (a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) to add the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to the list of <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -197,7 +197,7 @@ number is to be represented as a double float.”
 
 
 
-**expression** *n.* 1. an <ClLinks  term={"object"}><i>object</i></ClLinks>, often used to emphasize the use of the <ClLinks  term={"object"}><i>object</i></ClLinks> to encode or represent information in a specialized format, such as program text. “The second expression in a <ClLinks  term={"let"}><b>let</b></ClLinks> form is a list of bindings.” 2. the textual notation used to notate an <ClLinks  term={"object"}><i>object</i></ClLinks> in a source file. “The expression ’sample is equivalent to (quote sample).” 
+**expression** *n.* 1. an <ClLinks  term={"object"}><i>object</i></ClLinks>, often used to emphasize the use of the <ClLinks  term={"object"}><i>object</i></ClLinks> to encode or represent information in a specialized format, such as program text. “The second expression in a <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> form is a list of bindings.” 2. the textual notation used to notate an <ClLinks  term={"object"}><i>object</i></ClLinks> in a source file. “The expression ’sample is equivalent to (quote sample).” 
 
 
 
@@ -205,7 +205,7 @@ number is to be represented as a double float.”
 
 
 
-**extended character** *n.* a <ClLinks  term={"character"}><i>character</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"extended-char"}><b>extended-char</b></ClLinks>: a <ClLinks  term={"character"}><i>character</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"base character"}><i>base character</i></GlossaryTerm> . 
+**extended character** *n.* a <ClLinks  term={"character"}><i>character</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"extended-char"}><b>extended-char</b></DictionaryLink>: a <ClLinks  term={"character"}><i>character</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"base character"}><i>base character</i></GlossaryTerm> . 
 
 
 
@@ -229,7 +229,7 @@ number is to be represented as a double float.”
 
 
 
-purpose, but offering additional syntax or functionality not available in an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>. “<ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> uses extended lambda lists.” 
+purpose, but offering additional syntax or functionality not available in an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>. “<DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> uses extended lambda lists.” 
 
 
 

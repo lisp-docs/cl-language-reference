@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"method"}><i>Methods</i></ClLinks> for <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> may be defined to customize <ClLinks  term={"class"}><i>class</i></ClLinks> redefinition. For more information, see Section 7.1.5 (Shared-Initialize). 
+<ClLinks  term={"method"}><i>Methods</i></ClLinks> for <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink> may be defined to customize <ClLinks  term={"class"}><i>class</i></ClLinks> redefinition. For more information, see Section 7.1.5 (Shared-Initialize). 
 
 
 

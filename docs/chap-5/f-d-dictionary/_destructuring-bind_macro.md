@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks> *lambda-list expression \{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink> *lambda-list expression \{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<ClLinks  term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks> binds the variables specified in *lambda-list* to the corresponding values in the tree structure resulting from the evaluation of <ClLinks  term={"expression"}><i>expression</i></ClLinks>; then <ClLinks  term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks> evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+<DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink> binds the variables specified in *lambda-list* to the corresponding values in the tree structure resulting from the evaluation of <ClLinks  term={"expression"}><i>expression</i></ClLinks>; then <DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink> evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -61,7 +61,7 @@ Data and Control
 
 
 
-If the result of evaluating the <ClLinks  term={"expression"}><i>expression</i></ClLinks> does not match the destructuring pattern, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> should be signaled. 
+If the result of evaluating the <ClLinks  term={"expression"}><i>expression</i></ClLinks> does not match the destructuring pattern, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> should be signaled. 
 
 
 
@@ -69,7 +69,7 @@ If the result of evaluating the <ClLinks  term={"expression"}><i>expression</i><
 
 
 
-<ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> 
+<DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>, <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> 
 
 
 

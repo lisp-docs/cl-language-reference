@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"compiled-function-p"}><b>compiled-function-p</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink  term={"compiled-function-p"}><b>compiled-function-p</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"compiled-function"}><b>compiled-function</b></DictionaryLink>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -63,7 +63,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"compile"}><b>compile</b></ClLinks>, <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks> 
+<DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>, <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>, <DictionaryLink  term={"compiled-function"}><b>compiled-function</b></DictionaryLink> 
 
 
 

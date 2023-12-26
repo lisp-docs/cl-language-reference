@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> *typespec* &amp;optional *environment → upgraded-typespec* 
+<DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink> *typespec* &amp;optional *environment → upgraded-typespec* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
 
 
 
@@ -38,11 +38,11 @@ The *typespec* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of (and 
 
 
 
-If *typespec* is <ClLinks  term={"bit"}><b>bit</b></ClLinks>, the result is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to bit. If *typespec* is <ClLinks  term={"base-char"}><b>base-char</b></ClLinks>, the result is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to base-char. If *typespec* is <ClLinks  term={"character"}><b>character</b></ClLinks>, the result is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to character. 
+If *typespec* is <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>, the result is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to bit. If *typespec* is <DictionaryLink  term={"base-char"}><b>base-char</b></DictionaryLink>, the result is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to base-char. If *typespec* is <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>, the result is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to character. 
 
 
 
-The purpose of <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> is to reveal how an implementation does its *upgrading*. 
+The purpose of <DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink> is to reveal how an implementation does its *upgrading*. 
 
 
 
@@ -54,7 +54,7 @@ The <ClLinks  term={"environment"}><i>environment</i></ClLinks> is used to expan
 
 
 
-<ClLinks  term={"array-element-type"}><b>array-element-type</b></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
+<DictionaryLink  term={"array-element-type"}><b>array-element-type</b></DictionaryLink>, <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> 
 
 
 
@@ -62,7 +62,7 @@ The <ClLinks  term={"environment"}><i>environment</i></ClLinks> is used to expan
 
 
 
-Except for storage allocation consequences and dealing correctly with the optional *environment argument*, <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> could be defined as: 
+Except for storage allocation consequences and dealing correctly with the optional *environment argument*, <DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink> could be defined as: 
 
 
 

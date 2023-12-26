@@ -22,7 +22,7 @@ A positive *integer* that is the upper exclusive bound on the number of *paramet
 
 
 
-<ClLinks  term={"call-arguments-limit"}><b>call-arguments-limit</b></ClLinks> 
+<DictionaryLink  term={"call-arguments-limit"}><b>call-arguments-limit</b></DictionaryLink> 
 
 
 
@@ -30,7 +30,7 @@ A positive *integer* that is the upper exclusive bound on the number of *paramet
 
 
 
-Implementors are encouraged to make the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></ClLinks> as large as possible. 
+Implementors are encouraged to make the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></DictionaryLink> as large as possible. 
 
 
 
@@ -42,7 +42,7 @@ Implementors are encouraged to make the <ClLinks  term={"value"}><i>value</i></C
 
 
 
-<ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> 
+<DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> 
 
 
 

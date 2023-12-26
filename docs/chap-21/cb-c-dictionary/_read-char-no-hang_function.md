@@ -2,7 +2,7 @@
 
 
 
-<ClLinks  term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> &amp;optional *input-stream eof-error-p eof-value recursive-p* 
+<DictionaryLink  term={"read-char-no-hang"}><b>read-char-no-hang</b></DictionaryLink> &amp;optional *input-stream eof-error-p eof-value recursive-p* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks> or the *eof-value*. 
+*char*—a <ClLinks  term={"character"}><i>character</i></ClLinks> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> or the *eof-value*. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-<ClLinks  term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> returns a character from *input-stream* if such a character is available. If no character is available, <ClLinks  term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<DictionaryLink  term={"read-char-no-hang"}><b>read-char-no-hang</b></DictionaryLink> returns a character from *input-stream* if such a character is available. If no character is available, <DictionaryLink  term={"read-char-no-hang"}><b>read-char-no-hang</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <ClLinks  term={"read"}><b>read</b></ClLinks> or a similar <ClLinks  term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
+If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or a similar <ClLinks  term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
 
 
 
@@ -88,7 +88,7 @@ If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></Gloss
 
 
 
-**\*standard-input\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+**\*standard-input\***, <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
 
 
 
@@ -96,11 +96,11 @@ If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></Gloss
 
 
 
-If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs when *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled . **See Also:** 
+If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>2</sub> occurs when *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled . **See Also:** 
 
 
 
-<ClLinks  term={"listen"}><b>listen</b></ClLinks> 
+<DictionaryLink  term={"listen"}><b>listen</b></DictionaryLink> 
 
 
 
@@ -108,7 +108,7 @@ If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></Gloss
 
 
 
-<ClLinks  term={"read-char-no-hang"}><b>read-char-no-hang</b></ClLinks> is exactly like <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, except that if it would be necessary to wait in order to get a character (as from a keyboard), <ClLinks  term={"nil"}><b>nil</b></ClLinks> is immediately returned without waiting. 
+<DictionaryLink  term={"read-char-no-hang"}><b>read-char-no-hang</b></DictionaryLink> is exactly like <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink>, except that if it would be necessary to wait in order to get a character (as from a keyboard), <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is immediately returned without waiting. 
 
 
 

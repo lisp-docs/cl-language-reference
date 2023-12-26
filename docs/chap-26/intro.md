@@ -99,7 +99,7 @@ The following are abbreviations used in the glossary:
 
 
 
-**()** [ <ClLinks  term={"nil"}><b>nil</b></ClLinks> ], *n.* an alternative notation for writing the symbol <ClLinks  term={"nil"}><b>nil</b></ClLinks>, used to emphasize the use of <ClLinks  term={"nil"}><i>nil</i></ClLinks> as an <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
+**()** [ <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> ], *n.* an alternative notation for writing the symbol <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, used to emphasize the use of <ClLinks  term={"nil"}><i>nil</i></ClLinks> as an <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
 
 
 

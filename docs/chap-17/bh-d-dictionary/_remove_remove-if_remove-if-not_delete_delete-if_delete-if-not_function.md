@@ -6,19 +6,19 @@
 
 
 
-<ClLinks  term={"remove"}><b>remove</b></ClLinks> *item sequence* &amp;key *from-end test test-not start end count key → result-sequence* <ClLinks  term={"remove-if"}><b>remove-if</b></ClLinks> *test sequence* &amp;key *from-end start end count key → result-sequence* 
+<DictionaryLink  term={"remove"}><b>remove</b></DictionaryLink> *item sequence* &amp;key *from-end test test-not start end count key → result-sequence* <DictionaryLink  term={"remove-if"}><b>remove-if</b></DictionaryLink> *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
-<ClLinks  term={"remove-if-not"}><b>remove-if-not</b></ClLinks> *test sequence* &amp;key *from-end start end count key → result-sequence* 
+<DictionaryLink  term={"remove-if-not"}><b>remove-if-not</b></DictionaryLink> *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
-<ClLinks  term={"delete"}><b>delete</b></ClLinks> *item sequence* &amp;key *from-end test test-not start end count key → result-sequence* <ClLinks  term={"delete-if"}><b>delete-if</b></ClLinks> *test sequence* &amp;key *from-end start end count key → result-sequence* 
+<DictionaryLink  term={"delete"}><b>delete</b></DictionaryLink> *item sequence* &amp;key *from-end test test-not start end count key → result-sequence* <DictionaryLink  term={"delete-if"}><b>delete-if</b></DictionaryLink> *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
-<ClLinks  term={"delete-if-not"}><b>delete-if-not</b></ClLinks> *test sequence* &amp;key *from-end start end count key → result-sequence* 
+<DictionaryLink  term={"delete-if-not"}><b>delete-if-not</b></DictionaryLink> *test sequence* &amp;key *from-end start end count key → result-sequence* 
 
 
 
@@ -58,15 +58,15 @@
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
-*count*—an *integer* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*count*—an *integer* or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -78,11 +78,11 @@
 
 
 
-<ClLinks  term={"remove"}><b>remove</b></ClLinks>, <ClLinks  term={"remove-if"}><b>remove-if</b></ClLinks>, and <ClLinks  term={"remove-if-not"}><b>remove-if-not</b></ClLinks> return a *sequence* from which the elements that <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm> have been removed. 
+<DictionaryLink  term={"remove"}><b>remove</b></DictionaryLink>, <DictionaryLink  term={"remove-if"}><b>remove-if</b></DictionaryLink>, and <DictionaryLink  term={"remove-if-not"}><b>remove-if-not</b></DictionaryLink> return a *sequence* from which the elements that <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm> have been removed. 
 
 
 
-<ClLinks  term={"delete"}><b>delete</b></ClLinks>, <ClLinks  term={"delete-if"}><b>delete-if</b></ClLinks>, and <ClLinks  term={"delete-if-not"}><b>delete-if-not</b></ClLinks> are like <ClLinks  term={"remove"}><b>remove</b></ClLinks>, <ClLinks  term={"remove-if"}><b>remove-if</b></ClLinks>, and <ClLinks  term={"remove-if-not"}><b>remove-if-not</b></ClLinks> respectively, but they may modify *sequence*. 
+<DictionaryLink  term={"delete"}><b>delete</b></DictionaryLink>, <DictionaryLink  term={"delete-if"}><b>delete-if</b></DictionaryLink>, and <DictionaryLink  term={"delete-if-not"}><b>delete-if-not</b></DictionaryLink> are like <DictionaryLink  term={"remove"}><b>remove</b></DictionaryLink>, <DictionaryLink  term={"remove-if"}><b>remove-if</b></DictionaryLink>, and <DictionaryLink  term={"remove-if-not"}><b>remove-if-not</b></DictionaryLink> respectively, but they may modify *sequence*. 
 
 
 
@@ -94,7 +94,7 @@ Supplying a *from-end* of <ClLinks  term={"true"}><i>true</i></ClLinks> matters 
 
 
 
-*Count*, if supplied, limits the number of elements removed or deleted; if more than *count* elements <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm>, then of these elements only the leftmost or rightmost, depending on *from-end*, are deleted or removed, as many as specified by *count*. If *count* is supplied and negative, the behavior is as if zero had been supplied instead. If *count* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, all matching items are affected. 
+*Count*, if supplied, limits the number of elements removed or deleted; if more than *count* elements <GlossaryTerm styled={true} term={"satisfy the test"}><i>satisfy the test</i></GlossaryTerm>, then of these elements only the leftmost or rightmost, depending on *from-end*, are deleted or removed, as many as specified by *count*. If *count* is supplied and negative, the behavior is as if zero had been supplied instead. If *count* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, all matching items are affected. 
 
 
 
@@ -102,19 +102,19 @@ For all these functions, elements not removed or deleted occur in the same order
 
 
 
-<ClLinks  term={"remove"}><b>remove</b></ClLinks>, <ClLinks  term={"remove-if"}><b>remove-if</b></ClLinks>, <ClLinks  term={"remove-if-not"}><b>remove-if-not</b></ClLinks> return a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *sequence* that has the same elements except that those in the subsequence <ClLinks  term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end* and *satisfying the test* have been removed. This is a non-destructive operation. If any elements need to be removed, the result will be a copy. The result of <ClLinks  term={"remove"}><b>remove</b></ClLinks> may share with *sequence*; the result may be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to the input *sequence* if no elements need to be removed. 
+<DictionaryLink  term={"remove"}><b>remove</b></DictionaryLink>, <DictionaryLink  term={"remove-if"}><b>remove-if</b></DictionaryLink>, <DictionaryLink  term={"remove-if-not"}><b>remove-if-not</b></DictionaryLink> return a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *sequence* that has the same elements except that those in the subsequence <ClLinks  term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end* and *satisfying the test* have been removed. This is a non-destructive operation. If any elements need to be removed, the result will be a copy. The result of <DictionaryLink  term={"remove"}><b>remove</b></DictionaryLink> may share with *sequence*; the result may be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to the input *sequence* if no elements need to be removed. 
 
 
 
-<ClLinks  term={"delete"}><b>delete</b></ClLinks>, <ClLinks  term={"delete-if"}><b>delete-if</b></ClLinks>, and <ClLinks  term={"delete-if-not"}><b>delete-if-not</b></ClLinks> return a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *sequence* that has the same elements except that those in the subsequence <ClLinks  term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end* and *satisfying the test* have been deleted. *Sequence* may be destroyed and used to construct the result; however, the result might or might not be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to *sequence*. 
+<DictionaryLink  term={"delete"}><b>delete</b></DictionaryLink>, <DictionaryLink  term={"delete-if"}><b>delete-if</b></DictionaryLink>, and <DictionaryLink  term={"delete-if-not"}><b>delete-if-not</b></DictionaryLink> return a *sequence* of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *sequence* that has the same elements except that those in the subsequence <ClLinks  term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end* and *satisfying the test* have been deleted. *Sequence* may be destroyed and used to construct the result; however, the result might or might not be <ClLinks  term={"identical"}><i>identical</i></ClLinks> to *sequence*. 
 
 
 
-<ClLinks  term={"delete"}><b>delete</b></ClLinks>, when *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, is permitted to <ClLinks  term={"setf"}><b>setf</b></ClLinks> any part, <ClLinks  term={"car"}><b>car</b></ClLinks> or <ClLinks  term={"cdr"}><b>cdr</b></ClLinks>, of the top-level list structure in that *sequence*. When *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , <ClLinks  term={"delete"}><b>delete</b></ClLinks> is permitted to change the dimensions of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> and to slide its elements into new positions without permuting them to produce the resulting <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
+<DictionaryLink  term={"delete"}><b>delete</b></DictionaryLink>, when *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, is permitted to <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> any part, <DictionaryLink  term={"car"}><b>car</b></DictionaryLink> or <DictionaryLink  term={"cdr"}><b>cdr</b></DictionaryLink>, of the top-level list structure in that *sequence*. When *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , <DictionaryLink  term={"delete"}><b>delete</b></DictionaryLink> is permitted to change the dimensions of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> and to slide its elements into new positions without permuting them to produce the resulting <ClLinks  term={"vector"}><i>vector</i></ClLinks> . 
 
 
 
-<ClLinks  term={"delete-if"}><b>delete-if</b></ClLinks> is constrained to behave exactly as follows: 
+<DictionaryLink  term={"delete-if"}><b>delete-if</b></DictionaryLink> is constrained to behave exactly as follows: 
 
 
 
@@ -189,7 +189,7 @@ bar → ((C)) or ...
 
 
 
-For <ClLinks  term={"delete"}><b>delete</b></ClLinks>, <ClLinks  term={"delete-if"}><b>delete-if</b></ClLinks>, and <ClLinks  term={"delete-if-not"}><b>delete-if-not</b></ClLinks>, *sequence* may be destroyed and used to construct the result. 
+For <DictionaryLink  term={"delete"}><b>delete</b></DictionaryLink>, <DictionaryLink  term={"delete-if"}><b>delete-if</b></DictionaryLink>, and <DictionaryLink  term={"delete-if-not"}><b>delete-if-not</b></DictionaryLink>, *sequence* may be destroyed and used to construct the result. 
 
 
 
@@ -197,7 +197,7 @@ For <ClLinks  term={"delete"}><b>delete</b></ClLinks>, <ClLinks  term={"delete-i
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -221,7 +221,7 @@ The :test-not <ClLinks  term={"argument"}><i>argument</i></ClLinks> is deprecate
 
 
 
-The functions <ClLinks  term={"delete-if-not"}><b>delete-if-not</b></ClLinks> and <ClLinks  term={"remove-if-not"}><b>remove-if-not</b></ClLinks> are deprecated. 
+The functions <DictionaryLink  term={"delete-if-not"}><b>delete-if-not</b></DictionaryLink> and <DictionaryLink  term={"remove-if-not"}><b>remove-if-not</b></DictionaryLink> are deprecated. 
 
 
 

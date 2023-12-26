@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"boundp"}><b>boundp</b></ClLinks> *symbol → generalized-boolean* 
+<DictionaryLink  term={"boundp"}><b>boundp</b></DictionaryLink> *symbol → generalized-boolean* 
 
 
 
@@ -55,7 +55,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"symbol
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -63,7 +63,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"set"}><b>set</b></ClLinks>, <ClLinks  term={"setq"}><b>setq</b></ClLinks>, <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks>, <ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks> 
+<DictionaryLink  term={"set"}><b>set</b></DictionaryLink>, <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>, <DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink>, <DictionaryLink  term={"makunbound"}><b>makunbound</b></DictionaryLink> 
 
 
 

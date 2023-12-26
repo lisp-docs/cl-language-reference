@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"subseq"}><b>subseq</b></ClLinks> *sequence start* &amp;optional *end → subsequence* 
+<DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink> *sequence start* &amp;optional *end → subsequence* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The default for *end* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The default for *end* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-<ClLinks  term={"subseq"}><b>subseq</b></ClLinks> creates a *sequence* that is a copy of the subsequence of *sequence bounded* by *start* and *end*. 
+<DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink> creates a *sequence* that is a copy of the subsequence of *sequence bounded* by *start* and *end*. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<ClLinks  term={"subseq"}><b>subseq</b></ClLinks> always allocates a new *sequence* for a result; it never shares storage with an old *sequence*. The result subsequence is always of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *sequence*. 
+<DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink> always allocates a new *sequence* for a result; it never shares storage with an old *sequence*. The result subsequence is always of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as *sequence*. 
 
 
 
@@ -54,7 +54,7 @@ If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the resul
 
 
 
-<ClLinks  term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks  term={"subseq"}><b>subseq</b></ClLinks> to destructively replace <ClLinks  term={"element"}><i>elements</i></ClLinks> of a subsequence with <ClLinks  term={"element"}><i>elements</i></ClLinks> taken from a *sequence* of new values. If the subsequence and the new sequence are not of equal 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink> to destructively replace <ClLinks  term={"element"}><i>elements</i></ClLinks> of a subsequence with <ClLinks  term={"element"}><i>elements</i></ClLinks> taken from a *sequence* of new values. If the subsequence and the new sequence are not of equal 
 
 
 
@@ -88,7 +88,7 @@ str → "A123ab"
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *new-subsequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *new-subsequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -96,7 +96,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<ClLinks  term={"replace"}><b>replace</b></ClLinks> 
+<DictionaryLink  term={"replace"}><b>replace</b></DictionaryLink> 
 
 
 

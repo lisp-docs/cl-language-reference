@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"eval"}><b>eval</b></ClLinks> *form → \{result\}*\* 
+<DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> *form → \{result\}*\* 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-Evaluates <ClLinks  term={"form"}><i>form</i></ClLinks> in the current <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> and the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. <ClLinks  term={"eval"}><b>eval</b></ClLinks> is a user interface to the evaluator. 
+Evaluates <ClLinks  term={"form"}><i>form</i></ClLinks> in the current <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> and the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> is a user interface to the evaluator. 
 
 
 
-The evaluator expands macro calls as if through the use of <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks>. 
+The evaluator expands macro calls as if through the use of <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink>. 
 
 
 
-Constants appearing in code processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks> are not copied nor coalesced. The code resulting from the execution of <ClLinks  term={"eval"}><b>eval</b></ClLinks> references <ClLinks  term={"object"}><i>objects</i></ClLinks> that are <ClLinks  term={"eql"}><b>eql</b></ClLinks> to the corresponding <ClLinks  term={"object"}><i>objects</i></ClLinks> in the source code. 
+Constants appearing in code processed by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> are not copied nor coalesced. The code resulting from the execution of <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> references <ClLinks  term={"object"}><i>objects</i></ClLinks> that are <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> to the corresponding <ClLinks  term={"object"}><i>objects</i></ClLinks> in the source code. 
 
 
 
@@ -50,7 +50,7 @@ Constants appearing in code processed by <ClLinks  term={"eval"}><b>eval</b></Cl
 
 
 
-<ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks>, Section 3.1.2 (The Evaluation Model) 
+<DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink>, Section 3.1.2 (The Evaluation Model) 
 
 
 
@@ -58,11 +58,11 @@ Constants appearing in code processed by <ClLinks  term={"eval"}><b>eval</b></Cl
 
 
 
-To obtain the current dynamic value of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, use of <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> is equivalent (and usually preferable) to use of <ClLinks  term={"eval"}><b>eval</b></ClLinks>. 
+To obtain the current dynamic value of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, use of <DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> is equivalent (and usually preferable) to use of <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>. 
 
 
 
-Note that an <ClLinks  term={"eval"}><b>eval</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> involves two levels of <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> for its <ClLinks  term={"argument"}><i>argument</i></ClLinks>. First, <ClLinks  term={"form"}><i>form</i></ClLinks> is *evaluated* by the normal argument evaluation mechanism as would occur with any <ClLinks  term={"call"}><i>call</i></ClLinks>. The <ClLinks  term={"object"}><i>object</i></ClLinks> that  
+Note that an <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> involves two levels of <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> for its <ClLinks  term={"argument"}><i>argument</i></ClLinks>. First, <ClLinks  term={"form"}><i>form</i></ClLinks> is *evaluated* by the normal argument evaluation mechanism as would occur with any <ClLinks  term={"call"}><i>call</i></ClLinks>. The <ClLinks  term={"object"}><i>object</i></ClLinks> that  
 
 
 
@@ -70,7 +70,7 @@ Note that an <ClLinks  term={"eval"}><b>eval</b></ClLinks> <ClLinks  term={"form
 
 
 
-results from this normal *argument evaluation* becomes the <ClLinks  term={"value"}><i>value</i></ClLinks> of the *form parameter* , and is then *evaluated* as part of the <ClLinks  term={"eval"}><b>eval</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. For example: 
+results from this normal *argument evaluation* becomes the <ClLinks  term={"value"}><i>value</i></ClLinks> of the *form parameter* , and is then *evaluated* as part of the <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. For example: 
 
 
 
@@ -78,7 +78,7 @@ results from this normal *argument evaluation* becomes the <ClLinks  term={"valu
 
 
 
-The *argument form* (list ’cdr (car ’((quote (a . b)) c))) is evaluated in the usual way to produce the <ClLinks  term={"argument"}><i>argument</i></ClLinks> (cdr (quote (a . b))); <ClLinks  term={"eval"}><b>eval</b></ClLinks> then evaluates its <ClLinks  term={"argument"}><i>argument</i></ClLinks>, (cdr (quote (a . b))), to produce b. Since a single <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> already occurs for any *argument form* in any <GlossaryTerm styled={true} term={"function form"}><i>function form</i></GlossaryTerm>, <ClLinks  term={"eval"}><b>eval</b></ClLinks> is sometimes said to perform “an extra level of evaluation.” 
+The *argument form* (list ’cdr (car ’((quote (a . b)) c))) is evaluated in the usual way to produce the <ClLinks  term={"argument"}><i>argument</i></ClLinks> (cdr (quote (a . b))); <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> then evaluates its <ClLinks  term={"argument"}><i>argument</i></ClLinks>, (cdr (quote (a . b))), to produce b. Since a single <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> already occurs for any *argument form* in any <GlossaryTerm styled={true} term={"function form"}><i>function form</i></GlossaryTerm>, <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> is sometimes said to perform “an extra level of evaluation.” 
 
 
 

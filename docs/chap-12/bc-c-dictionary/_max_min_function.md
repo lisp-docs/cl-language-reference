@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"max"}><b>max</b></ClLinks> &amp;rest *reals*<sup>+</sup> → max-real 
+<DictionaryLink  term={"max"}><b>max</b></DictionaryLink> &amp;rest *reals*<sup>+</sup> → max-real 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"min"}><b>min</b></ClLinks> &amp;rest *reals*<sup>+</sup> → min-real 
+<DictionaryLink  term={"min"}><b>min</b></DictionaryLink> &amp;rest *reals*<sup>+</sup> → min-real 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-<ClLinks  term={"max"}><b>max</b></ClLinks> returns the *real* that is greatest (closest to positive infinity). <ClLinks  term={"min"}><b>min</b></ClLinks> returns the *real* that is least (closest to negative infinity). 
+<DictionaryLink  term={"max"}><b>max</b></DictionaryLink> returns the *real* that is greatest (closest to positive infinity). <DictionaryLink  term={"min"}><b>min</b></DictionaryLink> returns the *real* that is least (closest to negative infinity). 
 
 
 
-For <ClLinks  term={"max"}><b>max</b></ClLinks>, the implementation has the choice of returning the largest argument as is or applying the rules of floating-point <ClLinks  term={"contagion"}><i>contagion</i></ClLinks>, taking all the arguments into consideration for <ClLinks  term={"contagion"}><i>contagion</i></ClLinks> purposes. Also, if one or more of the arguments are <ClLinks  term={"="}><b>=</b></ClLinks>, then any one of them may be chosen as the value to return. For example, if the *reals* are a mixture of <ClLinks  term={"rational"}><i>rationals</i></ClLinks> and <ClLinks  term={"float"}><i>floats</i></ClLinks>, and the largest argument is a <ClLinks  term={"rational"}><i>rational</i></ClLinks>, then the implementation is free to produce either that <ClLinks  term={"rational"}><i>rational</i></ClLinks> or its <ClLinks  term={"float"}><i>float</i></ClLinks> approximation; if the largest argument is a <ClLinks  term={"float"}><i>float</i></ClLinks> of a smaller format than the largest format of any <ClLinks  term={"float"}><i>float</i></ClLinks> argument, then the implementation is free to return the argument in its given format or expanded to the larger format. Similar remarks apply to <ClLinks  term={"min"}><b>min</b></ClLinks> (replacing “largest argument” by “smallest argument”). 
+For <DictionaryLink  term={"max"}><b>max</b></DictionaryLink>, the implementation has the choice of returning the largest argument as is or applying the rules of floating-point <ClLinks  term={"contagion"}><i>contagion</i></ClLinks>, taking all the arguments into consideration for <ClLinks  term={"contagion"}><i>contagion</i></ClLinks> purposes. Also, if one or more of the arguments are <ClLinks  term={"="}><b>=</b></ClLinks>, then any one of them may be chosen as the value to return. For example, if the *reals* are a mixture of <ClLinks  term={"rational"}><i>rationals</i></ClLinks> and <ClLinks  term={"float"}><i>floats</i></ClLinks>, and the largest argument is a <ClLinks  term={"rational"}><i>rational</i></ClLinks>, then the implementation is free to produce either that <ClLinks  term={"rational"}><i>rational</i></ClLinks> or its <ClLinks  term={"float"}><i>float</i></ClLinks> approximation; if the largest argument is a <ClLinks  term={"float"}><i>float</i></ClLinks> of a smaller format than the largest format of any <ClLinks  term={"float"}><i>float</i></ClLinks> argument, then the implementation is free to return the argument in its given format or expanded to the larger format. Similar remarks apply to <DictionaryLink  term={"min"}><b>min</b></DictionaryLink> (replacing “largest argument” by “smallest argument”). 
 
 
 
@@ -93,7 +93,7 @@ For <ClLinks  term={"max"}><b>max</b></ClLinks>, the implementation has the choi
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any <ClLinks  term={"number"}><i>number</i></ClLinks> is not a *real*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if any <ClLinks  term={"number"}><i>number</i></ClLinks> is not a *real*. 
 
 
 

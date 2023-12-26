@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"zerop"}><b>zerop</b></ClLinks> *number → generalized-boolean* 
+<DictionaryLink  term={"zerop"}><b>zerop</b></DictionaryLink> *number → generalized-boolean* 
 
 
 
@@ -54,7 +54,7 @@ Regardless of whether an <ClLinks  term={"implementation"}><i>implementation</i>
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . 
 
 
 

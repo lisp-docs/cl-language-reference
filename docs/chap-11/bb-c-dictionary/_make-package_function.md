@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-package"}><b>make-package</b></ClLinks> *package-name* &amp;key *nicknames use → package* 
+<DictionaryLink  term={"make-package"}><b>make-package</b></DictionaryLink> *package-name* &amp;key *nicknames use → package* 
 
 
 
@@ -42,7 +42,7 @@ Creates a new <ClLinks  term={"package"}><i>package</i></ClLinks> with the name 
 
 
 
-<ClLinks  term={"use"}><i>use</i></ClLinks> specifies zero or more <ClLinks  term={"package"}><i>packages</i></ClLinks> the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of which are to be inherited by the new <ClLinks  term={"package"}><i>package</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. 
+<ClLinks  term={"use"}><i>use</i></ClLinks> specifies zero or more <ClLinks  term={"package"}><i>packages</i></ClLinks> the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of which are to be inherited by the new <ClLinks  term={"package"}><i>package</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>. 
 
 
 
@@ -88,7 +88,7 @@ A <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> error is signaled 
 
 
 
-<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks>, <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> 
+<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink>, <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> 
 
 
 
@@ -96,11 +96,11 @@ A <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> error is signaled 
 
 
 
-In situations where the <ClLinks  term={"package"}><i>packages</i></ClLinks> to be used contain symbols which would conflict, it is necessary to first create the package with :use ’(), then to use <ClLinks  term={"shadow"}><b>shadow</b></ClLinks> or <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks> to address the conflicts, and then after that to use <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> once the conflicts have been addressed. 
+In situations where the <ClLinks  term={"package"}><i>packages</i></ClLinks> to be used contain symbols which would conflict, it is necessary to first create the package with :use ’(), then to use <DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink> or <DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> to address the conflicts, and then after that to use <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink> once the conflicts have been addressed. 
 
 
 
-When packages are being created as part of the static definition of a program rather than dynamically by the program, it is generally considered more stylistically appropriate to use <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> rather than <ClLinks  term={"make-package"}><b>make-package</b></ClLinks>. 
+When packages are being created as part of the static definition of a program rather than dynamically by the program, it is generally considered more stylistically appropriate to use <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> rather than <DictionaryLink  term={"make-package"}><b>make-package</b></DictionaryLink>. 
 
 
 

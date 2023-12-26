@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"let"}><b>let</b></ClLinks> (*\{var |* (*var* [*init-form*])*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<DictionaryLink  term={"let"}><b>let</b></DictionaryLink> (*\{var |* (*var* [*init-form*])*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
 
 
 
-<ClLinks  term={"let"}><b>let\*</b></ClLinks> (*\{var |* (*var* [*init-form*])*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<DictionaryLink  term={"let"}><b>let\*</b></DictionaryLink> (*\{var |* (*var* [*init-form*])*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<ClLinks  term={"let"}><b>let</b></ClLinks> and <ClLinks  term={"let"}><b>let\*</b></ClLinks> create new variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> and execute a series of <ClLinks  term={"form"}><i>forms</i></ClLinks> that use these <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. <ClLinks  term={"let"}><b>let</b></ClLinks> performs the <ClLinks  term={"binding"}><i>bindings</i></ClLinks> in parallel and <ClLinks  term={"let"}><b>let\*</b></ClLinks> does them sequentially. 
+<DictionaryLink  term={"let"}><b>let</b></DictionaryLink> and <DictionaryLink  term={"let"}><b>let\*</b></DictionaryLink> create new variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks> and execute a series of <ClLinks  term={"form"}><i>forms</i></ClLinks> that use these <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> performs the <ClLinks  term={"binding"}><i>bindings</i></ClLinks> in parallel and <DictionaryLink  term={"let"}><b>let\*</b></DictionaryLink> does them sequentially. 
 
 
 
@@ -114,11 +114,11 @@ The form
 
 
 
-first evaluates the expressions *init-form-1*, *init-form-2*, and so on, in that order, saving the resulting values. Then all of the variables *varj* are bound to the corresponding values; each <ClLinks  term={"binding"}><i>binding</i></ClLinks> is lexical unless there is a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration to the contrary. The expressions *formk* are then evaluated in order; the values of all but the last are discarded (that is, the body of a <ClLinks  term={"let"}><b>let</b></ClLinks> is an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>). 
+first evaluates the expressions *init-form-1*, *init-form-2*, and so on, in that order, saving the resulting values. Then all of the variables *varj* are bound to the corresponding values; each <ClLinks  term={"binding"}><i>binding</i></ClLinks> is lexical unless there is a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration to the contrary. The expressions *formk* are then evaluated in order; the values of all but the last are discarded (that is, the body of a <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> is an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>). 
 
 
 
-<ClLinks  term={"let"}><b>let\*</b></ClLinks> is similar to <ClLinks  term={"let"}><b>let</b></ClLinks>, but the <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of variables are performed sequentially rather than in parallel. The expression for the *init-form* of a *var* can refer to *vars* previously bound in the <ClLinks  term={"let"}><b>let\*</b></ClLinks>. 
+<DictionaryLink  term={"let"}><b>let\*</b></DictionaryLink> is similar to <DictionaryLink  term={"let"}><b>let</b></DictionaryLink>, but the <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of variables are performed sequentially rather than in parallel. The expression for the *init-form* of a *var* can refer to *vars* previously bound in the <DictionaryLink  term={"let"}><b>let\*</b></DictionaryLink>. 
 
 
 
@@ -174,15 +174,15 @@ The form
 
 
 
-first evaluates the expression *init-form-1*, then binds the variable *var1* to that value; then it evaluates *init-form-2* and binds *var2*, and so on. The expressions *formj* are then evaluated in order; the values of all but the last are discarded (that is, the body of <ClLinks  term={"let"}><b>let\*</b></ClLinks> is an implicit <ClLinks  term={"progn"}><b>progn</b></ClLinks>). 
+first evaluates the expression *init-form-1*, then binds the variable *var1* to that value; then it evaluates *init-form-2* and binds *var2*, and so on. The expressions *formj* are then evaluated in order; the values of all but the last are discarded (that is, the body of <DictionaryLink  term={"let"}><b>let\*</b></DictionaryLink> is an implicit <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink>). 
 
 
 
-For both <ClLinks  term={"let"}><b>let</b></ClLinks> and <ClLinks  term={"let"}><b>let\*</b></ClLinks>, if there is not an *init-form* associated with a *var*, *var* is initialized to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+For both <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> and <DictionaryLink  term={"let"}><b>let\*</b></DictionaryLink>, if there is not an *init-form* associated with a *var*, *var* is initialized to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-The special form <ClLinks  term={"let"}><b>let</b></ClLinks> has the property that the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the name binding does not include any initial value form. For <ClLinks  term={"let"}><b>let\*</b></ClLinks>, a variable’s <ClLinks  term={"scope"}><i>scope</i></ClLinks> also includes the remaining initial value forms for subsequent variable bindings. 
+The special form <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> has the property that the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the name binding does not include any initial value form. For <DictionaryLink  term={"let"}><b>let\*</b></DictionaryLink>, a variable’s <ClLinks  term={"scope"}><i>scope</i></ClLinks> also includes the remaining initial value forms for subsequent variable bindings. 
 
 
 
@@ -210,7 +210,7 @@ is incorrect; although x is indeed set before it is used, and is set to a value 
 
 
 
-<ClLinks  term={"progv"}><b>progv</b></ClLinks> 
+<DictionaryLink  term={"progv"}><b>progv</b></DictionaryLink> 
 
 
 

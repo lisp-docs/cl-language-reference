@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"file-position"}><b>file-position</b></ClLinks> *stream → position* 
+<DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> *stream → position* 
 
 
 
-<ClLinks  term={"file-position"}><b>file-position</b></ClLinks> *stream position-spec → success-p* 
+<DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> *stream position-spec → success-p* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*position*—a <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*position*—a <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -42,27 +42,23 @@ Returns or changes the current position within a <ClLinks  term={"stream"}><i>st
 
 
 
-When *position-spec* is not supplied, <ClLinks  term={"file-position"}><b>file-position</b></ClLinks> returns the current <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in the <ClLinks  term={"stream"}><i>stream</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if this cannot be determined. 
+When *position-spec* is not supplied, <DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> returns the current <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in the <ClLinks  term={"stream"}><i>stream</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if this cannot be determined. 
 
 
 
-When *position-spec* is supplied, the <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in <ClLinks  term={"stream"}><i>stream</i></ClLinks> is set to that <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> (if possible). <ClLinks  term={"file-position"}><b>file-position</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the repositioning is performed successfully, or <ClLinks  term={"false"}><i>false</i></ClLinks> if it is not. 
+When *position-spec* is supplied, the <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in <ClLinks  term={"stream"}><i>stream</i></ClLinks> is set to that <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> (if possible). <DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the repositioning is performed successfully, or <ClLinks  term={"false"}><i>false</i></ClLinks> if it is not. 
 
 
 
-An *integer* returned by <ClLinks  term={"file-position"}><b>file-position</b></ClLinks> of one argument should be acceptable as *position-spec* for use with the same file. 
+An *integer* returned by <DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> of one argument should be acceptable as *position-spec* for use with the same file. 
 
 
 
-For a character file, performing a single <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> or <ClLinks  term={"write-char"}><b>write-char</b></ClLinks> operation may cause the file position to be increased by more than 1 because of character-set translations (such as translating between the Common Lisp #\Newline character and an external ASCII carriage-return/line-feed 
-
-
+For a character file, performing a single <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> or <DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> operation may cause the file position to be increased by more than 1 because of character-set translations (such as translating between the Common Lisp #\Newline character and an external ASCII carriage-return/line-feed 
 
 
 
 
-
- 
 
 
 
@@ -70,11 +66,15 @@ For a character file, performing a single <ClLinks  term={"read-char"}><b>read-c
 
 
 
-<ClLinks  term={"file-position"}><b>file-position</b></ClLinks> 
+ 
 
 
 
-sequence) and other aspects of the implementation. For a binary file, every <ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks> or <ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks> operation increases the file position by 1. 
+<DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> 
+
+
+
+sequence) and other aspects of the implementation. For a binary file, every <DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> or <DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink> operation increases the file position by 1. 
 
 
 
@@ -124,7 +124,7 @@ When the *position-spec* argument is supplied, the <GlossaryTerm styled={true} t
 
 
 
-The value returned by <ClLinks  term={"file-position"}><b>file-position</b></ClLinks> increases monotonically as input or output operations are performed. 
+The value returned by <DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> increases monotonically as input or output operations are performed. 
 
 
 
@@ -152,7 +152,7 @@ If *position-spec* is supplied, but is too large or otherwise inappropriate, an 
 
 
 
-<ClLinks  term={"file-length"}><b>file-length</b></ClLinks>, <ClLinks  term={"file-string-length"}><b>file-string-length</b></ClLinks>, <ClLinks  term={"open"}><b>open</b></ClLinks> 
+<DictionaryLink  term={"file-length"}><b>file-length</b></DictionaryLink>, <DictionaryLink  term={"file-string-length"}><b>file-string-length</b></DictionaryLink>, <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> 
 
 
 
@@ -160,7 +160,7 @@ If *position-spec* is supplied, but is too large or otherwise inappropriate, an 
 
 
 
-Implementations that have character files represented as a sequence of records of bounded size might choose to encode the file position as, for example, ⟨record-number ⟩\*⟨max-record size⟩+⟨character-within-record⟩. This is a valid encoding because it increases monotonically as each character is read or written, though not necessarily by 1 at each step. An *integer* might then be considered “inappropriate” as *position-spec* to <ClLinks  term={"file-position"}><b>file-position</b></ClLinks> if, when decoded into record number and character number, it turned out that the supplied record was too short for the specified character number. 
+Implementations that have character files represented as a sequence of records of bounded size might choose to encode the file position as, for example, ⟨record-number ⟩\*⟨max-record size⟩+⟨character-within-record⟩. This is a valid encoding because it increases monotonically as each character is read or written, though not necessarily by 1 at each step. An *integer* might then be considered “inappropriate” as *position-spec* to <DictionaryLink  term={"file-position"}><b>file-position</b></DictionaryLink> if, when decoded into record number and character number, it turned out that the supplied record was too short for the specified character number. 
 
 
 

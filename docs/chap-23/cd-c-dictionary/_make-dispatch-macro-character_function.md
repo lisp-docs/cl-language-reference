@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks> *char* &amp;optional *non-terminating-p readtable →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></DictionaryLink> *char* &amp;optional *non-terminating-p readtable →* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks> makes *char* be a <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
+<DictionaryLink  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></DictionaryLink> makes *char* be a <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 
-Initially, every <ClLinks  term={"character"}><i>character</i></ClLinks> in the dispatch table associated with the *char* has an associated function that signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"reader-error"}><b>reader-error</b></ClLinks>. 
+Initially, every <ClLinks  term={"character"}><i>character</i></ClLinks> in the dispatch table associated with the *char* has an associated function that signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink>. 
 
 
 
@@ -65,7 +65,7 @@ If *non-terminating-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, the <Gl
 
 
 
-<ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks>, **set-dispatch-macro-character** 
+<DictionaryLink  term={"readtable"}><b>\*readtable\*</b></DictionaryLink>, **set-dispatch-macro-character** 
 
 
 

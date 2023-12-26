@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"translate-pathname"}><b>translate-pathname</b></ClLinks> *source from-wildcard to-wildcard* &amp;key 
+<DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> *source from-wildcard to-wildcard* &amp;key 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-<ClLinks  term={"translate-pathname"}><b>translate-pathname</b></ClLinks> translates *source* (that matches *from-wildcard*) into a corresponding <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> that matches *to-wildcard*, and returns the corresponding <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+<DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> translates *source* (that matches *from-wildcard*) into a corresponding <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> that matches *to-wildcard*, and returns the corresponding <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
-The resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is *to-wildcard* with each wildcard or missing field replaced by a portion of *source*. A “wildcard field” is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component with a value of :wild, a :wild element of a <ClLinks  term={"list"}><i>list</i></ClLinks>-valued directory component, or an <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> portion of a component, such as the "\*" in the complex wildcard string "foo\*bar" that some implementations support. An implementation that adds other wildcard features, such as regular expressions, must define how <ClLinks  term={"translate-pathname"}><b>translate-pathname</b></ClLinks> extends to those features. A “missing field” is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component with a value of <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+The resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is *to-wildcard* with each wildcard or missing field replaced by a portion of *source*. A “wildcard field” is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component with a value of :wild, a :wild element of a <ClLinks  term={"list"}><i>list</i></ClLinks>-valued directory component, or an <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> portion of a component, such as the "\*" in the complex wildcard string "foo\*bar" that some implementations support. An implementation that adds other wildcard features, such as regular expressions, must define how <DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> extends to those features. A “missing field” is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component with a value of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -70,15 +70,15 @@ It is valid for *source* to be a wild <ClLinks  term={"pathname"}><i>pathname</i
 
 
 
-<ClLinks  term={"translate-pathname"}><b>translate-pathname</b></ClLinks> 
+<DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> 
 
 
 
-There are no specified keyword arguments for <ClLinks  term={"translate-pathname"}><b>translate-pathname</b></ClLinks>, but implementations are permitted to extend it by adding keyword arguments. 
+There are no specified keyword arguments for <DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink>, but implementations are permitted to extend it by adding keyword arguments. 
 
 
 
-<ClLinks  term={"translate-pathname"}><b>translate-pathname</b></ClLinks> maps customary case in *source* into customary case in the output <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+<DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> maps customary case in *source* into customary case in the output <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
 
 **Examples:**
 ```lisp
@@ -125,11 +125,11 @@ There are no specified keyword arguments for <ClLinks  term={"translate-pathname
 
 
 
-If any of *source*, *from-wildcard*, or *to-wildcard* is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
+If any of *source*, *from-wildcard*, or *to-wildcard* is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
 
 
 
-(pathname-match-p *source from-wildcard*) must be true or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+(pathname-match-p *source from-wildcard*) must be true or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
@@ -137,7 +137,7 @@ If any of *source*, *from-wildcard*, or *to-wildcard* is not a <ClLinks  term={"
 
 
 
-<ClLinks  term={"namestring"}><b>namestring</b></ClLinks>, **pathname-host**, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink  term={"namestring"}><b>namestring</b></DictionaryLink>, **pathname-host**, <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 
@@ -145,11 +145,11 @@ If any of *source*, *from-wildcard*, or *to-wildcard* is not a <ClLinks  term={"
 
 
 
-The exact behavior of <ClLinks  term={"translate-pathname"}><b>translate-pathname</b></ClLinks> cannot be dictated by the Common Lisp language and must be allowed to vary, depending on the user interface conventions of the file systems involved. 
+The exact behavior of <DictionaryLink  term={"translate-pathname"}><b>translate-pathname</b></DictionaryLink> cannot be dictated by the Common Lisp language and must be allowed to vary, depending on the user interface conventions of the file systems involved. 
 
 
 
-The following is an implementation guideline. One file system performs this operation by examining each piece of the three <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> in turn, where a piece is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component or a <ClLinks  term={"list"}><i>list</i></ClLinks> element of a structured component such as a hierarchical directory. Hierarchical directory elements in *from-wildcard* and *to-wildcard* are matched by whether they are wildcards, not by depth in the directory hierarchy. If the piece in *to-wildcard* is present and not wild, it is copied into the result. If the piece in *to-wildcard* is :wild or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the piece in *source* is copied into the result. Otherwise, the piece in *to-wildcard* might be a complex wildcard such as "foo\*bar" and the piece in *from-wildcard* should be wild; the portion of the piece in *source* that matches the wildcard portion of the piece in *from-wildcard* replaces the wildcard portion of the piece in *to-wildcard* and the value produced is used in the result. 
+The following is an implementation guideline. One file system performs this operation by examining each piece of the three <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> in turn, where a piece is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> component or a <ClLinks  term={"list"}><i>list</i></ClLinks> element of a structured component such as a hierarchical directory. Hierarchical directory elements in *from-wildcard* and *to-wildcard* are matched by whether they are wildcards, not by depth in the directory hierarchy. If the piece in *to-wildcard* is present and not wild, it is copied into the result. If the piece in *to-wildcard* is :wild or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the piece in *source* is copied into the result. Otherwise, the piece in *to-wildcard* might be a complex wildcard such as "foo\*bar" and the piece in *from-wildcard* should be wild; the portion of the piece in *source* that matches the wildcard portion of the piece in *from-wildcard* replaces the wildcard portion of the piece in *to-wildcard* and the value produced is used in the result. 
 
 
 

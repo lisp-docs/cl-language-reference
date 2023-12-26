@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"lambda"}><b>lambda</b></ClLinks> *lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"lambda"}><b>lambda</b></DictionaryLink> *lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -46,7 +46,7 @@ A <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i
 
 
 
-<ClLinks  term={"function"}><b>function</b></ClLinks>, **documentation**, Section 3.1.3 (Lambda Expressions), Section 3.1.2.1.2.4 (Lambda Forms), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+<DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, **documentation**, Section 3.1.3 (Lambda Expressions), Section 3.1.2.1.2.4 (Lambda Forms), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 

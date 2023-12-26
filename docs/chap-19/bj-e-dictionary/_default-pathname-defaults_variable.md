@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"default-pathname-defaults"}><b>*default-pathname-defaults*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink  term={"default-pathname-defaults"}><b>*default-pathname-defaults*</b></DictionaryLink>∗ Variable* 
 
 
 

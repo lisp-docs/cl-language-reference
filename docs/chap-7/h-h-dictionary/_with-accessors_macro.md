@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"with-accessors"}><b>with-accessors</b></ClLinks> (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"with-accessors"}><b>with-accessors</b></DictionaryLink> (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-Creates a lexical environment in which the slots specified by *slot-entry* are lexically available through their accessors as if they were variables. The macro <ClLinks  term={"with-accessors"}><b>with-accessors</b></ClLinks> invokes the appropriate accessors to <ClLinks  term={"access"}><i>access</i></ClLinks> the <ClLinks  term={"slot"}><i>slots</i></ClLinks> specified by *slot-entry*. Both <ClLinks  term={"setf"}><b>setf</b></ClLinks> and <ClLinks  term={"setq"}><b>setq</b></ClLinks> can be used to set the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+Creates a lexical environment in which the slots specified by *slot-entry* are lexically available through their accessors as if they were variables. The macro <DictionaryLink  term={"with-accessors"}><b>with-accessors</b></DictionaryLink> invokes the appropriate accessors to <ClLinks  term={"access"}><i>access</i></ClLinks> the <ClLinks  term={"slot"}><i>slots</i></ClLinks> specified by *slot-entry*. Both <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> and <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> can be used to set the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ Creates a lexical environment in which the slots specified by *slot-entry* are l
 
 
 
-<ClLinks  term={"with-accessors"}><b>with-accessors</b></ClLinks> 
+<DictionaryLink  term={"with-accessors"}><b>with-accessors</b></DictionaryLink> 
 
 
 
@@ -105,7 +105,7 @@ Creates a lexical environment in which the slots specified by *slot-entry* are l
 
 
 
-<ClLinks  term={"defclass"}><b>defclass</b></ClLinks> 
+<DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> 
 
 
 
@@ -121,7 +121,7 @@ The consequences are undefined if any *accessor-name* is not the name of an acce
 
 
 
-<ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks>, <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> 
+<DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink>, <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> 
 
 
 
@@ -129,7 +129,7 @@ The consequences are undefined if any *accessor-name* is not the name of an acce
 
 
 
-A <ClLinks  term={"with-accessors"}><b>with-accessors</b></ClLinks> expression of the form: 
+A <DictionaryLink  term={"with-accessors"}><b>with-accessors</b></DictionaryLink> expression of the form: 
 
 
 

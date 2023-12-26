@@ -2,7 +2,7 @@
 
 
 
-The generic function <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> behaves as if it were defined as follows, except that certain optimizations are permitted: 
+The generic function <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> behaves as if it were defined as follows, except that certain optimizations are permitted: 
 
 
 
@@ -34,7 +34,7 @@ instance))
 
 
 
-The elided code in the definition of <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> augments the initargs with any *defaulted initialization arguments* and checks the resulting initialization arguments to determine whether 
+The elided code in the definition of <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> augments the initargs with any *defaulted initialization arguments* and checks the resulting initialization arguments to determine whether 
 
 
 
@@ -54,7 +54,7 @@ an initialization argument was supplied that neither filled a <ClLinks  term={"s
 
 
 
-The generic function <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks> behaves as if it were defined as follows, except that certain optimizations are permitted: 
+The generic function <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink> behaves as if it were defined as follows, except that certain optimizations are permitted: 
 
 
 
@@ -70,11 +70,11 @@ These procedures can be customized.
 
 
 
-Customizing at the Programmer Interface level includes using the :initform, :initarg, and :default-initargs options to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, as well as defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks>, and <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. It is also possible to define <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>, which would be invoked by the generic functions <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks>, **update-instance-for-redefined-class**, **update-instance-for-different-class**, and <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. The meta-object level supports additional customization. 
+Customizing at the Programmer Interface level includes using the :initform, :initarg, and :default-initargs options to <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, as well as defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink>, <DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink>, and <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>. It is also possible to define <ClLinks  term={"method"}><i>methods</i></ClLinks> for <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>, which would be invoked by the generic functions <DictionaryLink  term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink>, **update-instance-for-redefined-class**, **update-instance-for-different-class**, and <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>. The meta-object level supports additional customization. 
 
 
 
-Implementations are permitted to make certain optimizations to <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks> and <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The description of <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> in Chapter 7 mentions the possible optimizations. 
+Implementations are permitted to make certain optimizations to <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink> and <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>. The description of <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink> in Chapter 7 mentions the possible optimizations. 
 
 
 

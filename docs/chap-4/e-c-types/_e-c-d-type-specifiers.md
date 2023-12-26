@@ -2,7 +2,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"type specifier"}><i>Type specifiers</i></GlossaryTerm> can be <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, *classes*, or <ClLinks  term={"list"}><i>lists</i></ClLinks>. Figure 4–2 lists <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are *standardized atomic type specifiers*, and Figure 4–3 lists *standardized compound type specifier names*. For syntax information, see the dictionary entry for the corresponding <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . It is possible to define new <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> using <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks>, <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>, or <ClLinks  term={"deftype"}><b>deftype</b></ClLinks>.  
+<GlossaryTerm styled={true} term={"type specifier"}><i>Type specifiers</i></GlossaryTerm> can be <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, *classes*, or <ClLinks  term={"list"}><i>lists</i></ClLinks>. Figure 4–2 lists <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are *standardized atomic type specifiers*, and Figure 4–3 lists *standardized compound type specifier names*. For syntax information, see the dictionary entry for the corresponding <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . It is possible to define new <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> using <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, <DictionaryLink  term={"define-condition"}><b>define-condition</b></DictionaryLink>, <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink>, or <DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink>.  
 
 
 
@@ -90,11 +90,11 @@ New <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></
 
 
 
-*•* Defining a structure by using <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> without using the :type specifier or defining a <ClLinks  term={"class"}><i>class</i></ClLinks> by using <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> or <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks> automatically causes the name of the structure or class to be a new *type specifier symbol*. 
+*•* Defining a structure by using <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> without using the :type specifier or defining a <ClLinks  term={"class"}><i>class</i></ClLinks> by using <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> or <DictionaryLink  term={"define-condition"}><b>define-condition</b></DictionaryLink> automatically causes the name of the structure or class to be a new *type specifier symbol*. 
 
 
 
-*•* <ClLinks  term={"deftype"}><b>deftype</b></ClLinks> can be used to define <GlossaryTerm styled={true} term={"derived type specifier"}><i>derived type specifiers</i></GlossaryTerm>, which act as ‘abbreviations’ for other <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>. 
+*•* <DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink> can be used to define <GlossaryTerm styled={true} term={"derived type specifier"}><i>derived type specifiers</i></GlossaryTerm>, which act as ‘abbreviations’ for other <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>. 
 
 
 

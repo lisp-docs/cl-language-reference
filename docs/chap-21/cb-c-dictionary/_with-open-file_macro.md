@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> (*stream filespec \{options\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink> (*stream filespec \{options\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> uses <ClLinks  term={"open"}><b>open</b></ClLinks> to create a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> to <ClLinks  term={"file"}><i>file</i></ClLinks> named by *filespec*. *Filespec* is the name of the file to be opened. *Options* are used as keyword arguments to <ClLinks  term={"open"}><b>open</b></ClLinks>. 
+<DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink> uses <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> to create a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> to <ClLinks  term={"file"}><i>file</i></ClLinks> named by *filespec*. *Filespec* is the name of the file to be opened. *Options* are used as keyword arguments to <DictionaryLink  term={"open"}><b>open</b></DictionaryLink>. 
 
 
 
@@ -54,19 +54,15 @@ The *stream object* to which the <GlossaryTerm styled={true} term={"stream varia
 
 
 
-<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> evaluates the <ClLinks  term={"form"}><i>forms</i></ClLinks> as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> with <ClLinks  term={"stream"}><i>stream</i></ClLinks> bound to the value returned by <ClLinks  term={"open"}><b>open</b></ClLinks>. 
+<DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink> evaluates the <ClLinks  term={"form"}><i>forms</i></ClLinks> as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> with <ClLinks  term={"stream"}><i>stream</i></ClLinks> bound to the value returned by <DictionaryLink  term={"open"}><b>open</b></DictionaryLink>. 
 
 
 
-When control leaves the body, either normally or abnormally (such as by use of <ClLinks  term={"throw"}><b>throw</b></ClLinks>), the file is automatically closed. If a new output file is being written, and control leaves abnormally, the file is aborted and the file system is left, so far as possible, as if the file had never been opened. 
-
-
+When control leaves the body, either normally or abnormally (such as by use of <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>), the file is automatically closed. If a new output file is being written, and control leaves abnormally, the file is aborted and the file system is left, so far as possible, as if the file had never been opened. 
 
 
 
 
-
- 
 
 
 
@@ -74,11 +70,15 @@ When control leaves the body, either normally or abnormally (such as by use of <
 
 
 
-<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> 
+ 
 
 
 
-It is possible by the use of :if-exists nil or :if-does-not-exist nil for <ClLinks  term={"stream"}><i>stream</i></ClLinks> to be bound to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. Users of :if-does-not-exist nil should check for a valid <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink> 
+
+
+
+It is possible by the use of :if-exists nil or :if-does-not-exist nil for <ClLinks  term={"stream"}><i>stream</i></ClLinks> to be bound to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. Users of :if-does-not-exist nil should check for a valid <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -131,7 +131,7 @@ The host computer’s file system.
 
 
 
-See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"open"}><b>open</b></ClLinks>. 
+See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"open"}><b>open</b></DictionaryLink>. 
 
 
 
@@ -151,4 +151,4 @@ See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"o
 
 
 
-<ClLinks  term={"open"}><b>open</b></ClLinks>, <ClLinks  term={"close"}><b>close</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink  term={"open"}><b>open</b></DictionaryLink>, <DictionaryLink  term={"close"}><b>close</b></DictionaryLink>, <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 19.1.2 (Pathnames as Filenames) 

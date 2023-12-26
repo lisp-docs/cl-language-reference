@@ -38,7 +38,7 @@ Figure 12–2 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined
 
 
 
-|<p><ClLinks  term={"/="}><b>/=</b></ClLinks> &gt;**= oddp** </p><p>&lt; **evenp plusp** </p><p>&lt;**= max zerop** </p><p>**= min** </p><p>&gt; <ClLinks  term={"minusp"}><b>minusp</b></ClLinks></p>|
+|<p><ClLinks  term={"/="}><b>/=</b></ClLinks> &gt;**= oddp** </p><p>&lt; **evenp plusp** </p><p>&lt;**= max zerop** </p><p>**= min** </p><p>&gt; <DictionaryLink  term={"minusp"}><b>minusp</b></DictionaryLink></p>|
 
 | :- |
 

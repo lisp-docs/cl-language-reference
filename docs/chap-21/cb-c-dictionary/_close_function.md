@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"close"}><b>close</b></ClLinks> <ClLinks  term={"stream"}><i>stream</i></ClLinks> &amp;key *abort → result* 
+<DictionaryLink  term={"close"}><b>close</b></DictionaryLink> <ClLinks  term={"stream"}><i>stream</i></ClLinks> &amp;key *abort → result* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*result*—<ClLinks  term={"t"}><b>t</b></ClLinks> if the <ClLinks  term={"stream"}><i>stream</i></ClLinks> was <ClLinks  term={"open"}><i>open</i></ClLinks> at the time it was received as an <ClLinks  term={"argument"}><i>argument</i></ClLinks>, or *implementation dependent* otherwise. 
+*result*—<DictionaryLink  term={"t"}><b>t</b></DictionaryLink> if the <ClLinks  term={"stream"}><i>stream</i></ClLinks> was <ClLinks  term={"open"}><i>open</i></ClLinks> at the time it was received as an <ClLinks  term={"argument"}><i>argument</i></ClLinks>, or *implementation dependent* otherwise. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"close"}><b>close</b></ClLinks> closes <ClLinks  term={"stream"}><i>stream</i></ClLinks>. Closing a <ClLinks  term={"stream"}><i>stream</i></ClLinks> means that it may no longer be used in input or output operations. The act of *closing* a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> ends the association between the <ClLinks  term={"stream"}><i>stream</i></ClLinks> and its associated <ClLinks  term={"file"}><i>file</i></ClLinks>; the transaction with the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> is terminated, and input/output may no longer be performed on the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"close"}><b>close</b></DictionaryLink> closes <ClLinks  term={"stream"}><i>stream</i></ClLinks>. Closing a <ClLinks  term={"stream"}><i>stream</i></ClLinks> means that it may no longer be used in input or output operations. The act of *closing* a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> ends the association between the <ClLinks  term={"stream"}><i>stream</i></ClLinks> and its associated <ClLinks  term={"file"}><i>file</i></ClLinks>; the transaction with the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> is terminated, and input/output may no longer be performed on the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -42,15 +42,15 @@ It is permissible to close an already closed <ClLinks  term={"stream"}><i>stream
 
 
 
-After <ClLinks  term={"stream"}><i>stream</i></ClLinks> is closed, it is still possible to perform the following query operations upon it: <ClLinks  term={"streamp"}><b>streamp</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"truename"}><b>truename</b></ClLinks>, <ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks>, **pathname-host**, **pathname-device**, **pathname-directory**,**pathname-name**, **pathname-type**, **pathname-version**, <ClLinks  term={"namestring"}><b>namestring</b></ClLinks>, <ClLinks  term={"file-namestring"}><b>file-namestring</b></ClLinks>, <ClLinks  term={"directory-namestring"}><b>directory-namestring</b></ClLinks>, <ClLinks  term={"host-namestring"}><b>host-namestring</b></ClLinks>, <ClLinks  term={"enough-namestring"}><b>enough-namestring</b></ClLinks>, <ClLinks  term={"open"}><b>open</b></ClLinks>, <ClLinks  term={"probe-file"}><b>probe-file</b></ClLinks>, and <ClLinks  term={"directory"}><b>directory</b></ClLinks>. 
+After <ClLinks  term={"stream"}><i>stream</i></ClLinks> is closed, it is still possible to perform the following query operations upon it: <DictionaryLink  term={"streamp"}><b>streamp</b></DictionaryLink>, <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink>, <DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink>, **pathname-host**, **pathname-device**, **pathname-directory**,**pathname-name**, **pathname-type**, **pathname-version**, <DictionaryLink  term={"namestring"}><b>namestring</b></DictionaryLink>, <DictionaryLink  term={"file-namestring"}><b>file-namestring</b></DictionaryLink>, <DictionaryLink  term={"directory-namestring"}><b>directory-namestring</b></DictionaryLink>, <DictionaryLink  term={"host-namestring"}><b>host-namestring</b></DictionaryLink>, <DictionaryLink  term={"enough-namestring"}><b>enough-namestring</b></DictionaryLink>, <DictionaryLink  term={"open"}><b>open</b></DictionaryLink>, <DictionaryLink  term={"probe-file"}><b>probe-file</b></DictionaryLink>, and <DictionaryLink  term={"directory"}><b>directory</b></DictionaryLink>. 
 
 
 
-The effect of <ClLinks  term={"close"}><b>close</b></ClLinks> on a <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed stream</i></GlossaryTerm> is to close the argument <ClLinks  term={"stream"}><i>stream</i></ClLinks> only. There is no effect on the <ClLinks  term={"constituent"}><i>constituents</i></ClLinks> of <GlossaryTerm styled={true} term={"composite stream"}><i>composite streams</i></GlossaryTerm>. 
+The effect of <DictionaryLink  term={"close"}><b>close</b></DictionaryLink> on a <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed stream</i></GlossaryTerm> is to close the argument <ClLinks  term={"stream"}><i>stream</i></ClLinks> only. There is no effect on the <ClLinks  term={"constituent"}><i>constituents</i></ClLinks> of <GlossaryTerm styled={true} term={"composite stream"}><i>composite streams</i></GlossaryTerm>. 
 
 
 
-For a <ClLinks  term={"stream"}><i>stream</i></ClLinks> created with <ClLinks  term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks>, the result of <ClLinks  term={"get-output-stream-string"}><b>get-output-stream-string</b></ClLinks> is unspecified after <ClLinks  term={"close"}><b>close</b></ClLinks>. 
+For a <ClLinks  term={"stream"}><i>stream</i></ClLinks> created with <DictionaryLink  term={"make-string-output-stream"}><b>make-string-output-stream</b></DictionaryLink>, the result of <DictionaryLink  term={"get-output-stream-string"}><b>get-output-stream-string</b></DictionaryLink> is unspecified after <DictionaryLink  term={"close"}><b>close</b></DictionaryLink>. 
 
 
 
@@ -84,7 +84,7 @@ The <ClLinks  term={"stream"}><i>stream</i></ClLinks> is <ClLinks  term={"closed
 
 
 
-<ClLinks  term={"open"}><b>open</b></ClLinks> 
+<DictionaryLink  term={"open"}><b>open</b></DictionaryLink> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"map"}><b>map</b></ClLinks> *result-type function* &amp;rest *sequences*<sup>+</sup> → result 
+<DictionaryLink  term={"map"}><b>map</b></DictionaryLink> *result-type function* &amp;rest *sequences*<sup>+</sup> → result 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*result-type* – a <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*result-type* – a <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*result*—if *result-type* is a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> other than <ClLinks  term={"nil"}><b>nil</b></ClLinks>, then a *sequence* of the <ClLinks  term={"type"}><i>type</i></ClLinks> it denotes; otherwise (if the *result-type* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>), <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*result*—if *result-type* is a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> other than <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, then a *sequence* of the <ClLinks  term={"type"}><i>type</i></ClLinks> it denotes; otherwise (if the *result-type* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>), <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -34,7 +34,7 @@ Applies <ClLinks  term={"function"}><i>function</i></ClLinks> to successive sets
 
 
 
-<ClLinks  term={"map"}><b>map</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks> if *result-type* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. Otherwise, <ClLinks  term={"map"}><b>map</b></ClLinks> returns a *sequence* such that element j is the result of applying <ClLinks  term={"function"}><i>function</i></ClLinks> to element j of each of the *sequences*. The result *sequence* is as long as the shortest of the *sequences*. The consequences are undefined if the result of applying <ClLinks  term={"function"}><i>function</i></ClLinks> to 
+<DictionaryLink  term={"map"}><b>map</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if *result-type* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. Otherwise, <DictionaryLink  term={"map"}><b>map</b></DictionaryLink> returns a *sequence* such that element j is the result of applying <ClLinks  term={"function"}><i>function</i></ClLinks> to element j of each of the *sequences*. The result *sequence* is as long as the shortest of the *sequences*. The consequences are undefined if the result of applying <ClLinks  term={"function"}><i>function</i></ClLinks> to 
 
 
 
@@ -54,11 +54,11 @@ the successive elements of the *sequences* cannot be contained in a *sequence* o
 
 
 
-If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"list"}><b>list</b></ClLinks>, the result will be a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, the result will be a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <ClLinks  term={"t"}><b>t</b></ClLinks>; otherwise, an error is signaled. 
+If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>; otherwise, an error is signaled. 
 
 
 
@@ -81,15 +81,15 @@ seq → ("LOWER" "UPPER" "" "123")
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> must be signaled if the *result-type* is not a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"list"}><b>list</b></ClLinks>, not a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>, and not <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> must be signaled if the *result-type* is not a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, not a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, and not <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if any *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> should be signaled if *result-type* specifies the number of elements and the minimum length of the *sequences* is different from that number. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if *result-type* specifies the number of elements and the minimum length of the *sequences* is different from that number. 
 
 
 
@@ -113,7 +113,7 @@ Section 3.6 (Traversal Rules and Side Effects)
 
 
 
-<ClLinks  term={"map-into"}><b>map-into</b></ClLinks> 
+<DictionaryLink  term={"map-into"}><b>map-into</b></DictionaryLink> 
 
 
 

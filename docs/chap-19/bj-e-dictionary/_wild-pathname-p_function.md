@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks> <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;optional *field-key → generalized-boolean* 
+<DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;optional *field-key → generalized-boolean* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*Field-key*—one of :host, :device :directory, :name, :type, :version, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*Field-key*—one of :host, :device :directory, :name, :type, :version, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-<ClLinks  term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks> tests <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> for the presence of wildcard components. 
+<DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> tests <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> for the presence of wildcard components. 
 
 
 
-If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> (as returned by <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>) it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
+If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> (as returned by <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>) it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
 
 
 
-If *field-key* is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, <ClLinks  term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks> returns true if <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> has any wildcard components, <ClLinks  term={"nil"}><b>nil</b></ClLinks> if <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> has none. If *field-key* is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, <ClLinks  term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks> returns true if the indicated component of <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a wildcard, <ClLinks  term={"nil"}><b>nil</b></ClLinks> if the component is not a wildcard. 
+If *field-key* is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, <DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> returns true if <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> has any wildcard components, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> has none. If *field-key* is <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, <DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink> returns true if the indicated component of <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a wildcard, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the component is not a wildcard. 
 
 
 
@@ -58,7 +58,7 @@ If *field-key* is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, <
 
 
 
-If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
+If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is not a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>, or a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -66,7 +66,7 @@ If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is not a <ClLinks  term
 
 
 
-<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

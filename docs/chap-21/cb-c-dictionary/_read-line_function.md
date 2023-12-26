@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"read-line"}><b>read-line</b></ClLinks> &amp;optional *input-stream eof-error-p eof-value recursive-p* 
+<DictionaryLink  term={"read-line"}><b>read-line</b></DictionaryLink> &amp;optional *input-stream eof-error-p eof-value recursive-p* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -50,7 +50,7 @@ Reads from *input-stream* a line of text that is terminated by a <ClLinks  term=
 
 
 
-If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <ClLinks  term={"read"}><b>read</b></ClLinks> or a similar <ClLinks  term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
+If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, this call is expected to be embedded in a higher-level call to <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or a similar <ClLinks  term={"function"}><i>function</i></ClLinks> used by the *Lisp reader* . 
 
 
 
@@ -81,7 +81,7 @@ line2"
 
 
 
-**\*standard-input\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+**\*standard-input\***, <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
 
 
 
@@ -97,7 +97,7 @@ If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></Gloss
 
 
 
-<ClLinks  term={"read"}><b>read</b></ClLinks> 
+<DictionaryLink  term={"read"}><b>read</b></DictionaryLink> 
 
 
 
@@ -105,7 +105,7 @@ If an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></Gloss
 
 
 
-The corresponding output function is <ClLinks  term={"write-line"}><b>write-line</b></ClLinks>. 
+The corresponding output function is <DictionaryLink  term={"write-line"}><b>write-line</b></DictionaryLink>. 
 
 
 

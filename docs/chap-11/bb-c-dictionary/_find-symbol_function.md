@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *package → symbol, status* 
+<DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *package → symbol, status* 
 
 
 
@@ -22,19 +22,15 @@
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> accessible in the <ClLinks  term={"package"}><i>package</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks>—a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> accessible in the <ClLinks  term={"package"}><i>package</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*status*—one of :inherited, :external, :internal, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
-
-
+*status*—one of :inherited, :external, :internal, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
 
-
- 
 
 
 
@@ -42,7 +38,11 @@
 
 
 
-<ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink> 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-<ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks> locates a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"string"}><i>string</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>. If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named <ClLinks  term={"string"}><i>string</i></ClLinks> is found in <ClLinks  term={"package"}><i>package</i></ClLinks>, directly or by inheritance, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> found is returned as the first value; the second value is as follows: 
+<DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink> locates a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"string"}><i>string</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>. If a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named <ClLinks  term={"string"}><i>string</i></ClLinks> is found in <ClLinks  term={"package"}><i>package</i></ClLinks>, directly or by inheritance, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> found is returned as the first value; the second value is as follows: 
 
 
 
@@ -74,7 +74,7 @@ If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"pre
 
 
 
-If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is inherited by <ClLinks  term={"package"}><i>package</i></ClLinks> through <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, but is not <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. If no such <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, both values are <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is inherited by <ClLinks  term={"package"}><i>package</i></ClLinks> through <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, but is not <ClLinks  term={"present"}><i>present</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>. If no such <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in <ClLinks  term={"package"}><i>package</i></ClLinks>, both values are <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -104,7 +104,7 @@ If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is inherited by <ClLink
 
 
 
-<ClLinks  term={"intern"}><b>intern</b></ClLinks>, <ClLinks  term={"import"}><b>import</b></ClLinks>, <ClLinks  term={"export"}><b>export</b></ClLinks>, <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks  term={"unintern"}><b>unintern</b></ClLinks>, <ClLinks  term={"unexport"}><b>unexport</b></ClLinks>, <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> 
+<DictionaryLink  term={"intern"}><b>intern</b></DictionaryLink>, <DictionaryLink  term={"import"}><b>import</b></DictionaryLink>, <DictionaryLink  term={"export"}><b>export</b></DictionaryLink>, <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink>, <DictionaryLink  term={"unexport"}><b>unexport</b></DictionaryLink>, <DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> 
 
 
 
@@ -112,7 +112,7 @@ If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is inherited by <ClLink
 
 
 
-<ClLinks  term={"intern"}><b>intern</b></ClLinks>, <ClLinks  term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks> 
+<DictionaryLink  term={"intern"}><b>intern</b></DictionaryLink>, <DictionaryLink  term={"find-all-symbols"}><b>find-all-symbols</b></DictionaryLink> 
 
 
 
@@ -132,4 +132,4 @@ If the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is inherited by <ClLink
 
 
 
-<ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks> is operationally equivalent to <ClLinks  term={"intern"}><b>intern</b></ClLinks>, except that it never creates a new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink> is operationally equivalent to <DictionaryLink  term={"intern"}><b>intern</b></DictionaryLink>, except that it never creates a new <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"rotatef"}><b>rotatef</b></ClLinks> <ClLinks  term={"place"}><i>\{place\}</i></ClLinks>\* *!* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink> <ClLinks  term={"place"}><i>\{place\}</i></ClLinks>\* *!* <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-<ClLinks  term={"rotatef"}><b>rotatef</b></ClLinks> modifies the values of each <ClLinks  term={"place"}><i>place</i></ClLinks> by rotating values from one <ClLinks  term={"place"}><i>place</i></ClLinks> into another. 
+<DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink> modifies the values of each <ClLinks  term={"place"}><i>place</i></ClLinks> by rotating values from one <ClLinks  term={"place"}><i>place</i></ClLinks> into another. 
 
 
 
-If a <ClLinks  term={"place"}><i>place</i></ClLinks> produces more values than there are store variables, the extra values are ignored. If a <ClLinks  term={"place"}><i>place</i></ClLinks> produces fewer values than there are store variables, the missing values are set to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If a <ClLinks  term={"place"}><i>place</i></ClLinks> produces more values than there are store variables, the extra values are ignored. If a <ClLinks  term={"place"}><i>place</i></ClLinks> produces fewer values than there are store variables, the missing values are set to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -51,7 +51,7 @@ For information about the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLin
 
 
 
-<ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks>, <ClLinks  term={"shiftf"}><b>shiftf</b></ClLinks>, **\*macroexpand-hook\***, Section 5.1 (Generalized Reference) 
+<DictionaryLink  term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink>, <DictionaryLink  term={"defsetf"}><b>defsetf</b></DictionaryLink>, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>, <DictionaryLink  term={"shiftf"}><b>shiftf</b></DictionaryLink>, **\*macroexpand-hook\***, Section 5.1 (Generalized Reference) 
 
 
 
@@ -79,7 +79,7 @@ The e↵ect of (rotatef *place1 place2* ... *placen*) is roughly equivalent to
 
 
 
-except that the latter would evaluate any <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of each place twice, whereas <ClLinks  term={"rotatef"}><b>rotatef</b></ClLinks> evaluates them once. 
+except that the latter would evaluate any <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of each place twice, whereas <DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink> evaluates them once. 
 
 
 

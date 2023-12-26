@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"minusp"}><b>minusp</b></ClLinks> *real → generalized-boolean* 
+<DictionaryLink  term={"minusp"}><b>minusp</b></DictionaryLink> *real → generalized-boolean* 
 
 
 
-<ClLinks  term={"plusp"}><b>plusp</b></ClLinks> *real → generalized-boolean* 
+<DictionaryLink  term={"plusp"}><b>plusp</b></DictionaryLink> *real → generalized-boolean* 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks  term={"minusp"}><b>minusp</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *real* is less than zero; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink  term={"minusp"}><b>minusp</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *real* is less than zero; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-<ClLinks  term={"plusp"}><b>plusp</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *real* is greater than zero; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<DictionaryLink  term={"plusp"}><b>plusp</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *real* is greater than zero; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -52,7 +52,7 @@ Regardless of whether an <ClLinks  term={"implementation"}><i>implementation</i>
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *real* is not a *real*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *real* is not a *real*. 
 
 
 

@@ -1,4 +1,4 @@
- The directory might be a <ClLinks  term={"string"}><i>string</i></ClLinks>, :wild, :unspecific, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+ The directory might be a <ClLinks  term={"string"}><i>string</i></ClLinks>, :wild, :unspecific, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -18,7 +18,7 @@ A <ClLinks  term={"list"}><i>list</i></ClLinks> whose <ClLinks  term={"car"}><i>
 
 
 
-A <ClLinks  term={"list"}><i>list</i></ClLinks> whose <ClLinks  term={"car"}><i>car</i></ClLinks> is the symbol :relative represents a directory path starting from a default directory. The list (:relative) has the same meaning as <ClLinks  term={"nil"}><b>nil</b></ClLinks> and hence is not used. The list (:relative "foo" "bar") represents the directory named "bar" in the directory named "foo" in the default directory. 
+A <ClLinks  term={"list"}><i>list</i></ClLinks> whose <ClLinks  term={"car"}><i>car</i></ClLinks> is the symbol :relative represents a directory path starting from a default directory. The list (:relative) has the same meaning as <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> and hence is not used. The list (:relative "foo" "bar") represents the directory named "bar" in the directory named "foo" in the default directory. 
 
 
 
@@ -42,11 +42,11 @@ Each <ClLinks  term={"string"}><i>string</i></ClLinks> names a single level of d
 
 
 
-In place of a <ClLinks  term={"string"}><i>string</i></ClLinks>, at any point in the <ClLinks  term={"list"}><i>list</i></ClLinks>, <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> can occur to indicate special file notations. Figure 19–3 lists the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have standard meanings. Implementations are permitted to add additional <ClLinks  term={"object"}><i>objects</i></ClLinks> of any <ClLinks  term={"type"}><i>type</i></ClLinks> that is disjoint from <ClLinks  term={"string"}><b>string</b></ClLinks> if necessary to represent features of their file systems that cannot be represented with the standard <ClLinks  term={"string"}><i>strings</i></ClLinks> and <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+In place of a <ClLinks  term={"string"}><i>string</i></ClLinks>, at any point in the <ClLinks  term={"list"}><i>list</i></ClLinks>, <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> can occur to indicate special file notations. Figure 19–3 lists the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have standard meanings. Implementations are permitted to add additional <ClLinks  term={"object"}><i>objects</i></ClLinks> of any <ClLinks  term={"type"}><i>type</i></ClLinks> that is disjoint from <DictionaryLink  term={"string"}><b>string</b></DictionaryLink> if necessary to represent features of their file systems that cannot be represented with the standard <ClLinks  term={"string"}><i>strings</i></ClLinks> and <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
-Supplying any non-<ClLinks  term={"string"}><i>string</i></ClLinks>, including any of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> listed below, to a file system for which it does not make sense signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks>. For example, Unix does not support :wild-inferiors in most implementations. 
+Supplying any non-<ClLinks  term={"string"}><i>string</i></ClLinks>, including any of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> listed below, to a file system for which it does not make sense signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink>. For example, Unix does not support :wild-inferiors in most implementations. 
 
 
 
@@ -72,7 +72,7 @@ Invalid Combinations
 
 
 
-Using :absolute or :wild-inferiors immediately followed by :up or :back signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks>. 
+Using :absolute or :wild-inferiors immediately followed by :up or :back signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink>. 
 
 
 

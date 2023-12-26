@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"logtest"}><b>logtest</b></ClLinks> *integer-1 integer-2 → generalized-boolean* 
+<DictionaryLink  term={"logtest"}><b>logtest</b></DictionaryLink> *integer-1 integer-2 → generalized-boolean* 
 
 
 
@@ -48,7 +48,7 @@ Negative *integer-1* and *integer-2* are treated as if they were represented in 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *integer-1* is not an *integer* . Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *integer-2* is not an *integer* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer-1* is not an *integer* . Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer-2* is not an *integer* . 
 
 
 

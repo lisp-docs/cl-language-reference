@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"gethash"}><b>gethash</b></ClLinks> *key hash-table* &amp;optional *default → value, present-p* 
+<DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> *key hash-table* &amp;optional *default → value, present-p* 
 
 
 
@@ -27,7 +27,7 @@
 
 
 
-*default*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*default*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-<ClLinks  term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks  term={"gethash"}><b>gethash</b></ClLinks> to modify the <ClLinks  term={"value"}><i>value</i></ClLinks> associated with a given <ClLinks  term={"key"}><i>key</i></ClLinks>, or to add a new entry. When a <ClLinks  term={"gethash"}><b>gethash</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is used as a <ClLinks  term={"setf"}><b>setf</b></ClLinks> <ClLinks  term={"place"}><i>place</i></ClLinks>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <ClLinks  term={"value"}><i>value</i></ClLinks> is ignored. 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> to modify the <ClLinks  term={"value"}><i>value</i></ClLinks> associated with a given <ClLinks  term={"key"}><i>key</i></ClLinks>, or to add a new entry. When a <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> is used as a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> <ClLinks  term={"place"}><i>place</i></ClLinks>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <ClLinks  term={"value"}><i>value</i></ClLinks> is ignored. 
 
 
 
@@ -82,7 +82,7 @@
 
 
 
-<ClLinks  term={"remhash"}><b>remhash</b></ClLinks> 
+<DictionaryLink  term={"remhash"}><b>remhash</b></DictionaryLink> 
 
 
 

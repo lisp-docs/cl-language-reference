@@ -15,7 +15,7 @@ sidebar_position: 114
 
 
 
-**random state** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"random-state"}><b>random-state</b></ClLinks>. 
+**random state** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"random-state"}><b>random-state</b></DictionaryLink>. 
 
 
 
@@ -23,7 +23,7 @@ sidebar_position: 114
 
 
 
-<ClLinks  term={"ratio"}><b>ratio</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"ratio"}><b>ratio</b></ClLinks>. 
+<DictionaryLink  term={"ratio"}><b>ratio</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"ratio"}><b>ratio</b></DictionaryLink>. 
 
 
 
@@ -43,11 +43,11 @@ sidebar_position: 114
 
 
 
-<ClLinks  term={"rational"}><b>rational</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"rational"}><b>rational</b></ClLinks>. 
+<DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"read"}><b>read</b></ClLinks> *v.t.* 1. (a <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks> or component) to obtain the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 2. (an <ClLinks  term={"object"}><i>object</i></ClLinks> from a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) to parse an <ClLinks  term={"object"}><i>object</i></ClLinks> from its representation on the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"read"}><b>read</b></DictionaryLink> *v.t.* 1. (a <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks> or component) to obtain the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 2. (an <ClLinks  term={"object"}><i>object</i></ClLinks> from a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) to parse an <ClLinks  term={"object"}><i>object</i></ClLinks> from its representation on the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -75,7 +75,7 @@ it. (A <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></Gl
 
 
 
-that implements a <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm><sub>2</sub>. See the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"set-macro-character"}><b>set-macro-character</b></ClLinks> and 
+that implements a <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm><sub>2</sub>. See the <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"set-macro-character"}><b>set-macro-character</b></DictionaryLink> and 
 
 
 
@@ -83,7 +83,7 @@ that implements a <GlossaryTerm styled={true} term={"reader macro"}><i>reader ma
 
 
 
-<ClLinks  term={"readtable"}><b>readtable</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"readtable"}><b>readtable</b></ClLinks>. 
+<DictionaryLink  term={"readtable"}><b>readtable</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"readtable"}><b>readtable</b></DictionaryLink>. 
 
 
 
@@ -95,11 +95,11 @@ Printer).
 
 
 
-**readtable designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> and that is one of: <ClLinks  term={"nil"}><b>nil</b></ClLinks> (denoting the <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm>), or a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> (denoting itself). 
+**readtable designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> and that is one of: <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> (denoting the <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm>), or a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> (denoting itself). 
 
 
 
-**recognizable subtype** *n.* (of a <ClLinks  term={"type"}><i>type</i></ClLinks>) a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> which can be reliably detected to be such by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks>. 
+**recognizable subtype** *n.* (of a <ClLinks  term={"type"}><i>type</i></ClLinks>) a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> which can be reliably detected to be such by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink>. 
 
 
 
@@ -119,7 +119,7 @@ Printer).
 
 
 
-**registered package** *n.* a *package object* that is installed in the <GlossaryTerm styled={true} term={"package registry"}><i>package registry</i></GlossaryTerm>. (Every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> has a <ClLinks  term={"name"}><i>name</i></ClLinks> that is a <ClLinks  term={"string"}><i>string</i></ClLinks>, as well as zero or more <ClLinks  term={"string"}><i>string</i></ClLinks> nicknames. All <ClLinks  term={"package"}><i>packages</i></ClLinks> that are initially specified by Common Lisp or created by <ClLinks  term={"make-package"}><b>make-package</b></ClLinks> or <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> are <GlossaryTerm styled={true} term={"registered package"}><i>registered packages</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"registered package"}><i>Registered packages</i></GlossaryTerm> can be turned into <GlossaryTerm styled={true} term={"unregistered package"}><i>unregistered packages</i></GlossaryTerm> by <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>.) 
+**registered package** *n.* a *package object* that is installed in the <GlossaryTerm styled={true} term={"package registry"}><i>package registry</i></GlossaryTerm>. (Every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> has a <ClLinks  term={"name"}><i>name</i></ClLinks> that is a <ClLinks  term={"string"}><i>string</i></ClLinks>, as well as zero or more <ClLinks  term={"string"}><i>string</i></ClLinks> nicknames. All <ClLinks  term={"package"}><i>packages</i></ClLinks> that are initially specified by Common Lisp or created by <DictionaryLink  term={"make-package"}><b>make-package</b></DictionaryLink> or <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> are <GlossaryTerm styled={true} term={"registered package"}><i>registered packages</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"registered package"}><i>Registered packages</i></GlossaryTerm> can be turned into <GlossaryTerm styled={true} term={"unregistered package"}><i>unregistered packages</i></GlossaryTerm> by <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink>.) 
 
 
 
@@ -135,7 +135,7 @@ denotes a relative pathname if the host file system is Unix.” See <ClLinks  te
 
 
 
-**repertoire** *n.*, *ISO* a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><b>character</b></ClLinks>. See Section 13.1.2.2 (Character 
+**repertoire** *n.*, *ISO* a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. See Section 13.1.2.2 (Character 
 
 
 
@@ -143,7 +143,7 @@ Repertoires).
 
 
 
-**report** *n.* (of a <ClLinks  term={"condition"}><i>condition</i></ClLinks>) to <ClLinks  term={"call"}><i>call</i></ClLinks> the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"print-object"}><b>print-object</b></ClLinks> on the <ClLinks  term={"condition"}><i>condition</i></ClLinks> in an <ClLinks  term={"environment"}><i>environment</i></ClLinks> where the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+**report** *n.* (of a <ClLinks  term={"condition"}><i>condition</i></ClLinks>) to <ClLinks  term={"call"}><i>call</i></ClLinks> the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"print-object"}><b>print-object</b></DictionaryLink> on the <ClLinks  term={"condition"}><i>condition</i></ClLinks> in an <ClLinks  term={"environment"}><i>environment</i></ClLinks> where the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -163,7 +163,7 @@ Repertoires).
 
 
 
-<ClLinks  term={"restart"}><b>restart</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"restart"}><b>restart</b></ClLinks>. 
+<DictionaryLink  term={"restart"}><b>restart</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"restart"}><b>restart</b></DictionaryLink>. 
 
 
 
@@ -171,7 +171,7 @@ Repertoires).
 
 
 
-**restart function** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that invokes a <ClLinks  term={"restart"}><i>restart</i></ClLinks>, as if by <ClLinks  term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. 
+**restart function** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that invokes a <ClLinks  term={"restart"}><i>restart</i></ClLinks>, as if by <DictionaryLink  term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>. 
 
 
 
@@ -203,7 +203,7 @@ The primary purpose of a <GlossaryTerm styled={true} term={"restart function"}><
 
 
 
-<ClLinks  term={"return"}><b>return</b></ClLinks> *v.t.* (of <ClLinks  term={"value"}><i>values</i></ClLinks>) 1. (from a <ClLinks  term={"block"}><i>block</i></ClLinks>) to transfer control and <ClLinks  term={"value"}><i>values</i></ClLinks> from the <ClLinks  term={"block"}><i>block</i></ClLinks>; that is, to cause the <ClLinks  term={"block"}><i>block</i></ClLinks> to <ClLinks  term={"yield"}><i>yield</i></ClLinks> the <ClLinks  term={"value"}><i>values</i></ClLinks> immediately without doing any further evaluation of the <ClLinks  term={"form"}><i>forms</i></ClLinks> in its body. 2. (from a <ClLinks  term={"form"}><i>form</i></ClLinks>) to <ClLinks  term={"yield"}><i>yield</i></ClLinks> the <ClLinks  term={"value"}><i>values</i></ClLinks>. 
+<DictionaryLink  term={"return"}><b>return</b></DictionaryLink> *v.t.* (of <ClLinks  term={"value"}><i>values</i></ClLinks>) 1. (from a <ClLinks  term={"block"}><i>block</i></ClLinks>) to transfer control and <ClLinks  term={"value"}><i>values</i></ClLinks> from the <ClLinks  term={"block"}><i>block</i></ClLinks>; that is, to cause the <ClLinks  term={"block"}><i>block</i></ClLinks> to <ClLinks  term={"yield"}><i>yield</i></ClLinks> the <ClLinks  term={"value"}><i>values</i></ClLinks> immediately without doing any further evaluation of the <ClLinks  term={"form"}><i>forms</i></ClLinks> in its body. 2. (from a <ClLinks  term={"form"}><i>form</i></ClLinks>) to <ClLinks  term={"yield"}><i>yield</i></ClLinks> the <ClLinks  term={"value"}><i>values</i></ClLinks>. 
 
 
 
@@ -223,7 +223,7 @@ parenthesis” or “close parenthesis” See Figure 2–5.
 
 
 
-**run-time compiler** *n.* refers to the <ClLinks  term={"compile"}><b>compile</b></ClLinks> function or to <GlossaryTerm styled={true} term={"implicit compilation"}><i>implicit compilation</i></GlossaryTerm>, for which the compilation and run-time <ClLinks  term={"environment"}><i>environments</i></ClLinks> are maintained in the same *Lisp image*. 
+**run-time compiler** *n.* refers to the <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> function or to <GlossaryTerm styled={true} term={"implicit compilation"}><i>implicit compilation</i></GlossaryTerm>, for which the compilation and run-time <ClLinks  term={"environment"}><i>environments</i></ClLinks> are maintained in the same *Lisp image*. 
 
 
 

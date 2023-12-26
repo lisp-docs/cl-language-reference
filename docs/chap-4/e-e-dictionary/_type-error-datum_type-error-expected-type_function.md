@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"type-error-datum"}><b>type-error-datum</b></ClLinks> *condition → datum* 
+<DictionaryLink  term={"type-error-datum"}><b>type-error-datum</b></DictionaryLink> *condition → datum* 
 
 
 
-<ClLinks  term={"type-error-expected-type"}><b>type-error-expected-type</b></ClLinks> *condition → expected-type* 
+<DictionaryLink  term={"type-error-expected-type"}><b>type-error-expected-type</b></DictionaryLink> *condition → expected-type* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks>. 
+<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks  term={"type-error-datum"}><b>type-error-datum</b></ClLinks> returns the offending datum in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
+<DictionaryLink  term={"type-error-datum"}><b>type-error-datum</b></DictionaryLink> returns the offending datum in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
-<ClLinks  term={"type-error-expected-type"}><b>type-error-expected-type</b></ClLinks> returns the expected type of the offending datum in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
+<DictionaryLink  term={"type-error-expected-type"}><b>type-error-expected-type</b></DictionaryLink> returns the expected type of the offending datum in the <ClLinks  term={"situation"}><i>situation</i></ClLinks> represented by the <ClLinks  term={"condition"}><i>condition</i></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-<ClLinks  term={"type-error"}><b>type-error</b></ClLinks>, Chapter 9 (Conditions) 
+<DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink>, Chapter 9 (Conditions) 
 
 
 

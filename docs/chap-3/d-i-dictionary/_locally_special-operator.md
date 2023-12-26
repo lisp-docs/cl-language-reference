@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"locally"}><b>locally</b></ClLinks> <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* *! \{result\}*\* 
+<DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink> <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* *! \{result\}*\* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>Declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>Declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -70,7 +70,7 @@ Sequentially evaluates a body of <ClLinks  term={"form"}><i>forms</i></ClLinks> 
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks> 
+<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> 
 
 
 
@@ -78,19 +78,15 @@ Sequentially evaluates a body of <ClLinks  term={"form"}><i>forms</i></ClLinks> 
 
 
 
-The <ClLinks  term={"special"}><b>special</b></ClLinks> declaration may be used with <ClLinks  term={"locally"}><b>locally</b></ClLinks> to a↵ect references to, rather than <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of, <ClLinks  term={"variable"}><i>variables</i></ClLinks>. 
+The <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration may be used with <DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink> to a↵ect references to, rather than <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of, <ClLinks  term={"variable"}><i>variables</i></ClLinks>. 
 
 
 
-If a <ClLinks  term={"locally"}><b>locally</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. See Section 3.2.3 (File Compilation). 
-
-
+If a <DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. See Section 3.2.3 (File Compilation). 
 
 
 
 
-
- 
 
 
 
@@ -98,7 +94,11 @@ If a <ClLinks  term={"locally"}><b>locally</b></ClLinks> <ClLinks  term={"form"}
 
 
 
-<ClLinks  term={"the"}><b>the</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink  term={"the"}><b>the</b></DictionaryLink> 
 
 
 

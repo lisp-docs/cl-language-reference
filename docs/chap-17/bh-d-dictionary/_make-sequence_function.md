@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-sequence"}><b>make-sequence</b></ClLinks> *result-type size* &amp;key *initial-element → sequence* 
+<DictionaryLink  term={"make-sequence"}><b>make-sequence</b></DictionaryLink> *result-type size* &amp;key *initial-element → sequence* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*result-type*—a <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
+*result-type*—a <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -38,11 +38,11 @@ Returns a *sequence* of the type *result-type* and of length *size*, each of the
 
 
 
-If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"list"}><b>list</b></ClLinks>, the result will be a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, the result will be a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
-If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <ClLinks  term={"t"}><b>t</b></ClLinks>; otherwise, an error is signaled. 
+If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, then if the implementation can determine the element type specified for the *result-type*, the element type of the resulting array is the result of *upgrading* that element type; or, if the implementation can determine that the element type is unspecified (or \*), the element type of the resulting array is <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>; otherwise, an error is signaled. 
 
 
 
@@ -85,11 +85,11 @@ The consequences are unspecified if *initial-element* is not an <ClLinks  term={
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> must be signaled if the *result-type* is neither a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"list"}><b>list</b></ClLinks>, nor a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> must be signaled if the *result-type* is neither a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, nor a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> should be signaled if *result-type* specifies the number of elements and *size* is different from that number. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> should be signaled if *result-type* specifies the number of elements and *size* is different from that number. 
 
 
 
@@ -97,7 +97,7 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"make-list"}><b>make-list</b></ClLinks> 
+<DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink>, <DictionaryLink  term={"make-list"}><b>make-list</b></DictionaryLink> 
 
 
 

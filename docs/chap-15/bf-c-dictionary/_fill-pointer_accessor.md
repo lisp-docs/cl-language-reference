@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"fill-pointer"}><b>fill-pointer</b></ClLinks> *vector → fill-pointer* 
+<DictionaryLink  term={"fill-pointer"}><b>fill-pointer</b></DictionaryLink> *vector → fill-pointer* 
 
 
 
@@ -50,7 +50,7 @@ a → #(0 1 4 9 NIL NIL NIL NIL)
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"vector"}><i>vector</i></ClLinks> is not a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"vector"}><i>vector</i></ClLinks> is not a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
@@ -66,7 +66,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"length"}><b>length</b></ClLinks> 
+<DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink>, <DictionaryLink  term={"length"}><b>length</b></DictionaryLink> 
 
 
 

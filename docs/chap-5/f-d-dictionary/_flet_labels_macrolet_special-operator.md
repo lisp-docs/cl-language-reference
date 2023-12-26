@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"flet"}><b>flet</b></ClLinks> (*\{*(*function-name lambda-list* [[ *\{local-declaration\}*\* *| local-documentation* ]] *\{local-form\}*\*)*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> (*\{*(*function-name lambda-list* [[ *\{local-declaration\}*\* *| local-documentation* ]] *\{local-form\}*\*)*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"labels"}><b>labels</b></ClLinks> (*\{*(*function-name lambda-list* [[ *\{local-declaration\}*\* *| local-documentation* ]] *\{local-form\}*\*)*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink> (*\{*(*function-name lambda-list* [[ *\{local-declaration\}*\* *| local-documentation* ]] *\{local-form\}*\*)*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> (*\{*(*name lambda-list* [[ *\{local-declaration\}*\* *| local-documentation* ]] *\{local-form\}*\*)*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> (*\{*(*name lambda-list* [[ *\{local-declaration\}*\* *| local-documentation* ]] *\{local-form\}*\*)*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -42,15 +42,15 @@
 
 
 
-*lambda-list*—a *lambda list*; for <ClLinks  term={"flet"}><b>flet</b></ClLinks> and <ClLinks  term={"labels"}><b>labels</b></ClLinks>, it is an *ordinary lambda list*; for <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, it is a *macro lambda list*. 
+*lambda-list*—a *lambda list*; for <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> and <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink>, it is an *ordinary lambda list*; for <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>, it is a *macro lambda list*. 
 
 
 
-*local-declaration*—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+*local-declaration*—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -70,15 +70,15 @@
 
 
 
-<ClLinks  term={"flet"}><b>flet</b></ClLinks>, <ClLinks  term={"labels"}><b>labels</b></ClLinks>, and <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> define local <ClLinks  term={"function"}><i>functions</i></ClLinks> and <ClLinks  term={"macro"}><i>macros</i></ClLinks>, and execute <ClLinks  term={"form"}><i>forms</i></ClLinks> using the local definitions. <ClLinks  term={"form"}><i>Forms</i></ClLinks> are executed in order of occurrence. 
+<DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink>, <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink>, and <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> define local <ClLinks  term={"function"}><i>functions</i></ClLinks> and <ClLinks  term={"macro"}><i>macros</i></ClLinks>, and execute <ClLinks  term={"form"}><i>forms</i></ClLinks> using the local definitions. <ClLinks  term={"form"}><i>Forms</i></ClLinks> are executed in order of occurrence. 
 
 
 
-The body forms (but not the *lambda list*) of each <ClLinks  term={"function"}><i>function</i></ClLinks> created by <ClLinks  term={"flet"}><b>flet</b></ClLinks> and <ClLinks  term={"labels"}><b>labels</b></ClLinks> and each <ClLinks  term={"macro"}><i>macro</i></ClLinks> created by <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> are enclosed in an *implicit block* whose name is the *function block name* of the *function-name* or <ClLinks  term={"name"}><i>name</i></ClLinks>, as appropriate. 
+The body forms (but not the *lambda list*) of each <ClLinks  term={"function"}><i>function</i></ClLinks> created by <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> and <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink> and each <ClLinks  term={"macro"}><i>macro</i></ClLinks> created by <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> are enclosed in an *implicit block* whose name is the *function block name* of the *function-name* or <ClLinks  term={"name"}><i>name</i></ClLinks>, as appropriate. 
 
 
 
-The scope of the <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> between the list of local function/macro definitions and the body <ClLinks  term={"form"}><i>forms</i></ClLinks> in <ClLinks  term={"flet"}><b>flet</b></ClLinks> and <ClLinks  term={"labels"}><b>labels</b></ClLinks> does not include the bodies of the locally defined <ClLinks  term={"function"}><i>functions</i></ClLinks>, except that 
+The scope of the <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> between the list of local function/macro definitions and the body <ClLinks  term={"form"}><i>forms</i></ClLinks> in <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> and <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink> does not include the bodies of the locally defined <ClLinks  term={"function"}><i>functions</i></ClLinks>, except that 
 
 
 
@@ -98,27 +98,27 @@ The scope of the <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> be
 
 
 
-for <ClLinks  term={"labels"}><b>labels</b></ClLinks>, any <ClLinks  term={"inline"}><b>inline</b></ClLinks>, <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>, or <ClLinks  term={"ftype"}><b>ftype</b></ClLinks> declarations that refer to the locally defined functions do apply to the local function bodies. That is, their <ClLinks  term={"scope"}><i>scope</i></ClLinks> is the same as the function name that they affect. The scope of these <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> does not include the bodies of the macro expander functions defined by <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>. 
+for <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink>, any <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink>, <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink>, or <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink> declarations that refer to the locally defined functions do apply to the local function bodies. That is, their <ClLinks  term={"scope"}><i>scope</i></ClLinks> is the same as the function name that they affect. The scope of these <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> does not include the bodies of the macro expander functions defined by <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"flet"}><b>flet</b></ClLinks> 
+<DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"flet"}><b>flet</b></ClLinks> defines locally named <ClLinks  term={"function"}><i>functions</i></ClLinks> and executes a series of <ClLinks  term={"form"}><i>forms</i></ClLinks> with these definition <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. Any number of such local <ClLinks  term={"function"}><i>functions</i></ClLinks> can be defined. 
+<DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> defines locally named <ClLinks  term={"function"}><i>functions</i></ClLinks> and executes a series of <ClLinks  term={"form"}><i>forms</i></ClLinks> with these definition <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. Any number of such local <ClLinks  term={"function"}><i>functions</i></ClLinks> can be defined. 
 
 
 
-The <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the name <ClLinks  term={"binding"}><i>binding</i></ClLinks> encompasses only the body. Within the body of <ClLinks  term={"flet"}><b>flet</b></ClLinks>, *function-names* matching those defined by <ClLinks  term={"flet"}><b>flet</b></ClLinks> refer to the locally defined <ClLinks  term={"function"}><i>functions</i></ClLinks> rather than to the global function definitions of the same name. Also, within the scope of <ClLinks  term={"flet"}><b>flet</b></ClLinks>, global *setf expander* definitions of the *function-name* defined by <ClLinks  term={"flet"}><b>flet</b></ClLinks> do not apply. Note that this applies to (defsetf *f* ...), not (defmethod (setf *f*) ...). 
+The <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the name <ClLinks  term={"binding"}><i>binding</i></ClLinks> encompasses only the body. Within the body of <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink>, *function-names* matching those defined by <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> refer to the locally defined <ClLinks  term={"function"}><i>functions</i></ClLinks> rather than to the global function definitions of the same name. Also, within the scope of <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink>, global *setf expander* definitions of the *function-name* defined by <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> do not apply. Note that this applies to (defsetf *f* ...), not (defmethod (setf *f*) ...). 
 
 
 
-The names of <ClLinks  term={"function"}><i>functions</i></ClLinks> defined by <ClLinks  term={"flet"}><b>flet</b></ClLinks> are in the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm>; they retain their local definitions only within the body of <ClLinks  term={"flet"}><b>flet</b></ClLinks>. The function definition bindings are visible only in the body of <ClLinks  term={"flet"}><b>flet</b></ClLinks>, not the definitions themselves. Within the function definitions, 
+The names of <ClLinks  term={"function"}><i>functions</i></ClLinks> defined by <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> are in the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm>; they retain their local definitions only within the body of <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink>. The function definition bindings are visible only in the body of <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink>, not the definitions themselves. Within the function definitions, 
 
 
 
-local function names that match those being defined refer to <ClLinks  term={"function"}><i>functions</i></ClLinks> or <ClLinks  term={"macro"}><i>macros</i></ClLinks> defined outside the <ClLinks  term={"flet"}><b>flet</b></ClLinks>. <ClLinks  term={"flet"}><b>flet</b></ClLinks> can locally <ClLinks  term={"shadow"}><i>shadow</i></ClLinks> a global function name, and the new definition can refer to the global definition. 
+local function names that match those being defined refer to <ClLinks  term={"function"}><i>functions</i></ClLinks> or <ClLinks  term={"macro"}><i>macros</i></ClLinks> defined outside the <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink>. <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> can locally <ClLinks  term={"shadow"}><i>shadow</i></ClLinks> a global function name, and the new definition can refer to the global definition. 
 
 
 
@@ -126,27 +126,27 @@ Any *local-documentation* is attached to the corresponding local <ClLinks  term=
 
 
 
-<ClLinks  term={"labels"}><b>labels</b></ClLinks> 
+<DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"labels"}><b>labels</b></ClLinks> is equivalent to <ClLinks  term={"flet"}><b>flet</b></ClLinks> except that the scope of the defined function names for <ClLinks  term={"labels"}><b>labels</b></ClLinks> encompasses the function definitions themselves as well as the body. 
+<DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink> is equivalent to <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> except that the scope of the defined function names for <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink> encompasses the function definitions themselves as well as the body. 
 
 
 
-<ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> 
+<DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> establishes local <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions, using the same format used by <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>. 
+<DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> establishes local <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions, using the same format used by <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink>. 
 
 
 
-Within the body of <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, global <GlossaryTerm styled={true} term={"setf expander"}><i>setf expander</i></GlossaryTerm> definitions of the <ClLinks  term={"name"}><i>names</i></ClLinks> defined by the <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> do not apply; rather, <ClLinks  term={"setf"}><b>setf</b></ClLinks> expands the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> and recursively process the resulting <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+Within the body of <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>, global <GlossaryTerm styled={true} term={"setf expander"}><i>setf expander</i></GlossaryTerm> definitions of the <ClLinks  term={"name"}><i>names</i></ClLinks> defined by the <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> do not apply; rather, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> expands the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> and recursively process the resulting <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-The macro-expansion functions defined by <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> are defined in the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which the <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> form appears. Declarations and <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> and <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> definitions affect the local macro definitions in a <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, but the consequences are undefined if the local macro definitions reference any local <ClLinks  term={"variable"}><i>variable</i></ClLinks> or *function bindings* that are visible in that <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm>. 
+The macro-expansion functions defined by <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> are defined in the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which the <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> form appears. Declarations and <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> and <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> definitions affect the local macro definitions in a <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>, but the consequences are undefined if the local macro definitions reference any local <ClLinks  term={"variable"}><i>variable</i></ClLinks> or *function bindings* that are visible in that <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm>. 
 
 
 
@@ -245,7 +245,7 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>, <ClLinks  term={"defun"}><b>defun</b></ClLinks>, **documentation**, <ClLinks  term={"let"}><b>let</b></ClLinks>, Section 3.1 (Evaluation), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink>, <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink>, **documentation**, <DictionaryLink  term={"let"}><b>let</b></DictionaryLink>, Section 3.1 (Evaluation), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 
@@ -253,11 +253,11 @@ after macro expansion. The occurrences of x and flag legitimately refer to the p
 
 
 
-It is not possible to define recursive <ClLinks  term={"function"}><i>functions</i></ClLinks> with <ClLinks  term={"flet"}><b>flet</b></ClLinks>. <ClLinks  term={"labels"}><b>labels</b></ClLinks> can be used to define mutually recursive <ClLinks  term={"function"}><i>functions</i></ClLinks>. 
+It is not possible to define recursive <ClLinks  term={"function"}><i>functions</i></ClLinks> with <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink>. <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink> can be used to define mutually recursive <ClLinks  term={"function"}><i>functions</i></ClLinks>. 
 
 
 
-If a <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. See Section 3.2.3 (File Compilation). 
+If a <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. See Section 3.2.3 (File Compilation). 
 
 
 

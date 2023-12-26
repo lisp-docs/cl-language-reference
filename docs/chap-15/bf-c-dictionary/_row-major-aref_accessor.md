@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"row-major-aref"}><b>row-major-aref</b></ClLinks> *array index → element* 
+<DictionaryLink  term={"row-major-aref"}><b>row-major-aref</b></DictionaryLink> *array index → element* 
 
 
 
@@ -39,7 +39,7 @@ Considers <ClLinks  term={"array"}><i>array</i></ClLinks> as a <ClLinks  term={"
 
 
 
-<ClLinks  term={"row-major-aref"}><b>row-major-aref</b></ClLinks> is valid for use with <ClLinks  term={"setf"}><b>setf</b></ClLinks>. 
+<DictionaryLink  term={"row-major-aref"}><b>row-major-aref</b></DictionaryLink> is valid for use with <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>. 
 
 
 
@@ -47,7 +47,7 @@ Considers <ClLinks  term={"array"}><i>array</i></ClLinks> as a <ClLinks  term={"
 
 
 
-<ClLinks  term={"aref"}><b>aref</b></ClLinks>, <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> 
+<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink>, <DictionaryLink  term={"array-row-major-index"}><b>array-row-major-index</b></DictionaryLink> 
 
 
 

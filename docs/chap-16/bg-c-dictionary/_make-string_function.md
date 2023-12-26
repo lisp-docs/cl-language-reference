@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-string"}><b>make-string</b></ClLinks> *size* &amp;key *initial-element element-type → string* 
+<DictionaryLink  term={"make-string"}><b>make-string</b></DictionaryLink> *size* &amp;key *initial-element element-type → string* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . The default is <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"make-string"}><b>make-string</b></ClLinks> returns a <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm> of length *size* whose elements have been initialized to *initial-element*. 
+<DictionaryLink  term={"make-string"}><b>make-string</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm> of length *size* whose elements have been initialized to *initial-element*. 
 
 
 

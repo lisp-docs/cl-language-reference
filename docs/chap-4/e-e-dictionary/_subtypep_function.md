@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> *type-1 type-2* &amp;optional *environment → subtype-p, valid-p* 
+<DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink> *type-1 type-2* &amp;optional *environment → subtype-p, valid-p* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@ A second <ClLinks  term={"value"}><i>value</i></ClLinks> is also returned indica
 
 
 
-<ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> 
+<DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink> 
 
 
 
@@ -62,7 +62,7 @@ Figure 4–9 summarizes the possible combinations of <ClLinks  term={"value"}><i
 
 | :- |
 
-|<p>*true true type-1* is definitely a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *type-2*. </p><p>*false true type-1* is definitely not a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *type-2*. *false false* <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> could not determine the relationship, so *type-1* might or might not be a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *type-2*.</p>|
+|<p>*true true type-1* is definitely a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *type-2*. </p><p>*false true type-1* is definitely not a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *type-2*. *false false* <DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink> could not determine the relationship, so *type-1* might or might not be a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *type-2*.</p>|
 
 
 
@@ -72,15 +72,15 @@ Figure 4–9 summarizes the possible combinations of <ClLinks  term={"value"}><i
 
 
 
-<ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> is permitted to return the *values false* and <ClLinks  term={"false"}><i>false</i></ClLinks> only when at least one argument involves one of these <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>: <ClLinks  term={"and"}><b>and</b></ClLinks>, <ClLinks  term={"eql"}><b>eql</b></ClLinks>, the list form of <ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"member"}><b>member</b></ClLinks>, <ClLinks  term={"not"}><b>not</b></ClLinks>, <ClLinks  term={"or"}><b>or</b></ClLinks>, **satisfies**, or <ClLinks  term={"values"}><b>values</b></ClLinks>. (A <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ‘involves’ such a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> if, after being *type expanded*, it contains that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a position that would call for its meaning as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> to be used.) One consequence of this is that if neither *type-1* nor *type-2* involves any of these <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>, then <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> is obliged to determine the relationship accurately. In particular, <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> returns the *values true* and <ClLinks  term={"true"}><i>true</i></ClLinks> if the arguments are <ClLinks  term={"equal"}><b>equal</b></ClLinks> and do not involve any of these <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>. 
+<DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink> is permitted to return the *values false* and <ClLinks  term={"false"}><i>false</i></ClLinks> only when at least one argument involves one of these <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>: <DictionaryLink  term={"and"}><b>and</b></DictionaryLink>, <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, the list form of <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, <DictionaryLink  term={"member"}><b>member</b></DictionaryLink>, <DictionaryLink  term={"not"}><b>not</b></DictionaryLink>, <DictionaryLink  term={"or"}><b>or</b></DictionaryLink>, **satisfies**, or <DictionaryLink  term={"values"}><b>values</b></DictionaryLink>. (A <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ‘involves’ such a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> if, after being *type expanded*, it contains that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a position that would call for its meaning as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> to be used.) One consequence of this is that if neither *type-1* nor *type-2* involves any of these <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>, then <DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink> is obliged to determine the relationship accurately. In particular, <DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink> returns the *values true* and <ClLinks  term={"true"}><i>true</i></ClLinks> if the arguments are <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> and do not involve any of these <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> never returns a second value of <ClLinks  term={"nil"}><b>nil</b></ClLinks> when both *type-1* and *type-2* involve only the names in Figure 4–2, or names of <ClLinks  term={"type"}><i>types</i></ClLinks> defined by <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>, <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks>, or <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm> that expand into only those names. While <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> listed in Figure 4–2 and names of <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> and <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> can in some cases be implemented as <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm>, <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> regards them as primitive. 
+<DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink> never returns a second value of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> when both *type-1* and *type-2* involve only the names in Figure 4–2, or names of <ClLinks  term={"type"}><i>types</i></ClLinks> defined by <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink>, <DictionaryLink  term={"define-condition"}><b>define-condition</b></DictionaryLink>, or <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, or <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm> that expand into only those names. While <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> listed in Figure 4–2 and names of <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> and <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> can in some cases be implemented as <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm>, <DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink> regards them as primitive. 
 
 
 
-The relationships between <ClLinks  term={"type"}><i>types</i></ClLinks> reflected by <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> are those specific to the particular implementation. For example, if an implementation supports only a single type of floating-point numbers, in that implementation (subtypep ’float ’long-float) returns the *values true* and <ClLinks  term={"true"}><i>true</i></ClLinks> (since the two <ClLinks  term={"type"}><i>types</i></ClLinks> are identical). 
+The relationships between <ClLinks  term={"type"}><i>types</i></ClLinks> reflected by <DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink> are those specific to the particular implementation. For example, if an implementation supports only a single type of floating-point numbers, in that implementation (subtypep ’float ’long-float) returns the *values true* and <ClLinks  term={"true"}><i>true</i></ClLinks> (since the two <ClLinks  term={"type"}><i>types</i></ClLinks> are identical). 
 
 
 
@@ -112,7 +112,7 @@ if and only if
 
 
 
-<ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> 
+<DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink> 
 
 
 
@@ -201,7 +201,7 @@ Section 4.2 (Types)
 
 
 
-The small differences between the <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks> specification for the <ClLinks  term={"array"}><b>array</b></ClLinks> and <ClLinks  term={"complex"}><b>complex</b></ClLinks> types are necessary because there is no creation function for *complexes* which allows the specification of the resultant part type independently of the actual types of the parts. Thus in the case of the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"complex"}><b>complex</b></ClLinks>, the actual type of the parts is referred to, although a <ClLinks  term={"number"}><i>number</i></ClLinks> can be a member of more than one <ClLinks  term={"type"}><i>type</i></ClLinks>. For example, 17 is of <ClLinks  term={"type"}><i>type</i></ClLinks> (mod 18) as well as <ClLinks  term={"type"}><i>type</i></ClLinks> (mod 256) and <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks>; and 2.3f5 is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> as well as <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>. 
+The small differences between the <DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink> specification for the <DictionaryLink  term={"array"}><b>array</b></DictionaryLink> and <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> types are necessary because there is no creation function for *complexes* which allows the specification of the resultant part type independently of the actual types of the parts. Thus in the case of the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink>, the actual type of the parts is referred to, although a <ClLinks  term={"number"}><i>number</i></ClLinks> can be a member of more than one <ClLinks  term={"type"}><i>type</i></ClLinks>. For example, 17 is of <ClLinks  term={"type"}><i>type</i></ClLinks> (mod 18) as well as <ClLinks  term={"type"}><i>type</i></ClLinks> (mod 256) and <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink>; and 2.3f5 is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink> as well as <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>. 
 
 
 

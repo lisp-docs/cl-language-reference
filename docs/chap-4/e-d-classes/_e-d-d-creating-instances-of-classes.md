@@ -2,7 +2,7 @@
 
 
 
-The generic function <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> creates and returns a new <ClLinks  term={"instance"}><i>instance</i></ClLinks> of a <ClLinks  term={"class"}><i>class</i></ClLinks>. The object system provides several mechanisms for specifying how a new <ClLinks  term={"instance"}><i>instance</i></ClLinks> is to be initialized. For example, it is possible to specify the initial values for <ClLinks  term={"slot"}><i>slots</i></ClLinks> in newly created <ClLinks  term={"instance"}><i>instances</i></ClLinks> either by giving arguments to <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> or by providing default initial values. Further initialization 
+The generic function <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> creates and returns a new <ClLinks  term={"instance"}><i>instance</i></ClLinks> of a <ClLinks  term={"class"}><i>class</i></ClLinks>. The object system provides several mechanisms for specifying how a new <ClLinks  term={"instance"}><i>instance</i></ClLinks> is to be initialized. For example, it is possible to specify the initial values for <ClLinks  term={"slot"}><i>slots</i></ClLinks> in newly created <ClLinks  term={"instance"}><i>instances</i></ClLinks> either by giving arguments to <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> or by providing default initial values. Further initialization 
 
 
 

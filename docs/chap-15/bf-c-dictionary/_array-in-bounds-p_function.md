@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-in-bounds-p"}><b>array-in-bounds-p</b></ClLinks> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → generalized-boolean* 
+<DictionaryLink  term={"array-in-bounds-p"}><b>array-in-bounds-p</b></DictionaryLink> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → generalized-boolean* 
 
 
 
@@ -47,7 +47,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the *subscripts* are al
 
 
 
-<ClLinks  term={"array-dimensions"}><b>array-dimensions</b></ClLinks> 
+<DictionaryLink  term={"array-dimensions"}><b>array-dimensions</b></DictionaryLink> 
 
 
 

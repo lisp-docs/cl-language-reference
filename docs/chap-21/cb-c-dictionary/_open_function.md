@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"open"}><b>open</b></ClLinks> *filespec* &amp;key *direction element-type* 
+<DictionaryLink  term={"open"}><b>open</b></DictionaryLink> *filespec* &amp;key *direction element-type* 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"character"}><b>character</b></ClLinks>; or a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a *finite recognizable subtype* of *integer* ; or one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <ClLinks  term={"signed-byte"}><b>signed-byte</b></ClLinks>, <ClLinks  term={"unsigned-byte"}><b>unsigned-byte</b></ClLinks>, or :default. The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>; or a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a *finite recognizable subtype* of *integer* ; or one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <DictionaryLink  term={"signed-byte"}><b>signed-byte</b></DictionaryLink>, <DictionaryLink  term={"unsigned-byte"}><b>unsigned-byte</b></DictionaryLink>, or :default. The default is <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. 
 
 
 
-*if-exists*—one of :error, :new-version, :rename, :rename-and-delete, :overwrite, :append, :supersede, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is :new-version if the version component of *filespec* is :newest, or :error otherwise. 
+*if-exists*—one of :error, :new-version, :rename, :rename-and-delete, :overwrite, :append, :supersede, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The default is :new-version if the version component of *filespec* is :newest, or :error otherwise. 
 
 
 
-*if-does-not-exist*—one of :error, :create, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is :error if *direction* is :input or *if-exists* is :overwrite or :append; :create if *direction* is :output or :io, and *if-exists* is neither :overwrite nor :append; or <ClLinks  term={"nil"}><b>nil</b></ClLinks> when *direction* is :probe. 
+*if-does-not-exist*—one of :error, :create, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The default is :error if *direction* is :input or *if-exists* is :overwrite or :append; :create if *direction* is :output or :io, and *if-exists* is neither :overwrite nor :append; or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> when *direction* is :probe. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"stream"}><i>stream</i></ClLinks>—a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -54,11 +54,11 @@
 
 
 
-<ClLinks  term={"open"}><b>open</b></ClLinks> creates, opens, and returns a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> that is connected to the file specified by *filespec*. *Filespec* is the name of the file to be opened. If the *filespec designator* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, that <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not closed first or otherwise affected. 
+<DictionaryLink  term={"open"}><b>open</b></DictionaryLink> creates, opens, and returns a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> that is connected to the file specified by *filespec*. *Filespec* is the name of the file to be opened. If the *filespec designator* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, that <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not closed first or otherwise affected. 
 
 
 
-The keyword arguments to <ClLinks  term={"open"}><b>open</b></ClLinks> specify the characteristics of the <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> that is returned, and how to handle errors. 
+The keyword arguments to <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> specify the characteristics of the <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> that is returned, and how to handle errors. 
 
 
 
@@ -66,7 +66,7 @@ If *direction* is :input or :probe, or if *if-exists* is not :new-version and th
 
 
 
-An implementation is required to recognize all of the <ClLinks  term={"open"}><b>open</b></ClLinks> keyword options and to do something reasonable in the context of the host operating system. For example, if a file system does not support distinct file versions and does not distinguish the notions of deletion and expunging, :new-version might be treated the same as :rename or :supersede, and :rename-and-delete might be treated the same as :supersede. 
+An implementation is required to recognize all of the <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> keyword options and to do something reasonable in the context of the host operating system. For example, if a file system does not support distinct file versions and does not distinguish the notions of deletion and expunging, :new-version might be treated the same as :rename or :supersede, and :rename-and-delete might be treated the same as :supersede. 
 
 
 
@@ -82,7 +82,7 @@ An implementation is required to recognize all of the <ClLinks  term={"open"}><b
 
 
 
-<ClLinks  term={"open"}><b>open</b></ClLinks> 
+<DictionaryLink  term={"open"}><b>open</b></DictionaryLink> 
 
 
 
@@ -126,7 +126,7 @@ Causes the creation of a “no-directional” <GlossaryTerm styled={true} term={
 
 
 
-created and then closed prior to being returned by <ClLinks  term={"open"}><b>open</b></ClLinks>. 
+created and then closed prior to being returned by <DictionaryLink  term={"open"}><b>open</b></DictionaryLink>. 
 
 
 
@@ -142,7 +142,7 @@ The *element-type* specifies the unit of transaction for the <GlossaryTerm style
 
 
 
-*if-exists* specifies the action to be taken if *direction* is :output or :io and a file of the name *filespec* already exists. If *direction* is :input, not supplied, or :probe, *if-exists* is ignored. These are the results of <ClLinks  term={"open"}><b>open</b></ClLinks> as modified by *if-exists*: 
+*if-exists* specifies the action to be taken if *direction* is :output or :io and a file of the name *filespec* already exists. If *direction* is :input, not supplied, or :probe, *if-exists* is ignored. These are the results of <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> as modified by *if-exists*: 
 
 
 
@@ -150,7 +150,7 @@ The *element-type* specifies the unit of transaction for the <GlossaryTerm style
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -194,7 +194,7 @@ expunged, and then a new file is created.
 
 
 
-<ClLinks  term={"open"}><b>open</b></ClLinks> 
+<DictionaryLink  term={"open"}><b>open</b></DictionaryLink> 
 
 
 
@@ -254,11 +254,11 @@ the new <ClLinks  term={"stream"}><i>stream</i></ClLinks> is closed.
 
 
 
-<ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
-No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead, <ClLinks  term={"nil"}><b>nil</b></ClLinks> is returned to indicate failure. 
+No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is returned to indicate failure. 
 
 
 
@@ -266,7 +266,7 @@ No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead
 
 
 
-*if-does-not-exist* specifies the action to be taken if a file of name *filespec* does not already exist. These are the results of <ClLinks  term={"open"}><b>open</b></ClLinks> as modified by *if-does-not-exist*: 
+*if-does-not-exist* specifies the action to be taken if a file of name *filespec* does not already exist. These are the results of <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> as modified by *if-does-not-exist*: 
 
 
 
@@ -274,7 +274,7 @@ No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -290,11 +290,11 @@ no processing as directed by *if-exists* is performed.
 
 
 
-<ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
-No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead, <ClLinks  term={"nil"}><b>nil</b></ClLinks> is returned to indicate failure. 
+No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead, <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is returned to indicate failure. 
 
 
 
@@ -302,7 +302,7 @@ No file or <ClLinks  term={"stream"}><i>stream</i></ClLinks> is created; instead
 
 
 
-This option selects an <GlossaryTerm styled={true} term={"external file format"}><i>external file format</i></GlossaryTerm> for the <ClLinks  term={"file"}><i>file</i></ClLinks>: The only <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> value for this option is :default, although <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> are permitted to define additional <GlossaryTerm styled={true} term={"external file format"}><i>external file formats</i></GlossaryTerm> and <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> values returned by <ClLinks  term={"stream-external-format"}><b>stream-external-format</b></ClLinks> can also be used by <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm>. 
+This option selects an <GlossaryTerm styled={true} term={"external file format"}><i>external file format</i></GlossaryTerm> for the <ClLinks  term={"file"}><i>file</i></ClLinks>: The only <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> value for this option is :default, although <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> are permitted to define additional <GlossaryTerm styled={true} term={"external file format"}><i>external file formats</i></GlossaryTerm> and <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> values returned by <DictionaryLink  term={"stream-external-format"}><b>stream-external-format</b></DictionaryLink> can also be used by <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm>. 
 
 
 
@@ -318,7 +318,7 @@ This option selects an <GlossaryTerm styled={true} term={"external file format"}
 
 
 
-<ClLinks  term={"open"}><b>open</b></ClLinks> 
+<DictionaryLink  term={"open"}><b>open</b></DictionaryLink> 
 
 
 
@@ -330,7 +330,7 @@ When a file is opened, a <GlossaryTerm styled={true} term={"file stream"}><i>fil
 
 
 
-A file can be deleted, renamed, or destructively modified by <ClLinks  term={"open"}><b>open</b></ClLinks>. 
+A file can be deleted, renamed, or destructively modified by <DictionaryLink  term={"open"}><b>open</b></DictionaryLink>. 
 
 
 
@@ -360,23 +360,23 @@ The nature and state of the host computer’s <GlossaryTerm styled={true} term={
 
 
 
-If *if-exists* is :error, (subject to the constraints on the meaning of *if-exists* listed above), an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
+If *if-exists* is :error, (subject to the constraints on the meaning of *if-exists* listed above), an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
-If *if-does-not-exist* is :error (subject to the constraints on the meaning of *if-does-not-exist* listed above), an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
+If *if-does-not-exist* is :error (subject to the constraints on the meaning of *if-does-not-exist* listed above), an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
-If it is impossible for an implementation to handle some option in a manner close to what is specified here, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> might be signaled. 
+If it is impossible for an implementation to handle some option in a manner close to what is specified here, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> might be signaled. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if (wild-pathname-p *filespec*) returns true. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if (wild-pathname-p *filespec*) returns true. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled if the *external-format* is not understood by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled if the *external-format* is not understood by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
@@ -408,7 +408,7 @@ With regard to the :element-type option, if a <ClLinks  term={"type"}><i>type</i
 
 
 
-<ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks>, <ClLinks  term={"close"}><b>close</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 19.2.3 (Merging Pathnames), Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink>, <DictionaryLink  term={"close"}><b>close</b></DictionaryLink>, <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 19.2.3 (Merging Pathnames), Section 19.1.2 (Pathnames as Filenames) 
 
 
 
@@ -416,16 +416,16 @@ With regard to the :element-type option, if a <ClLinks  term={"type"}><i>type</i
 
 
 
-<ClLinks  term={"open"}><b>open</b></ClLinks> does not automatically close the file when an abnormal exit occurs. 
+<DictionaryLink  term={"open"}><b>open</b></DictionaryLink> does not automatically close the file when an abnormal exit occurs. 
 
 
 
-When *element-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><b>character</b></ClLinks>, <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> and/or <ClLinks  term={"write-char"}><b>write-char</b></ClLinks> can be used on the resulting <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
+When *element-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>, <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> and/or <DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> can be used on the resulting <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
 
 
 
-When *element-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *integer* , <ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks> and/or <ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks> can be used on the resulting <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
+When *element-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of *integer* , <DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> and/or <DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink> can be used on the resulting <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm>. 
 
 
 
-When *element-type* is :default, the <ClLinks  term={"type"}><i>type</i></ClLinks> can be determined by using <ClLinks  term={"stream-element-type"}><b>stream-element-type</b></ClLinks>. 
+When *element-type* is :default, the <ClLinks  term={"type"}><i>type</i></ClLinks> can be determined by using <DictionaryLink  term={"stream-element-type"}><b>stream-element-type</b></DictionaryLink>. 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-total-size"}><b>array-total-size</b></ClLinks> *array → size* 
+<DictionaryLink  term={"array-total-size"}><b>array-total-size</b></DictionaryLink> *array → size* 
 
 
 
@@ -55,7 +55,7 @@ Returns the <GlossaryTerm styled={true} term={"array total size"}><i>array total
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -63,7 +63,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"array-dimensions"}><b>array-dimensions</b></ClLinks> 
+<DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink>, <DictionaryLink  term={"array-dimensions"}><b>array-dimensions</b></DictionaryLink> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks> *symbol → contents* 
+<DictionaryLink  term={"symbol-package"}><b>symbol-package</b></DictionaryLink> *symbol → contents* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*contents*—a *package object* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*contents*—a *package object* or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -60,7 +60,7 @@ Returns the <GlossaryTerm styled={true} term={"home package"}><i>home package</i
 
 
 
-<ClLinks  term={"import"}><b>import</b></ClLinks>, <ClLinks  term={"intern"}><b>intern</b></ClLinks>, <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> 
+<DictionaryLink  term={"import"}><b>import</b></DictionaryLink>, <DictionaryLink  term={"intern"}><b>intern</b></DictionaryLink>, <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> 
 
 
 
@@ -68,7 +68,7 @@ Returns the <GlossaryTerm styled={true} term={"home package"}><i>home package</i
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -88,7 +88,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"intern"}><b>intern</b></ClLinks> 
+<DictionaryLink  term={"intern"}><b>intern</b></DictionaryLink> 
 
 
 

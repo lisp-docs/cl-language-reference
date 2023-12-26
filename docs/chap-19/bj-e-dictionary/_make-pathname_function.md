@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-pathname"}><b>make-pathname</b></ClLinks> &amp;key *host device directory name type version defaults case* 
+<DictionaryLink  term={"make-pathname"}><b>make-pathname</b></DictionaryLink> &amp;key *host device directory name type version defaults case* 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*defaults*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> whose host component is the same as the host component of the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>, and whose other components are all <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*defaults*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . The default is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> whose host component is the same as the host component of the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink>, and whose other components are all <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -54,7 +54,7 @@ Constructs and returns a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> f
 
 
 
-After the components supplied explicitly by *host*, *device*, *directory*, <ClLinks  term={"name"}><i>name</i></ClLinks>, <ClLinks  term={"type"}><i>type</i></ClLinks>, and *version* are filled in, the merging rules used by <ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> are used to fill in any unsupplied components from the defaults supplied by *defaults*. 
+After the components supplied explicitly by *host*, *device*, *directory*, <ClLinks  term={"name"}><i>name</i></ClLinks>, <ClLinks  term={"type"}><i>type</i></ClLinks>, and *version* are filled in, the merging rules used by <DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> are used to fill in any unsupplied components from the defaults supplied by *defaults*. 
 
 
 
@@ -82,7 +82,7 @@ The resulting <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <Glossa
 
 
 
-<ClLinks  term={"make-pathname"}><b>make-pathname</b></ClLinks> 
+<DictionaryLink  term={"make-pathname"}><b>make-pathname</b></DictionaryLink> 
 
 
 
@@ -140,7 +140,7 @@ The <GlossaryTerm styled={true} term={"file system"}><i>file system</i></Glossar
 
 
 
-<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink>, <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

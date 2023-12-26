@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"y-or-n-p"}><b>y-or-n-p</b></ClLinks> &amp;optional *control* &amp;rest *arguments → generalized-boolean* 
+<DictionaryLink  term={"y-or-n-p"}><b>y-or-n-p</b></DictionaryLink> &amp;optional *control* &amp;rest *arguments → generalized-boolean* 
 
 
 
-<ClLinks  term={"yes-or-no-p"}><b>yes-or-no-p</b></ClLinks> &amp;optional *control* &amp;rest *arguments → generalized-boolean* 
+<DictionaryLink  term={"yes-or-no-p"}><b>yes-or-no-p</b></DictionaryLink> &amp;optional *control* &amp;rest *arguments → generalized-boolean* 
 
 
 
@@ -38,7 +38,7 @@ These functions ask a question and parse a response from the user. They return <
 
 
 
-<ClLinks  term={"y-or-n-p"}><b>y-or-n-p</b></ClLinks> is for asking the user a question whose answer is either “yes” or “no.” It is intended that the reply require the user to answer a yes-or-no question with a single character. <ClLinks  term={"yes-or-no-p"}><b>yes-or-no-p</b></ClLinks> is also for asking the user a question whose answer is either “Yes” or “No.” It is intended that the reply require the user to take more action than just a single keystroke, such as typing the full word yes or no followed by a newline. 
+<DictionaryLink  term={"y-or-n-p"}><b>y-or-n-p</b></DictionaryLink> is for asking the user a question whose answer is either “yes” or “no.” It is intended that the reply require the user to answer a yes-or-no question with a single character. <DictionaryLink  term={"yes-or-no-p"}><b>yes-or-no-p</b></DictionaryLink> is also for asking the user a question whose answer is either “Yes” or “No.” It is intended that the reply require the user to take more action than just a single keystroke, such as typing the full word yes or no followed by a newline. 
 
 
 
@@ -54,11 +54,11 @@ These functions ask a question and parse a response from the user. They return <
 
 
 
-<ClLinks  term={"y-or-n-p"}><b>y-or-n-p</b></ClLinks> types out a message (if supplied), reads an answer in some <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> manner (intended to be short and simple, such as reading a single character such as Y or N). <ClLinks  term={"yes-or-no-p"}><b>yes-or-no-p</b></ClLinks> types out a message (if supplied), attracts the user’s attention (for example, by ringing the terminal’s bell), and reads an answer in some <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> manner (intended to be multiple characters, such as YES or NO). 
+<DictionaryLink  term={"y-or-n-p"}><b>y-or-n-p</b></DictionaryLink> types out a message (if supplied), reads an answer in some <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> manner (intended to be short and simple, such as reading a single character such as Y or N). <DictionaryLink  term={"yes-or-no-p"}><b>yes-or-no-p</b></DictionaryLink> types out a message (if supplied), attracts the user’s attention (for example, by ringing the terminal’s bell), and reads an answer in some <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> manner (intended to be multiple characters, such as YES or NO). 
 
 
 
-If *format-control* is supplied and not <ClLinks  term={"nil"}><b>nil</b></ClLinks>, then a <ClLinks  term={"fresh-line"}><b>fresh-line</b></ClLinks> operation is performed; then a message is printed as if *format-control* and <ClLinks  term={"argument"}><i>arguments</i></ClLinks> were given to <ClLinks  term={"format"}><b>format</b></ClLinks>. In any case, <ClLinks  term={"yes-or-no-p"}><b>yes-or-no-p</b></ClLinks> and <ClLinks  term={"y-or-n-p"}><b>y-or-n-p</b></ClLinks> will provide a prompt such as “(Y or N)” or “(Yes or No)” if appropriate. 
+If *format-control* is supplied and not <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, then a <DictionaryLink  term={"fresh-line"}><b>fresh-line</b></DictionaryLink> operation is performed; then a message is printed as if *format-control* and <ClLinks  term={"argument"}><i>arguments</i></ClLinks> were given to <DictionaryLink  term={"format"}><b>format</b></DictionaryLink>. In any case, <DictionaryLink  term={"yes-or-no-p"}><b>yes-or-no-p</b></DictionaryLink> and <DictionaryLink  term={"y-or-n-p"}><b>y-or-n-p</b></DictionaryLink> will provide a prompt such as “(Y or N)” or “(Yes or No)” if appropriate. 
 
 
 
@@ -99,7 +99,7 @@ Output to and input from *query I/O* will occur.
 
 
 
-<ClLinks  term={"format"}><b>format</b></ClLinks> 
+<DictionaryLink  term={"format"}><b>format</b></DictionaryLink> 
 
 
 
@@ -107,7 +107,7 @@ Output to and input from *query I/O* will occur.
 
 
 
-<ClLinks  term={"yes-or-no-p"}><b>yes-or-no-p</b></ClLinks> and <ClLinks  term={"yes-or-no-p"}><b>yes-or-no-p</b></ClLinks> do not add question marks to the end of the prompt string, so any desired question mark or other punctuation should be explicitly included in the text query. 
+<DictionaryLink  term={"yes-or-no-p"}><b>yes-or-no-p</b></DictionaryLink> and <DictionaryLink  term={"yes-or-no-p"}><b>yes-or-no-p</b></DictionaryLink> do not add question marks to the end of the prompt string, so any desired question mark or other punctuation should be explicitly included in the text query. 
 
 
 

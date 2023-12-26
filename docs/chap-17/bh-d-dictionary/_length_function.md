@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"length"}><b>length</b></ClLinks> *sequence → n* 
+<DictionaryLink  term={"length"}><b>length</b></DictionaryLink> *sequence → n* 
 
 
 
@@ -48,7 +48,7 @@ If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <Glo
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -56,7 +56,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<ClLinks  term={"list-length"}><b>list-length</b></ClLinks>, <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> 
+<DictionaryLink  term={"list-length"}><b>list-length</b></DictionaryLink>, <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink> 
 
 
 

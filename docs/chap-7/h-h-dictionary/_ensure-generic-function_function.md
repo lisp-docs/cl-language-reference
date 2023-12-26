@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"ensure-generic-function"}><b>ensure-generic-function</b></ClLinks> *function-name* &amp;key *argument-precedence-order declare* 
+<DictionaryLink  term={"ensure-generic-function"}><b>ensure-generic-function</b></DictionaryLink> *function-name* &amp;key *argument-precedence-order declare* 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-The keyword arguments correspond to the *option* arguments of <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>, except that the :method-class and :generic-function-class arguments can be *class object*s as well as names. 
+The keyword arguments correspond to the *option* arguments of <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>, except that the :method-class and :generic-function-class arguments can be *class object*s as well as names. 
 
 
 
@@ -54,7 +54,7 @@ Environment – the same as the **&amp;environment** argument to macro expansion
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"ensure-generic-function"}><b>ensure-generic-function</b></ClLinks> is used to define a globally named *generic function* with no <ClLinks  term={"method"}><i>methods</i></ClLinks> or to specify or modify options and declarations that pertain to a globally named *generic function* as a whole. 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"ensure-generic-function"}><b>ensure-generic-function</b></DictionaryLink> is used to define a globally named *generic function* with no <ClLinks  term={"method"}><i>methods</i></ClLinks> or to specify or modify options and declarations that pertain to a globally named *generic function* as a whole. 
 
 
 
@@ -82,7 +82,7 @@ If *function-name* specifies a <GlossaryTerm styled={true} term={"generic functi
 
 
 
-If *function-name* specifies a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :generic-function-class argument and if the new generic function class is compatible with the old, <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> is called to change the <ClLinks  term={"class"}><i>class</i></ClLinks> of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>; otherwise an error is signaled. 
+If *function-name* specifies a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :generic-function-class argument and if the new generic function class is compatible with the old, <DictionaryLink  term={"change-class"}><b>change-class</b></DictionaryLink> is called to change the <ClLinks  term={"class"}><i>class</i></ClLinks> of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>; otherwise an error is signaled. 
 
 
 
@@ -102,15 +102,15 @@ Existing function binding of *function-name*.
 
 
 
-If (fdefinition *function-name*) is an <GlossaryTerm styled={true} term={"ordinary function"}><i>ordinary function</i></GlossaryTerm>, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If (fdefinition *function-name*) is an <GlossaryTerm styled={true} term={"ordinary function"}><i>ordinary function</i></GlossaryTerm>, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
-If *function-name* specifies a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :lambda-list argument, and the new value is not congruent with the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of any existing <ClLinks  term={"method"}><i>method</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If *function-name* specifies a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :lambda-list argument, and the new value is not congruent with the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of any existing <ClLinks  term={"method"}><i>method</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
-If *function-name* specifies a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :generic-function-class argument and if the new generic function class not is compatible with the old, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If *function-name* specifies a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :generic-function-class argument and if the new generic function class not is compatible with the old, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
@@ -118,7 +118,7 @@ If *function-name* specifies a <GlossaryTerm styled={true} term={"generic functi
 
 
 
-<ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> 
+<DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> 
 
 
 

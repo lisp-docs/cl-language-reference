@@ -2,7 +2,7 @@
 
 
 
-<ClLinks  term={"vector"}><i>Vectors</i></ClLinks> whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are restricted to <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"character"}><b>character</b></ClLinks> are called <ClLinks  term={"string"}><i>strings</i></ClLinks>. <ClLinks  term={"string"}><i>Strings</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"string"}><b>string</b></ClLinks>. Figure 15–2 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> related to <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
+<ClLinks  term={"vector"}><i>Vectors</i></ClLinks> whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are restricted to <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <DictionaryLink  term={"character"}><b>character</b></DictionaryLink> are called <ClLinks  term={"string"}><i>strings</i></ClLinks>. <ClLinks  term={"string"}><i>Strings</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"string"}><b>string</b></DictionaryLink>. Figure 15–2 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> related to <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"vector"}><i>Vectors</i></ClLinks> whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are restricted to <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"bit"}><b>bit</b></ClLinks> are called <GlossaryTerm styled={true} term={"bit vector"}><i>bit vectors</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"bit vector"}><i>Bit vectors</i></GlossaryTerm> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"bit-vector"}><b>bit-vector</b></ClLinks>. Figure 15–3 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> for operations on <GlossaryTerm styled={true} term={"bit array"}><i>bit arrays</i></GlossaryTerm>. 
+<ClLinks  term={"vector"}><i>Vectors</i></ClLinks> whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are restricted to <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink> are called <GlossaryTerm styled={true} term={"bit vector"}><i>bit vectors</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"bit vector"}><i>Bit vectors</i></GlossaryTerm> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"bit-vector"}><b>bit-vector</b></DictionaryLink>. Figure 15–3 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> for operations on <GlossaryTerm styled={true} term={"bit array"}><i>bit arrays</i></GlossaryTerm>. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks> *first-form \{form\}*\* *! first-form-results* 
+<DictionaryLink  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></DictionaryLink> *first-form \{form\}*\* *! first-form-results* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks> evaluates *first-form* and saves all the values produced by that <ClLinks  term={"form"}><i>form</i></ClLinks>. It then evaluates each <ClLinks  term={"form"}><i>form</i></ClLinks> from left to right, discarding their values. 
+<DictionaryLink  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></DictionaryLink> evaluates *first-form* and saves all the values produced by that <ClLinks  term={"form"}><i>form</i></ClLinks>. It then evaluates each <ClLinks  term={"form"}><i>form</i></ClLinks> from left to right, discarding their values. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<ClLinks  term={"prog1"}><b>prog1</b></ClLinks> 
+<DictionaryLink  term={"prog1"}><b>prog1</b></DictionaryLink> 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-<ClLinks  term={"multiple-value-setq"}><b>multiple-value-setq</b></ClLinks> 
+<DictionaryLink  term={"multiple-value-setq"}><b>multiple-value-setq</b></DictionaryLink> 
 
 
 

@@ -7,7 +7,7 @@ sidebar_position: 115
 
 
 
-**safe** *adj.* 1. (of <ClLinks  term={"code"}><i>code</i></ClLinks>) processed in a *lexical environment* where the the highest **safety** level (3) was in effect. See <ClLinks  term={"optimize"}><b>optimize</b></ClLinks>. 2. (of a <ClLinks  term={"call"}><i>call</i></ClLinks>) a *safe call*. 
+**safe** *adj.* 1. (of <ClLinks  term={"code"}><i>code</i></ClLinks>) processed in a *lexical environment* where the the highest **safety** level (3) was in effect. See <DictionaryLink  term={"optimize"}><b>optimize</b></DictionaryLink>. 2. (of a <ClLinks  term={"call"}><i>call</i></ClLinks>) a *safe call*. 
 
 
 
@@ -19,11 +19,11 @@ sidebar_position: 115
 
 
 
-<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. “The symbol car, the string "car", and the string "CAR" are the same under **string-equal**”. 2. (of <ClLinks  term={"object"}><i>objects</i></ClLinks> if no predicate is implied by context) indistinguishable by <ClLinks  term={"eql"}><b>eql</b></ClLinks>. Note that <ClLinks  term={"eq"}><b>eq</b></ClLinks> might be capable of distinguishing some <ClLinks  term={"number"}><i>numbers</i></ClLinks> and <ClLinks  term={"character"}><i>characters</i></ClLinks> which <ClLinks  term={"eql"}><b>eql</b></ClLinks> cannot distinguish, but the nature of such, if any, is <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> 
+<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. “The symbol car, the string "car", and the string "CAR" are the same under **string-equal**”. 2. (of <ClLinks  term={"object"}><i>objects</i></ClLinks> if no predicate is implied by context) indistinguishable by <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>. Note that <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> might be capable of distinguishing some <ClLinks  term={"number"}><i>numbers</i></ClLinks> and <ClLinks  term={"character"}><i>characters</i></ClLinks> which <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> cannot distinguish, but the nature of such, if any, is <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> 
 
 
 
-*dependent*. Since <ClLinks  term={"eq"}><b>eq</b></ClLinks> is used only rarely in this specification, <ClLinks  term={"eql"}><b>eql</b></ClLinks> is the default predicate when none is mentioned explicitly. “The conses returned by two successive calls to <ClLinks  term={"cons"}><b>cons</b></ClLinks> are never the same.” 3. (of <ClLinks  term={"type"}><i>types</i></ClLinks>) having the same set of <ClLinks  term={"element"}><i>elements</i></ClLinks>; that is, each <ClLinks  term={"type"}><i>type</i></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the others. “The types specified by (integer 0 1), (unsigned-byte 1), and bit are the same.” 
+*dependent*. Since <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> is used only rarely in this specification, <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> is the default predicate when none is mentioned explicitly. “The conses returned by two successive calls to <DictionaryLink  term={"cons"}><b>cons</b></DictionaryLink> are never the same.” 3. (of <ClLinks  term={"type"}><i>types</i></ClLinks>) having the same set of <ClLinks  term={"element"}><i>elements</i></ClLinks>; that is, each <ClLinks  term={"type"}><i>type</i></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the others. “The types specified by (integer 0 1), (unsigned-byte 1), and bit are the same.” 
 
 
 
@@ -55,11 +55,11 @@ of calling the *sequence function*’s *key argument* on the <ClLinks  term={"ob
 
 
 
-**script** *n. ISO* one of possibly several sets that form an *exhaustive partition* of the type <ClLinks  term={"character"}><b>character</b></ClLinks>. See Section 13.1.2.1 (Character Scripts). 
+**script** *n. ISO* one of possibly several sets that form an *exhaustive partition* of the type <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. See Section 13.1.2.1 (Character Scripts). 
 
 
 
-**secondary value** *n.* (of <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of a <ClLinks  term={"form"}><i>form</i></ClLinks>) the second <ClLinks  term={"value"}><i>value</i></ClLinks>, if any, or else <ClLinks  term={"nil"}><b>nil</b></ClLinks> if there are fewer than two <ClLinks  term={"value"}><i>values</i></ClLinks>. “The secondary value returned by <ClLinks  term={"truncate"}><b>truncate</b></ClLinks> is a remainder.” 
+**secondary value** *n.* (of <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of a <ClLinks  term={"form"}><i>form</i></ClLinks>) the second <ClLinks  term={"value"}><i>value</i></ClLinks>, if any, or else <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if there are fewer than two <ClLinks  term={"value"}><i>values</i></ClLinks>. “The secondary value returned by <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> is a remainder.” 
 
 
 
@@ -83,7 +83,7 @@ self-evaluating objects.”
 
 
 
-**semicolon** *n.* the *standard character* that is called “semicolon” (;). See Figure 2–5. <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> *n.* 1. an ordered collection of elements 2. a <ClLinks  term={"vector"}><i>vector</i></ClLinks> or a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
+**semicolon** *n.* the *standard character* that is called “semicolon” (;). See Figure 2–5. <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink> *n.* 1. an ordered collection of elements 2. a <ClLinks  term={"vector"}><i>vector</i></ClLinks> or a <ClLinks  term={"list"}><i>list</i></ClLinks>. 
 
 
 
@@ -91,7 +91,7 @@ self-evaluating objects.”
 
 
 
-**sequential** *adj. Trad.* (of <ClLinks  term={"binding"}><i>binding</i></ClLinks> or *assignment*) done in the style of <ClLinks  term={"setq"}><b>setq</b></ClLinks>, <ClLinks  term={"let"}><b>let\*</b></ClLinks>, or <ClLinks  term={"do"}><b>do\*</b></ClLinks>; that is, interleaving the evaluation of the <ClLinks  term={"form"}><i>forms</i></ClLinks> that produce <ClLinks  term={"value"}><i>values</i></ClLinks> with the *assignments* or <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the <ClLinks  term={"variable"}><i>variables</i></ClLinks> (or <ClLinks  term={"place"}><i>places</i></ClLinks>). See <ClLinks  term={"parallel"}><i>parallel</i></ClLinks>. 
+**sequential** *adj. Trad.* (of <ClLinks  term={"binding"}><i>binding</i></ClLinks> or *assignment*) done in the style of <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>, <DictionaryLink  term={"let"}><b>let\*</b></DictionaryLink>, or <DictionaryLink  term={"do"}><b>do\*</b></DictionaryLink>; that is, interleaving the evaluation of the <ClLinks  term={"form"}><i>forms</i></ClLinks> that produce <ClLinks  term={"value"}><i>values</i></ClLinks> with the *assignments* or <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the <ClLinks  term={"variable"}><i>variables</i></ClLinks> (or <ClLinks  term={"place"}><i>places</i></ClLinks>). See <ClLinks  term={"parallel"}><i>parallel</i></ClLinks>. 
 
 
 
@@ -111,7 +111,7 @@ self-evaluating objects.”
 
 
 
-**serious condition** *n.* a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"serious-condition"}><b>serious-condition</b></ClLinks>, which represents a 
+**serious condition** *n.* a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"serious-condition"}><b>serious-condition</b></DictionaryLink>, which represents a 
 
 
 
@@ -123,11 +123,11 @@ self-evaluating objects.”
 
 
 
-<ClLinks  term={"set"}><b>set</b></ClLinks> *v.t. Trad.* (any <ClLinks  term={"variable"}><i>variable</i></ClLinks> or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a *dynamic variable*) to <ClLinks  term={"assign"}><i>assign</i></ClLinks> the <ClLinks  term={"variable"}><i>variable</i></ClLinks>. 
+<DictionaryLink  term={"set"}><b>set</b></DictionaryLink> *v.t. Trad.* (any <ClLinks  term={"variable"}><i>variable</i></ClLinks> or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a *dynamic variable*) to <ClLinks  term={"assign"}><i>assign</i></ClLinks> the <ClLinks  term={"variable"}><i>variable</i></ClLinks>. 
 
 
 
-**setf expander** *n.* a function used by <ClLinks  term={"setf"}><b>setf</b></ClLinks> to compute the *setf expansion* of a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+**setf expander** *n.* a function used by <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> to compute the *setf expansion* of a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 
@@ -143,7 +143,7 @@ self-evaluating objects.”
 
 
 
-<ClLinks  term={"shadow"}><b>shadow</b></ClLinks> *v.t.* 1. to override the meaning of. “That binding of X shadows an outer one.” 2. to hide the presence of. “That <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> of F shadows the outer <ClLinks  term={"flet"}><b>flet</b></ClLinks> of F.” 3. to replace. “That package shadows the symbol cl:car with its own symbol car.” 
+<DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink> *v.t.* 1. to override the meaning of. “That binding of X shadows an outer one.” 2. to hide the presence of. “That <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> of F shadows the outer <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> of F.” 3. to replace. “That package shadows the symbol cl:car with its own symbol car.” 
 
 
 
@@ -151,7 +151,7 @@ self-evaluating objects.”
 
 
 
-**shadowing symbols list** *n.* (of a <ClLinks  term={"package"}><i>package</i></ClLinks>) a <ClLinks  term={"list"}><i>list</i></ClLinks>, associated with the <ClLinks  term={"package"}><i>package</i></ClLinks>, of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are to be exempted from ‘symbol conflict errors’ detected when packages are *used*. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"package-shadowing-symbols"}><b>package-shadowing-symbols</b></ClLinks>. 
+**shadowing symbols list** *n.* (of a <ClLinks  term={"package"}><i>package</i></ClLinks>) a <ClLinks  term={"list"}><i>list</i></ClLinks>, associated with the <ClLinks  term={"package"}><i>package</i></ClLinks>, of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are to be exempted from ‘symbol conflict errors’ detected when packages are *used*. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"package-shadowing-symbols"}><b>package-shadowing-symbols</b></DictionaryLink>. 
 
 
 
@@ -163,7 +163,7 @@ self-evaluating objects.”
 
 
 
-**short float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>. 
+**short float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>. 
 
 
 
@@ -171,7 +171,7 @@ self-evaluating objects.”
 
 
 
-<ClLinks  term={"signal"}><b>signal</b></ClLinks> *v.* to announce, using a standard protocol, that a particular situation, 
+<DictionaryLink  term={"signal"}><b>signal</b></DictionaryLink> *v.* to announce, using a standard protocol, that a particular situation, 
 
 
 
@@ -207,11 +207,11 @@ required <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, and which also 
 
 
 
-**simple** *adj.* 1. (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) being of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-array"}><b>simple-array</b></ClLinks>. 2. (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) having no *implementation-defined attributes*, or else having *implementation-defined attributes* each of which has the <ClLinks  term={"null"}><i>null</i></ClLinks> value for that <ClLinks  term={"attribute"}><i>attribute</i></ClLinks>. 
+**simple** *adj.* 1. (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) being of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-array"}><b>simple-array</b></DictionaryLink>. 2. (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) having no *implementation-defined attributes*, or else having *implementation-defined attributes* each of which has the <ClLinks  term={"null"}><i>null</i></ClLinks> value for that <ClLinks  term={"attribute"}><i>attribute</i></ClLinks>. 
 
 
 
-**simple array** *n.* an <ClLinks  term={"array"}><i>array</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-array"}><b>simple-array</b></ClLinks>. 
+**simple array** *n.* an <ClLinks  term={"array"}><i>array</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-array"}><b>simple-array</b></DictionaryLink>. 
 
 
 
@@ -219,11 +219,11 @@ required <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, and which also 
 
 
 
-**simple bit vector** *n.* a <GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-bit-vector"}><b>simple-bit-vector</b></ClLinks>. 
+**simple bit vector** *n.* a <GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-bit-vector"}><b>simple-bit-vector</b></DictionaryLink>. 
 
 
 
-**simple condition** *n.* a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-condition"}><b>simple-condition</b></ClLinks>. 
+**simple condition** *n.* a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-condition"}><b>simple-condition</b></DictionaryLink>. 
 
 
 
@@ -231,11 +231,11 @@ required <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, and which also 
 
 
 
-**simple string** *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-string"}><b>simple-string</b></ClLinks>. 
+**simple string** *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-string"}><b>simple-string</b></DictionaryLink>. 
 
 
 
-**simple vector** *n.* a <ClLinks  term={"vector"}><i>vector</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-vector"}><b>simple-vector</b></ClLinks>, sometimes called a “<GlossaryTerm styled={true} term={"simple general vector"}><i>simple general vector</i></GlossaryTerm> .” Not all <ClLinks  term={"vector"}><i>vectors</i></ClLinks> that are <ClLinks  term={"simple"}><i>simple</i></ClLinks> are <GlossaryTerm styled={true} term={"simple vector"}><i>simple vectors</i></GlossaryTerm>—only those that have <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> <ClLinks  term={"t"}><b>t</b></ClLinks>. 
+**simple vector** *n.* a <ClLinks  term={"vector"}><i>vector</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-vector"}><b>simple-vector</b></DictionaryLink>, sometimes called a “<GlossaryTerm styled={true} term={"simple general vector"}><i>simple general vector</i></GlossaryTerm> .” Not all <ClLinks  term={"vector"}><i>vectors</i></ClLinks> that are <ClLinks  term={"simple"}><i>simple</i></ClLinks> are <GlossaryTerm styled={true} term={"simple vector"}><i>simple vectors</i></GlossaryTerm>—only those that have <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. 
 
 
 
@@ -247,7 +247,7 @@ required <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, and which also 
 
 
 
-**single float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>. 
+**single float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>. 
 
 
 
@@ -287,7 +287,7 @@ required <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, and which also 
 
 
 
-**source code** *n. code* representing <ClLinks  term={"object"}><i>objects</i></ClLinks> suitable for <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> (*e.g.*, <ClLinks  term={"object"}><i>objects</i></ClLinks> created by <ClLinks  term={"read"}><b>read</b></ClLinks>, by <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm>, or by <GlossaryTerm styled={true} term={"compiler macro expansion"}><i>compiler macro expansion</i></GlossaryTerm>). 
+**source code** *n. code* representing <ClLinks  term={"object"}><i>objects</i></ClLinks> suitable for <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> (*e.g.*, <ClLinks  term={"object"}><i>objects</i></ClLinks> created by <DictionaryLink  term={"read"}><b>read</b></DictionaryLink>, by <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm>, or by <GlossaryTerm styled={true} term={"compiler macro expansion"}><i>compiler macro expansion</i></GlossaryTerm>). 
 
 
 
@@ -315,11 +315,11 @@ required <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, and which also 
 
 
 
-**specialized** *adj.* 1. (of a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>) having <ClLinks  term={"method"}><i>methods</i></ClLinks> which <ClLinks  term={"specialize"}><i>specialize</i></ClLinks> the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 2. (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) having an <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> that is a <GlossaryTerm styled={true} term={"proper subtype"}><i>proper subtype</i></GlossaryTerm> of the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>; see Section 15.1.1 (Array Elements). “(make-array 5 :element-type ’bit) makes an array of length five that is specialized for bits.” 
+**specialized** *adj.* 1. (of a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>) having <ClLinks  term={"method"}><i>methods</i></ClLinks> which <ClLinks  term={"specialize"}><i>specialize</i></ClLinks> the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 2. (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) having an <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> that is a <GlossaryTerm styled={true} term={"proper subtype"}><i>proper subtype</i></GlossaryTerm> of the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>; see Section 15.1.1 (Array Elements). “(make-array 5 :element-type ’bit) makes an array of length five that is specialized for bits.” 
 
 
 
-**specialized lambda list** *n.* an <GlossaryTerm styled={true} term={"extended lambda list"}><i>extended lambda list</i></GlossaryTerm> used in <ClLinks  term={"form"}><i>forms</i></ClLinks> that *establish method* definitions, such as <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks>. See Section 3.4.3 (Specialized Lambda Lists). 
+**specialized lambda list** *n.* an <GlossaryTerm styled={true} term={"extended lambda list"}><i>extended lambda list</i></GlossaryTerm> used in <ClLinks  term={"form"}><i>forms</i></ClLinks> that *establish method* definitions, such as <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink>. See Section 3.4.3 (Specialized Lambda Lists). 
 
 
 
@@ -351,15 +351,15 @@ allocating certain kinds of <ClLinks  term={"object"}><i>objects</i></ClLinks> t
 
 
 
-**standard character** *n.* a <ClLinks  term={"character"}><i>character</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"standard-char"}><b>standard-char</b></ClLinks>, which is one of a fixed set of 96 such <ClLinks  term={"character"}><i>characters</i></ClLinks> required to be present in all <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementations</i></GlossaryTerm>. See Section 2.1.3 (Standard Characters). 
+**standard character** *n.* a <ClLinks  term={"character"}><i>character</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"standard-char"}><b>standard-char</b></DictionaryLink>, which is one of a fixed set of 96 such <ClLinks  term={"character"}><i>characters</i></ClLinks> required to be present in all <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementations</i></GlossaryTerm>. See Section 2.1.3 (Standard Characters). 
 
 
 
-**standard class** *n.* a <ClLinks  term={"class"}><i>class</i></ClLinks> that is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>. 
+**standard class** *n.* a <ClLinks  term={"class"}><i>class</i></ClLinks> that is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>. 
 
 
 
-**standard generic function** a <ClLinks  term={"function"}><i>function</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>. 
+**standard generic function** a <ClLinks  term={"function"}><i>function</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink>. 
 
 
 
@@ -375,7 +375,7 @@ allocating certain kinds of <ClLinks  term={"object"}><i>objects</i></ClLinks> t
 
 
 
-**standard object** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> that is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>. 
+**standard object** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> that is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink>. 
 
 
 
@@ -427,11 +427,11 @@ this phrase should be seen as an indefinite reference in all cases except for an
 
 
 
-<ClLinks  term={"step"}><b>step</b></ClLinks> *v.t.*, *n.* 1. *v.t.* (an iteration <ClLinks  term={"variable"}><i>variable</i></ClLinks>) to <ClLinks  term={"assign"}><i>assign</i></ClLinks> the <ClLinks  term={"variable"}><i>variable</i></ClLinks> a new <ClLinks  term={"value"}><i>value</i></ClLinks> at the end of an iteration, in preparation for a new iteration. 2. *n.* the <ClLinks  term={"code"}><i>code</i></ClLinks> that identifies how the next value in an iteration is to be computed. 3. *v.t.* (<ClLinks  term={"code"}><i>code</i></ClLinks>) to specially execute the <ClLinks  term={"code"}><i>code</i></ClLinks>, pausing at intervals to allow user confirmation or intervention, usually for debugging. 
+<DictionaryLink  term={"step"}><b>step</b></DictionaryLink> *v.t.*, *n.* 1. *v.t.* (an iteration <ClLinks  term={"variable"}><i>variable</i></ClLinks>) to <ClLinks  term={"assign"}><i>assign</i></ClLinks> the <ClLinks  term={"variable"}><i>variable</i></ClLinks> a new <ClLinks  term={"value"}><i>value</i></ClLinks> at the end of an iteration, in preparation for a new iteration. 2. *n.* the <ClLinks  term={"code"}><i>code</i></ClLinks> that identifies how the next value in an iteration is to be computed. 3. *v.t.* (<ClLinks  term={"code"}><i>code</i></ClLinks>) to specially execute the <ClLinks  term={"code"}><i>code</i></ClLinks>, pausing at intervals to allow user confirmation or intervention, usually for debugging. 
 
 
 
-<ClLinks  term={"stream"}><b>stream</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> that can be used with an input or output function to identify an appropriate source or sink of <ClLinks  term={"character"}><i>characters</i></ClLinks> or <ClLinks  term={"byte"}><i>bytes</i></ClLinks> for that operation. 
+<DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> that can be used with an input or output function to identify an appropriate source or sink of <ClLinks  term={"character"}><i>characters</i></ClLinks> or <ClLinks  term={"byte"}><i>bytes</i></ClLinks> for that operation. 
 
 
 
@@ -443,15 +443,15 @@ the <ClLinks  term={"target"}><i>target</i></ClLinks> of which is a <GlossaryTer
 
 
 
-cannot be created with <ClLinks  term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks>, <ClLinks  term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks>, 
+cannot be created with <DictionaryLink  term={"make-two-way-stream"}><b>make-two-way-stream</b></DictionaryLink>, <DictionaryLink  term={"make-echo-stream"}><b>make-echo-stream</b></DictionaryLink>, 
 
 
 
-<ClLinks  term={"make-broadcast-stream"}><b>make-broadcast-stream</b></ClLinks>, <ClLinks  term={"make-concatenated-stream"}><b>make-concatenated-stream</b></ClLinks>, <ClLinks  term={"make-string-input-stream"}><b>make-string-input-stream</b></ClLinks>, or <ClLinks  term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks>. 
+<DictionaryLink  term={"make-broadcast-stream"}><b>make-broadcast-stream</b></DictionaryLink>, <DictionaryLink  term={"make-concatenated-stream"}><b>make-concatenated-stream</b></DictionaryLink>, <DictionaryLink  term={"make-string-input-stream"}><b>make-string-input-stream</b></DictionaryLink>, or <DictionaryLink  term={"make-string-output-stream"}><b>make-string-output-stream</b></DictionaryLink>. 
 
 
 
-**stream designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"stream"}><i>stream</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"stream"}><i>stream</i></ClLinks> and that is one of: <ClLinks  term={"t"}><b>t</b></ClLinks> (denoting the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>), <ClLinks  term={"nil"}><b>nil</b></ClLinks> (denoting the <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*standard-input\*** for *input stream designators* or denoting the <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*standard-output\*** for *output stream designators*), or a <ClLinks  term={"stream"}><i>stream</i></ClLinks> (denoting itself). 
+**stream designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"stream"}><i>stream</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"stream"}><i>stream</i></ClLinks> and that is one of: <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> (denoting the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>), <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> (denoting the <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*standard-input\*** for *input stream designators* or denoting the <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*standard-output\*** for *output stream designators*), or a <ClLinks  term={"stream"}><i>stream</i></ClLinks> (denoting itself). 
 
 
 
@@ -463,23 +463,19 @@ cannot be created with <ClLinks  term={"make-two-way-stream"}><b>make-two-way-st
 
 
 
-**stream variable designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <GlossaryTerm styled={true} term={"stream variable"}><i>stream variable</i></GlossaryTerm>; that is, a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that denotes a <GlossaryTerm styled={true} term={"stream variable"}><i>stream variable</i></GlossaryTerm> and that is one of: <ClLinks  term={"t"}><b>t</b></ClLinks> (denoting <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>), 
+**stream variable designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <GlossaryTerm styled={true} term={"stream variable"}><i>stream variable</i></GlossaryTerm>; that is, a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that denotes a <GlossaryTerm styled={true} term={"stream variable"}><i>stream variable</i></GlossaryTerm> and that is one of: <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> (denoting <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>), 
 
 
 
-<ClLinks  term={"nil"}><b>nil</b></ClLinks> (denoting **\*standard-input\*** for *input stream variable designators* or denoting **\*standard-output\*** for *output stream variable designators*), or some other <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (denoting itself). 
+<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> (denoting **\*standard-input\*** for *input stream variable designators* or denoting **\*standard-output\*** for *output stream variable designators*), or some other <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (denoting itself). 
 
 
 
-<ClLinks  term={"string"}><b>string</b></ClLinks> *n.* a specialized <ClLinks  term={"vector"}><i>vector</i></ClLinks> that is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"string"}><b>string</b></ClLinks>, and whose elements are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. 
-
-
+<DictionaryLink  term={"string"}><b>string</b></DictionaryLink> *n.* a specialized <ClLinks  term={"vector"}><i>vector</i></ClLinks> that is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"string"}><b>string</b></DictionaryLink>, and whose elements are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. 
 
 
 
 
-
- 
 
 
 
@@ -487,7 +483,11 @@ cannot be created with <ClLinks  term={"make-two-way-stream"}><b>make-two-way-st
 
 
 
-**string designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"string"}><i>string</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"string"}><i>string</i></ClLinks> and that is one of: a <ClLinks  term={"character"}><i>character</i></ClLinks> (denoting a *singleton string* that has the <ClLinks  term={"character"}><i>character</i></ClLinks> as its only <ClLinks  term={"element"}><i>element</i></ClLinks>), a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (denoting the <ClLinks  term={"string"}><i>string</i></ClLinks> that is its <ClLinks  term={"name"}><i>name</i></ClLinks>), or a <ClLinks  term={"string"}><i>string</i></ClLinks> (denoting itself). The intent is that this term be consistent with the behavior of <ClLinks  term={"string"}><b>string</b></ClLinks>; <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> that extend <ClLinks  term={"string"}><b>string</b></ClLinks> must extend the meaning of this term in a compatible way. 
+ 
+
+
+
+**string designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"string"}><i>string</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"string"}><i>string</i></ClLinks> and that is one of: a <ClLinks  term={"character"}><i>character</i></ClLinks> (denoting a *singleton string* that has the <ClLinks  term={"character"}><i>character</i></ClLinks> as its only <ClLinks  term={"element"}><i>element</i></ClLinks>), a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (denoting the <ClLinks  term={"string"}><i>string</i></ClLinks> that is its <ClLinks  term={"name"}><i>name</i></ClLinks>), or a <ClLinks  term={"string"}><i>string</i></ClLinks> (denoting itself). The intent is that this term be consistent with the behavior of <DictionaryLink  term={"string"}><b>string</b></DictionaryLink>; <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> that extend <DictionaryLink  term={"string"}><b>string</b></DictionaryLink> must extend the meaning of this term in a compatible way. 
 
 
 
@@ -495,23 +495,23 @@ cannot be created with <ClLinks  term={"make-two-way-stream"}><b>make-two-way-st
 
 
 
-**string stream** *n.* a <ClLinks  term={"stream"}><i>stream</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"string-stream"}><b>string-stream</b></ClLinks>. 
+**string stream** *n.* a <ClLinks  term={"stream"}><i>stream</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"string-stream"}><b>string-stream</b></DictionaryLink>. 
 
 
 
-**structure** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks>. 
+**structure** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"structure-object"}><b>structure-object</b></DictionaryLink>. 
 
 
 
-**structure class** *n.* a <ClLinks  term={"class"}><i>class</i></ClLinks> that is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"structure-class"}><b>structure-class</b></ClLinks>. 
+**structure class** *n.* a <ClLinks  term={"class"}><i>class</i></ClLinks> that is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"structure-class"}><b>structure-class</b></DictionaryLink>. 
 
 
 
-**structure name** *n.* a <ClLinks  term={"name"}><i>name</i></ClLinks> defined with <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>. Usually, such a <ClLinks  term={"type"}><i>type</i></ClLinks> is also a <GlossaryTerm styled={true} term={"structure class"}><i>structure class</i></GlossaryTerm>, but there may be <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> situations in which this is not so, if the :type option to <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> is used. 
+**structure name** *n.* a <ClLinks  term={"name"}><i>name</i></ClLinks> defined with <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink>. Usually, such a <ClLinks  term={"type"}><i>type</i></ClLinks> is also a <GlossaryTerm styled={true} term={"structure class"}><i>structure class</i></GlossaryTerm>, but there may be <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> situations in which this is not so, if the :type option to <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> is used. 
 
 
 
-**style warning** *n.* a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"style-warning"}><b>style-warning</b></ClLinks>. 
+**style warning** *n.* a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"style-warning"}><b>style-warning</b></DictionaryLink>. 
 
 
 
@@ -567,7 +567,7 @@ membership of another <ClLinks  term={"type"}><i>type</i></ClLinks>, called a <C
 
 
 
-<ClLinks  term={"symbol"}><b>symbol</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>. 
+<DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink>. 
 
 
 
@@ -575,11 +575,11 @@ membership of another <ClLinks  term={"type"}><i>type</i></ClLinks>, called a <C
 
 
 
-<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>. 
+<DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>. 
 
 
 
-**synonym stream** *n.* 1. a <ClLinks  term={"stream"}><i>stream</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"synonym-stream"}><b>synonym-stream</b></ClLinks>, which is consequently a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is an alias for another <ClLinks  term={"stream"}><i>stream</i></ClLinks>, which is the <ClLinks  term={"value"}><i>value</i></ClLinks> of a <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> whose <ClLinks  term={"name"}><i>name</i></ClLinks> is the <GlossaryTerm styled={true} term={"synonym stream symbol"}><i>synonym stream symbol</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"make-synonym-stream"}><b>make-synonym-stream</b></ClLinks>. 2. (to a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) a <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm> which has the <ClLinks  term={"stream"}><i>stream</i></ClLinks> as 
+**synonym stream** *n.* 1. a <ClLinks  term={"stream"}><i>stream</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"synonym-stream"}><b>synonym-stream</b></DictionaryLink>, which is consequently a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is an alias for another <ClLinks  term={"stream"}><i>stream</i></ClLinks>, which is the <ClLinks  term={"value"}><i>value</i></ClLinks> of a <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> whose <ClLinks  term={"name"}><i>name</i></ClLinks> is the <GlossaryTerm styled={true} term={"synonym stream symbol"}><i>synonym stream symbol</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"make-synonym-stream"}><b>make-synonym-stream</b></DictionaryLink>. 2. (to a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) a <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm> which has the <ClLinks  term={"stream"}><i>stream</i></ClLinks> as 
 
 
 
@@ -595,7 +595,7 @@ the <ClLinks  term={"value"}><i>value</i></ClLinks> of its <GlossaryTerm styled=
 
 
 
-**system class** *n.* a <ClLinks  term={"class"}><i>class</i></ClLinks> that may be of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"built-in-class"}><b>built-in-class</b></ClLinks> in a *conforming* 
+**system class** *n.* a <ClLinks  term={"class"}><i>class</i></ClLinks> that may be of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"built-in-class"}><b>built-in-class</b></DictionaryLink> in a *conforming* 
 
 
 
@@ -607,7 +607,7 @@ the <ClLinks  term={"value"}><i>value</i></ClLinks> of its <GlossaryTerm styled=
 
 
 
-**system code** *n. code* supplied by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to implement this specification (*e.g.*, the definition of <ClLinks  term={"mapcar"}><b>mapcar</b></ClLinks>) or generated automatically in support of this 
+**system code** *n. code* supplied by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to implement this specification (*e.g.*, the definition of <DictionaryLink  term={"mapcar"}><b>mapcar</b></DictionaryLink>) or generated automatically in support of this 
 
 
 

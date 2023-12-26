@@ -6,47 +6,47 @@
 
 
 
-<ClLinks  term={"logand"}><b>logand</b></ClLinks> &amp;rest *integers → result-integer* 
+<DictionaryLink  term={"logand"}><b>logand</b></DictionaryLink> &amp;rest *integers → result-integer* 
 
 
 
-<ClLinks  term={"logandc1"}><b>logandc1</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<DictionaryLink  term={"logandc1"}><b>logandc1</b></DictionaryLink> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks  term={"logandc2"}><b>logandc2</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<DictionaryLink  term={"logandc2"}><b>logandc2</b></DictionaryLink> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks  term={"logeqv"}><b>logeqv</b></ClLinks> &amp;rest *integers → result-integer* 
+<DictionaryLink  term={"logeqv"}><b>logeqv</b></DictionaryLink> &amp;rest *integers → result-integer* 
 
 
 
-<ClLinks  term={"logior"}><b>logior</b></ClLinks> &amp;rest *integers → result-integer* 
+<DictionaryLink  term={"logior"}><b>logior</b></DictionaryLink> &amp;rest *integers → result-integer* 
 
 
 
-<ClLinks  term={"lognand"}><b>lognand</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<DictionaryLink  term={"lognand"}><b>lognand</b></DictionaryLink> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks  term={"lognor"}><b>lognor</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<DictionaryLink  term={"lognor"}><b>lognor</b></DictionaryLink> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks  term={"lognot"}><b>lognot</b></ClLinks> *integer → result-integer* 
+<DictionaryLink  term={"lognot"}><b>lognot</b></DictionaryLink> *integer → result-integer* 
 
 
 
-<ClLinks  term={"logorc1"}><b>logorc1</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<DictionaryLink  term={"logorc1"}><b>logorc1</b></DictionaryLink> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks  term={"logorc2"}><b>logorc2</b></ClLinks> *integer-1 integer-2 → result-integer* 
+<DictionaryLink  term={"logorc2"}><b>logorc2</b></DictionaryLink> *integer-1 integer-2 → result-integer* 
 
 
 
-<ClLinks  term={"logxor"}><b>logxor</b></ClLinks> &amp;rest *integers → result-integer* 
+<DictionaryLink  term={"logxor"}><b>logxor</b></DictionaryLink> &amp;rest *integers → result-integer* 
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-The <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"logandc1"}><b>logandc1</b></ClLinks>, <ClLinks  term={"logandc2"}><b>logandc2</b></ClLinks>, <ClLinks  term={"logand"}><b>logand</b></ClLinks>, <ClLinks  term={"logeqv"}><b>logeqv</b></ClLinks>, <ClLinks  term={"logior"}><b>logior</b></ClLinks>, <ClLinks  term={"lognand"}><b>lognand</b></ClLinks>, <ClLinks  term={"lognor"}><b>lognor</b></ClLinks>, <ClLinks  term={"lognot"}><b>lognot</b></ClLinks>, <ClLinks  term={"logorc1"}><b>logorc1</b></ClLinks>, <ClLinks  term={"logorc2"}><b>logorc2</b></ClLinks>, and <ClLinks  term={"logxor"}><b>logxor</b></ClLinks> perform bit-wise logical operations on their <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, that are treated as if they were binary. 
+The <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"logandc1"}><b>logandc1</b></DictionaryLink>, <DictionaryLink  term={"logandc2"}><b>logandc2</b></DictionaryLink>, <DictionaryLink  term={"logand"}><b>logand</b></DictionaryLink>, <DictionaryLink  term={"logeqv"}><b>logeqv</b></DictionaryLink>, <DictionaryLink  term={"logior"}><b>logior</b></DictionaryLink>, <DictionaryLink  term={"lognand"}><b>lognand</b></DictionaryLink>, <DictionaryLink  term={"lognor"}><b>lognor</b></DictionaryLink>, <DictionaryLink  term={"lognot"}><b>lognot</b></DictionaryLink>, <DictionaryLink  term={"logorc1"}><b>logorc1</b></DictionaryLink>, <DictionaryLink  term={"logorc2"}><b>logorc2</b></DictionaryLink>, and <DictionaryLink  term={"logxor"}><b>logxor</b></DictionaryLink> perform bit-wise logical operations on their <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, that are treated as if they were binary. 
 
 
 
@@ -106,7 +106,7 @@ Figure 12–18 lists the meaning of each of the <ClLinks  term={"function"}><i>f
 
 | :- |
 
-|<p><ClLinks  term={"logandc1"}><b>logandc1</b></ClLinks> — and complement of *integer-1* with *integer-2* <ClLinks  term={"logandc2"}><b>logandc2</b></ClLinks> — and *integer-1* with complement of *integer-2* <ClLinks  term={"logand"}><b>logand</b></ClLinks> -1 and </p><p><ClLinks  term={"logeqv"}><b>logeqv</b></ClLinks> -1 equivalence (exclusive nor) </p><p><ClLinks  term={"logior"}><b>logior</b></ClLinks> 0 inclusive or </p><p><ClLinks  term={"lognand"}><b>lognand</b></ClLinks> — complement of *integer-1* and *integer-2* <ClLinks  term={"lognor"}><b>lognor</b></ClLinks> — complement of *integer-1* or *integer-2* <ClLinks  term={"lognot"}><b>lognot</b></ClLinks> — complement </p><p><ClLinks  term={"logorc1"}><b>logorc1</b></ClLinks> — or complement of *integer-1* with *integer-2* <ClLinks  term={"logorc2"}><b>logorc2</b></ClLinks> — or *integer-1* with complement of *integer-2* <ClLinks  term={"logxor"}><b>logxor</b></ClLinks> 0 exclusive or</p>|
+|<p><DictionaryLink  term={"logandc1"}><b>logandc1</b></DictionaryLink> — and complement of *integer-1* with *integer-2* <DictionaryLink  term={"logandc2"}><b>logandc2</b></DictionaryLink> — and *integer-1* with complement of *integer-2* <DictionaryLink  term={"logand"}><b>logand</b></DictionaryLink> -1 and </p><p><DictionaryLink  term={"logeqv"}><b>logeqv</b></DictionaryLink> -1 equivalence (exclusive nor) </p><p><DictionaryLink  term={"logior"}><b>logior</b></DictionaryLink> 0 inclusive or </p><p><DictionaryLink  term={"lognand"}><b>lognand</b></DictionaryLink> — complement of *integer-1* and *integer-2* <DictionaryLink  term={"lognor"}><b>lognor</b></DictionaryLink> — complement of *integer-1* or *integer-2* <DictionaryLink  term={"lognot"}><b>lognot</b></DictionaryLink> — complement </p><p><DictionaryLink  term={"logorc1"}><b>logorc1</b></DictionaryLink> — or complement of *integer-1* with *integer-2* <DictionaryLink  term={"logorc2"}><b>logorc2</b></DictionaryLink> — or *integer-1* with complement of *integer-2* <DictionaryLink  term={"logxor"}><b>logxor</b></DictionaryLink> 0 exclusive or</p>|
 
 
 
@@ -159,7 +159,7 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any argument is not an *integer* . 
+Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if any argument is not an *integer* . 
 
 
 
@@ -167,7 +167,7 @@ Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any a
 
 
 
-<ClLinks  term={"boole"}><b>boole</b></ClLinks> 
+<DictionaryLink  term={"boole"}><b>boole</b></DictionaryLink> 
 
 
 

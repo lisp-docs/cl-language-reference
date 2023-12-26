@@ -10,7 +10,7 @@ Sometimes it is possible to avoid evaluating <ClLinks  term={"subform"}><i>subfo
 
 
 
-a list of symbols naming temporary variables to be bound sequentially, as if by <ClLinks  term={"let"}><b>let\*</b></ClLinks>, to <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from value forms. 
+a list of symbols naming temporary variables to be bound sequentially, as if by <DictionaryLink  term={"let"}><b>let\*</b></DictionaryLink>, to <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from value forms. 
 
 
 
@@ -34,7 +34,7 @@ a list of symbols naming temporary store variables which are to hold the new val
 
 
 
-a form which can reference both the temporary and the store variables, and which changes the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"place"}><i>place</i></ClLinks> and guarantees to return as its values the values of the store variables, which are the correct values for <ClLinks  term={"setf"}><b>setf</b></ClLinks> to return. 
+a form which can reference both the temporary and the store variables, and which changes the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"place"}><i>place</i></ClLinks> and guarantees to return as its values the values of the store variables, which are the correct values for <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> to return. 
 
 
 
@@ -62,11 +62,11 @@ Data and Control
 
 
 
-It is possible to do more than one <ClLinks  term={"setf"}><b>setf</b></ClLinks> in parallel via <ClLinks  term={"psetf"}><b>psetf</b></ClLinks>, <ClLinks  term={"shiftf"}><b>shiftf</b></ClLinks>, and <ClLinks  term={"rotatef"}><b>rotatef</b></ClLinks>. Because of this, the *setf expander* must produce new temporary and store variable names every time. For examples of how to do this, see <ClLinks  term={"gensym"}><b>gensym</b></ClLinks>. 
+It is possible to do more than one <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> in parallel via <DictionaryLink  term={"psetf"}><b>psetf</b></DictionaryLink>, <DictionaryLink  term={"shiftf"}><b>shiftf</b></DictionaryLink>, and <DictionaryLink  term={"rotatef"}><b>rotatef</b></DictionaryLink>. Because of this, the *setf expander* must produce new temporary and store variable names every time. For examples of how to do this, see <DictionaryLink  term={"gensym"}><b>gensym</b></DictionaryLink>. 
 
 
 
-For each <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> accessor function *F*, unless it is explicitly documented otherwise, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the ability to use an *F form* as a <ClLinks  term={"setf"}><b>setf</b></ClLinks> <ClLinks  term={"place"}><i>place</i></ClLinks> is implemented by a *setf expander* or a *setf function*. Also, it follows from this that it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the name (setf *F*) is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>. 
+For each <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> accessor function *F*, unless it is explicitly documented otherwise, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the ability to use an *F form* as a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> <ClLinks  term={"place"}><i>place</i></ClLinks> is implemented by a *setf expander* or a *setf function*. Also, it follows from this that it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the name (setf *F*) is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks>. 
 
 
 

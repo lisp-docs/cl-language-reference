@@ -14,5 +14,5 @@ A <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program<
 
 
 
-A <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> can be *coerced* to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> by the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> or <ClLinks  term={"parse-namestring"}><b>parse-namestring</b></ClLinks>.
+A <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> can be *coerced* to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> by the <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink> or <DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink>.
  

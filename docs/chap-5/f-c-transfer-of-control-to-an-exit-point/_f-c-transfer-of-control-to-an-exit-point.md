@@ -2,7 +2,7 @@
 
 
 
-When a transfer of control is initiated by <ClLinks  term={"go"}><b>go</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, or <ClLinks  term={"throw"}><b>throw</b></ClLinks> the following events occur in order to accomplish the transfer of control. Note that for <ClLinks  term={"go"}><b>go</b></ClLinks>, the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> is the <ClLinks  term={"form"}><i>form</i></ClLinks> within the <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> that is being executed at the time the <ClLinks  term={"go"}><b>go</b></ClLinks> is performed; for <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> is the corresponding <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>; and for <ClLinks  term={"throw"}><b>throw</b></ClLinks>, the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> is the corresponding <ClLinks  term={"catch"}><b>catch</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+When a transfer of control is initiated by <DictionaryLink  term={"go"}><b>go</b></DictionaryLink>, <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>, or <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> the following events occur in order to accomplish the transfer of control. Note that for <DictionaryLink  term={"go"}><b>go</b></DictionaryLink>, the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> is the <ClLinks  term={"form"}><i>form</i></ClLinks> within the <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> that is being executed at the time the <DictionaryLink  term={"go"}><b>go</b></DictionaryLink> is performed; for <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>, the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> is the corresponding <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>; and for <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>, the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> is the corresponding <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -10,11 +10,11 @@ When a transfer of control is initiated by <ClLinks  term={"go"}><b>go</b></ClLi
 
 
 
-2\. The cleanup clauses of any intervening <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> clauses are evaluated. 
+2\. The cleanup clauses of any intervening <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> clauses are evaluated. 
 
 
 
-3\. Intervening dynamic <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of <ClLinks  term={"special"}><b>special</b></ClLinks> variables, <GlossaryTerm styled={true} term={"catch tag"}><i>catch tags</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"condition handler"}><i>condition handlers</i></GlossaryTerm>, and <ClLinks  term={"restart"}><i>restarts</i></ClLinks> are undone. 
+3\. Intervening dynamic <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> variables, <GlossaryTerm styled={true} term={"catch tag"}><i>catch tags</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"condition handler"}><i>condition handlers</i></GlossaryTerm>, and <ClLinks  term={"restart"}><i>restarts</i></ClLinks> are undone. 
 
 
 
@@ -26,7 +26,7 @@ The extent of an exit being “abandoned” because it is being passed over ends
 
 
 
-Events 2 and 3 are actually performed interleaved, in the order corresponding to the reverse order in which they were established. The effect of this is that the cleanup clauses of an <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> see the same dynamic <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of variables and <GlossaryTerm styled={true} term={"catch tag"}><i>catch tags</i></GlossaryTerm> as were visible when the <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> was entered. 
+Events 2 and 3 are actually performed interleaved, in the order corresponding to the reverse order in which they were established. The effect of this is that the cleanup clauses of an <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> see the same dynamic <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of variables and <GlossaryTerm styled={true} term={"catch tag"}><i>catch tags</i></GlossaryTerm> as were visible when the <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> was entered. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> *name lambda-list function* [*documentation*] *! name* 
+<DictionaryLink  term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> *name lambda-list function* [*documentation*] *! name* 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> defines a <ClLinks  term={"macro"}><i>macro</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> to <ClLinks  term={"read"}><i>read</i></ClLinks> and <ClLinks  term={"write"}><i>write</i></ClLinks> a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+<DictionaryLink  term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> defines a <ClLinks  term={"macro"}><i>macro</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> to <ClLinks  term={"read"}><i>read</i></ClLinks> and <ClLinks  term={"write"}><i>write</i></ClLinks> a <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 
-The arguments to the new <ClLinks  term={"macro"}><i>macro</i></ClLinks> are a <ClLinks  term={"place"}><i>place</i></ClLinks>, followed by the arguments that are supplied in *lambda-list*. <ClLinks  term={"macro"}><i>Macros</i></ClLinks> defined with <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> correctly pass the *environment parameter* to <ClLinks  term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks>. 
+The arguments to the new <ClLinks  term={"macro"}><i>macro</i></ClLinks> are a <ClLinks  term={"place"}><i>place</i></ClLinks>, followed by the arguments that are supplied in *lambda-list*. <ClLinks  term={"macro"}><i>Macros</i></ClLinks> defined with <DictionaryLink  term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> correctly pass the *environment parameter* to <DictionaryLink  term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink>. 
 
 
 
@@ -46,7 +46,7 @@ When the <ClLinks  term={"macro"}><i>macro</i></ClLinks> is invoked, <ClLinks  t
 
 
 
-Except for the issue of avoiding multiple evaluation (see below), the expansion of a <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> is equivalent to the following: 
+Except for the issue of avoiding multiple evaluation (see below), the expansion of a <DictionaryLink  term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> is equivalent to the following: 
 
 
 
@@ -70,15 +70,15 @@ where *arg1*, *arg2*, ..., are the parameters appearing in *lambda-list*; approp
 
 
 
-The <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the macro calls defined by <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> are evaluated as specified in Section 5.1.1.1 (Evaluation of Subforms to Places). 
+The <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the macro calls defined by <DictionaryLink  term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> are evaluated as specified in Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
-*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <ClLinks  term={"function"}><b>function</b></ClLinks>) and to the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
+*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>) and to the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
 
 
 
-If a <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. 
+If a <DictionaryLink  term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. 
 
 
 
@@ -117,7 +117,7 @@ A macro definition is assigned to <ClLinks  term={"name"}><i>name</i></ClLinks>.
 
 
 
-<ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>, <ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, **documentation**, Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+<DictionaryLink  term={"defsetf"}><b>defsetf</b></DictionaryLink>, <DictionaryLink  term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink>, **documentation**, Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 

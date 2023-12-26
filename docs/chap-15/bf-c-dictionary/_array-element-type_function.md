@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-element-type"}><b>array-element-type</b></ClLinks> *array → typespec* 
+<DictionaryLink  term={"array-element-type"}><b>array-element-type</b></DictionaryLink> *array → typespec* 
 
 
 
@@ -64,7 +64,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -72,7 +72,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks>, <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks>, <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks> 
+<DictionaryLink  term={"array"}><b>array</b></DictionaryLink>, <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink>, <DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink>, <DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink> 
 
 
 

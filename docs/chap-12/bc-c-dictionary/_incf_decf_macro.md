@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"incf"}><b>incf</b></ClLinks> <ClLinks  term={"place"}><i>place</i></ClLinks> [*delta-form*] → new-value 
+<DictionaryLink  term={"incf"}><b>incf</b></DictionaryLink> <ClLinks  term={"place"}><i>place</i></ClLinks> [*delta-form*] → new-value 
 
 
 
-<ClLinks  term={"decf"}><b>decf</b></ClLinks> <ClLinks  term={"place"}><i>place</i></ClLinks> [*delta-form*] → new-value 
+<DictionaryLink  term={"decf"}><b>decf</b></DictionaryLink> <ClLinks  term={"place"}><i>place</i></ClLinks> [*delta-form*] → new-value 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-<ClLinks  term={"incf"}><b>incf</b></ClLinks> and <ClLinks  term={"decf"}><b>decf</b></ClLinks> are used for incrementing and decrementing the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"place"}><i>place</i></ClLinks>, respectively. 
+<DictionaryLink  term={"incf"}><b>incf</b></DictionaryLink> and <DictionaryLink  term={"decf"}><b>decf</b></DictionaryLink> are used for incrementing and decrementing the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"place"}><i>place</i></ClLinks>, respectively. 
 
 
 
-The *delta* is added to (in the case of <ClLinks  term={"incf"}><b>incf</b></ClLinks>) or subtracted from (in the case of <ClLinks  term={"decf"}><b>decf</b></ClLinks>) the number in <ClLinks  term={"place"}><i>place</i></ClLinks> and the result is stored in <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+The *delta* is added to (in the case of <DictionaryLink  term={"incf"}><b>incf</b></DictionaryLink>) or subtracted from (in the case of <DictionaryLink  term={"decf"}><b>decf</b></DictionaryLink>) the number in <ClLinks  term={"place"}><i>place</i></ClLinks> and the result is stored in <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 
@@ -91,7 +91,7 @@ n → 1.5
 
 
 
-<ClLinks  term={"+"}><b>+</b></ClLinks>, <ClLinks  term={"-"}><b>-</b></ClLinks>, <ClLinks  term={"1+"}><b>1+</b></ClLinks>, **1-**, <ClLinks  term={"setf"}><b>setf</b></ClLinks> 
+<ClLinks  term={"+"}><b>+</b></ClLinks>, <DictionaryLink  term={"-"}><b>-</b></DictionaryLink>, <ClLinks  term={"1+"}><b>1+</b></ClLinks>, **1-**, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> 
 
 
 

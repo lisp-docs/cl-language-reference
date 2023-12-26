@@ -2,7 +2,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"defsetf lambda list"}><i>defsetf lambda list</i></GlossaryTerm> is used by <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>. 
+A <GlossaryTerm styled={true} term={"defsetf lambda list"}><i>defsetf lambda list</i></GlossaryTerm> is used by <DictionaryLink  term={"defsetf"}><b>defsetf</b></DictionaryLink>. 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-The macro <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> is used to define a new named <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+The macro <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> is used to define a new named <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ The definition of a <ClLinks  term={"class"}><i>class</i></ClLinks> includes:
 
 
 
-The <ClLinks  term={"slot"}><i>slot</i></ClLinks> options and <ClLinks  term={"class"}><i>class</i></ClLinks> options of the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form provide mechanisms for the following: *•* Supplying a default initial value <ClLinks  term={"form"}><i>form</i></ClLinks> for a given <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+The <ClLinks  term={"slot"}><i>slot</i></ClLinks> options and <ClLinks  term={"class"}><i>class</i></ClLinks> options of the <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form provide mechanisms for the following: *•* Supplying a default initial value <ClLinks  term={"form"}><i>form</i></ClLinks> for a given <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
 
 
 

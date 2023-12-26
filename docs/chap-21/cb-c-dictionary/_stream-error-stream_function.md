@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"stream-error-stream"}><b>stream-error-stream</b></ClLinks> *condition → stream* 
+<DictionaryLink  term={"stream-error-stream"}><b>stream-error-stream</b></DictionaryLink> *condition → stream* 
 
 
 

@@ -14,19 +14,19 @@ Like an <GlossaryTerm styled={true} term={"ordinary function"}><i>ordinary funct
 
 
 
-<GlossaryTerm styled={true} term={"generic function"}><i>Generic functions</i></GlossaryTerm> are true <ClLinks  term={"function"}><i>functions</i></ClLinks> that can be passed as <ClLinks  term={"argument"}><i>arguments</i></ClLinks> and used as the first <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <ClLinks  term={"funcall"}><b>funcall</b></ClLinks> and <ClLinks  term={"apply"}><b>apply</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"generic function"}><i>Generic functions</i></GlossaryTerm> are true <ClLinks  term={"function"}><i>functions</i></ClLinks> that can be passed as <ClLinks  term={"argument"}><i>arguments</i></ClLinks> and used as the first <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink> and <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>. 
 
 
 
-A <ClLinks  term={"binding"}><i>binding</i></ClLinks> of a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> to a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> can be *established* in one of several ways. It can be *established* in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm> by <ClLinks  term={"ensure-generic-function"}><b>ensure-generic-function</b></ClLinks>, <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> (implicitly, due to <ClLinks  term={"ensure-generic-function"}><b>ensure-generic-function</b></ClLinks>) or <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> (also implicitly, due to <ClLinks  term={"ensure-generic-function"}><b>ensure-generic-function</b></ClLinks>). No <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> mechanism is provided for *establishing* a <ClLinks  term={"binding"}><i>binding</i></ClLinks> of a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> to a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm>. 
+A <ClLinks  term={"binding"}><i>binding</i></ClLinks> of a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> to a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> can be *established* in one of several ways. It can be *established* in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm> by <DictionaryLink  term={"ensure-generic-function"}><b>ensure-generic-function</b></DictionaryLink>, <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> (implicitly, due to <DictionaryLink  term={"ensure-generic-function"}><b>ensure-generic-function</b></DictionaryLink>) or <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> (also implicitly, due to <DictionaryLink  term={"ensure-generic-function"}><b>ensure-generic-function</b></DictionaryLink>). No <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> mechanism is provided for *establishing* a <ClLinks  term={"binding"}><i>binding</i></ClLinks> of a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> to a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm>. 
 
 
 
-When a <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> form is evaluated, one of three actions is taken (due to <ClLinks  term={"ensure-generic-function"}><b>ensure-generic-function</b></ClLinks>): 
+When a <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> form is evaluated, one of three actions is taken (due to <DictionaryLink  term={"ensure-generic-function"}><b>ensure-generic-function</b></DictionaryLink>): 
 
 
 
-*•* If a generic function of the given name already exists, the existing generic function object is modified. Methods specified by the current <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> form are added, and any methods in the existing generic function that were defined by a previous <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> form are removed. Methods added by the current <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> form might replace methods defined by <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks>, <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks>, or <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>. No other methods in the generic function are affected or replaced. 
+*•* If a generic function of the given name already exists, the existing generic function object is modified. Methods specified by the current <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> form are added, and any methods in the existing generic function that were defined by a previous <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> form are removed. Methods added by the current <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> form might replace methods defined by <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink>, <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, <DictionaryLink  term={"define-condition"}><b>define-condition</b></DictionaryLink>, or <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink>. No other methods in the generic function are affected or replaced. 
 
 
 
@@ -34,11 +34,11 @@ When a <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> form is evaluat
 
 
 
-*•* Otherwise a generic function is created with the methods specified by the method definitions in the <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> form. 
+*•* Otherwise a generic function is created with the methods specified by the method definitions in the <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> form. 
 
 
 
-Some <ClLinks  term={"operator"}><i>operators</i></ClLinks> permit specification of the options of a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, such as the <ClLinks  term={"type"}><i>type</i></ClLinks> of <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm> it uses or its <GlossaryTerm styled={true} term={"argument precedence order"}><i>argument precedence order</i></GlossaryTerm> . These <ClLinks  term={"operator"}><i>operators</i></ClLinks> will be referred to as “operators that specify generic function options.” The only *standardized operator* in this category is <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>. 
+Some <ClLinks  term={"operator"}><i>operators</i></ClLinks> permit specification of the options of a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, such as the <ClLinks  term={"type"}><i>type</i></ClLinks> of <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm> it uses or its <GlossaryTerm styled={true} term={"argument precedence order"}><i>argument precedence order</i></GlossaryTerm> . These <ClLinks  term={"operator"}><i>operators</i></ClLinks> will be referred to as “operators that specify generic function options.” The only *standardized operator* in this category is <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>. 
 
 
 
@@ -70,7 +70,7 @@ Some <ClLinks  term={"operator"}><i>operators</i></ClLinks> define <ClLinks  ter
 
 
 
-Note that of the *standardized method-defining operators* only <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> can specify <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> options. <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> and any *implementation-defined operators* that can specify <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> options are also referred to as “operators that specify generic function options.” 
+Note that of the *standardized method-defining operators* only <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> can specify <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> options. <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> and any *implementation-defined operators* that can specify <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> options are also referred to as “operators that specify generic function options.” 
 
 
 

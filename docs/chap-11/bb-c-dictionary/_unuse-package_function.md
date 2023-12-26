@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> *packages-to-unuse* &amp;optional *package →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> *packages-to-unuse* &amp;optional *package →* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to cease inheriting all the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *packages-to-unuse*; <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> undoes the effects of <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. The *packages-to-unuse* are removed from the <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to cease inheriting all the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *packages-to-unuse*; <DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> undoes the effects of <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>. The *packages-to-unuse* are removed from the <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@ Current state of the package system.
 
 
 
-<ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks  term={"package-use-list"}><b>package-use-list</b></ClLinks> 
+<DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, <DictionaryLink  term={"package-use-list"}><b>package-use-list</b></DictionaryLink> 
 
 
 

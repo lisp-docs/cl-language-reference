@@ -6,15 +6,15 @@ The consequences are undefined if *literal objects* are destructively modified. 
 
 
 
-<ClLinks  term={"random-state"}><b>random-state</b></ClLinks> 
+<DictionaryLink  term={"random-state"}><b>random-state</b></DictionaryLink> 
 
 
 
-Using it as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"random"}><b>random</b></ClLinks>. 
+Using it as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"random"}><b>random</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"cons"}><b>cons</b></ClLinks> 
+<DictionaryLink  term={"cons"}><b>cons</b></DictionaryLink> 
 
 
 
@@ -22,7 +22,7 @@ Changing the <ClLinks  term={"car"}><i>car</i></ClLinks> <sub>1</sub> or <ClLink
 
 
 
-<ClLinks  term={"array"}><b>array</b></ClLinks> 
+<DictionaryLink  term={"array"}><b>array</b></DictionaryLink> 
 
 
 
@@ -38,7 +38,7 @@ Performing a <ClLinks  term={"destructive"}><i>destructive</i></ClLinks> operati
 
 
 
-<ClLinks  term={"hash-table"}><b>hash-table</b></ClLinks> 
+<DictionaryLink  term={"hash-table"}><b>hash-table</b></DictionaryLink> 
 
 
 
@@ -54,7 +54,7 @@ Adding or removing entries from the <GlossaryTerm styled={true} term={"hash tabl
 
 
 
-<ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks> 
+<DictionaryLink  term={"structure-object"}><b>structure-object</b></DictionaryLink> 
 
 
 
@@ -62,7 +62,7 @@ Storing a new value into any slot, or performing a <ClLinks  term={"destructive"
 
 
 
-<ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> 
+<DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink> 
 
 
 
@@ -70,7 +70,7 @@ Storing a new value into any slot, or performing a <ClLinks  term={"destructive"
 
 
 
-Changing the class of the <ClLinks  term={"object"}><i>object</i></ClLinks> (*e.g.*, using the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"change-class"}><b>change-class</b></ClLinks>).  
+Changing the class of the <ClLinks  term={"object"}><i>object</i></ClLinks> (*e.g.*, using the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"change-class"}><b>change-class</b></DictionaryLink>).  
 
 
 
@@ -78,7 +78,7 @@ Changing the class of the <ClLinks  term={"object"}><i>object</i></ClLinks> (*e.
 
 
 
-<ClLinks  term={"readtable"}><b>readtable</b></ClLinks> 
+<DictionaryLink  term={"readtable"}><b>readtable</b></DictionaryLink> 
 
 
 
@@ -94,7 +94,7 @@ Altering the <GlossaryTerm styled={true} term={"reader macro function"}><i>reade
 
 
 
-<ClLinks  term={"stream"}><b>stream</b></ClLinks> 
+<DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink> 
 
 
 
@@ -106,11 +106,11 @@ All other standardized types
 
 
 
-[This category includes, for example, <ClLinks  term={"character"}><b>character</b></ClLinks>, <ClLinks  term={"condition"}><b>condition</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, 
+[This category includes, for example, <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>, <DictionaryLink  term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, 
 
 
 
-<ClLinks  term={"method-combination"}><b>method-combination</b></ClLinks>, <ClLinks  term={"method"}><b>method</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"package"}><b>package</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"restart"}><b>restart</b></ClLinks>, and <ClLinks  term={"symbol"}><b>symbol</b></ClLinks>.] There are no *standardized destructive* operations defined on <ClLinks  term={"object"}><i>objects</i></ClLinks> of these <ClLinks  term={"type"}><i>types</i></ClLinks>. 
+<DictionaryLink  term={"method-combination"}><b>method-combination</b></DictionaryLink>, <DictionaryLink  term={"method"}><b>method</b></DictionaryLink>, <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink  term={"package"}><b>package</b></DictionaryLink>, <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"restart"}><b>restart</b></DictionaryLink>, and <DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink>.] There are no *standardized destructive* operations defined on <ClLinks  term={"object"}><i>objects</i></ClLinks> of these <ClLinks  term={"type"}><i>types</i></ClLinks>. 
 
 
 

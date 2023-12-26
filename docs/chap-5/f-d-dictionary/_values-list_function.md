@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"values-list"}><b>values-list</b></ClLinks> *list ! \{element\}*\* 
+<DictionaryLink  term={"values-list"}><b>values-list</b></DictionaryLink> *list ! \{element\}*\* 
 
 
 
@@ -41,7 +41,7 @@ Returns the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
+Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
@@ -49,7 +49,7 @@ Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its a
 
 
 
-<ClLinks  term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks>, <ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks>, <ClLinks  term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks>, <ClLinks  term={"values"}><b>values</b></ClLinks> 
+<DictionaryLink  term={"multiple-value-bind"}><b>multiple-value-bind</b></DictionaryLink>, <DictionaryLink  term={"multiple-value-list"}><b>multiple-value-list</b></DictionaryLink>, <DictionaryLink  term={"multiple-values-limit"}><b>multiple-values-limit</b></DictionaryLink>, <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> 
 
 
 

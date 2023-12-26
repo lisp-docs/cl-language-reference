@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></ClLinks> *host → translations* 
+<DictionaryLink  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></DictionaryLink> *host → translations* 
 
 
 
@@ -39,7 +39,7 @@
 
 
 
-<ClLinks  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></ClLinks> 
+<DictionaryLink  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></DictionaryLink> 
 
 
 
@@ -55,11 +55,11 @@ Returns the host’s <ClLinks  term={"list"}><i>list</i></ClLinks> of translatio
 
 
 
-When setting the translations list, each *from-wildcard* can be a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> whose host is *host* or a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring parseable by (parse-namestring *string host*), where *host* represents the appropriate <ClLinks  term={"object"}><i>object</i></ClLinks> as defined by <ClLinks  term={"parse-namestring"}><b>parse-namestring</b></ClLinks>. Each *to-wildcard* can be anything coercible to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> by (pathname *to-wildcard*). If *to-wildcard* coerces to a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, <ClLinks  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></ClLinks> will perform repeated translation steps when it uses it. 
+When setting the translations list, each *from-wildcard* can be a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> whose host is *host* or a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> namestring parseable by (parse-namestring *string host*), where *host* represents the appropriate <ClLinks  term={"object"}><i>object</i></ClLinks> as defined by <DictionaryLink  term={"parse-namestring"}><b>parse-namestring</b></DictionaryLink>. Each *to-wildcard* can be anything coercible to a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> by (pathname *to-wildcard*). If *to-wildcard* coerces to a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, <DictionaryLink  term={"translate-logical-pathname"}><b>translate-logical-pathname</b></DictionaryLink> will perform repeated translation steps when it uses it. 
 
 
 
-*host* is either the host component of a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> or a <ClLinks  term={"string"}><i>string</i></ClLinks> that has been defined as a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> host name by <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></ClLinks>. 
+*host* is either the host component of a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> or a <ClLinks  term={"string"}><i>string</i></ClLinks> that has been defined as a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> host name by <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"logical-pathname-translations"}><b>logical-pathname-translations</b></DictionaryLink>. 
 
 
 
@@ -172,7 +172,7 @@ When setting the translations list, each *from-wildcard* can be a <GlossaryTerm 
 
 
 
-If *host* is incorrectly supplied, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled. 
+If *host* is incorrectly supplied, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -180,7 +180,7 @@ If *host* is incorrectly supplied, an error of <ClLinks  term={"type"}><i>type</
 
 
 
-<ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 19.1.2 (Pathnames as Filenames) 
 
 
 

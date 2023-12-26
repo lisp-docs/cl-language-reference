@@ -35,7 +35,7 @@ sidebar_position: 117
 
 
 
-<ClLinks  term={"unintern"}><b>unintern</b></ClLinks> *v.t.* (a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) to make the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> not be <ClLinks  term={"present"}><i>present</i></ClLinks> in that <ClLinks  term={"package"}><i>package</i></ClLinks>. (The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> might continue to be <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> by inheritance.) 
+<DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> *v.t.* (a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) to make the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> not be <ClLinks  term={"present"}><i>present</i></ClLinks> in that <ClLinks  term={"package"}><i>package</i></ClLinks>. (The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> might continue to be <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> by inheritance.) 
 
 
 
@@ -55,7 +55,7 @@ sidebar_position: 117
 
 
 
-*registry*. An <GlossaryTerm styled={true} term={"unregistered package"}><i>unregistered package</i></GlossaryTerm> has no <ClLinks  term={"name"}><i>name</i></ClLinks>; *i.e.*, its <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks>. 
+*registry*. An <GlossaryTerm styled={true} term={"unregistered package"}><i>unregistered package</i></GlossaryTerm> has no <ClLinks  term={"name"}><i>name</i></ClLinks>; *i.e.*, its <ClLinks  term={"name"}><i>name</i></ClLinks> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink>. 
 
 
 
@@ -79,7 +79,7 @@ to substitute an <GlossaryTerm styled={true} term={"actual array element type"}>
 
 
 
-when choosing an appropriately *specialized array* representation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></ClLinks>. 2. (when creating a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ) to substitute an <GlossaryTerm styled={true} term={"actual complex part type"}><i>actual complex part type</i></GlossaryTerm> for an <GlossaryTerm styled={true} term={"expressed complex part type"}><i>expressed complex part type</i></GlossaryTerm> when choosing an appropriately *specialized complex* representation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks>. 
+when choosing an appropriately *specialized array* representation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"upgraded-array-element-type"}><b>upgraded-array-element-type</b></DictionaryLink>. 2. (when creating a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ) to substitute an <GlossaryTerm styled={true} term={"actual complex part type"}><i>actual complex part type</i></GlossaryTerm> for an <GlossaryTerm styled={true} term={"expressed complex part type"}><i>expressed complex part type</i></GlossaryTerm> when choosing an appropriately *specialized complex* representation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></DictionaryLink>. 
 
 
 
@@ -87,7 +87,7 @@ when choosing an appropriately *specialized array* representation. See the <ClLi
 
 
 
-**upgraded complex part type** *n.* (of a <ClLinks  term={"type"}><i>type</i></ClLinks>) a <ClLinks  term={"type"}><i>type</i></ClLinks> that is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> and that is used instead of the <ClLinks  term={"type"}><i>type</i></ClLinks> whenever the <ClLinks  term={"type"}><i>type</i></ClLinks> is used as a <GlossaryTerm styled={true} term={"complex part type"}><i>complex part type</i></GlossaryTerm> for object creation or type discrimination. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></ClLinks>. 
+**upgraded complex part type** *n.* (of a <ClLinks  term={"type"}><i>type</i></ClLinks>) a <ClLinks  term={"type"}><i>type</i></ClLinks> that is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> and that is used instead of the <ClLinks  term={"type"}><i>type</i></ClLinks> whenever the <ClLinks  term={"type"}><i>type</i></ClLinks> is used as a <GlossaryTerm styled={true} term={"complex part type"}><i>complex part type</i></GlossaryTerm> for object creation or type discrimination. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"upgraded-complex-part-type"}><b>upgraded-complex-part-type</b></DictionaryLink>. 
 
 
 

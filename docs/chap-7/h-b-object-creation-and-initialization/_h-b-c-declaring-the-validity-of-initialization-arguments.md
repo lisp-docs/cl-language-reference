@@ -2,7 +2,7 @@
 
 
 
-Initialization arguments are checked for validity in each of the four situations that use them. An initialization argument may be valid in one situation and not another. For example, the system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> for <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> defined for the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks> checks the validity of its initialization arguments and signals an error if an initialization argument is supplied that is not declared as valid in that situation. 
+Initialization arguments are checked for validity in each of the four situations that use them. An initialization argument may be valid in one situation and not another. For example, the system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> for <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> defined for the <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink> checks the validity of its initialization arguments and signals an error if an initialization argument is supplied that is not declared as valid in that situation. 
 
 
 
@@ -10,7 +10,7 @@ There are two means for declaring initialization arguments valid.
 
 
 
-*•* Initialization arguments that fill <ClLinks  term={"slot"}><i>slots</i></ClLinks> are declared as valid by the :initarg slot option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>. The :initarg slot option is inherited from *superclasses*. Thus the set of valid 
+*•* Initialization arguments that fill <ClLinks  term={"slot"}><i>slots</i></ClLinks> are declared as valid by the :initarg slot option to <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>. The :initarg slot option is inherited from *superclasses*. Thus the set of valid 
 
 
 
@@ -34,11 +34,11 @@ initialization arguments that fill <ClLinks  term={"slot"}><i>slots</i></ClLinks
 
 
 
-– Making an <ClLinks  term={"instance"}><i>instance</i></ClLinks> of a <ClLinks  term={"class"}><i>class</i></ClLinks>: <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks>, <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>, and 
+– Making an <ClLinks  term={"instance"}><i>instance</i></ClLinks> of a <ClLinks  term={"class"}><i>class</i></ClLinks>: <DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink>, <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>, and 
 
 
 
-<ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. Initialization arguments declared as valid by these <ClLinks  term={"method"}><i>methods</i></ClLinks> are 
+<DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>. Initialization arguments declared as valid by these <ClLinks  term={"method"}><i>methods</i></ClLinks> are 
 
 
 
@@ -46,7 +46,7 @@ valid when making an <ClLinks  term={"instance"}><i>instance</i></ClLinks> of a 
 
 
 
-– Re-initializing an <ClLinks  term={"instance"}><i>instance</i></ClLinks>: <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> and <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. Initializa tion arguments declared as valid by these <ClLinks  term={"method"}><i>methods</i></ClLinks> are valid when re-initializing an 
+– Re-initializing an <ClLinks  term={"instance"}><i>instance</i></ClLinks>: <DictionaryLink  term={"reinitialize-instance"}><b>reinitialize-instance</b></DictionaryLink> and <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>. Initializa tion arguments declared as valid by these <ClLinks  term={"method"}><i>methods</i></ClLinks> are valid when re-initializing an 
 
 
 
@@ -58,7 +58,7 @@ valid when making an <ClLinks  term={"instance"}><i>instance</i></ClLinks> of a 
 
 
 
-**update-instance-for-redefined-class** and <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. Initialization ar 
+**update-instance-for-redefined-class** and <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>. Initialization ar 
 
 
 
@@ -74,7 +74,7 @@ to conform to a redefined <ClLinks  term={"class"}><i>class</i></ClLinks>.
 
 
 
-**update-instance-for-different-class** and <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. Initialization 
+**update-instance-for-different-class** and <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>. Initialization 
 
 
 
@@ -86,7 +86,7 @@ to conform to the definition of a different <ClLinks  term={"class"}><i>class</i
 
 
 
-The set of valid initialization arguments for a <ClLinks  term={"class"}><i>class</i></ClLinks> is the set of valid initialization arguments that either fill <ClLinks  term={"slot"}><i>slots</i></ClLinks> or supply arguments to <ClLinks  term={"method"}><i>methods</i></ClLinks>, along with the predefined initialization argument :allow-other-keys. The default value for :allow-other-keys is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. Validity checking of initialization arguments is disabled if the value of the initialization argument :allow-other-keys is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+The set of valid initialization arguments for a <ClLinks  term={"class"}><i>class</i></ClLinks> is the set of valid initialization arguments that either fill <ClLinks  term={"slot"}><i>slots</i></ClLinks> or supply arguments to <ClLinks  term={"method"}><i>methods</i></ClLinks>, along with the predefined initialization argument :allow-other-keys. The default value for :allow-other-keys is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. Validity checking of initialization arguments is disabled if the value of the initialization argument :allow-other-keys is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 

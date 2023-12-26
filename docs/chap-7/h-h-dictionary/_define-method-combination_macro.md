@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> <ClLinks  term={"name"}><i>name</i></ClLinks> [[ *↓short-form-option* ]] 
+<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> <ClLinks  term={"name"}><i>name</i></ClLinks> [[ *↓short-form-option* ]] 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> *name lambda-list* 
+<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> *name lambda-list* 
 
 
 
@@ -78,7 +78,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -106,7 +106,7 @@
 
 
 
-<ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> 
+<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> 
 
 
 
@@ -146,11 +146,11 @@
 
 
 
-The macro <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> is used to define new types of method combination. 
+The macro <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> is used to define new types of method combination. 
 
 
 
-There are two forms of <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks>. The short form is a simple facility for the cases that are expected to be most commonly needed. The long form is more powerful but more verbose. It resembles <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> in that the body is an expression, usually using backquote, that computes a <ClLinks  term={"form"}><i>form</i></ClLinks>. Thus arbitrary control structures can be implemented. The long form also allows 
+There are two forms of <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>. The short form is a simple facility for the cases that are expected to be most commonly needed. The long form is more powerful but more verbose. It resembles <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> in that the body is an expression, usually using backquote, that computes a <ClLinks  term={"form"}><i>form</i></ClLinks>. Thus arbitrary control structures can be implemented. The long form also allows 
 
 
 
@@ -162,7 +162,7 @@ arbitrary processing of method <ClLinks  term={"qualifier"}><i>qualifiers</i></C
 
 
 
-The short form syntax of <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> is recognized when the sec ond <ClLinks  term={"subform"}><i>subform</i></ClLinks> is a <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> symbol or is not present. When the short form is 
+The short form syntax of <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> is recognized when the sec ond <ClLinks  term={"subform"}><i>subform</i></ClLinks> is a <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> symbol or is not present. When the short form is 
 
 
 
@@ -194,7 +194,7 @@ avoids the overhead of a <ClLinks  term={"function"}><i>function</i></ClLinks> c
 
 
 
-operators such as <ClLinks  term={"progn"}><b>progn</b></ClLinks>, <ClLinks  term={"and"}><b>and</b></ClLinks>, +, and <ClLinks  term={"max"}><b>max</b></ClLinks>. 
+operators such as <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink>, <DictionaryLink  term={"and"}><b>and</b></DictionaryLink>, +, and <DictionaryLink  term={"max"}><b>max</b></DictionaryLink>. 
 
 
 
@@ -210,7 +210,7 @@ operators such as <ClLinks  term={"progn"}><b>progn</b></ClLinks>, <ClLinks  ter
 
 
 
-<ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> 
+<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> 
 
 
 
@@ -226,7 +226,7 @@ A method combination procedure defined in this way recognizes two roles for meth
 
 
 
-<ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> can only be used in <GlossaryTerm styled={true} term={"around method"}><i>around methods</i></GlossaryTerm>; it cannot be used in primary methods defined by the short form of the <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> macro. 
+<DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> can only be used in <GlossaryTerm styled={true} term={"around method"}><i>around methods</i></GlossaryTerm>; it cannot be used in primary methods defined by the short form of the <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> macro. 
 
 
 
@@ -246,11 +246,11 @@ For a discussion of built-in method combination types, see Section 7.6.6.4 (Buil
 
 
 
-The long form syntax of <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> is recognized when the second <ClLinks  term={"subform"}><i>subform</i></ClLinks> is a list. 
+The long form syntax of <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> is recognized when the second <ClLinks  term={"subform"}><i>subform</i></ClLinks> is a list. 
 
 
 
-The *lambda-list* receives any arguments provided after the <ClLinks  term={"name"}><i>name</i></ClLinks> of the method combination type in the :method-combination option to <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>. 
+The *lambda-list* receives any arguments provided after the <ClLinks  term={"name"}><i>name</i></ClLinks> of the method combination type in the :method-combination option to <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>. 
 
 
 
@@ -258,19 +258,15 @@ A list of method group specifiers follows. Each specifier selects a subset of th
 
 
 
-The <ClLinks  term={"car"}><i>car</i></ClLinks> of each *method-group-specifier* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which <ClLinks  term={"name"}><i>names</i></ClLinks> a <ClLinks  term={"variable"}><i>variable</i></ClLinks>. During the execution of the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the body of <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks>, this <ClLinks  term={"variable"}><i>variable</i></ClLinks> is bound to a list of the <ClLinks  term={"method"}><i>methods</i></ClLinks> in the method group. The <ClLinks  term={"method"}><i>methods</i></ClLinks> in this list occur in the order specified by the :order option. 
+The <ClLinks  term={"car"}><i>car</i></ClLinks> of each *method-group-specifier* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which <ClLinks  term={"name"}><i>names</i></ClLinks> a <ClLinks  term={"variable"}><i>variable</i></ClLinks>. During the execution of the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the body of <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>, this <ClLinks  term={"variable"}><i>variable</i></ClLinks> is bound to a list of the <ClLinks  term={"method"}><i>methods</i></ClLinks> in the method group. The <ClLinks  term={"method"}><i>methods</i></ClLinks> in this list occur in the order specified by the :order option. 
 
 
 
-If *qualifier-pattern* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> it must be **\***. A method matches a *qualifier-pattern* if the method’s list of <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> is <ClLinks  term={"equal"}><b>equal</b></ClLinks> to the *qualifier-pattern* (except that the symbol **\*** in a *qualifier-pattern* matches anything). Thus a *qualifier-pattern* can be one of the following: the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>, which matches <GlossaryTerm styled={true} term={"unqualified method"}><i>unqualified methods</i></GlossaryTerm>; the symbol **\***, which matches all methods; a true list, which matches methods with the same number of <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> as the length of the list when each <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> matches the corresponding list element; or a dotted list that ends 
-
-
+If *qualifier-pattern* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> it must be **\***. A method matches a *qualifier-pattern* if the method’s list of <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> is <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> to the *qualifier-pattern* (except that the symbol **\*** in a *qualifier-pattern* matches anything). Thus a *qualifier-pattern* can be one of the following: the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>, which matches <GlossaryTerm styled={true} term={"unqualified method"}><i>unqualified methods</i></GlossaryTerm>; the symbol **\***, which matches all methods; a true list, which matches methods with the same number of <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> as the length of the list when each <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> matches the corresponding list element; or a dotted list that ends 
 
 
 
 
-
- 
 
 
 
@@ -278,7 +274,11 @@ If *qualifier-pattern* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> it
 
 
 
-<ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> 
 
 
 
@@ -290,11 +290,11 @@ Each applicable method is tested against the *qualifier-patterns* and <ClLinks  
 
 
 
-The <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> function can appear instead of *qualifier-patterns* in a method group specifier. The <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> is called for each method that has not been assigned to an earlier method group; it is called with one argument, the method’s *qualifier list*. The <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> should return true if the method is to be a member of the method group. A <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> can be distinguished from a *qualifier-pattern* because it is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> other than <ClLinks  term={"nil"}><b>nil</b></ClLinks> or **\***. 
+The <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> function can appear instead of *qualifier-patterns* in a method group specifier. The <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> is called for each method that has not been assigned to an earlier method group; it is called with one argument, the method’s *qualifier list*. The <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> should return true if the method is to be a member of the method group. A <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> can be distinguished from a *qualifier-pattern* because it is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> other than <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> or **\***. 
 
 
 
-If there is an applicable method that does not fall into any method group, the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"invalid-method-error"}><b>invalid-method-error</b></ClLinks> is called. 
+If there is an applicable method that does not fall into any method group, the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"invalid-method-error"}><b>invalid-method-error</b></DictionaryLink> is called. 
 
 
 
@@ -318,7 +318,7 @@ expected to be concise. This keyword option allows the description of a method
 
 
 
-<ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> . In most cases, *format-control* will not contain any <ClLinks  term={"format"}><b>format</b></ClLinks> directives, 
+<ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> . In most cases, *format-control* will not contain any <DictionaryLink  term={"format"}><b>format</b></DictionaryLink> directives, 
 
 
 
@@ -354,19 +354,15 @@ applicable methods match the <ClLinks  term={"qualifier"}><i>qualifier</i></ClLi
 
 
 
-is signaled. If :required is not supplied, it defaults to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+is signaled. If :required is not supplied, it defaults to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-The use of method group specifiers provides a convenient syntax to select methods, to divide them among the possible roles, and to perform the necessary error checking. It is possible to perform further filtering of methods in the body <ClLinks  term={"form"}><i>forms</i></ClLinks> by using normal list-processing operations and the functions <ClLinks  term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks> and <ClLinks  term={"invalid-method-error"}><b>invalid-method-error</b></ClLinks>. 
+The use of method group specifiers provides a convenient syntax to select methods, to divide them among the possible roles, and to perform the necessary error checking. It is possible to perform further filtering of methods in the body <ClLinks  term={"form"}><i>forms</i></ClLinks> by using normal list-processing operations and the functions <DictionaryLink  term={"method-qualifiers"}><b>method-qualifiers</b></DictionaryLink> and <DictionaryLink  term={"invalid-method-error"}><b>invalid-method-error</b></DictionaryLink>. 
 
 
 
-It is permissible to use <ClLinks  term={"setq"}><b>setq</b></ClLinks> on the variables named in the method group specifiers and 
-
-
-
- 
+It is permissible to use <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> on the variables named in the method group specifiers and 
 
 
 
@@ -374,7 +370,11 @@ It is permissible to use <ClLinks  term={"setq"}><b>setq</b></ClLinks> on the va
 
 
 
-<ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> 
 
 
 
@@ -382,15 +382,15 @@ to bind additional variables. It is also possible to bypass the method group spe
 
 
 
-The body <ClLinks  term={"form"}><i>forms</i></ClLinks> compute and return the <ClLinks  term={"form"}><i>form</i></ClLinks> that specifies how the methods are combined, that is, the e↵ective method. The e↵ective method is evaluated in the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> augmented with a local macro definition for <ClLinks  term={"call-method"}><b>call-method</b></ClLinks> and with bindings named by symbols not <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> from the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>. Given a method object in one of the <ClLinks  term={"list"}><i>lists</i></ClLinks> produced by the method group specifiers and a <ClLinks  term={"list"}><i>list</i></ClLinks> of next methods, <ClLinks  term={"call-method"}><b>call-method</b></ClLinks> will invoke the method such that <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> has available the next methods. 
+The body <ClLinks  term={"form"}><i>forms</i></ClLinks> compute and return the <ClLinks  term={"form"}><i>form</i></ClLinks> that specifies how the methods are combined, that is, the e↵ective method. The e↵ective method is evaluated in the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> augmented with a local macro definition for <DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink> and with bindings named by symbols not <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> from the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>. Given a method object in one of the <ClLinks  term={"list"}><i>lists</i></ClLinks> produced by the method group specifiers and a <ClLinks  term={"list"}><i>list</i></ClLinks> of next methods, <DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink> will invoke the method such that <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> has available the next methods. 
 
 
 
-When an e↵ective method has no e↵ect other than to call a single method, some implementations employ an optimization that uses the single method directly as the e↵ective method, thus avoiding the need to create a new e↵ective method. This optimization is active when the e↵ective method form consists entirely of an invocation of the <ClLinks  term={"call-method"}><b>call-method</b></ClLinks> macro whose first <ClLinks  term={"subform"}><i>subform</i></ClLinks> is a method object and whose second <ClLinks  term={"subform"}><i>subform</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks> or unsupplied. Each <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> body is responsible for stripping o↵ redundant invocations of <ClLinks  term={"progn"}><b>progn</b></ClLinks>, <ClLinks  term={"and"}><b>and</b></ClLinks>, <ClLinks  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks>, and the like, if this optimization is desired. 
+When an e↵ective method has no e↵ect other than to call a single method, some implementations employ an optimization that uses the single method directly as the e↵ective method, thus avoiding the need to create a new e↵ective method. This optimization is active when the e↵ective method form consists entirely of an invocation of the <DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink> macro whose first <ClLinks  term={"subform"}><i>subform</i></ClLinks> is a method object and whose second <ClLinks  term={"subform"}><i>subform</i></ClLinks> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> or unsupplied. Each <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> body is responsible for stripping o↵ redundant invocations of <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink>, <DictionaryLink  term={"and"}><b>and</b></DictionaryLink>, <DictionaryLink  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></DictionaryLink>, and the like, if this optimization is desired. 
 
 
 
-The list (:arguments . *lambda-list*) can appear before any declarations or <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm>. This form is useful when the method combination type performs some specific behavior as part of the combined method and that behavior needs access to the arguments to the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. Each parameter variable defined by *lambda-list* is bound to a <ClLinks  term={"form"}><i>form</i></ClLinks> that can be inserted into the e↵ective method. When this <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated during execution of the e↵ective method, its value is the corresponding argument to the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>; the consequences of using such a <ClLinks  term={"form"}><i>form</i></ClLinks> as the <ClLinks  term={"place"}><i>place</i></ClLinks> in a <ClLinks  term={"setf"}><b>setf</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> are undefined. Argument correspondence is computed by dividing the :arguments *lambda-list* and the *generic function lambda-list* into three sections: the <GlossaryTerm styled={true} term={"required parameter"}><i>required parameters</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameters</i></GlossaryTerm>, and the <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> and <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameters</i></GlossaryTerm>. The <ClLinks  term={"argument"}><i>arguments</i></ClLinks> supplied to the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> for a particular <ClLinks  term={"call"}><i>call</i></ClLinks> are also divided into three sections; the required <ClLinks  term={"argument"}><i>arguments</i></ClLinks> section contains as many <ClLinks  term={"argument"}><i>arguments</i></ClLinks> as the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> has <GlossaryTerm styled={true} term={"required parameter"}><i>required parameters</i></GlossaryTerm>, the optional <ClLinks  term={"argument"}><i>arguments</i></ClLinks> section contains as many arguments as the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> has <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameters</i></GlossaryTerm>, and the keyword/rest <ClLinks  term={"argument"}><i>arguments</i></ClLinks> section contains the remaining arguments. Each <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> in the required and optional sections of the :arguments *lambda-list* accesses the argument at the same position in the corresponding section of the <ClLinks  term={"argument"}><i>arguments</i></ClLinks>. If the section of the :arguments *lambda-list* is shorter, extra <ClLinks  term={"argument"}><i>arguments</i></ClLinks> are ignored. If the section of the :arguments *lambda-list* is longer, excess <GlossaryTerm styled={true} term={"required parameter"}><i>required parameters</i></GlossaryTerm> are bound to forms that evaluate to <ClLinks  term={"nil"}><b>nil</b></ClLinks> and excess <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameters</i></GlossaryTerm> are <ClLinks  term={"bound"}><i>bound</i></ClLinks> to their initforms. The <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameters</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameters</i></GlossaryTerm> in the :arguments *lambda-list* access the keyword/rest section of the <ClLinks  term={"argument"}><i>arguments</i></ClLinks>. If the :arguments *lambda-list* contains **&amp;key**, it behaves as if it also contained **&amp;allow-other-keys**. 
+The list (:arguments . *lambda-list*) can appear before any declarations or <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm>. This form is useful when the method combination type performs some specific behavior as part of the combined method and that behavior needs access to the arguments to the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. Each parameter variable defined by *lambda-list* is bound to a <ClLinks  term={"form"}><i>form</i></ClLinks> that can be inserted into the e↵ective method. When this <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated during execution of the e↵ective method, its value is the corresponding argument to the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>; the consequences of using such a <ClLinks  term={"form"}><i>form</i></ClLinks> as the <ClLinks  term={"place"}><i>place</i></ClLinks> in a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> are undefined. Argument correspondence is computed by dividing the :arguments *lambda-list* and the *generic function lambda-list* into three sections: the <GlossaryTerm styled={true} term={"required parameter"}><i>required parameters</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameters</i></GlossaryTerm>, and the <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> and <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameters</i></GlossaryTerm>. The <ClLinks  term={"argument"}><i>arguments</i></ClLinks> supplied to the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> for a particular <ClLinks  term={"call"}><i>call</i></ClLinks> are also divided into three sections; the required <ClLinks  term={"argument"}><i>arguments</i></ClLinks> section contains as many <ClLinks  term={"argument"}><i>arguments</i></ClLinks> as the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> has <GlossaryTerm styled={true} term={"required parameter"}><i>required parameters</i></GlossaryTerm>, the optional <ClLinks  term={"argument"}><i>arguments</i></ClLinks> section contains as many arguments as the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> has <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameters</i></GlossaryTerm>, and the keyword/rest <ClLinks  term={"argument"}><i>arguments</i></ClLinks> section contains the remaining arguments. Each <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> in the required and optional sections of the :arguments *lambda-list* accesses the argument at the same position in the corresponding section of the <ClLinks  term={"argument"}><i>arguments</i></ClLinks>. If the section of the :arguments *lambda-list* is shorter, extra <ClLinks  term={"argument"}><i>arguments</i></ClLinks> are ignored. If the section of the :arguments *lambda-list* is longer, excess <GlossaryTerm styled={true} term={"required parameter"}><i>required parameters</i></GlossaryTerm> are bound to forms that evaluate to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> and excess <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameters</i></GlossaryTerm> are <ClLinks  term={"bound"}><i>bound</i></ClLinks> to their initforms. The <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameters</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameters</i></GlossaryTerm> in the :arguments *lambda-list* access the keyword/rest section of the <ClLinks  term={"argument"}><i>arguments</i></ClLinks>. If the :arguments *lambda-list* contains **&amp;key**, it behaves as if it also contained **&amp;allow-other-keys**. 
 
 
 
@@ -406,7 +406,7 @@ In addition, **&amp;whole** *var* can be placed first in the :arguments *lambda-
 
 
 
-<ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> 
+<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> 
 
 
 
@@ -418,11 +418,11 @@ Erroneous conditions detected by the body should be reported with
 
 
 
-<ClLinks  term={"method-combination-error"}><b>method-combination-error</b></ClLinks> or <ClLinks  term={"invalid-method-error"}><b>invalid-method-error</b></ClLinks>; these <ClLinks  term={"function"}><i>functions</i></ClLinks> add any nec essary contextual information to the error message and will signal the appropriate error. 
+<DictionaryLink  term={"method-combination-error"}><b>method-combination-error</b></DictionaryLink> or <DictionaryLink  term={"invalid-method-error"}><b>invalid-method-error</b></DictionaryLink>; these <ClLinks  term={"function"}><i>functions</i></ClLinks> add any nec essary contextual information to the error message and will signal the appropriate error. 
 
 
 
-The body <ClLinks  term={"form"}><i>forms</i></ClLinks> are evaluated inside of the <ClLinks  term={"binding"}><i>bindings</i></ClLinks> created by the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> and method group specifiers. Declarations at the head of the body are positioned directly inside of <ClLinks  term={"binding"}><i>bindings</i></ClLinks> created by the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> and outside of the <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the method group variables. Thus method group variables cannot be declared in this way. <ClLinks  term={"locally"}><b>locally</b></ClLinks> may be used around the body, however. 
+The body <ClLinks  term={"form"}><i>forms</i></ClLinks> are evaluated inside of the <ClLinks  term={"binding"}><i>bindings</i></ClLinks> created by the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> and method group specifiers. Declarations at the head of the body are positioned directly inside of <ClLinks  term={"binding"}><i>bindings</i></ClLinks> created by the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> and outside of the <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the method group variables. Thus method group variables cannot be declared in this way. <DictionaryLink  term={"locally"}><b>locally</b></DictionaryLink> may be used around the body, however. 
 
 
 
@@ -434,15 +434,15 @@ Within the body <ClLinks  term={"form"}><i>forms</i></ClLinks>, *generic-functio
 
 
 
-<ClLinks  term={"method-combination"}><b>method-combination</b></ClLinks>) and to the *method combination object*. 
+<DictionaryLink  term={"method-combination"}><b>method-combination</b></DictionaryLink>) and to the *method combination object*. 
 
 
 
-Note that two methods with identical specializers, but with di↵erent <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>, are not ordered by the algorithm described in Step 2 of the method selection and combination process described in Section 7.6.6 (Method Selection and Combination). Normally the two methods play di↵erent roles in the e↵ective method because they have di↵erent <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>, and no matter how they are ordered in the result of Step 2, the e↵ective method is the same. If the two methods play the same role and their order matters, an error is signaled. This happens as part of the <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> pattern matching in <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks>. 
+Note that two methods with identical specializers, but with di↵erent <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>, are not ordered by the algorithm described in Step 2 of the method selection and combination process described in Section 7.6.6 (Method Selection and Combination). Normally the two methods play di↵erent roles in the e↵ective method because they have di↵erent <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>, and no matter how they are ordered in the result of Step 2, the e↵ective method is the same. If the two methods play the same role and their order matters, an error is signaled. This happens as part of the <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> pattern matching in <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>. 
 
 
 
-If a <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make the *method combination name* be recognized as a valid *method combination name* in subsequent <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks>. However, the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm> is executed no earlier than when the <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is executed, and possibly as late as the time that <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> that use the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm> are executed. 
+If a <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make the *method combination name* be recognized as a valid *method combination name* in subsequent <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>. However, the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm> is executed no earlier than when the <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> is executed, and possibly as late as the time that <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> that use the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm> are executed. 
 
 
 
@@ -581,19 +581,19 @@ The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> is not required to per
 
 
 
-Method combination types defined with the short form require exactly one <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> per method. An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled if there are applicable methods with no <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> or with <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> that are not supported by the method combination type. At least one primary method must be applicable or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+Method combination types defined with the short form require exactly one <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> per method. An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled if there are applicable methods with no <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> or with <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> that are not supported by the method combination type. At least one primary method must be applicable or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
-If an applicable method does not fall into any method group, the system signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> indicating that the method is invalid for the kind of method combination in use. 
+If an applicable method does not fall into any method group, the system signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> indicating that the method is invalid for the kind of method combination in use. 
 
 
 
-If the value of the :required option is <ClLinks  term={"true"}><i>true</i></ClLinks> and the method group is empty (that is, no applicable methods match the <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> patterns or satisfy the predicate), an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If the value of the :required option is <ClLinks  term={"true"}><i>true</i></ClLinks> and the method group is empty (that is, no applicable methods match the <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> patterns or satisfy the predicate), an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
-If the :order option evaluates to a value other than :most-specific-first or :most-specific-last, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If the :order option evaluates to a value other than :most-specific-first or :most-specific-last, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
@@ -613,7 +613,7 @@ If the :order option evaluates to a value other than :most-specific-first or :mo
 
 
 
-<ClLinks  term={"call-method"}><b>call-method</b></ClLinks>, <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>, **documentation**, <ClLinks  term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks>, <ClLinks  term={"method-combination-error"}><b>method-combination-error</b></ClLinks>, <ClLinks  term={"invalid-method-error"}><b>invalid-method-error</b></ClLinks>, <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>, Section 7.6.6 (Method Selection and Combination), Sec tion 7.6.6.4 (Built-in Method Combination Types), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+<DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink>, <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink>, **documentation**, <DictionaryLink  term={"method-qualifiers"}><b>method-qualifiers</b></DictionaryLink>, <DictionaryLink  term={"method-combination-error"}><b>method-combination-error</b></DictionaryLink>, <DictionaryLink  term={"invalid-method-error"}><b>invalid-method-error</b></DictionaryLink>, <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>, Section 7.6.6 (Method Selection and Combination), Sec tion 7.6.6.4 (Built-in Method Combination Types), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 
@@ -621,7 +621,7 @@ If the :order option evaluates to a value other than :most-specific-first or :mo
 
 
 
-The :method-combination option of <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> is used to specify that a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> should use a particular method combination type. The first argument to the :method-combination option is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a method combination type and the remaining arguments are options for that type. 
+The :method-combination option of <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> is used to specify that a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> should use a particular method combination type. The first argument to the :method-combination option is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a method combination type and the remaining arguments are options for that type. 
 
 
 

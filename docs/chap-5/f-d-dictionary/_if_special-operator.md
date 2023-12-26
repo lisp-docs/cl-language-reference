@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"if"}><b>if</b></ClLinks> *test-form then-form* [*else-form*] → \{result\}\* 
+<DictionaryLink  term={"if"}><b>if</b></DictionaryLink> *test-form then-form* [*else-form*] → \{result\}\* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*Else-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*Else-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<ClLinks  term={"if"}><b>if</b></ClLinks> allows the execution of a <ClLinks  term={"form"}><i>form</i></ClLinks> to be dependent on a single *test-form*. 
+<DictionaryLink  term={"if"}><b>if</b></DictionaryLink> allows the execution of a <ClLinks  term={"form"}><i>form</i></ClLinks> to be dependent on a single *test-form*. 
 
 
 
@@ -73,7 +73,7 @@ First *test-form* is evaluated. If the result is <ClLinks  term={"true"}><i>true
 
 
 
-<ClLinks  term={"cond"}><b>cond</b></ClLinks>, <ClLinks  term={"unless"}><b>unless</b></ClLinks>, <ClLinks  term={"when"}><b>when</b></ClLinks> 
+<DictionaryLink  term={"cond"}><b>cond</b></DictionaryLink>, <DictionaryLink  term={"unless"}><b>unless</b></DictionaryLink>, <DictionaryLink  term={"when"}><b>when</b></DictionaryLink> 
 
 
 

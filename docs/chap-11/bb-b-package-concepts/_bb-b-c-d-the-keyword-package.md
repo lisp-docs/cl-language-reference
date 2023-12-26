@@ -10,7 +10,7 @@ The KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> contains <ClLink
 
 
 
-<ClLinks  term={"symbol"}><i>Symbols</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> are, by definition, of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"keyword"}><b>keyword</b></ClLinks>. 
+<ClLinks  term={"symbol"}><i>Symbols</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> are, by definition, of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"keyword"}><b>keyword</b></DictionaryLink>. 
 
 
 

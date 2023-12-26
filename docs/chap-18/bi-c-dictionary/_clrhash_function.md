@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"clrhash"}><b>clrhash</b></ClLinks> *hash-table → hash-table* 
+<DictionaryLink  term={"clrhash"}><b>clrhash</b></DictionaryLink> *hash-table → hash-table* 
 
 
 

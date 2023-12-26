@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"package-error-package"}><b>package-error-package</b></ClLinks> *condition → package* 
+<DictionaryLink  term={"package-error-package"}><b>package-error-package</b></DictionaryLink> *condition → package* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks>. 
+<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink>. 
 
 
 
@@ -39,7 +39,7 @@ Returns a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for the offe
 
 
 
-<ClLinks  term={"package-error"}><b>package-error</b></ClLinks> 
+<DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> 
 
 
 

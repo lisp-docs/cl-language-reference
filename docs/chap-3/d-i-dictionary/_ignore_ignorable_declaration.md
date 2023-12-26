@@ -6,11 +6,11 @@
 
 
 
-(ignore *\{var* | (<ClLinks  term={"function"}><b>function</b></ClLinks> *fn*)*\}*\*) 
+(ignore *\{var* | (<DictionaryLink  term={"function"}><b>function</b></DictionaryLink> *fn*)*\}*\*) 
 
 
 
-(ignorable *\{var* | (<ClLinks  term={"function"}><b>function</b></ClLinks> *fn*)*\}*\*) 
+(ignorable *\{var* | (<DictionaryLink  term={"function"}><b>function</b></DictionaryLink> *fn*)*\}*\*) 
 
 
 
@@ -46,19 +46,15 @@
 
 
 
-The <ClLinks  term={"ignore"}><b>ignore</b></ClLinks> and <ClLinks  term={"ignorable"}><b>ignorable</b></ClLinks> declarations refer to *for-value references* to *variable bindings* for the *vars* and to *function bindings* for the *fns*. 
+The <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink> and <DictionaryLink  term={"ignorable"}><b>ignorable</b></DictionaryLink> declarations refer to *for-value references* to *variable bindings* for the *vars* and to *function bindings* for the *fns*. 
 
 
 
-An <ClLinks  term={"ignore"}><b>ignore</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> specifies that *for-value references* to the indicated <ClLinks  term={"binding"}><i>bindings</i></ClLinks> will not occur within the scope of the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. Within the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of such a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, it is desirable for a compiler to issue a warning about the presence of either a *for-value reference* to any *var* or *fn*, or a <ClLinks  term={"special"}><b>special</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> for any *var*. 
-
-
+An <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> specifies that *for-value references* to the indicated <ClLinks  term={"binding"}><i>bindings</i></ClLinks> will not occur within the scope of the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. Within the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of such a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, it is desirable for a compiler to issue a warning about the presence of either a *for-value reference* to any *var* or *fn*, or a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> for any *var*. 
 
 
 
 
-
- 
 
 
 
@@ -66,19 +62,23 @@ An <ClLinks  term={"ignore"}><b>ignore</b></ClLinks> <ClLinks  term={"declaratio
 
 
 
-An <ClLinks  term={"ignorable"}><b>ignorable</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> specifies that *for-value references* to the indicated <ClLinks  term={"binding"}><i>bindings</i></ClLinks> might or might not occur within the scope of the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. Within the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of such a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, it is not desirable for a compiler to issue a warning about the presence or absence of either a *for-value reference* to any *var* or *fn*, or a <ClLinks  term={"special"}><b>special</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> for any *var*. 
+ 
 
 
 
-When not within the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of a <ClLinks  term={"ignore"}><b>ignore</b></ClLinks> or <ClLinks  term={"ignorable"}><b>ignorable</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, it is desirable for a compiler to issue a warning about any *var* for which there is neither a *for-value reference* nor a <ClLinks  term={"special"}><b>special</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, or about any *fn* for which there is no *for-value reference*. 
+An <DictionaryLink  term={"ignorable"}><b>ignorable</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> specifies that *for-value references* to the indicated <ClLinks  term={"binding"}><i>bindings</i></ClLinks> might or might not occur within the scope of the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. Within the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of such a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, it is not desirable for a compiler to issue a warning about the presence or absence of either a *for-value reference* to any *var* or *fn*, or a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> for any *var*. 
 
 
 
-Any warning about a “used” or “unused” <ClLinks  term={"binding"}><i>binding</i></ClLinks> must be of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"style-warning"}><b>style-warning</b></ClLinks>, and may not a↵ect program semantics. 
+When not within the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of a <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink> or <DictionaryLink  term={"ignorable"}><b>ignorable</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, it is desirable for a compiler to issue a warning about any *var* for which there is neither a *for-value reference* nor a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, or about any *fn* for which there is no *for-value reference*. 
 
 
 
-The <GlossaryTerm styled={true} term={"stream variable"}><i>stream variables</i></GlossaryTerm> established by <ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks>, <ClLinks  term={"with-open-stream"}><b>with-open-stream</b></ClLinks>, <ClLinks  term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks>, and <ClLinks  term={"with-output-to-string"}><b>with-output-to-string</b></ClLinks>, and all <GlossaryTerm styled={true} term={"iteration variable"}><i>iteration variables</i></GlossaryTerm> are, by definition, always “used”. Using (declare (ignore *v*)), for such a *variable v* has unspecified consequences. 
+Any warning about a “used” or “unused” <ClLinks  term={"binding"}><i>binding</i></ClLinks> must be of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"style-warning"}><b>style-warning</b></DictionaryLink>, and may not a↵ect program semantics. 
+
+
+
+The <GlossaryTerm styled={true} term={"stream variable"}><i>stream variables</i></GlossaryTerm> established by <DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink>, <DictionaryLink  term={"with-open-stream"}><b>with-open-stream</b></DictionaryLink>, <DictionaryLink  term={"with-input-from-string"}><b>with-input-from-string</b></DictionaryLink>, and <DictionaryLink  term={"with-output-to-string"}><b>with-output-to-string</b></DictionaryLink>, and all <GlossaryTerm styled={true} term={"iteration variable"}><i>iteration variables</i></GlossaryTerm> are, by definition, always “used”. Using (declare (ignore *v*)), for such a *variable v* has unspecified consequences. 
 
 
 
@@ -86,7 +86,7 @@ The <GlossaryTerm styled={true} term={"stream variable"}><i>stream variables</i>
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks> 
+<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> 
 
 
 

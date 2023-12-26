@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"get"}><b>get</b></ClLinks> *symbol indicator* &amp;optional *default → value* 
+<DictionaryLink  term={"get"}><b>get</b></DictionaryLink> *symbol indicator* &amp;optional *default → value* 
 
 
 
@@ -27,7 +27,7 @@
 
 
 
-*default*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*default*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -39,7 +39,7 @@
 
 
 
-<ClLinks  term={"get"}><b>get</b></ClLinks> finds a <ClLinks  term={"property"}><i>property</i></ClLinks> on the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> <sub>2</sub> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> is <ClLinks  term={"identical"}><i>identical</i></ClLinks> to <ClLinks  term={"indicator"}><i>indicator</i></ClLinks>, and returns its corresponding <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm>. If there are multiple *properties*<sub>1</sub> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , <ClLinks  term={"get"}><b>get</b></ClLinks> uses the first such <ClLinks  term={"property"}><i>property</i></ClLinks>. If there is no <ClLinks  term={"property"}><i>property</i></ClLinks> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , *default* is returned. 
+<DictionaryLink  term={"get"}><b>get</b></DictionaryLink> finds a <ClLinks  term={"property"}><i>property</i></ClLinks> on the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> <sub>2</sub> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> whose <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> is <ClLinks  term={"identical"}><i>identical</i></ClLinks> to <ClLinks  term={"indicator"}><i>indicator</i></ClLinks>, and returns its corresponding <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm>. If there are multiple *properties*<sub>1</sub> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> uses the first such <ClLinks  term={"property"}><i>property</i></ClLinks>. If there is no <ClLinks  term={"property"}><i>property</i></ClLinks> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , *default* is returned. 
 
 
 
@@ -55,11 +55,11 @@
 
 
 
-<ClLinks  term={"get"}><b>get</b></ClLinks> 
+<DictionaryLink  term={"get"}><b>get</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"get"}><b>get</b></ClLinks> may be used to associate a new <ClLinks  term={"object"}><i>object</i></ClLinks> with an existing indicator already on the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"get"}><b>get</b></ClLinks> associates the *new-value* with the first such <ClLinks  term={"property"}><i>property</i></ClLinks>. When a <ClLinks  term={"get"}><b>get</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is used as a <ClLinks  term={"setf"}><b>setf</b></ClLinks> <ClLinks  term={"place"}><i>place</i></ClLinks>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <ClLinks  term={"value"}><i>value</i></ClLinks> is ignored. 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> may be used to associate a new <ClLinks  term={"object"}><i>object</i></ClLinks> with an existing indicator already on the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> associates the *new-value* with the first such <ClLinks  term={"property"}><i>property</i></ClLinks>. When a <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> is used as a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> <ClLinks  term={"place"}><i>place</i></ClLinks>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <ClLinks  term={"value"}><i>value</i></ClLinks> is ignored. 
 
 
 
@@ -98,7 +98,7 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -106,7 +106,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"getf"}><b>getf</b></ClLinks>, <ClLinks  term={"symbol-plist"}><b>symbol-plist</b></ClLinks>, <ClLinks  term={"remprop"}><b>remprop</b></ClLinks> 
+<DictionaryLink  term={"getf"}><b>getf</b></DictionaryLink>, <DictionaryLink  term={"symbol-plist"}><b>symbol-plist</b></DictionaryLink>, <DictionaryLink  term={"remprop"}><b>remprop</b></DictionaryLink> 
 
 
 
@@ -130,11 +130,11 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"number"}><i>Numbers</i></ClLinks> and <ClLinks  term={"character"}><i>characters</i></ClLinks> are not recommended for use as <ClLinks  term={"indicator"}><i>indicators</i></ClLinks> in portable code since <ClLinks  term={"get"}><b>get</b></ClLinks> tests with <ClLinks  term={"eq"}><b>eq</b></ClLinks> rather than <ClLinks  term={"eql"}><b>eql</b></ClLinks>, and consequently the effect of using such <ClLinks  term={"indicator"}><i>indicators</i></ClLinks> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<ClLinks  term={"number"}><i>Numbers</i></ClLinks> and <ClLinks  term={"character"}><i>characters</i></ClLinks> are not recommended for use as <ClLinks  term={"indicator"}><i>indicators</i></ClLinks> in portable code since <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> tests with <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> rather than <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, and consequently the effect of using such <ClLinks  term={"indicator"}><i>indicators</i></ClLinks> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
-There is no way using <ClLinks  term={"get"}><b>get</b></ClLinks> to distinguish an absent property from one whose value is *default*. However, see <ClLinks  term={"get-properties"}><b>get-properties</b></ClLinks>. 
+There is no way using <DictionaryLink  term={"get"}><b>get</b></DictionaryLink> to distinguish an absent property from one whose value is *default*. However, see <DictionaryLink  term={"get-properties"}><b>get-properties</b></DictionaryLink>. 
 
 
 

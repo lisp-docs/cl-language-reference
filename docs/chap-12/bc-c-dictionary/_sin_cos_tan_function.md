@@ -6,15 +6,15 @@
 
 
 
-<ClLinks  term={"sin"}><b>sin</b></ClLinks> *radians → number* 
+<DictionaryLink  term={"sin"}><b>sin</b></DictionaryLink> *radians → number* 
 
 
 
-<ClLinks  term={"cos"}><b>cos</b></ClLinks> *radians → number* 
+<DictionaryLink  term={"cos"}><b>cos</b></DictionaryLink> *radians → number* 
 
 
 
-<ClLinks  term={"tan"}><b>tan</b></ClLinks> *radians → number* 
+<DictionaryLink  term={"tan"}><b>tan</b></DictionaryLink> *radians → number* 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"sin"}><b>sin</b></ClLinks>, <ClLinks  term={"cos"}><b>cos</b></ClLinks>, and <ClLinks  term={"tan"}><b>tan</b></ClLinks> return the sine, cosine, and tangent, respectively, of *radians*. 
+<DictionaryLink  term={"sin"}><b>sin</b></DictionaryLink>, <DictionaryLink  term={"cos"}><b>cos</b></DictionaryLink>, and <DictionaryLink  term={"tan"}><b>tan</b></DictionaryLink> return the sine, cosine, and tangent, respectively, of *radians*. 
 
 
 
@@ -48,7 +48,7 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *radians* is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *radians* is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
 
 
 
@@ -56,7 +56,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"asin"}><b>asin</b></ClLinks>, <ClLinks  term={"acos"}><b>acos</b></ClLinks>, <ClLinks  term={"atan"}><b>atan</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
+<DictionaryLink  term={"asin"}><b>asin</b></DictionaryLink>, <DictionaryLink  term={"acos"}><b>acos</b></DictionaryLink>, <DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 

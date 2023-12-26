@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks> *input-stream output-stream → two-way-stream* 
+<DictionaryLink  term={"make-two-way-stream"}><b>make-two-way-stream</b></DictionaryLink> *input-stream output-stream → two-way-stream* 
 
 
 
@@ -47,7 +47,7 @@ what-is-read → INPUT...
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *input-stream* is not an *input stream*. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *output-stream* is not an *output stream*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *input-stream* is not an *input stream*. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *output-stream* is not an *output stream*. 
 
 
 

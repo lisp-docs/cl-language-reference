@@ -2,7 +2,7 @@
 
 
 
-Standard method combination is supported by the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>. It is used if no other type of method combination is specified or if the built-in method combination type **standard** is specified. 
+Standard method combination is supported by the <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink>. It is used if no other type of method combination is specified or if the built-in method combination type **standard** is specified. 
 
 
 
@@ -22,7 +22,7 @@ An auxiliary method is a method whose <ClLinks  term={"qualifier"}><i>qualifier<
 
 
 
-*•* An <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> has the keyword :around as its only <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> . An <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> specifies <ClLinks  term={"code"}><i>code</i></ClLinks> that is to be run instead of other <GlossaryTerm styled={true} term={"applicable method"}><i>applicable methods</i></GlossaryTerm>, but which might contain explicit <ClLinks  term={"code"}><i>code</i></ClLinks> which calls some of those *shadowed methods* (via <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>). 
+*•* An <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> has the keyword :around as its only <ClLinks  term={"qualifier"}><i>qualifier</i></ClLinks> . An <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> specifies <ClLinks  term={"code"}><i>code</i></ClLinks> that is to be run instead of other <GlossaryTerm styled={true} term={"applicable method"}><i>applicable methods</i></GlossaryTerm>, but which might contain explicit <ClLinks  term={"code"}><i>code</i></ClLinks> which calls some of those *shadowed methods* (via <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink>). 
 
 
 
@@ -34,7 +34,7 @@ The semantics of standard method combination is as follows:
 
 
 
-*•* Inside the body of an <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm>, <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> can be used to call the <GlossaryTerm styled={true} term={"next method"}><i>next method</i></GlossaryTerm>. When the next method returns, the <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> can execute more code, perhaps based on the returned value or values. The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is invoked if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is used and there is no <GlossaryTerm styled={true} term={"applicable method"}><i>applicable method</i></GlossaryTerm> to call. The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> may be used to determine whether a <GlossaryTerm styled={true} term={"next method"}><i>next method</i></GlossaryTerm> exists. 
+*•* Inside the body of an <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm>, <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> can be used to call the <GlossaryTerm styled={true} term={"next method"}><i>next method</i></GlossaryTerm>. When the next method returns, the <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> can execute more code, perhaps based on the returned value or values. The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is invoked if <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used and there is no <GlossaryTerm styled={true} term={"applicable method"}><i>applicable method</i></GlossaryTerm> to call. The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"next-method-p"}><b>next-method-p</b></DictionaryLink> may be used to determine whether a <GlossaryTerm styled={true} term={"next method"}><i>next method</i></GlossaryTerm> exists. 
 
 
 
@@ -50,11 +50,11 @@ The semantics of standard method combination is as follows:
 
 
 
-*•* If an <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> invokes <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>, the next most specific <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> is called, if one is applicable. If there are no <GlossaryTerm styled={true} term={"around method"}><i>around methods</i></GlossaryTerm> or if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is called by the least specific <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm>, the other methods are called as follows: 
+*•* If an <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> invokes <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink>, the next most specific <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> is called, if one is applicable. If there are no <GlossaryTerm styled={true} term={"around method"}><i>around methods</i></GlossaryTerm> or if <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is called by the least specific <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm>, the other methods are called as follows: 
 
 
 
-– All the <GlossaryTerm styled={true} term={"before method"}><i>before methods</i></GlossaryTerm> are called, in most-specific-first order. Their values are ignored. An error is signaled if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is used in a <GlossaryTerm styled={true} term={"before method"}><i>before method</i></GlossaryTerm>. 
+– All the <GlossaryTerm styled={true} term={"before method"}><i>before methods</i></GlossaryTerm> are called, in most-specific-first order. Their values are ignored. An error is signaled if <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used in a <GlossaryTerm styled={true} term={"before method"}><i>before method</i></GlossaryTerm>. 
 
 
 
@@ -62,7 +62,7 @@ The semantics of standard method combination is as follows:
 
 
 
-method, <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> may be used to call the next most specific primary 
+method, <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> may be used to call the next most specific primary 
 
 
 
@@ -74,15 +74,15 @@ more code, perhaps based on the returned value or values. The generic function
 
 
 
-<ClLinks  term={"no-next-method"}><b>no-next-method</b></ClLinks> is invoked if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is used and there are no more 
+<DictionaryLink  term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is invoked if <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used and there are no more 
 
 
 
-applicable primary methods. The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> may be used to 
+applicable primary methods. The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"next-method-p"}><b>next-method-p</b></DictionaryLink> may be used to 
 
 
 
-determine whether a <GlossaryTerm styled={true} term={"next method"}><i>next method</i></GlossaryTerm> exists. If <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is not used, only 
+determine whether a <GlossaryTerm styled={true} term={"next method"}><i>next method</i></GlossaryTerm> exists. If <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is not used, only 
 
 
 
@@ -94,11 +94,11 @@ the most specific <GlossaryTerm styled={true} term={"primary method"}><i>primary
 
 
 
-ignored. An error is signaled if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is used in an <GlossaryTerm styled={true} term={"after method"}><i>after method</i></GlossaryTerm>. 
+ignored. An error is signaled if <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used in an <GlossaryTerm styled={true} term={"after method"}><i>after method</i></GlossaryTerm>. 
 
 
 
-*•* If no <GlossaryTerm styled={true} term={"around method"}><i>around methods</i></GlossaryTerm> were invoked, the most specific primary method supplies the value or values returned by the generic function. The value or values returned by the invocation of <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> in the least specific <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> are those returned by the most specific primary method. 
+*•* If no <GlossaryTerm styled={true} term={"around method"}><i>around methods</i></GlossaryTerm> were invoked, the most specific primary method supplies the value or values returned by the generic function. The value or values returned by the invocation of <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> in the least specific <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> are those returned by the most specific primary method. 
 
 
 
@@ -114,7 +114,7 @@ By contrast, all <GlossaryTerm styled={true} term={"around method"}><i>around me
 
 
 
-If only primary methods are used and if <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> is not used, only the most specific method is invoked; that is, more specific methods shadow more general ones. 
+If only primary methods are used and if <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is not used, only the most specific method is invoked; that is, more specific methods shadow more general ones. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"vector-pop"}><b>vector-pop</b></ClLinks> *vector → element* 
+<DictionaryLink  term={"vector-pop"}><b>vector-pop</b></DictionaryLink> *vector → element* 
 
 
 
@@ -73,11 +73,11 @@ The value of the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill point
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> is signaled if <ClLinks  term={"vector"}><i>vector</i></ClLinks> does not have a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled if <ClLinks  term={"vector"}><i>vector</i></ClLinks> does not have a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
-If the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is zero, <ClLinks  term={"vector-pop"}><b>vector-pop</b></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks>. 
+If the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is zero, <DictionaryLink  term={"vector-pop"}><b>vector-pop</b></DictionaryLink> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink>. 
 
 
 
@@ -85,7 +85,7 @@ If the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></Gl
 
 
 
-<ClLinks  term={"vector-push"}><b>vector-push</b></ClLinks>, <ClLinks  term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks>, <ClLinks  term={"fill-pointer"}><b>fill-pointer</b></ClLinks> 
+<DictionaryLink  term={"vector-push"}><b>vector-push</b></DictionaryLink>, <DictionaryLink  term={"vector-push-extend"}><b>vector-push-extend</b></DictionaryLink>, <DictionaryLink  term={"fill-pointer"}><b>fill-pointer</b></DictionaryLink> 
 
 
 

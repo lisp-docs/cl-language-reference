@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"real"}><b>real</b></ClLinks>, <ClLinks  term={"number"}><b>number</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"float"}><b>float</b></DictionaryLink>, <DictionaryLink  term={"real"}><b>real</b></DictionaryLink>, <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -22,7 +22,7 @@ range of *e* depends on the implementation and on the type of <ClLinks  term={"f
 
 
 
-The <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, and <ClLinks  term={"long-float"}><b>long-float</b></ClLinks> are <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>. Any two of them must be either *disjoint types* or the *same type*; if the *same type*, then any other <ClLinks  term={"type"}><i>types</i></ClLinks> between them in the above ordering must also be the *same type*. For example, if the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"single-float"}><b>single-float</b></ClLinks> and the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"long-float"}><b>long-float</b></ClLinks> are the *same type*, then the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"double-float"}><b>double-float</b></ClLinks> must be the *same type* also. 
+The <ClLinks  term={"type"}><i>types</i></ClLinks> <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>, <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink>, <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>, and <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink> are <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>. Any two of them must be either *disjoint types* or the *same type*; if the *same type*, then any other <ClLinks  term={"type"}><i>types</i></ClLinks> between them in the above ordering must also be the *same type*. For example, if the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"single-float"}><b>single-float</b></DictionaryLink> and the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"long-float"}><b>long-float</b></DictionaryLink> are the *same type*, then the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink> must be the *same type* also. 
 
 
 
@@ -46,7 +46,7 @@ Abbreviating.
 
 
 
-*lower-limit*, *upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*lower-limit*, *upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-concatenated-stream"}><b>make-concatenated-stream</b></ClLinks> &amp;rest *input-streams → concatenated-stream* 
+<DictionaryLink  term={"make-concatenated-stream"}><b>make-concatenated-stream</b></DictionaryLink> &amp;rest *input-streams → concatenated-stream* 
 
 
 
@@ -38,7 +38,7 @@ Returns a <GlossaryTerm styled={true} term={"concatenated stream"}><i>concatenat
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if any argument is not an *input stream*. 
+Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if any argument is not an *input stream*. 
 
 
 

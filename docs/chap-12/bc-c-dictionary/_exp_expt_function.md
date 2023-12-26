@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"exp"}><b>exp</b></ClLinks> *number → result* 
+<DictionaryLink  term={"exp"}><b>exp</b></DictionaryLink> *number → result* 
 
 
 
-<ClLinks  term={"expt"}><b>expt</b></ClLinks> *base-number power-number → result* 
+<DictionaryLink  term={"expt"}><b>expt</b></DictionaryLink> *base-number power-number → result* 
 
 
 
@@ -38,19 +38,19 @@
 
 
 
-<ClLinks  term={"exp"}><b>exp</b></ClLinks> and <ClLinks  term={"expt"}><b>expt</b></ClLinks> perform exponentiation. 
+<DictionaryLink  term={"exp"}><b>exp</b></DictionaryLink> and <DictionaryLink  term={"expt"}><b>expt</b></DictionaryLink> perform exponentiation. 
 
 
 
-<ClLinks  term={"exp"}><b>exp</b></ClLinks> returns *e* raised to the power <ClLinks  term={"number"}><i>number</i></ClLinks>, where *e* is the base of the natural logarithms. <ClLinks  term={"exp"}><b>exp</b></ClLinks> has no branch cut. 
+<DictionaryLink  term={"exp"}><b>exp</b></DictionaryLink> returns *e* raised to the power <ClLinks  term={"number"}><i>number</i></ClLinks>, where *e* is the base of the natural logarithms. <DictionaryLink  term={"exp"}><b>exp</b></DictionaryLink> has no branch cut. 
 
 
 
-<ClLinks  term={"expt"}><b>expt</b></ClLinks> returns *base-number* raised to the power *power-number*. If the *base-number* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> and *power-number* is an *integer* , the calculation is exact and the result will be of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"rational"}><b>rational</b></ClLinks>; otherwise a floating-point approximation might result. For <ClLinks  term={"expt"}><b>expt</b></ClLinks> of a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> to an *integer* power, the calculation must be exact and the result is of type (or rational (complex rational)). 
+<DictionaryLink  term={"expt"}><b>expt</b></DictionaryLink> returns *base-number* raised to the power *power-number*. If the *base-number* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> and *power-number* is an *integer* , the calculation is exact and the result will be of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink>; otherwise a floating-point approximation might result. For <DictionaryLink  term={"expt"}><b>expt</b></DictionaryLink> of a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm> to an *integer* power, the calculation must be exact and the result is of type (or rational (complex rational)). 
 
 
 
-The result of <ClLinks  term={"expt"}><b>expt</b></ClLinks> can be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , even when neither argument is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , if *base-number* is negative and *power-number* is not an *integer* . The result is always the *principal complex value*. For example, (expt -8 1/3) is not permitted to return -2, even though -2 is one of the cube roots of -8. The <ClLinks  term={"principal"}><i>principal</i></ClLinks> cube root is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> approximately equal to #C(1.0 1.73205), not -2. 
+The result of <DictionaryLink  term={"expt"}><b>expt</b></DictionaryLink> can be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , even when neither argument is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> , if *base-number* is negative and *power-number* is not an *integer* . The result is always the *principal complex value*. For example, (expt -8 1/3) is not permitted to return -2, even though -2 is one of the cube roots of -8. The <ClLinks  term={"principal"}><i>principal</i></ClLinks> cube root is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> approximately equal to #C(1.0 1.73205), not -2. 
 
 
 
@@ -78,7 +78,7 @@ When *power-number* is an *integer* 0, then the result is always the value one i
 
 
 
-If *power-number* is a zero of any other <ClLinks  term={"type"}><i>type</i></ClLinks>, then the result is also the value one, in the <ClLinks  term={"type"}><i>type</i></ClLinks> of the arguments after the application of the contagion rules in Section 12.1.1.2 (Contagion in Numeric Operations), with one exception: the consequences are undefined if *base-number* is zero when *power-number* is zero and not of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks>. 
+If *power-number* is a zero of any other <ClLinks  term={"type"}><i>type</i></ClLinks>, then the result is also the value one, in the <ClLinks  term={"type"}><i>type</i></ClLinks> of the arguments after the application of the contagion rules in Section 12.1.1.2 (Contagion in Numeric Operations), with one exception: the consequences are undefined if *base-number* is zero when *power-number* is zero and not of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink>. 
 
 
 
@@ -97,7 +97,7 @@ If *power-number* is a zero of any other <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<ClLinks  term={"log"}><b>log</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
+<DictionaryLink  term={"log"}><b>log</b></DictionaryLink>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 
@@ -105,7 +105,7 @@ If *power-number* is a zero of any other <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-Implementations of <ClLinks  term={"expt"}><b>expt</b></ClLinks> are permitted to use different algorithms for the cases of a *power-number* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"rational"}><b>rational</b></ClLinks> and a *power-number* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>. 
+Implementations of <DictionaryLink  term={"expt"}><b>expt</b></DictionaryLink> are permitted to use different algorithms for the cases of a *power-number* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"rational"}><b>rational</b></DictionaryLink> and a *power-number* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>. 
 
 
 

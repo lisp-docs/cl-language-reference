@@ -2,7 +2,7 @@
 
 
 
-A <ClLinks  term={"stream"}><i>stream</i></ClLinks>, whether a *character stream* or a *binary stream*, can be an *input stream* (source of data), an *output stream* (sink for data), both, or (*e.g.*, when “:direction :probe” is given to <ClLinks  term={"open"}><b>open</b></ClLinks>) neither. 
+A <ClLinks  term={"stream"}><i>stream</i></ClLinks>, whether a *character stream* or a *binary stream*, can be an *input stream* (source of data), an *output stream* (sink for data), both, or (*e.g.*, when “:direction :probe” is given to <DictionaryLink  term={"open"}><b>open</b></DictionaryLink>) neither. 
 
 
 

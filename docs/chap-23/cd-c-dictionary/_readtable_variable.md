@@ -22,7 +22,7 @@ A <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> that conforms to the d
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> is called the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. It controls the parsing behavior of the *Lisp reader* , and can also influence the *Lisp printer* (*e.g.*, see the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"readtable-case"}><b>readtable-case</b></ClLinks>). 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"readtable"}><b>\*readtable\*</b></DictionaryLink> is called the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. It controls the parsing behavior of the *Lisp reader* , and can also influence the *Lisp printer* (*e.g.*, see the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"readtable-case"}><b>readtable-case</b></DictionaryLink>). 
 
 
 
@@ -42,7 +42,7 @@ zvar → 123
 
 
 
-<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"load"}><b>load</b></ClLinks> 
+<DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>, <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> 
 
 
 
@@ -50,7 +50,7 @@ zvar → 123
 
 
 
-<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"readtable"}><b>readtable</b></ClLinks>, Section 2.1.1.1 (The Current Readtable) 
+<DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>, <DictionaryLink  term={"load"}><b>load</b></DictionaryLink>, <DictionaryLink  term={"readtable"}><b>readtable</b></DictionaryLink>, Section 2.1.1.1 (The Current Readtable) 
 
 
 

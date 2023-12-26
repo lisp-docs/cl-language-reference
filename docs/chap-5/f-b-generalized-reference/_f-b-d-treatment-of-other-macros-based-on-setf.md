@@ -2,7 +2,7 @@
 
 
 
-For each of the “read-modify-write” <ClLinks  term={"operator"}><i>operators</i></ClLinks> in Figure 5–9, and for any additional <ClLinks  term={"macro"}><i>macros</i></ClLinks> defined by the <ClLinks  term={"programmer"}><i>programmer</i></ClLinks> using <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks>, an exception is made to the normal rule of left-to-right evaluation of arguments. Evaluation of *argument forms* occurs in left-to-right order, with the exception that for the *place argument*, the actual <ClLinks  term={"read"}><i>read</i></ClLinks> of the “old value” from that <ClLinks  term={"place"}><i>place</i></ClLinks> happens after all of the *argument form evaluations*, and just before a “new value” is computed and *written* back into the <ClLinks  term={"place"}><i>place</i></ClLinks>. 
+For each of the “read-modify-write” <ClLinks  term={"operator"}><i>operators</i></ClLinks> in Figure 5–9, and for any additional <ClLinks  term={"macro"}><i>macros</i></ClLinks> defined by the <ClLinks  term={"programmer"}><i>programmer</i></ClLinks> using <DictionaryLink  term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink>, an exception is made to the normal rule of left-to-right evaluation of arguments. Evaluation of *argument forms* occurs in left-to-right order, with the exception that for the *place argument*, the actual <ClLinks  term={"read"}><i>read</i></ClLinks> of the “old value” from that <ClLinks  term={"place"}><i>place</i></ClLinks> happens after all of the *argument form evaluations*, and just before a “new value” is computed and *written* back into the <ClLinks  term={"place"}><i>place</i></ClLinks>. 
 
 
 

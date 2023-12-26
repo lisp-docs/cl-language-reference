@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"quote"}><b>quote</b></ClLinks> *object → object* 
+<DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> *object → object* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-The <ClLinks  term={"quote"}><b>quote</b></ClLinks> <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> just returns <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+The <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> just returns <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ The textual notation ’<ClLinks  term={"object"}><i>object</i></ClLinks> is equ
 
 
 
-Some <ClLinks  term={"object"}><i>objects</i></ClLinks>, called <GlossaryTerm styled={true} term={"self-evaluating object"}><i>self-evaluating objects</i></GlossaryTerm>, do not require quotation by <ClLinks  term={"quote"}><b>quote</b></ClLinks>. However, <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and <ClLinks  term={"list"}><i>lists</i></ClLinks> are used to represent parts of programs, and so would not be useable as constant data in a program without <ClLinks  term={"quote"}><b>quote</b></ClLinks>. Since <ClLinks  term={"quote"}><b>quote</b></ClLinks> suppresses the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of these <ClLinks  term={"object"}><i>objects</i></ClLinks>, they become data rather than program. 
+Some <ClLinks  term={"object"}><i>objects</i></ClLinks>, called <GlossaryTerm styled={true} term={"self-evaluating object"}><i>self-evaluating objects</i></GlossaryTerm>, do not require quotation by <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink>. However, <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and <ClLinks  term={"list"}><i>lists</i></ClLinks> are used to represent parts of programs, and so would not be useable as constant data in a program without <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink>. Since <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> suppresses the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of these <ClLinks  term={"object"}><i>objects</i></ClLinks>, they become data rather than program. 
 
 
 

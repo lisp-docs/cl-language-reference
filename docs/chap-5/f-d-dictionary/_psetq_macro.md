@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"psetq"}><b>psetq</b></ClLinks> *\{↓pair\}*\* → <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink  term={"psetq"}><b>psetq</b></DictionaryLink> *\{↓pair\}*\* → <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"psetq"}><b>psetq</b></ClLinks>: [ **p—e set kyu-** ] 
+<DictionaryLink  term={"psetq"}><b>psetq</b></DictionaryLink>: [ **p—e set kyu-** ] 
 
 
 
@@ -42,11 +42,11 @@ Assigns values to <ClLinks  term={"variable"}><i>variables</i></ClLinks>.
 
 
 
-This is just like <ClLinks  term={"setq"}><b>setq</b></ClLinks>, except that the assignments happen “in parallel.” That is, first all of the forms are evaluated, and only then are the variables set to the resulting values. In this way, the assignment to one variable does not affect the value computation of another in the way that would occur with <ClLinks  term={"setq"}><b>setq</b></ClLinks>’s sequential assignment. 
+This is just like <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>, except that the assignments happen “in parallel.” That is, first all of the forms are evaluated, and only then are the variables set to the resulting values. In this way, the assignment to one variable does not affect the value computation of another in the way that would occur with <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>’s sequential assignment. 
 
 
 
-If any *var* refers to a <ClLinks  term={"binding"}><i>binding</i></ClLinks> made by <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, then that *var* is treated as if <ClLinks  term={"psetf"}><b>psetf</b></ClLinks> (not <ClLinks  term={"psetq"}><b>psetq</b></ClLinks>) had been used. 
+If any *var* refers to a <ClLinks  term={"binding"}><i>binding</i></ClLinks> made by <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, then that *var* is treated as if <DictionaryLink  term={"psetf"}><b>psetf</b></DictionaryLink> (not <DictionaryLink  term={"psetq"}><b>psetq</b></DictionaryLink>) had been used. 
 
 
 
@@ -102,7 +102,7 @@ The values of <ClLinks  term={"form"}><i>forms</i></ClLinks> are assigned to *va
 
 
 
-<ClLinks  term={"psetf"}><b>psetf</b></ClLinks>, <ClLinks  term={"setq"}><b>setq</b></ClLinks> 
+<DictionaryLink  term={"psetf"}><b>psetf</b></DictionaryLink>, <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"two-way-stream"}><b>two-way-stream</b></ClLinks>, <ClLinks  term={"stream"}><b>stream</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"two-way-stream"}><b>two-way-stream</b></DictionaryLink>, <DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -22,7 +22,7 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 
 
-<ClLinks  term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks>, **two-way-stream-input-stream**, **two-way-stream-output-stream input-stream-p, output-stream-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
+<DictionaryLink  term={"make-two-way-stream"}><b>make-two-way-stream</b></DictionaryLink>, **two-way-stream-input-stream**, **two-way-stream-output-stream input-stream-p, output-stream-p** <ClLinks  term={"function"}><i>Function</i></ClLinks> 
 
 
 
@@ -69,7 +69,7 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 

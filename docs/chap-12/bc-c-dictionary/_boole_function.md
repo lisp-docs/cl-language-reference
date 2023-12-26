@@ -2,7 +2,7 @@
 
 **Syntax:**
 
-<ClLinks  term={"boole"}><b>boole</b></ClLinks> *op integer-1 integer-2 → result-integer*
+<DictionaryLink  term={"boole"}><b>boole</b></DictionaryLink> *op integer-1 integer-2 → result-integer*
 
 **Arguments and Values:**
 
@@ -10,7 +10,7 @@
 
 *integer-1*—an *integer* .
 
-<ClLinks  term={"boole"}><b>boole</b></ClLinks>
+<DictionaryLink  term={"boole"}><b>boole</b></DictionaryLink>
 
 *integer-2*—an *integer* .
 
@@ -18,17 +18,17 @@
 
 **Description:**
 
-<ClLinks  term={"boole"}><b>boole</b></ClLinks> performs bit-wise logical operations on *integer-1* and *integer-2*, which are treated as if they were binary and in two’s complement representation.
+<DictionaryLink  term={"boole"}><b>boole</b></DictionaryLink> performs bit-wise logical operations on *integer-1* and *integer-2*, which are treated as if they were binary and in two’s complement representation.
 
 The operation to be performed and the return value are determined by *op*.
 
-<ClLinks  term={"boole"}><b>boole</b></ClLinks> returns the values specified for any *op* in Figure 12–17.
+<DictionaryLink  term={"boole"}><b>boole</b></DictionaryLink> returns the values specified for any *op* in Figure 12–17.
 
 |**Op Result**|
 
 | :- |
 
-|<p><ClLinks  term={"boole-1"}><b>boole-1</b></ClLinks> *integer-1* </p><p><ClLinks  term={"boole-2"}><b>boole-2</b></ClLinks> *integer-2* </p><p><ClLinks  term={"boole-andc1"}><b>boole-andc1</b></ClLinks> and complement of *integer-1* with *integer-2* </p><p><ClLinks  term={"boole-andc2"}><b>boole-andc2</b></ClLinks> and *integer-1* with complement of *integer-2* </p><p><ClLinks  term={"boole-and"}><b>boole-and</b></ClLinks> and </p><p><ClLinks  term={"boole-c1"}><b>boole-c1</b></ClLinks> complement of *integer-1* </p><p><ClLinks  term={"boole-c2"}><b>boole-c2</b></ClLinks> complement of *integer-2* </p><p><ClLinks  term={"boole-clr"}><b>boole-clr</b></ClLinks> always 0 (all zero bits) </p><p><ClLinks  term={"boole-eqv"}><b>boole-eqv</b></ClLinks> equivalence (exclusive nor) </p><p><ClLinks  term={"boole-ior"}><b>boole-ior</b></ClLinks> inclusive or </p><p><ClLinks  term={"boole-nand"}><b>boole-nand</b></ClLinks> not-and </p><p><ClLinks  term={"boole-nor"}><b>boole-nor</b></ClLinks> not-or </p><p><ClLinks  term={"boole-orc1"}><b>boole-orc1</b></ClLinks> or complement of *integer-1* with *integer-2* </p><p><ClLinks  term={"boole-orc2"}><b>boole-orc2</b></ClLinks> or *integer-1* with complement of *integer-2* </p><p><ClLinks  term={"boole-set"}><b>boole-set</b></ClLinks> always -1 (all one bits) </p><p><ClLinks  term={"boole-xor"}><b>boole-xor</b></ClLinks> exclusive or</p>|
+|<p><DictionaryLink  term={"boole-1"}><b>boole-1</b></DictionaryLink> *integer-1* </p><p><DictionaryLink  term={"boole-2"}><b>boole-2</b></DictionaryLink> *integer-2* </p><p><DictionaryLink  term={"boole-andc1"}><b>boole-andc1</b></DictionaryLink> and complement of *integer-1* with *integer-2* </p><p><DictionaryLink  term={"boole-andc2"}><b>boole-andc2</b></DictionaryLink> and *integer-1* with complement of *integer-2* </p><p><DictionaryLink  term={"boole-and"}><b>boole-and</b></DictionaryLink> and </p><p><DictionaryLink  term={"boole-c1"}><b>boole-c1</b></DictionaryLink> complement of *integer-1* </p><p><DictionaryLink  term={"boole-c2"}><b>boole-c2</b></DictionaryLink> complement of *integer-2* </p><p><DictionaryLink  term={"boole-clr"}><b>boole-clr</b></DictionaryLink> always 0 (all zero bits) </p><p><DictionaryLink  term={"boole-eqv"}><b>boole-eqv</b></DictionaryLink> equivalence (exclusive nor) </p><p><DictionaryLink  term={"boole-ior"}><b>boole-ior</b></DictionaryLink> inclusive or </p><p><DictionaryLink  term={"boole-nand"}><b>boole-nand</b></DictionaryLink> not-and </p><p><DictionaryLink  term={"boole-nor"}><b>boole-nor</b></DictionaryLink> not-or </p><p><DictionaryLink  term={"boole-orc1"}><b>boole-orc1</b></DictionaryLink> or complement of *integer-1* with *integer-2* </p><p><DictionaryLink  term={"boole-orc2"}><b>boole-orc2</b></DictionaryLink> or *integer-1* with complement of *integer-2* </p><p><DictionaryLink  term={"boole-set"}><b>boole-set</b></DictionaryLink> always -1 (all one bits) </p><p><DictionaryLink  term={"boole-xor"}><b>boole-xor</b></DictionaryLink> exclusive or</p>|
 
 **Figure 12–17. Bit-Wise Logical Operations**
 
@@ -77,11 +77,11 @@ symbol result (logand result #b1111)))))
 
 **Exceptional Situations:**
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its first argument is not a *bit-wise logical operation specifier* or if any subsequent argument is not an *integer* .
+Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its first argument is not a *bit-wise logical operation specifier* or if any subsequent argument is not an *integer* .
 
 **See Also:**
 
-<ClLinks  term={"logand"}><b>logand</b></ClLinks>
+<DictionaryLink  term={"logand"}><b>logand</b></DictionaryLink>
 
 **Notes:**
 

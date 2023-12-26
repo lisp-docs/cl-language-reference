@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"with-standard-io-syntax"}><b>with-standard-io-syntax</b></ClLinks> <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<DictionaryLink  term={"with-standard-io-syntax"}><b>with-standard-io-syntax</b></DictionaryLink> <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
 
 
 
@@ -46,7 +46,7 @@ Within the dynamic extent of the body of <ClLinks  term={"form"}><i>forms</i></C
 
 | :- |
 
-|<p><ClLinks  term={"package"}><b>\*package\*</b></ClLinks> The CL-USER <ClLinks  term={"package"}><i>package</i></ClLinks> </p><p>**\*print-array\* t** </p><p>**\*print-base\*** 10 </p><p><ClLinks  term={"print-case"}><b>\*print-case\*</b></ClLinks> :upcase </p><p>**\*print-circle\* nil** </p><p>**\*print-escape\* t** </p><p>**\*print-gensym\* t** </p><p>**\*print-length\* nil** </p><p>**\*print-level\* nil** </p><p>**\*print-lines\* nil** </p><p>**\*print-miser-width\* nil** </p><p><ClLinks  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks> The <GlossaryTerm styled={true} term={"standard pprint dispatch table"}><i>standard pprint dispatch table</i></GlossaryTerm> **\*print-pretty\* nil** </p><p>**\*print-radix\* nil** </p><p>**\*print-readably\* t** </p><p>**\*print-right-margin\* nil** </p><p>**\*read-base\*** 10 </p><p>**\*read-default-float-format\* single-float** </p><p>**\*read-eval\* t** </p><p>**\*read-suppress\* nil** </p><p><ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> The <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm></p>|
+|<p><DictionaryLink  term={"package"}><b>\*package\*</b></DictionaryLink> The CL-USER <ClLinks  term={"package"}><i>package</i></ClLinks> </p><p>**\*print-array\* t** </p><p>**\*print-base\*** 10 </p><p><DictionaryLink  term={"print-case"}><b>\*print-case\*</b></DictionaryLink> :upcase </p><p>**\*print-circle\* nil** </p><p>**\*print-escape\* t** </p><p>**\*print-gensym\* t** </p><p>**\*print-length\* nil** </p><p>**\*print-level\* nil** </p><p>**\*print-lines\* nil** </p><p>**\*print-miser-width\* nil** </p><p><DictionaryLink  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></DictionaryLink> The <GlossaryTerm styled={true} term={"standard pprint dispatch table"}><i>standard pprint dispatch table</i></GlossaryTerm> **\*print-pretty\* nil** </p><p>**\*print-radix\* nil** </p><p>**\*print-readably\* t** </p><p>**\*print-right-margin\* nil** </p><p>**\*read-base\*** 10 </p><p>**\*read-default-float-format\* single-float** </p><p>**\*read-eval\* t** </p><p>**\*read-suppress\* nil** </p><p><DictionaryLink  term={"readtable"}><b>\*readtable\*</b></DictionaryLink> The <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm></p>|
 
 
 
@@ -90,7 +90,7 @@ a <ClLinks  term={"radix"}><i>radix</i></ClLinks> .
 
 
 
-Controls the interpretation of tokens by <ClLinks  term={"read"}><b>read</b></ClLinks> as being *integers* or <ClLinks  term={"ratio"}><i>ratios</i></ClLinks>. 
+Controls the interpretation of tokens by <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> as being *integers* or <ClLinks  term={"ratio"}><i>ratios</i></ClLinks>. 
 
 
 

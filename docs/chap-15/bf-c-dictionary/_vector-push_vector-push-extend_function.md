@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"vector-push"}><b>vector-push</b></ClLinks> *new-element vector → new-index-p* 
+<DictionaryLink  term={"vector-push"}><b>vector-push</b></DictionaryLink> *new-element vector → new-index-p* 
 
 
 
-<ClLinks  term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks> *new-element vector* &amp;optional *extension → new-index* 
+<DictionaryLink  term={"vector-push-extend"}><b>vector-push-extend</b></DictionaryLink> *new-element vector* &amp;optional *extension → new-index* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*new-index-p*—a <GlossaryTerm styled={true} term={"valid array index"}><i>valid array index</i></GlossaryTerm> for <ClLinks  term={"vector"}><i>vector</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*new-index-p*—a <GlossaryTerm styled={true} term={"valid array index"}><i>valid array index</i></GlossaryTerm> for <ClLinks  term={"vector"}><i>vector</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -42,15 +42,15 @@
 
 
 
-<ClLinks  term={"vector-push"}><b>vector-push</b></ClLinks> and <ClLinks  term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks> store *new-element* in <ClLinks  term={"vector"}><i>vector</i></ClLinks>. <ClLinks  term={"vector-push"}><b>vector-push</b></ClLinks> attempts to store *new-element* in the element of <ClLinks  term={"vector"}><i>vector</i></ClLinks> designated by the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , and to increase the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> by one. If the (&gt;= (fill-pointer <ClLinks  term={"vector"}><i>vector</i></ClLinks>) (array-dimension <ClLinks  term={"vector"}><i>vector</i></ClLinks> 0)), neither <ClLinks  term={"vector"}><i>vector</i></ClLinks> nor its <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> are affected. Otherwise, the store and increment take place and <ClLinks  term={"vector-push"}><b>vector-push</b></ClLinks> returns the former value of the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> which is one less than the one it leaves in <ClLinks  term={"vector"}><i>vector</i></ClLinks>. 
+<DictionaryLink  term={"vector-push"}><b>vector-push</b></DictionaryLink> and <DictionaryLink  term={"vector-push-extend"}><b>vector-push-extend</b></DictionaryLink> store *new-element* in <ClLinks  term={"vector"}><i>vector</i></ClLinks>. <DictionaryLink  term={"vector-push"}><b>vector-push</b></DictionaryLink> attempts to store *new-element* in the element of <ClLinks  term={"vector"}><i>vector</i></ClLinks> designated by the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , and to increase the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> by one. If the (&gt;= (fill-pointer <ClLinks  term={"vector"}><i>vector</i></ClLinks>) (array-dimension <ClLinks  term={"vector"}><i>vector</i></ClLinks> 0)), neither <ClLinks  term={"vector"}><i>vector</i></ClLinks> nor its <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> are affected. Otherwise, the store and increment take place and <DictionaryLink  term={"vector-push"}><b>vector-push</b></DictionaryLink> returns the former value of the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> which is one less than the one it leaves in <ClLinks  term={"vector"}><i>vector</i></ClLinks>. 
 
 
 
-<ClLinks  term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks> is just like <ClLinks  term={"vector-push"}><b>vector-push</b></ClLinks> except that if the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> gets too large, <ClLinks  term={"vector"}><i>vector</i></ClLinks> is extended using <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks> so that it can contain more elements. <ClLinks  term={"extension"}><i>Extension</i></ClLinks> is the minimum number of elements to be added to <ClLinks  term={"vector"}><i>vector</i></ClLinks> if it must be extended. 
+<DictionaryLink  term={"vector-push-extend"}><b>vector-push-extend</b></DictionaryLink> is just like <DictionaryLink  term={"vector-push"}><b>vector-push</b></DictionaryLink> except that if the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> gets too large, <ClLinks  term={"vector"}><i>vector</i></ClLinks> is extended using <DictionaryLink  term={"adjust-array"}><b>adjust-array</b></DictionaryLink> so that it can contain more elements. <ClLinks  term={"extension"}><i>Extension</i></ClLinks> is the minimum number of elements to be added to <ClLinks  term={"vector"}><i>vector</i></ClLinks> if it must be extended. 
 
 
 
-<ClLinks  term={"vector-push"}><b>vector-push</b></ClLinks> and <ClLinks  term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks> return the index of *new-element* in <ClLinks  term={"vector"}><i>vector</i></ClLinks>. If (&gt;= (fill-pointer <ClLinks  term={"vector"}><i>vector</i></ClLinks>) (array-dimension <ClLinks  term={"vector"}><i>vector</i></ClLinks> 0)), <ClLinks  term={"vector-push"}><b>vector-push</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<DictionaryLink  term={"vector-push"}><b>vector-push</b></DictionaryLink> and <DictionaryLink  term={"vector-push-extend"}><b>vector-push-extend</b></DictionaryLink> return the index of *new-element* in <ClLinks  term={"vector"}><i>vector</i></ClLinks>. If (&gt;= (fill-pointer <ClLinks  term={"vector"}><i>vector</i></ClLinks>) (array-dimension <ClLinks  term={"vector"}><i>vector</i></ClLinks> 0)), <DictionaryLink  term={"vector-push"}><b>vector-push</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -92,11 +92,11 @@ How <ClLinks  term={"vector"}><i>vector</i></ClLinks> was created.
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled by <ClLinks  term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks> if it tries to extend <ClLinks  term={"vector"}><i>vector</i></ClLinks> and <ClLinks  term={"vector"}><i>vector</i></ClLinks> is not <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled by <DictionaryLink  term={"vector-push-extend"}><b>vector-push-extend</b></DictionaryLink> if it tries to extend <ClLinks  term={"vector"}><i>vector</i></ClLinks> and <ClLinks  term={"vector"}><i>vector</i></ClLinks> is not <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled if <ClLinks  term={"vector"}><i>vector</i></ClLinks> does not have a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled if <ClLinks  term={"vector"}><i>vector</i></ClLinks> does not have a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
@@ -104,7 +104,7 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error
 
 
 
-**adjustable-array-p**, <ClLinks  term={"fill-pointer"}><b>fill-pointer</b></ClLinks>, <ClLinks  term={"vector-pop"}><b>vector-pop</b></ClLinks> 
+**adjustable-array-p**, <DictionaryLink  term={"fill-pointer"}><b>fill-pointer</b></DictionaryLink>, <DictionaryLink  term={"vector-pop"}><b>vector-pop</b></DictionaryLink> 
 
 
 

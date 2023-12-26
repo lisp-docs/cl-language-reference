@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"throw"}><b>throw</b></ClLinks> *tag result-form →* 
+<DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> *tag result-form →* 
 
 
 
@@ -34,7 +34,7 @@ Data and Control
 
 
 
-<ClLinks  term={"throw"}><b>throw</b></ClLinks> 
+<DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> 
 
 
 
@@ -42,15 +42,15 @@ Data and Control
 
 
 
-<ClLinks  term={"throw"}><b>throw</b></ClLinks> causes a non-local control transfer to a <ClLinks  term={"catch"}><b>catch</b></ClLinks> whose tag is <ClLinks  term={"eq"}><b>eq</b></ClLinks> to <ClLinks  term={"tag"}><i>tag</i></ClLinks>. 
+<DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> causes a non-local control transfer to a <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> whose tag is <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to <ClLinks  term={"tag"}><i>tag</i></ClLinks>. 
 
 
 
-<ClLinks  term={"tag"}><i>Tag</i></ClLinks> is evaluated first to produce an <ClLinks  term={"object"}><i>object</i></ClLinks> called the throw tag; then *result-form* is evaluated, and its results are saved. If the *result-form* produces multiple values, then all the values are saved. The most recent outstanding <ClLinks  term={"catch"}><b>catch</b></ClLinks> whose <ClLinks  term={"tag"}><i>tag</i></ClLinks> is <ClLinks  term={"eq"}><b>eq</b></ClLinks> to the throw tag is exited; the saved results are returned as the value or values of <ClLinks  term={"catch"}><b>catch</b></ClLinks>. 
+<ClLinks  term={"tag"}><i>Tag</i></ClLinks> is evaluated first to produce an <ClLinks  term={"object"}><i>object</i></ClLinks> called the throw tag; then *result-form* is evaluated, and its results are saved. If the *result-form* produces multiple values, then all the values are saved. The most recent outstanding <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> whose <ClLinks  term={"tag"}><i>tag</i></ClLinks> is <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> to the throw tag is exited; the saved results are returned as the value or values of <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink>. 
 
 
 
-The transfer of control initiated by <ClLinks  term={"throw"}><b>throw</b></ClLinks> is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
+The transfer of control initiated by <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
 
 
 
@@ -94,7 +94,7 @@ If there is no outstanding <GlossaryTerm styled={true} term={"catch tag"}><i>cat
 
 
 
-performed, and an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"control-error"}><b>control-error</b></ClLinks> is signaled. When the error is signaled, the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> is that which was in force at the point of the <ClLinks  term={"throw"}><b>throw</b></ClLinks>. 
+performed, and an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"control-error"}><b>control-error</b></DictionaryLink> is signaled. When the error is signaled, the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> is that which was in force at the point of the <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>. 
 
 
 
@@ -102,7 +102,7 @@ performed, and an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLink
 
 
 
-<ClLinks  term={"block"}><b>block</b></ClLinks>, <ClLinks  term={"catch"}><b>catch</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>, Section 3.1 (Evaluation) 
+<DictionaryLink  term={"block"}><b>block</b></DictionaryLink>, <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink>, <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>, <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink>, Section 3.1 (Evaluation) 
 
 
 
@@ -110,7 +110,7 @@ performed, and an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLink
 
 
 
-<ClLinks  term={"catch"}><b>catch</b></ClLinks> and <ClLinks  term={"throw"}><b>throw</b></ClLinks> are normally used when the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> must have <GlossaryTerm styled={true} term={"dynamic scope"}><i>dynamic scope</i></GlossaryTerm> (*e.g.*, the <ClLinks  term={"throw"}><b>throw</b></ClLinks> is not lexically enclosed by the <ClLinks  term={"catch"}><b>catch</b></ClLinks>), while <ClLinks  term={"block"}><b>block</b></ClLinks> and <ClLinks  term={"return"}><b>return</b></ClLinks> are used when <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> is sufficient. 
+<DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> and <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> are normally used when the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> must have <GlossaryTerm styled={true} term={"dynamic scope"}><i>dynamic scope</i></GlossaryTerm> (*e.g.*, the <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> is not lexically enclosed by the <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink>), while <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> and <DictionaryLink  term={"return"}><b>return</b></DictionaryLink> are used when <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> is sufficient. 
 
 
 

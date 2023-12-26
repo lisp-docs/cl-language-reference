@@ -6,7 +6,7 @@ These are not really parameters. If the <GlossaryTerm styled={true} term={"lambd
 
 
 
-evaluated and *var* is bound to that value (or to <ClLinks  term={"nil"}><b>nil</b></ClLinks> if no *init-form* was specified). **&amp;aux** variable processing is analogous to <ClLinks  term={"let"}><b>let\*</b></ClLinks> processing. 
+evaluated and *var* is bound to that value (or to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if no *init-form* was specified). **&amp;aux** variable processing is analogous to <DictionaryLink  term={"let"}><b>let\*</b></DictionaryLink> processing. 
 
 
 

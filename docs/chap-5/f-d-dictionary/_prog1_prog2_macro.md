@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"prog1"}><b>prog1</b></ClLinks> *first-form \{form\}*\* *! result-1* 
+<DictionaryLink  term={"prog1"}><b>prog1</b></DictionaryLink> *first-form \{form\}*\* *! result-1* 
 
 
 
-<ClLinks  term={"prog2"}><b>prog2</b></ClLinks> *first-form second-form \{form\}*\* *! result-2* 
+<DictionaryLink  term={"prog2"}><b>prog2</b></DictionaryLink> *first-form second-form \{form\}*\* *! result-2* 
 
 
 
@@ -58,11 +58,11 @@ Data and Control
 
 
 
-<ClLinks  term={"prog1"}><b>prog1</b></ClLinks> *evaluates first-form* and then <ClLinks  term={"form"}><i>forms</i></ClLinks>, *yielding* as its only <ClLinks  term={"value"}><i>value</i></ClLinks> the *primary value yielded* by *first-form*. 
+<DictionaryLink  term={"prog1"}><b>prog1</b></DictionaryLink> *evaluates first-form* and then <ClLinks  term={"form"}><i>forms</i></ClLinks>, *yielding* as its only <ClLinks  term={"value"}><i>value</i></ClLinks> the *primary value yielded* by *first-form*. 
 
 
 
-<ClLinks  term={"prog2"}><b>prog2</b></ClLinks> *evaluates first-form*, then *second-form*, and then <ClLinks  term={"form"}><i>forms</i></ClLinks>, *yielding* as its only <ClLinks  term={"value"}><i>value</i></ClLinks> the *primary value yielded* by *first-form*. 
+<DictionaryLink  term={"prog2"}><b>prog2</b></DictionaryLink> *evaluates first-form*, then *second-form*, and then <ClLinks  term={"form"}><i>forms</i></ClLinks>, *yielding* as its only <ClLinks  term={"value"}><i>value</i></ClLinks> the *primary value yielded* by *first-form*. 
 
 
 
@@ -97,7 +97,7 @@ temp *!* 4
 
 
 
-<ClLinks  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></ClLinks>, <ClLinks  term={"progn"}><b>progn</b></ClLinks> 
+<DictionaryLink  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></DictionaryLink>, <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> 
 
 
 
@@ -105,7 +105,7 @@ temp *!* 4
 
 
 
-<ClLinks  term={"prog1"}><b>prog1</b></ClLinks> and <ClLinks  term={"prog2"}><b>prog2</b></ClLinks> are typically used to <ClLinks  term={"evaluate"}><i>evaluate</i></ClLinks> one or more <ClLinks  term={"form"}><i>forms</i></ClLinks> with side e↵ects and return a <ClLinks  term={"value"}><i>value</i></ClLinks> that must be computed before some or all of the side e↵ects happen. 
+<DictionaryLink  term={"prog1"}><b>prog1</b></DictionaryLink> and <DictionaryLink  term={"prog2"}><b>prog2</b></DictionaryLink> are typically used to <ClLinks  term={"evaluate"}><i>evaluate</i></ClLinks> one or more <ClLinks  term={"form"}><i>forms</i></ClLinks> with side e↵ects and return a <ClLinks  term={"value"}><i>value</i></ClLinks> that must be computed before some or all of the side e↵ects happen. 
 
 
 

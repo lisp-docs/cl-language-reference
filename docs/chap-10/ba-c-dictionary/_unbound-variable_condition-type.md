@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLinks>, <ClLinks  term={"cell-error"}><b>cell-error</b></ClLinks>, <ClLinks  term={"error"}><b>error</b></ClLinks>, <ClLinks  term={"serious-condition"}><b>serious-condition</b></ClLinks>, <ClLinks  term={"condition"}><b>condition</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink>, <DictionaryLink  term={"cell-error"}><b>cell-error</b></DictionaryLink>, <DictionaryLink  term={"error"}><b>error</b></DictionaryLink>, <DictionaryLink  term={"serious-condition"}><b>serious-condition</b></DictionaryLink>, <DictionaryLink  term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLinks> consists of *error conditions* that represent attempts to <ClLinks  term={"read"}><i>read</i></ClLinks> the <ClLinks  term={"value"}><i>value</i></ClLinks> of an <GlossaryTerm styled={true} term={"unbound variable"}><i>unbound variable</i></GlossaryTerm>. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink> consists of *error conditions* that represent attempts to <ClLinks  term={"read"}><i>read</i></ClLinks> the <ClLinks  term={"value"}><i>value</i></ClLinks> of an <GlossaryTerm styled={true} term={"unbound variable"}><i>unbound variable</i></GlossaryTerm>. 
 
 
 
-The name of the cell (see <ClLinks  term={"cell-error"}><b>cell-error</b></ClLinks>) is the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> that was <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. 
+The name of the cell (see <DictionaryLink  term={"cell-error"}><b>cell-error</b></DictionaryLink>) is the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> that was <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. 
 
 
 
@@ -26,7 +26,7 @@ The name of the cell (see <ClLinks  term={"cell-error"}><b>cell-error</b></ClLin
 
 
 
-<ClLinks  term={"cell-error-name"}><b>cell-error-name</b></ClLinks> 
+<DictionaryLink  term={"cell-error-name"}><b>cell-error-name</b></DictionaryLink> 
 
 
 

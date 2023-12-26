@@ -34,7 +34,7 @@ For <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryT
 
 
 
-For <ClLinks  term={"package"}><i>package</i></ClLinks> traversal operations (*e.g.*, <ClLinks  term={"do-symbols"}><b>do-symbols</b></ClLinks>), new <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> may not be <ClLinks  term={"interned"}><i>interned</i></ClLinks> in or <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from the <ClLinks  term={"package"}><i>package</i></ClLinks> being traversed or any <ClLinks  term={"package"}><i>package</i></ClLinks> that it uses except that the current <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> may be <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from the <ClLinks  term={"package"}><i>package</i></ClLinks> being traversed.  
+For <ClLinks  term={"package"}><i>package</i></ClLinks> traversal operations (*e.g.*, <DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink>), new <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> may not be <ClLinks  term={"interned"}><i>interned</i></ClLinks> in or <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from the <ClLinks  term={"package"}><i>package</i></ClLinks> being traversed or any <ClLinks  term={"package"}><i>package</i></ClLinks> that it uses except that the current <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> may be <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from the <ClLinks  term={"package"}><i>package</i></ClLinks> being traversed.  
 
 
 

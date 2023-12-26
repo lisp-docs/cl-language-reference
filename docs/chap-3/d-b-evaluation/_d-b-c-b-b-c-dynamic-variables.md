@@ -6,7 +6,7 @@ A <ClLinks  term={"variable"}><i>variable</i></ClLinks> is a <GlossaryTerm style
 
 
 
-*•* It is locally declared or globally proclaimed <ClLinks  term={"special"}><b>special</b></ClLinks>. 
+*•* It is locally declared or globally proclaimed <DictionaryLink  term={"special"}><b>special</b></DictionaryLink>. 
 
 
 
@@ -22,7 +22,7 @@ A <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i><
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> part of the <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> might be empty; in this case, the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> is said to have no <ClLinks  term={"value"}><i>value</i></ClLinks>, or to be <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. A <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> can be made <ClLinks  term={"unbound"}><i>unbound</i></ClLinks> by using <ClLinks  term={"makunbound"}><b>makunbound</b></ClLinks>. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> part of the <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> might be empty; in this case, the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> is said to have no <ClLinks  term={"value"}><i>value</i></ClLinks>, or to be <ClLinks  term={"unbound"}><i>unbound</i></ClLinks>. A <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> can be made <ClLinks  term={"unbound"}><i>unbound</i></ClLinks> by using <DictionaryLink  term={"makunbound"}><b>makunbound</b></DictionaryLink>. 
 
 
 

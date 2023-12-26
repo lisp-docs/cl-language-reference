@@ -31,11 +31,11 @@ abstraction, information hiding, or syntactic convenience); that is, either a <G
 
 
 
-**macro lambda list** *n.* an <GlossaryTerm styled={true} term={"extended lambda list"}><i>extended lambda list</i></GlossaryTerm> used in <ClLinks  term={"form"}><i>forms</i></ClLinks> that *establish macro* definitions, such as <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> and <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>. See Section 3.4.4 (Macro Lambda Lists). 
+**macro lambda list** *n.* an <GlossaryTerm styled={true} term={"extended lambda list"}><i>extended lambda list</i></GlossaryTerm> used in <ClLinks  term={"form"}><i>forms</i></ClLinks> that *establish macro* definitions, such as <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> and <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>. See Section 3.4.4 (Macro Lambda Lists). 
 
 
 
-**macro name** *n.* a <ClLinks  term={"name"}><i>name</i></ClLinks> for which <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> and which when used as the first element of a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm> identifies that <ClLinks  term={"form"}><i>form</i></ClLinks> as a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>. 
+**macro name** *n.* a <ClLinks  term={"name"}><i>name</i></ClLinks> for which <DictionaryLink  term={"macro-function"}><b>macro-function</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> and which when used as the first element of a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm> identifies that <ClLinks  term={"form"}><i>form</i></ClLinks> as a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>. 
 
 
 
@@ -67,11 +67,11 @@ abstraction, information hiding, or syntactic convenience); that is, either a <G
 
 
 
-<ClLinks  term={"method"}><b>method</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> that is part of a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> and which provides information about how that <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> should behave when its <ClLinks  term={"argument"}><i>arguments</i></ClLinks> are <ClLinks  term={"object"}><i>objects</i></ClLinks> of certain *classes* or with certain identities. 
+<DictionaryLink  term={"method"}><b>method</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> that is part of a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> and which provides information about how that <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> should behave when its <ClLinks  term={"argument"}><i>arguments</i></ClLinks> are <ClLinks  term={"object"}><i>objects</i></ClLinks> of certain *classes* or with certain identities. 
 
 
 
-**method combination** *n.* 1. generally, the composition of a set of <ClLinks  term={"method"}><i>methods</i></ClLinks> to produce an <GlossaryTerm styled={true} term={"effective method"}><i>effective method</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 2. an object of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"method-combination"}><b>method-combination</b></ClLinks>, which represents the details of how the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm><sub>1</sub> for one or more specific <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> is to be performed. 
+**method combination** *n.* 1. generally, the composition of a set of <ClLinks  term={"method"}><i>methods</i></ClLinks> to produce an <GlossaryTerm styled={true} term={"effective method"}><i>effective method</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 2. an object of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"method-combination"}><b>method-combination</b></DictionaryLink>, which represents the details of how the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm><sub>1</sub> for one or more specific <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> is to be performed. 
 
 
 
@@ -95,7 +95,7 @@ purpose, but which deviates in syntax or functionality from the definition of an
 
 
 
-<GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>. See <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>. “<ClLinks  term={"deftype"}><b>deftype</b></ClLinks> uses a modified lambda list.” 
+<GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>. See <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>. “<DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink> uses a modified lambda list.” 
 
 
 
@@ -111,7 +111,7 @@ purpose, but which deviates in syntax or functionality from the definition of an
 
 
 
-**multiple values** *n.* 1. more than one <ClLinks  term={"value"}><i>value</i></ClLinks>. “The function <ClLinks  term={"truncate"}><b>truncate</b></ClLinks> returns multiple values.” 2. a variable number of <ClLinks  term={"value"}><i>values</i></ClLinks>, possibly including zero or one. “The function <ClLinks  term={"values"}><b>values</b></ClLinks> returns multiple values.” 3. a fixed number of values other than one. “The macro <ClLinks  term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks> is among the few operators in Common Lisp which can detect and manipulate multiple values.” 
+**multiple values** *n.* 1. more than one <ClLinks  term={"value"}><i>value</i></ClLinks>. “The function <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink> returns multiple values.” 2. a variable number of <ClLinks  term={"value"}><i>values</i></ClLinks>, possibly including zero or one. “The function <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> returns multiple values.” 3. a fixed number of values other than one. “The macro <DictionaryLink  term={"multiple-value-bind"}><b>multiple-value-bind</b></DictionaryLink> is among the few operators in Common Lisp which can detect and manipulate multiple values.” 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"function-keywords"}><b>function-keywords</b></ClLinks> *method → keys, allow-other-keys-p* 
+<DictionaryLink  term={"function-keywords"}><b>function-keywords</b></DictionaryLink> *method → keys, allow-other-keys-p* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"function-keywords"}><b>function-keywords</b></ClLinks> (<ClLinks  term={"method"}><i>method</i></ClLinks> <ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks>) 
+<DictionaryLink  term={"function-keywords"}><b>function-keywords</b></DictionaryLink> (<ClLinks  term={"method"}><i>method</i></ClLinks> <DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink>) 
 
 
 
@@ -70,7 +70,7 @@ Two values are returned: a <ClLinks  term={"list"}><i>list</i></ClLinks> of the 
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> 
+<DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> 
 
 
 
@@ -90,7 +90,7 @@ Two values are returned: a <ClLinks  term={"list"}><i>list</i></ClLinks> of the 
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> 
+<DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> 
 
 
 

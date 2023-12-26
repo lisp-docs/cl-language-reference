@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"parse-integer"}><b>parse-integer</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;key *start end radix junk-allowed → integer, pos* 
+<DictionaryLink  term={"parse-integer"}><b>parse-integer</b></DictionaryLink> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;key *start end radix junk-allowed → integer, pos* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
@@ -54,23 +54,23 @@
 
 
 
-<ClLinks  term={"parse-integer"}><b>parse-integer</b></ClLinks> parses an *integer* in the specified <ClLinks  term={"radix"}><i>radix</i></ClLinks> from the substring of <ClLinks  term={"string"}><i>string</i></ClLinks> delimited by *start* and *end*. 
+<DictionaryLink  term={"parse-integer"}><b>parse-integer</b></DictionaryLink> parses an *integer* in the specified <ClLinks  term={"radix"}><i>radix</i></ClLinks> from the substring of <ClLinks  term={"string"}><i>string</i></ClLinks> delimited by *start* and *end*. 
 
 
 
-<ClLinks  term={"parse-integer"}><b>parse-integer</b></ClLinks> expects an optional sign (+ or -) followed by a a non-empty sequence of digits to be interpreted in the specified <ClLinks  term={"radix"}><i>radix</i></ClLinks>. Optional leading and trailing <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> is ignored. 
+<DictionaryLink  term={"parse-integer"}><b>parse-integer</b></DictionaryLink> expects an optional sign (+ or -) followed by a a non-empty sequence of digits to be interpreted in the specified <ClLinks  term={"radix"}><i>radix</i></ClLinks>. Optional leading and trailing <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> is ignored. 
 
 
 
-<ClLinks  term={"parse-integer"}><b>parse-integer</b></ClLinks> does not recognize the syntactic radix-specifier prefixes #O, #B, #X, and #*n*R, nor does it recognize a trailing decimal point. 
+<DictionaryLink  term={"parse-integer"}><b>parse-integer</b></DictionaryLink> does not recognize the syntactic radix-specifier prefixes #O, #B, #X, and #*n*R, nor does it recognize a trailing decimal point. 
 
 
 
-If *junk-allowed* is <ClLinks  term={"false"}><i>false</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"parse-error"}><b>parse-error</b></ClLinks> is signaled if substring does not consist entirely of the representation of a signed *integer* , possibly surrounded on either side by <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> <ClLinks  term={"character"}><i>characters</i></ClLinks>. 
+If *junk-allowed* is <ClLinks  term={"false"}><i>false</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"parse-error"}><b>parse-error</b></DictionaryLink> is signaled if substring does not consist entirely of the representation of a signed *integer* , possibly surrounded on either side by <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> <ClLinks  term={"character"}><i>characters</i></ClLinks>. 
 
 
 
-The first <ClLinks  term={"value"}><i>value</i></ClLinks> returned is either the *integer* that was parsed, or else <ClLinks  term={"nil"}><b>nil</b></ClLinks> if no syntactically correct *integer* was seen but *junk-allowed* was <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+The first <ClLinks  term={"value"}><i>value</i></ClLinks> returned is either the *integer* that was parsed, or else <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if no syntactically correct *integer* was seen but *junk-allowed* was <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 

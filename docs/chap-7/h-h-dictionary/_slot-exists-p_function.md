@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"slot-exists-p"}><b>slot-exists-p</b></ClLinks> *object slot-name → generalized-boolean* 
+<DictionaryLink  term={"slot-exists-p"}><b>slot-exists-p</b></DictionaryLink> *object slot-name → generalized-boolean* 
 
 
 
@@ -38,7 +38,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the <ClLinks  term={"ob
 
 
 
-<ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks> 
+<DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> 
 
 
 
@@ -46,7 +46,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the <ClLinks  term={"ob
 
 
 
-<ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> 
+<DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, <DictionaryLink  term={"slot-missing"}><b>slot-missing</b></DictionaryLink> 
 
 
 
@@ -54,7 +54,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the <ClLinks  term={"ob
 
 
 
-Although no <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to do so, implementors are strongly encouraged to implement the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"slot-exists-p"}><b>slot-exists-p</b></ClLinks> using the <ClLinks  term={"function"}><i>function</i></ClLinks> slot-exists-p-using-class described in the *Metaobject Protocol*. 
+Although no <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to do so, implementors are strongly encouraged to implement the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"slot-exists-p"}><b>slot-exists-p</b></DictionaryLink> using the <ClLinks  term={"function"}><i>function</i></ClLinks> slot-exists-p-using-class described in the *Metaobject Protocol*. 
 
 
 

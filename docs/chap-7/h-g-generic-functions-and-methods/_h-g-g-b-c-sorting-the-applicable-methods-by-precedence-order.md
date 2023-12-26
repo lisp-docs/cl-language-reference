@@ -2,7 +2,7 @@
 
 
 
-To compare the precedence of two methods, their <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> are examined in order. The default examination order is from left to right, but an alternative order may be specified by the :argument-precedence-order option to <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks> or to any of the other operators that specify generic function options. 
+To compare the precedence of two methods, their <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> are examined in order. The default examination order is from left to right, but an alternative order may be specified by the :argument-precedence-order option to <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink> or to any of the other operators that specify generic function options. 
 
 
 
@@ -14,7 +14,7 @@ If some corresponding <GlossaryTerm styled={true} term={"parameter specializer"}
 
 
 
-If just one of a pair of corresponding <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> is (eql <ClLinks  term={"object"}><i>object</i></ClLinks>), the <ClLinks  term={"method"}><i>method</i></ClLinks> with that <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializer</i></GlossaryTerm> precedes the other <ClLinks  term={"method"}><i>method</i></ClLinks>. If both <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> are <ClLinks  term={"eql"}><b>eql</b></ClLinks> <ClLinks  term={"expression"}><i>expressions</i></ClLinks>, the specializers must agree (otherwise the two <ClLinks  term={"method"}><i>methods</i></ClLinks> would not both have been applicable to this argument). 
+If just one of a pair of corresponding <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> is (eql <ClLinks  term={"object"}><i>object</i></ClLinks>), the <ClLinks  term={"method"}><i>method</i></ClLinks> with that <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializer</i></GlossaryTerm> precedes the other <ClLinks  term={"method"}><i>method</i></ClLinks>. If both <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> are <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> <ClLinks  term={"expression"}><i>expressions</i></ClLinks>, the specializers must agree (otherwise the two <ClLinks  term={"method"}><i>methods</i></ClLinks> would not both have been applicable to this argument). 
 
 
 

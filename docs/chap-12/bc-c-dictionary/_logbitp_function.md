@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"logbitp"}><b>logbitp</b></ClLinks> *index integer → generalized-boolean* 
+<DictionaryLink  term={"logbitp"}><b>logbitp</b></DictionaryLink> *index integer → generalized-boolean* 
 
 
 
@@ -63,7 +63,7 @@ Negative *integers* are treated as if they were in two’s-complement notation.
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *index* is not a non-negative *integer* . Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *integer* is not an *integer* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *index* is not a non-negative *integer* . Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer* is not an *integer* . 
 
 
 

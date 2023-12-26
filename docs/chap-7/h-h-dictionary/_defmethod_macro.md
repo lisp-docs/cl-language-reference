@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> *function-name \{method-qualifier\}*\* *specialized-lambda-list* 
+<DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> *function-name \{method-qualifier\}*\* *specialized-lambda-list* 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> 
+<DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> 
 
 
 
@@ -74,7 +74,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -110,15 +110,15 @@
 
 
 
-The macro <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> defines a <ClLinks  term={"method"}><i>method</i></ClLinks> on a *generic function*. 
+The macro <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> defines a <ClLinks  term={"method"}><i>method</i></ClLinks> on a *generic function*. 
 
 
 
-If (fboundp *function-name*) is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, a *generic function* is created with default values for the argument precedence order (each argument is more specific than the arguments to its right in the argument list), for the generic function class (the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>), for the method class (the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks>), and for the method combination type (the standard method combination 
+If (fboundp *function-name*) is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, a *generic function* is created with default values for the argument precedence order (each argument is more specific than the arguments to its right in the argument list), for the generic function class (the <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink>), for the method class (the <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink>), and for the method combination type (the standard method combination 
 
 
 
-type). The *lambda list* of the *generic function* is congruent with the *lambda list* of the <ClLinks  term={"method"}><i>method</i></ClLinks> being defined; if the <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> form mentions keyword arguments, the *lambda list* of the *generic function* will mention &amp;key (but no keyword arguments). If *function-name* names an *ordinary function*, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a *special operator* , an error is signaled. 
+type). The *lambda list* of the *generic function* is congruent with the *lambda list* of the <ClLinks  term={"method"}><i>method</i></ClLinks> being defined; if the <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> form mentions keyword arguments, the *lambda list* of the *generic function* will mention &amp;key (but no keyword arguments). If *function-name* names an *ordinary function*, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a *special operator* , an error is signaled. 
 
 
 
@@ -142,7 +142,7 @@ Each *method-qualifier* argument is an <ClLinks  term={"object"}><i>object</i></
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> 
+<DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> 
 
 
 
@@ -150,7 +150,7 @@ Each *method-qualifier* argument is an <ClLinks  term={"object"}><i>object</i></
 
 
 
-The *specialized-lambda-list* argument is like an ordinary *lambda list* except that the <ClLinks  term={"name"}><i>names</i></ClLinks> of required parameters can be replaced by specialized parameters. A specialized parameter is a list of the form (*var parameter-specializer-name*). Only required parameters can be specialized. If *parameter-specializer-name* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> it names a <ClLinks  term={"class"}><i>class</i></ClLinks>; if it is a <ClLinks  term={"list"}><i>list</i></ClLinks>, it is of the form (eql *eql-specializer-form*). The parameter specializer name (eql *eql-specializer-form*) indicates that the corresponding argument must be <ClLinks  term={"eql"}><b>eql</b></ClLinks> to the <ClLinks  term={"object"}><i>object</i></ClLinks> that is the value of *eql-specializer-form* for the <ClLinks  term={"method"}><i>method</i></ClLinks> to be applicable. The *eql-specializer-form* is evaluated at the time that the expansion of the <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> macro is evaluated. If no *parameter specializer name* is specified for a given required parameter, the *parameter specializer* defaults to the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>. For further discussion, see Section 7.6.2 (Introduction to Methods). 
+The *specialized-lambda-list* argument is like an ordinary *lambda list* except that the <ClLinks  term={"name"}><i>names</i></ClLinks> of required parameters can be replaced by specialized parameters. A specialized parameter is a list of the form (*var parameter-specializer-name*). Only required parameters can be specialized. If *parameter-specializer-name* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> it names a <ClLinks  term={"class"}><i>class</i></ClLinks>; if it is a <ClLinks  term={"list"}><i>list</i></ClLinks>, it is of the form (eql *eql-specializer-form*). The parameter specializer name (eql *eql-specializer-form*) indicates that the corresponding argument must be <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> to the <ClLinks  term={"object"}><i>object</i></ClLinks> that is the value of *eql-specializer-form* for the <ClLinks  term={"method"}><i>method</i></ClLinks> to be applicable. The *eql-specializer-form* is evaluated at the time that the expansion of the <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> macro is evaluated. If no *parameter specializer name* is specified for a given required parameter, the *parameter specializer* defaults to the <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. For further discussion, see Section 7.6.2 (Introduction to Methods). 
 
 
 
@@ -162,7 +162,7 @@ The <ClLinks  term={"class"}><i>class</i></ClLinks> of the *method object* that 
 
 
 
-If the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> already has a <ClLinks  term={"method"}><i>method</i></ClLinks> that agrees with the <ClLinks  term={"method"}><i>method</i></ClLinks> being defined on <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> and <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>, <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> replaces the existing <ClLinks  term={"method"}><i>method</i></ClLinks> with the one now being defined. For a definition of agreement in this context. see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
+If the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> already has a <ClLinks  term={"method"}><i>method</i></ClLinks> that agrees with the <ClLinks  term={"method"}><i>method</i></ClLinks> being defined on <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> and <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>, <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> replaces the existing <ClLinks  term={"method"}><i>method</i></ClLinks> with the one now being defined. For a definition of agreement in this context. see Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers). 
 
 
 
@@ -170,7 +170,7 @@ The <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter spec
 
 
 
-The expansion of the <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> macro “refers to” each specialized parameter (see the description of <ClLinks  term={"ignore"}><b>ignore</b></ClLinks> within the description of <ClLinks  term={"declare"}><b>declare</b></ClLinks>). This includes parameters that have an explicit <GlossaryTerm styled={true} term={"parameter specializer name"}><i>parameter specializer name</i></GlossaryTerm> of <ClLinks  term={"t"}><b>t</b></ClLinks>. This means that a compiler warning does not occur if the body of the <ClLinks  term={"method"}><i>method</i></ClLinks> does not refer to a specialized parameter, while a warning might occur if the body of the <ClLinks  term={"method"}><i>method</i></ClLinks> does not refer to an unspecialized parameter. For this reason, a parameter that specializes on <ClLinks  term={"t"}><b>t</b></ClLinks> is not quite synonymous with an unspecialized parameter in this context. 
+The expansion of the <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> macro “refers to” each specialized parameter (see the description of <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink> within the description of <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>). This includes parameters that have an explicit <GlossaryTerm styled={true} term={"parameter specializer name"}><i>parameter specializer name</i></GlossaryTerm> of <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. This means that a compiler warning does not occur if the body of the <ClLinks  term={"method"}><i>method</i></ClLinks> does not refer to a specialized parameter, while a warning might occur if the body of the <ClLinks  term={"method"}><i>method</i></ClLinks> does not refer to an unspecialized parameter. For this reason, a parameter that specializes on <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> is not quite synonymous with an unspecialized parameter in this context. 
 
 
 
@@ -178,7 +178,7 @@ Declarations at the head of the method body that apply to the method’s <Glossa
 
 
 
-Declarations at the head of the method body that apply to the functional bindings of <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> or <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> apply to references to those functions within the method body <ClLinks  term={"form"}><i>forms</i></ClLinks>. Any outer <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the <GlossaryTerm styled={true} term={"function name"}><i>function names</i></GlossaryTerm> <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> and <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks>, and declarations associated with such <ClLinks  term={"binding"}><i>bindings</i></ClLinks> are *shadowed* <sub>2</sub> within the method body <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+Declarations at the head of the method body that apply to the functional bindings of <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> or <DictionaryLink  term={"next-method-p"}><b>next-method-p</b></DictionaryLink> apply to references to those functions within the method body <ClLinks  term={"form"}><i>forms</i></ClLinks>. Any outer <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the <GlossaryTerm styled={true} term={"function name"}><i>function names</i></GlossaryTerm> <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> and <DictionaryLink  term={"next-method-p"}><b>next-method-p</b></DictionaryLink>, and declarations associated with such <ClLinks  term={"binding"}><i>bindings</i></ClLinks> are *shadowed* <sub>2</sub> within the method body <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -186,7 +186,7 @@ The <ClLinks  term={"scope"}><i>scope</i></ClLinks> of <GlossaryTerm styled={tru
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> is not required to perform any compile-time side effects. In particular, the <ClLinks  term={"method"}><i>methods</i></ClLinks> 
+<DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> is not required to perform any compile-time side effects. In particular, the <ClLinks  term={"method"}><i>methods</i></ClLinks> 
 
 
 
@@ -218,11 +218,11 @@ The definition of the referenced <GlossaryTerm styled={true} term={"generic func
 
 
 
-If *function-name* names an <GlossaryTerm styled={true} term={"ordinary function"}><i>ordinary function</i></GlossaryTerm>, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If *function-name* names an <GlossaryTerm styled={true} term={"ordinary function"}><i>ordinary function</i></GlossaryTerm>, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
-If a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> is currently named by *function-name*, the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of the <ClLinks  term={"method"}><i>method</i></ClLinks> must be congruent with the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> is currently named by *function-name*, the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of the <ClLinks  term={"method"}><i>method</i></ClLinks> must be congruent with the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
@@ -230,7 +230,7 @@ If a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</
 
 
 
-<ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>, **documentation**, Section 7.6.2 (Introduction to Methods), Section 7.6.4 (Congruent Lambda-lists for all Methods of a Generic Function), Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+<DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>, **documentation**, Section 7.6.2 (Introduction to Methods), Section 7.6.4 (Congruent Lambda-lists for all Methods of a Generic Function), Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 

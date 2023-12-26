@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> *generic-function* &amp;rest *function-arguments → \{result\}*\* 
+<DictionaryLink  term={"no-applicable-method"}><b>no-applicable-method</b></DictionaryLink> *generic-function* &amp;rest *function-arguments → \{result\}*\* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> (*generic-function* <ClLinks  term={"t"}><b>t</b></ClLinks>) 
+<DictionaryLink  term={"no-applicable-method"}><b>no-applicable-method</b></DictionaryLink> (*generic-function* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>) 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-The generic function <ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> is called when a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> is invoked and no <ClLinks  term={"method"}><i>method</i></ClLinks> on that <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> is applicable. The <GlossaryTerm styled={true} term={"default method"}><i>default method</i></GlossaryTerm> signals an error. 
+The generic function <DictionaryLink  term={"no-applicable-method"}><b>no-applicable-method</b></DictionaryLink> is called when a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> is invoked and no <ClLinks  term={"method"}><i>method</i></ClLinks> on that <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> is applicable. The <GlossaryTerm styled={true} term={"default method"}><i>default method</i></GlossaryTerm> signals an error. 
 
 
 
-The generic function <ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> is not intended to be called by programmers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. 
+The generic function <DictionaryLink  term={"no-applicable-method"}><b>no-applicable-method</b></DictionaryLink> is not intended to be called by programmers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. 
 
 
 
@@ -66,7 +66,7 @@ The generic function <ClLinks  term={"no-applicable-method"}><b>no-applicable-me
 
 
 
-The default <ClLinks  term={"method"}><i>method</i></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks>. 
+The default <ClLinks  term={"method"}><i>method</i></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink>. 
 
 
 

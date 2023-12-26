@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"compile-file-truename"}><b>*compile-file-truename*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink  term={"compile-file-truename"}><b>*compile-file-truename*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"compile-file-pathname"}><b>\*compile-file-pathname\*</b></ClLinks> must always be a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"compile-file-truename"}><b>\*compile-file-truename\*</b></ClLinks> must always be a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"compile-file-pathname"}><b>\*compile-file-pathname\*</b></DictionaryLink> must always be a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"compile-file-truename"}><b>\*compile-file-truename\*</b></DictionaryLink> must always be a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -14,7 +14,7 @@ The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"compile-
 
 
 
-<ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -22,15 +22,15 @@ The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"compile-
 
 
 
-During a call to <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"compile-file-pathname"}><b>\*compile-file-pathname\*</b></ClLinks> is <ClLinks  term={"bound"}><i>bound</i></ClLinks> to the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> denoted by the first argument to <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, merged against the defaults; that is, it is <ClLinks  term={"bound"}><i>bound</i></ClLinks> to (pathname (merge-pathnames *input-file*)). During the same time interval, <ClLinks  term={"compile-file-truename"}><b>\*compile-file-truename\*</b></ClLinks> is <ClLinks  term={"bound"}><i>bound</i></ClLinks> to the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of the <ClLinks  term={"file"}><i>file</i></ClLinks> being *compiled*. 
+During a call to <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>, <DictionaryLink  term={"compile-file-pathname"}><b>\*compile-file-pathname\*</b></DictionaryLink> is <ClLinks  term={"bound"}><i>bound</i></ClLinks> to the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> denoted by the first argument to <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>, merged against the defaults; that is, it is <ClLinks  term={"bound"}><i>bound</i></ClLinks> to (pathname (merge-pathnames *input-file*)). During the same time interval, <DictionaryLink  term={"compile-file-truename"}><b>\*compile-file-truename\*</b></DictionaryLink> is <ClLinks  term={"bound"}><i>bound</i></ClLinks> to the <ClLinks  term={"truename"}><i>truename</i></ClLinks> of the <ClLinks  term={"file"}><i>file</i></ClLinks> being *compiled*. 
 
 
 
-At other times, the <ClLinks  term={"value"}><i>value</i></ClLinks> of these <ClLinks  term={"variable"}><i>variables</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+At other times, the <ClLinks  term={"value"}><i>value</i></ClLinks> of these <ClLinks  term={"variable"}><i>variables</i></ClLinks> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-If a <GlossaryTerm styled={true} term={"break loop"}><i>break loop</i></GlossaryTerm> is entered while <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> is ongoing, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether these <ClLinks  term={"variable"}><i>variables</i></ClLinks> retain the <ClLinks  term={"value"}><i>values</i></ClLinks> they had just prior to entering the <GlossaryTerm styled={true} term={"break loop"}><i>break loop</i></GlossaryTerm> or whether they are <ClLinks  term={"bound"}><i>bound</i></ClLinks> to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If a <GlossaryTerm styled={true} term={"break loop"}><i>break loop</i></GlossaryTerm> is entered while <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> is ongoing, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether these <ClLinks  term={"variable"}><i>variables</i></ClLinks> retain the <ClLinks  term={"value"}><i>values</i></ClLinks> they had just prior to entering the <GlossaryTerm styled={true} term={"break loop"}><i>break loop</i></GlossaryTerm> or whether they are <ClLinks  term={"bound"}><i>bound</i></ClLinks> to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -50,7 +50,7 @@ The <GlossaryTerm styled={true} term={"file system"}><i>file system</i></Glossar
 
 
 
-<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> 
+<DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> *package → generalized-boolean* 
+<DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink> *package → generalized-boolean* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> deletes <ClLinks  term={"package"}><i>package</i></ClLinks> from all package system data structures. If the operation is successful, <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> returns true, otherwise <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The effect of <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> is that the name and nicknames of <ClLinks  term={"package"}><i>package</i></ClLinks> cease to be recognized package names. The package <ClLinks  term={"object"}><i>object</i></ClLinks> is still a <ClLinks  term={"package"}><i>package</i></ClLinks> (*i.e.*, <ClLinks  term={"packagep"}><b>packagep</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> of it) but <ClLinks  term={"package-name"}><b>package-name</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The consequences of deleting the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> or the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> are undefined. The consequences of invoking any other package operation on <ClLinks  term={"package"}><i>package</i></ClLinks> once it has been deleted are unspecified. In particular, the consequences of invoking <ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks>, <ClLinks  term={"intern"}><b>intern</b></ClLinks> and other functions that look for a symbol name in 
+<DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink> deletes <ClLinks  term={"package"}><i>package</i></ClLinks> from all package system data structures. If the operation is successful, <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink> returns true, otherwise <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The effect of <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink> is that the name and nicknames of <ClLinks  term={"package"}><i>package</i></ClLinks> cease to be recognized package names. The package <ClLinks  term={"object"}><i>object</i></ClLinks> is still a <ClLinks  term={"package"}><i>package</i></ClLinks> (*i.e.*, <DictionaryLink  term={"packagep"}><b>packagep</b></DictionaryLink> is <ClLinks  term={"true"}><i>true</i></ClLinks> of it) but <DictionaryLink  term={"package-name"}><b>package-name</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The consequences of deleting the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> or the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> are undefined. The consequences of invoking any other package operation on <ClLinks  term={"package"}><i>package</i></ClLinks> once it has been deleted are unspecified. In particular, the consequences of invoking <DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink>, <DictionaryLink  term={"intern"}><b>intern</b></DictionaryLink> and other functions that look for a symbol name in 
 
 
 
@@ -42,15 +42,15 @@
 
 
 
-<ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> 
+<DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink> 
 
 
 
-a <ClLinks  term={"package"}><i>package</i></ClLinks> are unspecified if they are called with <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> bound to the deleted <ClLinks  term={"package"}><i>package</i></ClLinks> or with the deleted <ClLinks  term={"package"}><i>package</i></ClLinks> as an argument. 
+a <ClLinks  term={"package"}><i>package</i></ClLinks> are unspecified if they are called with <DictionaryLink  term={"package"}><b>\*package\*</b></DictionaryLink> bound to the deleted <ClLinks  term={"package"}><i>package</i></ClLinks> or with the deleted <ClLinks  term={"package"}><i>package</i></ClLinks> as an argument. 
 
 
 
-If <ClLinks  term={"package"}><i>package</i></ClLinks> is a *package object* that has already been deleted, <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> immediately returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If <ClLinks  term={"package"}><i>package</i></ClLinks> is a *package object* that has already been deleted, <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink> immediately returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -120,15 +120,11 @@ After this operation completes, the <GlossaryTerm styled={true} term={"home pack
 
 
 
-If the <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> is a <ClLinks  term={"name"}><i>name</i></ClLinks> that does not currently name a <ClLinks  term={"package"}><i>package</i></ClLinks>, a <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled. If correction is attempted, no deletion action is attempted; instead, <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> immediately returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+If the <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> is a <ClLinks  term={"name"}><i>name</i></ClLinks> that does not currently name a <ClLinks  term={"package"}><i>package</i></ClLinks>, a <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled. If correction is attempted, no deletion action is attempted; instead, <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink> immediately returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-If <ClLinks  term={"package"}><i>package</i></ClLinks> is used by other <ClLinks  term={"package"}><i>packages</i></ClLinks>, a <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
-
-
-
- 
+If <ClLinks  term={"package"}><i>package</i></ClLinks> is used by other <ClLinks  term={"package"}><i>packages</i></ClLinks>, a <ClLinks  term={"correctable"}><i>correctable</i></ClLinks> error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -136,7 +132,11 @@ If <ClLinks  term={"package"}><i>package</i></ClLinks> is used by other <ClLinks
 
 
 
-If correction is attempted, <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> is effectively called to remove any dependencies, causing <ClLinks  term={"package"}><i>package</i></ClLinks>’s <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> to cease being <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> to those <ClLinks  term={"package"}><i>packages</i></ClLinks> that use <ClLinks  term={"package"}><i>package</i></ClLinks>. <ClLinks  term={"delete-package"}><b>delete-package</b></ClLinks> then deletes <ClLinks  term={"package"}><i>package</i></ClLinks> just as it would have had there been no <ClLinks  term={"package"}><i>packages</i></ClLinks> that used it. 
+ 
+
+
+
+If correction is attempted, <DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> is effectively called to remove any dependencies, causing <ClLinks  term={"package"}><i>package</i></ClLinks>’s <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> to cease being <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> to those <ClLinks  term={"package"}><i>packages</i></ClLinks> that use <ClLinks  term={"package"}><i>package</i></ClLinks>. <DictionaryLink  term={"delete-package"}><b>delete-package</b></DictionaryLink> then deletes <ClLinks  term={"package"}><i>package</i></ClLinks> just as it would have had there been no <ClLinks  term={"package"}><i>packages</i></ClLinks> that used it. 
 
 
 
@@ -144,7 +144,7 @@ If correction is attempted, <ClLinks  term={"unuse-package"}><b>unuse-package</b
 
 
 
-<ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> 
+<DictionaryLink  term={"unuse-package"}><b>unuse-package</b></DictionaryLink> 
 
 
 

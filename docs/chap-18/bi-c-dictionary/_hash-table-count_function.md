@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"hash-table-count"}><b>hash-table-count</b></ClLinks> *hash-table → count* 
+<DictionaryLink  term={"hash-table-count"}><b>hash-table-count</b></DictionaryLink> *hash-table → count* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the number of entries in the *hash-table*. If *hash-table* has just been created or newly cleared (see <ClLinks  term={"clrhash"}><b>clrhash</b></ClLinks>) the entry count is 0. 
+Returns the number of entries in the *hash-table*. If *hash-table* has just been created or newly cleared (see <DictionaryLink  term={"clrhash"}><b>clrhash</b></DictionaryLink>) the entry count is 0. 
 
 
 
@@ -43,7 +43,7 @@ Returns the number of entries in the *hash-table*. If *hash-table* has just been
 
 
 
-<ClLinks  term={"clrhash"}><b>clrhash</b></ClLinks>, <ClLinks  term={"remhash"}><b>remhash</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"gethash"}><b>gethash</b></ClLinks> 
+<DictionaryLink  term={"clrhash"}><b>clrhash</b></DictionaryLink>, <DictionaryLink  term={"remhash"}><b>remhash</b></DictionaryLink>, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> 
 
 
 
@@ -51,7 +51,7 @@ Returns the number of entries in the *hash-table*. If *hash-table* has just been
 
 
 
-<ClLinks  term={"hash-table-size"}><b>hash-table-size</b></ClLinks> 
+<DictionaryLink  term={"hash-table-size"}><b>hash-table-size</b></DictionaryLink> 
 
 
 
@@ -71,7 +71,7 @@ Returns the number of entries in the *hash-table*. If *hash-table* has just been
 
 
 
-The following relationships are functionally correct, although in practice using <ClLinks  term={"hash-table-count"}><b>hash-table-count</b></ClLinks> is probably much faster: 
+The following relationships are functionally correct, although in practice using <DictionaryLink  term={"hash-table-count"}><b>hash-table-count</b></DictionaryLink> is probably much faster: 
 
 
 

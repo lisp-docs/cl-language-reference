@@ -2,7 +2,7 @@
 
 
 
-An initialization argument controls <ClLinks  term={"object"}><i>object</i></ClLinks> creation and initialization. It is often convenient to use keyword <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to name initialization arguments, but the <ClLinks  term={"name"}><i>name</i></ClLinks> of an initialization argument can be any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, including <ClLinks  term={"nil"}><b>nil</b></ClLinks>. An initialization argument can be used in two ways: to fill a <ClLinks  term={"slot"}><i>slot</i></ClLinks> with 
+An initialization argument controls <ClLinks  term={"object"}><i>object</i></ClLinks> creation and initialization. It is often convenient to use keyword <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to name initialization arguments, but the <ClLinks  term={"name"}><i>name</i></ClLinks> of an initialization argument can be any <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, including <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. An initialization argument can be used in two ways: to fill a <ClLinks  term={"slot"}><i>slot</i></ClLinks> with 
 
 
 
@@ -14,7 +14,7 @@ An <GlossaryTerm styled={true} term={"initialization argument list"}><i>initiali
 
 
 
-occurrences are ignored. The arguments to <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> (after the first argument) form an <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. 
+occurrences are ignored. The arguments to <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> (after the first argument) form an <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ An initialization argument can be associated with a <ClLinks  term={"slot"}><i>s
 
 
 
-An initialization argument can be associated with a <ClLinks  term={"method"}><i>method</i></ClLinks>. When an <ClLinks  term={"object"}><i>object</i></ClLinks> is created and a particular initialization argument is supplied, the <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>, <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>, and <ClLinks  term={"allocate-instance"}><b>allocate-instance</b></ClLinks> are called with that initialization argument’s name and value as a keyword argument pair. If a value for the initialization argument is not supplied in the <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>, the <ClLinks  term={"method"}><i>method</i></ClLinks>’s <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> supplies a default value. 
+An initialization argument can be associated with a <ClLinks  term={"method"}><i>method</i></ClLinks>. When an <ClLinks  term={"object"}><i>object</i></ClLinks> is created and a particular initialization argument is supplied, the <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>, <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>, and <DictionaryLink  term={"allocate-instance"}><b>allocate-instance</b></DictionaryLink> are called with that initialization argument’s name and value as a keyword argument pair. If a value for the initialization argument is not supplied in the <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>, the <ClLinks  term={"method"}><i>method</i></ClLinks>’s <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> supplies a default value. 
 
 
 

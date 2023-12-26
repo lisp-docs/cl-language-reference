@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"base-string"}><b>base-string</b></ClLinks>, <ClLinks  term={"string"}><b>string</b></ClLinks>, <ClLinks  term={"vector"}><b>vector</b></ClLinks>, <ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"base-string"}><b>base-string</b></DictionaryLink>, <DictionaryLink  term={"string"}><b>string</b></DictionaryLink>, <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, <DictionaryLink  term={"array"}><b>array</b></DictionaryLink>, <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"base-string"}><b>base-string</b></ClLinks> is equivalent to (vector base-char). The <GlossaryTerm styled={true} term={"base string"}><i>base string</i></GlossaryTerm> representation is the most efficient <ClLinks  term={"string"}><i>string</i></ClLinks> representation that can hold an arbitrary sequence of <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"base-string"}><b>base-string</b></DictionaryLink> is equivalent to (vector base-char). The <GlossaryTerm styled={true} term={"base string"}><i>base string</i></GlossaryTerm> representation is the most efficient <ClLinks  term={"string"}><i>string</i></ClLinks> representation that can hold an arbitrary sequence of <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>. 
 
 
 

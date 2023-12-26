@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"nth-value"}><b>nth-value</b></ClLinks> *n form ! object* 
+<DictionaryLink  term={"nth-value"}><b>nth-value</b></DictionaryLink> *n form ! object* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Evaluates *n* and then <ClLinks  term={"form"}><i>form</i></ClLinks>, returning as its only value the *n*th value *yielded* by <ClLinks  term={"form"}><i>form</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if *n* is greater than or equal to the number of <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"form"}><i>form</i></ClLinks>. (The first returned value is numbered 0.) 
+Evaluates *n* and then <ClLinks  term={"form"}><i>form</i></ClLinks>, returning as its only value the *n*th value *yielded* by <ClLinks  term={"form"}><i>form</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if *n* is greater than or equal to the number of <ClLinks  term={"value"}><i>values</i></ClLinks> returned by <ClLinks  term={"form"}><i>form</i></ClLinks>. (The first returned value is numbered 0.) 
 
 
 
@@ -53,7 +53,7 @@ Evaluates *n* and then <ClLinks  term={"form"}><i>form</i></ClLinks>, returning 
 
 
 
-<ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks>, <ClLinks  term={"nth"}><b>nth</b></ClLinks> 
+<DictionaryLink  term={"multiple-value-list"}><b>multiple-value-list</b></DictionaryLink>, <DictionaryLink  term={"nth"}><b>nth</b></DictionaryLink> 
 
 
 
@@ -61,7 +61,7 @@ Evaluates *n* and then <ClLinks  term={"form"}><i>form</i></ClLinks>, returning 
 
 
 
-Operationally, the following relationship is true, although <ClLinks  term={"nth-value"}><b>nth-value</b></ClLinks> might be more ecient in some <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> because, for example, some *consing* might be avoided. 
+Operationally, the following relationship is true, although <DictionaryLink  term={"nth-value"}><b>nth-value</b></DictionaryLink> might be more ecient in some <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> because, for example, some *consing* might be avoided. 
 
 
 
@@ -105,7 +105,7 @@ Operationally, the following relationship is true, although <ClLinks  term={"nth
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -117,7 +117,7 @@ Operationally, the following relationship is true, although <ClLinks  term={"nth
 
 
 
-*results*—<ClLinks  term={"nil"}><b>nil</b></ClLinks> if a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> occurs, or else, if an <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm> occurs, the <ClLinks  term={"value"}><i>values</i></ClLinks> that were transferred. 
+*results*—<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm> occurs, or else, if an <GlossaryTerm styled={true} term={"explicit return"}><i>explicit return</i></GlossaryTerm> occurs, the <ClLinks  term={"value"}><i>values</i></ClLinks> that were transferred. 
 
 
 
@@ -125,7 +125,7 @@ Operationally, the following relationship is true, although <ClLinks  term={"nth
 
 
 
-Three distinct operations are performed by **prog** and **prog\***: they bind local variables, they permit use of the <ClLinks  term={"return"}><b>return</b></ClLinks> statement, and they permit use of the <ClLinks  term={"go"}><b>go</b></ClLinks> statement. A typical **prog** looks like this: 
+Three distinct operations are performed by **prog** and **prog\***: they bind local variables, they permit use of the <DictionaryLink  term={"return"}><b>return</b></DictionaryLink> statement, and they permit use of the <DictionaryLink  term={"go"}><b>go</b></DictionaryLink> statement. A typical **prog** looks like this: 
 
 
 
@@ -189,15 +189,15 @@ statement5
 
 
 
-For **prog**, *init-forms* are evaluated first, in the order in which they are supplied. The *vars* are then bound to the corresponding values in parallel. If no *init-form* is supplied for a given *var*, that *var* is bound to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+For **prog**, *init-forms* are evaluated first, in the order in which they are supplied. The *vars* are then bound to the corresponding values in parallel. If no *init-form* is supplied for a given *var*, that *var* is bound to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-The body of **prog** is executed as if it were a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>; the <ClLinks  term={"go"}><b>go</b></ClLinks> statement can be used to transfer control to a <ClLinks  term={"tag"}><i>tag</i></ClLinks>. <ClLinks  term={"tag"}><i>Tags</i></ClLinks> label *statements*. 
+The body of **prog** is executed as if it were a <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>; the <DictionaryLink  term={"go"}><b>go</b></DictionaryLink> statement can be used to transfer control to a <ClLinks  term={"tag"}><i>tag</i></ClLinks>. <ClLinks  term={"tag"}><i>Tags</i></ClLinks> label *statements*. 
 
 
 
-**prog** implicitly establishes a <ClLinks  term={"block"}><b>block</b></ClLinks> named <ClLinks  term={"nil"}><b>nil</b></ClLinks> around the entire **prog** <ClLinks  term={"form"}><i>form</i></ClLinks>, so that <ClLinks  term={"return"}><b>return</b></ClLinks> can be used at any time to exit from the **prog** <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+**prog** implicitly establishes a <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> named <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> around the entire **prog** <ClLinks  term={"form"}><i>form</i></ClLinks>, so that <DictionaryLink  term={"return"}><b>return</b></DictionaryLink> can be used at any time to exit from the **prog** <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -250,7 +250,7 @@ Think of this function as being like a zipper."
 
 
 
-<ClLinks  term={"block"}><b>block</b></ClLinks>, <ClLinks  term={"let"}><b>let</b></ClLinks>, <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks>, <ClLinks  term={"go"}><b>go</b></ClLinks>, <ClLinks  term={"return"}><b>return</b></ClLinks>, Section 3.1 (Evaluation) 
+<DictionaryLink  term={"block"}><b>block</b></DictionaryLink>, <DictionaryLink  term={"let"}><b>let</b></DictionaryLink>, <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink>, <DictionaryLink  term={"go"}><b>go</b></DictionaryLink>, <DictionaryLink  term={"return"}><b>return</b></DictionaryLink>, Section 3.1 (Evaluation) 
 
 
 
@@ -258,7 +258,7 @@ Think of this function as being like a zipper."
 
 
 
-**prog** can be explained in terms of <ClLinks  term={"block"}><b>block</b></ClLinks>, <ClLinks  term={"let"}><b>let</b></ClLinks>, and <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> as follows: 
+**prog** can be explained in terms of <DictionaryLink  term={"block"}><b>block</b></DictionaryLink>, <DictionaryLink  term={"let"}><b>let</b></DictionaryLink>, and <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> as follows: 
 
 
 

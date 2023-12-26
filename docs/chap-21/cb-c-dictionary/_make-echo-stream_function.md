@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks> *input-stream output-stream → echo-stream* 
+<DictionaryLink  term={"make-echo-stream"}><b>make-echo-stream</b></DictionaryLink> *input-stream output-stream → echo-stream* 
 
 
 

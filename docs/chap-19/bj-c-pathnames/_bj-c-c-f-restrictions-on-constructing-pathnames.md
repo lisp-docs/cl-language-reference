@@ -6,7 +6,7 @@ When constructing a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> from c
 
 
 
-*•* Any component can be <ClLinks  term={"nil"}><b>nil</b></ClLinks>. <ClLinks  term={"nil"}><b>nil</b></ClLinks> in the host might mean a default host rather than an actual <ClLinks  term={"nil"}><b>nil</b></ClLinks> in some implementations. 
+*•* Any component can be <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> in the host might mean a default host rather than an actual <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> in some implementations. 
 
 
 

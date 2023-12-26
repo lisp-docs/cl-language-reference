@@ -30,7 +30,7 @@ The precise meaning of an <GlossaryTerm styled={true} term={"interactive stream"
 
 
 
-*•* <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> might wait for the user to type something before returning instead of immediately returning a character or end-of-file. 
+*•* <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> might wait for the user to type something before returning instead of immediately returning a character or end-of-file. 
 
 
 

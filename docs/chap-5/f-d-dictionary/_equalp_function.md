@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"equalp"}><b>equalp</b></ClLinks> *x y → generalized-boolean* 
+<DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> *x y → generalized-boolean* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *x* and *y* are <ClLinks  term={"equal"}><b>equal</b></ClLinks>, or if they have components that are of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as each other and if those components are <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>; specifically, <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> in the following cases: 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *x* and *y* are <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>, or if they have components that are of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as each other and if those components are <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>; specifically, <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> in the following cases: 
 
 
 
@@ -38,7 +38,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if *x* and *y* are <ClLink
 
 
 
-If two <ClLinks  term={"character"}><i>characters</i></ClLinks> are <ClLinks  term={"char-equal"}><b>char-equal</b></ClLinks>. 
+If two <ClLinks  term={"character"}><i>characters</i></ClLinks> are <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink>. 
 
 
 
@@ -54,7 +54,7 @@ If two <ClLinks  term={"number"}><i>numbers</i></ClLinks> are the <ClLinks  term
 
 
 
-If the two <ClLinks  term={"car"}><i>cars</i></ClLinks> in the *conses* are <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> and the two <ClLinks  term={"cdr"}><i>cdrs</i></ClLinks> in the *conses* are <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>. 
+If the two <ClLinks  term={"car"}><i>cars</i></ClLinks> in the *conses* are <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> and the two <ClLinks  term={"cdr"}><i>cdrs</i></ClLinks> in the *conses* are <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>. 
 
 
 
@@ -62,7 +62,7 @@ If the two <ClLinks  term={"car"}><i>cars</i></ClLinks> in the *conses* are <ClL
 
 
 
-If two <ClLinks  term={"array"}><i>arrays</i></ClLinks> have the same number of dimensions, the dimensions match, and the corresponding *active elements* are <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>. The <ClLinks  term={"type"}><i>types</i></ClLinks> for which the <ClLinks  term={"array"}><i>arrays</i></ClLinks> are <ClLinks  term={"specialized"}><i>specialized</i></ClLinks> need not match; for example, a <ClLinks  term={"string"}><i>string</i></ClLinks> and a general <ClLinks  term={"array"}><i>array</i></ClLinks> that happens to contain the same <ClLinks  term={"character"}><i>characters</i></ClLinks> are <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>. Because <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> performs <ClLinks  term={"element"}><i>element</i></ClLinks>-by-<ClLinks  term={"element"}><i>element</i></ClLinks> comparisons of <ClLinks  term={"string"}><i>strings</i></ClLinks> and ignores the <ClLinks  term={"case"}><i>case</i></ClLinks> of <ClLinks  term={"character"}><i>characters</i></ClLinks>, <ClLinks  term={"case"}><i>case</i></ClLinks> distinctions are ignored when <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> compares <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
+If two <ClLinks  term={"array"}><i>arrays</i></ClLinks> have the same number of dimensions, the dimensions match, and the corresponding *active elements* are <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>. The <ClLinks  term={"type"}><i>types</i></ClLinks> for which the <ClLinks  term={"array"}><i>arrays</i></ClLinks> are <ClLinks  term={"specialized"}><i>specialized</i></ClLinks> need not match; for example, a <ClLinks  term={"string"}><i>string</i></ClLinks> and a general <ClLinks  term={"array"}><i>array</i></ClLinks> that happens to contain the same <ClLinks  term={"character"}><i>characters</i></ClLinks> are <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>. Because <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> performs <ClLinks  term={"element"}><i>element</i></ClLinks>-by-<ClLinks  term={"element"}><i>element</i></ClLinks> comparisons of <ClLinks  term={"string"}><i>strings</i></ClLinks> and ignores the <ClLinks  term={"case"}><i>case</i></ClLinks> of <ClLinks  term={"character"}><i>characters</i></ClLinks>, <ClLinks  term={"case"}><i>case</i></ClLinks> distinctions are ignored when <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> compares <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
 
 
 
@@ -78,7 +78,7 @@ If two <ClLinks  term={"array"}><i>arrays</i></ClLinks> have the same number of 
 
 
 
-<ClLinks  term={"equalp"}><b>equalp</b></ClLinks> 
+<DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> 
 
 
 
@@ -86,7 +86,7 @@ If two <ClLinks  term={"array"}><i>arrays</i></ClLinks> have the same number of 
 
 
 
-If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks  term={"class"}><i>class</i></ClLinks> and the value of each <ClLinks  term={"slot"}><i>slot</i></ClLinks> in *S*<sub>1</sub> is the <ClLinks  term={"same"}><i>same</i></ClLinks> under <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> as the value of the corresponding <ClLinks  term={"slot"}><i>slot</i></ClLinks> in *S*<sub>2</sub>. 
+If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks  term={"class"}><i>class</i></ClLinks> and the value of each <ClLinks  term={"slot"}><i>slot</i></ClLinks> in *S*<sub>1</sub> is the <ClLinks  term={"same"}><i>same</i></ClLinks> under <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> as the value of the corresponding <ClLinks  term={"slot"}><i>slot</i></ClLinks> in *S*<sub>2</sub>. 
 
 
 
@@ -94,11 +94,11 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks  te
 
 
 
-<ClLinks  term={"equalp"}><b>equalp</b></ClLinks> descends *hash-tables* by first comparing the count of entries and the :test function; if those are the same, it compares the keys of the tables using the :test function and then the values of the matching keys using <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> recursively. 
+<DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> descends *hash-tables* by first comparing the count of entries and the :test function; if those are the same, it compares the keys of the tables using the :test function and then the values of the matching keys using <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> recursively. 
 
 
 
-<ClLinks  term={"equalp"}><b>equalp</b></ClLinks> does not descend any <ClLinks  term={"object"}><i>objects</i></ClLinks> other than the ones explicitly specified above. Figure 5–13 summarizes the information given in the previous list. In addition, the figure specifies the priority of the behavior of <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>, with upper entries taking priority over lower ones. 
+<DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> does not descend any <ClLinks  term={"object"}><i>objects</i></ClLinks> other than the ones explicitly specified above. Figure 5–13 summarizes the information given in the previous list. In addition, the figure specifies the priority of the behavior of <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>, with upper entries taking priority over lower ones. 
 
 
 
@@ -106,7 +106,7 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <ClLinks  te
 
 | :- |
 
-|<p><ClLinks  term={"number"}><i>number</i></ClLinks> uses <ClLinks  term={"="}><b>=</b></ClLinks> </p><p><ClLinks  term={"character"}><i>character</i></ClLinks> uses <ClLinks  term={"char-equal"}><b>char-equal</b></ClLinks> </p><p><ClLinks  term={"cons"}><i>cons</i></ClLinks> descends </p><p><GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> descends </p><p><ClLinks  term={"string"}><i>string</i></ClLinks> descends </p><p><ClLinks  term={"pathname"}><i>pathname</i></ClLinks> same as <ClLinks  term={"equal"}><b>equal</b></ClLinks> </p><p><ClLinks  term={"structure"}><i>structure</i></ClLinks> descends, as described above </p><p>Other <ClLinks  term={"array"}><i>array</i></ClLinks> descends </p><p><GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> descends, as described above </p><p>Other <ClLinks  term={"object"}><i>object</i></ClLinks> uses <ClLinks  term={"eq"}><b>eq</b></ClLinks></p>|
+|<p><ClLinks  term={"number"}><i>number</i></ClLinks> uses <ClLinks  term={"="}><b>=</b></ClLinks> </p><p><ClLinks  term={"character"}><i>character</i></ClLinks> uses <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink> </p><p><ClLinks  term={"cons"}><i>cons</i></ClLinks> descends </p><p><GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> descends </p><p><ClLinks  term={"string"}><i>string</i></ClLinks> descends </p><p><ClLinks  term={"pathname"}><i>pathname</i></ClLinks> same as <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> </p><p><ClLinks  term={"structure"}><i>structure</i></ClLinks> descends, as described above </p><p>Other <ClLinks  term={"array"}><i>array</i></ClLinks> descends </p><p><GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> descends, as described above </p><p>Other <ClLinks  term={"object"}><i>object</i></ClLinks> uses <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink></p>|
 
 
 
@@ -149,7 +149,7 @@ Data and Control
 
 
 
-<ClLinks  term={"eq"}><b>eq</b></ClLinks>, <ClLinks  term={"eql"}><b>eql</b></ClLinks>, <ClLinks  term={"equal"}><b>equal</b></ClLinks>, <ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"string"}><b>string=</b></ClLinks>, **string-equal**, <ClLinks  term={"char="}><b>char=</b></ClLinks>, <ClLinks  term={"char-equal"}><b>char-equal</b></ClLinks> 
+<DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>, <ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"string"}><b>string=</b></ClLinks>, **string-equal**, <ClLinks  term={"char="}><b>char=</b></ClLinks>, <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink> 
 
 
 
@@ -157,7 +157,7 @@ Data and Control
 
 
 
-<ClLinks  term={"object"}><i>Object</i></ClLinks> equality is not a concept for which there is a uniquely determined correct algorithm. The appropriateness of an equality predicate can be judged only in the context of the needs of some particular program. Although these functions take any type of argument and their names sound very generic, <ClLinks  term={"equal"}><b>equal</b></ClLinks> and <ClLinks  term={"equalp"}><b>equalp</b></ClLinks> are not appropriate for every application. 
+<ClLinks  term={"object"}><i>Object</i></ClLinks> equality is not a concept for which there is a uniquely determined correct algorithm. The appropriateness of an equality predicate can be judged only in the context of the needs of some particular program. Although these functions take any type of argument and their names sound very generic, <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> and <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> are not appropriate for every application. 
 
 
 

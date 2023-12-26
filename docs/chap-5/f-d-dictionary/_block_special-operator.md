@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"block"}><b>block</b></ClLinks> *name form*\* → \{result\}\* 
+<DictionaryLink  term={"block"}><b>block</b></DictionaryLink> *name form*\* → \{result\}\* 
 
 
 
@@ -42,11 +42,11 @@ Data and Control
 
 
 
-<ClLinks  term={"block"}><b>block</b></ClLinks> *establishes* a <ClLinks  term={"block"}><i>block</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> and then evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks> as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<DictionaryLink  term={"block"}><b>block</b></DictionaryLink> *establishes* a <ClLinks  term={"block"}><i>block</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> and then evaluates <ClLinks  term={"form"}><i>forms</i></ClLinks> as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-The <GlossaryTerm styled={true} term={"special operator"}><i>special operators</i></GlossaryTerm> <ClLinks  term={"block"}><b>block</b></ClLinks> and <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> work together to provide a structured, lexical, non-local exit facility. At any point lexically contained within <ClLinks  term={"form"}><i>forms</i></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> can be used with the given <ClLinks  term={"name"}><i>name</i></ClLinks> to return control and values from the <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, except when an intervening <ClLinks  term={"block"}><i>block</i></ClLinks> with the same name has been *established*, in which case the outer <ClLinks  term={"block"}><i>block</i></ClLinks> is shadowed by the inner one. 
+The <GlossaryTerm styled={true} term={"special operator"}><i>special operators</i></GlossaryTerm> <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> and <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> work together to provide a structured, lexical, non-local exit facility. At any point lexically contained within <ClLinks  term={"form"}><i>forms</i></ClLinks>, <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> can be used with the given <ClLinks  term={"name"}><i>name</i></ClLinks> to return control and values from the <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>, except when an intervening <ClLinks  term={"block"}><i>block</i></ClLinks> with the same name has been *established*, in which case the outer <ClLinks  term={"block"}><i>block</i></ClLinks> is shadowed by the inner one. 
 
 
 
@@ -76,7 +76,7 @@ Once established, a <ClLinks  term={"block"}><i>block</i></ClLinks> may only be 
 
 
 
-<ClLinks  term={"return"}><b>return</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, Section 3.1 (Evaluation) 
+<DictionaryLink  term={"return"}><b>return</b></DictionaryLink>, <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>, Section 3.1 (Evaluation) 
 
 
 
@@ -96,7 +96,7 @@ Once established, a <ClLinks  term={"block"}><i>block</i></ClLinks> may only be 
 
 
 
-<ClLinks  term={"catch"}><b>catch</b></ClLinks> 
+<DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> 
 
 
 

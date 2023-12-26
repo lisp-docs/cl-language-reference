@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"method"}><b>method</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"method"}><b>method</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 

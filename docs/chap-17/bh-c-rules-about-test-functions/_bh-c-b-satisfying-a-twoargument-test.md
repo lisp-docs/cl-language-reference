@@ -22,7 +22,7 @@ The object <i>O</i> might not be compared directly to <i>E<sub>i</sub></i>. If a
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> designated by the :key <ClLinks  term={"argument"}><i>argument</i></ClLinks> is never called on *O* itself. However, if the function operates on multiple sequences (*e.g.*, as happens in <ClLinks  term={"set-difference"}><b>set-difference</b></ClLinks>), *O* will be the result of calling the :key function on an <ClLinks  term={"element"}><i>element</i></ClLinks> of the other sequence. 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> designated by the :key <ClLinks  term={"argument"}><i>argument</i></ClLinks> is never called on *O* itself. However, if the function operates on multiple sequences (*e.g.*, as happens in <DictionaryLink  term={"set-difference"}><b>set-difference</b></DictionaryLink>), *O* will be the result of calling the :key function on an <ClLinks  term={"element"}><i>element</i></ClLinks> of the other sequence. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"hash-table"}><b>hash-table</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"hash-table"}><b>hash-table</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 

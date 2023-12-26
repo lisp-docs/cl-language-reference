@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"keywordp"}><b>keywordp</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink  term={"keywordp"}><b>keywordp</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -47,7 +47,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"constantp"}><b>constantp</b></ClLinks>, <ClLinks  term={"keyword"}><b>keyword</b></ClLinks>, <ClLinks  term={"symbolp"}><b>symbolp</b></ClLinks>, <ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks> 
+<DictionaryLink  term={"constantp"}><b>constantp</b></DictionaryLink>, <DictionaryLink  term={"keyword"}><b>keyword</b></DictionaryLink>, <DictionaryLink  term={"symbolp"}><b>symbolp</b></DictionaryLink>, <DictionaryLink  term={"symbol-package"}><b>symbol-package</b></DictionaryLink> 
 
 
 

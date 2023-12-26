@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"class-of"}><b>class-of</b></ClLinks> *object ! class* 
+<DictionaryLink  term={"class-of"}><b>class-of</b></DictionaryLink> *object ! class* 
 
 
 
@@ -46,7 +46,7 @@ Returns the <ClLinks  term={"class"}><i>class</i></ClLinks> of which the <ClLink
 
 
 
-<ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, <ClLinks  term={"type-of"}><b>type-of</b></ClLinks> 
+<DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink>, <DictionaryLink  term={"type-of"}><b>type-of</b></DictionaryLink> 
 
 
 

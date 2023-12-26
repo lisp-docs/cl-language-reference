@@ -14,11 +14,11 @@ The algorithm performed by the *Lisp reader* is as follows:
 
 
 
-1\. If at end of file, end-of-file processing is performed as specified in <ClLinks  term={"read"}><b>read</b></ClLinks>. Otherwise, one <ClLinks  term={"character"}><i>character</i></ClLinks> , *x*, is read from the *input stream*, and dispatched according to the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of *x* to one of steps 2 to 7. 
+1\. If at end of file, end-of-file processing is performed as specified in <DictionaryLink  term={"read"}><b>read</b></DictionaryLink>. Otherwise, one <ClLinks  term={"character"}><i>character</i></ClLinks> , *x*, is read from the *input stream*, and dispatched according to the <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm> of *x* to one of steps 2 to 7. 
 
 
 
-2\. If *x* is an *invalid character* , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"reader-error"}><b>reader-error</b></ClLinks> is signaled. 
+2\. If *x* is an *invalid character* , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -34,7 +34,7 @@ The <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro f
 
 
 
-The <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> must not have any side effects other than on the *input stream*; because of backtracking and restarting of the <ClLinks  term={"read"}><b>read</b></ClLinks> operation, front ends to the *Lisp reader* (*e.g.*, “editors” and “rubout handlers”) may cause the <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> to be called repeatedly during the reading of a single <ClLinks  term={"expression"}><i>expression</i></ClLinks> in which *x* only appears once. 
+The <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> must not have any side effects other than on the *input stream*; because of backtracking and restarting of the <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> operation, front ends to the *Lisp reader* (*e.g.*, “editors” and “rubout handlers”) may cause the <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> to be called repeatedly during the reading of a single <ClLinks  term={"expression"}><i>expression</i></ClLinks> in which *x* only appears once. 
 
 
 
@@ -42,7 +42,7 @@ The <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro f
 
 
 
-5\. If *x* is a *single escape character* then the next <ClLinks  term={"character"}><i>character</i></ClLinks> , *y*, is read, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled if at the end of file. *y* is treated as if it is a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> whose only <GlossaryTerm styled={true} term={"constituent trait"}><i>constituent trait</i></GlossaryTerm> is <ClLinks  term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub>. *y* is used to begin a <ClLinks  term={"token"}><i>token</i></ClLinks>, and step 8 is entered. 
+5\. If *x* is a *single escape character* then the next <ClLinks  term={"character"}><i>character</i></ClLinks> , *y*, is read, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled if at the end of file. *y* is treated as if it is a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> whose only <GlossaryTerm styled={true} term={"constituent trait"}><i>constituent trait</i></GlossaryTerm> is <ClLinks  term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub>. *y* is used to begin a <ClLinks  term={"token"}><i>token</i></ClLinks>, and step 8 is entered. 
 
 
 
@@ -94,7 +94,7 @@ Reader).
 
 
 
-*•* If *y* is a *single escape character* , then the next <ClLinks  term={"character"}><i>character</i></ClLinks> , *z*, is read, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled if at end of file. *Z* is treated as if it is a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> whose only <GlossaryTerm styled={true} term={"constituent trait"}><i>constituent trait</i></GlossaryTerm> is <ClLinks  term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub>. *Z* is appended to the <ClLinks  term={"token"}><i>token</i></ClLinks> being built, and step 8 is repeated. 
+*•* If *y* is a *single escape character* , then the next <ClLinks  term={"character"}><i>character</i></ClLinks> , *z*, is read, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled if at end of file. *Z* is treated as if it is a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> whose only <GlossaryTerm styled={true} term={"constituent trait"}><i>constituent trait</i></GlossaryTerm> is <ClLinks  term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub>. *Z* is appended to the <ClLinks  term={"token"}><i>token</i></ClLinks> being built, and step 8 is repeated. 
 
 
 
@@ -102,19 +102,19 @@ Reader).
 
 
 
-*•* If *y* is an *invalid character* , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"reader-error"}><b>reader-error</b></ClLinks> is signaled. 
+*•* If *y* is an *invalid character* , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink> is signaled. 
 
 
 
-*•* If *y* is a *terminating macro character* , then it terminates the <ClLinks  term={"token"}><i>token</i></ClLinks>. First the *character y* is unread (see <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks>), and then step 10 is entered. 
+*•* If *y* is a *terminating macro character* , then it terminates the <ClLinks  term={"token"}><i>token</i></ClLinks>. First the *character y* is unread (see <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink>), and then step 10 is entered. 
 
 
 
-*•* If *y* is a <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> , then it terminates the <ClLinks  term={"token"}><i>token</i></ClLinks>. First the *character y* is unread if appropriate (see <ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks>), and then step 10 is entered. 
+*•* If *y* is a <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> , then it terminates the <ClLinks  term={"token"}><i>token</i></ClLinks>. First the *character y* is unread if appropriate (see <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink>), and then step 10 is entered. 
 
 
 
-9\. At this point a <ClLinks  term={"token"}><i>token</i></ClLinks> is being accumulated, and an odd number of *multiple escape characters* have been encountered. If at end of file, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled. Otherwise, a <ClLinks  term={"character"}><i>character</i></ClLinks> , *y*, is read, and one of the following actions is performed according to its <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm>: 
+9\. At this point a <ClLinks  term={"token"}><i>token</i></ClLinks> is being accumulated, and an odd number of *multiple escape characters* have been encountered. If at end of file, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. Otherwise, a <ClLinks  term={"character"}><i>character</i></ClLinks> , *y*, is read, and one of the following actions is performed according to its <GlossaryTerm styled={true} term={"syntax type"}><i>syntax type</i></GlossaryTerm>: 
 
 
 
@@ -122,7 +122,7 @@ Reader).
 
 
 
-*•* If *y* is a *single escape character* , then the next <ClLinks  term={"character"}><i>character</i></ClLinks> , *z*, is read, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled if at end of file. *Z* is treated as a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> whose only <GlossaryTerm styled={true} term={"constituent trait"}><i>constituent trait</i></GlossaryTerm> is <ClLinks  term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub>. *Z* is appended to the <ClLinks  term={"token"}><i>token</i></ClLinks> being built, and step 9 is repeated.  
+*•* If *y* is a *single escape character* , then the next <ClLinks  term={"character"}><i>character</i></ClLinks> , *z*, is read, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled if at end of file. *Z* is treated as a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> whose only <GlossaryTerm styled={true} term={"constituent trait"}><i>constituent trait</i></GlossaryTerm> is <ClLinks  term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>2</sub>. *Z* is appended to the <ClLinks  term={"token"}><i>token</i></ClLinks> being built, and step 9 is repeated.  
 
 
 
@@ -134,11 +134,11 @@ Reader).
 
 
 
-*•* If *y* is an *invalid character* , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"reader-error"}><b>reader-error</b></ClLinks> is signaled. 
+*•* If *y* is an *invalid character* , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink> is signaled. 
 
 
 
-10\. An entire <ClLinks  term={"token"}><i>token</i></ClLinks> has been accumulated. The <ClLinks  term={"object"}><i>object</i></ClLinks> represented by the <ClLinks  term={"token"}><i>token</i></ClLinks> is returned as the result of the read operation, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"reader-error"}><b>reader-error</b></ClLinks> is signaled if the <ClLinks  term={"token"}><i>token</i></ClLinks> is not of valid syntax.  
+10\. An entire <ClLinks  term={"token"}><i>token</i></ClLinks> has been accumulated. The <ClLinks  term={"object"}><i>object</i></ClLinks> represented by the <ClLinks  term={"token"}><i>token</i></ClLinks> is returned as the result of the read operation, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink> is signaled if the <ClLinks  term={"token"}><i>token</i></ClLinks> is not of valid syntax.  
 
 
 

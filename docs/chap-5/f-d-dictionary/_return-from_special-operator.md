@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"return-from"}><b>return-from</b></ClLinks> <ClLinks  term={"name"}><i>name</i></ClLinks> [*result*] → 
+<DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> <ClLinks  term={"name"}><i>name</i></ClLinks> [*result*] → 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*result*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*result*—a <ClLinks  term={"form"}><i>form</i></ClLinks>; evaluated. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -30,11 +30,11 @@ Returns control and <GlossaryTerm styled={true} term={"multiple values"}><i>mult
 
 
 
-A <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> must lexically enclose the occurrence of <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>; any *values yielded* by the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *result* are immediately returned from the innermost such lexically enclosing <ClLinks  term={"block"}><i>block</i></ClLinks>. 
+A <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> named <ClLinks  term={"name"}><i>name</i></ClLinks> must lexically enclose the occurrence of <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>; any *values yielded* by the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *result* are immediately returned from the innermost such lexically enclosing <ClLinks  term={"block"}><i>block</i></ClLinks>. 
 
 
 
-The transfer of control initiated by <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
+The transfer of control initiated by <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> is performed as described in Section 5.2 (Transfer of Control to an Exit Point). 
 
 
 
@@ -96,7 +96,7 @@ The following has undefined consequences because the **block** *form* exits norm
 
 
 
-<ClLinks  term={"block"}><b>block</b></ClLinks>, <ClLinks  term={"return"}><b>return</b></ClLinks>, Section 3.1 (Evaluation) 
+<DictionaryLink  term={"block"}><b>block</b></DictionaryLink>, <DictionaryLink  term={"return"}><b>return</b></DictionaryLink>, Section 3.1 (Evaluation) 
 
 
 

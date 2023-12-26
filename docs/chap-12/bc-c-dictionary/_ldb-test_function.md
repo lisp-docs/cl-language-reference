@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"ldb-test"}><b>ldb-test</b></ClLinks> *bytespec integer ! generalized-boolean* 
+<DictionaryLink  term={"ldb-test"}><b>ldb-test</b></DictionaryLink> *bytespec integer ! generalized-boolean* 
 
 
 
@@ -44,7 +44,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if any of the bits of the 
 
 
 
-<ClLinks  term={"byte"}><b>byte</b></ClLinks>, <ClLinks  term={"ldb"}><b>ldb</b></ClLinks>, <ClLinks  term={"zerop"}><b>zerop</b></ClLinks> 
+<DictionaryLink  term={"byte"}><b>byte</b></DictionaryLink>, <DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink>, <DictionaryLink  term={"zerop"}><b>zerop</b></DictionaryLink> 
 
 
 

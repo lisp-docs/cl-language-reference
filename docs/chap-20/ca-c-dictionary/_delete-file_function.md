@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"delete-file"}><b>delete-file</b></ClLinks> *filespec →* <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"delete-file"}><b>delete-file</b></DictionaryLink> *filespec →* <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -50,11 +50,11 @@ It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i
 
 
 
-<ClLinks  term={"delete-file"}><b>delete-file</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if it succeeds, or signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> if it does not. 
+<DictionaryLink  term={"delete-file"}><b>delete-file</b></DictionaryLink> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if it succeeds, or signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> if it does not. 
 
 
 
-The consequences are undefined if *filespec* has a <ClLinks  term={"wild"}><i>wild</i></ClLinks> component, or if *filespec* has a <ClLinks  term={"nil"}><b>nil</b></ClLinks> component and the file system does not permit a <ClLinks  term={"nil"}><b>nil</b></ClLinks> component. 
+The consequences are undefined if *filespec* has a <ClLinks  term={"wild"}><i>wild</i></ClLinks> component, or if *filespec* has a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component and the file system does not permit a <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> component. 
 
 
 
@@ -74,11 +74,11 @@ The consequences are undefined if *filespec* has a <ClLinks  term={"wild"}><i>wi
 
 
 
-If the deletion operation is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
+If the deletion operation is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> might be signaled if *filespec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> might be signaled if *filespec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
 
 
 
@@ -86,7 +86,7 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-
 
 
 
-<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"constantp"}><b>constantp</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> &amp;optional *environment ! generalized-boolean* 
+<DictionaryLink  term={"constantp"}><b>constantp</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> &amp;optional *environment ! generalized-boolean* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -38,19 +38,19 @@ The following kinds of <ClLinks  term={"form"}><i>forms</i></ClLinks> are consid
 
 
 
-*• Self-evaluating objects* (such as <ClLinks  term={"number"}><i>numbers</i></ClLinks>, <ClLinks  term={"character"}><i>characters</i></ClLinks>, and the various kinds of <ClLinks  term={"array"}><i>arrays</i></ClLinks>) are always considered <GlossaryTerm styled={true} term={"constant form"}><i>constant forms</i></GlossaryTerm> and must be recognized as such by <ClLinks  term={"constantp"}><b>constantp</b></ClLinks>. 
+*• Self-evaluating objects* (such as <ClLinks  term={"number"}><i>numbers</i></ClLinks>, <ClLinks  term={"character"}><i>characters</i></ClLinks>, and the various kinds of <ClLinks  term={"array"}><i>arrays</i></ClLinks>) are always considered <GlossaryTerm styled={true} term={"constant form"}><i>constant forms</i></GlossaryTerm> and must be recognized as such by <DictionaryLink  term={"constantp"}><b>constantp</b></DictionaryLink>. 
 
 
 
-*• Constant variables*, such as <ClLinks  term={"keyword"}><i>keywords</i></ClLinks>, symbols defined by Common Lisp as constant (such as <ClLinks  term={"nil"}><b>nil</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks>, and **pi**), and symbols declared as constant by the user in the indicated <ClLinks  term={"environment"}><i>environment</i></ClLinks> using <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> are always considered <GlossaryTerm styled={true} term={"constant form"}><i>constant forms</i></GlossaryTerm> and must be recognized as such by <ClLinks  term={"constantp"}><b>constantp</b></ClLinks>. 
+*• Constant variables*, such as <ClLinks  term={"keyword"}><i>keywords</i></ClLinks>, symbols defined by Common Lisp as constant (such as <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, and **pi**), and symbols declared as constant by the user in the indicated <ClLinks  term={"environment"}><i>environment</i></ClLinks> using <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> are always considered <GlossaryTerm styled={true} term={"constant form"}><i>constant forms</i></GlossaryTerm> and must be recognized as such by <DictionaryLink  term={"constantp"}><b>constantp</b></DictionaryLink>. 
 
 
 
-*•* <ClLinks  term={"quote"}><b>quote</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks> are always considered <GlossaryTerm styled={true} term={"constant form"}><i>constant forms</i></GlossaryTerm> and must be recognized as such by <ClLinks  term={"constantp"}><b>constantp</b></ClLinks>. 
+*•* <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks> are always considered <GlossaryTerm styled={true} term={"constant form"}><i>constant forms</i></GlossaryTerm> and must be recognized as such by <DictionaryLink  term={"constantp"}><b>constantp</b></DictionaryLink>. 
 
 
 
-*•* An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is permitted, but not required, to detect additional <GlossaryTerm styled={true} term={"constant form"}><i>constant forms</i></GlossaryTerm>. If it does, it is also permitted, but not required, to make use of information in the <ClLinks  term={"environment"}><i>environment</i></ClLinks>. Examples of <GlossaryTerm styled={true} term={"constant form"}><i>constant forms</i></GlossaryTerm> for which <ClLinks  term={"constantp"}><b>constantp</b></ClLinks> might or might not return <ClLinks  term={"true"}><i>true</i></ClLinks> are: (sqrt pi), (+ 3 2), (length ’(a b c)), and (let ((x 7)) (zerop x)). 
+*•* An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is permitted, but not required, to detect additional <GlossaryTerm styled={true} term={"constant form"}><i>constant forms</i></GlossaryTerm>. If it does, it is also permitted, but not required, to make use of information in the <ClLinks  term={"environment"}><i>environment</i></ClLinks>. Examples of <GlossaryTerm styled={true} term={"constant form"}><i>constant forms</i></GlossaryTerm> for which <DictionaryLink  term={"constantp"}><b>constantp</b></DictionaryLink> might or might not return <ClLinks  term={"true"}><i>true</i></ClLinks> are: (sqrt pi), (+ 3 2), (length ’(a b c)), and (let ((x 7)) (zerop x)). 
 
 
 
@@ -92,7 +92,7 @@ The state of the global environment (*e.g.*, which <ClLinks  term={"symbol"}><i>
 
 
 
-<ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> 
+<DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> 
 
 
 

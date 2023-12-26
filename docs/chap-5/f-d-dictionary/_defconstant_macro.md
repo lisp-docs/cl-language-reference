@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> *name initial-value* [*documentation*] → name 
+<DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> *name initial-value* [*documentation*] → name 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> causes the global variable named by <ClLinks  term={"name"}><i>name</i></ClLinks> to be given a value that is the result of evaluating *initial-value*. 
+<DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> causes the global variable named by <ClLinks  term={"name"}><i>name</i></ClLinks> to be given a value that is the result of evaluating *initial-value*. 
 
 
 
-A constant defined by <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> can be redefined with <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks>. However, the consequences are undefined if an attempt is made to assign a <ClLinks  term={"value"}><i>value</i></ClLinks> to the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> using another operator, or to assign it to a *different value* using a subsequent <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks>. 
+A constant defined by <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> can be redefined with <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink>. However, the consequences are undefined if an attempt is made to assign a <ClLinks  term={"value"}><i>value</i></ClLinks> to the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> using another operator, or to assign it to a *different value* using a subsequent <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink>. 
 
 
 
@@ -42,19 +42,19 @@ If *documentation* is supplied, it is attached to <ClLinks  term={"name"}><i>nam
 
 
 
-<ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> normally appears as a *top level form*, but it is meaningful for it to appear as a *non-top-level form*. However, the compile-time side effects described below only take place when <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> appears as a *top level form*. 
+<DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> normally appears as a *top level form*, but it is meaningful for it to appear as a *non-top-level form*. However, the compile-time side effects described below only take place when <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> appears as a *top level form*. 
 
 
 
-The consequences are undefined if there are any <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the variable named by <ClLinks  term={"name"}><i>name</i></ClLinks> at the time <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> is executed or if the value is not <ClLinks  term={"eql"}><b>eql</b></ClLinks> to the value of *initial-value*. 
+The consequences are undefined if there are any <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of the variable named by <ClLinks  term={"name"}><i>name</i></ClLinks> at the time <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> is executed or if the value is not <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> to the value of *initial-value*. 
 
 
 
-The consequences are undefined when constant <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are rebound as either lexical or dynamic variables. In other words, a reference to a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> declared with <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> always refers to its global value. 
+The consequences are undefined when constant <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are rebound as either lexical or dynamic variables. In other words, a reference to a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> declared with <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> always refers to its global value. 
 
 
 
-The side effects of the execution of <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> must be equivalent to at least the side effects of the execution of the following code: 
+The side effects of the execution of <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> must be equivalent to at least the side effects of the execution of the following code: 
 
 
 
@@ -66,7 +66,7 @@ The side effects of the execution of <ClLinks  term={"defconstant"}><b>defconsta
 
 
 
-If a <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must recognize that <ClLinks  term={"name"}><i>name</i></ClLinks> names a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. An implementation may choose to evaluate the value-form at compile time, load time, or both. Therefore, users must ensure that the *initial-value* can be *evaluated* at compile time (regardless of whether or not references to <ClLinks  term={"name"}><i>name</i></ClLinks> appear in the file) and that it always <ClLinks  term={"evaluate"}><i>evaluates</i></ClLinks> to the same value. 
+If a <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must recognize that <ClLinks  term={"name"}><i>name</i></ClLinks> names a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. An implementation may choose to evaluate the value-form at compile time, load time, or both. Therefore, users must ensure that the *initial-value* can be *evaluated* at compile time (regardless of whether or not references to <ClLinks  term={"name"}><i>name</i></ClLinks> appear in the file) and that it always <ClLinks  term={"evaluate"}><i>evaluates</i></ClLinks> to the same value. 
 
 
 
@@ -92,7 +92,7 @@ Data and Control
 
 
 
-<ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks>, <ClLinks  term={"defvar"}><b>defvar</b></ClLinks>, **documentation**, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>, Section 3.1.2.1.1.3 (Constant Variables), Section 3.2 (Compilation) 
+<DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink>, <DictionaryLink  term={"defparameter"}><b>defparameter</b></DictionaryLink>, <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink>, **documentation**, <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink>, Section 3.1.2.1.1.3 (Constant Variables), Section 3.2 (Compilation) 
 
 
 

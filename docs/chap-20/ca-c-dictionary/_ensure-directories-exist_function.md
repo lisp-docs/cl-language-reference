@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"ensure-directories-exist"}><b>ensure-directories-exist</b></ClLinks> *pathspec* &amp;key *verbose → pathspec, created* 
+<DictionaryLink  term={"ensure-directories-exist"}><b>ensure-directories-exist</b></DictionaryLink> *pathspec* &amp;key *verbose → pathspec, created* 
 
 
 
@@ -66,11 +66,11 @@ The host computer’s file system.
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if the host, device, or directory part of *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled if the host, device, or directory part of *pathspec* is <ClLinks  term={"wild"}><i>wild</i></ClLinks>. 
 
 
 
-If the directory creation attempt is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled; if this occurs, it might be the case that none, some, or all of the requested creations have actually occurred within the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
+If the directory creation attempt is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled; if this occurs, it might be the case that none, some, or all of the requested creations have actually occurred within the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
 
 
 
@@ -78,7 +78,7 @@ If the directory creation attempt is not successful, an error of <ClLinks  term=
 
 
 
-<ClLinks  term={"probe-file"}><b>probe-file</b></ClLinks>, <ClLinks  term={"open"}><b>open</b></ClLinks>, Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink  term={"probe-file"}><b>probe-file</b></DictionaryLink>, <DictionaryLink  term={"open"}><b>open</b></DictionaryLink>, Section 19.1.2 (Pathnames as Filenames) 
 
 
 

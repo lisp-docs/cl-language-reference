@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"reduce"}><b>reduce</b></ClLinks> *function sequence* &amp;key *key from-end start end initial-value → result* 
+<DictionaryLink  term={"reduce"}><b>reduce</b></DictionaryLink> *function sequence* &amp;key *key from-end start end initial-value → result* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<ClLinks  term={"reduce"}><b>reduce</b></ClLinks> uses a binary operation, <ClLinks  term={"function"}><i>function</i></ClLinks>, to combine the <ClLinks  term={"element"}><i>elements</i></ClLinks> of *sequence bounded* by *start* and *end*. 
+<DictionaryLink  term={"reduce"}><b>reduce</b></DictionaryLink> uses a binary operation, <ClLinks  term={"function"}><i>function</i></ClLinks>, to combine the <ClLinks  term={"element"}><i>elements</i></ClLinks> of *sequence bounded* by *start* and *end*. 
 
 
 
@@ -66,7 +66,7 @@ If <ClLinks  term={"key"}><i>key</i></ClLinks> is supplied, it is used is used t
 
 
 
-the value of *initial-value*, if supplied. The <ClLinks  term={"key"}><i>key</i></ClLinks> function typically returns part of the <ClLinks  term={"element"}><i>element</i></ClLinks> of *sequence*. If <ClLinks  term={"key"}><i>key</i></ClLinks> is not supplied or is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the *sequence element* itself is used. 
+the value of *initial-value*, if supplied. The <ClLinks  term={"key"}><i>key</i></ClLinks> function typically returns part of the <ClLinks  term={"element"}><i>element</i></ClLinks> of *sequence*. If <ClLinks  term={"key"}><i>key</i></ClLinks> is not supplied or is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the *sequence element* itself is used. 
 
 
 
@@ -78,7 +78,7 @@ If *initial-value* is supplied, it is logically placed before the subsequence (o
 
 
 
-In the normal case, the result of <ClLinks  term={"reduce"}><b>reduce</b></ClLinks> is the combined result of <ClLinks  term={"function"}><i>function</i></ClLinks>’s being applied to successive pairs of <ClLinks  term={"element"}><i>elements</i></ClLinks> of *sequence*. If the subsequence contains exactly one <ClLinks  term={"element"}><i>element</i></ClLinks> and no *initial-value* is given, then that <ClLinks  term={"element"}><i>element</i></ClLinks> is returned and <ClLinks  term={"function"}><i>function</i></ClLinks> is not called. If the subsequence is empty and an *initial-value* is given, then the *initial-value* is returned and <ClLinks  term={"function"}><i>function</i></ClLinks> is not called. If the subsequence is empty and no *initial-value* is given, then the <ClLinks  term={"function"}><i>function</i></ClLinks> is called with zero arguments, and <ClLinks  term={"reduce"}><b>reduce</b></ClLinks> returns whatever <ClLinks  term={"function"}><i>function</i></ClLinks> does. This is the only case where the <ClLinks  term={"function"}><i>function</i></ClLinks> is called with other than two arguments. 
+In the normal case, the result of <DictionaryLink  term={"reduce"}><b>reduce</b></DictionaryLink> is the combined result of <ClLinks  term={"function"}><i>function</i></ClLinks>’s being applied to successive pairs of <ClLinks  term={"element"}><i>elements</i></ClLinks> of *sequence*. If the subsequence contains exactly one <ClLinks  term={"element"}><i>element</i></ClLinks> and no *initial-value* is given, then that <ClLinks  term={"element"}><i>element</i></ClLinks> is returned and <ClLinks  term={"function"}><i>function</i></ClLinks> is not called. If the subsequence is empty and an *initial-value* is given, then the *initial-value* is returned and <ClLinks  term={"function"}><i>function</i></ClLinks> is not called. If the subsequence is empty and no *initial-value* is given, then the <ClLinks  term={"function"}><i>function</i></ClLinks> is called with zero arguments, and <DictionaryLink  term={"reduce"}><b>reduce</b></DictionaryLink> returns whatever <ClLinks  term={"function"}><i>function</i></ClLinks> does. This is the only case where the <ClLinks  term={"function"}><i>function</i></ClLinks> is called with other than two arguments. 
 
 
 
@@ -104,7 +104,7 @@ In the normal case, the result of <ClLinks  term={"reduce"}><b>reduce</b></ClLin
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 

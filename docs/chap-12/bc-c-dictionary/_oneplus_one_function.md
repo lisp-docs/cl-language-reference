@@ -4,7 +4,7 @@
 
 <ClLinks  term={"1+"}><b>1+</b></ClLinks> *number → successor*
 
-<ClLinks  term={"1"}><b>1*</b></ClLinks>− number → predecessor*
+<DictionaryLink  term={"1"}><b>1*</b></DictionaryLink>− number → predecessor*
 
 **Arguments and Values:**
 
@@ -27,11 +27,11 @@
 
 **Exceptional Situations:**
 
-Might signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
+Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>.
 
 **See Also:**
 
-<ClLinks  term={"incf"}><b>incf</b></ClLinks>, <ClLinks  term={"decf"}><b>decf</b></ClLinks>
+<DictionaryLink  term={"incf"}><b>incf</b></DictionaryLink>, <DictionaryLink  term={"decf"}><b>decf</b></DictionaryLink>
 
 **Notes:**
 

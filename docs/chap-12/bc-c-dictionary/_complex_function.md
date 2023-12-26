@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"complex"}><b>complex</b></ClLinks> *realpart* &amp;optional *imagpart → complex* 
+<DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> *realpart* &amp;optional *imagpart → complex* 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks  term={"complex"}><b>complex</b></ClLinks> returns a <ClLinks  term={"number"}><i>number</i></ClLinks> whose real part is *realpart* and whose imaginary part is *imagpart*. 
+<DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> returns a <ClLinks  term={"number"}><i>number</i></ClLinks> whose real part is *realpart* and whose imaginary part is *imagpart*. 
 
 
 
-If *realpart* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> and *imagpart* is the <ClLinks  term={"rational"}><i>rational</i></ClLinks> number zero, the result of <ClLinks  term={"complex"}><b>complex</b></ClLinks> is *realpart*, a <ClLinks  term={"rational"}><i>rational</i></ClLinks>. Otherwise, the result is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
+If *realpart* is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> and *imagpart* is the <ClLinks  term={"rational"}><i>rational</i></ClLinks> number zero, the result of <DictionaryLink  term={"complex"}><b>complex</b></DictionaryLink> is *realpart*, a <ClLinks  term={"rational"}><i>rational</i></ClLinks>. Otherwise, the result is a <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
 
 
 
@@ -58,7 +58,7 @@ Type upgrading implies a movement upwards in the type hierarchy lattice. In the 
 
 
 
-<ClLinks  term={"realpart"}><b>realpart</b></ClLinks>, <ClLinks  term={"imagpart"}><b>imagpart</b></ClLinks>, Section 2.4.8.11 (Sharpsign C) 
+<DictionaryLink  term={"realpart"}><b>realpart</b></DictionaryLink>, <DictionaryLink  term={"imagpart"}><b>imagpart</b></DictionaryLink>, Section 2.4.8.11 (Sharpsign C) 
 
 
 

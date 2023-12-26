@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"define-compiler-macro"}><b>define-compiler-macro</b></ClLinks> *name lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → name 
+<DictionaryLink  term={"define-compiler-macro"}><b>define-compiler-macro</b></DictionaryLink> *name lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → name 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-This is the normal mechanism for defining a <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>. Its manner of definition is the same as for <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>; the only differences are: 
+This is the normal mechanism for defining a <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>. Its manner of definition is the same as for <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink>; the only differences are: 
 
 
 
@@ -50,7 +50,7 @@ This is the normal mechanism for defining a <GlossaryTerm styled={true} term={"c
 
 
 
-*•* The **&amp;whole** argument is bound to the form argument that is passed to the <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>. The remaining lambda-list parameters are specified as if this form contained the function name in the <ClLinks  term={"car"}><i>car</i></ClLinks> and the actual arguments in the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> , but if the <ClLinks  term={"car"}><i>car</i></ClLinks> of the actual form is the symbol <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, then the destructuring of the arguments is actually performed using its <ClLinks  term={"cddr"}><i>cddr</i></ClLinks> instead. 
+*•* The **&amp;whole** argument is bound to the form argument that is passed to the <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>. The remaining lambda-list parameters are specified as if this form contained the function name in the <ClLinks  term={"car"}><i>car</i></ClLinks> and the actual arguments in the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> , but if the <ClLinks  term={"car"}><i>car</i></ClLinks> of the actual form is the symbol <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>, then the destructuring of the arguments is actually performed using its <ClLinks  term={"cddr"}><i>cddr</i></ClLinks> instead. 
 
 
 
@@ -62,7 +62,7 @@ This is the normal mechanism for defining a <GlossaryTerm styled={true} term={"c
 
 
 
-<ClLinks  term={"define-compiler-macro"}><b>define-compiler-macro</b></ClLinks> 
+<DictionaryLink  term={"define-compiler-macro"}><b>define-compiler-macro</b></DictionaryLink> 
 
 
 
@@ -174,7 +174,7 @@ This is the normal mechanism for defining a <GlossaryTerm styled={true} term={"c
 
 
 
-<ClLinks  term={"compiler-macro-function"}><b>compiler-macro-function</b></ClLinks>, <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>, **documentation**, Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+<DictionaryLink  term={"compiler-macro-function"}><b>compiler-macro-function</b></DictionaryLink>, <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink>, **documentation**, Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 

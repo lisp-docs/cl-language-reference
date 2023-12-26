@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"sxhash"}><b>sxhash</b></ClLinks> *object → hash-code* 
+<DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> *object → hash-code* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"sxhash"}><b>sxhash</b></ClLinks> returns a hash code for <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> returns a hash code for <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ The manner in which the hash code is computed is <ClLinks  term={"implementation
 
 
 
-3\. The *hash-code* for an <ClLinks  term={"object"}><i>object</i></ClLinks> is always the <ClLinks  term={"same"}><i>same</i></ClLinks> within a single <ClLinks  term={"session"}><i>session</i></ClLinks> provided that the <ClLinks  term={"object"}><i>object</i></ClLinks> is not visibly modified with regard to the equivalence test <ClLinks  term={"equal"}><b>equal</b></ClLinks>. See Section 18.1.2 (Modifying Hash Table Keys). 
+3\. The *hash-code* for an <ClLinks  term={"object"}><i>object</i></ClLinks> is always the <ClLinks  term={"same"}><i>same</i></ClLinks> within a single <ClLinks  term={"session"}><i>session</i></ClLinks> provided that the <ClLinks  term={"object"}><i>object</i></ClLinks> is not visibly modified with regard to the equivalence test <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>. See Section 18.1.2 (Modifying Hash Table Keys). 
 
 
 
@@ -58,7 +58,7 @@ Hash
 
 
 
-<ClLinks  term={"sxhash"}><b>sxhash</b></ClLinks> 
+<DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> 
 
 
 
@@ -88,15 +88,15 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-Many common hashing needs are satisfied by <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> and the related functions on <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>. <ClLinks  term={"sxhash"}><b>sxhash</b></ClLinks> is intended for use where the pre-defined abstractions are insufficient. Its main intent is to allow the user a convenient means of implementing more complicated hashing paradigms than are provided through <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>. 
+Many common hashing needs are satisfied by <DictionaryLink  term={"make-hash-table"}><b>make-hash-table</b></DictionaryLink> and the related functions on <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>. <DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> is intended for use where the pre-defined abstractions are insufficient. Its main intent is to allow the user a convenient means of implementing more complicated hashing paradigms than are provided through <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>. 
 
 
 
-The hash codes returned by <ClLinks  term={"sxhash"}><b>sxhash</b></ClLinks> are not necessarily related to any hashing strategy used by any other <ClLinks  term={"function"}><i>function</i></ClLinks> in Common Lisp. 
+The hash codes returned by <DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> are not necessarily related to any hashing strategy used by any other <ClLinks  term={"function"}><i>function</i></ClLinks> in Common Lisp. 
 
 
 
-For <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>types</i></ClLinks> that <ClLinks  term={"equal"}><b>equal</b></ClLinks> compares with <ClLinks  term={"eq"}><b>eq</b></ClLinks>, item 3 requires that the *hash-code* be based on some immutable quality of the identity of the object. Another legitimate implementation technique would be to have <ClLinks  term={"sxhash"}><b>sxhash</b></ClLinks> assign (and cache) a random hash code for these <ClLinks  term={"object"}><i>objects</i></ClLinks>, since there is no requirement that <ClLinks  term={"similar"}><i>similar</i></ClLinks> but non-<ClLinks  term={"eq"}><b>eq</b></ClLinks> objects have the same hash code. 
+For <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>types</i></ClLinks> that <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> compares with <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, item 3 requires that the *hash-code* be based on some immutable quality of the identity of the object. Another legitimate implementation technique would be to have <DictionaryLink  term={"sxhash"}><b>sxhash</b></DictionaryLink> assign (and cache) a random hash code for these <ClLinks  term={"object"}><i>objects</i></ClLinks>, since there is no requirement that <ClLinks  term={"similar"}><i>similar</i></ClLinks> but non-<DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> objects have the same hash code. 
 
 
 

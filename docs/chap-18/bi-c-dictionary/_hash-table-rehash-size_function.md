@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"hash-table-rehash-size"}><b>hash-table-rehash-size</b></ClLinks> *hash-table → rehash-size* 
+<DictionaryLink  term={"hash-table-rehash-size"}><b>hash-table-rehash-size</b></DictionaryLink> *hash-table → rehash-size* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the current rehash size of *hash-table*, suitable for use in a call to <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> in order to produce a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> with state corresponding to the current state of the *hash-table*. 
+Returns the current rehash size of *hash-table*, suitable for use in a call to <DictionaryLink  term={"make-hash-table"}><b>make-hash-table</b></DictionaryLink> in order to produce a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> with state corresponding to the current state of the *hash-table*. 
 
 
 
@@ -40,7 +40,7 @@ Returns the current rehash size of *hash-table*, suitable for use in a call to <
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *hash-table* is not a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *hash-table* is not a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 
@@ -48,7 +48,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks>, <ClLinks  term={"hash-table-rehash-threshold"}><b>hash-table-rehash-threshold</b></ClLinks> 
+<DictionaryLink  term={"make-hash-table"}><b>make-hash-table</b></DictionaryLink>, <DictionaryLink  term={"hash-table-rehash-threshold"}><b>hash-table-rehash-threshold</b></DictionaryLink> 
 
 
 

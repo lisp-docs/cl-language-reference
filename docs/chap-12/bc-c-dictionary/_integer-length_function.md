@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"integer-length"}><b>integer-length</b></ClLinks> *integer → number-of-bits* 
+<DictionaryLink  term={"integer-length"}><b>integer-length</b></DictionaryLink> *integer → number-of-bits* 
 
 
 
@@ -48,7 +48,7 @@ Returns the number of bits needed to represent *integer* in binary two’s-compl
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *integer* is not an *integer* . 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *integer* is not an *integer* . 
 
 
 

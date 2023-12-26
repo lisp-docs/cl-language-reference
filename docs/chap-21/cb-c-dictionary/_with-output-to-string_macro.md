@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"with-output-to-string"}><b>with-output-to-string</b></ClLinks> (*var* &amp;optional *string-form* &amp;key *element-type*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<DictionaryLink  term={"with-output-to-string"}><b>with-output-to-string</b></DictionaryLink> (*var* &amp;optional *string-form* &amp;key *element-type*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks  term={"with-output-to-string"}><b>with-output-to-string</b></ClLinks> 
+<DictionaryLink  term={"with-output-to-string"}><b>with-output-to-string</b></DictionaryLink> 
 
 
 
-*string-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>; if <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, evaluated to produce <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+*string-form*—a <ClLinks  term={"form"}><i>form</i></ClLinks> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>; if <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks>, evaluated to produce <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; evaluated. The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; evaluated. The default is <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-*results*—If a *string-form* is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>; otherwise, the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+*results*—If a *string-form* is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, a <ClLinks  term={"string"}><i>string</i></ClLinks>; otherwise, the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-<ClLinks  term={"with-output-to-string"}><b>with-output-to-string</b></ClLinks> creates a character *output stream*, performs a series of operations that may send results to this <ClLinks  term={"stream"}><i>stream</i></ClLinks>, and then closes the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"with-output-to-string"}><b>with-output-to-string</b></DictionaryLink> creates a character *output stream*, performs a series of operations that may send results to this <ClLinks  term={"stream"}><i>stream</i></ClLinks>, and then closes the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -74,7 +74,7 @@ The body is executed as an <GlossaryTerm styled={true} term={"implicit progn"}><
 
 
 
-If <ClLinks  term={"string"}><i>string</i></ClLinks> is supplied, *element-type* is ignored, and the output is incrementally appended to <ClLinks  term={"string"}><i>string</i></ClLinks> as if by use of <ClLinks  term={"vector-push-extend"}><b>vector-push-extend</b></ClLinks>. 
+If <ClLinks  term={"string"}><i>string</i></ClLinks> is supplied, *element-type* is ignored, and the output is incrementally appended to <ClLinks  term={"string"}><i>string</i></ClLinks> as if by use of <DictionaryLink  term={"vector-push-extend"}><b>vector-push-extend</b></DictionaryLink>. 
 
 
 
@@ -82,7 +82,7 @@ The *output stream* is automatically closed on exit from **with-output-from-stri
 
 
 
-If no <ClLinks  term={"string"}><i>string</i></ClLinks> is provided, then **with-output-from-string** produces a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that accepts characters and returns a <ClLinks  term={"string"}><i>string</i></ClLinks> of the indicated *element-type*. If <ClLinks  term={"string"}><i>string</i></ClLinks> is provided, <ClLinks  term={"with-output-to-string"}><b>with-output-to-string</b></ClLinks> returns the results of evaluating the last <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+If no <ClLinks  term={"string"}><i>string</i></ClLinks> is provided, then **with-output-from-string** produces a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that accepts characters and returns a <ClLinks  term={"string"}><i>string</i></ClLinks> of the indicated *element-type*. If <ClLinks  term={"string"}><i>string</i></ClLinks> is provided, <DictionaryLink  term={"with-output-to-string"}><b>with-output-to-string</b></DictionaryLink> returns the results of evaluating the last <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -156,7 +156,7 @@ For **\*debug-io\***, **\*query-io\***: a *bidirectional stream*.
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but it must be an *open stream* that is not a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to an *I/O customization variables* but that might be a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to the value of some *I/O customization variable*. The initial value might also be a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to either the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks> or to the <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is its <ClLinks  term={"value"}><i>value</i></ClLinks>. 
+<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but it must be an *open stream* that is not a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to an *I/O customization variables* but that might be a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to the value of some *I/O customization variable*. The initial value might also be a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to either the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink> or to the <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is its <ClLinks  term={"value"}><i>value</i></ClLinks>. 
 
 
 
@@ -188,7 +188,7 @@ The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*standard-output\***, 
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*trace-output\***, called <GlossaryTerm styled={true} term={"trace output"}><i>trace output</i></GlossaryTerm>, is the <ClLinks  term={"stream"}><i>stream</i></ClLinks> on which traced functions (see <ClLinks  term={"trace"}><b>trace</b></ClLinks>) and the <ClLinks  term={"time"}><b>time</b></ClLinks> <ClLinks  term={"macro"}><i>macro</i></ClLinks> print their output. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*trace-output\***, called <GlossaryTerm styled={true} term={"trace output"}><i>trace output</i></GlossaryTerm>, is the <ClLinks  term={"stream"}><i>stream</i></ClLinks> on which traced functions (see <DictionaryLink  term={"trace"}><b>trace</b></DictionaryLink>) and the <DictionaryLink  term={"time"}><b>time</b></DictionaryLink> <ClLinks  term={"macro"}><i>macro</i></ClLinks> print their output. 
 
 
 
@@ -243,7 +243,7 @@ out
 
 
 
-<ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>, <ClLinks  term={"synonym-stream"}><b>synonym-stream</b></ClLinks>, <ClLinks  term={"time"}><b>time</b></ClLinks>, <ClLinks  term={"trace"}><b>trace</b></ClLinks>, Chapter 9 (Conditions), Chapter 23 (Reader), Chapter 22 (Printer) 
+<DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>, <DictionaryLink  term={"synonym-stream"}><b>synonym-stream</b></DictionaryLink>, <DictionaryLink  term={"time"}><b>time</b></DictionaryLink>, <DictionaryLink  term={"trace"}><b>trace</b></DictionaryLink>, Chapter 9 (Conditions), Chapter 23 (Reader), Chapter 22 (Printer) 
 
 
 
@@ -275,19 +275,19 @@ It is common for an <ClLinks  term={"implementation"}><i>implementation</i></ClL
 
 
 
-The functions <ClLinks  term={"y-or-n-p"}><b>y-or-n-p</b></ClLinks> and <ClLinks  term={"yes-or-no-p"}><b>yes-or-no-p</b></ClLinks> use *query I/O* for their input and output. 
+The functions <DictionaryLink  term={"y-or-n-p"}><b>y-or-n-p</b></DictionaryLink> and <DictionaryLink  term={"yes-or-no-p"}><b>yes-or-no-p</b></DictionaryLink> use *query I/O* for their input and output. 
 
 
 
-In the normal *Lisp read-eval-print loop*, input is read from <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. Many input functions, including <ClLinks  term={"read"}><b>read</b></ClLinks> and <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, take a <ClLinks  term={"stream"}><i>stream</i></ClLinks> argument that defaults to <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. 
+In the normal *Lisp read-eval-print loop*, input is read from <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. Many input functions, including <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> and <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink>, take a <ClLinks  term={"stream"}><i>stream</i></ClLinks> argument that defaults to <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. 
 
 
 
-In the normal *Lisp read-eval-print loop*, output is sent to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. Many output functions, including <ClLinks  term={"print"}><b>print</b></ClLinks> and <ClLinks  term={"write-char"}><b>write-char</b></ClLinks>, take a <ClLinks  term={"stream"}><i>stream</i></ClLinks> argument that defaults to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. 
+In the normal *Lisp read-eval-print loop*, output is sent to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. Many output functions, including <DictionaryLink  term={"print"}><b>print</b></DictionaryLink> and <DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink>, take a <ClLinks  term={"stream"}><i>stream</i></ClLinks> argument that defaults to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. 
 
 
 
-A program that wants, for example, to divert output to a file should do so by <ClLinks  term={"binding"}><i>binding</i></ClLinks> **\*standard-output\***; that way error messages sent to **\*error-output\*** can still get to the user by going through <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks> (if **\*error-output\*** is bound to <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>), which is usually what is desired. 
+A program that wants, for example, to divert output to a file should do so by <ClLinks  term={"binding"}><i>binding</i></ClLinks> **\*standard-output\***; that way error messages sent to **\*error-output\*** can still get to the user by going through <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink> (if **\*error-output\*** is bound to <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>), which is usually what is desired. 
 
 
 

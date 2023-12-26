@@ -2,7 +2,7 @@
 
 
 
-A <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is a non-negative *integer* no larger than the total number of <ClLinks  term={"element"}><i>elements</i></ClLinks> in a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . Not all <ClLinks  term={"vector"}><i>vectors</i></ClLinks> have <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. See the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> and <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks>. 
+A <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is a non-negative *integer* no larger than the total number of <ClLinks  term={"element"}><i>elements</i></ClLinks> in a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . Not all <ClLinks  term={"vector"}><i>vectors</i></ClLinks> have <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. See the <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> and <DictionaryLink  term={"adjust-array"}><b>adjust-array</b></DictionaryLink>. 
 
 
 

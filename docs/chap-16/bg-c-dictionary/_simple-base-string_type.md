@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"simple-base-string"}><b>simple-base-string</b></ClLinks>, <ClLinks  term={"base-string"}><b>base-string</b></ClLinks>, <ClLinks  term={"simple-string"}><b>simple-string</b></ClLinks>, <ClLinks  term={"string"}><b>string</b></ClLinks>, <ClLinks  term={"vector"}><b>vector</b></ClLinks>, <ClLinks  term={"simple-array"}><b>simple-array</b></ClLinks>, <ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"simple-base-string"}><b>simple-base-string</b></DictionaryLink>, <DictionaryLink  term={"base-string"}><b>base-string</b></DictionaryLink>, <DictionaryLink  term={"simple-string"}><b>simple-string</b></DictionaryLink>, <DictionaryLink  term={"string"}><b>string</b></DictionaryLink>, <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, <DictionaryLink  term={"simple-array"}><b>simple-array</b></DictionaryLink>, <DictionaryLink  term={"array"}><b>array</b></DictionaryLink>, <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-base-string"}><b>simple-base-string</b></ClLinks> is equivalent to (simple-array base-char (\*)). 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"simple-base-string"}><b>simple-base-string</b></DictionaryLink> is equivalent to (simple-array base-char (\*)). 
 
 
 

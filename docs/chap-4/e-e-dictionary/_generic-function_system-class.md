@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"generic-function"}><b>generic-function</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"generic-function"}><b>generic-function</b></DictionaryLink>, <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -18,7 +18,7 @@ A <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i><
 
 
 
-A <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> can be used in the same ways that an ordinary <ClLinks  term={"function"}><i>function</i></ClLinks> can be used; specifically, a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> can be used as an argument to <ClLinks  term={"funcall"}><b>funcall</b></ClLinks> and <ClLinks  term={"apply"}><b>apply</b></ClLinks>, and can be given a global or a local name.  
+A <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> can be used in the same ways that an ordinary <ClLinks  term={"function"}><i>function</i></ClLinks> can be used; specifically, a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> can be used as an argument to <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink> and <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>, and can be given a global or a local name.  
 
 
 

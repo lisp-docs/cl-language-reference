@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> (*name package-list-form* &amp;rest *symbol-types*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> (*name package-list-form* &amp;rest *symbol-types*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-Within the lexical scope of the body <ClLinks  term={"form"}><i>forms</i></ClLinks>, the <ClLinks  term={"name"}><i>name</i></ClLinks> is defined via <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> such that successive invocations of (<ClLinks  term={"name"}><i>name</i></ClLinks>) will return the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, one by one, from the <ClLinks  term={"package"}><i>packages</i></ClLinks> in *package-list*. 
+Within the lexical scope of the body <ClLinks  term={"form"}><i>forms</i></ClLinks>, the <ClLinks  term={"name"}><i>name</i></ClLinks> is defined via <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink> such that successive invocations of (<ClLinks  term={"name"}><i>name</i></ClLinks>) will return the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, one by one, from the <ClLinks  term={"package"}><i>packages</i></ClLinks> in *package-list*. 
 
 
 
@@ -66,7 +66,7 @@ It is unspecified whether <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> inh
 
 
 
-<ClLinks  term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> 
+<DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> 
 
 
 
@@ -114,7 +114,7 @@ An invocation of (<ClLinks  term={"name"}><i>name</i></ClLinks>) returns four va
 
 
 
-After all <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> have been returned by successive invocations of (<ClLinks  term={"name"}><i>name</i></ClLinks>), then only one value is returned, namely <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+After all <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> have been returned by successive invocations of (<ClLinks  term={"name"}><i>name</i></ClLinks>), then only one value is returned, namely <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -146,19 +146,15 @@ Means not <ClLinks  term={"present"}><i>present</i></ClLinks> (thus not *shadowe
 
 
 
-It is unspecified what happens if any of the implicit interior state of an iteration is returned outside the dynamic extent of the <ClLinks  term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> form such as by returning some <ClLinks  term={"closure"}><i>closure</i></ClLinks> over the invocation <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+It is unspecified what happens if any of the implicit interior state of an iteration is returned outside the dynamic extent of the <DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> form such as by returning some <ClLinks  term={"closure"}><i>closure</i></ClLinks> over the invocation <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
-Any number of invocations of <ClLinks  term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> can be nested, and the body of the innermost one can invoke all of the locally *established macros*, provided all those <ClLinks  term={"macro"}><i>macros</i></ClLinks> have distinct names. 
-
-
+Any number of invocations of <DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> can be nested, and the body of the innermost one can invoke all of the locally *established macros*, provided all those <ClLinks  term={"macro"}><i>macros</i></ClLinks> have distinct names. 
 
 
 
 
-
- 
 
 
 
@@ -166,7 +162,11 @@ Any number of invocations of <ClLinks  term={"with-package-iterator"}><b>with-pa
 
 
 
-<ClLinks  term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> 
 
 
 
@@ -212,7 +212,7 @@ The following function prints out every *present symbol* (possibly more than onc
 
 
 
-<ClLinks  term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> if no *symbol-types* are supplied or if a *symbol-type* is not recognized by the implementation is supplied. 
+<DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> if no *symbol-types* are supplied or if a *symbol-type* is not recognized by the implementation is supplied. 
 
 
 
@@ -228,7 +228,7 @@ The consequences are undefined if the local function named *name established* by
 
 
 
-<ClLinks  term={"with-package-iterator"}><b>with-package-iterator</b></ClLinks> is called after it has returned <ClLinks  term={"false"}><i>false</i></ClLinks> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>. 
+<DictionaryLink  term={"with-package-iterator"}><b>with-package-iterator</b></DictionaryLink> is called after it has returned <ClLinks  term={"false"}><i>false</i></ClLinks> as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>. 
 
 
 

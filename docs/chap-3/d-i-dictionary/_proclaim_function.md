@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> *declaration-specifier ! implementation-dependent* 
+<DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> *declaration-specifier ! implementation-dependent* 
 
 
 
@@ -46,7 +46,7 @@ Such a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>, sometimes ca
 
 
 
-Figure 3–22 shows a list of <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifiers</i></GlossaryTerm> that can be used with <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>. 
+Figure 3–22 shows a list of <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifiers</i></GlossaryTerm> that can be used with <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink>. 
 
 
 
@@ -74,7 +74,7 @@ An implementation is free to support other (<ClLinks  term={"implementation-defi
 
 
 
-<ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"declare"}><b>declare</b></ClLinks>, Section 3.2 (Compilation) 
+<DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink>, <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>, Section 3.2 (Compilation) 
 
 
 
@@ -82,7 +82,7 @@ An implementation is free to support other (<ClLinks  term={"implementation-defi
 
 
 
-Although the *execution* of a <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> has e↵ects that might a↵ect compilation, the compiler does not make any attempt to recognize and specially process <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks>. A <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> such as the following, even if a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, does not have any e↵ect until it is executed: 
+Although the *execution* of a <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> has e↵ects that might a↵ect compilation, the compiler does not make any attempt to recognize and specially process <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>. A <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks> such as the following, even if a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, does not have any e↵ect until it is executed: 
 
 
 
@@ -90,7 +90,7 @@ Although the *execution* of a <ClLinks  term={"proclaim"}><b>proclaim</b></ClLin
 
 
 
-If compile time side e↵ects are desired, <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> may be useful. For example: 
+If compile time side e↵ects are desired, <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> may be useful. For example: 
 
 
 
@@ -102,8 +102,8 @@ If compile time side e↵ects are desired, <ClLinks  term={"eval-when"}><b>eval-
 
 
 
-In most such cases, however, it is preferrable to use <ClLinks  term={"declaim"}><b>declaim</b></ClLinks> for this purpose. 
+In most such cases, however, it is preferrable to use <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink> for this purpose. 
 
 
 
-Since <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks> are ordinary <GlossaryTerm styled={true} term={"function form"}><i>function forms</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"macro form"}><i>macro forms</i></GlossaryTerm> can expand into them. 
+Since <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks> are ordinary <GlossaryTerm styled={true} term={"function form"}><i>function forms</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"macro form"}><i>macro forms</i></GlossaryTerm> can expand into them. 

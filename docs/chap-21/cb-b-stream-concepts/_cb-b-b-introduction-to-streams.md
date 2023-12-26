@@ -22,7 +22,7 @@ Some operations may be performed on any kind of <ClLinks  term={"stream"}><i>str
 
 
 
-Other operations are only meaningful on certain *stream types*. For example, <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> is only defined for *character streams* and <ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks> is only defined for *binary streams*. 
+Other operations are only meaningful on certain *stream types*. For example, <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> is only defined for *character streams* and <DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> is only defined for *binary streams*. 
 
 
 

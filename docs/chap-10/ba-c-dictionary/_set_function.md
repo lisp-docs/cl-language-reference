@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"set"}><b>set</b></ClLinks> *symbol value → value* 
+<DictionaryLink  term={"set"}><b>set</b></DictionaryLink> *symbol value → value* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"set"}><b>set</b></ClLinks> changes the contents of the *value cell* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to the given <ClLinks  term={"value"}><i>value</i></ClLinks>. 
+<DictionaryLink  term={"set"}><b>set</b></DictionaryLink> changes the contents of the *value cell* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> to the given <ClLinks  term={"value"}><i>value</i></ClLinks>. 
 
 
 
@@ -82,7 +82,7 @@ The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"symbol"}
 
 
 
-<ClLinks  term={"setq"}><b>setq</b></ClLinks>, <ClLinks  term={"progv"}><b>progv</b></ClLinks>, <ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> 
+<DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>, <DictionaryLink  term={"progv"}><b>progv</b></DictionaryLink>, <DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> 
 
 
 
@@ -90,11 +90,11 @@ The <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"symbol"}
 
 
 
-The function <ClLinks  term={"set"}><b>set</b></ClLinks> is deprecated. 
+The function <DictionaryLink  term={"set"}><b>set</b></DictionaryLink> is deprecated. 
 
 
 
-<ClLinks  term={"set"}><b>set</b></ClLinks> cannot change the value of a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm>. 
+<DictionaryLink  term={"set"}><b>set</b></DictionaryLink> cannot change the value of a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm>. 
 
 
 

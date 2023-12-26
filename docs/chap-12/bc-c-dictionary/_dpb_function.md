@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"dpb"}><b>dpb</b></ClLinks> *newbyte bytespec integer → result-integer* 
+<DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> *newbyte bytespec integer → result-integer* 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-<ClLinks  term={"dpb"}><b>dpb</b></ClLinks> (deposit byte) is used to replace a field of bits within *integer*. <ClLinks  term={"dpb"}><b>dpb</b></ClLinks> returns an *integer* that is the same as *integer* except in the bits specified by *bytespec*. 
+<DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> (deposit byte) is used to replace a field of bits within *integer*. <DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> returns an *integer* that is the same as *integer* except in the bits specified by *bytespec*. 
 
 
 
-Let s be the size specified by *bytespec*; then the low s bits of *newbyte* appear in the result in the byte specified by *bytespec*. *Newbyte* is interpreted as being right-justified, as if it were the result of <ClLinks  term={"ldb"}><b>ldb</b></ClLinks>. 
+Let s be the size specified by *bytespec*; then the low s bits of *newbyte* appear in the result in the byte specified by *bytespec*. *Newbyte* is interpreted as being right-justified, as if it were the result of <DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink>. 
 
 
 
@@ -60,7 +60,7 @@ Let s be the size specified by *bytespec*; then the low s bits of *newbyte* appe
 
 
 
-<ClLinks  term={"byte"}><b>byte</b></ClLinks>, <ClLinks  term={"deposit-field"}><b>deposit-field</b></ClLinks>, <ClLinks  term={"ldb"}><b>ldb</b></ClLinks> 
+<DictionaryLink  term={"byte"}><b>byte</b></DictionaryLink>, <DictionaryLink  term={"deposit-field"}><b>deposit-field</b></DictionaryLink>, <DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> 
 
 
 

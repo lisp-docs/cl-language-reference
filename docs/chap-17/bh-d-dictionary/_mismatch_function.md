@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"mismatch"}><b>mismatch</b></ClLinks> *sequence-1 sequence-2* &amp;key *from-end test test-not key start1 start2 end1 end2 → position* 
+<DictionaryLink  term={"mismatch"}><b>mismatch</b></DictionaryLink> *sequence-1 sequence-2* &amp;key *from-end test test-not key start1 start2 end1 end2 → position* 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-*start1*, *end1*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence-1*. The defaults for *start1* and *end1* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start1*, *end1*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence-1*. The defaults for *start1* and *end1* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
-*start2*, *end2*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence-2*. The defaults for *start2* and *end2* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start2*, *end2*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence-2*. The defaults for *start2* and *end2* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*position*—a <GlossaryTerm styled={true} term={"bounding index"}><i>bounding index</i></GlossaryTerm> of *sequence-1*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*position*—a <GlossaryTerm styled={true} term={"bounding index"}><i>bounding index</i></GlossaryTerm> of *sequence-1*, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 

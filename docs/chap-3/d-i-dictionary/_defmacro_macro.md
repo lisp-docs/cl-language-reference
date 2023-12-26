@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> *name lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> *name lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> 
+<DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-Defines <ClLinks  term={"name"}><i>name</i></ClLinks> as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> by associating a <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> with that <ClLinks  term={"name"}><i>name</i></ClLinks> in the global environment. The <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> is defined in the same <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which the <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears. 
+Defines <ClLinks  term={"name"}><i>name</i></ClLinks> as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> by associating a <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> with that <ClLinks  term={"name"}><i>name</i></ClLinks> in the global environment. The <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> is defined in the same <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which the <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> appears. 
 
 
 
@@ -66,11 +66,11 @@ The *lambda-list* conforms to the requirements described in Section 3.4.4 (Macro
 
 
 
-*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <ClLinks  term={"function"}><b>function</b></ClLinks>) and to the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
+*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>) and to the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> can be used to redefine a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or to replace a <ClLinks  term={"function"}><i>function</i></ClLinks> definition with a <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition. 
+<DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> can be used to redefine a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or to replace a <ClLinks  term={"function"}><i>function</i></ClLinks> definition with a <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition. 
 
 
 
@@ -82,7 +82,7 @@ The consequences are undefined if the result of fully macroexpanding a <ClLinks 
 
 
 
-If a <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. Users must ensure that the body of the <ClLinks  term={"macro"}><i>macro</i></ClLinks> can be evaluated at compile time if it is referenced within the <ClLinks  term={"file"}><i>file</i></ClLinks> being *compiled*. 
+If a <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. Users must ensure that the body of the <ClLinks  term={"macro"}><i>macro</i></ClLinks> can be evaluated at compile time if it is referenced within the <ClLinks  term={"file"}><i>file</i></ClLinks> being *compiled*. 
 
 
 
@@ -145,11 +145,11 @@ T
 
 
 
-<ClLinks  term={"define-compiler-macro"}><b>define-compiler-macro</b></ClLinks>, <ClLinks  term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks>, **documentation**, <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks>, 
+<DictionaryLink  term={"define-compiler-macro"}><b>define-compiler-macro</b></DictionaryLink>, <DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink>, **documentation**, <DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink>, 
 
 
 
-**\*macroexpand-hook\***, <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>, Section 3.1 (Evaluation), Section 3.2 (Compilation), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+**\*macroexpand-hook\***, <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>, <DictionaryLink  term={"macro-function"}><b>macro-function</b></DictionaryLink>, Section 3.1 (Evaluation), Section 3.2 (Compilation), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 

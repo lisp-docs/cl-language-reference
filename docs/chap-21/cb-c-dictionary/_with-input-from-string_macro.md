@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks> (*var string* &amp;key *index start end*) *\{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"with-input-from-string"}><b>with-input-from-string</b></DictionaryLink> (*var string* &amp;key *index start end*) *\{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -70,11 +70,11 @@ Creates an *input string stream*, provides an opportunity to perform operations 
 
 
 
-The *input string stream* is automatically closed on exit from <ClLinks  term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks>, no matter whether the exit is normal or abnormal. The *input string stream* to which the *variable var* is <ClLinks  term={"bound"}><i>bound</i></ClLinks> has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
+The *input string stream* is automatically closed on exit from <DictionaryLink  term={"with-input-from-string"}><b>with-input-from-string</b></DictionaryLink>, no matter whether the exit is normal or abnormal. The *input string stream* to which the *variable var* is <ClLinks  term={"bound"}><i>bound</i></ClLinks> has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
 
 
 
-The *index* is a pointer within the <ClLinks  term={"string"}><i>string</i></ClLinks> to be advanced. If <ClLinks  term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks> is exited normally, then *index* will have as its <ClLinks  term={"value"}><i>value</i></ClLinks> the index into the <ClLinks  term={"string"}><i>string</i></ClLinks> indicating the first character not read which is (length <ClLinks  term={"string"}><i>string</i></ClLinks>) if all characters were used. The place specified by *index* is not updated as reading progresses, but only at the end of the operation. 
+The *index* is a pointer within the <ClLinks  term={"string"}><i>string</i></ClLinks> to be advanced. If <DictionaryLink  term={"with-input-from-string"}><b>with-input-from-string</b></DictionaryLink> is exited normally, then *index* will have as its <ClLinks  term={"value"}><i>value</i></ClLinks> the index into the <ClLinks  term={"string"}><i>string</i></ClLinks> indicating the first character not read which is (length <ClLinks  term={"string"}><i>string</i></ClLinks>) if all characters were used. The place specified by *index* is not updated as reading progresses, but only at the end of the operation. 
 
 
 
@@ -109,7 +109,7 @@ The <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"plac
 
 
 
-<ClLinks  term={"make-string-input-stream"}><b>make-string-input-stream</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
+<DictionaryLink  term={"make-string-input-stream"}><b>make-string-input-stream</b></DictionaryLink>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks> (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink> (*\{slot-entry\}*\*) *instance-form \{declaration\}*\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -54,11 +54,11 @@
 
 
 
-The macro <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks> *establishes* a <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> for referring to the <ClLinks  term={"slot"}><i>slots</i></ClLinks> in the <ClLinks  term={"instance"}><i>instance</i></ClLinks> named by the given *slot-names* as though they were <ClLinks  term={"variable"}><i>variables</i></ClLinks>. Within such a context the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks> can be specified by using its slot name, as if it were a lexically bound variable. Both <ClLinks  term={"setf"}><b>setf</b></ClLinks> and <ClLinks  term={"setq"}><b>setq</b></ClLinks> can be used to set the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+The macro <DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink> *establishes* a <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> for referring to the <ClLinks  term={"slot"}><i>slots</i></ClLinks> in the <ClLinks  term={"instance"}><i>instance</i></ClLinks> named by the given *slot-names* as though they were <ClLinks  term={"variable"}><i>variables</i></ClLinks>. Within such a context the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks> can be specified by using its slot name, as if it were a lexically bound variable. Both <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> and <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> can be used to set the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
-The macro <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks> translates an appearance of the slot name as a <ClLinks  term={"variable"}><i>variable</i></ClLinks> into a call to <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>. 
+The macro <DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink> translates an appearance of the slot name as a <ClLinks  term={"variable"}><i>variable</i></ClLinks> into a call to <DictionaryLink  term={"slot-value"}><b>slot-value</b></DictionaryLink>. 
 
 
 
@@ -102,7 +102,7 @@ The macro <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks> translates a
 
 
 
-<ClLinks  term={"defclass"}><b>defclass</b></ClLinks> 
+<DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> 
 
 
 
@@ -118,7 +118,7 @@ The consequences are undefined if any *slot-name* is not the name of a <ClLinks 
 
 
 
-<ClLinks  term={"with-accessors"}><b>with-accessors</b></ClLinks>, <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>, <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> 
+<DictionaryLink  term={"with-accessors"}><b>with-accessors</b></DictionaryLink>, <DictionaryLink  term={"slot-value"}><b>slot-value</b></DictionaryLink>, <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> 
 
 
 
@@ -126,7 +126,7 @@ The consequences are undefined if any *slot-name* is not the name of a <ClLinks 
 
 
 
-A <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks> expression of the form: 
+A <DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink> expression of the form: 
 
 
 

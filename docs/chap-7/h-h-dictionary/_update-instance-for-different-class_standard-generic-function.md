@@ -14,11 +14,11 @@
 
 
 
-**update-instance-for-different-class** (*previous* <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>) 
+**update-instance-for-different-class** (*previous* <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink>) 
 
 
 
-(*current* <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>) 
+(*current* <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink>) 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-The generic function **update-instance-for-different-class** is not intended to be called by program mers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. The <ClLinks  term={"function"}><i>function</i></ClLinks> **update-instance-for-different-class** is called only by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"change-class"}><b>change-class</b></ClLinks>. 
+The generic function **update-instance-for-different-class** is not intended to be called by program mers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. The <ClLinks  term={"function"}><i>function</i></ClLinks> **update-instance-for-different-class** is called only by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"change-class"}><b>change-class</b></DictionaryLink>. 
 
 
 
-The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on **update-instance-for-different-class** checks the validity of *initargs* and signals an error if an *initarg* is supplied that is not declared as valid. This <ClLinks  term={"method"}><i>method</i></ClLinks> then initializes <ClLinks  term={"slot"}><i>slots</i></ClLinks> with values according to the *initargs*, and initializes the newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks> with values according to their :initform forms. It does this by calling the generic function <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> with the following arguments: the instance (*current*), a list of <ClLinks  term={"name"}><i>names</i></ClLinks> of the newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks>, and the *initargs* it received. Newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks> are those <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> for which no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the same name exists in the *previous* class. 
+The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on **update-instance-for-different-class** checks the validity of *initargs* and signals an error if an *initarg* is supplied that is not declared as valid. This <ClLinks  term={"method"}><i>method</i></ClLinks> then initializes <ClLinks  term={"slot"}><i>slots</i></ClLinks> with values according to the *initargs*, and initializes the newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks> with values according to their :initform forms. It does this by calling the generic function <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink> with the following arguments: the instance (*current*), a list of <ClLinks  term={"name"}><i>names</i></ClLinks> of the newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks>, and the *initargs* it received. Newly added <ClLinks  term={"slot"}><i>slots</i></ClLinks> are those <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> for which no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the same name exists in the *previous* class. 
 
 
 
@@ -58,7 +58,7 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on
 
 
 
-<ClLinks  term={"method"}><i>Methods</i></ClLinks> on **update-instance-for-different-class** can be defined to initialize <ClLinks  term={"slot"}><i>slots</i></ClLinks> differently from <ClLinks  term={"change-class"}><b>change-class</b></ClLinks>. The default behavior of <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> is described in Section 7.2 (Changing the Class of an Instance). 
+<ClLinks  term={"method"}><i>Methods</i></ClLinks> on **update-instance-for-different-class** can be defined to initialize <ClLinks  term={"slot"}><i>slots</i></ClLinks> differently from <DictionaryLink  term={"change-class"}><b>change-class</b></DictionaryLink>. The default behavior of <DictionaryLink  term={"change-class"}><b>change-class</b></DictionaryLink> is described in Section 7.2 (Changing the Class of an Instance). 
 
 
 
@@ -74,7 +74,7 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on
 
 
 
-The arguments to **update-instance-for-different-class** are computed by <ClLinks  term={"change-class"}><b>change-class</b></ClLinks>. When <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> is invoked on an <ClLinks  term={"instance"}><i>instance</i></ClLinks>, a copy of that <ClLinks  term={"instance"}><i>instance</i></ClLinks> is made; <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> then de structively alters the original <ClLinks  term={"instance"}><i>instance</i></ClLinks>. The first argument to **update-instance-for-different-class**, *previous*, is that copy; it holds the old <ClLinks  term={"slot"}><i>slot</i></ClLinks> values temporarily. This argument has dynamic extent within <ClLinks  term={"change-class"}><b>change-class</b></ClLinks>; if it is referenced in any way once **update-instance-for-different-class** returns, the results are undefined. The second argument to **update-instance-for-different-class**, *current*, is the altered original <ClLinks  term={"instance"}><i>instance</i></ClLinks>. The intended use of *previous* is to extract old <ClLinks  term={"slot"}><i>slot</i></ClLinks> values by using <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks> or <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks> or by invoking a reader generic function, or to run other <ClLinks  term={"method"}><i>methods</i></ClLinks> that were applicable to <ClLinks  term={"instance"}><i>instances</i></ClLinks> of the original <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+The arguments to **update-instance-for-different-class** are computed by <DictionaryLink  term={"change-class"}><b>change-class</b></DictionaryLink>. When <DictionaryLink  term={"change-class"}><b>change-class</b></DictionaryLink> is invoked on an <ClLinks  term={"instance"}><i>instance</i></ClLinks>, a copy of that <ClLinks  term={"instance"}><i>instance</i></ClLinks> is made; <DictionaryLink  term={"change-class"}><b>change-class</b></DictionaryLink> then de structively alters the original <ClLinks  term={"instance"}><i>instance</i></ClLinks>. The first argument to **update-instance-for-different-class**, *previous*, is that copy; it holds the old <ClLinks  term={"slot"}><i>slot</i></ClLinks> values temporarily. This argument has dynamic extent within <DictionaryLink  term={"change-class"}><b>change-class</b></DictionaryLink>; if it is referenced in any way once **update-instance-for-different-class** returns, the results are undefined. The second argument to **update-instance-for-different-class**, *current*, is the altered original <ClLinks  term={"instance"}><i>instance</i></ClLinks>. The intended use of *previous* is to extract old <ClLinks  term={"slot"}><i>slot</i></ClLinks> values by using <DictionaryLink  term={"slot-value"}><b>slot-value</b></DictionaryLink> or <DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink> or by invoking a reader generic function, or to run other <ClLinks  term={"method"}><i>methods</i></ClLinks> that were applicable to <ClLinks  term={"instance"}><i>instances</i></ClLinks> of the original <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -94,7 +94,7 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on
 
 
 
-<ClLinks  term={"change-class"}><b>change-class</b></ClLinks>, <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>, Section 7.2 (Changing the Class of an Instance), Section 7.1.4 (Rules for Initialization Arguments), Section 7.1.2 (Declaring the Validity of Initialization Arguments) 
+<DictionaryLink  term={"change-class"}><b>change-class</b></DictionaryLink>, <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>, Section 7.2 (Changing the Class of an Instance), Section 7.1.4 (Rules for Initialization Arguments), Section 7.1.2 (Declaring the Validity of Initialization Arguments) 
 
 
 
@@ -102,11 +102,11 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on
 
 
 
-*Initargs* are declared as valid by using the :initarg option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for **update-instance-for-different-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on **update-instance-for-different-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid *initarg* name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
+*Initargs* are declared as valid by using the :initarg option to <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for **update-instance-for-different-class** or <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink>. The keyword name of each keyword parameter specifier in the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on **update-instance-for-different-class** or <DictionaryLink  term={"shared-initialize"}><b>shared-initialize</b></DictionaryLink> is declared as a valid *initarg* name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
 
 
 
-The value returned by **update-instance-for-different-class** is ignored by <ClLinks  term={"change-class"}><b>change-class</b></ClLinks>. 
+The value returned by **update-instance-for-different-class** is ignored by <DictionaryLink  term={"change-class"}><b>change-class</b></DictionaryLink>. 
 
 
 

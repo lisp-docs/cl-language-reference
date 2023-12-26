@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"char"}><b>char</b></ClLinks> *string index → character* 
+<DictionaryLink  term={"char"}><b>char</b></DictionaryLink> *string index → character* 
 
 
 
-<ClLinks  term={"schar"}><b>schar</b></ClLinks> *string index → character* 
+<DictionaryLink  term={"schar"}><b>schar</b></DictionaryLink> *string index → character* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—for <ClLinks  term={"char"}><b>char</b></ClLinks>, a <ClLinks  term={"string"}><i>string</i></ClLinks>; for <ClLinks  term={"schar"}><b>schar</b></ClLinks>, a <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm>. 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—for <DictionaryLink  term={"char"}><b>char</b></DictionaryLink>, a <ClLinks  term={"string"}><i>string</i></ClLinks>; for <DictionaryLink  term={"schar"}><b>schar</b></DictionaryLink>, a <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-<ClLinks  term={"char"}><b>char</b></ClLinks> and <ClLinks  term={"schar"}><b>schar</b></ClLinks> <ClLinks  term={"access"}><i>access</i></ClLinks> the <ClLinks  term={"element"}><i>element</i></ClLinks> of <ClLinks  term={"string"}><i>string</i></ClLinks> specified by *index*. 
+<DictionaryLink  term={"char"}><b>char</b></DictionaryLink> and <DictionaryLink  term={"schar"}><b>schar</b></DictionaryLink> <ClLinks  term={"access"}><i>access</i></ClLinks> the <ClLinks  term={"element"}><i>element</i></ClLinks> of <ClLinks  term={"string"}><i>string</i></ClLinks> specified by *index*. 
 
 
 
-<ClLinks  term={"char"}><b>char</b></ClLinks> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm> when *accessing elements*. 
+<DictionaryLink  term={"char"}><b>char</b></DictionaryLink> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm> when *accessing elements*. 
 
 
 
@@ -74,7 +74,7 @@ my-filled-string → "AAACBD"
 
 
 
-<ClLinks  term={"aref"}><b>aref</b></ClLinks>, <ClLinks  term={"elt"}><b>elt</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
+<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink>, <DictionaryLink  term={"elt"}><b>elt</b></DictionaryLink>, Section 3.2.1 (Compiler Terminology) 
 
 
 

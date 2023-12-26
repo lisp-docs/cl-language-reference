@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"stream-external-format"}><b>stream-external-format</b></ClLinks> *stream → format* 
+<DictionaryLink  term={"stream-external-format"}><b>stream-external-format</b></DictionaryLink> *stream → format* 
 
 
 
@@ -46,7 +46,7 @@ Returns an <GlossaryTerm styled={true} term={"external file format designator"}>
 
 
 
-the :external-format <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"open"}><b>open</b></ClLinks> and the <ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks> <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
+the :external-format <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"open"}><b>open</b></DictionaryLink> and the <DictionaryLink  term={"with-open-file"}><b>with-open-file</b></DictionaryLink> <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
 
 
 

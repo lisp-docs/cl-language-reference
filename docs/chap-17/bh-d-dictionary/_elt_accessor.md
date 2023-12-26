@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"elt"}><b>elt</b></ClLinks> *sequence index → object* 
+<DictionaryLink  term={"elt"}><b>elt</b></DictionaryLink> *sequence index → object* 
 
 
 
@@ -54,7 +54,7 @@ str → "#123456789"
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *index* is not a <GlossaryTerm styled={true} term={"valid sequence index"}><i>valid sequence index</i></GlossaryTerm> for *sequence*. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *index* is not a <GlossaryTerm styled={true} term={"valid sequence index"}><i>valid sequence index</i></GlossaryTerm> for *sequence*. 
 
 
 
@@ -62,7 +62,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<ClLinks  term={"aref"}><b>aref</b></ClLinks>, <ClLinks  term={"nth"}><b>nth</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
+<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink>, <DictionaryLink  term={"nth"}><b>nth</b></DictionaryLink>, Section 3.2.1 (Compiler Terminology) 
 
 
 
@@ -70,7 +70,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<ClLinks  term={"aref"}><b>aref</b></ClLinks> may be used to *access vector* elements that are beyond the <ClLinks  term={"vector"}><i>vector</i></ClLinks> ’s <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
+<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> may be used to *access vector* elements that are beyond the <ClLinks  term={"vector"}><i>vector</i></ClLinks> ’s <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 

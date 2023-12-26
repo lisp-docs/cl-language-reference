@@ -10,7 +10,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> and nature of an <GlossaryTerm
 
 
 
-The <ClLinks  term={"object"}><i>object</i></ClLinks> <ClLinks  term={"nil"}><b>nil</b></ClLinks> when used as an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm> denotes the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>; see Section 3.1.1.3.1 (The Null Lexical Environment). 
+The <ClLinks  term={"object"}><i>object</i></ClLinks> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> when used as an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm> denotes the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>; see Section 3.1.1.3.1 (The Null Lexical Environment). 
 
 
 

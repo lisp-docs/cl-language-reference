@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"when"}><b>when</b></ClLinks> *test-form \{form\}*\* → \{result\}\* 
+<DictionaryLink  term={"when"}><b>when</b></DictionaryLink> *test-form \{form\}*\* → \{result\}\* 
 
 
 
-<ClLinks  term={"unless"}><b>unless</b></ClLinks> *test-form \{form\}*\* → \{result\}\* 
+<DictionaryLink  term={"unless"}><b>unless</b></DictionaryLink> *test-form \{form\}*\* → \{result\}\* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> in a <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> if the *test-form yields true* or in an <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> if the *test-form yields false*; otherwise <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> in a <DictionaryLink  term={"when"}><b>when</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> if the *test-form yields true* or in an <DictionaryLink  term={"unless"}><b>unless</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> if the *test-form yields false*; otherwise <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks  term={"when"}><b>when</b></ClLinks> and <ClLinks  term={"unless"}><b>unless</b></ClLinks> allow the execution of <ClLinks  term={"form"}><i>forms</i></ClLinks> to be dependent on a single *test-form*. 
+<DictionaryLink  term={"when"}><b>when</b></DictionaryLink> and <DictionaryLink  term={"unless"}><b>unless</b></DictionaryLink> allow the execution of <ClLinks  term={"form"}><i>forms</i></ClLinks> to be dependent on a single *test-form*. 
 
 
 
-In a <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, if the *test-form yields true*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are *evaluated* in order from left to right and the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks> are returned from the <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. Otherwise, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are not *evaluated*, and the <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+In a <DictionaryLink  term={"when"}><b>when</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>, if the *test-form yields true*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are *evaluated* in order from left to right and the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks> are returned from the <DictionaryLink  term={"when"}><b>when</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. Otherwise, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are not *evaluated*, and the <DictionaryLink  term={"when"}><b>when</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -58,7 +58,7 @@ In a <ClLinks  term={"when"}><b>when</b></ClLinks> <ClLinks  term={"form"}><i>fo
 
 
 
-In an <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are *evaluated* in order from left to right and the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks> are returned from the <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. Otherwise, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are not *evaluated*, and the <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+In an <DictionaryLink  term={"unless"}><b>unless</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are *evaluated* in order from left to right and the <ClLinks  term={"value"}><i>values</i></ClLinks> returned by the <ClLinks  term={"form"}><i>forms</i></ClLinks> are returned from the <DictionaryLink  term={"unless"}><b>unless</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. Otherwise, if the *test-form yields false*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are not *evaluated*, and the <DictionaryLink  term={"unless"}><b>unless</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -93,7 +93,7 @@ In an <ClLinks  term={"unless"}><b>unless</b></ClLinks> <ClLinks  term={"form"}>
 
 
 
-<ClLinks  term={"and"}><b>and</b></ClLinks>, <ClLinks  term={"cond"}><b>cond</b></ClLinks>, <ClLinks  term={"if"}><b>if</b></ClLinks>, <ClLinks  term={"or"}><b>or</b></ClLinks> 
+<DictionaryLink  term={"and"}><b>and</b></DictionaryLink>, <DictionaryLink  term={"cond"}><b>cond</b></DictionaryLink>, <DictionaryLink  term={"if"}><b>if</b></DictionaryLink>, <DictionaryLink  term={"or"}><b>or</b></DictionaryLink> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"rename-package"}><b>rename-package</b></ClLinks> *package new-name* &amp;optional *new-nicknames → package-object* 
+<DictionaryLink  term={"rename-package"}><b>rename-package</b></DictionaryLink> *package new-name* &amp;optional *new-nicknames → package-object* 
 
 
 
@@ -68,7 +68,7 @@ The consequences are undefined if *new-name* or any *new-nickname* conflicts wit
 
 
 
-<ClLinks  term={"make-package"}><b>make-package</b></ClLinks> 
+<DictionaryLink  term={"make-package"}><b>make-package</b></DictionaryLink> 
 
 
 

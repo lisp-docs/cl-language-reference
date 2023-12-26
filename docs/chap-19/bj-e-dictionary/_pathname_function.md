@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"pathname"}><b>pathname</b></ClLinks> *pathspec → pathname* 
+<DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink> *pathspec → pathname* 
 
 
 
@@ -42,11 +42,11 @@ Returns the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> denoted by *pa
 
 
 
-<ClLinks  term={"pathname"}><b>pathname</b></ClLinks> 
+<DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink> 
 
 
 
-If the *pathspec designator* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, the <ClLinks  term={"stream"}><i>stream</i></ClLinks> can be either open or closed; in both cases, the <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> returned corresponds to the <ClLinks  term={"filename"}><i>filename</i></ClLinks> used to open the <ClLinks  term={"file"}><i>file</i></ClLinks>. <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> returns the same <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> for a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> after it is closed as it did when it was open. 
+If the *pathspec designator* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, the <ClLinks  term={"stream"}><i>stream</i></ClLinks> can be either open or closed; in both cases, the <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink> returned corresponds to the <ClLinks  term={"filename"}><i>filename</i></ClLinks> used to open the <ClLinks  term={"file"}><i>file</i></ClLinks>. <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink> returns the same <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> for a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> after it is closed as it did when it was open. 
 
 
 
@@ -95,7 +95,7 @@ If the *pathspec designator* is a <GlossaryTerm styled={true} term={"file stream
 
 
 
-<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as 
+<DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as 
 
 
 

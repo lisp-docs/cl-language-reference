@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"floatp"}><b>floatp</b></ClLinks> <ClLinks  term={"object"}><i>object</i></ClLinks> 
+<DictionaryLink  term={"floatp"}><b>floatp</b></DictionaryLink> <ClLinks  term={"object"}><i>object</i></ClLinks> 
 
 
 
@@ -30,7 +30,7 @@ generalized-boolean
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 

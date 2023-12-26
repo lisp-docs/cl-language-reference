@@ -45,8 +45,8 @@ If any <ClLinks  term={"argument"}><i>argument</i></ClLinks> is a <ClLinks  term
 
 The consequences are unspecified if any <ClLinks  term={"argument"}><i>argument</i></ClLinks> other than the first is zero. If there is only one <ClLinks  term={"argument"}><i>argument</i></ClLinks>, the consequences are unspecified if it is zero.
 
-Might signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"division-by-zero"}><b>division-by-zero</b></ClLinks> if division by zero is attempted. Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
+Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <DictionaryLink  term={"division-by-zero"}><b>division-by-zero</b></DictionaryLink> if division by zero is attempted. Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>.
 
 **See Also:**
 
-<ClLinks  term={"floor"}><b>floor</b></ClLinks>, <ClLinks  term={"ceiling"}><b>ceiling</b></ClLinks>, <ClLinks  term={"truncate"}><b>truncate</b></ClLinks>, <ClLinks  term={"round"}><b>round</b></ClLinks>
+<DictionaryLink  term={"floor"}><b>floor</b></DictionaryLink>, <DictionaryLink  term={"ceiling"}><b>ceiling</b></DictionaryLink>, <DictionaryLink  term={"truncate"}><b>truncate</b></DictionaryLink>, <DictionaryLink  term={"round"}><b>round</b></DictionaryLink>

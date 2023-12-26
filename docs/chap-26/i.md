@@ -35,7 +35,7 @@ sidebar_position: 105
 
 
 
-**identical** *adj.* the <ClLinks  term={"same"}><i>same</i></ClLinks> under <ClLinks  term={"eq"}><b>eq</b></ClLinks>. 
+**identical** *adj.* the <ClLinks  term={"same"}><i>same</i></ClLinks> under <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>. 
 
 
 
@@ -87,7 +87,7 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-**implicit block** *n.* a <ClLinks  term={"block"}><i>block</i></ClLinks> introduced by a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> rather than by an explicit <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+**implicit block** *n.* a <ClLinks  term={"block"}><i>block</i></ClLinks> introduced by a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> rather than by an explicit <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -95,7 +95,7 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-**implicit progn** *n.* an ordered set of adjacent <ClLinks  term={"form"}><i>forms</i></ClLinks> appearing in another <ClLinks  term={"form"}><i>form</i></ClLinks>, and defined by their context in that <ClLinks  term={"form"}><i>form</i></ClLinks> to be executed as if within a <ClLinks  term={"progn"}><b>progn</b></ClLinks>. 
+**implicit progn** *n.* an ordered set of adjacent <ClLinks  term={"form"}><i>forms</i></ClLinks> appearing in another <ClLinks  term={"form"}><i>form</i></ClLinks>, and defined by their context in that <ClLinks  term={"form"}><i>form</i></ClLinks> to be executed as if within a <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink>. 
 
 
 
@@ -111,11 +111,11 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-**implicit tagbody** *n.* an ordered set of adjacent <ClLinks  term={"form"}><i>forms</i></ClLinks> and/or <ClLinks  term={"tag"}><i>tags</i></ClLinks> appearing in another <ClLinks  term={"form"}><i>form</i></ClLinks>, and defined by their context in that <ClLinks  term={"form"}><i>form</i></ClLinks> to be executed as if within a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks>. 
+**implicit tagbody** *n.* an ordered set of adjacent <ClLinks  term={"form"}><i>forms</i></ClLinks> and/or <ClLinks  term={"tag"}><i>tags</i></ClLinks> appearing in another <ClLinks  term={"form"}><i>form</i></ClLinks>, and defined by their context in that <ClLinks  term={"form"}><i>form</i></ClLinks> to be executed as if within a <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"import"}><b>import</b></ClLinks> *v.t.* (a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> into a <ClLinks  term={"package"}><i>package</i></ClLinks>) to make the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> be <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>. **improper list** *n.* a <ClLinks  term={"list"}><i>list</i></ClLinks> which is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>: a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
+<DictionaryLink  term={"import"}><b>import</b></DictionaryLink> *v.t.* (a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> into a <ClLinks  term={"package"}><i>package</i></ClLinks>) to make the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> be <ClLinks  term={"present"}><i>present</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>. **improper list** *n.* a <ClLinks  term={"list"}><i>list</i></ClLinks> which is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>: a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
 
 
 
@@ -135,19 +135,19 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-**indirect instance** *n.* (of a *class C*<sub>1</sub>) an <ClLinks  term={"object"}><i>object</i></ClLinks> of *class C*<sub>2</sub>, where *C*<sub>2</sub> is a <ClLinks  term={"subclass"}><i>subclass</i></ClLinks> of *C*<sub>1</sub>. “An integer is an indirect instance of the class <ClLinks  term={"number"}><b>number</b></ClLinks>.” 
+**indirect instance** *n.* (of a *class C*<sub>1</sub>) an <ClLinks  term={"object"}><i>object</i></ClLinks> of *class C*<sub>2</sub>, where *C*<sub>2</sub> is a <ClLinks  term={"subclass"}><i>subclass</i></ClLinks> of *C*<sub>1</sub>. “An integer is an indirect instance of the class <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>.” 
 
 
 
-**inherit** *v.t.* 1. to receive or acquire a quality, trait, or characteristic; to gain access to a feature defined elsewhere. 2. (a <ClLinks  term={"class"}><i>class</i></ClLinks>) to acquire the structure and behavior defined by a <ClLinks  term={"superclass"}><i>superclass</i></ClLinks>. 3. (a <ClLinks  term={"package"}><i>package</i></ClLinks>) to make *symbols exported* by another *package accessible* by using <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. 
+**inherit** *v.t.* 1. to receive or acquire a quality, trait, or characteristic; to gain access to a feature defined elsewhere. 2. (a <ClLinks  term={"class"}><i>class</i></ClLinks>) to acquire the structure and behavior defined by a <ClLinks  term={"superclass"}><i>superclass</i></ClLinks>. 3. (a <ClLinks  term={"package"}><i>package</i></ClLinks>) to make *symbols exported* by another *package accessible* by using <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>. 
 
 
 
-**initial pprint dispatch table** *n.* the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks> at the time the *Lisp image* is started. 
+**initial pprint dispatch table** *n.* the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></DictionaryLink> at the time the *Lisp image* is started. 
 
 
 
-**initial readtable** *n.* the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> at the time the *Lisp image* is started. 
+**initial readtable** *n.* the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"readtable"}><b>\*readtable\*</b></DictionaryLink> at the time the *Lisp image* is started. 
 
 
 
@@ -155,7 +155,7 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-**initialization form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> used to supply the initial <ClLinks  term={"value"}><i>value</i></ClLinks> for a <ClLinks  term={"slot"}><i>slot</i></ClLinks> or <ClLinks  term={"variable"}><i>variable</i></ClLinks>. “The initialization form for a slot in a <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form is introduced by the keyword :initform.” 
+**initialization form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> used to supply the initial <ClLinks  term={"value"}><i>value</i></ClLinks> for a <ClLinks  term={"slot"}><i>slot</i></ClLinks> or <ClLinks  term={"variable"}><i>variable</i></ClLinks>. “The initialization form for a slot in a <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form is introduced by the keyword :initform.” 
 
 
 
@@ -163,7 +163,7 @@ Lisp which has been deliberately left unspecified, that might be defined in some
 
 
 
-**instance** *n.* 1. a <GlossaryTerm styled={true} term={"direct instance"}><i>direct instance</i></GlossaryTerm>. 2. a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm>. 3. an <GlossaryTerm styled={true} term={"indirect instance"}><i>indirect instance</i></GlossaryTerm>. <ClLinks  term={"integer"}><b>integer</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks>, which represents a mathematical integer. 
+**instance** *n.* 1. a <GlossaryTerm styled={true} term={"direct instance"}><i>direct instance</i></GlossaryTerm>. 2. a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm>. 3. an <GlossaryTerm styled={true} term={"indirect instance"}><i>indirect instance</i></GlossaryTerm>. <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink>, which represents a mathematical integer. 
 
 
 
@@ -187,7 +187,7 @@ querying. See Section 21.1.1.1.3 (Interactive Streams).
 
 
 
-<ClLinks  term={"intern"}><b>intern</b></ClLinks> *v.t.* 1. (a <ClLinks  term={"string"}><i>string</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) to look up the <ClLinks  term={"string"}><i>string</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>, returning either a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with that <ClLinks  term={"name"}><i>name</i></ClLinks> which was already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> or a newly created <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> of the <ClLinks  term={"package"}><i>package</i></ClLinks> with that <ClLinks  term={"name"}><i>name</i></ClLinks>. 2. *Idiom.* generally, to observe a protocol whereby objects which are equivalent or have equivalent names under some predicate defined by the protocol are mapped to a single canonical object. 
+<DictionaryLink  term={"intern"}><b>intern</b></DictionaryLink> *v.t.* 1. (a <ClLinks  term={"string"}><i>string</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) to look up the <ClLinks  term={"string"}><i>string</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks>, returning either a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> with that <ClLinks  term={"name"}><i>name</i></ClLinks> which was already <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> or a newly created <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> of the <ClLinks  term={"package"}><i>package</i></ClLinks> with that <ClLinks  term={"name"}><i>name</i></ClLinks>. 2. *Idiom.* generally, to observe a protocol whereby objects which are equivalent or have equivalent names under some predicate defined by the protocol are mapped to a single canonical object. 
 
 
 
@@ -203,7 +203,7 @@ querying. See Section 21.1.1.1.3 (Interactive Streams).
 
 
 
-**internal time unit** *n.* a unit of time equal to 1*/n* of a second, for some *implementation defined integer* value of *n*. See the <ClLinks  term={"variable"}><i>variable</i></ClLinks> <ClLinks  term={"internal-time-units-per-second"}><b>internal-time-units-per-second</b></ClLinks>. 
+**internal time unit** *n.* a unit of time equal to 1*/n* of a second, for some *implementation defined integer* value of *n*. See the <ClLinks  term={"variable"}><i>variable</i></ClLinks> <DictionaryLink  term={"internal-time-units-per-second"}><b>internal-time-units-per-second</b></DictionaryLink>. 
 
 
 

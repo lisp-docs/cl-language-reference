@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-dimensions"}><b>array-dimensions</b></ClLinks> *array → dimensions* 
+<DictionaryLink  term={"array-dimensions"}><b>array-dimensions</b></DictionaryLink> *array → dimensions* 
 
 
 
@@ -40,7 +40,7 @@ Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -48,7 +48,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"array-dimension"}><b>array-dimension</b></ClLinks> 
+<DictionaryLink  term={"array-dimension"}><b>array-dimension</b></DictionaryLink> 
 
 
 

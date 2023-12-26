@@ -63,7 +63,7 @@ If the *host* is already defined, no attempt to find or load a definition is att
 
 
 
-If no definition is found, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If no definition is found, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
@@ -71,7 +71,7 @@ If no definition is found, an error of <ClLinks  term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks> 
+<DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink> 
 
 
 

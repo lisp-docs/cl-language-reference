@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> *\{tag | statement\}*\* → <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> *\{tag | statement\}*\* → <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -30,11 +30,11 @@ Executes zero or more *statements* in a <GlossaryTerm styled={true} term={"lexic
 
 
 
-The *statements* in a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> are *evaluated* in order from left to right, and their <ClLinks  term={"value"}><i>values</i></ClLinks> are discarded. If at any time there are no remaining *statements*, <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. However, if (go <ClLinks  term={"tag"}><i>tag</i></ClLinks>) is *evaluated*, control jumps to the part of the body labeled with the <ClLinks  term={"tag"}><i>tag</i></ClLinks>. (Tags are compared with <ClLinks  term={"eql"}><b>eql</b></ClLinks>.) 
+The *statements* in a <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> are *evaluated* in order from left to right, and their <ClLinks  term={"value"}><i>values</i></ClLinks> are discarded. If at any time there are no remaining *statements*, <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. However, if (go <ClLinks  term={"tag"}><i>tag</i></ClLinks>) is *evaluated*, control jumps to the part of the body labeled with the <ClLinks  term={"tag"}><i>tag</i></ClLinks>. (Tags are compared with <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>.) 
 
 
 
-A <ClLinks  term={"tag"}><i>tag</i></ClLinks> established by <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> has <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> and has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. Once <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> has been exited, it is no longer valid to <ClLinks  term={"go"}><b>go</b></ClLinks> to a <ClLinks  term={"tag"}><i>tag</i></ClLinks> in its body. It is permissible for <ClLinks  term={"go"}><b>go</b></ClLinks> to jump to a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> that is not the innermost <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> containing that <ClLinks  term={"go"}><b>go</b></ClLinks>; the <ClLinks  term={"tag"}><i>tags</i></ClLinks> established by a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> only shadow other <ClLinks  term={"tag"}><i>tags</i></ClLinks> of like name. 
+A <ClLinks  term={"tag"}><i>tag</i></ClLinks> established by <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> has <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> and has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. Once <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> has been exited, it is no longer valid to <DictionaryLink  term={"go"}><b>go</b></DictionaryLink> to a <ClLinks  term={"tag"}><i>tag</i></ClLinks> in its body. It is permissible for <DictionaryLink  term={"go"}><b>go</b></DictionaryLink> to jump to a <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> that is not the innermost <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> containing that <DictionaryLink  term={"go"}><b>go</b></DictionaryLink>; the <ClLinks  term={"tag"}><i>tags</i></ClLinks> established by a <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> only shadow other <ClLinks  term={"tag"}><i>tags</i></ClLinks> of like name. 
 
 
 
@@ -83,7 +83,7 @@ The determination of which elements of the body are <ClLinks  term={"tag"}><i>ta
 
 
 
-<ClLinks  term={"go"}><b>go</b></ClLinks> 
+<DictionaryLink  term={"go"}><b>go</b></DictionaryLink> 
 
 
 

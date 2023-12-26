@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"symbol-plist"}><b>symbol-plist</b></ClLinks> *symbol → plist* 
+<DictionaryLink  term={"symbol-plist"}><b>symbol-plist</b></DictionaryLink> *symbol → plist* 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -58,7 +58,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"get"}><b>get</b></ClLinks>, <ClLinks  term={"remprop"}><b>remprop</b></ClLinks> 
+<DictionaryLink  term={"get"}><b>get</b></DictionaryLink>, <DictionaryLink  term={"remprop"}><b>remprop</b></DictionaryLink> 
 
 
 
@@ -66,7 +66,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-The use of <ClLinks  term={"setf"}><b>setf</b></ClLinks> should be avoided, since a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
+The use of <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> should be avoided, since a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
 
 
 
@@ -82,7 +82,7 @@ The use of <ClLinks  term={"setf"}><b>setf</b></ClLinks> should be avoided, sinc
 
 
 
-<ClLinks  term={"symbol-value"}><b>symbol-value</b></ClLinks> 
+<DictionaryLink  term={"symbol-value"}><b>symbol-value</b></DictionaryLink> 
 
 
 

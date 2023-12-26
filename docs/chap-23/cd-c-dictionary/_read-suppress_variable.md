@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"read-suppress"}><b>*read-suppress*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink  term={"read-suppress"}><b>*read-suppress*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -30,7 +30,7 @@ If it is <ClLinks  term={"false"}><i>false</i></ClLinks>, the *Lisp reader* oper
 
 
 
-If the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>, <ClLinks  term={"read"}><b>read</b></ClLinks>, <ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks>, <ClLinks  term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks>, and <ClLinks  term={"read-from-string"}><b>read-from-string</b></ClLinks> all return a <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of <ClLinks  term={"nil"}><b>nil</b></ClLinks> when they complete successfully; however, they continue to parse the representation of an <ClLinks  term={"object"}><i>object</i></ClLinks> in the normal way, in order to skip over the <ClLinks  term={"object"}><i>object</i></ClLinks>, and continue to indicate <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> in the normal way. Except as noted below, any *standardized reader macro*<sub>2</sub> that is defined to <ClLinks  term={"read"}><i>read</i></ClLinks> <sub>2</sub> a following <ClLinks  term={"object"}><i>object</i></ClLinks> or <ClLinks  term={"token"}><i>token</i></ClLinks> will do so, but not signal an error if the <ClLinks  term={"object"}><i>object</i></ClLinks> read is not of an appropriate type or syntax. The <GlossaryTerm styled={true} term={"standard syntax"}><i>standard syntax</i></GlossaryTerm> and its associated <GlossaryTerm styled={true} term={"reader macro"}><i>reader macros</i></GlossaryTerm> will not construct any new <ClLinks  term={"object"}><i>objects</i></ClLinks> (*e.g.*, when reading the representation of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, no <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> will be constructed or interned). 
+If the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"read-suppress"}><b>\*read-suppress\*</b></DictionaryLink> is <ClLinks  term={"true"}><i>true</i></ClLinks>, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink>, <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink>, <DictionaryLink  term={"read-delimited-list"}><b>read-delimited-list</b></DictionaryLink>, and <DictionaryLink  term={"read-from-string"}><b>read-from-string</b></DictionaryLink> all return a <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> when they complete successfully; however, they continue to parse the representation of an <ClLinks  term={"object"}><i>object</i></ClLinks> in the normal way, in order to skip over the <ClLinks  term={"object"}><i>object</i></ClLinks>, and continue to indicate <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm> in the normal way. Except as noted below, any *standardized reader macro*<sub>2</sub> that is defined to <ClLinks  term={"read"}><i>read</i></ClLinks> <sub>2</sub> a following <ClLinks  term={"object"}><i>object</i></ClLinks> or <ClLinks  term={"token"}><i>token</i></ClLinks> will do so, but not signal an error if the <ClLinks  term={"object"}><i>object</i></ClLinks> read is not of an appropriate type or syntax. The <GlossaryTerm styled={true} term={"standard syntax"}><i>standard syntax</i></GlossaryTerm> and its associated <GlossaryTerm styled={true} term={"reader macro"}><i>reader macros</i></GlossaryTerm> will not construct any new <ClLinks  term={"object"}><i>objects</i></ClLinks> (*e.g.*, when reading the representation of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, no <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> will be constructed or interned). 
 
 
 
@@ -74,11 +74,11 @@ The #= notation is totally ignored. It does not read a following <ClLinks  term=
 
 
 
-The ## notation always produces <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+The ## notation always produces <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-No matter what the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks>, parentheses still continue to delimit and construct <ClLinks  term={"list"}><i>lists</i></ClLinks>; the #( notation continues to delimit <ClLinks  term={"vector"}><i>vectors</i></ClLinks>; and comments, <ClLinks  term={"string"}><i>strings</i></ClLinks>, and the <ClLinks  term={"single-quote"}><i>single-quote</i></ClLinks> and <ClLinks  term={"backquote"}><i>backquote</i></ClLinks> notations continue to be interpreted properly. Such situations as ’), #&lt;, #), and #<ClLinks  term={"space"}><i>⟨Space⟩</i></ClLinks> continue to signal errors. 
+No matter what the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"read-suppress"}><b>\*read-suppress\*</b></DictionaryLink>, parentheses still continue to delimit and construct <ClLinks  term={"list"}><i>lists</i></ClLinks>; the #( notation continues to delimit <ClLinks  term={"vector"}><i>vectors</i></ClLinks>; and comments, <ClLinks  term={"string"}><i>strings</i></ClLinks>, and the <ClLinks  term={"single-quote"}><i>single-quote</i></ClLinks> and <ClLinks  term={"backquote"}><i>backquote</i></ClLinks> notations continue to be interpreted properly. Such situations as ’), #&lt;, #), and #<ClLinks  term={"space"}><i>⟨Space⟩</i></ClLinks> continue to signal errors. 
 
 
 
@@ -95,7 +95,7 @@ No matter what the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  
 
 
 
-<ClLinks  term={"read"}><b>read</b></ClLinks>, Chapter 2 (Syntax) 
+<DictionaryLink  term={"read"}><b>read</b></DictionaryLink>, Chapter 2 (Syntax) 
 
 
 
@@ -103,7 +103,7 @@ No matter what the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  
 
 
 
-<ClLinks  term={"programmer"}><i>Programmers</i></ClLinks> and <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> that define additional <GlossaryTerm styled={true} term={"macro character"}><i>macro characters</i></GlossaryTerm> are strongly encouraged to make them respect <ClLinks  term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks> just as *standardized macro characters* do. That is, when the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>, they should ignore type errors when reading a following <ClLinks  term={"object"}><i>object</i></ClLinks> and the <ClLinks  term={"function"}><i>functions</i></ClLinks> that implement <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro characters</i></GlossaryTerm> should tolerate <ClLinks  term={"nil"}><b>nil</b></ClLinks> as their infix <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> value even if a numeric value would ordinarily be required. 
+<ClLinks  term={"programmer"}><i>Programmers</i></ClLinks> and <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> that define additional <GlossaryTerm styled={true} term={"macro character"}><i>macro characters</i></GlossaryTerm> are strongly encouraged to make them respect <DictionaryLink  term={"read-suppress"}><b>\*read-suppress\*</b></DictionaryLink> just as *standardized macro characters* do. That is, when the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"read-suppress"}><b>\*read-suppress\*</b></DictionaryLink> is <ClLinks  term={"true"}><i>true</i></ClLinks>, they should ignore type errors when reading a following <ClLinks  term={"object"}><i>object</i></ClLinks> and the <ClLinks  term={"function"}><i>functions</i></ClLinks> that implement <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro characters</i></GlossaryTerm> should tolerate <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> as their infix <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> value even if a numeric value would ordinarily be required. 
 
 
 

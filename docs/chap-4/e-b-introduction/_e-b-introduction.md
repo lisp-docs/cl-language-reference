@@ -6,15 +6,15 @@ A <ClLinks  term={"type"}><i>type</i></ClLinks> is a (possibly infinite) set of 
 
 
 
-New <ClLinks  term={"type"}><i>types</i></ClLinks> can be defined using <ClLinks  term={"deftype"}><b>deftype</b></ClLinks>, <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>, <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, and <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks>. 
+New <ClLinks  term={"type"}><i>types</i></ClLinks> can be defined using <DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink>, <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink>, <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>, and <DictionaryLink  term={"define-condition"}><b>define-condition</b></DictionaryLink>. 
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"typep"}><b>typep</b></ClLinks>, a set membership test, is used to determine whether a given <ClLinks  term={"object"}><i>object</i></ClLinks> is of a given <ClLinks  term={"type"}><i>type</i></ClLinks>. The function <ClLinks  term={"subtypep"}><b>subtypep</b></ClLinks>, a subset test, is used to determine whether a given <ClLinks  term={"type"}><i>type</i></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of another given <ClLinks  term={"type"}><i>type</i></ClLinks>. The function <ClLinks  term={"type-of"}><b>type-of</b></ClLinks> returns a particular <ClLinks  term={"type"}><i>type</i></ClLinks> to which a given 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"typep"}><b>typep</b></DictionaryLink>, a set membership test, is used to determine whether a given <ClLinks  term={"object"}><i>object</i></ClLinks> is of a given <ClLinks  term={"type"}><i>type</i></ClLinks>. The function <DictionaryLink  term={"subtypep"}><b>subtypep</b></DictionaryLink>, a subset test, is used to determine whether a given <ClLinks  term={"type"}><i>type</i></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of another given <ClLinks  term={"type"}><i>type</i></ClLinks>. The function <DictionaryLink  term={"type-of"}><b>type-of</b></DictionaryLink> returns a particular <ClLinks  term={"type"}><i>type</i></ClLinks> to which a given 
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks> belongs, even though that <ClLinks  term={"object"}><i>object</i></ClLinks> must belong to one or more other <ClLinks  term={"type"}><i>types</i></ClLinks> as well. (For example, every <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>, but <ClLinks  term={"type-of"}><b>type-of</b></ClLinks> always returns a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a <ClLinks  term={"type"}><i>type</i></ClLinks> more specific than <ClLinks  term={"t"}><b>t</b></ClLinks>.) 
+<ClLinks  term={"object"}><i>object</i></ClLinks> belongs, even though that <ClLinks  term={"object"}><i>object</i></ClLinks> must belong to one or more other <ClLinks  term={"type"}><i>types</i></ClLinks> as well. (For example, every <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, but <DictionaryLink  term={"type-of"}><b>type-of</b></DictionaryLink> always returns a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a <ClLinks  term={"type"}><i>type</i></ClLinks> more specific than <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>.) 
 
 
 
@@ -22,7 +22,7 @@ The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"typep
 
 
 
-<ClLinks  term={"declaration"}><i>Declarations</i></ClLinks> can be made about <ClLinks  term={"type"}><i>types</i></ClLinks> using <ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, or <ClLinks  term={"the"}><b>the</b></ClLinks>. For more information about <ClLinks  term={"declaration"}><i>declarations</i></ClLinks>, see Section 3.3 (Declarations). 
+<ClLinks  term={"declaration"}><i>Declarations</i></ClLinks> can be made about <ClLinks  term={"type"}><i>types</i></ClLinks> using <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink>, <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink>, or <DictionaryLink  term={"the"}><b>the</b></DictionaryLink>. For more information about <ClLinks  term={"declaration"}><i>declarations</i></ClLinks>, see Section 3.3 (Declarations). 
 
 
 

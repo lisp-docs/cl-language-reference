@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"abs"}><b>abs</b></ClLinks> *number → absolute-value* 
+<DictionaryLink  term={"abs"}><b>abs</b></DictionaryLink> *number → absolute-value* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"abs"}><b>abs</b></ClLinks> returns the absolute value of <ClLinks  term={"number"}><i>number</i></ClLinks>. 
+<DictionaryLink  term={"abs"}><b>abs</b></DictionaryLink> returns the absolute value of <ClLinks  term={"number"}><i>number</i></ClLinks>. 
 
 
 

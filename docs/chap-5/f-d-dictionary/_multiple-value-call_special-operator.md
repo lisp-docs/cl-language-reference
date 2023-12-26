@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> *function-form form*\* *! \{result\}*\* 
+<DictionaryLink  term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink> *function-form form*\* *! \{result\}*\* 
 
 
 
@@ -38,7 +38,7 @@ Applies <ClLinks  term={"function"}><i>function</i></ClLinks> to a <ClLinks  ter
 
 
 
-<ClLinks  term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> first evaluates the *function-form* to obtain <ClLinks  term={"function"}><i>function</i></ClLinks>, and then evaluates each <ClLinks  term={"form"}><i>form</i></ClLinks>. All the values of each <ClLinks  term={"form"}><i>form</i></ClLinks> are gathered together (not just one value from each) and given as arguments to the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+<DictionaryLink  term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink> first evaluates the *function-form* to obtain <ClLinks  term={"function"}><i>function</i></ClLinks>, and then evaluates each <ClLinks  term={"form"}><i>form</i></ClLinks>. All the values of each <ClLinks  term={"form"}><i>form</i></ClLinks> are gathered together (not just one value from each) and given as arguments to the <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -55,7 +55,7 @@ Applies <ClLinks  term={"function"}><i>function</i></ClLinks> to a <ClLinks  ter
 
 
 
-<ClLinks  term={"multiple-value-list"}><b>multiple-value-list</b></ClLinks>, <ClLinks  term={"multiple-value-bind"}><b>multiple-value-bind</b></ClLinks> 
+<DictionaryLink  term={"multiple-value-list"}><b>multiple-value-list</b></DictionaryLink>, <DictionaryLink  term={"multiple-value-bind"}><b>multiple-value-bind</b></DictionaryLink> 
 
 
 

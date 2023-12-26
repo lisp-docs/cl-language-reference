@@ -2,7 +2,7 @@
 
 
 
-The COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> contains the primitives of the Common Lisp system as defined by this specification. Its <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> include all of the <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> (except for <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>) that are present in the Common Lisp system, such as <ClLinks  term={"car"}><b>car</b></ClLinks>, <ClLinks  term={"cdr"}><b>cdr</b></ClLinks>, <ClLinks  term={"package"}><b>\*package\*</b></ClLinks>, etc. The COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> has the <ClLinks  term={"nickname"}><i>nickname</i></ClLinks> CL. 
+The COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> contains the primitives of the Common Lisp system as defined by this specification. Its <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> include all of the <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> (except for <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>) that are present in the Common Lisp system, such as <DictionaryLink  term={"car"}><b>car</b></DictionaryLink>, <DictionaryLink  term={"cdr"}><b>cdr</b></DictionaryLink>, <DictionaryLink  term={"package"}><b>\*package\*</b></DictionaryLink>, etc. The COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> has the <ClLinks  term={"nickname"}><i>nickname</i></ClLinks> CL. 
 
 
 

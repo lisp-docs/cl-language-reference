@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>, <ClLinks  term={"class"}><b>class</b></ClLinks>, <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>, <DictionaryLink  term={"class"}><b>class</b></DictionaryLink>, <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of *classes* defined by <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>. 
+The <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of *classes* defined by <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>. 
 
 
 

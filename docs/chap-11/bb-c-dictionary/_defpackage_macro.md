@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> *defined-package-name* [[ *↓option* ]] → package 
+<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> *defined-package-name* [[ *↓option* ]] → package 
 
 
 
@@ -74,7 +74,7 @@
 
 
 
-<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> creates a <ClLinks  term={"package"}><i>package</i></ClLinks> as specified and returns the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> creates a <ClLinks  term={"package"}><i>package</i></ClLinks> as specified and returns the <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -110,11 +110,11 @@ The argument to :documentation specifies a <GlossaryTerm styled={true} term={"do
 
 
 
-<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> 
+<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> 
 
 
 
-<GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to the <ClLinks  term={"package"}><i>package</i></ClLinks>. At most one :documentation option can appear in a single <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to the <ClLinks  term={"package"}><i>package</i></ClLinks>. At most one :documentation option can appear in a single <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -122,7 +122,7 @@ The argument to :documentation specifies a <GlossaryTerm styled={true} term={"do
 
 
 
-The arguments to :use set the <ClLinks  term={"package"}><i>packages</i></ClLinks> that the <ClLinks  term={"package"}><i>package</i></ClLinks> named by *package-name* will inherit from. If :use is not supplied, it defaults to the same <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> value as the :use <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <ClLinks  term={"make-package"}><b>make-package</b></ClLinks>. 
+The arguments to :use set the <ClLinks  term={"package"}><i>packages</i></ClLinks> that the <ClLinks  term={"package"}><i>package</i></ClLinks> named by *package-name* will inherit from. If :use is not supplied, it defaults to the same <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> value as the :use <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <DictionaryLink  term={"make-package"}><b>make-package</b></DictionaryLink>. 
 
 
 
@@ -130,7 +130,7 @@ The arguments to :use set the <ClLinks  term={"package"}><i>packages</i></ClLink
 
 
 
-The arguments to :shadow, *symbol-names*, name <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are to be created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined. These <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are added to the list of shadowing <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> effectively as if by <ClLinks  term={"shadow"}><b>shadow</b></ClLinks>. 
+The arguments to :shadow, *symbol-names*, name <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are to be created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined. These <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are added to the list of shadowing <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> effectively as if by <DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink>. 
 
 
 
@@ -138,7 +138,7 @@ The arguments to :shadow, *symbol-names*, name <ClLinks  term={"symbol"}><i>symb
 
 
 
-The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found (involving a lookup as if by <ClLinks  term={"find-symbol"}><b>find-symbol</b></ClLinks>) in the specified *package-name*. The resulting <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined, and placed on the shadowing symbols list as if by <ClLinks  term={"shadowing-import"}><b>shadowing-import</b></ClLinks>. In no case are <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> created in any <ClLinks  term={"package"}><i>package</i></ClLinks> other than the one being defined. 
+The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found (involving a lookup as if by <DictionaryLink  term={"find-symbol"}><b>find-symbol</b></DictionaryLink>) in the specified *package-name*. The resulting <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined, and placed on the shadowing symbols list as if by <DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink>. In no case are <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> created in any <ClLinks  term={"package"}><i>package</i></ClLinks> other than the one being defined. 
 
 
 
@@ -154,7 +154,7 @@ The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *sy
 
 
 
-The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found or created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined and <ClLinks  term={"exported"}><i>exported</i></ClLinks>. The :export option interacts with the :use option, since inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> can be used rather than new ones created. The :export option interacts with the :import-from and :shadowing-import-from options, since *imported* symbols can be used rather than new ones created. If an argument to the :export option is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an (inherited) <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> via <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, that the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named by *symbol-name* is first *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined, and is then <ClLinks  term={"exported"}><i>exported</i></ClLinks> from that <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+The <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> named by the argument *symbol-names* are found or created in the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined and <ClLinks  term={"exported"}><i>exported</i></ClLinks>. The :export option interacts with the :use option, since inherited <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> can be used rather than new ones created. The :export option interacts with the :import-from and :shadowing-import-from options, since *imported* symbols can be used rather than new ones created. If an argument to the :export option is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> as an (inherited) <GlossaryTerm styled={true} term={"internal symbol"}><i>internal symbol</i></GlossaryTerm> via <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, that the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named by *symbol-name* is first *imported* into the <ClLinks  term={"package"}><i>package</i></ClLinks> being defined, and is then <ClLinks  term={"exported"}><i>exported</i></ClLinks> from that <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -186,11 +186,11 @@ The argument to the :size option declares the approximate number of <ClLinks  te
 
 
 
-<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> 
+<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> 
 
 
 
-The order in which the options appear in a <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> form is irrelevant. The order in which they are executed is as follows: 
+The order in which the options appear in a <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> form is irrelevant. The order in which they are executed is as follows: 
 
 
 
@@ -247,19 +247,15 @@ Existing <ClLinks  term={"package"}><i>packages</i></ClLinks>.
 
 
 
-If one of the supplied :nicknames already refers to an existing <ClLinks  term={"package"}><i>package</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
+If one of the supplied :nicknames already refers to an existing <ClLinks  term={"package"}><i>package</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled. 
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> should be signaled if :size or :documentation appears more than once. 
-
-
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> should be signaled if :size or :documentation appears more than once. 
 
 
 
 
-
- 
 
 
 
@@ -267,23 +263,27 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"progr
 
 
 
-<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> 
+ 
 
 
 
-Since <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> might allow extended *options* an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> should be signaled if an *option* is present that is not actually supported in the host <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> 
 
 
 
-The collection of *symbol-name* arguments given to the options :shadow, :intern, :import-from, and :shadowing-import-from must all be disjoint; additionally, the *symbol-name* arguments given to :export and :intern must be disjoint. Disjoint in this context is defined as no two of the *symbol-names* being <ClLinks  term={"string"}><b>string=</b></ClLinks> with each other. If either condition is violated, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> should be signaled. 
+Since <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> might allow extended *options* an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> should be signaled if an *option* is present that is not actually supported in the host <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
-For the :shadowing-import-from and :import-from options, a *correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled if no <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> named by *package-name* for one of the argument *symbol-names*. 
+The collection of *symbol-name* arguments given to the options :shadow, :intern, :import-from, and :shadowing-import-from must all be disjoint; additionally, the *symbol-name* arguments given to :export and :intern must be disjoint. Disjoint in this context is defined as no two of the *symbol-names* being <ClLinks  term={"string"}><b>string=</b></ClLinks> with each other. If either condition is violated, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> should be signaled. 
 
 
 
-Name conflict errors are handled by the underlying calls to <ClLinks  term={"make-package"}><b>make-package</b></ClLinks>, <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks  term={"import"}><b>import</b></ClLinks>, and <ClLinks  term={"export"}><b>export</b></ClLinks>. See Section 11.1 (Package Concepts). 
+For the :shadowing-import-from and :import-from options, a *correctable error* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"package-error"}><b>package-error</b></DictionaryLink> is signaled if no <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"accessible"}><i>accessible</i></ClLinks> in the <ClLinks  term={"package"}><i>package</i></ClLinks> named by *package-name* for one of the argument *symbol-names*. 
+
+
+
+Name conflict errors are handled by the underlying calls to <DictionaryLink  term={"make-package"}><b>make-package</b></DictionaryLink>, <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, <DictionaryLink  term={"import"}><b>import</b></DictionaryLink>, and <DictionaryLink  term={"export"}><b>export</b></DictionaryLink>. See Section 11.1 (Package Concepts). 
 
 
 
@@ -299,7 +299,7 @@ Name conflict errors are handled by the underlying calls to <ClLinks  term={"mak
 
 
 
-The :intern option is useful if an :import-from or a :shadowing-import-from option in a subsequent call to <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> (for some other <ClLinks  term={"package"}><i>package</i></ClLinks>) expects to find these *symbols accessible* but not necessarily external. 
+The :intern option is useful if an :import-from or a :shadowing-import-from option in a subsequent call to <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> (for some other <ClLinks  term={"package"}><i>package</i></ClLinks>) expects to find these *symbols accessible* but not necessarily external. 
 
 
 
@@ -307,7 +307,7 @@ It is recommended that the entire <ClLinks  term={"package"}><i>package</i></ClL
 
 
 
-<ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> cannot be used to create two “mutually recursive” packages, such as: 
+<DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> cannot be used to create two “mutually recursive” packages, such as: 
 
 
 
@@ -339,11 +339,11 @@ It is recommended that the entire <ClLinks  term={"package"}><i>package</i></ClL
 
 
 
-However, nothing prevents the user from using the <ClLinks  term={"package"}><i>package</i></ClLinks>-affecting functions such as <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>, <ClLinks  term={"import"}><b>import</b></ClLinks>, and <ClLinks  term={"export"}><b>export</b></ClLinks> to establish such links after a more standard use of <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks>. 
+However, nothing prevents the user from using the <ClLinks  term={"package"}><i>package</i></ClLinks>-affecting functions such as <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>, <DictionaryLink  term={"import"}><b>import</b></DictionaryLink>, and <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> to establish such links after a more standard use of <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink>. 
 
 
 
-The macroexpansion of <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> could usefully canonicalize the names into <ClLinks  term={"string"}><i>strings</i></ClLinks>, so that even if a source file has random <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in the <ClLinks  term={"defpackage"}><b>defpackage</b></ClLinks> form, the compiled file would only contain <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
+The macroexpansion of <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> could usefully canonicalize the names into <ClLinks  term={"string"}><i>strings</i></ClLinks>, so that even if a source file has random <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in the <DictionaryLink  term={"defpackage"}><b>defpackage</b></DictionaryLink> form, the compiled file would only contain <ClLinks  term={"string"}><i>strings</i></ClLinks>. 
 
 
 

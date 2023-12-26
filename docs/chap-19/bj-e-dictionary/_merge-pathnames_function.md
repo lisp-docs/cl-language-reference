@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;optional *default-pathname default-version* 
+<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> &amp;optional *default-pathname default-version* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>. 
+<DictionaryLink  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> 
+<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> 
 
 
 
@@ -62,11 +62,11 @@ Constructs a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> from <ClLinks
 
 
 
-Defaulting of pathname components is done by filling in components taken from another <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. This is especially useful for cases such as a program that has an input file and an output file. Unspecified components of the output pathname will come from the input pathname, except that the type should not default to the type of the input pathname but rather to the appropriate default type for output from the program; for example, see the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"compile-file-pathname"}><b>compile-file-pathname</b></ClLinks>. 
+Defaulting of pathname components is done by filling in components taken from another <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. This is especially useful for cases such as a program that has an input file and an output file. Unspecified components of the output pathname will come from the input pathname, except that the type should not default to the type of the input pathname but rather to the appropriate default type for output from the program; for example, see the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"compile-file-pathname"}><b>compile-file-pathname</b></DictionaryLink>. 
 
 
 
-If no version is supplied, *default-version* is used. If *default-version* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the version component will remain unchanged. 
+If no version is supplied, *default-version* is used. If *default-version* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the version component will remain unchanged. 
 
 
 
@@ -74,7 +74,7 @@ If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> explicitly specifies a 
 
 
 
-If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> effectively becomes (pathname <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>). <ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> can be used on either an open or a closed <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> effectively becomes (pathname <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>). <DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> can be used on either an open or a closed <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -82,11 +82,11 @@ If <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> is a <ClLinks  term={"p
 
 
 
-<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> recognizes a *logical pathname namestring* when *default-pathname* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, or when the <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> begins with the name of a defined <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm> followed by a <ClLinks  term={"colon"}><i>colon</i></ClLinks>. In the first of these two cases, the host portion of the *logical pathname namestring* and its following <ClLinks  term={"colon"}><i>colon</i></ClLinks> are optional. 
+<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> recognizes a *logical pathname namestring* when *default-pathname* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, or when the <ClLinks  term={"namestring"}><i>namestring</i></ClLinks> begins with the name of a defined <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm> followed by a <ClLinks  term={"colon"}><i>colon</i></ClLinks>. In the first of these two cases, the host portion of the *logical pathname namestring* and its following <ClLinks  term={"colon"}><i>colon</i></ClLinks> are optional. 
 
 
 
-<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> returns a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> if and only if its first argument is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, or its first argument is a *logical pathname namestring* with an explicit host, or its first argument does not specify a host and the *default-pathname* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>. 
+<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> if and only if its first argument is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, or its first argument is a *logical pathname namestring* with an explicit host, or its first argument does not specify a host and the *default-pathname* is a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>. 
 
 
 
@@ -118,7 +118,7 @@ except that if the resulting <ClLinks  term={"list"}><i>list</i></ClLinks> conta
 
 
 
-<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> 
+<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> 
 
 
 
@@ -126,7 +126,7 @@ both of them are removed. This removal of redundant :back <ClLinks  term={"keywo
 
 
 
-<ClLinks  term={"merge-pathnames"}><b>merge-pathnames</b></ClLinks> maps customary case in <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> into customary case in the output <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
+<DictionaryLink  term={"merge-pathnames"}><b>merge-pathnames</b></DictionaryLink> maps customary case in <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> into customary case in the output <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>. 
 
 
 
@@ -140,7 +140,7 @@ both of them are removed. This removal of redundant :back <ClLinks  term={"keywo
 
 
 
-<ClLinks  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></ClLinks>, <ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink  term={"default-pathname-defaults"}><b>\*default-pathname-defaults\*</b></DictionaryLink>, <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>, <ClLinks  term={"generic-function"}><b>generic-function</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink>, <DictionaryLink  term={"generic-function"}><b>generic-function</b></DictionaryLink>, <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of *generic functions established* by <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks>, <ClLinks  term={"ensure-generic-function"}><b>ensure-generic-function</b></ClLinks>, <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>, and <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+The <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink> is the default <ClLinks  term={"class"}><i>class</i></ClLinks> of *generic functions established* by <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink>, <DictionaryLink  term={"ensure-generic-function"}><b>ensure-generic-function</b></DictionaryLink>, <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>, and <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 

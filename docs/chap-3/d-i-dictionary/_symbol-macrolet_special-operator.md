@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> (*\{*(*symbol expansion*)*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> (*\{*(*symbol expansion*)*\}*\*) <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -42,27 +42,27 @@
 
 
 
-<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> provides a mechanism for affecting the <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> environment for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+<DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> provides a mechanism for affecting the <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> environment for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
-<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> lexically establishes expansion functions for each of the <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macros</i></GlossaryTerm> named by <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. The only guaranteed property of an expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> is that when it is applied to the <ClLinks  term={"form"}><i>form</i></ClLinks> and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> it returns the correct expansion. (In particular, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the expansion is conceptually stored in the expansion function, the <ClLinks  term={"environment"}><i>environment</i></ClLinks>, or both.) 
+<DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> lexically establishes expansion functions for each of the <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macros</i></GlossaryTerm> named by <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. The only guaranteed property of an expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> is that when it is applied to the <ClLinks  term={"form"}><i>form</i></ClLinks> and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> it returns the correct expansion. (In particular, it is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the expansion is conceptually stored in the expansion function, the <ClLinks  term={"environment"}><i>environment</i></ClLinks>, or both.) 
 
 
 
-Each reference to <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> as a variable within the lexical <ClLinks  term={"scope"}><i>scope</i></ClLinks> of <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a symbol macro is subject to further macro expansion in the same lexical environment as the symbol macro invocation, exactly analogous to normal <ClLinks  term={"macro"}><i>macros</i></ClLinks>. 
+Each reference to <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> as a variable within the lexical <ClLinks  term={"scope"}><i>scope</i></ClLinks> of <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a symbol macro is subject to further macro expansion in the same lexical environment as the symbol macro invocation, exactly analogous to normal <ClLinks  term={"macro"}><i>macros</i></ClLinks>. 
 
 
 
-Exactly the same <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> are allowed as for <ClLinks  term={"let"}><b>let</b></ClLinks> with one exception: <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> signals an error if a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration names one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> being defined by <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>. 
+Exactly the same <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> are allowed as for <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> with one exception: <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> signals an error if a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration names one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> being defined by <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>. 
 
 
 
-When the <ClLinks  term={"form"}><i>forms</i></ClLinks> of the <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> form are expanded, any use of <ClLinks  term={"setq"}><b>setq</b></ClLinks> to set the value of one of the specified variables is treated as if it were a <ClLinks  term={"setf"}><b>setf</b></ClLinks>. <ClLinks  term={"psetq"}><b>psetq</b></ClLinks> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> defined as a symbol macro is treated as if it were a <ClLinks  term={"psetf"}><b>psetf</b></ClLinks>, and <ClLinks  term={"multiple-value-setq"}><b>multiple-value-setq</b></ClLinks> is treated as if it were a <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"values"}><b>values</b></ClLinks>. 
+When the <ClLinks  term={"form"}><i>forms</i></ClLinks> of the <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> form are expanded, any use of <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> to set the value of one of the specified variables is treated as if it were a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>. <DictionaryLink  term={"psetq"}><b>psetq</b></DictionaryLink> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> defined as a symbol macro is treated as if it were a <DictionaryLink  term={"psetf"}><b>psetf</b></DictionaryLink>, and <DictionaryLink  term={"multiple-value-setq"}><b>multiple-value-setq</b></DictionaryLink> is treated as if it were a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"values"}><b>values</b></DictionaryLink>. 
 
 
 
-The use of <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> can be shadowed by <ClLinks  term={"let"}><b>let</b></ClLinks>. In other words, <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> only substitutes for occurrences of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that would be in the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of a lexical binding of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> surrounding the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+The use of <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> can be shadowed by <DictionaryLink  term={"let"}><b>let</b></DictionaryLink>. In other words, <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> only substitutes for occurrences of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that would be in the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of a lexical binding of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> surrounding the <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 
@@ -88,11 +88,11 @@ The use of <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> c
 
 
 
-If an attempt is made to bind a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is defined as a <GlossaryTerm styled={true} term={"global variable"}><i>global variable</i></GlossaryTerm>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
+If an attempt is made to bind a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is defined as a <GlossaryTerm styled={true} term={"global variable"}><i>global variable</i></GlossaryTerm>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> is signaled. 
 
 
 
-If <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> contains a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration that names one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> being bound by <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
+If <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> contains a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration that names one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> being bound by <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -100,7 +100,7 @@ If <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> contains a <ClLin
 
 
 
-<ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks>, <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> 
+<DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink>, <DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink> 
 
 
 
@@ -108,11 +108,11 @@ If <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> contains a <ClLin
 
 
 
-The special form <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> is the basic mechanism that is used to implement <ClLinks  term={"with-slots"}><b>with-slots</b></ClLinks>. 
+The special form <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> is the basic mechanism that is used to implement <DictionaryLink  term={"with-slots"}><b>with-slots</b></DictionaryLink>. 
 
 
 
-If a <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. See Section 3.2.3 (File Compilation). 
+If a <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. See Section 3.2.3 (File Compilation). 
 
 
 
@@ -132,7 +132,7 @@ a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term
 
 
 
-a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a function that is equivalent to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, but that might have additional <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> side-e↵ects. 
+a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a function that is equivalent to the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>, but that might have additional <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> side-e↵ects. 
 
 
 
@@ -140,7 +140,7 @@ a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a function that 
 
 
 
-Used as the expansion interface hook by <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> to control the <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> process. When a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> is to be expanded, this <ClLinks  term={"function"}><i>function</i></ClLinks> is called with three arguments: the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> in which the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> is to be expanded. The <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm> has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>; the consequences are undefined if the <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm> is referred to outside the <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> of the macro expansion function. 
+Used as the expansion interface hook by <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink> to control the <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> process. When a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> is to be expanded, this <ClLinks  term={"function"}><i>function</i></ClLinks> is called with three arguments: the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> in which the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> is to be expanded. The <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm> has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>; the consequences are undefined if the <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm> is referred to outside the <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> of the macro expansion function. 
 
 
 
@@ -171,7 +171,7 @@ Evaluation and
 
 
 
-<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks>, <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks>, <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, Section 3.1 (Evaluation) 
+<DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink>, <DictionaryLink  term={"macroexpand-1"}><b>macroexpand-1</b></DictionaryLink>, <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>, Section 3.1 (Evaluation) 
 
 
 

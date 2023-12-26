@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"copy-readtable"}><b>copy-readtable</b></ClLinks> &amp;optional *from-readtable to-readtable → readtable* 
+<DictionaryLink  term={"copy-readtable"}><b>copy-readtable</b></DictionaryLink> &amp;optional *from-readtable to-readtable → readtable* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*to-readtable*—a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*to-readtable*—a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-<ClLinks  term={"copy-readtable"}><b>copy-readtable</b></ClLinks> copies *from-readtable*. 
+<DictionaryLink  term={"copy-readtable"}><b>copy-readtable</b></DictionaryLink> copies *from-readtable*. 
 
 
 
-If *to-readtable* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, a new <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is created and returned. Otherwise the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> specified by *to-readtable* is modified and returned. 
+If *to-readtable* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, a new <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is created and returned. Otherwise the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> specified by *to-readtable* is modified and returned. 
 
 
 
-<ClLinks  term={"copy-readtable"}><b>copy-readtable</b></ClLinks> copies the setting of <ClLinks  term={"readtable-case"}><b>readtable-case</b></ClLinks>. 
+<DictionaryLink  term={"copy-readtable"}><b>copy-readtable</b></DictionaryLink> copies the setting of <DictionaryLink  term={"readtable-case"}><b>readtable-case</b></DictionaryLink>. 
 
 
 
@@ -59,7 +59,7 @@ zvar → 123
 
 
 
-<ClLinks  term={"readtable"}><b>readtable</b></ClLinks>, <ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> 
+<DictionaryLink  term={"readtable"}><b>readtable</b></DictionaryLink>, <DictionaryLink  term={"readtable"}><b>\*readtable\*</b></DictionaryLink> 
 
 
 

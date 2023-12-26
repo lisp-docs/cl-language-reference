@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> *symbol → contents* 
+<DictionaryLink  term={"symbol-function"}><b>symbol-function</b></DictionaryLink> *symbol → contents* 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> 
+<DictionaryLink  term={"symbol-function"}><b>symbol-function</b></DictionaryLink> 
 
 
 
@@ -93,7 +93,7 @@
 
 
 
-<ClLinks  term={"defun"}><b>defun</b></ClLinks> 
+<DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> 
 
 
 
@@ -101,11 +101,11 @@
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-Should signal <ClLinks  term={"undefined-function"}><b>undefined-function</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> and an attempt is made to <ClLinks  term={"read"}><i>read</i></ClLinks> its definition. (No such error is signaled on an attempt to <ClLinks  term={"write"}><i>write</i></ClLinks> its definition.) 
+Should signal <DictionaryLink  term={"undefined-function"}><b>undefined-function</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> and an attempt is made to <ClLinks  term={"read"}><i>read</i></ClLinks> its definition. (No such error is signaled on an attempt to <ClLinks  term={"write"}><i>write</i></ClLinks> its definition.) 
 
 
 
@@ -113,7 +113,7 @@ Should signal <ClLinks  term={"undefined-function"}><b>undefined-function</b></C
 
 
 
-<ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks>, <ClLinks  term={"fmakunbound"}><b>fmakunbound</b></ClLinks>, <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks>, <ClLinks  term={"special-operator-p"}><b>special-operator-p</b></ClLinks> 
+<DictionaryLink  term={"fboundp"}><b>fboundp</b></DictionaryLink>, <DictionaryLink  term={"fmakunbound"}><b>fmakunbound</b></DictionaryLink>, <DictionaryLink  term={"macro-function"}><b>macro-function</b></DictionaryLink>, <DictionaryLink  term={"special-operator-p"}><b>special-operator-p</b></DictionaryLink> 
 
 
 
@@ -133,11 +133,11 @@ Should signal <ClLinks  term={"undefined-function"}><b>undefined-function</b></C
 
 
 
-<ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> cannot <ClLinks  term={"access"}><i>access</i></ClLinks> the value of a lexical function name produced by <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks>; it can <ClLinks  term={"access"}><i>access</i></ClLinks> only the global function value. 
+<DictionaryLink  term={"symbol-function"}><b>symbol-function</b></DictionaryLink> cannot <ClLinks  term={"access"}><i>access</i></ClLinks> the value of a lexical function name produced by <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> or <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink>; it can <ClLinks  term={"access"}><i>access</i></ClLinks> only the global function value. 
 
 
 
-<ClLinks  term={"setf"}><b>setf</b></ClLinks> may be used with <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> to replace a global function definition when the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s function definition does not represent a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> . 
+<DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> may be used with <DictionaryLink  term={"symbol-function"}><b>symbol-function</b></DictionaryLink> to replace a global function definition when the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s function definition does not represent a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> . 
 
 
 
@@ -145,7 +145,7 @@ Should signal <ClLinks  term={"undefined-function"}><b>undefined-function</b></C
 
 
 
-However, <ClLinks  term={"fdefinition"}><b>fdefinition</b></ClLinks> accepts arguments other than just <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+However, <DictionaryLink  term={"fdefinition"}><b>fdefinition</b></DictionaryLink> accepts arguments other than just <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 

@@ -7,7 +7,7 @@ sidebar_position: 102
 
 
 
-**false** *n.* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"nil"}><b>nil</b></ClLinks>, used to represent the failure of a <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> test. 
+**false** *n.* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, used to represent the failure of a <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> test. 
 
 
 
@@ -15,7 +15,7 @@ sidebar_position: 102
 
 
 
-there is a such a definition of a *setf expander F*, the <ClLinks  term={"function"}><i>function</i></ClLinks> (setf *F*) can be <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> if and only if, by design or coincidence, a function binding for (setf *F*) has been independently established.) See the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"fboundp"}><b>fboundp</b></ClLinks> and <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks>. 
+there is a such a definition of a *setf expander F*, the <ClLinks  term={"function"}><i>function</i></ClLinks> (setf *F*) can be <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> if and only if, by design or coincidence, a function binding for (setf *F*) has been independently established.) See the <ClLinks  term={"function"}><i>functions</i></ClLinks> <DictionaryLink  term={"fboundp"}><b>fboundp</b></DictionaryLink> and <DictionaryLink  term={"symbol-function"}><b>symbol-function</b></DictionaryLink>. 
 
 
 
@@ -39,7 +39,7 @@ there is a such a definition of a *setf expander F*, the <ClLinks  term={"functi
 
 
 
-**features list** *n.* the <ClLinks  term={"list"}><i>list</i></ClLinks> that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"features"}><b>\*features\*</b></ClLinks>. 
+**features list** *n.* the <ClLinks  term={"list"}><i>list</i></ClLinks> that is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"features"}><b>\*features\*</b></DictionaryLink>. 
 
 
 
@@ -47,7 +47,7 @@ there is a such a definition of a *setf expander F*, the <ClLinks  term={"functi
 
 
 
-**file compiler** *n.* any <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> which *compiles source code* contained in a <ClLinks  term={"file"}><i>file</i></ClLinks>, producing a *compiled file* as output. The <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> function is the only interface to such a <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> provided by Common Lisp, but there might be other, <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> mechanisms for invoking the *file compiler* . 
+**file compiler** *n.* any <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> which *compiles source code* contained in a <ClLinks  term={"file"}><i>file</i></ClLinks>, producing a *compiled file* as output. The <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> function is the only interface to such a <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> provided by Common Lisp, but there might be other, <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> mechanisms for invoking the *file compiler* . 
 
 
 
@@ -63,7 +63,7 @@ following the last <ClLinks  term={"element"}><i>element</i></ClLinks> of the <C
 
 
 
-**file stream** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-stream"}><b>file-stream</b></ClLinks>. 
+**file stream** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-stream"}><b>file-stream</b></DictionaryLink>. 
 
 
 
@@ -83,7 +83,7 @@ following the last <ClLinks  term={"element"}><i>element</i></ClLinks> of the <C
 
 
 
-(integer 0 5) denotes a finite type, but the type specifiers <ClLinks  term={"integer"}><b>integer</b></ClLinks> and (integer 0) do not.” 
+(integer 0 5) denotes a finite type, but the type specifiers <DictionaryLink  term={"integer"}><b>integer</b></DictionaryLink> and (integer 0) do not.” 
 
 
 
@@ -99,11 +99,11 @@ following the last <ClLinks  term={"element"}><i>element</i></ClLinks> of the <C
 
 
 
-<ClLinks  term={"fixnum"}><b>fixnum</b></ClLinks> *n.* an *integer* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"fixnum"}><b>fixnum</b></ClLinks>. 
+<DictionaryLink  term={"fixnum"}><b>fixnum</b></DictionaryLink> *n.* an *integer* of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"fixnum"}><b>fixnum</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"float"}><b>float</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"float"}><b>float</b></ClLinks>. 
+<DictionaryLink  term={"float"}><b>float</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"float"}><b>float</b></DictionaryLink>. 
 
 
 
@@ -111,7 +111,7 @@ following the last <ClLinks  term={"element"}><i>element</i></ClLinks> of the <C
 
 
 
-**form** *n.* 1. any <ClLinks  term={"object"}><i>object</i></ClLinks> meant to be *evaluated*. 2. a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, a *compound form*, or a *self-evaluating object*. 3. (for an <ClLinks  term={"operator"}><i>operator</i></ClLinks> , as in “⟨operator ii form*”) a *compound form* having that <ClLinks  term={"operator"}><i>operator</i></ClLinks> as its first element. “A <ClLinks  term={"quote"}><b>quote</b></ClLinks> form is a constant form.” 
+**form** *n.* 1. any <ClLinks  term={"object"}><i>object</i></ClLinks> meant to be *evaluated*. 2. a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, a *compound form*, or a *self-evaluating object*. 3. (for an <ClLinks  term={"operator"}><i>operator</i></ClLinks> , as in “⟨operator ii form*”) a *compound form* having that <ClLinks  term={"operator"}><i>operator</i></ClLinks> as its first element. “A <DictionaryLink  term={"quote"}><b>quote</b></DictionaryLink> form is a constant form.” 
 
 
 
@@ -123,15 +123,15 @@ following the last <ClLinks  term={"element"}><i>element</i></ClLinks> of the <C
 
 
 
-<ClLinks  term={"format"}><b>format</b></ClLinks> *v.t.* (a *format control* and *format arguments*) to perform output as if by <ClLinks  term={"format"}><b>format</b></ClLinks>, using the *format string* and *format arguments*. 
+<DictionaryLink  term={"format"}><b>format</b></DictionaryLink> *v.t.* (a *format control* and *format arguments*) to perform output as if by <DictionaryLink  term={"format"}><b>format</b></DictionaryLink>, using the *format string* and *format arguments*. 
 
 
 
-**format argument** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> which is used as data by functions such as <ClLinks  term={"format"}><b>format</b></ClLinks> which interpret *format controls*. 
+**format argument** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> which is used as data by functions such as <DictionaryLink  term={"format"}><b>format</b></DictionaryLink> which interpret *format controls*. 
 
 
 
-**format control** *n.* a *format string*, or a <ClLinks  term={"function"}><i>function</i></ClLinks> that obeys the <ClLinks  term={"argument"}><i>argument</i></ClLinks> conventions for a <ClLinks  term={"function"}><i>function</i></ClLinks> returned by the <ClLinks  term={"formatter"}><b>formatter</b></ClLinks> <ClLinks  term={"macro"}><i>macro</i></ClLinks>. See Section 22.2.1.3 (Compiling Format Strings). 
+**format control** *n.* a *format string*, or a <ClLinks  term={"function"}><i>function</i></ClLinks> that obeys the <ClLinks  term={"argument"}><i>argument</i></ClLinks> conventions for a <ClLinks  term={"function"}><i>function</i></ClLinks> returned by the <DictionaryLink  term={"formatter"}><b>formatter</b></DictionaryLink> <ClLinks  term={"macro"}><i>macro</i></ClLinks>. See Section 22.2.1.3 (Compiling Format Strings). 
 
 
 
@@ -139,15 +139,15 @@ following the last <ClLinks  term={"element"}><i>element</i></ClLinks> of the <C
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"format"}><b>format</b></ClLinks>. “In "&#126;D base 10 = &#126;8R", the character sequences ‘&#126;D’ and ‘&#126;8R’ are format directives.” 2. the conceptual category of all *format directives*<sub>1</sub> which use the same dispatch character. “Both "&#126;3d" and "&#126;3,’0D" are valid uses of the ‘&#126;D’ format directive.” 
+<ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"format"}><b>format</b></DictionaryLink>. “In "&#126;D base 10 = &#126;8R", the character sequences ‘&#126;D’ and ‘&#126;8R’ are format directives.” 2. the conceptual category of all *format directives*<sub>1</sub> which use the same dispatch character. “Both "&#126;3d" and "&#126;3,’0D" are valid uses of the ‘&#126;D’ format directive.” 
 
 
 
-**format string** *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks> which can contain both ordinary text and *format directives*, and which is used in conjunction with *format arguments* to describe how text output should be formatted by certain functions, such as <ClLinks  term={"format"}><b>format</b></ClLinks>. 
+**format string** *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks> which can contain both ordinary text and *format directives*, and which is used in conjunction with *format arguments* to describe how text output should be formatted by certain functions, such as <DictionaryLink  term={"format"}><b>format</b></DictionaryLink>. 
 
 
 
-**free declaration** *n.* a declaration that is not a *bound declaration*. See <ClLinks  term={"declare"}><b>declare</b></ClLinks>. 
+**free declaration** *n.* a declaration that is not a *bound declaration*. See <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>. 
 
 
 
@@ -171,7 +171,7 @@ following the last <ClLinks  term={"element"}><i>element</i></ClLinks> of the <C
 
 
 
-<ClLinks  term={"fresh-line"}><b>fresh-line</b></ClLinks> and by the *format directive* &#126;&amp;, which advances the display position to the beginning of the next line (as if a <ClLinks  term={"newline"}><i>newline</i></ClLinks> had been typed, or the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"terpri"}><b>terpri</b></ClLinks> had been called) unless the <ClLinks  term={"stream"}><i>stream</i></ClLinks> is already known to be positioned at the beginning of a line. Unlike <ClLinks  term={"newline"}><i>newline</i></ClLinks>, <ClLinks  term={"freshline"}><i>freshline</i></ClLinks> is not a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
+<DictionaryLink  term={"fresh-line"}><b>fresh-line</b></DictionaryLink> and by the *format directive* &#126;&amp;, which advances the display position to the beginning of the next line (as if a <ClLinks  term={"newline"}><i>newline</i></ClLinks> had been typed, or the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"terpri"}><b>terpri</b></DictionaryLink> had been called) unless the <ClLinks  term={"stream"}><i>stream</i></ClLinks> is already known to be positioned at the beginning of a line. Unlike <ClLinks  term={"newline"}><i>newline</i></ClLinks>, <ClLinks  term={"freshline"}><i>freshline</i></ClLinks> is not a <ClLinks  term={"character"}><i>character</i></ClLinks> . 
 
 
 
@@ -179,11 +179,11 @@ following the last <ClLinks  term={"element"}><i>element</i></ClLinks> of the <C
 
 
 
-<ClLinks  term={"function"}><b>function</b></ClLinks> *n.* 1. an <ClLinks  term={"object"}><i>object</i></ClLinks> representing code, which can be *called* with zero or more <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, and which produces zero or more <ClLinks  term={"value"}><i>values</i></ClLinks>. 2. an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"function"}><b>function</b></ClLinks>. 
+<DictionaryLink  term={"function"}><b>function</b></DictionaryLink> *n.* 1. an <ClLinks  term={"object"}><i>object</i></ClLinks> representing code, which can be *called* with zero or more <ClLinks  term={"argument"}><i>arguments</i></ClLinks>, and which produces zero or more <ClLinks  term={"value"}><i>values</i></ClLinks>. 2. an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>. 
 
 
 
-**function block name** *n.* (of a *function name*) The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that would be used as the name of an *implicit block* which surrounds the body of a <ClLinks  term={"function"}><i>function</i></ClLinks> having that *function name*. If the *function name* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, its *function block name* is the *function name* itself. If the *function name* is a <ClLinks  term={"list"}><i>list</i></ClLinks> whose <ClLinks  term={"car"}><i>car</i></ClLinks> is <ClLinks  term={"setf"}><b>setf</b></ClLinks> and whose <ClLinks  term={"cadr"}><i>cadr</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, 
+**function block name** *n.* (of a *function name*) The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that would be used as the name of an *implicit block* which surrounds the body of a <ClLinks  term={"function"}><i>function</i></ClLinks> having that *function name*. If the *function name* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, its *function block name* is the *function name* itself. If the *function name* is a <ClLinks  term={"list"}><i>list</i></ClLinks> whose <ClLinks  term={"car"}><i>car</i></ClLinks> is <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> and whose <ClLinks  term={"cadr"}><i>cadr</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, 
 
 
 
@@ -191,7 +191,7 @@ its *function block name* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLink
 
 
 
-**function cell** *n. Trad.* (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) The <ClLinks  term={"place"}><i>place</i></ClLinks> which holds the *definition* of the global *function binding*, if any, named by that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and which is *accessed* by <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks>. See <ClLinks  term={"cell"}><i>cell</i></ClLinks>. 
+**function cell** *n. Trad.* (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) The <ClLinks  term={"place"}><i>place</i></ClLinks> which holds the *definition* of the global *function binding*, if any, named by that <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and which is *accessed* by <DictionaryLink  term={"symbol-function"}><b>symbol-function</b></DictionaryLink>. See <ClLinks  term={"cell"}><i>cell</i></ClLinks>. 
 
 
 
@@ -207,11 +207,11 @@ its *function block name* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLink
 
 
 
-**functional evaluation** *n.* the process of extracting a <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> from a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>. The evaluator performs <GlossaryTerm styled={true} term={"functional evaluation"}><i>functional evaluation</i></GlossaryTerm> implicitly when it encounters a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> in the <ClLinks  term={"car"}><i>car</i></ClLinks> of a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm>, or explicitly when it encounters a <ClLinks  term={"function"}><b>function</b></ClLinks> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>. Neither a use of a 
+**functional evaluation** *n.* the process of extracting a <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> from a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>. The evaluator performs <GlossaryTerm styled={true} term={"functional evaluation"}><i>functional evaluation</i></GlossaryTerm> implicitly when it encounters a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> in the <ClLinks  term={"car"}><i>car</i></ClLinks> of a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm>, or explicitly when it encounters a <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>. Neither a use of a 
 
 
 
-<ClLinks  term={"symbol"}><i>symbol</i></ClLinks> as a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> nor a use of the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-function"}><b>symbol-function</b></ClLinks> to extract the <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is considered a <GlossaryTerm styled={true} term={"functional evaluation"}><i>functional evaluation</i></GlossaryTerm>. 
+<ClLinks  term={"symbol"}><i>symbol</i></ClLinks> as a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> nor a use of the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"symbol-function"}><b>symbol-function</b></DictionaryLink> to extract the <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is considered a <GlossaryTerm styled={true} term={"functional evaluation"}><i>functional evaluation</i></GlossaryTerm>. 
 
 
 

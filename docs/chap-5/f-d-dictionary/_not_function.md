@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"not"}><b>not</b></ClLinks> *x → boolean* 
+<DictionaryLink  term={"not"}><b>not</b></DictionaryLink> *x → boolean* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks  term={"t"}><b>t</b></ClLinks> if *x* is <ClLinks  term={"false"}><i>false</i></ClLinks>; otherwise, returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+Returns <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> if *x* is <ClLinks  term={"false"}><i>false</i></ClLinks>; otherwise, returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -43,7 +43,7 @@ Returns <ClLinks  term={"t"}><b>t</b></ClLinks> if *x* is <ClLinks  term={"false
 
 
 
-<ClLinks  term={"null"}><b>null</b></ClLinks> 
+<DictionaryLink  term={"null"}><b>null</b></DictionaryLink> 
 
 
 
@@ -51,7 +51,7 @@ Returns <ClLinks  term={"t"}><b>t</b></ClLinks> if *x* is <ClLinks  term={"false
 
 
 
-<ClLinks  term={"not"}><b>not</b></ClLinks> is intended to be used to invert the ‘truth value’ of a <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (or <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>) whereas <ClLinks  term={"null"}><b>null</b></ClLinks> is intended to be used to test for the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. Operationally, <ClLinks  term={"not"}><b>not</b></ClLinks> and <ClLinks  term={"null"}><b>null</b></ClLinks> compute the same result; which to use is a matter of style. 
+<DictionaryLink  term={"not"}><b>not</b></DictionaryLink> is intended to be used to invert the ‘truth value’ of a <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (or <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>) whereas <DictionaryLink  term={"null"}><b>null</b></DictionaryLink> is intended to be used to test for the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. Operationally, <DictionaryLink  term={"not"}><b>not</b></DictionaryLink> and <DictionaryLink  term={"null"}><b>null</b></DictionaryLink> compute the same result; which to use is a matter of style. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"string"}><b>string</b></ClLinks>, <ClLinks  term={"vector"}><b>vector</b></ClLinks>, <ClLinks  term={"array"}><b>array</b></ClLinks>, <ClLinks  term={"sequence"}><b>sequence</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>, <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>, <DictionaryLink  term={"array"}><b>array</b></DictionaryLink>, <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <ClLinks  term={"string"}><i>string</i></ClLinks> is a *specialized vector* whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. When used as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for object creation, <ClLinks  term={"string"}><b>string</b></ClLinks> means (vector character). 
+A <ClLinks  term={"string"}><i>string</i></ClLinks> is a *specialized vector* whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>. When used as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for object creation, <DictionaryLink  term={"string"}><b>string</b></DictionaryLink> means (vector character). 
 
 
 
@@ -46,7 +46,7 @@ Abbreviating.
 
 
 
-This denotes the union of all <ClLinks  term={"type"}><i>types</i></ClLinks> (array *c* (*size*)) for all *subtypes c* of <ClLinks  term={"character"}><b>character</b></ClLinks>; that is, the set of <ClLinks  term={"string"}><i>strings</i></ClLinks> of size *size*. 
+This denotes the union of all <ClLinks  term={"type"}><i>types</i></ClLinks> (array *c* (*size*)) for all *subtypes c* of <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>; that is, the set of <ClLinks  term={"string"}><i>strings</i></ClLinks> of size *size*. 
 
 
 

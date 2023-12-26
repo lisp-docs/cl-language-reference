@@ -6,7 +6,7 @@ When a <GlossaryTerm styled={true} term={"generic function"}><i>generic function
 
 
 
-If a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> is called and no <ClLinks  term={"method"}><i>methods</i></ClLinks> are <ClLinks  term={"applicable"}><i>applicable</i></ClLinks>, the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> is invoked, with the *results* from that call being used as the *results* of the call to the original <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. Calling <ClLinks  term={"no-applicable-method"}><b>no-applicable-method</b></ClLinks> takes precedence over checking for acceptable keyword arguments; see Section 7.6.5 (Keyword Arguments in Generic Functions and Methods). 
+If a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> is called and no <ClLinks  term={"method"}><i>methods</i></ClLinks> are <ClLinks  term={"applicable"}><i>applicable</i></ClLinks>, the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <DictionaryLink  term={"no-applicable-method"}><b>no-applicable-method</b></DictionaryLink> is invoked, with the *results* from that call being used as the *results* of the call to the original <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. Calling <DictionaryLink  term={"no-applicable-method"}><b>no-applicable-method</b></DictionaryLink> takes precedence over checking for acceptable keyword arguments; see Section 7.6.5 (Keyword Arguments in Generic Functions and Methods). 
 
 
 

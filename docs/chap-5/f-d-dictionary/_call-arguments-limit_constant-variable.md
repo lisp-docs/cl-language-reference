@@ -6,7 +6,7 @@
 
 
 
-An integer not smaller than 50 and at least as great as the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></ClLinks>, the exact magnitude of which is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+An integer not smaller than 50 and at least as great as the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></DictionaryLink>, the exact magnitude of which is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
@@ -22,7 +22,7 @@ The upper exclusive bound on the number of <ClLinks  term={"argument"}><i>argume
 
 
 
-<ClLinks  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></ClLinks>, <ClLinks  term={"multiple-values-limit"}><b>multiple-values-limit</b></ClLinks> 
+<DictionaryLink  term={"lambda-parameters-limit"}><b>lambda-parameters-limit</b></DictionaryLink>, <DictionaryLink  term={"multiple-values-limit"}><b>multiple-values-limit</b></DictionaryLink> 
 
 
 

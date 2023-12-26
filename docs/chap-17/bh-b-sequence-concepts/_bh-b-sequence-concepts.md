@@ -6,7 +6,7 @@ A *sequence* is an ordered collection of <ClLinks  term={"element"}><i>elements<
 
 
 
-*Sequences* can be created by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"make-sequence"}><b>make-sequence</b></ClLinks>, as well as other <ClLinks  term={"function"}><i>functions</i></ClLinks> that create <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>types</i></ClLinks> that are <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> (*e.g.*, <ClLinks  term={"list"}><b>list</b></ClLinks>, <ClLinks  term={"make-list"}><b>make-list</b></ClLinks>, <ClLinks  term={"mapcar"}><b>mapcar</b></ClLinks>, and <ClLinks  term={"vector"}><b>vector</b></ClLinks>). 
+*Sequences* can be created by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"make-sequence"}><b>make-sequence</b></DictionaryLink>, as well as other <ClLinks  term={"function"}><i>functions</i></ClLinks> that create <ClLinks  term={"object"}><i>objects</i></ClLinks> of <ClLinks  term={"type"}><i>types</i></ClLinks> that are <ClLinks  term={"subtype"}><i>subtypes</i></ClLinks> of <DictionaryLink  term={"sequence"}><b>sequence</b></DictionaryLink> (*e.g.*, <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>, <DictionaryLink  term={"make-list"}><b>make-list</b></DictionaryLink>, <DictionaryLink  term={"mapcar"}><b>mapcar</b></DictionaryLink>, and <DictionaryLink  term={"vector"}><b>vector</b></DictionaryLink>). 
 
 
 

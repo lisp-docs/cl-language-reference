@@ -30,7 +30,7 @@ could be represented in this way:
 
 
 
-Without this notation, but with <ClLinks  term={"print-length"}><b>\*print-length\*</b></ClLinks> set to 10 and <ClLinks  term={"print-circle"}><b>\*print-circle\*</b></ClLinks> set to <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the structure would print in this way: 
+Without this notation, but with <DictionaryLink  term={"print-length"}><b>\*print-length\*</b></DictionaryLink> set to 10 and <DictionaryLink  term={"print-circle"}><b>\*print-circle\*</b></DictionaryLink> set to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the structure would print in this way: 
 
 
 

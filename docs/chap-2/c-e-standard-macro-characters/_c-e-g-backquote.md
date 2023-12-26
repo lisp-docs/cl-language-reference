@@ -83,7 +83,7 @@ where the brackets are used to indicate a transformation of an *xj* as follows:
 
 
 
-*•* ‘(x1 x2 x3 ... xn) may be interpreted to mean the same as the backquoted form ‘(x1 x2 x3 ... xn . <ClLinks  term={"nil"}><b>nil</b></ClLinks>), thereby reducing it to the previous case. 
+*•* ‘(x1 x2 x3 ... xn) may be interpreted to mean the same as the backquoted form ‘(x1 x2 x3 ... xn . <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>), thereby reducing it to the previous case. 
 
 
 
@@ -107,7 +107,7 @@ where the brackets indicate a transformation of an xj as described above.
 
 
 
-Anywhere “,@” may be used, the syntax “,.” may be used instead to indicate that it is permissible to operate *destructively* on the <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> produced by the form following the “,.” (in effect, to use <ClLinks  term={"nconc"}><b>nconc</b></ClLinks> instead of <ClLinks  term={"append"}><b>append</b></ClLinks>). 
+Anywhere “,@” may be used, the syntax “,.” may be used instead to indicate that it is permissible to operate *destructively* on the <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> produced by the form following the “,.” (in effect, to use <DictionaryLink  term={"nconc"}><b>nconc</b></DictionaryLink> instead of <DictionaryLink  term={"append"}><b>append</b></DictionaryLink>). 
 
 
 
@@ -115,7 +115,7 @@ If the backquote syntax is nested, the innermost backquoted form should be expan
 
 
 
-An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is free to interpret a backquoted *form F*<sub>1</sub> as any *form F*<sub>2</sub> that, when evaluated, will produce a result that is the <ClLinks  term={"same"}><i>same</i></ClLinks> under <ClLinks  term={"equal"}><b>equal</b></ClLinks> as the result implied by the above definition, provided that the side-effect behavior of the substitute *form F*<sub>2</sub> is also consistent with the  
+An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is free to interpret a backquoted *form F*<sub>1</sub> as any *form F*<sub>2</sub> that, when evaluated, will produce a result that is the <ClLinks  term={"same"}><i>same</i></ClLinks> under <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> as the result implied by the above definition, provided that the side-effect behavior of the substitute *form F*<sub>2</sub> is also consistent with the  
 
 
 
@@ -135,7 +135,7 @@ will be interpreted as if it were
 
 
 
-(append (list (append (list a) (list ’b) ’<ClLinks  term={"nil"}><b>nil</b></ClLinks>)) (list c) d ’<ClLinks  term={"nil"}><b>nil</b></ClLinks>) 
+(append (list (append (list a) (list ’b) ’<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>)) (list c) d ’<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>) 
 
 
 

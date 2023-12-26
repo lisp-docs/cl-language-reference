@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"synonym-stream"}><b>synonym-stream</b></ClLinks>, <ClLinks  term={"stream"}><b>stream</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"synonym-stream"}><b>synonym-stream</b></DictionaryLink>, <DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -26,7 +26,7 @@ Any operations on a <GlossaryTerm styled={true} term={"synonym stream"}><i>synon
 
 
 
-<ClLinks  term={"make-synonym-stream"}><b>make-synonym-stream</b></ClLinks>, <ClLinks  term={"synonym-stream-symbol"}><b>synonym-stream-symbol</b></ClLinks> 
+<DictionaryLink  term={"make-synonym-stream"}><b>make-synonym-stream</b></DictionaryLink>, <DictionaryLink  term={"synonym-stream-symbol"}><b>synonym-stream-symbol</b></DictionaryLink> 
 
 
 

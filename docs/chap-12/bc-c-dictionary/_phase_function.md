@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"phase"}><b>phase</b></ClLinks> *number → phase* 
+<DictionaryLink  term={"phase"}><b>phase</b></DictionaryLink> *number → phase* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"phase"}><b>phase</b></ClLinks> returns the phase of <ClLinks  term={"number"}><i>number</i></ClLinks> (the angle part of its polar representation) in radians, in the range *−π* (exclusive) if minus zero is not supported, or *−π* (inclusive) if minus zero is supported, to *π* (inclusive). The phase of a positive *real* number is zero; that of a negative *real* number is *π*. The phase of zero is defined to be zero. 
+<DictionaryLink  term={"phase"}><b>phase</b></DictionaryLink> returns the phase of <ClLinks  term={"number"}><i>number</i></ClLinks> (the angle part of its polar representation) in radians, in the range *−π* (exclusive) if minus zero is not supported, or *−π* (inclusive) if minus zero is supported, to *π* (inclusive). The phase of a positive *real* number is zero; that of a negative *real* number is *π*. The phase of zero is defined to be zero. 
 
 
 
@@ -34,11 +34,11 @@ If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <GlossaryTerm styled={
 
 
 
-The branch cut for <ClLinks  term={"phase"}><b>phase</b></ClLinks> lies along the negative real axis, continuous with quadrant II. The range consists of that portion of the real axis between *−π* (exclusive) and *π* (inclusive). 
+The branch cut for <DictionaryLink  term={"phase"}><b>phase</b></DictionaryLink> lies along the negative real axis, continuous with quadrant II. The range consists of that portion of the real axis between *−π* (exclusive) and *π* (inclusive). 
 
 
 
-The mathematical definition of <ClLinks  term={"phase"}><b>phase</b></ClLinks> is as follows: 
+The mathematical definition of <DictionaryLink  term={"phase"}><b>phase</b></DictionaryLink> is as follows: 
 
 
 
@@ -58,7 +58,7 @@ The mathematical definition of <ClLinks  term={"phase"}><b>phase</b></ClLinks> i
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
+Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
 
 
 

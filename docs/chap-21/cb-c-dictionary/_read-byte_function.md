@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks> <ClLinks  term={"stream"}><i>stream</i></ClLinks> &amp;optional *eof-error-p eof-value → byte* 
+<DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> <ClLinks  term={"stream"}><i>stream</i></ClLinks> &amp;optional *eof-error-p eof-value → byte* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"read-byte"}><b>read-byte</b></ClLinks> reads and returns one byte from <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"read-byte"}><b>read-byte</b></DictionaryLink> reads and returns one byte from <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -65,15 +65,15 @@ Modifies <ClLinks  term={"stream"}><i>stream</i></ClLinks>.
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a *binary input stream*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a *binary input stream*. 
 
 
 
-If there are no <ClLinks  term={"byte"}><i>bytes</i></ClLinks> remaining in the <ClLinks  term={"stream"}><i>stream</i></ClLinks> and *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled. 
+If there are no <ClLinks  term={"byte"}><i>bytes</i></ClLinks> remaining in the <ClLinks  term={"stream"}><i>stream</i></ClLinks> and *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled. 
 
 
 
@@ -81,7 +81,7 @@ If there are no <ClLinks  term={"byte"}><i>bytes</i></ClLinks> remaining in the 
 
 
 
-<ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks  term={"read-sequence"}><b>read-sequence</b></ClLinks>, <ClLinks  term={"write-byte"}><b>write-byte</b></ClLinks> 
+<DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink>, <DictionaryLink  term={"read-sequence"}><b>read-sequence</b></DictionaryLink>, <DictionaryLink  term={"write-byte"}><b>write-byte</b></DictionaryLink> 
 
 
 

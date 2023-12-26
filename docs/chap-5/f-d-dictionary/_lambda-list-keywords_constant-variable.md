@@ -22,7 +22,7 @@ A <ClLinks  term={"list"}><i>list</i></ClLinks> of all the <GlossaryTerm styled=
 
 
 
-<ClLinks  term={"defun"}><b>defun</b></ClLinks>, <ClLinks  term={"flet"}><b>flet</b></ClLinks>, <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>, <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks>, Section 3.1.2 (The Evaluation Model) 
+<DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink>, <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink>, <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink>, <DictionaryLink  term={"macrolet"}><b>macrolet</b></DictionaryLink>, Section 3.1.2 (The Evaluation Model) 
 
 
 

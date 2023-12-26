@@ -26,7 +26,7 @@ Returns the sum of <ClLinks  term={"number"}><i>numbers</i></ClLinks>, performin
 
 **Exceptional Situations:**
 
-Might signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>.
+Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if some <ClLinks  term={"argument"}><i>argument</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . Might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>.
 
 **See Also:**
 

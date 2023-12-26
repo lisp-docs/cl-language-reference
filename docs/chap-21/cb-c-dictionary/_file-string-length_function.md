@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"file-string-length"}><b>file-string-length</b></ClLinks> *stream object → length* 
+<DictionaryLink  term={"file-string-length"}><b>file-string-length</b></DictionaryLink> *stream object → length* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"length"}><i>length</i></ClLinks>—a non-negative *integer* , or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"length"}><i>length</i></ClLinks>—a non-negative *integer* , or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"file-string-length"}><b>file-string-length</b></ClLinks> returns the difference between what (file-position <ClLinks  term={"stream"}><i>stream</i></ClLinks>) would be after writing <ClLinks  term={"object"}><i>object</i></ClLinks> and its current value, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if this cannot be determined. 
+<DictionaryLink  term={"file-string-length"}><b>file-string-length</b></DictionaryLink> returns the difference between what (file-position <ClLinks  term={"stream"}><i>stream</i></ClLinks>) would be after writing <ClLinks  term={"object"}><i>object</i></ClLinks> and its current value, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if this cannot be determined. 
 
 
 
@@ -50,7 +50,7 @@ The returned value corresponds to the current state of <ClLinks  term={"stream"}
 
 
 
-<ClLinks  term={"open"}><b>open</b></ClLinks> 
+<DictionaryLink  term={"open"}><b>open</b></DictionaryLink> 
 
 
 

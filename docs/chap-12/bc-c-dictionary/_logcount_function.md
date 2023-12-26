@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"logcount"}><b>logcount</b></ClLinks> *integer → number-of-on-bits* 
+<DictionaryLink  term={"logcount"}><b>logcount</b></DictionaryLink> *integer → number-of-on-bits* 
 
 
 
@@ -48,7 +48,7 @@ Computes and returns the number of bits in the two’s-complement binary represe
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an *integer* . 
+Should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an *integer* . 
 
 
 
@@ -56,7 +56,7 @@ Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its a
 
 
 
-Even if the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> does not represent *integers* internally in two’s complement binary, <ClLinks  term={"logcount"}><b>logcount</b></ClLinks> behaves as if it did. 
+Even if the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> does not represent *integers* internally in two’s complement binary, <DictionaryLink  term={"logcount"}><b>logcount</b></DictionaryLink> behaves as if it did. 
 
 
 

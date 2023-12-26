@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"get-setf-expansion"}><b>get-setf-expansion</b></ClLinks> <ClLinks  term={"place"}><i>place</i></ClLinks> &amp;optional <ClLinks  term={"environment"}><i>environment</i></ClLinks> 
+<DictionaryLink  term={"get-setf-expansion"}><b>get-setf-expansion</b></DictionaryLink> <ClLinks  term={"place"}><i>place</i></ClLinks> &amp;optional <ClLinks  term={"environment"}><i>environment</i></ClLinks> 
 
 
 
@@ -50,7 +50,7 @@ Determines five values constituting the <GlossaryTerm styled={true} term={"setf 
 
 
 
-If <ClLinks  term={"environment"}><i>environment</i></ClLinks> is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the environment is the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. 
+If <ClLinks  term={"environment"}><i>environment</i></ClLinks> is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the environment is the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp
@@ -74,7 +74,7 @@ If <ClLinks  term={"environment"}><i>environment</i></ClLinks> is not supplied o
 
 
 
-<ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks>, <ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>, <ClLinks  term={"setf"}><b>setf</b></ClLinks> 
+<DictionaryLink  term={"defsetf"}><b>defsetf</b></DictionaryLink>, <DictionaryLink  term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink>, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> 
 
 
 

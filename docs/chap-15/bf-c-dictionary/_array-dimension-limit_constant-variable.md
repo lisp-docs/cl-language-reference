@@ -22,7 +22,7 @@ The upper exclusive bound on each individual <ClLinks  term={"dimension"}><i>dim
 
 
 
-<ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
+<DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> 
 
 
 

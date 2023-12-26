@@ -74,15 +74,15 @@ Specifies that all of the *vars* named are dynamic. This specifier a↵ects vari
 
 
 
-A <ClLinks  term={"special"}><b>special</b></ClLinks> declaration does not a↵ect inner <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of a *var*; the inner <ClLinks  term={"binding"}><i>bindings</i></ClLinks> implicitly shadow a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration and must be explicitly re-declared to be <ClLinks  term={"special"}><b>special</b></ClLinks>. <ClLinks  term={"special"}><b>special</b></ClLinks> declarations never apply to function <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
+A <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration does not a↵ect inner <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of a *var*; the inner <ClLinks  term={"binding"}><i>bindings</i></ClLinks> implicitly shadow a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration and must be explicitly re-declared to be <DictionaryLink  term={"special"}><b>special</b></DictionaryLink>. <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declarations never apply to function <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
 
 
 
-<ClLinks  term={"special"}><b>special</b></ClLinks> declarations can be either <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>, a↵ecting both a binding and references, or <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm>, a↵ecting only references, depending on whether the declaration is attached to a variable binding. 
+<DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declarations can be either <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>, a↵ecting both a binding and references, or <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm>, a↵ecting only references, depending on whether the declaration is attached to a variable binding. 
 
 
 
-When used in a <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>, a <ClLinks  term={"special"}><b>special</b></ClLinks> <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifier</i></GlossaryTerm> applies to all <ClLinks  term={"binding"}><i>bindings</i></ClLinks> as well as to all references of the mentioned variables. For example, after 
+When used in a <ClLinks  term={"proclamation"}><i>proclamation</i></ClLinks>, a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> <GlossaryTerm styled={true} term={"declaration specifier"}><i>declaration specifier</i></GlossaryTerm> applies to all <ClLinks  term={"binding"}><i>bindings</i></ClLinks> as well as to all references of the mentioned variables. For example, after 
 
 
 
@@ -102,7 +102,7 @@ Evaluation and
 
 
 
-<ClLinks  term={"special"}><b>special</b></ClLinks> 
+<DictionaryLink  term={"special"}><b>special</b></DictionaryLink> 
 
 
 
@@ -173,7 +173,7 @@ In the contorted code above, the outermost and innermost *bindings* of y are dyn
 
 
 
-<ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks>, <ClLinks  term={"defvar"}><b>defvar</b></ClLinks> 
+<DictionaryLink  term={"defparameter"}><b>defparameter</b></DictionaryLink>, <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"directory"}><b>directory</b></ClLinks> *pathspec* &amp;key → pathnames 
+<DictionaryLink  term={"directory"}><b>directory</b></DictionaryLink> *pathspec* &amp;key → pathnames 
 
 
 
@@ -30,7 +30,7 @@ Determines which, if any, <ClLinks  term={"file"}><i>files</i></ClLinks> that ar
 
 
 
-An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> may be extended to accept <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> keyword arguments to <ClLinks  term={"directory"}><b>directory</b></ClLinks>. 
+An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> may be extended to accept <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> keyword arguments to <DictionaryLink  term={"directory"}><b>directory</b></DictionaryLink>. 
 
 
 
@@ -46,7 +46,7 @@ The host computer’s file system.
 
 
 
-If the attempt to obtain a directory listing is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
+If the attempt to obtain a directory listing is not successful, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"file-error"}><b>file-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -54,7 +54,7 @@ If the attempt to obtain a directory listing is not successful, an error of <ClL
 
 
 
-<ClLinks  term={"pathname"}><b>pathname</b></ClLinks>, <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks>, <ClLinks  term={"ensure-directories-exist"}><b>ensure-directories-exist</b></ClLinks>, Section 20.1 (File System Concepts), Section 21.1.1.1.2 (Open and Closed Streams), Section 19.1.2 (Pathnames as Filenames) 
+<DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"logical-pathname"}><b>logical-pathname</b></DictionaryLink>, <DictionaryLink  term={"ensure-directories-exist"}><b>ensure-directories-exist</b></DictionaryLink>, Section 20.1 (File System Concepts), Section 21.1.1.1.2 (Open and Closed Streams), Section 19.1.2 (Pathnames as Filenames) 
 
 
 
@@ -66,7 +66,7 @@ If the *pathspec* is not <ClLinks  term={"wild"}><i>wild</i></ClLinks>, the resu
 
 
 
-Common Lisp specifies “&amp;key” in the argument list to <ClLinks  term={"directory"}><b>directory</b></ClLinks> even though no <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> keyword arguments to <ClLinks  term={"directory"}><b>directory</b></ClLinks> are defined. “:allow-other-keys t” may be used in <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> in order to quietly ignore any additional keywords which are passed by the program but not supported by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
+Common Lisp specifies “&amp;key” in the argument list to <DictionaryLink  term={"directory"}><b>directory</b></DictionaryLink> even though no <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> keyword arguments to <DictionaryLink  term={"directory"}><b>directory</b></DictionaryLink> are defined. “:allow-other-keys t” may be used in <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> in order to quietly ignore any additional keywords which are passed by the program but not supported by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 

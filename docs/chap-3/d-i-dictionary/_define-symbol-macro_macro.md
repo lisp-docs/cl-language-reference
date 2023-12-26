@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"define-symbol-macro"}><b>define-symbol-macro</b></ClLinks> *symbol expansion* 
+<DictionaryLink  term={"define-symbol-macro"}><b>define-symbol-macro</b></DictionaryLink> *symbol expansion* 
 
 
 
@@ -46,15 +46,15 @@ Each global reference to <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (*i.e
 
 
 
-The consequences are unspecified if a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration is made for <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> while in the scope of this definition (*i.e.*, when it is not *shadowed* <sub>2</sub> by a <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> named by the same <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>). 
+The consequences are unspecified if a <DictionaryLink  term={"special"}><b>special</b></DictionaryLink> declaration is made for <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> while in the scope of this definition (*i.e.*, when it is not *shadowed* <sub>2</sub> by a <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> named by the same <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>). 
 
 
 
-Any use of <ClLinks  term={"setq"}><b>setq</b></ClLinks> to set the value of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> while in the scope of this definition is treated as if it were a <ClLinks  term={"setf"}><b>setf</b></ClLinks>. <ClLinks  term={"psetq"}><b>psetq</b></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is treated as if it were a <ClLinks  term={"psetf"}><b>psetf</b></ClLinks>, and <ClLinks  term={"multiple-value-setq"}><b>multiple-value-setq</b></ClLinks> is treated as if it were a <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"values"}><b>values</b></ClLinks>. 
+Any use of <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> to set the value of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> while in the scope of this definition is treated as if it were a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>. <DictionaryLink  term={"psetq"}><b>psetq</b></DictionaryLink> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is treated as if it were a <DictionaryLink  term={"psetf"}><b>psetf</b></DictionaryLink>, and <DictionaryLink  term={"multiple-value-setq"}><b>multiple-value-setq</b></DictionaryLink> is treated as if it were a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"values"}><b>values</b></DictionaryLink>. 
 
 
 
-A <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> can be *shadowed* <sub>2</sub> by <ClLinks  term={"let"}><b>let</b></ClLinks> or <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>. 
+A <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> can be *shadowed* <sub>2</sub> by <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> or <DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>. 
 
 
 
@@ -76,7 +76,7 @@ thing3 → THREE
 
 
 
-If <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is already defined as a <GlossaryTerm styled={true} term={"global variable"}><i>global variable</i></GlossaryTerm>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
+If <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is already defined as a <GlossaryTerm styled={true} term={"global variable"}><i>global variable</i></GlossaryTerm>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -84,7 +84,7 @@ If <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is already defined as a <Gl
 
 
 
-<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>, <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks>  
+<DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink>, <DictionaryLink  term={"macroexpand"}><b>macroexpand</b></DictionaryLink>  
 
 
 
@@ -92,7 +92,7 @@ If <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is already defined as a <Gl
 
 
 
-<ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks> 
+<DictionaryLink  term={"symbol-macrolet"}><b>symbol-macrolet</b></DictionaryLink> 
 
 
 

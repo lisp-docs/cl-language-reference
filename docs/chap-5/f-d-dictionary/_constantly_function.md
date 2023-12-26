@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"constantly"}><b>constantly</b></ClLinks> *value → function* 
+<DictionaryLink  term={"constantly"}><b>constantly</b></DictionaryLink> *value → function* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"constantly"}><b>constantly</b></ClLinks> returns a <ClLinks  term={"function"}><i>function</i></ClLinks> that accepts any number of arguments, that has no side-effects, and that always returns <ClLinks  term={"value"}><i>value</i></ClLinks>. 
+<DictionaryLink  term={"constantly"}><b>constantly</b></DictionaryLink> returns a <ClLinks  term={"function"}><i>function</i></ClLinks> that accepts any number of arguments, that has no side-effects, and that always returns <ClLinks  term={"value"}><i>value</i></ClLinks>. 
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-<ClLinks  term={"identity"}><b>identity</b></ClLinks> 
+<DictionaryLink  term={"identity"}><b>identity</b></DictionaryLink> 
 
 
 
@@ -51,7 +51,7 @@
 
 
 
-<ClLinks  term={"constantly"}><b>constantly</b></ClLinks> could be defined by: 
+<DictionaryLink  term={"constantly"}><b>constantly</b></DictionaryLink> could be defined by: 
 
 
 

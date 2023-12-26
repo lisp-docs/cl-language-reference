@@ -6,7 +6,7 @@
 
 
 
-The normal effect of #. is inhibited when the <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*read-eval\*** is <ClLinks  term={"false"}><i>false</i></ClLinks>. In that situation, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"reader-error"}><b>reader-error</b></ClLinks> is signaled. 
+The normal effect of #. is inhibited when the <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*read-eval\*** is <ClLinks  term={"false"}><i>false</i></ClLinks>. In that situation, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"reader-error"}><b>reader-error</b></DictionaryLink> is signaled. 
 
 
 

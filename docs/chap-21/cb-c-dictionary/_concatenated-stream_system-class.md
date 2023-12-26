@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"concatenated-stream"}><b>concatenated-stream</b></ClLinks>, <ClLinks  term={"stream"}><b>stream</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"concatenated-stream"}><b>concatenated-stream</b></DictionaryLink>, <DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -42,7 +42,7 @@ when an attempt is made to obtain data from the <GlossaryTerm styled={true} term
 
 
 
-**concatenated-stream-streams**, <ClLinks  term={"make-concatenated-stream"}><b>make-concatenated-stream</b></ClLinks> 
+**concatenated-stream-streams**, <DictionaryLink  term={"make-concatenated-stream"}><b>make-concatenated-stream</b></DictionaryLink> 
 
 
 

@@ -7,11 +7,11 @@ sidebar_position: 103
 
 
 
-**general** *adj.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) having <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> <ClLinks  term={"t"}><b>t</b></ClLinks>, and consequently able to have any <ClLinks  term={"object"}><i>object</i></ClLinks> as an <ClLinks  term={"element"}><i>element</i></ClLinks>. 
+**general** *adj.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) having <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>, and consequently able to have any <ClLinks  term={"object"}><i>object</i></ClLinks> as an <ClLinks  term={"element"}><i>element</i></ClLinks>. 
 
 
 
-**generalized boolean** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> used as a truth value, where the symbol <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+**generalized boolean** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> used as a truth value, where the symbol <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -47,7 +47,7 @@ represents <ClLinks  term={"false"}><i>false</i></ClLinks> and all other <ClLink
 
 
 
-<ClLinks  term={"gensym"}><b>gensym</b></ClLinks> *n. Trad.* an *uninterned symbol*. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"gensym"}><b>gensym</b></ClLinks>. 
+<DictionaryLink  term={"gensym"}><b>gensym</b></DictionaryLink> *n. Trad.* an *uninterned symbol*. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"gensym"}><b>gensym</b></DictionaryLink>. 
 
 
 
@@ -63,7 +63,7 @@ represents <ClLinks  term={"false"}><i>false</i></ClLinks> and all other <ClLink
 
 
 
-**global declaration** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> that makes certain kinds of information about code globally available; that is, a <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> or a <ClLinks  term={"declaim"}><b>declaim</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+**global declaration** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> that makes certain kinds of information about code globally available; that is, a <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> or a <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -79,15 +79,15 @@ represents <ClLinks  term={"false"}><i>false</i></ClLinks> and all other <ClLink
 
 
 
-<ClLinks  term={"go"}><b>go</b></ClLinks> *v.* to transfer control to a <GlossaryTerm styled={true} term={"go point"}><i>go point</i></GlossaryTerm>. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <ClLinks  term={"go"}><b>go</b></ClLinks>. 
+<DictionaryLink  term={"go"}><b>go</b></DictionaryLink> *v.* to transfer control to a <GlossaryTerm styled={true} term={"go point"}><i>go point</i></GlossaryTerm>. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <DictionaryLink  term={"go"}><b>go</b></DictionaryLink>. 
 
 
 
-**go point** one of possibly several <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> that are *established* by <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> (or other abstractions, such as **prog**, which are built from <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks>). 
+**go point** one of possibly several <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> that are *established* by <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> (or other abstractions, such as **prog**, which are built from <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink>). 
 
 
 
-**go tag** *n.* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or *integer* that, within the <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> of a <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, names an *exit point established* by that <ClLinks  term={"tagbody"}><b>tagbody</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+**go tag** *n.* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or *integer* that, within the <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> of a <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>, names an *exit point established* by that <DictionaryLink  term={"tagbody"}><b>tagbody</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 

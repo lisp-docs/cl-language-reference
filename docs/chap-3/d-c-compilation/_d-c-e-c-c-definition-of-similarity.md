@@ -6,7 +6,7 @@ Two *objects S* (in <GlossaryTerm styled={true} term={"source code"}><i>source c
 
 
 
-<ClLinks  term={"number"}><b>number</b></ClLinks> 
+<DictionaryLink  term={"number"}><b>number</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@ Two *numbers S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> 
 
 
 
-<ClLinks  term={"character"}><b>character</b></ClLinks> 
+<DictionaryLink  term={"character"}><b>character</b></DictionaryLink> 
 
 
 
@@ -26,7 +26,7 @@ Two *simple characters S* and *C* are <ClLinks  term={"similar"}><i>similar</i><
 
 
 
-<ClLinks  term={"symbol"}><b>symbol</b></ClLinks> 
+<DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink> 
 
 
 
@@ -38,11 +38,11 @@ Two <ClLinks  term={"interned"}><i>interned</i></ClLinks> symbols *S* and *C* ar
 
 
 
-(Note that <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is dependent on neither the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm> nor how the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"read"}><b>read</b></ClLinks> would parse the <ClLinks  term={"character"}><i>characters</i></ClLinks> in the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>.) 
+(Note that <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> is dependent on neither the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm> nor how the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> would parse the <ClLinks  term={"character"}><i>characters</i></ClLinks> in the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>.) 
 
 
 
-<ClLinks  term={"package"}><b>package</b></ClLinks> 
+<DictionaryLink  term={"package"}><b>package</b></DictionaryLink> 
 
 
 
@@ -58,23 +58,23 @@ Note that although a *package object* is an <GlossaryTerm styled={true} term={"e
 
 
 
-referencing it as a *literal object* is *loaded*. The <ClLinks  term={"loader"}><i>loader</i></ClLinks> finds the corresponding *package object* as if by calling <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> with that <ClLinks  term={"name"}><i>name</i></ClLinks> as an <ClLinks  term={"argument"}><i>argument</i></ClLinks>. An error is signaled by the <ClLinks  term={"loader"}><i>loader</i></ClLinks> if no <ClLinks  term={"package"}><i>package</i></ClLinks> exists at load time. 
+referencing it as a *literal object* is *loaded*. The <ClLinks  term={"loader"}><i>loader</i></ClLinks> finds the corresponding *package object* as if by calling <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> with that <ClLinks  term={"name"}><i>name</i></ClLinks> as an <ClLinks  term={"argument"}><i>argument</i></ClLinks>. An error is signaled by the <ClLinks  term={"loader"}><i>loader</i></ClLinks> if no <ClLinks  term={"package"}><i>package</i></ClLinks> exists at load time. 
 
 
 
-<ClLinks  term={"random-state"}><b>random-state</b></ClLinks> 
+<DictionaryLink  term={"random-state"}><b>random-state</b></DictionaryLink> 
 
 
 
-Two *random states S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if *S* would always produce the same sequence of pseudo-random numbers as a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of *C* when given as the *random-state argument* to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"random"}><b>random</b></ClLinks>, assuming equivalent *limit arguments* in each case. 
+Two *random states S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if *S* would always produce the same sequence of pseudo-random numbers as a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>5</sub> of *C* when given as the *random-state argument* to the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"random"}><b>random</b></DictionaryLink>, assuming equivalent *limit arguments* in each case. 
 
 
 
-(Note that since *C* has been processed by the <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> , it cannot be used directly as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <ClLinks  term={"random"}><b>random</b></ClLinks> because <ClLinks  term={"random"}><b>random</b></ClLinks> would perform a side effect.) 
+(Note that since *C* has been processed by the <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> , it cannot be used directly as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> to <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> because <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> would perform a side effect.) 
 
 
 
-<ClLinks  term={"cons"}><b>cons</b></ClLinks> 
+<DictionaryLink  term={"cons"}><b>cons</b></DictionaryLink> 
 
 
 
@@ -82,7 +82,7 @@ Two *conses*, *S* and *C*, are <ClLinks  term={"similar"}><i>similar</i></ClLink
 
 
 
-<ClLinks  term={"array"}><b>array</b></ClLinks> 
+<DictionaryLink  term={"array"}><b>array</b></DictionaryLink> 
 
 
 
@@ -98,11 +98,11 @@ In addition, if *S* is a <GlossaryTerm styled={true} term={"simple array"}><i>si
 
 
 
-<ClLinks  term={"hash-table"}><b>hash-table</b></ClLinks> 
+<DictionaryLink  term={"hash-table"}><b>hash-table</b></DictionaryLink> 
 
 
 
-Two *hash tables S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if they meet the following three requirements: 1. They both have the same test (*e.g.*, they are both <ClLinks  term={"eql"}><b>eql</b></ClLinks> <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>). 
+Two *hash tables S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks> if they meet the following three requirements: 1. They both have the same test (*e.g.*, they are both <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>). 
 
 
 
@@ -122,7 +122,7 @@ If there is more than one possible one-to-one correspondence between the keys of
 
 
 
-<ClLinks  term={"pathname"}><b>pathname</b></ClLinks> 
+<DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink> 
 
 
 
@@ -130,7 +130,7 @@ Two *pathnames S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks
 
 
 
-<ClLinks  term={"function"}><b>function</b></ClLinks> 
+<DictionaryLink  term={"function"}><b>function</b></DictionaryLink> 
 
 
 
@@ -138,11 +138,11 @@ Two *pathnames S* and *C* are <ClLinks  term={"similar"}><i>similar</i></ClLinks
 
 
 
-<ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks> and <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> 
+<DictionaryLink  term={"structure-object"}><b>structure-object</b></DictionaryLink> and <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink> 
 
 
 
-A general-purpose concept of <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> does not exist for <ClLinks  term={"structure"}><i>structures</i></ClLinks> and <GlossaryTerm styled={true} term={"standard object"}><i>standard objects</i></GlossaryTerm>. However, a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> is permitted to define a <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> <ClLinks  term={"method"}><i>method</i></ClLinks> for any *class K* defined by that <ClLinks  term={"program"}><i>program</i></ClLinks> that is a <ClLinks  term={"subclass"}><i>subclass</i></ClLinks> of either <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks> or <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks>. The effect of such a <ClLinks  term={"method"}><i>method</i></ClLinks> is to define that an *object S* of *type K* in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm> is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to an *object C* of *type K* in <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm> if *C* was constructed from <ClLinks  term={"code"}><i>code</i></ClLinks> produced by calling <ClLinks  term={"make-load-form"}><b>make-load-form</b></ClLinks> on *S*. 
+A general-purpose concept of <ClLinks  term={"similarity"}><i>similarity</i></ClLinks> does not exist for <ClLinks  term={"structure"}><i>structures</i></ClLinks> and <GlossaryTerm styled={true} term={"standard object"}><i>standard objects</i></GlossaryTerm>. However, a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> is permitted to define a <DictionaryLink  term={"make-load-form"}><b>make-load-form</b></DictionaryLink> <ClLinks  term={"method"}><i>method</i></ClLinks> for any *class K* defined by that <ClLinks  term={"program"}><i>program</i></ClLinks> that is a <ClLinks  term={"subclass"}><i>subclass</i></ClLinks> of either <DictionaryLink  term={"structure-object"}><b>structure-object</b></DictionaryLink> or <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink>. The effect of such a <ClLinks  term={"method"}><i>method</i></ClLinks> is to define that an *object S* of *type K* in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm> is <ClLinks  term={"similar"}><i>similar</i></ClLinks> to an *object C* of *type K* in <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm> if *C* was constructed from <ClLinks  term={"code"}><i>code</i></ClLinks> produced by calling <DictionaryLink  term={"make-load-form"}><b>make-load-form</b></DictionaryLink> on *S*. 
 
 
 

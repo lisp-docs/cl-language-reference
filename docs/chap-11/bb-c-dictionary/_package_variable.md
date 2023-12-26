@@ -22,7 +22,7 @@ the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>.
 
 
 
-Whatever *package object* is currently the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> is referred to as the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
+Whatever *package object* is currently the <ClLinks  term={"value"}><i>value</i></ClLinks> of <DictionaryLink  term={"package"}><b>\*package\*</b></DictionaryLink> is referred to as the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp
@@ -50,7 +50,7 @@ Whatever *package object* is currently the <ClLinks  term={"value"}><i>value</i>
 
 
 
-<ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> 
+<DictionaryLink  term={"load"}><b>load</b></DictionaryLink>, <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>, <DictionaryLink  term={"in-package"}><b>in-package</b></DictionaryLink> 
 
 
 
@@ -58,7 +58,7 @@ Whatever *package object* is currently the <ClLinks  term={"value"}><i>value</i>
 
 
 
-<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, <ClLinks  term={"in-package"}><b>in-package</b></ClLinks>, <ClLinks  term={"load"}><b>load</b></ClLinks>, <ClLinks  term={"package"}><b>package</b></ClLinks> 
+<DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>, <DictionaryLink  term={"in-package"}><b>in-package</b></DictionaryLink>, <DictionaryLink  term={"load"}><b>load</b></DictionaryLink>, <DictionaryLink  term={"package"}><b>package</b></DictionaryLink> 
 
 
 

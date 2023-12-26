@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"defun"}><b>defun</b></ClLinks> *function-name lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> *function-name lambda-list* [[ <ClLinks  term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *| documentation* ]] <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks  term={"declare"}><b>declare</b></ClLinks> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<ClLinks  term={"declaration"}><i>declaration</i></ClLinks>—a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> <ClLinks  term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
 
 
 
@@ -46,19 +46,19 @@
 
 
 
-Defines a new <ClLinks  term={"function"}><i>function</i></ClLinks> named *function-name* in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. The body of the <ClLinks  term={"function"}><i>function</i></ClLinks> defined by <ClLinks  term={"defun"}><b>defun</b></ClLinks> consists of <ClLinks  term={"form"}><i>forms</i></ClLinks>; they are executed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> when the <ClLinks  term={"function"}><i>function</i></ClLinks> is called. <ClLinks  term={"defun"}><b>defun</b></ClLinks> can be used to define a new <ClLinks  term={"function"}><i>function</i></ClLinks>, to install a corrected version of an incorrect definition, to redefine an already-defined <ClLinks  term={"function"}><i>function</i></ClLinks>, or to redefine a <ClLinks  term={"macro"}><i>macro</i></ClLinks> as a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+Defines a new <ClLinks  term={"function"}><i>function</i></ClLinks> named *function-name* in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. The body of the <ClLinks  term={"function"}><i>function</i></ClLinks> defined by <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> consists of <ClLinks  term={"form"}><i>forms</i></ClLinks>; they are executed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> when the <ClLinks  term={"function"}><i>function</i></ClLinks> is called. <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> can be used to define a new <ClLinks  term={"function"}><i>function</i></ClLinks>, to install a corrected version of an incorrect definition, to redefine an already-defined <ClLinks  term={"function"}><i>function</i></ClLinks>, or to redefine a <ClLinks  term={"macro"}><i>macro</i></ClLinks> as a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
-<ClLinks  term={"defun"}><b>defun</b></ClLinks> implicitly puts a <ClLinks  term={"block"}><b>block</b></ClLinks> named *block-name* around the body <ClLinks  term={"form"}><i>forms</i></ClLinks> (but not the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the *lambda-list*) of the <ClLinks  term={"function"}><i>function</i></ClLinks> defined. 
+<DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> implicitly puts a <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> named *block-name* around the body <ClLinks  term={"form"}><i>forms</i></ClLinks> (but not the <ClLinks  term={"form"}><i>forms</i></ClLinks> in the *lambda-list*) of the <ClLinks  term={"function"}><i>function</i></ClLinks> defined. 
 
 
 
-*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <ClLinks  term={"function"}><b>function</b></ClLinks>) and to the *function object*. 
+*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>) and to the *function object*. 
 
 
 
-Evaluating <ClLinks  term={"defun"}><b>defun</b></ClLinks> causes *function-name* to be a global name for the <ClLinks  term={"function"}><i>function</i></ClLinks> specified by the <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> 
+Evaluating <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> causes *function-name* to be a global name for the <ClLinks  term={"function"}><i>function</i></ClLinks> specified by the <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> 
 
 
 
@@ -74,7 +74,7 @@ Evaluating <ClLinks  term={"defun"}><b>defun</b></ClLinks> causes *function-name
 
 
 
-processed in the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which <ClLinks  term={"defun"}><b>defun</b></ClLinks> was executed. 
+processed in the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> was executed. 
 
 
 
@@ -90,7 +90,7 @@ Data and Control
 
 
 
-<ClLinks  term={"defun"}><b>defun</b></ClLinks> 
+<DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> 
 
 
 
@@ -98,7 +98,7 @@ Data and Control
 
 
 
-<ClLinks  term={"defun"}><b>defun</b></ClLinks> is not required to perform any compile-time side effects. In particular, <ClLinks  term={"defun"}><b>defun</b></ClLinks> does not make the <ClLinks  term={"function"}><i>function</i></ClLinks> definition available at compile time. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> may choose to store information about the <ClLinks  term={"function"}><i>function</i></ClLinks> for the purposes of compile-time error-checking (such as checking the number of arguments on calls), or to enable the <ClLinks  term={"function"}><i>function</i></ClLinks> to be expanded inline. 
+<DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> is not required to perform any compile-time side effects. In particular, <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> does not make the <ClLinks  term={"function"}><i>function</i></ClLinks> definition available at compile time. An <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> may choose to store information about the <ClLinks  term={"function"}><i>function</i></ClLinks> for the purposes of compile-time error-checking (such as checking the number of arguments on calls), or to enable the <ClLinks  term={"function"}><i>function</i></ClLinks> to be expanded inline. 
 
 
 
@@ -134,7 +134,7 @@ Data and Control
 
 
 
-<ClLinks  term={"flet"}><b>flet</b></ClLinks>, <ClLinks  term={"labels"}><b>labels</b></ClLinks>, <ClLinks  term={"block"}><b>block</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks  term={"declare"}><b>declare</b></ClLinks>, **documentation**, Section 3.1 (Evaluation), Section 3.4.1 (Ordinary Lambda Lists), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+<DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink>, <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink>, <DictionaryLink  term={"block"}><b>block</b></DictionaryLink>, <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>, <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>, **documentation**, Section 3.1 (Evaluation), Section 3.4.1 (Ordinary Lambda Lists), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 
@@ -142,7 +142,7 @@ Data and Control
 
 
 
-<ClLinks  term={"return-from"}><b>return-from</b></ClLinks> can be used to return prematurely from a <ClLinks  term={"function"}><i>function</i></ClLinks> defined by <ClLinks  term={"defun"}><b>defun</b></ClLinks>. 
+<DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> can be used to return prematurely from a <ClLinks  term={"function"}><i>function</i></ClLinks> defined by <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink>. 
 
 
 

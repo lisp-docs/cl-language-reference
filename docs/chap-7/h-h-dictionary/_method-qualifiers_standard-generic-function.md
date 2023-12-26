@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks> *method → qualifiers* 
+<DictionaryLink  term={"method-qualifiers"}><b>method-qualifiers</b></DictionaryLink> *method → qualifiers* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"method-qualifiers"}><b>method-qualifiers</b></ClLinks> (<ClLinks  term={"method"}><i>method</i></ClLinks> <ClLinks  term={"standard-method"}><b>standard-method</b></ClLinks>) 
+<DictionaryLink  term={"method-qualifiers"}><b>method-qualifiers</b></DictionaryLink> (<ClLinks  term={"method"}><i>method</i></ClLinks> <DictionaryLink  term={"standard-method"}><b>standard-method</b></DictionaryLink>) 
 
 
 
@@ -60,7 +60,7 @@ Returns a <ClLinks  term={"list"}><i>list</i></ClLinks> of the <ClLinks  term={"
 
 
 
-<ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks> 
+<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> 
 
 
 

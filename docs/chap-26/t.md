@@ -7,11 +7,11 @@ sidebar_position: 116
 
 
 
-<ClLinks  term={"t"}><b>t</b></ClLinks> *n.* 1. a. the <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> representing true. b. the canonical <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> 
+<DictionaryLink  term={"t"}><b>t</b></DictionaryLink> *n.* 1. a. the <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> representing true. b. the canonical <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> 
 
 
 
-representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLinks> other than <ClLinks  term={"nil"}><b>nil</b></ClLinks> is considered <ClLinks  term={"true"}><i>true</i></ClLinks> as a 
+representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLinks> other than <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is considered <ClLinks  term={"true"}><i>true</i></ClLinks> as a 
 
 
 
@@ -47,7 +47,7 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-<ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+<DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
 
 
 
@@ -55,15 +55,15 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**tertiary value** *n.* (of <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of a <ClLinks  term={"form"}><i>form</i></ClLinks>) the third <ClLinks  term={"value"}><i>value</i></ClLinks>, if any, or else <ClLinks  term={"nil"}><b>nil</b></ClLinks> if there are fewer than three <ClLinks  term={"value"}><i>values</i></ClLinks>. 
+**tertiary value** *n.* (of <ClLinks  term={"value"}><i>values</i></ClLinks> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of a <ClLinks  term={"form"}><i>form</i></ClLinks>) the third <ClLinks  term={"value"}><i>value</i></ClLinks>, if any, or else <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if there are fewer than three <ClLinks  term={"value"}><i>values</i></ClLinks>. 
 
 
 
-<ClLinks  term={"throw"}><b>throw</b></ClLinks> *v.* to transfer control and <ClLinks  term={"value"}><i>values</i></ClLinks> to a <ClLinks  term={"catch"}><i>catch</i></ClLinks>. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <ClLinks  term={"throw"}><b>throw</b></ClLinks>. **tilde** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is called “tilde” (&#126;). See Figure 2–5. 
+<DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> *v.* to transfer control and <ClLinks  term={"value"}><i>values</i></ClLinks> to a <ClLinks  term={"catch"}><i>catch</i></ClLinks>. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>. **tilde** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is called “tilde” (&#126;). See Figure 2–5. 
 
 
 
-<ClLinks  term={"time"}><b>time</b></ClLinks> a representation of a point (*absolute time*) or an interval (*relative time*) on a time line. See <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"internal time"}><i>internal time</i></GlossaryTerm>, and <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm>. 
+<DictionaryLink  term={"time"}><b>time</b></DictionaryLink> a representation of a point (*absolute time*) or an interval (*relative time*) on a time line. See <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"internal time"}><i>internal time</i></GlossaryTerm>, and <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm>. 
 
 
 
@@ -79,7 +79,7 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**top level form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> which is processed specially by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> for the purposes of enabling *compile time evaluation* of that <ClLinks  term={"form"}><i>form</i></ClLinks>. <GlossaryTerm styled={true} term={"top level form"}><i>Top level forms</i></GlossaryTerm> include those <ClLinks  term={"form"}><i>forms</i></ClLinks> which are not <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of any other <ClLinks  term={"form"}><i>form</i></ClLinks>, and certain other cases. See Section 3.2.3.1 (Processing of Top Level Forms). 
+**top level form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> which is processed specially by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> for the purposes of enabling *compile time evaluation* of that <ClLinks  term={"form"}><i>form</i></ClLinks>. <GlossaryTerm styled={true} term={"top level form"}><i>Top level forms</i></GlossaryTerm> include those <ClLinks  term={"form"}><i>forms</i></ClLinks> which are not <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of any other <ClLinks  term={"form"}><i>form</i></ClLinks>, and certain other cases. See Section 3.2.3.1 (Processing of Top Level Forms). 
 
 
 
@@ -115,11 +115,11 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-<ClLinks  term={"truename"}><b>truename</b></ClLinks> *n.* 1. the canonical <ClLinks  term={"filename"}><i>filename</i></ClLinks> of a <ClLinks  term={"file"}><i>file</i></ClLinks> in the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. See Section 20.1.3 (Truenames). 2. a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> representing a <ClLinks  term={"truename"}><i>truename</i></ClLinks><sub>1</sub>. 
+<DictionaryLink  term={"truename"}><b>truename</b></DictionaryLink> *n.* 1. the canonical <ClLinks  term={"filename"}><i>filename</i></ClLinks> of a <ClLinks  term={"file"}><i>file</i></ClLinks> in the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. See Section 20.1.3 (Truenames). 2. a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> representing a <ClLinks  term={"truename"}><i>truename</i></ClLinks><sub>1</sub>. 
 
 
 
-**two-way stream** *n.* a <ClLinks  term={"stream"}><i>stream</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"two-way-stream"}><b>two-way-stream</b></ClLinks>, which is a <ClLinks  term={"bidirectional"}><i>bidirectional</i></ClLinks> 
+**two-way stream** *n.* a <ClLinks  term={"stream"}><i>stream</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"two-way-stream"}><b>two-way-stream</b></DictionaryLink>, which is a <ClLinks  term={"bidirectional"}><i>bidirectional</i></ClLinks> 
 
 
 

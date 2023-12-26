@@ -11,7 +11,7 @@ sidebar_position: 110
 
 
 
-which is a symbol’s name is returned by <ClLinks  term={"symbol-name"}><b>symbol-name</b></ClLinks>.” 4. *n.* (of a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>) a. the name component, returned by **pathname-name**. b. the entire namestring, returned by <ClLinks  term={"namestring"}><b>namestring</b></ClLinks>. 5. *n.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) a <ClLinks  term={"string"}><i>string</i></ClLinks> that names the <ClLinks  term={"character"}><i>character</i></ClLinks> and that 
+which is a symbol’s name is returned by <DictionaryLink  term={"symbol-name"}><b>symbol-name</b></DictionaryLink>.” 4. *n.* (of a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>) a. the name component, returned by **pathname-name**. b. the entire namestring, returned by <DictionaryLink  term={"namestring"}><b>namestring</b></DictionaryLink>. 5. *n.* (of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) a <ClLinks  term={"string"}><i>string</i></ClLinks> that names the <ClLinks  term={"character"}><i>character</i></ClLinks> and that 
 
 
 
@@ -31,7 +31,7 @@ has <ClLinks  term={"length"}><i>length</i></ClLinks> greater than one. (All *no
 
 
 
-**named constant** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> that is defined by Common Lisp, by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, or by user code (see the <ClLinks  term={"macro"}><i>macro</i></ClLinks> <ClLinks  term={"defconstant"}><b>defconstant</b></ClLinks>) to always <ClLinks  term={"yield"}><i>yield</i></ClLinks> the same <ClLinks  term={"value"}><i>value</i></ClLinks> when *evaluated*. “The value of a named constant may not be changed by assignment or by binding.” 
+**named constant** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> that is defined by Common Lisp, by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, or by user code (see the <ClLinks  term={"macro"}><i>macro</i></ClLinks> <DictionaryLink  term={"defconstant"}><b>defconstant</b></DictionaryLink>) to always <ClLinks  term={"yield"}><i>yield</i></ClLinks> the same <ClLinks  term={"value"}><i>value</i></ClLinks> when *evaluated*. “The value of a named constant may not be changed by assignment or by binding.” 
 
 
 
@@ -39,7 +39,7 @@ has <ClLinks  term={"length"}><i>length</i></ClLinks> greater than one. (All *no
 
 
 
-<ClLinks  term={"namestring"}><b>namestring</b></ClLinks> *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks> that represents a <ClLinks  term={"filename"}><i>filename</i></ClLinks> using either the <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> notation for naming <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathnames</i></GlossaryTerm> described in Section 19.3.1 (Syntax of Logical Pathname Namestrings), or some <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> notation for naming a 
+<DictionaryLink  term={"namestring"}><b>namestring</b></DictionaryLink> *n.* a <ClLinks  term={"string"}><i>string</i></ClLinks> that represents a <ClLinks  term={"filename"}><i>filename</i></ClLinks> using either the <ClLinks  term={"standardized"}><i>standardized</i></ClLinks> notation for naming <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathnames</i></GlossaryTerm> described in Section 19.3.1 (Syntax of Logical Pathname Namestrings), or some <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks> notation for naming a 
 
 
 
@@ -59,7 +59,7 @@ has <ClLinks  term={"length"}><i>length</i></ClLinks> greater than one. (All *no
 
 
 
-<ClLinks  term={"nil"}><b>nil</b></ClLinks> *n.* the <ClLinks  term={"object"}><i>object</i></ClLinks> that is at once the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named "NIL" in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks>, the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>, the <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (or <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>) representing <ClLinks  term={"false"}><i>false</i></ClLinks>, and the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <GlossaryTerm styled={true} term={"empty type"}><i>empty type</i></GlossaryTerm>. 
+<DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> *n.* the <ClLinks  term={"object"}><i>object</i></ClLinks> that is at once the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> named "NIL" in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks>, the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>, the <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> (or <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>) representing <ClLinks  term={"false"}><i>false</i></ClLinks>, and the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <GlossaryTerm styled={true} term={"empty type"}><i>empty type</i></GlossaryTerm>. 
 
 
 
@@ -111,11 +111,11 @@ Characters).
 
 
 
-**non-local exit** *n.* a transfer of control (and sometimes <ClLinks  term={"value"}><i>values</i></ClLinks>) to an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> for reasons other than a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm>. “The operators <ClLinks  term={"go"}><b>go</b></ClLinks>, <ClLinks  term={"throw"}><b>throw</b></ClLinks>, and <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> cause a non-local exit.” 
+**non-local exit** *n.* a transfer of control (and sometimes <ClLinks  term={"value"}><i>values</i></ClLinks>) to an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> for reasons other than a <GlossaryTerm styled={true} term={"normal return"}><i>normal return</i></GlossaryTerm>. “The operators <DictionaryLink  term={"go"}><b>go</b></DictionaryLink>, <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>, and <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> cause a non-local exit.” 
 
 
 
-**non-nil** *n.*, *adj.* not <ClLinks  term={"nil"}><b>nil</b></ClLinks>. Technically, any <ClLinks  term={"object"}><i>object</i></ClLinks> which is not <ClLinks  term={"nil"}><b>nil</b></ClLinks> can be referred to as <ClLinks  term={"true"}><i>true</i></ClLinks>, but that would tend to imply a unique view of the <ClLinks  term={"object"}><i>object</i></ClLinks> as a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. Referring to such an <ClLinks  term={"object"}><i>object</i></ClLinks> as <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> avoids this implication. 
+**non-nil** *n.*, *adj.* not <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. Technically, any <ClLinks  term={"object"}><i>object</i></ClLinks> which is not <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> can be referred to as <ClLinks  term={"true"}><i>true</i></ClLinks>, but that would tend to imply a unique view of the <ClLinks  term={"object"}><i>object</i></ClLinks> as a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. Referring to such an <ClLinks  term={"object"}><i>object</i></ClLinks> as <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> avoids this implication. 
 
 
 
@@ -155,7 +155,7 @@ constituent <ClLinks  term={"character"}><i>character</i></ClLinks> when it appe
 
 
 
-<ClLinks  term={"null"}><b>null</b></ClLinks> *adj.*, *n.* 1. *adj.* a. (of a <ClLinks  term={"list"}><i>list</i></ClLinks>) having no <ClLinks  term={"element"}><i>elements</i></ClLinks>: empty. See <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. b. (of a <ClLinks  term={"string"}><i>string</i></ClLinks>) having a <ClLinks  term={"length"}><i>length</i></ClLinks> of zero. (It is common, both within this document and in observed spoken behavior, to refer to an empty string by an apparent definite reference, as in “the *null string*” even though no attempt is made to <ClLinks  term={"intern"}><i>intern</i></ClLinks><sub>2</sub> null strings. The phrase “a *null string*” is technically more correct, but is generally considered awkward by most Lisp programmers. As such, the phrase “the *null string*” should be treated as an indefinite reference in all cases except for anaphoric references.) c. (of an *implementation-defined attribute* of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) An <ClLinks  term={"object"}><i>object</i></ClLinks> to which the value of that <ClLinks  term={"attribute"}><i>attribute</i></ClLinks> defaults if no specific value was requested. 2. *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"null"}><b>null</b></ClLinks> (the only such <ClLinks  term={"object"}><i>object</i></ClLinks> being <ClLinks  term={"nil"}><b>nil</b></ClLinks>). 
+<DictionaryLink  term={"null"}><b>null</b></DictionaryLink> *adj.*, *n.* 1. *adj.* a. (of a <ClLinks  term={"list"}><i>list</i></ClLinks>) having no <ClLinks  term={"element"}><i>elements</i></ClLinks>: empty. See <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. b. (of a <ClLinks  term={"string"}><i>string</i></ClLinks>) having a <ClLinks  term={"length"}><i>length</i></ClLinks> of zero. (It is common, both within this document and in observed spoken behavior, to refer to an empty string by an apparent definite reference, as in “the *null string*” even though no attempt is made to <ClLinks  term={"intern"}><i>intern</i></ClLinks><sub>2</sub> null strings. The phrase “a *null string*” is technically more correct, but is generally considered awkward by most Lisp programmers. As such, the phrase “the *null string*” should be treated as an indefinite reference in all cases except for anaphoric references.) c. (of an *implementation-defined attribute* of a <ClLinks  term={"character"}><i>character</i></ClLinks> ) An <ClLinks  term={"object"}><i>object</i></ClLinks> to which the value of that <ClLinks  term={"attribute"}><i>attribute</i></ClLinks> defaults if no specific value was requested. 2. *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"null"}><b>null</b></DictionaryLink> (the only such <ClLinks  term={"object"}><i>object</i></ClLinks> being <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>). 
 
 
 
@@ -175,7 +175,7 @@ constituent <ClLinks  term={"character"}><i>character</i></ClLinks> when it appe
 
 
 
-<ClLinks  term={"number"}><b>number</b></ClLinks> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"number"}><b>number</b></ClLinks>. 
+<DictionaryLink  term={"number"}><b>number</b></DictionaryLink> *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>. 
 
 
 

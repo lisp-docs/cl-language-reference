@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"floating-point-invalid-operation"}><b>floating-point-invalid-operation</b></ClLinks>, <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>, <ClLinks  term={"error"}><b>error</b></ClLinks>, <ClLinks  term={"serious-condition"}><b>serious-condition</b></ClLinks>, <ClLinks  term={"condition"}><b>condition</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"floating-point-invalid-operation"}><b>floating-point-invalid-operation</b></DictionaryLink>, <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>, <DictionaryLink  term={"error"}><b>error</b></DictionaryLink>, <DictionaryLink  term={"serious-condition"}><b>serious-condition</b></DictionaryLink>, <DictionaryLink  term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"floating-point-invalid-operation"}><b>floating-point-invalid-operation</b></ClLinks> consists of error conditions that occur because of certain floating point traps. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"floating-point-invalid-operation"}><b>floating-point-invalid-operation</b></DictionaryLink> consists of error conditions that occur because of certain floating point traps. 
 
 
 

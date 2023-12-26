@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> *protected-form \{cleanup-form\}*\* → \{result\}\* 
+<DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> *protected-form \{cleanup-form\}*\* → \{result\}\* 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-<ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> evaluates *protected-form* and guarantees that *cleanup-forms* are executed before <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> exits, whether it terminates normally or is aborted by a control transfer of some kind. <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> is intended to be used to make sure that certain side effects take place after the evaluation of *protected-form*. 
+<DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> evaluates *protected-form* and guarantees that *cleanup-forms* are executed before <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> exits, whether it terminates normally or is aborted by a control transfer of some kind. <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> is intended to be used to make sure that certain side effects take place after the evaluation of *protected-form*. 
 
 
 
-If a <GlossaryTerm styled={true} term={"non-local exit"}><i>non-local exit</i></GlossaryTerm> occurs during execution of *cleanup-forms*, no special action is taken. The *cleanup-forms* of <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> are not protected by that <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>. 
+If a <GlossaryTerm styled={true} term={"non-local exit"}><i>non-local exit</i></GlossaryTerm> occurs during execution of *cleanup-forms*, no special action is taken. The *cleanup-forms* of <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> are not protected by that <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> protects against all attempts to exit from *protected-form*, including <ClLinks  term={"go"}><b>go</b></ClLinks>, <ClLinks  term={"handler-case"}><b>handler-case</b></ClLinks>, <ClLinks  term={"ignore-errors"}><b>ignore-errors</b></ClLinks>, <ClLinks  term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks  term={"throw"}><b>throw</b></ClLinks>, and <ClLinks  term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks>. 
+<DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> protects against all attempts to exit from *protected-form*, including <DictionaryLink  term={"go"}><b>go</b></DictionaryLink>, <DictionaryLink  term={"handler-case"}><b>handler-case</b></DictionaryLink>, <DictionaryLink  term={"ignore-errors"}><b>ignore-errors</b></DictionaryLink>, <DictionaryLink  term={"restart-case"}><b>restart-case</b></DictionaryLink>, <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>, <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>, and <DictionaryLink  term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink>. 
 
 
 
-Undoing of <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings* during an exit happens in parallel with the undoing of the bindings of <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm> and <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags, in the reverse order in which they were established. The effect of this is that *cleanup-form* sees the same <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings*, as well as *dynamic variable bindings* and <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags, as were visible when the <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> was entered. 
+Undoing of <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings* during an exit happens in parallel with the undoing of the bindings of <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm> and <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> tags, in the reverse order in which they were established. The effect of this is that *cleanup-form* sees the same <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings*, as well as *dynamic variable bindings* and <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> tags, as were visible when the <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink> was entered. 
 
 
 
@@ -148,4 +148,4 @@ Data and Control
 
 
 
-<ClLinks  term={"catch"}><b>catch</b></ClLinks>, <ClLinks  term={"go"}><b>go</b></ClLinks>, <ClLinks  term={"handler-case"}><b>handler-case</b></ClLinks>, <ClLinks  term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks  term={"return"}><b>return</b></ClLinks>, <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>, <ClLinks  term={"throw"}><b>throw</b></ClLinks>, Section 3.1 (Evaluation) 
+<DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink>, <DictionaryLink  term={"go"}><b>go</b></DictionaryLink>, <DictionaryLink  term={"handler-case"}><b>handler-case</b></DictionaryLink>, <DictionaryLink  term={"restart-case"}><b>restart-case</b></DictionaryLink>, <DictionaryLink  term={"return"}><b>return</b></DictionaryLink>, <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink>, <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink>, Section 3.1 (Evaluation) 

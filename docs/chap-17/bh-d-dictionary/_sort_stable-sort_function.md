@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"sort"}><b>sort</b></ClLinks> *sequence predicate* &amp;key *key → sorted-sequence* 
+<DictionaryLink  term={"sort"}><b>sort</b></DictionaryLink> *sequence predicate* &amp;key *key → sorted-sequence* 
 
 
 
-<ClLinks  term={"stable-sort"}><b>stable-sort</b></ClLinks> *sequence predicate* &amp;key *key → sorted-sequence* 
+<DictionaryLink  term={"stable-sort"}><b>stable-sort</b></DictionaryLink> *sequence predicate* &amp;key *key → sorted-sequence* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two arguments that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two arguments that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"sort"}><b>sort</b></ClLinks> and <ClLinks  term={"stable-sort"}><b>stable-sort</b></ClLinks> destructively sort *sequences* according to the order determined by the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> function. 
+<DictionaryLink  term={"sort"}><b>sort</b></DictionaryLink> and <DictionaryLink  term={"stable-sort"}><b>stable-sort</b></DictionaryLink> destructively sort *sequences* according to the order determined by the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> function. 
 
 
 
@@ -42,7 +42,7 @@ If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the resul
 
 
 
-<ClLinks  term={"sort"}><b>sort</b></ClLinks> determines the relationship between two elements by giving keys extracted from the elements to the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. The first argument to the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> function is the part of one element of *sequence* extracted by the <ClLinks  term={"key"}><i>key</i></ClLinks> function (if supplied); the second argument is the part of another element of *sequence* extracted by the <ClLinks  term={"key"}><i>key</i></ClLinks> function (if supplied). <ClLinks  term={"predicate"}><i>Predicate</i></ClLinks> should return <ClLinks  term={"true"}><i>true</i></ClLinks> if and only if the first argument is strictly less than the second (in some appropriate sense). If the first argument is 
+<DictionaryLink  term={"sort"}><b>sort</b></DictionaryLink> determines the relationship between two elements by giving keys extracted from the elements to the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. The first argument to the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> function is the part of one element of *sequence* extracted by the <ClLinks  term={"key"}><i>key</i></ClLinks> function (if supplied); the second argument is the part of another element of *sequence* extracted by the <ClLinks  term={"key"}><i>key</i></ClLinks> function (if supplied). <ClLinks  term={"predicate"}><i>Predicate</i></ClLinks> should return <ClLinks  term={"true"}><i>true</i></ClLinks> if and only if the first argument is strictly less than the second (in some appropriate sense). If the first argument is 
 
 
 
@@ -50,7 +50,7 @@ greater than or equal to the second (in the appropriate sense), then the <ClLink
 
 
 
-The argument to the <ClLinks  term={"key"}><i>key</i></ClLinks> function is the *sequence* element. The return value of the <ClLinks  term={"key"}><i>key</i></ClLinks> function becomes an argument to <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. If <ClLinks  term={"key"}><i>key</i></ClLinks> is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the *sequence* element itself is used. There is no guarantee on the number of times the <ClLinks  term={"key"}><i>key</i></ClLinks> will be called. 
+The argument to the <ClLinks  term={"key"}><i>key</i></ClLinks> function is the *sequence* element. The return value of the <ClLinks  term={"key"}><i>key</i></ClLinks> function becomes an argument to <ClLinks  term={"predicate"}><i>predicate</i></ClLinks>. If <ClLinks  term={"key"}><i>key</i></ClLinks> is not supplied or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, the *sequence* element itself is used. There is no guarantee on the number of times the <ClLinks  term={"key"}><i>key</i></ClLinks> will be called. 
 
 
 
@@ -74,11 +74,11 @@ If the <ClLinks  term={"key"}><i>key</i></ClLinks> and <ClLinks  term={"predicat
 
 
 
-The sorting operation performed by <ClLinks  term={"sort"}><b>sort</b></ClLinks> is not guaranteed stable. Elements considered equal by the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> might or might not stay in their original order. The <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> is assumed to consider two elements x and y to be equal if (funcall *predicate x y*) and (funcall *predicate y x*) are both <ClLinks  term={"false"}><i>false</i></ClLinks>. <ClLinks  term={"stable-sort"}><b>stable-sort</b></ClLinks> guarantees stability. 
+The sorting operation performed by <DictionaryLink  term={"sort"}><b>sort</b></DictionaryLink> is not guaranteed stable. Elements considered equal by the <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> might or might not stay in their original order. The <ClLinks  term={"predicate"}><i>predicate</i></ClLinks> is assumed to consider two elements x and y to be equal if (funcall *predicate x y*) and (funcall *predicate y x*) are both <ClLinks  term={"false"}><i>false</i></ClLinks>. <DictionaryLink  term={"stable-sort"}><b>stable-sort</b></DictionaryLink> guarantees stability. 
 
 
 
-The sorting operation can be destructive in all cases. In the case of a <ClLinks  term={"vector"}><i>vector</i></ClLinks> argument, this is accomplished by permuting the elements in place. In the case of a <ClLinks  term={"list"}><i>list</i></ClLinks>, the <ClLinks  term={"list"}><i>list</i></ClLinks> is destructively reordered in the same manner as for <ClLinks  term={"nreverse"}><b>nreverse</b></ClLinks>. 
+The sorting operation can be destructive in all cases. In the case of a <ClLinks  term={"vector"}><i>vector</i></ClLinks> argument, this is accomplished by permuting the elements in place. In the case of a <ClLinks  term={"list"}><i>list</i></ClLinks>, the <ClLinks  term={"list"}><i>list</i></ClLinks> is destructively reordered in the same manner as for <DictionaryLink  term={"nreverse"}><b>nreverse</b></DictionaryLink>. 
 
 
 
@@ -131,7 +131,7 @@ The sorting operation can be destructive in all cases. In the case of a <ClLinks
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -139,7 +139,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<ClLinks  term={"merge"}><b>merge</b></ClLinks>, Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effects), Section 3.7 (Destructive Operations) 
+<DictionaryLink  term={"merge"}><b>merge</b></DictionaryLink>, Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effects), Section 3.7 (Destructive Operations) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"array-rank"}><b>array-rank</b></ClLinks> *array → rank* 
+<DictionaryLink  term={"array-rank"}><b>array-rank</b></DictionaryLink> *array → rank* 
 
 
 
@@ -41,7 +41,7 @@ Returns the number of <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks> o
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if its argument is not an <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -49,7 +49,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"array-rank-limit"}><b>array-rank-limit</b></ClLinks>, <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> 
+<DictionaryLink  term={"array-rank-limit"}><b>array-rank-limit</b></DictionaryLink>, <DictionaryLink  term={"make-array"}><b>make-array</b></DictionaryLink> 
 
 
 

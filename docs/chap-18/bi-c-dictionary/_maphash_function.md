@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"maphash"}><b>maphash</b></ClLinks> *function hash-table →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink  term={"maphash"}><b>maphash</b></DictionaryLink> *function hash-table →* <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -30,7 +30,7 @@ Iterates over all entries in the *hash-table*. For each entry, the <ClLinks  ter
 
 
 
-The consequences are unspecified if any attempt is made to add or remove an entry from the *hash-table* while a <ClLinks  term={"maphash"}><b>maphash</b></ClLinks> is in progress, with two exceptions: the <ClLinks  term={"function"}><i>function</i></ClLinks> can use can use <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"gethash"}><b>gethash</b></ClLinks> to change the <ClLinks  term={"value"}><i>value</i></ClLinks> part of the entry currently being processed, or it can use <ClLinks  term={"remhash"}><b>remhash</b></ClLinks> to remove that entry. 
+The consequences are unspecified if any attempt is made to add or remove an entry from the *hash-table* while a <DictionaryLink  term={"maphash"}><b>maphash</b></DictionaryLink> is in progress, with two exceptions: the <ClLinks  term={"function"}><i>function</i></ClLinks> can use can use <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> to change the <ClLinks  term={"value"}><i>value</i></ClLinks> part of the entry currently being processed, or it can use <DictionaryLink  term={"remhash"}><b>remhash</b></DictionaryLink> to remove that entry. 
 
 
 
@@ -82,7 +82,7 @@ None, other than any which might be done by the <ClLinks  term={"function"}><i>f
 
 
 
-<ClLinks  term={"loop"}><b>loop</b></ClLinks>, <ClLinks  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
+<DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink>, <DictionaryLink  term={"with-hash-table-iterator"}><b>with-hash-table-iterator</b></DictionaryLink>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"copy-seq"}><b>copy-seq</b></ClLinks> *sequence → copied-sequence* 
+<DictionaryLink  term={"copy-seq"}><b>copy-seq</b></DictionaryLink> *sequence → copied-sequence* 
 
 
 
@@ -44,7 +44,7 @@ If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the resul
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -52,7 +52,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<ClLinks  term={"copy-list"}><b>copy-list</b></ClLinks> 
+<DictionaryLink  term={"copy-list"}><b>copy-list</b></DictionaryLink> 
 
 
 

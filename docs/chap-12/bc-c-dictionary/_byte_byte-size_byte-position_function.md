@@ -6,15 +6,15 @@
 
 
 
-<ClLinks  term={"byte"}><b>byte</b></ClLinks> *size position → bytespec* 
+<DictionaryLink  term={"byte"}><b>byte</b></DictionaryLink> *size position → bytespec* 
 
 
 
-<ClLinks  term={"byte-size"}><b>byte-size</b></ClLinks> *bytespec → size* 
+<DictionaryLink  term={"byte-size"}><b>byte-size</b></DictionaryLink> *bytespec → size* 
 
 
 
-<ClLinks  term={"byte-position"}><b>byte-position</b></ClLinks> *bytespec → position* 
+<DictionaryLink  term={"byte-position"}><b>byte-position</b></DictionaryLink> *bytespec → position* 
 
 
 
@@ -38,11 +38,11 @@
 
 
 
-<ClLinks  term={"byte-size"}><b>byte-size</b></ClLinks> returns the number of bits specified by *bytespec*. 
+<DictionaryLink  term={"byte-size"}><b>byte-size</b></DictionaryLink> returns the number of bits specified by *bytespec*. 
 
 
 
-<ClLinks  term={"byte-position"}><b>byte-position</b></ClLinks> returns the position specified by *bytespec*. 
+<DictionaryLink  term={"byte-position"}><b>byte-position</b></DictionaryLink> returns the position specified by *bytespec*. 
 
 
 
@@ -56,7 +56,7 @@
 
 
 
-<ClLinks  term={"ldb"}><b>ldb</b></ClLinks>, <ClLinks  term={"dpb"}><b>dpb</b></ClLinks> 
+<DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink>, <DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> 
 
 
 

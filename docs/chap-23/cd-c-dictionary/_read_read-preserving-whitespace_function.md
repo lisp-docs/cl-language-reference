@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"read"}><b>read</b></ClLinks> &amp;optional *input-stream eof-error-p eof-value recursive-p → object* 
+<DictionaryLink  term={"read"}><b>read</b></DictionaryLink> &amp;optional *input-stream eof-error-p eof-value recursive-p → object* 
 
 
 
-<ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> &amp;optional *input-stream eof-error-p* 
+<DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> &amp;optional *input-stream eof-error-p* 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*eof-value*—an <ClLinks  term={"object"}><i>object</i></ClLinks>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-<ClLinks  term={"read"}><b>read</b></ClLinks> parses the printed representation of an <ClLinks  term={"object"}><i>object</i></ClLinks> from *input-stream* and builds such an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink  term={"read"}><b>read</b></DictionaryLink> parses the printed representation of an <ClLinks  term={"object"}><i>object</i></ClLinks> from *input-stream* and builds such an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-<ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is like <ClLinks  term={"read"}><b>read</b></ClLinks> but preserves any <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> that delimits the printed representation of the <ClLinks  term={"object"}><i>object</i></ClLinks>. <ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is exactly like <ClLinks  term={"read"}><b>read</b></ClLinks> when the *recursive-p argument* to <ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+<DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is like <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> but preserves any <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> that delimits the printed representation of the <ClLinks  term={"object"}><i>object</i></ClLinks>. <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is exactly like <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> when the *recursive-p argument* to <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -74,15 +74,15 @@
 
 
 
-When <ClLinks  term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks> is <ClLinks  term={"false"}><i>false</i></ClLinks>, <ClLinks  term={"read"}><b>read</b></ClLinks> throws away the delimiting <ClLinks  term={"character"}><i>character</i></ClLinks> required by certain printed representations if it is a <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> ; but <ClLinks  term={"read"}><b>read</b></ClLinks> preserves the character (using <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks>) if it is syntactically meaningful, because it could be the start of the next expression. 
+When <DictionaryLink  term={"read-suppress"}><b>\*read-suppress\*</b></DictionaryLink> is <ClLinks  term={"false"}><i>false</i></ClLinks>, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> throws away the delimiting <ClLinks  term={"character"}><i>character</i></ClLinks> required by certain printed representations if it is a <ClLinks  term={"whitespace"}><i>whitespace</i></ClLinks><sub>2</sub> <ClLinks  term={"character"}><i>character</i></ClLinks> ; but <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> preserves the character (using <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink>) if it is syntactically meaningful, because it could be the start of the next expression. 
 
 
 
-If a file ends in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or a <ClLinks  term={"number"}><i>number</i></ClLinks> immediately followed by an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub>, <ClLinks  term={"read"}><b>read</b></ClLinks> reads the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks  term={"number"}><i>number</i></ClLinks> successfully; when called again, it sees the <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub> and only then acts according to *eof-error-p*. If a file contains ignorable text at the end, such as blank lines and comments, <ClLinks  term={"read"}><b>read</b></ClLinks> does not consider it to end in the middle of an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+If a file ends in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or a <ClLinks  term={"number"}><i>number</i></ClLinks> immediately followed by an <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub>, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> reads the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> or <ClLinks  term={"number"}><i>number</i></ClLinks> successfully; when called again, it sees the <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm><sub>1</sub> and only then acts according to *eof-error-p*. If a file contains ignorable text at the end, such as blank lines and comments, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> does not consider it to end in the middle of an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, the call to <ClLinks  term={"read"}><b>read</b></ClLinks> is expected to be made from within some function that itself has been called from <ClLinks  term={"read"}><b>read</b></ClLinks> or from a similar input function, rather than from the top level. 
+If *recursive-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, the call to <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> is expected to be made from within some function that itself has been called from <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or from a similar input function, rather than from the top level. 
 
 
 
@@ -127,7 +127,7 @@ Both functions return the <ClLinks  term={"object"}><i>object</i></ClLinks> read
 
 
 
-**\*standard-input\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>, <ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks>, <ClLinks  term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks>, **\*read-base\***, <ClLinks  term={"read-suppress"}><b>\*read-suppress\*</b></ClLinks>, <ClLinks  term={"package"}><b>\*package\*</b></ClLinks>, **\*read-eval\***. 
+**\*standard-input\***, <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>, <DictionaryLink  term={"readtable"}><b>\*readtable\*</b></DictionaryLink>, <DictionaryLink  term={"read-default-float-format"}><b>\*read-default-float-format\*</b></DictionaryLink>, **\*read-base\***, <DictionaryLink  term={"read-suppress"}><b>\*read-suppress\*</b></DictionaryLink>, <DictionaryLink  term={"package"}><b>\*package\*</b></DictionaryLink>, **\*read-eval\***. 
 
 
 
@@ -135,11 +135,11 @@ Both functions return the <ClLinks  term={"object"}><i>object</i></ClLinks> read
 
 
 
-<ClLinks  term={"read"}><b>read</b></ClLinks> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks>, regardless of *eof-error-p*, if the file ends in the middle of an <ClLinks  term={"object"}><i>object</i></ClLinks> representation. For example, if a file does not contain enough right parentheses to balance the left parentheses in it, <ClLinks  term={"read"}><b>read</b></ClLinks> signals an error. This is detected when <ClLinks  term={"read"}><b>read</b></ClLinks> or <ClLinks  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></ClLinks> is called with *recursive-p* and *eof-error-p non-nil*, and end-of-file is reached before the beginning of an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink  term={"read"}><b>read</b></DictionaryLink> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink>, regardless of *eof-error-p*, if the file ends in the middle of an <ClLinks  term={"object"}><i>object</i></ClLinks> representation. For example, if a file does not contain enough right parentheses to balance the left parentheses in it, <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> signals an error. This is detected when <DictionaryLink  term={"read"}><b>read</b></DictionaryLink> or <DictionaryLink  term={"read-preserving-whitespace"}><b>read-preserving-whitespace</b></DictionaryLink> is called with *recursive-p* and *eof-error-p non-nil*, and end-of-file is reached before the beginning of an <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-If *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"end-of-file"}><b>end-of-file</b></ClLinks> is signaled at the end of file. 
+If *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"end-of-file"}><b>end-of-file</b></DictionaryLink> is signaled at the end of file. 
 
 
 
@@ -147,7 +147,7 @@ If *eof-error-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, an error of <
 
 
 
-<ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks>, <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks>, <ClLinks  term={"read-from-string"}><b>read-from-string</b></ClLinks>, <ClLinks  term={"read-delimited-list"}><b>read-delimited-list</b></ClLinks>, <ClLinks  term={"parse-integer"}><b>parse-integer</b></ClLinks>, Chapter 2 (Syntax), Section 23.1 (Reader Concepts) 
+<DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink>, <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink>, <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink>, <DictionaryLink  term={"read-from-string"}><b>read-from-string</b></DictionaryLink>, <DictionaryLink  term={"read-delimited-list"}><b>read-delimited-list</b></DictionaryLink>, <DictionaryLink  term={"parse-integer"}><b>parse-integer</b></DictionaryLink>, Chapter 2 (Syntax), Section 23.1 (Reader Concepts) 
 
 
 

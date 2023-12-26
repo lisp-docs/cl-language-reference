@@ -6,11 +6,11 @@
 
 
 
-<ClLinks  term={"write-string"}><b>write-string</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
+<DictionaryLink  term={"write-string"}><b>write-string</b></DictionaryLink> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
 
 
 
-<ClLinks  term={"write-line"}><b>write-line</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
+<DictionaryLink  term={"write-line"}><b>write-line</b></DictionaryLink> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *output-stream* &amp;key *start end → string* 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"write-string"}><b>write-string</b></ClLinks> writes the <ClLinks  term={"character"}><i>characters</i></ClLinks> of the subsequence of *string bounded* by *start* and *end* to *output-stream*. <ClLinks  term={"write-line"}><b>write-line</b></ClLinks> does the same thing, but then outputs a newline afterwards. 
+<DictionaryLink  term={"write-string"}><b>write-string</b></DictionaryLink> writes the <ClLinks  term={"character"}><i>characters</i></ClLinks> of the subsequence of *string bounded* by *start* and *end* to *output-stream*. <DictionaryLink  term={"write-line"}><b>write-line</b></DictionaryLink> does the same thing, but then outputs a newline afterwards. 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-**\*standard-output\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+**\*standard-output\***, <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
 
 
 
@@ -66,7 +66,7 @@
 
 
 
-<ClLinks  term={"read-line"}><b>read-line</b></ClLinks>, <ClLinks  term={"write-char"}><b>write-char</b></ClLinks> 
+<DictionaryLink  term={"read-line"}><b>read-line</b></DictionaryLink>, <DictionaryLink  term={"write-char"}><b>write-char</b></DictionaryLink> 
 
 
 
@@ -74,7 +74,7 @@
 
 
 
-<ClLinks  term={"write-line"}><b>write-line</b></ClLinks> and <ClLinks  term={"write-string"}><b>write-string</b></ClLinks> return <ClLinks  term={"string"}><i>string</i></ClLinks>, not the substring <ClLinks  term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end*. 
+<DictionaryLink  term={"write-line"}><b>write-line</b></DictionaryLink> and <DictionaryLink  term={"write-string"}><b>write-string</b></DictionaryLink> return <ClLinks  term={"string"}><i>string</i></ClLinks>, not the substring <ClLinks  term={"bounded"}><i>bounded</i></ClLinks> by *start* and *end*. 
 
 
 

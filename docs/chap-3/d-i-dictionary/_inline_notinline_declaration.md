@@ -42,11 +42,11 @@
 
 
 
-<ClLinks  term={"inline"}><b>inline</b></ClLinks> specifies that it is desirable for the compiler to produce inline calls to the <ClLinks  term={"function"}><i>functions</i></ClLinks> named by *function-names*; that is, the code for a specified *function-name* should be integrated into the calling routine, appearing “in line” in place of a procedure call. A compiler is free to ignore this declaration. <ClLinks  term={"inline"}><b>inline</b></ClLinks> declarations never apply to variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
+<DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink> specifies that it is desirable for the compiler to produce inline calls to the <ClLinks  term={"function"}><i>functions</i></ClLinks> named by *function-names*; that is, the code for a specified *function-name* should be integrated into the calling routine, appearing “in line” in place of a procedure call. A compiler is free to ignore this declaration. <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink> declarations never apply to variable <ClLinks  term={"binding"}><i>bindings</i></ClLinks>. 
 
 
 
-If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks>), then the declaration applies to that local definition and not to the global function definition. 
+If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> or <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink>), then the declaration applies to that local definition and not to the global function definition. 
 
 
 
@@ -70,7 +70,7 @@ While no <GlossaryTerm styled={true} term={"conforming implementation"}><i>confo
 
 
 
-To define a <ClLinks  term={"function"}><i>function</i></ClLinks> f that is not <ClLinks  term={"inline"}><b>inline</b></ClLinks> by default but for which (declare (inline f)) will make *f* be locally inlined, the proper definition sequence is: 
+To define a <ClLinks  term={"function"}><i>function</i></ClLinks> f that is not <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink> by default but for which (declare (inline f)) will make *f* be locally inlined, the proper definition sequence is: 
 
 
 
@@ -86,23 +86,23 @@ To define a <ClLinks  term={"function"}><i>function</i></ClLinks> f that is not 
 
 
 
-The <ClLinks  term={"inline"}><b>inline</b></ClLinks> proclamation preceding the <ClLinks  term={"defun"}><b>defun</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> ensures that the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> has the opportunity save the information necessary for inline expansion, and the <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> proclamation following the <ClLinks  term={"defun"}><b>defun</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> prevents f from being expanded inline everywhere. 
+The <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink> proclamation preceding the <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> ensures that the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> has the opportunity save the information necessary for inline expansion, and the <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> proclamation following the <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> prevents f from being expanded inline everywhere. 
 
 
 
-<ClLinks  term={"notinline"}><b>notinline</b></ClLinks> specifies that it is undesirable to compile the <ClLinks  term={"function"}><i>functions</i></ClLinks> named by *function-names* in-line. A compiler is not free to ignore this declaration; calls to the specified functions must be implemented as out-of-line subroutine calls. 
+<DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> specifies that it is undesirable to compile the <ClLinks  term={"function"}><i>functions</i></ClLinks> named by *function-names* in-line. A compiler is not free to ignore this declaration; calls to the specified functions must be implemented as out-of-line subroutine calls. 
 
 
 
-If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks>), then the declaration applies to that local definition and not to the global function definition. 
+If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned has a lexically apparent local definition (as made by <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> or <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink>), then the declaration applies to that local definition and not to the global function definition. 
 
 
 
-In the presence of a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definition for *function-name*, a <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declaration prevents that <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> from being used. An <ClLinks  term={"inline"}><b>inline</b></ClLinks> declaration may be used to encourage use of <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definitions. <ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations otherwise have no e↵ect when the lexically visible definition of *function-name* is a <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition. 
+In the presence of a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definition for *function-name*, a <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> declaration prevents that <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> from being used. An <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink> declaration may be used to encourage use of <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definitions. <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink> and <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> declarations otherwise have no e↵ect when the lexically visible definition of *function-name* is a <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition. 
 
 
 
-<ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. <ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations of functions that appear before the body of a <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> that defines that function are <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. Such declarations in other contexts are <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm>. 
+<DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink> and <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink> and <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> declarations of functions that appear before the body of a <DictionaryLink  term={"flet"}><b>flet</b></DictionaryLink> or <DictionaryLink  term={"labels"}><b>labels</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> that defines that function are <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. Such declarations in other contexts are <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm>. 
 
 
 
@@ -133,7 +133,7 @@ Evaluation and
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks> 
+<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink>, <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink> 
 
 
 

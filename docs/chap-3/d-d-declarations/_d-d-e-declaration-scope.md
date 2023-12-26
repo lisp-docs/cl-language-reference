@@ -34,15 +34,15 @@ Some <GlossaryTerm styled={true} term={"iteration form"}><i>iteration forms</i><
 
 
 
-*•* <ClLinks  term={"do"}><b>do</b></ClLinks>, <ClLinks  term={"do"}><b>do\*</b></ClLinks>: *step-forms*, *end-test-form*, and *result-forms*. 
+*•* <DictionaryLink  term={"do"}><b>do</b></DictionaryLink>, <DictionaryLink  term={"do"}><b>do\*</b></DictionaryLink>: *step-forms*, *end-test-form*, and *result-forms*. 
 
 
 
-*•* <ClLinks  term={"dolist"}><b>dolist</b></ClLinks>, <ClLinks  term={"dotimes"}><b>dotimes</b></ClLinks>: *result-form* 
+*•* <DictionaryLink  term={"dolist"}><b>dolist</b></DictionaryLink>, <DictionaryLink  term={"dotimes"}><b>dotimes</b></DictionaryLink>: *result-form* 
 
 
 
-*•* <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks>, <ClLinks  term={"do-external-symbols"}><b>do-external-symbols</b></ClLinks>, <ClLinks  term={"do-symbols"}><b>do-symbols</b></ClLinks>: *result-form*  
+*•* <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink>, <DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink>, <DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink>: *result-form*  
 
 
 

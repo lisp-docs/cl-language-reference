@@ -42,7 +42,7 @@ Each following element is a variable or a list of a destructuring pattern, a def
 
 
 
-to match against this destructuring (sub)-pattern, the default form is evaluated and destructured instead. The supplied-p variable receives the value <ClLinks  term={"nil"}><b>nil</b></ClLinks> if the default form is used, <ClLinks  term={"t"}><b>t</b></ClLinks> otherwise. 
+to match against this destructuring (sub)-pattern, the default form is evaluated and destructured instead. The supplied-p variable receives the value <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the default form is used, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> otherwise. 
 
 
 

@@ -6,15 +6,15 @@
 
 
 
-<ClLinks  term={"asin"}><b>asin</b></ClLinks> *number → radians* 
+<DictionaryLink  term={"asin"}><b>asin</b></DictionaryLink> *number → radians* 
 
 
 
-<ClLinks  term={"acos"}><b>acos</b></ClLinks> *number → radians* 
+<DictionaryLink  term={"acos"}><b>acos</b></DictionaryLink> *number → radians* 
 
 
 
-<ClLinks  term={"atan"}><b>atan</b></ClLinks> *number1* &amp;optional *number2 → radians* 
+<DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink> *number1* &amp;optional *number2 → radians* 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<ClLinks  term={"asin"}><b>asin</b></ClLinks>, <ClLinks  term={"acos"}><b>acos</b></ClLinks>, and <ClLinks  term={"atan"}><b>atan</b></ClLinks> compute the arc sine, arc cosine, and arc tangent respectively. 
+<DictionaryLink  term={"asin"}><b>asin</b></DictionaryLink>, <DictionaryLink  term={"acos"}><b>acos</b></DictionaryLink>, and <DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink> compute the arc sine, arc cosine, and arc tangent respectively. 
 
 
 
@@ -68,7 +68,7 @@ These formulae are mathematically correct, assuming completely accurate computat
 
 
 
-If both *number1* and *number2* are supplied for <ClLinks  term={"atan"}><b>atan</b></ClLinks>, the result is the arc tangent of *number1*/*number2*. The value of <ClLinks  term={"atan"}><b>atan</b></ClLinks> is always between *−π* (exclusive) and *π* (inclusive) when minus zero is not supported. The range of the two-argument arc tangent when minus zero is supported includes *−π*. 
+If both *number1* and *number2* are supplied for <DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink>, the result is the arc tangent of *number1*/*number2*. The value of <DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink> is always between *−π* (exclusive) and *π* (inclusive) when minus zero is not supported. The range of the two-argument arc tangent when minus zero is supported includes *−π*. 
 
 
 
@@ -180,7 +180,7 @@ arc tangent is identical to that of arc sine with the points *−π/*2 and *π/*
 
 
 
-For <ClLinks  term={"atan"}><b>atan</b></ClLinks>, the signs of *number1* (indicated as *x*) and *number2* (indicated as *y*) are used to derive quadrant information. Figure 12–15 details various special cases. The asterisk (\*) indicates that the entry in the figure applies to implementations that support minus zero. 
+For <DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink>, the signs of *number1* (indicated as *x*) and *number2* (indicated as *y*) are used to derive quadrant information. Figure 12–15 details various special cases. The asterisk (\*) indicates that the entry in the figure applies to implementations that support minus zero. 
 
 
 
@@ -210,11 +210,11 @@ For <ClLinks  term={"atan"}><b>atan</b></ClLinks>, the signs of *number1* (indic
 
 
 
-<ClLinks  term={"acos"}><b>acos</b></ClLinks> and <ClLinks  term={"asin"}><b>asin</b></ClLinks> should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . <ClLinks  term={"atan"}><b>atan</b></ClLinks> should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if one argument is supplied and that argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> , or if two arguments are supplied and both of those arguments are not *reals*. 
+<DictionaryLink  term={"acos"}><b>acos</b></DictionaryLink> and <DictionaryLink  term={"asin"}><b>asin</b></DictionaryLink> should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"number"}><i>number</i></ClLinks> . <DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink> should signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if one argument is supplied and that argument is not a <ClLinks  term={"number"}><i>number</i></ClLinks> , or if two arguments are supplied and both of those arguments are not *reals*. 
 
 
 
-<ClLinks  term={"acos"}><b>acos</b></ClLinks>, <ClLinks  term={"asin"}><b>asin</b></ClLinks>, and <ClLinks  term={"atan"}><b>atan</b></ClLinks> might signal <ClLinks  term={"arithmetic-error"}><b>arithmetic-error</b></ClLinks>. 
+<DictionaryLink  term={"acos"}><b>acos</b></DictionaryLink>, <DictionaryLink  term={"asin"}><b>asin</b></DictionaryLink>, and <DictionaryLink  term={"atan"}><b>atan</b></DictionaryLink> might signal <DictionaryLink  term={"arithmetic-error"}><b>arithmetic-error</b></DictionaryLink>. 
 
 
 
@@ -222,7 +222,7 @@ For <ClLinks  term={"atan"}><b>atan</b></ClLinks>, the signs of *number1* (indic
 
 
 
-<ClLinks  term={"log"}><b>log</b></ClLinks>, <ClLinks  term={"sqrt"}><b>sqrt</b></ClLinks>, Section 12.1.3.3 (Rule of Float Substitutability) 
+<DictionaryLink  term={"log"}><b>log</b></DictionaryLink>, <DictionaryLink  term={"sqrt"}><b>sqrt</b></DictionaryLink>, Section 12.1.3.3 (Rule of Float Substitutability) 
 
 
 
@@ -242,7 +242,7 @@ For <ClLinks  term={"atan"}><b>atan</b></ClLinks>, the signs of *number1* (indic
 
 
 
-The result of either <ClLinks  term={"asin"}><b>asin</b></ClLinks> or <ClLinks  term={"acos"}><b>acos</b></ClLinks> can be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; this occurs when the absolute value of <ClLinks  term={"number"}><i>number</i></ClLinks> is greater than one. 
+The result of either <DictionaryLink  term={"asin"}><b>asin</b></DictionaryLink> or <DictionaryLink  term={"acos"}><b>acos</b></DictionaryLink> can be a <ClLinks  term={"complex"}><i>complex</i></ClLinks> even if <ClLinks  term={"number"}><i>number</i></ClLinks> is not a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ; this occurs when the absolute value of <ClLinks  term={"number"}><i>number</i></ClLinks> is greater than one. 
 
 
 
@@ -283,7 +283,7 @@ pi → 3.141592653589793L0
 
 
 
-An approximation to *π* in some other precision can be obtained by writing (float pi x), where x is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the desired precision, or by writing (coerce pi <ClLinks  term={"type"}><i>type</i></ClLinks>), where <ClLinks  term={"type"}><i>type</i></ClLinks> is the desired type, such as <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>. 
+An approximation to *π* in some other precision can be obtained by writing (float pi x), where x is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the desired precision, or by writing (coerce pi <ClLinks  term={"type"}><i>type</i></ClLinks>), where <ClLinks  term={"type"}><i>type</i></ClLinks> is the desired type, such as <DictionaryLink  term={"short-float"}><b>short-float</b></DictionaryLink>. 
 
 
 

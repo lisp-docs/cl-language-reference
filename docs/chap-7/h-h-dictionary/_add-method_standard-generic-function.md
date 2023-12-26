@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"add-method"}><b>add-method</b></ClLinks> *generic-function method ! generic-function* 
+<DictionaryLink  term={"add-method"}><b>add-method</b></DictionaryLink> *generic-function method ! generic-function* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"add-method"}><b>add-method</b></ClLinks> (*generic-function* <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>) 
+<DictionaryLink  term={"add-method"}><b>add-method</b></DictionaryLink> (*generic-function* <DictionaryLink  term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink>) 
 
 
 
-(<ClLinks  term={"method"}><i>method</i></ClLinks> <ClLinks  term={"method"}><b>method</b></ClLinks>) 
+(<ClLinks  term={"method"}><i>method</i></ClLinks> <DictionaryLink  term={"method"}><b>method</b></DictionaryLink>) 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-The generic function <ClLinks  term={"add-method"}><b>add-method</b></ClLinks> adds a <ClLinks  term={"method"}><i>method</i></ClLinks> to a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
+The generic function <DictionaryLink  term={"add-method"}><b>add-method</b></DictionaryLink> adds a <ClLinks  term={"method"}><i>method</i></ClLinks> to a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
 
 
 
@@ -62,11 +62,11 @@ If <ClLinks  term={"method"}><i>method</i></ClLinks> agrees with an existing <Cl
 
 
 
-The <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of the method function of <ClLinks  term={"method"}><i>method</i></ClLinks> must be congruent with the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of *generic-function*, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+The <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of the method function of <ClLinks  term={"method"}><i>method</i></ClLinks> must be congruent with the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of *generic-function*, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
-If <ClLinks  term={"method"}><i>method</i></ClLinks> is a *method object* of another <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If <ClLinks  term={"method"}><i>method</i></ClLinks> is a *method object* of another <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled. 
 
 
 
@@ -74,7 +74,7 @@ If <ClLinks  term={"method"}><i>method</i></ClLinks> is a *method object* of ano
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks>, <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>, <ClLinks  term={"find-method"}><b>find-method</b></ClLinks>, <ClLinks  term={"remove-method"}><b>remove-method</b></ClLinks>, Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers) 
+<DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink>, <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>, <DictionaryLink  term={"find-method"}><b>find-method</b></DictionaryLink>, <DictionaryLink  term={"remove-method"}><b>remove-method</b></DictionaryLink>, Section 7.6.3 (Agreement on Parameter Specializers and Qualifiers) 
 
 
 

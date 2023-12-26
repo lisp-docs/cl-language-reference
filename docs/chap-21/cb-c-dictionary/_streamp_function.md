@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"streamp"}><b>streamp</b></ClLinks> *object → generalized-boolean* 
+<DictionaryLink  term={"streamp"}><b>streamp</b></DictionaryLink> *object → generalized-boolean* 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"stream"}><b>stream</b></ClLinks>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"stream"}><b>stream</b></DictionaryLink>; otherwise, returns <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-<ClLinks  term={"streamp"}><b>streamp</b></ClLinks> is unaffected by whether <ClLinks  term={"object"}><i>object</i></ClLinks>, if it is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, is <ClLinks  term={"open"}><i>open</i></ClLinks> or closed. 
+<DictionaryLink  term={"streamp"}><b>streamp</b></DictionaryLink> is unaffected by whether <ClLinks  term={"object"}><i>object</i></ClLinks>, if it is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, is <ClLinks  term={"open"}><i>open</i></ClLinks> or closed. 
 
 
 

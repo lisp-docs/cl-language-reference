@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"make-string-input-stream"}><b>make-string-input-stream</b></ClLinks> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *start end → string-stream* 
+<DictionaryLink  term={"make-string-input-stream"}><b>make-string-input-stream</b></DictionaryLink> <ClLinks  term={"string"}><i>string</i></ClLinks> &amp;optional *start end → string-stream* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
@@ -47,7 +47,7 @@ Returns an *input string stream*. This <ClLinks  term={"stream"}><i>stream</i></
 
 
 
-<ClLinks  term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks> 
+<DictionaryLink  term={"with-input-from-string"}><b>with-input-from-string</b></DictionaryLink> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"aref"}><b>aref</b></ClLinks> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → element* 
+<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> <ClLinks  term={"array"}><i>array</i></ClLinks> &amp;rest *subscripts → element* 
 
 
 
@@ -35,11 +35,11 @@
 
 
 
-*Accesses* the *array element* specified by the *subscripts*. If no *subscripts* are supplied and <ClLinks  term={"array"}><i>array</i></ClLinks> is zero rank, <ClLinks  term={"aref"}><b>aref</b></ClLinks> *accesses* the sole element of <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*Accesses* the *array element* specified by the *subscripts*. If no *subscripts* are supplied and <ClLinks  term={"array"}><i>array</i></ClLinks> is zero rank, <DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> *accesses* the sole element of <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
-<ClLinks  term={"aref"}><b>aref</b></ClLinks> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. It is permissible to use <ClLinks  term={"aref"}><b>aref</b></ClLinks> to <ClLinks  term={"access"}><i>access</i></ClLinks> any *array element*, whether <ClLinks  term={"active"}><i>active</i></ClLinks> or not. 
+<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. It is permissible to use <DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> to <ClLinks  term={"access"}><i>access</i></ClLinks> any *array element*, whether <ClLinks  term={"active"}><i>active</i></ClLinks> or not. 
 
 
 
@@ -64,7 +64,7 @@ If the variable foo names a 3-by-5 array, then the first index could be 0, 1, or
 
 
 
-<ClLinks  term={"bit"}><b>bit</b></ClLinks>, <ClLinks  term={"char"}><b>char</b></ClLinks>, <ClLinks  term={"elt"}><b>elt</b></ClLinks>, <ClLinks  term={"row-major-aref"}><b>row-major-aref</b></ClLinks>, <ClLinks  term={"svref"}><b>svref</b></ClLinks>, Section 3.2.1 (Compiler Terminology) 
+<DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>, <DictionaryLink  term={"char"}><b>char</b></DictionaryLink>, <DictionaryLink  term={"elt"}><b>elt</b></DictionaryLink>, <DictionaryLink  term={"row-major-aref"}><b>row-major-aref</b></DictionaryLink>, <DictionaryLink  term={"svref"}><b>svref</b></DictionaryLink>, Section 3.2.1 (Compiler Terminology) 
 
 
 

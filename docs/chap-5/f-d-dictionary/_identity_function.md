@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"identity"}><b>identity</b></ClLinks> *object → object* 
+<DictionaryLink  term={"identity"}><b>identity</b></DictionaryLink> *object → object* 
 
 
 
@@ -35,7 +35,7 @@ Returns its argument <ClLinks  term={"object"}><i>object</i></ClLinks>.
 
 
 
-<ClLinks  term={"identity"}><b>identity</b></ClLinks> is intended for use with functions that require a <ClLinks  term={"function"}><i>function</i></ClLinks> as an argument. 
+<DictionaryLink  term={"identity"}><b>identity</b></DictionaryLink> is intended for use with functions that require a <ClLinks  term={"function"}><i>function</i></ClLinks> as an argument. 
 
 
 
@@ -55,7 +55,7 @@ Returns its argument <ClLinks  term={"object"}><i>object</i></ClLinks>.
 
 
 
-<ClLinks  term={"identity"}><b>identity</b></ClLinks> could be defined by 
+<DictionaryLink  term={"identity"}><b>identity</b></DictionaryLink> could be defined by 
 
 
 

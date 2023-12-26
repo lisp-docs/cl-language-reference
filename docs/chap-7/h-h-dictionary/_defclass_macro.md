@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"defclass"}><b>defclass</b></ClLinks> *class-name* (*\{superclass-name\}*\*) (*\{slot-specifier\}*\*) [[*↓class-option* ]] 
+<DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> *class-name* (*\{superclass-name\}*\*) (*\{slot-specifier\}*\*) [[*↓class-option* ]] 
 
 
 
@@ -82,7 +82,7 @@
 
 
 
-<ClLinks  term={"defclass"}><b>defclass</b></ClLinks> 
+<DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> 
 
 
 
@@ -142,11 +142,11 @@
 
 
 
-The macro <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> defines a new named <ClLinks  term={"class"}><i>class</i></ClLinks>. It returns the new *class object* as its result. 
+The macro <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> defines a new named <ClLinks  term={"class"}><i>class</i></ClLinks>. It returns the new *class object* as its result. 
 
 
 
-The syntax of <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> provides options for specifying initialization arguments for <ClLinks  term={"slot"}><i>slots</i></ClLinks>, for specifying default initialization values for <ClLinks  term={"slot"}><i>slots</i></ClLinks>, and for requesting that <ClLinks  term={"method"}><i>methods</i></ClLinks> on specified *generic functions* be automatically generated for reading and writing the values of <ClLinks  term={"slot"}><i>slots</i></ClLinks>. No reader or writer functions are defined by default; their generation must be explicitly requested. However, <ClLinks  term={"slot"}><i>slots</i></ClLinks> can always be *accessed* using <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>. 
+The syntax of <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> provides options for specifying initialization arguments for <ClLinks  term={"slot"}><i>slots</i></ClLinks>, for specifying default initialization values for <ClLinks  term={"slot"}><i>slots</i></ClLinks>, and for requesting that <ClLinks  term={"method"}><i>methods</i></ClLinks> on specified *generic functions* be automatically generated for reading and writing the values of <ClLinks  term={"slot"}><i>slots</i></ClLinks>. No reader or writer functions are defined by default; their generation must be explicitly requested. However, <ClLinks  term={"slot"}><i>slots</i></ClLinks> can always be *accessed* using <DictionaryLink  term={"slot-value"}><b>slot-value</b></DictionaryLink>. 
 
 
 
@@ -166,15 +166,15 @@ The *class-name* argument specifies the *proper name* of the new <ClLinks  term=
 
 
 
-<ClLinks  term={"defclass"}><b>defclass</b></ClLinks> 
+<DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> 
 
 
 
-*proper name* already exists and that <ClLinks  term={"class"}><i>class</i></ClLinks> is an <ClLinks  term={"instance"}><i>instance</i></ClLinks> of <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>, and if the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form for the definition of the new <ClLinks  term={"class"}><i>class</i></ClLinks> specifies a <ClLinks  term={"class"}><i>class</i></ClLinks> of <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>, the existing <ClLinks  term={"class"}><i>class</i></ClLinks> is redefined, and instances of it (and its *subclasses*) are updated to the new definition at the time that they are next *accessed*. For details, see Section 4.3.6 (Redefining Classes). 
+*proper name* already exists and that <ClLinks  term={"class"}><i>class</i></ClLinks> is an <ClLinks  term={"instance"}><i>instance</i></ClLinks> of <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>, and if the <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form for the definition of the new <ClLinks  term={"class"}><i>class</i></ClLinks> specifies a <ClLinks  term={"class"}><i>class</i></ClLinks> of <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>, the existing <ClLinks  term={"class"}><i>class</i></ClLinks> is redefined, and instances of it (and its *subclasses*) are updated to the new definition at the time that they are next *accessed*. For details, see Section 4.3.6 (Redefining Classes). 
 
 
 
-Each *superclass-name* argument specifies a direct <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> of the new <ClLinks  term={"class"}><i>class</i></ClLinks>. If the <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> list is empty, then the <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> defaults depending on the <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>, with <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> being the default for <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>. 
+Each *superclass-name* argument specifies a direct <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> of the new <ClLinks  term={"class"}><i>class</i></ClLinks>. If the <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> list is empty, then the <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> defaults depending on the <ClLinks  term={"metaclass"}><i>metaclass</i></ClLinks>, with <DictionaryLink  term={"standard-object"}><b>standard-object</b></DictionaryLink> being the default for <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>. 
 
 
 
@@ -194,7 +194,7 @@ The following slot options are available:
 
 
 
-*•* The :accessor slot option specifies that an *unqualified method* is to be defined on the generic function named *reader-function-name* to read the value of the given <ClLinks  term={"slot"}><i>slot</i></ClLinks> and that an *unqualified method* is to be defined on the *generic function* named (setf *reader-function-name*) to be used with <ClLinks  term={"setf"}><b>setf</b></ClLinks> to modify the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+*•* The :accessor slot option specifies that an *unqualified method* is to be defined on the generic function named *reader-function-name* to read the value of the given <ClLinks  term={"slot"}><i>slot</i></ClLinks> and that an *unqualified method* is to be defined on the *generic function* named (setf *reader-function-name*) to be used with <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> to modify the value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
@@ -206,7 +206,7 @@ The following slot options are available:
 
 
 
-– If *allocation-type* is :class, a shared <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the given name is allocated in the *class object* created by this <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form. The value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks> is shared by all 
+– If *allocation-type* is :class, a shared <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the given name is allocated in the *class object* created by this <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form. The value of the <ClLinks  term={"slot"}><i>slot</i></ClLinks> is shared by all 
 
 
 
@@ -214,7 +214,7 @@ The following slot options are available:
 
 
 
-*C*<sub>1</sub> will share this single <ClLinks  term={"slot"}><i>slot</i></ClLinks> unless the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form for *C*<sub>2</sub> specifies a <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the 
+*C*<sub>1</sub> will share this single <ClLinks  term={"slot"}><i>slot</i></ClLinks> unless the <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form for *C*<sub>2</sub> specifies a <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the 
 
 
 
@@ -226,7 +226,7 @@ list of *C*<sub>2</sub> and that defines a <ClLinks  term={"slot"}><i>slot</i></
 
 
 
-*•* The :initform slot option is used to provide a default initial value form to be used in the initialization of the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. This <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated every time it is used to initialize the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. The lexical environment in which this <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated is the lexical environment in which the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form was evaluated. Note that the lexical environment refers both to variables 
+*•* The :initform slot option is used to provide a default initial value form to be used in the initialization of the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. This <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated every time it is used to initialize the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. The lexical environment in which this <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated is the lexical environment in which the <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form was evaluated. Note that the lexical environment refers both to variables 
 
 
 
@@ -242,19 +242,19 @@ list of *C*<sub>2</sub> and that defines a <ClLinks  term={"slot"}><i>slot</i></
 
 
 
-<ClLinks  term={"defclass"}><b>defclass</b></ClLinks> 
+<DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> 
 
 
 
-and to functions. For <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm>, the dynamic environment is the dynamic environment in which <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> is called; for shared <ClLinks  term={"slot"}><i>slots</i></ClLinks>, the dynamic environment is the dynamic environment in which the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form was evaluated. See Section 7.1 (Object Creation and Initialization). 
+and to functions. For <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm>, the dynamic environment is the dynamic environment in which <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> is called; for shared <ClLinks  term={"slot"}><i>slots</i></ClLinks>, the dynamic environment is the dynamic environment in which the <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form was evaluated. See Section 7.1 (Object Creation and Initialization). 
 
 
 
-No implementation is permitted to extend the syntax of <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> to allow (*slot-name form*) as an abbreviation for (*slot-name* :initform <ClLinks  term={"form"}><i>form</i></ClLinks>). 
+No implementation is permitted to extend the syntax of <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> to allow (*slot-name form*) as an abbreviation for (*slot-name* :initform <ClLinks  term={"form"}><i>form</i></ClLinks>). 
 
 
 
-*•* The :initarg slot option declares an initialization argument named *initarg-name* and specifies that this initialization argument initializes the given <ClLinks  term={"slot"}><i>slot</i></ClLinks>. If the initialization argument has a value in the call to <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>, the value will be stored into the given <ClLinks  term={"slot"}><i>slot</i></ClLinks>, and the slot’s :initform slot option, if any, is not evaluated. If none of the initialization arguments specified for a given <ClLinks  term={"slot"}><i>slot</i></ClLinks> has a value, the <ClLinks  term={"slot"}><i>slot</i></ClLinks> is initialized according to the :initform slot option, if specified. 
+*•* The :initarg slot option declares an initialization argument named *initarg-name* and specifies that this initialization argument initializes the given <ClLinks  term={"slot"}><i>slot</i></ClLinks>. If the initialization argument has a value in the call to <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>, the value will be stored into the given <ClLinks  term={"slot"}><i>slot</i></ClLinks>, and the slot’s :initform slot option, if any, is not evaluated. If none of the initialization arguments specified for a given <ClLinks  term={"slot"}><i>slot</i></ClLinks> has a value, the <ClLinks  term={"slot"}><i>slot</i></ClLinks> is initialized according to the :initform slot option, if specified. 
 
 
 
@@ -270,23 +270,19 @@ Each class option is an option that refers to the <ClLinks  term={"class"}><i>cl
 
 
 
-*•* The :default-initargs class option is followed by a list of alternating initialization argument <ClLinks  term={"name"}><i>names</i></ClLinks> and default initial value forms. If any of these initialization arguments does not appear in the initialization argument list supplied to <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, the corresponding default initial value form is evaluated, and the initialization argument <ClLinks  term={"name"}><i>name</i></ClLinks> and the <ClLinks  term={"form"}><i>form</i></ClLinks>’s value are added to the end of the initialization argument list before the instance is created; see Section 7.1 (Object Creation and Initialization). The default initial value form is evaluated each time it is used. The lexical environment in which this <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated is the lexical environment in which the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form was evaluated. The dynamic environment is the dynamic environment in which <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> was called. If an initialization argument <ClLinks  term={"name"}><i>name</i></ClLinks> appears more than once in a :default-initargs class option, an error is signaled. 
+*•* The :default-initargs class option is followed by a list of alternating initialization argument <ClLinks  term={"name"}><i>names</i></ClLinks> and default initial value forms. If any of these initialization arguments does not appear in the initialization argument list supplied to <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink>, the corresponding default initial value form is evaluated, and the initialization argument <ClLinks  term={"name"}><i>name</i></ClLinks> and the <ClLinks  term={"form"}><i>form</i></ClLinks>’s value are added to the end of the initialization argument list before the instance is created; see Section 7.1 (Object Creation and Initialization). The default initial value form is evaluated each time it is used. The lexical environment in which this <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated is the lexical environment in which the <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form was evaluated. The dynamic environment is the dynamic environment in which <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> was called. If an initialization argument <ClLinks  term={"name"}><i>name</i></ClLinks> appears more than once in a :default-initargs class option, an error is signaled. 
 
 
 
-*•* The :documentation class option causes a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to be attached with the *class object*, and attached with kind <ClLinks  term={"type"}><b>type</b></ClLinks> to the *class-name*. :documentation can be supplied once at most. 
+*•* The :documentation class option causes a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to be attached with the *class object*, and attached with kind <DictionaryLink  term={"type"}><b>type</b></DictionaryLink> to the *class-name*. :documentation can be supplied once at most. 
 
 
 
-*•* The :metaclass class option is used to specify that instances of the <ClLinks  term={"class"}><i>class</i></ClLinks> being defined are to have a different metaclass than the default provided by the system (the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"standard-class"}><b>standard-class</b></ClLinks>). 
-
-
+*•* The :metaclass class option is used to specify that instances of the <ClLinks  term={"class"}><i>class</i></ClLinks> being defined are to have a different metaclass than the default provided by the system (the <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"standard-class"}><b>standard-class</b></DictionaryLink>). 
 
 
 
 
-
- 
 
 
 
@@ -294,15 +290,19 @@ Each class option is an option that refers to the <ClLinks  term={"class"}><i>cl
 
 
 
-<ClLinks  term={"defclass"}><b>defclass</b></ClLinks> 
+ 
 
 
 
-Note the following rules of <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> for *standard classes*: 
+<DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> 
 
 
 
-*•* It is not required that the *superclasses* of a <ClLinks  term={"class"}><i>class</i></ClLinks> be defined before the <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form for that <ClLinks  term={"class"}><i>class</i></ClLinks> is evaluated. 
+Note the following rules of <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> for *standard classes*: 
+
+
+
+*•* It is not required that the *superclasses* of a <ClLinks  term={"class"}><i>class</i></ClLinks> be defined before the <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> form for that <ClLinks  term={"class"}><i>class</i></ClLinks> is evaluated. 
 
 
 
@@ -310,7 +310,7 @@ Note the following rules of <ClLinks  term={"defclass"}><b>defclass</b></ClLinks
 
 
 
-*•* A <ClLinks  term={"class"}><i>class</i></ClLinks> must be defined before it can be used as a parameter specializer in a <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> form. 
+*•* A <ClLinks  term={"class"}><i>class</i></ClLinks> must be defined before it can be used as a parameter specializer in a <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> form. 
 
 
 
@@ -322,7 +322,7 @@ Some slot options are inherited by a <ClLinks  term={"class"}><i>class</i></ClLi
 
 
 
-The options to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> can be extended. It is required that all implementations signal an error if they observe a class option or a slot option that is not implemented locally. 
+The options to <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> can be extended. It is required that all implementations signal an error if they observe a class option or a slot option that is not implemented locally. 
 
 
 
@@ -330,11 +330,11 @@ It is valid to specify more than one reader, writer, accessor, or initialization
 
 
 
-If no reader, writer, or accessor is specified for a <ClLinks  term={"slot"}><i>slot</i></ClLinks>, the <ClLinks  term={"slot"}><i>slot</i></ClLinks> can only be *accessed* by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>. 
+If no reader, writer, or accessor is specified for a <ClLinks  term={"slot"}><i>slot</i></ClLinks>, the <ClLinks  term={"slot"}><i>slot</i></ClLinks> can only be *accessed* by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"slot-value"}><b>slot-value</b></DictionaryLink>. 
 
 
 
-If a <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make the *class name* be recognized as a valid *type name* in subsequent declarations (as for <ClLinks  term={"deftype"}><b>deftype</b></ClLinks>) and be recognized as a valid *class name* for <ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> and for use as the :metaclass option of a subsequent <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>. The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make the <ClLinks  term={"class"}><i>class</i></ClLinks> definition available to be returned by <ClLinks  term={"find-class"}><b>find-class</b></ClLinks> when its *environment argument* is a value received as the <GlossaryTerm styled={true} term={"environment parameter"}><i>environment parameter</i></GlossaryTerm> of a <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
+If a <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make the *class name* be recognized as a valid *type name* in subsequent declarations (as for <DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink>) and be recognized as a valid *class name* for <DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> and for use as the :metaclass option of a subsequent <DictionaryLink  term={"defclass"}><b>defclass</b></DictionaryLink>. The <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must make the <ClLinks  term={"class"}><i>class</i></ClLinks> definition available to be returned by <DictionaryLink  term={"find-class"}><b>find-class</b></DictionaryLink> when its *environment argument* is a value received as the <GlossaryTerm styled={true} term={"environment parameter"}><i>environment parameter</i></GlossaryTerm> of a <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
@@ -342,19 +342,19 @@ If a <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> <ClLinks  term={"form
 
 
 
-If there are any duplicate slot names, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
+If there are any duplicate slot names, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> is signaled. 
 
 
 
-If an initialization argument <ClLinks  term={"name"}><i>name</i></ClLinks> appears more than once in :default-initargs class option, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
+If an initialization argument <ClLinks  term={"name"}><i>name</i></ClLinks> appears more than once in :default-initargs class option, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> is signaled. 
 
 
 
-If any of the following slot options appears more than once in a single slot description, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled: :allocation, :initform, :type, :documentation. 
+If any of the following slot options appears more than once in a single slot description, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> is signaled: :allocation, :initform, :type, :documentation. 
 
 
 
-It is required that all implementations signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> if they observe a class option or a slot option that is not implemented locally. 
+It is required that all implementations signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> if they observe a class option or a slot option that is not implemented locally. 
 
 
 
@@ -362,7 +362,7 @@ It is required that all implementations signal an error of <ClLinks  term={"type
 
 
 
-**documentation**, <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>, <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>, Section 4.3 (Classes), Section 4.3.4 (Inheritance), Section 4.3.6 (Redefining Classes), Section 4.3.5 (Determining the Class Precedence 
+**documentation**, <DictionaryLink  term={"initialize-instance"}><b>initialize-instance</b></DictionaryLink>, <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink>, <DictionaryLink  term={"slot-value"}><b>slot-value</b></DictionaryLink>, Section 4.3 (Classes), Section 4.3.4 (Inheritance), Section 4.3.6 (Redefining Classes), Section 4.3.5 (Determining the Class Precedence 
 
 
 

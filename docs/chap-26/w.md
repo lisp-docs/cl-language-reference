@@ -19,11 +19,11 @@ sidebar_position: 119
 
 
 
-possibly several <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>, and which can therefore be used to refer to the aggregate of the <ClLinks  term={"file"}><i>files</i></ClLinks> named by those <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>. The set of *wild pathnames* includes, but is not restricted to, <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> which have a component which is :wild, or which have a directory component which contains :wild or :wild-inferors. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"wild-pathname-p"}><b>wild-pathname-p</b></ClLinks>. 
+possibly several <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>, and which can therefore be used to refer to the aggregate of the <ClLinks  term={"file"}><i>files</i></ClLinks> named by those <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks>. The set of *wild pathnames* includes, but is not restricted to, <ClLinks  term={"pathname"}><i>pathnames</i></ClLinks> which have a component which is :wild, or which have a directory component which contains :wild or :wild-inferors. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"wild-pathname-p"}><b>wild-pathname-p</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"write"}><b>write</b></ClLinks> *v.t.* 1. (a <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks> or component) to change the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 2. (an <ClLinks  term={"object"}><i>object</i></ClLinks> to a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) to output a representation of the <ClLinks  term={"object"}><i>object</i></ClLinks> to the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<DictionaryLink  term={"write"}><b>write</b></DictionaryLink> *v.t.* 1. (a <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks> or component) to change the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"binding"}><i>binding</i></ClLinks> or <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 2. (an <ClLinks  term={"object"}><i>object</i></ClLinks> to a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) to output a representation of the <ClLinks  term={"object"}><i>object</i></ClLinks> to the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 

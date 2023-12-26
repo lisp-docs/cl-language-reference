@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"file-length"}><b>file-length</b></ClLinks> *stream → length* 
+<DictionaryLink  term={"file-length"}><b>file-length</b></DictionaryLink> *stream → length* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"length"}><i>length</i></ClLinks>—a non-negative *integer* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"length"}><i>length</i></ClLinks>—a non-negative *integer* or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"file-length"}><b>file-length</b></ClLinks> returns the length of <ClLinks  term={"stream"}><i>stream</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if the length cannot be determined. 
+<DictionaryLink  term={"file-length"}><b>file-length</b></DictionaryLink> returns the length of <ClLinks  term={"stream"}><i>stream</i></ClLinks>, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if the length cannot be determined. 
 
 
 
@@ -49,7 +49,7 @@ For a binary file, the length is measured in units of the <GlossaryTerm styled={
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"stream"}><i>stream</i></ClLinks> is not a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm>. 
 
 
 
@@ -57,7 +57,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"open"}><b>open</b></ClLinks> 
+<DictionaryLink  term={"open"}><b>open</b></DictionaryLink> 
 
 
 

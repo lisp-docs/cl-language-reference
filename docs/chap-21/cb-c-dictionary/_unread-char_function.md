@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks> <ClLinks  term={"character"}><i>character</i></ClLinks> &amp;optional *input-stream →* <ClLinks  term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> <ClLinks  term={"character"}><i>character</i></ClLinks> &amp;optional *input-stream →* <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-<ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks> places <ClLinks  term={"character"}><i>character</i></ClLinks> back onto the front of *input-stream* so that it will again be the next character in *input-stream*. 
+<DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> places <ClLinks  term={"character"}><i>character</i></ClLinks> back onto the front of *input-stream* so that it will again be the next character in *input-stream*. 
 
 
 
-When *input-stream* is an <GlossaryTerm styled={true} term={"echo stream"}><i>echo stream</i></GlossaryTerm>, no attempt is made to undo any echoing of the character that might already have been done on *input-stream*. However, characters placed on *input-stream* by <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks> are marked in such a way as to inhibit later re-echo by <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>. 
+When *input-stream* is an <GlossaryTerm styled={true} term={"echo stream"}><i>echo stream</i></GlossaryTerm>, no attempt is made to undo any echoing of the character that might already have been done on *input-stream*. However, characters placed on *input-stream* by <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> are marked in such a way as to inhibit later re-echo by <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink>. 
 
 
 
-It is an error to invoke <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks> twice consecutively on the same <ClLinks  term={"stream"}><i>stream</i></ClLinks> without an intervening call to <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> (or some other input operation which implicitly reads characters) on that <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+It is an error to invoke <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> twice consecutively on the same <ClLinks  term={"stream"}><i>stream</i></ClLinks> without an intervening call to <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> (or some other input operation which implicitly reads characters) on that <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-Invoking <ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks> or <ClLinks  term={"read-char"}><b>read-char</b></ClLinks> commits all previous characters. The consequences of invoking <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks> on any character preceding that which is returned by <ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks> (including those passed over by <ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks> that has a *non-nil peek-type*) are unspecified. In particular, the consequences of invoking <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks> after <ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks> are unspecified. 
+Invoking <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink> or <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink> commits all previous characters. The consequences of invoking <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> on any character preceding that which is returned by <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink> (including those passed over by <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink> that has a *non-nil peek-type*) are unspecified. In particular, the consequences of invoking <DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> after <DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink> are unspecified. 
 
 
 
@@ -55,7 +55,7 @@ Invoking <ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks> or <ClLinks  te
 
 
 
-**\*standard-input\***, <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks>. 
+**\*standard-input\***, <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
 
 
 
@@ -63,7 +63,7 @@ Invoking <ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks> or <ClLinks  te
 
 
 
-<ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks>, <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, Section 21.1 (Stream Concepts) 
+<DictionaryLink  term={"peek-char"}><b>peek-char</b></DictionaryLink>, <DictionaryLink  term={"read-char"}><b>read-char</b></DictionaryLink>, Section 21.1 (Stream Concepts) 
 
 
 
@@ -71,7 +71,7 @@ Invoking <ClLinks  term={"peek-char"}><b>peek-char</b></ClLinks> or <ClLinks  te
 
 
 
-<ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks> is intended to be an efficient mechanism for allowing the *Lisp reader* and other parsers to perform one-character lookahead in *input-stream*. 
+<DictionaryLink  term={"unread-char"}><b>unread-char</b></DictionaryLink> is intended to be an efficient mechanism for allowing the *Lisp reader* and other parsers to perform one-character lookahead in *input-stream*. 
 
 
 

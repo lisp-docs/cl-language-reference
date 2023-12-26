@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> (<ClLinks  term={"situation"}><i>\{situation\}</i></ClLinks>\*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> (<ClLinks  term={"situation"}><i>\{situation\}</i></ClLinks>\*) <ClLinks  term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"situation"}><i>situation</i></ClLinks>—One of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> :compile-toplevel, :load-toplevel, :execute, <ClLinks  term={"compile"}><b>compile</b></ClLinks>, <ClLinks  term={"load"}><b>load</b></ClLinks>, or <ClLinks  term={"eval"}><b>eval</b></ClLinks>. The use of <ClLinks  term={"eval"}><b>eval</b></ClLinks>, <ClLinks  term={"compile"}><b>compile</b></ClLinks>, and <ClLinks  term={"load"}><b>load</b></ClLinks> is deprecated. 
+<ClLinks  term={"situation"}><i>situation</i></ClLinks>—One of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> :compile-toplevel, :load-toplevel, :execute, <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>, <DictionaryLink  term={"load"}><b>load</b></DictionaryLink>, or <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>. The use of <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink>, <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>, and <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> is deprecated. 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> if they are executed, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if they are not. 
+*results*—the <ClLinks  term={"value"}><i>values</i></ClLinks> of the <ClLinks  term={"form"}><i>forms</i></ClLinks> if they are executed, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> if they are not. 
 
 
 
@@ -30,19 +30,19 @@
 
 
 
-The body of an <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> form is processed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>, but only in the <ClLinks  term={"situation"}><i>situations</i></ClLinks> listed. 
+The body of an <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> form is processed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>, but only in the <ClLinks  term={"situation"}><i>situations</i></ClLinks> listed. 
 
 
 
-The use of the <ClLinks  term={"situation"}><i>situations</i></ClLinks> :compile-toplevel (or compile) and :load-toplevel (or load) controls whether and when <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> occurs when <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in code processed by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>. See Section 3.2.3 (File Compilation). 
+The use of the <ClLinks  term={"situation"}><i>situations</i></ClLinks> :compile-toplevel (or compile) and :load-toplevel (or load) controls whether and when <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> occurs when <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in code processed by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>. See Section 3.2.3 (File Compilation). 
 
 
 
-The use of the <ClLinks  term={"situation"}><i>situation</i></ClLinks> :execute (or eval) controls whether evaluation occurs for other <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks  term={"form"}><i>forms</i></ClLinks>; that is, those that are not <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>, or those in code processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks> or <ClLinks  term={"compile"}><b>compile</b></ClLinks>. If the :execute situation is specified in such a <ClLinks  term={"form"}><i>form</i></ClLinks>, then the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are processed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>; otherwise, the <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+The use of the <ClLinks  term={"situation"}><i>situation</i></ClLinks> :execute (or eval) controls whether evaluation occurs for other <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <ClLinks  term={"form"}><i>forms</i></ClLinks>; that is, those that are not <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>, or those in code processed by <DictionaryLink  term={"eval"}><b>eval</b></DictionaryLink> or <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink>. If the :execute situation is specified in such a <ClLinks  term={"form"}><i>form</i></ClLinks>, then the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are processed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>; otherwise, the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks> returns <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> normally appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, but it is meaningful for it to appear as a <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level form</i></GlossaryTerm>. However, the compile-time side effects described in Section 3.2 (Compilation) only take place when <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>. 
+<DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> normally appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, but it is meaningful for it to appear as a <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level form</i></GlossaryTerm>. However, the compile-time side effects described in Section 3.2 (Compilation) only take place when <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>. 
 
 
 
@@ -100,7 +100,7 @@ This causes the call to **set-macro-character** to be executed in the compiler�
 
 
 
-<ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, Section 3.2 (Compilation) 
+<DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink>, Section 3.2 (Compilation) 
 
 
 
@@ -108,11 +108,11 @@ This causes the call to **set-macro-character** to be executed in the compiler�
 
 
 
-The following effects are logical consequences of the definition of <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks>: 
+The following effects are logical consequences of the definition of <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink>: 
 
 
 
-*•* Execution of a single <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> expression executes the body code at most once. 
+*•* Execution of a single <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> expression executes the body code at most once. 
 
 
 
@@ -156,7 +156,7 @@ Adherence to this convention means that such <ClLinks  term={"macro"}><i>macros<
 
 
 
-*•* Placing a variable binding around an <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> reliably captures the binding because the compile-time-too mode cannot occur (*i.e.*, introducing a variable binding means that the <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> is not a *top level form*). For example, 
+*•* Placing a variable binding around an <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> reliably captures the binding because the compile-time-too mode cannot occur (*i.e.*, introducing a variable binding means that the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> is not a *top level form*). For example, 
 
 
 
@@ -168,7 +168,7 @@ Adherence to this convention means that such <ClLinks  term={"macro"}><i>macros<
 
 
 
-prints 3 at execution (*i.e.*, load) time, and does not print anything at compile time. This is important so that expansions of <ClLinks  term={"defun"}><b>defun</b></ClLinks> and <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> can be done in terms of <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks> and can correctly capture the *lexical environment*. 
+prints 3 at execution (*i.e.*, load) time, and does not print anything at compile time. This is important so that expansions of <DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> and <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> can be done in terms of <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> and can correctly capture the *lexical environment*. 
 
 
 

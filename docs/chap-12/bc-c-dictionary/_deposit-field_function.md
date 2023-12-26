@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"deposit-field"}><b>deposit-field</b></ClLinks> *newbyte bytespec integer → result-integer* 
+<DictionaryLink  term={"deposit-field"}><b>deposit-field</b></DictionaryLink> *newbyte bytespec integer → result-integer* 
 
 
 
@@ -48,7 +48,7 @@ Replaces a field of bits within *integer*; specifically, returns an *integer* th
 
 
 
-<ClLinks  term={"byte"}><b>byte</b></ClLinks>, <ClLinks  term={"dpb"}><b>dpb</b></ClLinks> 
+<DictionaryLink  term={"byte"}><b>byte</b></DictionaryLink>, <DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> 
 
 
 
@@ -84,7 +84,7 @@ Replaces a field of bits within *integer*; specifically, returns an *integer* th
 
 
 
-<ClLinks  term={"deposit-field"}><b>deposit-field</b></ClLinks> is to <ClLinks  term={"mask-field"}><b>mask-field</b></ClLinks> as <ClLinks  term={"dpb"}><b>dpb</b></ClLinks> is to <ClLinks  term={"ldb"}><b>ldb</b></ClLinks>. 
+<DictionaryLink  term={"deposit-field"}><b>deposit-field</b></DictionaryLink> is to <DictionaryLink  term={"mask-field"}><b>mask-field</b></DictionaryLink> as <DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> is to <DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink>. 
 
 
 

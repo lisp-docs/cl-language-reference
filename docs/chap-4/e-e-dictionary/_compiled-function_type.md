@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"compiled-function"}><b>compiled-function</b></DictionaryLink>, <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -18,7 +18,7 @@ Any <ClLinks  term={"function"}><i>function</i></ClLinks> may be considered by a
 
 
 
-<ClLinks  term={"function"}><i>Functions</i></ClLinks> whose definitions appear lexically within a <ClLinks  term={"file"}><i>file</i></ClLinks> that has been *compiled* with <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> and then *loaded* with <ClLinks  term={"load"}><b>load</b></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks>. <ClLinks  term={"function"}><i>Functions</i></ClLinks> produced by the <ClLinks  term={"compile"}><b>compile</b></ClLinks> function are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks>. Other <ClLinks  term={"function"}><i>functions</i></ClLinks> might also be of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"compiled-function"}><b>compiled-function</b></ClLinks>. 
+<ClLinks  term={"function"}><i>Functions</i></ClLinks> whose definitions appear lexically within a <ClLinks  term={"file"}><i>file</i></ClLinks> that has been *compiled* with <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> and then *loaded* with <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"compiled-function"}><b>compiled-function</b></DictionaryLink>. <ClLinks  term={"function"}><i>Functions</i></ClLinks> produced by the <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> function are of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"compiled-function"}><b>compiled-function</b></DictionaryLink>. Other <ClLinks  term={"function"}><i>functions</i></ClLinks> might also be of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"compiled-function"}><b>compiled-function</b></DictionaryLink>. 
 
 
 

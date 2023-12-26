@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"compute-applicable-methods"}><b>compute-applicable-methods</b></ClLinks> *generic-function function-arguments → methods* 
+<DictionaryLink  term={"compute-applicable-methods"}><b>compute-applicable-methods</b></DictionaryLink> *generic-function function-arguments → methods* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"compute-applicable-methods"}><b>compute-applicable-methods</b></ClLinks> (*generic-function* <ClLinks  term={"standard-generic-function"}><b>standard-generic-function</b></ClLinks>) 
+<DictionaryLink  term={"compute-applicable-methods"}><b>compute-applicable-methods</b></DictionaryLink> (*generic-function* <DictionaryLink  term={"standard-generic-function"}><b>standard-generic-function</b></DictionaryLink>) 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-Given a *generic-function* and a set of *function-arguments*, the function <ClLinks  term={"compute-applicable-methods"}><b>compute-applicable-methods</b></ClLinks> returns the set of <ClLinks  term={"method"}><i>methods</i></ClLinks> that are applicable for those arguments sorted according to precedence order. See Section 7.6.6 (Method Selection and Combination). 
+Given a *generic-function* and a set of *function-arguments*, the function <DictionaryLink  term={"compute-applicable-methods"}><b>compute-applicable-methods</b></DictionaryLink> returns the set of <ClLinks  term={"method"}><i>methods</i></ClLinks> that are applicable for those arguments sorted according to precedence order. See Section 7.6.6 (Method Selection and Combination). 
 
 
 
@@ -58,7 +58,7 @@ Given a *generic-function* and a set of *function-arguments*, the function <ClLi
 
 
 
-<ClLinks  term={"defmethod"}><b>defmethod</b></ClLinks> 
+<DictionaryLink  term={"defmethod"}><b>defmethod</b></DictionaryLink> 
 
 
 

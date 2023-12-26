@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink  term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The set of all <ClLinks  term={"object"}><i>objects</i></ClLinks>. The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of every <ClLinks  term={"type"}><i>type</i></ClLinks>, including itself. Every <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>. 
+The set of all <ClLinks  term={"object"}><i>objects</i></ClLinks>. The <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> is a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of every <ClLinks  term={"type"}><i>type</i></ClLinks>, including itself. Every <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. 
 
 
 
@@ -66,7 +66,7 @@ The symbol **satisfies** is not valid as a <GlossaryTerm styled={true} term={"ty
 
 
 
-<ClLinks  term={"member"}><b>member</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
+<DictionaryLink  term={"member"}><b>member</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -98,11 +98,11 @@ Combining.
 
 
 
-This denotes the set containing the named <ClLinks  term={"object"}><i>objects</i></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> is of this <ClLinks  term={"type"}><i>type</i></ClLinks> if and only if it is <ClLinks  term={"eql"}><b>eql</b></ClLinks> to one of the specified <ClLinks  term={"object"}><i>objects</i></ClLinks>. 
+This denotes the set containing the named <ClLinks  term={"object"}><i>objects</i></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> is of this <ClLinks  term={"type"}><i>type</i></ClLinks> if and only if it is <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> to one of the specified <ClLinks  term={"object"}><i>objects</i></ClLinks>. 
 
 
 
-The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> (member) and <ClLinks  term={"nil"}><b>nil</b></ClLinks> are equivalent. **\*** can be among the <ClLinks  term={"object"}><i>objects</i></ClLinks>, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The symbol <ClLinks  term={"member"}><b>member</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; and, specifically, it is not an abbreviation for either (member) or (member \*). 
+The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> (member) and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> are equivalent. **\*** can be among the <ClLinks  term={"object"}><i>objects</i></ClLinks>, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The symbol <DictionaryLink  term={"member"}><b>member</b></DictionaryLink> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; and, specifically, it is not an abbreviation for either (member) or (member \*). 
 
 
 
@@ -110,11 +110,11 @@ The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></
 
 
 
-the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"eql"}><b>eql</b></ClLinks> 
+the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"not"}><b>not</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
+<DictionaryLink  term={"not"}><b>not</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -158,11 +158,11 @@ The argument is required, and cannot be **\***.
 
 
 
-The symbol <ClLinks  term={"not"}><b>not</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
+The symbol <DictionaryLink  term={"not"}><b>not</b></DictionaryLink> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"and"}><b>and</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
+<DictionaryLink  term={"and"}><b>and</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -198,11 +198,11 @@ This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> o
 
 
 
-The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> (and) and <ClLinks  term={"t"}><b>t</b></ClLinks> are equivalent. The symbol <ClLinks  term={"and"}><b>and</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , and, specifically, it is not an abbreviation for (and). 
+The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> (and) and <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> are equivalent. The symbol <DictionaryLink  term={"and"}><b>and</b></DictionaryLink> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , and, specifically, it is not an abbreviation for (and). 
 
 
 
-<ClLinks  term={"or"}><b>or</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
+<DictionaryLink  term={"or"}><b>or</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -238,7 +238,7 @@ Combining.
 
 
 
-This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> determined by the union of the *typespecs*. For example, the <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"list"}><b>list</b></ClLinks> by definition is the same as (or null cons). Also, the value returned by <ClLinks  term={"position"}><b>position</b></ClLinks> is an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> (or null (integer 0 \*)); *i.e.*, either <ClLinks  term={"nil"}><b>nil</b></ClLinks> or a non-negative *integer* . 
+This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> determined by the union of the *typespecs*. For example, the <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"list"}><b>list</b></DictionaryLink> by definition is the same as (or null cons). Also, the value returned by <DictionaryLink  term={"position"}><b>position</b></DictionaryLink> is an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> (or null (integer 0 \*)); *i.e.*, either <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> or a non-negative *integer* . 
 
 
 
@@ -246,11 +246,11 @@ This denotes the set of all <ClLinks  term={"object"}><i>objects</i></ClLinks> o
 
 
 
-The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> (or) and <ClLinks  term={"nil"}><b>nil</b></ClLinks> are equivalent. The symbol <ClLinks  term={"or"}><b>or</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; and, specifically, it is not an abbreviation for (or). 
+The <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> (or) and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> are equivalent. The symbol <DictionaryLink  term={"or"}><b>or</b></DictionaryLink> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; and, specifically, it is not an abbreviation for (or). 
 
 
 
-<ClLinks  term={"values"}><b>values</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
+<DictionaryLink  term={"values"}><b>values</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -286,7 +286,7 @@ Specializing.
 
 
 
-This <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> can be used only as the *value-type* in a <ClLinks  term={"function"}><b>function</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> or a <ClLinks  term={"the"}><b>the</b></ClLinks> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>. It is used to specify individual <ClLinks  term={"type"}><i>types</i></ClLinks> when <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm> are involved. The **&amp;optional** and **&amp;rest** markers can appear in the *value-type* list; they indicate the parameter list of a <ClLinks  term={"function"}><i>function</i></ClLinks> that, when given to <ClLinks  term={"multiple-value-call"}><b>multiple-value-call</b></ClLinks> along with the values, would correctly receive those values. 
+This <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> can be used only as the *value-type* in a <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> or a <DictionaryLink  term={"the"}><b>the</b></DictionaryLink> <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm>. It is used to specify individual <ClLinks  term={"type"}><i>types</i></ClLinks> when <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm> are involved. The **&amp;optional** and **&amp;rest** markers can appear in the *value-type* list; they indicate the parameter list of a <ClLinks  term={"function"}><i>function</i></ClLinks> that, when given to <DictionaryLink  term={"multiple-value-call"}><b>multiple-value-call</b></DictionaryLink> along with the values, would correctly receive those values. 
 
 
 
@@ -294,7 +294,7 @@ The symbol **\*** may not be among the *value-types*.
 
 
 
-The symbol <ClLinks  term={"values"}><b>values</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; and, specifically, it is not an abbreviation for (values).  
+The symbol <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; and, specifically, it is not an abbreviation for (values).  
 
 
 
@@ -302,7 +302,7 @@ The symbol <ClLinks  term={"values"}><b>values</b></ClLinks> is not valid as a <
 
 
 
-<ClLinks  term={"eql"}><b>eql</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
+<DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -338,7 +338,7 @@ Represents the <ClLinks  term={"type"}><i>type</i></ClLinks> of all *x* for whic
 
 
 
-The argument <ClLinks  term={"object"}><i>object</i></ClLinks> is required. The <ClLinks  term={"object"}><i>object</i></ClLinks> can be **\***, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"eql"}><b>eql</b></ClLinks> is not valid as an <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifier</i></GlossaryTerm> . 
+The argument <ClLinks  term={"object"}><i>object</i></ClLinks> is required. The <ClLinks  term={"object"}><i>object</i></ClLinks> can be **\***, but if so it denotes itself (the symbol **\***) and does not represent an unspecified value. The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> is not valid as an <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifier</i></GlossaryTerm> . 
 
 
 

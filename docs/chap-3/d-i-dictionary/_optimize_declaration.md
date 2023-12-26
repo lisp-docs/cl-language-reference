@@ -34,7 +34,7 @@ Evaluation and
 
 
 
-<ClLinks  term={"optimize"}><b>optimize</b></ClLinks> 
+<DictionaryLink  term={"optimize"}><b>optimize</b></DictionaryLink> 
 
 
 
@@ -96,7 +96,7 @@ Note that <ClLinks  term={"code"}><i>code</i></ClLinks> which has the optimizati
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>, Section 3.3.4 (Declaration Scope) 
+<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink>, <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink>, Section 3.3.4 (Declaration Scope) 
 
 
 
@@ -104,7 +104,7 @@ Note that <ClLinks  term={"code"}><i>code</i></ClLinks> which has the optimizati
 
 
 
-An <ClLinks  term={"optimize"}><b>optimize</b></ClLinks> declaration never applies to either a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or a *function binding*. An **optimize 3–96** Programming Language—Common Lisp
+An <DictionaryLink  term={"optimize"}><b>optimize</b></DictionaryLink> declaration never applies to either a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or a *function binding*. An **optimize 3–96** Programming Language—Common Lisp
 
 
 

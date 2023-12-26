@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"class-name"}><b>class-name</b></ClLinks> *class ! name* 
+<DictionaryLink  term={"class-name"}><b>class-name</b></DictionaryLink> *class ! name* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"class-name"}><b>class-name</b></ClLinks> (<ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"class"}><b>class</b></ClLinks>) 
+<DictionaryLink  term={"class-name"}><b>class-name</b></DictionaryLink> (<ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"class"}><b>class</b></DictionaryLink>) 
 
 
 
@@ -42,7 +42,7 @@ Returns the <ClLinks  term={"name"}><i>name</i></ClLinks> of the given <ClLinks 
 
 
 
-<ClLinks  term={"find-class"}><b>find-class</b></ClLinks>, Section 4.3 (Classes) 
+<DictionaryLink  term={"find-class"}><b>find-class</b></DictionaryLink>, Section 4.3 (Classes) 
 
 
 
@@ -54,7 +54,7 @@ If *S* is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> such that *S* =(cl
 
 
 
-The name of an anonymous <ClLinks  term={"class"}><i>class</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+The name of an anonymous <ClLinks  term={"class"}><i>class</i></ClLinks> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -86,7 +86,7 @@ The name of an anonymous <ClLinks  term={"class"}><i>class</i></ClLinks> is <ClL
 
 
 
-**(setf class-name)** *new-value* (<ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"class"}><b>class</b></ClLinks>) 
+**(setf class-name)** *new-value* (<ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"class"}><b>class</b></DictionaryLink>) 
 
 
 
@@ -114,7 +114,7 @@ The generic function (setf class-name) sets the name of a <ClLinks  term={"class
 
 
 
-<ClLinks  term={"find-class"}><b>find-class</b></ClLinks>, <GlossaryTerm styled={true} term={"proper name"}><i>proper name</i></GlossaryTerm>, Section 4.3 (Classes) 
+<DictionaryLink  term={"find-class"}><b>find-class</b></DictionaryLink>, <GlossaryTerm styled={true} term={"proper name"}><i>proper name</i></GlossaryTerm>, Section 4.3 (Classes) 
 
 
 

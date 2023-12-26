@@ -19,19 +19,19 @@ sidebar_position: 100
 
 
 
-<ClLinks  term={"declaration"}><b>declaration</b></ClLinks> *n.* a <GlossaryTerm styled={true} term={"global declaration"}><i>global declaration</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"local declaration"}><i>local declaration</i></GlossaryTerm>. 
+<DictionaryLink  term={"declaration"}><b>declaration</b></DictionaryLink> *n.* a <GlossaryTerm styled={true} term={"global declaration"}><i>global declaration</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"local declaration"}><i>local declaration</i></GlossaryTerm>. 
 
 
 
-**declaration identifier** *n.* one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <ClLinks  term={"declaration"}><b>declaration</b></ClLinks>, <ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks>, <ClLinks  term={"ftype"}><b>ftype</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"ignore"}><b>ignore</b></ClLinks>, <ClLinks  term={"inline"}><b>inline</b></ClLinks>, <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>, <ClLinks  term={"optimize"}><b>optimize</b></ClLinks>, <ClLinks  term={"special"}><b>special</b></ClLinks>, or <ClLinks  term={"type"}><b>type</b></ClLinks>; or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"type"}><i>type</i></ClLinks>; or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which has been *declared* to be a <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifier</i></GlossaryTerm> by using a <ClLinks  term={"declaration"}><b>declaration</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. 
+**declaration identifier** *n.* one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <DictionaryLink  term={"declaration"}><b>declaration</b></DictionaryLink>, <DictionaryLink  term={"dynamic-extent"}><b>dynamic-extent</b></DictionaryLink>, <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink>, <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, <DictionaryLink  term={"ignore"}><b>ignore</b></DictionaryLink>, <DictionaryLink  term={"inline"}><b>inline</b></DictionaryLink>, <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink>, <DictionaryLink  term={"optimize"}><b>optimize</b></DictionaryLink>, <DictionaryLink  term={"special"}><b>special</b></DictionaryLink>, or <DictionaryLink  term={"type"}><b>type</b></DictionaryLink>; or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"type"}><i>type</i></ClLinks>; or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which has been *declared* to be a <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifier</i></GlossaryTerm> by using a <DictionaryLink  term={"declaration"}><b>declaration</b></DictionaryLink> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. 
 
 
 
-**declaration specifier** *n.* an <ClLinks  term={"expression"}><i>expression</i></ClLinks> that can appear at top level of a <ClLinks  term={"declare"}><b>declare</b></ClLinks> expression or a <ClLinks  term={"declaim"}><b>declaim</b></ClLinks> form, or as the argument to <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>, and which has a <ClLinks  term={"car"}><i>car</i></ClLinks> which is a <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifier</i></GlossaryTerm> , and which has a <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> that is data interpreted according to rules specific to the <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifier</i></GlossaryTerm> . 
+**declaration specifier** *n.* an <ClLinks  term={"expression"}><i>expression</i></ClLinks> that can appear at top level of a <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> expression or a <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink> form, or as the argument to <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink>, and which has a <ClLinks  term={"car"}><i>car</i></ClLinks> which is a <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifier</i></GlossaryTerm> , and which has a <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> that is data interpreted according to rules specific to the <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifier</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"declare"}><b>declare</b></ClLinks> *v.* to <ClLinks  term={"establish"}><i>establish</i></ClLinks> a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. See <ClLinks  term={"declare"}><b>declare</b></ClLinks>, <ClLinks  term={"declaim"}><b>declaim</b></ClLinks>, or <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>. 
+<DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink> *v.* to <ClLinks  term={"establish"}><i>establish</i></ClLinks> a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. See <DictionaryLink  term={"declare"}><b>declare</b></DictionaryLink>, <DictionaryLink  term={"declaim"}><b>declaim</b></DictionaryLink>, or <DictionaryLink  term={"proclaim"}><b>proclaim</b></DictionaryLink>. 
 
 
 
@@ -55,7 +55,7 @@ sidebar_position: 100
 
 
 
-**default method** *n.* a <ClLinks  term={"method"}><i>method</i></ClLinks> having no <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> other than the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>. Such a <ClLinks  term={"method"}><i>method</i></ClLinks> is always an <GlossaryTerm styled={true} term={"applicable method"}><i>applicable method</i></GlossaryTerm> but might be *shadowed* <sub>2</sub> by a more specific <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+**default method** *n.* a <ClLinks  term={"method"}><i>method</i></ClLinks> having no <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> other than the <ClLinks  term={"class"}><i>class</i></ClLinks> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink>. Such a <ClLinks  term={"method"}><i>method</i></ClLinks> is always an <GlossaryTerm styled={true} term={"applicable method"}><i>applicable method</i></GlossaryTerm> but might be *shadowed* <sub>2</sub> by a more specific <ClLinks  term={"method"}><i>method</i></ClLinks>. 
 
 
 
@@ -75,7 +75,7 @@ defaulted, used in the protocol for initializing and reinitializing <ClLinks  te
 
 
 
-by the :arguments option to <ClLinks  term={"define-method-combination"}><b>define-method-combination</b></ClLinks>. See Section 3.4.10 
+by the :arguments option to <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>. See Section 3.4.10 
 
 
 
@@ -83,7 +83,7 @@ by the :arguments option to <ClLinks  term={"define-method-combination"}><b>defi
 
 
 
-**define-modify-macro lambda list** *n.* a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> used by <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks>. See Section 3.4.9 (Define-modify-macro Lambda Lists). 
+**define-modify-macro lambda list** *n.* a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> used by <DictionaryLink  term={"define-modify-macro"}><b>define-modify-macro</b></DictionaryLink>. See Section 3.4.9 (Define-modify-macro Lambda Lists). 
 
 
 
@@ -91,7 +91,7 @@ by the :arguments option to <ClLinks  term={"define-method-combination"}><b>defi
 
 
 
-**defining form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> that has the side-effect of *establishing* a definition. “<ClLinks  term={"defun"}><b>defun</b></ClLinks> and <ClLinks  term={"defparameter"}><b>defparameter</b></ClLinks> are defining forms.” 
+**defining form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> that has the side-effect of *establishing* a definition. “<DictionaryLink  term={"defun"}><b>defun</b></DictionaryLink> and <DictionaryLink  term={"defparameter"}><b>defparameter</b></DictionaryLink> are defining forms.” 
 
 
 
@@ -99,7 +99,7 @@ by the :arguments option to <ClLinks  term={"define-method-combination"}><b>defi
 
 
 
-**deftype lambda list** *n.* a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> that is like a <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda list</i></GlossaryTerm> except that the default <ClLinks  term={"value"}><i>value</i></ClLinks> for unsupplied <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameters</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameters</i></GlossaryTerm> is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\*** (rather than <ClLinks  term={"nil"}><b>nil</b></ClLinks>). See Section 3.4.8 (Deftype Lambda Lists). 
+**deftype lambda list** *n.* a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> that is like a <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda list</i></GlossaryTerm> except that the default <ClLinks  term={"value"}><i>value</i></ClLinks> for unsupplied <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameters</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameters</i></GlossaryTerm> is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\*** (rather than <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>). See Section 3.4.8 (Deftype Lambda Lists). 
 
 
 
@@ -131,7 +131,7 @@ be represented instead as 1.0e-10 or 0.1e-9. By their nature, *denormalized floa
 
 
 
-another <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . <ClLinks  term={"deftype"}><b>deftype</b></ClLinks> defines <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm>, and there may be other 
+another <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . <DictionaryLink  term={"deftype"}><b>deftype</b></DictionaryLink> defines <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm>, and there may be other 
 
 
 
@@ -155,11 +155,11 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**destructuring lambda list** *n.* an <GlossaryTerm styled={true} term={"extended lambda list"}><i>extended lambda list</i></GlossaryTerm> used in <ClLinks  term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks> and nested within <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda lists</i></GlossaryTerm>. See Section 3.4.5 (Destructuring Lambda Lists). 
+**destructuring lambda list** *n.* an <GlossaryTerm styled={true} term={"extended lambda list"}><i>extended lambda list</i></GlossaryTerm> used in <DictionaryLink  term={"destructuring-bind"}><b>destructuring-bind</b></DictionaryLink> and nested within <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda lists</i></GlossaryTerm>. See Section 3.4.5 (Destructuring Lambda Lists). 
 
 
 
-**different** *adj.* not the <ClLinks  term={"same"}><i>same</i></ClLinks> “The strings "FOO" and "foo" are different under <ClLinks  term={"equal"}><b>equal</b></ClLinks> but not under <ClLinks  term={"equalp"}><b>equalp</b></ClLinks>.” 
+**different** *adj.* not the <ClLinks  term={"same"}><i>same</i></ClLinks> “The strings "FOO" and "foo" are different under <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> but not under <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>.” 
 
 
 
@@ -171,7 +171,7 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**direct instance** *n.* (of a *class C*) an <ClLinks  term={"object"}><i>object</i></ClLinks> whose <ClLinks  term={"class"}><i>class</i></ClLinks> is *C* itself, rather than some <ClLinks  term={"subclass"}><i>subclass</i></ClLinks> of *C*. “The function <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks> always returns a direct instance of the class which is (or is named by) its first argument.” 
+**direct instance** *n.* (of a *class C*) an <ClLinks  term={"object"}><i>object</i></ClLinks> whose <ClLinks  term={"class"}><i>class</i></ClLinks> is *C* itself, rather than some <ClLinks  term={"subclass"}><i>subclass</i></ClLinks> of *C*. “The function <DictionaryLink  term={"make-instance"}><b>make-instance</b></DictionaryLink> always returns a direct instance of the class which is (or is named by) its first argument.” 
 
 
 
@@ -203,7 +203,7 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**dispatching macro character** *n.* a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> that has an associated table that specifies the <ClLinks  term={"function"}><i>function</i></ClLinks> to be called for each <ClLinks  term={"character"}><i>character</i></ClLinks> that is seen following the <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> . See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks>. 
+**dispatching macro character** *n.* a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> that has an associated table that specifies the <ClLinks  term={"function"}><i>function</i></ClLinks> to be called for each <ClLinks  term={"character"}><i>character</i></ClLinks> that is seen following the <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> . See the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></DictionaryLink>. 
 
 
 
@@ -215,7 +215,7 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**documentation string** *n.* (in a defining <ClLinks  term={"form"}><i>form</i></ClLinks>) A *literal string* which because of the context in which it appears (rather than because of some intrinsically observable aspect of the <ClLinks  term={"string"}><i>string</i></ClLinks>) is taken as documentation. In some cases, the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> is saved in such a way that it can later be obtained by supplying either an <ClLinks  term={"object"}><i>object</i></ClLinks>, or by supplying a <ClLinks  term={"name"}><i>name</i></ClLinks> and a “kind” to the <ClLinks  term={"function"}><i>function</i></ClLinks> **documentation**. “The body of code in a <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> form can be preceded by a documentation string of kind <ClLinks  term={"function"}><b>function</b></ClLinks>.” 
+**documentation string** *n.* (in a defining <ClLinks  term={"form"}><i>form</i></ClLinks>) A *literal string* which because of the context in which it appears (rather than because of some intrinsically observable aspect of the <ClLinks  term={"string"}><i>string</i></ClLinks>) is taken as documentation. In some cases, the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> is saved in such a way that it can later be obtained by supplying either an <ClLinks  term={"object"}><i>object</i></ClLinks>, or by supplying a <ClLinks  term={"name"}><i>name</i></ClLinks> and a “kind” to the <ClLinks  term={"function"}><i>function</i></ClLinks> **documentation**. “The body of code in a <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> form can be preceded by a documentation string of kind <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>.” 
 
 
 
@@ -223,7 +223,7 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**dotted list** *n.* a <ClLinks  term={"list"}><i>list</i></ClLinks> which has a terminating <ClLinks  term={"atom"}><i>atom</i></ClLinks> that is not <ClLinks  term={"nil"}><b>nil</b></ClLinks>. (An <ClLinks  term={"atom"}><i>atom</i></ClLinks> by itself is not a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>, however.) 
+**dotted list** *n.* a <ClLinks  term={"list"}><i>list</i></ClLinks> which has a terminating <ClLinks  term={"atom"}><i>atom</i></ClLinks> that is not <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. (An <ClLinks  term={"atom"}><i>atom</i></ClLinks> by itself is not a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>, however.) 
 
 
 
@@ -231,7 +231,7 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**double float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>. 
+**double float** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"double-float"}><b>double-float</b></DictionaryLink>. 
 
 
 
@@ -247,7 +247,7 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-with <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. A <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> contains, among other things: <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> established by <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>, and <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> established by <ClLinks  term={"catch"}><b>catch</b></ClLinks>, <GlossaryTerm styled={true} term={"condition handler"}><i>condition handlers</i></GlossaryTerm>, and <ClLinks  term={"restart"}><i>restarts</i></ClLinks>. 
+with <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. A <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> contains, among other things: <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> established by <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink>, and <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> established by <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink>, <GlossaryTerm styled={true} term={"condition handler"}><i>condition handlers</i></GlossaryTerm>, and <ClLinks  term={"restart"}><i>restarts</i></ClLinks>. 
 
 
 
@@ -271,7 +271,7 @@ with <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></
 
 
 
-**dynamic variable** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> the <ClLinks  term={"binding"}><i>binding</i></ClLinks> for which is in the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>. See <ClLinks  term={"special"}><b>special</b></ClLinks>. 
+**dynamic variable** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> the <ClLinks  term={"binding"}><i>binding</i></ClLinks> for which is in the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>. See <DictionaryLink  term={"special"}><b>special</b></DictionaryLink>. 
 
 
 

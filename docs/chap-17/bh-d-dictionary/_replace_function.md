@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"replace"}><b>replace</b></ClLinks> *sequence-1 sequence-2* &amp;key *start1 end1 start2 end2 → sequence-1* 
+<DictionaryLink  term={"replace"}><b>replace</b></DictionaryLink> *sequence-1 sequence-2* &amp;key *start1 end1 start2 end2 → sequence-1* 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*start1*, *end1*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence-1*. The defaults for *start1* and *end1* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start1*, *end1*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence-1*. The defaults for *start1* and *end1* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
-*start2*, *end2*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence-2*. The defaults for *start2* and *end2* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start2*, *end2*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence-2*. The defaults for *start2* and *end2* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
@@ -58,7 +58,7 @@ Destructively modifies *sequence-1* by replacing the <ClLinks  term={"element"}>
 
 
 
-If *sequence-1* and *sequence-2* are the *same object* and the region being modified overlaps the region being copied from, then it is as if the entire source region were copied to another place and only then copied back into the target region. However, if *sequence-1* and *sequence-2* are not the same, but the region being modified overlaps the region being copied from (perhaps because of shared list structure or displaced <ClLinks  term={"array"}><i>arrays</i></ClLinks>), then after the <ClLinks  term={"replace"}><b>replace</b></ClLinks> operation the subsequence of *sequence-1* being modified will have unpredictable contents. It is an error if the elements of *sequence-2* are not of a <ClLinks  term={"type"}><i>type</i></ClLinks> that can be stored into *sequence-1*. 
+If *sequence-1* and *sequence-2* are the *same object* and the region being modified overlaps the region being copied from, then it is as if the entire source region were copied to another place and only then copied back into the target region. However, if *sequence-1* and *sequence-2* are not the same, but the region being modified overlaps the region being copied from (perhaps because of shared list structure or displaced <ClLinks  term={"array"}><i>arrays</i></ClLinks>), then after the <DictionaryLink  term={"replace"}><b>replace</b></DictionaryLink> operation the subsequence of *sequence-1* being modified will have unpredictable contents. It is an error if the elements of *sequence-2* are not of a <ClLinks  term={"type"}><i>type</i></ClLinks> that can be stored into *sequence-1*. 
 
 
 
@@ -83,7 +83,7 @@ The *sequence-1* is modified.
 
 
 
-<ClLinks  term={"fill"}><b>fill</b></ClLinks> 
+<DictionaryLink  term={"fill"}><b>fill</b></DictionaryLink> 
 
 
 
@@ -187,15 +187,15 @@ The *sequence-1* is modified.
 
 
 
-*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of *sequence*. The defaults for *start* and *end* are 0 and <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, respectively. 
 
 
 
-*count*—an *integer* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*count*—an *integer* or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. The default is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"key"}><i>key</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -219,7 +219,7 @@ If *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the resul
 
 
 
-*Count*, if supplied, limits the number of elements altered; if more than *count elements satisfy the test*, then of these <ClLinks  term={"element"}><i>elements</i></ClLinks> only the leftmost or rightmost, depending on *from-end*, are replaced, as many as specified by *count*. If *count* is supplied and negative, the behavior is as if zero had been supplied instead. If *count* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, all matching items are affected. 
+*Count*, if supplied, limits the number of elements altered; if more than *count elements satisfy the test*, then of these <ClLinks  term={"element"}><i>elements</i></ClLinks> only the leftmost or rightmost, depending on *from-end*, are replaced, as many as specified by *count*. If *count* is supplied and negative, the behavior is as if zero had been supplied instead. If *count* is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>, all matching items are affected. 
 
 
 
@@ -255,7 +255,7 @@ The result of all these functions is a *sequence* of the same <ClLinks  term={"t
 
 
 
-**nsubstitute** and **nsubstitute-if** are required to <ClLinks  term={"setf"}><b>setf</b></ClLinks> any <ClLinks  term={"car"}><b>car</b></ClLinks> (if *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>) or <ClLinks  term={"aref"}><b>aref</b></ClLinks> (if *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> ) of *sequence* that is required to be replaced with *newitem*. If *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, none of the <ClLinks  term={"cdr"}><i>cdrs</i></ClLinks> of the top-level <ClLinks  term={"list"}><i>list</i></ClLinks> can be modified. 
+**nsubstitute** and **nsubstitute-if** are required to <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> any <DictionaryLink  term={"car"}><b>car</b></DictionaryLink> (if *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>) or <DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink> (if *sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> ) of *sequence* that is required to be replaced with *newitem*. If *sequence* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, none of the <ClLinks  term={"cdr"}><i>cdrs</i></ClLinks> of the top-level <ClLinks  term={"list"}><i>list</i></ClLinks> can be modified. 
 
 
 
@@ -292,7 +292,7 @@ alpha-tester → "abz"
 
 
 
-Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
+Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if *sequence* is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -300,7 +300,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-<ClLinks  term={"subst"}><b>subst</b></ClLinks>, <ClLinks  term={"nsubst"}><b>nsubst</b></ClLinks>, Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effects) 
+<DictionaryLink  term={"subst"}><b>subst</b></DictionaryLink>, <DictionaryLink  term={"nsubst"}><b>nsubst</b></DictionaryLink>, Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effects) 
 
 
 

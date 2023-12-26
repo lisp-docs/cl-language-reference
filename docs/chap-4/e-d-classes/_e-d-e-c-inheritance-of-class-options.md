@@ -10,7 +10,7 @@ for a given initialization argument, the default initial value <ClLinks  term={"
 
 
 
-If a given :default-initargs class option specifies an initialization argument of the same <ClLinks  term={"name"}><i>name</i></ClLinks> more than once, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled.  
+If a given :default-initargs class option specifies an initialization argument of the same <ClLinks  term={"name"}><i>name</i></ClLinks> more than once, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> is signaled.  
 
 
 

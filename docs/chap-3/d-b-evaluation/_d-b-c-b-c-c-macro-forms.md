@@ -6,7 +6,7 @@ If the <ClLinks  term={"operator"}><i>operator</i></ClLinks> names a <ClLinks  t
 
 
 
-Specifically, a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> names a <ClLinks  term={"macro"}><i>macro</i></ClLinks> in a given <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> if <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> and that <ClLinks  term={"environment"}><i>environment</i></ClLinks>. The <ClLinks  term={"function"}><i>function</i></ClLinks> returned by <ClLinks  term={"macro-function"}><b>macro-function</b></ClLinks> is a <ClLinks  term={"function"}><i>function</i></ClLinks> of two arguments, called the expansion function. The expansion function is invoked by calling the <GlossaryTerm styled={true} term={"macroexpand hook"}><i>macroexpand hook</i></GlossaryTerm> with the expansion function as its first argument, the entire <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> as its  
+Specifically, a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> names a <ClLinks  term={"macro"}><i>macro</i></ClLinks> in a given <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> if <DictionaryLink  term={"macro-function"}><b>macro-function</b></DictionaryLink> is <ClLinks  term={"true"}><i>true</i></ClLinks> of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> and that <ClLinks  term={"environment"}><i>environment</i></ClLinks>. The <ClLinks  term={"function"}><i>function</i></ClLinks> returned by <DictionaryLink  term={"macro-function"}><b>macro-function</b></DictionaryLink> is a <ClLinks  term={"function"}><i>function</i></ClLinks> of two arguments, called the expansion function. The expansion function is invoked by calling the <GlossaryTerm styled={true} term={"macroexpand hook"}><i>macroexpand hook</i></GlossaryTerm> with the expansion function as its first argument, the entire <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> as its  
 
 
 
@@ -22,7 +22,7 @@ The consequences are undefined if a <GlossaryTerm styled={true} term={"macro fun
 
 
 
-A <GlossaryTerm styled={true} term={"macro name"}><i>macro name</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> , and cannot be used as the <ClLinks  term={"function"}><i>function</i></ClLinks> argument to <ClLinks  term={"function"}><i>functions</i></ClLinks> such as <ClLinks  term={"apply"}><b>apply</b></ClLinks>, <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, or <ClLinks  term={"map"}><b>map</b></ClLinks>. 
+A <GlossaryTerm styled={true} term={"macro name"}><i>macro name</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> , and cannot be used as the <ClLinks  term={"function"}><i>function</i></ClLinks> argument to <ClLinks  term={"function"}><i>functions</i></ClLinks> such as <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>, <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>, or <DictionaryLink  term={"map"}><b>map</b></DictionaryLink>. 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-The following situations involving <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"apply"}><b>apply</b></ClLinks> must be supported: 
+The following situations involving <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> must be supported: 
 
 
 
@@ -18,7 +18,7 @@ The following situations involving <ClLinks  term={"setf"}><b>setf</b></ClLinks>
 
 
 
-In all three cases, the <ClLinks  term={"element"}><i>element</i></ClLinks> of <ClLinks  term={"array"}><i>array</i></ClLinks> designated by the concatenation of *subscripts* and *more-subscripts* (*i.e.*, the same <ClLinks  term={"element"}><i>element</i></ClLinks> which would be <ClLinks  term={"read"}><i>read</i></ClLinks> by the call to <ClLinks  term={"apply"}><i>apply</i></ClLinks> if it were not part of a <ClLinks  term={"setf"}><b>setf</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>) is changed to have the <ClLinks  term={"value"}><i>value</i></ClLinks> given by *new-element*. For these usages, the function name (<ClLinks  term={"aref"}><b>aref</b></ClLinks>, <ClLinks  term={"bit"}><b>bit</b></ClLinks>, or <ClLinks  term={"sbit"}><b>sbit</b></ClLinks>) must refer to the global function definition, rather than a locally defined <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+In all three cases, the <ClLinks  term={"element"}><i>element</i></ClLinks> of <ClLinks  term={"array"}><i>array</i></ClLinks> designated by the concatenation of *subscripts* and *more-subscripts* (*i.e.*, the same <ClLinks  term={"element"}><i>element</i></ClLinks> which would be <ClLinks  term={"read"}><i>read</i></ClLinks> by the call to <ClLinks  term={"apply"}><i>apply</i></ClLinks> if it were not part of a <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> <ClLinks  term={"form"}><i>form</i></ClLinks>) is changed to have the <ClLinks  term={"value"}><i>value</i></ClLinks> given by *new-element*. For these usages, the function name (<DictionaryLink  term={"aref"}><b>aref</b></DictionaryLink>, <DictionaryLink  term={"bit"}><b>bit</b></DictionaryLink>, or <DictionaryLink  term={"sbit"}><b>sbit</b></DictionaryLink>) must refer to the global function definition, rather than a locally defined <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"copy-symbol"}><b>copy-symbol</b></ClLinks> <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> &amp;optional *copy-properties → new-symbol* 
+<DictionaryLink  term={"copy-symbol"}><b>copy-symbol</b></DictionaryLink> <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> &amp;optional *copy-properties → new-symbol* 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"copy-symbol"}><b>copy-symbol</b></ClLinks> returns a <ClLinks  term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*, the <ClLinks  term={"name"}><i>name</i></ClLinks> of which is <ClLinks  term={"string"}><b>string=</b></ClLinks> to and possibly the <ClLinks  term={"same"}><i>same</i></ClLinks> as the <ClLinks  term={"name"}><i>name</i></ClLinks> of the given <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+<DictionaryLink  term={"copy-symbol"}><b>copy-symbol</b></DictionaryLink> returns a <ClLinks  term={"fresh"}><i>fresh</i></ClLinks>, *uninterned symbol*, the <ClLinks  term={"name"}><i>name</i></ClLinks> of which is <ClLinks  term={"string"}><b>string=</b></ClLinks> to and possibly the <ClLinks  term={"same"}><i>same</i></ClLinks> as the <ClLinks  term={"name"}><i>name</i></ClLinks> of the given <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -69,7 +69,7 @@ If *copy-properties* is <ClLinks  term={"false"}><i>false</i></ClLinks>, the *ne
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> if <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is not a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -77,7 +77,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"make-symbol"}><b>make-symbol</b></ClLinks> 
+<DictionaryLink  term={"make-symbol"}><b>make-symbol</b></DictionaryLink> 
 
 
 

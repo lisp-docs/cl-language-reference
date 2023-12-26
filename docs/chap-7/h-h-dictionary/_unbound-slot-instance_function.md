@@ -6,7 +6,7 @@
 
 
 
-<ClLinks  term={"unbound-slot-instance"}><b>unbound-slot-instance</b></ClLinks> *condition ! instance* 
+<DictionaryLink  term={"unbound-slot-instance"}><b>unbound-slot-instance</b></DictionaryLink> *condition ! instance* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"unbound-slot"}><b>unbound-slot</b></ClLinks>. 
+<ClLinks  term={"condition"}><i>condition</i></ClLinks>—a <ClLinks  term={"condition"}><i>condition</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>. 
 
 
 
@@ -34,7 +34,7 @@ Returns the instance which had the unbound slot in the <ClLinks  term={"situatio
 
 
 
-<ClLinks  term={"cell-error-name"}><b>cell-error-name</b></ClLinks>, <ClLinks  term={"unbound-slot"}><b>unbound-slot</b></ClLinks>, Section 9.1 (Condition System Concepts) 
+<DictionaryLink  term={"cell-error-name"}><b>cell-error-name</b></DictionaryLink>, <DictionaryLink  term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>, Section 9.1 (Condition System Concepts) 
 
 
 

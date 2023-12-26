@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"*random-state*"}><b>*random-state*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink  term={"*random-state*"}><b>*random-state*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -22,7 +22,7 @@ a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></Glossar
 
 
 
-The <GlossaryTerm styled={true} term={"current random state"}><i>current random state</i></GlossaryTerm>, which is used, for example, by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"random"}><b>random</b></ClLinks> when a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> is not explicitly supplied. 
+The <GlossaryTerm styled={true} term={"current random state"}><i>current random state</i></GlossaryTerm>, which is used, for example, by the <ClLinks  term={"function"}><i>function</i></ClLinks> <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> when a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> is not explicitly supplied. 
 
 
 
@@ -63,7 +63,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-<ClLinks  term={"random"}><b>random</b></ClLinks>. 
+<DictionaryLink  term={"random"}><b>random</b></DictionaryLink>. 
 
 
 
@@ -71,7 +71,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-<ClLinks  term={"make-random-state"}><b>make-random-state</b></ClLinks>, <ClLinks  term={"random"}><b>random</b></ClLinks>, <ClLinks  term={"random-state"}><b>random-state</b></ClLinks> 
+<DictionaryLink  term={"make-random-state"}><b>make-random-state</b></DictionaryLink>, <DictionaryLink  term={"random"}><b>random</b></DictionaryLink>, <DictionaryLink  term={"random-state"}><b>random-state</b></DictionaryLink> 
 
 
 
@@ -79,7 +79,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-<ClLinks  term={"binding"}><i>Binding</i></ClLinks> <ClLinks  term={"random-state"}><b>\*random-state\*</b></ClLinks> to a different *random state object* correctly saves and restores the old *random state object*. 
+<ClLinks  term={"binding"}><i>Binding</i></ClLinks> <DictionaryLink  term={"random-state"}><b>\*random-state\*</b></DictionaryLink> to a different *random state object* correctly saves and restores the old *random state object*. 
 
 
 
