@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,12 +22,12 @@
 <p><span><b>trace</b></span> <em>{function-name}</em>* → trace-result</p>
 <p><span><b>untrace</b></span> <em>{function-name}</em>* → untrace-result</p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>function-name</em>—a <em>function name</em>.</p>
-<p><em>trace-result</em>—<span><i>implementation-dependent</i></span>, unless no <em>function-names</em> are supplied, in which case <em>trace-result</em> is a <span><i>list</i></span> of <em>function names</em>.</p>
+<p><em>function-name</em>—a <span><i>function name</i></span>.</p>
+<p><em>trace-result</em>—<span><i>implementation-dependent</i></span>, unless no <em>function-names</em> are supplied, in which case <em>trace-result</em> is a <span><i>list</i></span> of <span><i>function names</i></span>.</p>
 <p><em>untrace-result</em>—<span><i>implementation-dependent</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>trace</b></span> and <span><b>untrace</b></span> control the invocation of the trace facility.</p>
-<p>Invoking <span><b>trace</b></span> with one or more <em>function-names</em> causes the denoted <span><i>functions</i></span> to be “traced.” Whenever a traced <span><i>function</i></span> is invoked, information about the call, about the arguments passed, and about any eventually returned values is printed to <em>trace output</em>. If <span><b>trace</b></span> is used with no <em>function-names</em>, no tracing action is performed; instead, a list of the <span><i>functions</i></span> currently being traced is returned.</p>
+<p>Invoking <span><b>trace</b></span> with one or more <em>function-names</em> causes the denoted <span><i>functions</i></span> to be “traced.” Whenever a traced <span><i>function</i></span> is invoked, information about the call, about the arguments passed, and about any eventually returned values is printed to <span><i>trace output</i></span>. If <span><b>trace</b></span> is used with no <em>function-names</em>, no tracing action is performed; instead, a list of the <span><i>functions</i></span> currently being traced is returned.</p>
 <p>Invoking <span><b>untrace</b></span> with one or more function names causes those functions to be “untraced” (<em>i.e.</em>, no longer traced). If <span><b>untrace</b></span> is used with no <em>function-names</em>, all <span><i>functions</i></span> currently being traced are untraced.</p>
 <p>If a <span><i>function</i></span> to be traced has been open-coded (<em>e.g.</em>, because it was declared <span><b>inline</b></span>), a call to that <span><i>function</i></span> might not produce trace output.</p>
 <p><strong>Examples:</strong></p>

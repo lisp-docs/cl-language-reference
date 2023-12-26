@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,7 +21,7 @@
 <p><strong>Value Type:</strong></p>
 <p>a <em>bidirectional stream</em>.</p>
 <p><strong>Initial Value:</strong></p>
-<p><span><i>implementation-dependent</i></span>, but it must be an <em>open stream</em> that is not a <em>generalized synonym stream</em> to an <em>I/O customization variables</em> but that might be a <em>generalized synonym stream</em> to the <span><i>value</i></span> of some <em>I/O customization variable</em>.</p>
+<p><span><i>implementation-dependent</i></span>, but it must be an <em>open stream</em> that is not a <span><i>generalized synonym stream</i></span> to an <em>I/O customization variables</em> but that might be a <span><i>generalized synonym stream</i></span> to the <span><i>value</i></span> of some <em>I/O customization variable</em>.</p>
 <p><strong>Description:</strong></p>
 <p>The <span><i>value</i></span> of <span><b>*terminal-io*</b></span>, called <em>terminal I/O</em>, is ordinarily a <em>bidirectional stream</em> that connects to the user’s console. Typically, writing to this <span><i>stream</i></span> would cause the output to appear on a display screen, for example, and reading from the <span><i>stream</i></span> would accept input from a keyboard. It is intended that standard input functions such as <span><b>read</b></span> and <span><b>read-char</b></span>, when used with this <span><i>stream</i></span>, cause echoing of the input into the output side of the <span><i>stream</i></span>. The means by which this is accomplished are <span><i>implementation-dependent</i></span>.</p>
 <p>The effect of changing the <span><i>value</i></span> of <span><b>*terminal-io*</b></span>, either by <span><i>binding</i></span> or <em>assignment</em>, is <span><i>implementation-defined</i></span>.</p>

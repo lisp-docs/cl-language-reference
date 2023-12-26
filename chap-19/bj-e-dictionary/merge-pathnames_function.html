@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,10 +22,10 @@
 <p><span><b>merge-pathnames</b></span> <span><i>pathname</i></span> &amp;optional <em>default-pathname default-version</em></p>
 <p>→ merged-pathname</p>
 <p><strong>Arguments and Values:</strong></p>
-<p><span><i>pathname</i></span>—a <em>pathname designator</em> .</p>
-<p><em>default-pathname</em>—a <em>pathname designator</em> . The default is the <span><i>value</i></span> of</p>
+<p><span><i>pathname</i></span>—a <span><i>pathname designator</i></span> .</p>
+<p><em>default-pathname</em>—a <span><i>pathname designator</i></span> . The default is the <span><i>value</i></span> of</p>
 <p><span><b>*default-pathname-defaults*</b></span>.</p>
-<p><em>default-version</em>—a <em>valid pathname version</em>. The default is <!-- -->:newest<!-- -->.</p>
+<p><em>default-version</em>—a <span><i>valid pathname version</i></span>. The default is <!-- -->:newest<!-- -->.</p>
 <p><em>merged-pathname</em>—a <span><i>pathname</i></span>.</p>
 <span><b>merge-pathnames</b></span>
 <p><strong>Description:</strong></p>
@@ -35,8 +35,8 @@
 <p>If <span><i>pathname</i></span> explicitly specifies a host and not a device, and if the host component of <em>default-pathname</em> matches the host component of <span><i>pathname</i></span>, then the device is taken from the <em>default-pathname</em>; otherwise the device will be the default file device for that host. If <span><i>pathname</i></span> does not specify a host, device, directory, name, or type, each such component is copied from <em>default-pathname</em>. If <span><i>pathname</i></span> does not specify a name, then the version, if not provided, will come from <em>default-pathname</em>, just like the other components. If <span><i>pathname</i></span> does specify a name, then the version is not affected by <em>default-pathname</em>. If this process leaves the version missing, the <em>default-version</em> is used. If the host’s file name syntax provides a way to input a version without a name or type, the user can let the name and type default but supply a version different from the one in <em>default-pathname</em>.</p>
 <p>If <span><i>pathname</i></span> is a <span><i>stream</i></span>, <span><i>pathname</i></span> effectively becomes (pathname <span><i>pathname</i></span>). <span><b>merge-pathnames</b></span> can be used on either an open or a closed <span><i>stream</i></span>.</p>
 <p>If <span><i>pathname</i></span> is a <span><i>pathname</i></span> it represents the name used to open the file. This may be, but is not required to be, the actual name of the file.</p>
-<p><span><b>merge-pathnames</b></span> recognizes a <em>logical pathname namestring</em> when <em>default-pathname</em> is a <em>logical pathname</em>, or when the <span><i>namestring</i></span> begins with the name of a defined <em>logical host</em> followed by a <span><i>colon</i></span>. In the first of these two cases, the host portion of the <em>logical pathname namestring</em> and its following <span><i>colon</i></span> are optional.</p>
-<p><span><b>merge-pathnames</b></span> returns a <em>logical pathname</em> if and only if its first argument is a <em>logical pathname</em>, or its first argument is a <em>logical pathname namestring</em> with an explicit host, or its first argument does not specify a host and the <em>default-pathname</em> is a <em>logical pathname</em>.</p>
+<p><span><b>merge-pathnames</b></span> recognizes a <em>logical pathname namestring</em> when <em>default-pathname</em> is a <span><i>logical pathname</i></span>, or when the <span><i>namestring</i></span> begins with the name of a defined <span><i>logical host</i></span> followed by a <span><i>colon</i></span>. In the first of these two cases, the host portion of the <em>logical pathname namestring</em> and its following <span><i>colon</i></span> are optional.</p>
+<p><span><b>merge-pathnames</b></span> returns a <span><i>logical pathname</i></span> if and only if its first argument is a <span><i>logical pathname</i></span>, or its first argument is a <em>logical pathname namestring</em> with an explicit host, or its first argument does not specify a host and the <em>default-pathname</em> is a <span><i>logical pathname</i></span>.</p>
 <p><span><i>Pathname</i></span> merging treats a relative directory specially. If (pathname-directory <span><i>pathname</i></span>) is a <span><i>list</i></span> whose <span><i>car</i></span> is <!-- -->:relative<!-- -->, and (pathname-directory <em>default-pathname</em>) is a <span><i>list</i></span>, then the merged directory is the value of</p>
 <p>(append (pathname-directory <em>default-pathname</em>)</p>
 <p>(cdr ;remove <!-- -->:relative<!-- --> from the front</p>

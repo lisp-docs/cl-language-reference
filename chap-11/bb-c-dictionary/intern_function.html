@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,16 +22,16 @@
 <p><span><b>intern</b></span> <span><i>string</i></span> &amp;optional <em>package → symbol, status</em></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>string</i></span>—a <span><i>string</i></span>.</p>
-<p><span><i>package</i></span>—a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><span><i>package</i></span>—a <span><i>package designator</i></span> . The default is the <span><i>current package</i></span>.</p>
 <p><span><i>symbol</i></span>—a <span><i>symbol</i></span>.</p>
 <p><em>status</em>—one of <!-- -->:inherited<!-- -->, <!-- -->:external<!-- -->, <!-- -->:internal<!-- -->, or <span><b>nil</b></span>.</p>
 <p><strong>Description:</strong></p>
-<p><span><b>intern</b></span> enters a <span><i>symbol</i></span> named <span><i>string</i></span> into <span><i>package</i></span>. If a <span><i>symbol</i></span> whose name is the same as <span><i>string</i></span> is already <span><i>accessible</i></span> in <span><i>package</i></span>, it is returned. If no such <span><i>symbol</i></span> is <span><i>accessible</i></span> in <span><i>package</i></span>, a new <span><i>symbol</i></span> with the given name is created and entered into <span><i>package</i></span> as an <em>internal symbol</em>, or as an <em>external symbol</em> if the <span><i>package</i></span> is the KEYWORD <span><i>package</i></span>; <span><i>package</i></span> becomes the <em>home package</em> of the created <span><i>symbol</i></span>.</p>
-<p>The first value returned by <span><b>intern</b></span>, <span><i>symbol</i></span>, is the <span><i>symbol</i></span> that was found or created. The meaning of the <em>secondary value</em>, <em>status</em>, is as follows:</p>
+<p><span><b>intern</b></span> enters a <span><i>symbol</i></span> named <span><i>string</i></span> into <span><i>package</i></span>. If a <span><i>symbol</i></span> whose name is the same as <span><i>string</i></span> is already <span><i>accessible</i></span> in <span><i>package</i></span>, it is returned. If no such <span><i>symbol</i></span> is <span><i>accessible</i></span> in <span><i>package</i></span>, a new <span><i>symbol</i></span> with the given name is created and entered into <span><i>package</i></span> as an <span><i>internal symbol</i></span>, or as an <span><i>external symbol</i></span> if the <span><i>package</i></span> is the KEYWORD <span><i>package</i></span>; <span><i>package</i></span> becomes the <span><i>home package</i></span> of the created <span><i>symbol</i></span>.</p>
+<p>The first value returned by <span><b>intern</b></span>, <span><i>symbol</i></span>, is the <span><i>symbol</i></span> that was found or created. The meaning of the <span><i>secondary value</i></span>, <em>status</em>, is as follows:</p>
 <p>:internal</p>
-<p>The <span><i>symbol</i></span> was found and is <span><i>present</i></span> in <span><i>package</i></span> as an <em>internal symbol</em>.</p>
+<p>The <span><i>symbol</i></span> was found and is <span><i>present</i></span> in <span><i>package</i></span> as an <span><i>internal symbol</i></span>.</p>
 <p>:external</p>
-<p>The <span><i>symbol</i></span> was found and is <span><i>present</i></span> as an <em>external symbol</em>.</p>
+<p>The <span><i>symbol</i></span> was found and is <span><i>present</i></span> as an <span><i>external symbol</i></span>.</p>
 <p>:inherited</p>
 <p>The <span><i>symbol</i></span> was found and is inherited via <span><b>use-package</b></span> (which implies that the <span><i>symbol</i></span> is internal).</p>
 <span><b>nil</b></span>

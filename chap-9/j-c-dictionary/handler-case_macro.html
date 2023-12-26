@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -25,15 +25,15 @@
 <p><em>no-error-clause::</em>=(<!-- -->:no-error<!-- --> <em>lambda-list {declaration}</em>* <span><i>{form}</i></span>*)</p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>expression</i></span>—a <span><i>form</i></span>.</p>
-<p><em>typespec</em>—a <em>type specifier</em> .</p>
+<p><em>typespec</em>—a <span><i>type specifier</i></span> .</p>
 <span><b>handler-case</b></span>
 <p><em>var</em>—a <em>variable name</em>.</p>
-<p><em>lambda-list</em>—an <em>ordinary lambda list</em>.</p>
+<p><em>lambda-list</em>—an <span><i>ordinary lambda list</i></span>.</p>
 <p><span><i>declaration</i></span>—a <span><b>declare</b></span> <span><i>expression</i></span>; not evaluated.</p>
 <p><span><i>form</i></span>—a <span><i>form</i></span>.</p>
 <p><em>results</em>—In the normal situation, the values returned are those that result from the evaluation of <span><i>expression</i></span>; in the exceptional situation when control is transferred to a <em>clause</em>, the value of the last <span><i>form</i></span> in that <em>clause</em> is returned.</p>
 <p><strong>Description:</strong></p>
-<p><span><b>handler-case</b></span> executes <span><i>expression</i></span> in a <em>dynamic environment</em> where various handlers are active. Each <em>error-clause</em> specifies how to handle a <span><i>condition</i></span> matching the indicated <em>typespec</em>. A <em>no-error-clause</em> allows the specification of a particular action if control returns normally.</p>
+<p><span><b>handler-case</b></span> executes <span><i>expression</i></span> in a <span><i>dynamic environment</i></span> where various handlers are active. Each <em>error-clause</em> specifies how to handle a <span><i>condition</i></span> matching the indicated <em>typespec</em>. A <em>no-error-clause</em> allows the specification of a particular action if control returns normally.</p>
 <p>If a <span><i>condition</i></span> is signaled for which there is an appropriate <em>error-clause</em> during the execution of <span><i>expression</i></span> (<em>i.e.</em>, one for which (typep <span><i>condition</i></span> ’<em>typespec</em>) returns <span><i>true</i></span>) and if there is no intervening handler for a <span><i>condition</i></span> of that <span><i>type</i></span>, then control is transferred to the body of the relevant <em>error-clause</em>. In this case, the dynamic state is unwound appropriately (so that the handlers established around the <span><i>expression</i></span> are no longer active), and <em>var</em> is bound to the <span><i>condition</i></span> that had been signaled. If more than one case is provided, those cases are made accessible in parallel. That is, in</p>
 <p>(handler-case <span><i>form</i></span></p>
 <p>(<em>typespec1</em> (<em>var1</em>) <em>form1</em>)</p>

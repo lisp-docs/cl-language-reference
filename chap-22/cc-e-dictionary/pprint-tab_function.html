@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -26,7 +26,7 @@
 <p><em>colinc</em>—a non-negative <em>integer</em> .</p>
 <p><span><i>stream</i></span>—an <em>output stream designator</em> .</p>
 <p><strong>Description:</strong></p>
-<p>Specifies tabbing to <span><i>stream</i></span> as performed by the standard ~T format directive. If <span><i>stream</i></span> is a <em>pretty printing stream</em> and the <span><i>value</i></span> of <span><b>*print-pretty*</b></span> is <span><i>true</i></span>, tabbing is performed; otherwise, <span><b>pprint-tab</b></span> has no effect.</p>
+<p>Specifies tabbing to <span><i>stream</i></span> as performed by the standard ~T format directive. If <span><i>stream</i></span> is a <span><i>pretty printing stream</i></span> and the <span><i>value</i></span> of <span><b>*print-pretty*</b></span> is <span><i>true</i></span>, tabbing is performed; otherwise, <span><b>pprint-tab</b></span> has no effect.</p>
 <p>The arguments <em>colnum</em> and <em>colinc</em> correspond to the two <span><i>parameters</i></span> to ~T and are in terms of <span><i>ems</i></span>. The <em>kind</em> argument specifies the style of tabbing. It must be one of <!-- -->:line<!-- --> (tab as by ~T), <!-- -->:section<!-- --> (tab as by ~<!-- -->:T<!-- -->, but measuring horizontal positions relative to the start of the dynamically enclosing section), <!-- -->:line-relative<!-- --> (tab as by ~@T), or <!-- -->:section-relative<!-- --> (tab as by ~:@T, but measuring</p>
 <p>horizontal positions relative to the start of the dynamically enclosing section).</p>
 <p><strong>Exceptional Situations:</strong></p>

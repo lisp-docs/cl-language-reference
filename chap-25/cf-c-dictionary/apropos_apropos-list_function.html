@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,12 +22,12 @@
 <p><span><b>apropos</b></span> <span><i>string</i></span> &amp;optional <em>package → ⟨no values⟩</em></p>
 <p><span><b>apropos-list</b></span> <span><i>string</i></span> &amp;optional <em>package → symbols</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><span><i>string</i></span>—a <em>string designator</em> .</p>
-<p><span><i>package</i></span>—a <em>package designator</em> or <span><b>nil</b></span>. The default is <span><b>nil</b></span>.</p>
+<p><span><i>string</i></span>—a <span><i>string designator</i></span> .</p>
+<p><span><i>package</i></span>—a <span><i>package designator</i></span> or <span><b>nil</b></span>. The default is <span><b>nil</b></span>.</p>
 <p><span><i>symbols</i></span>—a <span><i>list</i></span> of <span><i>symbols</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p>These functions search for <em>interned symbols</em> whose <span><i>names</i></span> contain the substring <span><i>string</i></span>.</p>
-<p>For <span><b>apropos</b></span>, as each such <span><i>symbol</i></span> is found, its name is printed on <em>standard output</em>. In addition, if such a <span><i>symbol</i></span> is defined as a <span><i>function</i></span> or <em>dynamic variable</em>, information about those definitions might also be printed.</p>
+<p>For <span><b>apropos</b></span>, as each such <span><i>symbol</i></span> is found, its name is printed on <span><i>standard output</i></span>. In addition, if such a <span><i>symbol</i></span> is defined as a <span><i>function</i></span> or <span><i>dynamic variable</i></span>, information about those definitions might also be printed.</p>
 <p>For <span><b>apropos-list</b></span>, no output occurs as the search proceeds; instead a list of the matching <span><i>symbols</i></span> is returned when the search is complete.</p>
 <p>If <span><i>package</i></span> is <span><i>non-nil</i></span>, only the <em>symbols accessible</em> in that <span><i>package</i></span> are searched; otherwise all <em>symbols accessible</em> in any <span><i>package</i></span> are searched.</p>
 <p>Because a <span><i>symbol</i></span> might be available by way of more than one inheritance path, <span><b>apropos</b></span> might print information about the <em>same symbol</em> more than once, or <span><b>apropos-list</b></span> might return a <span><i>list</i></span> containing duplicate <span><i>symbols</i></span>.</p>

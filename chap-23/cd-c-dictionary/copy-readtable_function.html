@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,7 +21,7 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>copy-readtable</b></span> &amp;optional <em>from-readtable to-readtable → readtable</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>from-readtable</em>—a <em>readtable designator</em> . The default is the <em>current readtable</em>.</p>
+<p><em>from-readtable</em>—a <span><i>readtable designator</i></span> . The default is the <span><i>current readtable</i></span>.</p>
 <p><em>to-readtable</em>—a <span><i>readtable</i></span> or <span><b>nil</b></span>. The default is <span><b>nil</b></span>.</p>
 <p><span><i>readtable</i></span>—the <em>to-readtable</em> if it is <span><i>non-nil</i></span>, or else a <em>fresh readtable</em>.</p>
 <p><strong>Description:</strong></p>
@@ -34,7 +34,7 @@
 <p><span><b>readtable</b></span>, <span><b>*readtable*</b></span></p>
 <p><strong>Notes:</strong></p>
 <p>(setq *readtable* (copy-readtable nil))</p>
-<p>restores the input syntax to standard Common Lisp syntax, even if the <em>initial readtable</em> has been clobbered (assuming it is not so badly clobbered that you cannot type in the above expression).</p>
+<p>restores the input syntax to standard Common Lisp syntax, even if the <span><i>initial readtable</i></span> has been clobbered (assuming it is not so badly clobbered that you cannot type in the above expression).</p>
 <p>On the other hand,</p>
 <p>(setq *readtable* (copy-readtable))</p>
 <p>replaces the current <span><i>readtable</i></span> with a copy of itself. This is useful if you want to save a copy of a readtable for later use, protected from alteration in the meantime. It is also useful if you want to locally bind the readtable to a copy of itself, as in:</p>

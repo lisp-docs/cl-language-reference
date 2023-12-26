@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,13 +21,13 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>in-package</b></span> <em>name → package</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><span><i>name</i></span>—a <em>string designator</em> ; not evaluated.</p>
+<p><span><i>name</i></span>—a <span><i>string designator</i></span> ; not evaluated.</p>
 <p><span><i>package</i></span>—the <span><i>package</i></span> named by <span><i>name</i></span>.</p>
 <p><strong>Description:</strong></p>
-<p>Causes the the <span><i>package</i></span> named by <span><i>name</i></span> to become the <em>current package</em>—that is, the <span><i>value</i></span> of <span><b>*package*</b></span>. If no such <span><i>package</i></span> already exists, an error of <span><i>type</i></span> <span><b>package-error</b></span> is signaled.</p>
-<p>Everything <span><b>in-package</b></span> does is also performed at compile time if the call appears as a <em>top level form</em>.</p>
+<p>Causes the the <span><i>package</i></span> named by <span><i>name</i></span> to become the <span><i>current package</i></span>—that is, the <span><i>value</i></span> of <span><b>*package*</b></span>. If no such <span><i>package</i></span> already exists, an error of <span><i>type</i></span> <span><b>package-error</b></span> is signaled.</p>
+<p>Everything <span><b>in-package</b></span> does is also performed at compile time if the call appears as a <span><i>top level form</i></span>.</p>
 <p><strong>Side Effects:</strong></p>
-<p>The <span><i>variable</i></span> <span><b>*package*</b></span> is assigned. If the <span><b>in-package</b></span> <span><i>form</i></span> is a <em>top level form</em>, this assignment also occurs at compile time.</p>
+<p>The <span><i>variable</i></span> <span><b>*package*</b></span> is assigned. If the <span><b>in-package</b></span> <span><i>form</i></span> is a <span><i>top level form</i></span>, this assignment also occurs at compile time.</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>An error of <span><i>type</i></span> <span><b>package-error</b></span> is signaled if the specified <span><i>package</i></span> does not exist.</p>
 <p><strong>See Also:</strong></p>

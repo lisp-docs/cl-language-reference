@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -62,16 +62,16 @@
 <p>The <span><i>form</i></span> arguments specify the method body. The body of the <span><i>method</i></span> is enclosed in an <em>implicit block</em>. If <em>function-name</em> is a <span><i>symbol</i></span>, this block bears the same name as the <em>generic function</em>. If <em>function-name</em> is a <span><i>list</i></span> of the form (setf <span><i>symbol</i></span>), the name of the block is <span><i>symbol</i></span>.</p>
 <p>Implementations can extend <span><b>defgeneric</b></span> to include other options. It is required that an implementation signal an error if it observes an option that is not implemented locally.</p>
 <p><span><b>defgeneric</b></span> is not required to perform any compile-time side effects. In particular, the <span><i>methods</i></span> are not installed for invocation during compilation. An <span><i>implementation</i></span> may choose to store</p>
-<p>information about the <em>generic function</em> for the purposes of compile-time error-checking (such as checking the number of arguments on calls, or noting that a definition for the function name has been seen).</p>
+<p>information about the <span><i>generic function</i></span> for the purposes of compile-time error-checking (such as checking the number of arguments on calls, or noting that a definition for the function name has been seen).</p>
 <p><strong>Examples:</strong></p>
 <code class="language-lisp"></code>
 <p><strong>Exceptional Situations:</strong></p>
-<p>If <em>function-name</em> names an <em>ordinary function</em>, a <span><i>macro</i></span>, or a <em>special operator</em> , an error of <span><i>type</i></span> <span><b>program-error</b></span> is signaled.</p>
+<p>If <em>function-name</em> names an <span><i>ordinary function</i></span>, a <span><i>macro</i></span>, or a <span><i>special operator</i></span> , an error of <span><i>type</i></span> <span><b>program-error</b></span> is signaled.</p>
 <p>Each required argument, as specified in the <em>gf-lambda-list</em> argument, must be included exactly once as a <em>parameter-name</em>, or an error of <span><i>type</i></span> <span><b>program-error</b></span> is signaled.</p>
-<p>The <em>lambda list</em> of each <span><i>method</i></span> specified by a <em>method-description</em> must be congruent with the <em>lambda list</em> specified by the <em>gf-lambda-list</em> option, or an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
-<p>If a <span><b>defgeneric</b></span> form is evaluated and some <span><i>methods</i></span> for that <em>generic function</em> have <em>lambda lists</em> that are not congruent with that given in the <span><b>defgeneric</b></span> form, an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
+<p>The <span><i>lambda list</i></span> of each <span><i>method</i></span> specified by a <em>method-description</em> must be congruent with the <span><i>lambda list</i></span> specified by the <em>gf-lambda-list</em> option, or an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
+<p>If a <span><b>defgeneric</b></span> form is evaluated and some <span><i>methods</i></span> for that <span><i>generic function</i></span> have <span><i>lambda lists</i></span> that are not congruent with that given in the <span><b>defgeneric</b></span> form, an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
 <p>A given <em>option</em> may occur only once, or an error of <span><i>type</i></span> <span><b>program-error</b></span> is signaled.</p>
-<p>If <em>function-name</em> specifies an existing <em>generic function</em> that has a different value for the <!-- -->:generic-function-class<!-- --> argument and the new generic function <span><i>class</i></span> is compatible with the old, <span><b>change-class</b></span> is called to change the <span><i>class</i></span> of the <em>generic function</em>; otherwise an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
+<p>If <em>function-name</em> specifies an existing <span><i>generic function</i></span> that has a different value for the <!-- -->:generic-function-class<!-- --> argument and the new generic function <span><i>class</i></span> is compatible with the old, <span><b>change-class</b></span> is called to change the <span><i>class</i></span> of the <span><i>generic function</i></span>; otherwise an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
 <p>Implementations can extend <span><b>defgeneric</b></span> to include other options. It is required that an implementation signal an error of <span><i>type</i></span> <span><b>program-error</b></span> if it observes an option that is not implemented locally.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>defmethod</b></span>, <strong>documentation</strong>, <span><b>ensure-generic-function</b></span>, <span><b>generic-function</b></span>, Section 7.6.4 (Congruent Lambda-lists for all Methods of a Generic Function)</p>

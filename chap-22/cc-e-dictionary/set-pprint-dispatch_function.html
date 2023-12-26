@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,20 +21,20 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>set-pprint-dispatch</b></span> <em>type-specifier function</em> &amp;optional <em>priority table →</em> <span><b>nil</b></span></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>type-specifier</em>—a <em>type specifier</em> .</p>
-<p><span><i>function</i></span>—a <span><i>function</i></span>, a <em>function name</em>, or <span><b>nil</b></span>.</p>
+<p><em>type-specifier</em>—a <span><i>type specifier</i></span> .</p>
+<p><span><i>function</i></span>—a <span><i>function</i></span>, a <span><i>function name</i></span>, or <span><b>nil</b></span>.</p>
 <p><em>priority</em>—a <em>real</em>. The default is 0.</p>
-<p><em>table</em>—a <em>pprint dispatch table</em>. The default is the <span><i>value</i></span> of <span><b>*print-pprint-dispatch*</b></span>.</p>
+<p><em>table</em>—a <span><i>pprint dispatch table</i></span>. The default is the <span><i>value</i></span> of <span><b>*print-pprint-dispatch*</b></span>.</p>
 <p><strong>Description:</strong></p>
-<p>Installs an entry into the <em>pprint dispatch table</em> which is <em>table</em>.</p>
-<p><em>Type-specifier</em> is the <span><i>key</i></span> of the entry. The first action of <span><b>set-pprint-dispatch</b></span> is to remove any pre-existing entry associated with <em>type-specifier</em>. This guarantees that there will never be two entries associated with the same <em>type specifier</em> in a given <em>pprint dispatch table</em>. Equality of <em>type specifiers</em> is tested by <span><b>equal</b></span>.</p>
-<p>Two values are associated with each <em>type specifier</em> in a <em>pprint dispatch table</em>: a <span><i>function</i></span> and a <em>priority</em>. The <span><i>function</i></span> must accept two arguments: the <span><i>stream</i></span> to which output is sent and the <span><i>object</i></span> to be printed. The <span><i>function</i></span> should <em>pretty print</em> the <span><i>object</i></span> to the <span><i>stream</i></span>. The <span><i>function</i></span> can assume that object satisfies the <span><i>type</i></span> given by <em>type-specifier</em> . The <span><i>function</i></span> must obey <span><b>*print-readably*</b></span>. Any values returned by the <span><i>function</i></span> are ignored.</p>
+<p>Installs an entry into the <span><i>pprint dispatch table</i></span> which is <em>table</em>.</p>
+<p><em>Type-specifier</em> is the <span><i>key</i></span> of the entry. The first action of <span><b>set-pprint-dispatch</b></span> is to remove any pre-existing entry associated with <em>type-specifier</em>. This guarantees that there will never be two entries associated with the same <span><i>type specifier</i></span> in a given <span><i>pprint dispatch table</i></span>. Equality of <span><i>type specifiers</i></span> is tested by <span><b>equal</b></span>.</p>
+<p>Two values are associated with each <span><i>type specifier</i></span> in a <span><i>pprint dispatch table</i></span>: a <span><i>function</i></span> and a <em>priority</em>. The <span><i>function</i></span> must accept two arguments: the <span><i>stream</i></span> to which output is sent and the <span><i>object</i></span> to be printed. The <span><i>function</i></span> should <span><i>pretty print</i></span> the <span><i>object</i></span> to the <span><i>stream</i></span>. The <span><i>function</i></span> can assume that object satisfies the <span><i>type</i></span> given by <em>type-specifier</em> . The <span><i>function</i></span> must obey <span><b>*print-readably*</b></span>. Any values returned by the <span><i>function</i></span> are ignored.</p>
 <p><em>Priority</em> is a priority to resolve conflicts when an object matches more than one entry.</p>
 <p>It is permissible for <span><i>function</i></span> to be <span><b>nil</b></span>. In this situation, there will be no <em>type-specifier</em> entry in <em>table</em> after <span><b>set-pprint-dispatch</b></span> returns.</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>An error is signaled if <em>priority</em> is not a <em>real</em>.</p>
 <p><strong>Notes:</strong></p>
-<p>Since <em>pprint dispatch tables</em> are often used to control the pretty printing of Lisp code, it is common for the <em>type-specifier</em> to be an <span><i>expression</i></span> of the form</p>
+<p>Since <span><i>pprint dispatch tables</i></span> are often used to control the pretty printing of Lisp code, it is common for the <em>type-specifier</em> to be an <span><i>expression</i></span> of the form</p>
 <p>(cons <em>car-type cdr-type</em>)</p>
 <p>This signifies that the corresponding object must be a cons cell whose <span><i>car</i></span> matches the <em>type specifier car-type</em> and whose <span><i>cdr</i></span> matches the <em>type specifier cdr-type</em>. The <em>cdr-type</em> can be omitted in which case it defaults to <span><b>t</b></span>.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-reference-set-pprint-dispatch">Expanded Reference: set-pprint-dispatch<a href="#expanded-reference-set-pprint-dispatch" class="hash-link" aria-label="Direct link to Expanded Reference: set-pprint-dispatch" title="Direct link to Expanded Reference: set-pprint-dispatch">​</a></h2>

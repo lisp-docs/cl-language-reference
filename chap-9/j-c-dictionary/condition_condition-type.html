@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -24,7 +24,7 @@
 <p>All types of <span><i>conditions</i></span>, whether error or non-error, must inherit from this <span><i>type</i></span>.</p>
 <p>No additional <span><i>subtype</i></span> relationships among the specified <span><i>subtypes</i></span> of <span><i>type</i></span> <span><b>condition</b></span> are allowed, except when explicitly mentioned in the text; however implementations are permitted to introduce additional <span><i>types</i></span> and one of these <span><i>types</i></span> can be a <span><i>subtype</i></span> of any number of the <span><i>subtypes</i></span> of <span><i>type</i></span> <span><b>condition</b></span>.</p>
 <p>Whether a user-defined <em>condition type</em> has <span><i>slots</i></span> that are accessible by <em>with-slots</em> is <em>implementation dependent</em>. Furthermore, even in an <span><i>implementation</i></span> in which user-defined <em>condition types</em> would have <span><i>slots</i></span>, it is <span><i>implementation-dependent</i></span> whether any <em>condition types</em> defined in this document have such <span><i>slots</i></span> or, if they do, what their <span><i>names</i></span> might be; only the reader functions documented by this specification may be relied upon by portable code.</p>
-<p><em>Conforming code</em> must observe the following restrictions related to <span><i>conditions</i></span>:</p>
+<p><span><i>Conforming code</i></span> must observe the following restrictions related to <span><i>conditions</i></span>:</p>
 <p><em>•</em> <span><b>define-condition</b></span>, not <span><b>defclass</b></span>, must be used to define new <em>condition types</em>.</p>
 <p><em>•</em> <span><b>make-condition</b></span>, not <span><b>make-instance</b></span>, must be used to create <em>condition objects</em> explicitly.</p>
 <p><em>•</em> The <!-- -->:report<!-- --> option of <span><b>define-condition</b></span>, not <span><b>defmethod</b></span> for <span><b>print-object</b></span>, must be used to define a condition reporter.</p>

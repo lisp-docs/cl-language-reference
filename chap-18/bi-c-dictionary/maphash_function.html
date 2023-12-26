@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,7 +22,7 @@
 <p><span><b>maphash</b></span> <em>function hash-table →</em> <span><b>nil</b></span></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>function</i></span>—a <span><i>designator</i></span> for a <span><i>function</i></span> of two <span><i>arguments</i></span>, the <span><i>key</i></span> and the <span><i>value</i></span>.</p>
-<p><em>hash-table</em>—a <em>hash table</em>.</p>
+<p><em>hash-table</em>—a <span><i>hash table</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p>Iterates over all entries in the <em>hash-table</em>. For each entry, the <span><i>function</i></span> is called with two <span><i>arguments</i></span>–the <span><i>key</i></span> and the <span><i>value</i></span> of that entry.</p>
 <p>The consequences are unspecified if any attempt is made to add or remove an entry from the <em>hash-table</em> while a <span><b>maphash</b></span> is in progress, with two exceptions: the <span><i>function</i></span> can use can use <span><b>setf</b></span> of <span><b>gethash</b></span> to change the <span><i>value</i></span> part of the entry currently being processed, or it can use <span><b>remhash</b></span> to remove that entry.</p>

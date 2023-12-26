@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -19,16 +19,16 @@
 <!-- -->
 <p><em>∗<span><b><em>load-truename</em></b></span>∗ Variable</em></p>
 <p><strong>Value Type:</strong></p>
-<p>The <span><i>value</i></span> of <strong>*load-pathname*</strong> must always be a <span><i>pathname</i></span> or <span><b>nil</b></span>. The <span><i>value</i></span> of <span><b>*load-truename*</b></span> must always be a <em>physical pathname</em> or <span><b>nil</b></span>.</p>
+<p>The <span><i>value</i></span> of <strong>*load-pathname*</strong> must always be a <span><i>pathname</i></span> or <span><b>nil</b></span>. The <span><i>value</i></span> of <span><b>*load-truename*</b></span> must always be a <span><i>physical pathname</i></span> or <span><b>nil</b></span>.</p>
 <p><strong>Initial Value:</strong></p>
 <p><span><b>nil</b></span>.</p>
 <p><strong>Description:</strong></p>
 <p>During a call to <span><b>load</b></span>, <strong>*load-pathname*</strong> is <span><i>bound</i></span> to the <span><i>pathname</i></span> denoted by the the first argument to <span><b>load</b></span>, merged against the defaults; that is, it is <span><i>bound</i></span> to (pathname (merge-pathnames <em>filespec</em>)). During the same time interval, <span><b>*load-truename*</b></span> is <span><i>bound</i></span> to the <span><i>truename</i></span> of the <span><i>file</i></span> being loaded.</p>
 <p>At other times, the <span><i>value</i></span> of these <span><i>variables</i></span> is <span><b>nil</b></span>.</p>
-<p>If a <em>break loop</em> is entered while <span><b>load</b></span> is ongoing, it is <span><i>implementation-dependent</i></span> whether these <span><i>variables</i></span> retain the <span><i>values</i></span> they had just prior to entering the <em>break loop</em> or whether they are <span><i>bound</i></span> to <span><b>nil</b></span>.</p>
+<p>If a <span><i>break loop</i></span> is entered while <span><b>load</b></span> is ongoing, it is <span><i>implementation-dependent</i></span> whether these <span><i>variables</i></span> retain the <span><i>values</i></span> they had just prior to entering the <span><i>break loop</i></span> or whether they are <span><i>bound</i></span> to <span><b>nil</b></span>.</p>
 <p>The consequences are unspecified if an attempt is made to <span><i>assign</i></span> or <span><i>bind</i></span> either of these <span><i>variables</i></span>.</p>
 <p><strong>Affected By:</strong></p>
-<p>The <em>file system</em>.</p>
+<p>The <span><i>file system</i></span>.</p>
 <p><strong>See Also:</strong></p>
 <span><b>load</b></span>
 <p><em>∗</em><strong>compile-print</strong><em>∗</em>**,**</p>

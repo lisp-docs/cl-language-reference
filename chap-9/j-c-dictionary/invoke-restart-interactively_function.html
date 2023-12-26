@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,10 +21,10 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>invoke-restart-interactively</b></span> <em>restart → {result}</em>*</p>
 <p><strong>Arguments and Values:</strong></p>
-<p><span><i>restart</i></span>—a <em>restart designator</em> .</p>
+<p><span><i>restart</i></span>—a <span><i>restart designator</i></span> .</p>
 <p><em>results</em>—the <span><i>values</i></span> returned by the <span><i>function</i></span> associated with <span><i>restart</i></span>, if that <span><i>function</i></span> returns.</p>
 <p><strong>Description:</strong></p>
-<p><span><b>invoke-restart-interactively</b></span> calls the <span><i>function</i></span> associated with <span><i>restart</i></span>, prompting for any necessary arguments. If <span><i>restart</i></span> is a name, it must be valid in the current <em>dynamic environment</em>.</p>
+<p><span><b>invoke-restart-interactively</b></span> calls the <span><i>function</i></span> associated with <span><i>restart</i></span>, prompting for any necessary arguments. If <span><i>restart</i></span> is a name, it must be valid in the current <span><i>dynamic environment</i></span>.</p>
 <p><span><b>invoke-restart-interactively</b></span> prompts for arguments by executing the code provided in the <!-- -->:interactive<!-- --> keyword to <span><b>restart-case</b></span> or <!-- -->:interactive-function<!-- --> keyword to <span><b>restart-bind</b></span>.</p>
 <p>If no such options have been supplied in the corresponding <span><b>restart-bind</b></span> or <span><b>restart-case</b></span>, then the consequences are undefined if the <span><i>restart</i></span> takes required arguments. If the arguments are optional, an argument list of <span><b>nil</b></span> is used.</p>
 <p>Once the arguments have been determined, <span><b>invoke-restart-interactively</b></span> executes the following: (apply #’invoke-restart <em>restart arguments</em>)</p>

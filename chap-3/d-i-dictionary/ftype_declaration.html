@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,8 +21,8 @@
 <p><strong>Syntax:</strong></p>
 <p>(ftype <em>type {function-name}</em>*)</p>
 <p><strong>Arguments:</strong></p>
-<p><em>function-name</em>—a <em>function name</em>.</p>
-<p><span><i>type</i></span>—a <em>type specifier</em> .</p>
+<p><em>function-name</em>—a <span><i>function name</i></span>.</p>
+<p><span><i>type</i></span>—a <span><i>type specifier</i></span> .</p>
 <p><strong>Valid Context:</strong></p>
 <p><span><i>declaration</i></span> or <span><i>proclamation</i></span></p>
 <p><strong>Binding Types Aected:</strong></p>
@@ -32,8 +32,8 @@
 <p>(declare (ftype (function (integer list) t) ith)</p>
 <p>(ftype (function (number) float) sine cosine))</p>
 <p>If one of the <span><i>functions</i></span> mentioned has a lexically apparent local definition (as made by <span><b>flet</b></span> or <span><b>labels</b></span>), then the declaration applies to that local definition and not to the global function definition. <span><b>ftype</b></span> declarations never apply to variable <span><i>bindings</i></span> (see type).</p>
-<p>The lexically apparent bindings of <em>function-names</em> must not be <span><i>macro</i></span> definitions. (This is because <span><b>ftype</b></span> declares the functional definition of each <em>function name</em> to be of a particular subtype of <span><b>function</b></span>, and <span><i>macros</i></span> do not denote <span><i>functions</i></span>.)</p>
-<p><span><b>ftype</b></span> declarations can be <em>free declarations</em> or <em>bound declarations</em>. <span><b>ftype</b></span> declarations of functions that appear before the body of a <span><b>flet</b></span> or <span><b>labels</b></span> <span><i>form</i></span> that defines that function are <em>bound declarations</em>. Such declarations in other contexts are <em>free declarations</em>.</p>
+<p>The lexically apparent bindings of <em>function-names</em> must not be <span><i>macro</i></span> definitions. (This is because <span><b>ftype</b></span> declares the functional definition of each <span><i>function name</i></span> to be of a particular subtype of <span><b>function</b></span>, and <span><i>macros</i></span> do not denote <span><i>functions</i></span>.)</p>
+<p><span><b>ftype</b></span> declarations can be <span><i>free declarations</i></span> or <span><i>bound declarations</i></span>. <span><b>ftype</b></span> declarations of functions that appear before the body of a <span><b>flet</b></span> or <span><b>labels</b></span> <span><i>form</i></span> that defines that function are <span><i>bound declarations</i></span>. Such declarations in other contexts are <span><i>free declarations</i></span>.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>declare</b></span>, <span><b>declaim</b></span>, <span><b>proclaim</b></span></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-reference-ftype">Expanded Reference: ftype<a href="#expanded-reference-ftype" class="hash-link" aria-label="Direct link to Expanded Reference: ftype" title="Direct link to Expanded Reference: ftype">​</a></h2>

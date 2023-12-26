@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -23,9 +23,9 @@
 <p><strong>Arguments and Values:</strong></p>
 <p><em>test</em>—a <span><i>designator</i></span> for one of the <span><i>functions</i></span> <span><b>eq</b></span>, <span><b>eql</b></span>, <span><b>equal</b></span>, or <span><b>equalp</b></span>. The default is <span><b>eql</b></span>. <em>size</em>—a non-negative <em>integer</em> . The default is <span><i>implementation-dependent</i></span>.</p>
 <p><em>rehash-size</em>—a <em>real</em> of <span><i>type</i></span> (or (integer 1 *) (float (1.0) *)). The default is <em>implementation dependent</em>.</p>
-<p><em>rehash-threshold</em>—a <em>real</em> of <span><i>type</i></span> (real 0 1). The default is <span><i>implementation-dependent</i></span>. <em>hash-table</em>—a <em>hash table</em>.</p>
+<p><em>rehash-threshold</em>—a <em>real</em> of <span><i>type</i></span> (real 0 1). The default is <span><i>implementation-dependent</i></span>. <em>hash-table</em>—a <span><i>hash table</i></span>.</p>
 <p><strong>Description:</strong></p>
-<p>Creates and returns a new <em>hash table</em>.</p>
+<p>Creates and returns a new <span><i>hash table</i></span>.</p>
 <p><em>test</em> determines how <span><i>keys</i></span> are compared. An <span><i>object</i></span> is said to be present in the <em>hash-table</em> if that <span><i>object</i></span> is the <span><i>same</i></span> under the <em>test</em> as the <span><i>key</i></span> for some entry in the <em>hash-table</em>.</p>
 <p><em>size</em> is a hint to the <span><i>implementation</i></span> about how much initial space to allocate in the <em>hash-table</em>. This information, taken together with the <em>rehash-threshold</em>, controls the approximate number of entries which it should be possible to insert before the table has to grow. The actual size might be</p>
 <p>rounded up from <em>size</em> to the next ‘good’ size; for example, some <span><i>implementations</i></span> might round to the next prime number.</p>

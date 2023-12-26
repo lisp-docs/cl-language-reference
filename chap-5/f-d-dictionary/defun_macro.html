@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,21 +22,21 @@
 <p><span><b>defun</b></span> <em>function-name lambda-list</em> [[ <span><i>{declaration}</i></span>* <em>| documentation</em> ]] <span><i>{form}</i></span>*</p>
 <p>→ function-name</p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>function-name</em>—a <em>function name</em>.</p>
-<p><em>lambda-list</em>—an <em>ordinary lambda list</em>.</p>
+<p><em>function-name</em>—a <span><i>function name</i></span>.</p>
+<p><em>lambda-list</em>—an <span><i>ordinary lambda list</i></span>.</p>
 <p><span><i>declaration</i></span>—a <span><b>declare</b></span> <span><i>expression</i></span>; not evaluated.</p>
 <p><em>documentation</em>—a <span><i>string</i></span>; not evaluated.</p>
-<p><span><i>forms</i></span>—an <em>implicit progn</em>.</p>
-<p><em>block-name</em>—the <em>function block name</em> of the <em>function-name</em>.</p>
+<p><span><i>forms</i></span>—an <span><i>implicit progn</i></span>.</p>
+<p><em>block-name</em>—the <span><i>function block name</i></span> of the <em>function-name</em>.</p>
 <p><strong>Description:</strong></p>
-<p>Defines a new <span><i>function</i></span> named <em>function-name</em> in the <em>global environment</em>. The body of the <span><i>function</i></span> defined by <span><b>defun</b></span> consists of <span><i>forms</i></span>; they are executed as an <em>implicit progn</em> when the <span><i>function</i></span> is called. <span><b>defun</b></span> can be used to define a new <span><i>function</i></span>, to install a corrected version of an incorrect definition, to redefine an already-defined <span><i>function</i></span>, or to redefine a <span><i>macro</i></span> as a <span><i>function</i></span>.</p>
+<p>Defines a new <span><i>function</i></span> named <em>function-name</em> in the <span><i>global environment</i></span>. The body of the <span><i>function</i></span> defined by <span><b>defun</b></span> consists of <span><i>forms</i></span>; they are executed as an <span><i>implicit progn</i></span> when the <span><i>function</i></span> is called. <span><b>defun</b></span> can be used to define a new <span><i>function</i></span>, to install a corrected version of an incorrect definition, to redefine an already-defined <span><i>function</i></span>, or to redefine a <span><i>macro</i></span> as a <span><i>function</i></span>.</p>
 <p><span><b>defun</b></span> implicitly puts a <span><b>block</b></span> named <em>block-name</em> around the body <span><i>forms</i></span> (but not the <span><i>forms</i></span> in the <em>lambda-list</em>) of the <span><i>function</i></span> defined.</p>
-<p><em>Documentation</em> is attached as a <em>documentation string</em> to <span><i>name</i></span> (as kind <span><b>function</b></span>) and to the <em>function object</em>.</p>
-<p>Evaluating <span><b>defun</b></span> causes <em>function-name</em> to be a global name for the <span><i>function</i></span> specified by the <em>lambda expression</em></p>
+<p><em>Documentation</em> is attached as a <span><i>documentation string</i></span> to <span><i>name</i></span> (as kind <span><b>function</b></span>) and to the <em>function object</em>.</p>
+<p>Evaluating <span><b>defun</b></span> causes <em>function-name</em> to be a global name for the <span><i>function</i></span> specified by the <span><i>lambda expression</i></span></p>
 <p>(lambda <em>lambda-list</em></p>
 <p>[[ <span><i>{declaration}</i></span>* <em>| documentation</em> ]]</p>
 <p>(block <em>block-name {form}</em>*))</p>
-<p>processed in the <em>lexical environment</em> in which <span><b>defun</b></span> was executed.</p>
+<p>processed in the <span><i>lexical environment</i></span> in which <span><b>defun</b></span> was executed.</p>
 <p>Data and Control</p>
 <span><b>defun</b></span>
 <p>(None of the arguments are evaluated at macro expansion time.)</p>

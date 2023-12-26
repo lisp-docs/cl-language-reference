@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,16 +22,16 @@
 <p><span><b>find-symbol</b></span> <span><i>string</i></span> &amp;optional <em>package → symbol, status</em></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>string</i></span>—a <span><i>string</i></span>.</p>
-<p><span><i>package</i></span>—a <em>package designator</em> . The default is the <em>current package</em>.</p>
+<p><span><i>package</i></span>—a <span><i>package designator</i></span> . The default is the <span><i>current package</i></span>.</p>
 <p><span><i>symbol</i></span>—a <span><i>symbol</i></span> accessible in the <span><i>package</i></span>, or <span><b>nil</b></span>.</p>
 <p><em>status</em>—one of <!-- -->:inherited<!-- -->, <!-- -->:external<!-- -->, <!-- -->:internal<!-- -->, or <span><b>nil</b></span>.</p>
 <span><b>find-symbol</b></span>
 <p><strong>Description:</strong></p>
 <p><span><b>find-symbol</b></span> locates a <span><i>symbol</i></span> whose <span><i>name</i></span> is <span><i>string</i></span> in a <span><i>package</i></span>. If a <span><i>symbol</i></span> named <span><i>string</i></span> is found in <span><i>package</i></span>, directly or by inheritance, the <span><i>symbol</i></span> found is returned as the first value; the second value is as follows:</p>
 <p>:internal</p>
-<p>If the <span><i>symbol</i></span> is <span><i>present</i></span> in <span><i>package</i></span> as an <em>internal symbol</em>.</p>
+<p>If the <span><i>symbol</i></span> is <span><i>present</i></span> in <span><i>package</i></span> as an <span><i>internal symbol</i></span>.</p>
 <p>:external</p>
-<p>If the <span><i>symbol</i></span> is <span><i>present</i></span> in <span><i>package</i></span> as an <em>external symbol</em>.</p>
+<p>If the <span><i>symbol</i></span> is <span><i>present</i></span> in <span><i>package</i></span> as an <span><i>external symbol</i></span>.</p>
 <p>:inherited</p>
 <p>If the <span><i>symbol</i></span> is inherited by <span><i>package</i></span> through <span><b>use-package</b></span>, but is not <span><i>present</i></span> in <span><i>package</i></span>. If no such <span><i>symbol</i></span> is <span><i>accessible</i></span> in <span><i>package</i></span>, both values are <span><b>nil</b></span>.</p>
 <p><strong>Examples:</strong></p>

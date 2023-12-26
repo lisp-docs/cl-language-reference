@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -34,15 +34,15 @@
 <p>The <span><i>function</i></span> <span><b>ensure-generic-function</b></span> is used to define a globally named <em>generic function</em> with no <span><i>methods</i></span> or to specify or modify options and declarations that pertain to a globally named <em>generic function</em> as a whole.</p>
 <p>If <em>function-name</em> is not <span><i>fbound</i></span> in the <em>global environment</em>, a new <em>generic function</em> is created. If (fdefinition <em>function-name</em>) is an <em>ordinary function</em>, a <span><i>macro</i></span>, or a <em>special operator</em> , an error is signaled.</p>
 <p>If <em>function-name</em> is a <span><i>list</i></span>, it must be of the form (setf <span><i>symbol</i></span>). If <em>function-name</em> specifies a <em>generic function</em> that has a different value for any of the following arguments, the <em>generic function</em> is modified to have the new value: <!-- -->:argument-precedence-order<!-- -->, <!-- -->:declare<!-- -->, <!-- -->:documentation<!-- -->, <!-- -->:method-combination<!-- -->.</p>
-<p>If <em>function-name</em> specifies a <em>generic function</em> that has a different value for the <!-- -->:lambda-list<!-- --> argument, and the new value is congruent with the <em>lambda lists</em> of all existing <span><i>methods</i></span> or there are no <span><i>methods</i></span>, the value is changed; otherwise an error is signaled.</p>
-<p>If <em>function-name</em> specifies a <em>generic function</em> that has a different value for the <!-- -->:generic-function-class<!-- --> argument and if the new generic function class is compatible with the old, <span><b>change-class</b></span> is called to change the <span><i>class</i></span> of the <em>generic function</em>; otherwise an error is signaled.</p>
-<p>If <em>function-name</em> specifies a <em>generic function</em> that has a different value for the <!-- -->:method-class<!-- --> argument, the value is changed, but any existing <span><i>methods</i></span> are not changed.</p>
+<p>If <em>function-name</em> specifies a <span><i>generic function</i></span> that has a different value for the <!-- -->:lambda-list<!-- --> argument, and the new value is congruent with the <span><i>lambda lists</i></span> of all existing <span><i>methods</i></span> or there are no <span><i>methods</i></span>, the value is changed; otherwise an error is signaled.</p>
+<p>If <em>function-name</em> specifies a <span><i>generic function</i></span> that has a different value for the <!-- -->:generic-function-class<!-- --> argument and if the new generic function class is compatible with the old, <span><b>change-class</b></span> is called to change the <span><i>class</i></span> of the <span><i>generic function</i></span>; otherwise an error is signaled.</p>
+<p>If <em>function-name</em> specifies a <span><i>generic function</i></span> that has a different value for the <!-- -->:method-class<!-- --> argument, the value is changed, but any existing <span><i>methods</i></span> are not changed.</p>
 <p><strong>Affected By:</strong></p>
 <p>Existing function binding of <em>function-name</em>.</p>
 <p><strong>Exceptional Situations:</strong></p>
-<p>If (fdefinition <em>function-name</em>) is an <em>ordinary function</em>, a <span><i>macro</i></span>, or a <em>special operator</em> , an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
-<p>If <em>function-name</em> specifies a <em>generic function</em> that has a different value for the <!-- -->:lambda-list<!-- --> argument, and the new value is not congruent with the <em>lambda list</em> of any existing <span><i>method</i></span>, an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
-<p>If <em>function-name</em> specifies a <em>generic function</em> that has a different value for the <!-- -->:generic-function-class<!-- --> argument and if the new generic function class not is compatible with the old, an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
+<p>If (fdefinition <em>function-name</em>) is an <span><i>ordinary function</i></span>, a <span><i>macro</i></span>, or a <span><i>special operator</i></span> , an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
+<p>If <em>function-name</em> specifies a <span><i>generic function</i></span> that has a different value for the <!-- -->:lambda-list<!-- --> argument, and the new value is not congruent with the <span><i>lambda list</i></span> of any existing <span><i>method</i></span>, an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
+<p>If <em>function-name</em> specifies a <span><i>generic function</i></span> that has a different value for the <!-- -->:generic-function-class<!-- --> argument and if the new generic function class not is compatible with the old, an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
 <p><strong>See Also:</strong></p>
 <span><b>defgeneric</b></span>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-reference-ensure-generic-function">Expanded Reference: ensure-generic-function<a href="#expanded-reference-ensure-generic-function" class="hash-link" aria-label="Direct link to Expanded Reference: ensure-generic-function" title="Direct link to Expanded Reference: ensure-generic-function">​</a></h2>

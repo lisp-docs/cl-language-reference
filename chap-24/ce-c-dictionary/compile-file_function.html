@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -23,39 +23,39 @@
 <p><em>print external-format</em></p>
 <p><em>→ output-truename, warnings-p, failure-p</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>input-file</em>—a <em>pathname designator</em> . (Default fillers for unspecified components are taken from <span><b>*default-pathname-defaults*</b></span>.)</p>
-<p><em>output-file</em>—a <em>pathname designator</em> . The default is <span><i>implementation-defined</i></span>.</p>
-<p><em>verbose</em>—a <em>generalized boolean</em>. The default is the <span><i>value</i></span> of <span><b>*compile-verbose*</b></span>.</p>
-<p><em>print</em>—a <em>generalized boolean</em>. The default is the <span><i>value</i></span> of <strong>*compile-print*</strong>.</p>
-<p><em>external-format</em>—an <em>external file format designator</em> . The default is <!-- -->:default<!-- -->.</p>
+<p><em>input-file</em>—a <span><i>pathname designator</i></span> . (Default fillers for unspecified components are taken from <span><b>*default-pathname-defaults*</b></span>.)</p>
+<p><em>output-file</em>—a <span><i>pathname designator</i></span> . The default is <span><i>implementation-defined</i></span>.</p>
+<p><em>verbose</em>—a <span><i>generalized boolean</i></span>. The default is the <span><i>value</i></span> of <span><b>*compile-verbose*</b></span>.</p>
+<p><em>print</em>—a <span><i>generalized boolean</i></span>. The default is the <span><i>value</i></span> of <strong>*compile-print*</strong>.</p>
+<p><em>external-format</em>—an <span><i>external file format designator</i></span> . The default is <!-- -->:default<!-- -->.</p>
 <p><em>output-truename</em>—a <span><i>pathname</i></span> (the <span><b>truename</b></span> of the output <span><i>file</i></span>), or <span><b>nil</b></span>.</p>
-<p><em>warnings-p</em>—a <em>generalized boolean</em>.</p>
-<p><em>failure-p</em>—a <em>generalized boolean</em>.</p>
+<p><em>warnings-p</em>—a <span><i>generalized boolean</i></span>.</p>
+<p><em>failure-p</em>—a <span><i>generalized boolean</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>compile-file</b></span> transforms the contents of the file specified by <em>input-file</em> into <span><i>implementation-dependent</i></span> binary data which are placed in the file specified by <em>output-file</em>.</p>
-<p>The <span><i>file</i></span> to which <em>input-file</em> refers should be a <em>source file</em>. <em>output-file</em> can be used to specify an output <span><i>pathname</i></span>; the actual <span><i>pathname</i></span> of the <em>compiled file</em> to which <em>compiled code</em> will be output is computed as if by calling <span><b>compile-file-pathname</b></span>.</p>
-<p>If <em>input-file</em> or <em>output-file</em> is a <em>logical pathname</em>, it is translated into a <em>physical pathname</em> as if by calling <span><b>translate-logical-pathname</b></span>.</p>
-<p>If <em>verbose</em> is <span><i>true</i></span>, <span><b>compile-file</b></span> prints a message in the form of a comment (<em>i.e.</em>, with a leading <span><i>semicolon</i></span>) to <em>standard output</em> indicating what <span><i>file</i></span> is being <em>compiled</em> and other useful information. If <em>verbose</em> is <span><i>false</i></span>, <span><b>compile-file</b></span> does not print this information.</p>
-<p>If <em>print</em> is <span><i>true</i></span>, information about <em>top level forms</em> in the file being compiled is printed to <em>standard output</em>. Exactly what is printed is <span><i>implementation-dependent</i></span>, but nevertheless some information is printed. If <em>print</em> is <span><b>nil</b></span>, no information is printed.</p>
-<p>The <em>external-format</em> specifies the <em>external file format</em> to be used when opening the <span><i>file</i></span>; see the System</p>
+<p>The <span><i>file</i></span> to which <em>input-file</em> refers should be a <span><i>source file</i></span>. <em>output-file</em> can be used to specify an output <span><i>pathname</i></span>; the actual <span><i>pathname</i></span> of the <span><i>compiled file</i></span> to which <span><i>compiled code</i></span> will be output is computed as if by calling <span><b>compile-file-pathname</b></span>.</p>
+<p>If <em>input-file</em> or <em>output-file</em> is a <span><i>logical pathname</i></span>, it is translated into a <span><i>physical pathname</i></span> as if by calling <span><b>translate-logical-pathname</b></span>.</p>
+<p>If <em>verbose</em> is <span><i>true</i></span>, <span><b>compile-file</b></span> prints a message in the form of a comment (<em>i.e.</em>, with a leading <span><i>semicolon</i></span>) to <span><i>standard output</i></span> indicating what <span><i>file</i></span> is being <em>compiled</em> and other useful information. If <em>verbose</em> is <span><i>false</i></span>, <span><b>compile-file</b></span> does not print this information.</p>
+<p>If <em>print</em> is <span><i>true</i></span>, information about <span><i>top level forms</i></span> in the file being compiled is printed to <span><i>standard output</i></span>. Exactly what is printed is <span><i>implementation-dependent</i></span>, but nevertheless some information is printed. If <em>print</em> is <span><b>nil</b></span>, no information is printed.</p>
+<p>The <em>external-format</em> specifies the <span><i>external file format</i></span> to be used when opening the <span><i>file</i></span>; see the System</p>
 <span><b>compile-file</b></span>
-<p><span><i>function</i></span> <span><b>open</b></span>. <span><b>compile-file</b></span> and <span><b>load</b></span> must cooperate in such a way that the resulting <em>compiled file</em> can be <em>loaded</em> without specifying an <em>external file format</em> anew; see the <span><i>function</i></span> <span><b>load</b></span>.</p>
+<p><span><i>function</i></span> <span><b>open</b></span>. <span><b>compile-file</b></span> and <span><b>load</b></span> must cooperate in such a way that the resulting <span><i>compiled file</i></span> can be <em>loaded</em> without specifying an <span><i>external file format</i></span> anew; see the <span><i>function</i></span> <span><b>load</b></span>.</p>
 <p><span><b>compile-file</b></span> binds <span><b>*readtable*</b></span> and <span><b>*package*</b></span> to the values they held before processing the file.</p>
 <p><span><b>*compile-file-truename*</b></span> is bound by <span><b>compile-file</b></span> to hold the <span><i>truename</i></span> of the <span><i>pathname</i></span> of the file being compiled.</p>
 <p><span><b>*compile-file-pathname*</b></span> is bound by <span><b>compile-file</b></span> to hold a <span><i>pathname</i></span> denoted by the first argu ment to <span><b>compile-file</b></span>, merged against the defaults; that is, (pathname (merge-pathnames <em>input-file</em>)).</p>
-<p>The compiled <span><i>functions</i></span> contained in the <em>compiled file</em> become available for use when the <em>compiled file</em> is <em>loaded</em> into Lisp. Any function definition that is processed by the compiler, including #’(lambda ...) forms and local function definitions made by <span><b>flet</b></span>, <span><b>labels</b></span> and <span><b>defun</b></span> forms, result in an <span><i>object</i></span> of <span><i>type</i></span> <span><b>compiled-function</b></span>.</p>
-<p>The <em>primary value</em> returned by <span><b>compile-file</b></span>, <em>output-truename</em>, is the <span><b>truename</b></span> of the output file, or <span><b>nil</b></span> if the file could not be created.</p>
-<p>The <em>secondary value</em>, <em>warnings-p</em>, is <span><i>false</i></span> if no <span><i>conditions</i></span> of <span><i>type</i></span> <span><b>error</b></span> or <span><b>warning</b></span> were detected by the compiler, and <span><i>true</i></span> otherwise.</p>
-<p>The <em>tertiary value</em>, <em>failure-p</em>, is <span><i>false</i></span> if no <span><i>conditions</i></span> of <span><i>type</i></span> <span><b>error</b></span> or <span><b>warning</b></span> (other than <span><b>style-warning</b></span>) were detected by the compiler, and <span><i>true</i></span> otherwise.</p>
-<p>For general information about how <span><i>files</i></span> are processed by the <em>file compiler</em> , see Section 3.2.3 (File Compilation).</p>
-<p><span><i>Programs</i></span> to be compiled by the <em>file compiler</em> must only contain <em>externalizable objects</em>; for details on such <span><i>objects</i></span>, see Section 3.2.4 (Literal Objects in Compiled Files). For information on how to extend the set of <em>externalizable objects</em>, see the <span><i>function</i></span> <span><b>make-load-form</b></span> and Section 3.2.4.4 (Additional Constraints on Externalizable Objects).</p>
+<p>The compiled <span><i>functions</i></span> contained in the <span><i>compiled file</i></span> become available for use when the <span><i>compiled file</i></span> is <em>loaded</em> into Lisp. Any function definition that is processed by the compiler, including #’(lambda ...) forms and local function definitions made by <span><b>flet</b></span>, <span><b>labels</b></span> and <span><b>defun</b></span> forms, result in an <span><i>object</i></span> of <span><i>type</i></span> <span><b>compiled-function</b></span>.</p>
+<p>The <span><i>primary value</i></span> returned by <span><b>compile-file</b></span>, <em>output-truename</em>, is the <span><b>truename</b></span> of the output file, or <span><b>nil</b></span> if the file could not be created.</p>
+<p>The <span><i>secondary value</i></span>, <em>warnings-p</em>, is <span><i>false</i></span> if no <span><i>conditions</i></span> of <span><i>type</i></span> <span><b>error</b></span> or <span><b>warning</b></span> were detected by the compiler, and <span><i>true</i></span> otherwise.</p>
+<p>The <span><i>tertiary value</i></span>, <em>failure-p</em>, is <span><i>false</i></span> if no <span><i>conditions</i></span> of <span><i>type</i></span> <span><b>error</b></span> or <span><b>warning</b></span> (other than <span><b>style-warning</b></span>) were detected by the compiler, and <span><i>true</i></span> otherwise.</p>
+<p>For general information about how <span><i>files</i></span> are processed by the <span><i>file compiler</i></span> , see Section 3.2.3 (File Compilation).</p>
+<p><span><i>Programs</i></span> to be compiled by the <span><i>file compiler</i></span> must only contain <span><i>externalizable objects</i></span>; for details on such <span><i>objects</i></span>, see Section 3.2.4 (Literal Objects in Compiled Files). For information on how to extend the set of <span><i>externalizable objects</i></span>, see the <span><i>function</i></span> <span><b>make-load-form</b></span> and Section 3.2.4.4 (Additional Constraints on Externalizable Objects).</p>
 <p><strong>Affected By:</strong></p>
 <p><strong>*error-output*</strong>, <strong>*standard-output*</strong>, <span><b>*compile-verbose*</b></span>, <strong>*compile-print*</strong></p>
 <p>The computer’s file system.</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>For information about errors detected during the compilation process, see Section 3.2.5 (Exceptional Situations in the Compiler).</p>
 <p>An error of <span><i>type</i></span> <span><b>file-error</b></span> might be signaled if (wild-pathname-p <em>input-file</em>) returns true.</p>
-<p>If either the attempt to open the <em>source file</em> for input or the attempt to open the <em>compiled file</em> for output fails, an error of <span><i>type</i></span> <span><b>file-error</b></span> is signaled.</p>
+<p>If either the attempt to open the <span><i>source file</i></span> for input or the attempt to open the <span><i>compiled file</i></span> for output fails, an error of <span><i>type</i></span> <span><b>file-error</b></span> is signaled.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>compile</b></span>, <span><b>declare</b></span>, <span><b>eval-when</b></span>, <span><b>pathname</b></span>, <span><b>logical-pathname</b></span>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames)</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-reference-compile-file">Expanded Reference: compile-file<a href="#expanded-reference-compile-file" class="hash-link" aria-label="Direct link to Expanded Reference: compile-file" title="Direct link to Expanded Reference: compile-file">​</a></h2>

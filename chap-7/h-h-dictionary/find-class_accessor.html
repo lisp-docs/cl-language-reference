@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -23,14 +23,13 @@
 <p><strong>(setf (find-class</strong> <em>symbol</em> &amp;optional <em>errorp environment</em>**)** <em>new-class</em>**)**</p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>symbol</i></span>—a <span><i>symbol</i></span>.</p>
-<p><em>errorp</em>—a <em>generalized boolean</em>. The default is <span><i>true</i></span>.</p>
-<p><span><i>environment</i></span> – same as the <strong>&amp;environment</strong> argument to macro expansion functions and is used to distinguish between compile-time and run-time environments. The <strong>&amp;environment</strong> argument has <em>dynamic extent</em>; the consequences are undefined if the <strong>&amp;environment</strong> argument is referred to outside the <em>dynamic extent</em> of the macro expansion function.</p>
+<p><em>errorp</em>—a <span><i>generalized boolean</i></span>. The default is <span><i>true</i></span>.</p>
+<p><span><i>environment</i></span> – same as the <strong>&amp;environment</strong> argument to macro expansion functions and is used to distinguish between compile-time and run-time environments. The <strong>&amp;environment</strong> argument has <span><i>dynamic extent</i></span>; the consequences are undefined if the <strong>&amp;environment</strong> argument is referred to outside the <span><i>dynamic extent</i></span> of the macro expansion function.</p>
 <p><span><i>class</i></span>—a <em>class object</em>, or <span><b>nil</b></span>.</p>
 <p><strong>Description:</strong></p>
 <p>Returns the <em>class object</em> named by the <span><i>symbol</i></span> in the <span><i>environment</i></span>. If there is no such <span><i>class</i></span>, <span><b>nil</b></span> is returned if <em>errorp</em> is <span><i>false</i></span>; otherwise, if <em>errorp</em> is <span><i>true</i></span>, an error is signaled.</p>
-<p>The <span><i>class</i></span> associated with a particular <span><i>symbol</i></span> can be changed by using <span><b>setf</b></span> with <span><b>find-class</b></span>; or, if the new <span><i>class</i></span> given to <span><b>setf</b></span> is <span><b>nil</b></span>, the <span><i>class</i></span> association is removed (but the <em>class object</em> itself is not affected). The results are undefined if the user attempts to change or remove the <span><i>class</i></span> associated</p>
-<p>with a <span><i>symbol</i></span> that is defined as a <em>type specifier</em> in this standard. See Section 4.3.7 (Integrating Types and Classes).</p>
-<p>When using <span><b>setf</b></span> of <span><b>find-class</b></span>, any <em>errorp</em> argument is <em>evaluated</em> for effect, but any <span><i>values</i></span> it returns are ignored; the <em>errorp parameter</em> is permitted primarily so that the <em>environment parameter</em> can be used.</p>
+<p>The <span><i>class</i></span> associated with a particular <span><i>symbol</i></span> can be changed by using <span><b>setf</b></span> with <span><b>find-class</b></span>; or, if the new <span><i>class</i></span> given to <span><b>setf</b></span> is <span><b>nil</b></span>, the <span><i>class</i></span> association is removed (but the <em>class object</em> itself is not affected). The results are undefined if the user attempts to change or remove the <span><i>class</i></span> associated with a <span><i>symbol</i></span> that is defined as a <span><i>type specifier</i></span> in this standard. See Section 4.3.7 (Integrating Types and Classes).</p>
+<p>When using <span><b>setf</b></span> of <span><b>find-class</b></span>, any <em>errorp</em> argument is <em>evaluated</em> for effect, but any <span><i>values</i></span> it returns are ignored; the <em>errorp parameter</em> is permitted primarily so that the <span><i>environment parameter</i></span> can be used.</p>
 <p>The <span><i>environment</i></span> might be used to distinguish between a compile-time and a run-time environment.</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>If there is no such <span><i>class</i></span> and <em>errorp</em> is <span><i>true</i></span>, <span><b>find-class</b></span> signals an error of <span><i>type</i></span> <span><b>error</b></span>.</p>

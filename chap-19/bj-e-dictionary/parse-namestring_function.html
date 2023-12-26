@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,30 +21,30 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>parse-namestring</b></span> <em>thing</em> &amp;optional <em>host default-pathname</em> &amp;key <em>start end junk-allowed → pathname, position</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>thing</em>—a <span><i>string</i></span>, a <span><i>pathname</i></span>, or a <em>stream associated with a file</em>.</p>
-<p><em>host</em>—a <em>valid pathname host</em>, a <em>logical host</em>, or <span><b>nil</b></span>.</p>
-<p><em>default-pathname</em>—a <em>pathname designator</em> . The default is the <span><i>value</i></span> of</p>
+<p><em>thing</em>—a <span><i>string</i></span>, a <span><i>pathname</i></span>, or a <span><i>stream associated with a file</i></span>.</p>
+<p><em>host</em>—a <span><i>valid pathname host</i></span>, a <span><i>logical host</i></span>, or <span><b>nil</b></span>.</p>
+<p><em>default-pathname</em>—a <span><i>pathname designator</i></span> . The default is the <span><i>value</i></span> of</p>
 <p><span><b>*default-pathname-defaults*</b></span>.</p>
 <span><b>parse-namestring</b></span>
-<p><em>start</em>, <em>end</em>—<em>bounding index designators</em> of <em>thing</em>. The defaults for <em>start</em> and <em>end</em> are 0 and <span><b>nil</b></span>, respectively.</p>
-<p><em>junk-allowed</em>—a <em>generalized boolean</em>. The default is <span><i>false</i></span>.</p>
+<p><em>start</em>, <em>end</em>—<span><i>bounding index designators</i></span> of <em>thing</em>. The defaults for <em>start</em> and <em>end</em> are 0 and <span><b>nil</b></span>, respectively.</p>
+<p><em>junk-allowed</em>—a <span><i>generalized boolean</i></span>. The default is <span><i>false</i></span>.</p>
 <p><span><i>pathname</i></span>—a <span><i>pathname</i></span>, or <span><b>nil</b></span>.</p>
-<p><em>position</em>—a <em>bounding index designator</em> for <em>thing</em>.</p>
+<p><em>position</em>—a <span><i>bounding index designator</i></span> for <em>thing</em>.</p>
 <p><strong>Description:</strong></p>
 <p>Converts <em>thing</em> into a <span><i>pathname</i></span>.</p>
 <p>The <em>host</em> supplies a host name with respect to which the parsing occurs.</p>
-<p>If <em>thing</em> is a <em>stream associated with a file</em>, processing proceeds as if the <span><i>pathname</i></span> used to open that <span><i>file</i></span> had been supplied instead.</p>
+<p>If <em>thing</em> is a <span><i>stream associated with a file</i></span>, processing proceeds as if the <span><i>pathname</i></span> used to open that <span><i>file</i></span> had been supplied instead.</p>
 <p>If <em>thing</em> is a <span><i>pathname</i></span>, the <em>host</em> and the host component of <em>thing</em> are compared. If they match, two values are immediately returned: <em>thing</em> and <em>start</em>; otherwise (if they do not match), an error is signaled.</p>
 <p>Otherwise (if <em>thing</em> is a <span><i>string</i></span>), <span><b>parse-namestring</b></span> parses the name of a <span><i>file</i></span> within the substring of <em>thing</em> bounded by <em>start</em> and <em>end</em>.</p>
 <p>If <em>thing</em> is a <span><i>string</i></span> then the substring of <em>thing bounded</em> by <em>start</em> and <em>end</em> is parsed into a <span><i>pathname</i></span> as follows:</p>
-<p><em>•</em> If <em>host</em> is a <em>logical host</em> then <em>thing</em> is parsed as a <em>logical pathname namestring</em> on the <em>host</em>.</p>
+<p><em>•</em> If <em>host</em> is a <span><i>logical host</i></span> then <em>thing</em> is parsed as a <em>logical pathname namestring</em> on the <em>host</em>.</p>
 <p><em>•</em> If <em>host</em> is <span><b>nil</b></span> and <em>thing</em> is a syntactically valid <em>logical pathname namestring</em> containing an explicit host, then it is parsed as a <em>logical pathname namestring</em>.</p>
-<p><em>•</em> If <em>host</em> is <span><b>nil</b></span>, <em>default-pathname</em> is a <em>logical pathname</em>, and <em>thing</em> is a syntactically valid <em>logical pathname namestring</em> without an explicit host, then it is parsed as a <em>logical pathname namestring</em> on the host that is the host component of <em>default-pathname</em>.</p>
+<p><em>•</em> If <em>host</em> is <span><b>nil</b></span>, <em>default-pathname</em> is a <span><i>logical pathname</i></span>, and <em>thing</em> is a syntactically valid <em>logical pathname namestring</em> without an explicit host, then it is parsed as a <em>logical pathname namestring</em> on the host that is the host component of <em>default-pathname</em>.</p>
 <p><em>•</em> Otherwise, the parsing of <em>thing</em> is <span><i>implementation-defined</i></span>.</p>
-<p>In the first of these cases, the host portion of the <em>logical pathname</em> namestring and its following <span><i>colon</i></span> are optional.</p>
+<p>In the first of these cases, the host portion of the <span><i>logical pathname</i></span> namestring and its following <span><i>colon</i></span> are optional.</p>
 <p>If the host portion of the namestring and <em>host</em> are both present and do not match, an error is signaled.</p>
-<p>If <em>junk-allowed</em> is <span><i>true</i></span>, then the <em>primary value</em> is the <span><i>pathname</i></span> parsed or, if no syntactically correct <span><i>pathname</i></span> was seen, <span><b>nil</b></span>. If <em>junk-allowed</em> is <span><i>false</i></span>, then the entire substring is scanned, and the <em>primary value</em> is the <span><i>pathname</i></span> parsed.</p>
-<p>In either case, the <em>secondary value</em> is the index into <em>thing</em> of the delimiter that terminated the</p>
+<p>If <em>junk-allowed</em> is <span><i>true</i></span>, then the <span><i>primary value</i></span> is the <span><i>pathname</i></span> parsed or, if no syntactically correct <span><i>pathname</i></span> was seen, <span><b>nil</b></span>. If <em>junk-allowed</em> is <span><i>false</i></span>, then the entire substring is scanned, and the <span><i>primary value</i></span> is the <span><i>pathname</i></span> parsed.</p>
+<p>In either case, the <span><i>secondary value</i></span> is the index into <em>thing</em> of the delimiter that terminated the</p>
 <p>parse, or the index beyond the substring if the parse terminated at the end of the substring (as will always be the case if <em>junk-allowed</em> is <span><i>false</i></span>).</p>
 <p>Parsing a <em>null string</em> always succeeds, producing a <span><i>pathname</i></span> with all components (except the host) equal to <span><b>nil</b></span>.</p>
 <p>If <em>thing</em> contains an explicit host name and no explicit device name, then it is <em>implementation defined</em> whether <span><b>parse-namestring</b></span> will supply the standard default device for that host as the device component of the resulting <span><i>pathname</i></span>.</p>
@@ -53,7 +53,7 @@
 <p><strong>Exceptional Situations:</strong></p>
 <p>If <em>junk-allowed</em> is <span><i>false</i></span>, an error of <span><i>type</i></span> <span><b>parse-error</b></span> is signaled if <em>thing</em> does not consist entirely of the representation of a <span><i>pathname</i></span>, possibly surrounded on either side by <span><i>whitespace</i></span><sub>1</sub> characters if that is appropriate to the cultural conventions of the implementation.</p>
 <p>If <em>host</em> is supplied and not <span><b>nil</b></span>, and <em>thing</em> contains a manifest host name, an error of <span><i>type</i></span> <span><b>error</b></span> is signaled if the hosts do not match.</p>
-<p>If <em>thing</em> is a <em>logical pathname</em> namestring and if the host portion of the namestring and <em>host</em> are both present and do not match, an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
+<p>If <em>thing</em> is a <span><i>logical pathname</i></span> namestring and if the host portion of the namestring and <em>host</em> are both present and do not match, an error of <span><i>type</i></span> <span><b>error</b></span> is signaled.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>pathname</b></span>, <span><b>logical-pathname</b></span>, Section 20.1 (File System Concepts), Section 19.2.2.2.3 (<!-- -->:UNSPE<!-- --> CIFIC as a Component Value), Section 19.1.2 (Pathnames as Filenames)</p>
 <span><b>wild-pathname-p</b></span>

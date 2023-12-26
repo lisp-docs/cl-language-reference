@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,7 +21,7 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>cerror</b></span> <em>continue-format-control datum</em> &amp;rest <em>arguments →</em> <span><b>nil</b></span></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>Continue-format-control</em>—a <em>format control</em>.</p>
+<p><em>Continue-format-control</em>—a <span><i>format control</i></span>.</p>
 <p><em>datum</em>, <span><i>arguments</i></span>—<span><i>designators</i></span> for a <span><i>condition</i></span> of default type <span><b>simple-error</b></span>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>cerror</b></span> effectively invokes <span><b>error</b></span> on the <span><i>condition</i></span> named by <em>datum</em>. As with any function that implicitly calls <span><b>error</b></span>, if the <span><i>condition</i></span> is not handled, (invoke-debugger <span><i>condition</i></span>) is executed. While signaling is going on, and while in the debugger if it is reached, it is possible to continue code execution (<em>i.e.</em>, to return from <span><b>cerror</b></span>) using the <strong>continue</strong> <span><i>restart</i></span>.</p>
@@ -34,7 +34,7 @@
 <p><strong>See Also:</strong></p>
 <p><span><b>error</b></span>, <span><b>format</b></span>, <span><b>handler-bind</b></span>, <span><b>*break-on-signals*</b></span>, <span><b>simple-type-error</b></span></p>
 <p><strong>Notes:</strong></p>
-<p>If <em>datum</em> is a <em>condition type</em> rather than a <span><i>string</i></span>, the <span><b>format</b></span> directive ~* may be especially useful in the <em>continue-format-control</em> in order to ignore the <span><i>keywords</i></span> in the <em>initialization argument list</em>. For example:</p>
+<p>If <em>datum</em> is a <em>condition type</em> rather than a <span><i>string</i></span>, the <span><b>format</b></span> directive ~* may be especially useful in the <em>continue-format-control</em> in order to ignore the <span><i>keywords</i></span> in the <span><i>initialization argument list</i></span>. For example:</p>
 <p>(cerror &quot;enter a new value to replace ~*~s&quot;</p>
 <p>’not-a-number</p>
 <p>:argument<!-- --> a)</p>

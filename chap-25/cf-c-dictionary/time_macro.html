@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -25,7 +25,7 @@
 <p><em>results</em>—the <span><i>values</i></span> returned by the <span><i>form</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>time</b></span> evaluates <span><i>form</i></span> in the current <span><i>environment</i></span> (lexical and dynamic). A call to <span><b>time</b></span> can be compiled.</p>
-<p><span><b>time</b></span> prints various timing data and other information to <em>trace output</em>. The nature and format of the printed information is <span><i>implementation-defined</i></span>. Implementations are encouraged to provide such information as elapsed real time, machine run time, and storage management statistics.</p>
+<p><span><b>time</b></span> prints various timing data and other information to <span><i>trace output</i></span>. The nature and format of the printed information is <span><i>implementation-defined</i></span>. Implementations are encouraged to provide such information as elapsed real time, machine run time, and storage management statistics.</p>
 <p><strong>Affected By:</strong></p>
 <p>The accuracy of the results depends, among other things, on the accuracy of the corresponding functions provided by the underlying operating system.</p>
 <p>The magnitude of the results may depend on the hardware, the operating system, the lisp implementation, and the state of the global environment. Some specific issues which frequently affect the outcome are hardware speed, nature of the scheduler (if any), number of competing processes (if any), system paging, whether the call is interpreted or compiled, whether functions called are compiled, the kind of garbage collector involved and whether it runs, whether internal data structures (e.g., hash tables) are implicitly reorganized, <em>etc.</em></p>

@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -36,8 +36,8 @@
 <p>The optional <em>new-value</em> argument to <span><b>slot-missing</b></span> is used when the operation is attempting to set the value of the <span><i>slot</i></span>.</p>
 <p>If <span><b>slot-missing</b></span> returns, its values will be treated as follows:</p>
 <p><em>•</em> If the <em>operation</em> is <span><b>setf</b></span> or <span><b>slot-makunbound</b></span>, any <span><i>values</i></span> will be ignored by the caller.</p>
-<p><em>•</em> If the <em>operation</em> is <span><b>slot-value</b></span>, only the <em>primary value</em> will be used by the caller, and all other values will be ignored.</p>
-<p><em>•</em> If the <em>operation</em> is <span><b>slot-boundp</b></span>, any <em>boolean equivalent</em> of the <em>primary value</em> of the <span><i>method</i></span> might be is used, and all other values will be ignored.</p>
+<p><em>•</em> If the <em>operation</em> is <span><b>slot-value</b></span>, only the <span><i>primary value</i></span> will be used by the caller, and all other values will be ignored.</p>
+<p><em>•</em> If the <em>operation</em> is <span><b>slot-boundp</b></span>, any <span><i>boolean equivalent</i></span> of the <span><i>primary value</i></span> of the <span><i>method</i></span> might be is used, and all other values will be ignored.</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>The default <span><i>method</i></span> on <span><b>slot-missing</b></span> signals an error of <span><i>type</i></span> <span><b>error</b></span>.</p>
 <p><strong>See Also:</strong></p>

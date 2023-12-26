@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,16 +21,16 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>dribble</b></span> &amp;optional <em>pathname → implementation-dependent</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><span><i>pathname</i></span>—a <em>pathname designator</em> .</p>
+<p><span><i>pathname</i></span>—a <span><i>pathname designator</i></span> .</p>
 <p><strong>Description:</strong></p>
 <p>Either <span><i>binds</i></span> <strong>*standard-input*</strong> and <strong>*standard-output*</strong> or takes other appropriate action, so as to send a record of the input/output interaction to a file named by <span><i>pathname</i></span>. <span><b>dribble</b></span> is intended to create a readable record of an interactive session.</p>
-<p>If <span><i>pathname</i></span> is a <em>logical pathname</em>, it is translated into a physical pathname as if by calling <span><b>translate-logical-pathname</b></span>.</p>
+<p>If <span><i>pathname</i></span> is a <span><i>logical pathname</i></span>, it is translated into a physical pathname as if by calling <span><b>translate-logical-pathname</b></span>.</p>
 <p>(dribble) terminates the recording of input and output and closes the dribble file.</p>
 <p>If <span><b>dribble</b></span> is <em>called</em> while a <span><i>stream</i></span> to a “dribble file” is still open from a previous <span><i>call</i></span> to <span><b>dribble</b></span>, the effect is <span><i>implementation-defined</i></span>. For example, the already-<em>open stream</em> might be <span><i>closed</i></span>, or dribbling might occur both to the old <span><i>stream</i></span> and to a new one, or the old <span><i>stream</i></span> might stay open but not receive any further output, or the new request might be ignored, or some other action might be taken.</p>
 <p><strong>Affected By:</strong></p>
 <p>The <span><i>implementation</i></span>.</p>
 <p><strong>Exceptional Situations:</strong></p>
-<p>If a failure occurs when performing some operation on the <em>file system</em> while creating the dribble file, an error of <span><i>type</i></span> <span><b>file-error</b></span> is signaled.</p>
+<p>If a failure occurs when performing some operation on the <span><i>file system</i></span> while creating the dribble file, an error of <span><i>type</i></span> <span><b>file-error</b></span> is signaled.</p>
 <p>An error of <span><i>type</i></span> <span><b>file-error</b></span> might be signaled if <span><i>pathname</i></span> is a <span><i>designator</i></span> for a <em>wild pathname</em>.</p>
 <p><strong>See Also:</strong></p>
 <p>Section 19.1.2 (Pathnames as Filenames)</p>

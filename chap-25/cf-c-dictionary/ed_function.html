@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,16 +21,16 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>ed</b></span> &amp;optional <em>x → implementation-dependent</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>x</em>—<span><b>nil</b></span>, a <span><i>pathname</i></span>, a <span><i>string</i></span>, or a <em>function name</em>. The default is <span><b>nil</b></span>.</p>
+<p><em>x</em>—<span><b>nil</b></span>, a <span><i>pathname</i></span>, a <span><i>string</i></span>, or a <span><i>function name</i></span>. The default is <span><b>nil</b></span>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>ed</b></span> invokes the editor if the <span><i>implementation</i></span> provides a resident editor.</p>
 <p>If <em>x</em> is <span><b>nil</b></span>, the editor is entered. If the editor had been previously entered, its prior state is resumed, if possible.</p>
-<p>If <em>x</em> is a <span><i>pathname</i></span> or <span><i>string</i></span>, it is taken as the <em>pathname designator</em> for a <span><i>file</i></span> to be edited.</p>
-<p>If <em>x</em> is a <em>function name</em>, the text of its definition is edited. The means by which the function text is obtained is <span><i>implementation-defined</i></span>.</p>
+<p>If <em>x</em> is a <span><i>pathname</i></span> or <span><i>string</i></span>, it is taken as the <span><i>pathname designator</i></span> for a <span><i>file</i></span> to be edited.</p>
+<p>If <em>x</em> is a <span><i>function name</i></span>, the text of its definition is edited. The means by which the function text is obtained is <span><i>implementation-defined</i></span>.</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>The consequences are undefined if the <span><i>implementation</i></span> does not provide a resident editor. Might signal <span><b>type-error</b></span> if its argument is supplied but is not a <span><i>symbol</i></span>, a <span><i>pathname</i></span>, or <span><b>nil</b></span>.</p>
-<p>If a failure occurs when performing some operation on the <em>file system</em> while attempting to edit a <span><i>file</i></span>, an error of <span><i>type</i></span> <span><b>file-error</b></span> is signaled.</p>
-<p>An error of <span><i>type</i></span> <span><b>file-error</b></span> might be signaled if <em>x</em> is a <span><i>designator</i></span> for a <em>wild pathname</em>. <em>Implementation-dependent</em> additional conditions might be signaled as well.</p>
+<p>If a failure occurs when performing some operation on the <span><i>file system</i></span> while attempting to edit a <span><i>file</i></span>, an error of <span><i>type</i></span> <span><b>file-error</b></span> is signaled.</p>
+<p>An error of <span><i>type</i></span> <span><b>file-error</b></span> might be signaled if <em>x</em> is a <span><i>designator</i></span> for a <em>wild pathname</em>. <span><i>Implementation-dependent</i></span> additional conditions might be signaled as well.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>pathname</b></span>, <span><b>logical-pathname</b></span>, <span><b>compile-file</b></span>, <span><b>load</b></span>, Section 19.1.2 (Pathnames as Filenames)</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-reference-ed">Expanded Reference: ed<a href="#expanded-reference-ed" class="hash-link" aria-label="Direct link to Expanded Reference: ed" title="Direct link to Expanded Reference: ed">​</a></h2>

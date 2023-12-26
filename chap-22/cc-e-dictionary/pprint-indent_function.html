@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -23,9 +23,9 @@
 <p><strong>Arguments and Values:</strong></p>
 <p><em>relative-to</em>—either <!-- -->:block<!-- --> or <!-- -->:current<!-- -->.</p>
 <p><em>n</em>—a <em>real</em>.</p>
-<p><span><i>stream</i></span>—an <em>output stream designator</em> . The default is <em>standard output</em>.</p>
+<p><span><i>stream</i></span>—an <em>output stream designator</em> . The default is <span><i>standard output</i></span>.</p>
 <p><strong>Description:</strong></p>
-<p><span><b>pprint-indent</b></span> specifies the indentation to use in a logical block on <span><i>stream</i></span>. If <span><i>stream</i></span> is a <em>pretty printing stream</em> and the <span><i>value</i></span> of <span><b>*print-pretty*</b></span> is <span><i>true</i></span>, <span><b>pprint-indent</b></span> sets the indentation in the innermost dynamically enclosing logical block; otherwise, <span><b>pprint-indent</b></span> has no effect.</p>
+<p><span><b>pprint-indent</b></span> specifies the indentation to use in a logical block on <span><i>stream</i></span>. If <span><i>stream</i></span> is a <span><i>pretty printing stream</i></span> and the <span><i>value</i></span> of <span><b>*print-pretty*</b></span> is <span><i>true</i></span>, <span><b>pprint-indent</b></span> sets the indentation in the innermost dynamically enclosing logical block; otherwise, <span><b>pprint-indent</b></span> has no effect.</p>
 <p><em>N</em> specifies the indentation in <span><i>ems</i></span>. If <em>relative-to</em> is <!-- -->:block<!-- -->, the indentation is set to the horizontal position of the first character in the <em>dynamically current logical block</em> plus <em>n ems</em>. If <em>relative-to</em> is <!-- -->:current<!-- -->, the indentation is set to the current output position plus <em>n ems</em>. (For robustness in the face of variable-width fonts, it is advisable to use <!-- -->:current<!-- --> with an <em>n</em> of zero whenever possible.)</p>
 <p><em>N</em> can be negative; however, the total indentation cannot be moved left of the beginning of the line or left of the end of the rightmost per-line prefix—an attempt to move beyond one of these limits is treated the same as an attempt to move to that limit. Changes in indentation caused by <em>pprint-indent</em> do not take effect until after the next line break. In addition, in miser mode all calls to <span><b>pprint-indent</b></span> are ignored, forcing the lines corresponding to the logical block to line up under the first character in the block.</p>
 <p><strong>Exceptional Situations:</strong></p>

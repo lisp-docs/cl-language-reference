@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -23,10 +23,10 @@
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>name</i></span>—a <span><i>symbol</i></span>.</p>
 <p><em>package-list-form</em>—a <span><i>form</i></span>; evaluated once to produce a <em>package-list</em>.</p>
-<p><em>package-list</em>—a <span><i>designator</i></span> for a list of <em>package designators</em>.</p>
+<p><em>package-list</em>—a <span><i>designator</i></span> for a list of <span><i>package designators</i></span>.</p>
 <p><em>symbol-type</em>—one of the <span><i>symbols</i></span> <!-- -->:internal<!-- -->, <!-- -->:external<!-- -->, or <!-- -->:inherited<!-- -->.</p>
 <p><span><i>declaration</i></span>—a <span><b>declare</b></span> <span><i>expression</i></span>; not evaluated.</p>
-<p><span><i>forms</i></span>—an <em>implicit progn</em>.</p>
+<p><span><i>forms</i></span>—an <span><i>implicit progn</i></span>.</p>
 <p><em>results</em>—the <span><i>values</i></span> of the <span><i>forms</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p>Within the lexical scope of the body <span><i>forms</i></span>, the <span><i>name</i></span> is defined via <span><b>macrolet</b></span> such that successive invocations of (<span><i>name</i></span>) will return the <span><i>symbols</i></span>, one by one, from the <span><i>packages</i></span> in <em>package-list</em>.</p>
@@ -60,7 +60,7 @@
 <p><strong>Exceptional Situations:</strong></p>
 <p><span><b>with-package-iterator</b></span> signals an error of <span><i>type</i></span> <span><b>program-error</b></span> if no <em>symbol-types</em> are supplied or if a <em>symbol-type</em> is not recognized by the implementation is supplied.</p>
 <p>The consequences are undefined if the local function named <em>name established</em> by</p>
-<p><span><b>with-package-iterator</b></span> is called after it has returned <span><i>false</i></span> as its <em>primary value</em>.</p>
+<p><span><b>with-package-iterator</b></span> is called after it has returned <span><i>false</i></span> as its <span><i>primary value</i></span>.</p>
 <p><strong>See Also:</strong></p>
 <p>Section 3.6 (Traversal Rules and Side Effects)</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-reference-with-package-iterator">Expanded Reference: with-package-iterator<a href="#expanded-reference-with-package-iterator" class="hash-link" aria-label="Direct link to Expanded Reference: with-package-iterator" title="Direct link to Expanded Reference: with-package-iterator">​</a></h2>

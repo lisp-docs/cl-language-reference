@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -25,8 +25,8 @@
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>stream</i></span>—an <em>output stream designator</em> .</p>
 <p><span><i>object</i></span>—an <span><i>object</i></span>.</p>
-<p><em>colon-p</em>—a <em>generalized boolean</em>. The default is <span><i>true</i></span>.</p>
-<p><em>at-sign-p</em>—a <em>generalized boolean</em>. The default is <span><i>implementation-dependent</i></span>.</p>
+<p><em>colon-p</em>—a <span><i>generalized boolean</i></span>. The default is <span><i>true</i></span>.</p>
+<p><em>at-sign-p</em>—a <span><i>generalized boolean</i></span>. The default is <span><i>implementation-dependent</i></span>.</p>
 <p><em>tabsize</em>—a non-negative <em>integer</em> . The default is 16.</p>
 <p><strong>Description:</strong></p>
 <p>The functions <span><b>pprint-fill</b></span>, <span><b>pprint-linear</b></span>, and <span><b>pprint-tabular</b></span> specify particular ways of <em>pretty printing</em> a <span><i>list</i></span> to <span><i>stream</i></span>. Each function prints parentheses around the output if and only if <em>colon-p</em> is <span><i>true</i></span>. Each function ignores its <em>at-sign-p</em> argument. (Both arguments are included even though only one is needed so that these functions can be used via ~/.../ and as <span><b>set-pprint-dispatch</b></span> functions, as well as directly.) Each function handles abbreviation and the detection of circularity and sharing correctly, and uses <span><b>write</b></span> to print <span><i>object</i></span> when it is a <span><i>non-list</i></span>.</p>

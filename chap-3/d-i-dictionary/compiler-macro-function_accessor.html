@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,12 +22,12 @@
 <p><span><b>compiler-macro-function</b></span> <span><i>name</i></span> &amp;optional <em>environment → function</em></p>
 <p><strong>(setf (compiler-macro-function</strong> <em>name</em> &amp;optional <em>environment</em>**)** <em>new-function</em>**)**</p>
 <p><strong>Arguments and Values:</strong></p>
-<p><span><i>name</i></span>—a <em>function name</em>.</p>
-<p><span><i>environment</i></span>—an <em>environment object</em>.</p>
-<p><span><i>function</i></span>, <em>new-function</em>—a <em>compiler macro function</em>, or <span><b>nil</b></span>.</p>
+<p><span><i>name</i></span>—a <span><i>function name</i></span>.</p>
+<p><span><i>environment</i></span>—an <span><i>environment object</i></span>.</p>
+<p><span><i>function</i></span>, <em>new-function</em>—a <span><i>compiler macro function</i></span>, or <span><b>nil</b></span>.</p>
 <p><strong>Description:</strong></p>
-<p><em>Accesses</em> the <em>compiler macro function</em> named <span><i>name</i></span>, if any, in the <span><i>environment</i></span>.</p>
-<p>A value of <span><b>nil</b></span> denotes the absence of a <em>compiler macro function</em> named <span><i>name</i></span>.</p>
+<p><em>Accesses</em> the <span><i>compiler macro function</i></span> named <span><i>name</i></span>, if any, in the <span><i>environment</i></span>.</p>
+<p>A value of <span><b>nil</b></span> denotes the absence of a <span><i>compiler macro function</i></span> named <span><i>name</i></span>.</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>The consequences are undefined if <span><i>environment</i></span> is <span><i>non-nil</i></span> in a use of <span><b>setf</b></span> of <span><b>compiler-macro-function</b></span>.</p>
 <p><strong>See Also:</strong></p>

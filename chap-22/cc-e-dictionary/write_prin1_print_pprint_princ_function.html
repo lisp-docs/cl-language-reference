@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -30,26 +30,26 @@
 <p><span><b>pprint</b></span> <span><i>object</i></span> &amp;optional <em>output-stream → ⟨no values⟩</em></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>object</i></span>—an <span><i>object</i></span>.</p>
-<p><em>output-stream</em>—an <em>output stream designator</em> . The default is <em>standard output</em>.</p>
-<p><span><i>array</i></span>—a <em>generalized boolean</em>.</p>
+<p><em>output-stream</em>—an <em>output stream designator</em> . The default is <span><i>standard output</i></span>.</p>
+<p><span><i>array</i></span>—a <span><i>generalized boolean</i></span>.</p>
 <p><em>base</em>—a <span><i>radix</i></span> .</p>
 <p><span><i>case</i></span>—a <span><i>symbol</i></span> of <span><i>type</i></span> (member <!-- -->:upcase<!-- --> <!-- -->:downcase<!-- --> <!-- -->:capitalize<!-- -->).</p>
-<p><em>circle</em>—a <em>generalized boolean</em>.</p>
-<p><span><i>escape</i></span>—a <em>generalized boolean</em>.</p>
-<p><span><i>gensym</i></span>—a <em>generalized boolean</em>.</p>
+<p><em>circle</em>—a <span><i>generalized boolean</i></span>.</p>
+<p><span><i>escape</i></span>—a <span><i>generalized boolean</i></span>.</p>
+<p><span><i>gensym</i></span>—a <span><i>generalized boolean</i></span>.</p>
 <p><span><i>length</i></span>—a non-negative <em>integer</em> , or <span><b>nil</b></span>.</p>
 <p><em>level</em>—a non-negative <em>integer</em> , or <span><b>nil</b></span>.</p>
 <p><em>lines</em>—a non-negative <em>integer</em> , or <span><b>nil</b></span>.</p>
 <p><em>miser-width</em>—a non-negative <em>integer</em> , or <span><b>nil</b></span>.</p>
-<p><em>pprint-dispatch</em>—a <em>pprint dispatch table</em>.</p>
-<p><em>pretty</em>—a <em>generalized boolean</em>.</p>
-<p><span><i>radix</i></span>—a <em>generalized boolean</em>.</p>
-<p><span><i>readably</i></span>—a <em>generalized boolean</em>.</p>
+<p><em>pprint-dispatch</em>—a <span><i>pprint dispatch table</i></span>.</p>
+<p><em>pretty</em>—a <span><i>generalized boolean</i></span>.</p>
+<p><span><i>radix</i></span>—a <span><i>generalized boolean</i></span>.</p>
+<p><span><i>readably</i></span>—a <span><i>generalized boolean</i></span>.</p>
 <p><em>right-margin</em>—a non-negative <em>integer</em> , or <span><b>nil</b></span>.</p>
-<p><span><i>stream</i></span>—an <em>output stream designator</em> . The default is <em>standard output</em>.</p>
+<p><span><i>stream</i></span>—an <em>output stream designator</em> . The default is <span><i>standard output</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>write</b></span>, <span><b>prin1</b></span>, <span><b>princ</b></span>, <span><b>print</b></span>, and <span><b>pprint</b></span> write the printed representation of <span><i>object</i></span> to <em>output-stream</em>.</p>
-<p><span><b>write</b></span> is the general entry point to the <em>Lisp printer</em> . For each explicitly supplied <em>keyword parameter</em> named in Figure 22–7, the corresponding <em>printer control variable</em> is dynamically bound to its <span><i>value</i></span> while printing goes on; for each <em>keyword parameter</em> in Figure 22–7 that is not explicitly supplied, the value of the corresponding <em>printer control variable</em> is the same as it was at the time <span><b>write</b></span> was invoked. Once the appropriate <span><i>bindings</i></span> are <em>established</em>, the <span><i>object</i></span> is output by the <em>Lisp printer</em> .</p>
+<p><span><b>write</b></span> is the general entry point to the <em>Lisp printer</em> . For each explicitly supplied <span><i>keyword parameter</i></span> named in Figure 22–7, the corresponding <span><i>printer control variable</i></span> is dynamically bound to its <span><i>value</i></span> while printing goes on; for each <span><i>keyword parameter</i></span> in Figure 22–7 that is not explicitly supplied, the value of the corresponding <span><i>printer control variable</i></span> is the same as it was at the time <span><b>write</b></span> was invoked. Once the appropriate <span><i>bindings</i></span> are <em>established</em>, the <span><i>object</i></span> is output by the <em>Lisp printer</em> .</p>
 <p><strong>write, prin1, print, pprint, princ</strong></p>
 <p>|<strong>Parameter Corresponding Dynamic Variable</strong>|</p>
 <p>| :- |</p>

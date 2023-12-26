@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -23,9 +23,9 @@
 <p><strong>Arguments and Values:</strong></p>
 <p><em>tree-1</em>—a <span><i>tree</i></span>.</p>
 <p><em>tree-2</em>—a <span><i>tree</i></span>.</p>
-<p><em>test</em>—a <span><i>designator</i></span> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <em>generalized boolean</em>. <em>test-not<span><i>—a </i></span>designator</em> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <em>generalized boolean</em>. <em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><em>test</em>—a <span><i>designator</i></span> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <span><i>generalized boolean</i></span>. <em>test-not<span><i>—a </i></span>designator</em> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <span><i>generalized boolean</i></span>. <em>generalized-boolean</em>—a <span><i>generalized boolean</i></span>.</p>
 <p><strong>Description:</strong></p>
-<p><span><b>tree-equal</b></span> tests whether two trees are of the same shape and have the same leaves. <span><b>tree-equal</b></span> returns <span><i>true</i></span> if <em>tree-1</em> and <em>tree-2</em> are both <span><i>atoms</i></span> and <em>satisfy the test</em>, or if they are both <em>conses</em> and the <span><i>car</i></span> of <em>tree-1</em> is <span><b>tree-equal</b></span> to the <span><i>car</i></span> of <em>tree-2</em> and the <span><i>cdr</i></span> of <em>tree-1</em> is <span><b>tree-equal</b></span> to the <span><i>cdr</i></span> of <em>tree-2</em>. Otherwise, <span><b>tree-equal</b></span> returns <span><i>false</i></span>.</p>
+<p><span><b>tree-equal</b></span> tests whether two trees are of the same shape and have the same leaves. <span><b>tree-equal</b></span> returns <span><i>true</i></span> if <em>tree-1</em> and <em>tree-2</em> are both <span><i>atoms</i></span> and <span><i>satisfy the test</i></span>, or if they are both <em>conses</em> and the <span><i>car</i></span> of <em>tree-1</em> is <span><b>tree-equal</b></span> to the <span><i>car</i></span> of <em>tree-2</em> and the <span><i>cdr</i></span> of <em>tree-1</em> is <span><b>tree-equal</b></span> to the <span><i>cdr</i></span> of <em>tree-2</em>. Otherwise, <span><b>tree-equal</b></span> returns <span><i>false</i></span>.</p>
 <p><span><b>tree-equal</b></span> recursively compares <em>conses</em> but not any other <span><i>objects</i></span> that have components.</p>
 <p>The first argument to the <!-- -->:test<!-- --> or <!-- -->:test-not<!-- --> function is <em>tree-1</em> or a <span><i>car</i></span> or <span><i>cdr</i></span> of <em>tree-1</em>; the second argument is <em>tree-2</em> or a <span><i>car</i></span> or <span><i>cdr</i></span> of <em>tree-2</em>.</p>
 <p><strong>Examples:</strong></p>

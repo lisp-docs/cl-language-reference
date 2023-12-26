@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,11 +22,11 @@
 <p><span><b>with-compilation-unit</b></span> ([[ <em>↓option</em> ]]) <span><i>{form}</i></span>* → {result}*</p>
 <p><em>option::</em>=<!-- -->:override<!-- --> <em>override</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>override</em>—a <em>generalized boolean</em>; evaluated. The default is <span><b>nil</b></span>.</p>
-<p><span><i>forms</i></span>—an <em>implicit progn</em>.</p>
+<p><em>override</em>—a <span><i>generalized boolean</i></span>; evaluated. The default is <span><b>nil</b></span>.</p>
+<p><span><i>forms</i></span>—an <span><i>implicit progn</i></span>.</p>
 <p><em>results</em>—the <span><i>values</i></span> returned by the <span><i>forms</i></span>.</p>
 <p><strong>Description:</strong></p>
-<p>Executes <span><i>forms</i></span> from left to right. Within the <em>dynamic environment</em> of <span><b>with-compilation-unit</b></span>, actions deferred by the compiler until the end of compilation will be deferred until the end of the outermost call to <span><b>with-compilation-unit</b></span>.</p>
+<p>Executes <span><i>forms</i></span> from left to right. Within the <span><i>dynamic environment</i></span> of <span><b>with-compilation-unit</b></span>, actions deferred by the compiler until the end of compilation will be deferred until the end of the outermost call to <span><b>with-compilation-unit</b></span>.</p>
 <p>The set of <em>options</em> permitted may be extended by the implementation, but the only <span><i>standardized</i></span> keyword is <!-- -->:override<!-- -->.</p>
 <p>If nested dynamically only the outer call to <span><b>with-compilation-unit</b></span> has any effect unless the value associated with <!-- -->:override<!-- --> is <span><i>true</i></span>, in which case warnings are deferred only to the end of the innermost call for which <em>override</em> is <span><i>true</i></span>.</p>
 <p>The function <span><b>compile-file</b></span> provides the effect of</p>

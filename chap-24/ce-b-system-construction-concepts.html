@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -19,27 +19,27 @@
 <!-- -->
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="2411-loading">24.1.1 Loading<a href="#2411-loading" class="hash-link" aria-label="Direct link to 24.1.1 Loading" title="Direct link to 24.1.1 Loading">​</a></h2>
 <!-- -->
-<p>To <span><b>load</b></span> a <span><i>file</i></span> is to treat its contents as <span><i>code</i></span> and <span><i>execute</i></span> that <span><i>code</i></span>. The <span><i>file</i></span> may contain <em>source code</em> or <em>compiled code</em>.</p>
-<p>A <span><i>file</i></span> containing <em>source code</em> is called a <em>source file</em>. <em>Loading</em> a <em>source file</em> is accomplished essentially by sequentially <em>reading</em><sub>2</sub> the <span><i>forms</i></span> in the file, <em>evaluating</em> each immediately after it is <span><i>read</i></span>.</p>
-<p>A <span><i>file</i></span> containing <em>compiled code</em> is called a <em>compiled file</em>. <em>Loading</em> a <em>compiled file</em> is similar to <em>loading</em> a <em>source file</em>, except that the <span><i>file</i></span> does not contain text but rather an <em>implementation dependent</em> representation of pre-digested <span><i>expressions</i></span> created by the <span><i>compiler</i></span> . Often, a <em>compiled file</em> can be <em>loaded</em> more quickly than a <em>source file</em>. See Section 3.2 (Compilation).</p>
-<p>The way in which a <em>source file</em> is distinguished from a <em>compiled file</em> is <span><i>implementation-dependent</i></span>.</p>
+<p>To <span><b>load</b></span> a <span><i>file</i></span> is to treat its contents as <span><i>code</i></span> and <span><i>execute</i></span> that <span><i>code</i></span>. The <span><i>file</i></span> may contain <span><i>source code</i></span> or <span><i>compiled code</i></span>.</p>
+<p>A <span><i>file</i></span> containing <span><i>source code</i></span> is called a <span><i>source file</i></span>. <em>Loading</em> a <span><i>source file</i></span> is accomplished essentially by sequentially <em>reading</em><sub>2</sub> the <span><i>forms</i></span> in the file, <em>evaluating</em> each immediately after it is <span><i>read</i></span>.</p>
+<p>A <span><i>file</i></span> containing <span><i>compiled code</i></span> is called a <span><i>compiled file</i></span>. <em>Loading</em> a <span><i>compiled file</i></span> is similar to <em>loading</em> a <span><i>source file</i></span>, except that the <span><i>file</i></span> does not contain text but rather an <em>implementation dependent</em> representation of pre-digested <span><i>expressions</i></span> created by the <span><i>compiler</i></span> . Often, a <span><i>compiled file</i></span> can be <em>loaded</em> more quickly than a <span><i>source file</i></span>. See Section 3.2 (Compilation).</p>
+<p>The way in which a <span><i>source file</i></span> is distinguished from a <span><i>compiled file</i></span> is <span><i>implementation-dependent</i></span>.</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="2412-features">24.1.2 Features<a href="#2412-features" class="hash-link" aria-label="Direct link to 24.1.2 Features" title="Direct link to 24.1.2 Features">​</a></h2>
 <!-- -->
 <p>A <span><i>feature</i></span> is an aspect or attribute of Common Lisp, of the <span><i>implementation</i></span>, or of the <span><i>environment</i></span>. A <span><i>feature</i></span> is identified by a <span><i>symbol</i></span>.</p>
-<p>A <span><i>feature</i></span> is said to be <span><i>present</i></span> in a <em>Lisp image</em> if and only if the <span><i>symbol</i></span> naming it is an <span><i>element</i></span> of the <span><i>list</i></span> held by the <span><i>variable</i></span> <span><b>*features*</b></span>, which is called the <em>features list</em>.</p>
+<p>A <span><i>feature</i></span> is said to be <span><i>present</i></span> in a <em>Lisp image</em> if and only if the <span><i>symbol</i></span> naming it is an <span><i>element</i></span> of the <span><i>list</i></span> held by the <span><i>variable</i></span> <span><b>*features*</b></span>, which is called the <span><i>features list</i></span>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="24121-feature-expressions">24.1.2.1 Feature Expressions<a href="#24121-feature-expressions" class="hash-link" aria-label="Direct link to 24.1.2.1 Feature Expressions" title="Direct link to 24.1.2.1 Feature Expressions">​</a></h3>
 <!-- -->
-<p>Boolean combinations of <span><i>features</i></span>, called <em>feature expressions</em>, are used by the #+ and #- <em>reader macros</em> in order to direct conditional <em>reading</em> of <span><i>expressions</i></span> by the <em>Lisp reader</em> .</p>
-<p>The rules for interpreting a <em>feature expression</em> are as follows:</p>
+<p>Boolean combinations of <span><i>features</i></span>, called <span><i>feature expressions</i></span>, are used by the #+ and #- <span><i>reader macros</i></span> in order to direct conditional <em>reading</em> of <span><i>expressions</i></span> by the <em>Lisp reader</em> .</p>
+<p>The rules for interpreting a <span><i>feature expression</i></span> are as follows:</p>
 <span><i>feature</i></span>
-<p>If a <span><i>symbol</i></span> naming a <span><i>feature</i></span> is used as a <em>feature expression</em>, the <em>feature expression</em> succeeds if that <span><i>feature</i></span> is <span><i>present</i></span>; otherwise it fails.</p>
+<p>If a <span><i>symbol</i></span> naming a <span><i>feature</i></span> is used as a <span><i>feature expression</i></span>, the <span><i>feature expression</i></span> succeeds if that <span><i>feature</i></span> is <span><i>present</i></span>; otherwise it fails.</p>
 <p>(not <em>feature-conditional</em>)</p>
-<p>A <span><b>not</b></span> <em>feature expression</em> succeeds if its argument <em>feature-conditional</em> fails; otherwise, it succeeds.</p>
+<p>A <span><b>not</b></span> <span><i>feature expression</i></span> succeeds if its argument <em>feature-conditional</em> fails; otherwise, it succeeds.</p>
 <p>(and <em>{feature-conditional}</em>*)</p>
-<p>An <span><b>and</b></span> <em>feature expression</em> succeeds if all of its argument <em>feature-conditionals</em> succeed; otherwise, it fails.</p>
+<p>An <span><b>and</b></span> <span><i>feature expression</i></span> succeeds if all of its argument <em>feature-conditionals</em> succeed; otherwise, it fails.</p>
 <p>System</p>
 <p>(or <em>{feature-conditional}</em>*)</p>
-<p>An <span><b>or</b></span> <em>feature expression</em> succeeds if any of its argument <em>feature-conditionals</em> succeed; otherwise, it fails.</p>
+<p>An <span><b>or</b></span> <span><i>feature expression</i></span> succeeds if any of its argument <em>feature-conditionals</em> succeed; otherwise, it fails.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="241211-examples-of-feature-expressions">24.1.2.1.1 Examples of Feature Expressions<a href="#241211-examples-of-feature-expressions" class="hash-link" aria-label="Direct link to 24.1.2.1.1 Examples of Feature Expressions" title="Direct link to 24.1.2.1.1 Examples of Feature Expressions">​</a></h4>
 <!-- -->
 <!-- -->

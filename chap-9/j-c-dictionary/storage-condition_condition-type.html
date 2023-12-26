@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,7 +21,7 @@
 <p><strong>Class Precedence List:</strong></p>
 <p><span><b>storage-condition</b></span>, <span><b>serious-condition</b></span>, <span><b>condition</b></span>, <span><b>t</b></span></p>
 <p><strong>Description:</strong></p>
-<p>The <span><i>type</i></span> <span><b>storage-condition</b></span> consists of serious conditions that relate to problems with memory management that are potentially due to <span><i>implementation-dependent</i></span> limits rather than semantic errors in <em>conforming programs</em>, and that typically warrant entry to the debugger if not handled.</p>
+<p>The <span><i>type</i></span> <span><b>storage-condition</b></span> consists of serious conditions that relate to problems with memory management that are potentially due to <span><i>implementation-dependent</i></span> limits rather than semantic errors in <span><i>conforming programs</i></span>, and that typically warrant entry to the debugger if not handled.</p>
 <p>Depending on the details of the <span><i>implementation</i></span>, these might include such problems as stack overflow, memory region overflow, and storage exhausted.</p>
 <p><strong>Notes:</strong></p>
 <p>While some Common Lisp operations might signal <em>storage-condition</em> because they are defined to create <span><i>objects</i></span>, it is unspecified whether operations that are not defined to create <span><i>objects</i></span> create them anyway and so might also signal <span><b>storage-condition</b></span>. Likewise, the evaluator itself might create <span><i>objects</i></span> and so might signal <span><b>storage-condition</b></span>. (The natural assumption might be that such <span><i>object</i></span> creation is naturally inefficient, but even that is <span><i>implementation-dependent</i></span>.) In general, the entire question of how storage allocation is done is <span><i>implementation-dependent</i></span>, and so any operation might signal <span><b>storage-condition</b></span> at any time. Because such a <span><i>condition</i></span> is indicative of a limitation of the <span><i>implementation</i></span> or of the <em>image</em> rather than an error in a <span><i>program</i></span>, <span><i>objects</i></span> of <span><i>type</i></span> <span><b>storage-condition</b></span> are not of <span><i>type</i></span> <span><b>error</b></span>.</p>

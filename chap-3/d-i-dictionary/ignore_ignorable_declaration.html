@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -23,7 +23,7 @@
 <p>(ignorable <em>{var</em> | (<span><b>function</b></span> <em>fn</em>)<em>}</em>*)</p>
 <p><strong>Arguments:</strong></p>
 <p><em>var</em>—a <em>variable name</em>.</p>
-<p><em>fn</em>—a <em>function name</em>.</p>
+<p><em>fn</em>—a <span><i>function name</i></span>.</p>
 <p><strong>Valid Context:</strong></p>
 <span><i>declaration</i></span>
 <p><strong>Binding Types Aected:</strong></p>
@@ -34,7 +34,7 @@
 <p>An <span><b>ignorable</b></span> <span><i>declaration</i></span> specifies that <em>for-value references</em> to the indicated <span><i>bindings</i></span> might or might not occur within the scope of the <span><i>declaration</i></span>. Within the <span><i>scope</i></span> of such a <span><i>declaration</i></span>, it is not desirable for a compiler to issue a warning about the presence or absence of either a <em>for-value reference</em> to any <em>var</em> or <em>fn</em>, or a <span><b>special</b></span> <span><i>declaration</i></span> for any <em>var</em>.</p>
 <p>When not within the <span><i>scope</i></span> of a <span><b>ignore</b></span> or <span><b>ignorable</b></span> <span><i>declaration</i></span>, it is desirable for a compiler to issue a warning about any <em>var</em> for which there is neither a <em>for-value reference</em> nor a <span><b>special</b></span> <span><i>declaration</i></span>, or about any <em>fn</em> for which there is no <em>for-value reference</em>.</p>
 <p>Any warning about a “used” or “unused” <span><i>binding</i></span> must be of <span><i>type</i></span> <span><b>style-warning</b></span>, and may not a↵ect program semantics.</p>
-<p>The <em>stream variables</em> established by <span><b>with-open-file</b></span>, <span><b>with-open-stream</b></span>, <span><b>with-input-from-string</b></span>, and <span><b>with-output-to-string</b></span>, and all <em>iteration variables</em> are, by definition, always “used”. Using (declare (ignore <em>v</em>)), for such a <em>variable v</em> has unspecified consequences.</p>
+<p>The <span><i>stream variables</i></span> established by <span><b>with-open-file</b></span>, <span><b>with-open-stream</b></span>, <span><b>with-input-from-string</b></span>, and <span><b>with-output-to-string</b></span>, and all <span><i>iteration variables</i></span> are, by definition, always “used”. Using (declare (ignore <em>v</em>)), for such a <em>variable v</em> has unspecified consequences.</p>
 <p><strong>See Also:</strong></p>
 <span><b>declare</b></span>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-reference-ignore-ignorable">Expanded Reference: ignore, ignorable<a href="#expanded-reference-ignore-ignorable" class="hash-link" aria-label="Direct link to Expanded Reference: ignore, ignorable" title="Direct link to Expanded Reference: ignore, ignorable">​</a></h2>

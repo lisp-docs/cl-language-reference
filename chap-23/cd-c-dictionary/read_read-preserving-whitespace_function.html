@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -25,16 +25,16 @@
 <p>→ object</p>
 <p><strong>Arguments and Values:</strong></p>
 <p><em>input-stream</em>—an <em>input stream designator</em> .</p>
-<p><em>eof-error-p</em>—a <em>generalized boolean</em>. The default is <span><i>true</i></span>.</p>
+<p><em>eof-error-p</em>—a <span><i>generalized boolean</i></span>. The default is <span><i>true</i></span>.</p>
 <p><em>eof-value</em>—an <span><i>object</i></span>. The default is <span><b>nil</b></span>.</p>
-<p><em>recursive-p</em>—a <em>generalized boolean</em>. The default is <span><i>false</i></span>.</p>
+<p><em>recursive-p</em>—a <span><i>generalized boolean</i></span>. The default is <span><i>false</i></span>.</p>
 <p><span><i>object</i></span>—an <span><i>object</i></span> (parsed by the <em>Lisp reader</em> ) or the <em>eof-value</em>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>read</b></span> parses the printed representation of an <span><i>object</i></span> from <em>input-stream</em> and builds such an <span><i>object</i></span>.</p>
 <p><span><b>read-preserving-whitespace</b></span> is like <span><b>read</b></span> but preserves any <span><i>whitespace</i></span><sub>2</sub> <span><i>character</i></span> that delimits the printed representation of the <span><i>object</i></span>. <span><b>read-preserving-whitespace</b></span> is exactly like <span><b>read</b></span> when the <em>recursive-p argument</em> to <span><b>read-preserving-whitespace</b></span> is <span><i>true</i></span>.</p>
-<p><strong>read, read-preserving-whitespace</strong></p>
+<span><b>read, read-preserving-whitespace</b></span>
 <p>When <span><b>*read-suppress*</b></span> is <span><i>false</i></span>, <span><b>read</b></span> throws away the delimiting <span><i>character</i></span> required by certain printed representations if it is a <span><i>whitespace</i></span><sub>2</sub> <span><i>character</i></span> ; but <span><b>read</b></span> preserves the character (using <span><b>unread-char</b></span>) if it is syntactically meaningful, because it could be the start of the next expression.</p>
-<p>If a file ends in a <span><i>symbol</i></span> or a <span><i>number</i></span> immediately followed by an <em>end of file</em><sub>1</sub>, <span><b>read</b></span> reads the <span><i>symbol</i></span> or <span><i>number</i></span> successfully; when called again, it sees the <em>end of file</em><sub>1</sub> and only then acts according to <em>eof-error-p</em>. If a file contains ignorable text at the end, such as blank lines and comments, <span><b>read</b></span> does not consider it to end in the middle of an <span><i>object</i></span>.</p>
+<p>If a file ends in a <span><i>symbol</i></span> or a <span><i>number</i></span> immediately followed by an <span><i>end of file</i></span><sub>1</sub>, <span><b>read</b></span> reads the <span><i>symbol</i></span> or <span><i>number</i></span> successfully; when called again, it sees the <span><i>end of file</i></span><sub>1</sub> and only then acts according to <em>eof-error-p</em>. If a file contains ignorable text at the end, such as blank lines and comments, <span><b>read</b></span> does not consider it to end in the middle of an <span><i>object</i></span>.</p>
 <p>If <em>recursive-p</em> is <span><i>true</i></span>, the call to <span><b>read</b></span> is expected to be made from within some function that itself has been called from <span><b>read</b></span> or from a similar input function, rather than from the top level.</p>
 <p>Both functions return the <span><i>object</i></span> read from <em>input-stream</em>. <em>Eof-value</em> is returned if <em>eof-error-p</em> is <span><i>false</i></span> and end of file is reached before the beginning of an <span><i>object</i></span>.</p>
 <p><strong>Examples:</strong></p>

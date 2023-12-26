@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -26,15 +26,15 @@
 <p><em>count-form</em>—a <span><i>form</i></span>.</p>
 <p><em>result-form</em>—a <span><i>form</i></span>.</p>
 <p><span><i>declaration</i></span>—a <span><b>declare</b></span> <span><i>expression</i></span>; not evaluated.</p>
-<p><span><i>tag</i></span>—a <em>go tag</em>; not evaluated.</p>
-<p><em>statement</em>—a <em>compound form</em>; evaluated as described below.</p>
+<p><span><i>tag</i></span>—a <span><i>go tag</i></span>; not evaluated.</p>
+<p><em>statement</em>—a <span><i>compound form</i></span>; evaluated as described below.</p>
 <p><em>results</em>—if a <span><b>return</b></span> or <span><b>return-from</b></span> form is executed, the <span><i>values</i></span> passed from that <span><i>form</i></span>; otherwise, the <span><i>values</i></span> returned by the <em>result-form</em> or <span><b>nil</b></span> if there is no <em>result-form</em>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>dotimes</b></span> iterates over a series of <em>integers</em>.</p>
 <p><span><b>dotimes</b></span> evaluates <em>count-form</em>, which should produce an <em>integer</em> . If <em>count-form</em> is zero or negative, the body is not executed. <span><b>dotimes</b></span> then executes the body once for each <em>integer</em> from 0 up to but not including the value of <em>count-form</em>, in the order in which the <span><i>tags</i></span> and <em>statements</em> occur, with <em>var</em></p>
 <p>bound to each <em>integer</em> . Then <em>result-form</em> is evaluated. At the time <em>result-form</em> is processed, <em>var</em> is bound to the number of times the body was executed. <span><i>Tags</i></span> label <em>statements</em>.</p>
-<p>An <em>implicit block</em> named <span><b>nil</b></span> surrounds <span><b>dotimes</b></span>. <span><b>return</b></span> may be used to terminate the loop immediately without performing any further iterations, returning zero or more <span><i>values</i></span>.</p>
-<p>The body of the loop is an <em>implicit tagbody</em>; it may contain tags to serve as the targets of <span><b>go</b></span> statements. Declarations may appear before the body of the loop.</p>
+<p>An <span><i>implicit block</i></span> named <span><b>nil</b></span> surrounds <span><b>dotimes</b></span>. <span><b>return</b></span> may be used to terminate the loop immediately without performing any further iterations, returning zero or more <span><i>values</i></span>.</p>
+<p>The body of the loop is an <span><i>implicit tagbody</i></span>; it may contain tags to serve as the targets of <span><b>go</b></span> statements. Declarations may appear before the body of the loop.</p>
 <p>The <span><i>scope</i></span> of the binding of <em>var</em> does not include the <em>count-form</em>, but the <em>result-form</em> is included.</p>
 <p>It is <span><i>implementation-dependent</i></span> whether <span><b>dotimes</b></span> <em>establishes</em> a new <span><i>binding</i></span> of <em>var</em> on each iteration or whether it <em>establishes</em> a binding for <em>var</em> once at the beginning and then <span><i>assigns</i></span> it on any subsequent iterations.</p>
 <p><strong>Examples:</strong></p>

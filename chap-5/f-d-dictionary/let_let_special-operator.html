@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -43,7 +43,7 @@
 <p>...</p>
 <p><em>formn</em>)</p>
 <p><strong>let, let</strong><em>∗</em></p>
-<p>first evaluates the expressions <em>init-form-1</em>, <em>init-form-2</em>, and so on, in that order, saving the resulting values. Then all of the variables <em>varj</em> are bound to the corresponding values; each <span><i>binding</i></span> is lexical unless there is a <span><b>special</b></span> declaration to the contrary. The expressions <em>formk</em> are then evaluated in order; the values of all but the last are discarded (that is, the body of a <span><b>let</b></span> is an <em>implicit progn</em>).</p>
+<p>first evaluates the expressions <em>init-form-1</em>, <em>init-form-2</em>, and so on, in that order, saving the resulting values. Then all of the variables <em>varj</em> are bound to the corresponding values; each <span><i>binding</i></span> is lexical unless there is a <span><b>special</b></span> declaration to the contrary. The expressions <em>formk</em> are then evaluated in order; the values of all but the last are discarded (that is, the body of a <span><b>let</b></span> is an <span><i>implicit progn</i></span>).</p>
 <p><span><b>let*</b></span> is similar to <span><b>let</b></span>, but the <span><i>bindings</i></span> of variables are performed sequentially rather than in parallel. The expression for the <em>init-form</em> of a <em>var</em> can refer to <em>vars</em> previously bound in the <span><b>let*</b></span>.</p>
 <p>The form</p>
 <p>(let* ((<em>var1 init-form-1</em> )</p>

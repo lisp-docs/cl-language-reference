@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,16 +22,16 @@
 <p><span><b>set-difference</b></span> <em>list-1 list-2</em> &amp;key <em>key test test-not → result-list</em></p>
 <p><span><b>nset-difference</b></span> <em>list-1 list-2</em> &amp;key <em>key test test-not → result-list</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>list-1</em>—a <em>proper list</em>.</p>
-<p><em>list-2</em>—a <em>proper list</em>.</p>
-<p><em>test</em>—a <span><i>designator</i></span> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <em>generalized boolean</em>. <em>test-not<span><i>—a </i></span>designator</em> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <em>generalized boolean</em>.</p>
-<p><strong>set-difference, nset-difference</strong></p>
+<p><em>list-1</em>—a <span><i>proper list</i></span>.</p>
+<p><em>list-2</em>—a <span><i>proper list</i></span>.</p>
+<p><em>test</em>—a <span><i>designator</i></span> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <span><i>generalized boolean</i></span>. <em>test-not<span><i>—a </i></span>designator</em> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <span><i>generalized boolean</i></span>.</p>
+<span><b>set-difference, nset-difference</b></span>
 <p><span><i>key</i></span>—a <span><i>designator</i></span> for a <span><i>function</i></span> of one argument, or <span><b>nil</b></span>.</p>
 <p><em>result-list</em>—a <span><i>list</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>set-difference</b></span> returns a <span><i>list</i></span> of elements of <em>list-1</em> that do not appear in <em>list-2</em>.</p>
 <p><span><b>nset-difference</b></span> is the destructive version of <span><b>set-difference</b></span>. It may destroy <em>list-1</em>.</p>
-<p>For all possible ordered pairs consisting of one element from <em>list-1</em> and one element from <em>list-2</em>, the <!-- -->:test<!-- --> or <!-- -->:test-not<!-- --> function is used to determine whether they <em>satisfy the test</em>. The first argument to the <!-- -->:test<!-- --> or <!-- -->:test-not<!-- --> function is the part of an element of <em>list-1</em> that is returned by the <!-- -->:key<!-- --> function (if supplied); the second argument is the part of an element of <em>list-2</em> that is returned by the <!-- -->:key<!-- --> function (if supplied).</p>
+<p>For all possible ordered pairs consisting of one element from <em>list-1</em> and one element from <em>list-2</em>, the <!-- -->:test<!-- --> or <!-- -->:test-not<!-- --> function is used to determine whether they <span><i>satisfy the test</i></span>. The first argument to the <!-- -->:test<!-- --> or <!-- -->:test-not<!-- --> function is the part of an element of <em>list-1</em> that is returned by the <!-- -->:key<!-- --> function (if supplied); the second argument is the part of an element of <em>list-2</em> that is returned by the <!-- -->:key<!-- --> function (if supplied).</p>
 <p>If <!-- -->:key<!-- --> is supplied, its argument is a <em>list-1</em> or <em>list-2</em> element. The <!-- -->:key<!-- --> function typically returns part of the supplied element. If <!-- -->:key<!-- --> is not supplied, the <em>list-1</em> or <em>list-2</em> element is used.</p>
 <p>An element of <em>list-1</em> appears in the result if and only if it does not match any element of <em>list-2</em>.</p>
 <p>There is no guarantee that the order of elements in the result will reflect the ordering of the arguments in any particular way. The result <span><i>list</i></span> may share cells with, or be <span><b>eq</b></span> to, either of <em>list-1</em> or <em>list-2</em>, if appropriate.</p>
@@ -40,7 +40,7 @@
 <p><strong>Side Effects:</strong></p>
 <p><span><b>nset-difference</b></span> may destroy <em>list-1</em>.</p>
 <p><strong>Exceptional Situations:</strong></p>
-<p>Should be prepared to signal an error of <span><i>type</i></span> <span><b>type-error</b></span> if <em>list-1</em> and <em>list-2</em> are not <em>proper lists</em>.</p>
+<p>Should be prepared to signal an error of <span><i>type</i></span> <span><b>type-error</b></span> if <em>list-1</em> and <em>list-2</em> are not <span><i>proper lists</i></span>.</p>
 <p><strong>See Also:</strong></p>
 <p>Section 3.2.1 (Compiler Terminology), Section 3.6 (Traversal Rules and Side Effects)</p>
 <p><strong>Notes:</strong></p>

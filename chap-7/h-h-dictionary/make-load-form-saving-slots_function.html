@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -24,12 +24,12 @@
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>object</i></span>—an <span><i>object</i></span>.</p>
 <p><em>slot-names</em>—a <span><i>list</i></span>.</p>
-<p><span><i>environment</i></span>—an <em>environment object</em>.</p>
+<p><span><i>environment</i></span>—an <span><i>environment object</i></span>.</p>
 <p><em>creation-form</em>—a <span><i>form</i></span>.</p>
 <p><em>initialization-form</em>—a <span><i>form</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p>Returns <span><i>forms</i></span> that, when <em>evaluated</em>, will construct an <span><i>object</i></span> equivalent to <span><i>object</i></span>, without <em>executing initialization forms</em>. The <span><i>slots</i></span> in the new <span><i>object</i></span> that correspond to initialized <span><i>slots</i></span> in <span><i>object</i></span> are initialized using the values from <span><i>object</i></span>. Uninitialized <span><i>slots</i></span> in <span><i>object</i></span> are not initialized in the new <span><i>object</i></span>. <span><b>make-load-form-saving-slots</b></span> works for any <span><i>instance</i></span> of <span><b>standard-object</b></span> or <span><b>structure-object</b></span>.</p>
-<p><em>Slot-names</em> is a <span><i>list</i></span> of the names of the <span><i>slots</i></span> to preserve. If <em>slot-names</em> is not supplied, its value is all of the <em>local slots</em>.</p>
+<p><em>Slot-names</em> is a <span><i>list</i></span> of the names of the <span><i>slots</i></span> to preserve. If <em>slot-names</em> is not supplied, its value is all of the <span><i>local slots</i></span>.</p>
 <p><span><b>make-load-form-saving-slots</b></span> returns two values, thus it can deal with circular structures. Whether the result is useful in an application depends on whether the <span><i>object</i></span>’s <span><i>type</i></span> and slot contents fully capture the application’s idea of the <span><i>object</i></span>’s state.</p>
 <p><span><i>Environment</i></span> is the environment in which the forms will be processed.</p>
 <p><strong>See Also:</strong></p>

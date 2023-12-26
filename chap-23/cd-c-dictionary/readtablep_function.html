@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,7 +22,7 @@
 <p><span><b>readtablep</b></span> <em>object → generalized-boolean</em></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>object</i></span>—an <span><i>object</i></span>.</p>
-<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><em>generalized-boolean</em>—a <span><i>generalized boolean</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p>Returns <span><i>true</i></span> if <span><i>object</i></span> is of <span><i>type</i></span> <span><b>readtable</b></span>; otherwise, returns <span><i>false</i></span>.</p>
 <p><strong>Examples:</strong></p>
@@ -38,12 +38,12 @@
 <p><strong>Arguments and Values:</strong></p>
 <p><em>disp-char</em>—a <span><i>character</i></span> .</p>
 <p><em>sub-char</em>—a <span><i>character</i></span> .</p>
-<p><span><i>readtable</i></span>—a <em>readtable designator</em> . The default is the <em>current readtable</em>.</p>
-<p><span><i>function</i></span>—a <em>function designator</em> or <span><b>nil</b></span>.</p>
-<p><em>new-function</em>—a <em>function designator</em> .</p>
+<p><span><i>readtable</i></span>—a <span><i>readtable designator</i></span> . The default is the <span><i>current readtable</i></span>.</p>
+<p><span><i>function</i></span>—a <span><i>function designator</i></span> or <span><b>nil</b></span>.</p>
+<p><em>new-function</em>—a <span><i>function designator</i></span> .</p>
 <p><strong>Description:</strong></p>
 <p><strong>set-dispatch-macro-character</strong> causes <em>new-function</em> to be called when <em>disp-char</em> followed by <em>sub-char</em> is read. If <em>sub-char</em> is a lowercase letter, it is converted to its uppercase equivalent. It is an error if <em>sub-char</em> is one of the ten decimal digits.</p>
-<p><strong>set-dispatch-macro-character</strong> installs a <em>new-function</em> to be called when a particular <em>dispatching macro character</em> pair is read. <em>New-function</em> is installed as the dispatch function to be called when <span><i>readtable</i></span> is in use and when <em>disp-char</em> is followed by <em>sub-char</em>.</p>
+<p><strong>set-dispatch-macro-character</strong> installs a <em>new-function</em> to be called when a particular <span><i>dispatching macro character</i></span> pair is read. <em>New-function</em> is installed as the dispatch function to be called when <span><i>readtable</i></span> is in use and when <em>disp-char</em> is followed by <em>sub-char</em>.</p>
 <p>For more information about how the <em>new-function</em> is invoked, see Section 2.1.4.4 (Macro Characters).</p>
 <p><strong>get-dispatch-macro-character</strong> retrieves the dispatch function associated with <em>disp-char</em> and <em>sub-char</em> in <span><i>readtable</i></span>.</p>
 <p><strong>get-dispatch-macro-character</strong> returns the macro-character function for <em>sub-char</em> under <em>disp char</em>, or <span><b>nil</b></span> if there is no function associated with <em>sub-char</em>. If <em>sub-char</em> is a decimal digit, <strong>get-dispatch-macro-character</strong> returns <span><b>nil</b></span>.</p>
@@ -56,7 +56,7 @@
 <p><strong>Affected By:</strong></p>
 <p><span><b>*readtable*</b></span>.</p>
 <p><strong>Exceptional Situations:</strong></p>
-<p>For either function, an error is signaled if <em>disp-char</em> is not a <em>dispatching macro character</em> in <span><i>readtable</i></span>.</p>
+<p>For either function, an error is signaled if <em>disp-char</em> is not a <span><i>dispatching macro character</i></span> in <span><i>readtable</i></span>.</p>
 <p><strong>See Also:</strong></p>
 <span><b>*readtable*</b></span>
 <p><strong>Notes:</strong></p>

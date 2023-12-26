@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -29,7 +29,7 @@
 <p><strong>Description:</strong></p>
 <p><span><b>exp</b></span> and <span><b>expt</b></span> perform exponentiation.</p>
 <p><span><b>exp</b></span> returns <em>e</em> raised to the power <span><i>number</i></span>, where <em>e</em> is the base of the natural logarithms. <span><b>exp</b></span> has no branch cut.</p>
-<p><span><b>expt</b></span> returns <em>base-number</em> raised to the power <em>power-number</em>. If the <em>base-number</em> is a <span><i>rational</i></span> and <em>power-number</em> is an <em>integer</em> , the calculation is exact and the result will be of <span><i>type</i></span> <span><b>rational</b></span>; otherwise a floating-point approximation might result. For <span><b>expt</b></span> of a <em>complex rational</em> to an <em>integer</em> power, the calculation must be exact and the result is of type (or rational (complex rational)).</p>
+<p><span><b>expt</b></span> returns <em>base-number</em> raised to the power <em>power-number</em>. If the <em>base-number</em> is a <span><i>rational</i></span> and <em>power-number</em> is an <em>integer</em> , the calculation is exact and the result will be of <span><i>type</i></span> <span><b>rational</b></span>; otherwise a floating-point approximation might result. For <span><b>expt</b></span> of a <span><i>complex rational</i></span> to an <em>integer</em> power, the calculation must be exact and the result is of type (or rational (complex rational)).</p>
 <p>The result of <span><b>expt</b></span> can be a <span><i>complex</i></span> , even when neither argument is a <span><i>complex</i></span> , if <em>base-number</em> is negative and <em>power-number</em> is not an <em>integer</em> . The result is always the <em>principal complex value</em>. For example, (expt -8 1/3) is not permitted to return -2, even though -2 is one of the cube roots of -8. The <span><i>principal</i></span> cube root is a <span><i>complex</i></span> approximately equal to #C(1.0 1.73205), not -2.</p>
 <p><b>expt</b> is defined as <i>b<sup>x</sup> = e<sup>xlogb</sup></i>. This defines the <i>principal values</i> precisely. The range of <b>expt</b> is the entire complex plane. Regarded as a function of <i>x</i>, with <i>b</i> fixed, there is no branch cut. Regarded as a function of <i>b</i>, with <i>x</i> fixed, there is in general a branch cut along the negative real axis, continuous with quadrant II. The domain excludes the origin. By definition, 0<sup>0</sup>=1. If <i>b</i>=0 and the real part of <i>x</i> is strictly positive, then <i>b<sup>x</sup></i>=0. For all other values of <i>x</i>, 0<i><sup>x</sup></i>is an error.</p>
 <p>When <em>power-number</em> is an <em>integer</em> 0, then the result is always the value one in the <span><i>type</i></span> of <em>base-number</em>, even if the <em>base-number</em> is zero (of any <span><i>type</i></span>). That is:</p>

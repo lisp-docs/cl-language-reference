@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,13 +21,13 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>translate-logical-pathname</b></span> <span><i>pathname</i></span> &amp;key → physical-pathname</p>
 <p><strong>Arguments and Values:</strong></p>
-<p><span><i>pathname</i></span>—a <em>pathname designator</em> , or a <em>logical pathname namestring</em>.</p>
-<p><em>physical-pathname</em>—a <em>physical pathname</em>.</p>
+<p><span><i>pathname</i></span>—a <span><i>pathname designator</i></span> , or a <em>logical pathname namestring</em>.</p>
+<p><em>physical-pathname</em>—a <span><i>physical pathname</i></span>.</p>
 <p><strong>Description:</strong></p>
-<p>Translates <span><i>pathname</i></span> to a <em>physical pathname</em>, which it returns.</p>
+<p>Translates <span><i>pathname</i></span> to a <span><i>physical pathname</i></span>, which it returns.</p>
 <p>If <span><i>pathname</i></span> is a <span><i>stream</i></span>, the <span><i>stream</i></span> can be either open or closed. <span><b>translate-logical-pathname</b></span> returns the same physical pathname after a file is closed as it did when the file was open. It is an er ror if <span><i>pathname</i></span> is a <span><i>stream</i></span> that is created with <span><b>make-two-way-stream</b></span>, <span><b>make-echo-stream</b></span>, <span><b>make-broadcast-stream</b></span>, <span><b>make-concatenated-stream</b></span>, <span><b>make-string-input-stream</b></span>, <span><b>make-string-output-stream</b></span>.</p>
-<p>If <span><i>pathname</i></span> is a <em>logical pathname</em> namestring, the host portion of the <em>logical pathname</em> namestring and its following <span><i>colon</i></span> are required.</p>
-<p><span><i>Pathname</i></span> is first coerced to a <span><i>pathname</i></span>. If the coerced <span><i>pathname</i></span> is a physical pathname, it is returned. If the coerced <span><i>pathname</i></span> is a <em>logical pathname</em>, the first matching translation (according to <span><b>pathname-match-p</b></span>) of the <em>logical pathname</em> host is applied, as if by calling <span><b>translate-pathname</b></span>. If the result is a <em>logical pathname</em>, this process is repeated. When the result is finally a physical pathname, it is returned. If no translation matches, an error is signaled.</p>
+<p>If <span><i>pathname</i></span> is a <span><i>logical pathname</i></span> namestring, the host portion of the <span><i>logical pathname</i></span> namestring and its following <span><i>colon</i></span> are required.</p>
+<p><span><i>Pathname</i></span> is first coerced to a <span><i>pathname</i></span>. If the coerced <span><i>pathname</i></span> is a physical pathname, it is returned. If the coerced <span><i>pathname</i></span> is a <span><i>logical pathname</i></span>, the first matching translation (according to <span><b>pathname-match-p</b></span>) of the <span><i>logical pathname</i></span> host is applied, as if by calling <span><b>translate-pathname</b></span>. If the result is a <span><i>logical pathname</i></span>, this process is repeated. When the result is finally a physical pathname, it is returned. If no translation matches, an error is signaled.</p>
 <p><span><b>translate-logical-pathname</b></span> might perform additional translations, typically to provide translation of file types to local naming conventions, to accomodate physical file systems with limited length names, or to deal with special character requirements such as translating hyphens to underscores or uppercase letters to lowercase. Any such additional translations are <span><i>implementation-defined</i></span>. Some implementations do no additional translations.</p>
 <p>There are no specified keyword arguments for <span><b>translate-logical-pathname</b></span>, but implementations are permitted to extend it by adding keyword arguments.</p>
 <p><strong>Examples:</strong></p>

@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,9 +21,9 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>fill</b></span> <em>sequence item</em> &amp;key <em>start end → sequence</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>sequence</em>—a <em>proper sequence</em>.</p>
+<p><em>sequence</em>—a <span><i>proper sequence</i></span>.</p>
 <p><em>item</em>—a <em>sequence</em>.</p>
-<p><em>start</em>, <em>end</em>—<em>bounding index designators</em> of <em>sequence</em>. The defaults for <em>start</em> and <em>end</em> are 0 and <span><b>nil</b></span>, respectively.</p>
+<p><em>start</em>, <em>end</em>—<span><i>bounding index designators</i></span> of <em>sequence</em>. The defaults for <em>start</em> and <em>end</em> are 0 and <span><b>nil</b></span>, respectively.</p>
 <p><strong>Description:</strong></p>
 <p>Replaces the <span><i>elements</i></span> of <em>sequence bounded</em> by <em>start</em> and <em>end</em> with <em>item</em>.</p>
 <p><strong>Examples:</strong></p>
@@ -31,7 +31,7 @@
 <p><strong>Side Effects:</strong></p>
 <p><em>Sequence</em> is destructively modified.</p>
 <p><strong>Exceptional Situations:</strong></p>
-<p>Should be prepared to signal an error of <span><i>type</i></span> <span><b>type-error</b></span> if <em>sequence</em> is not a <em>proper sequence</em>. Should signal an error of <span><i>type</i></span> <span><b>type-error</b></span> if <em>start</em> is not a non-negative <em>integer</em> . Should signal an error of <span><i>type</i></span> <span><b>type-error</b></span> if <em>end</em> is not a non-negative <em>integer</em> or <span><b>nil</b></span>.</p>
+<p>Should be prepared to signal an error of <span><i>type</i></span> <span><b>type-error</b></span> if <em>sequence</em> is not a <span><i>proper sequence</i></span>. Should signal an error of <span><i>type</i></span> <span><b>type-error</b></span> if <em>start</em> is not a non-negative <em>integer</em> . Should signal an error of <span><i>type</i></span> <span><b>type-error</b></span> if <em>end</em> is not a non-negative <em>integer</em> or <span><b>nil</b></span>.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>replace</b></span>, <strong>nsubstitute</strong></p>
 <p><strong>Notes:</strong></p>

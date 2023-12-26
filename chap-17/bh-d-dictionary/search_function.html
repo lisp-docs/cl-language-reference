@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -26,11 +26,11 @@
 <p><strong>Arguments and Values:</strong></p>
 <p><em>Sequence-1</em>—a <em>sequence</em>.</p>
 <p><em>Sequence-2</em>—a <em>sequence</em>.</p>
-<p><em>from-end</em>—a <em>generalized boolean</em>. The default is <span><i>false</i></span>.</p>
-<p><em>test</em>—a <span><i>designator</i></span> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <em>generalized boolean</em>. <em>test-not<span><i>—a </i></span>designator</em> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <em>generalized boolean</em>. <em>key</em>—a <em>designator</em> for a <span><i>function</i></span> of one argument, or <span><b>nil</b></span>.</p>
-<p><em>start1</em>, <em>end1</em>—<em>bounding index designators</em> of <em>sequence-1</em>. The defaults for <em>start1</em> and <em>end1</em> are 0 and <span><b>nil</b></span>, respectively.</p>
-<p><em>start2</em>, <em>end2</em>—<em>bounding index designators</em> of <em>sequence-2</em>. The defaults for <em>start2</em> and <em>end2</em> are 0 and <span><b>nil</b></span>, respectively.</p>
-<p><em>position</em>—a <em>bounding index</em> of <em>sequence-2</em>, or <span><b>nil</b></span>.</p>
+<p><em>from-end</em>—a <span><i>generalized boolean</i></span>. The default is <span><i>false</i></span>.</p>
+<p><em>test</em>—a <span><i>designator</i></span> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <span><i>generalized boolean</i></span>. <em>test-not<span><i>—a </i></span>designator</em> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <span><i>generalized boolean</i></span>. <span><i>key</i></span>—a <span><i>designator</i></span> for a <span><i>function</i></span> of one argument, or <span><b>nil</b></span>.</p>
+<p><em>start1</em>, <em>end1</em>—<span><i>bounding index designators</i></span> of <em>sequence-1</em>. The defaults for <em>start1</em> and <em>end1</em> are 0 and <span><b>nil</b></span>, respectively.</p>
+<p><em>start2</em>, <em>end2</em>—<span><i>bounding index designators</i></span> of <em>sequence-2</em>. The defaults for <em>start2</em> and <em>end2</em> are 0 and <span><b>nil</b></span>, respectively.</p>
+<p><em>position</em>—a <span><i>bounding index</i></span> of <em>sequence-2</em>, or <span><b>nil</b></span>.</p>
 <p><strong>Description:</strong></p>
 <p>Searches <em>sequence-2</em> for a subsequence that matches <em>sequence-1</em>.</p>
 <p>The implementation may choose to search <em>sequence-2</em> in any order; there is no guarantee on the number of times the test is made. For example, when <em>start-end</em> is <span><i>true</i></span>, the <em>sequence</em> might actually be searched from left to right instead of from right to left (but in either case would return the rightmost matching subsequence). If the search succeeds, <span><b>search</b></span> returns the offset into <em>sequence-2</em> of the first element of the leftmost or rightmost matching subsequence, depending on <em>from-end</em>; otherwise <span><b>search</b></span> returns <span><b>nil</b></span>.</p>

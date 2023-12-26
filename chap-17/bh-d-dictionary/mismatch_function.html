@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -23,12 +23,12 @@
 <p><strong>Arguments and Values:</strong></p>
 <p><em>Sequence-1</em>—a <em>sequence</em>.</p>
 <p><em>Sequence-2</em>—a <em>sequence</em>.</p>
-<p><em>from-end</em>—a <em>generalized boolean</em>. The default is <span><i>false</i></span>.</p>
-<p><em>test</em>—a <span><i>designator</i></span> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <em>generalized boolean</em>. <em>test-not<span><i>—a </i></span>designator</em> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <em>generalized boolean</em>.</p>
-<p><em>start1</em>, <em>end1</em>—<em>bounding index designators</em> of <em>sequence-1</em>. The defaults for <em>start1</em> and <em>end1</em> are 0 and <span><b>nil</b></span>, respectively.</p>
-<p><em>start2</em>, <em>end2</em>—<em>bounding index designators</em> of <em>sequence-2</em>. The defaults for <em>start2</em> and <em>end2</em> are 0 and <span><b>nil</b></span>, respectively.</p>
+<p><em>from-end</em>—a <span><i>generalized boolean</i></span>. The default is <span><i>false</i></span>.</p>
+<p><em>test</em>—a <span><i>designator</i></span> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <span><i>generalized boolean</i></span>. <em>test-not<span><i>—a </i></span>designator</em> for a <span><i>function</i></span> of two <span><i>arguments</i></span> that returns a <span><i>generalized boolean</i></span>.</p>
+<p><em>start1</em>, <em>end1</em>—<span><i>bounding index designators</i></span> of <em>sequence-1</em>. The defaults for <em>start1</em> and <em>end1</em> are 0 and <span><b>nil</b></span>, respectively.</p>
+<p><em>start2</em>, <em>end2</em>—<span><i>bounding index designators</i></span> of <em>sequence-2</em>. The defaults for <em>start2</em> and <em>end2</em> are 0 and <span><b>nil</b></span>, respectively.</p>
 <p><span><i>key</i></span>—a <span><i>designator</i></span> for a <span><i>function</i></span> of one argument, or <span><b>nil</b></span>.</p>
-<p><em>position</em>—a <em>bounding index</em> of <em>sequence-1</em>, or <span><b>nil</b></span>.</p>
+<p><em>position</em>—a <span><i>bounding index</i></span> of <em>sequence-1</em>, or <span><b>nil</b></span>.</p>
 <p><strong>Description:</strong></p>
 <p>The specified subsequences of <em>sequence-1</em> and <em>sequence-2</em> are compared element-wise. The <span><i>key</i></span> argument is used for both the <em>sequence-1</em> and the <em>sequence-2</em>.</p>
 <p>If <em>sequence-1</em> and <em>sequence-2</em> are of equal length and match in every element, the result is <span><i>false</i></span>. Otherwise, the result is a non-negative <em>integer</em> , the index within <em>sequence-1</em> of the leftmost or rightmost position, depending on <em>from-end</em>, at which the two subsequences fail to match. If one subsequence is shorter than and a matching prefix of the other, the result is the index relative to <em>sequence-1</em> beyond the last position tested.</p>

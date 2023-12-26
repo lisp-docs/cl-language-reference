@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -19,11 +19,11 @@
 <!-- -->
 <p><em>∗<span><b><em>print-radix</em></b></span>∗ Variable</em></p>
 <p><strong>Value Type:</strong></p>
-<p><strong>*print-base*</strong>—a <span><i>radix</i></span> . <span><b>*print-radix*</b></span>—a <em>generalized boolean</em>.</p>
+<p><strong>*print-base*</strong>—a <span><i>radix</i></span> . <span><b>*print-radix*</b></span>—a <span><i>generalized boolean</i></span>.</p>
 <p><strong>Initial Value:</strong></p>
 <p>The initial <span><i>value</i></span> of <strong>*print-base*</strong> is 10. The initial <span><i>value</i></span> of <span><b>*print-radix*</b></span> is <span><i>false</i></span>.</p>
 <p><strong>Description:</strong></p>
-<p><strong>*print-base*</strong> and <span><b>*print-radix*</b></span> control the printing of <span><i>rationals</i></span>. The <span><i>value</i></span> of <strong>*print-base*</strong> is called the <em>current output base</em>.</p>
+<p><strong>*print-base*</strong> and <span><b>*print-radix*</b></span> control the printing of <span><i>rationals</i></span>. The <span><i>value</i></span> of <strong>*print-base*</strong> is called the <span><i>current output base</i></span>.</p>
 <p>The <span><i>value</i></span> of <strong>*print-base*</strong> is the <span><i>radix</i></span> in which the printer will print <span><i>rationals</i></span>. For radices above 10, letters of the alphabet are used to represent digits above 9.</p>
 <p>If the <span><i>value</i></span> of <span><b>*print-radix*</b></span> is <span><i>true</i></span>, the printer will print a radix specifier to indicate the <span><i>radix</i></span> in which it is printing a <span><i>rational</i></span> number. The radix specifier is always printed using lowercase letters. If <strong>*print-base*</strong> is 2, 8, or 16, then the radix specifier used is #b, #o, or #x, respectively. For <em>integers</em>, base ten is indicated by a trailing decimal point instead of a leading radix specifier; for <span><i>ratios</i></span>, #10r is used.</p>
 <p><strong>Examples:</strong></p>

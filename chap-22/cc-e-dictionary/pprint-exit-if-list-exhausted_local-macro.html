@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,7 +22,7 @@
 <p><span><b>pprint-exit-if-list-exhausted</b></span> <em>⟨no arguments⟩ →</em> <span><b>nil</b></span></p>
 <p><strong>Description:</strong></p>
 <p>Tests whether or not the <span><i>list</i></span> passed to the <em>lexically current logical block</em> has been exhausted; see Section 22.2.1.1 (Dynamic Control of the Arrangement of Output). If this <span><i>list</i></span> has been reduced to <span><b>nil</b></span>, <span><b>pprint-exit-if-list-exhausted</b></span> terminates the execution of the <em>lexically current logical block</em> except for the printing of the suffix. Otherwise <span><b>pprint-exit-if-list-exhausted</b></span> returns <span><b>nil</b></span>.</p>
-<p>Whether or not <span><b>pprint-exit-if-list-exhausted</b></span> is <span><i>fbound</i></span> in the <em>global environment</em> is <em>implementation dependent</em>; however, the restrictions on redefinition and <em>shadowing</em> of <span><b>pprint-exit-if-list-exhausted</b></span> are the same as for <span><i>symbols</i></span> in the COMMON-LISP <span><i>package</i></span> which are <span><i>fbound</i></span> in the <em>global environment</em>. The consequences of attempting to use <span><b>pprint-exit-if-list-exhausted</b></span> outside of <span><b>pprint-logical-block</b></span> are undefined.</p>
+<p>Whether or not <span><b>pprint-exit-if-list-exhausted</b></span> is <span><i>fbound</i></span> in the <span><i>global environment</i></span> is <em>implementation dependent</em>; however, the restrictions on redefinition and <em>shadowing</em> of <span><b>pprint-exit-if-list-exhausted</b></span> are the same as for <span><i>symbols</i></span> in the COMMON-LISP <span><i>package</i></span> which are <span><i>fbound</i></span> in the <span><i>global environment</i></span>. The consequences of attempting to use <span><b>pprint-exit-if-list-exhausted</b></span> outside of <span><b>pprint-logical-block</b></span> are undefined.</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>An error is signaled (at macro expansion time or at run time) if <span><b>pprint-exit-if-list-exhausted</b></span> is used anywhere other than lexically within a call on <span><b>pprint-logical-block</b></span>. Also, the consequences of executing <strong>pprint-if-list-exhausted</strong> outside of the dynamic extent of the <span><b>pprint-logical-block</b></span> which lexically contains it are undefined.</p>
 <p><strong>See Also:</strong></p>

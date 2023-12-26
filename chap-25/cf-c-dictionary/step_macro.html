@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -26,7 +26,7 @@
 <p><strong>Description:</strong></p>
 <p><span><b>step</b></span> implements a debugging paradigm wherein the programmer is allowed to <span><i>step</i></span> through the <span><i>evaluation</i></span> of a <span><i>form</i></span>. The specific nature of the interaction, including which I/O streams are used and whether the stepping has lexical or dynamic scope, is <span><i>implementation-defined</i></span>.</p>
 <p><span><b>step</b></span> evaluates <span><i>form</i></span> in the current <span><i>environment</i></span>. A call to <span><b>step</b></span> can be compiled, but it is acceptable for an implementation to interactively step through only those parts of the computation that are interpreted.</p>
-<p>It is technically permissible for a <em>conforming implementation</em> to take no action at all other than normal <em>execution</em> of the <span><i>form</i></span>. In such a situation, (step <span><i>form</i></span>) is equivalent to, for example, (let () <span><i>form</i></span>). In implementations where this is the case, the associated documentation should mention that fact.</p>
+<p>It is technically permissible for a <span><i>conforming implementation</i></span> to take no action at all other than normal <em>execution</em> of the <span><i>form</i></span>. In such a situation, (step <span><i>form</i></span>) is equivalent to, for example, (let () <span><i>form</i></span>). In implementations where this is the case, the associated documentation should mention that fact.</p>
 <p><strong>See Also:</strong></p>
 <span><b>trace</b></span>
 <p><strong>Notes:</strong></p>

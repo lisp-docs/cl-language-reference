@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,10 +21,10 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>unread-char</b></span> <span><i>character</i></span> &amp;optional <em>input-stream →</em> <span><b>nil</b></span></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><span><i>character</i></span>—a <span><i>character</i></span> ; must be the last <span><i>character</i></span> that was read from <em>input-stream</em>. <em>input-stream</em>—an <em>input stream designator</em> . The default is <em>standard input</em>.</p>
+<p><span><i>character</i></span>—a <span><i>character</i></span> ; must be the last <span><i>character</i></span> that was read from <em>input-stream</em>. <em>input-stream</em>—an <em>input stream designator</em> . The default is <span><i>standard input</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>unread-char</b></span> places <span><i>character</i></span> back onto the front of <em>input-stream</em> so that it will again be the next character in <em>input-stream</em>.</p>
-<p>When <em>input-stream</em> is an <em>echo stream</em>, no attempt is made to undo any echoing of the character that might already have been done on <em>input-stream</em>. However, characters placed on <em>input-stream</em> by <span><b>unread-char</b></span> are marked in such a way as to inhibit later re-echo by <span><b>read-char</b></span>.</p>
+<p>When <em>input-stream</em> is an <span><i>echo stream</i></span>, no attempt is made to undo any echoing of the character that might already have been done on <em>input-stream</em>. However, characters placed on <em>input-stream</em> by <span><b>unread-char</b></span> are marked in such a way as to inhibit later re-echo by <span><b>read-char</b></span>.</p>
 <p>It is an error to invoke <span><b>unread-char</b></span> twice consecutively on the same <span><i>stream</i></span> without an intervening call to <span><b>read-char</b></span> (or some other input operation which implicitly reads characters) on that <span><i>stream</i></span>.</p>
 <p>Invoking <span><b>peek-char</b></span> or <span><b>read-char</b></span> commits all previous characters. The consequences of invoking <span><b>unread-char</b></span> on any character preceding that which is returned by <span><b>peek-char</b></span> (including those passed over by <span><b>peek-char</b></span> that has a <em>non-nil peek-type</em>) are unspecified. In particular, the consequences of invoking <span><b>unread-char</b></span> after <span><b>peek-char</b></span> are unspecified.</p>
 <p><strong>Examples:</strong></p>

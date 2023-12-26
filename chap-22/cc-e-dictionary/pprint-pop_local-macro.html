@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -28,16 +28,16 @@
 <p><em>•</em> If the remaining ‘list’ is not a <span><i>list</i></span>, “. ” is printed followed by the remaining ‘list.’ (This makes it easier to write printing functions that are robust in the face of malformed arguments.)</p>
 <p><em>•</em> If <span><b>*print-length*</b></span> is <span><i>non-nil</i></span>, and <span><b>pprint-pop</b></span> has already been called <span><b>*print-length*</b></span> times within the immediately containing logical block, “...” is printed. (This makes it easy to write printing functions that properly handle <span><b>*print-length*</b></span>.)</p>
 <p><em>•</em> If <span><b>*print-circle*</b></span> is <span><i>non-nil</i></span>, and the remaining list is a circular (or shared) reference, then “. ” is printed followed by an appropriate “#<em>n</em>#” marker. (This catches instances of <span><i>cdr</i></span> circularity and sharing in lists.)</p>
-<p>If either of the three conditions above occurs, the indicated output is printed on the <em>pretty printing stream</em> created by the immediately containing <span><b>pprint-logical-block</b></span> and the execution of the immediately containing <span><b>pprint-logical-block</b></span> is terminated except for the printing of the suffix.</p>
+<p>If either of the three conditions above occurs, the indicated output is printed on the <span><i>pretty printing stream</i></span> created by the immediately containing <span><b>pprint-logical-block</b></span> and the execution of the immediately containing <span><b>pprint-logical-block</b></span> is terminated except for the printing of the suffix.</p>
 <p>If <span><b>pprint-logical-block</b></span> is given a ‘list’ argument of <span><b>nil</b></span>—because it is not processing a list— <span><b>pprint-pop</b></span> can still be used to obtain support for <span><b>*print-length*</b></span>. In this situation, the first and third tests above are disabled and <span><b>pprint-pop</b></span> always returns <span><b>nil</b></span>. See Section 22.2.2 (Examples of using the Pretty Printer)—specifically, the <strong>pprint-vector</strong> example.</p>
-<p>Whether or not <span><b>pprint-pop</b></span> is <span><i>fbound</i></span> in the <em>global environment</em> is <span><i>implementation-dependent</i></span>; however, the restrictions on redefinition and <em>shadowing</em> of <span><b>pprint-pop</b></span> are the same as for <span><i>symbols</i></span> in the COMMON-LISP <span><i>package</i></span> which are <span><i>fbound</i></span> in the <em>global environment</em>. The consequences of attempting to use <span><b>pprint-pop</b></span> outside of <span><b>pprint-logical-block</b></span> are undefined.</p>
+<p>Whether or not <span><b>pprint-pop</b></span> is <span><i>fbound</i></span> in the <span><i>global environment</i></span> is <span><i>implementation-dependent</i></span>; however, the restrictions on redefinition and <em>shadowing</em> of <span><b>pprint-pop</b></span> are the same as for <span><i>symbols</i></span> in the COMMON-LISP <span><i>package</i></span> which are <span><i>fbound</i></span> in the <span><i>global environment</i></span>. The consequences of attempting to use <span><b>pprint-pop</b></span> outside of <span><b>pprint-logical-block</b></span> are undefined.</p>
 <p><strong>Side Effects:</strong></p>
-<p>Might cause output to the <em>pretty printing stream</em> associated with the lexically current logical block.</p>
+<p>Might cause output to the <span><i>pretty printing stream</i></span> associated with the lexically current logical block.</p>
 <p><strong>Affected By:</strong></p>
 <p><span><b>*print-length*</b></span>, <span><b>*print-circle*</b></span>.</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>An error is signaled (either at macro expansion time or at run time) if a usage of <span><b>pprint-pop</b></span> occurs where there is no lexically containing <span><b>pprint-logical-block</b></span> <span><i>form</i></span>.</p>
-<p>The consequences are undefined if <span><b>pprint-pop</b></span> is executed outside of the <em>dynamic extent</em> of this <span><b>pprint-logical-block</b></span>.</p>
+<p>The consequences are undefined if <span><b>pprint-pop</b></span> is executed outside of the <span><i>dynamic extent</i></span> of this <span><b>pprint-logical-block</b></span>.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>pprint-exit-if-list-exhausted</b></span>, <span><b>pprint-logical-block</b></span>.</p>
 <p><strong>Notes:</strong></p>

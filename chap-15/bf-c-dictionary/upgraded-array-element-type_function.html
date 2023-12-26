@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,15 +21,15 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>upgraded-array-element-type</b></span> <em>typespec</em> &amp;optional <em>environment → upgraded-typespec</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>typespec</em>—a <em>type specifier</em> .</p>
-<p><span><i>environment</i></span>—an <em>environment object</em>. The default is <span><b>nil</b></span>, denoting the <em>null lexical environment</em> and the current <em>global environment</em>.</p>
-<p><em>upgraded-typespec</em>—a <em>type specifier</em> .</p>
+<p><em>typespec</em>—a <span><i>type specifier</i></span> .</p>
+<p><span><i>environment</i></span>—an <span><i>environment object</i></span>. The default is <span><b>nil</b></span>, denoting the <span><i>null lexical environment</i></span> and the current <span><i>global environment</i></span>.</p>
+<p><em>upgraded-typespec</em>—a <span><i>type specifier</i></span> .</p>
 <p><strong>Description:</strong></p>
-<p>Returns the <em>element type</em> of the most <em>specialized array</em> representation capable of holding items of the <span><i>type</i></span> denoted by <em>typespec</em>.</p>
-<p>The <em>typespec</em> is a <span><i>subtype</i></span> of (and possibly <em>type equivalent</em> to) the <em>upgraded-typespec</em>.</p>
-<p>If <em>typespec</em> is <span><b>bit</b></span>, the result is <em>type equivalent</em> to bit. If <em>typespec</em> is <span><b>base-char</b></span>, the result is <em>type equivalent</em> to base-char. If <em>typespec</em> is <span><b>character</b></span>, the result is <em>type equivalent</em> to character.</p>
+<p>Returns the <span><i>element type</i></span> of the most <em>specialized array</em> representation capable of holding items of the <span><i>type</i></span> denoted by <em>typespec</em>.</p>
+<p>The <em>typespec</em> is a <span><i>subtype</i></span> of (and possibly <span><i>type equivalent</i></span> to) the <em>upgraded-typespec</em>.</p>
+<p>If <em>typespec</em> is <span><b>bit</b></span>, the result is <span><i>type equivalent</i></span> to bit. If <em>typespec</em> is <span><b>base-char</b></span>, the result is <span><i>type equivalent</i></span> to base-char. If <em>typespec</em> is <span><b>character</b></span>, the result is <span><i>type equivalent</i></span> to character.</p>
 <p>The purpose of <span><b>upgraded-array-element-type</b></span> is to reveal how an implementation does its <em>upgrading</em>.</p>
-<p>The <span><i>environment</i></span> is used to expand any <em>derived type specifiers</em> that are mentioned in the <em>typespec</em>.</p>
+<p>The <span><i>environment</i></span> is used to expand any <span><i>derived type specifiers</i></span> that are mentioned in the <em>typespec</em>.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>array-element-type</b></span>, <span><b>make-array</b></span></p>
 <p><strong>Notes:</strong></p>

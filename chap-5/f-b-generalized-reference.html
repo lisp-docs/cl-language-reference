@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -27,11 +27,11 @@
 <p>| :- |</p>
 <p>|</p><p>x (setq x datum) (setf x datum) </p><p>(car x) (rplaca x datum) (setf (car x) datum) (symbol-value x) (set x datum) (setf (symbol-value x) datum)</p>|<p></p>
 <p><strong>Figure 5–1. Examples of setf</strong></p>
-<p>Figure 5–2 shows <span><i>operators</i></span> relating to <span><i>places</i></span> and <em>generalized reference</em>.</p>
+<p>Figure 5–2 shows <span><i>operators</i></span> relating to <span><i>places</i></span> and <span><i>generalized reference</i></span>.</p>
 <p>|</p><p><strong>assert defsetf push</strong> </p><p><strong>ccase get-setf-expansion remf</strong> </p><p><strong>ctypecase getf rotatef decf incf setf</strong> </p><p><strong>define-modify-macro pop shiftf define-setf-expander psetf</strong></p>|<p></p>
 <p>| :- |</p>
 <p><strong>Figure 5–2. Operators relating to places and generalized reference.</strong></p>
-<p>Some of the <span><i>operators</i></span> above manipulate <span><i>places</i></span> and some manipulate <em>setf expanders</em>. A <em>setf expansion</em> can be derived from any <span><i>place</i></span>. New <em>setf expanders</em> can be defined by using <span><b>defsetf</b></span> and <span><b>define-setf-expander</b></span>.</p>
+<p>Some of the <span><i>operators</i></span> above manipulate <span><i>places</i></span> and some manipulate <span><i>setf expanders</i></span>. A <span><i>setf expansion</i></span> can be derived from any <span><i>place</i></span>. New <span><i>setf expanders</i></span> can be defined by using <span><b>defsetf</b></span> and <span><b>define-setf-expander</b></span>.</p>
 <p>Data and Control</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="5111-evaluation-of-subforms-to-places">5.1.1.1 Evaluation of Subforms to Places<a href="#5111-evaluation-of-subforms-to-places" class="hash-link" aria-label="Direct link to 5.1.1.1 Evaluation of Subforms to Places" title="Direct link to 5.1.1.1 Evaluation of Subforms to Places">​</a></h3>
 <!-- -->
@@ -69,7 +69,7 @@
 <p>For each <span><i>standardized</i></span> accessor function <em>F</em>, unless it is explicitly documented otherwise, it is <span><i>implementation-dependent</i></span> whether the ability to use an <em>F form</em> as a <span><b>setf</b></span> <span><i>place</i></span> is implemented by a <em>setf expander</em> or a <em>setf function</em>. Also, it follows from this that it is <span><i>implementation-dependent</i></span> whether the name (setf <em>F</em>) is <span><i>fbound</i></span>.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="51121-examples-of-setf-expansions">5.1.1.2.1 Examples of Setf Expansions<a href="#51121-examples-of-setf-expansions" class="hash-link" aria-label="Direct link to 5.1.1.2.1 Examples of Setf Expansions" title="Direct link to 5.1.1.2.1 Examples of Setf Expansions">​</a></h4>
 <!-- -->
-<p>Examples of the contents of the constituents of <em>setf expansions</em> follow.</p>
+<p>Examples of the contents of the constituents of <span><i>setf expansions</i></span> follow.</p>
 <p>For a variable <em>x</em>:</p>
 <div class="language-lisp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockTitle_Ktv7">Figure 5–3. Sample Setf Expansion of a Variable</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-lisp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">&lt;p&gt;</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">;list of temporary variables &lt;/p&gt;&lt;p&gt;() ;list of value forms &lt;/p&gt;&lt;p&gt;(g0001) ;list of store variables &lt;/p&gt;&lt;p&gt;(setq *x* g0001) ;storing form &lt;/p&gt;&lt;p&gt;*x* ;accessing form&lt;/p&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>For (car <em>exp</em>):</p>
@@ -80,10 +80,10 @@
 <div class="language-lisp codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockTitle_Ktv7">Figure 5–6. Sample Setf Expansion of a LDB Form</div><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-lisp codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">&lt;p&gt;</span><span class="token punctuation" style="color:#393A34">(</span><span class="token car">g0001</span><span class="token plain"> g0002</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token comment" style="color:#999988;font-style:italic">;list of temporary variables &lt;/p&gt;&lt;p&gt;(*bs exp*) ;list of value forms &lt;/p&gt;&lt;p&gt;(g0003) ;list of store variables &lt;/p&gt;&lt;p&gt;(progn (rplaca g0002 (dpb g0003 g0001 (car g0002))) g0003) &lt;/p&gt;&lt;p&gt;;storing form &lt;/p&gt;&lt;p&gt;(ldb g0001 (car g0002)) ; accessing form&lt;/p&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="512-kinds-of-places">5.1.2 Kinds of Places<a href="#512-kinds-of-places" class="hash-link" aria-label="Direct link to 5.1.2 Kinds of Places" title="Direct link to 5.1.2 Kinds of Places">​</a></h2>
 <!-- -->
-<p>Several kinds of <span><i>places</i></span> are defined by Common Lisp; this section enumerates them. This set can be extended by <span><i>implementations</i></span> and by <em>programmer code</em>.</p>
+<p>Several kinds of <span><i>places</i></span> are defined by Common Lisp; this section enumerates them. This set can be extended by <span><i>implementations</i></span> and by <span><i>programmer code</i></span>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="5121-variable-names-as-places">5.1.2.1 Variable Names as Places<a href="#5121-variable-names-as-places" class="hash-link" aria-label="Direct link to 5.1.2.1 Variable Names as Places" title="Direct link to 5.1.2.1 Variable Names as Places">​</a></h3>
 <!-- -->
-<p>The name of a <em>lexical variable</em> or <em>dynamic variable</em> can be used as a <span><i>place</i></span>.</p>
+<p>The name of a <span><i>lexical variable</i></span> or <span><i>dynamic variable</i></span> can be used as a <span><i>place</i></span>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="5122-function-call-forms-as-places">5.1.2.2 Function Call Forms as Places<a href="#5122-function-call-forms-as-places" class="hash-link" aria-label="Direct link to 5.1.2.2 Function Call Forms as Places" title="Direct link to 5.1.2.2 Function Call Forms as Places">​</a></h3>
 <!-- -->
 <p>A <em>function form</em> can be used as a <span><i>place</i></span> if it falls into one of the following categories:</p>
@@ -174,9 +174,9 @@
 <p>does the following:</p>
 <p>1. The <span><i>subforms</i></span> of each nested <span><i>place</i></span> are evaluated in left-to-right order.</p>
 <p>2. The <em>values-form</em> is evaluated, and the first store variable from each <span><i>place</i></span> is bound to its return values as if by <span><b>multiple-value-bind</b></span>.</p>
-<p>3. If the <em>setf expansion</em> for any <span><i>place</i></span> involves more than one store variable, then the additional store variables are bound to <span><b>nil</b></span>.</p>
+<p>3. If the <span><i>setf expansion</i></span> for any <span><i>place</i></span> involves more than one store variable, then the additional store variables are bound to <span><b>nil</b></span>.</p>
 <p>4. The storing forms for each <span><i>place</i></span> are evaluated in left-to-right order.</p>
-<p>The storing form in the <em>setf expansion</em> of <span><b>values</b></span> returns as <em>multiple values</em><sub>2</sub> the values of the store variables in step 2. That is, the number of values returned is the same as the number of <span><i>place</i></span> forms. This may be more or fewer values than are produced by the <em>values-form</em>.</p>
+<p>The storing form in the <span><i>setf expansion</i></span> of <span><b>values</b></span> returns as <span><i>multiple values</i></span><sub>2</sub> the values of the store variables in step 2. That is, the number of values returned is the same as the number of <span><i>place</i></span> forms. This may be more or fewer values than are produced by the <em>values-form</em>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="5124-the-forms-as-places">5.1.2.4 THE Forms as Places<a href="#5124-the-forms-as-places" class="hash-link" aria-label="Direct link to 5.1.2.4 THE Forms as Places" title="Direct link to 5.1.2.4 THE Forms as Places">​</a></h3>
 <!-- -->
 <p>A <span><b>the</b></span> <span><i>form</i></span> can be used as a <span><i>place</i></span>, in which case the declaration is transferred to the <em>newvalue</em> form, and the resulting <span><b>setf</b></span> is analyzed. For example,</p>
@@ -197,13 +197,13 @@
 <p><em>≡</em> (apply #’(setf <span><i>name</i></span>) <em>val {arg}</em>*)</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="5126-setf-expansions-and-places">5.1.2.6 Setf Expansions and Places<a href="#5126-setf-expansions-and-places" class="hash-link" aria-label="Direct link to 5.1.2.6 Setf Expansions and Places" title="Direct link to 5.1.2.6 Setf Expansions and Places">​</a></h3>
 <!-- -->
-<p>Any <em>compound form</em> for which the <span><i>operator</i></span> has a <em>setf expander</em> defined can be used as a <span><i>place</i></span>. The <span><i>operator</i></span> must refer to the global function definition, rather than a locally defined <span><i>function</i></span> or <span><i>macro</i></span>.</p>
+<p>Any <span><i>compound form</i></span> for which the <span><i>operator</i></span> has a <span><i>setf expander</i></span> defined can be used as a <span><i>place</i></span>. The <span><i>operator</i></span> must refer to the global function definition, rather than a locally defined <span><i>function</i></span> or <span><i>macro</i></span>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="5127-macro-forms-as-places">5.1.2.7 Macro Forms as Places<a href="#5127-macro-forms-as-places" class="hash-link" aria-label="Direct link to 5.1.2.7 Macro Forms as Places" title="Direct link to 5.1.2.7 Macro Forms as Places">​</a></h3>
 <!-- -->
 <p>A <em>macro form</em> can be used as a <span><i>place</i></span>, in which case Common Lisp expands the <em>macro form</em> as if by <span><b>macroexpand-1</b></span> and then uses the <em>macro expansion</em> in place of the original <span><i>place</i></span>. Such <em>macro expansion</em> is attempted only after exhausting all other possibilities other than expanding into a call to a function named (setf <span><i>reader</i></span>).</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="5128-symbol-macros-as-places">5.1.2.8 Symbol Macros as Places<a href="#5128-symbol-macros-as-places" class="hash-link" aria-label="Direct link to 5.1.2.8 Symbol Macros as Places" title="Direct link to 5.1.2.8 Symbol Macros as Places">​</a></h3>
 <!-- -->
-<p>A reference to a <span><i>symbol</i></span> that has been <em>established</em> as a <em>symbol macro</em> can be used as a <span><i>place</i></span>. In this case, <span><b>setf</b></span> expands the reference and then analyzes the resulting <span><i>form</i></span>.</p>
+<p>A reference to a <span><i>symbol</i></span> that has been <em>established</em> as a <span><i>symbol macro</i></span> can be used as a <span><i>place</i></span>. In this case, <span><b>setf</b></span> expands the reference and then analyzes the resulting <span><i>form</i></span>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="5129-other-compound-forms-as-places">5.1.2.9 Other Compound Forms as Places<a href="#5129-other-compound-forms-as-places" class="hash-link" aria-label="Direct link to 5.1.2.9 Other Compound Forms as Places" title="Direct link to 5.1.2.9 Other Compound Forms as Places">​</a></h3>
 <!-- -->
 <p>For any other <em>compound form</em> for which the <span><i>operator</i></span> is a <em>symbol f</em> , the <span><b>setf</b></span> <span><i>form</i></span> expands into a call to the <span><i>function</i></span> named (setf <em>f</em> ). The first <span><i>argument</i></span> in the newly constructed <em>function form</em> is <em>newvalue</em> and the remaining <span><i>arguments</i></span> are the remaining <span><i>elements</i></span> of <span><i>place</i></span>. This expansion occurs</p>
@@ -224,7 +224,7 @@
 <p>(<em>operator {preceding-form}</em>* <em>place {following-form}</em>*)</p>
 <p>The evaluation of each such <span><i>form</i></span> proceeds like this:</p>
 <p>1. <span><i>Evaluate</i></span> each of the <em>preceding-forms</em>, in left-to-right order.</p>
-<p>2. <span><i>Evaluate</i></span> the <span><i>subforms</i></span> of the <span><i>place</i></span>, in the order specified by the second value of the <em>setf expansion</em> for that <span><i>place</i></span>.</p>
+<p>2. <span><i>Evaluate</i></span> the <span><i>subforms</i></span> of the <span><i>place</i></span>, in the order specified by the second value of the <span><i>setf expansion</i></span> for that <span><i>place</i></span>.</p>
 <p>3. <span><i>Evaluate</i></span> each of the <em>following-forms</em>, in left-to-right order.</p>
 <p>4. <span><i>Read</i></span> the old value from <span><i>place</i></span>.</p>
 <p>5. Compute the new value.</p>

@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,7 +22,7 @@
 <p><span><b>coerce</b></span> <em>object result-type → result</em></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>object</i></span>—an <span><i>object</i></span>.</p>
-<p><em>result-type</em>—a <em>type specifier</em> .</p>
+<p><em>result-type</em>—a <span><i>type specifier</i></span> .</p>
 <p><em>result</em>—an <span><i>object</i></span>, of <em>type result-type</em> except in situations described in Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals).</p>
 <p><strong>Description:</strong></p>
 <p><span><i>Coerces</i></span> the <span><i>object</i></span> to <em>type result-type</em>.</p>
@@ -30,17 +30,17 @@
 <p>Otherwise, the <span><i>object</i></span> is <em>coerced</em> to <em>type result-type</em> according to the following rules:</p>
 <span><b>coerce</b></span>
 <span><b>sequence</b></span>
-<p>If the <em>result-type</em> is a <em>recognizable subtype</em> of <span><b>list</b></span>, and the <span><i>object</i></span> is a <em>sequence</em>, then the <em>result</em> is a <span><i>list</i></span> that has the <em>same elements</em> as <span><i>object</i></span>.</p>
-<p>If the <em>result-type</em> is a <em>recognizable subtype</em> of <span><b>vector</b></span>, and the <span><i>object</i></span> is a <em>sequence</em>, then the <em>result</em> is a <span><i>vector</i></span> that has the <em>same elements</em> as <span><i>object</i></span>. If <em>result-type</em> is a specialized <span><i>type</i></span>, the <em>result</em> has an <em>actual array element type</em> that is the result of <em>upgrading</em> the element type part of that <em>specialized type</em>. If no element type is specified, the element type defaults to <span><b>t</b></span>. If the <span><i>implementation</i></span> cannot determine the element type, an error is signaled.</p>
+<p>If the <em>result-type</em> is a <span><i>recognizable subtype</i></span> of <span><b>list</b></span>, and the <span><i>object</i></span> is a <em>sequence</em>, then the <em>result</em> is a <span><i>list</i></span> that has the <em>same elements</em> as <span><i>object</i></span>.</p>
+<p>If the <em>result-type</em> is a <span><i>recognizable subtype</i></span> of <span><b>vector</b></span>, and the <span><i>object</i></span> is a <em>sequence</em>, then the <em>result</em> is a <span><i>vector</i></span> that has the <em>same elements</em> as <span><i>object</i></span>. If <em>result-type</em> is a specialized <span><i>type</i></span>, the <em>result</em> has an <span><i>actual array element type</i></span> that is the result of <em>upgrading</em> the element type part of that <em>specialized type</em>. If no element type is specified, the element type defaults to <span><b>t</b></span>. If the <span><i>implementation</i></span> cannot determine the element type, an error is signaled.</p>
 <span><b>character</b></span>
-<p>If the <em>result-type</em> is <span><b>character</b></span> and the <span><i>object</i></span> is a <em>character designator</em> , the <em>result</em> is the <span><i>character</i></span> it denotes.</p>
+<p>If the <em>result-type</em> is <span><b>character</b></span> and the <span><i>object</i></span> is a <span><i>character designator</i></span> , the <em>result</em> is the <span><i>character</i></span> it denotes.</p>
 <span><b>complex</b></span>
 <p>If the <em>result-type</em> is <span><b>complex</b></span> and the <span><i>object</i></span> is a <em>real</em>, then the <em>result</em> is obtained by constructing a <span><i>complex</i></span> whose real part is the <span><i>object</i></span> and whose imaginary part is the result of <em>coercing</em> an <em>integer</em> zero to the <span><i>type</i></span> of the <span><i>object</i></span> (using <span><b>coerce</b></span>). (If the real part is a <span><i>rational</i></span>, however, then the result must be represented as a <span><i>rational</i></span> rather than a <span><i>complex</i></span> ; see Section 12.1.5.3 (Rule of Canonical Representation for Complex Rationals). So, for example, (coerce 3 ’complex) is permissible, but will return 3, which is not a <span><i>complex</i></span> .)</p>
 <span><b>float</b></span>
-<p>If the <em>result-type</em> is any of <span><b>float</b></span>, <span><b>short-float</b></span>, <span><b>single-float</b></span>, <span><b>double-float</b></span>, <span><b>long-float</b></span>, and the <span><i>object</i></span> is a <em>real</em>, then the <em>result</em> is a <span><i>float</i></span> of <em>type result-type</em> which is equal in sign and magnitude to the <span><i>object</i></span> to whatever degree of representational precision is permitted by that <span><i>float</i></span> representation. (If the <em>result-type</em> is <span><b>float</b></span> and <span><i>object</i></span> is not already a <span><i>float</i></span>, then the <em>result</em> is a <em>single float</em>.)</p>
+<p>If the <em>result-type</em> is any of <span><b>float</b></span>, <span><b>short-float</b></span>, <span><b>single-float</b></span>, <span><b>double-float</b></span>, <span><b>long-float</b></span>, and the <span><i>object</i></span> is a <em>real</em>, then the <em>result</em> is a <span><i>float</i></span> of <em>type result-type</em> which is equal in sign and magnitude to the <span><i>object</i></span> to whatever degree of representational precision is permitted by that <span><i>float</i></span> representation. (If the <em>result-type</em> is <span><b>float</b></span> and <span><i>object</i></span> is not already a <span><i>float</i></span>, then the <em>result</em> is a <span><i>single float</i></span>.)</p>
 <span><b>function</b></span>
-<p>If the <em>result-type</em> is <span><b>function</b></span>, and <span><i>object</i></span> is any <em>function name</em> that is <span><i>fbound</i></span> but that is globally defined neither as a <em>macro name</em> nor as a <em>special operator</em> , then the <em>result</em> is the <em>functional value</em> of <span><i>object</i></span>.</p>
-<p>If the <em>result-type</em> is <span><b>function</b></span>, and <span><i>object</i></span> is a <em>lambda expression</em>, then the <em>result</em> is a <span><i>closure</i></span> of <span><i>object</i></span> in the <em>null lexical environment</em>.</p>
+<p>If the <em>result-type</em> is <span><b>function</b></span>, and <span><i>object</i></span> is any <span><i>function name</i></span> that is <span><i>fbound</i></span> but that is globally defined neither as a <span><i>macro name</i></span> nor as a <span><i>special operator</i></span> , then the <em>result</em> is the <span><i>functional value</i></span> of <span><i>object</i></span>.</p>
+<p>If the <em>result-type</em> is <span><b>function</b></span>, and <span><i>object</i></span> is a <span><i>lambda expression</i></span>, then the <em>result</em> is a <span><i>closure</i></span> of <span><i>object</i></span> in the <span><i>null lexical environment</i></span>.</p>
 <span><b>t</b></span>
 <p>Any <span><i>object</i></span> can be <em>coerced</em> to an <span><i>object</i></span> of <span><i>type</i></span> <span><b>t</b></span>. In this case, the <span><i>object</i></span> is simply returned.</p>
 <p><strong>Examples:</strong></p>
@@ -48,7 +48,7 @@
 <p><strong>Exceptional Situations:</strong></p>
 <p>If a coercion is not possible, an error of <span><i>type</i></span> <span><b>type-error</b></span> is signaled.</p>
 <p>(coerce x ’nil) always signals an error of <span><i>type</i></span> <span><b>type-error</b></span>.</p>
-<p>An error of <span><i>type</i></span> <span><b>error</b></span> is signaled if the <em>result-type</em> is <span><b>function</b></span> but <span><i>object</i></span> is a <span><i>symbol</i></span> that is not <span><i>fbound</i></span> or if the <span><i>symbol</i></span> names a <span><i>macro</i></span> or a <em>special operator</em> .</p>
+<p>An error of <span><i>type</i></span> <span><b>error</b></span> is signaled if the <em>result-type</em> is <span><b>function</b></span> but <span><i>object</i></span> is a <span><i>symbol</i></span> that is not <span><i>fbound</i></span> or if the <span><i>symbol</i></span> names a <span><i>macro</i></span> or a <span><i>special operator</i></span> .</p>
 <p>An error of <span><i>type</i></span> <span><b>type-error</b></span> should be signaled if <em>result-type</em> specifies the number of elements and <span><i>object</i></span> is of a different length.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>rational</b></span>, <span><b>floor</b></span>, <span><b>char-code</b></span>, <span><b>char-int</b></span></p>

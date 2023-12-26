@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,8 +22,8 @@
 <p><span><b>invalid-method-error</b></span> <em>method format-control</em> &amp;rest <em>args → implementation-dependent</em></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>method</i></span>—a <span><i>method</i></span>.</p>
-<p><em>format-control</em>—a <em>format control</em>.</p>
-<p><em>args</em>—<em>format arguments</em> for the <em>format-control</em>.</p>
+<p><em>format-control</em>—a <span><i>format control</i></span>.</p>
+<p><em>args</em>—<span><i>format arguments</i></span> for the <em>format-control</em>.</p>
 <p><strong>Description:</strong></p>
 <p>The <span><i>function</i></span> <span><b>invalid-method-error</b></span> is used to signal an error of <span><i>type</i></span> <span><b>error</b></span> when there is an applicable <span><i>method</i></span> whose <span><i>qualifiers</i></span> are not valid for the method combination type. The error message is constructed by using the <em>format-control</em> suitable for <span><b>format</b></span> and any <em>args</em> to it. Because an implementation may need to add additional contextual information to the error message, <span><b>invalid-method-error</b></span> should be called only within the dynamic extent of a method combination function.</p>
 <p>The <span><i>function</i></span> <span><b>invalid-method-error</b></span> is called automatically when a <span><i>method</i></span> fails to satisfy every <span><i>qualifier</i></span> pattern and predicate in a <span><b>define-method-combination</b></span> <span><i>form</i></span>. A method combination function that imposes additional restrictions should call <span><b>invalid-method-error</b></span> explicitly if it encounters a <span><i>method</i></span> it cannot accept.</p>

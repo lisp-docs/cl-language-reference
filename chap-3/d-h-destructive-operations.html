@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -26,21 +26,21 @@
 <p>Changing the <span><i>car</i></span> <sub>1</sub> or <span><i>cdr</i></span> <sub>1</sub> of the <span><i>cons</i></span>, or performing a <span><i>destructive</i></span> operation on an <span><i>object</i></span> which is either the <span><i>car</i></span> <sub>2</sub> or the <span><i>cdr</i></span> <sub>2</sub> of the <span><i>cons</i></span>.</p>
 <span><b>array</b></span>
 <p>Storing a new value into some element of the <span><i>array</i></span>, or performing a <span><i>destructive</i></span> operation on an <span><i>object</i></span> that is already such an <span><i>element</i></span>.</p>
-<p>Changing the <em>fill pointer</em> , <span><i>dimensions</i></span>, or displacement of the <span><i>array</i></span> (regardless of whether the <span><i>array</i></span> is <em>actually adjustable</em>).</p>
+<p>Changing the <span><i>fill pointer</i></span> , <span><i>dimensions</i></span>, or displacement of the <span><i>array</i></span> (regardless of whether the <span><i>array</i></span> is <span><i>actually adjustable</i></span>).</p>
 <p>Performing a <span><i>destructive</i></span> operation on another <span><i>array</i></span> that is displaced to the <span><i>array</i></span> or that otherwise shares its contents with the <span><i>array</i></span>.</p>
 <span><b>hash-table</b></span>
 <p>Performing a <span><i>destructive</i></span> operation on any <span><i>key</i></span>.</p>
 <p>Storing a new <span><i>value</i></span><sub>4</sub> for any <span><i>key</i></span>, or performing a <span><i>destructive</i></span> operation on any <span><i>object</i></span> that is such a <span><i>value</i></span>.</p>
-<p>Adding or removing entries from the <em>hash table</em>.</p>
+<p>Adding or removing entries from the <span><i>hash table</i></span>.</p>
 <span><b>structure-object</b></span>
 <p>Storing a new value into any slot, or performing a <span><i>destructive</i></span> operation on an <span><i>object</i></span> that is the value of some slot.</p>
 <span><b>standard-object</b></span>
 <p>Storing a new value into any slot, or performing a <span><i>destructive</i></span> operation on an <span><i>object</i></span> that is the value of some slot.</p>
 <p>Changing the class of the <span><i>object</i></span> (<em>e.g.</em>, using the <span><i>function</i></span> <span><b>change-class</b></span>).</p>
 <span><b>readtable</b></span>
-<p>Altering the <em>readtable case</em>.</p>
+<p>Altering the <span><i>readtable case</i></span>.</p>
 <p>Altering the syntax type of any character in this readtable.</p>
-<p>Altering the <em>reader macro function</em> associated with any <span><i>character</i></span> in the <span><i>readtable</i></span>, or altering the <em>reader macro functions</em> associated with <span><i>characters</i></span> defined as <em>dispatching macro characters</em> in the <span><i>readtable</i></span>.</p>
+<p>Altering the <span><i>reader macro function</i></span> associated with any <span><i>character</i></span> in the <span><i>readtable</i></span>, or altering the <span><i>reader macro functions</i></span> associated with <span><i>characters</i></span> defined as <span><i>dispatching macro characters</i></span> in the <span><i>readtable</i></span>.</p>
 <span><b>stream</b></span>
 <p>Performing I/O operations on the <span><i>stream</i></span>, or <em>closing</em> the <span><i>stream</i></span>.</p>
 <p>All other standardized types</p>

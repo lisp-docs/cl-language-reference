@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,9 +21,9 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>format</b></span> <em>destination control-string</em> &amp;rest <em>args ! result</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>destination</em>—<span><b>nil</b></span>, <span><b>t</b></span>, a <span><i>stream</i></span>, or a <span><i>string</i></span> with a <em>fill pointer</em> .</p>
-<p><em>control-string</em>—a <em>format control</em>.</p>
-<p><em>args</em>—<em>format arguments</em> for <em>control-string</em>.</p>
+<p><em>destination</em>—<span><b>nil</b></span>, <span><b>t</b></span>, a <span><i>stream</i></span>, or a <span><i>string</i></span> with a <span><i>fill pointer</i></span> .</p>
+<p><em>control-string</em>—a <span><i>format control</i></span>.</p>
+<p><em>args</em>—<span><i>format arguments</i></span> for <em>control-string</em>.</p>
 <p><em>result</em>—if <em>destination</em> is <span><i>non-nil</i></span>, then <span><b>nil</b></span>; otherwise, a <span><i>string</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>format</b></span> produces formatted output by outputting the characters of <em>control-string</em> and observing that a <em>tilde</em> introduces a directive. The character after the tilde, possibly preceded by prefix parameters and modifiers, specifies what kind of formatting is desired. Most directives use one or more elements of <em>args</em> to create their output.</p>
@@ -33,7 +33,7 @@
 <p><strong>Aected By:</strong></p>
 <p><strong>*standard-output*</strong>, <span><b>*print-escape*</b></span>, <span><b>*print-radix*</b></span>, <strong>*print-base*</strong>, <span><b>*print-circle*</b></span>, <span><b>*print-pretty*</b></span>, <strong>*print-level*</strong>, <span><b>*print-length*</b></span>, <span><b>*print-case*</b></span>, <span><b>*print-gensym*</b></span>, <span><b>*print-array*</b></span>.</p>
 <p><strong>Exceptional Situations:</strong></p>
-<p>If <em>destination</em> is a <span><i>string</i></span> with a <em>fill pointer</em> , the consequences are undefined if destructive modifications are performed directly on the <span><i>string</i></span> during the <em>dynamic extent</em> of the call.</p>
+<p>If <em>destination</em> is a <span><i>string</i></span> with a <span><i>fill pointer</i></span> , the consequences are undefined if destructive modifications are performed directly on the <span><i>string</i></span> during the <span><i>dynamic extent</i></span> of the call.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>write</b></span>, Section 13.1.10 (Documentation of Implementation-Defined Scripts)</p>
 <p><strong>22. Printer</strong></p>

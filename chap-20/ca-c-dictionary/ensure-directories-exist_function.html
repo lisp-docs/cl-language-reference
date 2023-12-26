@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,18 +21,18 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>ensure-directories-exist</b></span> <em>pathspec</em> &amp;key <em>verbose → pathspec, created</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>pathspec</em>—a <em>pathname designator</em> .</p>
-<p><em>verbose</em>—a <em>generalized boolean</em>.</p>
-<p><em>created</em>—a <em>generalized boolean</em>.</p>
+<p><em>pathspec</em>—a <span><i>pathname designator</i></span> .</p>
+<p><em>verbose</em>—a <span><i>generalized boolean</i></span>.</p>
+<p><em>created</em>—a <span><i>generalized boolean</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p>Tests whether the directories containing the specified <span><i>file</i></span> actually exist, and attempts to create them if they do not.</p>
-<p>If the containing directories do not exist and if <em>verbose</em> is <span><i>true</i></span>, then the <span><i>implementation</i></span> is permitted (but not required) to perform output to <em>standard output</em> saying what directories were created. If the containing directories exist, or if <em>verbose</em> is <span><i>false</i></span>, this function performs no output.</p>
-<p>The <em>primary value</em> is the given <em>pathspec</em> so that this operation can be straightforwardly composed with other file manipulation expressions. The <em>secondary value</em>, <em>created</em>, is <span><i>true</i></span> if any directories were created.</p>
+<p>If the containing directories do not exist and if <em>verbose</em> is <span><i>true</i></span>, then the <span><i>implementation</i></span> is permitted (but not required) to perform output to <span><i>standard output</i></span> saying what directories were created. If the containing directories exist, or if <em>verbose</em> is <span><i>false</i></span>, this function performs no output.</p>
+<p>The <span><i>primary value</i></span> is the given <em>pathspec</em> so that this operation can be straightforwardly composed with other file manipulation expressions. The <span><i>secondary value</i></span>, <em>created</em>, is <span><i>true</i></span> if any directories were created.</p>
 <p><strong>Affected By:</strong></p>
 <p>The host computer’s file system.</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>An error of <span><i>type</i></span> <span><b>file-error</b></span> is signaled if the host, device, or directory part of <em>pathspec</em> is <span><i>wild</i></span>.</p>
-<p>If the directory creation attempt is not successful, an error of <span><i>type</i></span> <span><b>file-error</b></span> is signaled; if this occurs, it might be the case that none, some, or all of the requested creations have actually occurred within the <em>file system</em>.</p>
+<p>If the directory creation attempt is not successful, an error of <span><i>type</i></span> <span><b>file-error</b></span> is signaled; if this occurs, it might be the case that none, some, or all of the requested creations have actually occurred within the <span><i>file system</i></span>.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>probe-file</b></span>, <span><b>open</b></span>, Section 19.1.2 (Pathnames as Filenames)</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="expanded-reference-ensure-directories-exist">Expanded Reference: ensure-directories-exist<a href="#expanded-reference-ensure-directories-exist" class="hash-link" aria-label="Direct link to Expanded Reference: ensure-directories-exist" title="Direct link to Expanded Reference: ensure-directories-exist">​</a></h2>

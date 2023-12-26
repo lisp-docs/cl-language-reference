@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -37,8 +37,8 @@
 <p>(if (atom arg) *mod*</p>
 <p>(cons (hack1 (car arg)) (hack1 (cdr arg)))))</p>
 <p>A <span><b>special</b></span> declaration does not a↵ect inner <span><i>bindings</i></span> of a <em>var</em>; the inner <span><i>bindings</i></span> implicitly shadow a <span><b>special</b></span> declaration and must be explicitly re-declared to be <span><b>special</b></span>. <span><b>special</b></span> declarations never apply to function <span><i>bindings</i></span>.</p>
-<p><span><b>special</b></span> declarations can be either <em>bound declarations</em>, a↵ecting both a binding and references, or <em>free declarations</em>, a↵ecting only references, depending on whether the declaration is attached to a variable binding.</p>
-<p>When used in a <span><i>proclamation</i></span>, a <span><b>special</b></span> <em>declaration specifier</em> applies to all <span><i>bindings</i></span> as well as to all references of the mentioned variables. For example, after</p>
+<p><span><b>special</b></span> declarations can be either <span><i>bound declarations</i></span>, a↵ecting both a binding and references, or <span><i>free declarations</i></span>, a↵ecting only references, depending on whether the declaration is attached to a variable binding.</p>
+<p>When used in a <span><i>proclamation</i></span>, a <span><b>special</b></span> <span><i>declaration specifier</i></span> applies to all <span><i>bindings</i></span> as well as to all references of the mentioned variables. For example, after</p>
 <p>(declaim (special x))</p>
 <p>Evaluation and</p>
 <span><b>special</b></span>

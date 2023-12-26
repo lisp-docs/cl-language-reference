@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,15 +22,15 @@
 <p><span><b>describe</b></span> <span><i>object</i></span> &amp;optional <em>stream → ⟨no values⟩</em></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>object</i></span>—an <span><i>object</i></span>.</p>
-<p><span><i>stream</i></span>—an <em>output stream designator</em> . The default is <em>standard output</em>.</p>
+<p><span><i>stream</i></span>—an <em>output stream designator</em> . The default is <span><i>standard output</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>describe</b></span> displays information about <span><i>object</i></span> to <span><i>stream</i></span>.</p>
 <p>For example, <span><b>describe</b></span> of a <span><i>symbol</i></span> might show the <span><i>symbol</i></span>’s value, its definition, and each of its properties. <span><b>describe</b></span> of a <span><i>float</i></span> might show the number’s internal representation in a way that is useful for tracking down round-off errors. In all cases, however, the nature and format of the output of <span><b>describe</b></span> is <span><i>implementation-dependent</i></span>.</p>
 <p><span><b>describe</b></span> can describe something that it finds inside the <span><i>object</i></span>; in such cases, a notational device such as increased indentation or positioning in a table is typically used in order to visually distinguish such recursive descriptions from descriptions of the argument <span><i>object</i></span>.</p>
 <p>The actual act of describing the object is implemented by <span><b>describe-object</b></span>. <span><b>describe</b></span> exists as an interface primarily to manage argument defaulting (including conversion of arguments <span><b>t</b></span> and <span><b>nil</b></span> into <em>stream objects</em>) and to inhibit any return values from <span><b>describe-object</b></span>.</p>
-<p><span><b>describe</b></span> is not intended to be an interactive function. In a <em>conforming implementation</em>, <span><b>describe</b></span> must not, by default, prompt for user input. User-defined methods for <span><b>describe-object</b></span> are likewise restricted.</p>
+<p><span><b>describe</b></span> is not intended to be an interactive function. In a <span><i>conforming implementation</i></span>, <span><b>describe</b></span> must not, by default, prompt for user input. User-defined methods for <span><b>describe-object</b></span> are likewise restricted.</p>
 <p><strong>Side Effects:</strong></p>
-<p>Output to <em>standard output</em> or <em>terminal I/O</em>.</p>
+<p>Output to <span><i>standard output</i></span> or <em>terminal I/O</em>.</p>
 <p><strong>Affected By:</strong></p>
 <p><strong>*standard-output*</strong> and <span><b>*terminal-io*</b></span>, methods on <span><b>describe-object</b></span> and <span><b>print-object</b></span> for <span><i>objects</i></span> having user-defined <em>classes</em>.</p>
 <p><strong>See Also:</strong></p>

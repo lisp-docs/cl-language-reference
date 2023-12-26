@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,11 +21,11 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>logical-pathname</b></span> <em>pathspec → logical-pathname</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><em>pathspec</em>—a <em>logical pathname</em>, a <em>logical pathname namestring</em>, or a <span><i>stream</i></span>.</p>
-<p><em>logical-pathname</em>—a <em>logical pathname</em>.</p>
+<p><em>pathspec</em>—a <span><i>logical pathname</i></span>, a <em>logical pathname namestring</em>, or a <span><i>stream</i></span>.</p>
+<p><em>logical-pathname</em>—a <span><i>logical pathname</i></span>.</p>
 <p><strong>Description:</strong></p>
-<p><span><b>logical-pathname</b></span> converts <em>pathspec</em> to a <em>logical pathname</em> and returns the new <em>logical pathname</em>. If <em>pathspec</em> is a <em>logical pathname namestring</em>, it should contain a host component and its following <span><i>colon</i></span>. If <em>pathspec</em> is a <span><i>stream</i></span>, it should be one for which <span><b>pathname</b></span> returns a <em>logical pathname</em>.</p>
-<p>If <em>pathspec</em> is a <span><i>stream</i></span>, the <span><i>stream</i></span> can be either open or closed. <span><b>logical-pathname</b></span> returns the same <em>logical pathname</em> after a file is closed as it did when the file was open. It is an error if <em>pathspec</em> is a <span><i>stream</i></span> that is created with <span><b>make-two-way-stream</b></span>, <span><b>make-echo-stream</b></span>, <span><b>make-broadcast-stream</b></span>, <span><b>make-concatenated-stream</b></span>, <span><b>make-string-input-stream</b></span>, or <span><b>make-string-output-stream</b></span>.</p>
+<p><span><b>logical-pathname</b></span> converts <em>pathspec</em> to a <span><i>logical pathname</i></span> and returns the new <span><i>logical pathname</i></span>. If <em>pathspec</em> is a <em>logical pathname namestring</em>, it should contain a host component and its following <span><i>colon</i></span>. If <em>pathspec</em> is a <span><i>stream</i></span>, it should be one for which <span><b>pathname</b></span> returns a <span><i>logical pathname</i></span>.</p>
+<p>If <em>pathspec</em> is a <span><i>stream</i></span>, the <span><i>stream</i></span> can be either open or closed. <span><b>logical-pathname</b></span> returns the same <span><i>logical pathname</i></span> after a file is closed as it did when the file was open. It is an error if <em>pathspec</em> is a <span><i>stream</i></span> that is created with <span><b>make-two-way-stream</b></span>, <span><b>make-echo-stream</b></span>, <span><b>make-broadcast-stream</b></span>, <span><b>make-concatenated-stream</b></span>, <span><b>make-string-input-stream</b></span>, or <span><b>make-string-output-stream</b></span>.</p>
 <p><strong>Exceptional Situations:</strong></p>
 <p>Signals an error of <span><i>type</i></span> <span><b>type-error</b></span> if <em>pathspec</em> isn’t supplied correctly.</p>
 <p><strong>See Also:</strong></p>

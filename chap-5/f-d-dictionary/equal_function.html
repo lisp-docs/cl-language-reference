@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -24,7 +24,7 @@
 <p><strong>Arguments and Values:</strong></p>
 <p><em>x</em>—an <span><i>object</i></span>.</p>
 <p><em>y</em>—an <span><i>object</i></span>.</p>
-<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><em>generalized-boolean</em>—a <span><i>generalized boolean</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p>Returns <span><i>true</i></span> if <em>x</em> and <em>y</em> are structurally similar (isomorphic) <span><i>objects</i></span>. <span><i>Objects</i></span> are treated as follows by <span><b>equal</b></span>.</p>
 <p><span><i>Symbols</i></span>, <span><i>Numbers</i></span>, and <span><i>Characters</i></span></p>
@@ -32,7 +32,7 @@
 <p><em>Conses</em></p>
 <p>For <em>conses</em>, <span><b>equal</b></span> is defined recursively as the two <span><i>cars</i></span> being <span><b>equal</b></span> and the two <span><i>cdrs</i></span> being <span><b>equal</b></span>.</p>
 <span><i>Arrays</i></span>
-<p>Two <span><i>arrays</i></span> are <span><b>equal</b></span> only if they are <span><b>eq</b></span>, with one exception: <span><i>strings</i></span> and <em>bit vectors</em> are compared element-by-element (using <span><b>eql</b></span>). If either <em>x</em> or <em>y</em> has a <em>fill pointer</em> , the <em>fill pointer</em> limits the number of elements examined by <span><b>equal</b></span>. Uppercase and lowercase letters in <span><i>strings</i></span> are considered by <span><b>equal</b></span> to be different.</p>
+<p>Two <span><i>arrays</i></span> are <span><b>equal</b></span> only if they are <span><b>eq</b></span>, with one exception: <span><i>strings</i></span> and <span><i>bit vectors</i></span> are compared element-by-element (using <span><b>eql</b></span>). If either <em>x</em> or <em>y</em> has a <span><i>fill pointer</i></span> , the <span><i>fill pointer</i></span> limits the number of elements examined by <span><b>equal</b></span>. Uppercase and lowercase letters in <span><i>strings</i></span> are considered by <span><b>equal</b></span> to be different.</p>
 <span><i>Pathnames</i></span>
 <p>Two <span><i>pathnames</i></span> are <span><b>equal</b></span> if and only if all the corresponding components (host, device, and so on) are equivalent. Whether or not uppercase and lowercase letters are considered equivalent in <span><i>strings</i></span> appearing in components is <span><i>implementation-dependent</i></span>. <span><i>pathnames</i></span> that are <span><b>equal</b></span> should be functionally equivalent.</p>
 <p><strong>Other (Structures, hash-tables, instances,</strong> <em>. . .</em><strong>)</strong></p>
@@ -41,7 +41,7 @@
 <span><b>equal</b></span>
 <p>|<strong>Type Behavior</strong>|</p>
 <p>| :- |</p>
-<p>|</p><p><span><i>number</i></span> uses <span><b>eql</b></span> </p><p><span><i>character</i></span> uses <span><b>eql</b></span> </p><p><span><i>cons</i></span> descends </p><p><em>bit vector</em> descends </p><p><span><i>string</i></span> descends </p><p><span><i>pathname</i></span> “functionally equivalent” </p><p><span><i>structure</i></span> uses <span><b>eq</b></span> </p><p>Other <span><i>array</i></span> uses <span><b>eq</b></span> </p><p><em>hash table</em> uses <span><b>eq</b></span> </p><p>Other <span><i>object</i></span> uses <span><b>eq</b></span></p>|<p></p>
+<p>|</p><p><span><i>number</i></span> uses <span><b>eql</b></span> </p><p><span><i>character</i></span> uses <span><b>eql</b></span> </p><p><span><i>cons</i></span> descends </p><p><span><i>bit vector</i></span> descends </p><p><span><i>string</i></span> descends </p><p><span><i>pathname</i></span> “functionally equivalent” </p><p><span><i>structure</i></span> uses <span><b>eq</b></span> </p><p>Other <span><i>array</i></span> uses <span><b>eq</b></span> </p><p><span><i>hash table</i></span> uses <span><b>eq</b></span> </p><p>Other <span><i>object</i></span> uses <span><b>eq</b></span></p>|<p></p>
 <p><strong>Figure 5–12. Summary and priorities of behavior of equal</strong></p>
 <p>Any two <span><i>objects</i></span> that are <span><b>eql</b></span> are also <span><b>equal</b></span>.</p>
 <p><span><b>equal</b></span> may fail to terminate if <em>x</em> or <em>y</em> is circular.</p>

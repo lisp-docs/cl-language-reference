@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -30,20 +30,20 @@
 <p>→ {result}*</p>
 <p><strong>Arguments and Values:</strong></p>
 <p><em>var</em>—a <em>variable name</em>; not evaluated.</p>
-<p><span><i>package</i></span>—a <em>package designator</em> ; evaluated. The default in <span><b>do-symbols</b></span> and <span><b>do-external-symbols</b></span> is the <em>current package</em>.</p>
+<p><span><i>package</i></span>—a <span><i>package designator</i></span> ; evaluated. The default in <span><b>do-symbols</b></span> and <span><b>do-external-symbols</b></span> is the <span><i>current package</i></span>.</p>
 <p><em>result-form</em>—a <span><i>form</i></span>; evaluated as described below. The default is <span><b>nil</b></span>.</p>
 <p><span><i>declaration</i></span>—a <span><b>declare</b></span> <span><i>expression</i></span>; not evaluated.</p>
-<p><span><i>tag</i></span>—a <em>go tag</em>; not evaluated.</p>
-<p><em>statement</em>—a <em>compound form</em>; evaluated as described below.</p>
-<p><em>results</em>—the <span><i>values</i></span> returned by the <em>result-form</em> if a <em>normal return</em> occurs, or else, if an <em>explicit return</em> occurs, the <span><i>values</i></span> that were transferred.</p>
+<p><span><i>tag</i></span>—a <span><i>go tag</i></span>; not evaluated.</p>
+<p><em>statement</em>—a <span><i>compound form</i></span>; evaluated as described below.</p>
+<p><em>results</em>—the <span><i>values</i></span> returned by the <em>result-form</em> if a <span><i>normal return</i></span> occurs, or else, if an <span><i>explicit return</i></span> occurs, the <span><i>values</i></span> that were transferred.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>do-symbols</b></span>, <span><b>do-external-symbols</b></span>, and <span><b>do-all-symbols</b></span> iterate over the <span><i>symbols</i></span> of <span><i>packages</i></span>. For each <span><i>symbol</i></span> in the set of <span><i>packages</i></span> chosen, the <em>var</em> is bound to the <span><i>symbol</i></span>, and the <em>statements</em> in the body are executed. When all the <span><i>symbols</i></span> have been processed, <em>result-form</em> is evaluated and returned as the value of the macro.</p>
 <p><strong>do-symbols, do-external-symbols, do-all-symbols</strong></p>
 <p><span><b>do-symbols</b></span> iterates over the <em>symbols accessible</em> in <span><i>package</i></span>. <em>Statements</em> may execute more than once for <span><i>symbols</i></span> that are inherited from multiple <span><i>packages</i></span>.</p>
-<p><span><b>do-all-symbols</b></span> iterates on every <em>registered package</em>. <span><b>do-all-symbols</b></span> will not process every <span><i>symbol</i></span> whatsoever, because a <span><i>symbol</i></span> not <span><i>accessible</i></span> in any <em>registered package</em> will not be processed. <span><b>do-all-symbols</b></span> may cause a <span><i>symbol</i></span> that is <span><i>present</i></span> in several <span><i>packages</i></span> to be processed more than once.</p>
+<p><span><b>do-all-symbols</b></span> iterates on every <span><i>registered package</i></span>. <span><b>do-all-symbols</b></span> will not process every <span><i>symbol</i></span> whatsoever, because a <span><i>symbol</i></span> not <span><i>accessible</i></span> in any <span><i>registered package</i></span> will not be processed. <span><b>do-all-symbols</b></span> may cause a <span><i>symbol</i></span> that is <span><i>present</i></span> in several <span><i>packages</i></span> to be processed more than once.</p>
 <p><span><b>do-external-symbols</b></span> iterates on the external symbols of <span><i>package</i></span>.</p>
 <p>When <em>result-form</em> is evaluated, <em>var</em> is bound and has the value <span><b>nil</b></span>.</p>
-<p>An <em>implicit block</em> named <span><b>nil</b></span> surrounds the entire <span><b>do-symbols</b></span>, <span><b>do-external-symbols</b></span>, or <span><b>do-all-symbols</b></span> <span><i>form</i></span>. <span><b>return</b></span> or <span><b>return-from</b></span> may be used to terminate the iteration prematurely.</p>
+<p>An <span><i>implicit block</i></span> named <span><b>nil</b></span> surrounds the entire <span><b>do-symbols</b></span>, <span><b>do-external-symbols</b></span>, or <span><b>do-all-symbols</b></span> <span><i>form</i></span>. <span><b>return</b></span> or <span><b>return-from</b></span> may be used to terminate the iteration prematurely.</p>
 <p>If execution of the body affects which <span><i>symbols</i></span> are contained in the set of <span><i>packages</i></span> over which iteration is occurring, other than to remove the <span><i>symbol</i></span> currently the value of <em>var</em> by using <span><b>unintern</b></span>, the consequences are undefined.</p>
 <p>For each of these macros, the <span><i>scope</i></span> of the name binding does not include any initial value form, but the optional result forms are included.</p>
 <p>Any <span><i>tag</i></span> in the body is treated as with <span><b>tagbody</b></span>.</p>

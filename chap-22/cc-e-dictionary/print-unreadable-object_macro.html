@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,10 +22,10 @@
 <p><span><b>print-unreadable-object</b></span> (<em>object stream</em> &amp;key <em>type identity</em>) <em>{form}</em>* → <span><b>nil</b></span></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>object</i></span>—an <span><i>object</i></span>; evaluated.</p>
-<p><span><i>stream</i></span>—a <em>stream designator</em> ; evaluated.</p>
-<p><span><i>type</i></span>—a <em>generalized boolean</em>; evaluated.</p>
-<p><em>identity</em>—a <em>generalized boolean</em>; evaluated.</p>
-<p><span><i>forms</i></span>—an <em>implicit progn</em>.</p>
+<p><span><i>stream</i></span>—a <span><i>stream designator</i></span> ; evaluated.</p>
+<p><span><i>type</i></span>—a <span><i>generalized boolean</i></span>; evaluated.</p>
+<p><em>identity</em>—a <span><i>generalized boolean</i></span>; evaluated.</p>
+<p><span><i>forms</i></span>—an <span><i>implicit progn</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p>Outputs a printed representation of <span><i>object</i></span> on <span><i>stream</i></span>, beginning with “#&lt;” and ending with “&gt;”. Everything output to <span><i>stream</i></span> by the body <span><i>forms</i></span> is enclosed in the the angle brackets. If <span><i>type</i></span> is <span><i>true</i></span>, the output from <span><i>forms</i></span> is preceded by a brief description of the <span><i>object</i></span>’s <span><i>type</i></span> and a space character. If <em>identity</em> is <span><i>true</i></span>, the output from <span><i>forms</i></span> is followed by a space character and a representation of the <span><i>object</i></span>’s identity, typically a storage address.</p>
 <p>If either <span><i>type</i></span> or <em>identity</em> is not supplied, its value is <span><i>false</i></span>. It is valid to omit the body <span><i>forms</i></span>. If <span><i>type</i></span> and <em>identity</em> are both true and there are no body <span><i>forms</i></span>, only one space character separates the type and the identity.</p>

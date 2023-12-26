@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -27,17 +27,17 @@
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>name</i></span>—a <span><i>symbol</i></span>; not evaluated.</p>
 <p><span><i>function</i></span>—a <span><i>form</i></span>; evaluated.</p>
-<p><span><i>forms</i></span>—an <em>implicit progn</em>.</p>
+<p><span><i>forms</i></span>—an <span><i>implicit progn</i></span>.</p>
 <p><em>interactive-function</em>—a <span><i>form</i></span>; evaluated.</p>
 <p><em>report-function</em>—a <span><i>form</i></span>; evaluated.</p>
 <p><em>test-function</em>—a <span><i>form</i></span>; evaluated.</p>
 <p><em>results</em>—the <span><i>values</i></span> returned by the <span><i>forms</i></span>.</p>
 <p><strong>Description:</strong></p>
-<p><span><b>restart-bind</b></span> executes the body of <span><i>forms</i></span> in a <em>dynamic environment</em> where <span><i>restarts</i></span> with the given <span><i>names</i></span> are in effect.</p>
+<p><span><b>restart-bind</b></span> executes the body of <span><i>forms</i></span> in a <span><i>dynamic environment</i></span> where <span><i>restarts</i></span> with the given <span><i>names</i></span> are in effect.</p>
 <p>If a <span><i>name</i></span> is <span><b>nil</b></span>, it indicates an anonymous restart; if a <span><i>name</i></span> is a <em>non-nil symbol</em>, it indicates a named restart.</p>
 <span><b>restart-bind</b></span>
 <p>The <span><i>function</i></span>, <em>interactive-function</em>, and <em>report-function</em> are unconditionally evaluated in the current lexical and dynamic environment prior to evaluation of the body. Each of these <span><i>forms</i></span> must evaluate to a <span><i>function</i></span>.</p>
-<p>If <span><b>invoke-restart</b></span> is done on that restart, the <span><i>function</i></span> which resulted from evaluating <span><i>function</i></span> is called, in the <em>dynamic environment</em> of the <span><b>invoke-restart</b></span>, with the <span><i>arguments</i></span> given to <span><b>invoke-restart</b></span>. The <span><i>function</i></span> may either perform a non-local transfer of control or may return normally.</p>
+<p>If <span><b>invoke-restart</b></span> is done on that restart, the <span><i>function</i></span> which resulted from evaluating <span><i>function</i></span> is called, in the <span><i>dynamic environment</i></span> of the <span><b>invoke-restart</b></span>, with the <span><i>arguments</i></span> given to <span><b>invoke-restart</b></span>. The <span><i>function</i></span> may either perform a non-local transfer of control or may return normally.</p>
 <p>If the restart is invoked interactively from the debugger (using <span><b>invoke-restart-interactively</b></span>), the arguments are defaulted by calling the <span><i>function</i></span> which resulted from evaluating <em>interactive-function</em>. That <span><i>function</i></span> may optionally prompt interactively on <em>query I/O</em>, and should return a <span><i>list</i></span> of arguments to be used by <span><b>invoke-restart-interactively</b></span> when invoking the restart.</p>
 <p>If a restart is invoked interactively but no <em>interactive-function</em> is used, then an argument list of <span><b>nil</b></span> is used. In that case, the <span><i>function</i></span> must be compatible with an empty argument list.</p>
 <p>If the restart is presented interactively (<em>e.g.</em>, by the debugger), the presentation is done by calling the <span><i>function</i></span> which resulted from evaluating <em>report-function</em>. This <span><i>function</i></span> must be a <span><i>function</i></span> of one argument, a <span><i>stream</i></span>. It is expected to print a description of the action that the restart takes to that <span><i>stream</i></span>. This <span><i>function</i></span> is called any time the restart is printed while <span><b>*print-escape*</b></span> is <span><b>nil</b></span>.</p>

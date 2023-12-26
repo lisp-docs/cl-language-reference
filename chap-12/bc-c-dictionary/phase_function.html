@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -25,7 +25,7 @@
 <p><em>phase</em>—a <span><i>number</i></span> .</p>
 <p><strong>Description:</strong></p>
 <p><span><b>phase</b></span> returns the phase of <span><i>number</i></span> (the angle part of its polar representation) in radians, in the range <em>−π</em> (exclusive) if minus zero is not supported, or <em>−π</em> (inclusive) if minus zero is supported, to <em>π</em> (inclusive). The phase of a positive <em>real</em> number is zero; that of a negative <em>real</em> number is <em>π</em>. The phase of zero is defined to be zero.</p>
-<p>If <span><i>number</i></span> is a <em>complex float</em>, the result is a <span><i>float</i></span> of the same <span><i>type</i></span> as the components of <span><i>number</i></span>. If <span><i>number</i></span> is a <span><i>float</i></span>, the result is a <span><i>float</i></span> of the same <span><i>type</i></span>. If <span><i>number</i></span> is a <span><i>rational</i></span> or a <em>complex rational</em>, the result is a <em>single float</em>.</p>
+<p>If <span><i>number</i></span> is a <span><i>complex float</i></span>, the result is a <span><i>float</i></span> of the same <span><i>type</i></span> as the components of <span><i>number</i></span>. If <span><i>number</i></span> is a <span><i>float</i></span>, the result is a <span><i>float</i></span> of the same <span><i>type</i></span>. If <span><i>number</i></span> is a <span><i>rational</i></span> or a <span><i>complex rational</i></span>, the result is a <span><i>single float</i></span>.</p>
 <p>The branch cut for <span><b>phase</b></span> lies along the negative real axis, continuous with quadrant II. The range consists of that portion of the real axis between <em>−π</em> (exclusive) and <em>π</em> (inclusive).</p>
 <p>The mathematical definition of <span><b>phase</b></span> is as follows:</p>
 <p>(phase <em>x</em>) = (atan (imagpart <em>x</em>) (realpart <em>x</em>))</p>

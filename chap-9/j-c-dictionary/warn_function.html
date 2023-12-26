@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -24,12 +24,12 @@
 <p><em>datum</em>, <span><i>arguments</i></span>—<span><i>designators</i></span> for a <span><i>condition</i></span> of default type <span><b>simple-warning</b></span>.</p>
 <span><b>warn</b></span>
 <p><strong>Description:</strong></p>
-<p><span><i>Signals</i></span> a <span><i>condition</i></span> of <span><i>type</i></span> <span><b>warning</b></span>. If the <span><i>condition</i></span> is not <em>handled</em>, reports the <span><i>condition</i></span> to <em>error output</em>.</p>
+<p><span><i>Signals</i></span> a <span><i>condition</i></span> of <span><i>type</i></span> <span><b>warning</b></span>. If the <span><i>condition</i></span> is not <em>handled</em>, reports the <span><i>condition</i></span> to <span><i>error output</i></span>.</p>
 <p>The precise mechanism for warning is as follows:</p>
 <p><strong>The warning condition is signaled</strong></p>
 <p>While the <span><b>warning</b></span> <span><i>condition</i></span> is being signaled, the <strong>muffle-warning</strong> <span><i>restart</i></span> is established for use by a <span><i>handler</i></span> . If invoked, this <span><i>restart</i></span> bypasses further action by <span><b>warn</b></span>, which in turn causes <span><b>warn</b></span> to immediately return <span><b>nil</b></span>.</p>
 <p><strong>If no handler for the warning condition is found</strong></p>
-<p>If no handlers for the warning condition are found, or if all such handlers decline, then the <span><i>condition</i></span> is reported to <em>error output</em> by <span><b>warn</b></span> in an <span><i>implementation-dependent</i></span> format.</p>
+<p>If no handlers for the warning condition are found, or if all such handlers decline, then the <span><i>condition</i></span> is reported to <span><i>error output</i></span> by <span><b>warn</b></span> in an <span><i>implementation-dependent</i></span> format.</p>
 <p><strong>nil is returned</strong></p>
 <p>The value returned by <span><b>warn</b></span> if it returns is <span><b>nil</b></span>.</p>
 <p><strong>Examples:</strong></p>

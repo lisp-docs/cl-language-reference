@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -21,14 +21,14 @@
 <p><strong>Syntax:</strong></p>
 <p><span><b>pathname-match-p</b></span> <em>pathname wildcard → generalized-boolean</em></p>
 <p><strong>Arguments and Values:</strong></p>
-<p><span><i>pathname</i></span>—a <em>pathname designator</em> .</p>
+<p><span><i>pathname</i></span>—a <span><i>pathname designator</i></span> .</p>
 <p><em>wildcard</em>—a <span><i>designator</i></span> for a <em>wild pathname</em>.</p>
-<p><em>generalized-boolean</em>—a <em>generalized boolean</em>.</p>
+<p><em>generalized-boolean</em>—a <span><i>generalized boolean</i></span>.</p>
 <p><strong>Description:</strong></p>
 <p><span><b>pathname-match-p</b></span> returns true if <span><i>pathname</i></span> matches <em>wildcard</em>, otherwise <span><b>nil</b></span>. The matching rules are <span><i>implementation-defined</i></span> but should be consistent with <span><b>directory</b></span>. Missing components of <em>wildcard</em> default to <!-- -->:wild<!-- -->.</p>
 <p>It is valid for <span><i>pathname</i></span> to be a wild <span><i>pathname</i></span>; a wildcard field in <span><i>pathname</i></span> only matches a wildcard field in <em>wildcard</em> (<em>i.e.</em>, <span><b>pathname-match-p</b></span> is not commutative). It is valid for <em>wildcard</em> to be a non-wild <span><i>pathname</i></span>.</p>
 <p><strong>Exceptional Situations:</strong></p>
-<p>If <span><i>pathname</i></span> or <em>wildcard</em> is not a <span><i>pathname</i></span>, <span><i>string</i></span>, or <em>stream associated with a file</em> an error of <span><i>type</i></span> <span><b>type-error</b></span> is signaled.</p>
+<p>If <span><i>pathname</i></span> or <em>wildcard</em> is not a <span><i>pathname</i></span>, <span><i>string</i></span>, or <span><i>stream associated with a file</i></span> an error of <span><i>type</i></span> <span><b>type-error</b></span> is signaled.</p>
 <p><strong>See Also:</strong></p>
 <p><span><b>directory</b></span>, <span><b>pathname</b></span>, <span><b>logical-pathname</b></span>, Section 20.1 (File System Concepts), Section 19.1.2 (Pathnames as Filenames)</p>
 <span><b>translate-logical-pathname</b></span>

@@ -10,7 +10,7 @@
 
 
 <link rel="search" type="application/opensearchdescription+xml" title="Common Lisp (New) Language Reference" href="/cl-language-reference/opensearch.xml"><link rel="stylesheet" href="/cl-language-reference/assets/css/styles.f13b59fe.css">
-<script src="/cl-language-reference/assets/js/runtime~main.3cf07594.js" defer="defer"></script>
+<script src="/cl-language-reference/assets/js/runtime~main.23565f5e.js" defer="defer"></script>
 <script src="/cl-language-reference/assets/js/main.eb8ee1a1.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,12 +22,12 @@
 <p><span><b>pprint-dispatch</b></span> <span><i>object</i></span> &amp;optional <em>table → function, found-p</em></p>
 <p><strong>Arguments and Values:</strong></p>
 <p><span><i>object</i></span>—an <span><i>object</i></span>.</p>
-<p><em>table</em>—a <em>pprint dispatch table</em>, or <span><b>nil</b></span>. The default is the <span><i>value</i></span> of <span><b>*print-pprint-dispatch*</b></span>. <span><i>function</i></span>—a <em>function designator</em> .</p>
-<p><em>found-p</em>—a <em>generalized boolean</em>.</p>
+<p><em>table</em>—a <span><i>pprint dispatch table</i></span>, or <span><b>nil</b></span>. The default is the <span><i>value</i></span> of <span><b>*print-pprint-dispatch*</b></span>. <span><i>function</i></span>—a <span><i>function designator</i></span> .</p>
+<p><em>found-p</em>—a <span><i>generalized boolean</i></span>.</p>
 <p><strong>Description:</strong></p>
-<p>Retrieves the highest priority function in <em>table</em> that is associated with a <em>type specifier</em> that matches <span><i>object</i></span>. The function is chosen by finding all of the <em>type specifiers</em> in <em>table</em> that match the <span><i>object</i></span> and selecting the highest priority function associated with any of these <em>type specifiers</em>. If there is more than one highest priority function, an arbitrary choice is made. If no <em>type specifiers</em> match the <span><i>object</i></span>, a function is returned that prints <span><i>object</i></span> using <span><b>print-object</b></span>.</p>
-<p>The <em>secondary value</em>, <em>found-p</em>, is <span><i>true</i></span> if a matching <em>type specifier</em> was found in <em>table</em>, or <span><i>false</i></span> otherwise.</p>
-<p>If <em>table</em> is <span><b>nil</b></span>, retrieval is done in the <em>initial pprint dispatch table</em>.</p>
+<p>Retrieves the highest priority function in <em>table</em> that is associated with a <span><i>type specifier</i></span> that matches <span><i>object</i></span>. The function is chosen by finding all of the <span><i>type specifiers</i></span> in <em>table</em> that match the <span><i>object</i></span> and selecting the highest priority function associated with any of these <span><i>type specifiers</i></span>. If there is more than one highest priority function, an arbitrary choice is made. If no <span><i>type specifiers</i></span> match the <span><i>object</i></span>, a function is returned that prints <span><i>object</i></span> using <span><b>print-object</b></span>.</p>
+<p>The <span><i>secondary value</i></span>, <em>found-p</em>, is <span><i>true</i></span> if a matching <span><i>type specifier</i></span> was found in <em>table</em>, or <span><i>false</i></span> otherwise.</p>
+<p>If <em>table</em> is <span><b>nil</b></span>, retrieval is done in the <span><i>initial pprint dispatch table</i></span>.</p>
 <p><strong>Affected By:</strong></p>
 <p>The state of the <em>table</em>.</p>
 <p><strong>Exceptional Situations:</strong></p>
