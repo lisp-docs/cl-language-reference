@@ -112,7 +112,7 @@ The value installed must be a <ClLinks  term={"function"}><i>function</i></ClLin
 
 
 
-**macroexpand, macroexpand-1** 
+<DictionaryLink styled={true} term={"macroexpand, macroexpand-1"}><b>macroexpand, macroexpand-1</b></DictionaryLink> 
 
 
 

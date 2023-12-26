@@ -42,7 +42,7 @@
 
 
 
-**set-difference, nset-difference** 
+<DictionaryLink styled={true} term={"set-difference, nset-difference"}><b>set-difference, nset-difference</b></DictionaryLink> 
 
 
 

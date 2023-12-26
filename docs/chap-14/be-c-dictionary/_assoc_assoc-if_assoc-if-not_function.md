@@ -26,7 +26,7 @@
 
 
 
-**assoc, assoc-if, assoc-if-not** 
+<DictionaryLink styled={true} term={"assoc, assoc-if, assoc-if-not"}><b>assoc, assoc-if, assoc-if-not</b></DictionaryLink> 
 
 
 

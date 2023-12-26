@@ -62,7 +62,7 @@ If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned h
 
 
 
-**inline, notinline** 
+<DictionaryLink styled={true} term={"inline, notinline"}><b>inline, notinline</b></DictionaryLink> 
 
 
 

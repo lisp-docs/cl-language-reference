@@ -75,7 +75,7 @@
 
 
 
-**every, some, notevery, notany** 
+<DictionaryLink styled={true} term={"every, some, notevery, notany"}><b>every, some, notevery, notany</b></DictionaryLink> 
 
 
 

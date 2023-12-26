@@ -124,7 +124,7 @@ If an *end of file*<sub>2</sub> occurs when *eof-error-p* is <ClLinks  term={"tr
 
 
 
-**terpri, fresh-line** 
+<DictionaryLink styled={true} term={"terpri, fresh-line"}><b>terpri, fresh-line</b></DictionaryLink> 
 
 
 

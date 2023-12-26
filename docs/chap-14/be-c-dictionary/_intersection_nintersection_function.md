@@ -62,7 +62,7 @@ The intersection operation is described as follows. For all possible ordered pai
 
 
 
-**intersection, nintersection** 
+<DictionaryLink styled={true} term={"intersection, nintersection"}><b>intersection, nintersection</b></DictionaryLink> 
 
 
 

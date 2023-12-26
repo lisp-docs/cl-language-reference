@@ -166,7 +166,7 @@ Data and Control
 
 
 
-**flet, labels, macrolet** 
+<DictionaryLink styled={true} term={"flet, labels, macrolet"}><b>flet, labels, macrolet</b></DictionaryLink> 
 
 
 

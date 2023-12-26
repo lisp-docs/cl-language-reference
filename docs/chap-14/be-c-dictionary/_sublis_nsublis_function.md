@@ -46,7 +46,7 @@
 
 
 
-**sublis, nsublis** 
+<DictionaryLink styled={true} term={"sublis, nsublis"}><b>sublis, nsublis</b></DictionaryLink> 
 
 
 

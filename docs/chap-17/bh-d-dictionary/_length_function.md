@@ -72,7 +72,7 @@ Should be prepared to signal an error of <ClLinks  term={"type"}><i>type</i></Cl
 
 
 
-**reverse, nreverse** 
+<DictionaryLink styled={true} term={"reverse, nreverse"}><b>reverse, nreverse</b></DictionaryLink> 
 
 
 

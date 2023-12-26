@@ -92,7 +92,7 @@ The following definition for arc sine determines the range and branch cuts:
 
 
 
-**asin, acos, atan** 
+<DictionaryLink styled={true} term={"asin, acos, atan"}><b>asin, acos, atan</b></DictionaryLink> 
 
 
 
@@ -176,7 +176,7 @@ arc tangent is identical to that of arc sine with the points *−π/*2 and *π/*
 
 
 
-**asin, acos, atan** 
+<DictionaryLink styled={true} term={"asin, acos, atan"}><b>asin, acos, atan</b></DictionaryLink> 
 
 
 

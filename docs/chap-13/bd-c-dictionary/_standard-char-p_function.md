@@ -58,7 +58,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-**char-upcase, char-downcase** 
+<DictionaryLink styled={true} term={"char-upcase, char-downcase"}><b>char-upcase, char-downcase</b></DictionaryLink> 
 
 
 

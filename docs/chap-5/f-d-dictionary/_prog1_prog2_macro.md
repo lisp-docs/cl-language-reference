@@ -46,7 +46,7 @@ Data and Control
 
 
 
-**prog1, prog2** 
+<DictionaryLink styled={true} term={"prog1, prog2"}><b>prog1, prog2</b></DictionaryLink> 
 
 
 

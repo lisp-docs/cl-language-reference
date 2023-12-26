@@ -74,7 +74,7 @@ The order of elements in the result do not have to reflect the ordering of *list
 
 
 
-**union, nunion** 
+<DictionaryLink styled={true} term={"union, nunion"}><b>union, nunion</b></DictionaryLink> 
 
 
 

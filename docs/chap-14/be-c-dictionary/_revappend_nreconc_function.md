@@ -58,7 +58,7 @@ The resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> shares 
 
 
 
-**revappend, nreconc** 
+<DictionaryLink styled={true} term={"revappend, nreconc"}><b>revappend, nreconc</b></DictionaryLink> 
 
 
 

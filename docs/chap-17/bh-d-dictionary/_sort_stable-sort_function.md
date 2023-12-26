@@ -70,7 +70,7 @@ If the <ClLinks  term={"key"}><i>key</i></ClLinks> and <ClLinks  term={"predicat
 
 
 
-**sort, stable-sort** 
+<DictionaryLink styled={true} term={"sort, stable-sort"}><b>sort, stable-sort</b></DictionaryLink> 
 
 
 

@@ -66,7 +66,7 @@ If *documentation* is supplied, it is attached to <ClLinks  term={"name"}><i>nam
 
 
 
-**defparameter, defvar** 
+<DictionaryLink styled={true} term={"defparameter, defvar"}><b>defparameter, defvar</b></DictionaryLink> 
 
 
 

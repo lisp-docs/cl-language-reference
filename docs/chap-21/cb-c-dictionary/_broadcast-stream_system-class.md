@@ -66,7 +66,7 @@ streams, <ClLinks  term={"file-length"}><b>file-length</b></ClLinks> and <ClLink
 
 
 
-*•* For the input operations **clear-input listen**, **peek-char**, **read-byte**, **read-char-no-hang**, **read-char**, **read-line**, and <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks>, the consequences are undefined if the indicated operation is performed. However, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is permitted to define such a behavior as an <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> extension. 
+*•* For the input operations **clear-input listen**, <DictionaryLink styled={true} term={"peek-char"}><b>peek-char</b></DictionaryLink>, <DictionaryLink styled={true} term={"read-byte"}><b>read-byte</b></DictionaryLink>, <DictionaryLink styled={true} term={"read-char-no-hang"}><b>read-char-no-hang</b></DictionaryLink>, <DictionaryLink styled={true} term={"read-char"}><b>read-char</b></DictionaryLink>, <DictionaryLink styled={true} term={"read-line"}><b>read-line</b></DictionaryLink>, and <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks>, the consequences are undefined if the indicated operation is performed. However, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is permitted to define such a behavior as an <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> extension. 
 
 
 

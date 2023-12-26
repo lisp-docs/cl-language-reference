@@ -128,7 +128,7 @@ Section 3.6 (Traversal Rules and Side Effects)
 
 
 
-**count, count-if, count-if-not** 
+<DictionaryLink styled={true} term={"count, count-if, count-if-not"}><b>count, count-if, count-if-not</b></DictionaryLink> 
 
 
 

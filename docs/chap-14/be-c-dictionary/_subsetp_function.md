@@ -104,7 +104,7 @@ The :test-not parameter is deprecated.
 
 
 
-**union, nunion** 
+<DictionaryLink styled={true} term={"union, nunion"}><b>union, nunion</b></DictionaryLink> 
 
 
 
