@@ -2,11 +2,11 @@
 
 
 
-The same <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> can name both a *lexical variable* and a *dynamic variable*, but never in the same *lexical environment*. 
+The same <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> can name both a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm> and a <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm>, but never in the same <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm>. 
 
 
 
-In the following example, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> x is used, at different times, as the <ClLinks  term={"name"}><i>name</i></ClLinks> of a *lexical variable* and as the <ClLinks  term={"name"}><i>name</i></ClLinks> of a *dynamic variable*. 
+In the following example, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> x is used, at different times, as the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm> and as the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm>. 
 
 
 

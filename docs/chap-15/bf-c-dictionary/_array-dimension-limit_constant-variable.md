@@ -1,4 +1,4 @@
-**array-dimension-limit** *Constant Variable* 
+**array-dimension-limit** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm> 
 
 
 

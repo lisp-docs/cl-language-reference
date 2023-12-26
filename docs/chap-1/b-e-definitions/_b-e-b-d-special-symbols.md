@@ -22,7 +22,7 @@ This means that the result of evaluating the <ClLinks styled={true} term={"form"
 
 
 
-If a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> returns *multiple values*, those values might be shown separated by spaces, line breaks, or commas. For example: 
+If a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> returns <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm>, those values might be shown separated by spaces, line breaks, or commas. For example: 
 
 
 
@@ -66,7 +66,7 @@ Each of the above three examples is equivalent, and specifies that (truncate 7 5
 
 
 
-Some *conforming implementations* actually type an arrow (or some other indicator) before showing return values, while others do not. 
+Some <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementations</i></GlossaryTerm> actually type an arrow (or some other indicator) before showing return values, while others do not. 
 
 
 
@@ -174,7 +174,7 @@ Common Lisp specifies input and output with respect to a non-interactive stream 
 
 
 
-For example, *conforming implementations* are permitted to differ in issues of how interactive input is terminated. For example, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> terminates when the final delimiter is typed on a non-interactive stream. In some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, an interactive call to <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> returns as soon as the final delimiter is typed, even if that delimiter is not a <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks>. In other <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, a final <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks> is always required. In still other <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, there might be a command which “activates” a buffer full of input without the command itself being visible on the program’s input stream. 
+For example, <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementations</i></GlossaryTerm> are permitted to differ in issues of how interactive input is terminated. For example, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> terminates when the final delimiter is typed on a non-interactive stream. In some <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, an interactive call to <ClLinks styled={true} term={"read"}><b>read</b></ClLinks> returns as soon as the final delimiter is typed, even if that delimiter is not a <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks>. In other <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, a final <ClLinks styled={true} term={"newline"}><i>newline</i></ClLinks> is always required. In still other <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks>, there might be a command which “activates” a buffer full of input without the command itself being visible on the program’s input stream. 
 
 
 

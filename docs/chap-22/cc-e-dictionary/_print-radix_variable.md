@@ -6,7 +6,7 @@
 
 
 
-**\*print-base\***—a <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> . <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks>—a *generalized boolean*. 
+**\*print-base\***—a <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> . <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ The initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*
 
 
 
-**\*print-base\*** and <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks> control the printing of <ClLinks styled={true} term={"rational"}><i>rationals</i></ClLinks>. The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*print-base\*** is called the *current output base*. 
+**\*print-base\*** and <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks> control the printing of <ClLinks styled={true} term={"rational"}><i>rationals</i></ClLinks>. The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*print-base\*** is called the <GlossaryTerm styled={true} term={"current output base"}><i>current output base</i></GlossaryTerm>. 
 
 
 

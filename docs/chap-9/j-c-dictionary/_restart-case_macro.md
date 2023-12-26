@@ -30,19 +30,19 @@
 
 
 
-*lambda-list*—an *ordinary lambda list*. 
+*lambda-list*—an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>. 
 
 
 
-*interactive-expression*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a *lambda expression*. 
+*interactive-expression*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>. 
 
 
 
-*report-expression*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, or a *lambda expression*. 
+*report-expression*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, or a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>. 
 
 
 
-*test-expression*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a *lambda expression*. 
+*test-expression*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> or a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>. 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> evaluates *restartable-form* in a *dynamic environment* where the clauses have special meanings as points to which control may be transferred. If *restartable-form* finishes executing and returns any values, all values returned are returned by <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> and processing has completed. While *restartable-form* is executing, any code may transfer control to one of the clauses (see 
+<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> evaluates *restartable-form* in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where the clauses have special meanings as points to which control may be transferred. If *restartable-form* finishes executing and returns any values, all values returned are returned by <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> and processing has completed. While *restartable-form* is executing, any code may transfer control to one of the clauses (see 
 
 
 
@@ -98,7 +98,7 @@ It is possible to have more than one clause use the same *case-name*. In this ca
 
 
 
-Each *arglist* is an *ordinary lambda list* to be bound during the execution of its corresponding <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. These parameters are used by the <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> clause to receive any necessary data from a call to <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. 
+Each *arglist* is an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> to be bound during the execution of its corresponding <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. These parameters are used by the <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> clause to receive any necessary data from a call to <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. 
 
 
 
@@ -126,7 +126,7 @@ If a restart is invoked interactively but no :interactive option was supplied, t
 
 
 
-If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> supplied by :report <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is a *lambda expression* or a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, it must be acceptable to <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>. (function <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>) is evaluated in the current lexical environment. It should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, which prints on the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> a description of the restart. This <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called whenever the restart is printed while <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> supplied by :report <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> or a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, it must be acceptable to <ClLinks styled={true} term={"function"}><b>function</b></ClLinks>. (function <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>) is evaluated in the current lexical environment. It should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, which prints on the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> a description of the restart. This <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called whenever the restart is printed while <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -194,7 +194,7 @@ The default for this option is equivalent to (lambda (c) (declare (ignore c)) t)
 
 
 
-If the *restartable-form* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is any of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>, or <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> (or is a *macro form* which macroexpands into such a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>), then <ClLinks styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></ClLinks> is used implicitly to associate the indicated <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> with the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> to be signaled. 
+If the *restartable-form* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is any of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks>, <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>, or <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> (or is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> which macroexpands into such a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>), then <ClLinks styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></ClLinks> is used implicitly to associate the indicated <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> with the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> to be signaled. 
 
 
 

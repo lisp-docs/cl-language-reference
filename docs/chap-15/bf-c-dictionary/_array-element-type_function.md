@@ -18,7 +18,7 @@
 
 
 
-*typespec*—a *type specifier* . 
+*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns a *type specifier* which represents the *actual array element type* of the array, which is the set of <ClLinks  term={"object"}><i>objects</i></ClLinks> that such an <ClLinks  term={"array"}><i>array</i></ClLinks> can hold. (Because of *array upgrading*, this *type specifier* can in some cases denote a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the *expressed array element type* of the <ClLinks  term={"array"}><i>array</i></ClLinks>.) 
+Returns a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> which represents the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of the array, which is the set of <ClLinks  term={"object"}><i>objects</i></ClLinks> that such an <ClLinks  term={"array"}><i>array</i></ClLinks> can hold. (Because of *array upgrading*, this <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> can in some cases denote a <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>.) 
 
 
 

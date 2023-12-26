@@ -30,7 +30,7 @@
 
 
 
-If <ClLinks  term={"number"}><i>number</i></ClLinks> is a *complex float*, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the components of <ClLinks  term={"number"}><i>number</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks>, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same <ClLinks  term={"type"}><i>type</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or a *complex rational*, the result is a *single float*. 
+If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <GlossaryTerm styled={true} term={"complex float"}><i>complex float</i></GlossaryTerm>, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same <ClLinks  term={"type"}><i>type</i></ClLinks> as the components of <ClLinks  term={"number"}><i>number</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"float"}><i>float</i></ClLinks>, the result is a <ClLinks  term={"float"}><i>float</i></ClLinks> of the same <ClLinks  term={"type"}><i>type</i></ClLinks>. If <ClLinks  term={"number"}><i>number</i></ClLinks> is a <ClLinks  term={"rational"}><i>rational</i></ClLinks> or a <GlossaryTerm styled={true} term={"complex rational"}><i>complex rational</i></GlossaryTerm>, the result is a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm>. 
 
 
 

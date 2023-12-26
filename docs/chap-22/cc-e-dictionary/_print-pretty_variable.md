@@ -6,7 +6,7 @@
 
 
 
-a *generalized boolean*. 
+a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -22,15 +22,15 @@ a *generalized boolean*.
 
 
 
-Controls whether the *Lisp printer* calls the *pretty printer* . 
+Controls whether the *Lisp printer* calls the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> . 
 
 
 
-If it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the *pretty printer* is not used and a minimum of <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> is output when printing an expression. 
+If it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> is not used and a minimum of <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> is output when printing an expression. 
 
 
 
-If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the *pretty printer* is used, and the *Lisp printer* will endeavor to insert extra <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> where appropriate to make <ClLinks styled={true} term={"expression"}><i>expressions</i></ClLinks> more readable. 
+If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> is used, and the *Lisp printer* will endeavor to insert extra <ClLinks styled={true} term={"whitespace"}><i>whitespace</i></ClLinks><sub>1</sub> where appropriate to make <ClLinks styled={true} term={"expression"}><i>expressions</i></ClLinks> more readable. 
 
 
 

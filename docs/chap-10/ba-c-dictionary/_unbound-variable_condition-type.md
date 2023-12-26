@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLinks> consists of *error conditions* that represent attempts to <ClLinks  term={"read"}><i>read</i></ClLinks> the <ClLinks  term={"value"}><i>value</i></ClLinks> of an *unbound variable*. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"unbound-variable"}><b>unbound-variable</b></ClLinks> consists of *error conditions* that represent attempts to <ClLinks  term={"read"}><i>read</i></ClLinks> the <ClLinks  term={"value"}><i>value</i></ClLinks> of an <GlossaryTerm styled={true} term={"unbound variable"}><i>unbound variable</i></GlossaryTerm>. 
 
 
 

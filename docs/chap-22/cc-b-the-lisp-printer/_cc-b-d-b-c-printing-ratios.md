@@ -3,7 +3,7 @@
 
 
 
-<ClLinks styled={true} term={"ratio"}><i>Ratios</i></ClLinks> are printed as follows: the absolute value of the numerator is printed, as for an *integer* ; then a /; then the denominator. The numerator and denominator are both printed in the radix specified by the *current output base*; they are obtained as if by <ClLinks styled={true} term={"numerator"}><b>numerator</b></ClLinks> and <ClLinks styled={true} term={"denominator"}><b>denominator</b></ClLinks>, and so <ClLinks styled={true} term={"ratio"}><i>ratios</i></ClLinks> are printed in reduced form (lowest terms). If appropriate, a radix specifier can be printed; see 
+<ClLinks styled={true} term={"ratio"}><i>Ratios</i></ClLinks> are printed as follows: the absolute value of the numerator is printed, as for an *integer* ; then a /; then the denominator. The numerator and denominator are both printed in the radix specified by the <GlossaryTerm styled={true} term={"current output base"}><i>current output base</i></GlossaryTerm>; they are obtained as if by <ClLinks styled={true} term={"numerator"}><b>numerator</b></ClLinks> and <ClLinks styled={true} term={"denominator"}><b>denominator</b></ClLinks>, and so <ClLinks styled={true} term={"ratio"}><i>ratios</i></ClLinks> are printed in reduced form (lowest terms). If appropriate, a radix specifier can be printed; see 
 
 
 

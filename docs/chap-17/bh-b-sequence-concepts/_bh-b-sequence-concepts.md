@@ -10,7 +10,7 @@ A *sequence* is an ordered collection of <ClLinks  term={"element"}><i>elements<
 
 
 
-A *sequence function* is a <ClLinks  term={"function"}><i>function</i></ClLinks> defined by this specification or added as an extension by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that operates on one or more *sequences*. Whenever a *sequence function* must construct and return a new <ClLinks  term={"vector"}><i>vector</i></ClLinks> , it always returns a *simple vector* . Similarly, any <ClLinks  term={"string"}><i>strings</i></ClLinks> constructed will be *simple strings*. 
+A <GlossaryTerm styled={true} term={"sequence function"}><i>sequence function</i></GlossaryTerm> is a <ClLinks  term={"function"}><i>function</i></ClLinks> defined by this specification or added as an extension by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> that operates on one or more *sequences*. Whenever a <GlossaryTerm styled={true} term={"sequence function"}><i>sequence function</i></GlossaryTerm> must construct and return a new <ClLinks  term={"vector"}><i>vector</i></ClLinks> , it always returns a <GlossaryTerm styled={true} term={"simple vector"}><i>simple vector</i></GlossaryTerm> . Similarly, any <ClLinks  term={"string"}><i>strings</i></ClLinks> constructed will be <GlossaryTerm styled={true} term={"simple string"}><i>simple strings</i></GlossaryTerm>. 
 
 
 

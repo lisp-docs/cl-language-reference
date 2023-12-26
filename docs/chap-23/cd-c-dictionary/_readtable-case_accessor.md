@@ -22,7 +22,7 @@
 
 
 
-*mode*—a *case sensitivity mode*. 
+*mode*—a <GlossaryTerm styled={true} term={"case sensitivity mode"}><i>case sensitivity mode</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-*Accesses* the *readtable case* of <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>, which affects the way in which the *Lisp Reader* reads <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and the way in which the *Lisp Printer* writes <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+*Accesses* the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> of <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>, which affects the way in which the *Lisp Reader* reads <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and the way in which the *Lisp Printer* writes <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 
@@ -54,7 +54,7 @@ See Section 23.1.2.1 (Examples of Effect of Readtable Case on the Lisp Reader) a
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is not a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *mode* is not a *case sensitivity mode*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is not a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *mode* is not a <GlossaryTerm styled={true} term={"case sensitivity mode"}><i>case sensitivity mode</i></GlossaryTerm>. 
 
 
 
@@ -70,7 +70,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-<ClLinks  term={"copy-readtable"}><b>copy-readtable</b></ClLinks> copies the *readtable case* of the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
+<ClLinks  term={"copy-readtable"}><b>copy-readtable</b></ClLinks> copies the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm> of the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 

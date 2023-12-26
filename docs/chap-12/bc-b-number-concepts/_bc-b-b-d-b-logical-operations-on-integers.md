@@ -6,7 +6,7 @@ Logical operations require *integers* as arguments; an error of <ClLinks  term={
 
 
 
-Figure 12–5 shows *defined names* relating to logical operations on numbers. 
+Figure 12–5 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to logical operations on numbers. 
 
 
 

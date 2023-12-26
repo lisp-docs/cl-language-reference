@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-error"}><b>simple-error</b></ClLinks> consists of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> that are signaled by <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> or <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks> when a *format control* is supplied as the function’s first argument. 
+The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-error"}><b>simple-error</b></ClLinks> consists of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> that are signaled by <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> or <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks> when a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm> is supplied as the function’s first argument. 
 
 
 

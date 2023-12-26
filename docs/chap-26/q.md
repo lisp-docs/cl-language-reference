@@ -11,7 +11,7 @@ sidebar_position: 113
 
 
 
-**qualifier** *n.* (of a <ClLinks  term={"method"}><i>method</i></ClLinks> for a *generic function*) one of possibly several <ClLinks  term={"object"}><i>objects</i></ClLinks> used to annotate the <ClLinks  term={"method"}><i>method</i></ClLinks> in a way that identifies its role in the *method combination*. The *method combination type* determines how many <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> are permitted for each <ClLinks  term={"method"}><i>method</i></ClLinks>, which <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> are permitted, and the semantics of those <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>. 
+**qualifier** *n.* (of a <ClLinks  term={"method"}><i>method</i></ClLinks> for a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>) one of possibly several <ClLinks  term={"object"}><i>objects</i></ClLinks> used to annotate the <ClLinks  term={"method"}><i>method</i></ClLinks> in a way that identifies its role in the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm>. The *method combination type* determines how many <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> are permitted for each <ClLinks  term={"method"}><i>method</i></ClLinks>, which <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks> are permitted, and the semantics of those <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>. 
 
 
 

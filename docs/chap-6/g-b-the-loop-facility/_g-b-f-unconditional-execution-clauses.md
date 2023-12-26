@@ -2,7 +2,7 @@
 
 
 
-The do and doing constructs evaluate the supplied <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> wherever they occur in the expanded form of <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>. The <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> argument can be any *compound form*. Each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated in every iteration. Because every loop clause must begin with a *loop keyword*, the keyword do is used when no control action other than execution is required. 
+The do and doing constructs evaluate the supplied <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> wherever they occur in the expanded form of <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>. The <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> argument can be any <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm>. Each <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is evaluated in every iteration. Because every loop clause must begin with a <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm>, the keyword do is used when no control action other than execution is required. 
 
 
 

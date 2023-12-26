@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@ Within the dynamic extent of the body of <ClLinks  term={"form"}><i>forms</i></C
 
 | :- |
 
-|<p><ClLinks  term={"package"}><b>\*package\*</b></ClLinks> The CL-USER <ClLinks  term={"package"}><i>package</i></ClLinks> </p><p>**\*print-array\* t** </p><p>**\*print-base\*** 10 </p><p><ClLinks  term={"print-case"}><b>\*print-case\*</b></ClLinks> :upcase </p><p>**\*print-circle\* nil** </p><p>**\*print-escape\* t** </p><p>**\*print-gensym\* t** </p><p>**\*print-length\* nil** </p><p>**\*print-level\* nil** </p><p>**\*print-lines\* nil** </p><p>**\*print-miser-width\* nil** </p><p><ClLinks  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks> The *standard pprint dispatch table* **\*print-pretty\* nil** </p><p>**\*print-radix\* nil** </p><p>**\*print-readably\* t** </p><p>**\*print-right-margin\* nil** </p><p>**\*read-base\*** 10 </p><p>**\*read-default-float-format\* single-float** </p><p>**\*read-eval\* t** </p><p>**\*read-suppress\* nil** </p><p><ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> The *standard readtable*</p>|
+|<p><ClLinks  term={"package"}><b>\*package\*</b></ClLinks> The CL-USER <ClLinks  term={"package"}><i>package</i></ClLinks> </p><p>**\*print-array\* t** </p><p>**\*print-base\*** 10 </p><p><ClLinks  term={"print-case"}><b>\*print-case\*</b></ClLinks> :upcase </p><p>**\*print-circle\* nil** </p><p>**\*print-escape\* t** </p><p>**\*print-gensym\* t** </p><p>**\*print-length\* nil** </p><p>**\*print-level\* nil** </p><p>**\*print-lines\* nil** </p><p>**\*print-miser-width\* nil** </p><p><ClLinks  term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks> The <GlossaryTerm styled={true} term={"standard pprint dispatch table"}><i>standard pprint dispatch table</i></GlossaryTerm> **\*print-pretty\* nil** </p><p>**\*print-radix\* nil** </p><p>**\*print-readably\* t** </p><p>**\*print-right-margin\* nil** </p><p>**\*read-base\*** 10 </p><p>**\*read-default-float-format\* single-float** </p><p>**\*read-eval\* t** </p><p>**\*read-suppress\* nil** </p><p><ClLinks  term={"readtable"}><b>\*readtable\*</b></ClLinks> The <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm></p>|
 
 
 
@@ -94,7 +94,7 @@ Controls the interpretation of tokens by <ClLinks  term={"read"}><b>read</b></Cl
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*read-base\***, called the *current input base*, is the radix in which *integers* and <ClLinks  term={"ratio"}><i>ratios</i></ClLinks> are to be read by the *Lisp reader* . The parsing of other numeric <ClLinks  term={"type"}><i>types</i></ClLinks> (*e.g.*, <ClLinks  term={"float"}><i>floats</i></ClLinks>) is not affected by this option. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*read-base\***, called the <GlossaryTerm styled={true} term={"current input base"}><i>current input base</i></GlossaryTerm>, is the radix in which *integers* and <ClLinks  term={"ratio"}><i>ratios</i></ClLinks> are to be read by the *Lisp reader* . The parsing of other numeric <ClLinks  term={"type"}><i>types</i></ClLinks> (*e.g.*, <ClLinks  term={"float"}><i>floats</i></ClLinks>) is not affected by this option. 
 
 
 

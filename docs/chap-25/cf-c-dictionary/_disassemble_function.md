@@ -14,7 +14,7 @@
 
 
 
-*fn*—an *extended function designator* or a *lambda expression*. 
+*fn*—an <GlossaryTerm styled={true} term={"extended function designator"}><i>extended function designator</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>. 
 
 
 
@@ -22,15 +22,15 @@
 
 
 
-The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"disassemble"}><b>disassemble</b></ClLinks> is a debugging aid that composes symbolic instructions or expressions in some <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> language which represent the code used to produce the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> which is or is named by the argument *fn*. The result is displayed to *standard output* in an <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> format. 
+The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"disassemble"}><b>disassemble</b></ClLinks> is a debugging aid that composes symbolic instructions or expressions in some <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> language which represent the code used to produce the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> which is or is named by the argument *fn*. The result is displayed to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm> in an <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> format. 
 
 
 
-If *fn* is a *lambda expression* or *interpreted function*, it is compiled first and the result is disassembled. 
+If *fn* is a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"interpreted function"}><i>interpreted function</i></GlossaryTerm>, it is compiled first and the result is disassembled. 
 
 
 
-If the *fn designator* is a *function name*, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that it <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> is disassembled. (If that <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is an *interpreted function*, it is first compiled but the result of this implicit compilation is not installed.) 
+If the *fn designator* is a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that it <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> is disassembled. (If that <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is an <GlossaryTerm styled={true} term={"interpreted function"}><i>interpreted function</i></GlossaryTerm>, it is first compiled but the result of this implicit compilation is not installed.) 
 
 
 
@@ -333,11 +333,11 @@ The *generic function* (setf documentation) updates the *documentation string* a
 
 
 
-*Documentation strings* are made available for debugging purposes. *Conforming programs* are permitted to use *documentation strings* when they are present, but should not depend for their correct behavior on the presence of those *documentation strings*. An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is permitted to discard *documentation strings* at any time for <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks> reasons. 
+<GlossaryTerm styled={true} term={"documentation string"}><i>Documentation strings</i></GlossaryTerm> are made available for debugging purposes. <GlossaryTerm styled={true} term={"conforming program"}><i>Conforming programs</i></GlossaryTerm> are permitted to use <GlossaryTerm styled={true} term={"documentation string"}><i>documentation strings</i></GlossaryTerm> when they are present, but should not depend for their correct behavior on the presence of those <GlossaryTerm styled={true} term={"documentation string"}><i>documentation strings</i></GlossaryTerm>. An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is permitted to discard <GlossaryTerm styled={true} term={"documentation string"}><i>documentation strings</i></GlossaryTerm> at any time for <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks> reasons. 
 
 
 
-The nature of the *documentation string* returned depends on the *doc-type*, as follows: 
+The nature of the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> returned depends on the *doc-type*, as follows: 
 
 
 
@@ -345,7 +345,7 @@ The nature of the *documentation string* returned depends on the *doc-type*, as 
 
 
 
-Returns the *documentation string* of the *compiler macro* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *function name x*. 
+Returns the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *function name x*. 
 
 
 
@@ -353,11 +353,11 @@ Returns the *documentation string* of the *compiler macro* whose <ClLinks styled
 
 
 
-If *x* is a *function name*, returns the *documentation string* of the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>, or *special operator* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is *x*. 
+If *x* is a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>, returns the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> of the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>, or <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is *x*. 
 
 
 
-If *x* is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, returns the *documentation string* associated with *x*. 
+If *x* is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, returns the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> associated with *x*. 
 
 
 
@@ -365,11 +365,11 @@ If *x* is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, 
 
 
 
-If *x* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, returns the *documentation string* of the *method combination* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is *x*. 
+If *x* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, returns the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm> whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is *x*. 
 
 
 
-If *x* is a *method combination*, returns the *documentation string* associated with *x*. 
+If *x* is a <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm>, returns the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> associated with *x*. 
 
 
 
@@ -377,7 +377,7 @@ If *x* is a *method combination*, returns the *documentation string* associated 
 
 
 
-Returns the *documentation string* of the *setf expander* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *symbol x*. 
+Returns the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"setf expander"}><i>setf expander</i></GlossaryTerm> whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *symbol x*. 
 
 
 
@@ -385,7 +385,7 @@ Returns the *documentation string* of the *setf expander* whose <ClLinks styled=
 
 
 
-Returns the *documentation string* associated with the *structure name x*. 
+Returns the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> associated with the *structure name x*. 
 
 
 
@@ -393,7 +393,7 @@ Returns the *documentation string* associated with the *structure name x*.
 
 
 
-Returns a *documentation string* specialized on the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of the argument *x* itself. For example, if *x* is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, the *documentation string* associated with the *function x* is returned. 
+Returns a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> specialized on the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> of the argument *x* itself. For example, if *x* is a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> associated with the *function x* is returned. 
 
 
 
@@ -413,11 +413,11 @@ Returns a *documentation string* specialized on the <ClLinks styled={true} term=
 
 
 
-If *x* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, returns the *documentation string* of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *symbol x*, if there is such a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. Otherwise, it returns the *documentation string* of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> which is the *type specifier symbol x*. 
+If *x* is a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>, returns the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> of the <ClLinks styled={true} term={"class"}><i>class</i></ClLinks> whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *symbol x*, if there is such a <ClLinks styled={true} term={"class"}><i>class</i></ClLinks>. Otherwise, it returns the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> which is the *type specifier symbol x*. 
 
 
 
-If *x* is a *structure class* or *standard class*, returns the *documentation string* associated with the *class x*. 
+If *x* is a <GlossaryTerm styled={true} term={"structure class"}><i>structure class</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"standard class"}><i>standard class</i></GlossaryTerm>, returns the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> associated with the *class x*. 
 
 
 
@@ -425,11 +425,11 @@ If *x* is a *structure class* or *standard class*, returns the *documentation st
 
 
 
-Returns the *documentation string* of the *dynamic variable* or *constant variable* whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *symbol x*. 
+Returns the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm> whose <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is the *symbol x*. 
 
 
 
-A *conforming implementation* or a *conforming program* may extend the set of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that are acceptable as the *doc-type*. 
+A <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> may extend the set of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> that are acceptable as the *doc-type*. 
 
 
 
@@ -437,7 +437,7 @@ A *conforming implementation* or a *conforming program* may extend the set of <C
 
 
 
-This standard prescribes no means to retrieve the *documentation strings* for individual slots specified in a <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> form, but <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> might still provide debugging tools and/or programming language extensions which manipulate this information. Implementors wishing to provide such support are encouraged to consult the *Metaobject Protocol* for suggestions about how this might be done. 
+This standard prescribes no means to retrieve the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation strings</i></GlossaryTerm> for individual slots specified in a <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks> form, but <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> might still provide debugging tools and/or programming language extensions which manipulate this information. Implementors wishing to provide such support are encouraged to consult the *Metaobject Protocol* for suggestions about how this might be done. 
 
 
 

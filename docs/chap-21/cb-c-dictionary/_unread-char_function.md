@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"character"}><i>character</i></ClLinks>—a <ClLinks  term={"character"}><i>character</i></ClLinks> ; must be the last <ClLinks  term={"character"}><i>character</i></ClLinks> that was read from *input-stream*. *input-stream*—an *input stream designator* . The default is *standard input*. 
+<ClLinks  term={"character"}><i>character</i></ClLinks>—a <ClLinks  term={"character"}><i>character</i></ClLinks> ; must be the last <ClLinks  term={"character"}><i>character</i></ClLinks> that was read from *input-stream*. *input-stream*—an *input stream designator* . The default is <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-When *input-stream* is an *echo stream*, no attempt is made to undo any echoing of the character that might already have been done on *input-stream*. However, characters placed on *input-stream* by <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks> are marked in such a way as to inhibit later re-echo by <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>. 
+When *input-stream* is an <GlossaryTerm styled={true} term={"echo stream"}><i>echo stream</i></GlossaryTerm>, no attempt is made to undo any echoing of the character that might already have been done on *input-stream*. However, characters placed on *input-stream* by <ClLinks  term={"unread-char"}><b>unread-char</b></ClLinks> are marked in such a way as to inhibit later re-echo by <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>. 
 
 
 

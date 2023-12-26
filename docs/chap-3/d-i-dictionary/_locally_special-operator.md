@@ -1,4 +1,4 @@
-**locally** *Special Operator* 
+**locally** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Sequentially evaluates a body of <ClLinks  term={"form"}><i>forms</i></ClLinks> in a *lexical environment* where the given <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> have e↵ect. 
+Sequentially evaluates a body of <ClLinks  term={"form"}><i>forms</i></ClLinks> in a <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> where the given <ClLinks  term={"declaration"}><i>declarations</i></ClLinks> have e↵ect. 
 
 
 
@@ -82,7 +82,7 @@ The <ClLinks  term={"special"}><b>special</b></ClLinks> declaration may be used 
 
 
 
-If a <ClLinks  term={"locally"}><b>locally</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a *top level form*, the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as *top level forms*. See Section 3.2.3 (File Compilation). 
+If a <ClLinks  term={"locally"}><b>locally</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the body <ClLinks  term={"form"}><i>forms</i></ClLinks> are also processed as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>. See Section 3.2.3 (File Compilation). 
 
 
 

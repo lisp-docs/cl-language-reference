@@ -38,7 +38,7 @@
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-<ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> executes the body of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a *dynamic environment* where <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> with the given <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> are in effect. 
+<ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> executes the body of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> with the given <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> are in effect. 
 
 
 
@@ -90,7 +90,7 @@ The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, *interac
 
 
 
-If <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks> is done on that restart, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> which resulted from evaluating <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called, in the *dynamic environment* of the <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, with the <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> given to <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> may either perform a non-local transfer of control or may return normally. 
+If <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks> is done on that restart, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> which resulted from evaluating <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called, in the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> of the <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, with the <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> given to <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> may either perform a non-local transfer of control or may return normally. 
 
 
 

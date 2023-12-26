@@ -2,7 +2,7 @@
 
 
 
-The *numeric characters* are a subset of the *graphic characters*. Of the *standard characters*, only these are *numeric characters*: 
+The *numeric characters* are a subset of the *graphic characters*. Of the <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>, only these are *numeric characters*: 
 
 
 

@@ -89,7 +89,7 @@ The <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks> **\***, 
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*** is the most recent *primary value* that was printed, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*\*** is the previous value of **\***, and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*\*\*** is the previous value of **\*\***. 
+The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*** is the most recent <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> that was printed, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*\*** is the previous value of **\***, and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*\*\*** is the previous value of **\*\***. 
 
 
 
@@ -97,7 +97,7 @@ If several values are produced, **\*** contains the first value only; **\*** con
 
 
 
-The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of **\***, **\*\***, and **\*\*\*** are updated immediately prior to printing the *return value* of a top-level <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> by the *Lisp read-eval-print loop*. If the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of such a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is aborted prior to its normal return, the values of **\***, **\*\***, and **\*\*\*** are not updated. 
+The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of **\***, **\*\***, and **\*\*\*** are updated immediately prior to printing the <GlossaryTerm styled={true} term={"return value"}><i>return value</i></GlossaryTerm> of a top-level <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> by the *Lisp read-eval-print loop*. If the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of such a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is aborted prior to its normal return, the values of **\***, **\*\***, and **\*\*\*** are not updated. 
 
 
 

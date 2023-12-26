@@ -2,15 +2,15 @@
 
 
 
-A *destructuring lambda list* is used by <ClLinks  term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks>. 
+A <GlossaryTerm styled={true} term={"destructuring lambda list"}><i>destructuring lambda list</i></GlossaryTerm> is used by <ClLinks  term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks>. 
 
 
 
-*Destructuring lambda lists* are closely related to *macro lambda lists*; see Section 3.4.4 (Macro Lambda Lists). A *destructuring lambda list* can contain all of the *lambda list keywords* listed for *macro lambda lists* except for **&amp;environment**, and supports destructuring in the same way. Inner *lambda lists* nested within a *macro lambda list* have the syntax of *destructuring lambda lists*. 
+<GlossaryTerm styled={true} term={"destructuring lambda list"}><i>Destructuring lambda lists</i></GlossaryTerm> are closely related to <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda lists</i></GlossaryTerm>; see Section 3.4.4 (Macro Lambda Lists). A <GlossaryTerm styled={true} term={"destructuring lambda list"}><i>destructuring lambda list</i></GlossaryTerm> can contain all of the <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> listed for <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda lists</i></GlossaryTerm> except for **&amp;environment**, and supports destructuring in the same way. Inner <GlossaryTerm styled={true} term={"lambda list"}><i>lambda lists</i></GlossaryTerm> nested within a <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda list</i></GlossaryTerm> have the syntax of <GlossaryTerm styled={true} term={"destructuring lambda list"}><i>destructuring lambda lists</i></GlossaryTerm>. 
 
 
 
-A *destructuring lambda list* has the following syntax: 
+A <GlossaryTerm styled={true} term={"destructuring lambda list"}><i>destructuring lambda list</i></GlossaryTerm> has the following syntax: 
 
 
 

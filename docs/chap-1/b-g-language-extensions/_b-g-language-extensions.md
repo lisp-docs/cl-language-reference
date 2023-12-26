@@ -2,7 +2,7 @@
 
 
 
-A language extension is any documented <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> behavior of a *defined name* in this standard that varies from the behavior described in this standard, or a documented consequence of a situation that the standard specifies as undefined, unspecified, or extendable by the implementation. For example, if this standard says that “the results are unspecified,” an extension would be to specify the results. 
+A language extension is any documented <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm> behavior of a <GlossaryTerm styled={true} term={"defined name"}><i>defined name</i></GlossaryTerm> in this standard that varies from the behavior described in this standard, or a documented consequence of a situation that the standard specifies as undefined, unspecified, or extendable by the implementation. For example, if this standard says that “the results are unspecified,” an extension would be to specify the results. 
 
 
 
@@ -38,7 +38,7 @@ No output can be produced by a function other than that specified in the standar
 
 
 
-Unsolicited output, such as garbage collection notifications and autoload heralds, should not go directly to the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> that is the value of a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> variable defined in this standard, but can go indirectly to *terminal I/O* by using a *synonym stream* to <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
+Unsolicited output, such as garbage collection notifications and autoload heralds, should not go directly to the <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> that is the value of a <GlossaryTerm  term={"stream"}><i>stream</i></GlossaryTerm> variable defined in this standard, but can go indirectly to *terminal I/O* by using a <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm> to <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink>. 
 
 
 
@@ -50,7 +50,7 @@ Progress reports from such functions as <DictionaryLink  term={"load"}><b>load</
 
 
 
-<GlossaryTerm  term={"macro"}><i>Macros</i></GlossaryTerm> and *special operators* defined in this standard must not be <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm>.  
+<GlossaryTerm  term={"macro"}><i>Macros</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"special operator"}><i>special operators</i></GlossaryTerm> defined in this standard must not be <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm>.  
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-The atomic *type specifier* <ClLinks  term={"signed-byte"}><b>signed-byte</b></ClLinks> denotes the same type as is denoted by the *type specifier* <ClLinks  term={"integer"}><b>integer</b></ClLinks>; however, the list forms of these two *type specifiers* have different semantics. 
+The atomic <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> <ClLinks  term={"signed-byte"}><b>signed-byte</b></ClLinks> denotes the same type as is denoted by the <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> <ClLinks  term={"integer"}><b>integer</b></ClLinks>; however, the list forms of these two <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> have different semantics. 
 
 
 

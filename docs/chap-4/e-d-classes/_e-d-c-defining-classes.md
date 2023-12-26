@@ -10,11 +10,11 @@ The definition of a <ClLinks  term={"class"}><i>class</i></ClLinks> includes:
 
 
 
-*•* The <ClLinks  term={"name"}><i>name</i></ClLinks> of the new <ClLinks  term={"class"}><i>class</i></ClLinks>. For newly-defined *classes* this <ClLinks  term={"name"}><i>name</i></ClLinks> is a *proper name*. *•* The list of the direct *superclasses* of the new <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+*•* The <ClLinks  term={"name"}><i>name</i></ClLinks> of the new <ClLinks  term={"class"}><i>class</i></ClLinks>. For newly-defined *classes* this <ClLinks  term={"name"}><i>name</i></ClLinks> is a <GlossaryTerm styled={true} term={"proper name"}><i>proper name</i></GlossaryTerm>. *•* The list of the direct *superclasses* of the new <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
-*•* A set of *slot specifiers*. Each *slot specifier* includes the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"slot"}><i>slot</i></ClLinks> and zero or more <ClLinks  term={"slot"}><i>slot</i></ClLinks> options. A <ClLinks  term={"slot"}><i>slot</i></ClLinks> option pertains only to a single <ClLinks  term={"slot"}><i>slot</i></ClLinks>. If a <ClLinks  term={"class"}><i>class</i></ClLinks> definition contains two *slot specifiers* with the same <ClLinks  term={"name"}><i>name</i></ClLinks>, an error is signaled. 
+*•* A set of <GlossaryTerm styled={true} term={"slot specifier"}><i>slot specifiers</i></GlossaryTerm>. Each <GlossaryTerm styled={true} term={"slot specifier"}><i>slot specifier</i></GlossaryTerm> includes the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"slot"}><i>slot</i></ClLinks> and zero or more <ClLinks  term={"slot"}><i>slot</i></ClLinks> options. A <ClLinks  term={"slot"}><i>slot</i></ClLinks> option pertains only to a single <ClLinks  term={"slot"}><i>slot</i></ClLinks>. If a <ClLinks  term={"class"}><i>class</i></ClLinks> definition contains two <GlossaryTerm styled={true} term={"slot specifier"}><i>slot specifiers</i></GlossaryTerm> with the same <ClLinks  term={"name"}><i>name</i></ClLinks>, an error is signaled. 
 
 
 
@@ -26,7 +26,7 @@ The <ClLinks  term={"slot"}><i>slot</i></ClLinks> options and <ClLinks  term={"c
 
 
 
-*•* Requesting that <ClLinks  term={"method"}><i>methods</i></ClLinks> for *generic functions* be automatically generated for reading or writing <ClLinks  term={"slot"}><i>slots</i></ClLinks>. 
+*•* Requesting that <ClLinks  term={"method"}><i>methods</i></ClLinks> for <GlossaryTerm styled={true} term={"generic function"}><i>generic functions</i></GlossaryTerm> be automatically generated for reading or writing <ClLinks  term={"slot"}><i>slots</i></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@ The <ClLinks  term={"slot"}><i>slot</i></ClLinks> options and <ClLinks  term={"c
 
 
 
-*•* Indicating the *documentation string* for the <ClLinks  term={"slot"}><i>slot</i></ClLinks>.  
+*•* Indicating the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> for the <ClLinks  term={"slot"}><i>slot</i></ClLinks>.  
 
 
 

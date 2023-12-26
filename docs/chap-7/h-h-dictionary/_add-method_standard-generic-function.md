@@ -1,4 +1,4 @@
-**add-method** *Standard Generic Function* 
+**add-method** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-The generic function <ClLinks  term={"add-method"}><b>add-method</b></ClLinks> adds a <ClLinks  term={"method"}><i>method</i></ClLinks> to a *generic function*. 
+The generic function <ClLinks  term={"add-method"}><b>add-method</b></ClLinks> adds a <ClLinks  term={"method"}><i>method</i></ClLinks> to a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ The generic function <ClLinks  term={"add-method"}><b>add-method</b></ClLinks> a
 
 
 
-If <ClLinks  term={"method"}><i>method</i></ClLinks> agrees with an existing <ClLinks  term={"method"}><i>method</i></ClLinks> of *generic-function* on *parameter specializers* and <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>, the existing <ClLinks  term={"method"}><i>method</i></ClLinks> is replaced. 
+If <ClLinks  term={"method"}><i>method</i></ClLinks> agrees with an existing <ClLinks  term={"method"}><i>method</i></ClLinks> of *generic-function* on <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> and <ClLinks  term={"qualifier"}><i>qualifiers</i></ClLinks>, the existing <ClLinks  term={"method"}><i>method</i></ClLinks> is replaced. 
 
 
 
@@ -62,11 +62,11 @@ If <ClLinks  term={"method"}><i>method</i></ClLinks> agrees with an existing <Cl
 
 
 
-The *lambda list* of the method function of <ClLinks  term={"method"}><i>method</i></ClLinks> must be congruent with the *lambda list* of *generic-function*, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+The <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of the method function of <ClLinks  term={"method"}><i>method</i></ClLinks> must be congruent with the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of *generic-function*, or an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
-If <ClLinks  term={"method"}><i>method</i></ClLinks> is a *method object* of another *generic function*, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If <ClLinks  term={"method"}><i>method</i></ClLinks> is a *method object* of another <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 

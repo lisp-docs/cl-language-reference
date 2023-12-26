@@ -22,7 +22,7 @@
 
 
 
-*lambda-list*—a *macro lambda list*. 
+*lambda-list*—a <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda list</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-Defines <ClLinks  term={"name"}><i>name</i></ClLinks> as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> by associating a *macro function* with that <ClLinks  term={"name"}><i>name</i></ClLinks> in the global environment. The *macro function* is defined in the same *lexical environment* in which the <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears. 
+Defines <ClLinks  term={"name"}><i>name</i></ClLinks> as a <ClLinks  term={"macro"}><i>macro</i></ClLinks> by associating a <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> with that <ClLinks  term={"name"}><i>name</i></ClLinks> in the global environment. The <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> is defined in the same <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which the <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears. 
 
 
 
@@ -66,7 +66,7 @@ The *lambda-list* conforms to the requirements described in Section 3.4.4 (Macro
 
 
 
-*Documentation* is attached as a *documentation string* to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <ClLinks  term={"function"}><b>function</b></ClLinks>) and to the *macro function*. 
+*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <ClLinks  term={"function"}><b>function</b></ClLinks>) and to the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
 
 
 
@@ -82,7 +82,7 @@ The consequences are undefined if the result of fully macroexpanding a <ClLinks 
 
 
 
-If a <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a *top level form*, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. Users must ensure that the body of the <ClLinks  term={"macro"}><i>macro</i></ClLinks> can be evaluated at compile time if it is referenced within the <ClLinks  term={"file"}><i>file</i></ClLinks> being *compiled*. 
+If a <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> must store the <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition at compile time, so that occurrences of the macro later on in the file can be expanded correctly. Users must ensure that the body of the <ClLinks  term={"macro"}><i>macro</i></ClLinks> can be evaluated at compile time if it is referenced within the <ClLinks  term={"file"}><i>file</i></ClLinks> being *compiled*. 
 
 
 

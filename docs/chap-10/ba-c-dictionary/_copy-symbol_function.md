@@ -18,7 +18,7 @@
 
 
 
-*copy-properties*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*copy-properties*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-If *copy-properties* is <ClLinks  term={"false"}><i>false</i></ClLinks>, the *new-symbol* is neither <ClLinks  term={"bound"}><i>bound</i></ClLinks> nor <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> and has a *null property list*. If *copy-properties* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the initial <ClLinks  term={"value"}><i>value</i></ClLinks> of *new-symbol* is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, the initial <ClLinks  term={"function"}><i>function</i></ClLinks> definition of *new-symbol* is the *functional value* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and the *property list* of *new-symbol* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>2</sub> of the *property list* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+If *copy-properties* is <ClLinks  term={"false"}><i>false</i></ClLinks>, the *new-symbol* is neither <ClLinks  term={"bound"}><i>bound</i></ClLinks> nor <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> and has a *null property list*. If *copy-properties* is <ClLinks  term={"true"}><i>true</i></ClLinks>, then the initial <ClLinks  term={"value"}><i>value</i></ClLinks> of *new-symbol* is the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, the initial <ClLinks  term={"function"}><i>function</i></ClLinks> definition of *new-symbol* is the <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of *new-symbol* is a <ClLinks  term={"copy"}><i>copy</i></ClLinks><sub>2</sub> of the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 

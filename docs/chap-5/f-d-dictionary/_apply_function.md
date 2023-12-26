@@ -6,7 +6,7 @@
 
 **Arguments and Values:**
 
-<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a *function designator* .
+<GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> .
 
 *args*—a *spreadable argument list designator* .
 
@@ -16,7 +16,7 @@
 
 *Applies* the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> to the *args*.
 
-When the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> receives its arguments via **&amp;rest**, it is permissible (but not required) for the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> to <GlossaryTerm  term={"bind"}><i>bind</i></GlossaryTerm> the *rest parameter* to an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that shares structure with the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>. Because a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> can neither detect whether it was called via <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> nor whether (if so) the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> was a <GlossaryTerm  term={"constant"}><i>constant</i></GlossaryTerm>, *conforming programs* must neither rely on the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> structure of a *rest list* to be freshly consed, nor modify that <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> structure.
+When the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> receives its arguments via **&amp;rest**, it is permissible (but not required) for the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> to <GlossaryTerm  term={"bind"}><i>bind</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameter</i></GlossaryTerm> to an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> that shares structure with the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink>. Because a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> can neither detect whether it was called via <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> nor whether (if so) the last argument to <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> was a <GlossaryTerm  term={"constant"}><i>constant</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> must neither rely on the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> structure of a <GlossaryTerm styled={true} term={"rest list"}><i>rest list</i></GlossaryTerm> to be freshly consed, nor modify that <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> structure.
 
 <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> can be used with <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> in certain circumstances; see Section 5.1.2.5 (APPLY Forms as Places).
 

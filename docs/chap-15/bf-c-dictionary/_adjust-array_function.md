@@ -42,11 +42,11 @@
 
 
 
-*new-dimensions*—a *valid array dimension* or a <ClLinks  term={"list"}><i>list</i></ClLinks> of *valid array dimensions*. 
+*new-dimensions*—a <GlossaryTerm styled={true} term={"valid array dimension"}><i>valid array dimension</i></GlossaryTerm> or a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"valid array dimension"}><i>valid array dimensions</i></GlossaryTerm>. 
 
 
 
-*element-type*—a *type specifier* . 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -58,7 +58,7 @@
 
 
 
-*fill-pointer*—a *valid fill pointer* for the <ClLinks  term={"array"}><i>array</i></ClLinks> to be created, or <ClLinks  term={"t"}><b>t</b></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*fill-pointer*—a <GlossaryTerm styled={true} term={"valid fill pointer"}><i>valid fill pointer</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks> to be created, or <ClLinks  term={"t"}><b>t</b></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -86,7 +86,7 @@
 
 
 
-*Element-type* specifies the <ClLinks  term={"type"}><i>type</i></ClLinks> of the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the resulting <ClLinks  term={"array"}><i>array</i></ClLinks>. If *element-type* is supplied, the consequences are unspecified if the *upgraded array element type* of *element-type* is not the same as the *actual array element type* of <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*Element-type* specifies the <ClLinks  term={"type"}><i>type</i></ClLinks> of the <ClLinks  term={"element"}><i>elements</i></ClLinks> of the resulting <ClLinks  term={"array"}><i>array</i></ClLinks>. If *element-type* is supplied, the consequences are unspecified if the <GlossaryTerm styled={true} term={"upgraded array element type"}><i>upgraded array element type</i></GlossaryTerm> of *element-type* is not the same as the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -110,11 +110,11 @@ If *initial-contents* is supplied, it is treated as for <ClLinks  term={"make-ar
 
 
 
-If *fill-pointer* is an *integer* , it becomes the *fill pointer* for the resulting <ClLinks  term={"array"}><i>array</i></ClLinks>. If *fill-pointer* is the symbol <ClLinks  term={"t"}><b>t</b></ClLinks>, it indicates that the size of the resulting <ClLinks  term={"array"}><i>array</i></ClLinks> should be used as the *fill pointer* . If *fill-pointer* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, it indicates that the *fill pointer* should be left as it is. 
+If *fill-pointer* is an *integer* , it becomes the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> for the resulting <ClLinks  term={"array"}><i>array</i></ClLinks>. If *fill-pointer* is the symbol <ClLinks  term={"t"}><b>t</b></ClLinks>, it indicates that the size of the resulting <ClLinks  term={"array"}><i>array</i></ClLinks> should be used as the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . If *fill-pointer* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, it indicates that the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> should be left as it is. 
 
 
 
-If *displaced-to non-nil*, a *displaced array* is created. The resulting <ClLinks  term={"array"}><i>array</i></ClLinks> shares its contents with the <ClLinks  term={"array"}><i>array</i></ClLinks> given by *displaced-to*. The resulting <ClLinks  term={"array"}><i>array</i></ClLinks> cannot contain more elements than the <ClLinks  term={"array"}><i>array</i></ClLinks> it is displaced to. If *displaced-to* is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the resulting <ClLinks  term={"array"}><i>array</i></ClLinks> is not a *displaced array*. If array *A* is created displaced to array *B* and subsequently array *B* is given to <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks>, array *A* will still be displaced to array *B*. Although <ClLinks  term={"array"}><i>array</i></ClLinks> might be a *displaced array*, the resulting <ClLinks  term={"array"}><i>array</i></ClLinks> is not a *displaced array* unless *displaced-to* is supplied and not <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The interaction between <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks> and displaced <ClLinks  term={"array"}><i>arrays</i></ClLinks> is as follows given three <ClLinks  term={"array"}><i>arrays</i></ClLinks>, A, B, and C: 
+If *displaced-to non-nil*, a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm> is created. The resulting <ClLinks  term={"array"}><i>array</i></ClLinks> shares its contents with the <ClLinks  term={"array"}><i>array</i></ClLinks> given by *displaced-to*. The resulting <ClLinks  term={"array"}><i>array</i></ClLinks> cannot contain more elements than the <ClLinks  term={"array"}><i>array</i></ClLinks> it is displaced to. If *displaced-to* is not supplied or <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the resulting <ClLinks  term={"array"}><i>array</i></ClLinks> is not a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>. If array *A* is created displaced to array *B* and subsequently array *B* is given to <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks>, array *A* will still be displaced to array *B*. Although <ClLinks  term={"array"}><i>array</i></ClLinks> might be a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>, the resulting <ClLinks  term={"array"}><i>array</i></ClLinks> is not a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm> unless *displaced-to* is supplied and not <ClLinks  term={"nil"}><b>nil</b></ClLinks>. The interaction between <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks> and displaced <ClLinks  term={"array"}><i>arrays</i></ClLinks> is as follows given three <ClLinks  term={"array"}><i>arrays</i></ClLinks>, A, B, and C: 
 
 
 
@@ -202,7 +202,7 @@ If *initial-contents* or *displaced-to* is supplied, then none of the original c
 
 
 
-The consequences are unspecified if <ClLinks  term={"array"}><i>array</i></ClLinks> is adjusted to a size smaller than its *fill pointer* without supplying the *fill-pointer* argument so that its *fill-pointer* is properly adjusted in the process. 
+The consequences are unspecified if <ClLinks  term={"array"}><i>array</i></ClLinks> is adjusted to a size smaller than its <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> without supplying the *fill-pointer* argument so that its *fill-pointer* is properly adjusted in the process. 
 
 
 
@@ -210,7 +210,7 @@ If A is displaced to B, the consequences are unspecified if B is adjusted in suc
 
 
 
-If <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks> is applied to an <ClLinks  term={"array"}><i>array</i></ClLinks> that is *actually adjustable*, the <ClLinks  term={"array"}><i>array</i></ClLinks> returned is <ClLinks  term={"identical"}><i>identical</i></ClLinks> to <ClLinks  term={"array"}><i>array</i></ClLinks>. If the <ClLinks  term={"array"}><i>array</i></ClLinks> returned by <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks> is <ClLinks  term={"distinct"}><i>distinct</i></ClLinks> from <ClLinks  term={"array"}><i>array</i></ClLinks>, then the argument <ClLinks  term={"array"}><i>array</i></ClLinks> is unchanged. 
+If <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks> is applied to an <ClLinks  term={"array"}><i>array</i></ClLinks> that is <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>, the <ClLinks  term={"array"}><i>array</i></ClLinks> returned is <ClLinks  term={"identical"}><i>identical</i></ClLinks> to <ClLinks  term={"array"}><i>array</i></ClLinks>. If the <ClLinks  term={"array"}><i>array</i></ClLinks> returned by <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks> is <ClLinks  term={"distinct"}><i>distinct</i></ClLinks> from <ClLinks  term={"array"}><i>array</i></ClLinks>, then the argument <ClLinks  term={"array"}><i>array</i></ClLinks> is unchanged. 
 
 
 
@@ -256,7 +256,7 @@ is a 3-by-5 array with contents
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled if *fill-pointer* is supplied and <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> but <ClLinks  term={"array"}><i>array</i></ClLinks> has no *fill pointer* . 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled if *fill-pointer* is supplied and <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> but <ClLinks  term={"array"}><i>array</i></ClLinks> has no <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
@@ -284,7 +284,7 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 

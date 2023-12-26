@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> of an <ClLinks  term={"array"}><i>array</i></ClLinks> that is not displaced to another <ClLinks  term={"array"}><i>array</i></ClLinks>, has no *fill pointer* , and is not *expressly adjustable* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-array"}><b>simple-array</b></ClLinks>. The concept of a *simple array* exists to allow the implementation to use a specialized representation and to allow the user to declare that certain values will always be *simple arrays*. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> of an <ClLinks  term={"array"}><i>array</i></ClLinks> that is not displaced to another <ClLinks  term={"array"}><i>array</i></ClLinks>, has no <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , and is not <GlossaryTerm styled={true} term={"expressly adjustable"}><i>expressly adjustable</i></GlossaryTerm> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"simple-array"}><b>simple-array</b></ClLinks>. The concept of a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm> exists to allow the implementation to use a specialized representation and to allow the user to declare that certain values will always be <GlossaryTerm styled={true} term={"simple array"}><i>simple arrays</i></GlossaryTerm>. 
 
 
 
@@ -46,11 +46,11 @@ Specializing.
 
 
 
-<ClLinks  term={"dimension"}><i>dimension</i></ClLinks>—a *valid array dimension*. 
+<ClLinks  term={"dimension"}><i>dimension</i></ClLinks>—a <GlossaryTerm styled={true} term={"valid array dimension"}><i>valid array dimension</i></GlossaryTerm>. 
 
 
 
-*element-type*—a *type specifier* . 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -74,7 +74,7 @@ Specializing.
 
 
 
-This *compound type specifier* is treated exactly as the corresponding *compound type specifier* for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"array"}><b>array</b></ClLinks> would be treated, except that the set is further constrained to include only *simple arrays*. 
+This <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm> is treated exactly as the corresponding <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"array"}><b>array</b></ClLinks> would be treated, except that the set is further constrained to include only <GlossaryTerm styled={true} term={"simple array"}><i>simple arrays</i></GlossaryTerm>. 
 
 
 
@@ -82,11 +82,11 @@ This *compound type specifier* is treated exactly as the corresponding *compound
 
 
 
-It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether *displaced arrays*, *vectors* with *fill pointers*, or arrays that are *actually adjustable* are *simple arrays*. 
+It is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <GlossaryTerm styled={true} term={"displaced array"}><i>displaced arrays</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"vector"}><i>vectors</i></GlossaryTerm> with <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>, or arrays that are <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm> are <GlossaryTerm styled={true} term={"simple array"}><i>simple arrays</i></GlossaryTerm>. 
 
 
 
-(simple-array \*) refers to all *simple arrays* regardless of element type, (simple-array *type specifier*) refers only to those *simple arrays* that can result from giving *type-specifier* as the :element-type argument to <ClLinks  term={"make-array"}><b>make-array</b></ClLinks>. 
+(simple-array \*) refers to all <GlossaryTerm styled={true} term={"simple array"}><i>simple arrays</i></GlossaryTerm> regardless of element type, (simple-array <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm>) refers only to those <GlossaryTerm styled={true} term={"simple array"}><i>simple arrays</i></GlossaryTerm> that can result from giving *type-specifier* as the :element-type argument to <ClLinks  term={"make-array"}><b>make-array</b></ClLinks>. 
 
 
 

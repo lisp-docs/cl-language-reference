@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a *proper list*. 
+<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-The resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> shares *list structure* with <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>. 
+The resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> shares <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> with <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>. 
 
 
 

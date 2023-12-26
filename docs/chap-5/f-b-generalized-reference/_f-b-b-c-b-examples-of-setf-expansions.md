@@ -2,7 +2,7 @@
 
 
 
-Examples of the contents of the constituents of *setf expansions* follow. 
+Examples of the contents of the constituents of <GlossaryTerm styled={true} term={"setf expansion"}><i>setf expansions</i></GlossaryTerm> follow. 
 
 
 

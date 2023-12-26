@@ -2,15 +2,15 @@
 
 
 
-A *generic function lambda list* is used to describe the overall shape of the argument list to be accepted by a *generic function*. Individual *method signatures* might contribute additional *keyword parameters* to the *lambda list* of the *effective method*. 
+A <GlossaryTerm styled={true} term={"generic function lambda list"}><i>generic function lambda list</i></GlossaryTerm> is used to describe the overall shape of the argument list to be accepted by a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. Individual *method signatures* might contribute additional <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameters</i></GlossaryTerm> to the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"effective method"}><i>effective method</i></GlossaryTerm>. 
 
 
 
-A *generic function lambda list* is used by <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>. 
+A <GlossaryTerm styled={true} term={"generic function lambda list"}><i>generic function lambda list</i></GlossaryTerm> is used by <ClLinks  term={"defgeneric"}><b>defgeneric</b></ClLinks>. 
 
 
 
-A *generic function lambda list* has the following syntax: 
+A <GlossaryTerm styled={true} term={"generic function lambda list"}><i>generic function lambda list</i></GlossaryTerm> has the following syntax: 
 
 
 
@@ -34,7 +34,7 @@ A *generic function lambda list* has the following syntax:
 
 
 
-A *generic function lambda list* can contain the *lambda list keywords* shown in Figure 3–14. 
+A <GlossaryTerm styled={true} term={"generic function lambda list"}><i>generic function lambda list</i></GlossaryTerm> can contain the <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> shown in Figure 3–14. 
 
 
 
@@ -58,7 +58,7 @@ A *generic function lambda list* can contain the *lambda list keywords* shown in
 
 
 
-A *generic function lambda list* differs from an *ordinary lambda list* in the following ways: 
+A <GlossaryTerm styled={true} term={"generic function lambda list"}><i>generic function lambda list</i></GlossaryTerm> differs from an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> in the following ways: 
 
 
 
@@ -66,7 +66,7 @@ A *generic function lambda list* differs from an *ordinary lambda list* in the f
 
 
 
-Zero or more *required parameters* must be specified. 
+Zero or more <GlossaryTerm styled={true} term={"required parameter"}><i>required parameters</i></GlossaryTerm> must be specified. 
 
 
 
@@ -74,7 +74,7 @@ Zero or more *required parameters* must be specified.
 
 
 
-*Optional parameters* and *keyword parameters* may not have default initial value forms nor 
+<GlossaryTerm styled={true} term={"optional parameter"}><i>Optional parameters</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameters</i></GlossaryTerm> may not have default initial value forms nor 
 
 
 

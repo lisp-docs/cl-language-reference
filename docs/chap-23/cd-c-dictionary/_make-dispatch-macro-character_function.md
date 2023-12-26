@@ -18,11 +18,11 @@
 
 
 
-*non-terminating-p*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*non-terminating-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. The default is the *current readtable*. 
+<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. The default is the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks> makes *char* be a *dispatching macro character* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
+<ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks> makes *char* be a <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@ Initially, every <ClLinks  term={"character"}><i>character</i></ClLinks> in the 
 
 
 
-If *non-terminating-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, the *dispatching macro character* is made a *non-terminating macro character* ; if *non-terminating-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>, the *dispatching macro character* is made a *terminating macro character* . 
+If *non-terminating-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, the <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> is made a *non-terminating macro character* ; if *non-terminating-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>, the <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> is made a *terminating macro character* . 
 
 
 

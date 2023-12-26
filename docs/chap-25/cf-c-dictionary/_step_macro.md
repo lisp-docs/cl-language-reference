@@ -46,7 +46,7 @@
 
 
 
-It is technically permissible for a *conforming implementation* to take no action at all other than normal *execution* of the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. In such a situation, (step <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>) is equivalent to, for example, (let () <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>). In implementations where this is the case, the associated documentation should mention that fact. 
+It is technically permissible for a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> to take no action at all other than normal *execution* of the <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. In such a situation, (step <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>) is equivalent to, for example, (let () <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>). In implementations where this is the case, the associated documentation should mention that fact. 
 
 
 

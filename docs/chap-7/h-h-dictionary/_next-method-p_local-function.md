@@ -14,7 +14,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -22,15 +22,15 @@
 
 
 
-The locally defined function <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> can be used within the body <ClLinks  term={"form"}><i>forms</i></ClLinks> (but not the *lambda list*) defined by a *method-defining form* to determine whether a next <ClLinks  term={"method"}><i>method</i></ClLinks> exists. 
+The locally defined function <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> can be used within the body <ClLinks  term={"form"}><i>forms</i></ClLinks> (but not the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm>) defined by a <GlossaryTerm styled={true} term={"method-defining form"}><i>method-defining form</i></GlossaryTerm> to determine whether a next <ClLinks  term={"method"}><i>method</i></ClLinks> exists. 
 
 
 
-The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> has *lexical scope* and *indefinite extent*. 
+The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> has <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"indefinite extent"}><i>indefinite extent</i></GlossaryTerm>. 
 
 
 
-Whether or not <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> in the *global environment* is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>; however, the restrictions on redefinition and *shadowing* of <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> are the same as for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> which are <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> in the *global environment*. The consequences of attempting to use <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> outside of a *method-defining form* are undefined. 
+Whether or not <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm> is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>; however, the restrictions on redefinition and *shadowing* of <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> are the same as for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> which are <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. The consequences of attempting to use <ClLinks  term={"next-method-p"}><b>next-method-p</b></ClLinks> outside of a <GlossaryTerm styled={true} term={"method-defining form"}><i>method-defining form</i></GlossaryTerm> are undefined. 
 
 
 

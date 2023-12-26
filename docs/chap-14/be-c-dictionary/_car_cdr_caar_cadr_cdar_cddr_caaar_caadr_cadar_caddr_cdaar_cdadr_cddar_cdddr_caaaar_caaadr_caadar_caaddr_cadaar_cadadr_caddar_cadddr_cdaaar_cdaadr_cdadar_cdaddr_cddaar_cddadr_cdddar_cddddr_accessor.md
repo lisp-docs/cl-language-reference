@@ -362,7 +362,7 @@ If *x* is a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, <ClLinks
 
 
 
-The argument *x* is permitted to be a *dotted list* or a *circular list*. 
+The argument *x* is permitted to be a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm>. 
 
 
 

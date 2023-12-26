@@ -14,19 +14,19 @@
 
 
 
-<ClLinks styled={true} term={"key"}><i>keys</i></ClLinks>—a *proper list*. 
+<ClLinks styled={true} term={"key"}><i>keys</i></ClLinks>—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
-*data*—a *proper list*. 
+*data*—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an *association list*. The default is the *empty list*. 
+<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>. The default is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. 
 
 
 
-*new-alist*—an *association list*. 
+*new-alist*—an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-Returns an *association list* that associates elements of <ClLinks styled={true} term={"key"}><i>keys</i></ClLinks> to corresponding elements of *data*. The consequences are undefined if <ClLinks styled={true} term={"key"}><i>keys</i></ClLinks> and *data* are not of the same <ClLinks styled={true} term={"length"}><i>length</i></ClLinks>. 
+Returns an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm> that associates elements of <ClLinks styled={true} term={"key"}><i>keys</i></ClLinks> to corresponding elements of *data*. The consequences are undefined if <ClLinks styled={true} term={"key"}><i>keys</i></ClLinks> and *data* are not of the same <ClLinks styled={true} term={"length"}><i>length</i></ClLinks>. 
 
 
 
-If <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> is supplied, <ClLinks styled={true} term={"pairlis"}><b>pairlis</b></ClLinks> returns a modified <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> with the new pairs prepended to it. The new pairs may appear in the resulting *association list* in either forward or backward order. The result of 
+If <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> is supplied, <ClLinks styled={true} term={"pairlis"}><b>pairlis</b></ClLinks> returns a modified <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> with the new pairs prepended to it. The new pairs may appear in the resulting <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm> in either forward or backward order. The result of 
 
 
 
@@ -88,7 +88,7 @@ alist → ((4 . "four"))
 
 
 
-Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"key"}><i>keys</i></ClLinks> and *data* are not *proper lists*. 
+Should be prepared to signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"key"}><i>keys</i></ClLinks> and *data* are not <GlossaryTerm styled={true} term={"proper list"}><i>proper lists</i></GlossaryTerm>. 
 
 
 

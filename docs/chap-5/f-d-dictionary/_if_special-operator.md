@@ -1,4 +1,4 @@
-**if** *Special Operator* 
+**if** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 

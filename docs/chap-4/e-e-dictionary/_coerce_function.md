@@ -18,7 +18,7 @@
 
 
 
-*result-type*—a *type specifier* . 
+*result-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -58,11 +58,11 @@ Otherwise, the <ClLinks  term={"object"}><i>object</i></ClLinks> is *coerced* to
 
 
 
-If the *result-type* is a *recognizable subtype* of <ClLinks  term={"list"}><b>list</b></ClLinks>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *sequence*, then the *result* is a <ClLinks  term={"list"}><i>list</i></ClLinks> that has the *same elements* as <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+If the *result-type* is a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"list"}><b>list</b></ClLinks>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *sequence*, then the *result* is a <ClLinks  term={"list"}><i>list</i></ClLinks> that has the *same elements* as <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-If the *result-type* is a *recognizable subtype* of <ClLinks  term={"vector"}><b>vector</b></ClLinks>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *sequence*, then the *result* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> that has the *same elements* as <ClLinks  term={"object"}><i>object</i></ClLinks>. If *result-type* is a specialized <ClLinks  term={"type"}><i>type</i></ClLinks>, the *result* has an *actual array element type* that is the result of *upgrading* the element type part of that *specialized type*. If no element type is specified, the element type defaults to <ClLinks  term={"t"}><b>t</b></ClLinks>. If the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> cannot determine the element type, an error is signaled. 
+If the *result-type* is a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *sequence*, then the *result* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> that has the *same elements* as <ClLinks  term={"object"}><i>object</i></ClLinks>. If *result-type* is a specialized <ClLinks  term={"type"}><i>type</i></ClLinks>, the *result* has an <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> that is the result of *upgrading* the element type part of that *specialized type*. If no element type is specified, the element type defaults to <ClLinks  term={"t"}><b>t</b></ClLinks>. If the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> cannot determine the element type, an error is signaled. 
 
 
 
@@ -70,7 +70,7 @@ If the *result-type* is a *recognizable subtype* of <ClLinks  term={"vector"}><b
 
 
 
-If the *result-type* is <ClLinks  term={"character"}><b>character</b></ClLinks> and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *character designator* , the *result* is the <ClLinks  term={"character"}><i>character</i></ClLinks> it denotes. 
+If the *result-type* is <ClLinks  term={"character"}><b>character</b></ClLinks> and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"character designator"}><i>character designator</i></GlossaryTerm> , the *result* is the <ClLinks  term={"character"}><i>character</i></ClLinks> it denotes. 
 
 
 
@@ -86,7 +86,7 @@ If the *result-type* is <ClLinks  term={"complex"}><b>complex</b></ClLinks> and 
 
 
 
-If the *result-type* is any of <ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *real*, then the *result* is a <ClLinks  term={"float"}><i>float</i></ClLinks> of *type result-type* which is equal in sign and magnitude to the <ClLinks  term={"object"}><i>object</i></ClLinks> to whatever degree of representational precision is permitted by that <ClLinks  term={"float"}><i>float</i></ClLinks> representation. (If the *result-type* is <ClLinks  term={"float"}><b>float</b></ClLinks> and <ClLinks  term={"object"}><i>object</i></ClLinks> is not already a <ClLinks  term={"float"}><i>float</i></ClLinks>, then the *result* is a *single float*.) 
+If the *result-type* is any of <ClLinks  term={"float"}><b>float</b></ClLinks>, <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>, and the <ClLinks  term={"object"}><i>object</i></ClLinks> is a *real*, then the *result* is a <ClLinks  term={"float"}><i>float</i></ClLinks> of *type result-type* which is equal in sign and magnitude to the <ClLinks  term={"object"}><i>object</i></ClLinks> to whatever degree of representational precision is permitted by that <ClLinks  term={"float"}><i>float</i></ClLinks> representation. (If the *result-type* is <ClLinks  term={"float"}><b>float</b></ClLinks> and <ClLinks  term={"object"}><i>object</i></ClLinks> is not already a <ClLinks  term={"float"}><i>float</i></ClLinks>, then the *result* is a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm>.) 
 
 
 
@@ -94,11 +94,11 @@ If the *result-type* is any of <ClLinks  term={"float"}><b>float</b></ClLinks>, 
 
 
 
-If the *result-type* is <ClLinks  term={"function"}><b>function</b></ClLinks>, and <ClLinks  term={"object"}><i>object</i></ClLinks> is any *function name* that is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> but that is globally defined neither as a *macro name* nor as a *special operator* , then the *result* is the *functional value* of <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+If the *result-type* is <ClLinks  term={"function"}><b>function</b></ClLinks>, and <ClLinks  term={"object"}><i>object</i></ClLinks> is any <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> that is <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> but that is globally defined neither as a <GlossaryTerm styled={true} term={"macro name"}><i>macro name</i></GlossaryTerm> nor as a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , then the *result* is the <GlossaryTerm styled={true} term={"functional value"}><i>functional value</i></GlossaryTerm> of <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
-If the *result-type* is <ClLinks  term={"function"}><b>function</b></ClLinks>, and <ClLinks  term={"object"}><i>object</i></ClLinks> is a *lambda expression*, then the *result* is a <ClLinks  term={"closure"}><i>closure</i></ClLinks> of <ClLinks  term={"object"}><i>object</i></ClLinks> in the *null lexical environment*. 
+If the *result-type* is <ClLinks  term={"function"}><b>function</b></ClLinks>, and <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>, then the *result* is a <ClLinks  term={"closure"}><i>closure</i></ClLinks> of <ClLinks  term={"object"}><i>object</i></ClLinks> in the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. 
 
 
 
@@ -140,7 +140,7 @@ If a coercion is not possible, an error of <ClLinks  term={"type"}><i>type</i></
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled if the *result-type* is <ClLinks  term={"function"}><b>function</b></ClLinks> but <ClLinks  term={"object"}><i>object</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is not <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> or if the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> names a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a *special operator* . 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled if the *result-type* is <ClLinks  term={"function"}><b>function</b></ClLinks> but <ClLinks  term={"object"}><i>object</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is not <ClLinks  term={"fbound"}><i>fbound</i></ClLinks> or if the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> names a <ClLinks  term={"macro"}><i>macro</i></ClLinks> or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> . 
 
 
 

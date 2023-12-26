@@ -10,7 +10,7 @@
 
 
 
-If it is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, it specifies the right margin (as *integer* number of <ClLinks styled={true} term={"em"}><i>ems</i></ClLinks>) to use when the *pretty printer* is making layout decisions. 
+If it is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, it specifies the right margin (as *integer* number of <ClLinks styled={true} term={"em"}><i>ems</i></ClLinks>) to use when the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> is making layout decisions. 
 
 
 

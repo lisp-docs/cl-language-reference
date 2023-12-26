@@ -23,7 +23,7 @@
 
 
 
-<ClLinks  term={"plist"}><i>plist</i></ClLinks>, *new-plist*—a *property list*. 
+<ClLinks  term={"plist"}><i>plist</i></ClLinks>, *new-plist*—a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
 
 
 
@@ -31,7 +31,7 @@
 
 
 
-*Accesses* the *property list* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+*Accesses* the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-The use of <ClLinks  term={"setf"}><b>setf</b></ClLinks> should be avoided, since a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s *property list* is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
+The use of <ClLinks  term={"setf"}><b>setf</b></ClLinks> should be avoided, since a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>’s <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> is a global resource that can contain information established and depended upon by unrelated programs in the same *Lisp image*. 
 
 
 

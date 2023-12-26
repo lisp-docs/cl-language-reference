@@ -1,4 +1,4 @@
-**file-stream** *System Class* 
+**file-stream** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 

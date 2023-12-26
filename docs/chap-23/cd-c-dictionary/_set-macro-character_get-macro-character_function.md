@@ -22,7 +22,7 @@
 
 
 
-*non-terminating-p*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*non-terminating-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a *readtable designator* . The default is the *current readtable*. 
+<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a <GlossaryTerm styled={true} term={"readtable designator"}><i>readtable designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-*new-function*—a *function designator* . 
+*new-function*—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> . 
 
 
 
@@ -58,11 +58,11 @@
 
 
 
-<ClLinks  term={"get-macro-character"}><b>get-macro-character</b></ClLinks> returns as its *primary value*, *function*, the *reader macro function* associated with *char* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> (if any), or else <ClLinks  term={"nil"}><b>nil</b></ClLinks> if *char* is not a *macro character* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. The *secondary value*, *non-terminating-p*, is <ClLinks  term={"true"}><i>true</i></ClLinks> if *char* is a *non-terminating macro character* ; otherwise, it is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+<ClLinks  term={"get-macro-character"}><b>get-macro-character</b></ClLinks> returns as its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> associated with *char* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> (if any), or else <ClLinks  term={"nil"}><b>nil</b></ClLinks> if *char* is not a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *non-terminating-p*, is <ClLinks  term={"true"}><i>true</i></ClLinks> if *char* is a *non-terminating macro character* ; otherwise, it is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-<ClLinks  term={"set-macro-character"}><b>set-macro-character</b></ClLinks> causes *char* to be a *macro character* associated with the *reader macro function new-function* (or the <ClLinks  term={"designator"}><i>designator</i></ClLinks> for *new-function*) in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. If *non-terminating-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, *char* becomes a *non-terminating macro character* ; otherwise it becomes a *terminating macro character* . 
+<ClLinks  term={"set-macro-character"}><b>set-macro-character</b></ClLinks> causes *char* to be a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> associated with the *reader macro function new-function* (or the <ClLinks  term={"designator"}><i>designator</i></ClLinks> for *new-function*) in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. If *non-terminating-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>, *char* becomes a *non-terminating macro character* ; otherwise it becomes a *terminating macro character* . 
 
 
 

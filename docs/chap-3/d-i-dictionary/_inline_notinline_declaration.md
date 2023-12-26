@@ -18,7 +18,7 @@
 
 
 
-*function-name*—a *function name*. 
+*function-name*—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
@@ -66,7 +66,7 @@ If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned h
 
 
 
-While no *conforming implementation* is required to perform inline expansion of user-defined functions, those <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> that do attempt to recognize the following paradigm: 
+While no <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> is required to perform inline expansion of user-defined functions, those <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> that do attempt to recognize the following paradigm: 
 
 
 
@@ -98,11 +98,11 @@ If one of the <ClLinks  term={"function"}><i>functions</i></ClLinks> mentioned h
 
 
 
-In the presence of a *compiler macro* definition for *function-name*, a <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declaration prevents that *compiler macro* from being used. An <ClLinks  term={"inline"}><b>inline</b></ClLinks> declaration may be used to encourage use of *compiler macro* definitions. <ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations otherwise have no e↵ect when the lexically visible definition of *function-name* is a <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition. 
+In the presence of a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definition for *function-name*, a <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declaration prevents that <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> from being used. An <ClLinks  term={"inline"}><b>inline</b></ClLinks> declaration may be used to encourage use of <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definitions. <ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations otherwise have no e↵ect when the lexically visible definition of *function-name* is a <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition. 
 
 
 
-<ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations can be *free declarations* or *bound declarations*. <ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations of functions that appear before the body of a <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> that defines that function are *bound declarations*. Such declarations in other contexts are *free declarations*. 
+<ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations can be <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. <ClLinks  term={"inline"}><b>inline</b></ClLinks> and <ClLinks  term={"notinline"}><b>notinline</b></ClLinks> declarations of functions that appear before the body of a <ClLinks  term={"flet"}><b>flet</b></ClLinks> or <ClLinks  term={"labels"}><b>labels</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> that defines that function are <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declarations</i></GlossaryTerm>. Such declarations in other contexts are <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm>. 
 
 
 

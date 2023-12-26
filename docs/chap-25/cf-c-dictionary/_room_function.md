@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"room"}><b>room</b></ClLinks> prints, to *standard output*, information about the state of internal storage and its management. This might include descriptions of the amount of memory in use and the degree of memory compaction, possibly broken down by internal data type if that is appropriate. The nature and format of the printed information is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. The intent is to provide information that a <ClLinks styled={true} term={"programmer"}><i>programmer</i></ClLinks> might use to tune a <ClLinks styled={true} term={"program"}><i>program</i></ClLinks> for a particular <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
+<ClLinks styled={true} term={"room"}><b>room</b></ClLinks> prints, to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>, information about the state of internal storage and its management. This might include descriptions of the amount of memory in use and the degree of memory compaction, possibly broken down by internal data type if that is appropriate. The nature and format of the printed information is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. The intent is to provide information that a <ClLinks styled={true} term={"programmer"}><i>programmer</i></ClLinks> might use to tune a <ClLinks styled={true} term={"program"}><i>program</i></ClLinks> for a particular <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Output to *standard output*. 
+Output to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. 
 
 
 

@@ -14,11 +14,11 @@
 
 
 
-*pathspec*—a *logical pathname*, a *logical pathname namestring*, or a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+*pathspec*—a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, a *logical pathname namestring*, or a <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-*logical-pathname*—a *logical pathname*. 
+*logical-pathname*—a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks> converts *pathspec* to a *logical pathname* and returns the new *logical pathname*. If *pathspec* is a *logical pathname namestring*, it should contain a host component and its following <ClLinks  term={"colon"}><i>colon</i></ClLinks>. If *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, it should be one for which <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> returns a *logical pathname*. 
+<ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks> converts *pathspec* to a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> and returns the new <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>. If *pathspec* is a *logical pathname namestring*, it should contain a host component and its following <ClLinks  term={"colon"}><i>colon</i></ClLinks>. If *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, it should be one for which <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> returns a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>. 
 
 
 
-If *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, the <ClLinks  term={"stream"}><i>stream</i></ClLinks> can be either open or closed. <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks> returns the same *logical pathname* after a file is closed as it did when the file was open. It is an error if *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is created with <ClLinks  term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks>, <ClLinks  term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks>, <ClLinks  term={"make-broadcast-stream"}><b>make-broadcast-stream</b></ClLinks>, <ClLinks  term={"make-concatenated-stream"}><b>make-concatenated-stream</b></ClLinks>, <ClLinks  term={"make-string-input-stream"}><b>make-string-input-stream</b></ClLinks>, or <ClLinks  term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks>. 
+If *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, the <ClLinks  term={"stream"}><i>stream</i></ClLinks> can be either open or closed. <ClLinks  term={"logical-pathname"}><b>logical-pathname</b></ClLinks> returns the same <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> after a file is closed as it did when the file was open. It is an error if *pathspec* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is created with <ClLinks  term={"make-two-way-stream"}><b>make-two-way-stream</b></ClLinks>, <ClLinks  term={"make-echo-stream"}><b>make-echo-stream</b></ClLinks>, <ClLinks  term={"make-broadcast-stream"}><b>make-broadcast-stream</b></ClLinks>, <ClLinks  term={"make-concatenated-stream"}><b>make-concatenated-stream</b></ClLinks>, <ClLinks  term={"make-string-input-stream"}><b>make-string-input-stream</b></ClLinks>, or <ClLinks  term={"make-string-output-stream"}><b>make-string-output-stream</b></ClLinks>. 
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-*x*—<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, or a *function name*. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*x*—<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, or a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -30,11 +30,11 @@ If *x* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the editor i
 
 
 
-If *x* is a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> or <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, it is taken as the *pathname designator* for a <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> to be edited. 
+If *x* is a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> or <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, it is taken as the <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> for a <ClLinks styled={true} term={"file"}><i>file</i></ClLinks> to be edited. 
 
 
 
-If *x* is a *function name*, the text of its definition is edited. The means by which the function text is obtained is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
+If *x* is a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>, the text of its definition is edited. The means by which the function text is obtained is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
 
 
 
@@ -46,11 +46,11 @@ The consequences are undefined if the <ClLinks styled={true} term={"implementati
 
 
 
-If a failure occurs when performing some operation on the *file system* while attempting to edit a <ClLinks styled={true} term={"file"}><i>file</i></ClLinks>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
+If a failure occurs when performing some operation on the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> while attempting to edit a <ClLinks styled={true} term={"file"}><i>file</i></ClLinks>, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> is signaled. 
 
 
 
-An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> might be signaled if *x* is a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a *wild pathname*. *Implementation-dependent* additional conditions might be signaled as well. 
+An error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"file-error"}><b>file-error</b></ClLinks> might be signaled if *x* is a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a *wild pathname*. <GlossaryTerm styled={true} term={"implementation-dependent"}><i>Implementation-dependent</i></GlossaryTerm> additional conditions might be signaled as well. 
 
 
 

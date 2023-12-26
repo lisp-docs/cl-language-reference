@@ -38,7 +38,7 @@ When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <Cl
 
 
 
-<ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> returns all *applicable restarts*, including anonymous ones, even if some of them have the same name as others and would therefore not be found by <ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks> when given a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> argument. 
+<ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> returns all <GlossaryTerm styled={true} term={"applicable restart"}><i>applicable restarts</i></GlossaryTerm>, including anonymous ones, even if some of them have the same name as others and would therefore not be found by <ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks> when given a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> argument. 
 
 
 

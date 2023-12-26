@@ -2,7 +2,7 @@
 
 
 
-<ClLinks  term={"float"}><i>Floats</i></ClLinks> can be written in either decimal fraction or computerized scientific notation: an optional sign, then a non-empty sequence of digits with an embedded decimal point, then an optional decimal exponent specification. If there is no exponent specifier, then the decimal point is required, and there must be digits after it. The exponent specifier consists of an *exponent marker* , an optional sign, and a non-empty sequence of digits. If no exponent specifier is present, or if the *exponent marker* e (or E) is used, then the format specified by <ClLinks  term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks> is used. See Figure 2–9. 
+<ClLinks  term={"float"}><i>Floats</i></ClLinks> can be written in either decimal fraction or computerized scientific notation: an optional sign, then a non-empty sequence of digits with an embedded decimal point, then an optional decimal exponent specification. If there is no exponent specifier, then the decimal point is required, and there must be digits after it. The exponent specifier consists of an <GlossaryTerm styled={true} term={"exponent marker"}><i>exponent marker</i></GlossaryTerm> , an optional sign, and a non-empty sequence of digits. If no exponent specifier is present, or if the <GlossaryTerm styled={true} term={"exponent marker"}><i>exponent marker</i></GlossaryTerm> e (or E) is used, then the format specified by <ClLinks  term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks> is used. See Figure 2–9. 
 
 
 
@@ -10,7 +10,7 @@ An implementation may provide one or more kinds of <ClLinks  term={"float"}><i>f
 
 
 
-The internal format used for an external representation depends only on the *exponent marker* , and not on the number of decimal digits in the external representation. 
+The internal format used for an external representation depends only on the <GlossaryTerm styled={true} term={"exponent marker"}><i>exponent marker</i></GlossaryTerm> , and not on the number of decimal digits in the external representation. 
 
 
 

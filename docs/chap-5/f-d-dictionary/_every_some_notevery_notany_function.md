@@ -34,7 +34,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -89,7 +89,7 @@ Data and Control
 
 
 
-Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its first argument is neither a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> nor a <ClLinks  term={"function"}><i>function</i></ClLinks> or if any subsequent argument is not a *proper sequence*. 
+Should signal <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if its first argument is neither a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> nor a <ClLinks  term={"function"}><i>function</i></ClLinks> or if any subsequent argument is not a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 

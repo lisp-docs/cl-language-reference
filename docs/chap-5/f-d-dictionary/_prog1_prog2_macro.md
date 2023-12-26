@@ -26,11 +26,11 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*; evaluated as described below. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>; evaluated as described below. 
 
 
 
-*result-1*—the *primary value* resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *first-form*. 
+*result-1*—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *first-form*. 
 
 
 
@@ -50,7 +50,7 @@ Data and Control
 
 
 
-*result-2*—the *primary value* resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *second-form*. 
+*result-2*—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> resulting from the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of *second-form*. 
 
 
 

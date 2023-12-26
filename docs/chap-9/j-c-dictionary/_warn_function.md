@@ -38,7 +38,7 @@
 
 
 
-<ClLinks styled={true} term={"signal"}><i>Signals</i></ClLinks> a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks>. If the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not *handled*, reports the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> to *error output*. 
+<ClLinks styled={true} term={"signal"}><i>Signals</i></ClLinks> a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks>. If the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not *handled*, reports the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> to <GlossaryTerm styled={true} term={"error output"}><i>error output</i></GlossaryTerm>. 
 
 
 
@@ -58,7 +58,7 @@ While the <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks> <ClLi
 
 
 
-If no handlers for the warning condition are found, or if all such handlers decline, then the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is reported to *error output* by <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> in an <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> format. 
+If no handlers for the warning condition are found, or if all such handlers decline, then the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is reported to <GlossaryTerm styled={true} term={"error output"}><i>error output</i></GlossaryTerm> by <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> in an <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> format. 
 
 
 

@@ -19,15 +19,15 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a *function name*. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>, *new-function*—a *compiler macro function*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>, *new-function*—a <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -35,7 +35,7 @@
 
 
 
-*Accesses* the *compiler macro function* named <ClLinks  term={"name"}><i>name</i></ClLinks>, if any, in the <ClLinks  term={"environment"}><i>environment</i></ClLinks>.  
+*Accesses* the <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm> named <ClLinks  term={"name"}><i>name</i></ClLinks>, if any, in the <ClLinks  term={"environment"}><i>environment</i></ClLinks>.  
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-A value of <ClLinks  term={"nil"}><b>nil</b></ClLinks> denotes the absence of a *compiler macro function* named <ClLinks  term={"name"}><i>name</i></ClLinks>. 
+A value of <ClLinks  term={"nil"}><b>nil</b></ClLinks> denotes the absence of a <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm> named <ClLinks  term={"name"}><i>name</i></ClLinks>. 
 
 
 

@@ -19,11 +19,11 @@
 
 
 
-<ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks>—a *property list*. 
+<ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks>—a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of which is a *property list*. 
+<ClLinks styled={true} term={"place"}><i>place</i></ClLinks>—a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of which is a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
 
 
 
@@ -63,15 +63,15 @@
 
 
 
-<ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> finds a <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> on the <ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks> whose *property indicator* is <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>, and returns its corresponding *property value*. If there are multiple *properties*<sub>1</sub> with that *property indicator* , <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> uses the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. If there is no <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> with that *property indicator* , *default* is returned. 
+<ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> finds a <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> on the <ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks> whose <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> is <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>, and returns its corresponding <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm>. If there are multiple *properties*<sub>1</sub> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> uses the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. If there is no <ClLinks styled={true} term={"property"}><i>property</i></ClLinks> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , *default* is returned. 
 
 
 
-<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> may be used to associate a new <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> with an existing indicator in the *property list* held by <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that *property indicator* , <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> associates the *new-value* with the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. When a <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is used as a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is ignored. 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> may be used to associate a new <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> with an existing indicator in the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> held by <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, or to create a new assocation if none exists. If there are multiple *properties*<sub>1</sub> with that <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> , <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> associates the *new-value* with the first such <ClLinks styled={true} term={"property"}><i>property</i></ClLinks>. When a <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is used as a <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>, any *default* which is supplied is evaluated according to normal left-to-right evaluation rules, but its <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> is ignored. 
 
 
 
-<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> is permitted to either <ClLinks styled={true} term={"write"}><i>write</i></ClLinks> the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> itself, or modify of any part, <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> , of the *list structure* held by <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
+<ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks> of <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> is permitted to either <ClLinks styled={true} term={"write"}><i>write</i></ClLinks> the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> itself, or modify of any part, <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> or <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> , of the <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> held by <ClLinks styled={true} term={"place"}><i>place</i></ClLinks>. 
 
 
 

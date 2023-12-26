@@ -14,7 +14,7 @@
 
 
 
-Any <ClLinks  term={"function"}><i>function</i></ClLinks> may be considered by an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be a a *compiled function* if it contains no references to <ClLinks  term={"macro"}><i>macros</i></ClLinks> that must be expanded at run time, and it contains no unresolved references to *load time values*. See Section 3.2.2 (Compilation Semantics). 
+Any <ClLinks  term={"function"}><i>function</i></ClLinks> may be considered by an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be a a <GlossaryTerm styled={true} term={"compiled function"}><i>compiled function</i></GlossaryTerm> if it contains no references to <ClLinks  term={"macro"}><i>macros</i></ClLinks> that must be expanded at run time, and it contains no unresolved references to <GlossaryTerm styled={true} term={"load time value"}><i>load time values</i></GlossaryTerm>. See Section 3.2.2 (Compilation Semantics). 
 
 
 

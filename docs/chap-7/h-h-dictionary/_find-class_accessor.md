@@ -22,11 +22,11 @@
 
 
 
-*errorp*—a *generalized boolean*. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+*errorp*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks> – same as the **&amp;environment** argument to macro expansion functions and is used to distinguish between compile-time and run-time environments. The **&amp;environment** argument has *dynamic extent*; the consequences are undefined if the **&amp;environment** argument is referred to outside the *dynamic extent* of the macro expansion function. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks> – same as the **&amp;environment** argument to macro expansion functions and is used to distinguish between compile-time and run-time environments. The **&amp;environment** argument has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>; the consequences are undefined if the **&amp;environment** argument is referred to outside the <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> of the macro expansion function. 
 
 
 
@@ -58,11 +58,11 @@ The <ClLinks  term={"class"}><i>class</i></ClLinks> associated with a particular
 
 
 
-with a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is defined as a *type specifier* in this standard. See Section 4.3.7 (Integrating Types and Classes). 
+with a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that is defined as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> in this standard. See Section 4.3.7 (Integrating Types and Classes). 
 
 
 
-When using <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"find-class"}><b>find-class</b></ClLinks>, any *errorp* argument is *evaluated* for effect, but any <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are ignored; the *errorp parameter* is permitted primarily so that the *environment parameter* can be used. 
+When using <ClLinks  term={"setf"}><b>setf</b></ClLinks> of <ClLinks  term={"find-class"}><b>find-class</b></ClLinks>, any *errorp* argument is *evaluated* for effect, but any <ClLinks  term={"value"}><i>values</i></ClLinks> it returns are ignored; the *errorp parameter* is permitted primarily so that the <GlossaryTerm styled={true} term={"environment parameter"}><i>environment parameter</i></GlossaryTerm> can be used. 
 
 
 

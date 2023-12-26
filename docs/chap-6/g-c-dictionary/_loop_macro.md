@@ -100,7 +100,7 @@ external-symbol *|* external-symbols*\}*
 
 **Arguments and Values:**
 
-*compound-form*—a *compound form*.
+*compound-form*—a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm>.
 
 <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>.
 
@@ -112,11 +112,11 @@ external-symbol *|* external-symbols*\}*
 
 <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> .
 
-*hash-table*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a *hash table*.
+*hash-table*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>.
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a *package designator* .
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> .
 
-*type-specifier*—a *type specifier* . This might be either an *atomic type specifier* or a *compound type specifier* , which introduces some additional complications to proper parsing in the face of destructuring; for further information, see Section 6.1.1.7 (Destructuring).
+*type-specifier*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . This might be either an <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifier</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm> , which introduces some additional complications to proper parsing in the face of destructuring; for further information, see Section 6.1.1.7 (Destructuring).
 
 *result*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>.
 

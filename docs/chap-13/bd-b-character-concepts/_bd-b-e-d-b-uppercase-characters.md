@@ -6,7 +6,7 @@ An uppercase <ClLinks styled={true} term={"character"}><i>character</i></ClLinks
 
 
 
-Of the *standard characters*, only these are *uppercase characters*: 
+Of the <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>, only these are *uppercase characters*: 
 
 
 

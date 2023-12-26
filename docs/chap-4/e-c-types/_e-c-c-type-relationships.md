@@ -30,7 +30,7 @@
 
 
 
-At the discretion of the implementation, either <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> or <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks> might appear in any class precedence list for a *system class* that does not already specify either <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> or <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks>. If it does, it must precede the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> and follow all other *standardized classes*. 
+At the discretion of the implementation, either <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> or <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks> might appear in any class precedence list for a <GlossaryTerm styled={true} term={"system class"}><i>system class</i></GlossaryTerm> that does not already specify either <ClLinks  term={"standard-object"}><b>standard-object</b></ClLinks> or <ClLinks  term={"structure-object"}><b>structure-object</b></ClLinks>. If it does, it must precede the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> and follow all other *standardized classes*. 
 
 
 

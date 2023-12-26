@@ -22,7 +22,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"boolean"}><b>
 
 
 
-<ClLinks  term={"t"}><b>t</b></ClLinks> (*constant variable*), <ClLinks  term={"nil"}><b>nil</b></ClLinks> (*constant variable*), <ClLinks  term={"if"}><b>if</b></ClLinks>, <ClLinks  term={"not"}><b>not</b></ClLinks>, <ClLinks  term={"complement"}><b>complement</b></ClLinks> 
+<ClLinks  term={"t"}><b>t</b></ClLinks> (<GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>), <ClLinks  term={"nil"}><b>nil</b></ClLinks> (<GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>), <ClLinks  term={"if"}><b>if</b></ClLinks>, <ClLinks  term={"not"}><b>not</b></ClLinks>, <ClLinks  term={"complement"}><b>complement</b></ClLinks> 
 
 
 
@@ -30,7 +30,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"boolean"}><b>
 
 
 
-Conditional operations, such as <ClLinks  term={"if"}><b>if</b></ClLinks>, permit the use of *generalized booleans*, not just <ClLinks  term={"boolean"}><i>booleans</i></ClLinks>; any <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> value, not just <ClLinks  term={"t"}><b>t</b></ClLinks>, counts as true for a *generalized boolean*. However, as a matter of convention, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> is considered the canonical value to use even for a *generalized boolean* when no better choice presents itself.  
+Conditional operations, such as <ClLinks  term={"if"}><b>if</b></ClLinks>, permit the use of <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized booleans</i></GlossaryTerm>, not just <ClLinks  term={"boolean"}><i>booleans</i></ClLinks>; any <ClLinks  term={"non-nil"}><i>non-nil</i></ClLinks> value, not just <ClLinks  term={"t"}><b>t</b></ClLinks>, counts as true for a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. However, as a matter of convention, the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks> is considered the canonical value to use even for a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> when no better choice presents itself.  
 
 
 

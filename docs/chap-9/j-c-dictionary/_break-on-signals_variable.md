@@ -6,7 +6,7 @@
 
 
 
-a *type specifier* . 
+a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-a *proper list*. 
+a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are updated immediately prior to printing the *return value* of a top-level <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> by the *Lisp read-eval-print loop*. If the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of such a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is aborted prior to its normal return, the values of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are not updated. 
+The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are updated immediately prior to printing the <GlossaryTerm styled={true} term={"return value"}><i>return value</i></GlossaryTerm> of a top-level <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> by the *Lisp read-eval-print loop*. If the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of such a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is aborted prior to its normal return, the values of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are not updated. 
 
 
 

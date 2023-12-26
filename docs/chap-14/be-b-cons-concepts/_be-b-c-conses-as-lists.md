@@ -6,19 +6,19 @@ A <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a chain of *cons
 
 
 
-A *proper list* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> terminated by the *empty list*. The *empty list* is a *proper list*, but is not a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm> is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> terminated by the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>, but is not a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
 
 
 
-An *improper list* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that is not a *proper list*; that is, it is a *circular list* or a *dotted list*. 
+An *improper list* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>; that is, it is a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
 
 
 
-A *dotted list* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that has a terminating <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> that is not the *empty list*. A *non-nil atom* by itself is not considered to be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of any kind—not even a *dotted list*. 
+A <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that has a terminating <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> that is not the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. A *non-nil atom* by itself is not considered to be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of any kind—not even a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
 
 
 
-A *circular list* is a chain of *conses* that has no termination because some <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the chain is the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of a later <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm> is a chain of *conses* that has no termination because some <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the chain is the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of a later <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
 
 
 

@@ -2,15 +2,15 @@
 
 
 
-A *boa lambda list* is a *lambda list* that is syntactically like an *ordinary lambda list*, but that is processed in “**b**y **o**rder of **a**rgument” style. 
+A <GlossaryTerm styled={true} term={"boa lambda list"}><i>boa lambda list</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> that is syntactically like an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>, but that is processed in “**b**y **o**rder of **a**rgument” style. 
 
 
 
-A *boa lambda list* is used only in a <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, when explicitly specifying the *lambda list* of a constructor <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> (sometimes called a “boa constructor”). 
+A <GlossaryTerm styled={true} term={"boa lambda list"}><i>boa lambda list</i></GlossaryTerm> is used only in a <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, when explicitly specifying the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of a constructor <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> (sometimes called a “boa constructor”). 
 
 
 
-The **&amp;optional**, **&amp;rest**, **&amp;aux**, **&amp;key**, and **&amp;allow-other-keys** *lambda list keywords* are recognized in a *boa lambda list*. The way these *lambda list keywords* differ from their use in an *ordinary lambda list* follows. 
+The **&amp;optional**, **&amp;rest**, **&amp;aux**, **&amp;key**, and **&amp;allow-other-keys** <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> are recognized in a <GlossaryTerm styled={true} term={"boa lambda list"}><i>boa lambda list</i></GlossaryTerm>. The way these <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> differ from their use in an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> follows. 
 
 
 
@@ -38,7 +38,7 @@ This defines create-foo to be a constructor of one or more arguments. The first 
 
 
 
-sea is used instead. Any arguments following the third argument are collected into a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> and used to initialize the d slot. If there are three or fewer arguments, then <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is placed in the d slot. The e slot is not initialized; its initial value is <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. Finally, the f slot is initialized to contain the symbol eff. **&amp;key** and **&amp;allow-other-keys** arguments default in a manner similar to that of **&amp;optional** arguments: if no default is supplied in the *lambda list* then the default value given in the body of the <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> (if given) is used instead. For example: 
+sea is used instead. Any arguments following the third argument are collected into a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> and used to initialize the d slot. If there are three or fewer arguments, then <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is placed in the d slot. The e slot is not initialized; its initial value is <GlossaryTerm  term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. Finally, the f slot is initialized to contain the symbol eff. **&amp;key** and **&amp;allow-other-keys** arguments default in a manner similar to that of **&amp;optional** arguments: if no default is supplied in the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> then the default value given in the body of the <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> (if given) is used instead. For example: 
 
 
 
@@ -74,7 +74,7 @@ The actions taken in the b and e cases were carefully chosen to allow the user t
 
 
 
-If no default value is supplied for an *aux variable* variable, the consequences are undefined if an attempt is later made to read the corresponding <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm>’s value before a value is explicitly assigned. If such a <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> has a :type option specified, this suppressed initialization does not imply a type mismatch situation; the declared type is only required to apply when the <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> is finally assigned. 
+If no default value is supplied for an <GlossaryTerm styled={true} term={"aux variable"}><i>aux variable</i></GlossaryTerm> variable, the consequences are undefined if an attempt is later made to read the corresponding <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm>’s value before a value is explicitly assigned. If such a <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> has a :type option specified, this suppressed initialization does not imply a type mismatch situation; the declared type is only required to apply when the <GlossaryTerm  term={"slot"}><i>slot</i></GlossaryTerm> is finally assigned. 
 
 
 
@@ -122,7 +122,7 @@ a b c)
 
 
 
-the c-token argument is used merely to supply a value used in the initialization of the c slot. The *supplied-p parameters* associated with *optional parameters* and *keyword parameters* might also be used this way. 
+the c-token argument is used merely to supply a value used in the initialization of the c slot. The <GlossaryTerm styled={true} term={"supplied-p parameter"}><i>supplied-p parameters</i></GlossaryTerm> associated with <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameters</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameters</i></GlossaryTerm> might also be used this way. 
 
 
 

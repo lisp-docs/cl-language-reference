@@ -26,7 +26,7 @@
 
 
 
-*eof-error-p*—a *generalized boolean*. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
+*eof-error-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"true"}><i>true</i></ClLinks>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-*start*, *end*—*bounding index designators* of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
-*preserve-whitespace*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*preserve-whitespace*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -74,11 +74,11 @@ If *preserve-whitespace* is <ClLinks  term={"true"}><i>true</i></ClLinks>, the o
 
 
 
-If an <ClLinks  term={"object"}><i>object</i></ClLinks> is successfully parsed, the *primary value*, *object*, is the <ClLinks  term={"object"}><i>object</i></ClLinks> that was parsed. If *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks> and if the end of the *substring* is reached, *eof-value* is returned. 
+If an <ClLinks  term={"object"}><i>object</i></ClLinks> is successfully parsed, the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>, is the <ClLinks  term={"object"}><i>object</i></ClLinks> that was parsed. If *eof-error-p* is <ClLinks  term={"false"}><i>false</i></ClLinks> and if the end of the *substring* is reached, *eof-value* is returned. 
 
 
 
-The *secondary value*, *position*, is the index of the first <ClLinks  term={"character"}><i>character</i></ClLinks> in the *bounded string* that was not read. The *position* may depend upon the value of *preserve-whitespace*. If the entire <ClLinks  term={"string"}><i>string</i></ClLinks> was read, the *position* returned is either the <ClLinks  term={"length"}><i>length</i></ClLinks> of the <ClLinks  term={"string"}><i>string</i></ClLinks> or one greater than the <ClLinks  term={"length"}><i>length</i></ClLinks> of the <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *position*, is the index of the first <ClLinks  term={"character"}><i>character</i></ClLinks> in the *bounded string* that was not read. The *position* may depend upon the value of *preserve-whitespace*. If the entire <ClLinks  term={"string"}><i>string</i></ClLinks> was read, the *position* returned is either the <ClLinks  term={"length"}><i>length</i></ClLinks> of the <ClLinks  term={"string"}><i>string</i></ClLinks> or one greater than the <ClLinks  term={"length"}><i>length</i></ClLinks> of the <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 

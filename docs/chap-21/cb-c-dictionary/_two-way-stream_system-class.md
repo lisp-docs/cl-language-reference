@@ -1,4 +1,4 @@
-**two-way-stream** *System Class* 
+**two-way-stream** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -46,7 +46,7 @@ A *bidirectional composite stream* that receives its input from an associated *i
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 

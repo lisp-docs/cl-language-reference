@@ -6,11 +6,11 @@ A <ClLinks  term={"form"}><i>form</i></ClLinks> that is neither a <ClLinks  term
 
 
 
-Certain specific <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and *conses* might also happen to be “self-evaluating” but only as a special case of a more general set of rules for the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and *conses*; such <ClLinks  term={"object"}><i>objects</i></ClLinks> are not considered to be *self-evaluating objects*. 
+Certain specific <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and *conses* might also happen to be “self-evaluating” but only as a special case of a more general set of rules for the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> and *conses*; such <ClLinks  term={"object"}><i>objects</i></ClLinks> are not considered to be <GlossaryTerm styled={true} term={"self-evaluating object"}><i>self-evaluating objects</i></GlossaryTerm>. 
 
 
 
-The consequences are undefined if *literal objects* (including *self-evaluating objects*) are destructively modified.  
+The consequences are undefined if *literal objects* (including <GlossaryTerm styled={true} term={"self-evaluating object"}><i>self-evaluating objects</i></GlossaryTerm>) are destructively modified.  
 
 
 

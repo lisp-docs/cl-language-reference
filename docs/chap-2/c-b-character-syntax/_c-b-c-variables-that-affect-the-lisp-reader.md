@@ -2,7 +2,7 @@
 
 
 
-The *Lisp reader* is influenced not only by the *current readtable*, but also by various *dynamic variables*. Figure 2–2 lists the <ClLinks  term={"variable"}><i>variables</i></ClLinks> that influence the behavior of the *Lisp reader* . 
+The *Lisp reader* is influenced not only by the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>, but also by various <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm>. Figure 2–2 lists the <ClLinks  term={"variable"}><i>variables</i></ClLinks> that influence the behavior of the *Lisp reader* . 
 
 
 

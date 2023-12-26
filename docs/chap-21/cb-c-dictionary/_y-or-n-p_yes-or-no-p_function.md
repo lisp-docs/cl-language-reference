@@ -18,15 +18,15 @@
 
 
 
-*control*—a *format control*. 
+*control*—a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"argument"}><i>arguments</i></ClLinks>—*format arguments* for *control*. 
+<ClLinks  term={"argument"}><i>arguments</i></ClLinks>—<GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm> for *control*. 
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 

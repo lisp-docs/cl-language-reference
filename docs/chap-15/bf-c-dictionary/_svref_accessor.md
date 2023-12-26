@@ -19,19 +19,15 @@
 
 
 
-*simple-vector*—a *simple vector* . 
+*simple-vector*—a <GlossaryTerm styled={true} term={"simple vector"}><i>simple vector</i></GlossaryTerm> . 
 
 
 
-*index*—a *valid array index* for the *simple-vector*. 
-
-
+*index*—a <GlossaryTerm styled={true} term={"valid array index"}><i>valid array index</i></GlossaryTerm> for the *simple-vector*. 
 
 
 
 
-
- 
 
 
 
@@ -39,7 +35,11 @@
 
 
 
-<ClLinks  term={"element"}><i>element</i></ClLinks>, *new-element*—an <ClLinks  term={"object"}><i>object</i></ClLinks> (whose <ClLinks  term={"type"}><i>type</i></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the *array element type* of the *simple-vector*). 
+ 
+
+
+
+<ClLinks  term={"element"}><i>element</i></ClLinks>, *new-element*—an <ClLinks  term={"object"}><i>object</i></ClLinks> (whose <ClLinks  term={"type"}><i>type</i></ClLinks> is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the <GlossaryTerm styled={true} term={"array element type"}><i>array element type</i></GlossaryTerm> of the *simple-vector*). 
 
 
 
@@ -71,7 +71,7 @@ v → #(1 NEWCOMER SIRENS)
 
 
 
-<ClLinks  term={"svref"}><b>svref</b></ClLinks> is identical to <ClLinks  term={"aref"}><b>aref</b></ClLinks> except that it requires its first argument to be a *simple vector* . (svref *v i*) *≡* (aref (the simple-vector *v*) *i*) 
+<ClLinks  term={"svref"}><b>svref</b></ClLinks> is identical to <ClLinks  term={"aref"}><b>aref</b></ClLinks> except that it requires its first argument to be a <GlossaryTerm styled={true} term={"simple vector"}><i>simple vector</i></GlossaryTerm> . (svref *v i*) *≡* (aref (the simple-vector *v*) *i*) 
 
 
 

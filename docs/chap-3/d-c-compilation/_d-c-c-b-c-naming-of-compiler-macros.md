@@ -2,11 +2,11 @@
 
 
 
-*Compiler macros* may be defined for *function names* that name <ClLinks  term={"macro"}><i>macros</i></ClLinks> as well as <ClLinks  term={"function"}><i>functions</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"compiler macro"}><i>Compiler macros</i></GlossaryTerm> may be defined for <GlossaryTerm styled={true} term={"function name"}><i>function names</i></GlossaryTerm> that name <ClLinks  term={"macro"}><i>macros</i></ClLinks> as well as <ClLinks  term={"function"}><i>functions</i></ClLinks>. 
 
 
 
-*Compiler macro* definitions are strictly global. There is no provision for defining local *compiler macros* in the way that <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> defines local <ClLinks  term={"macro"}><i>macros</i></ClLinks>. Lexical bindings of a function name shadow any compiler macro definition associated with the name as well as its global <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition. 
+<GlossaryTerm styled={true} term={"compiler macro"}><i>Compiler macro</i></GlossaryTerm> definitions are strictly global. There is no provision for defining local <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macros</i></GlossaryTerm> in the way that <ClLinks  term={"macrolet"}><b>macrolet</b></ClLinks> defines local <ClLinks  term={"macro"}><i>macros</i></ClLinks>. Lexical bindings of a function name shadow any compiler macro definition associated with the name as well as its global <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition. 
 
 
 

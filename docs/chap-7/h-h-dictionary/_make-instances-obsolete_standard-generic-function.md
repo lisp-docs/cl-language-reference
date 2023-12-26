@@ -1,4 +1,4 @@
-**make-instances-obsolete** *Standard Generic Function* 
+**make-instances-obsolete** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"class"}><i>class</i></ClLinks>—a *class designator* . 
+<ClLinks  term={"class"}><i>class</i></ClLinks>—a <GlossaryTerm styled={true} term={"class designator"}><i>class designator</i></GlossaryTerm> . 
 
 
 

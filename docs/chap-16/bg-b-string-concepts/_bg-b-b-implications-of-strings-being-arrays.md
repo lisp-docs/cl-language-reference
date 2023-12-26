@@ -6,7 +6,7 @@ Since all <ClLinks  term={"string"}><i>strings</i></ClLinks> are <ClLinks  term=
 
 
 
-For example, <ClLinks  term={"string"}><i>strings</i></ClLinks> can have *fill pointers*, and <ClLinks  term={"string"}><i>strings</i></ClLinks> are also subject to the rules of *element type upgrading* that apply to <ClLinks  term={"array"}><i>arrays</i></ClLinks>. 
+For example, <ClLinks  term={"string"}><i>strings</i></ClLinks> can have <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>, and <ClLinks  term={"string"}><i>strings</i></ClLinks> are also subject to the rules of *element type upgrading* that apply to <ClLinks  term={"array"}><i>arrays</i></ClLinks>. 
 
 
 

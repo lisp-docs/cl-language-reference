@@ -6,7 +6,7 @@
 
 
 
-one of the *atomic type specifiers* <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, or <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>, or else some other *type specifier* defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be acceptable. 
+one of the <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifiers</i></GlossaryTerm> <ClLinks  term={"short-float"}><b>short-float</b></ClLinks>, <ClLinks  term={"single-float"}><b>single-float</b></ClLinks>, <ClLinks  term={"double-float"}><b>double-float</b></ClLinks>, or <ClLinks  term={"long-float"}><b>long-float</b></ClLinks>, or else some other <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be acceptable. 
 
 
 
@@ -34,11 +34,11 @@ The <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"single-fl
 
 
 
-Controls the floating-point format that is to be used when reading a floating-point number that has no *exponent marker* or that has e or E for an *exponent marker* . Other *exponent markers* explicitly prescribe the floating-point format to be used. 
+Controls the floating-point format that is to be used when reading a floating-point number that has no <GlossaryTerm styled={true} term={"exponent marker"}><i>exponent marker</i></GlossaryTerm> or that has e or E for an <GlossaryTerm styled={true} term={"exponent marker"}><i>exponent marker</i></GlossaryTerm> . Other <GlossaryTerm styled={true} term={"exponent marker"}><i>exponent markers</i></GlossaryTerm> explicitly prescribe the floating-point format to be used. 
 
 
 
-The printer uses <ClLinks  term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks> to guide the choice of *exponent markers* when printing floating-point numbers. 
+The printer uses <ClLinks  term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks> to guide the choice of <GlossaryTerm styled={true} term={"exponent marker"}><i>exponent markers</i></GlossaryTerm> when printing floating-point numbers. 
 
 
 
@@ -54,7 +54,7 @@ The printer uses <ClLinks  term={"read-default-float-format"}><b>\*read-default-
 
 
 
-a *generalized boolean*. 
+a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -70,7 +70,7 @@ a *generalized boolean*.
 
 
 
-If it is <ClLinks  term={"true"}><i>true</i></ClLinks>, the #. *reader macro* has its normal effect. Otherwise, that *reader macro* signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"reader-error"}><b>reader-error</b></ClLinks>. 
+If it is <ClLinks  term={"true"}><i>true</i></ClLinks>, the #. <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> has its normal effect. Otherwise, that <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"reader-error"}><b>reader-error</b></ClLinks>. 
 
 
 
@@ -86,7 +86,7 @@ If it is <ClLinks  term={"true"}><i>true</i></ClLinks>, the #. *reader macro* ha
 
 
 
-If **\*read-eval\*** is <ClLinks  term={"false"}><i>false</i></ClLinks> and <ClLinks  term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>, any <ClLinks  term={"method"}><i>method</i></ClLinks> for <ClLinks  term={"print-object"}><b>print-object</b></ClLinks> that would output a reference to the #. *reader macro* either outputs something different or signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"print-not-readable"}><b>print-not-readable</b></ClLinks>. 
+If **\*read-eval\*** is <ClLinks  term={"false"}><i>false</i></ClLinks> and <ClLinks  term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>, any <ClLinks  term={"method"}><i>method</i></ClLinks> for <ClLinks  term={"print-object"}><b>print-object</b></ClLinks> that would output a reference to the #. <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> either outputs something different or signals an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"print-not-readable"}><b>print-not-readable</b></ClLinks>. 
 
 
 

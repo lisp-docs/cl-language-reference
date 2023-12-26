@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—an *output stream designator* . The default is *standard output*. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—an *output stream designator* . The default is <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<ClLinks styled={true} term={"pprint-indent"}><b>pprint-indent</b></ClLinks> specifies the indentation to use in a logical block on <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. If <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is a *pretty printing stream* and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, <ClLinks styled={true} term={"pprint-indent"}><b>pprint-indent</b></ClLinks> sets the indentation in the innermost dynamically enclosing logical block; otherwise, <ClLinks styled={true} term={"pprint-indent"}><b>pprint-indent</b></ClLinks> has no effect. 
+<ClLinks styled={true} term={"pprint-indent"}><b>pprint-indent</b></ClLinks> specifies the indentation to use in a logical block on <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. If <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> is a <GlossaryTerm styled={true} term={"pretty printing stream"}><i>pretty printing stream</i></GlossaryTerm> and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pretty"}><b>\*print-pretty\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, <ClLinks styled={true} term={"pprint-indent"}><b>pprint-indent</b></ClLinks> sets the indentation in the innermost dynamically enclosing logical block; otherwise, <ClLinks styled={true} term={"pprint-indent"}><b>pprint-indent</b></ClLinks> has no effect. 
 
 
 

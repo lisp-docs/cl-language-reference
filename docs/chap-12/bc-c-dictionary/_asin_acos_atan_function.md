@@ -246,7 +246,7 @@ The result of either <ClLinks  term={"asin"}><b>asin</b></ClLinks> or <ClLinks  
 
 
 
-**pi** *Constant Variable* 
+**pi** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm> 
 
 
 
@@ -262,7 +262,7 @@ an *implementation-dependent long float*.
 
 
 
-The best *long float* approximation to the mathematical constant *π*. 
+The best <GlossaryTerm styled={true} term={"long float"}><i>long float</i></GlossaryTerm> approximation to the mathematical constant *π*. 
 
 
 

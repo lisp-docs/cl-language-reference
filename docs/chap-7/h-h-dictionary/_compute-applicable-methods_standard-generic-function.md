@@ -1,4 +1,4 @@
-**compute-applicable-methods** *Standard Generic Function* 
+**compute-applicable-methods** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-*generic-function*—a *generic function*. 
+*generic-function*—a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
 
 
 

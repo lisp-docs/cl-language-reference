@@ -6,11 +6,11 @@ An extended <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks 
 
 
 
-The Loop Facility provides standardized access to mechanisms commonly used in iterations through Loop schemas, which are introduced by *loop keywords*. 
+The Loop Facility provides standardized access to mechanisms commonly used in iterations through Loop schemas, which are introduced by <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</i></GlossaryTerm>. 
 
 
 
-The body of an extended <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is divided into <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> clauses, each which is in turn made up of *loop keywords* and <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+The body of an extended <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is divided into <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> clauses, each which is in turn made up of <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</i></GlossaryTerm> and <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
 
 
 

@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"array-dimension"}><b>array-dimension</b></ClLinks> returns the *axis-number dimension*<sub>1</sub> of <ClLinks  term={"array"}><i>array</i></ClLinks>. (Any *fill pointer* is ignored.) 
+<ClLinks  term={"array-dimension"}><b>array-dimension</b></ClLinks> returns the *axis-number dimension*<sub>1</sub> of <ClLinks  term={"array"}><i>array</i></ClLinks>. (Any <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored.) 
 
 **Examples:**
 ```lisp

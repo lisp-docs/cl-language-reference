@@ -18,19 +18,15 @@
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a *stream designator* ; evaluated. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a <GlossaryTerm styled={true} term={"stream designator"}><i>stream designator</i></GlossaryTerm> ; evaluated. 
 
 
 
-<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a *generalized boolean*; evaluated. 
-
-
+<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>; evaluated. 
 
 
 
 
-
- 
 
 
 
@@ -38,11 +34,15 @@
 
 
 
-*identity*—a *generalized boolean*; evaluated. 
+ 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+*identity*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>; evaluated. 
+
+
+
+<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 

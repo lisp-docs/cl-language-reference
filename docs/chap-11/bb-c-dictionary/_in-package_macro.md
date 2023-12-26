@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a *string designator* ; not evaluated. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> ; not evaluated. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Causes the the <ClLinks  term={"package"}><i>package</i></ClLinks> named by <ClLinks  term={"name"}><i>name</i></ClLinks> to become the *current package*—that is, the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks>. If no such <ClLinks  term={"package"}><i>package</i></ClLinks> already exists, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
+Causes the the <ClLinks  term={"package"}><i>package</i></ClLinks> named by <ClLinks  term={"name"}><i>name</i></ClLinks> to become the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>—that is, the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks>. If no such <ClLinks  term={"package"}><i>package</i></ClLinks> already exists, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"package-error"}><b>package-error</b></ClLinks> is signaled. 
 
 
 
-Everything <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> does is also performed at compile time if the call appears as a *top level form*. 
+Everything <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> does is also performed at compile time if the call appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@ Everything <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> does is als
 
 
 
-The <ClLinks  term={"variable"}><i>variable</i></ClLinks> <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> is assigned. If the <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a *top level form*, this assignment also occurs at compile time. 
+The <ClLinks  term={"variable"}><i>variable</i></ClLinks> <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> is assigned. If the <ClLinks  term={"in-package"}><b>in-package</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, this assignment also occurs at compile time. 
 
 
 

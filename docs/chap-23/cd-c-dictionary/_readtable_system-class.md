@@ -1,4 +1,4 @@
-**readtable** *System Class* 
+**readtable** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> maps <ClLinks  term={"character"}><i>characters</i></ClLinks> into *syntax types* for the *Lisp reader* ; see Chapter 2 (Syntax). A <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> also contains associations between *macro characters* and their *reader macro functions*, and records information about the case conversion rules to be used by the *Lisp reader* when parsing <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
+A <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> maps <ClLinks  term={"character"}><i>characters</i></ClLinks> into <GlossaryTerm styled={true} term={"syntax type"}><i>syntax types</i></GlossaryTerm> for the *Lisp reader* ; see Chapter 2 (Syntax). A <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> also contains associations between <GlossaryTerm styled={true} term={"macro character"}><i>macro characters</i></GlossaryTerm> and their <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro functions</i></GlossaryTerm>, and records information about the case conversion rules to be used by the *Lisp reader* when parsing <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>. 
 
 
 

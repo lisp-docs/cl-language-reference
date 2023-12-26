@@ -18,7 +18,7 @@
 
 
 
-*just-loaded*—a *generalized boolean*. 
+*just-loaded*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Searches for and loads the definition of a *logical host* named *host*, if it is not already defined. The specific nature of the search is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
+Searches for and loads the definition of a <GlossaryTerm styled={true} term={"logical host"}><i>logical host</i></GlossaryTerm> named *host*, if it is not already defined. The specific nature of the search is <ClLinks  term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
 
 
 
@@ -79,7 +79,7 @@ If no definition is found, an error of <ClLinks  term={"type"}><i>type</i></ClLi
 
 
 
-*Logical pathname* definitions will be created not just by *implementors* but also by <ClLinks  term={"programmer"}><i>programmers</i></ClLinks>. As such, it is important that the search strategy be documented. For example, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might define that the definition of a *host* is to be found in a file called “*host*.translations” in some specifically named directory. 
+<GlossaryTerm styled={true} term={"logical pathname"}><i>Logical pathname</i></GlossaryTerm> definitions will be created not just by *implementors* but also by <ClLinks  term={"programmer"}><i>programmers</i></ClLinks>. As such, it is important that the search strategy be documented. For example, an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> might define that the definition of a *host* is to be found in a file called “*host*.translations” in some specifically named directory. 
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-The atomic *type specifier* <ClLinks  term={"unsigned-byte"}><b>unsigned-byte</b></ClLinks> denotes the same type as is denoted by the *type specifier* (integer 0 \*). 
+The atomic <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> <ClLinks  term={"unsigned-byte"}><b>unsigned-byte</b></ClLinks> denotes the same type as is denoted by the <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> (integer 0 \*). 
 
 
 
@@ -70,7 +70,7 @@ The <ClLinks  term={"type"}><i>type</i></ClLinks> (unsigned-byte 1) is also call
 
 
 
-<ClLinks  term={"mod"}><b>mod</b></ClLinks> *Type Specifier* 
+<ClLinks  term={"mod"}><b>mod</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>Type Specifier</i></GlossaryTerm> 
 
 
 
@@ -110,7 +110,7 @@ The argument is required, and cannot be **\***.
 
 
 
-The symbol <ClLinks  term={"mod"}><b>mod</b></ClLinks> is not valid as a *type specifier* . 
+The symbol <ClLinks  term={"mod"}><b>mod</b></ClLinks> is not valid as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 

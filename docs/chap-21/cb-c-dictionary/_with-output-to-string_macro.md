@@ -38,11 +38,11 @@
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks> that has a *fill pointer* . 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—a <ClLinks  term={"string"}><i>string</i></ClLinks> that has a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
-*element-type*—a *type specifier* ; evaluated. The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> ; evaluated. The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -70,7 +70,7 @@ The *element-type* names the <ClLinks  term={"type"}><i>type</i></ClLinks> of th
 
 
 
-The body is executed as an *implicit progn* with *var* bound to an *output string stream*. All output to that *string stream* is saved in a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+The body is executed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> with *var* bound to an *output string stream*. All output to that <GlossaryTerm styled={true} term={"string stream"}><i>string stream</i></GlossaryTerm> is saved in a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -78,7 +78,7 @@ If <ClLinks  term={"string"}><i>string</i></ClLinks> is supplied, *element-type*
 
 
 
-The *output stream* is automatically closed on exit from **with-output-from-string**, no matter whether the exit is normal or abnormal. The *output string stream* to which the *variable var* is <ClLinks  term={"bound"}><i>bound</i></ClLinks> has *dynamic extent*; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
+The *output stream* is automatically closed on exit from **with-output-from-string**, no matter whether the exit is normal or abnormal. The *output string stream* to which the *variable var* is <ClLinks  term={"bound"}><i>bound</i></ClLinks> has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>; its <ClLinks  term={"extent"}><i>extent</i></ClLinks> ends when the <ClLinks  term={"form"}><i>form</i></ClLinks> is exited. 
 
 
 
@@ -124,7 +124,7 @@ The <ClLinks  term={"string"}><i>string</i></ClLinks> is modified.
 
 
 
-The consequences are undefined if destructive modifications are performed directly on the <ClLinks  term={"string"}><i>string</i></ClLinks> during the *dynamic extent* of the call. 
+The consequences are undefined if destructive modifications are performed directly on the <ClLinks  term={"string"}><i>string</i></ClLinks> during the <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> of the call. 
 
 
 
@@ -156,7 +156,7 @@ For **\*debug-io\***, **\*query-io\***: a *bidirectional stream*.
 
 
 
-<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but it must be an *open stream* that is not a *generalized synonym stream* to an *I/O customization variables* but that might be a *generalized synonym stream* to the value of some *I/O customization variable*. The initial value might also be a *generalized synonym stream* to either the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks> or to the <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is its <ClLinks  term={"value"}><i>value</i></ClLinks>. 
+<ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but it must be an *open stream* that is not a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to an *I/O customization variables* but that might be a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to the value of some *I/O customization variable*. The initial value might also be a <GlossaryTerm styled={true} term={"generalized synonym stream"}><i>generalized synonym stream</i></GlossaryTerm> to either the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> <ClLinks  term={"terminal-io"}><b>\*terminal-io\*</b></ClLinks> or to the <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is its <ClLinks  term={"value"}><i>value</i></ClLinks>. 
 
 
 
@@ -172,7 +172,7 @@ The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*debug-io\***, called 
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*error-output\***, called *error output*, is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> to which warnings and non-interactive error messages should be sent. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*error-output\***, called <GlossaryTerm styled={true} term={"error output"}><i>error output</i></GlossaryTerm>, is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> to which warnings and non-interactive error messages should be sent. 
 
 
 
@@ -180,15 +180,15 @@ The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*query-io\***, called 
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*standard-input\***, called *standard input*, is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is used by many <ClLinks  term={"operator"}><i>operators</i></ClLinks> as a default source of input when no specific *input stream* is explicitly supplied. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*standard-input\***, called <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>, is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is used by many <ClLinks  term={"operator"}><i>operators</i></ClLinks> as a default source of input when no specific *input stream* is explicitly supplied. 
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*standard-output\***, called *standard output*, is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is used by many <ClLinks  term={"operator"}><i>operators</i></ClLinks> as a default destination for output when no specific *output stream* is explicitly supplied. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*standard-output\***, called <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>, is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that is used by many <ClLinks  term={"operator"}><i>operators</i></ClLinks> as a default destination for output when no specific *output stream* is explicitly supplied. 
 
 
 
-The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*trace-output\***, called *trace output*, is the <ClLinks  term={"stream"}><i>stream</i></ClLinks> on which traced functions (see <ClLinks  term={"trace"}><b>trace</b></ClLinks>) and the <ClLinks  term={"time"}><b>time</b></ClLinks> <ClLinks  term={"macro"}><i>macro</i></ClLinks> print their output. 
+The <ClLinks  term={"value"}><i>value</i></ClLinks> of **\*trace-output\***, called <GlossaryTerm styled={true} term={"trace output"}><i>trace output</i></GlossaryTerm>, is the <ClLinks  term={"stream"}><i>stream</i></ClLinks> on which traced functions (see <ClLinks  term={"trace"}><b>trace</b></ClLinks>) and the <ClLinks  term={"time"}><b>time</b></ClLinks> <ClLinks  term={"macro"}><i>macro</i></ClLinks> print their output. 
 
 
 
@@ -279,11 +279,11 @@ The functions <ClLinks  term={"y-or-n-p"}><b>y-or-n-p</b></ClLinks> and <ClLinks
 
 
 
-In the normal *Lisp read-eval-print loop*, input is read from *standard input*. Many input functions, including <ClLinks  term={"read"}><b>read</b></ClLinks> and <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, take a <ClLinks  term={"stream"}><i>stream</i></ClLinks> argument that defaults to *standard input*. 
+In the normal *Lisp read-eval-print loop*, input is read from <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. Many input functions, including <ClLinks  term={"read"}><b>read</b></ClLinks> and <ClLinks  term={"read-char"}><b>read-char</b></ClLinks>, take a <ClLinks  term={"stream"}><i>stream</i></ClLinks> argument that defaults to <GlossaryTerm styled={true} term={"standard input"}><i>standard input</i></GlossaryTerm>. 
 
 
 
-In the normal *Lisp read-eval-print loop*, output is sent to *standard output*. Many output functions, including <ClLinks  term={"print"}><b>print</b></ClLinks> and <ClLinks  term={"write-char"}><b>write-char</b></ClLinks>, take a <ClLinks  term={"stream"}><i>stream</i></ClLinks> argument that defaults to *standard output*. 
+In the normal *Lisp read-eval-print loop*, output is sent to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. Many output functions, including <ClLinks  term={"print"}><b>print</b></ClLinks> and <ClLinks  term={"write-char"}><b>write-char</b></ClLinks>, take a <ClLinks  term={"stream"}><i>stream</i></ClLinks> argument that defaults to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. 
 
 
 

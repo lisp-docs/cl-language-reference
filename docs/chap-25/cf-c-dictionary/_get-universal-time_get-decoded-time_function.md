@@ -22,11 +22,11 @@
 
 
 
-*universal-time*—a *universal time*. 
+*universal-time*—a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm>. 
 
 
 
-*second*, *minute*, *hour*, *date*, *month*, *year*, *day*, *daylight-p*, *zone*—a *decoded time*. 
+*second*, *minute*, *hour*, *date*, *month*, *year*, *day*, *daylight-p*, *zone*—a <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i></GlossaryTerm>. 
 
 
 
@@ -46,11 +46,11 @@
 
 
 
-<ClLinks styled={true} term={"get-universal-time"}><b>get-universal-time</b></ClLinks> returns the current time, represented as a *universal time*. 
+<ClLinks styled={true} term={"get-universal-time"}><b>get-universal-time</b></ClLinks> returns the current time, represented as a <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"get-decoded-time"}><b>get-decoded-time</b></ClLinks> returns the current time, represented as a *decoded time*. 
+<ClLinks styled={true} term={"get-decoded-time"}><b>get-decoded-time</b></ClLinks> returns the current time, represented as a <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i></GlossaryTerm>. 
 
 
 

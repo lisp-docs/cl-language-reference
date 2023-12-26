@@ -6,7 +6,7 @@ A subclass inherits methods in the sense that any method applicable to all insta
 
 
 
-The inheritance of methods acts the same way regardless of which of the *method-defining operators* created the methods. 
+The inheritance of methods acts the same way regardless of which of the <GlossaryTerm styled={true} term={"method-defining operator"}><i>method-defining operators</i></GlossaryTerm> created the methods. 
 
 
 

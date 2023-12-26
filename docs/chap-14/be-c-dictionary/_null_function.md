@@ -38,7 +38,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is the *empty list*; otherwise, returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+Returns <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>; otherwise, returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -61,7 +61,7 @@ Returns <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> if <ClLinks styled=
 
 
 
-<ClLinks styled={true} term={"null"}><b>null</b></ClLinks> is intended to be used to test for the *empty list* whereas <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> is intended to be used to invert a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks> (or *generalized boolean*). Operationally, <ClLinks styled={true} term={"null"}><b>null</b></ClLinks> and <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> compute the same result; which to use is a matter of style. 
+<ClLinks styled={true} term={"null"}><b>null</b></ClLinks> is intended to be used to test for the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm> whereas <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> is intended to be used to invert a <ClLinks styled={true} term={"boolean"}><i>boolean</i></ClLinks> (or <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>). Operationally, <ClLinks styled={true} term={"null"}><b>null</b></ClLinks> and <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> compute the same result; which to use is a matter of style. 
 
 
 

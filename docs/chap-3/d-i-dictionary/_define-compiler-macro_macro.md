@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a *function name*. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
-*lambda-list*—a *macro lambda list*. 
+*lambda-list*—a <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda list</i></GlossaryTerm>. 
 
 
 
@@ -38,23 +38,23 @@
 
 
 
-This is the normal mechanism for defining a *compiler macro function*. Its manner of definition is the same as for <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>; the only differences are: 
+This is the normal mechanism for defining a <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>. Its manner of definition is the same as for <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks>; the only differences are: 
 
 
 
-*•* The <ClLinks  term={"name"}><i>name</i></ClLinks> can be a *function name* naming any <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
+*•* The <ClLinks  term={"name"}><i>name</i></ClLinks> can be a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> naming any <ClLinks  term={"function"}><i>function</i></ClLinks> or <ClLinks  term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
-*•* The expander function is installed as a *compiler macro function* for the <ClLinks  term={"name"}><i>name</i></ClLinks>, rather than as a *macro function*. 
+*•* The expander function is installed as a <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm> for the <ClLinks  term={"name"}><i>name</i></ClLinks>, rather than as a <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
 
 
 
-*•* The **&amp;whole** argument is bound to the form argument that is passed to the *compiler macro function*. The remaining lambda-list parameters are specified as if this form contained the function name in the <ClLinks  term={"car"}><i>car</i></ClLinks> and the actual arguments in the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> , but if the <ClLinks  term={"car"}><i>car</i></ClLinks> of the actual form is the symbol <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, then the destructuring of the arguments is actually performed using its <ClLinks  term={"cddr"}><i>cddr</i></ClLinks> instead. 
+*•* The **&amp;whole** argument is bound to the form argument that is passed to the <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>. The remaining lambda-list parameters are specified as if this form contained the function name in the <ClLinks  term={"car"}><i>car</i></ClLinks> and the actual arguments in the <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> , but if the <ClLinks  term={"car"}><i>car</i></ClLinks> of the actual form is the symbol <ClLinks  term={"funcall"}><b>funcall</b></ClLinks>, then the destructuring of the arguments is actually performed using its <ClLinks  term={"cddr"}><i>cddr</i></ClLinks> instead. 
 
 
 
-*• Documentation* is attached as a *documentation string* to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind **compiler-macro**) and to the *compiler macro function*.  
+*• Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind **compiler-macro**) and to the <GlossaryTerm styled={true} term={"compiler macro function"}><i>compiler macro function</i></GlossaryTerm>.  
 
 
 
@@ -66,7 +66,7 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 
 
 
-*•* Unlike an ordinary <ClLinks  term={"macro"}><i>macro</i></ClLinks>, a *compiler macro* can decline to provide an expansion merely by returning a form that is the <ClLinks  term={"same"}><i>same</i></ClLinks> as the original (which can be obtained by using **&amp;whole**). 
+*•* Unlike an ordinary <ClLinks  term={"macro"}><i>macro</i></ClLinks>, a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> can decline to provide an expansion merely by returning a form that is the <ClLinks  term={"same"}><i>same</i></ClLinks> as the original (which can be obtained by using **&amp;whole**). 
 
 
 
@@ -182,7 +182,7 @@ This is the normal mechanism for defining a *compiler macro function*. Its manne
 
 
 
-The consequences of writing a *compiler macro* definition for a function in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> are undefined; it is quite possible that in some <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> such an attempt would override an equivalent or equally important definition. In general, it is recommended that a programmer only write *compiler macro* definitions for <ClLinks  term={"function"}><i>functions</i></ClLinks> he or she personally maintains–writing a *compiler macro* definition for a function maintained elsewhere is normally considered a violation of traditional rules of modularity and data abstraction. 
+The consequences of writing a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definition for a function in the COMMON-LISP <ClLinks  term={"package"}><i>package</i></ClLinks> are undefined; it is quite possible that in some <ClLinks  term={"implementation"}><i>implementations</i></ClLinks> such an attempt would override an equivalent or equally important definition. In general, it is recommended that a programmer only write <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definitions for <ClLinks  term={"function"}><i>functions</i></ClLinks> he or she personally maintains–writing a <GlossaryTerm styled={true} term={"compiler macro"}><i>compiler macro</i></GlossaryTerm> definition for a function maintained elsewhere is normally considered a violation of traditional rules of modularity and data abstraction. 
 
 
 

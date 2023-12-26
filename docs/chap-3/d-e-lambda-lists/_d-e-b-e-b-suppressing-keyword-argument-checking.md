@@ -2,7 +2,7 @@
 
 
 
-If **&amp;allow-other-keys** was specified in the *lambda list* of a <ClLinks  term={"function"}><i>function</i></ClLinks>, <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> <sub>2</sub> <ClLinks  term={"argument"}><i>argument</i></ClLinks> checking is suppressed in calls to that <ClLinks  term={"function"}><i>function</i></ClLinks>.  
+If **&amp;allow-other-keys** was specified in the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of a <ClLinks  term={"function"}><i>function</i></ClLinks>, <ClLinks  term={"keyword"}><i>keyword</i></ClLinks> <sub>2</sub> <ClLinks  term={"argument"}><i>argument</i></ClLinks> checking is suppressed in calls to that <ClLinks  term={"function"}><i>function</i></ClLinks>.  
 
 
 

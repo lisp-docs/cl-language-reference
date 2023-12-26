@@ -1,4 +1,4 @@
-**vector** *System Class* 
+**vector** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -46,7 +46,7 @@ Specializing.
 
 
 
-*element-type*—a *type specifier* . 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -54,11 +54,11 @@ Specializing.
 
 
 
-This denotes the set of specialized <ClLinks  term={"vector"}><i>vectors</i></ClLinks> whose *element type* and <ClLinks  term={"dimension"}><i>dimension</i></ClLinks> match the specified values. Specifically: 
+This denotes the set of specialized <ClLinks  term={"vector"}><i>vectors</i></ClLinks> whose <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> and <ClLinks  term={"dimension"}><i>dimension</i></ClLinks> match the specified values. Specifically: 
 
 
 
-If *element-type* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***, <ClLinks  term={"vector"}><i>vectors</i></ClLinks> are not excluded on the basis of their *element type*. Otherwise, only those <ClLinks  term={"vector"}><i>vectors</i></ClLinks> are included whose *actual array element type* is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
+If *element-type* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***, <ClLinks  term={"vector"}><i>vectors</i></ClLinks> are not excluded on the basis of their <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm>. Otherwise, only those <ClLinks  term={"vector"}><i>vectors</i></ClLinks> are included whose <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> is the result of *upgrading element-type*; see Section 15.1.2.1 (Array Upgrading). 
 
 
 

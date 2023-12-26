@@ -7,7 +7,7 @@ sidebar_position: 98
 
 
 
-**backquote** *n.* the *standard character* that is variously called “grave accent” or 
+**backquote** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is variously called “grave accent” or 
 
 
 
@@ -15,7 +15,7 @@ sidebar_position: 98
 
 
 
-**backslash** *n.* the *standard character* that is variously called “reverse solidus” or “backslash” (\). See Figure 2–5. 
+**backslash** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is variously called “reverse solidus” or “backslash” (\). See Figure 2–5. 
 
 
 
@@ -35,7 +35,7 @@ sidebar_position: 98
 
 
 
-**binary** *adj.* 1. (of a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) being a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that has an *element type* that is a 
+**binary** *adj.* 1. (of a <ClLinks  term={"stream"}><i>stream</i></ClLinks>) being a <ClLinks  term={"stream"}><i>stream</i></ClLinks> that has an <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> that is a 
 
 
 
@@ -63,7 +63,7 @@ sidebar_position: 98
 
 
 
-**bit-wise logical operation specifier** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> which names one of the sixteen possible bit-wise logical operations that can be performed by the <ClLinks  term={"boole"}><b>boole</b></ClLinks> function, and which is the <ClLinks  term={"value"}><i>value</i></ClLinks> of exactly one of the *constant variables* <ClLinks  term={"boole-clr"}><b>boole-clr</b></ClLinks>, <ClLinks  term={"boole-set"}><b>boole-set</b></ClLinks>, <ClLinks  term={"boole-1"}><b>boole-1</b></ClLinks>, <ClLinks  term={"boole-2"}><b>boole-2</b></ClLinks>, <ClLinks  term={"boole-c1"}><b>boole-c1</b></ClLinks>, <ClLinks  term={"boole-c2"}><b>boole-c2</b></ClLinks>, <ClLinks  term={"boole-and"}><b>boole-and</b></ClLinks>, <ClLinks  term={"boole-ior"}><b>boole-ior</b></ClLinks>, <ClLinks  term={"boole-xor"}><b>boole-xor</b></ClLinks>, <ClLinks  term={"boole-eqv"}><b>boole-eqv</b></ClLinks>, <ClLinks  term={"boole-nand"}><b>boole-nand</b></ClLinks>, <ClLinks  term={"boole-nor"}><b>boole-nor</b></ClLinks>, <ClLinks  term={"boole-andc1"}><b>boole-andc1</b></ClLinks>, <ClLinks  term={"boole-andc2"}><b>boole-andc2</b></ClLinks>, <ClLinks  term={"boole-orc1"}><b>boole-orc1</b></ClLinks>, or <ClLinks  term={"boole-orc2"}><b>boole-orc2</b></ClLinks>. 
+**bit-wise logical operation specifier** *n.* an <ClLinks  term={"object"}><i>object</i></ClLinks> which names one of the sixteen possible bit-wise logical operations that can be performed by the <ClLinks  term={"boole"}><b>boole</b></ClLinks> function, and which is the <ClLinks  term={"value"}><i>value</i></ClLinks> of exactly one of the <GlossaryTerm styled={true} term={"constant variable"}><i>constant variables</i></GlossaryTerm> <ClLinks  term={"boole-clr"}><b>boole-clr</b></ClLinks>, <ClLinks  term={"boole-set"}><b>boole-set</b></ClLinks>, <ClLinks  term={"boole-1"}><b>boole-1</b></ClLinks>, <ClLinks  term={"boole-2"}><b>boole-2</b></ClLinks>, <ClLinks  term={"boole-c1"}><b>boole-c1</b></ClLinks>, <ClLinks  term={"boole-c2"}><b>boole-c2</b></ClLinks>, <ClLinks  term={"boole-and"}><b>boole-and</b></ClLinks>, <ClLinks  term={"boole-ior"}><b>boole-ior</b></ClLinks>, <ClLinks  term={"boole-xor"}><b>boole-xor</b></ClLinks>, <ClLinks  term={"boole-eqv"}><b>boole-eqv</b></ClLinks>, <ClLinks  term={"boole-nand"}><b>boole-nand</b></ClLinks>, <ClLinks  term={"boole-nor"}><b>boole-nor</b></ClLinks>, <ClLinks  term={"boole-andc1"}><b>boole-andc1</b></ClLinks>, <ClLinks  term={"boole-andc2"}><b>boole-andc2</b></ClLinks>, <ClLinks  term={"boole-orc1"}><b>boole-orc1</b></ClLinks>, or <ClLinks  term={"boole-orc2"}><b>boole-orc2</b></ClLinks>. 
 
 
 
@@ -83,15 +83,15 @@ sidebar_position: 98
 
 
 
-**block tag** *n.* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that, within the *lexical scope* of a <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, names the *block established* by that <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. See <ClLinks  term={"return"}><b>return</b></ClLinks> or <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>. 
+**block tag** *n.* the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that, within the <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> of a <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>, names the *block established* by that <ClLinks  term={"block"}><b>block</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks>. See <ClLinks  term={"return"}><b>return</b></ClLinks> or <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>. 
 
 
 
-**boa lambda list** *n.* a *lambda list* that is syntactically like an *ordinary lambda list*, but that is processed in “**b**y **o**rder of **a**rgument” style. See Section 3.4.6 (Boa Lambda Lists). 
+**boa lambda list** *n.* a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> that is syntactically like an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>, but that is processed in “**b**y **o**rder of **a**rgument” style. See Section 3.4.6 (Boa Lambda Lists). 
 
 
 
-**body parameter** *n.* a <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> available in certain *lambda lists* which from the point of view of *conforming programs* is like a *rest parameter* in every way except that it is introduced by **&amp;body** instead of **&amp;rest**. (<ClLinks  term={"implementation"}><i>Implementations</i></ClLinks> are permitted to provide extensions which distinguish *body parameters* and *rest parameters*—*e.g.*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> for <ClLinks  term={"operator"}><i>operators</i></ClLinks> which were defined using a *body parameter* might be pretty printed slightly differently than <ClLinks  term={"form"}><i>forms</i></ClLinks> for <ClLinks  term={"operator"}><i>operators</i></ClLinks> which were defined using *rest parameters*.) 
+**body parameter** *n.* a <ClLinks  term={"parameter"}><i>parameter</i></ClLinks> available in certain <GlossaryTerm styled={true} term={"lambda list"}><i>lambda lists</i></GlossaryTerm> which from the point of view of <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> is like a <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameter</i></GlossaryTerm> in every way except that it is introduced by **&amp;body** instead of **&amp;rest**. (<ClLinks  term={"implementation"}><i>Implementations</i></ClLinks> are permitted to provide extensions which distinguish <GlossaryTerm styled={true} term={"body parameter"}><i>body parameters</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameters</i></GlossaryTerm>—*e.g.*, the <ClLinks  term={"form"}><i>forms</i></ClLinks> for <ClLinks  term={"operator"}><i>operators</i></ClLinks> which were defined using a <GlossaryTerm styled={true} term={"body parameter"}><i>body parameter</i></GlossaryTerm> might be pretty printed slightly differently than <ClLinks  term={"form"}><i>forms</i></ClLinks> for <ClLinks  term={"operator"}><i>operators</i></ClLinks> which were defined using <GlossaryTerm styled={true} term={"rest parameter"}><i>rest parameters</i></GlossaryTerm>.) 
 
 
 
@@ -99,11 +99,11 @@ sidebar_position: 98
 
 
 
-symbol <ClLinks  term={"t"}><b>t</b></ClLinks> (representing <ClLinks  term={"true"}><i>true</i></ClLinks>), or the symbol <ClLinks  term={"nil"}><b>nil</b></ClLinks> (representing <ClLinks  term={"false"}><i>false</i></ClLinks>). See *generalized boolean*. 
+symbol <ClLinks  term={"t"}><b>t</b></ClLinks> (representing <ClLinks  term={"true"}><i>true</i></ClLinks>), or the symbol <ClLinks  term={"nil"}><b>nil</b></ClLinks> (representing <ClLinks  term={"false"}><i>false</i></ClLinks>). See <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
-**boolean equivalent** *n.* (of an *object O*<sub>1</sub>) any *object O*<sub>2</sub> that has the same truth value as *O*<sub>1</sub> when both *O*<sub>1</sub> and *O*<sub>2</sub> are viewed as *generalized booleans*. 
+**boolean equivalent** *n.* (of an *object O*<sub>1</sub>) any *object O*<sub>2</sub> that has the same truth value as *O*<sub>1</sub> when both *O*<sub>1</sub> and *O*<sub>2</sub> are viewed as <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized booleans</i></GlossaryTerm>. 
 
 
 
@@ -111,7 +111,7 @@ symbol <ClLinks  term={"t"}><b>t</b></ClLinks> (representing <ClLinks  term={"tr
 
 
 
-**bound declaration** *n.* a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> that refers to or is associated with a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <ClLinks  term={"function"}><i>function</i></ClLinks> and that appears within the *special form* that *establishes* the <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <ClLinks  term={"function"}><i>function</i></ClLinks>, but before the body of that *special form* (specifically, at the head of that <ClLinks  term={"form"}><i>form</i></ClLinks>’s body). (If a *bound declaration* refers to a *function binding* or a *lexical variable binding*, the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> is exactly the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of that <ClLinks  term={"binding"}><i>binding</i></ClLinks>. If the 
+**bound declaration** *n.* a <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> that refers to or is associated with a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <ClLinks  term={"function"}><i>function</i></ClLinks> and that appears within the <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> that *establishes* the <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <ClLinks  term={"function"}><i>function</i></ClLinks>, but before the body of that <GlossaryTerm styled={true} term={"special form"}><i>special form</i></GlossaryTerm> (specifically, at the head of that <ClLinks  term={"form"}><i>form</i></ClLinks>’s body). (If a <GlossaryTerm styled={true} term={"bound declaration"}><i>bound declaration</i></GlossaryTerm> refers to a *function binding* or a *lexical variable binding*, the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of the <ClLinks  term={"declaration"}><i>declaration</i></ClLinks> is exactly the <ClLinks  term={"scope"}><i>scope</i></ClLinks> of that <ClLinks  term={"binding"}><i>binding</i></ClLinks>. If the 
 
 
 
@@ -151,7 +151,7 @@ itself) and <ClLinks  term={"nil"}><b>nil</b></ClLinks> (denoting the <ClLinks  
 
 
 
-**break loop** *n.* A variant of the normal *Lisp read-eval-print loop* that is recursively entered, usually because the ongoing <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of some other <ClLinks  term={"form"}><i>form</i></ClLinks> has been suspended for the purpose of debugging. Often, a *break loop* provides the ability to exit in such a way as to continue the suspended computation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"break"}><b>break</b></ClLinks>. 
+**break loop** *n.* A variant of the normal *Lisp read-eval-print loop* that is recursively entered, usually because the ongoing <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of some other <ClLinks  term={"form"}><i>form</i></ClLinks> has been suspended for the purpose of debugging. Often, a <GlossaryTerm styled={true} term={"break loop"}><i>break loop</i></GlossaryTerm> provides the ability to exit in such a way as to continue the suspended computation. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"break"}><b>break</b></ClLinks>. 
 
 
 
@@ -159,7 +159,7 @@ itself) and <ClLinks  term={"nil"}><b>nil</b></ClLinks> (denoting the <ClLinks  
 
 
 
-**built-in class** *n.* a <ClLinks  term={"class"}><i>class</i></ClLinks> that is a *generalized instance* of <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"built-in-class"}><b>built-in-class</b></ClLinks>. 
+**built-in class** *n.* a <ClLinks  term={"class"}><i>class</i></ClLinks> that is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"built-in-class"}><b>built-in-class</b></ClLinks>. 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-*Type specifiers* can be <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, *classes*, or <ClLinks  term={"list"}><i>lists</i></ClLinks>. Figure 4–2 lists <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are *standardized atomic type specifiers*, and Figure 4–3 lists *standardized compound type specifier names*. For syntax information, see the dictionary entry for the corresponding *type specifier* . It is possible to define new *type specifiers* using <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks>, <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>, or <ClLinks  term={"deftype"}><b>deftype</b></ClLinks>.  
+<GlossaryTerm styled={true} term={"type specifier"}><i>Type specifiers</i></GlossaryTerm> can be <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, *classes*, or <ClLinks  term={"list"}><i>lists</i></ClLinks>. Figure 4–2 lists <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that are *standardized atomic type specifiers*, and Figure 4–3 lists *standardized compound type specifier names*. For syntax information, see the dictionary entry for the corresponding <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . It is possible to define new <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> using <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, <ClLinks  term={"define-condition"}><b>define-condition</b></ClLinks>, <ClLinks  term={"defstruct"}><b>defstruct</b></ClLinks>, or <ClLinks  term={"deftype"}><b>deftype</b></ClLinks>.  
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-If a *type specifier* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, the <ClLinks  term={"car"}><i>car</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and the rest of the <ClLinks  term={"list"}><i>list</i></ClLinks> is subsidiary <ClLinks  term={"type"}><i>type</i></ClLinks> information. Such a *type specifier* is called a *compound type specifier*. Except as explicitly stated otherwise, the subsidiary items can be unspecified. The unspecified subsidiary items are indicated by writing \*. For example, to completely specify a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the <ClLinks  term={"type"}><i>type</i></ClLinks> of the elements and the length of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> must be present. 
+If a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> is a <ClLinks  term={"list"}><i>list</i></ClLinks>, the <ClLinks  term={"car"}><i>car</i></ClLinks> of the <ClLinks  term={"list"}><i>list</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, and the rest of the <ClLinks  term={"list"}><i>list</i></ClLinks> is subsidiary <ClLinks  term={"type"}><i>type</i></ClLinks> information. Such a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> is called a <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm>. Except as explicitly stated otherwise, the subsidiary items can be unspecified. The unspecified subsidiary items are indicated by writing \*. For example, to completely specify a <ClLinks  term={"vector"}><i>vector</i></ClLinks> , the <ClLinks  term={"type"}><i>type</i></ClLinks> of the elements and the length of the <ClLinks  term={"vector"}><i>vector</i></ClLinks> must be present. 
 
 
 
@@ -50,7 +50,7 @@ The following leaves the element type unspecified:
 
 
 
-Suppose that two *type specifiers* are the same except that the first has a \* where the second has a more explicit specification. Then the second denotes a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> denoted by the first. 
+Suppose that two <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> are the same except that the first has a \* where the second has a more explicit specification. Then the second denotes a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> denoted by the first. 
 
 
 
@@ -70,7 +70,7 @@ If a <ClLinks  term={"list"}><i>list</i></ClLinks> has one or more unspecified i
 
 
 
-Figure 4–4 show the *defined names* that can be used as *compound type specifier names* but that cannot be used as *atomic type specifiers*. 
+Figure 4–4 show the <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> that can be used as *compound type specifier names* but that cannot be used as <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifiers</i></GlossaryTerm>. 
 
 
 
@@ -86,7 +86,7 @@ Figure 4–4 show the *defined names* that can be used as *compound type specifi
 
 
 
-New *type specifiers* can come into existence in two ways. 
+New <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> can come into existence in two ways. 
 
 
 
@@ -94,11 +94,11 @@ New *type specifiers* can come into existence in two ways.
 
 
 
-*•* <ClLinks  term={"deftype"}><b>deftype</b></ClLinks> can be used to define *derived type specifiers*, which act as ‘abbreviations’ for other *type specifiers*. 
+*•* <ClLinks  term={"deftype"}><b>deftype</b></ClLinks> can be used to define <GlossaryTerm styled={true} term={"derived type specifier"}><i>derived type specifiers</i></GlossaryTerm>, which act as ‘abbreviations’ for other <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>. 
 
 
 
-A *class object* can be used as a *type specifier* . When used this way, it denotes the set of all members 
+A *class object* can be used as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . When used this way, it denotes the set of all members 
 
 
 
@@ -114,7 +114,7 @@ of that <ClLinks  term={"class"}><i>class</i></ClLinks>.
 
 
 
-Figure 4–5 shows some *defined names* relating to <ClLinks  term={"type"}><i>types</i></ClLinks> and <ClLinks  term={"declaration"}><i>declarations</i></ClLinks>. 
+Figure 4–5 shows some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to <ClLinks  term={"type"}><i>types</i></ClLinks> and <ClLinks  term={"declaration"}><i>declarations</i></ClLinks>. 
 
 
 
@@ -130,7 +130,7 @@ Figure 4–5 shows some *defined names* relating to <ClLinks  term={"type"}><i>t
 
 
 
-Figure 4–6 shows all *defined names* that are *type specifier names*, whether for *atomic type specifiers* or *compound type specifiers*; this list is the union of the lists in Figure 4–2 and Figure 4–3.  
+Figure 4–6 shows all <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> that are *type specifier names*, whether for <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifiers</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifiers</i></GlossaryTerm>; this list is the union of the lists in Figure 4–2 and Figure 4–3.  
 
 
 

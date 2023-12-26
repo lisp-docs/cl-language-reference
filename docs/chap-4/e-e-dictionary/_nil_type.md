@@ -6,7 +6,7 @@ all <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>
 
 **Description:**
 
-The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> contains no <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> and so is also called the *empty type*. The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of every <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. No <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>.
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> contains no <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> and so is also called the <GlossaryTerm styled={true} term={"empty type"}><i>empty type</i></GlossaryTerm>. The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of every <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. No <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> is of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>.
 
 **Notes:**
 

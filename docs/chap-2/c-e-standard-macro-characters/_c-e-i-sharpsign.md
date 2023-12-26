@@ -2,11 +2,11 @@
 
 
 
-<ClLinks  term={"sharpsign"}><i>Sharpsign</i></ClLinks> is a *non-terminating dispatching macro character* . It reads an optional sequence of digits and then one more character, and uses that character to select a <ClLinks  term={"function"}><i>function</i></ClLinks> to run as a *reader macro function*. 
+<ClLinks  term={"sharpsign"}><i>Sharpsign</i></ClLinks> is a *non-terminating dispatching macro character* . It reads an optional sequence of digits and then one more character, and uses that character to select a <ClLinks  term={"function"}><i>function</i></ClLinks> to run as a <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm>. 
 
 
 
-The *standard syntax* includes constructs introduced by the # character. The syntax of these constructs is as follows: a character that identifies the type of construct is followed by arguments in some form. If the character is a letter, its <ClLinks  term={"case"}><i>case</i></ClLinks> is not important; #O and #o are considered to be equivalent, for example. 
+The <GlossaryTerm styled={true} term={"standard syntax"}><i>standard syntax</i></GlossaryTerm> includes constructs introduced by the # character. The syntax of these constructs is as follows: a character that identifies the type of construct is followed by arguments in some form. If the character is a letter, its <ClLinks  term={"case"}><i>case</i></ClLinks> is not important; #O and #o are considered to be equivalent, for example. 
 
 
 
@@ -14,7 +14,7 @@ Certain # constructs allow an unsigned decimal number to appear between the # an
 
 
 
-The *reader macros* associated with the *dispatching macro character* # are described later in this section and summarized in Figure 2–19.  
+The <GlossaryTerm styled={true} term={"reader macro"}><i>reader macros</i></GlossaryTerm> associated with the <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> # are described later in this section and summarized in Figure 2–19.  
 
 
 
@@ -36,7 +36,7 @@ The *reader macros* associated with the *dispatching macro character* # are desc
 
 
 
-The combinations marked by an asterisk (\*) are explicitly reserved to the user. No *conforming implementation* defines them. 
+The combinations marked by an asterisk (\*) are explicitly reserved to the user. No <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> defines them. 
 
 
 
@@ -48,7 +48,7 @@ Note also that <ClLinks  term={"digit"}><i>digits</i></ClLinks> do not appear in
 
 
 
-accumulated and passed as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the *reader macro* for the <ClLinks  term={"character"}><i>character</i></ClLinks> that follows the digits. For example, #2A((1 2) (3 4)) is a use of #A with an argument of 2. 
+accumulated and passed as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> to the <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> for the <ClLinks  term={"character"}><i>character</i></ClLinks> that follows the digits. For example, #2A((1 2) (3 4)) is a use of #A with an argument of 2. 
 
 
 

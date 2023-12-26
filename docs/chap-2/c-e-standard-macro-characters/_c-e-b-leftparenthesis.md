@@ -14,7 +14,7 @@ is read as a <ClLinks  term={"list"}><i>list</i></ClLinks> of three <ClLinks  te
 
 
 
-If no <ClLinks  term={"object"}><i>objects</i></ClLinks> precede the right parenthesis, it reads as a <ClLinks  term={"list"}><i>list</i></ClLinks> of zero <ClLinks  term={"object"}><i>objects</i></ClLinks> (the *empty list*). 
+If no <ClLinks  term={"object"}><i>objects</i></ClLinks> precede the right parenthesis, it reads as a <ClLinks  term={"list"}><i>list</i></ClLinks> of zero <ClLinks  term={"object"}><i>objects</i></ClLinks> (the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>). 
 
 
 

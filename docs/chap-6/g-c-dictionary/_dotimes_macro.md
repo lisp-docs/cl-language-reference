@@ -34,11 +34,11 @@
 
 
 
-<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a *go tag*; not evaluated. 
+<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>; not evaluated. 
 
 
 
-*statement*—a *compound form*; evaluated as described below. 
+*statement*—a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm>; evaluated as described below. 
 
 
 
@@ -62,11 +62,11 @@ bound to each *integer* . Then *result-form* is evaluated. At the time *result-f
 
 
 
-An *implicit block* named <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> surrounds <ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks>. <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> may be used to terminate the loop immediately without performing any further iterations, returning zero or more <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>. 
+An <GlossaryTerm styled={true} term={"implicit block"}><i>implicit block</i></GlossaryTerm> named <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> surrounds <ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks>. <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> may be used to terminate the loop immediately without performing any further iterations, returning zero or more <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>. 
 
 
 
-The body of the loop is an *implicit tagbody*; it may contain tags to serve as the targets of <ClLinks styled={true} term={"go"}><b>go</b></ClLinks> statements. Declarations may appear before the body of the loop. 
+The body of the loop is an <GlossaryTerm styled={true} term={"implicit tagbody"}><i>implicit tagbody</i></GlossaryTerm>; it may contain tags to serve as the targets of <ClLinks styled={true} term={"go"}><b>go</b></ClLinks> statements. Declarations may appear before the body of the loop. 
 
 
 

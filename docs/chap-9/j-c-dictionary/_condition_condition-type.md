@@ -26,7 +26,7 @@ Whether a user-defined *condition type* has <ClLinks styled={true} term={"slot"}
 
 
 
-*Conforming code* must observe the following restrictions related to <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks>: 
+<GlossaryTerm styled={true} term={"conforming code"}><i>Conforming code</i></GlossaryTerm> must observe the following restrictions related to <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks>: 
 
 
 

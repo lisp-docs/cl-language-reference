@@ -2,7 +2,7 @@
 
 
 
-A <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> can be “associated with” a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> explicitly by <ClLinks styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></ClLinks>, or implicitly by <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>. Such an assocation has *dynamic extent*. 
+A <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> can be “associated with” a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> explicitly by <ClLinks styled={true} term={"with-condition-restarts"}><b>with-condition-restarts</b></ClLinks>, or implicitly by <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>. Such an assocation has <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. 
 
 
 

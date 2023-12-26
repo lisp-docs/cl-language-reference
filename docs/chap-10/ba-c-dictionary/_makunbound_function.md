@@ -38,7 +38,7 @@ a → 1
 
 
 
-The *value cell* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is modified. 
+The <GlossaryTerm styled={true} term={"value cell"}><i>value cell</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is modified. 
 
 
 

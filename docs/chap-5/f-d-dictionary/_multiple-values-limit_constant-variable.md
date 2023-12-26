@@ -1,4 +1,4 @@
-**multiple-values-limit** *Constant Variable* 
+**multiple-values-limit** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm> 
 
 
 

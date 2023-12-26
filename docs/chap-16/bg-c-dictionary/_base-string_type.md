@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"base-string"}><b>base-string</b></ClLinks> is equivalent to (vector base-char). The *base string* representation is the most efficient <ClLinks  term={"string"}><i>string</i></ClLinks> representation that can hold an arbitrary sequence of *standard characters*. 
+The <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"base-string"}><b>base-string</b></ClLinks> is equivalent to (vector base-char). The <GlossaryTerm styled={true} term={"base string"}><i>base string</i></GlossaryTerm> representation is the most efficient <ClLinks  term={"string"}><i>string</i></ClLinks> representation that can hold an arbitrary sequence of <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>. 
 
 
 
@@ -58,4 +58,4 @@ Abbreviating.
 
 
 
-This is equivalent to the type (vector base-char *size*); that is, the set of *base strings* of size *size*. 
+This is equivalent to the type (vector base-char *size*); that is, the set of <GlossaryTerm styled={true} term={"base string"}><i>base strings</i></GlossaryTerm> of size *size*. 

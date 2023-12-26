@@ -14,7 +14,7 @@
 
 
 
-*element-type*—a *type specifier* . The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
 
 
 

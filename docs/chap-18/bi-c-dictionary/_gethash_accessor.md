@@ -23,7 +23,7 @@
 
 
 
-*hash-table*—a *hash table*. 
+*hash-table*—a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 
@@ -35,7 +35,7 @@
 
 
 
-*present-p*—a *generalized boolean*. 
+*present-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -90,7 +90,7 @@
 
 
 
-The *secondary value*, *present-p*, can be used to distinguish the absence of an entry from the presence of an entry that has a value of *default*. 
+The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *present-p*, can be used to distinguish the absence of an entry from the presence of an entry that has a value of *default*. 
 
 
 

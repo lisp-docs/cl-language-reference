@@ -14,7 +14,7 @@
 
 
 
-*hash-table*—a *hash table*. 
+*hash-table*—a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the current rehash size of *hash-table*, suitable for use in a call to <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> in order to produce a *hash table* with state corresponding to the current state of the *hash-table*. 
+Returns the current rehash size of *hash-table*, suitable for use in a call to <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> in order to produce a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> with state corresponding to the current state of the *hash-table*. 
 
 
 
@@ -40,7 +40,7 @@ Returns the current rehash size of *hash-table*, suitable for use in a call to <
 
 
 
-Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *hash-table* is not a *hash table*. 
+Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if *hash-table* is not a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 

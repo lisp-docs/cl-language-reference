@@ -22,7 +22,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks  term={"remprop"}><b>remprop</b></ClLinks> removes from the *property list* <sub>2</sub> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> a <ClLinks  term={"property"}><i>property</i></ClLinks><sub>1</sub> with a *property indicator identical* to <ClLinks  term={"indicator"}><i>indicator</i></ClLinks>. If there are multiple *properties*<sub>1</sub> with the <ClLinks  term={"identical"}><i>identical</i></ClLinks> key, <ClLinks  term={"remprop"}><b>remprop</b></ClLinks> only removes the first such <ClLinks  term={"property"}><i>property</i></ClLinks>. <ClLinks  term={"remprop"}><b>remprop</b></ClLinks> returns <ClLinks  term={"false"}><i>false</i></ClLinks> if no such <ClLinks  term={"property"}><i>property</i></ClLinks> was found, or <ClLinks  term={"true"}><i>true</i></ClLinks> if a property was found. 
+<ClLinks  term={"remprop"}><b>remprop</b></ClLinks> removes from the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> <sub>2</sub> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> a <ClLinks  term={"property"}><i>property</i></ClLinks><sub>1</sub> with a *property indicator identical* to <ClLinks  term={"indicator"}><i>indicator</i></ClLinks>. If there are multiple *properties*<sub>1</sub> with the <ClLinks  term={"identical"}><i>identical</i></ClLinks> key, <ClLinks  term={"remprop"}><b>remprop</b></ClLinks> only removes the first such <ClLinks  term={"property"}><i>property</i></ClLinks>. <ClLinks  term={"remprop"}><b>remprop</b></ClLinks> returns <ClLinks  term={"false"}><i>false</i></ClLinks> if no such <ClLinks  term={"property"}><i>property</i></ClLinks> was found, or <ClLinks  term={"true"}><i>true</i></ClLinks> if a property was found. 
 
 
 
-The *property indicator* and the corresponding *property value* are removed in an undefined order by destructively splicing the property list. The permissible side-effects correspond to those permitted for <ClLinks  term={"remf"}><b>remf</b></ClLinks>, such that: 
+The <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> and the corresponding <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm> are removed in an undefined order by destructively splicing the property list. The permissible side-effects correspond to those permitted for <ClLinks  term={"remf"}><b>remf</b></ClLinks>, such that: 
 
 
 
@@ -72,7 +72,7 @@ The *property indicator* and the corresponding *property value* are removed in a
 
 
 
-The *property list* of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is modified. 
+The <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> of <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is modified. 
 
 
 

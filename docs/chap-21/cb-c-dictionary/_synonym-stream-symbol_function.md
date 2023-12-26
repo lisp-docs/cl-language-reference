@@ -14,7 +14,7 @@
 
 
 
-*synonym-stream*—a *synonym stream*. 
+*synonym-stream*—a <GlossaryTerm styled={true} term={"synonym stream"}><i>synonym stream</i></GlossaryTerm>. 
 
 
 

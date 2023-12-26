@@ -6,7 +6,7 @@ A *define-method-combination arguments lambda list* is used by the :arguments op
 
 
 
-A *define-method-combination arguments lambda list* can contain the *lambda list keywords* shown in Figure 3–21. 
+A *define-method-combination arguments lambda list* can contain the <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> shown in Figure 3–21. 
 
 
 
@@ -22,7 +22,7 @@ A *define-method-combination arguments lambda list* can contain the *lambda list
 
 
 
-*Define-method-combination arguments lambda lists* are similar to *ordinary lambda lists*, but also permit the use of **&amp;whole**. 
+*Define-method-combination arguments lambda lists* are similar to <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda lists</i></GlossaryTerm>, but also permit the use of **&amp;whole**. 
 
 
 

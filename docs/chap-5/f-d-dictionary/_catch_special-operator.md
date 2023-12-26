@@ -1,4 +1,4 @@
-**catch** *Special Operator* 
+**catch** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a *catch tag*; evaluated. 
+<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a <GlossaryTerm styled={true} term={"catch tag"}><i>catch tag</i></GlossaryTerm>; evaluated. 
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -58,7 +58,7 @@ If during the execution of one of the <ClLinks  term={"form"}><i>forms</i></ClLi
 
 
 
-The mechanism for <ClLinks  term={"catch"}><b>catch</b></ClLinks> and <ClLinks  term={"throw"}><b>throw</b></ClLinks> works even if <ClLinks  term={"throw"}><b>throw</b></ClLinks> is not within the lexical scope of <ClLinks  term={"catch"}><b>catch</b></ClLinks>. <ClLinks  term={"throw"}><b>throw</b></ClLinks> must occur within the *dynamic extent* of the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of the body of a <ClLinks  term={"catch"}><b>catch</b></ClLinks> with a corresponding <ClLinks  term={"tag"}><i>tag</i></ClLinks>. 
+The mechanism for <ClLinks  term={"catch"}><b>catch</b></ClLinks> and <ClLinks  term={"throw"}><b>throw</b></ClLinks> works even if <ClLinks  term={"throw"}><b>throw</b></ClLinks> is not within the lexical scope of <ClLinks  term={"catch"}><b>catch</b></ClLinks>. <ClLinks  term={"throw"}><b>throw</b></ClLinks> must occur within the <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> of the <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> of the body of a <ClLinks  term={"catch"}><b>catch</b></ClLinks> with a corresponding <ClLinks  term={"tag"}><i>tag</i></ClLinks>. 
 
 
 
@@ -100,7 +100,7 @@ It is customary for <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> to be use
 
 
 
-<ClLinks  term={"catch"}><b>catch</b></ClLinks> differs from <ClLinks  term={"block"}><b>block</b></ClLinks> in that <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags have dynamic <ClLinks  term={"scope"}><i>scope</i></ClLinks> while <ClLinks  term={"block"}><b>block</b></ClLinks> names have *lexical scope*. 
+<ClLinks  term={"catch"}><b>catch</b></ClLinks> differs from <ClLinks  term={"block"}><b>block</b></ClLinks> in that <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags have dynamic <ClLinks  term={"scope"}><i>scope</i></ClLinks> while <ClLinks  term={"block"}><b>block</b></ClLinks> names have <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm>. 
 
 
 

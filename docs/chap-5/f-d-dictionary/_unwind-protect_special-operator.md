@@ -1,4 +1,4 @@
-**unwind-protect** *Special Operator* 
+**unwind-protect** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-If a *non-local exit* occurs during execution of *cleanup-forms*, no special action is taken. The *cleanup-forms* of <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> are not protected by that <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>. 
+If a <GlossaryTerm styled={true} term={"non-local exit"}><i>non-local exit</i></GlossaryTerm> occurs during execution of *cleanup-forms*, no special action is taken. The *cleanup-forms* of <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> are not protected by that <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>. 
 
 
 
@@ -42,7 +42,7 @@ If a *non-local exit* occurs during execution of *cleanup-forms*, no special act
 
 
 
-Undoing of <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings* during an exit happens in parallel with the undoing of the bindings of *dynamic variables* and <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags, in the reverse order in which they were established. The effect of this is that *cleanup-form* sees the same <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings*, as well as *dynamic variable bindings* and <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags, as were visible when the <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> was entered. 
+Undoing of <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings* during an exit happens in parallel with the undoing of the bindings of <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm> and <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags, in the reverse order in which they were established. The effect of this is that *cleanup-form* sees the same <ClLinks  term={"handler"}><i>handler</i></ClLinks> and *restart bindings*, as well as *dynamic variable bindings* and <ClLinks  term={"catch"}><b>catch</b></ClLinks> tags, as were visible when the <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks> was entered. 
 
 
 

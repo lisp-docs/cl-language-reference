@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"byte"}><i>byte</i></ClLinks>—an *integer* of the *stream element type* of <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"byte"}><i>byte</i></ClLinks>—an *integer* of the <GlossaryTerm styled={true} term={"stream element type"}><i>stream element type</i></GlossaryTerm> of <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -49,7 +49,7 @@
 
 
 
-The *element type* of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
@@ -61,7 +61,7 @@ Should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks
 
 
 
-Might signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"byte"}><i>byte</i></ClLinks> is not an *integer* of the *stream element type* of <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+Might signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks  term={"byte"}><i>byte</i></ClLinks> is not an *integer* of the <GlossaryTerm styled={true} term={"stream element type"}><i>stream element type</i></GlossaryTerm> of <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 

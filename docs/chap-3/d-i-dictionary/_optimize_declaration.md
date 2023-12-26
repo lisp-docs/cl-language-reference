@@ -14,7 +14,7 @@
 
 
 
-*quality*—an *optimize quality*. 
+*quality*—an <GlossaryTerm styled={true} term={"optimize quality"}><i>optimize quality</i></GlossaryTerm>. 
 
 
 
@@ -50,7 +50,7 @@ Evaluation and
 
 
 
-Advises the compiler that each *quality* should be given attention according to the specified corresponding <ClLinks  term={"value"}><i>value</i></ClLinks>. Each *quality* must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming an *optimize quality*; the names and meanings of the standard *optimize qualities* are shown in Figure 3–25. 
+Advises the compiler that each *quality* should be given attention according to the specified corresponding <ClLinks  term={"value"}><i>value</i></ClLinks>. Each *quality* must be a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming an <GlossaryTerm styled={true} term={"optimize quality"}><i>optimize quality</i></GlossaryTerm>; the names and meanings of the standard *optimize qualities* are shown in Figure 3–25. 
 
 
 
@@ -116,7 +116,7 @@ An <ClLinks  term={"optimize"}><b>optimize</b></ClLinks> declaration never appli
 
 
 
-declaration can only be a *free declaration*. For more information, see Section 3.3.4 (Declaration Scope). 
+declaration can only be a <GlossaryTerm styled={true} term={"free declaration"}><i>free declaration</i></GlossaryTerm>. For more information, see Section 3.3.4 (Declaration Scope). 
 
 
 

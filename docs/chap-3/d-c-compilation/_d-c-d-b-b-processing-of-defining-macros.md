@@ -42,7 +42,7 @@ A portable way to do the same thing would be to include the macro definition ins
 
 
 
-Figure 3–8 lists macros that make definitions available both in the compilation and run-time <ClLinks  term={"environment"}><i>environments</i></ClLinks>. It is not specified whether definitions made available in the *compilation environment* are available in the evaluation <ClLinks  term={"environment"}><i>environment</i></ClLinks>, nor is it specified whether they are available in subsequent compilation units or subsequent invocations of the compiler. As with <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks>, these compile-time side effects happen only when the defining macros appear at top level. 
+Figure 3–8 lists macros that make definitions available both in the compilation and run-time <ClLinks  term={"environment"}><i>environments</i></ClLinks>. It is not specified whether definitions made available in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> are available in the evaluation <ClLinks  term={"environment"}><i>environment</i></ClLinks>, nor is it specified whether they are available in subsequent compilation units or subsequent invocations of the compiler. As with <ClLinks  term={"eval-when"}><b>eval-when</b></ClLinks>, these compile-time side effects happen only when the defining macros appear at top level. 
 
 
 

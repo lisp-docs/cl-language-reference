@@ -14,7 +14,7 @@
 
 
 
-*control-string*—a *format string*; not evaluated. 
+*control-string*—a <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm>; not evaluated. 
 
 
 
@@ -60,7 +60,7 @@ where *arguments-tail* is either the tail of <ClLinks styled={true} term={"argum
 
 
 
-Might signal an error (at macro expansion time or at run time) if the argument is not a valid *format string*. 
+Might signal an error (at macro expansion time or at run time) if the argument is not a valid <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm>. 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-Contorted-example works only because the <ClLinks  term={"function"}><i>function</i></ClLinks> named by f is invoked during the <ClLinks  term={"extent"}><i>extent</i></ClLinks> of the *exit point*. Once the flow of execution has left the block, the *exit point* is *disestablished*. For example: 
+Contorted-example works only because the <ClLinks  term={"function"}><i>function</i></ClLinks> named by f is invoked during the <ClLinks  term={"extent"}><i>extent</i></ClLinks> of the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm>. Once the flow of execution has left the block, the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> is *disestablished*. For example: 
 
 
 
@@ -18,15 +18,15 @@ Contorted-example works only because the <ClLinks  term={"function"}><i>function
 
 
 
-One might expect the call (invalid-example) to produce 5 by the following incorrect reasoning: <ClLinks  term={"let"}><b>let</b></ClLinks> binds y to the value of <ClLinks  term={"block"}><b>block</b></ClLinks>; this value is a <ClLinks  term={"function"}><i>function</i></ClLinks> resulting from the *lambda expression*. Because y is not a number, it is invoked on the value 5. The <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> should then return this value from the *exit point* named here, thereby exiting from the block again and giving y the value 5 which, being a number, is then returned as the value of the call to invalid-example. 
+One might expect the call (invalid-example) to produce 5 by the following incorrect reasoning: <ClLinks  term={"let"}><b>let</b></ClLinks> binds y to the value of <ClLinks  term={"block"}><b>block</b></ClLinks>; this value is a <ClLinks  term={"function"}><i>function</i></ClLinks> resulting from the <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>. Because y is not a number, it is invoked on the value 5. The <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> should then return this value from the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> named here, thereby exiting from the block again and giving y the value 5 which, being a number, is then returned as the value of the call to invalid-example. 
 
 
 
-The argument fails only because *exit points* have *dynamic extent*. The argument is correct up to the execution of <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>. The execution of <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"control-error"}><b>control-error</b></ClLinks>, however, not because it cannot refer to the *exit point*, but because it does correctly refer to an *exit point* and that *exit point* has been *disestablished*. 
+The argument fails only because <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> have <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. The argument is correct up to the execution of <ClLinks  term={"return-from"}><b>return-from</b></ClLinks>. The execution of <ClLinks  term={"return-from"}><b>return-from</b></ClLinks> should signal an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"control-error"}><b>control-error</b></ClLinks>, however, not because it cannot refer to the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm>, but because it does correctly refer to an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> and that <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> has been *disestablished*. 
 
 
 
-A reference by name to a dynamic *exit point* binding such as a *catch tag* refers to the most recently *established binding* of that name that has not been *disestablished*. For example: 
+A reference by name to a dynamic <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> binding such as a <GlossaryTerm styled={true} term={"catch tag"}><i>catch tag</i></GlossaryTerm> refers to the most recently *established binding* of that name that has not been *disestablished*. For example: 
 
 
 
@@ -70,7 +70,7 @@ Consider the call (fun1 7). The result is 10. At the time the <ClLinks  term={"t
 
 
 
-then the two *exit points* would have different <ClLinks  term={"name"}><i>names</i></ClLinks>, and therefore the one in fun1 would not be shadowed. The result would then have been 7. 
+then the two <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> would have different <ClLinks  term={"name"}><i>names</i></ClLinks>, and therefore the one in fun1 would not be shadowed. The result would then have been 7. 
 
 
 

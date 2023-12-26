@@ -32,7 +32,7 @@
 
 <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm>—a <GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> .
 
-*generalized-boolean*—a *generalized boolean*.
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>.
 
 **Description:**
 
@@ -118,4 +118,4 @@ If characters differ in their *code attribute* or any *implementation-defined at
 
 There is no requirement that (eq c1 c2) be true merely because (char= c1 c2) is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. While <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink> can distinguish two <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> that <DictionaryLink  term={"char="}><b>char=</b></DictionaryLink> does not, it is distinguishing them not as <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm>, but in some sense on the basis of a lower level implementation characteristic. If (eq c1 c2) is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>, then (char= c1 c2) is also true. <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> and <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> compare <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> in the same way that <DictionaryLink  term={"char="}><b>char=</b></DictionaryLink> does.
 
-The manner in which <GlossaryTerm  term={"case"}><i>case</i></GlossaryTerm> is used by <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink>, <DictionaryLink  term={"char-not-equal"}><b>char-not-equal</b></DictionaryLink>, <DictionaryLink  term={"char-lessp"}><b>char-lessp</b></DictionaryLink>, <DictionaryLink  term={"char-greaterp"}><b>char-greaterp</b></DictionaryLink>, <DictionaryLink  term={"char-not-greaterp"}><b>char-not-greaterp</b></DictionaryLink>, and <DictionaryLink  term={"char-not-lessp"}><b>char-not-lessp</b></DictionaryLink> implies an ordering for *standard characters* such that `A=a`, `B=b`, and so on, up to `Z=z`, and furthermore either `9<A` or `Z<0`.
+The manner in which <GlossaryTerm  term={"case"}><i>case</i></GlossaryTerm> is used by <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink>, <DictionaryLink  term={"char-not-equal"}><b>char-not-equal</b></DictionaryLink>, <DictionaryLink  term={"char-lessp"}><b>char-lessp</b></DictionaryLink>, <DictionaryLink  term={"char-greaterp"}><b>char-greaterp</b></DictionaryLink>, <DictionaryLink  term={"char-not-greaterp"}><b>char-not-greaterp</b></DictionaryLink>, and <DictionaryLink  term={"char-not-lessp"}><b>char-not-lessp</b></DictionaryLink> implies an ordering for <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm> such that `A=a`, `B=b`, and so on, up to `Z=z`, and furthermore either `9<A` or `Z<0`.

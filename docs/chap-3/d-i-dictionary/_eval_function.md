@@ -26,7 +26,7 @@
 
 
 
-Evaluates <ClLinks  term={"form"}><i>form</i></ClLinks> in the current *dynamic environment* and the *null lexical environment*. <ClLinks  term={"eval"}><b>eval</b></ClLinks> is a user interface to the evaluator. 
+Evaluates <ClLinks  term={"form"}><i>form</i></ClLinks> in the current <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> and the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. <ClLinks  term={"eval"}><b>eval</b></ClLinks> is a user interface to the evaluator. 
 
 
 
@@ -78,7 +78,7 @@ results from this normal *argument evaluation* becomes the <ClLinks  term={"valu
 
 
 
-The *argument form* (list ’cdr (car ’((quote (a . b)) c))) is evaluated in the usual way to produce the <ClLinks  term={"argument"}><i>argument</i></ClLinks> (cdr (quote (a . b))); <ClLinks  term={"eval"}><b>eval</b></ClLinks> then evaluates its <ClLinks  term={"argument"}><i>argument</i></ClLinks>, (cdr (quote (a . b))), to produce b. Since a single <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> already occurs for any *argument form* in any *function form*, <ClLinks  term={"eval"}><b>eval</b></ClLinks> is sometimes said to perform “an extra level of evaluation.” 
+The *argument form* (list ’cdr (car ’((quote (a . b)) c))) is evaluated in the usual way to produce the <ClLinks  term={"argument"}><i>argument</i></ClLinks> (cdr (quote (a . b))); <ClLinks  term={"eval"}><b>eval</b></ClLinks> then evaluates its <ClLinks  term={"argument"}><i>argument</i></ClLinks>, (cdr (quote (a . b))), to produce b. Since a single <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> already occurs for any *argument form* in any <GlossaryTerm styled={true} term={"function form"}><i>function form</i></GlossaryTerm>, <ClLinks  term={"eval"}><b>eval</b></ClLinks> is sometimes said to perform “an extra level of evaluation.” 
 
 
 

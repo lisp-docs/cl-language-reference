@@ -26,7 +26,7 @@
 
 
 
-*expected-type*—a *type specifier* . 
+*expected-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 

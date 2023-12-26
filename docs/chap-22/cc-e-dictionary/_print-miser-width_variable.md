@@ -22,7 +22,7 @@ a non-negative *integer* , or <ClLinks styled={true} term={"nil"}><b>nil</b></Cl
 
 
 
-If it is not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the *pretty printer* switches to a compact style of output (called miser style) whenever the width available for printing a substructure is less than or equal to this many <ClLinks styled={true} term={"em"}><i>ems</i></ClLinks>. 
+If it is not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> switches to a compact style of output (called miser style) whenever the width available for printing a substructure is less than or equal to this many <ClLinks styled={true} term={"em"}><i>ems</i></ClLinks>. 
 
 
 

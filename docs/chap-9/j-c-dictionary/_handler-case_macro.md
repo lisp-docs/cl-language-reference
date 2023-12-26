@@ -30,7 +30,7 @@
 
 
 
-*typespec*—a *type specifier* . 
+*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -54,7 +54,7 @@
 
 
 
-*lambda-list*—an *ordinary lambda list*. 
+*lambda-list*—an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>. 
 
 
 
@@ -74,7 +74,7 @@
 
 
 
-<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> executes <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> in a *dynamic environment* where various handlers are active. Each *error-clause* specifies how to handle a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> matching the indicated *typespec*. A *no-error-clause* allows the specification of a particular action if control returns normally. 
+<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> executes <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where various handlers are active. Each *error-clause* specifies how to handle a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> matching the indicated *typespec*. A *no-error-clause* allows the specification of a particular action if control returns normally. 
 
 
 

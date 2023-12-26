@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"code"}><i>code</i></ClLinks>—a *character code*. 
+<ClLinks styled={true} term={"code"}><i>code</i></ClLinks>—a <GlossaryTerm styled={true} term={"character code"}><i>character code</i></GlossaryTerm>. 
 
 
 

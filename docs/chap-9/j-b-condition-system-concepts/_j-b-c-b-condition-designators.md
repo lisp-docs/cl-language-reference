@@ -2,7 +2,7 @@
 
 
 
-A number of the functions in the condition system take arguments which are identified as *condition designators*. By convention, those arguments are notated as 
+A number of the functions in the condition system take arguments which are identified as <GlossaryTerm styled={true} term={"condition designator"}><i>condition designators</i></GlossaryTerm>. By convention, those arguments are notated as 
 
 
 
@@ -74,7 +74,7 @@ Note that the *default-type* gets used only in the case where the *datum string*
 
 
 
-Here are some illustrations of how different *condition designators* can denote equivalent *condition objects*: 
+Here are some illustrations of how different <GlossaryTerm styled={true} term={"condition designator"}><i>condition designators</i></GlossaryTerm> can denote equivalent *condition objects*: 
 
 
 

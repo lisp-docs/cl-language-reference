@@ -1,4 +1,4 @@
-**function-keywords** *Standard Generic Function* 
+**function-keywords** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*allow-other-keys-p*—a *generalized boolean*. 
+*allow-other-keys-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@ Returns the keyword parameter specifiers for a <ClLinks  term={"method"}><i>meth
 
 
 
-Two values are returned: a <ClLinks  term={"list"}><i>list</i></ClLinks> of the explicitly named keywords and a *generalized boolean* that states whether **&amp;allow-other-keys** had been specified in the <ClLinks  term={"method"}><i>method</i></ClLinks> definition. 
+Two values are returned: a <ClLinks  term={"list"}><i>list</i></ClLinks> of the explicitly named keywords and a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that states whether **&amp;allow-other-keys** had been specified in the <ClLinks  term={"method"}><i>method</i></ClLinks> definition. 
 
 
 

@@ -18,7 +18,7 @@
 
 
 
-*start*, *end*—*bounding index designators* of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*junk-allowed*—a *generalized boolean*. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+*junk-allowed*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. The default is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-*pos*—a *bounding index* of <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+*pos*—a <GlossaryTerm styled={true} term={"bounding index"}><i>bounding index</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
@@ -74,7 +74,7 @@ The first <ClLinks  term={"value"}><i>value</i></ClLinks> returned is either the
 
 
 
-The second <ClLinks  term={"value"}><i>value</i></ClLinks> is either the index into the <ClLinks  term={"string"}><i>string</i></ClLinks> of the delimiter that terminated the parse, or the upper *bounding index* of the substring if the parse terminated at the end of the substring (as is always the case if *junk-allowed* is <ClLinks  term={"false"}><i>false</i></ClLinks>). 
+The second <ClLinks  term={"value"}><i>value</i></ClLinks> is either the index into the <ClLinks  term={"string"}><i>string</i></ClLinks> of the delimiter that terminated the parse, or the upper <GlossaryTerm styled={true} term={"bounding index"}><i>bounding index</i></GlossaryTerm> of the substring if the parse terminated at the end of the substring (as is always the case if *junk-allowed* is <ClLinks  term={"false"}><i>false</i></ClLinks>). 
 
 
 

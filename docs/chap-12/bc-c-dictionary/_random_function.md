@@ -18,7 +18,7 @@
 
 
 
-*random-state*—a *random state*. The default is the *current random state*. 
+*random-state*—a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm>. The default is the <GlossaryTerm styled={true} term={"current random state"}><i>current random state</i></GlossaryTerm>. 
 
 
 

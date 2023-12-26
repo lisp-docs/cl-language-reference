@@ -14,15 +14,15 @@
 
 
 
-*destination*—<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, or a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> with a *fill pointer* . 
+*destination*—<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, or a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> . 
 
 
 
-*control-string*—a *format control*. 
+*control-string*—a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>. 
 
 
 
-*args*—*format arguments* for *control-string*. 
+*args*—<GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm> for *control-string*. 
 
 
 
@@ -62,7 +62,7 @@ For details on how the *control-string* is interpreted, see Section 22.3 (Format
 
 
 
-If *destination* is a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> with a *fill pointer* , the consequences are undefined if destructive modifications are performed directly on the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> during the *dynamic extent* of the call. 
+If *destination* is a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , the consequences are undefined if destructive modifications are performed directly on the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> during the <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> of the call. 
 
 
 

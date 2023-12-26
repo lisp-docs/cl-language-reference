@@ -30,7 +30,7 @@ The initialization arguments supplied to <ClLinks  term={"make-instance"}><b>mak
 
 
 
-in the list than the defaulted initialization arguments. Defaulted initialization arguments are ordered according to the order in the *class precedence list* of the *classes* that supplied the default values. 
+in the list than the defaulted initialization arguments. Defaulted initialization arguments are ordered according to the order in the <GlossaryTerm styled={true} term={"class precedence list"}><i>class precedence list</i></GlossaryTerm> of the *classes* that supplied the default values. 
 
 
 

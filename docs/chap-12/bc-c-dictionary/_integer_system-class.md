@@ -1,4 +1,4 @@
-**integer** *System Class* 
+**integer** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-An *integer* is a mathematical integer. There is no limit on the magnitude of an *integer* . The <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"fixnum"}><b>fixnum</b></ClLinks> and <ClLinks  term={"bignum"}><b>bignum</b></ClLinks> form an *exhaustive partition* of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks>. 
+An *integer* is a mathematical integer. There is no limit on the magnitude of an *integer* . The <ClLinks  term={"type"}><i>types</i></ClLinks> <ClLinks  term={"fixnum"}><b>fixnum</b></ClLinks> and <ClLinks  term={"bignum"}><b>bignum</b></ClLinks> form an <GlossaryTerm styled={true} term={"exhaustive partition"}><i>exhaustive partition</i></GlossaryTerm> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks>. 
 
 
 
@@ -38,7 +38,7 @@ Abbreviating.
 
 
 
-*lower-limit*, *upper-limit*—*interval designators* for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*lower-limit*, *upper-limit*—<GlossaryTerm styled={true} term={"interval designator"}><i>interval designators</i></GlossaryTerm> for <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"integer"}><b>integer</b></ClLinks>. The defaults for each of *lower-limit* and *upper-limit* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 

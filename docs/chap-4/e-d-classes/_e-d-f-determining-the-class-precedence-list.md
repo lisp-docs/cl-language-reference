@@ -2,7 +2,7 @@
 
 
 
-The <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form for a <ClLinks  term={"class"}><i>class</i></ClLinks> provides a total ordering on that <ClLinks  term={"class"}><i>class</i></ClLinks> and its direct *superclasses*. This ordering is called the *local precedence order*. It is an ordered list of the <ClLinks  term={"class"}><i>class</i></ClLinks> and its direct *superclasses*. The *class precedence list* for a class *C* is a total ordering on *C* and its *superclasses* that is consistent with the *local precedence orders* for each of *C* and its *superclasses*. 
+The <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> form for a <ClLinks  term={"class"}><i>class</i></ClLinks> provides a total ordering on that <ClLinks  term={"class"}><i>class</i></ClLinks> and its direct *superclasses*. This ordering is called the <GlossaryTerm styled={true} term={"local precedence order"}><i>local precedence order</i></GlossaryTerm>. It is an ordered list of the <ClLinks  term={"class"}><i>class</i></ClLinks> and its direct *superclasses*. The <GlossaryTerm styled={true} term={"class precedence list"}><i>class precedence list</i></GlossaryTerm> for a class *C* is a total ordering on *C* and its *superclasses* that is consistent with the <GlossaryTerm styled={true} term={"local precedence order"}><i>local precedence orders</i></GlossaryTerm> for each of *C* and its *superclasses*. 
 
 
 

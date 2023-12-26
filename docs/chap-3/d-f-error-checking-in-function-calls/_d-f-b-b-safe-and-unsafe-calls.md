@@ -2,7 +2,7 @@
 
 
 
-A <ClLinks  term={"call"}><i>call</i></ClLinks> is a *safe call* if each of the following is either *safe code* or *system code* (other than *system code* that results from *macro expansion* of *programmer code*): 
+A <ClLinks  term={"call"}><i>call</i></ClLinks> is a <GlossaryTerm styled={true} term={"safe call"}><i>safe call</i></GlossaryTerm> if each of the following is either *safe code* or <GlossaryTerm styled={true} term={"system code"}><i>system code</i></GlossaryTerm> (other than <GlossaryTerm styled={true} term={"system code"}><i>system code</i></GlossaryTerm> that results from <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"programmer code"}><i>programmer code</i></GlossaryTerm>): 
 
 
 
@@ -14,7 +14,7 @@ A <ClLinks  term={"call"}><i>call</i></ClLinks> is a *safe call* if each of the 
 
 
 
-*•* the point of *functional evaluation* 
+*•* the point of <GlossaryTerm styled={true} term={"functional evaluation"}><i>functional evaluation</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@ The following special cases require some elaboration:
 
 
 
-*•* If the <ClLinks  term={"function"}><i>function</i></ClLinks> being called is a *generic function*, it is considered <ClLinks  term={"safe"}><i>safe</i></ClLinks> if all of the following are *safe code* or *system code*: 
+*•* If the <ClLinks  term={"function"}><i>function</i></ClLinks> being called is a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>, it is considered <ClLinks  term={"safe"}><i>safe</i></ClLinks> if all of the following are *safe code* or <GlossaryTerm styled={true} term={"system code"}><i>system code</i></GlossaryTerm>: 
 
 
 
@@ -30,35 +30,35 @@ The following special cases require some elaboration:
 
 
 
-– the <ClLinks  term={"method"}><i>method</i></ClLinks> definitions for all *applicable methods*. 
+– the <ClLinks  term={"method"}><i>method</i></ClLinks> definitions for all <GlossaryTerm styled={true} term={"applicable method"}><i>applicable methods</i></GlossaryTerm>. 
 
 
 
-– the definition of its *method combination*. 
+– the definition of its <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm>. 
 
 
 
-*•* For the form (coerce *x* ’function), where *x* is a *lambda expression*, the value of the *optimize quality* **safety** in the global environment at the time the <ClLinks  term={"coerce"}><b>coerce</b></ClLinks> is *executed* applies to the resulting <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+*•* For the form (coerce *x* ’function), where *x* is a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>, the value of the <GlossaryTerm styled={true} term={"optimize quality"}><i>optimize quality</i></GlossaryTerm> **safety** in the global environment at the time the <ClLinks  term={"coerce"}><b>coerce</b></ClLinks> is *executed* applies to the resulting <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
-*•* For a call to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"ensure-generic-function"}><b>ensure-generic-function</b></ClLinks>, the value of the *optimize quality* **safety** in the *environment object* passed as the :environment <ClLinks  term={"argument"}><i>argument</i></ClLinks> applies to the resulting *generic function*. 
+*•* For a call to the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"ensure-generic-function"}><b>ensure-generic-function</b></ClLinks>, the value of the <GlossaryTerm styled={true} term={"optimize quality"}><i>optimize quality</i></GlossaryTerm> **safety** in the <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm> passed as the :environment <ClLinks  term={"argument"}><i>argument</i></ClLinks> applies to the resulting <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. 
 
 
 
-*•* For a call to <ClLinks  term={"compile"}><b>compile</b></ClLinks> with a *lambda expression* as the <ClLinks  term={"argument"}><i>argument</i></ClLinks>, the value of the *optimize quality* **safety** in the *global environment* at the time <ClLinks  term={"compile"}><b>compile</b></ClLinks> is *called* applies to the resulting *compiled function*. 
+*•* For a call to <ClLinks  term={"compile"}><b>compile</b></ClLinks> with a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> as the <ClLinks  term={"argument"}><i>argument</i></ClLinks>, the value of the <GlossaryTerm styled={true} term={"optimize quality"}><i>optimize quality</i></GlossaryTerm> **safety** in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm> at the time <ClLinks  term={"compile"}><b>compile</b></ClLinks> is *called* applies to the resulting <GlossaryTerm styled={true} term={"compiled function"}><i>compiled function</i></GlossaryTerm>. 
 
 
 
-*•* For a call to <ClLinks  term={"compile"}><b>compile</b></ClLinks> with only one argument, if the original definition of the <ClLinks  term={"function"}><i>function</i></ClLinks> was <ClLinks  term={"safe"}><i>safe</i></ClLinks>, then the resulting *compiled function* must also be <ClLinks  term={"safe"}><i>safe</i></ClLinks>. 
+*•* For a call to <ClLinks  term={"compile"}><b>compile</b></ClLinks> with only one argument, if the original definition of the <ClLinks  term={"function"}><i>function</i></ClLinks> was <ClLinks  term={"safe"}><i>safe</i></ClLinks>, then the resulting <GlossaryTerm styled={true} term={"compiled function"}><i>compiled function</i></GlossaryTerm> must also be <ClLinks  term={"safe"}><i>safe</i></ClLinks>. 
 
 
 
-*•* A <ClLinks  term={"call"}><i>call</i></ClLinks> to a <ClLinks  term={"method"}><i>method</i></ClLinks> by <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> must be considered <ClLinks  term={"safe"}><i>safe</i></ClLinks> if each of the following is *safe code* or *system code*: 
+*•* A <ClLinks  term={"call"}><i>call</i></ClLinks> to a <ClLinks  term={"method"}><i>method</i></ClLinks> by <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks> must be considered <ClLinks  term={"safe"}><i>safe</i></ClLinks> if each of the following is *safe code* or <GlossaryTerm styled={true} term={"system code"}><i>system code</i></GlossaryTerm>: 
 
 
 
-– the definition of the *generic function* (if it was defined explicitly).  
+– the definition of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> (if it was defined explicitly).  
 
 
 
@@ -66,11 +66,11 @@ The following special cases require some elaboration:
 
 
 
-– the <ClLinks  term={"method"}><i>method</i></ClLinks> definitions for all *applicable methods*. 
+– the <ClLinks  term={"method"}><i>method</i></ClLinks> definitions for all <GlossaryTerm styled={true} term={"applicable method"}><i>applicable methods</i></GlossaryTerm>. 
 
 
 
-– the definition of the *method combination*. 
+– the definition of the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm>. 
 
 
 
@@ -78,15 +78,15 @@ The following special cases require some elaboration:
 
 
 
-– the point of *functional evaluation* of the name <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>. 
+– the point of <GlossaryTerm styled={true} term={"functional evaluation"}><i>functional evaluation</i></GlossaryTerm> of the name <ClLinks  term={"call-next-method"}><b>call-next-method</b></ClLinks>. 
 
 
 
-An *unsafe call* is a <ClLinks  term={"call"}><i>call</i></ClLinks> that is not a *safe call*. 
+An <GlossaryTerm styled={true} term={"unsafe call"}><i>unsafe call</i></GlossaryTerm> is a <ClLinks  term={"call"}><i>call</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"safe call"}><i>safe call</i></GlossaryTerm>. 
 
 
 
-The informal intent is that the <ClLinks  term={"programmer"}><i>programmer</i></ClLinks> can rely on a <ClLinks  term={"call"}><i>call</i></ClLinks> to be <ClLinks  term={"safe"}><i>safe</i></ClLinks>, even when *system code* is involved, if all reasonable steps have been taken to ensure that the <ClLinks  term={"call"}><i>call</i></ClLinks> is <ClLinks  term={"safe"}><i>safe</i></ClLinks>. For example, if a <ClLinks  term={"programmer"}><i>programmer</i></ClLinks> calls <ClLinks  term={"mapcar"}><b>mapcar</b></ClLinks> from *safe code* and supplies a <ClLinks  term={"function"}><i>function</i></ClLinks> that was *compiled* as <ClLinks  term={"safe"}><i>safe</i></ClLinks>, the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to ensure that <ClLinks  term={"mapcar"}><b>mapcar</b></ClLinks> makes a *safe call* as well. 
+The informal intent is that the <ClLinks  term={"programmer"}><i>programmer</i></ClLinks> can rely on a <ClLinks  term={"call"}><i>call</i></ClLinks> to be <ClLinks  term={"safe"}><i>safe</i></ClLinks>, even when <GlossaryTerm styled={true} term={"system code"}><i>system code</i></GlossaryTerm> is involved, if all reasonable steps have been taken to ensure that the <ClLinks  term={"call"}><i>call</i></ClLinks> is <ClLinks  term={"safe"}><i>safe</i></ClLinks>. For example, if a <ClLinks  term={"programmer"}><i>programmer</i></ClLinks> calls <ClLinks  term={"mapcar"}><b>mapcar</b></ClLinks> from *safe code* and supplies a <ClLinks  term={"function"}><i>function</i></ClLinks> that was *compiled* as <ClLinks  term={"safe"}><i>safe</i></ClLinks>, the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> is required to ensure that <ClLinks  term={"mapcar"}><b>mapcar</b></ClLinks> makes a <GlossaryTerm styled={true} term={"safe call"}><i>safe call</i></GlossaryTerm> as well. 
 
 
 

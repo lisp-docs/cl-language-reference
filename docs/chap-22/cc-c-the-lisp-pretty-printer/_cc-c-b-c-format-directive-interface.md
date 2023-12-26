@@ -18,7 +18,7 @@ The primary interface to operations for dynamically determining the arrangement 
 
 
 
-Figure 22–5 identifies a set of *format directives* which serve as an alternate interface to the same pretty printing operations in a more textually compact form. 
+Figure 22–5 identifies a set of <GlossaryTerm styled={true} term={"format directive"}><i>format directives</i></GlossaryTerm> which serve as an alternate interface to the same pretty printing operations in a more textually compact form. 
 
 
 

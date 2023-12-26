@@ -14,7 +14,7 @@
 
 
 
-*pathspec*—a *pathname designator* . 
+*pathspec*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-<ClLinks  term={"truename"}><i>truename</i></ClLinks>—a *physical pathname* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"truename"}><i>truename</i></ClLinks>—a <GlossaryTerm styled={true} term={"physical pathname"}><i>physical pathname</i></GlossaryTerm> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -66,7 +66,7 @@ An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if the *file system* cannot perform the requested operation. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"file-error"}><b>file-error</b></ClLinks> is signaled if the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> cannot perform the requested operation. 
 
 
 

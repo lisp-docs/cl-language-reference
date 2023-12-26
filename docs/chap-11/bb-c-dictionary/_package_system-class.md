@@ -1,4 +1,4 @@
-**package** *System Class* 
+**package** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 

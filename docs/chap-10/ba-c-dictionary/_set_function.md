@@ -94,7 +94,7 @@ The function <ClLinks  term={"set"}><b>set</b></ClLinks> is deprecated.
 
 
 
-<ClLinks  term={"set"}><b>set</b></ClLinks> cannot change the value of a *lexical variable*. 
+<ClLinks  term={"set"}><b>set</b></ClLinks> cannot change the value of a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm>. 
 
 
 

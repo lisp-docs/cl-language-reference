@@ -74,11 +74,11 @@ If <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> returns, its va
 
 
 
-*•* If the *operation* is <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>, only the *primary value* will be used by the caller, and all other values will be ignored. 
+*•* If the *operation* is <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>, only the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> will be used by the caller, and all other values will be ignored. 
 
 
 
-*•* If the *operation* is <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks>, any *boolean equivalent* of the *primary value* of the <ClLinks  term={"method"}><i>method</i></ClLinks> might be is used, and all other values will be ignored. 
+*•* If the *operation* is <ClLinks  term={"slot-boundp"}><b>slot-boundp</b></ClLinks>, any <GlossaryTerm styled={true} term={"boolean equivalent"}><i>boolean equivalent</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> of the <ClLinks  term={"method"}><i>method</i></ClLinks> might be is used, and all other values will be ignored. 
 
 
 

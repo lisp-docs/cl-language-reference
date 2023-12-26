@@ -22,7 +22,7 @@
 
 
 
-*fn*—a *function name*. 
+*fn*—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
@@ -78,7 +78,7 @@ Any warning about a “used” or “unused” <ClLinks  term={"binding"}><i>bin
 
 
 
-The *stream variables* established by <ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks>, <ClLinks  term={"with-open-stream"}><b>with-open-stream</b></ClLinks>, <ClLinks  term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks>, and <ClLinks  term={"with-output-to-string"}><b>with-output-to-string</b></ClLinks>, and all *iteration variables* are, by definition, always “used”. Using (declare (ignore *v*)), for such a *variable v* has unspecified consequences. 
+The <GlossaryTerm styled={true} term={"stream variable"}><i>stream variables</i></GlossaryTerm> established by <ClLinks  term={"with-open-file"}><b>with-open-file</b></ClLinks>, <ClLinks  term={"with-open-stream"}><b>with-open-stream</b></ClLinks>, <ClLinks  term={"with-input-from-string"}><b>with-input-from-string</b></ClLinks>, and <ClLinks  term={"with-output-to-string"}><b>with-output-to-string</b></ClLinks>, and all <GlossaryTerm styled={true} term={"iteration variable"}><i>iteration variables</i></GlossaryTerm> are, by definition, always “used”. Using (declare (ignore *v*)), for such a *variable v* has unspecified consequences. 
 
 
 

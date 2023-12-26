@@ -30,7 +30,7 @@
 
 
 
-<ClLinks styled={true} term={"time"}><b>time</b></ClLinks> prints various timing data and other information to *trace output*. The nature and format of the printed information is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. Implementations are encouraged to provide such information as elapsed real time, machine run time, and storage management statistics. 
+<ClLinks styled={true} term={"time"}><b>time</b></ClLinks> prints various timing data and other information to <GlossaryTerm styled={true} term={"trace output"}><i>trace output</i></GlossaryTerm>. The nature and format of the printed information is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. Implementations are encouraged to provide such information as elapsed real time, machine run time, and storage management statistics. 
 
 
 

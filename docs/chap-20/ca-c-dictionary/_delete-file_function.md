@@ -14,7 +14,7 @@
 
 
 
-*filespec*—a *pathname designator* . 
+*filespec*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 

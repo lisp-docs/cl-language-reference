@@ -1,4 +1,4 @@
-**initialize-instance** *Standard Generic Function* 
+**initialize-instance** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -42,7 +42,7 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on
 
 
 
-Programmers can define <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks> to specify actions to be taken when an instance is initialized. If only *after methods* are defined, they will be run after the system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> for initialization and therefore will not interfere with the default behavior of <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. 
+Programmers can define <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks> to specify actions to be taken when an instance is initialized. If only <GlossaryTerm styled={true} term={"after method"}><i>after methods</i></GlossaryTerm> are defined, they will be run after the system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> for initialization and therefore will not interfere with the default behavior of <ClLinks  term={"initialize-instance"}><b>initialize-instance</b></ClLinks>. 
 
 
 

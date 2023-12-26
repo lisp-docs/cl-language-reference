@@ -1,4 +1,4 @@
-**lambda-list-keywords** *Constant Variable* 
+**lambda-list-keywords** <GlossaryTerm styled={true} term={"constant variable"}><i>Constant Variable</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@ a <ClLinks  term={"list"}><i>list</i></ClLinks>, the <ClLinks  term={"element"}>
 
 
 
-A <ClLinks  term={"list"}><i>list</i></ClLinks> of all the *lambda list keywords* used in the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, including the additional ones used only by <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
+A <ClLinks  term={"list"}><i>list</i></ClLinks> of all the <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> used in the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, including the additional ones used only by <ClLinks  term={"macro"}><i>macro</i></ClLinks> definition <ClLinks  term={"form"}><i>forms</i></ClLinks>. 
 
 
 

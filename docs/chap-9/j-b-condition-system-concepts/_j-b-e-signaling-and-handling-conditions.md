@@ -2,11 +2,11 @@
 
 
 
-The operation of the condition system depends on the ordering of active *applicable handlers* from most recent to least recent. 
+The operation of the condition system depends on the ordering of active <GlossaryTerm styled={true} term={"applicable handler"}><i>applicable handlers</i></GlossaryTerm> from most recent to least recent. 
 
 
 
-Each <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> is associated with a *type specifier* that must designate a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>. A <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> is said to be <ClLinks styled={true} term={"applicable"}><i>applicable</i></ClLinks> to a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> if that <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> designated by the associated *type specifier* . 
+Each <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> is associated with a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> that must designate a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>. A <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> is said to be <ClLinks styled={true} term={"applicable"}><i>applicable</i></ClLinks> to a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> if that <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> designated by the associated <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -30,7 +30,7 @@ Each <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> is associa
 
 
 
-*recent* active *applicable handler* for that <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is selected from this set. Given a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, the order of recentness of active *applicable handlers* is defined by the following two rules: 
+*recent* active <GlossaryTerm styled={true} term={"applicable handler"}><i>applicable handler</i></GlossaryTerm> for that <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is selected from this set. Given a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, the order of recentness of active <GlossaryTerm styled={true} term={"applicable handler"}><i>applicable handlers</i></GlossaryTerm> is defined by the following two rules: 
 
 
 

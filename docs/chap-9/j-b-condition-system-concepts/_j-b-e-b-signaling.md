@@ -18,7 +18,7 @@ The <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> <ClLinks 
 
 
 
-Figure 9–5 shows *defined names* relating to the *signaling* of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks>. 
+Figure 9–5 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to the *signaling* of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks>. 
 
 
 

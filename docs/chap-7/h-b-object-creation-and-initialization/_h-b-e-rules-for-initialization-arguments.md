@@ -14,7 +14,7 @@ The following rules specify when initialization arguments may be multiply define
 
 
 
-*•* A given initialization argument name can appear in the *lambda list* of more than one initialization <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+*•* A given initialization argument name can appear in the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of more than one initialization <ClLinks  term={"method"}><i>method</i></ClLinks>. 
 
 
 
@@ -30,11 +30,11 @@ The following rules specify when initialization arguments may be multiply define
 
 
 
-*•* A given initialization argument name can appear both in an :initarg slot option and in the *lambda list* of an initialization <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+*•* A given initialization argument name can appear both in an :initarg slot option and in the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of an initialization <ClLinks  term={"method"}><i>method</i></ClLinks>. 
 
 
 
-If two or more initialization arguments that initialize the same <ClLinks  term={"slot"}><i>slot</i></ClLinks> are given in the arguments to <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, the leftmost of these initialization arguments in the *initialization argument list* supplies the value, even if the initialization arguments have different names. 
+If two or more initialization arguments that initialize the same <ClLinks  term={"slot"}><i>slot</i></ClLinks> are given in the arguments to <ClLinks  term={"make-instance"}><b>make-instance</b></ClLinks>, the leftmost of these initialization arguments in the <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm> supplies the value, even if the initialization arguments have different names. 
 
 
 

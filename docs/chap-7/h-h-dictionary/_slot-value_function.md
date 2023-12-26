@@ -83,7 +83,7 @@ If an attempt is made to read a <ClLinks  term={"slot"}><i>slot</i></ClLinks> an
 
 
 
-(If <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is invoked, its *primary value* is returned by <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>.) 
+(If <ClLinks  term={"slot-missing"}><b>slot-missing</b></ClLinks> is invoked, its <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> is returned by <ClLinks  term={"slot-value"}><b>slot-value</b></ClLinks>.) 
 
 
 

@@ -22,7 +22,7 @@
 
 
 
-*env*—an *environment object*. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*env*—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*expanded-p*—a *generalized boolean*. 
+*expanded-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -42,19 +42,19 @@
 
 
 
-If <ClLinks  term={"form"}><i>form</i></ClLinks> is a *macro form*, then <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> expands the *macro form* call once. 
+If <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, then <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> expands the <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm> call once. 
 
 
 
-<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> repeatedly expands <ClLinks  term={"form"}><i>form</i></ClLinks> until it is no longer a *macro form*. In effect, <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> calls <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> repeatedly until the *secondary value* it returns is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> repeatedly expands <ClLinks  term={"form"}><i>form</i></ClLinks> until it is no longer a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>. In effect, <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> calls <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> repeatedly until the <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm> it returns is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-If <ClLinks  term={"form"}><i>form</i></ClLinks> is a *macro form*, then the *expansion* is a *macro expansion* and *expanded-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>. Otherwise, the *expansion* is the given <ClLinks  term={"form"}><i>form</i></ClLinks> and *expanded-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
+If <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, then the *expansion* is a <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> and *expanded-p* is <ClLinks  term={"true"}><i>true</i></ClLinks>. Otherwise, the *expansion* is the given <ClLinks  term={"form"}><i>form</i></ClLinks> and *expanded-p* is <ClLinks  term={"false"}><i>false</i></ClLinks>. 
 
 
 
-Macro expansion is carried out as follows. Once <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> has determined that the <ClLinks  term={"form"}><i>form</i></ClLinks> is a *macro form*, it obtains an appropriate expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for the <ClLinks  term={"macro"}><i>macro</i></ClLinks> or *symbol macro*. The value of **\*macroexpand-hook\*** is coerced to a <ClLinks  term={"function"}><i>function</i></ClLinks> and then called as a <ClLinks  term={"function"}><i>function</i></ClLinks> of three arguments: the expansion <ClLinks  term={"function"}><i>function</i></ClLinks>, the <ClLinks  term={"form"}><i>form</i></ClLinks>, and the *env*. The <ClLinks  term={"value"}><i>value</i></ClLinks> returned from this call is taken to be the expansion of the <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+Macro expansion is carried out as follows. Once <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> has determined that the <ClLinks  term={"form"}><i>form</i></ClLinks> is a <GlossaryTerm styled={true} term={"macro form"}><i>macro form</i></GlossaryTerm>, it obtains an appropriate expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for the <ClLinks  term={"macro"}><i>macro</i></ClLinks> or <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm>. The value of **\*macroexpand-hook\*** is coerced to a <ClLinks  term={"function"}><i>function</i></ClLinks> and then called as a <ClLinks  term={"function"}><i>function</i></ClLinks> of three arguments: the expansion <ClLinks  term={"function"}><i>function</i></ClLinks>, the <ClLinks  term={"form"}><i>form</i></ClLinks>, and the *env*. The <ClLinks  term={"value"}><i>value</i></ClLinks> returned from this call is taken to be the expansion of the <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -143,7 +143,7 @@ In addition to <ClLinks  term={"macro"}><i>macro</i></ClLinks> definitions in th
 
 
 
-Neither <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> nor <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> makes any explicit attempt to expand *macro forms* that are either <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the <ClLinks  term={"form"}><i>form</i></ClLinks> or <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the *expansion*. Such expansion might occur implicitly, however, due to the semantics or implementation of the *macro function*. 
+Neither <ClLinks  term={"macroexpand"}><b>macroexpand</b></ClLinks> nor <ClLinks  term={"macroexpand-1"}><b>macroexpand-1</b></ClLinks> makes any explicit attempt to expand <GlossaryTerm styled={true} term={"macro form"}><i>macro forms</i></GlossaryTerm> that are either <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the <ClLinks  term={"form"}><i>form</i></ClLinks> or <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of the *expansion*. Such expansion might occur implicitly, however, due to the semantics or implementation of the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm>. 
 
 
 

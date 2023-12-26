@@ -30,7 +30,7 @@ Storing a new value into some element of the <ClLinks  term={"array"}><i>array</
 
 
 
-Changing the *fill pointer* , <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>, or displacement of the <ClLinks  term={"array"}><i>array</i></ClLinks> (regardless of whether the <ClLinks  term={"array"}><i>array</i></ClLinks> is *actually adjustable*). 
+Changing the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , <ClLinks  term={"dimension"}><i>dimensions</i></ClLinks>, or displacement of the <ClLinks  term={"array"}><i>array</i></ClLinks> (regardless of whether the <ClLinks  term={"array"}><i>array</i></ClLinks> is <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>). 
 
 
 
@@ -50,7 +50,7 @@ Storing a new <ClLinks  term={"value"}><i>value</i></ClLinks><sub>4</sub> for an
 
 
 
-Adding or removing entries from the *hash table*. 
+Adding or removing entries from the <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. 
 
 
 
@@ -82,7 +82,7 @@ Changing the class of the <ClLinks  term={"object"}><i>object</i></ClLinks> (*e.
 
 
 
-Altering the *readtable case*. 
+Altering the <GlossaryTerm styled={true} term={"readtable case"}><i>readtable case</i></GlossaryTerm>. 
 
 
 
@@ -90,7 +90,7 @@ Altering the syntax type of any character in this readtable.
 
 
 
-Altering the *reader macro function* associated with any <ClLinks  term={"character"}><i>character</i></ClLinks> in the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>, or altering the *reader macro functions* associated with <ClLinks  term={"character"}><i>characters</i></ClLinks> defined as *dispatching macro characters* in the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
+Altering the <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro function</i></GlossaryTerm> associated with any <ClLinks  term={"character"}><i>character</i></ClLinks> in the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>, or altering the <GlossaryTerm styled={true} term={"reader macro function"}><i>reader macro functions</i></GlossaryTerm> associated with <ClLinks  term={"character"}><i>characters</i></ClLinks> defined as <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro characters</i></GlossaryTerm> in the <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 

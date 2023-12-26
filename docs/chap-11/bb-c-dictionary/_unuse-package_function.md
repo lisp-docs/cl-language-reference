@@ -14,11 +14,11 @@
 
 
 
-*packages-to-unuse*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of *package designators*. 
+*packages-to-unuse*—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"package designator"}><i>package designators</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"package"}><i>package</i></ClLinks>—a *package designator* . The default is the *current package*. 
+<ClLinks  term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to cease inheriting all the *external symbols* of *packages-to-unuse*; <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> undoes the effects of <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. The *packages-to-unuse* are removed from the *use list* of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+<ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> causes <ClLinks  term={"package"}><i>package</i></ClLinks> to cease inheriting all the <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of *packages-to-unuse*; <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> undoes the effects of <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. The *packages-to-unuse* are removed from the <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@ Any <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> that have been *imported*
 
 
 
-The *use list* of <ClLinks  term={"package"}><i>package</i></ClLinks> is modified. 
+The <GlossaryTerm styled={true} term={"use list"}><i>use list</i></GlossaryTerm> of <ClLinks  term={"package"}><i>package</i></ClLinks> is modified. 
 
 
 

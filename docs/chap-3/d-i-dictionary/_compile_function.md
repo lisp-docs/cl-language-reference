@@ -14,19 +14,19 @@
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a *function name*, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*definition*—a *lambda expression* or a <ClLinks  term={"function"}><i>function</i></ClLinks>. The default is the function definition of <ClLinks  term={"name"}><i>name</i></ClLinks> if it names a <ClLinks  term={"function"}><i>function</i></ClLinks>, or the *macro function* of <ClLinks  term={"name"}><i>name</i></ClLinks> if it names a <ClLinks  term={"macro"}><i>macro</i></ClLinks>. The consequences are undefined if no *definition* is supplied when the <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*definition*—a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> or a <ClLinks  term={"function"}><i>function</i></ClLinks>. The default is the function definition of <ClLinks  term={"name"}><i>name</i></ClLinks> if it names a <ClLinks  term={"function"}><i>function</i></ClLinks>, or the <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> of <ClLinks  term={"name"}><i>name</i></ClLinks> if it names a <ClLinks  term={"macro"}><i>macro</i></ClLinks>. The consequences are undefined if no *definition* is supplied when the <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—the *function-name*, or a *compiled function*. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—the *function-name*, or a <GlossaryTerm styled={true} term={"compiled function"}><i>compiled function</i></GlossaryTerm>. 
 
 
 
-*warnings-p*—a *generalized boolean*.  
+*warnings-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>.  
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-*failure-p*—a *generalized boolean*. 
+*failure-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -46,15 +46,15 @@
 
 
 
-Compiles an *interpreted function*. 
+Compiles an <GlossaryTerm styled={true} term={"interpreted function"}><i>interpreted function</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"compile"}><b>compile</b></ClLinks> produces a *compiled function* from *definition*. If the *definition* is a *lambda expression*, it is coerced to a <ClLinks  term={"function"}><i>function</i></ClLinks>. If the *definition* is already a *compiled function*, <ClLinks  term={"compile"}><b>compile</b></ClLinks> either produces that function itself (*i.e.*, is an identity operation) or an equivalent function. 
+<ClLinks  term={"compile"}><b>compile</b></ClLinks> produces a <GlossaryTerm styled={true} term={"compiled function"}><i>compiled function</i></GlossaryTerm> from *definition*. If the *definition* is a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>, it is coerced to a <ClLinks  term={"function"}><i>function</i></ClLinks>. If the *definition* is already a <GlossaryTerm styled={true} term={"compiled function"}><i>compiled function</i></GlossaryTerm>, <ClLinks  term={"compile"}><b>compile</b></ClLinks> either produces that function itself (*i.e.*, is an identity operation) or an equivalent function. 
 
 
 
-If the <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the resulting *compiled function* is returned directly as the *primary value*. If a *non-nil name* is given, then the resulting *compiled function* replaces the existing <ClLinks  term={"function"}><i>function</i></ClLinks> definition of <ClLinks  term={"name"}><i>name</i></ClLinks> and the <ClLinks  term={"name"}><i>name</i></ClLinks> is returned as the *primary value*; if <ClLinks  term={"name"}><i>name</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, its *macro function* is updated and the <ClLinks  term={"name"}><i>name</i></ClLinks> is returned as the *primary value*. 
+If the <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, the resulting <GlossaryTerm styled={true} term={"compiled function"}><i>compiled function</i></GlossaryTerm> is returned directly as the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>. If a *non-nil name* is given, then the resulting <GlossaryTerm styled={true} term={"compiled function"}><i>compiled function</i></GlossaryTerm> replaces the existing <ClLinks  term={"function"}><i>function</i></ClLinks> definition of <ClLinks  term={"name"}><i>name</i></ClLinks> and the <ClLinks  term={"name"}><i>name</i></ClLinks> is returned as the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>; if <ClLinks  term={"name"}><i>name</i></ClLinks> is a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that names a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, its <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> is updated and the <ClLinks  term={"name"}><i>name</i></ClLinks> is returned as the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm>. 
 
 
 
@@ -66,11 +66,11 @@ If the <ClLinks  term={"name"}><i>name</i></ClLinks> is <ClLinks  term={"nil"}><
 
 
 
-The *secondary value*, *warnings-p*, is <ClLinks  term={"false"}><i>false</i></ClLinks> if no <ClLinks  term={"condition"}><i>conditions</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> or <ClLinks  term={"warning"}><b>warning</b></ClLinks> were detected by the compiler, and <ClLinks  term={"true"}><i>true</i></ClLinks> otherwise. 
+The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *warnings-p*, is <ClLinks  term={"false"}><i>false</i></ClLinks> if no <ClLinks  term={"condition"}><i>conditions</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> or <ClLinks  term={"warning"}><b>warning</b></ClLinks> were detected by the compiler, and <ClLinks  term={"true"}><i>true</i></ClLinks> otherwise. 
 
 
 
-The *tertiary value*, *failure-p*, is <ClLinks  term={"false"}><i>false</i></ClLinks> if no <ClLinks  term={"condition"}><i>conditions</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> or <ClLinks  term={"warning"}><b>warning</b></ClLinks> (other than <ClLinks  term={"style-warning"}><b>style-warning</b></ClLinks>) were detected by the compiler, and <ClLinks  term={"true"}><i>true</i></ClLinks> otherwise. 
+The <GlossaryTerm styled={true} term={"tertiary value"}><i>tertiary value</i></GlossaryTerm>, *failure-p*, is <ClLinks  term={"false"}><i>false</i></ClLinks> if no <ClLinks  term={"condition"}><i>conditions</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> or <ClLinks  term={"warning"}><b>warning</b></ClLinks> (other than <ClLinks  term={"style-warning"}><b>style-warning</b></ClLinks>) were detected by the compiler, and <ClLinks  term={"true"}><i>true</i></ClLinks> otherwise. 
 
 
 
@@ -100,7 +100,7 @@ The presence of macro definitions and proclamations.
 
 
 
-The consequences are undefined if the *lexical environment* surrounding the <ClLinks  term={"function"}><i>function</i></ClLinks> to be compiled contains any <ClLinks  term={"binding"}><i>bindings</i></ClLinks> other than those for <ClLinks  term={"macro"}><i>macros</i></ClLinks>, *symbol macros*, or <ClLinks  term={"declaration"}><i>declarations</i></ClLinks>. 
+The consequences are undefined if the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> surrounding the <ClLinks  term={"function"}><i>function</i></ClLinks> to be compiled contains any <ClLinks  term={"binding"}><i>bindings</i></ClLinks> other than those for <ClLinks  term={"macro"}><i>macros</i></ClLinks>, <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macros</i></GlossaryTerm>, or <ClLinks  term={"declaration"}><i>declarations</i></ClLinks>. 
 
 
 

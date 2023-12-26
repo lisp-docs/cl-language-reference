@@ -1,4 +1,4 @@
-**load-time-value** *Special Operator* 
+**load-time-value** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks>—the *primary value* resulting from evaluating <ClLinks  term={"form"}><i>form</i></ClLinks>. 
+<ClLinks  term={"object"}><i>object</i></ClLinks>—the <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> resulting from evaluating <ClLinks  term={"form"}><i>form</i></ClLinks>. 
 
 
 
@@ -34,19 +34,19 @@
 
 
 
-*Read-only-p* designates whether the result can be considered a *constant object*. If <ClLinks  term={"t"}><b>t</b></ClLinks>, the result is a read-only quantity that can, if appropriate to the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, be copied into read-only space and/or *coalesced* with *similar constant objects* from other <ClLinks  term={"program"}><i>programs</i></ClLinks>. If <ClLinks  term={"nil"}><b>nil</b></ClLinks> (the default), the result must be neither copied nor coalesced; it must be considered to be potentially modifiable data. 
+*Read-only-p* designates whether the result can be considered a <GlossaryTerm styled={true} term={"constant object"}><i>constant object</i></GlossaryTerm>. If <ClLinks  term={"t"}><b>t</b></ClLinks>, the result is a read-only quantity that can, if appropriate to the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>, be copied into read-only space and/or *coalesced* with *similar constant objects* from other <ClLinks  term={"program"}><i>programs</i></ClLinks>. If <ClLinks  term={"nil"}><b>nil</b></ClLinks> (the default), the result must be neither copied nor coalesced; it must be considered to be potentially modifiable data. 
 
 
 
-If a <ClLinks  term={"load-time-value"}><b>load-time-value</b></ClLinks> expression is processed by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, the compiler performs its normal semantic processing (such as macro expansion and translation into machine code) on <ClLinks  term={"form"}><i>form</i></ClLinks>, but arranges for the execution of <ClLinks  term={"form"}><i>form</i></ClLinks> to occur at load time in a *null lexical environment*, with the result of this <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> then being treated as a *literal object* at run time. It is guaranteed that 
+If a <ClLinks  term={"load-time-value"}><b>load-time-value</b></ClLinks> expression is processed by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks>, the compiler performs its normal semantic processing (such as macro expansion and translation into machine code) on <ClLinks  term={"form"}><i>form</i></ClLinks>, but arranges for the execution of <ClLinks  term={"form"}><i>form</i></ClLinks> to occur at load time in a <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>, with the result of this <ClLinks  term={"evaluation"}><i>evaluation</i></ClLinks> then being treated as a *literal object* at run time. It is guaranteed that 
 
 
 
-the evaluation of <ClLinks  term={"form"}><i>form</i></ClLinks> will take place only once when the <ClLinks  term={"file"}><i>file</i></ClLinks> is *loaded*, but the order of evaluation with respect to the evaluation of *top level forms* in the file is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+the evaluation of <ClLinks  term={"form"}><i>form</i></ClLinks> will take place only once when the <ClLinks  term={"file"}><i>file</i></ClLinks> is *loaded*, but the order of evaluation with respect to the evaluation of <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> in the file is <ClLinks  term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
 
 
 
-If a <ClLinks  term={"load-time-value"}><b>load-time-value</b></ClLinks> expression appears within a function compiled with <ClLinks  term={"compile"}><b>compile</b></ClLinks>, the <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated at compile time in a *null lexical environment*. The result of this compile-time evaluation is treated as a *literal object* in the compiled code.  
+If a <ClLinks  term={"load-time-value"}><b>load-time-value</b></ClLinks> expression appears within a function compiled with <ClLinks  term={"compile"}><b>compile</b></ClLinks>, the <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated at compile time in a <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>. The result of this compile-time evaluation is treated as a *literal object* in the compiled code.  
 
 
 
@@ -58,7 +58,7 @@ If a <ClLinks  term={"load-time-value"}><b>load-time-value</b></ClLinks> express
 
 
 
-If a <ClLinks  term={"load-time-value"}><b>load-time-value</b></ClLinks> expression is processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks>, <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated in a *null lexical environment*, and one value is returned. Implementations that implicitly compile (or partially compile) expressions processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks> might evaluate <ClLinks  term={"form"}><i>form</i></ClLinks> only once, at the time this compilation is performed. 
+If a <ClLinks  term={"load-time-value"}><b>load-time-value</b></ClLinks> expression is processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks>, <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated in a <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm>, and one value is returned. Implementations that implicitly compile (or partially compile) expressions processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks> might evaluate <ClLinks  term={"form"}><i>form</i></ClLinks> only once, at the time this compilation is performed. 
 
 
 

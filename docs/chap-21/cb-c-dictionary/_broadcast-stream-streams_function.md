@@ -14,7 +14,7 @@
 
 
 
-*broadcast-stream*—a *broadcast stream*. 
+*broadcast-stream*—a <GlossaryTerm styled={true} term={"broadcast stream"}><i>broadcast stream</i></GlossaryTerm>. 
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a *character designator* . 
+<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <GlossaryTerm styled={true} term={"character designator"}><i>character designator</i></GlossaryTerm> . 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> denoted by the *character designator* . 
+Returns the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> denoted by the <GlossaryTerm styled={true} term={"character designator"}><i>character designator</i></GlossaryTerm> . 
 
 
 
@@ -55,7 +55,7 @@ Returns the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks>
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is not a *character designator* . 
+Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is not a <GlossaryTerm styled={true} term={"character designator"}><i>character designator</i></GlossaryTerm> . 
 
 
 

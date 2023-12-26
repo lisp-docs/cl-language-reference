@@ -18,15 +18,15 @@
 
 
 
-*type-specifier*—any *type specifier* except <ClLinks  term={"values"}><b>values</b></ClLinks>, or a *type specifier* list whose first element is either <ClLinks  term={"function"}><b>function</b></ClLinks> or <ClLinks  term={"values"}><b>values</b></ClLinks>. 
+*type-specifier*—any <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> except <ClLinks  term={"values"}><b>values</b></ClLinks>, or a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> list whose first element is either <ClLinks  term={"function"}><b>function</b></ClLinks> or <ClLinks  term={"values"}><b>values</b></ClLinks>. 
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, denoting the *null lexical environment* and the and current *global environment*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the and current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -90,11 +90,11 @@ denote the same *type*. Notice that
 
 
 
-An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled if *type-specifier* is values, or a *type specifier* list whose first element is either <ClLinks  term={"function"}><b>function</b></ClLinks> or <ClLinks  term={"values"}><b>values</b></ClLinks>. 
+An error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled if *type-specifier* is values, or a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> list whose first element is either <ClLinks  term={"function"}><b>function</b></ClLinks> or <ClLinks  term={"values"}><b>values</b></ClLinks>. 
 
 
 
-The consequences are undefined if the *type-specifier* is not a *type specifier* . 
+The consequences are undefined if the *type-specifier* is not a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 

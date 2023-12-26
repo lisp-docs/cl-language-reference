@@ -18,7 +18,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -49,7 +49,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, <ClLinks styled={true} term={"listp"}><b>listp</b></ClLinks> does not check whether <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a *proper list*; it returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> for any kind of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+If <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, <ClLinks styled={true} term={"listp"}><b>listp</b></ClLinks> does not check whether <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>; it returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> for any kind of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
 
 
 

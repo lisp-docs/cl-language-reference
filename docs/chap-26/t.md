@@ -7,7 +7,7 @@ sidebar_position: 116
 
 
 
-<ClLinks  term={"t"}><b>t</b></ClLinks> *n.* 1. a. the <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> representing true. b. the canonical *generalized boolean* 
+<ClLinks  term={"t"}><b>t</b></ClLinks> *n.* 1. a. the <ClLinks  term={"boolean"}><i>boolean</i></ClLinks> representing true. b. the canonical <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> 
 
 
 
@@ -15,11 +15,11 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-*generalized boolean*, t is generally used when there is no special reason to prefer one such <ClLinks  term={"object"}><i>object</i></ClLinks> over another.) 2. the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> to which all <ClLinks  term={"object"}><i>objects</i></ClLinks> belong—the <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of all <ClLinks  term={"type"}><i>types</i></ClLinks> (including itself). 3. the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> of all *classes* except itself. 
+<GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>, t is generally used when there is no special reason to prefer one such <ClLinks  term={"object"}><i>object</i></ClLinks> over another.) 2. the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"type"}><i>type</i></ClLinks> to which all <ClLinks  term={"object"}><i>objects</i></ClLinks> belong—the <ClLinks  term={"supertype"}><i>supertype</i></ClLinks> of all <ClLinks  term={"type"}><i>types</i></ClLinks> (including itself). 3. the <ClLinks  term={"name"}><i>name</i></ClLinks> of the <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> of all *classes* except itself. 
 
 
 
-**tag** *n.* 1. a *catch tag*. 2. a *go tag*. 
+**tag** *n.* 1. a <GlossaryTerm styled={true} term={"catch tag"}><i>catch tag</i></GlossaryTerm>. 2. a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>. 
 
 
 
@@ -39,7 +39,7 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**target** *n.* 1. (of a *constructed stream*) a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> of the *constructed stream*. “The target of a synonym stream is the value of its synonym stream symbol.” 2. (of a *displaced array*) the <ClLinks  term={"array"}><i>array</i></ClLinks> to which the *displaced array* is displaced. (In the case of a chain of *constructed streams* or *displaced arrays*, the unqualified term “<ClLinks  term={"target"}><i>target</i></ClLinks>” always refers to the immediate <ClLinks  term={"target"}><i>target</i></ClLinks> of the first item in the chain, not the immediate target of the last item.) 
+**target** *n.* 1. (of a <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed stream</i></GlossaryTerm>) a <ClLinks  term={"constituent"}><i>constituent</i></ClLinks> of the <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed stream</i></GlossaryTerm>. “The target of a synonym stream is the value of its synonym stream symbol.” 2. (of a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>) the <ClLinks  term={"array"}><i>array</i></ClLinks> to which the <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm> is displaced. (In the case of a chain of <GlossaryTerm styled={true} term={"constructed stream"}><i>constructed streams</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"displaced array"}><i>displaced arrays</i></GlossaryTerm>, the unqualified term “<ClLinks  term={"target"}><i>target</i></ClLinks>” always refers to the immediate <ClLinks  term={"target"}><i>target</i></ClLinks> of the first item in the chain, not the immediate target of the last item.) 
 
 
 
@@ -51,7 +51,7 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**terminating** *n.* (of a *macro character* ) being such that, if it appears while parsing a token, it terminates that token. See Section 2.2 (Reader Algorithm). 
+**terminating** *n.* (of a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> ) being such that, if it appears while parsing a token, it terminates that token. See Section 2.2 (Reader Algorithm). 
 
 
 
@@ -59,15 +59,15 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-<ClLinks  term={"throw"}><b>throw</b></ClLinks> *v.* to transfer control and <ClLinks  term={"value"}><i>values</i></ClLinks> to a <ClLinks  term={"catch"}><i>catch</i></ClLinks>. See the *special operator* <ClLinks  term={"throw"}><b>throw</b></ClLinks>. **tilde** *n.* the *standard character* that is called “tilde” (&#126;). See Figure 2–5. 
+<ClLinks  term={"throw"}><b>throw</b></ClLinks> *v.* to transfer control and <ClLinks  term={"value"}><i>values</i></ClLinks> to a <ClLinks  term={"catch"}><i>catch</i></ClLinks>. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <ClLinks  term={"throw"}><b>throw</b></ClLinks>. **tilde** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is called “tilde” (&#126;). See Figure 2–5. 
 
 
 
-<ClLinks  term={"time"}><b>time</b></ClLinks> a representation of a point (*absolute time*) or an interval (*relative time*) on a time line. See *decoded time*, *internal time*, and *universal time*. 
+<ClLinks  term={"time"}><b>time</b></ClLinks> a representation of a point (*absolute time*) or an interval (*relative time*) on a time line. See <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"internal time"}><i>internal time</i></GlossaryTerm>, and <GlossaryTerm styled={true} term={"universal time"}><i>universal time</i></GlossaryTerm>. 
 
 
 
-**time zone** *n.* a <ClLinks  term={"rational"}><i>rational</i></ClLinks> multiple of 1/3600 between -24 (inclusive) and 24 (inclusive) that represents a time zone as a number of hours offset from Greenwich Mean Time. Time zone values increase with motion to the west, so Massachusetts, U.S.A. is in time zone 5, California, U.S.A. is time zone 8, and Moscow, Russia is time zone *-3* . (When “daylight savings time” is separately represented as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> or *return value*, the *time zone* that accompanies it does not depend on whether daylight savings time is in effect.) 
+**time zone** *n.* a <ClLinks  term={"rational"}><i>rational</i></ClLinks> multiple of 1/3600 between -24 (inclusive) and 24 (inclusive) that represents a time zone as a number of hours offset from Greenwich Mean Time. Time zone values increase with motion to the west, so Massachusetts, U.S.A. is in time zone 5, California, U.S.A. is time zone 8, and Moscow, Russia is time zone *-3* . (When “daylight savings time” is separately represented as an <ClLinks  term={"argument"}><i>argument</i></ClLinks> or <GlossaryTerm styled={true} term={"return value"}><i>return value</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"time zone"}><i>time zone</i></GlossaryTerm> that accompanies it does not depend on whether daylight savings time is in effect.) 
 
 
 
@@ -79,11 +79,11 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**top level form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> which is processed specially by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> for the purposes of enabling *compile time evaluation* of that <ClLinks  term={"form"}><i>form</i></ClLinks>. *Top level forms* include those <ClLinks  term={"form"}><i>forms</i></ClLinks> which are not <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of any other <ClLinks  term={"form"}><i>form</i></ClLinks>, and certain other cases. See Section 3.2.3.1 (Processing of Top Level Forms). 
+**top level form** *n.* a <ClLinks  term={"form"}><i>form</i></ClLinks> which is processed specially by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> for the purposes of enabling *compile time evaluation* of that <ClLinks  term={"form"}><i>form</i></ClLinks>. <GlossaryTerm styled={true} term={"top level form"}><i>Top level forms</i></GlossaryTerm> include those <ClLinks  term={"form"}><i>forms</i></ClLinks> which are not <ClLinks  term={"subform"}><i>subforms</i></ClLinks> of any other <ClLinks  term={"form"}><i>form</i></ClLinks>, and certain other cases. See Section 3.2.3.1 (Processing of Top Level Forms). 
 
 
 
-**trace output** *n.* the *output stream* which is the <ClLinks  term={"value"}><i>value</i></ClLinks> of the *dynamic variable* 
+**trace output** *n.* the *output stream* which is the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> 
 
 
 
@@ -115,7 +115,7 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-<ClLinks  term={"truename"}><b>truename</b></ClLinks> *n.* 1. the canonical <ClLinks  term={"filename"}><i>filename</i></ClLinks> of a <ClLinks  term={"file"}><i>file</i></ClLinks> in the *file system*. See Section 20.1.3 (Truenames). 2. a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> representing a <ClLinks  term={"truename"}><i>truename</i></ClLinks><sub>1</sub>. 
+<ClLinks  term={"truename"}><b>truename</b></ClLinks> *n.* 1. the canonical <ClLinks  term={"filename"}><i>filename</i></ClLinks> of a <ClLinks  term={"file"}><i>file</i></ClLinks> in the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. See Section 20.1.3 (Truenames). 2. a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> representing a <ClLinks  term={"truename"}><i>truename</i></ClLinks><sub>1</sub>. 
 
 
 
@@ -123,7 +123,7 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-*composite stream* that receives its input from an associated *input stream* and sends its output to an associated *output stream*. 
+<GlossaryTerm styled={true} term={"composite stream"}><i>composite stream</i></GlossaryTerm> that receives its input from an associated *input stream* and sends its output to an associated *output stream*. 
 
 
 
@@ -139,11 +139,11 @@ representing true. (Although any <ClLinks  term={"object"}><i>object</i></ClLink
 
 
 
-**type expand** *n.* to fully expand a *type specifier* , removing any references to *derived types*. (Common Lisp provides no program interface to cause this to occur, but the semantics of Common Lisp are such that every <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> must be able to do 
+**type expand** *n.* to fully expand a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , removing any references to <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm>. (Common Lisp provides no program interface to cause this to occur, but the semantics of Common Lisp are such that every <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> must be able to do 
 
 
 
-this internally, and some situations involving *type specifiers* are most easily described in terms of a fully expanded *type specifier* .) 
+this internally, and some situations involving <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> are most easily described in terms of a fully expanded <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> .) 
 
 
 

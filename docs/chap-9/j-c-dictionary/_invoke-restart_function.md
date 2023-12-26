@@ -26,7 +26,7 @@
 
 
 
-<ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>—a *restart designator* . 
+<ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>—a <GlossaryTerm styled={true} term={"restart designator"}><i>restart designator</i></GlossaryTerm> . 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-Calls the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> associated with <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, passing <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> to it. <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> must be valid in the current *dynamic environment*. 
+Calls the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> associated with <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, passing <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> to it. <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> must be valid in the current <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>. 
 
 
 
@@ -93,11 +93,11 @@ If <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is not valid
 
 
 
-The most common use for <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks> is in a <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> . It might be used explicitly, or implicitly through <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> or a *restart function*. 
+The most common use for <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks> is in a <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> . It might be used explicitly, or implicitly through <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> or a <GlossaryTerm styled={true} term={"restart function"}><i>restart function</i></GlossaryTerm>. 
 
 
 
-*Restart functions* call <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, not vice versa. That is, *invoke-restart* provides primitive functionality, and *restart functions* are non-essential “syntactic sugar.” 
+<GlossaryTerm styled={true} term={"restart function"}><i>Restart functions</i></GlossaryTerm> call <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, not vice versa. That is, *invoke-restart* provides primitive functionality, and <GlossaryTerm styled={true} term={"restart function"}><i>restart functions</i></GlossaryTerm> are non-essential “syntactic sugar.” 
 
 
 

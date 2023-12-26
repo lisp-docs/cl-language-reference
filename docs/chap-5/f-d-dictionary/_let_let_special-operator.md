@@ -114,7 +114,7 @@ The form
 
 
 
-first evaluates the expressions *init-form-1*, *init-form-2*, and so on, in that order, saving the resulting values. Then all of the variables *varj* are bound to the corresponding values; each <ClLinks  term={"binding"}><i>binding</i></ClLinks> is lexical unless there is a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration to the contrary. The expressions *formk* are then evaluated in order; the values of all but the last are discarded (that is, the body of a <ClLinks  term={"let"}><b>let</b></ClLinks> is an *implicit progn*). 
+first evaluates the expressions *init-form-1*, *init-form-2*, and so on, in that order, saving the resulting values. Then all of the variables *varj* are bound to the corresponding values; each <ClLinks  term={"binding"}><i>binding</i></ClLinks> is lexical unless there is a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration to the contrary. The expressions *formk* are then evaluated in order; the values of all but the last are discarded (that is, the body of a <ClLinks  term={"let"}><b>let</b></ClLinks> is an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>). 
 
 
 

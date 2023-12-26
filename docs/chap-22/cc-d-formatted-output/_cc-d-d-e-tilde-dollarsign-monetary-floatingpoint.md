@@ -22,7 +22,7 @@ are present or omitted according to whether they were present or omitted in the 
 
 
 
-If *arg* is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number, then it is coerced to be a *single float* and then printed. Alternatively, an implementation is permitted to process a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. 
+If *arg* is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number, then it is coerced to be a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm> and then printed. Alternatively, an implementation is permitted to process a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. 
 
 
 

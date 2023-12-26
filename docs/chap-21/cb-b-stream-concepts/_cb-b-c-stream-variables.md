@@ -2,11 +2,11 @@
 
 
 
-<ClLinks  term={"variable"}><i>Variables</i></ClLinks> whose <ClLinks  term={"value"}><i>values</i></ClLinks> must be <ClLinks  term={"stream"}><i>streams</i></ClLinks> are sometimes called *stream variables*. 
+<ClLinks  term={"variable"}><i>Variables</i></ClLinks> whose <ClLinks  term={"value"}><i>values</i></ClLinks> must be <ClLinks  term={"stream"}><i>streams</i></ClLinks> are sometimes called <GlossaryTerm styled={true} term={"stream variable"}><i>stream variables</i></GlossaryTerm>. 
 
 
 
-Certain *stream variables* are defined by this specification to be the proper source of input or output in various <ClLinks  term={"situation"}><i>situations</i></ClLinks> where no specific <ClLinks  term={"stream"}><i>stream</i></ClLinks> has been specified instead. A complete list of such *standardized stream variables* appears in Figure 21–6. The consequences are undefined if at any time the <ClLinks  term={"value"}><i>value</i></ClLinks> of any of these <ClLinks  term={"variable"}><i>variables</i></ClLinks> is not an *open stream*. 
+Certain <GlossaryTerm styled={true} term={"stream variable"}><i>stream variables</i></GlossaryTerm> are defined by this specification to be the proper source of input or output in various <ClLinks  term={"situation"}><i>situations</i></ClLinks> where no specific <ClLinks  term={"stream"}><i>stream</i></ClLinks> has been specified instead. A complete list of such *standardized stream variables* appears in Figure 21–6. The consequences are undefined if at any time the <ClLinks  term={"value"}><i>value</i></ClLinks> of any of these <ClLinks  term={"variable"}><i>variables</i></ClLinks> is not an *open stream*. 
 
 
 

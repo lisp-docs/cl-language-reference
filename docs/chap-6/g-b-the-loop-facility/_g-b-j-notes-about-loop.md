@@ -22,7 +22,7 @@ Within the executable parts of the loop clauses and around the entire <ClLinks s
 
 
 
-Use caution when using a variable named IT (in any <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>) in connection with <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>, since it is a *loop keyword* that can be used in place of a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> in certain contexts. 
+Use caution when using a variable named IT (in any <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>) in connection with <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>, since it is a <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> that can be used in place of a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> in certain contexts. 
 
 
 

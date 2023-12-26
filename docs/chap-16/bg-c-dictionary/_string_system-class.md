@@ -1,4 +1,4 @@
-**string** *System Class* 
+**string** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <ClLinks  term={"string"}><i>string</i></ClLinks> is a *specialized vector* whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. When used as a *type specifier* for object creation, <ClLinks  term={"string"}><b>string</b></ClLinks> means (vector character). 
+A <ClLinks  term={"string"}><i>string</i></ClLinks> is a *specialized vector* whose <ClLinks  term={"element"}><i>elements</i></ClLinks> are of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. When used as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for object creation, <ClLinks  term={"string"}><b>string</b></ClLinks> means (vector character). 
 
 
 

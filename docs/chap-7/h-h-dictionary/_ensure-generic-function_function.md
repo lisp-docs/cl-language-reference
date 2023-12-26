@@ -66,7 +66,7 @@ If *function-name* is a <ClLinks  term={"list"}><i>list</i></ClLinks>, it must b
 
 
 
-If *function-name* specifies a *generic function* that has a different value for the :lambda-list argument, and the new value is congruent with the *lambda lists* of all existing <ClLinks  term={"method"}><i>methods</i></ClLinks> or there are no <ClLinks  term={"method"}><i>methods</i></ClLinks>, the value is changed; otherwise an error is signaled. 
+If *function-name* specifies a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :lambda-list argument, and the new value is congruent with the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda lists</i></GlossaryTerm> of all existing <ClLinks  term={"method"}><i>methods</i></ClLinks> or there are no <ClLinks  term={"method"}><i>methods</i></ClLinks>, the value is changed; otherwise an error is signaled. 
 
 
 
@@ -82,11 +82,11 @@ If *function-name* specifies a *generic function* that has a different value for
 
 
 
-If *function-name* specifies a *generic function* that has a different value for the :generic-function-class argument and if the new generic function class is compatible with the old, <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> is called to change the <ClLinks  term={"class"}><i>class</i></ClLinks> of the *generic function*; otherwise an error is signaled. 
+If *function-name* specifies a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :generic-function-class argument and if the new generic function class is compatible with the old, <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> is called to change the <ClLinks  term={"class"}><i>class</i></ClLinks> of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>; otherwise an error is signaled. 
 
 
 
-If *function-name* specifies a *generic function* that has a different value for the :method-class argument, the value is changed, but any existing <ClLinks  term={"method"}><i>methods</i></ClLinks> are not changed. 
+If *function-name* specifies a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :method-class argument, the value is changed, but any existing <ClLinks  term={"method"}><i>methods</i></ClLinks> are not changed. 
 
 
 
@@ -102,15 +102,15 @@ Existing function binding of *function-name*.
 
 
 
-If (fdefinition *function-name*) is an *ordinary function*, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a *special operator* , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If (fdefinition *function-name*) is an <GlossaryTerm styled={true} term={"ordinary function"}><i>ordinary function</i></GlossaryTerm>, a <ClLinks  term={"macro"}><i>macro</i></ClLinks>, or a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> , an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
-If *function-name* specifies a *generic function* that has a different value for the :lambda-list argument, and the new value is not congruent with the *lambda list* of any existing <ClLinks  term={"method"}><i>method</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If *function-name* specifies a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :lambda-list argument, and the new value is not congruent with the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of any existing <ClLinks  term={"method"}><i>method</i></ClLinks>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 
-If *function-name* specifies a *generic function* that has a different value for the :generic-function-class argument and if the new generic function class not is compatible with the old, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
+If *function-name* specifies a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> that has a different value for the :generic-function-class argument and if the new generic function class not is compatible with the old, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"error"}><b>error</b></ClLinks> is signaled. 
 
 
 

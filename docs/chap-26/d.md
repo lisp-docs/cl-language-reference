@@ -19,15 +19,15 @@ sidebar_position: 100
 
 
 
-<ClLinks  term={"declaration"}><b>declaration</b></ClLinks> *n.* a *global declaration* or *local declaration*. 
+<ClLinks  term={"declaration"}><b>declaration</b></ClLinks> *n.* a <GlossaryTerm styled={true} term={"global declaration"}><i>global declaration</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"local declaration"}><i>local declaration</i></GlossaryTerm>. 
 
 
 
-**declaration identifier** *n.* one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <ClLinks  term={"declaration"}><b>declaration</b></ClLinks>, <ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks>, <ClLinks  term={"ftype"}><b>ftype</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"ignore"}><b>ignore</b></ClLinks>, <ClLinks  term={"inline"}><b>inline</b></ClLinks>, <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>, <ClLinks  term={"optimize"}><b>optimize</b></ClLinks>, <ClLinks  term={"special"}><b>special</b></ClLinks>, or <ClLinks  term={"type"}><b>type</b></ClLinks>; or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"type"}><i>type</i></ClLinks>; or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which has been *declared* to be a *declaration identifier* by using a <ClLinks  term={"declaration"}><b>declaration</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. 
+**declaration identifier** *n.* one of the <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> <ClLinks  term={"declaration"}><b>declaration</b></ClLinks>, <ClLinks  term={"dynamic-extent"}><b>dynamic-extent</b></ClLinks>, <ClLinks  term={"ftype"}><b>ftype</b></ClLinks>, <ClLinks  term={"function"}><b>function</b></ClLinks>, <ClLinks  term={"ignore"}><b>ignore</b></ClLinks>, <ClLinks  term={"inline"}><b>inline</b></ClLinks>, <ClLinks  term={"notinline"}><b>notinline</b></ClLinks>, <ClLinks  term={"optimize"}><b>optimize</b></ClLinks>, <ClLinks  term={"special"}><b>special</b></ClLinks>, or <ClLinks  term={"type"}><b>type</b></ClLinks>; or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which is the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"type"}><i>type</i></ClLinks>; or a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> which has been *declared* to be a <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifier</i></GlossaryTerm> by using a <ClLinks  term={"declaration"}><b>declaration</b></ClLinks> <ClLinks  term={"declaration"}><i>declaration</i></ClLinks>. 
 
 
 
-**declaration specifier** *n.* an <ClLinks  term={"expression"}><i>expression</i></ClLinks> that can appear at top level of a <ClLinks  term={"declare"}><b>declare</b></ClLinks> expression or a <ClLinks  term={"declaim"}><b>declaim</b></ClLinks> form, or as the argument to <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>, and which has a <ClLinks  term={"car"}><i>car</i></ClLinks> which is a *declaration identifier* , and which has a <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> that is data interpreted according to rules specific to the *declaration identifier* . 
+**declaration specifier** *n.* an <ClLinks  term={"expression"}><i>expression</i></ClLinks> that can appear at top level of a <ClLinks  term={"declare"}><b>declare</b></ClLinks> expression or a <ClLinks  term={"declaim"}><b>declaim</b></ClLinks> form, or as the argument to <ClLinks  term={"proclaim"}><b>proclaim</b></ClLinks>, and which has a <ClLinks  term={"car"}><i>car</i></ClLinks> which is a <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifier</i></GlossaryTerm> , and which has a <ClLinks  term={"cdr"}><i>cdr</i></ClLinks> that is data interpreted according to rules specific to the <GlossaryTerm styled={true} term={"declaration identifier"}><i>declaration identifier</i></GlossaryTerm> . 
 
 
 
@@ -51,11 +51,11 @@ sidebar_position: 100
 
 
 
-**decoded time** *n. absolute time*, represented as an ordered series of nine <ClLinks  term={"object"}><i>objects</i></ClLinks> which, taken together, form a description of a point in calendar time, accurate to the nearest second (except that *leap seconds* are ignored). See Section 25.1.4.1 (Decoded Time). 
+**decoded time** *n. absolute time*, represented as an ordered series of nine <ClLinks  term={"object"}><i>objects</i></ClLinks> which, taken together, form a description of a point in calendar time, accurate to the nearest second (except that <GlossaryTerm styled={true} term={"leap seconds"}><i>leap seconds</i></GlossaryTerm> are ignored). See Section 25.1.4.1 (Decoded Time). 
 
 
 
-**default method** *n.* a <ClLinks  term={"method"}><i>method</i></ClLinks> having no *parameter specializers* other than the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>. Such a <ClLinks  term={"method"}><i>method</i></ClLinks> is always an *applicable method* but might be *shadowed* <sub>2</sub> by a more specific <ClLinks  term={"method"}><i>method</i></ClLinks>. 
+**default method** *n.* a <ClLinks  term={"method"}><i>method</i></ClLinks> having no <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> other than the <ClLinks  term={"class"}><i>class</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>. Such a <ClLinks  term={"method"}><i>method</i></ClLinks> is always an <GlossaryTerm styled={true} term={"applicable method"}><i>applicable method</i></GlossaryTerm> but might be *shadowed* <sub>2</sub> by a more specific <ClLinks  term={"method"}><i>method</i></ClLinks>. 
 
 
 
@@ -71,7 +71,7 @@ defaulted, used in the protocol for initializing and reinitializing <ClLinks  te
 
 
 
-**define-method-combination arguments lambda list** *n.* a *lambda list* used 
+**define-method-combination arguments lambda list** *n.* a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> used 
 
 
 
@@ -83,7 +83,7 @@ by the :arguments option to <ClLinks  term={"define-method-combination"}><b>defi
 
 
 
-**define-modify-macro lambda list** *n.* a *lambda list* used by <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks>. See Section 3.4.9 (Define-modify-macro Lambda Lists). 
+**define-modify-macro lambda list** *n.* a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> used by <ClLinks  term={"define-modify-macro"}><b>define-modify-macro</b></ClLinks>. See Section 3.4.9 (Define-modify-macro Lambda Lists). 
 
 
 
@@ -95,11 +95,11 @@ by the :arguments option to <ClLinks  term={"define-method-combination"}><b>defi
 
 
 
-**defsetf lambda list** *n.* a *lambda list* that is like an *ordinary lambda list* except that it does not permit **&amp;aux** and that it permits use of **&amp;environment**. See Section 3.4.7 (Defsetf Lambda Lists). 
+**defsetf lambda list** *n.* a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> that is like an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> except that it does not permit **&amp;aux** and that it permits use of **&amp;environment**. See Section 3.4.7 (Defsetf Lambda Lists). 
 
 
 
-**deftype lambda list** *n.* a *lambda list* that is like a *macro lambda list* except that the default <ClLinks  term={"value"}><i>value</i></ClLinks> for unsupplied *optional parameters* and *keyword parameters* is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\*** (rather than <ClLinks  term={"nil"}><b>nil</b></ClLinks>). See Section 3.4.8 (Deftype Lambda Lists). 
+**deftype lambda list** *n.* a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> that is like a <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda list</i></GlossaryTerm> except that the default <ClLinks  term={"value"}><i>value</i></ClLinks> for unsupplied <GlossaryTerm styled={true} term={"optional parameter"}><i>optional parameters</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameters</i></GlossaryTerm> is the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> **\*** (rather than <ClLinks  term={"nil"}><b>nil</b></ClLinks>). See Section 3.4.8 (Deftype Lambda Lists). 
 
 
 
@@ -127,11 +127,11 @@ be represented instead as 1.0e-10 or 0.1e-9. By their nature, *denormalized floa
 
 
 
-**derived type** *n.* a *type specifier* which is defined in terms of an expansion into 
+**derived type** *n.* a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> which is defined in terms of an expansion into 
 
 
 
-another *type specifier* . <ClLinks  term={"deftype"}><b>deftype</b></ClLinks> defines *derived types*, and there may be other 
+another <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . <ClLinks  term={"deftype"}><b>deftype</b></ClLinks> defines <GlossaryTerm styled={true} term={"derived type"}><i>derived types</i></GlossaryTerm>, and there may be other 
 
 
 
@@ -139,7 +139,7 @@ another *type specifier* . <ClLinks  term={"deftype"}><b>deftype</b></ClLinks> d
 
 
 
-**derived type specifier** *n.* a *type specifier* for a *derived type*. 
+**derived type specifier** *n.* a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"derived type"}><i>derived type</i></GlossaryTerm>. 
 
 
 
@@ -151,11 +151,11 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**destructive** *adj.* (of an <ClLinks  term={"operator"}><i>operator</i></ClLinks> ) capable of modifying some program-visible aspect of one or more <ClLinks  term={"object"}><i>objects</i></ClLinks> that are either explicit <ClLinks  term={"argument"}><i>arguments</i></ClLinks> to the <ClLinks  term={"operator"}><i>operator</i></ClLinks> or that can be obtained directly or indirectly from the *global environment* by the <ClLinks  term={"operator"}><i>operator</i></ClLinks> . 
+**destructive** *adj.* (of an <ClLinks  term={"operator"}><i>operator</i></ClLinks> ) capable of modifying some program-visible aspect of one or more <ClLinks  term={"object"}><i>objects</i></ClLinks> that are either explicit <ClLinks  term={"argument"}><i>arguments</i></ClLinks> to the <ClLinks  term={"operator"}><i>operator</i></ClLinks> or that can be obtained directly or indirectly from the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm> by the <ClLinks  term={"operator"}><i>operator</i></ClLinks> . 
 
 
 
-**destructuring lambda list** *n.* an *extended lambda list* used in <ClLinks  term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks> and nested within *macro lambda lists*. See Section 3.4.5 (Destructuring Lambda Lists). 
+**destructuring lambda list** *n.* an <GlossaryTerm styled={true} term={"extended lambda list"}><i>extended lambda list</i></GlossaryTerm> used in <ClLinks  term={"destructuring-bind"}><b>destructuring-bind</b></ClLinks> and nested within <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda lists</i></GlossaryTerm>. See Section 3.4.5 (Destructuring Lambda Lists). 
 
 
 
@@ -167,7 +167,7 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**dimension** *n.* 1. a non-negative *integer* indicating the number of <ClLinks  term={"object"}><i>objects</i></ClLinks> an <ClLinks  term={"array"}><i>array</i></ClLinks> can hold along one axis. If the <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , the *fill pointer* is ignored. “The second dimension of that array is 7.” 2. an axis of an array. “This array has six dimensions.” 
+**dimension** *n.* 1. a non-negative *integer* indicating the number of <ClLinks  term={"object"}><i>objects</i></ClLinks> an <ClLinks  term={"array"}><i>array</i></ClLinks> can hold along one axis. If the <ClLinks  term={"array"}><i>array</i></ClLinks> is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored. “The second dimension of that array is 7.” 2. an axis of an array. “This array has six dimensions.” 
 
 
 
@@ -175,7 +175,7 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**direct subclass** *n.* (of a *class C*<sub>1</sub>) a *class C*<sub>2</sub>, such that *C*<sub>1</sub> is a *direct superclass* of *C*<sub>2</sub>. 
+**direct subclass** *n.* (of a *class C*<sub>1</sub>) a *class C*<sub>2</sub>, such that *C*<sub>1</sub> is a <GlossaryTerm styled={true} term={"direct superclass"}><i>direct superclass</i></GlossaryTerm> of *C*<sub>2</sub>. 
 
 
 
@@ -183,7 +183,7 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**disestablish** *v.t.* to withdraw the *establishment* of an <ClLinks  term={"object"}><i>object</i></ClLinks>, a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, an *exit point*, a <ClLinks  term={"tag"}><i>tag</i></ClLinks>, a <ClLinks  term={"handler"}><i>handler</i></ClLinks> , a <ClLinks  term={"restart"}><i>restart</i></ClLinks>, or an <ClLinks  term={"environment"}><i>environment</i></ClLinks>. 
+**disestablish** *v.t.* to withdraw the *establishment* of an <ClLinks  term={"object"}><i>object</i></ClLinks>, a <ClLinks  term={"binding"}><i>binding</i></ClLinks>, an <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm>, a <ClLinks  term={"tag"}><i>tag</i></ClLinks>, a <ClLinks  term={"handler"}><i>handler</i></ClLinks> , a <ClLinks  term={"restart"}><i>restart</i></ClLinks>, or an <ClLinks  term={"environment"}><i>environment</i></ClLinks>. 
 
 
 
@@ -203,11 +203,11 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**dispatching macro character** *n.* a *macro character* that has an associated table that specifies the <ClLinks  term={"function"}><i>function</i></ClLinks> to be called for each <ClLinks  term={"character"}><i>character</i></ClLinks> that is seen following the *dispatching macro character* . See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks>. 
+**dispatching macro character** *n.* a <GlossaryTerm styled={true} term={"macro character"}><i>macro character</i></GlossaryTerm> that has an associated table that specifies the <ClLinks  term={"function"}><i>function</i></ClLinks> to be called for each <ClLinks  term={"character"}><i>character</i></ClLinks> that is seen following the <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> . See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"make-dispatch-macro-character"}><b>make-dispatch-macro-character</b></ClLinks>. 
 
 
 
-**displaced array** *n.* an <ClLinks  term={"array"}><i>array</i></ClLinks> which has no storage of its own, but which is instead indirected to the storage of another <ClLinks  term={"array"}><i>array</i></ClLinks>, called its <ClLinks  term={"target"}><i>target</i></ClLinks>, at a specified offset, in such a way that any attempt to <ClLinks  term={"access"}><i>access</i></ClLinks> the *displaced array* implicitly references the *target array*. 
+**displaced array** *n.* an <ClLinks  term={"array"}><i>array</i></ClLinks> which has no storage of its own, but which is instead indirected to the storage of another <ClLinks  term={"array"}><i>array</i></ClLinks>, called its <ClLinks  term={"target"}><i>target</i></ClLinks>, at a specified offset, in such a way that any attempt to <ClLinks  term={"access"}><i>access</i></ClLinks> the <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm> implicitly references the *target array*. 
 
 
 
@@ -215,15 +215,15 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**documentation string** *n.* (in a defining <ClLinks  term={"form"}><i>form</i></ClLinks>) A *literal string* which because of the context in which it appears (rather than because of some intrinsically observable aspect of the <ClLinks  term={"string"}><i>string</i></ClLinks>) is taken as documentation. In some cases, the *documentation string* is saved in such a way that it can later be obtained by supplying either an <ClLinks  term={"object"}><i>object</i></ClLinks>, or by supplying a <ClLinks  term={"name"}><i>name</i></ClLinks> and a “kind” to the <ClLinks  term={"function"}><i>function</i></ClLinks> **documentation**. “The body of code in a <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> form can be preceded by a documentation string of kind <ClLinks  term={"function"}><b>function</b></ClLinks>.” 
+**documentation string** *n.* (in a defining <ClLinks  term={"form"}><i>form</i></ClLinks>) A *literal string* which because of the context in which it appears (rather than because of some intrinsically observable aspect of the <ClLinks  term={"string"}><i>string</i></ClLinks>) is taken as documentation. In some cases, the <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> is saved in such a way that it can later be obtained by supplying either an <ClLinks  term={"object"}><i>object</i></ClLinks>, or by supplying a <ClLinks  term={"name"}><i>name</i></ClLinks> and a “kind” to the <ClLinks  term={"function"}><i>function</i></ClLinks> **documentation**. “The body of code in a <ClLinks  term={"defmacro"}><b>defmacro</b></ClLinks> form can be preceded by a documentation string of kind <ClLinks  term={"function"}><b>function</b></ClLinks>.” 
 
 
 
-**dot** *n.* the *standard character* that is variously called “full stop,” “period,” or “dot” (.). See Figure 2–5. 
+**dot** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is variously called “full stop,” “period,” or “dot” (.). See Figure 2–5. 
 
 
 
-**dotted list** *n.* a <ClLinks  term={"list"}><i>list</i></ClLinks> which has a terminating <ClLinks  term={"atom"}><i>atom</i></ClLinks> that is not <ClLinks  term={"nil"}><b>nil</b></ClLinks>. (An <ClLinks  term={"atom"}><i>atom</i></ClLinks> by itself is not a *dotted list*, however.) 
+**dotted list** *n.* a <ClLinks  term={"list"}><i>list</i></ClLinks> which has a terminating <ClLinks  term={"atom"}><i>atom</i></ClLinks> that is not <ClLinks  term={"nil"}><b>nil</b></ClLinks>. (An <ClLinks  term={"atom"}><i>atom</i></ClLinks> by itself is not a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>, however.) 
 
 
 
@@ -235,11 +235,11 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-**double-quote** *n.* the *standard character* that is variously called “quotation mark” or “double quote” ("). See Figure 2–5. 
+**double-quote** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is variously called “quotation mark” or “double quote” ("). See Figure 2–5. 
 
 
 
-**dynamic binding** *n.* a <ClLinks  term={"binding"}><i>binding</i></ClLinks> in a *dynamic environment*. 
+**dynamic binding** *n.* a <ClLinks  term={"binding"}><i>binding</i></ClLinks> in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>. 
 
 
 
@@ -247,23 +247,19 @@ already occurred; that is, that the <ClLinks  term={"parameter"}><i>parameter</i
 
 
 
-with *dynamic extent*. A *dynamic environment* contains, among other things: *exit points* established by <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>, and <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of *dynamic variables*, *exit points* established by <ClLinks  term={"catch"}><b>catch</b></ClLinks>, *condition handlers*, and <ClLinks  term={"restart"}><i>restarts</i></ClLinks>. 
+with <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. A <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> contains, among other things: <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> established by <ClLinks  term={"unwind-protect"}><b>unwind-protect</b></ClLinks>, and <ClLinks  term={"binding"}><i>bindings</i></ClLinks> of <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> established by <ClLinks  term={"catch"}><b>catch</b></ClLinks>, <GlossaryTerm styled={true} term={"condition handler"}><i>condition handlers</i></GlossaryTerm>, and <ClLinks  term={"restart"}><i>restarts</i></ClLinks>. 
 
 
 
-**dynamic extent** *n.* an <ClLinks  term={"extent"}><i>extent</i></ClLinks> whose duration is bounded by points of *establishment* and *disestablishment* within the execution of a particular <ClLinks  term={"form"}><i>form</i></ClLinks>. See *indefinite extent*. “Dynamic variable bindings have dynamic extent.” 
+**dynamic extent** *n.* an <ClLinks  term={"extent"}><i>extent</i></ClLinks> whose duration is bounded by points of *establishment* and *disestablishment* within the execution of a particular <ClLinks  term={"form"}><i>form</i></ClLinks>. See <GlossaryTerm styled={true} term={"indefinite extent"}><i>indefinite extent</i></GlossaryTerm>. “Dynamic variable bindings have dynamic extent.” 
 
 
 
-**dynamic scope** *n. indefinite scope* along with *dynamic extent*. 
-
-
+**dynamic scope** *n. indefinite scope* along with <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm>. 
 
 
 
 
-
- 
 
 
 
@@ -271,7 +267,11 @@ with *dynamic extent*. A *dynamic environment* contains, among other things: *ex
 
 
 
-**dynamic variable** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> the <ClLinks  term={"binding"}><i>binding</i></ClLinks> for which is in the *dynamic environment*. See <ClLinks  term={"special"}><b>special</b></ClLinks>. 
+ 
+
+
+
+**dynamic variable** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> the <ClLinks  term={"binding"}><i>binding</i></ClLinks> for which is in the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>. See <ClLinks  term={"special"}><b>special</b></ClLinks>. 
 
 
 

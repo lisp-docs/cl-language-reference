@@ -1,4 +1,4 @@
-**cons** *System Class* 
+**cons** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is a compound <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> having two components, called the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> and <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> . These form a *dotted pair* . Each component can be any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+A <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is a compound <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> having two components, called the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> and <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> . These form a <GlossaryTerm styled={true} term={"dotted pair"}><i>dotted pair</i></GlossaryTerm> . Each component can be any <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -38,11 +38,11 @@ Specializing.
 
 
 
-*car-typespec*—a *type specifier* , or the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. The default is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*car-typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , or the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. The default is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 
-*cdr-typespec*—a *type specifier* , or the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. The default is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
+*cdr-typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> , or the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. The default is the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> **\***. 
 
 
 

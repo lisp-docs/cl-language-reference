@@ -2,7 +2,7 @@
 
 
 
-This section describes the <ClLinks  term={"package"}><i>packages</i></ClLinks> that are available in every *conforming implementation*. A summary of the <ClLinks  term={"name"}><i>names</i></ClLinks> and <ClLinks  term={"nickname"}><i>nicknames</i></ClLinks> of those *standardized packages* is given in Figure 11–2. 
+This section describes the <ClLinks  term={"package"}><i>packages</i></ClLinks> that are available in every <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>. A summary of the <ClLinks  term={"name"}><i>names</i></ClLinks> and <ClLinks  term={"nickname"}><i>nicknames</i></ClLinks> of those *standardized packages* is given in Figure 11–2. 
 
 
 

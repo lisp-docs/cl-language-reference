@@ -38,7 +38,7 @@ The manner in which the hash code is computed is <ClLinks  term={"implementation
 
 
 
-2\. For any two <ClLinks  term={"object"}><i>objects</i></ClLinks>, *x* and *y*, both of which are *bit vectors*, *characters*, *conses*, *numbers*, *pathnames*, *strings*, or <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, and which are <ClLinks  term={"similar"}><i>similar</i></ClLinks> , (sxhash *x*) and (sxhash *y*) <ClLinks  term={"yield"}><i>yield</i></ClLinks> the same mathematical value even if *x* and *y* exist in different *Lisp images* of the same <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. See Section 3.2.4 (Literal Objects in Compiled Files). 
+2\. For any two <ClLinks  term={"object"}><i>objects</i></ClLinks>, *x* and *y*, both of which are <GlossaryTerm styled={true} term={"bit vector"}><i>bit vectors</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm>, *conses*, <GlossaryTerm styled={true} term={"number"}><i>numbers</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"pathname"}><i>pathnames</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>, or <ClLinks  term={"symbol"}><i>symbols</i></ClLinks>, and which are <ClLinks  term={"similar"}><i>similar</i></ClLinks> , (sxhash *x*) and (sxhash *y*) <ClLinks  term={"yield"}><i>yield</i></ClLinks> the same mathematical value even if *x* and *y* exist in different *Lisp images* of the same <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>. See Section 3.2.4 (Literal Objects in Compiled Files). 
 
 
 
@@ -62,7 +62,7 @@ Hash
 
 
 
-4\. The *hash-code* is intended for hashing. This places no verifiable constraint on a *conforming implementation*, but the intent is that an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> should make a good-faith effort to produce *hash-codes* that are well distributed within the range of non-negative <ClLinks  term={"fixnum"}><i>fixnums</i></ClLinks>. 
+4\. The *hash-code* is intended for hashing. This places no verifiable constraint on a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>, but the intent is that an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> should make a good-faith effort to produce *hash-codes* that are well distributed within the range of non-negative <ClLinks  term={"fixnum"}><i>fixnums</i></ClLinks>. 
 
 
 
@@ -88,7 +88,7 @@ The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks>.
 
 
 
-Many common hashing needs are satisfied by <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> and the related functions on *hash tables*. <ClLinks  term={"sxhash"}><b>sxhash</b></ClLinks> is intended for use where the pre-defined abstractions are insufficient. Its main intent is to allow the user a convenient means of implementing more complicated hashing paradigms than are provided through *hash tables*. 
+Many common hashing needs are satisfied by <ClLinks  term={"make-hash-table"}><b>make-hash-table</b></ClLinks> and the related functions on <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>. <ClLinks  term={"sxhash"}><b>sxhash</b></ClLinks> is intended for use where the pre-defined abstractions are insufficient. Its main intent is to allow the user a convenient means of implementing more complicated hashing paradigms than are provided through <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>. 
 
 
 

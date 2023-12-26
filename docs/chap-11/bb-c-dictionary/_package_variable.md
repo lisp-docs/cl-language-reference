@@ -22,7 +22,7 @@ the COMMON-LISP-USER <ClLinks  term={"package"}><i>package</i></ClLinks>.
 
 
 
-Whatever *package object* is currently the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> is referred to as the *current package*. 
+Whatever *package object* is currently the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> is referred to as the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm>. 
 
 **Examples:**
 ```lisp

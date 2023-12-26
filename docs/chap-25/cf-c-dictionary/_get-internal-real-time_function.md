@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"get-internal-real-time"}><b>get-internal-real-time</b></ClLinks> returns as an *integer* the current time in *internal time units*, relative to an arbitrary time base. The difference between the values of two calls to this function is the amount of elapsed real time (*i.e.*, clock time) between the two calls. 
+<ClLinks styled={true} term={"get-internal-real-time"}><b>get-internal-real-time</b></ClLinks> returns as an *integer* the current time in <GlossaryTerm styled={true} term={"internal time unit"}><i>internal time units</i></GlossaryTerm>, relative to an arbitrary time base. The difference between the values of two calls to this function is the amount of elapsed real time (*i.e.*, clock time) between the two calls. 
 
 
 

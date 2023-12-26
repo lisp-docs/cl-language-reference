@@ -18,7 +18,7 @@
 
 
 
-*start*, *end*—*bounding index designators* of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-Returns an *input string stream*. This <ClLinks  term={"stream"}><i>stream</i></ClLinks> will supply, in order, the <ClLinks  term={"character"}><i>characters</i></ClLinks> in the substring of *string bounded* by *start* and *end*. After the last <ClLinks  term={"character"}><i>character</i></ClLinks> has been supplied, the *string stream* will then be at *end of file*. 
+Returns an *input string stream*. This <ClLinks  term={"stream"}><i>stream</i></ClLinks> will supply, in order, the <ClLinks  term={"character"}><i>characters</i></ClLinks> in the substring of *string bounded* by *start* and *end*. After the last <ClLinks  term={"character"}><i>character</i></ClLinks> has been supplied, the <GlossaryTerm styled={true} term={"string stream"}><i>string stream</i></GlossaryTerm> will then be at <GlossaryTerm styled={true} term={"end of file"}><i>end of file</i></GlossaryTerm>. 
 
 
 

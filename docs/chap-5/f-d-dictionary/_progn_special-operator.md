@@ -1,4 +1,4 @@
-**progn** *Special Operator*
+**progn** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm>
 
 **Syntax:**
 
@@ -6,7 +6,7 @@
 
 **Arguments and Values:**
 
-<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an *implicit progn*.
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>.
 
 *results*—the <GlossaryTerm  term={"value"}><i>values</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>.
 
@@ -16,7 +16,7 @@
 
 The values of each <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> but the last are discarded.
 
-If <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> appears as a *top level form*, then all <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> within that <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> are considered by the compiler to be *top level forms*.
+If <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> appears as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm>, then all <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> within that <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink> are considered by the compiler to be <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm>.
 
 **Examples:**
 
@@ -37,7 +37,7 @@ a *!* NIL
 
 **Notes:**
 
-Many places in Common Lisp involve syntax that uses *implicit progns*. That is, part of their syntax allows many <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> to be written that are to be evaluated sequentially, discarding the results of all <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> but the last and returning the results of the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. Such places include, but are not limited to, the following: the body of a *lambda expression*; the bodies of various control and conditional <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> (*e.g.*, <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>, <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink>, <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink>, and <DictionaryLink  term={"when"}><b>when</b></DictionaryLink>).
+Many places in Common Lisp involve syntax that uses <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progns</i></GlossaryTerm>. That is, part of their syntax allows many <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> to be written that are to be evaluated sequentially, discarding the results of all <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> but the last and returning the results of the last <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. Such places include, but are not limited to, the following: the body of a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>; the bodies of various control and conditional <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> (*e.g.*, <DictionaryLink  term={"case"}><b>case</b></DictionaryLink>, <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink>, <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink>, and <DictionaryLink  term={"when"}><b>when</b></DictionaryLink>).
 
 :::info
 

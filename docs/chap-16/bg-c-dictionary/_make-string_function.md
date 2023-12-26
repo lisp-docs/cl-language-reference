@@ -14,7 +14,7 @@
 
 
 
-*size*—a *valid array dimension*. 
+*size*—a <GlossaryTerm styled={true} term={"valid array dimension"}><i>valid array dimension</i></GlossaryTerm>. 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-*element-type*—a *type specifier* . The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
+*element-type*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . The default is <ClLinks  term={"character"}><b>character</b></ClLinks>. 
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a *simple string*. 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—a <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-<ClLinks  term={"make-string"}><b>make-string</b></ClLinks> returns a *simple string* of length *size* whose elements have been initialized to *initial-element*. 
+<ClLinks  term={"make-string"}><b>make-string</b></ClLinks> returns a <GlossaryTerm styled={true} term={"simple string"}><i>simple string</i></GlossaryTerm> of length *size* whose elements have been initialized to *initial-element*. 
 
 
 

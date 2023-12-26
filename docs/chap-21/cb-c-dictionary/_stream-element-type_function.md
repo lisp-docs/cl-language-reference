@@ -18,7 +18,7 @@
 
 
 
-*typespec*—a *type specifier* . 
+*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks  term={"stream-element-type"}><b>stream-element-type</b></ClLinks> returns a *type specifier* that indicates the <ClLinks  term={"type"}><i>types</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks> that may be read from or written to <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
+<ClLinks  term={"stream-element-type"}><b>stream-element-type</b></ClLinks> returns a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> that indicates the <ClLinks  term={"type"}><i>types</i></ClLinks> of <ClLinks  term={"object"}><i>objects</i></ClLinks> that may be read from or written to <ClLinks  term={"stream"}><i>stream</i></ClLinks>. 
 
 
 
-<ClLinks  term={"stream"}><i>Streams</i></ClLinks> created by <ClLinks  term={"open"}><b>open</b></ClLinks> have an *element type* restricted to <ClLinks  term={"integer"}><b>integer</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. 
+<ClLinks  term={"stream"}><i>Streams</i></ClLinks> created by <ClLinks  term={"open"}><b>open</b></ClLinks> have an <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> restricted to <ClLinks  term={"integer"}><b>integer</b></ClLinks> or a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. 
 
 **Examples:**
 ```lisp

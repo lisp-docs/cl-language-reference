@@ -14,15 +14,15 @@
 
 
 
-*typespec*—a *type specifier* . 
+*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
-<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an *environment object*. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, denoting the *null lexical environment* and the current *global environment*. 
+<ClLinks  term={"environment"}><i>environment</i></ClLinks>—an <GlossaryTerm styled={true} term={"environment object"}><i>environment object</i></GlossaryTerm>. The default is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, denoting the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> and the current <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. 
 
 
 
-*upgraded-typespec*—a *type specifier* . 
+*upgraded-typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-Returns the *element type* of the most *specialized array* representation capable of holding items of the <ClLinks  term={"type"}><i>type</i></ClLinks> denoted by *typespec*. 
+Returns the <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> of the most *specialized array* representation capable of holding items of the <ClLinks  term={"type"}><i>type</i></ClLinks> denoted by *typespec*. 
 
 
 
-The *typespec* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of (and possibly *type equivalent* to) the *upgraded-typespec*. 
+The *typespec* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of (and possibly <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to) the *upgraded-typespec*. 
 
 
 
-If *typespec* is <ClLinks  term={"bit"}><b>bit</b></ClLinks>, the result is *type equivalent* to bit. If *typespec* is <ClLinks  term={"base-char"}><b>base-char</b></ClLinks>, the result is *type equivalent* to base-char. If *typespec* is <ClLinks  term={"character"}><b>character</b></ClLinks>, the result is *type equivalent* to character. 
+If *typespec* is <ClLinks  term={"bit"}><b>bit</b></ClLinks>, the result is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to bit. If *typespec* is <ClLinks  term={"base-char"}><b>base-char</b></ClLinks>, the result is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to base-char. If *typespec* is <ClLinks  term={"character"}><b>character</b></ClLinks>, the result is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to character. 
 
 
 
@@ -46,7 +46,7 @@ The purpose of <ClLinks  term={"upgraded-array-element-type"}><b>upgraded-array-
 
 
 
-The <ClLinks  term={"environment"}><i>environment</i></ClLinks> is used to expand any *derived type specifiers* that are mentioned in the *typespec*. 
+The <ClLinks  term={"environment"}><i>environment</i></ClLinks> is used to expand any <GlossaryTerm styled={true} term={"derived type specifier"}><i>derived type specifiers</i></GlossaryTerm> that are mentioned in the *typespec*. 
 
 
 

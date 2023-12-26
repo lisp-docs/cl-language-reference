@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a *type specifier* (for a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>). 
+<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> (for a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>). 
 
 
 
-*slot-initializations*—an *initialization argument list*. 
+*slot-initializations*—an <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. 
 
 
 

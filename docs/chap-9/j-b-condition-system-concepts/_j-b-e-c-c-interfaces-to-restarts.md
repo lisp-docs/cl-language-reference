@@ -6,7 +6,7 @@ Some <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> have func
 
 
 
-Figure 9–6 shows *defined names* relating to <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks>. 
+Figure 9–6 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks>. 
 
 
 

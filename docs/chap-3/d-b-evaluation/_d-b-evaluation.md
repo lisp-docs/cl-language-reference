@@ -2,7 +2,7 @@
 
 
 
-*Execution* of <ClLinks  term={"code"}><i>code</i></ClLinks> can be accomplished by a variety of means ranging from direct interpretation of a <ClLinks  term={"form"}><i>form</i></ClLinks> representing a <ClLinks  term={"program"}><i>program</i></ClLinks> to invocation of *compiled code* produced by a <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> . 
+*Execution* of <ClLinks  term={"code"}><i>code</i></ClLinks> can be accomplished by a variety of means ranging from direct interpretation of a <ClLinks  term={"form"}><i>form</i></ClLinks> representing a <ClLinks  term={"program"}><i>program</i></ClLinks> to invocation of <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm> produced by a <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> . 
 
 
 
@@ -10,7 +10,7 @@
 
 
 
-The behavior of a *conforming program* processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks> and by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> might differ; see Section 3.2.2.3 (Semantic Constraints). 
+The behavior of a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> processed by <ClLinks  term={"eval"}><b>eval</b></ClLinks> and by <ClLinks  term={"compile-file"}><b>compile-file</b></ClLinks> might differ; see Section 3.2.2.3 (Semantic Constraints). 
 
 
 

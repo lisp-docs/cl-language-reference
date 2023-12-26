@@ -2,7 +2,7 @@
 
 
 
-The symbol :newest refers to the largest version number that already exists in the *file system* when reading, overwriting, appending, superseding, or directory listing an existing <ClLinks  term={"file"}><i>file</i></ClLinks>. The symbol :newest refers to the smallest version number greater than any existing version number when creating a new file. 
+The symbol :newest refers to the largest version number that already exists in the <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm> when reading, overwriting, appending, superseding, or directory listing an existing <ClLinks  term={"file"}><i>file</i></ClLinks>. The symbol :newest refers to the smallest version number greater than any existing version number when creating a new file. 
 
 
 

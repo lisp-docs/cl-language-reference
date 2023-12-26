@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—an *output stream designator* . The default is *standard output*. 
+<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—an *output stream designator* . The default is <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ The actual act of describing the object is implemented by <ClLinks styled={true}
 
 
 
-<ClLinks styled={true} term={"describe"}><b>describe</b></ClLinks> is not intended to be an interactive function. In a *conforming implementation*, <ClLinks styled={true} term={"describe"}><b>describe</b></ClLinks> must not, by default, prompt for user input. User-defined methods for <ClLinks styled={true} term={"describe-object"}><b>describe-object</b></ClLinks> are likewise restricted. 
+<ClLinks styled={true} term={"describe"}><b>describe</b></ClLinks> is not intended to be an interactive function. In a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>, <ClLinks styled={true} term={"describe"}><b>describe</b></ClLinks> must not, by default, prompt for user input. User-defined methods for <ClLinks styled={true} term={"describe-object"}><b>describe-object</b></ClLinks> are likewise restricted. 
 
 
 
@@ -62,7 +62,7 @@ The actual act of describing the object is implemented by <ClLinks styled={true}
 
 
 
-Output to *standard output* or *terminal I/O*. 
+Output to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm> or *terminal I/O*. 
 
 
 

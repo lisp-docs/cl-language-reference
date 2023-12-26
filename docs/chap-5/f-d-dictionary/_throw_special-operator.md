@@ -1,4 +1,4 @@
-**throw** *Special Operator* 
+**throw** <GlossaryTerm styled={true} term={"special operator"}><i>Special Operator</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a *catch tag*; evaluated. 
+<ClLinks  term={"tag"}><i>tag</i></ClLinks>—a <GlossaryTerm styled={true} term={"catch tag"}><i>catch tag</i></GlossaryTerm>; evaluated. 
 
 
 
@@ -82,7 +82,7 @@ The following prints “The inner catch returns :SECOND-THROW” and then return
 
 
 
-If there is no outstanding *catch tag* that matches the throw tag, no unwinding of the stack is 
+If there is no outstanding <GlossaryTerm styled={true} term={"catch tag"}><i>catch tag</i></GlossaryTerm> that matches the throw tag, no unwinding of the stack is 
 
 
 
@@ -94,7 +94,7 @@ If there is no outstanding *catch tag* that matches the throw tag, no unwinding 
 
 
 
-performed, and an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"control-error"}><b>control-error</b></ClLinks> is signaled. When the error is signaled, the *dynamic environment* is that which was in force at the point of the <ClLinks  term={"throw"}><b>throw</b></ClLinks>. 
+performed, and an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"control-error"}><b>control-error</b></ClLinks> is signaled. When the error is signaled, the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> is that which was in force at the point of the <ClLinks  term={"throw"}><b>throw</b></ClLinks>. 
 
 
 
@@ -110,7 +110,7 @@ performed, and an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLink
 
 
 
-<ClLinks  term={"catch"}><b>catch</b></ClLinks> and <ClLinks  term={"throw"}><b>throw</b></ClLinks> are normally used when the *exit point* must have *dynamic scope* (*e.g.*, the <ClLinks  term={"throw"}><b>throw</b></ClLinks> is not lexically enclosed by the <ClLinks  term={"catch"}><b>catch</b></ClLinks>), while <ClLinks  term={"block"}><b>block</b></ClLinks> and <ClLinks  term={"return"}><b>return</b></ClLinks> are used when *lexical scope* is sufficient. 
+<ClLinks  term={"catch"}><b>catch</b></ClLinks> and <ClLinks  term={"throw"}><b>throw</b></ClLinks> are normally used when the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> must have <GlossaryTerm styled={true} term={"dynamic scope"}><i>dynamic scope</i></GlossaryTerm> (*e.g.*, the <ClLinks  term={"throw"}><b>throw</b></ClLinks> is not lexically enclosed by the <ClLinks  term={"catch"}><b>catch</b></ClLinks>), while <ClLinks  term={"block"}><b>block</b></ClLinks> and <ClLinks  term={"return"}><b>return</b></ClLinks> are used when <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> is sufficient. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-a *random state*. 
+a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ a *random state*.
 
 
 
-The *current random state*, which is used, for example, by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"random"}><b>random</b></ClLinks> when a *random state* is not explicitly supplied. 
+The <GlossaryTerm styled={true} term={"current random state"}><i>current random state</i></GlossaryTerm>, which is used, for example, by the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"random"}><b>random</b></ClLinks> when a <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> is not explicitly supplied. 
 
 
 

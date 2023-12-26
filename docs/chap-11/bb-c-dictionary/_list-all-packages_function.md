@@ -22,7 +22,7 @@
 
 
 
-<ClLinks  term={"list-all-packages"}><b>list-all-packages</b></ClLinks> returns a *fresh list* of all *registered packages*. 
+<ClLinks  term={"list-all-packages"}><b>list-all-packages</b></ClLinks> returns a *fresh list* of all <GlossaryTerm styled={true} term={"registered package"}><i>registered packages</i></GlossaryTerm>. 
 
 
 

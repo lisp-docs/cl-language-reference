@@ -22,15 +22,15 @@
 
 
 
-*position-spec*—a *file position designator* . 
+*position-spec*—a <GlossaryTerm styled={true} term={"file position designator"}><i>file position designator</i></GlossaryTerm> . 
 
 
 
-*position*—a *file position* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+*position*—a <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*success-p*—a *generalized boolean*. 
+*success-p*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -42,11 +42,11 @@ Returns or changes the current position within a <ClLinks  term={"stream"}><i>st
 
 
 
-When *position-spec* is not supplied, <ClLinks  term={"file-position"}><b>file-position</b></ClLinks> returns the current *file position* in the <ClLinks  term={"stream"}><i>stream</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if this cannot be determined. 
+When *position-spec* is not supplied, <ClLinks  term={"file-position"}><b>file-position</b></ClLinks> returns the current <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in the <ClLinks  term={"stream"}><i>stream</i></ClLinks>, or <ClLinks  term={"nil"}><b>nil</b></ClLinks> if this cannot be determined. 
 
 
 
-When *position-spec* is supplied, the *file position* in <ClLinks  term={"stream"}><i>stream</i></ClLinks> is set to that *file position* (if possible). <ClLinks  term={"file-position"}><b>file-position</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the repositioning is performed successfully, or <ClLinks  term={"false"}><i>false</i></ClLinks> if it is not. 
+When *position-spec* is supplied, the <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in <ClLinks  term={"stream"}><i>stream</i></ClLinks> is set to that <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> (if possible). <ClLinks  term={"file-position"}><b>file-position</b></ClLinks> returns <ClLinks  term={"true"}><i>true</i></ClLinks> if the repositioning is performed successfully, or <ClLinks  term={"false"}><i>false</i></ClLinks> if it is not. 
 
 
 
@@ -116,7 +116,7 @@ sequence) and other aspects of the implementation. For a binary file, every <ClL
 
 
 
-When the *position-spec* argument is supplied, the *file position* in the <ClLinks  term={"stream"}><i>stream</i></ClLinks> might be moved. 
+When the *position-spec* argument is supplied, the <GlossaryTerm styled={true} term={"file position"}><i>file position</i></GlossaryTerm> in the <ClLinks  term={"stream"}><i>stream</i></ClLinks> might be moved. 
 
 
 

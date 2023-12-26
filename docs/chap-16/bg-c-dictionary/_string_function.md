@@ -129,11 +129,11 @@ In the case where a conversion is defined neither by this specification nor by t
 
 
 
-<ClLinks  term={"string"}><i>string</i></ClLinks>—a *string designator* . For **nstring-upcase**, **nstring-downcase**, and **nstring-capitalize**, the *string designator* must be a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
+<ClLinks  term={"string"}><i>string</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . For **nstring-upcase**, **nstring-downcase**, and **nstring-capitalize**, the <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> must be a <ClLinks  term={"string"}><i>string</i></ClLinks>. 
 
 
 
-*start*, *end*—*bounding index designators* of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
+*start*, *end*—<GlossaryTerm styled={true} term={"bounding index designator"}><i>bounding index designators</i></GlossaryTerm> of <ClLinks  term={"string"}><i>string</i></ClLinks>. The defaults for *start* and *end* are 0 and <ClLinks  term={"nil"}><b>nil</b></ClLinks>, respectively. 
 
 
 

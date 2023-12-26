@@ -22,7 +22,7 @@
 
 
 
-*index*—a *valid array row-major index* for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*index*—a <GlossaryTerm styled={true} term={"valid array row-major index"}><i>valid array row-major index</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@ Computes the position according to the row-major ordering of <ClLinks  term={"ar
 
 
 
-For a one-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks>, the result of <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> equals *subscript*. <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> ignores *fill pointers*. 
+For a one-dimensional <ClLinks  term={"array"}><i>array</i></ClLinks>, the result of <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> equals *subscript*. <ClLinks  term={"array-row-major-index"}><b>array-row-major-index</b></ClLinks> ignores <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointers</i></GlossaryTerm>. 
 
 
 

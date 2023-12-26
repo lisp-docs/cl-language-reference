@@ -1,4 +1,4 @@
-**reinitialize-instance** *Standard Generic Function* 
+**reinitialize-instance** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-*initargs*—an *initialization argument list*. 
+*initargs*—an <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-The *generic function* <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> can be used to change the values of *local slots* of an <ClLinks  term={"instance"}><i>instance</i></ClLinks> according to *initargs*. This *generic function* can be called by users. 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> can be used to change the values of <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> of an <ClLinks  term={"instance"}><i>instance</i></ClLinks> according to *initargs*. This <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> can be called by users. 
 
 
 
@@ -46,7 +46,7 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> fo
 
 
 
-The *generic function* <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> changes the values of *local slots*. 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> changes the values of <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm>. 
 
 
 
@@ -86,7 +86,7 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> fo
 
 
 
-*Initargs* are declared as valid by using the :initarg option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the *lambda list* of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid initialization argument name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
+*Initargs* are declared as valid by using the :initarg option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on <ClLinks  term={"reinitialize-instance"}><b>reinitialize-instance</b></ClLinks> or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid initialization argument name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
 
 
 

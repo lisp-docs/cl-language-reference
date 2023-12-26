@@ -18,7 +18,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -89,15 +89,15 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a *readtable designator* . The default is the *current readtable*. 
+<ClLinks  term={"readtable"}><i>readtable</i></ClLinks>—a <GlossaryTerm styled={true} term={"readtable designator"}><i>readtable designator</i></GlossaryTerm> . The default is the <GlossaryTerm styled={true} term={"current readtable"}><i>current readtable</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a *function designator* or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*new-function*—a *function designator* . 
+*new-function*—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> . 
 
 
 
@@ -109,7 +109,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-**set-dispatch-macro-character** installs a *new-function* to be called when a particular *dispatching macro character* pair is read. *New-function* is installed as the dispatch function to be called when <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is in use and when *disp-char* is followed by *sub-char*. 
+**set-dispatch-macro-character** installs a *new-function* to be called when a particular <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> pair is read. *New-function* is installed as the dispatch function to be called when <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is in use and when *disp-char* is followed by *sub-char*. 
 
 
 
@@ -174,7 +174,7 @@ The <ClLinks  term={"readtable"}><i>readtable</i></ClLinks> is modified.
 
 
 
-For either function, an error is signaled if *disp-char* is not a *dispatching macro character* in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
+For either function, an error is signaled if *disp-char* is not a <GlossaryTerm styled={true} term={"dispatching macro character"}><i>dispatching macro character</i></GlossaryTerm> in <ClLinks  term={"readtable"}><i>readtable</i></ClLinks>. 
 
 
 

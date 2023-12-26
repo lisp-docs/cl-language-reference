@@ -1,4 +1,4 @@
-**string-stream** *System Class* 
+**string-stream** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-A *string stream* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> which reads input from or writes output to an associated <ClLinks  term={"string"}><i>string</i></ClLinks>. The *stream element type* of a *string stream* is always a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. 
+A <GlossaryTerm styled={true} term={"string stream"}><i>string stream</i></GlossaryTerm> is a <ClLinks  term={"stream"}><i>stream</i></ClLinks> which reads input from or writes output to an associated <ClLinks  term={"string"}><i>string</i></ClLinks>. The <GlossaryTerm styled={true} term={"stream element type"}><i>stream element type</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"string stream"}><i>string stream</i></GlossaryTerm> is always a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"character"}><b>character</b></ClLinks>. 
 
 
 

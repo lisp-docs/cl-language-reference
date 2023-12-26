@@ -10,7 +10,7 @@ The phrasing “an *array specialized* to *type hhtype⟩” is sometimes used t
 
 
 
-Figure 15–1 lists some *defined names* that are applicable to <ClLinks  term={"array"}><i>array</i></ClLinks> creation, <ClLinks  term={"access"}><i>access</i></ClLinks>, and information operations. 
+Figure 15–1 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> that are applicable to <ClLinks  term={"array"}><i>array</i></ClLinks> creation, <ClLinks  term={"access"}><i>access</i></ClLinks>, and information operations. 
 
 
 

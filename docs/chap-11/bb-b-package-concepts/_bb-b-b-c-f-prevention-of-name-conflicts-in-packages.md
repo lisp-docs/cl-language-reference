@@ -30,7 +30,7 @@ The following rules apply to name conflicts:
 
 
 
-– <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> and <ClLinks  term={"unexport"}><b>unexport</b></ClLinks> do not need to do any name-conflict checking. <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> does name-conflict checking only when a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> being <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> is a *shadowing symbol*. 
+– <ClLinks  term={"unuse-package"}><b>unuse-package</b></ClLinks> and <ClLinks  term={"unexport"}><b>unexport</b></ClLinks> do not need to do any name-conflict checking. <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> does name-conflict checking only when a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> being <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> is a <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbol</i></GlossaryTerm>. 
 
 
 
@@ -62,11 +62,11 @@ given a <ClLinks  term={"list"}><i>list</i></ClLinks> of <ClLinks  term={"symbol
 
 
 
-– A name conflict in <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> between a *symbol present* in the using <ClLinks  term={"package"}><i>package</i></ClLinks> and an *external symbol* of the used <ClLinks  term={"package"}><i>package</i></ClLinks> is resolved in favor of the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by making it a shadowing <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, or in favor of the second <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by uninterning the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> from the using <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+– A name conflict in <ClLinks  term={"use-package"}><b>use-package</b></ClLinks> between a *symbol present* in the using <ClLinks  term={"package"}><i>package</i></ClLinks> and an <GlossaryTerm styled={true} term={"external symbol"}><i>external symbol</i></GlossaryTerm> of the used <ClLinks  term={"package"}><i>package</i></ClLinks> is resolved in favor of the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by making it a shadowing <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>, or in favor of the second <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by uninterning the first <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> from the using <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-– A name conflict in <ClLinks  term={"export"}><b>export</b></ClLinks> or <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> due to a <ClLinks  term={"package"}><i>package</i></ClLinks>’s inheriting two *distinct symbols* with the *same name* (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) from two other <ClLinks  term={"package"}><i>packages</i></ClLinks> can be resolved in favor of either <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by importing it into the using <ClLinks  term={"package"}><i>package</i></ClLinks> and making it a *shadowing symbol*, just as with <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. 
+– A name conflict in <ClLinks  term={"export"}><b>export</b></ClLinks> or <ClLinks  term={"unintern"}><b>unintern</b></ClLinks> due to a <ClLinks  term={"package"}><i>package</i></ClLinks>’s inheriting two *distinct symbols* with the *same name* (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) from two other <ClLinks  term={"package"}><i>packages</i></ClLinks> can be resolved in favor of either <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> by importing it into the using <ClLinks  term={"package"}><i>package</i></ClLinks> and making it a <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbol</i></GlossaryTerm>, just as with <ClLinks  term={"use-package"}><b>use-package</b></ClLinks>. 
 
 
 

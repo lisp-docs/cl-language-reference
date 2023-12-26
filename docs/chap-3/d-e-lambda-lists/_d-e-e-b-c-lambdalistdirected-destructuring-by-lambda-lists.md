@@ -10,7 +10,7 @@ An extension of data-directed destructuring of <ClLinks  term={"tree"}><i>trees<
 
 
 
-and the three-argument *lambda list* 
+and the three-argument <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@ and the three-argument *lambda list*
 
 
 
-Lambda-list-directed destructuring is identical to data-directed destructuring if no *lambda list keywords* appear in the pattern. Any list in the pattern (whether a sub-list or the whole pattern itself) that contains a *lambda list keyword* is interpreted specially. Elements of the list to the left of the first *lambda list keyword* are treated as destructuring patterns, as usual, but the remaining elements of the list are treated like a function’s *lambda list* except that where a variable would normally be required, an arbitrary destructuring pattern is allowed. Note that in case of ambiguity,  
+Lambda-list-directed destructuring is identical to data-directed destructuring if no <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keywords</i></GlossaryTerm> appear in the pattern. Any list in the pattern (whether a sub-list or the whole pattern itself) that contains a <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm> is interpreted specially. Elements of the list to the left of the first <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm> are treated as destructuring patterns, as usual, but the remaining elements of the list are treated like a function’s <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> except that where a variable would normally be required, an arbitrary destructuring pattern is allowed. Note that in case of ambiguity,  
 
 
 
@@ -26,11 +26,11 @@ Lambda-list-directed destructuring is identical to data-directed destructuring i
 
 
 
-*lambda list* syntax is preferred over destructuring syntax. Thus, after **&amp;optional** a list of elements is a list of a destructuring pattern and a default value form. 
+<GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> syntax is preferred over destructuring syntax. Thus, after **&amp;optional** a list of elements is a list of a destructuring pattern and a default value form. 
 
 
 
-The detailed behavior of each *lambda list keyword* in a lambda-list-directed destructuring pattern is as follows: 
+The detailed behavior of each <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm> in a lambda-list-directed destructuring pattern is as follows: 
 
 
 
@@ -50,7 +50,7 @@ to match against this destructuring (sub)-pattern, the default form is evaluated
 
 
 
-The next element is a destructuring pattern that matches the rest of the list. **&amp;body** is identical to **&amp;rest** but declares that what is being matched is a list of forms that constitutes the body of <ClLinks  term={"form"}><i>form</i></ClLinks>. This next element must be the last unless a *lambda list keyword* follows it. 
+The next element is a destructuring pattern that matches the rest of the list. **&amp;body** is identical to **&amp;rest** but declares that what is being matched is a list of forms that constitutes the body of <ClLinks  term={"form"}><i>form</i></ClLinks>. This next element must be the last unless a <GlossaryTerm styled={true} term={"lambda list keyword"}><i>lambda list keyword</i></GlossaryTerm> follows it. 
 
 
 

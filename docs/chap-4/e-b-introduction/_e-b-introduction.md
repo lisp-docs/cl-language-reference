@@ -2,7 +2,7 @@
 
 
 
-A <ClLinks  term={"type"}><i>type</i></ClLinks> is a (possibly infinite) set of <ClLinks  term={"object"}><i>objects</i></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> can belong to more than one <ClLinks  term={"type"}><i>type</i></ClLinks>. <ClLinks  term={"type"}><i>Types</i></ClLinks> are never explicitly represented as <ClLinks  term={"object"}><i>objects</i></ClLinks> by Common Lisp. Instead, they are referred to indirectly by the use of *type specifiers*, which are <ClLinks  term={"object"}><i>objects</i></ClLinks> that denote <ClLinks  term={"type"}><i>types</i></ClLinks>. 
+A <ClLinks  term={"type"}><i>type</i></ClLinks> is a (possibly infinite) set of <ClLinks  term={"object"}><i>objects</i></ClLinks>. An <ClLinks  term={"object"}><i>object</i></ClLinks> can belong to more than one <ClLinks  term={"type"}><i>type</i></ClLinks>. <ClLinks  term={"type"}><i>Types</i></ClLinks> are never explicitly represented as <ClLinks  term={"object"}><i>objects</i></ClLinks> by Common Lisp. Instead, they are referred to indirectly by the use of <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>, which are <ClLinks  term={"object"}><i>objects</i></ClLinks> that denote <ClLinks  term={"type"}><i>types</i></ClLinks>. 
 
 
 
@@ -14,11 +14,11 @@ The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"typep
 
 
 
-<ClLinks  term={"object"}><i>object</i></ClLinks> belongs, even though that <ClLinks  term={"object"}><i>object</i></ClLinks> must belong to one or more other <ClLinks  term={"type"}><i>types</i></ClLinks> as well. (For example, every <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>, but <ClLinks  term={"type-of"}><b>type-of</b></ClLinks> always returns a *type specifier* for a <ClLinks  term={"type"}><i>type</i></ClLinks> more specific than <ClLinks  term={"t"}><b>t</b></ClLinks>.) 
+<ClLinks  term={"object"}><i>object</i></ClLinks> belongs, even though that <ClLinks  term={"object"}><i>object</i></ClLinks> must belong to one or more other <ClLinks  term={"type"}><i>types</i></ClLinks> as well. (For example, every <ClLinks  term={"object"}><i>object</i></ClLinks> is of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"t"}><b>t</b></ClLinks>, but <ClLinks  term={"type-of"}><b>type-of</b></ClLinks> always returns a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a <ClLinks  term={"type"}><i>type</i></ClLinks> more specific than <ClLinks  term={"t"}><b>t</b></ClLinks>.) 
 
 
 
-<ClLinks  term={"object"}><i>Objects</i></ClLinks>, not <ClLinks  term={"variable"}><i>variables</i></ClLinks>, have <ClLinks  term={"type"}><i>types</i></ClLinks>. Normally, any <ClLinks  term={"variable"}><i>variable</i></ClLinks> can have any <ClLinks  term={"object"}><i>object</i></ClLinks> as its <ClLinks  term={"value"}><i>value</i></ClLinks>. It is possible to declare that a <ClLinks  term={"variable"}><i>variable</i></ClLinks> takes on only values of a given <ClLinks  term={"type"}><i>type</i></ClLinks> by making an explicit *type declaration*. *Types* are arranged in a directed acyclic graph, except for the presence of equivalences. 
+<ClLinks  term={"object"}><i>Objects</i></ClLinks>, not <ClLinks  term={"variable"}><i>variables</i></ClLinks>, have <ClLinks  term={"type"}><i>types</i></ClLinks>. Normally, any <ClLinks  term={"variable"}><i>variable</i></ClLinks> can have any <ClLinks  term={"object"}><i>object</i></ClLinks> as its <ClLinks  term={"value"}><i>value</i></ClLinks>. It is possible to declare that a <ClLinks  term={"variable"}><i>variable</i></ClLinks> takes on only values of a given <ClLinks  term={"type"}><i>type</i></ClLinks> by making an explicit <GlossaryTerm styled={true} term={"type declaration"}><i>type declaration</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"type"}><i>Types</i></GlossaryTerm> are arranged in a directed acyclic graph, except for the presence of equivalences. 
 
 
 
@@ -26,7 +26,7 @@ The <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"typep
 
 
 
-Among the fundamental <ClLinks  term={"object"}><i>objects</i></ClLinks> of the object system are *classes*. A <ClLinks  term={"class"}><i>class</i></ClLinks> determines the structure and behavior of a set of other <ClLinks  term={"object"}><i>objects</i></ClLinks>, which are called its <ClLinks  term={"instance"}><i>instances</i></ClLinks>. Every <ClLinks  term={"object"}><i>object</i></ClLinks> is a *direct instance* of a <ClLinks  term={"class"}><i>class</i></ClLinks>. The <ClLinks  term={"class"}><i>class</i></ClLinks> of an <ClLinks  term={"object"}><i>object</i></ClLinks> determines the set of operations that can be performed on the <ClLinks  term={"object"}><i>object</i></ClLinks>. For more information, see Section 4.3 (Classes). 
+Among the fundamental <ClLinks  term={"object"}><i>objects</i></ClLinks> of the object system are *classes*. A <ClLinks  term={"class"}><i>class</i></ClLinks> determines the structure and behavior of a set of other <ClLinks  term={"object"}><i>objects</i></ClLinks>, which are called its <ClLinks  term={"instance"}><i>instances</i></ClLinks>. Every <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"direct instance"}><i>direct instance</i></GlossaryTerm> of a <ClLinks  term={"class"}><i>class</i></ClLinks>. The <ClLinks  term={"class"}><i>class</i></ClLinks> of an <ClLinks  term={"object"}><i>object</i></ClLinks> determines the set of operations that can be performed on the <ClLinks  term={"object"}><i>object</i></ClLinks>. For more information, see Section 4.3 (Classes). 
 
 
 

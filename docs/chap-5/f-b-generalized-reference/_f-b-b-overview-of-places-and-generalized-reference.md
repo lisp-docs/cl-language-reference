@@ -30,7 +30,7 @@ Figure 5–1 contains examples of the use of <ClLinks  term={"setf"}><b>setf</b>
 
 
 
-Figure 5–2 shows <ClLinks  term={"operator"}><i>operators</i></ClLinks> relating to <ClLinks  term={"place"}><i>places</i></ClLinks> and *generalized reference*. 
+Figure 5–2 shows <ClLinks  term={"operator"}><i>operators</i></ClLinks> relating to <ClLinks  term={"place"}><i>places</i></ClLinks> and <GlossaryTerm styled={true} term={"generalized reference"}><i>generalized reference</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@ Figure 5–2 shows <ClLinks  term={"operator"}><i>operators</i></ClLinks> relati
 
 
 
-Some of the <ClLinks  term={"operator"}><i>operators</i></ClLinks> above manipulate <ClLinks  term={"place"}><i>places</i></ClLinks> and some manipulate *setf expanders*. A *setf expansion* can be derived from any <ClLinks  term={"place"}><i>place</i></ClLinks>. New *setf expanders* can be defined by using <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> and <ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>. 
+Some of the <ClLinks  term={"operator"}><i>operators</i></ClLinks> above manipulate <ClLinks  term={"place"}><i>places</i></ClLinks> and some manipulate <GlossaryTerm styled={true} term={"setf expander"}><i>setf expanders</i></GlossaryTerm>. A <GlossaryTerm styled={true} term={"setf expansion"}><i>setf expansion</i></GlossaryTerm> can be derived from any <ClLinks  term={"place"}><i>place</i></ClLinks>. New <GlossaryTerm styled={true} term={"setf expander"}><i>setf expanders</i></GlossaryTerm> can be defined by using <ClLinks  term={"defsetf"}><b>defsetf</b></ClLinks> and <ClLinks  term={"define-setf-expander"}><b>define-setf-expander</b></ClLinks>. 
 
 
 

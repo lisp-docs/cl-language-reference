@@ -18,11 +18,11 @@
 
 
 
-<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a *string designator* . 
+<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a *package designator* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -46,7 +46,7 @@ These functions search for *interned symbols* whose <ClLinks styled={true} term=
 
 
 
-For <ClLinks styled={true} term={"apropos"}><b>apropos</b></ClLinks>, as each such <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is found, its name is printed on *standard output*. In addition, if such a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is defined as a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> or *dynamic variable*, information about those definitions might also be printed. 
+For <ClLinks styled={true} term={"apropos"}><b>apropos</b></ClLinks>, as each such <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is found, its name is printed on <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. In addition, if such a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is defined as a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> or <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm>, information about those definitions might also be printed. 
 
 
 

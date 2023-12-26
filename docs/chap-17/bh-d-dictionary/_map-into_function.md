@@ -14,11 +14,11 @@
 
 
 
-*result-sequence*—a *proper sequence*. 
+*result-sequence*—a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of as many <ClLinks  term={"argument"}><i>arguments</i></ClLinks> as there are *sequences*. *sequence*—a *proper sequence*. 
+<ClLinks  term={"function"}><i>function</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of as many <ClLinks  term={"argument"}><i>arguments</i></ClLinks> as there are *sequences*. *sequence*—a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@ Destructively modifies *result-sequence* to contain the results of applying <ClL
 
 
 
-*result-sequence* and each element of *sequences* can each be either a <ClLinks  term={"list"}><i>list</i></ClLinks> or a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . If *result-sequence* and each element of *sequences* are not all the same length, the iteration terminates when the shortest *sequence* (of any of the *sequences* or the *result-sequence*) is exhausted. If *result-sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a *fill pointer* , the *fill pointer* is ignored when deciding how many iterations to perform, and afterwards the *fill pointer* is set to the number of times <ClLinks  term={"function"}><i>function</i></ClLinks> was applied. If *result-sequence* is longer than the shortest element of *sequences*, extra elements at the end of *result-sequence* are left unchanged. If *result-sequence* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, <ClLinks  term={"map-into"}><b>map-into</b></ClLinks> immediately returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>, since <ClLinks  term={"nil"}><b>nil</b></ClLinks> is a *sequence* of length zero. 
+*result-sequence* and each element of *sequences* can each be either a <ClLinks  term={"list"}><i>list</i></ClLinks> or a <ClLinks  term={"vector"}><i>vector</i></ClLinks> . If *result-sequence* and each element of *sequences* are not all the same length, the iteration terminates when the shortest *sequence* (of any of the *sequences* or the *result-sequence*) is exhausted. If *result-sequence* is a <ClLinks  term={"vector"}><i>vector</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is ignored when deciding how many iterations to perform, and afterwards the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> is set to the number of times <ClLinks  term={"function"}><i>function</i></ClLinks> was applied. If *result-sequence* is longer than the shortest element of *sequences*, extra elements at the end of *result-sequence* are left unchanged. If *result-sequence* is <ClLinks  term={"nil"}><b>nil</b></ClLinks>, <ClLinks  term={"map-into"}><b>map-into</b></ClLinks> immediately returns <ClLinks  term={"nil"}><b>nil</b></ClLinks>, since <ClLinks  term={"nil"}><b>nil</b></ClLinks> is a *sequence* of length zero. 
 
 
 

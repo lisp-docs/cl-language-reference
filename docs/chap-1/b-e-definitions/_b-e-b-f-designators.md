@@ -10,7 +10,7 @@ Where a <ClLinks styled={true} term={"parameter"}><i>parameter</i></ClLinks> of 
 
 
 
-For example, “<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>” and “the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*standard-output\***” are operationally indistinguishable as *stream designators*. Similarly, the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> foo and the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> "FOO" are operationally indistinguishable as *string designators*. 
+For example, “<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>” and “the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*standard-output\***” are operationally indistinguishable as <GlossaryTerm styled={true} term={"stream designator"}><i>stream designators</i></GlossaryTerm>. Similarly, the <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> foo and the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> "FOO" are operationally indistinguishable as <GlossaryTerm styled={true} term={"string designator"}><i>string designators</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@ Except as otherwise noted, in a situation where the denoted <ClLinks styled={tru
 
 
 
-For example, <ClLinks styled={true} term={"mapcar"}><b>mapcar</b></ClLinks> receives a *function designator* as an argument, and its description is written as if this were simply a function. In fact, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the *function designator* is coerced right away or whether it is carried around internally in the form that it was given as an <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> and re-coerced each time it is needed. In most cases, *conforming programs* cannot detect the distinction, but there are some pathological situations (particularly those involving self-redefining or mutually-redefining functions) which do conform and which can detect this difference. The following program is a *conforming program*, but might or might not have portably correct results, depending on whether its correctness depends on one or the other of the results: 
+For example, <ClLinks styled={true} term={"mapcar"}><b>mapcar</b></ClLinks> receives a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> as an argument, and its description is written as if this were simply a function. In fact, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether the <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> is coerced right away or whether it is carried around internally in the form that it was given as an <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> and re-coerced each time it is needed. In most cases, <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> cannot detect the distinction, but there are some pathological situations (particularly those involving self-redefining or mutually-redefining functions) which do conform and which can detect this difference. The following program is a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm>, but might or might not have portably correct results, depending on whether its correctness depends on one or the other of the results: 
 
 
 

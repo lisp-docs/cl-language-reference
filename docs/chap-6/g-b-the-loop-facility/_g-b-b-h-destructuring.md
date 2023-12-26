@@ -34,15 +34,15 @@ in l do ...)
 
 
 
-A *type specifier* for a destructuring pattern is a <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *type specifiers* with the same shape as the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *variable names*, with the following exceptions: 
+A <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> for a destructuring pattern is a <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> with the same shape as the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *variable names*, with the following exceptions: 
 
 
 
-*•* When aligning the <ClLinks styled={true} term={"tree"}><i>trees</i></ClLinks>, an <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> in the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *type specifiers* that matches a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the variable tree declares the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> for each variable in the subtree rooted at the <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
+*•* When aligning the <ClLinks styled={true} term={"tree"}><i>trees</i></ClLinks>, an <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> in the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> that matches a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the variable tree declares the same <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> for each variable in the subtree rooted at the <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
 
 
 
-*•* A <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *type specifiers* that matches an <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> in the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *variable names* is a *compound type specifer* . 
+*•* A <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> that matches an <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> in the <ClLinks styled={true} term={"tree"}><i>tree</i></ClLinks> of *variable names* is a *compound type specifer* . 
 
 
 
@@ -142,7 +142,7 @@ collect (list c b a))
 
 
 
-If destructuring is used to declare or initialize a number of groups of variables into <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>, the *loop keyword* and can be used to simplify the process further. ;; Initialize and declare variables in parallel by using the AND construct. 
+If destructuring is used to declare or initialize a number of groups of variables into <ClLinks styled={true} term={"type"}><i>types</i></ClLinks>, the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> and can be used to simplify the process further. ;; Initialize and declare variables in parallel by using the AND construct. 
 
 
 
@@ -194,7 +194,7 @@ do (return (list a b)))
 
 
 
-Note that *dotted lists* can specify destructuring. 
+Note that <GlossaryTerm styled={true} term={"dotted list"}><i>dotted lists</i></GlossaryTerm> can specify destructuring. 
 
 
 

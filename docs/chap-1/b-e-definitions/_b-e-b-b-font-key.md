@@ -42,7 +42,7 @@ Denotes a sample <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> or p
 
 
 
-This font is also used for certain <ClLinks styled={true} term={"standardized"}><i>standardized</i></ClLinks> names that are not names of *external symbols* of the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, such as <ClLinks styled={true} term={"keyword"}><i>keywords</i></ClLinks><sub>1</sub>, *package names*, and *loop keywords*. 
+This font is also used for certain <ClLinks styled={true} term={"standardized"}><i>standardized</i></ClLinks> names that are not names of <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of the COMMON-LISP <ClLinks styled={true} term={"package"}><i>package</i></ClLinks>, such as <ClLinks styled={true} term={"keyword"}><i>keywords</i></ClLinks><sub>1</sub>, *package names*, and <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</i></GlossaryTerm>. 
 
 
 

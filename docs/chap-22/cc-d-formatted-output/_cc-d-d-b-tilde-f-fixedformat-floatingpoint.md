@@ -50,7 +50,7 @@ If *w* is omitted, then if the magnitude of *arg* is so large (or, if *d* is als
 
 
 
-If *arg* is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number, then it is coerced to be a *single float* and then printed. Alternatively, an implementation is permitted to process a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. If *w* and *d* are not supplied and the number has no exact decimal representation, for example 1/3, some precision cutoff must be chosen by the implementation since only a finite number of digits may be printed. 
+If *arg* is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number, then it is coerced to be a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm> and then printed. Alternatively, an implementation is permitted to process a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. If *w* and *d* are not supplied and the number has no exact decimal representation, for example 1/3, some precision cutoff must be chosen by the implementation since only a finite number of digits may be printed. 
 
 
 

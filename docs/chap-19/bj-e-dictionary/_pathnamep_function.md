@@ -18,7 +18,7 @@
 
 
 
-*generalized-boolean*—a *generalized boolean*. 
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -99,7 +99,7 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a *pathname designator* . 
+<ClLinks  term={"pathname"}><i>pathname</i></ClLinks>—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
@@ -107,27 +107,27 @@ Returns <ClLinks  term={"true"}><i>true</i></ClLinks> if <ClLinks  term={"object
 
 
 
-*host*—a *valid pathname host*. 
+*host*—a <GlossaryTerm styled={true} term={"valid pathname host"}><i>valid pathname host</i></GlossaryTerm>. 
 
 
 
-*device*—a *valid pathname device*. 
+*device*—a <GlossaryTerm styled={true} term={"valid pathname device"}><i>valid pathname device</i></GlossaryTerm>. 
 
 
 
-*directory*—a *valid pathname directory*. 
+*directory*—a <GlossaryTerm styled={true} term={"valid pathname directory"}><i>valid pathname directory</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"name"}><i>name</i></ClLinks>—a *valid pathname name*. 
+<ClLinks  term={"name"}><i>name</i></ClLinks>—a <GlossaryTerm styled={true} term={"valid pathname name"}><i>valid pathname name</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"type"}><i>type</i></ClLinks>—a *valid pathname type*. 
+<ClLinks  term={"type"}><i>type</i></ClLinks>—a <GlossaryTerm styled={true} term={"valid pathname type"}><i>valid pathname type</i></GlossaryTerm>. 
 
 
 
-*version*—a *valid pathname version*. 
+*version*—a <GlossaryTerm styled={true} term={"valid pathname version"}><i>valid pathname version</i></GlossaryTerm>. 
 
 
 
@@ -139,7 +139,7 @@ These functions return the components of <ClLinks  term={"pathname"}><i>pathname
 
 
 
-If the *pathname designator* is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
+If the <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> is a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>, it represents the name used to open the file. This may be, but is not required to be, the actual name of the file. 
 
 
 
@@ -212,7 +212,7 @@ If <ClLinks  term={"case"}><i>case</i></ClLinks> is supplied, it is treated as d
 
 
 
-The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> and the host *file system*. 
+The <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> and the host <GlossaryTerm styled={true} term={"file system"}><i>file system</i></GlossaryTerm>. 
 
 
 

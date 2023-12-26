@@ -1,4 +1,4 @@
-**echo-stream** *System Class* 
+**echo-stream** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-An *echo stream* is a *bidirectional stream* that gets its input from an associated *input stream* and sends its output to an associated *output stream*. 
+An <GlossaryTerm styled={true} term={"echo stream"}><i>echo stream</i></GlossaryTerm> is a *bidirectional stream* that gets its input from an associated *input stream* and sends its output to an associated *output stream*. 
 
 
 

@@ -23,7 +23,7 @@
 
 
 
-*index*—a *valid array row-major index* for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+*index*—a <GlossaryTerm styled={true} term={"valid array row-major index"}><i>valid array row-major index</i></GlossaryTerm> for the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 

@@ -1,4 +1,4 @@
-**shared-initialize** *Standard Generic Function* 
+**shared-initialize** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-*initargs*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of *keyword/value pairs* (of initialization argument <ClLinks  term={"name"}><i>names</i></ClLinks> and <ClLinks  term={"value"}><i>values</i></ClLinks>). 
+*initargs*—a <ClLinks  term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"keyword/value pair"}><i>keyword/value pairs</i></GlossaryTerm> (of initialization argument <ClLinks  term={"name"}><i>names</i></ClLinks> and <ClLinks  term={"value"}><i>values</i></ClLinks>). 
 
 
 
@@ -42,7 +42,7 @@ The generic function <ClLinks  term={"shared-initialize"}><b>shared-initialize</
 
 
 
-The generic function <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> takes the following arguments: the <ClLinks  term={"instance"}><i>instance</i></ClLinks> to be initialized, a specification of a set of *slot-names accessible* in that <ClLinks  term={"instance"}><i>instance</i></ClLinks>, and any number of *initargs*. The arguments after the first two must form an *initialization argument list*. The system-supplied 
+The generic function <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> takes the following arguments: the <ClLinks  term={"instance"}><i>instance</i></ClLinks> to be initialized, a specification of a set of *slot-names accessible* in that <ClLinks  term={"instance"}><i>instance</i></ClLinks>, and any number of *initargs*. The arguments after the first two must form an <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. The system-supplied 
 
 
 
@@ -70,11 +70,11 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> be
 
 
 
-*•* If an *initarg* in the *initialization argument list* specifies a value for that <ClLinks  term={"slot"}><i>slot</i></ClLinks>, that value is stored into the <ClLinks  term={"slot"}><i>slot</i></ClLinks>, even if a value has already been stored in the <ClLinks  term={"slot"}><i>slot</i></ClLinks> before the <ClLinks  term={"method"}><i>method</i></ClLinks> is run. 
+*•* If an *initarg* in the <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm> specifies a value for that <ClLinks  term={"slot"}><i>slot</i></ClLinks>, that value is stored into the <ClLinks  term={"slot"}><i>slot</i></ClLinks>, even if a value has already been stored in the <ClLinks  term={"slot"}><i>slot</i></ClLinks> before the <ClLinks  term={"method"}><i>method</i></ClLinks> is run. 
 
 
 
-*•* Any <ClLinks  term={"slot"}><i>slots</i></ClLinks> indicated by *slot-names* that are still unbound at this point are initialized according to their :initform forms. For any such <ClLinks  term={"slot"}><i>slot</i></ClLinks> that has an :initform form, that <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated in the lexical environment of its defining <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> and the result is stored into the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. For example, if a *before method* stores a value in the <ClLinks  term={"slot"}><i>slot</i></ClLinks>, the :initform form will not be used to supply a value for the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
+*•* Any <ClLinks  term={"slot"}><i>slots</i></ClLinks> indicated by *slot-names* that are still unbound at this point are initialized according to their :initform forms. For any such <ClLinks  term={"slot"}><i>slot</i></ClLinks> that has an :initform form, that <ClLinks  term={"form"}><i>form</i></ClLinks> is evaluated in the lexical environment of its defining <ClLinks  term={"defclass"}><b>defclass</b></ClLinks> <ClLinks  term={"form"}><i>form</i></ClLinks> and the result is stored into the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. For example, if a <GlossaryTerm styled={true} term={"before method"}><i>before method</i></GlossaryTerm> stores a value in the <ClLinks  term={"slot"}><i>slot</i></ClLinks>, the :initform form will not be used to supply a value for the <ClLinks  term={"slot"}><i>slot</i></ClLinks>. 
 
 
 
@@ -102,7 +102,7 @@ The *slots-names* argument specifies the <ClLinks  term={"slot"}><i>slots</i></C
 
 
 
-*Initargs* are declared as valid by using the :initarg option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the *lambda list* of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid *initarg* name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
+*Initargs* are declared as valid by using the :initarg option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid *initarg* name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
 
 
 

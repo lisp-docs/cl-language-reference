@@ -6,7 +6,7 @@ The KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks> contains <ClLink
 
 
 
-*Symbol tokens* that start with a *package marker* are parsed by the *Lisp reader* as <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>; see Section 2.3.4 (Symbols as Tokens). This makes it notationally convenient to use <ClLinks  term={"keyword"}><i>keywords</i></ClLinks> when communicating between programs in different <ClLinks  term={"package"}><i>packages</i></ClLinks>. For example, the mechanism for passing *keyword parameters* in a <ClLinks  term={"call"}><i>call</i></ClLinks> uses <ClLinks  term={"keyword"}><i>keywords</i></ClLinks><sub>1</sub> to name the corresponding <ClLinks  term={"argument"}><i>arguments</i></ClLinks>; see Section 3.4.1 (Ordinary Lambda Lists). 
+*Symbol tokens* that start with a <GlossaryTerm styled={true} term={"package marker"}><i>package marker</i></GlossaryTerm> are parsed by the *Lisp reader* as <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> in the KEYWORD <ClLinks  term={"package"}><i>package</i></ClLinks>; see Section 2.3.4 (Symbols as Tokens). This makes it notationally convenient to use <ClLinks  term={"keyword"}><i>keywords</i></ClLinks> when communicating between programs in different <ClLinks  term={"package"}><i>packages</i></ClLinks>. For example, the mechanism for passing <GlossaryTerm styled={true} term={"keyword parameter"}><i>keyword parameters</i></GlossaryTerm> in a <ClLinks  term={"call"}><i>call</i></ClLinks> uses <ClLinks  term={"keyword"}><i>keywords</i></ClLinks><sub>1</sub> to name the corresponding <ClLinks  term={"argument"}><i>arguments</i></ClLinks>; see Section 3.4.1 (Ordinary Lambda Lists). 
 
 
 

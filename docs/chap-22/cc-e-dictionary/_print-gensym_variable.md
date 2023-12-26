@@ -6,7 +6,7 @@
 
 
 
-a *generalized boolean*. 
+a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 

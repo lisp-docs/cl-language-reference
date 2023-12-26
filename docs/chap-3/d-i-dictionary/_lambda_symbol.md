@@ -14,7 +14,7 @@
 
 
 
-*lambda-list*—an *ordinary lambda list*. 
+*lambda-list*—an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-A *lambda expression* is a <ClLinks  term={"list"}><i>list</i></ClLinks> that can be used in place of a *function name* in certain contexts to denote a <ClLinks  term={"function"}><i>function</i></ClLinks> by directly describing its behavior rather than indirectly by referring to the name of an *established function*. 
+A <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> is a <ClLinks  term={"list"}><i>list</i></ClLinks> that can be used in place of a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> in certain contexts to denote a <ClLinks  term={"function"}><i>function</i></ClLinks> by directly describing its behavior rather than indirectly by referring to the name of an *established function*. 
 
 
 
-*Documentation* is attached to the denoted <ClLinks  term={"function"}><i>function</i></ClLinks> (if any is actually created) as a *documentation string*. 
+*Documentation* is attached to the denoted <ClLinks  term={"function"}><i>function</i></ClLinks> (if any is actually created) as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ A *lambda expression* is a <ClLinks  term={"list"}><i>list</i></ClLinks> that ca
 
 
 
-The *lambda form* 
+The <GlossaryTerm styled={true} term={"lambda form"}><i>lambda form</i></GlossaryTerm> 
 
 
 
@@ -62,7 +62,7 @@ The *lambda form*
 
 
 
-is semantically equivalent to the *function form* 
+is semantically equivalent to the <GlossaryTerm styled={true} term={"function form"}><i>function form</i></GlossaryTerm> 
 
 
 

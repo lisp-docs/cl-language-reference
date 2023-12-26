@@ -1,4 +1,4 @@
-**character** *System Class* 
+**character** <GlossaryTerm styled={true} term={"system class"}><i>System Class</i></GlossaryTerm> 
 
 
 
@@ -18,7 +18,7 @@ A <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is an <Cl
 
 
 
-The <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks> and <ClLinks styled={true} term={"extended-char"}><b>extended-char</b></ClLinks> form an *exhaustive partition* of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>. 
+The <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks> and <ClLinks styled={true} term={"extended-char"}><b>extended-char</b></ClLinks> form an <GlossaryTerm styled={true} term={"exhaustive partition"}><i>exhaustive partition</i></GlossaryTerm> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>. 
 
 
 

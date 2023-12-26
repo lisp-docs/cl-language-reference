@@ -11,23 +11,23 @@ sidebar_position: 112
 
 
 
-**package cell** *n. Trad.* (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) The <ClLinks  term={"place"}><i>place</i></ClLinks> in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that holds one of possibly several <ClLinks  term={"package"}><i>packages</i></ClLinks> in which the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"interned"}><i>interned</i></ClLinks>, called the *home package*, or which holds <ClLinks  term={"nil"}><b>nil</b></ClLinks> if no such <ClLinks  term={"package"}><i>package</i></ClLinks> exists or is known. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks>. 
+**package cell** *n. Trad.* (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) The <ClLinks  term={"place"}><i>place</i></ClLinks> in a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> that holds one of possibly several <ClLinks  term={"package"}><i>packages</i></ClLinks> in which the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"interned"}><i>interned</i></ClLinks>, called the <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm>, or which holds <ClLinks  term={"nil"}><b>nil</b></ClLinks> if no such <ClLinks  term={"package"}><i>package</i></ClLinks> exists or is known. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"symbol-package"}><b>symbol-package</b></ClLinks>. 
 
 
 
-**package designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"package"}><i>package</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"package"}><i>package</i></ClLinks> and that is one of: a *string designator* (denoting the <ClLinks  term={"package"}><i>package</i></ClLinks> that has the <ClLinks  term={"string"}><i>string</i></ClLinks> that it designates as its <ClLinks  term={"name"}><i>name</i></ClLinks> or as one of its <ClLinks  term={"nickname"}><i>nicknames</i></ClLinks>), or a <ClLinks  term={"package"}><i>package</i></ClLinks> (denoting itself). 
+**package designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"package"}><i>package</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"package"}><i>package</i></ClLinks> and that is one of: a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> (denoting the <ClLinks  term={"package"}><i>package</i></ClLinks> that has the <ClLinks  term={"string"}><i>string</i></ClLinks> that it designates as its <ClLinks  term={"name"}><i>name</i></ClLinks> or as one of its <ClLinks  term={"nickname"}><i>nicknames</i></ClLinks>), or a <ClLinks  term={"package"}><i>package</i></ClLinks> (denoting itself). 
 
 
 
-**package marker** *n.* a character which is used in the textual notation for a symbol to separate the package name from the symbol name, and which is <ClLinks  term={"colon"}><i>colon</i></ClLinks> in the *standard readtable*. See Section 2.1 (Character Syntax). 
+**package marker** *n.* a character which is used in the textual notation for a symbol to separate the package name from the symbol name, and which is <ClLinks  term={"colon"}><i>colon</i></ClLinks> in the <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm>. See Section 2.1 (Character Syntax). 
 
 
 
-**package prefix** *n.* a notation preceding the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in text that is processed by the *Lisp reader* , which uses a *package name* followed by one or more *package markers*, and which indicates that the symbol is looked up in the indicated <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+**package prefix** *n.* a notation preceding the <ClLinks  term={"name"}><i>name</i></ClLinks> of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in text that is processed by the *Lisp reader* , which uses a *package name* followed by one or more <GlossaryTerm styled={true} term={"package marker"}><i>package markers</i></GlossaryTerm>, and which indicates that the symbol is looked up in the indicated <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-**package registry** *n.* A mapping of <ClLinks  term={"name"}><i>names</i></ClLinks> to *package objects*. It is possible for there to be a *package object* which is not in this mapping; such a <ClLinks  term={"package"}><i>package</i></ClLinks> is called an *unregistered package*. *Operators* such as <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> consult this mapping in order to find a <ClLinks  term={"package"}><i>package</i></ClLinks> from its <ClLinks  term={"name"}><i>name</i></ClLinks>. <ClLinks  term={"operator"}><i>Operators</i></ClLinks> such as <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks>, <ClLinks  term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks>, and <ClLinks  term={"list-all-packages"}><b>list-all-packages</b></ClLinks> operate only on <ClLinks  term={"package"}><i>packages</i></ClLinks> that exist in the *package registry*. 
+**package registry** *n.* A mapping of <ClLinks  term={"name"}><i>names</i></ClLinks> to *package objects*. It is possible for there to be a *package object* which is not in this mapping; such a <ClLinks  term={"package"}><i>package</i></ClLinks> is called an <GlossaryTerm styled={true} term={"unregistered package"}><i>unregistered package</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"operator"}><i>Operators</i></GlossaryTerm> such as <ClLinks  term={"find-package"}><b>find-package</b></ClLinks> consult this mapping in order to find a <ClLinks  term={"package"}><i>package</i></ClLinks> from its <ClLinks  term={"name"}><i>name</i></ClLinks>. <ClLinks  term={"operator"}><i>Operators</i></ClLinks> such as <ClLinks  term={"do-all-symbols"}><b>do-all-symbols</b></ClLinks>, <ClLinks  term={"find-all-symbols"}><b>find-all-symbols</b></ClLinks>, and <ClLinks  term={"list-all-packages"}><b>list-all-packages</b></ClLinks> operate only on <ClLinks  term={"package"}><i>packages</i></ClLinks> that exist in the <GlossaryTerm styled={true} term={"package registry"}><i>package registry</i></GlossaryTerm>. 
 
 
 
@@ -59,11 +59,11 @@ computational “parallelism” since the <ClLinks  term={"form"}><i>forms</i></
 
 
 
-**parameter** *n.* 1. (of a <ClLinks  term={"function"}><i>function</i></ClLinks>) a <ClLinks  term={"variable"}><i>variable</i></ClLinks> in the definition of a <ClLinks  term={"function"}><i>function</i></ClLinks> which takes on the <ClLinks  term={"value"}><i>value</i></ClLinks> of a corresponding <ClLinks  term={"argument"}><i>argument</i></ClLinks> (or of a <ClLinks  term={"list"}><i>list</i></ClLinks> of corresponding arguments) to that <ClLinks  term={"function"}><i>function</i></ClLinks> when it is called, or which in some cases is given a default value because there is no corresponding <ClLinks  term={"argument"}><i>argument</i></ClLinks>. 2. (of a *format directive*) an <ClLinks  term={"object"}><i>object</i></ClLinks> received as 
+**parameter** *n.* 1. (of a <ClLinks  term={"function"}><i>function</i></ClLinks>) a <ClLinks  term={"variable"}><i>variable</i></ClLinks> in the definition of a <ClLinks  term={"function"}><i>function</i></ClLinks> which takes on the <ClLinks  term={"value"}><i>value</i></ClLinks> of a corresponding <ClLinks  term={"argument"}><i>argument</i></ClLinks> (or of a <ClLinks  term={"list"}><i>list</i></ClLinks> of corresponding arguments) to that <ClLinks  term={"function"}><i>function</i></ClLinks> when it is called, or which in some cases is given a default value because there is no corresponding <ClLinks  term={"argument"}><i>argument</i></ClLinks>. 2. (of a <GlossaryTerm styled={true} term={"format directive"}><i>format directive</i></GlossaryTerm>) an <ClLinks  term={"object"}><i>object</i></ClLinks> received as 
 
 
 
-data flow by a *format directive* due to a prefix notation within the *format string* at the *format directive*’s point of use. See Section 22.3 (Formatted Output). “In "&#126;3,’0D", the number 3 and the character #\0 are parameters to the &#126;D format directive.” 
+data flow by a <GlossaryTerm styled={true} term={"format directive"}><i>format directive</i></GlossaryTerm> due to a prefix notation within the <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm> at the <GlossaryTerm styled={true} term={"format directive"}><i>format directive</i></GlossaryTerm>’s point of use. See Section 22.3 (Formatted Output). “In "&#126;3,’0D", the number 3 and the character #\0 are parameters to the &#126;D format directive.” 
 
 
 
@@ -75,11 +75,11 @@ data flow by a *format directive* due to a prefix notation within the *format st
 
 
 
-<ClLinks  term={"argument"}><i>argument</i></ClLinks> matches the *parameter specializer* . 2. a <ClLinks  term={"class"}><i>class</i></ClLinks>, or a <ClLinks  term={"list"}><i>list</i></ClLinks> (eql <ClLinks  term={"object"}><i>object</i></ClLinks>). 
+<ClLinks  term={"argument"}><i>argument</i></ClLinks> matches the <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializer</i></GlossaryTerm> . 2. a <ClLinks  term={"class"}><i>class</i></ClLinks>, or a <ClLinks  term={"list"}><i>list</i></ClLinks> (eql <ClLinks  term={"object"}><i>object</i></ClLinks>). 
 
 
 
-**parameter specializer name** *n.* 1. (of a <ClLinks  term={"method"}><i>method</i></ClLinks> definition) an expression used in code to name a *parameter specializer* . See Section 7.6.2 (Introduction to Methods). 2. a <ClLinks  term={"class"}><i>class</i></ClLinks>, a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks  term={"class"}><i>class</i></ClLinks>, or a <ClLinks  term={"list"}><i>list</i></ClLinks> (eql <ClLinks  term={"form"}><i>form</i></ClLinks>). 
+**parameter specializer name** *n.* 1. (of a <ClLinks  term={"method"}><i>method</i></ClLinks> definition) an expression used in code to name a <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializer</i></GlossaryTerm> . See Section 7.6.2 (Introduction to Methods). 2. a <ClLinks  term={"class"}><i>class</i></ClLinks>, a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks  term={"class"}><i>class</i></ClLinks>, or a <ClLinks  term={"list"}><i>list</i></ClLinks> (eql <ClLinks  term={"form"}><i>form</i></ClLinks>). 
 
 
 
@@ -87,15 +87,15 @@ data flow by a *format directive* due to a prefix notation within the *format st
 
 
 
-**pathname designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> and that is one of: a *pathname namestring* (denoting the corresponding <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>), a *stream associated with a file* (denoting the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> used to open the <ClLinks  term={"file"}><i>file</i></ClLinks>; this may be, but is not required to be, the actual name of the <ClLinks  term={"file"}><i>file</i></ClLinks>), or a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> (denoting itself). See Section 21.1.1.1.2 (Open and Closed Streams). 
+**pathname designator** *n.* a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>; that is, an <ClLinks  term={"object"}><i>object</i></ClLinks> that denotes a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> and that is one of: a *pathname namestring* (denoting the corresponding <ClLinks  term={"pathname"}><i>pathname</i></ClLinks>), a <GlossaryTerm styled={true} term={"stream associated with a file"}><i>stream associated with a file</i></GlossaryTerm> (denoting the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> used to open the <ClLinks  term={"file"}><i>file</i></ClLinks>; this may be, but is not required to be, the actual name of the <ClLinks  term={"file"}><i>file</i></ClLinks>), or a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> (denoting itself). See Section 21.1.1.1.2 (Open and Closed Streams). 
 
 
 
-**physical pathname** *n.* a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> that is not a *logical pathname*. 
+**physical pathname** *n.* a <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>. 
 
 
 
-**place** *n.* 1. a <ClLinks  term={"form"}><i>form</i></ClLinks> which is suitable for use as a *generalized reference*. 2. the 
+**place** *n.* 1. a <ClLinks  term={"form"}><i>form</i></ClLinks> which is suitable for use as a <GlossaryTerm styled={true} term={"generalized reference"}><i>generalized reference</i></GlossaryTerm>. 2. the 
 
 
 
@@ -103,11 +103,11 @@ conceptual location referred to by such a <ClLinks  term={"place"}><i>place</i><
 
 
 
-**plist** [ **p—e list** ] *n.* a *property list*. 
+**plist** [ **p—e list** ] *n.* a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
 
 
 
-**portable** *adj.* (of <ClLinks  term={"code"}><i>code</i></ClLinks>) required to produce equivalent results and observable side effects in all *conforming implementations*. 
+**portable** *adj.* (of <ClLinks  term={"code"}><i>code</i></ClLinks>) required to produce equivalent results and observable side effects in all <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementations</i></GlossaryTerm>. 
 
 
 
@@ -115,7 +115,7 @@ conceptual location referred to by such a <ClLinks  term={"place"}><i>place</i><
 
 
 
-**potential number** *n.* A textual notation that might be parsed by the *Lisp reader* in some *conforming implementation* as a <ClLinks  term={"number"}><i>number</i></ClLinks> but is not required to be parsed as a <ClLinks  term={"number"}><i>number</i></ClLinks> . No <ClLinks  term={"object"}><i>object</i></ClLinks> is a *potential number*—either an <ClLinks  term={"object"}><i>object</i></ClLinks> is a <ClLinks  term={"number"}><i>number</i></ClLinks> or it is not. See Section 2.3.1.1 (Potential Numbers as Tokens). 
+**potential number** *n.* A textual notation that might be parsed by the *Lisp reader* in some <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm> as a <ClLinks  term={"number"}><i>number</i></ClLinks> but is not required to be parsed as a <ClLinks  term={"number"}><i>number</i></ClLinks> . No <ClLinks  term={"object"}><i>object</i></ClLinks> is a <GlossaryTerm styled={true} term={"potential number"}><i>potential number</i></GlossaryTerm>—either an <ClLinks  term={"object"}><i>object</i></ClLinks> is a <ClLinks  term={"number"}><i>number</i></ClLinks> or it is not. See Section 2.3.1.1 (Potential Numbers as Tokens). 
 
 
 
@@ -135,15 +135,15 @@ conceptual location referred to by such a <ClLinks  term={"place"}><i>place</i><
 
 
 
-**predicate** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that returns a *generalized boolean* as its first value. 
+**predicate** *n.* a <ClLinks  term={"function"}><i>function</i></ClLinks> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> as its first value. 
 
 
 
-**present** *n.* 1. (of a <ClLinks  term={"feature"}><i>feature</i></ClLinks> in a *Lisp image*) a state of being that is in effect if and only if the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming the <ClLinks  term={"feature"}><i>feature</i></ClLinks> is an <ClLinks  term={"element"}><i>element</i></ClLinks> of the *features list*. 2. (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) being accessible in that <ClLinks  term={"package"}><i>package</i></ClLinks> directly, rather than being inherited from another <ClLinks  term={"package"}><i>package</i></ClLinks>. 
+**present** *n.* 1. (of a <ClLinks  term={"feature"}><i>feature</i></ClLinks> in a *Lisp image*) a state of being that is in effect if and only if the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> naming the <ClLinks  term={"feature"}><i>feature</i></ClLinks> is an <ClLinks  term={"element"}><i>element</i></ClLinks> of the <GlossaryTerm styled={true} term={"features list"}><i>features list</i></GlossaryTerm>. 2. (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) being accessible in that <ClLinks  term={"package"}><i>package</i></ClLinks> directly, rather than being inherited from another <ClLinks  term={"package"}><i>package</i></ClLinks>. 
 
 
 
-**pretty print** *v.t.* (an <ClLinks  term={"object"}><i>object</i></ClLinks>) to invoke the *pretty printer* on the <ClLinks  term={"object"}><i>object</i></ClLinks>. 
+**pretty print** *v.t.* (an <ClLinks  term={"object"}><i>object</i></ClLinks>) to invoke the <GlossaryTerm styled={true} term={"pretty printer"}><i>pretty printer</i></GlossaryTerm> on the <ClLinks  term={"object"}><i>object</i></ClLinks>. 
 
 
 
@@ -159,7 +159,7 @@ conceptual location referred to by such a <ClLinks  term={"place"}><i>place</i><
 
 
 
-**primary method** *n.* a member of one of two sets of <ClLinks  term={"method"}><i>methods</i></ClLinks> (the set of *auxiliary methods* is the other) that form an exhaustive partition of the set of <ClLinks  term={"method"}><i>methods</i></ClLinks> on the <ClLinks  term={"method"}><i>method</i></ClLinks>’s *generic function*. How these sets are determined is dependent on the *method combination* type; see Section 7.6.2 (Introduction to Methods). 
+**primary method** *n.* a member of one of two sets of <ClLinks  term={"method"}><i>methods</i></ClLinks> (the set of <GlossaryTerm styled={true} term={"auxiliary method"}><i>auxiliary methods</i></GlossaryTerm> is the other) that form an exhaustive partition of the set of <ClLinks  term={"method"}><i>methods</i></ClLinks> on the <ClLinks  term={"method"}><i>method</i></ClLinks>’s <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. How these sets are determined is dependent on the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm> type; see Section 7.6.2 (Introduction to Methods). 
 
 
 
@@ -175,7 +175,7 @@ conceptual location referred to by such a <ClLinks  term={"place"}><i>place</i><
 
 
 
-**printer control variable** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> whose specific purpose is to control some action of the *Lisp printer* ; that is, one of the <ClLinks  term={"variable"}><i>variables</i></ClLinks> in Figure 22–1, or else some *implementation-defined variable* which is defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be a *printer control variable*. 
+**printer control variable** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> whose specific purpose is to control some action of the *Lisp printer* ; that is, one of the <ClLinks  term={"variable"}><i>variables</i></ClLinks> in Figure 22–1, or else some *implementation-defined variable* which is defined by the <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> to be a <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variable</i></GlossaryTerm>. 
 
 
 
@@ -191,7 +191,7 @@ conceptual location referred to by such a <ClLinks  term={"place"}><i>place</i><
 
 
 
-**printer escaping** *n.* The combined state of the *printer control variables* 
+**printer escaping** *n.* The combined state of the <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variables</i></GlossaryTerm> 
 
 
 
@@ -199,7 +199,7 @@ conceptual location referred to by such a <ClLinks  term={"place"}><i>place</i><
 
 
 
-or <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>, then *printer escaping* is “enabled”; otherwise (if the values of both <ClLinks  term={"print-readably"}><b>\*print-readably\*</b></ClLinks> and <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> are <ClLinks  term={"false"}><i>false</i></ClLinks>), then *printer escaping* is “disabled”. 
+or <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks  term={"true"}><i>true</i></ClLinks>, then <GlossaryTerm styled={true} term={"printer escaping"}><i>printer escaping</i></GlossaryTerm> is “enabled”; otherwise (if the values of both <ClLinks  term={"print-readably"}><b>\*print-readably\*</b></ClLinks> and <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> are <ClLinks  term={"false"}><i>false</i></ClLinks>), then <GlossaryTerm styled={true} term={"printer escaping"}><i>printer escaping</i></GlossaryTerm> is “disabled”. 
 
 
 
@@ -207,7 +207,7 @@ or <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks
 
 
 
-**process** *v.t.* (a <ClLinks  term={"form"}><i>form</i></ClLinks> by the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> ) to perform *minimal compilation*, determining the time of evaluation for a <ClLinks  term={"form"}><i>form</i></ClLinks>, and possibly *evaluating* that <ClLinks  term={"form"}><i>form</i></ClLinks> (if required). 
+**process** *v.t.* (a <ClLinks  term={"form"}><i>form</i></ClLinks> by the <ClLinks  term={"compiler"}><i>compiler</i></ClLinks> ) to perform <GlossaryTerm styled={true} term={"minimal compilation"}><i>minimal compilation</i></GlossaryTerm>, determining the time of evaluation for a <ClLinks  term={"form"}><i>form</i></ClLinks>, and possibly *evaluating* that <ClLinks  term={"form"}><i>form</i></ClLinks> (if required). 
 
 
 
@@ -219,11 +219,11 @@ or <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks
 
 
 
-**proclamation** *n.* a *global declaration*. 
+**proclamation** *n.* a <GlossaryTerm styled={true} term={"global declaration"}><i>global declaration</i></GlossaryTerm>. 
 
 
 
-**prog tag** *n. Trad.* a *go tag*. 
+**prog tag** *n. Trad.* a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>. 
 
 
 
@@ -235,11 +235,11 @@ or <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks
 
 
 
-**programmer code** *n. code* that is supplied by the programmer; that is, <ClLinks  term={"code"}><i>code</i></ClLinks> that is not *system code*. 
+**programmer code** *n. code* that is supplied by the programmer; that is, <ClLinks  term={"code"}><i>code</i></ClLinks> that is not <GlossaryTerm styled={true} term={"system code"}><i>system code</i></GlossaryTerm>. 
 
 
 
-**proper list** *n.* A <ClLinks  term={"list"}><i>list</i></ClLinks> terminated by the *empty list*. (The *empty list* is a *proper list*.) See *improper list*. 
+**proper list** *n.* A <ClLinks  term={"list"}><i>list</i></ClLinks> terminated by the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. (The <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>.) See *improper list*. 
 
 
 
@@ -247,7 +247,7 @@ or <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks
 
 
 
-**proper sequence** *n.* a *sequence* which is not an *improper list*; that is, a <ClLinks  term={"vector"}><i>vector</i></ClLinks> or a *proper list*. 
+**proper sequence** *n.* a *sequence* which is not an *improper list*; that is, a <ClLinks  term={"vector"}><i>vector</i></ClLinks> or a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
@@ -255,11 +255,11 @@ or <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks
 
 
 
-**property** *n.* (of a *property list*) 1. a conceptual pairing of a *property indicator* and its associated *property value* on a *property list*. 2. a *property value*. 
+**property** *n.* (of a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>) 1. a conceptual pairing of a <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> and its associated <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm> on a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 2. a <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm>. 
 
 
 
-**property indicator** *n.* (of a *property list*) the <ClLinks  term={"name"}><i>name</i></ClLinks> part of a <ClLinks  term={"property"}><i>property</i></ClLinks>, used as a <ClLinks  term={"key"}><i>key</i></ClLinks> when looking up a *property value* on a *property list*. 
+**property indicator** *n.* (of a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>) the <ClLinks  term={"name"}><i>name</i></ClLinks> part of a <ClLinks  term={"property"}><i>property</i></ClLinks>, used as a <ClLinks  term={"key"}><i>key</i></ClLinks> when looking up a <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm> on a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
 
 
 
@@ -279,11 +279,11 @@ or <ClLinks  term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks
 
 
 
-a *property list*, the first such pair determines the <ClLinks  term={"property"}><i>property</i></ClLinks>. 2. (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) the component of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> containing a *property list*. 
+a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>, the first such pair determines the <ClLinks  term={"property"}><i>property</i></ClLinks>. 2. (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) the component of the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> containing a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
 
 
 
-**property value** *n.* (of a *property indicator* on a *property list*) the <ClLinks  term={"object"}><i>object</i></ClLinks> associated with the *property indicator* on the *property list*. 
+**property value** *n.* (of a <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> on a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>) the <ClLinks  term={"object"}><i>object</i></ClLinks> associated with the <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> on the <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
 
 
 
@@ -291,7 +291,7 @@ a *property list*, the first such pair determines the <ClLinks  term={"property"
 
 
 
-expresses intention to conform, regardless of whether the goal of that intention is realized in practice. For example, language implementations have been known to have bugs, and while an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> of this specification with bugs might not be a *conforming implementation*, it can still *purport to conform*. This is an important distinction in certain specific cases; *e.g.*, see the <ClLinks  term={"variable"}><i>variable</i></ClLinks> <ClLinks  term={"features"}><b>\*features\*</b></ClLinks>. 
+expresses intention to conform, regardless of whether the goal of that intention is realized in practice. For example, language implementations have been known to have bugs, and while an <ClLinks  term={"implementation"}><i>implementation</i></ClLinks> of this specification with bugs might not be a <GlossaryTerm styled={true} term={"conforming implementation"}><i>conforming implementation</i></GlossaryTerm>, it can still *purport to conform*. This is an important distinction in certain specific cases; *e.g.*, see the <ClLinks  term={"variable"}><i>variable</i></ClLinks> <ClLinks  term={"features"}><b>\*features\*</b></ClLinks>. 
 
 
 

@@ -14,7 +14,7 @@
 
 
 
-*pathspec*—a *pathname designator* . 
+*pathspec*—a <GlossaryTerm styled={true} term={"pathname designator"}><i>pathname designator</i></GlossaryTerm> . 
 
 
 
@@ -46,11 +46,11 @@ Returns the <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> denoted by *pa
 
 
 
-If the *pathspec designator* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, the <ClLinks  term={"stream"}><i>stream</i></ClLinks> can be either open or closed; in both cases, the <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> returned corresponds to the <ClLinks  term={"filename"}><i>filename</i></ClLinks> used to open the <ClLinks  term={"file"}><i>file</i></ClLinks>. <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> returns the same <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> for a *file stream* after it is closed as it did when it was open. 
+If the *pathspec designator* is a <ClLinks  term={"stream"}><i>stream</i></ClLinks>, the <ClLinks  term={"stream"}><i>stream</i></ClLinks> can be either open or closed; in both cases, the <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> returned corresponds to the <ClLinks  term={"filename"}><i>filename</i></ClLinks> used to open the <ClLinks  term={"file"}><i>file</i></ClLinks>. <ClLinks  term={"pathname"}><b>pathname</b></ClLinks> returns the same <ClLinks  term={"pathname"}><i>pathname</i></ClLinks> for a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> after it is closed as it did when it was open. 
 
 
 
-If the *pathspec designator* is a *file stream* created by opening a *logical pathname*, a *logical pathname* is returned. 
+If the *pathspec designator* is a <GlossaryTerm styled={true} term={"file stream"}><i>file stream</i></GlossaryTerm> created by opening a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"logical pathname"}><i>logical pathname</i></GlossaryTerm> is returned. 
 
 
 

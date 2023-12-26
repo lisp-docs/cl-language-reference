@@ -2,7 +2,7 @@
 
 
 
-Anywhere in a *macro lambda list* where a parameter name can appear, and where *ordinary lambda list* syntax (as described in Section 3.4.1 (Ordinary Lambda Lists)) does not otherwise allow a <ClLinks  term={"list"}><i>list</i></ClLinks>, a *destructuring lambda list* can appear in place of the parameter name. When this is done, then  
+Anywhere in a <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda list</i></GlossaryTerm> where a parameter name can appear, and where <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm> syntax (as described in Section 3.4.1 (Ordinary Lambda Lists)) does not otherwise allow a <ClLinks  term={"list"}><i>list</i></ClLinks>, a <GlossaryTerm styled={true} term={"destructuring lambda list"}><i>destructuring lambda list</i></GlossaryTerm> can appear in place of the parameter name. When this is done, then  
 
 
 
@@ -10,7 +10,7 @@ Anywhere in a *macro lambda list* where a parameter name can appear, and where *
 
 
 
-the argument that would match the parameter is treated as a (possibly dotted) <ClLinks  term={"list"}><i>list</i></ClLinks>, to be used as an argument list for satisfying the parameters in the embedded *lambda list*. This is known as destructuring. 
+the argument that would match the parameter is treated as a (possibly dotted) <ClLinks  term={"list"}><i>list</i></ClLinks>, to be used as an argument list for satisfying the parameters in the embedded <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm>. This is known as destructuring. 
 
 
 

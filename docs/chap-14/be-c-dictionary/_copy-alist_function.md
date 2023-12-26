@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an *association list*. 
+<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>. 
 
 
 
-*new-alist*—an *association list*. 
+*new-alist*—an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@
 
 
 
-The *list structure* of <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> is copied, and the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> which are *conses* are also copied (as *conses* only). Any other <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> which are referred to, whether directly or indirectly, by the <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> continue to be shared. 
+The <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> of <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> is copied, and the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> which are *conses* are also copied (as *conses* only). Any other <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> which are referred to, whether directly or indirectly, by the <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> continue to be shared. 
 
 
 

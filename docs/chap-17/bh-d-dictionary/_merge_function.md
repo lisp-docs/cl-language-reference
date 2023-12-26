@@ -14,7 +14,7 @@
 
 
 
-*result-type*—a <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> *type specifier* . 
+*result-type*—a <ClLinks  term={"sequence"}><b>sequence</b></ClLinks> <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two arguments that returns a *generalized boolean*. *key*—a *designator* for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+<ClLinks  term={"predicate"}><i>predicate</i></ClLinks>—a <ClLinks  term={"designator"}><i>designator</i></ClLinks> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of two arguments that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <ClLinks  term={"function"}><i>function</i></ClLinks> of one argument, or <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
-*result-sequence*—a *proper sequence* of *type result-type*. 
+*result-sequence*—a <GlossaryTerm styled={true} term={"proper sequence"}><i>proper sequence</i></GlossaryTerm> of *type result-type*. 
 
 
 
@@ -110,7 +110,7 @@ If the *result-type* is a <ClLinks  term={"subtype"}><i>subtype</i></ClLinks> of
 
 
 
-An error must be signaled if the *result-type* is neither a *recognizable subtype* of <ClLinks  term={"list"}><b>list</b></ClLinks>, nor a *recognizable subtype* of <ClLinks  term={"vector"}><b>vector</b></ClLinks>. 
+An error must be signaled if the *result-type* is neither a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"list"}><b>list</b></ClLinks>, nor a <GlossaryTerm styled={true} term={"recognizable subtype"}><i>recognizable subtype</i></GlossaryTerm> of <ClLinks  term={"vector"}><b>vector</b></ClLinks>. 
 
 
 

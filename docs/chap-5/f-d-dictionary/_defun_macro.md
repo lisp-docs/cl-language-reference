@@ -18,11 +18,11 @@
 
 
 
-*function-name*—a *function name*. 
+*function-name*—a <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm>. 
 
 
 
-*lambda-list*—an *ordinary lambda list*. 
+*lambda-list*—an <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda list</i></GlossaryTerm>. 
 
 
 
@@ -34,11 +34,11 @@
 
 
 
-<ClLinks  term={"form"}><i>forms</i></ClLinks>—an *implicit progn*. 
+<ClLinks  term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*block-name*—the *function block name* of the *function-name*. 
+*block-name*—the <GlossaryTerm styled={true} term={"function block name"}><i>function block name</i></GlossaryTerm> of the *function-name*. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-Defines a new <ClLinks  term={"function"}><i>function</i></ClLinks> named *function-name* in the *global environment*. The body of the <ClLinks  term={"function"}><i>function</i></ClLinks> defined by <ClLinks  term={"defun"}><b>defun</b></ClLinks> consists of <ClLinks  term={"form"}><i>forms</i></ClLinks>; they are executed as an *implicit progn* when the <ClLinks  term={"function"}><i>function</i></ClLinks> is called. <ClLinks  term={"defun"}><b>defun</b></ClLinks> can be used to define a new <ClLinks  term={"function"}><i>function</i></ClLinks>, to install a corrected version of an incorrect definition, to redefine an already-defined <ClLinks  term={"function"}><i>function</i></ClLinks>, or to redefine a <ClLinks  term={"macro"}><i>macro</i></ClLinks> as a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
+Defines a new <ClLinks  term={"function"}><i>function</i></ClLinks> named *function-name* in the <GlossaryTerm styled={true} term={"global environment"}><i>global environment</i></GlossaryTerm>. The body of the <ClLinks  term={"function"}><i>function</i></ClLinks> defined by <ClLinks  term={"defun"}><b>defun</b></ClLinks> consists of <ClLinks  term={"form"}><i>forms</i></ClLinks>; they are executed as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> when the <ClLinks  term={"function"}><i>function</i></ClLinks> is called. <ClLinks  term={"defun"}><b>defun</b></ClLinks> can be used to define a new <ClLinks  term={"function"}><i>function</i></ClLinks>, to install a corrected version of an incorrect definition, to redefine an already-defined <ClLinks  term={"function"}><i>function</i></ClLinks>, or to redefine a <ClLinks  term={"macro"}><i>macro</i></ClLinks> as a <ClLinks  term={"function"}><i>function</i></ClLinks>. 
 
 
 
@@ -54,11 +54,11 @@ Defines a new <ClLinks  term={"function"}><i>function</i></ClLinks> named *funct
 
 
 
-*Documentation* is attached as a *documentation string* to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <ClLinks  term={"function"}><b>function</b></ClLinks>) and to the *function object*. 
+*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <ClLinks  term={"name"}><i>name</i></ClLinks> (as kind <ClLinks  term={"function"}><b>function</b></ClLinks>) and to the *function object*. 
 
 
 
-Evaluating <ClLinks  term={"defun"}><b>defun</b></ClLinks> causes *function-name* to be a global name for the <ClLinks  term={"function"}><i>function</i></ClLinks> specified by the *lambda expression* 
+Evaluating <ClLinks  term={"defun"}><b>defun</b></ClLinks> causes *function-name* to be a global name for the <ClLinks  term={"function"}><i>function</i></ClLinks> specified by the <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> 
 
 
 
@@ -74,7 +74,7 @@ Evaluating <ClLinks  term={"defun"}><b>defun</b></ClLinks> causes *function-name
 
 
 
-processed in the *lexical environment* in which <ClLinks  term={"defun"}><b>defun</b></ClLinks> was executed. 
+processed in the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which <ClLinks  term={"defun"}><b>defun</b></ClLinks> was executed. 
 
 
 

@@ -10,11 +10,11 @@ Common Lisp allows an implementation to provide support for international langua
 
 
 
-The following figures contain lists of *defined names* applicable to <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>. 
+The following figures contain lists of <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> applicable to <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>. 
 
 
 
-Figure 13–1 lists some *defined names* relating to *character attributes* and *character predicates*. 
+Figure 13–1 lists some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to *character attributes* and *character predicates*. 
 
 
 
@@ -30,7 +30,7 @@ Figure 13–1 lists some *defined names* relating to *character attributes* and 
 
 
 
-Figure 13–2 lists some <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> construction and conversion *defined names*. 
+Figure 13–2 lists some <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> construction and conversion <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm>. 
 
 
 

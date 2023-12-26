@@ -34,7 +34,7 @@ If two interned <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> are not the <
 
 
 
-These rules are true regardless of any implicit interning. As long as the *current package* is not changed, results are reproducible regardless of the order of *loading* files or the exact history of what <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> were typed in when. If the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> is changed and then changed back 
+These rules are true regardless of any implicit interning. As long as the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> is not changed, results are reproducible regardless of the order of *loading* files or the exact history of what <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> were typed in when. If the <ClLinks  term={"value"}><i>value</i></ClLinks> of <ClLinks  term={"package"}><b>\*package\*</b></ClLinks> is changed and then changed back 
 
 
 

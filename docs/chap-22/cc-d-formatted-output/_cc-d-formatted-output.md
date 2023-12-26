@@ -6,7 +6,7 @@
 
 
 
-The *control-string* argument to <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> is actually a *format control*. That is, it can be either a *format string* or a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, for example a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> returned by the <ClLinks styled={true} term={"formatter"}><b>formatter</b></ClLinks> <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>. 
+The *control-string* argument to <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> is actually a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>. That is, it can be either a <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm> or a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, for example a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> returned by the <ClLinks styled={true} term={"formatter"}><b>formatter</b></ClLinks> <ClLinks styled={true} term={"macro"}><i>macro</i></ClLinks>. 
 
 
 
@@ -18,7 +18,7 @@ The compilation process performed by <ClLinks styled={true} term={"formatter"}><
 
 
 
-The remainder of this section describes what happens if the *control-string* is a *format string*. *Control-string* is composed of simple text (<ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>) and embedded directives. 
+The remainder of this section describes what happens if the *control-string* is a <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm>. *Control-string* is composed of simple text (<ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>) and embedded directives. 
 
 
 
@@ -34,11 +34,11 @@ In place of a prefix parameter to a directive, V (or v) can be used. In this cas
 
 
 
-omitted. # can be used in place of a prefix parameter; it represents the number of *args* remaining to be processed. When used within a recursive format, in the context of &#126;? or &#126;\{, the # prefix parameter represents the number of *format arguments* remaining within the recursive call. 
+omitted. # can be used in place of a prefix parameter; it represents the number of *args* remaining to be processed. When used within a recursive format, in the context of &#126;? or &#126;\{, the # prefix parameter represents the number of <GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm> remaining within the recursive call. 
 
 
 
-Examples of *format strings*: 
+Examples of <GlossaryTerm styled={true} term={"format string"}><i>format strings</i></GlossaryTerm>: 
 
 
 
@@ -66,7 +66,7 @@ Examples of *format strings*:
 
 
 
-containing the output from *control-string*. If *destination* is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, it must be a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> with a *fill pointer* , a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, or the symbol <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. If *destination* is a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> with a *fill pointer* , the output is added to the end of the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. If *destination* is a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, the output is sent to that <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. If *destination* is <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, the output is sent to *standard output*. 
+containing the output from *control-string*. If *destination* is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, it must be a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, or the symbol <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. If *destination* is a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> with a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , the output is added to the end of the <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. If *destination* is a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, the output is sent to that <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. If *destination* is <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, the output is sent to <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. 
 
 
 

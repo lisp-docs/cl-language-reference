@@ -22,7 +22,7 @@ does the following:
 
 
 
-3\. If the *setf expansion* for any <ClLinks  term={"place"}><i>place</i></ClLinks> involves more than one store variable, then the additional store variables are bound to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
+3\. If the <GlossaryTerm styled={true} term={"setf expansion"}><i>setf expansion</i></GlossaryTerm> for any <ClLinks  term={"place"}><i>place</i></ClLinks> involves more than one store variable, then the additional store variables are bound to <ClLinks  term={"nil"}><b>nil</b></ClLinks>. 
 
 
 
@@ -30,7 +30,7 @@ does the following:
 
 
 
-The storing form in the *setf expansion* of <ClLinks  term={"values"}><b>values</b></ClLinks> returns as *multiple values*<sub>2</sub> the values of the store variables in step 2. That is, the number of values returned is the same as the number of <ClLinks  term={"place"}><i>place</i></ClLinks> forms. This may be more or fewer values than are produced by the *values-form*. 
+The storing form in the <GlossaryTerm styled={true} term={"setf expansion"}><i>setf expansion</i></GlossaryTerm> of <ClLinks  term={"values"}><b>values</b></ClLinks> returns as <GlossaryTerm styled={true} term={"multiple values"}><i>multiple values</i></GlossaryTerm><sub>2</sub> the values of the store variables in step 2. That is, the number of values returned is the same as the number of <ClLinks  term={"place"}><i>place</i></ClLinks> forms. This may be more or fewer values than are produced by the *values-form*. 
 
 
 

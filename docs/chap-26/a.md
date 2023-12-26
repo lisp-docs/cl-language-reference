@@ -19,7 +19,7 @@ sidebar_position: 97
 
 
 
-**accessible** *adj.* 1. (of an <ClLinks  term={"object"}><i>object</i></ClLinks>) capable of being *referenced*. 2. (of *shared slots* or *local slots* in an <ClLinks  term={"instance"}><i>instance</i></ClLinks> of a <ClLinks  term={"class"}><i>class</i></ClLinks>) having been defined by the <ClLinks  term={"class"}><i>class</i></ClLinks> of the <ClLinks  term={"instance"}><i>instance</i></ClLinks> or *inherited* from a <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> of that <ClLinks  term={"class"}><i>class</i></ClLinks>. 3. (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) capable of being *referenced* without a *package prefix* when that <ClLinks  term={"package"}><i>package</i></ClLinks> is current, regardless of whether the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in that <ClLinks  term={"package"}><i>package</i></ClLinks> or is *inherited*. 
+**accessible** *adj.* 1. (of an <ClLinks  term={"object"}><i>object</i></ClLinks>) capable of being *referenced*. 2. (of <GlossaryTerm styled={true} term={"shared slot"}><i>shared slots</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> in an <ClLinks  term={"instance"}><i>instance</i></ClLinks> of a <ClLinks  term={"class"}><i>class</i></ClLinks>) having been defined by the <ClLinks  term={"class"}><i>class</i></ClLinks> of the <ClLinks  term={"instance"}><i>instance</i></ClLinks> or *inherited* from a <ClLinks  term={"superclass"}><i>superclass</i></ClLinks> of that <ClLinks  term={"class"}><i>class</i></ClLinks>. 3. (of a <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> in a <ClLinks  term={"package"}><i>package</i></ClLinks>) capable of being *referenced* without a <GlossaryTerm styled={true} term={"package prefix"}><i>package prefix</i></GlossaryTerm> when that <ClLinks  term={"package"}><i>package</i></ClLinks> is current, regardless of whether the <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is <ClLinks  term={"present"}><i>present</i></ClLinks> in that <ClLinks  term={"package"}><i>package</i></ClLinks> or is *inherited*. 
 
 
 
@@ -39,11 +39,11 @@ sidebar_position: 97
 
 
 
-**active** *adj.* 1. (of a <ClLinks  term={"handler"}><i>handler</i></ClLinks> , a <ClLinks  term={"restart"}><i>restart</i></ClLinks>, or a *catch tag*) having been *established* but not yet *disestablished*. 2. (of an <ClLinks  term={"element"}><i>element</i></ClLinks> of an <ClLinks  term={"array"}><i>array</i></ClLinks>) having an index that is greater than or equal to zero, but less than the *fill pointer* (if any). For an <ClLinks  term={"array"}><i>array</i></ClLinks> that has no *fill pointer* , all <ClLinks  term={"element"}><i>elements</i></ClLinks> are considered <ClLinks  term={"active"}><i>active</i></ClLinks>. 
+**active** *adj.* 1. (of a <ClLinks  term={"handler"}><i>handler</i></ClLinks> , a <ClLinks  term={"restart"}><i>restart</i></ClLinks>, or a <GlossaryTerm styled={true} term={"catch tag"}><i>catch tag</i></GlossaryTerm>) having been *established* but not yet *disestablished*. 2. (of an <ClLinks  term={"element"}><i>element</i></ClLinks> of an <ClLinks  term={"array"}><i>array</i></ClLinks>) having an index that is greater than or equal to zero, but less than the <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> (if any). For an <ClLinks  term={"array"}><i>array</i></ClLinks> that has no <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , all <ClLinks  term={"element"}><i>elements</i></ClLinks> are considered <ClLinks  term={"active"}><i>active</i></ClLinks>. 
 
 
 
-**actual adjustability** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) a *generalized boolean* that is associated with the <ClLinks  term={"array"}><i>array</i></ClLinks>, representing whether the <ClLinks  term={"array"}><i>array</i></ClLinks> is *actually adjustable*. See also *expressed adjustability* and **adjustable-array-p**. 
+**actual adjustability** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm> that is associated with the <ClLinks  term={"array"}><i>array</i></ClLinks>, representing whether the <ClLinks  term={"array"}><i>array</i></ClLinks> is <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>. See also <GlossaryTerm styled={true} term={"expressed adjustability"}><i>expressed adjustability</i></GlossaryTerm> and **adjustable-array-p**. 
 
 
 
@@ -51,11 +51,11 @@ sidebar_position: 97
 
 
 
-**actual array element type** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) the <ClLinks  term={"type"}><i>type</i></ClLinks> for which the <ClLinks  term={"array"}><i>array</i></ClLinks> is actually specialized, which is the *upgraded array element type* of the *expressed array element type* of the <ClLinks  term={"array"}><i>array</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"array-element-type"}><b>array-element-type</b></ClLinks>. 
+**actual array element type** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) the <ClLinks  term={"type"}><i>type</i></ClLinks> for which the <ClLinks  term={"array"}><i>array</i></ClLinks> is actually specialized, which is the <GlossaryTerm styled={true} term={"upgraded array element type"}><i>upgraded array element type</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. See the <ClLinks  term={"function"}><i>function</i></ClLinks> <ClLinks  term={"array-element-type"}><b>array-element-type</b></ClLinks>. 
 
 
 
-**actual complex part type** *n.* (of a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ) the <ClLinks  term={"type"}><i>type</i></ClLinks> in which the real and imaginary parts of the <ClLinks  term={"complex"}><i>complex</i></ClLinks> are actually represented, which is the *upgraded complex part type* of the *expressed complex part type* of the <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
+**actual complex part type** *n.* (of a <ClLinks  term={"complex"}><i>complex</i></ClLinks> ) the <ClLinks  term={"type"}><i>type</i></ClLinks> in which the real and imaginary parts of the <ClLinks  term={"complex"}><i>complex</i></ClLinks> are actually represented, which is the <GlossaryTerm styled={true} term={"upgraded complex part type"}><i>upgraded complex part type</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"expressed complex part type"}><i>expressed complex part type</i></GlossaryTerm> of the <ClLinks  term={"complex"}><i>complex</i></ClLinks> . 
 
 
 
@@ -67,15 +67,15 @@ sidebar_position: 97
 
 
 
-characteristics by direct modification. A *conforming program* may depend on an <ClLinks  term={"array"}><i>array</i></ClLinks> being *actually adjustable* only if either that <ClLinks  term={"array"}><i>array</i></ClLinks> is known to have been *expressly adjustable* or if that <ClLinks  term={"array"}><i>array</i></ClLinks> has been explicitly tested by **adjustable-array-p**. 
+characteristics by direct modification. A <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> may depend on an <ClLinks  term={"array"}><i>array</i></ClLinks> being <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm> only if either that <ClLinks  term={"array"}><i>array</i></ClLinks> is known to have been <GlossaryTerm styled={true} term={"expressly adjustable"}><i>expressly adjustable</i></GlossaryTerm> or if that <ClLinks  term={"array"}><i>array</i></ClLinks> has been explicitly tested by **adjustable-array-p**. 
 
 
 
-**adjustability** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) 1. *expressed adjustability*. 2. *actual adjustability*. 
+**adjustability** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) 1. <GlossaryTerm styled={true} term={"expressed adjustability"}><i>expressed adjustability</i></GlossaryTerm>. 2. <GlossaryTerm styled={true} term={"actual adjustability"}><i>actual adjustability</i></GlossaryTerm>. 
 
 
 
-**adjustable** *adj.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) 1. *expressly adjustable*. 2. *actually adjustable*. 
+**adjustable** *adj.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) 1. <GlossaryTerm styled={true} term={"expressly adjustable"}><i>expressly adjustable</i></GlossaryTerm>. 2. <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>. 
 
 
 
@@ -83,7 +83,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**alist** [ **—a list** ], *n.* an *association list*. 
+**alist** [ **—a list** ], *n.* an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>. 
 
 
 
@@ -107,7 +107,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**ampersand** *n.* the *standard character* that is called “ampersand” (&amp;). See Figure 2–5. 
+**ampersand** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is called “ampersand” (&amp;). See Figure 2–5. 
 
 
 
@@ -115,15 +115,15 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**apparently uninterned** *adj.* having a *home package* of <ClLinks  term={"nil"}><b>nil</b></ClLinks>. (An *apparently* 
+**apparently uninterned** *adj.* having a <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of <ClLinks  term={"nil"}><b>nil</b></ClLinks>. (An *apparently* 
 
 
 
-*uninterned symbol* might or might not be an *uninterned symbol*. *Uninterned symbols* have a *home package* of <ClLinks  term={"nil"}><b>nil</b></ClLinks>, but <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> which have been <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from their *home package* also have a *home package* of <ClLinks  term={"nil"}><b>nil</b></ClLinks>, even though they might still be <ClLinks  term={"interned"}><i>interned</i></ClLinks> in some other <ClLinks  term={"package"}><i>package</i></ClLinks>.) 
+*uninterned symbol* might or might not be an *uninterned symbol*. *Uninterned symbols* have a <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of <ClLinks  term={"nil"}><b>nil</b></ClLinks>, but <ClLinks  term={"symbol"}><i>symbols</i></ClLinks> which have been <ClLinks  term={"uninterned"}><i>uninterned</i></ClLinks> from their <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> also have a <GlossaryTerm styled={true} term={"home package"}><i>home package</i></GlossaryTerm> of <ClLinks  term={"nil"}><b>nil</b></ClLinks>, even though they might still be <ClLinks  term={"interned"}><i>interned</i></ClLinks> in some other <ClLinks  term={"package"}><i>package</i></ClLinks>.) 
 
 
 
-**applicable** *adj.* 1. (of a <ClLinks  term={"handler"}><i>handler</i></ClLinks> ) being an *applicable handler* . 2. (of a <ClLinks  term={"method"}><i>method</i></ClLinks>) being an *applicable method*. 3. (of a <ClLinks  term={"restart"}><i>restart</i></ClLinks>) being an *applicable restart*. 
+**applicable** *adj.* 1. (of a <ClLinks  term={"handler"}><i>handler</i></ClLinks> ) being an <GlossaryTerm styled={true} term={"applicable handler"}><i>applicable handler</i></GlossaryTerm> . 2. (of a <ClLinks  term={"method"}><i>method</i></ClLinks>) being an <GlossaryTerm styled={true} term={"applicable method"}><i>applicable method</i></GlossaryTerm>. 3. (of a <ClLinks  term={"restart"}><i>restart</i></ClLinks>) being an <GlossaryTerm styled={true} term={"applicable restart"}><i>applicable restart</i></GlossaryTerm>. 
 
 
 
@@ -131,7 +131,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**applicable method** *n.* (of a *generic function* called with <ClLinks  term={"argument"}><i>arguments</i></ClLinks>) a <ClLinks  term={"method"}><i>method</i></ClLinks> of the *generic function* for which the <ClLinks  term={"argument"}><i>arguments</i></ClLinks> satisfy the *parameter specializers* of that <ClLinks  term={"method"}><i>method</i></ClLinks>. See Section 7.6.6.1.1 (Selecting the Applicable Methods). 
+**applicable method** *n.* (of a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> called with <ClLinks  term={"argument"}><i>arguments</i></ClLinks>) a <ClLinks  term={"method"}><i>method</i></ClLinks> of the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> for which the <ClLinks  term={"argument"}><i>arguments</i></ClLinks> satisfy the <GlossaryTerm styled={true} term={"parameter specializer"}><i>parameter specializers</i></GlossaryTerm> of that <ClLinks  term={"method"}><i>method</i></ClLinks>. See Section 7.6.6.1.1 (Selecting the Applicable Methods). 
 
 
 
@@ -143,7 +143,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**argument** *n.* 1. (of a <ClLinks  term={"function"}><i>function</i></ClLinks>) an <ClLinks  term={"object"}><i>object</i></ClLinks> which is offered as data to the <ClLinks  term={"function"}><i>function</i></ClLinks> when it is *called*. 2. (of a *format control*) a *format argument*. 
+**argument** *n.* 1. (of a <ClLinks  term={"function"}><i>function</i></ClLinks>) an <ClLinks  term={"object"}><i>object</i></ClLinks> which is offered as data to the <ClLinks  term={"function"}><i>function</i></ClLinks> when it is *called*. 2. (of a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>) a <GlossaryTerm styled={true} term={"format argument"}><i>format argument</i></GlossaryTerm>. 
 
 
 
@@ -151,7 +151,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**argument precedence order** *n.* the order in which the <ClLinks  term={"argument"}><i>arguments</i></ClLinks> to a *generic function* are considered when sorting the *applicable methods* into precedence order. 
+**argument precedence order** *n.* the order in which the <ClLinks  term={"argument"}><i>arguments</i></ClLinks> to a <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> are considered when sorting the <GlossaryTerm styled={true} term={"applicable method"}><i>applicable methods</i></GlossaryTerm> into precedence order. 
 
 
 
@@ -175,7 +175,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**array element type** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) 1. a <ClLinks  term={"type"}><i>type</i></ClLinks> associated with the <ClLinks  term={"array"}><i>array</i></ClLinks>, and of which all <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"array"}><i>array</i></ClLinks> are constrained to be members. 2. the *actual array element type* of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 3. the *expressed array element type* of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
+**array element type** *n.* (of an <ClLinks  term={"array"}><i>array</i></ClLinks>) 1. a <ClLinks  term={"type"}><i>type</i></ClLinks> associated with the <ClLinks  term={"array"}><i>array</i></ClLinks>, and of which all <ClLinks  term={"element"}><i>elements</i></ClLinks> of the <ClLinks  term={"array"}><i>array</i></ClLinks> are constrained to be members. 2. the <GlossaryTerm styled={true} term={"actual array element type"}><i>actual array element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 3. the <GlossaryTerm styled={true} term={"expressed array element type"}><i>expressed array element type</i></GlossaryTerm> of the <ClLinks  term={"array"}><i>array</i></ClLinks>. 
 
 
 
@@ -183,7 +183,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**assign** *v.t.* (a <ClLinks  term={"variable"}><i>variable</i></ClLinks>) to change the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> in a <ClLinks  term={"binding"}><i>binding</i></ClLinks> that has already been *established*. See the *special operator* <ClLinks  term={"setq"}><b>setq</b></ClLinks>. 
+**assign** *v.t.* (a <ClLinks  term={"variable"}><i>variable</i></ClLinks>) to change the <ClLinks  term={"value"}><i>value</i></ClLinks> of the <ClLinks  term={"variable"}><i>variable</i></ClLinks> in a <ClLinks  term={"binding"}><i>binding</i></ClLinks> that has already been *established*. See the <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> <ClLinks  term={"setq"}><b>setq</b></ClLinks>. 
 
 
 
@@ -191,11 +191,11 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**asterisk** *n.* the *standard character* that is variously called “asterisk” or “star” (\*). See Figure 2–5. 
+**asterisk** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is variously called “asterisk” or “star” (\*). See Figure 2–5. 
 
 
 
-**at-sign** *n.* the *standard character* that is variously called “commercial at” or “at sign” (@). See Figure 2–5. 
+**at-sign** *n.* the <GlossaryTerm styled={true} term={"standard character"}><i>standard character</i></GlossaryTerm> that is variously called “commercial at” or “at sign” (@). See Figure 2–5. 
 
 
 
@@ -207,7 +207,7 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**atomic type specifier** *n.* a *type specifier* that is <ClLinks  term={"atomic"}><i>atomic</i></ClLinks>. For every *atomic type specifier* , *x*, there is an equivalent *compound type specifier* with no arguments supplied, (*x*). 
+**atomic type specifier** *n.* a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> that is <ClLinks  term={"atomic"}><i>atomic</i></ClLinks>. For every <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifier</i></GlossaryTerm> , *x*, there is an equivalent <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm> with no arguments supplied, (*x*). 
 
 
 
@@ -215,11 +215,11 @@ characteristics by direct modification. A *conforming program* may depend on an 
 
 
 
-**aux variable** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> that occurs in the part of a *lambda list* that was introduced by **&amp;aux**. Unlike all other <ClLinks  term={"variable"}><i>variables</i></ClLinks> introduced by a *lambda-list*, *aux variables* are not <ClLinks  term={"parameter"}><i>parameters</i></ClLinks>. 
+**aux variable** *n.* a <ClLinks  term={"variable"}><i>variable</i></ClLinks> that occurs in the part of a <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> that was introduced by **&amp;aux**. Unlike all other <ClLinks  term={"variable"}><i>variables</i></ClLinks> introduced by a *lambda-list*, <GlossaryTerm styled={true} term={"aux variable"}><i>aux variables</i></GlossaryTerm> are not <ClLinks  term={"parameter"}><i>parameters</i></ClLinks>. 
 
 
 
-**auxiliary method** *n.* a member of one of two sets of <ClLinks  term={"method"}><i>methods</i></ClLinks> (the set of *primary methods* is the other) that form an exhaustive partition of the set of <ClLinks  term={"method"}><i>methods</i></ClLinks> on the <ClLinks  term={"method"}><i>method</i></ClLinks>’s *generic function*. How these sets are determined is dependent on the *method combination* type; see Section 7.6.2 (Introduction to Methods). 
+**auxiliary method** *n.* a member of one of two sets of <ClLinks  term={"method"}><i>methods</i></ClLinks> (the set of <GlossaryTerm styled={true} term={"primary method"}><i>primary methods</i></GlossaryTerm> is the other) that form an exhaustive partition of the set of <ClLinks  term={"method"}><i>methods</i></ClLinks> on the <ClLinks  term={"method"}><i>method</i></ClLinks>’s <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. How these sets are determined is dependent on the <GlossaryTerm styled={true} term={"method combination"}><i>method combination</i></GlossaryTerm> type; see Section 7.6.2 (Introduction to Methods). 
 
 
 

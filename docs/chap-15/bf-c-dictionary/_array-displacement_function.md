@@ -30,7 +30,7 @@
 
 
 
-If the <ClLinks  term={"array"}><i>array</i></ClLinks> is a *displaced array*, returns the <ClLinks  term={"value"}><i>values</i></ClLinks> of the :displaced-to and :displaced-index-offset options for the <ClLinks  term={"array"}><i>array</i></ClLinks> (see the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> and <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks>). If the <ClLinks  term={"array"}><i>array</i></ClLinks> is not a *displaced array*, <ClLinks  term={"nil"}><b>nil</b></ClLinks> and 0 are returned. 
+If the <ClLinks  term={"array"}><i>array</i></ClLinks> is a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>, returns the <ClLinks  term={"value"}><i>values</i></ClLinks> of the :displaced-to and :displaced-index-offset options for the <ClLinks  term={"array"}><i>array</i></ClLinks> (see the <ClLinks  term={"function"}><i>functions</i></ClLinks> <ClLinks  term={"make-array"}><b>make-array</b></ClLinks> and <ClLinks  term={"adjust-array"}><b>adjust-array</b></ClLinks>). If the <ClLinks  term={"array"}><i>array</i></ClLinks> is not a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>, <ClLinks  term={"nil"}><b>nil</b></ClLinks> and 0 are returned. 
 
 
 

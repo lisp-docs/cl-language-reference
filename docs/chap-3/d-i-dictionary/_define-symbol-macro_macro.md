@@ -30,11 +30,11 @@
 
 
 
-Provides a mechanism for globally affecting the *macro expansion* of the indicated <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
+Provides a mechanism for globally affecting the <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> of the indicated <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. 
 
 
 
-Globally establishes an expansion function for the *symbol macro* named by <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. The only guaranteed property of an expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for a *symbol macro* is that when it is applied to the <ClLinks  term={"form"}><i>form</i></ClLinks> and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> it returns the correct expansion. (In particular, it is *implementation dependent* whether the expansion is conceptually stored in the expansion function, the <ClLinks  term={"environment"}><i>environment</i></ClLinks>, or both.)  
+Globally establishes an expansion function for the <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> named by <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>. The only guaranteed property of an expansion <ClLinks  term={"function"}><i>function</i></ClLinks> for a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> is that when it is applied to the <ClLinks  term={"form"}><i>form</i></ClLinks> and the <ClLinks  term={"environment"}><i>environment</i></ClLinks> it returns the correct expansion. (In particular, it is *implementation dependent* whether the expansion is conceptually stored in the expansion function, the <ClLinks  term={"environment"}><i>environment</i></ClLinks>, or both.)  
 
 
 
@@ -42,11 +42,11 @@ Globally establishes an expansion function for the *symbol macro* named by <ClLi
 
 
 
-Each global reference to <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (*i.e.*, not *shadowed* <sub>2</sub> by a <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or *symbol macro* named by the same <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a *symbol macro* is subject to further *macro expansion* in the same *lexical environment* as the *symbol macro* reference, exactly analogous to normal <ClLinks  term={"macro"}><i>macros</i></ClLinks>. 
+Each global reference to <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> (*i.e.*, not *shadowed* <sub>2</sub> by a <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> named by the same <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>) is expanded by the normal macro expansion process; see Section 3.1.2.1.1 (Symbols as Forms). The expansion of a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> is subject to further <GlossaryTerm styled={true} term={"macro expansion"}><i>macro expansion</i></GlossaryTerm> in the same <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> as the <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> reference, exactly analogous to normal <ClLinks  term={"macro"}><i>macros</i></ClLinks>. 
 
 
 
-The consequences are unspecified if a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration is made for <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> while in the scope of this definition (*i.e.*, when it is not *shadowed* <sub>2</sub> by a <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or *symbol macro* named by the same <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>). 
+The consequences are unspecified if a <ClLinks  term={"special"}><b>special</b></ClLinks> declaration is made for <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> while in the scope of this definition (*i.e.*, when it is not *shadowed* <sub>2</sub> by a <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a <ClLinks  term={"variable"}><i>variable</i></ClLinks> or <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> named by the same <ClLinks  term={"symbol"}><i>symbol</i></ClLinks>). 
 
 
 
@@ -54,7 +54,7 @@ Any use of <ClLinks  term={"setq"}><b>setq</b></ClLinks> to set the value of the
 
 
 
-A <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a *symbol macro* can be *shadowed* <sub>2</sub> by <ClLinks  term={"let"}><b>let</b></ClLinks> or <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>. 
+A <ClLinks  term={"binding"}><i>binding</i></ClLinks> for a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> can be *shadowed* <sub>2</sub> by <ClLinks  term={"let"}><b>let</b></ClLinks> or <ClLinks  term={"symbol-macrolet"}><b>symbol-macrolet</b></ClLinks>. 
 
 
 
@@ -76,7 +76,7 @@ thing3 → THREE
 
 
 
-If <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is already defined as a *global variable*, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
+If <ClLinks  term={"symbol"}><i>symbol</i></ClLinks> is already defined as a <GlossaryTerm styled={true} term={"global variable"}><i>global variable</i></GlossaryTerm>, an error of <ClLinks  term={"type"}><i>type</i></ClLinks> <ClLinks  term={"program-error"}><b>program-error</b></ClLinks> is signaled. 
 
 
 

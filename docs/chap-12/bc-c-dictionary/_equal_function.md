@@ -18,7 +18,7 @@
 
 <ClLinks  term={"number"}><i>number</i></ClLinks>—for &lt;, &gt;, &lt;<ClLinks  term={"="}><b>=</b></ClLinks>, &gt;<ClLinks  term={"="}><b>=</b></ClLinks>: a *real*; for <ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"/="}><b>/=</b></ClLinks>: a <ClLinks  term={"number"}><i>number</i></ClLinks> .
 
-*generalized-boolean*—a *generalized boolean*.
+*generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>.
 
 **Description:**
 

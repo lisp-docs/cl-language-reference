@@ -1,4 +1,4 @@
-**update-instance-for-redefined-class** *Standard Generic Function* 
+**update-instance-for-redefined-class** <GlossaryTerm styled={true} term={"standard generic function"}><i>Standard Generic Function</i></GlossaryTerm> 
 
 
 
@@ -82,7 +82,7 @@
 
 
 
-*initargs*—an *initialization argument list*. 
+*initargs*—an <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. 
 
 
 
@@ -94,7 +94,7 @@
 
 
 
-The *generic function* **update-instance-for-redefined-class** is not intended to be called by programmers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. The *generic func tion* **update-instance-for-redefined-class** is called by the mechanism activated by <ClLinks  term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks>. 
+The <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm> **update-instance-for-redefined-class** is not intended to be called by programmers. Programmers may write <ClLinks  term={"method"}><i>methods</i></ClLinks> for it. The *generic func tion* **update-instance-for-redefined-class** is called by the mechanism activated by <ClLinks  term={"make-instances-obsolete"}><b>make-instances-obsolete</b></ClLinks>. 
 
 
 
@@ -102,7 +102,7 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on
 
 
 
-with the following arguments: the <ClLinks  term={"instance"}><i>instance</i></ClLinks>, a list of names of the newly *added-slots* to <ClLinks  term={"instance"}><i>instance</i></ClLinks>, and the *initargs* it received. Newly *added-slots* are those *local slots* for which no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the same name exists in the old version of the <ClLinks  term={"class"}><i>class</i></ClLinks>. 
+with the following arguments: the <ClLinks  term={"instance"}><i>instance</i></ClLinks>, a list of names of the newly *added-slots* to <ClLinks  term={"instance"}><i>instance</i></ClLinks>, and the *initargs* it received. Newly *added-slots* are those <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> for which no <ClLinks  term={"slot"}><i>slot</i></ClLinks> of the same name exists in the old version of the <ClLinks  term={"class"}><i>class</i></ClLinks>. 
 
 
 
@@ -176,7 +176,7 @@ The system-supplied primary <ClLinks  term={"method"}><i>method</i></ClLinks> on
 
 
 
-*Initargs* are declared as valid by using the :initarg option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for **update-instance-for-redefined-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the *lambda list* of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on **update-instance-for-redefined-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid *initarg* name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
+*Initargs* are declared as valid by using the :initarg option to <ClLinks  term={"defclass"}><b>defclass</b></ClLinks>, or by defining <ClLinks  term={"method"}><i>methods</i></ClLinks> for **update-instance-for-redefined-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks>. The keyword name of each keyword parameter specifier in the <GlossaryTerm styled={true} term={"lambda list"}><i>lambda list</i></GlossaryTerm> of any <ClLinks  term={"method"}><i>method</i></ClLinks> defined on **update-instance-for-redefined-class** or <ClLinks  term={"shared-initialize"}><b>shared-initialize</b></ClLinks> is declared as a valid *initarg* name for all *classes* for which that <ClLinks  term={"method"}><i>method</i></ClLinks> is applicable. 
 
 
 

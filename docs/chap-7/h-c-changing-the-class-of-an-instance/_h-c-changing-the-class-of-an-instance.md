@@ -10,7 +10,7 @@ Note that changing the <ClLinks  term={"class"}><i>class</i></ClLinks> of an <Cl
 
 
 
-When <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> is invoked on an <ClLinks  term={"instance"}><i>instance</i></ClLinks>, a two-step updating process takes place. The first step modifies the structure of the <ClLinks  term={"instance"}><i>instance</i></ClLinks> by adding new *local slots* and discarding *local slots* that are not specified in the new version of the <ClLinks  term={"instance"}><i>instance</i></ClLinks>. The second step initializes the newly added *local slots* and performs any other user-defined actions. These two steps are further described in the two following sections. 
+When <ClLinks  term={"change-class"}><b>change-class</b></ClLinks> is invoked on an <ClLinks  term={"instance"}><i>instance</i></ClLinks>, a two-step updating process takes place. The first step modifies the structure of the <ClLinks  term={"instance"}><i>instance</i></ClLinks> by adding new <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> and discarding <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> that are not specified in the new version of the <ClLinks  term={"instance"}><i>instance</i></ClLinks>. The second step initializes the newly added <GlossaryTerm styled={true} term={"local slot"}><i>local slots</i></GlossaryTerm> and performs any other user-defined actions. These two steps are further described in the two following sections. 
 
 
 
