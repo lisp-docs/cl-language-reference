@@ -113,8 +113,8 @@ const config = {
           href: "https://lisp-docs.github.io/",
         },
         items: [
-          { to: "https://lisp-docs.github.io/docs/tutorial/intro", label: "The Tutorial", position: "left" },
-          {to: 'https://lisp-docs.github.io/getting-started', label: 'Getting Started', position: 'left'},
+          { to: "https://lisp-docs.github.io/docs/tutorial/", label: "The Tutorial", position: "left" },
+          {to: 'https://lisp-docs.github.io/docs/getting-started', label: 'Getting Started', position: 'left'},
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
