@@ -1,4 +1,4 @@
-**pop** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
+**pop** <GlossaryTerm term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<DictionaryLink styled={true} term={"pop"}><b>pop</b></DictionaryLink> *place → element* 
+<DictionaryLink term={"pop"}><b>pop</b></DictionaryLink> *place → element* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of which is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> (possibly, but necessarily, a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> or *circular list<GlossaryTerm styled={true} term={"t"}><i>). </i></ClLinks>element<ClLinks styled={true} term={"t"}><i>—an </i></GlossaryTerm>object* (the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of the contents of <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>). 
+<GlossaryTerm term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm>, the <GlossaryTerm term={"value"}><i>value</i></GlossaryTerm> of which is a <GlossaryTerm term={"list"}><i>list</i></GlossaryTerm> (possibly, but necessarily, a <GlossaryTerm term={"dotted list"}><i>dotted list</i></GlossaryTerm> or *circular list<GlossaryTerm term={"t"}><i>). </i></GlossaryTerm>element<GlossaryTerm term={"t"}><i>—an </i></GlossaryTerm>object* (the <GlossaryTerm term={"car"}><i>car</i></GlossaryTerm> of the contents of <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm>). 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<DictionaryLink styled={true} term={"pop"}><b>pop</b></DictionaryLink> <GlossaryTerm styled={true} term={"read"}><i>reads</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, remembers the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> which was retrieved, <GlossaryTerm styled={true} term={"write"}><i>writes</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> back into the <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, and finally <GlossaryTerm styled={true} term={"yield"}><i>yields</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of the originally retrieved <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
+<DictionaryLink term={"pop"}><b>pop</b></DictionaryLink> <GlossaryTerm term={"read"}><i>reads</i></GlossaryTerm> the <GlossaryTerm term={"value"}><i>value</i></GlossaryTerm> of <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm>, remembers the <GlossaryTerm term={"car"}><i>car</i></GlossaryTerm> of the <GlossaryTerm term={"list"}><i>list</i></GlossaryTerm> which was retrieved, <GlossaryTerm term={"write"}><i>writes</i></GlossaryTerm> the <GlossaryTerm term={"cdr"}><i>cdr</i></GlossaryTerm> of the <GlossaryTerm term={"list"}><i>list</i></GlossaryTerm> back into the <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm>, and finally <GlossaryTerm term={"yield"}><i>yields</i></GlossaryTerm> the <GlossaryTerm term={"car"}><i>car</i></GlossaryTerm> of the originally retrieved <GlossaryTerm term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-For information about the <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
+For information about the <GlossaryTerm term={"evaluation"}><i>evaluation</i></GlossaryTerm> of <GlossaryTerm term={"subform"}><i>subforms</i></GlossaryTerm> of <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm>, see Section 5.1.1.1 (Evaluation of Subforms to Places). 
 
 
 
@@ -55,7 +55,7 @@ llst → ((2 3 4))
 
 
 
-The contents of <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> are modified. 
+The contents of <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm> are modified. 
 
 
 
@@ -63,7 +63,7 @@ The contents of <GlossaryTerm styled={true} term={"place"}><i>place</i></Glossar
 
 
 
-<DictionaryLink styled={true} term={"push"}><b>push</b></DictionaryLink>, <DictionaryLink styled={true} term={"pushnew"}><b>pushnew</b></DictionaryLink>, Section 5.1 (Generalized Reference) 
+<DictionaryLink term={"push"}><b>push</b></DictionaryLink>, <DictionaryLink term={"pushnew"}><b>pushnew</b></DictionaryLink>, Section 5.1 (Generalized Reference) 
 
 
 
@@ -71,15 +71,15 @@ The contents of <GlossaryTerm styled={true} term={"place"}><i>place</i></Glossar
 
 
 
-The effect of (pop <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>) is roughly equivalent to 
+The effect of (pop <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm>) is roughly equivalent to 
 
 
 
-(prog1 (car <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>) (setf <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> (cdr <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>))) 
+(prog1 (car <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm>) (setf <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm> (cdr <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm>))) 
 
 
 
-except that the latter would evaluate any <GlossaryTerm styled={true} term={"subform"}><i>subforms</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> three times, while <DictionaryLink styled={true} term={"pop"}><b>pop</b></DictionaryLink> evaluates them only once. 
+except that the latter would evaluate any <GlossaryTerm term={"subform"}><i>subforms</i></GlossaryTerm> of <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm> three times, while <DictionaryLink term={"pop"}><b>pop</b></DictionaryLink> evaluates them only once. 
 
 
 

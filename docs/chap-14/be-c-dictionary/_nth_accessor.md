@@ -47,7 +47,7 @@
 
 
 
-(setf (nth *n list<GlossaryTerm styled={true} term={"t"}><i>) </i></ClLinks>new-object<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (setf (car (nthcdr *n list<ClLinks styled={true} term={"t"}><i>)) </i></GlossaryTerm>new-object*) 
+(setf (nth *n list<GlossaryTerm styled={true} term={"t"}><i>) </i></GlossaryTerm>new-object<GlossaryTerm styled={true} term={"t"}><i>) </i></GlossaryTerm>≡* (setf (car (nthcdr *n list<GlossaryTerm styled={true} term={"t"}><i>)) </i></GlossaryTerm>new-object*) 
 
 
 

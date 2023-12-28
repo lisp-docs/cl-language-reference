@@ -1,4 +1,4 @@
-**rassoc, rassoc-if, rassoc-if-not** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
+**rassoc, rassoc-if, rassoc-if-not** <GlossaryTerm term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,15 +6,15 @@
 
 
 
-<DictionaryLink styled={true} term={"rassoc"}><b>rassoc</b></DictionaryLink> *item alist* &amp;key *key test test-not → entry* 
+<DictionaryLink term={"rassoc"}><b>rassoc</b></DictionaryLink> *item alist* &amp;key *key test test-not → entry* 
 
 
 
-<DictionaryLink styled={true} term={"rassoc-if"}><b>rassoc-if</b></DictionaryLink> *predicate alist* &amp;key *key → entry* 
+<DictionaryLink term={"rassoc-if"}><b>rassoc-if</b></DictionaryLink> *predicate alist* &amp;key *key → entry* 
 
 
 
-<DictionaryLink styled={true} term={"rassoc-if-not"}><b>rassoc-if-not</b></DictionaryLink> *predicate alist* &amp;key *key → entry* 
+<DictionaryLink term={"rassoc-if-not"}><b>rassoc-if-not</b></DictionaryLink> *predicate alist* &amp;key *key → entry* 
 
 
 
@@ -22,19 +22,19 @@
 
 
 
-*item*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
+*item*—an <GlossaryTerm term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>. 
+<GlossaryTerm term={"alist"}><i>alist</i></GlossaryTerm>—an <GlossaryTerm term={"association list"}><i>association list</i></GlossaryTerm>. 
 
 
 
-<GlossaryTerm styled={true} term={"predicate"}><i>predicate</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test<GlossaryTerm styled={true} term={"t"}><i>—a </i></ClLinks>designator* for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<ClLinks styled={true} term={"t"}><i>—a </i></GlossaryTerm>designator* for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> that returns a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one argument, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+<GlossaryTerm term={"predicate"}><i>predicate</i></GlossaryTerm>—a <GlossaryTerm term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm term={"function"}><i>function</i></GlossaryTerm> of one <GlossaryTerm term={"argument"}><i>argument</i></GlossaryTerm> that returns a <GlossaryTerm term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test<GlossaryTerm term={"t"}><i>—a </i></GlossaryTerm>designator* for a <GlossaryTerm term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm term={"argument"}><i>arguments</i></GlossaryTerm> that returns a <GlossaryTerm term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. *test-not<GlossaryTerm term={"t"}><i>—a </i></GlossaryTerm>designator* for a <GlossaryTerm term={"function"}><i>function</i></GlossaryTerm> of two <GlossaryTerm term={"argument"}><i>arguments</i></GlossaryTerm> that returns a <GlossaryTerm term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. <GlossaryTerm term={"key"}><i>key</i></GlossaryTerm>—a <GlossaryTerm term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm term={"function"}><i>function</i></GlossaryTerm> of one argument, or <DictionaryLink term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-*entry*—a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> that is an <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
+*entry*—a <GlossaryTerm term={"cons"}><i>cons</i></GlossaryTerm> that is an <GlossaryTerm term={"element"}><i>element</i></GlossaryTerm> of the <GlossaryTerm term={"alist"}><i>alist</i></GlossaryTerm>, or <DictionaryLink term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -54,11 +54,11 @@
 
 
 
-<DictionaryLink styled={true} term={"rassoc"}><b>rassoc</b></DictionaryLink>, <DictionaryLink styled={true} term={"rassoc-if"}><b>rassoc-if</b></DictionaryLink>, and <DictionaryLink styled={true} term={"rassoc-if-not"}><b>rassoc-if-not</b></DictionaryLink> return the first <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> whose *cdr satisfies the test*. If no such <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> is found, <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is returned. 
+<DictionaryLink term={"rassoc"}><b>rassoc</b></DictionaryLink>, <DictionaryLink term={"rassoc-if"}><b>rassoc-if</b></DictionaryLink>, and <DictionaryLink term={"rassoc-if-not"}><b>rassoc-if-not</b></DictionaryLink> return the first <GlossaryTerm term={"cons"}><i>cons</i></GlossaryTerm> whose *cdr satisfies the test*. If no such <GlossaryTerm term={"cons"}><i>cons</i></GlossaryTerm> is found, <DictionaryLink term={"nil"}><b>nil</b></DictionaryLink> is returned. 
 
 
 
-If <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> appears in <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm> in place of a pair, it is ignored. 
+If <DictionaryLink term={"nil"}><b>nil</b></DictionaryLink> appears in <GlossaryTerm term={"alist"}><i>alist</i></GlossaryTerm> in place of a pair, it is ignored. 
 
 
 
@@ -78,7 +78,7 @@ If <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> appear
 
 
 
-<DictionaryLink styled={true} term={"assoc"}><b>assoc</b></DictionaryLink>, Section 3.6 (Traversal Rules and Side Effects) 
+<DictionaryLink term={"assoc"}><b>assoc</b></DictionaryLink>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 
@@ -90,11 +90,11 @@ The :test-not parameter is deprecated.
 
 
 
-The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"rassoc-if-not"}><b>rassoc-if-not</b></DictionaryLink> is deprecated. 
+The <GlossaryTerm term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink term={"rassoc-if-not"}><b>rassoc-if-not</b></DictionaryLink> is deprecated. 
 
 
 
-It is possible to <DictionaryLink styled={true} term={"rplaca"}><b>rplaca</b></DictionaryLink> the result of <DictionaryLink styled={true} term={"rassoc"}><b>rassoc</b></DictionaryLink>, provided that it is not <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, in order to “update” <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>. The expressions 
+It is possible to <DictionaryLink term={"rplaca"}><b>rplaca</b></DictionaryLink> the result of <DictionaryLink term={"rassoc"}><b>rassoc</b></DictionaryLink>, provided that it is not <DictionaryLink term={"nil"}><b>nil</b></DictionaryLink>, in order to “update” <GlossaryTerm term={"alist"}><i>alist</i></GlossaryTerm>. The expressions 
 
 
 
@@ -110,7 +110,7 @@ and
 
 
 
-are equivalent in meaning, except when the item is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> and <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> appears in place of a pair in the <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>. See the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"assoc"}><b>assoc</b></DictionaryLink>. 
+are equivalent in meaning, except when the item is <DictionaryLink term={"nil"}><b>nil</b></DictionaryLink> and <DictionaryLink term={"nil"}><b>nil</b></DictionaryLink> appears in place of a pair in the <GlossaryTerm term={"alist"}><i>alist</i></GlossaryTerm>. See the <GlossaryTerm term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink term={"assoc"}><b>assoc</b></DictionaryLink>. 
 
 
 
