@@ -10,7 +10,7 @@ import BBScopePurposeandHistory from './b-b-scope-purpose-and-history/_b-b-scope
 
 ## 1.1.1 Scope and Purpose
 
-import BBBScopeandPurpose from './b-b-scope-purpose-and-history/_b-b-b-scope-and-purpose.md';
+import BBBScopeandPurpose from './b-b-scope-purpose-and-history/_1-1-1-scope-and-purpose.md';
 
 <BBBScopeandPurpose />
 
