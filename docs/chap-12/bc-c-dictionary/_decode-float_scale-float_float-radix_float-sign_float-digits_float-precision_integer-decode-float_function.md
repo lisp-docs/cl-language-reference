@@ -118,7 +118,7 @@
 
 
 
-<DictionaryLink  term={"scale-float"}><b>scale-float</b></DictionaryLink> returns (\* <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> (expt (float *b float<ClLinks  term={"t"}><i>) </i></ClLinks>integer*)), where *b* is the radix of the floating point representation. <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> is not necessarily between 1*/b* and 1. 
+<DictionaryLink  term={"scale-float"}><b>scale-float</b></DictionaryLink> returns (\* <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> (expt (float *b float<GlossaryTerm  term={"t"}><i>) </i></GlossaryTerm>integer*)), where *b* is the radix of the floating point representation. <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> is not necessarily between 1*/b* and 1. 
 
 
 

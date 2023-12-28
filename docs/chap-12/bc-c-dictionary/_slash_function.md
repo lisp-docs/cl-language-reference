@@ -2,9 +2,9 @@
 
 **Syntax:**
 
-<ClLinks  term={"/"}><b>/</b></ClLinks> *number → reciprocal*
+<DictionaryLink  term={"/"}><b>/</b></DictionaryLink> *number → reciprocal*
 
-<ClLinks  term={"/"}><b>/</b></ClLinks> *numerator* &amp;rest *denominators*<sup>+</sup> → quotient
+<DictionaryLink  term={"/"}><b>/</b></DictionaryLink> *numerator* &amp;rest *denominators*<sup>+</sup> → quotient
 
 **Arguments and Values:**
 
@@ -14,15 +14,15 @@
 
 **Description:**
 
-The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"/"}><b>/</b></ClLinks> performs division or reciprocation.
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"/"}><b>/</b></DictionaryLink> performs division or reciprocation.
 
-If no *denominators* are supplied, the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"/"}><b>/</b></ClLinks> returns the reciprocal of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>.
+If no *denominators* are supplied, the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"/"}><b>/</b></DictionaryLink> returns the reciprocal of <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>.
 
-If at least one *denominator* is supplied, the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"/"}><b>/</b></ClLinks> divides the *numerator* by all of the *denominators* and returns the resulting *quotient*.
+If at least one *denominator* is supplied, the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"/"}><b>/</b></DictionaryLink> divides the *numerator* by all of the *denominators* and returns the resulting *quotient*.
 
 If each <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is either an *integer* or a <GlossaryTerm  term={"ratio"}><i>ratio</i></GlossaryTerm>, and the result is not an *integer* , then it is a <GlossaryTerm  term={"ratio"}><i>ratio</i></GlossaryTerm>.
 
-The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <ClLinks  term={"/"}><b>/</b></ClLinks> performs necessary type conversions.
+The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"/"}><b>/</b></DictionaryLink> performs necessary type conversions.
 
 If any <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> is a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> then the rules of floating-point contagion apply; see Section 12.1.4 (Floating-point Computations).
 

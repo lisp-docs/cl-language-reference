@@ -6,7 +6,7 @@ If the result of any computation would be a <GlossaryTerm  term={"complex"}><i>c
 
 
 
-5\.0 are always *different objects* in Common Lisp (they are never the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, although they are the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> and <ClLinks  term={"="}><b>=</b></ClLinks>). 
+5\.0 are always *different objects* in Common Lisp (they are never the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, although they are the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink> and <DictionaryLink  term={"="}><b>=</b></DictionaryLink>). 
 
 
 

@@ -79,7 +79,7 @@ sidebar_position: 98
 
 
 
-<DictionaryLink  term={"block"}><b>block</b></DictionaryLink> *n.* a named lexical *exit point<ClLinks  term={"t"}><i>, </i></ClLinks>established* explicitly by <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> or implicitly by <GlossaryTerm  term={"operator"}><i>operators</i></GlossaryTerm> such as <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink>, <DictionaryLink  term={"do"}><b>do</b></DictionaryLink> and **prog**, to which control and values may be transfered by using a <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> with the name of the <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm>. 
+<DictionaryLink  term={"block"}><b>block</b></DictionaryLink> *n.* a named lexical *exit point<GlossaryTerm  term={"t"}><i>, </i></GlossaryTerm>established* explicitly by <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> or implicitly by <GlossaryTerm  term={"operator"}><i>operators</i></GlossaryTerm> such as <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink>, <DictionaryLink  term={"do"}><b>do</b></DictionaryLink> and **prog**, to which control and values may be transfered by using a <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> with the name of the <GlossaryTerm  term={"block"}><i>block</i></GlossaryTerm>. 
 
 
 

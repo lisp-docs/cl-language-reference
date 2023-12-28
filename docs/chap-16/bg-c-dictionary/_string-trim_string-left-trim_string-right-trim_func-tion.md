@@ -170,7 +170,7 @@ comparison operations these <GlossaryTerm  term={"function"}><i>functions</i></G
 
 
 
-A string *a* is equal to a string *b* if it contains the same number of characters, and the corresponding characters are the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> under <ClLinks  term={"char="}><b>char=</b></ClLinks> or <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink>, as appropriate. 
+A string *a* is equal to a string *b* if it contains the same number of characters, and the corresponding characters are the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink  term={"char="}><b>char=</b></DictionaryLink> or <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink>, as appropriate. 
 
 
 
@@ -238,15 +238,11 @@ The comparison has one of the following results:
 
 
 
-<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&lt;<ClLinks  term={"="}><b>=</b></ClLinks> 
+<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&lt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> 
 
 
 
-<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&lt;<ClLinks  term={"="}><b>=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if substring1 is less than or equal to substring2; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
-
-
-
- 
+<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&lt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if substring1 is less than or equal to substring2; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -254,15 +250,19 @@ The comparison has one of the following results:
 
 
 
-<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&gt;<ClLinks  term={"="}><b>=</b></ClLinks> 
+ 
 
 
 
-<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&gt;<ClLinks  term={"="}><b>=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if substring1 is greater than or equal to substring2; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. **string-not-greaterp**, **string-not-lessp** 
+<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&gt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> 
 
 
 
-**string-not-greaterp** and **string-not-lessp** are exactly like <DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&lt;<ClLinks  term={"="}><b>=</b></ClLinks> and <DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&gt;<ClLinks  term={"="}><b>=</b></ClLinks>, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if <DictionaryLink  term={"char-lessp"}><b>char-lessp</b></DictionaryLink> were used instead of <DictionaryLink  term={"char"}><b>char</b></DictionaryLink>&lt; for comparing characters. 
+<DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&gt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if substring1 is greater than or equal to substring2; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. **string-not-greaterp**, **string-not-lessp** 
+
+
+
+**string-not-greaterp** and **string-not-lessp** are exactly like <DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&lt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> and <DictionaryLink  term={"string"}><b>string</b></DictionaryLink>&gt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink>, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if <DictionaryLink  term={"char-lessp"}><b>char-lessp</b></DictionaryLink> were used instead of <DictionaryLink  term={"char"}><b>char</b></DictionaryLink>&lt; for comparing characters. 
 
 
 
@@ -285,7 +285,7 @@ The comparison has one of the following results:
 
 
 
-<ClLinks  term={"char="}><b>char=</b></ClLinks> 
+<DictionaryLink  term={"char="}><b>char=</b></DictionaryLink> 
 
 
 

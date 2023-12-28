@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"readtable"}><b><GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm></b></ClLinks>∗ Variable* 
+*∗<DictionaryLink  term={"readtable"}><b><GlossaryTerm  term={"readtable"}><i>readtable</i></GlossaryTerm></b></DictionaryLink>∗ Variable* 
 
 
 

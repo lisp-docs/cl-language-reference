@@ -139,7 +139,7 @@ characteristics by direct modification. A <GlossaryTerm styled={true} term={"con
 
 
 
-<DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> *v.t.* (a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> to a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>) to <GlossaryTerm  term={"call"}><i>call</i></GlossaryTerm> the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> with arguments that are the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. “Applying the function <ClLinks  term={"+"}><b>+</b></ClLinks> to a list of integers returns the sum of the elements of that list.” 
+<DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> *v.t.* (a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> to a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>) to <GlossaryTerm  term={"call"}><i>call</i></GlossaryTerm> the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> with arguments that are the <GlossaryTerm  term={"element"}><i>elements</i></GlossaryTerm> of the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>. “Applying the function <DictionaryLink  term={"+"}><b>+</b></DictionaryLink> to a list of integers returns the sum of the elements of that list.” 
 
 
 

@@ -39,7 +39,7 @@
 
 
 
-<DictionaryLink styled={true} term={"nth"}><b>nth</b></DictionaryLink> locates the *n*th element of <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, where the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is the “zeroth” element. Specifically, (nth *n list<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (car (nthcdr *n list*)) 
+<DictionaryLink styled={true} term={"nth"}><b>nth</b></DictionaryLink> locates the *n*th element of <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, where the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is the “zeroth” element. Specifically, (nth *n list<GlossaryTerm styled={true} term={"t"}><i>) </i></GlossaryTerm>≡* (car (nthcdr *n list*)) 
 
 
 
@@ -47,7 +47,7 @@
 
 
 
-(setf (nth *n list<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>new-object<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (setf (car (nthcdr *n list<ClLinks styled={true} term={"t"}><i>)) </i></ClLinks>new-object*) 
+(setf (nth *n list<GlossaryTerm styled={true} term={"t"}><i>) </i></ClLinks>new-object<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (setf (car (nthcdr *n list<ClLinks styled={true} term={"t"}><i>)) </i></GlossaryTerm>new-object*) 
 
 
 

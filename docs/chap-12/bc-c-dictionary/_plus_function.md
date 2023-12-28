@@ -2,7 +2,7 @@
 
 **Syntax:**
 
-<ClLinks  term={"+"}><b>+</b></ClLinks> &amp;rest *numbers → sum*
+<DictionaryLink  term={"+"}><b>+</b></DictionaryLink> &amp;rest *numbers → sum*
 
 **Arguments and Values:**
 

@@ -14,11 +14,11 @@
 
 
 
-<DictionaryLink styled={true} term={"print-object"}><b>print-object</b></DictionaryLink> (*object standard-object<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>stream* 
+<DictionaryLink styled={true} term={"print-object"}><b>print-object</b></DictionaryLink> (*object standard-object<GlossaryTerm styled={true} term={"t"}><i>) </i></GlossaryTerm>stream* 
 
 
 
-<DictionaryLink styled={true} term={"print-object"}><b>print-object</b></DictionaryLink> (*object structure-object<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>stream* 
+<DictionaryLink styled={true} term={"print-object"}><b>print-object</b></DictionaryLink> (*object structure-object<GlossaryTerm styled={true} term={"t"}><i>) </i></GlossaryTerm>stream* 
 
 
 

@@ -83,7 +83,7 @@ Normally (eql 1.0s0 1.0d0) is false, under the assumption that 1.0s0 and 1.0d0 a
 
 
 
-<DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>, <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>, <ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"char="}><b>char=</b></ClLinks> 
+<DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>, <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>, <DictionaryLink  term={"="}><b>=</b></DictionaryLink>, <DictionaryLink  term={"char="}><b>char=</b></DictionaryLink> 
 
 
 
@@ -95,7 +95,7 @@ Normally (eql 1.0s0 1.0d0) is false, under the assumption that 1.0s0 and 1.0d0 a
 
 
 
-<DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> may not be true of two <GlossaryTerm  term={"float"}><i>floats</i></GlossaryTerm> even when they represent the same value. <ClLinks  term={"="}><b>=</b></ClLinks> is used to compare mathematical values. 
+<DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> may not be true of two <GlossaryTerm  term={"float"}><i>floats</i></GlossaryTerm> even when they represent the same value. <DictionaryLink  term={"="}><b>=</b></DictionaryLink> is used to compare mathematical values. 
 
 
 

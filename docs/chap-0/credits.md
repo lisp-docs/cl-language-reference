@@ -196,7 +196,7 @@ Public Review Comments (#1). Document X3J13/94-305.
 
 05-May-94 X3J13 Editorial-only changes to Draft 14.10 in response to comments. 10-May-94 Pitman Draft 15.17 (for X3 consideration). Document X3J13/94-101. 12-Aug-94 X3J13 Letter ballot to make specific corrections to Credits. 
 
-Drafts 15.17 and 15.17R are *identical* except for: 
+Drafts 15.17 and 15.17R are <GlossaryTerm styled={true} term={"identical"}><i>identical</i></GlossaryTerm> except for: 
 
 Changes to document date and version number. 
 

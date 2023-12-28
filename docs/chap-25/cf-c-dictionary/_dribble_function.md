@@ -146,7 +146,7 @@ The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <D
 
 
 
-<ClLinks styled={true} term={"+"}><b>+</b></ClLinks> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), **\*** (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <ClLinks styled={true} term={"/"}><b>/</b></ClLinks> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
+<DictionaryLink styled={true} term={"+"}><b>+</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), **\*** (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
 
 
 

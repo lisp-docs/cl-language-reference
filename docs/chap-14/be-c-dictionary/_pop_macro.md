@@ -14,7 +14,7 @@
 
 
 
-<GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of which is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> (possibly, but necessarily, a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> or *circular list<ClLinks styled={true} term={"t"}><i>). </i></ClLinks>element<ClLinks styled={true} term={"t"}><i>—an </i></ClLinks>object* (the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of the contents of <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>). 
+<GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of which is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> (possibly, but necessarily, a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> or *circular list<GlossaryTerm styled={true} term={"t"}><i>). </i></ClLinks>element<ClLinks styled={true} term={"t"}><i>—an </i></GlossaryTerm>object* (the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of the contents of <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm>). 
 
 
 

@@ -2,7 +2,7 @@
 
 **Syntax:**
 
-<ClLinks  term={"1+"}><b>1+</b></ClLinks> *number → successor*
+<DictionaryLink  term={"1+"}><b>1+</b></DictionaryLink> *number → successor*
 
 <DictionaryLink  term={"1"}><b>1*</b></DictionaryLink>− number → predecessor*
 
@@ -14,7 +14,7 @@
 
 **Description:**
 
-<ClLinks  term={"1+"}><b>1+</b></ClLinks> returns a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> that is one more than its argument <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>. **1-** returns a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> that is one less than its argument <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>.
+<DictionaryLink  term={"1+"}><b>1+</b></DictionaryLink> returns a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> that is one more than its argument <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>. **1-** returns a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> that is one less than its argument <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>.
 
 **Examples:**
 

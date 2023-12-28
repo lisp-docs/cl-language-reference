@@ -74,7 +74,7 @@ In effect
 
 
 
-being *\{*each *|* the*\} \{<ClLinks styled={true} term={"symbol"}><i>symbol </i></ClLinks>|* symbols *|* present-symbol *|* present-symbols *|* external-symbol *|* external-symbols*\} \{*in *|* of*\}* 
+being *\{*each *|* the*\} \{<GlossaryTerm styled={true} term={"symbol"}><i>symbol </i></GlossaryTerm>|* symbols *|* present-symbol *|* present-symbols *|* external-symbol *|* external-symbols*\} \{*in *|* of*\}* 
 
 
 

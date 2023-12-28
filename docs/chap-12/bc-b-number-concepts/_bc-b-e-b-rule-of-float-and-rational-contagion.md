@@ -2,7 +2,7 @@
 
 
 
-When <GlossaryTerm  term={"rational"}><i>rationals</i></GlossaryTerm> and <GlossaryTerm  term={"float"}><i>floats</i></GlossaryTerm> are combined by a numerical function, the <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> is first converted to a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> of the same format. For <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> such as <ClLinks  term={"+"}><b>+</b></ClLinks> that take more than two arguments, it is permitted that part of the operation be carried out exactly using <GlossaryTerm  term={"rational"}><i>rationals</i></GlossaryTerm> and the rest be done using floating-point arithmetic. 
+When <GlossaryTerm  term={"rational"}><i>rationals</i></GlossaryTerm> and <GlossaryTerm  term={"float"}><i>floats</i></GlossaryTerm> are combined by a numerical function, the <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> is first converted to a <GlossaryTerm  term={"float"}><i>float</i></GlossaryTerm> of the same format. For <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> such as <DictionaryLink  term={"+"}><b>+</b></DictionaryLink> that take more than two arguments, it is permitted that part of the operation be carried out exactly using <GlossaryTerm  term={"rational"}><i>rationals</i></GlossaryTerm> and the rest be done using floating-point arithmetic. 
 
 
 

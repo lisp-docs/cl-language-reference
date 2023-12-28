@@ -3,7 +3,7 @@ The total ordering on <GlossaryTerm styled={true} term={"character"}><i>characte
 
 *•* If two <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> have the same *implementation-defined attributes*, then their ordering by <DictionaryLink styled={true} term={"char"}><b>char</b></DictionaryLink>&lt; is consistent with the numerical ordering by the predicate &lt; on their code <GlossaryTerm styled={true} term={"attribute"}><i>attributes</i></GlossaryTerm>.
 
-*•* If two <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> differ in any <GlossaryTerm styled={true} term={"attribute"}><i>attribute</i></GlossaryTerm>, then they are not <ClLinks styled={true} term={"char="}><b>char=</b></ClLinks>.
+*•* If two <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> differ in any <GlossaryTerm styled={true} term={"attribute"}><i>attribute</i></GlossaryTerm>, then they are not <DictionaryLink styled={true} term={"char="}><b>char=</b></DictionaryLink>.
 
 *•* The total ordering is not necessarily the same as the total ordering on the *integers* produced by applying <DictionaryLink styled={true} term={"char-int"}><b>char-int</b></DictionaryLink> to the <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm>.
 

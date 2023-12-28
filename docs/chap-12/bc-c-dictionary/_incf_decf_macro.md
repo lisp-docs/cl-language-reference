@@ -91,7 +91,7 @@ n → 1.5
 
 
 
-<ClLinks  term={"+"}><b>+</b></ClLinks>, <DictionaryLink  term={"-"}><b>-</b></DictionaryLink>, <ClLinks  term={"1+"}><b>1+</b></ClLinks>, **1-**, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> 
+<DictionaryLink  term={"+"}><b>+</b></DictionaryLink>, <DictionaryLink  term={"-"}><b>-</b></DictionaryLink>, <DictionaryLink  term={"1+"}><b>1+</b></DictionaryLink>, **1-**, <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> 
 
 
 

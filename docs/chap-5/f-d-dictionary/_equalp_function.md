@@ -46,7 +46,7 @@ If two <GlossaryTerm  term={"character"}><i>characters</i></GlossaryTerm> are <D
 
 
 
-If two <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> under <ClLinks  term={"="}><b>=</b></ClLinks>. 
+If two <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink  term={"="}><b>=</b></DictionaryLink>. 
 
 
 
@@ -106,7 +106,7 @@ If two *structures S*<sub>1</sub> and *S*<sub>2</sub> have the same <GlossaryTer
 
 | :- |
 
-|<p><GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> uses <ClLinks  term={"="}><b>=</b></ClLinks> </p><p><GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> uses <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink> </p><p><GlossaryTerm  term={"cons"}><i>cons</i></GlossaryTerm> descends </p><p><GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> descends </p><p><GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> descends </p><p><GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> same as <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> </p><p><GlossaryTerm  term={"structure"}><i>structure</i></GlossaryTerm> descends, as described above </p><p>Other <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> descends </p><p><GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> descends, as described above </p><p>Other <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> uses <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink></p>|
+|<p><GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> uses <DictionaryLink  term={"="}><b>=</b></DictionaryLink> </p><p><GlossaryTerm  term={"character"}><i>character</i></GlossaryTerm> uses <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink> </p><p><GlossaryTerm  term={"cons"}><i>cons</i></GlossaryTerm> descends </p><p><GlossaryTerm styled={true} term={"bit vector"}><i>bit vector</i></GlossaryTerm> descends </p><p><GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm> descends </p><p><GlossaryTerm  term={"pathname"}><i>pathname</i></GlossaryTerm> same as <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> </p><p><GlossaryTerm  term={"structure"}><i>structure</i></GlossaryTerm> descends, as described above </p><p>Other <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> descends </p><p><GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm> descends, as described above </p><p>Other <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> uses <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink></p>|
 
 
 
@@ -149,7 +149,7 @@ Data and Control
 
 
 
-<DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>, <ClLinks  term={"="}><b>=</b></ClLinks>, <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink>, **string-equal**, <ClLinks  term={"char="}><b>char=</b></ClLinks>, <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink> 
+<DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>, <DictionaryLink  term={"="}><b>=</b></DictionaryLink>, <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink>, **string-equal**, <DictionaryLink  term={"char="}><b>char=</b></DictionaryLink>, <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink> 
 
 
 

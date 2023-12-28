@@ -74,7 +74,7 @@ Returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if its <Glossary
 
 
 
-<DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>, <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>, <ClLinks  term={"="}><b>=</b></ClLinks>, Section 3.2 (Compilation) 
+<DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink>, <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>, <DictionaryLink  term={"="}><b>=</b></DictionaryLink>, Section 3.2 (Compilation) 
 
 
 

@@ -59,7 +59,7 @@ If <GlossaryTerm  term={"rational"}><i>rational</i></GlossaryTerm> is an *intege
 
 
 
-<ClLinks  term={"/"}><b>/</b></ClLinks> 
+<DictionaryLink  term={"/"}><b>/</b></DictionaryLink> 
 
 
 

@@ -59,7 +59,7 @@ alist → NIL
 
 
 
-(acons *key datum alist<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (cons (cons *key datum*) <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>) 
+(acons *key datum alist<GlossaryTerm styled={true} term={"t"}><i>) </i></GlossaryTerm>≡* (cons (cons *key datum*) <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>) 
 
 
 

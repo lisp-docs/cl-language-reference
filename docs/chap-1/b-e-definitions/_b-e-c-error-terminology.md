@@ -46,7 +46,7 @@ If an explicit error type is not specified, the default is <DictionaryLink style
 
 
 
-This means that an error is signaled in safe code, and an error might be signaled in unsafe code. <GlossaryTerm styled={true} term={"conforming code"}><i>Conforming code</i></GlossaryTerm> may rely on the fact that the error is signaled in safe code. Every implementation is required to detect the error at least in safe code. When the error is not signaled, the “consequences are undefined” (see below). For example, “<ClLinks styled={true} term={"+"}><b>+</b></ClLinks> should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if any argument is not of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"number"}><b>number</b></DictionaryLink>.” 
+This means that an error is signaled in safe code, and an error might be signaled in unsafe code. <GlossaryTerm styled={true} term={"conforming code"}><i>Conforming code</i></GlossaryTerm> may rely on the fact that the error is signaled in safe code. Every implementation is required to detect the error at least in safe code. When the error is not signaled, the “consequences are undefined” (see below). For example, “<DictionaryLink styled={true} term={"+"}><b>+</b></DictionaryLink> should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if any argument is not of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"number"}><b>number</b></DictionaryLink>.” 
 
 
 

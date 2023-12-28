@@ -22,15 +22,15 @@ a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryT
 
 
 
-The <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm> <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are maintained by the *Lisp read-eval-print loop* to save the values of results that were printed at the end of the loop. 
+The <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm> <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink>, <DictionaryLink styled={true} term={"//"}><b>//</b></DictionaryLink>, and <DictionaryLink styled={true} term={"///"}><b>///</b></DictionaryLink> are maintained by the *Lisp read-eval-print loop* to save the values of results that were printed at the end of the loop. 
 
 
 
-The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks> is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of the most recent <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> that were printed, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <ClLinks styled={true} term={"//"}><b>//</b></ClLinks> is the previous value of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, and the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> is the previous value of <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>. 
+The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of the most recent <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> that were printed, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"//"}><b>//</b></DictionaryLink> is the previous value of <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink>, and the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"///"}><b>///</b></DictionaryLink> is the previous value of <DictionaryLink styled={true} term={"//"}><b>//</b></DictionaryLink>. 
 
 
 
-The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are updated immediately prior to printing the <GlossaryTerm styled={true} term={"return value"}><i>return value</i></GlossaryTerm> of a top-level <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> by the *Lisp read-eval-print loop*. If the <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of such a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is aborted prior to its normal return, the values of <ClLinks styled={true} term={"/"}><b>/</b></ClLinks>, <ClLinks styled={true} term={"//"}><b>//</b></ClLinks>, and <ClLinks styled={true} term={"///"}><b>///</b></ClLinks> are not updated. 
+The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink>, <DictionaryLink styled={true} term={"//"}><b>//</b></DictionaryLink>, and <DictionaryLink styled={true} term={"///"}><b>///</b></DictionaryLink> are updated immediately prior to printing the <GlossaryTerm styled={true} term={"return value"}><i>return value</i></GlossaryTerm> of a top-level <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> by the *Lisp read-eval-print loop*. If the <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of such a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is aborted prior to its normal return, the values of <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink>, <DictionaryLink styled={true} term={"//"}><b>//</b></DictionaryLink>, and <DictionaryLink styled={true} term={"///"}><b>///</b></DictionaryLink> are not updated. 
 
 
 
@@ -52,7 +52,7 @@ The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of <
 
 
 
-<DictionaryLink styled={true} term={"-"}><b>-</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <ClLinks styled={true} term={"+"}><b>+</b></ClLinks> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), **\*** (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
+<DictionaryLink styled={true} term={"-"}><b>-</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <DictionaryLink styled={true} term={"+"}><b>+</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), **\*** (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
 
 
 

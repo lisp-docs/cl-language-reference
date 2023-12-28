@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"features"}><b><GlossaryTerm styled={true} term={"feature"}><i>features</i></GlossaryTerm></b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"features"}><b><GlossaryTerm styled={true} term={"feature"}><i>features</i></GlossaryTerm></b></DictionaryLink>∗ Variable* 
 
 
 
@@ -78,7 +78,7 @@ discourage them from introducing the :draft-ansi-cl and :ansi-cl <GlossaryTerm s
 
 
 
-*∗<ClLinks styled={true} term={"features"}><b><GlossaryTerm styled={true} term={"feature"}><i>features</i></GlossaryTerm></b></ClLinks>∗* 
+*∗<DictionaryLink styled={true} term={"features"}><b><GlossaryTerm styled={true} term={"feature"}><i>features</i></GlossaryTerm></b></DictionaryLink>∗* 
 
 
 

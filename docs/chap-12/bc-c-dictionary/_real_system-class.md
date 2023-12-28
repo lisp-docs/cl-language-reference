@@ -14,7 +14,7 @@
 
 
 
-The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"real"}><b>real</b></DictionaryLink> includes all <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> that represent mathematical real numbers, though there are mathematical real numbers (*e.g.*, irrational numbers) that do not have an exact representation in Common Lisp. Only *reals* can be ordered using the &lt;, &gt;, &lt;<ClLinks  term={"="}><b>=</b></ClLinks>, and &gt;<ClLinks  term={"="}><b>=</b></ClLinks> functions. 
+The <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"real"}><b>real</b></DictionaryLink> includes all <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> that represent mathematical real numbers, though there are mathematical real numbers (*e.g.*, irrational numbers) that do not have an exact representation in Common Lisp. Only *reals* can be ordered using the &lt;, &gt;, &lt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink>, and &gt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> functions. 
 
 
 

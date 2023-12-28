@@ -22,11 +22,11 @@ an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>.
 
 
 
-The <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm> <ClLinks styled={true} term={"+"}><b>+</b></ClLinks>, <ClLinks styled={true} term={"++"}><b>++</b></ClLinks>, and <ClLinks styled={true} term={"+++"}><b>+++</b></ClLinks> are maintained by the *Lisp read-eval-print loop* to save <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> that were recently *evaluated*. 
+The <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm> <DictionaryLink styled={true} term={"+"}><b>+</b></DictionaryLink>, <DictionaryLink styled={true} term={"++"}><b>++</b></DictionaryLink>, and <DictionaryLink styled={true} term={"+++"}><b>+++</b></DictionaryLink> are maintained by the *Lisp read-eval-print loop* to save <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> that were recently *evaluated*. 
 
 
 
-The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <ClLinks styled={true} term={"+"}><b>+</b></ClLinks> is the last <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that was *evaluated*, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <ClLinks styled={true} term={"++"}><b>++</b></ClLinks> is the previous value of <ClLinks styled={true} term={"+"}><b>+</b></ClLinks>, and the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <ClLinks styled={true} term={"+++"}><b>+++</b></ClLinks> is the previous value of <ClLinks styled={true} term={"++"}><b>++</b></ClLinks>. 
+The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"+"}><b>+</b></DictionaryLink> is the last <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that was *evaluated*, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"++"}><b>++</b></DictionaryLink> is the previous value of <DictionaryLink styled={true} term={"+"}><b>+</b></DictionaryLink>, and the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"+++"}><b>+++</b></DictionaryLink> is the previous value of <DictionaryLink styled={true} term={"++"}><b>++</b></DictionaryLink>. 
 
 
 
@@ -57,7 +57,7 @@ The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <C
 
 
 
-<DictionaryLink styled={true} term={"-"}><b>-</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), **\*** (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <ClLinks styled={true} term={"/"}><b>/</b></ClLinks> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
+<DictionaryLink styled={true} term={"-"}><b>-</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), **\*** (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
 
 
 
@@ -136,7 +136,7 @@ The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of *
 
 
 
-<DictionaryLink styled={true} term={"-"}><b>-</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <ClLinks styled={true} term={"+"}><b>+</b></ClLinks> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <ClLinks styled={true} term={"/"}><b>/</b></ClLinks> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
+<DictionaryLink styled={true} term={"-"}><b>-</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <DictionaryLink styled={true} term={"+"}><b>+</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <DictionaryLink styled={true} term={"/"}><b>/</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
 
 
 

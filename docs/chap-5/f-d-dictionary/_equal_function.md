@@ -77,7 +77,7 @@ Any two <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> that are <D
 
 **See Also:**
 
-<DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>, <ClLinks  term={"="}><b>=</b></ClLinks>, <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink>, **string-equal**, <ClLinks  term={"char="}><b>char=</b></ClLinks>, <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink>, <DictionaryLink  term={"tree-equal"}><b>tree-equal</b></DictionaryLink>
+<DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>, <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink>, <DictionaryLink  term={"equalp"}><b>equalp</b></DictionaryLink>, <DictionaryLink  term={"="}><b>=</b></DictionaryLink>, <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink>, **string-equal**, <DictionaryLink  term={"char="}><b>char=</b></DictionaryLink>, <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink>, <DictionaryLink  term={"tree-equal"}><b>tree-equal</b></DictionaryLink>
 
 **Notes:**
 

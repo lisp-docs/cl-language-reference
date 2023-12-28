@@ -2,33 +2,33 @@
 
 **Syntax:**
 
-<ClLinks  term={"="}><b>=</b></ClLinks> &amp;rest <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean
+<DictionaryLink  term={"="}><b>=</b></DictionaryLink> &amp;rest <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean
 
-<ClLinks  term={"/="}><b>/=</b></ClLinks> &amp;rest <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean
+<DictionaryLink  term={"/="}><b>/=</b></DictionaryLink> &amp;rest <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean
 
 &lt; &amp;rest <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean
 
 &gt; &amp;rest <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean
 
-&lt;<ClLinks  term={"="}><b>=</b></ClLinks> &amp;rest <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean
+&lt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> &amp;rest <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean
 
-&gt;<ClLinks  term={"="}><b>=</b></ClLinks> &amp;rest <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean
+&gt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> &amp;rest <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm><sup>+</sup> → generalized-boolean
 
 **Arguments and Values:**
 
-<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—for &lt;, &gt;, &lt;<ClLinks  term={"="}><b>=</b></ClLinks>, &gt;<ClLinks  term={"="}><b>=</b></ClLinks>: a *real*; for <ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"/="}><b>/=</b></ClLinks>: a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
+<GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm>—for &lt;, &gt;, &lt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink>, &gt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink>: a *real*; for <DictionaryLink  term={"="}><b>=</b></DictionaryLink>, <DictionaryLink  term={"/="}><b>/=</b></DictionaryLink>: a <GlossaryTerm  term={"number"}><i>number</i></GlossaryTerm> .
 
 *generalized-boolean*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>.
 
 **Description:**
 
-<ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"/="}><b>/=</b></ClLinks>, &lt;, &gt;, &lt;<ClLinks  term={"="}><b>=</b></ClLinks>, and &gt;<ClLinks  term={"="}><b>=</b></ClLinks> perform arithmetic comparisons on their arguments as follows: <ClLinks  term={"="}><b>=</b></ClLinks>
+<DictionaryLink  term={"="}><b>=</b></DictionaryLink>, <DictionaryLink  term={"/="}><b>/=</b></DictionaryLink>, &lt;, &gt;, &lt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink>, and &gt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> perform arithmetic comparisons on their arguments as follows: <DictionaryLink  term={"="}><b>=</b></DictionaryLink>
 
-The value of <ClLinks  term={"="}><b>=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if all <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are the same in value; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. Two *complexes* are considered equal by <ClLinks  term={"="}><b>=</b></ClLinks> if their real and imaginary parts are equal according to <ClLinks  term={"="}><b>=</b></ClLinks>.
+The value of <DictionaryLink  term={"="}><b>=</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if all <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are the same in value; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. Two *complexes* are considered equal by <DictionaryLink  term={"="}><b>=</b></DictionaryLink> if their real and imaginary parts are equal according to <DictionaryLink  term={"="}><b>=</b></DictionaryLink>.
 
-<ClLinks  term={"/="}><b>/=</b></ClLinks>
+<DictionaryLink  term={"/="}><b>/=</b></DictionaryLink>
 
-The value of <ClLinks  term={"/="}><b>/=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if no two <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are the same in value; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>.
+The value of <DictionaryLink  term={"/="}><b>/=</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if no two <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are the same in value; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>.
 
 **=, /=,** *&lt;***,** *&gt;***,** *&lt;***=,** *&gt;***=**
 
@@ -40,15 +40,15 @@ The value of &lt; is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if 
 
 The value of &gt; is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are in monotonically decreasing order; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>.
 
-&lt;<ClLinks  term={"="}><b>=</b></ClLinks>
+&lt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink>
 
-The value of &lt;<ClLinks  term={"="}><b>=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are in monotonically nondecreasing order; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>.
+The value of &lt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are in monotonically nondecreasing order; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>.
 
-&gt;<ClLinks  term={"="}><b>=</b></ClLinks>
+&gt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink>
 
-The value of &gt;<ClLinks  term={"="}><b>=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are in monotonically nonincreasing order; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>.
+The value of &gt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the <GlossaryTerm  term={"number"}><i>numbers</i></GlossaryTerm> are in monotonically nonincreasing order; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>.
 
-<ClLinks  term={"="}><b>=</b></ClLinks>, <ClLinks  term={"/="}><b>/=</b></ClLinks>, &lt;, &gt;, &lt;<ClLinks  term={"="}><b>=</b></ClLinks>, and &gt;<ClLinks  term={"="}><b>=</b></ClLinks> perform necessary type conversions.
+<DictionaryLink  term={"="}><b>=</b></DictionaryLink>, <DictionaryLink  term={"/="}><b>/=</b></DictionaryLink>, &lt;, &gt;, &lt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink>, and &gt;<DictionaryLink  term={"="}><b>=</b></DictionaryLink> perform necessary type conversions.
 
 **Examples:**
 
@@ -108,4 +108,4 @@ Might signal <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryL
 
 **Notes:**
 
-<ClLinks  term={"="}><b>=</b></ClLinks> differs from <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> in that `(= 0.0 -0.0)` is always true, because <ClLinks  term={"="}><b>=</b></ClLinks> compares the mathematical values of its operands, whereas <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> compares the representational values, so to speak.
+<DictionaryLink  term={"="}><b>=</b></DictionaryLink> differs from <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> in that `(= 0.0 -0.0)` is always true, because <DictionaryLink  term={"="}><b>=</b></DictionaryLink> compares the mathematical values of its operands, whereas <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> compares the representational values, so to speak.
