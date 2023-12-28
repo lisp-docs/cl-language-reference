@@ -1,4 +1,4 @@
-**print-not-readable-object** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**print-not-readable-object** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"print-not-readable-object"}><b>print-not-readable-object</b></ClLinks> *condition ! object* 
+<DictionaryLink styled={true} term={"print-not-readable-object"}><b>print-not-readable-object</b></DictionaryLink> *condition ! object* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"print-not-readable"}><b>print-not-readable</b></DictionaryLink>. 
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that could not be printed readably in the situation represented by <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
+Returns the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> that could not be printed readably in the situation represented by <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>. 
 
 
 
@@ -42,7 +42,7 @@ Returns the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that 
 
 
 
-<ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks>, Chapter 9 (Conditions) 
+<DictionaryLink styled={true} term={"print-not-readable"}><b>print-not-readable</b></DictionaryLink>, Chapter 9 (Conditions) 
 
 
 

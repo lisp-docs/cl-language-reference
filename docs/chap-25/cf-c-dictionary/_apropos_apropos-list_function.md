@@ -1,4 +1,4 @@
-**apropos, apropos-list** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**apropos, apropos-list** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"apropos"}><b>apropos</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *package → ⟨no values⟩* 
+<DictionaryLink styled={true} term={"apropos"}><b>apropos</b></DictionaryLink> <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> &amp;optional *package → ⟨no values⟩* 
 
 
 
-<ClLinks styled={true} term={"apropos-list"}><b>apropos-list</b></ClLinks> <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> &amp;optional *package → symbols* 
+<DictionaryLink styled={true} term={"apropos-list"}><b>apropos-list</b></DictionaryLink> <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> &amp;optional *package → symbols* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<ClLinks styled={true} term={"string"}><i>string</i></ClLinks>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
+<GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string designator"}><i>string designator</i></GlossaryTerm> . 
 
 
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-These functions search for *interned symbols* whose <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> contain the substring <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. 
+These functions search for *interned symbols* whose <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> contain the substring <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. 
 
 
 
@@ -46,23 +46,23 @@ These functions search for *interned symbols* whose <ClLinks styled={true} term=
 
 
 
-For <ClLinks styled={true} term={"apropos"}><b>apropos</b></ClLinks>, as each such <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is found, its name is printed on <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. In addition, if such a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> is defined as a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> or <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm>, information about those definitions might also be printed. 
+For <DictionaryLink styled={true} term={"apropos"}><b>apropos</b></DictionaryLink>, as each such <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is found, its name is printed on <GlossaryTerm styled={true} term={"standard output"}><i>standard output</i></GlossaryTerm>. In addition, if such a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> is defined as a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm>, information about those definitions might also be printed. 
 
 
 
-For <ClLinks styled={true} term={"apropos-list"}><b>apropos-list</b></ClLinks>, no output occurs as the search proceeds; instead a list of the matching <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> is returned when the search is complete. 
+For <DictionaryLink styled={true} term={"apropos-list"}><b>apropos-list</b></DictionaryLink>, no output occurs as the search proceeds; instead a list of the matching <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> is returned when the search is complete. 
 
 
 
-If <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, only the *symbols accessible* in that <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> are searched; otherwise all *symbols accessible* in any <ClLinks styled={true} term={"package"}><i>package</i></ClLinks> are searched. 
+If <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"non-nil"}><i>non-nil</i></GlossaryTerm>, only the *symbols accessible* in that <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> are searched; otherwise all *symbols accessible* in any <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> are searched. 
 
 
 
-Because a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> might be available by way of more than one inheritance path, <ClLinks styled={true} term={"apropos"}><b>apropos</b></ClLinks> might print information about the *same symbol* more than once, or <ClLinks styled={true} term={"apropos-list"}><b>apropos-list</b></ClLinks> might return a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> containing duplicate <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks>. 
+Because a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> might be available by way of more than one inheritance path, <DictionaryLink styled={true} term={"apropos"}><b>apropos</b></DictionaryLink> might print information about the *same symbol* more than once, or <DictionaryLink styled={true} term={"apropos-list"}><b>apropos-list</b></DictionaryLink> might return a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> containing duplicate <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm>. 
 
 
 
-Whether or not the search is case-sensitive is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. 
+Whether or not the search is case-sensitive is <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. 
 
 
 
@@ -70,11 +70,11 @@ Whether or not the search is case-sensitive is <ClLinks styled={true} term={"imp
 
 
 
-The set of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> which are currently <ClLinks styled={true} term={"interned"}><i>interned</i></ClLinks> in any <ClLinks styled={true} term={"package"}><i>packages</i></ClLinks> being searched. 
+The set of <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> which are currently <GlossaryTerm styled={true} term={"interned"}><i>interned</i></GlossaryTerm> in any <GlossaryTerm styled={true} term={"package"}><i>packages</i></GlossaryTerm> being searched. 
 
 
 
-<ClLinks styled={true} term={"apropos"}><b>apropos</b></ClLinks> is also affected by **\*standard-output\***. 
+<DictionaryLink styled={true} term={"apropos"}><b>apropos</b></DictionaryLink> is also affected by **\*standard-output\***. 
 
 
 

@@ -2,19 +2,15 @@
 
 
 
-When a <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is executed, the local variables are bound and are initialized to some value. These local variables exist until <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> iteration terminates, at which point they cease to exist. Implicit variables are also established by iteration control clauses and the into preposition of accumulation clauses. 
+When a <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is executed, the local variables are bound and are initialized to some value. These local variables exist until <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> iteration terminates, at which point they cease to exist. Implicit variables are also established by iteration control clauses and the into preposition of accumulation clauses. 
 
 
 
-The with construct initializes variables that are local to a loop. The variables are initialized one time only. If the optional *type-spec* argument is supplied for the variable *var*, but there is no related expression to be evaluated, *var* is initialized to an appropriate default value for its <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. For example, for the types <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>, <ClLinks styled={true} term={"number"}><b>number</b></ClLinks>, and <ClLinks styled={true} term={"float"}><b>float</b></ClLinks>, the default values are <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, 0, and 0.0 respectively. The consequences are undefined if a *type-spec* argument is supplied for *var* if the related expression returns a value that is not of the supplied <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. By default, the with construct initializes variables <ClLinks styled={true} term={"sequentially"}><i>sequentially</i></ClLinks>; that is, one variable is assigned a value before the next expression is evaluated. However, by using the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> and to join several with clauses, initializations can be forced to 
-
-
+The with construct initializes variables that are local to a loop. The variables are initialized one time only. If the optional *type-spec* argument is supplied for the variable *var*, but there is no related expression to be evaluated, *var* is initialized to an appropriate default value for its <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. For example, for the types <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>, <DictionaryLink styled={true} term={"number"}><b>number</b></DictionaryLink>, and <DictionaryLink styled={true} term={"float"}><b>float</b></DictionaryLink>, the default values are <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, 0, and 0.0 respectively. The consequences are undefined if a *type-spec* argument is supplied for *var* if the related expression returns a value that is not of the supplied <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. By default, the with construct initializes variables <GlossaryTerm styled={true} term={"sequentially"}><i>sequentially</i></GlossaryTerm>; that is, one variable is assigned a value before the next expression is evaluated. However, by using the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> and to join several with clauses, initializations can be forced to 
 
 
 
 
-
- 
 
 
 
@@ -22,7 +18,11 @@ The with construct initializes variables that are local to a loop. The variables
 
 
 
-occur in <ClLinks styled={true} term={"parallel"}><i>parallel</i></ClLinks>; that is, all of the supplied <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are evaluated, and the results are bound to the respective variables simultaneously. 
+ 
+
+
+
+occur in <GlossaryTerm styled={true} term={"parallel"}><i>parallel</i></GlossaryTerm>; that is, all of the supplied <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are evaluated, and the results are bound to the respective variables simultaneously. 
 
 
 
@@ -50,7 +50,7 @@ return (list a b c))
 
 
 
-The execution of the above <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> is equivalent to the execution of the following code: 
+The execution of the above <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> is equivalent to the execution of the following code: 
 
 
 
@@ -86,7 +86,7 @@ end-loop))))
 
 
 
-If the values of previously bound variables are not needed for the initialization of other local variables, an and clause can be used to specify that the bindings are to occur in <ClLinks styled={true} term={"parallel"}><i>parallel</i></ClLinks>: 
+If the values of previously bound variables are not needed for the initialization of other local variables, an and clause can be used to specify that the bindings are to occur in <GlossaryTerm styled={true} term={"parallel"}><i>parallel</i></GlossaryTerm>: 
 
 
 

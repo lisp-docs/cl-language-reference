@@ -10,7 +10,7 @@ The *numeric characters* are a subset of the *graphic characters*. Of the <Gloss
 
 
 
-For each *implementation-defined graphic character* that has no <ClLinks styled={true} term={"case"}><i>case</i></ClLinks>, the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> must define whether or not it is a *numeric character* . 
+For each *implementation-defined graphic character* that has no <GlossaryTerm styled={true} term={"case"}><i>case</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> must define whether or not it is a *numeric character* . 
 
 
 

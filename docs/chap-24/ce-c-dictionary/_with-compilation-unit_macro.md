@@ -1,4 +1,4 @@
-**with-compilation-unit** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**with-compilation-unit** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks> ([[ *↓option* ]]) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<DictionaryLink styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></DictionaryLink> ([[ *↓option* ]]) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-*override*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>; evaluated. The default is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*override*—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>; evaluated. The default is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 
@@ -46,19 +46,19 @@
 
 
 
-Executes <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> from left to right. Within the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> of <ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks>, actions deferred by the compiler until the end of compilation will be deferred until the end of the outermost call to <ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks>. 
+Executes <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> from left to right. Within the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> of <DictionaryLink styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></DictionaryLink>, actions deferred by the compiler until the end of compilation will be deferred until the end of the outermost call to <DictionaryLink styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></DictionaryLink>. 
 
 
 
-The set of *options* permitted may be extended by the implementation, but the only <ClLinks styled={true} term={"standardized"}><i>standardized</i></ClLinks> keyword is :override. 
+The set of *options* permitted may be extended by the implementation, but the only <GlossaryTerm styled={true} term={"standardized"}><i>standardized</i></GlossaryTerm> keyword is :override. 
 
 
 
-If nested dynamically only the outer call to <ClLinks styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></ClLinks> has any effect unless the value associated with :override is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, in which case warnings are deferred only to the end of the innermost call for which *override* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>. 
+If nested dynamically only the outer call to <DictionaryLink styled={true} term={"with-compilation-unit"}><b>with-compilation-unit</b></DictionaryLink> has any effect unless the value associated with :override is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, in which case warnings are deferred only to the end of the innermost call for which *override* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>. 
 
 
 
-The function <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks> provides the effect of 
+The function <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> provides the effect of 
 
 
 
@@ -66,11 +66,11 @@ The function <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></C
 
 
 
-around its <ClLinks styled={true} term={"code"}><i>code</i></ClLinks>. 
+around its <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm>. 
 
 
 
-Any <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> extensions can only be provided as the result of an explicit programmer request by use of an <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> keyword. <ClLinks styled={true} term={"implementation"}><i>Implementations</i></ClLinks> are forbidden from attaching additional meaning to a use of this macro which involves either no keywords or just the keyword :override. 
+Any <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> extensions can only be provided as the result of an explicit programmer request by use of an <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> keyword. <GlossaryTerm styled={true} term={"implementation"}><i>Implementations</i></GlossaryTerm> are forbidden from attaching additional meaning to a use of this macro which involves either no keywords or just the keyword :override. 
 
 
 
@@ -87,7 +87,7 @@ Note however that if the implementation does not normally defer any warnings, us
 
 
 
-<ClLinks styled={true} term={"compile"}><b>compile</b></ClLinks>, <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks> 
+<DictionaryLink styled={true} term={"compile"}><b>compile</b></DictionaryLink>, <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> 
 
 
 
@@ -103,7 +103,7 @@ System
 
 
 
-*∗<ClLinks styled={true} term={"features"}><b><ClLinks styled={true} term={"feature"}><i>features</i></ClLinks></b></ClLinks>∗* 
+*∗<ClLinks styled={true} term={"features"}><b><GlossaryTerm styled={true} term={"feature"}><i>features</i></GlossaryTerm></b></ClLinks>∗* 
 
 
 

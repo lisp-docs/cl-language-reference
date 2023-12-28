@@ -1,4 +1,4 @@
-**dolist** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**dolist** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> (*var list-form* [*result-form*]) <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* *\{tag | statement\}*\* 
+<DictionaryLink styled={true} term={"dolist"}><b>dolist</b></DictionaryLink> (*var list-form* [*result-form*]) <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *\{tag | statement\}*\* 
 
 
 
@@ -18,23 +18,23 @@
 
 
 
-*var*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+*var*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
-*list-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+*list-form*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*result-form*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+*result-form*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>—a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>; not evaluated. 
+<GlossaryTerm styled={true} term={"tag"}><i>tag</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"go tag"}><i>go tag</i></GlossaryTerm>; not evaluated. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-*results*—if a <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> or <ClLinks styled={true} term={"return-from"}><b>return-from</b></ClLinks> form is executed, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> passed from that <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; otherwise, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the *result-form* or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if there is no *result-form*. 
+*results*—if a <DictionaryLink styled={true} term={"return"}><b>return</b></DictionaryLink> or <DictionaryLink styled={true} term={"return-from"}><b>return-from</b></DictionaryLink> form is executed, the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> passed from that <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; otherwise, the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the *result-form* or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if there is no *result-form*. 
 
 
 
@@ -50,27 +50,27 @@
 
 
 
-<ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> iterates over the elements of a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. The body of <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> is like a <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks>. It consists of a series of <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks> and *statements*. 
+<DictionaryLink styled={true} term={"dolist"}><b>dolist</b></DictionaryLink> iterates over the elements of a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. The body of <DictionaryLink styled={true} term={"dolist"}><b>dolist</b></DictionaryLink> is like a <DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink>. It consists of a series of <GlossaryTerm styled={true} term={"tag"}><i>tags</i></GlossaryTerm> and *statements*. 
 
 
 
-<ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> evaluates *list-form*, which should produce a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. It then executes the body once for each element in the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, in the order in which the <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks> and *statements* occur, with *var* bound to the element. Then *result-form* is evaluated. <ClLinks styled={true} term={"tag"}><i>tags</i></ClLinks> label *statements*. 
+<DictionaryLink styled={true} term={"dolist"}><b>dolist</b></DictionaryLink> evaluates *list-form*, which should produce a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. It then executes the body once for each element in the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, in the order in which the <GlossaryTerm styled={true} term={"tag"}><i>tags</i></GlossaryTerm> and *statements* occur, with *var* bound to the element. Then *result-form* is evaluated. <GlossaryTerm styled={true} term={"tag"}><i>tags</i></GlossaryTerm> label *statements*. 
 
 
 
-At the time *result-form* is processed, *var* is bound to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+At the time *result-form* is processed, *var* is bound to <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-An <GlossaryTerm styled={true} term={"implicit block"}><i>implicit block</i></GlossaryTerm> named <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> surrounds <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks>. <ClLinks styled={true} term={"return"}><b>return</b></ClLinks> may be used to terminate the loop immediately without performing any further iterations, returning zero or more <ClLinks styled={true} term={"value"}><i>values</i></ClLinks>. 
+An <GlossaryTerm styled={true} term={"implicit block"}><i>implicit block</i></GlossaryTerm> named <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> surrounds <DictionaryLink styled={true} term={"dolist"}><b>dolist</b></DictionaryLink>. <DictionaryLink styled={true} term={"return"}><b>return</b></DictionaryLink> may be used to terminate the loop immediately without performing any further iterations, returning zero or more <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm>. 
 
 
 
-The <ClLinks styled={true} term={"scope"}><i>scope</i></ClLinks> of the binding of *var* does not include the *list-form*, but the *result-form* is included. 
+The <GlossaryTerm styled={true} term={"scope"}><i>scope</i></GlossaryTerm> of the binding of *var* does not include the *list-form*, but the *result-form* is included. 
 
 
 
-It is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> *establishes* a new <ClLinks styled={true} term={"binding"}><i>binding</i></ClLinks> of *var* on each iteration or whether it *establishes* a binding for *var* once at the beginning and then <ClLinks styled={true} term={"assign"}><i>assigns</i></ClLinks> it on any subsequent iterations. 
+It is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether <DictionaryLink styled={true} term={"dolist"}><b>dolist</b></DictionaryLink> *establishes* a new <GlossaryTerm styled={true} term={"binding"}><i>binding</i></GlossaryTerm> of *var* on each iteration or whether it *establishes* a binding for *var* once at the beginning and then <GlossaryTerm styled={true} term={"assign"}><i>assigns</i></GlossaryTerm> it on any subsequent iterations. 
 
 
 
@@ -89,7 +89,7 @@ temp-two → 4
 
 
 
-<ClLinks styled={true} term={"do"}><b>do</b></ClLinks>, <ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks>, <ClLinks styled={true} term={"tagbody"}><b>tagbody</b></ClLinks>, Section 3.6 (Traversal Rules and Side Effects) 
+<DictionaryLink styled={true} term={"do"}><b>do</b></DictionaryLink>, <DictionaryLink styled={true} term={"dotimes"}><b>dotimes</b></DictionaryLink>, <DictionaryLink styled={true} term={"tagbody"}><b>tagbody</b></DictionaryLink>, Section 3.6 (Traversal Rules and Side Effects) 
 
 
 
@@ -97,4 +97,4 @@ temp-two → 4
 
 
 
-<ClLinks styled={true} term={"go"}><b>go</b></ClLinks> may be used within the body of <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks> to transfer control to a statement labeled by a <ClLinks styled={true} term={"tag"}><i>tag</i></ClLinks>. 
+<DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink> may be used within the body of <DictionaryLink styled={true} term={"dolist"}><b>dolist</b></DictionaryLink> to transfer control to a statement labeled by a <GlossaryTerm styled={true} term={"tag"}><i>tag</i></GlossaryTerm>. 

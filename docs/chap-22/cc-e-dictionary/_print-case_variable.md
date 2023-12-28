@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"print-case"}><b>*print-case*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"print-case"}><b>*print-case*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-One of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> :upcase, :downcase, or :capitalize. 
+One of the <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> :upcase, :downcase, or :capitalize. 
 
 
 
@@ -14,7 +14,7 @@ One of the <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> :upca
 
 
 
-The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> :upcase. 
+The <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> :upcase. 
 
 
 
@@ -22,11 +22,11 @@ The <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> :upcase.
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks> controls the case (upper, lower, or mixed) in which to print any uppercase characters in the names of <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> when vertical-bar syntax is not used. 
+The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"print-case"}><b>\*print-case\*</b></DictionaryLink> controls the case (upper, lower, or mixed) in which to print any uppercase characters in the names of <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> when vertical-bar syntax is not used. 
 
 
 
-<ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks> has an effect at all times when the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. <ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks> also has an effect when the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> unless inside an escape context (*i.e.*, unless between <ClLinks styled={true} term={"vertical-bar"}><i>vertical-bars</i></ClLinks> or after a <ClLinks styled={true} term={"slash"}><i>slash</i></ClLinks>). 
+<DictionaryLink styled={true} term={"print-case"}><b>\*print-case\*</b></DictionaryLink> has an effect at all times when the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. <DictionaryLink styled={true} term={"print-case"}><b>\*print-case\*</b></DictionaryLink> also has an effect when the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> unless inside an escape context (*i.e.*, unless between <GlossaryTerm styled={true} term={"vertical-bar"}><i>vertical-bars</i></GlossaryTerm> or after a <GlossaryTerm styled={true} term={"slash"}><i>slash</i></GlossaryTerm>). 
 
 
 
@@ -57,7 +57,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-<ClLinks styled={true} term={"write"}><b>write</b></ClLinks> 
+<DictionaryLink styled={true} term={"write"}><b>write</b></DictionaryLink> 
 
 
 
@@ -65,11 +65,11 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-<ClLinks styled={true} term={"read"}><b>read</b></ClLinks> normally converts lowercase characters appearing in <ClLinks styled={true} term={"symbol"}><i>symbols</i></ClLinks> to corresponding uppercase characters, so that internally print names normally contain only uppercase characters. 
+<DictionaryLink styled={true} term={"read"}><b>read</b></DictionaryLink> normally converts lowercase characters appearing in <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> to corresponding uppercase characters, so that internally print names normally contain only uppercase characters. 
 
 
 
-If <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, lowercase characters in the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> are always printed in lowercase, and are preceded by a single escape character or enclosed by multiple escape characters; uppercase characters in the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> are printed in upper case, in lower case, or in mixed case so as to capitalize words, according to the value of <ClLinks styled={true} term={"print-case"}><b>\*print-case\*</b></ClLinks>. The convention for what constitutes a “word” is the same as for **string-capitalize**. 
+If <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, lowercase characters in the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> are always printed in lowercase, and are preceded by a single escape character or enclosed by multiple escape characters; uppercase characters in the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> are printed in upper case, in lower case, or in mixed case so as to capitalize words, according to the value of <DictionaryLink styled={true} term={"print-case"}><b>\*print-case\*</b></DictionaryLink>. The convention for what constitutes a “word” is the same as for **string-capitalize**. 
 
 
 

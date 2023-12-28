@@ -1,4 +1,4 @@
-**copy-structure** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**copy-structure** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"copy-structure"}><b>copy-structure</b></ClLinks> *structure → copy* 
+<DictionaryLink styled={true} term={"copy-structure"}><b>copy-structure</b></DictionaryLink> *structure → copy* 
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-<ClLinks styled={true} term={"copy-structure"}><b>copy-structure</b></ClLinks> 
+<DictionaryLink styled={true} term={"copy-structure"}><b>copy-structure</b></DictionaryLink> 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks>—a <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"structure"}><i>structure</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"structure"}><i>structure</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks>—a copy of the <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"copy"}><i>copy</i></GlossaryTerm>—a copy of the <GlossaryTerm styled={true} term={"structure"}><i>structure</i></GlossaryTerm>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-Returns a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks><sub>6</sub> of the <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks>. 
+Returns a <GlossaryTerm styled={true} term={"copy"}><i>copy</i></GlossaryTerm><sub>6</sub> of the <GlossaryTerm styled={true} term={"structure"}><i>structure</i></GlossaryTerm>. 
 
 
 
-Only the <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks> itself is copied; not the values of the slots. 
+Only the <GlossaryTerm styled={true} term={"structure"}><i>structure</i></GlossaryTerm> itself is copied; not the values of the slots. 
 
 
 
@@ -54,7 +54,7 @@ Only the <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks> it
 
 
 
-the :copier option to <ClLinks styled={true} term={"defstruct"}><b>defstruct</b></ClLinks> 
+the :copier option to <DictionaryLink styled={true} term={"defstruct"}><b>defstruct</b></DictionaryLink> 
 
 
 
@@ -62,5 +62,5 @@ the :copier option to <ClLinks styled={true} term={"defstruct"}><b>defstruct</b>
 
 
 
-The <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks> is the <ClLinks styled={true} term={"same"}><i>same</i></ClLinks> as the given <ClLinks styled={true} term={"structure"}><i>structure</i></ClLinks> under <ClLinks styled={true} term={"equalp"}><b>equalp</b></ClLinks>, but not under <ClLinks styled={true} term={"equal"}><b>equal</b></ClLinks>. 
+The <GlossaryTerm styled={true} term={"copy"}><i>copy</i></GlossaryTerm> is the <GlossaryTerm styled={true} term={"same"}><i>same</i></GlossaryTerm> as the given <GlossaryTerm styled={true} term={"structure"}><i>structure</i></GlossaryTerm> under <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink>, but not under <DictionaryLink styled={true} term={"equal"}><b>equal</b></DictionaryLink>. 
 

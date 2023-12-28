@@ -2,7 +2,7 @@
 
 
 
-The next *arg* is printed as a <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> in exponential notation. 
+The next *arg* is printed as a <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> in exponential notation. 
 
 
 
@@ -26,7 +26,7 @@ Exactly *w* characters will be output. First, leading copies of the character *p
 
 
 
-Following the digit sequence, the exponent is printed. First the character parameter *exponentchar* is printed; if this parameter is omitted, then the <GlossaryTerm styled={true} term={"exponent marker"}><i>exponent marker</i></GlossaryTerm> that <ClLinks styled={true} term={"prin1"}><b>prin1</b></ClLinks> would use is printed, as determined from the type of the <ClLinks styled={true} term={"float"}><i>float</i></ClLinks> and the current value of <ClLinks styled={true} term={"read-default-float-format"}><b>\*read-default-float-format\*</b></ClLinks>. Next, either a plus sign or a minus sign is printed, followed by *e* digits representing the power of ten by which the printed fraction must be multiplied to properly represent the rounded value of *arg*. 
+Following the digit sequence, the exponent is printed. First the character parameter *exponentchar* is printed; if this parameter is omitted, then the <GlossaryTerm styled={true} term={"exponent marker"}><i>exponent marker</i></GlossaryTerm> that <DictionaryLink styled={true} term={"prin1"}><b>prin1</b></DictionaryLink> would use is printed, as determined from the type of the <GlossaryTerm styled={true} term={"float"}><i>float</i></GlossaryTerm> and the current value of <DictionaryLink styled={true} term={"read-default-float-format"}><b>\*read-default-float-format\*</b></DictionaryLink>. Next, either a plus sign or a minus sign is printed, followed by *e* digits representing the power of ten by which the printed fraction must be multiplied to properly represent the rounded value of *arg*. 
 
 
 
@@ -50,15 +50,15 @@ If all of <i>w</i>, <i>d</i>, and <i>e</i> are omitted, then the effect is to pr
 
 
 
-If *arg* is a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number, then it is coerced to be a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm> and then printed. Alternatively, an implementation is permitted to process a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. If *w* and *d* are unsupplied and the number has no exact decimal representation, for example 1/3, some precision cutoff must be chosen by the implementation since only a finite number of digits may be printed. 
+If *arg* is a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> number, then it is coerced to be a <GlossaryTerm styled={true} term={"single float"}><i>single float</i></GlossaryTerm> and then printed. Alternatively, an implementation is permitted to process a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> number by any other method that has essentially the same behavior but avoids loss of precision or overflow because of the coercion. If *w* and *d* are unsupplied and the number has no exact decimal representation, for example 1/3, some precision cutoff must be chosen by the implementation since only a finite number of digits may be printed. 
 
 
 
-If *arg* is a <ClLinks styled={true} term={"complex"}><i>complex</i></ClLinks> number or some non-numeric <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, then it is printed using the format directive &#126;*w*D, thereby printing it in decimal radix and a minimum field width of *w*. 
+If *arg* is a <GlossaryTerm styled={true} term={"complex"}><i>complex</i></GlossaryTerm> number or some non-numeric <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>, then it is printed using the format directive &#126;*w*D, thereby printing it in decimal radix and a minimum field width of *w*. 
 
 
 
-&#126;E binds <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> to <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+&#126;E binds <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> to <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> and <DictionaryLink styled={true} term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> to <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 

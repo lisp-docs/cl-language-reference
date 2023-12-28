@@ -1,4 +1,4 @@
-**decode-universal-time** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**decode-universal-time** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"decode-universal-time"}><b>decode-universal-time</b></ClLinks> *universal-time* &amp;optional *time-zone* 
+<DictionaryLink styled={true} term={"decode-universal-time"}><b>decode-universal-time</b></DictionaryLink> *universal-time* &amp;optional *time-zone* 
 
 
 
@@ -38,7 +38,7 @@ Returns the <GlossaryTerm styled={true} term={"decoded time"}><i>decoded time</i
 
 
 
-If *time-zone* is not supplied, it defaults to the current time zone adjusted for daylight saving time. If *time-zone* is supplied, daylight saving time information is ignored. The daylight saving time flag is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if *time-zone* is supplied. 
+If *time-zone* is not supplied, it defaults to the current time zone adjusted for daylight saving time. If *time-zone* is supplied, daylight saving time information is ignored. The daylight saving time flag is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if *time-zone* is supplied. 
 
 
 
@@ -60,7 +60,7 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 
 
 
-<ClLinks styled={true} term={"implementation-dependent"}><i>Implementation-dependent</i></ClLinks> mechanisms for calculating when or if daylight savings time is in effect for any given session. 
+<GlossaryTerm styled={true} term={"implementation-dependent"}><i>Implementation-dependent</i></GlossaryTerm> mechanisms for calculating when or if daylight savings time is in effect for any given session. 
 
 
 
@@ -68,7 +68,7 @@ If *time-zone* is not supplied, it defaults to the current time zone adjusted fo
 
 
 
-<ClLinks styled={true} term={"encode-universal-time"}><b>encode-universal-time</b></ClLinks>, <ClLinks styled={true} term={"get-universal-time"}><b>get-universal-time</b></ClLinks>, Section 25.1.4 (Time) 
+<DictionaryLink styled={true} term={"encode-universal-time"}><b>encode-universal-time</b></DictionaryLink>, <DictionaryLink styled={true} term={"get-universal-time"}><b>get-universal-time</b></DictionaryLink>, Section 25.1.4 (Time) 
 
 
 

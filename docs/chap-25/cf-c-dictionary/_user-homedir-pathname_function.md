@@ -1,4 +1,4 @@
-**user-homedir-pathname** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**user-homedir-pathname** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"user-homedir-pathname"}><b>user-homedir-pathname</b></ClLinks> &amp;optional *host → pathname* 
+<DictionaryLink styled={true} term={"user-homedir-pathname"}><b>user-homedir-pathname</b></DictionaryLink> &amp;optional *host → pathname* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*host*—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>, or :unspecific. 
+*host*—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>, a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>, or :unspecific. 
 
 
 
-<ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>—a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm>, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,19 +26,19 @@
 
 
 
-<ClLinks styled={true} term={"user-homedir-pathname"}><b>user-homedir-pathname</b></ClLinks> determines the <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> that corresponds to the user’s home directory on *host*. If *host* is not supplied, its value is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. For a description of :unspecific, see Section 19.2.1 (Pathname Components). 
+<DictionaryLink styled={true} term={"user-homedir-pathname"}><b>user-homedir-pathname</b></DictionaryLink> determines the <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> that corresponds to the user’s home directory on *host*. If *host* is not supplied, its value is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. For a description of :unspecific, see Section 19.2.1 (Pathname Components). 
 
 
 
-The definition of home directory is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but defined in Common Lisp to mean the directory where the user keeps personal files such as initialization files and mail. 
+The definition of home directory is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, but defined in Common Lisp to mean the directory where the user keeps personal files such as initialization files and mail. 
 
 
 
-<ClLinks styled={true} term={"user-homedir-pathname"}><b>user-homedir-pathname</b></ClLinks> returns a <ClLinks styled={true} term={"pathname"}><i>pathname</i></ClLinks> without any name, type, or version component (those components are all <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>) for the user’s home directory on *host*. 
+<DictionaryLink styled={true} term={"user-homedir-pathname"}><b>user-homedir-pathname</b></DictionaryLink> returns a <GlossaryTerm styled={true} term={"pathname"}><i>pathname</i></GlossaryTerm> without any name, type, or version component (those components are all <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>) for the user’s home directory on *host*. 
 
 
 
-If it is impossible to determine the user’s home directory on *host*, then <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is returned. <ClLinks styled={true} term={"user-homedir-pathname"}><b>user-homedir-pathname</b></ClLinks> never returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if *host* is not supplied. 
+If it is impossible to determine the user’s home directory on *host*, then <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is returned. <DictionaryLink styled={true} term={"user-homedir-pathname"}><b>user-homedir-pathname</b></DictionaryLink> never returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if *host* is not supplied. 
 
 
 
@@ -50,7 +50,7 @@ If it is impossible to determine the user’s home directory on *host*, then <Cl
 
 
 
-The host computer’s file system, and the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
+The host computer’s file system, and the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 

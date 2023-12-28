@@ -2,15 +2,15 @@
 
 
 
-A <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that represents a unitary token (*e.g.*, a letter, a special symbol, or a “control character”) in an aggregate quantity of text (*e.g.*, a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or a text <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>). 
+A <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> that represents a unitary token (*e.g.*, a letter, a special symbol, or a “control character”) in an aggregate quantity of text (*e.g.*, a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or a text <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>). 
 
 
 
-Common Lisp allows an implementation to provide support for international language <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> as well as <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> used in specialized arenas (*e.g.*, mathematics). 
+Common Lisp allows an implementation to provide support for international language <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> as well as <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> used in specialized arenas (*e.g.*, mathematics). 
 
 
 
-The following figures contain lists of <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> applicable to <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks>. 
+The following figures contain lists of <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> applicable to <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm>. 
 
 
 
@@ -30,7 +30,7 @@ Figure 13–1 lists some <GlossaryTerm styled={true} term={"defined name"}><i>de
 
 
 
-Figure 13–2 lists some <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> construction and conversion <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm>. 
+Figure 13–2 lists some <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> construction and conversion <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm>. 
 
 
 

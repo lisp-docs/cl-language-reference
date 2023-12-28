@@ -1,4 +1,4 @@
-**compute-restarts** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**compute-restarts** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> &amp;optional *condition → restarts* 
+<DictionaryLink styled={true} term={"compute-restarts"}><b>compute-restarts</b></DictionaryLink> &amp;optional *condition → restarts* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a *condition object*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>—a *condition object*, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
-<ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm>. 
 
 
 
@@ -26,23 +26,23 @@
 
 
 
-<ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> uses the dynamic state of the program to compute a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of the <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> which are currently active. 
+<DictionaryLink styled={true} term={"compute-restarts"}><b>compute-restarts</b></DictionaryLink> uses the dynamic state of the program to compute a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> which are currently active. 
 
 
 
-The resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is ordered so that the innermost (more-recently established) restarts are nearer the head of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+The resulting <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is ordered so that the innermost (more-recently established) restarts are nearer the head of the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
-When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, only those <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are considered that are either explicitly associated with that <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, or not associated with any <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>; that is, the excluded <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are those that are associated with a non-empty set of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> of which the given <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks>. If <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, all <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are considered. 
+When <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"non-nil"}><i>non-nil</i></GlossaryTerm>, only those <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> are considered that are either explicitly associated with that <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>, or not associated with any <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>; that is, the excluded <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> are those that are associated with a non-empty set of <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> of which the given <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is not an <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm>. If <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, all <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> are considered. 
 
 
 
-<ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> returns all <GlossaryTerm styled={true} term={"applicable restart"}><i>applicable restarts</i></GlossaryTerm>, including anonymous ones, even if some of them have the same name as others and would therefore not be found by <ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks> when given a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> argument. 
+<DictionaryLink styled={true} term={"compute-restarts"}><b>compute-restarts</b></DictionaryLink> returns all <GlossaryTerm styled={true} term={"applicable restart"}><i>applicable restarts</i></GlossaryTerm>, including anonymous ones, even if some of them have the same name as others and would therefore not be found by <DictionaryLink styled={true} term={"find-restart"}><b>find-restart</b></DictionaryLink> when given a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> argument. 
 
 
 
-Implementations are permitted, but not required, to return *distinct lists* from repeated calls to <ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> while in the same dynamic environment. The consequences are undefined if the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> returned by <ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> is every modified. 
+Implementations are permitted, but not required, to return *distinct lists* from repeated calls to <DictionaryLink styled={true} term={"compute-restarts"}><b>compute-restarts</b></DictionaryLink> while in the same dynamic environment. The consequences are undefined if the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> returned by <DictionaryLink styled={true} term={"compute-restarts"}><b>compute-restarts</b></DictionaryLink> is every modified. 
 
 
 
@@ -92,7 +92,7 @@ Existing restarts.
 
 
 
-<ClLinks styled={true} term={"find-restart"}><b>find-restart</b></ClLinks>, <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> 
+<DictionaryLink styled={true} term={"find-restart"}><b>find-restart</b></DictionaryLink>, <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>, <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> 
 
 
 

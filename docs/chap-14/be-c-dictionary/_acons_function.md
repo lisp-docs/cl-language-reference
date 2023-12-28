@@ -1,4 +1,4 @@
-**acons** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**acons** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"acons"}><b>acons</b></ClLinks> *key datum alist → new-alist* 
+<DictionaryLink styled={true} term={"acons"}><b>acons</b></DictionaryLink> *key datum alist → new-alist* 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks styled={true} term={"key"}><i>key</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*datum*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+*datum*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks>—an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>. 
+<GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"association list"}><i>association list</i></GlossaryTerm>. 
 
 
 
@@ -34,7 +34,7 @@
 
 
 
-Creates a *fresh cons*, the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of which is <ClLinks styled={true} term={"alist"}><i>alist</i></ClLinks> and the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of which is another *fresh cons*, the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of which is <ClLinks styled={true} term={"key"}><i>key</i></ClLinks> and the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of which is *datum*. 
+Creates a *fresh cons*, the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> of which is <GlossaryTerm styled={true} term={"alist"}><i>alist</i></GlossaryTerm> and the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of which is another *fresh cons*, the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of which is <GlossaryTerm styled={true} term={"key"}><i>key</i></GlossaryTerm> and the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> of which is *datum*. 
 
 
 
@@ -51,7 +51,7 @@ alist → NIL
 
 
 
-<ClLinks styled={true} term={"assoc"}><b>assoc</b></ClLinks>, <ClLinks styled={true} term={"pairlis"}><b>pairlis</b></ClLinks> 
+<DictionaryLink styled={true} term={"assoc"}><b>assoc</b></DictionaryLink>, <DictionaryLink styled={true} term={"pairlis"}><b>pairlis</b></DictionaryLink> 
 
 
 

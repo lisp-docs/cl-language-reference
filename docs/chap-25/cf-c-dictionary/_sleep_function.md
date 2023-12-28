@@ -1,4 +1,4 @@
-**sleep** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**sleep** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"sleep"}><b>sleep</b></ClLinks> *seconds →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink styled={true} term={"sleep"}><b>sleep</b></DictionaryLink> *seconds →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -69,7 +69,7 @@ The granularity of the scheduler.
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *seconds* is not a non-negative *real*. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *seconds* is not a non-negative *real*. 
 
 
 

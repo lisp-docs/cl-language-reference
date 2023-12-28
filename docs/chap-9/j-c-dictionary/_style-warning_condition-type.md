@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"style-warning"}><b>style-warning</b></ClLinks>, <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks>, <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"style-warning"}><b>style-warning</b></DictionaryLink>, <DictionaryLink styled={true} term={"warning"}><b>warning</b></DictionaryLink>, <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"style-warning"}><b>style-warning</b></ClLinks> includes those <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> that represent <ClLinks styled={true} term={"situation"}><i>situations</i></ClLinks> involving <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> that is <GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> but that is nevertheless considered to be faulty or substandard. 
+The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"style-warning"}><b>style-warning</b></DictionaryLink> includes those <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> that represent <GlossaryTerm styled={true} term={"situation"}><i>situations</i></GlossaryTerm> involving <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm> that is <GlossaryTerm styled={true} term={"conforming code"}><i>conforming code</i></GlossaryTerm> but that is nevertheless considered to be faulty or substandard. 
 
 
 
@@ -30,15 +30,15 @@ The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={
 
 
 
-An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> might signal such a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> if it encounters <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> that uses deprecated features or that appears unaesthetic or inefficient. 
+An <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> might signal such a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> if it encounters <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm> that uses deprecated features or that appears unaesthetic or inefficient. 
 
 
 
-An ‘unused variable’ warning must be of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"style-warning"}><b>style-warning</b></ClLinks>. 
+An ‘unused variable’ warning must be of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"style-warning"}><b>style-warning</b></DictionaryLink>. 
 
 
 
-In general, the question of whether <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> is faulty or substandard is a subjective decision to be made by the facility processing that <ClLinks styled={true} term={"code"}><i>code</i></ClLinks>. The intent is that whenever such a facility wishes to complain about <ClLinks styled={true} term={"code"}><i>code</i></ClLinks> on such subjective grounds, it should use this *condition type* so that any 
+In general, the question of whether <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm> is faulty or substandard is a subjective decision to be made by the facility processing that <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm>. The intent is that whenever such a facility wishes to complain about <GlossaryTerm styled={true} term={"code"}><i>code</i></GlossaryTerm> on such subjective grounds, it should use this *condition type* so that any 
 
 
 

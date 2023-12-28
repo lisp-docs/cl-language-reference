@@ -1,4 +1,4 @@
-**cell-error-name** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**cell-error-name** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"cell-error-name"}><b>cell-error-name</b></ClLinks> *condition → name* 
+<DictionaryLink styled={true} term={"cell-error-name"}><b>cell-error-name</b></DictionaryLink> *condition → name* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"cell-error"}><b>cell-error</b></DictionaryLink>. 
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-Returns the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the offending cell involved in the <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks> represented by <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
+Returns the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of the offending cell involved in the <GlossaryTerm styled={true} term={"situation"}><i>situation</i></GlossaryTerm> represented by <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>. 
 
 
 
-The nature of the result depends on the specific <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> of <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. For example, if the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"unbound-variable"}><b>unbound-variable</b></ClLinks>, the result is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the <GlossaryTerm styled={true} term={"unbound variable"}><i>unbound variable</i></GlossaryTerm> which was being *accessed*, if the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"undefined-function"}><b>undefined-function</b></ClLinks>, this is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the <GlossaryTerm styled={true} term={"undefined function"}><i>undefined function</i></GlossaryTerm> which was being *accessed*, and if the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"unbound-slot"}><b>unbound-slot</b></ClLinks>, this is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the <ClLinks styled={true} term={"slot"}><i>slot</i></ClLinks> which was being *accessed*. 
+The nature of the result depends on the specific <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>. For example, if the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink>, the result is the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"unbound variable"}><i>unbound variable</i></GlossaryTerm> which was being *accessed*, if the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"undefined-function"}><b>undefined-function</b></DictionaryLink>, this is the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"undefined function"}><i>undefined function</i></GlossaryTerm> which was being *accessed*, and if the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>, this is the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"slot"}><i>slot</i></GlossaryTerm> which was being *accessed*. 
 
 
 
@@ -38,7 +38,7 @@ The nature of the result depends on the specific <ClLinks styled={true} term={"t
 
 
 
-<ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks>, <ClLinks styled={true} term={"unbound-slot"}><b>unbound-slot</b></ClLinks>, <ClLinks styled={true} term={"unbound-variable"}><b>unbound-variable</b></ClLinks>, <ClLinks styled={true} term={"undefined-function"}><b>undefined-function</b></ClLinks>, Section 9.1 (Condition System Concepts) 
+<DictionaryLink styled={true} term={"cell-error"}><b>cell-error</b></DictionaryLink>, <DictionaryLink styled={true} term={"unbound-slot"}><b>unbound-slot</b></DictionaryLink>, <DictionaryLink styled={true} term={"unbound-variable"}><b>unbound-variable</b></DictionaryLink>, <DictionaryLink styled={true} term={"undefined-function"}><b>undefined-function</b></DictionaryLink>, Section 9.1 (Condition System Concepts) 
 
 
 

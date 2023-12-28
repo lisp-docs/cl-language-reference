@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"print-readably"}><b>*print-readably*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"print-readably"}><b>*print-readably*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -22,7 +22,7 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-*∗<ClLinks styled={true} term={"print-readably"}><b>*print-readably*</b></ClLinks>∗* 
+*∗<DictionaryLink styled={true} term={"print-readably"}><b>*print-readably*</b></DictionaryLink>∗* 
 
 
 
@@ -30,7 +30,7 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-<ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -38,23 +38,23 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-If <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, some special rules for printing <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> go into effect. Specifically, printing any *object O*<sub>1</sub> produces a printed representation that, when seen by the *Lisp reader* while the <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm> is in effect, will produce an *object O*<sub>2</sub> that is <ClLinks styled={true} term={"similar"}><i>similar</i></ClLinks> to *O*<sub>1</sub>. The printed representation produced might or might not be the same as the printed representation produced when <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. If printing an *object readably* is not possible, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks> is signaled rather than using a syntax (*e.g.*, the “#&lt;” syntax) that would not be readable by the same <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of some other <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variable</i></GlossaryTerm> is such that these requirements would be violated, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of that other <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> is ignored. 
+If <DictionaryLink styled={true} term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, some special rules for printing <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> go into effect. Specifically, printing any *object O*<sub>1</sub> produces a printed representation that, when seen by the *Lisp reader* while the <GlossaryTerm styled={true} term={"standard readtable"}><i>standard readtable</i></GlossaryTerm> is in effect, will produce an *object O*<sub>2</sub> that is <GlossaryTerm styled={true} term={"similar"}><i>similar</i></GlossaryTerm> to *O*<sub>1</sub>. The printed representation produced might or might not be the same as the printed representation produced when <DictionaryLink styled={true} term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. If printing an *object readably* is not possible, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"print-not-readable"}><b>print-not-readable</b></DictionaryLink> is signaled rather than using a syntax (*e.g.*, the “#&lt;” syntax) that would not be readable by the same <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. If the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of some other <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variable</i></GlossaryTerm> is such that these requirements would be violated, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of that other <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> is ignored. 
 
 
 
-Specifically, if <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, printing proceeds as if <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks>, <ClLinks styled={true} term={"print-array"}><b>\*print-array\*</b></ClLinks>, and <ClLinks styled={true} term={"print-gensym"}><b>\*print-gensym\*</b></ClLinks> were also <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, and as if <ClLinks styled={true} term={"print-length"}><b>\*print-length\*</b></ClLinks>, **\*print-level\***, and <ClLinks styled={true} term={"print-lines"}><b>\*print-lines\*</b></ClLinks> were <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+Specifically, if <DictionaryLink styled={true} term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, printing proceeds as if <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink>, <DictionaryLink styled={true} term={"print-array"}><b>\*print-array\*</b></DictionaryLink>, and <DictionaryLink styled={true} term={"print-gensym"}><b>\*print-gensym\*</b></DictionaryLink> were also <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, and as if <DictionaryLink styled={true} term={"print-length"}><b>\*print-length\*</b></DictionaryLink>, **\*print-level\***, and <DictionaryLink styled={true} term={"print-lines"}><b>\*print-lines\*</b></DictionaryLink> were <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-If <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the normal rules for printing and the normal interpretations of other <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variables</i></GlossaryTerm> are in effect. 
+If <DictionaryLink styled={true} term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, the normal rules for printing and the normal interpretations of other <GlossaryTerm styled={true} term={"printer control variable"}><i>printer control variables</i></GlossaryTerm> are in effect. 
 
 
 
-Individual <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks> for <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks>, including user-defined <ClLinks styled={true} term={"method"}><i>methods</i></ClLinks>, are responsible for implementing these requirements. 
+Individual <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm> for <DictionaryLink styled={true} term={"print-object"}><b>print-object</b></DictionaryLink>, including user-defined <GlossaryTerm styled={true} term={"method"}><i>methods</i></GlossaryTerm>, are responsible for implementing these requirements. 
 
 
 
-If **\*read-eval\*** is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> and <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, any such method that would output a reference to the “#.” <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> will either output something else or will signal an error (as described above). 
+If **\*read-eval\*** is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> and <DictionaryLink styled={true} term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, any such method that would output a reference to the “#.” <GlossaryTerm styled={true} term={"reader macro"}><i>reader macro</i></GlossaryTerm> will either output something else or will signal an error (as described above). 
 
 
 
@@ -104,7 +104,7 @@ Error: Can’t print #<HASH-TABLE EQL 0/120 32005763> readably.
 
 
 
-<ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"print-unreadable-object"}><b>print-unreadable-object</b></ClLinks> 
+<DictionaryLink styled={true} term={"write"}><b>write</b></DictionaryLink>, <DictionaryLink styled={true} term={"print-unreadable-object"}><b>print-unreadable-object</b></DictionaryLink> 
 
 
 
@@ -112,7 +112,7 @@ Error: Can’t print #<HASH-TABLE EQL 0/120 32005763> readably.
 
 
 
-The rules for “<ClLinks styled={true} term={"similarity"}><i>similarity</i></ClLinks>” imply that #A or #( syntax cannot be used for <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> of <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> other than <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. An implementation will have to use another syntax or signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks>. 
+The rules for “<GlossaryTerm styled={true} term={"similarity"}><i>similarity</i></GlossaryTerm>” imply that #A or #( syntax cannot be used for <GlossaryTerm styled={true} term={"array"}><i>arrays</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"element type"}><i>element type</i></GlossaryTerm> other than <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>. An implementation will have to use another syntax or signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"print-not-readable"}><b>print-not-readable</b></DictionaryLink>. 
 
 
 

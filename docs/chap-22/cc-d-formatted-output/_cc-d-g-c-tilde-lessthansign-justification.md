@@ -14,7 +14,7 @@ With no modifiers, the leftmost text segment is left justified in the field, and
 
 
 
-Note that *str* may include <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> directives. All the clauses in *str* are processed in order; it is the resulting pieces of text that are justified. 
+Note that *str* may include <DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink> directives. All the clauses in *str* are processed in order; it is the resulting pieces of text that are justified. 
 
 
 
@@ -54,7 +54,7 @@ can be used to print a list of items separated by commas without breaking items 
 
 
 
-If the second argument is not supplied, then <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> uses the line width of the *destination* output stream. If this cannot be determined (for example, when producing a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> result), then <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> uses 72 as the line length. 
+If the second argument is not supplied, then <DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink> uses the line width of the *destination* output stream. If this cannot be determined (for example, when producing a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> result), then <DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink> uses 72 as the line length. 
 
 
 

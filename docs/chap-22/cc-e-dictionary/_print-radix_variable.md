@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"print-radix"}><b>*print-radix*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"print-radix"}><b>*print-radix*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-**\*print-base\***—a <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> . <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
+**\*print-base\***—a <GlossaryTerm styled={true} term={"radix"}><i>radix</i></GlossaryTerm> . <DictionaryLink styled={true} term={"print-radix"}><b>\*print-radix\*</b></DictionaryLink>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>. 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*print-base\*** is 10. The initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks> is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+The initial <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of **\*print-base\*** is 10. The initial <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"print-radix"}><b>\*print-radix\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -22,15 +22,15 @@ The initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*
 
 
 
-**\*print-base\*** and <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks> control the printing of <ClLinks styled={true} term={"rational"}><i>rationals</i></ClLinks>. The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*print-base\*** is called the <GlossaryTerm styled={true} term={"current output base"}><i>current output base</i></GlossaryTerm>. 
+**\*print-base\*** and <DictionaryLink styled={true} term={"print-radix"}><b>\*print-radix\*</b></DictionaryLink> control the printing of <GlossaryTerm styled={true} term={"rational"}><i>rationals</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of **\*print-base\*** is called the <GlossaryTerm styled={true} term={"current output base"}><i>current output base</i></GlossaryTerm>. 
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*print-base\*** is the <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> in which the printer will print <ClLinks styled={true} term={"rational"}><i>rationals</i></ClLinks>. For radices above 10, letters of the alphabet are used to represent digits above 9. 
+The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of **\*print-base\*** is the <GlossaryTerm styled={true} term={"radix"}><i>radix</i></GlossaryTerm> in which the printer will print <GlossaryTerm styled={true} term={"rational"}><i>rationals</i></GlossaryTerm>. For radices above 10, letters of the alphabet are used to represent digits above 9. 
 
 
 
-If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-radix"}><b>\*print-radix\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the printer will print a radix specifier to indicate the <ClLinks styled={true} term={"radix"}><i>radix</i></ClLinks> in which it is printing a <ClLinks styled={true} term={"rational"}><i>rational</i></ClLinks> number. The radix specifier is always printed using lowercase letters. If **\*print-base\*** is 2, 8, or 16, then the radix specifier used is #b, #o, or #x, respectively. For *integers*, base ten is indicated by a trailing decimal point instead of a leading radix specifier; for <ClLinks styled={true} term={"ratio"}><i>ratios</i></ClLinks>, #10r is used. 
+If the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"print-radix"}><b>\*print-radix\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, the printer will print a radix specifier to indicate the <GlossaryTerm styled={true} term={"radix"}><i>radix</i></GlossaryTerm> in which it is printing a <GlossaryTerm styled={true} term={"rational"}><i>rational</i></GlossaryTerm> number. The radix specifier is always printed using lowercase letters. If **\*print-base\*** is 2, 8, or 16, then the radix specifier used is #b, #o, or #x, respectively. For *integers*, base ten is indicated by a trailing decimal point instead of a leading radix specifier; for <GlossaryTerm styled={true} term={"ratio"}><i>ratios</i></GlossaryTerm>, #10r is used. 
 
 
 
@@ -69,7 +69,7 @@ If the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks 
 
 
 
-Might be <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> by <ClLinks styled={true} term={"format"}><b>format</b></ClLinks>, and <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"write-to-string"}><b>write-to-string</b></ClLinks>. 
+Might be <GlossaryTerm styled={true} term={"bound"}><i>bound</i></GlossaryTerm> by <DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink>, and <DictionaryLink styled={true} term={"write"}><b>write</b></DictionaryLink>, <DictionaryLink styled={true} term={"write-to-string"}><b>write-to-string</b></DictionaryLink>. 
 
 
 
@@ -77,7 +77,7 @@ Might be <ClLinks styled={true} term={"bound"}><i>bound</i></ClLinks> by <ClLink
 
 
 
-<ClLinks styled={true} term={"format"}><b>format</b></ClLinks>, <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"write-to-string"}><b>write-to-string</b></ClLinks> 
+<DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink>, <DictionaryLink styled={true} term={"write"}><b>write</b></DictionaryLink>, <DictionaryLink styled={true} term={"write-to-string"}><b>write-to-string</b></DictionaryLink> 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-If &#126;:&gt; is used to terminate a &#126;&lt;...&#126;&gt;, the directive is equivalent to a call to <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks>. The argument corresponding to the &#126;&lt;...&#126;:&gt; directive is treated in the same way as the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> argument to <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks>, thereby providing automatic support for non-<ClLinks styled={true} term={"list"}><i>list</i></ClLinks> arguments and the detection of circularity, sharing, and depth abbreviation. The portion of the *control-string* nested within the &#126;&lt;...&#126;:&gt; specifies the :prefix (or :per-line-prefix), :suffix, and body of the <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks>. 
+If &#126;:&gt; is used to terminate a &#126;&lt;...&#126;&gt;, the directive is equivalent to a call to <DictionaryLink styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></DictionaryLink>. The argument corresponding to the &#126;&lt;...&#126;:&gt; directive is treated in the same way as the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> argument to <DictionaryLink styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></DictionaryLink>, thereby providing automatic support for non-<GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> arguments and the detection of circularity, sharing, and depth abbreviation. The portion of the *control-string* nested within the &#126;&lt;...&#126;:&gt; specifies the :prefix (or :per-line-prefix), :suffix, and body of the <DictionaryLink styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></DictionaryLink>. 
 
 
 
@@ -14,7 +14,7 @@ The *control-string* portion enclosed by &#126;&lt;...&#126;:&gt; can be divided
 
 
 
-If the enclosed portion is divided into only two segments, the *suffix* defaults to the null string. If the enclosed portion consists of only a single segment, both the *prefix* and the *suffix* default to the null string. If the <ClLinks styled={true} term={"colon"}><i>colon</i></ClLinks> modifier is used (*i.e.*, &#126;:&lt;...&#126;:&gt;), the *prefix* and *suffix* default to "(" and ")" (respectively) instead of the null string. 
+If the enclosed portion is divided into only two segments, the *suffix* defaults to the null string. If the enclosed portion consists of only a single segment, both the *prefix* and the *suffix* default to the null string. If the <GlossaryTerm styled={true} term={"colon"}><i>colon</i></GlossaryTerm> modifier is used (*i.e.*, &#126;:&lt;...&#126;:&gt;), the *prefix* and *suffix* default to "(" and ")" (respectively) instead of the null string. 
 
 
 
@@ -22,11 +22,11 @@ The body segment can be any arbitrary <i>format string</i>. This <i>format strin
 
 
 
-&#126;&lt;...&#126;:&gt; supports a feature not supported by <ClLinks styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></ClLinks>. If &#126;:@&gt; is used to terminate the directive (*i.e.*, &#126;&lt;...&#126;:@&gt;), then a fill-style conditional newline is automatically inserted after each group of blanks immediately contained in the body (except for blanks after a <ClLinks styled={true} term={"newline"}><i>⟨Newline⟩</i></ClLinks> directive). This makes it easy to achieve the equivalent of paragraph filling. 
+&#126;&lt;...&#126;:&gt; supports a feature not supported by <DictionaryLink styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></DictionaryLink>. If &#126;:@&gt; is used to terminate the directive (*i.e.*, &#126;&lt;...&#126;:@&gt;), then a fill-style conditional newline is automatically inserted after each group of blanks immediately contained in the body (except for blanks after a <ClLinks styled={true} term={"newline"}><i>⟨Newline⟩</i></ClLinks> directive). This makes it easy to achieve the equivalent of paragraph filling. 
 
 
 
-If the <ClLinks styled={true} term={"at-sign"}><i>at-sign</i></ClLinks> modifier is used with &#126;&lt;...&#126;:&gt;, the entire remaining argument list is passed to the directive as its argument. All of the remaining arguments are always consumed by &#126;@&lt;...&#126;:&gt;, even if they are not all used by the <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm> nested in the directive. Other than the difference in its argument, &#126;@&lt;...&#126;:&gt; is exactly the same as &#126;&lt;...&#126;:&gt; except that circularity detection is not applied if &#126;@&lt;...&#126;:&gt; is encountered at top level in a <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm>. This ensures that circularity detection is applied only to data lists, not to *format argument lists*. 
+If the <GlossaryTerm styled={true} term={"at-sign"}><i>at-sign</i></GlossaryTerm> modifier is used with &#126;&lt;...&#126;:&gt;, the entire remaining argument list is passed to the directive as its argument. All of the remaining arguments are always consumed by &#126;@&lt;...&#126;:&gt;, even if they are not all used by the <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm> nested in the directive. Other than the difference in its argument, &#126;@&lt;...&#126;:&gt; is exactly the same as &#126;&lt;...&#126;:&gt; except that circularity detection is not applied if &#126;@&lt;...&#126;:&gt; is encountered at top level in a <GlossaryTerm styled={true} term={"format string"}><i>format string</i></GlossaryTerm>. This ensures that circularity detection is applied only to data lists, not to *format argument lists*. 
 
 
 

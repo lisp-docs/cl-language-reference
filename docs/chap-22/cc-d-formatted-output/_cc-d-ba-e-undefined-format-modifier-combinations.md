@@ -2,7 +2,7 @@
 
 
 
-The consequences are undefined if <ClLinks styled={true} term={"colon"}><i>colon</i></ClLinks> or <ClLinks styled={true} term={"at-sign"}><i>at-sign</i></ClLinks> modifiers are given to a directive in a combination not specifically described here as being meaningful. 
+The consequences are undefined if <GlossaryTerm styled={true} term={"colon"}><i>colon</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"at-sign"}><i>at-sign</i></GlossaryTerm> modifiers are given to a directive in a combination not specifically described here as being meaningful. 
 
 
 

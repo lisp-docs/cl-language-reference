@@ -6,7 +6,7 @@
 
 
 
-A non-negative *integer* , the exact magnitude of which is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>, but which is not less than 96 (the number of <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>). 
+A non-negative *integer* , the exact magnitude of which is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>, but which is not less than 96 (the number of <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>). 
 
 
 
@@ -14,7 +14,7 @@ A non-negative *integer* , the exact magnitude of which is <ClLinks styled={true
 
 
 
-The upper exclusive bound on the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> returned by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks>. 
+The upper exclusive bound on the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"char-code"}><b>char-code</b></DictionaryLink>. 
 
 
 
@@ -22,7 +22,7 @@ The upper exclusive bound on the <ClLinks styled={true} term={"value"}><i>value<
 
 
 
-<ClLinks styled={true} term={"char-code"}><b>char-code</b></ClLinks> 
+<DictionaryLink styled={true} term={"char-code"}><b>char-code</b></DictionaryLink> 
 
 
 
@@ -30,7 +30,7 @@ The upper exclusive bound on the <ClLinks styled={true} term={"value"}><i>value<
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"char-code-limit"}><b>char-code-limit</b></ClLinks> might be larger than the actual number of <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> supported by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"char-code-limit"}><b>char-code-limit</b></DictionaryLink> might be larger than the actual number of <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> supported by the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-<ClLinks styled={true} term={"char-name"}><b>char-name</b></ClLinks> 
+<DictionaryLink styled={true} term={"char-name"}><b>char-name</b></DictionaryLink> 
 
 
 

@@ -1,4 +1,4 @@
-**invoke-debugger** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**invoke-debugger** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></ClLinks> *condition →* 
+<DictionaryLink styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></DictionaryLink> *condition →* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a *condition object*. 
+<GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>—a *condition object*. 
 
 
 
@@ -22,11 +22,11 @@
 
 
 
-<ClLinks styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></ClLinks> attempts to enter the debugger with <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>. 
+<DictionaryLink styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></DictionaryLink> attempts to enter the debugger with <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>. 
 
 
 
-If <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> is not <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, it should be a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> (or the name of a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>) to be called prior to entry to the standard debugger. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called with <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> bound to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, and the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> must accept two arguments: the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> prior to binding it to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. If the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> returns normally, the standard debugger is entered. 
+If <DictionaryLink styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></DictionaryLink> is not <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, it should be a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> (or the name of a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>) to be called prior to entry to the standard debugger. The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is called with <DictionaryLink styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></DictionaryLink> bound to <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, and the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> must accept two arguments: the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> and the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></DictionaryLink> prior to binding it to <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. If the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> returns normally, the standard debugger is entered. 
 
 
 
@@ -48,7 +48,7 @@ Debug>
 
 
 
-<ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> is bound to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, program execution is discontinued, and the debugger is entered. 
+<DictionaryLink styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></DictionaryLink> is bound to <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, program execution is discontinued, and the debugger is entered. 
 
 
 
@@ -56,7 +56,7 @@ Debug>
 
 
 
-**\*debug-io\*** and <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks>. 
+**\*debug-io\*** and <DictionaryLink styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></DictionaryLink>. 
 
 
 
@@ -64,7 +64,7 @@ Debug>
 
 
 
-<ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> 
+<DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>, <DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> 
 
 
 
@@ -80,7 +80,7 @@ Debug>
 
 
 
-<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> 
+<DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> 
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-Boolean combinations of <ClLinks styled={true} term={"feature"}><i>features</i></ClLinks>, called <GlossaryTerm styled={true} term={"feature expression"}><i>feature expressions</i></GlossaryTerm>, are used by the #+ and #- <GlossaryTerm styled={true} term={"reader macro"}><i>reader macros</i></GlossaryTerm> in order to direct conditional *reading* of <ClLinks styled={true} term={"expression"}><i>expressions</i></ClLinks> by the *Lisp reader* . 
+Boolean combinations of <GlossaryTerm styled={true} term={"feature"}><i>features</i></GlossaryTerm>, called <GlossaryTerm styled={true} term={"feature expression"}><i>feature expressions</i></GlossaryTerm>, are used by the #+ and #- <GlossaryTerm styled={true} term={"reader macro"}><i>reader macros</i></GlossaryTerm> in order to direct conditional *reading* of <GlossaryTerm styled={true} term={"expression"}><i>expressions</i></GlossaryTerm> by the *Lisp reader* . 
 
 
 
@@ -10,11 +10,11 @@ The rules for interpreting a <GlossaryTerm styled={true} term={"feature expressi
 
 
 
-<ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> 
+<GlossaryTerm styled={true} term={"feature"}><i>feature</i></GlossaryTerm> 
 
 
 
-If a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> naming a <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> is used as a <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm> succeeds if that <ClLinks styled={true} term={"feature"}><i>feature</i></ClLinks> is <ClLinks styled={true} term={"present"}><i>present</i></ClLinks>; otherwise it fails. 
+If a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> naming a <GlossaryTerm styled={true} term={"feature"}><i>feature</i></GlossaryTerm> is used as a <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm> succeeds if that <GlossaryTerm styled={true} term={"feature"}><i>feature</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"present"}><i>present</i></GlossaryTerm>; otherwise it fails. 
 
 
 
@@ -22,7 +22,7 @@ If a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> naming a <Cl
 
 
 
-A <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm> succeeds if its argument *feature-conditional* fails; otherwise, it succeeds. 
+A <DictionaryLink styled={true} term={"not"}><b>not</b></DictionaryLink> <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm> succeeds if its argument *feature-conditional* fails; otherwise, it succeeds. 
 
 
 
@@ -30,7 +30,7 @@ A <ClLinks styled={true} term={"not"}><b>not</b></ClLinks> <GlossaryTerm styled=
 
 
 
-An <ClLinks styled={true} term={"and"}><b>and</b></ClLinks> <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm> succeeds if all of its argument *feature-conditionals* succeed; otherwise, it fails. 
+An <DictionaryLink styled={true} term={"and"}><b>and</b></DictionaryLink> <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm> succeeds if all of its argument *feature-conditionals* succeed; otherwise, it fails. 
 
 
 
@@ -50,7 +50,7 @@ System
 
 
 
-An <ClLinks styled={true} term={"or"}><b>or</b></ClLinks> <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm> succeeds if any of its argument *feature-conditionals* succeed; otherwise, it fails. 
+An <DictionaryLink styled={true} term={"or"}><b>or</b></DictionaryLink> <GlossaryTerm styled={true} term={"feature expression"}><i>feature expression</i></GlossaryTerm> succeeds if any of its argument *feature-conditionals* succeed; otherwise, it fails. 
 
 
 

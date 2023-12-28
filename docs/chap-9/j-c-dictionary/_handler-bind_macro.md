@@ -1,4 +1,4 @@
-**handler-bind** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**handler-bind** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"handler-bind"}><b>handler-bind</b></ClLinks> (<ClLinks styled={true} term={"binding"}><i>\{↓binding\}</i></ClLinks>\*) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* → \{result\}\* 
+<DictionaryLink styled={true} term={"handler-bind"}><b>handler-bind</b></DictionaryLink> (<ClLinks styled={true} term={"binding"}><i>\{↓binding\}</i></ClLinks>\*) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* → \{result\}\* 
 
 
 
@@ -18,23 +18,23 @@
 
 
 
-<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
+<GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
 
 
 
-<ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated to produce a *handler-function*. 
+<GlossaryTerm styled={true} term={"handler"}><i>handler</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated to produce a *handler-function*. 
 
 
 
-*handler-function*—a <ClLinks styled={true} term={"designator"}><i>designator</i></ClLinks> for a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>. 
+*handler-function*—a <GlossaryTerm styled={true} term={"designator"}><i>designator</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 
@@ -42,19 +42,19 @@
 
 
 
-Executes <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where the indicated *handler bindings* are in effect. 
+Executes <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where the indicated *handler bindings* are in effect. 
 
 
 
-Each <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> should evaluate to a *handler-function*, which is used to handle <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> of the given <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> during execution of the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. This <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> should take a single argument, the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> being signaled. 
+Each <GlossaryTerm styled={true} term={"handler"}><i>handler</i></GlossaryTerm> should evaluate to a *handler-function*, which is used to handle <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> of the given <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> during execution of the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. This <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> should take a single argument, the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> being signaled. 
 
 
 
-If more than one *handler binding* is supplied, the *handler bindings* are searched sequentially from top to bottom in search of a match (by visual analogy with <ClLinks styled={true} term={"typecase"}><b>typecase</b></ClLinks>). If an appropriate <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> is found, the associated handler is run in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where none of these <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> bindings are visible (to avoid recursive errors). If the *handler declines*, the search continues for another <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> . 
+If more than one *handler binding* is supplied, the *handler bindings* are searched sequentially from top to bottom in search of a match (by visual analogy with <DictionaryLink styled={true} term={"typecase"}><b>typecase</b></DictionaryLink>). If an appropriate <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> is found, the associated handler is run in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where none of these <GlossaryTerm styled={true} term={"handler"}><i>handler</i></GlossaryTerm> bindings are visible (to avoid recursive errors). If the *handler declines*, the search continues for another <GlossaryTerm styled={true} term={"handler"}><i>handler</i></GlossaryTerm> . 
 
 
 
-If no appropriate <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> is found, other <ClLinks styled={true} term={"handler"}><i>handlers</i></ClLinks> are sought from dynamically enclosing contours. If no <ClLinks styled={true} term={"handler"}><i>handler</i></ClLinks> is found outside, then <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> returns or <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> enters the debugger. 
+If no appropriate <GlossaryTerm styled={true} term={"handler"}><i>handler</i></GlossaryTerm> is found, other <GlossaryTerm styled={true} term={"handler"}><i>handlers</i></GlossaryTerm> are sought from dynamically enclosing contours. If no <GlossaryTerm styled={true} term={"handler"}><i>handler</i></GlossaryTerm> is found outside, then <DictionaryLink styled={true} term={"signal"}><b>signal</b></DictionaryLink> returns or <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> enters the debugger. 
 
 
 
@@ -84,7 +84,7 @@ Note that “Foo.” is not printed because the condition made by **signal** is 
 
 
 
-<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> 
+<DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink> 
 
 
 

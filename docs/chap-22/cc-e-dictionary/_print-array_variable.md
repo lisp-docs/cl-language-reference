@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"print-array"}><b>*print-array*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"print-array"}><b>*print-array*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-Controls the format in which <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> are printed. If it is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the contents of <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> other than <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> are never printed. Instead, <ClLinks styled={true} term={"array"}><i>arrays</i></ClLinks> are printed in a concise form using #&lt; that gives enough information for the user to be able to identify the <ClLinks styled={true} term={"array"}><i>array</i></ClLinks>, but does not include the entire <ClLinks styled={true} term={"array"}><i>array</i></ClLinks> contents. If it is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, non-*string arrays* are printed using #(...), #\*, or #nA syntax. 
+Controls the format in which <GlossaryTerm styled={true} term={"array"}><i>arrays</i></GlossaryTerm> are printed. If it is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, the contents of <GlossaryTerm styled={true} term={"array"}><i>arrays</i></GlossaryTerm> other than <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm> are never printed. Instead, <GlossaryTerm styled={true} term={"array"}><i>arrays</i></GlossaryTerm> are printed in a concise form using #&lt; that gives enough information for the user to be able to identify the <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm>, but does not include the entire <GlossaryTerm styled={true} term={"array"}><i>array</i></GlossaryTerm> contents. If it is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, non-*string arrays* are printed using #(...), #\*, or #nA syntax. 
 
 
 
@@ -30,7 +30,7 @@ Controls the format in which <ClLinks styled={true} term={"array"}><i>arrays</i>
 
 
 
-The <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. 
+The <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. 
 
 
 

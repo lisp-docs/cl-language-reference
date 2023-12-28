@@ -1,4 +1,4 @@
-**pprint-dispatch** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**pprint-dispatch** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"pprint-dispatch"}><b>pprint-dispatch</b></ClLinks> <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> &amp;optional *table → function, found-p* 
+<DictionaryLink styled={true} term={"pprint-dispatch"}><b>pprint-dispatch</b></DictionaryLink> <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> &amp;optional *table → function, found-p* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*table*—a <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. The default is the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks>. <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> . 
+*table*—a <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm>, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. The default is the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></DictionaryLink>. <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"function designator"}><i>function designator</i></GlossaryTerm> . 
 
 
 
@@ -30,15 +30,15 @@
 
 
 
-Retrieves the highest priority function in *table* that is associated with a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> that matches <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. The function is chosen by finding all of the <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> in *table* that match the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> and selecting the highest priority function associated with any of these <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>. If there is more than one highest priority function, an arbitrary choice is made. If no <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> match the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>, a function is returned that prints <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> using <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks>. 
+Retrieves the highest priority function in *table* that is associated with a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> that matches <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. The function is chosen by finding all of the <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> in *table* that match the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> and selecting the highest priority function associated with any of these <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm>. If there is more than one highest priority function, an arbitrary choice is made. If no <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> match the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>, a function is returned that prints <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> using <DictionaryLink styled={true} term={"print-object"}><b>print-object</b></DictionaryLink>. 
 
 
 
-The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *found-p*, is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if a matching <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> was found in *table*, or <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> otherwise. 
+The <GlossaryTerm styled={true} term={"secondary value"}><i>secondary value</i></GlossaryTerm>, *found-p*, is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if a matching <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> was found in *table*, or <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> otherwise. 
 
 
 
-If *table* is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, retrieval is done in the <GlossaryTerm styled={true} term={"initial pprint dispatch table"}><i>initial pprint dispatch table</i></GlossaryTerm>. 
+If *table* is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, retrieval is done in the <GlossaryTerm styled={true} term={"initial pprint dispatch table"}><i>initial pprint dispatch table</i></GlossaryTerm>. 
 
 
 
@@ -54,7 +54,7 @@ The state of the *table*.
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *table* is neither a *pprint-dispatch-table* nor <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *table* is neither a *pprint-dispatch-table* nor <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 

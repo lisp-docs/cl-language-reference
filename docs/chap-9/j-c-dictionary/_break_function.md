@@ -1,4 +1,4 @@
-**break** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**break** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> &amp;optional *format-control* &amp;rest *format-arguments →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> &amp;optional *format-control* &amp;rest *format-arguments →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*format-control*—a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>. The default is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+*format-control*—a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>. The default is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> *formats format-control* and *format-arguments* and then goes directly into the debugger without allowing any possibility of interception by programmed error-handling facilities. 
+<DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> *formats format-control* and *format-arguments* and then goes directly into the debugger without allowing any possibility of interception by programmed error-handling facilities. 
 
 
 
-If the **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is used while in the debugger, <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> immediately returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> without taking any unusual recovery action. 
+If the **continue** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is used while in the debugger, <DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> immediately returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> without taking any unusual recovery action. 
 
 
 
-<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> binds <ClLinks styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></ClLinks> to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> before attempting to enter the debugger. 
+<DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> binds <DictionaryLink styled={true} term={"debugger-hook"}><b>\*debugger-hook\*</b></DictionaryLink> to <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> before attempting to enter the debugger. 
 
 
 
@@ -69,7 +69,7 @@ The debugger is entered.
 
 
 
-<ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></ClLinks>. 
+<DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>, <DictionaryLink styled={true} term={"invoke-debugger"}><b>invoke-debugger</b></DictionaryLink>. 
 
 
 
@@ -77,7 +77,7 @@ The debugger is entered.
 
 
 
-<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> is used as a way of inserting temporary debugging “breakpoints” in a program, not as a way of signaling errors. For this reason, <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> does not take the *continue-format-control argument* that <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks> takes. This and the lack of any possibility of interception by *condition handling* are the only program-visible differences between <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> and <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>. 
+<DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> is used as a way of inserting temporary debugging “breakpoints” in a program, not as a way of signaling errors. For this reason, <DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> does not take the *continue-format-control argument* that <DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink> takes. This and the lack of any possibility of interception by *condition handling* are the only program-visible differences between <DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> and <DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink>. 
 
 
 
@@ -93,11 +93,11 @@ The debugger is entered.
 
 
 
-The user interface aspects of <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> and <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks> are permitted to vary more widely, in order to accomodate the interface needs of the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>. For example, it is permissible for a *Lisp read-eval-print loop* to be entered by <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> rather than the conventional debugger. 
+The user interface aspects of <DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> and <DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink> are permitted to vary more widely, in order to accomodate the interface needs of the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>. For example, it is permissible for a *Lisp read-eval-print loop* to be entered by <DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> rather than the conventional debugger. 
 
 
 
-<ClLinks styled={true} term={"break"}><b>break</b></ClLinks> could be defined by: 
+<DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> could be defined by: 
 
 
 

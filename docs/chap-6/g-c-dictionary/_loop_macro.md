@@ -1,16 +1,16 @@
-**loop** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks>
+**loop** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm>
 
 **Syntax:**
 
-The “simple” <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>:
+The “simple” <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>:
 
-<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> *\{compound-form\}*\* → \{result\}\*
+<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> *\{compound-form\}*\* → \{result\}\*
 
-The “extended” <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>:
+The “extended” <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>:
 
-<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> [*↓name-clause*] *\{↓variable-clause\}*\* *\{↓main-clause\}*\* → \{result\}\*
+<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> [*↓name-clause*] *\{↓variable-clause\}*\* *\{↓main-clause\}*\* → \{result\}\*
 
-*name-clause::*=named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>
+*name-clause::*=named <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>
 
 *variable-clause::*=*↓with-clause | ↓initial-final | ↓for-as-clause*
 
@@ -18,17 +18,17 @@ The “extended” <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <C
 
 *main-clause::*=*↓unconditional | ↓accumulation | ↓conditional | ↓termination-test | ↓initial-final initial-final::*=initially *\{compound-form\}*<sup>+</sup>*|* finally *\{compound-form\}*<sup>+</sup>
 
-*unconditional::*=*\{*do *|* doing*\} \{compound-form\}*<sup>+</sup>*|* return *\{form |* it<ClLinks styled={true} term={"t"}><i>\}</i></ClLinks>
+*unconditional::*=*\{*do *|* doing*\} \{compound-form\}*<sup>+</sup>*|* return *\{form |* it<GlossaryTerm styled={true} term={"t"}><i>\}</i></GlossaryTerm>
 
 *accumulation::*=*↓list-accumulation | ↓numeric-accumulation*
 
-*list-accumulation::*=*\{*collect *|* collecting *|* append *|* appending *|* nconc *|* nconcing*\} \{form |* it<ClLinks styled={true} term={"t"}><i>\}</i></ClLinks> [into *simple-var*]
+*list-accumulation::*=*\{*collect *|* collecting *|* append *|* appending *|* nconc *|* nconcing*\} \{form |* it<GlossaryTerm styled={true} term={"t"}><i>\}</i></GlossaryTerm> [into *simple-var*]
 
-<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>
+<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink>
 
 *numeric-accumulation::*=*\{*count *|* counting *|* sum *|* summing *|*
 
-maximize *|* maximizing *|* minimize *|* minimizing*\} \{form |* it<ClLinks styled={true} term={"t"}><i>\}</i></ClLinks>
+maximize *|* maximizing *|* minimize *|* minimizing*\} \{form |* it<GlossaryTerm styled={true} term={"t"}><i>\}</i></GlossaryTerm>
 
 [into *simple-var*] [*type-spec*]
 
@@ -56,7 +56,7 @@ maximize *|* maximizing *|* minimize *|* minimizing*\} \{form |* it<ClLinks styl
 
 *for-as-equals-then::*=*var* [*type-spec*] = *form1* [then *form2*]
 
-*for-as-across::*=*var* [*type-spec*] across <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>
+*for-as-across::*=*var* [*type-spec*] across <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm>
 
 *for-as-hash::*=*var* [*type-spec*] being *\{*each *|* the*\}*
 
@@ -68,7 +68,7 @@ maximize *|* maximizing *|* minimize *|* minimizing*\} \{form |* it<ClLinks styl
 
 [using (hash-key *other-var*)]*\}*
 
-<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>
+<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink>
 
 *for-as-package::*=*var* [*type-spec*] being *\{*each *|* the*\}*
 
@@ -82,7 +82,7 @@ external-symbol *|* external-symbols*\}*
 
 *type-spec::*=*↓simple-type-spec | ↓destructured-type-spec*
 
-*simple-type-spec::*=<ClLinks styled={true} term={"fixnum"}><b>fixnum</b></ClLinks> *|* <ClLinks styled={true} term={"float"}><b>float</b></ClLinks> *|* <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> *|* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>
+*simple-type-spec::*=<DictionaryLink styled={true} term={"fixnum"}><b>fixnum</b></DictionaryLink> *|* <DictionaryLink styled={true} term={"float"}><b>float</b></DictionaryLink> *|* <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> *|* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>
 
 *destructured-type-spec::*=of-type *d-type-spec*
 
@@ -96,31 +96,31 @@ external-symbol *|* external-symbols*\}*
 
 *other-var::*=*↓d-var-spec*
 
-*d-var-spec::*=*simple-var |* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> *|* (*↓d-var-spec* . *↓d-var-spec*)
+*d-var-spec::*=*simple-var |* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> *|* (*↓d-var-spec* . *↓d-var-spec*)
 
 **Arguments and Values:**
 
 *compound-form*—a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm>.
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>.
+<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>.
 
-*simple-var*—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks> (a <ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks> name).
+*simple-var*—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> (a <GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm> name).
 
-<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, *form1*, *form2*, *form3*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>.
+<GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, *form1*, *form2*, *form3*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>.
 
-*step-fun*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks>.
+*step-fun*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that evaluates to a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm>.
 
-<ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a <ClLinks styled={true} term={"vector"}><i>vector</i></ClLinks> .
+<GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that evaluates to a <GlossaryTerm styled={true} term={"vector"}><i>vector</i></GlossaryTerm> .
 
-*hash-table*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>.
+*hash-table*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that evaluates to a <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>.
 
-<ClLinks styled={true} term={"package"}><i>package</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that evaluates to a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> .
+<GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that evaluates to a <GlossaryTerm styled={true} term={"package designator"}><i>package designator</i></GlossaryTerm> .
 
 *type-specifier*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . This might be either an <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifier</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"compound type specifier"}><i>compound type specifier</i></GlossaryTerm> , which introduces some additional complications to proper parsing in the face of destructuring; for further information, see Section 6.1.1.7 (Destructuring).
 
-*result*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>.
+*result*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>.
 
-<ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks>
+<DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink>
 
 **Description:**
 
@@ -166,10 +166,10 @@ For details, see Section 6.1 (The LOOP Facility).
 
 **See Also:**
 
-<ClLinks styled={true} term={"do"}><b>do</b></ClLinks>, <ClLinks styled={true} term={"dolist"}><b>dolist</b></ClLinks>, <ClLinks styled={true} term={"dotimes"}><b>dotimes</b></ClLinks>, <ClLinks styled={true} term={"return"}><b>return</b></ClLinks>, <ClLinks styled={true} term={"go"}><b>go</b></ClLinks>, <ClLinks styled={true} term={"throw"}><b>throw</b></ClLinks>, Section 6.1.1.7 (Destructuring)
+<DictionaryLink styled={true} term={"do"}><b>do</b></DictionaryLink>, <DictionaryLink styled={true} term={"dolist"}><b>dolist</b></DictionaryLink>, <DictionaryLink styled={true} term={"dotimes"}><b>dotimes</b></DictionaryLink>, <DictionaryLink styled={true} term={"return"}><b>return</b></DictionaryLink>, <DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink>, <DictionaryLink styled={true} term={"throw"}><b>throw</b></DictionaryLink>, Section 6.1.1.7 (Destructuring)
 
 **Notes:**
 
-Except that <ClLinks styled={true} term={"loop-finish"}><b>loop-finish</b></ClLinks> cannot be used within a simple <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>, a simple <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is related to an extended <ClLinks styled={true} term={"loop"}><b>loop</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> in the following way:
+Except that <DictionaryLink styled={true} term={"loop-finish"}><b>loop-finish</b></DictionaryLink> cannot be used within a simple <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, a simple <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is related to an extended <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> in the following way:
 
 (loop *\{compound-form\}*\*) *≡* (loop do *\{compound-form\}*\*)

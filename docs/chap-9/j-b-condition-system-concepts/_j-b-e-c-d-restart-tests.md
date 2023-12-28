@@ -2,7 +2,7 @@
 
 
 
-Each <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> has an associated test, which is a function of one argument (a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>) which returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> should be visible in the current <ClLinks styled={true} term={"situation"}><i>situation</i></ClLinks>. This test is created by the :test-function option to <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> or the :test option to <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>. 
+Each <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> has an associated test, which is a function of one argument (a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>) which returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> should be visible in the current <GlossaryTerm styled={true} term={"situation"}><i>situation</i></GlossaryTerm>. This test is created by the :test-function option to <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> or the :test option to <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>. 
 
 
 

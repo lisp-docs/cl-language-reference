@@ -1,4 +1,4 @@
-**handler-case** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**handler-case** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> [[ *\{↓error-clause\}*\* *| ↓no-error-clause* ]] → \{result\}\* 
+<DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> [[ *\{↓error-clause\}*\* *| ↓no-error-clause* ]] → \{result\}\* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-*error-clause::*=(*typespec* ([*var*]) <ClLinks styled={true} term={"declaration"}><i>\{declaration\}</i></ClLinks>\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*) 
+*error-clause::*=(*typespec* ([*var*]) <GlossaryTerm styled={true} term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\*) 
 
 
 
-*no-error-clause::*=(:no-error *lambda-list \{declaration\}*\* <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\*) 
+*no-error-clause::*=(:no-error *lambda-list \{declaration\}*\* <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\*) 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-<ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -46,7 +46,7 @@
 
 
 
-<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> 
+<DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink> 
 
 
 
@@ -58,15 +58,15 @@
 
 
 
-<ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks>—a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; not evaluated. 
+<GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm>—a <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>form</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
-*results*—In the normal situation, the values returned are those that result from the evaluation of <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>; in the exceptional situation when control is transferred to a *clause*, the value of the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> in that *clause* is returned. 
+*results*—In the normal situation, the values returned are those that result from the evaluation of <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>; in the exceptional situation when control is transferred to a *clause*, the value of the last <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> in that *clause* is returned. 
 
 
 
@@ -74,15 +74,15 @@
 
 
 
-<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> executes <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where various handlers are active. Each *error-clause* specifies how to handle a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> matching the indicated *typespec*. A *no-error-clause* allows the specification of a particular action if control returns normally. 
+<DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink> executes <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where various handlers are active. Each *error-clause* specifies how to handle a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> matching the indicated *typespec*. A *no-error-clause* allows the specification of a particular action if control returns normally. 
 
 
 
-If a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is signaled for which there is an appropriate *error-clause* during the execution of <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> (*i.e.*, one for which (typep <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> ’*typespec*) returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>) and if there is no intervening handler for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of that <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>, then control is transferred to the body of the relevant *error-clause*. In this case, the dynamic state is unwound appropriately (so that the handlers established around the <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> are no longer active), and *var* is bound to the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> that had been signaled. If more than one case is provided, those cases are made accessible in parallel. That is, in 
+If a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is signaled for which there is an appropriate *error-clause* during the execution of <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> (*i.e.*, one for which (typep <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> ’*typespec*) returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>) and if there is no intervening handler for a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of that <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>, then control is transferred to the body of the relevant *error-clause*. In this case, the dynamic state is unwound appropriately (so that the handlers established around the <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> are no longer active), and *var* is bound to the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> that had been signaled. If more than one case is provided, those cases are made accessible in parallel. That is, in 
 
 
 
-(handler-case <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> 
+(handler-case <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> 
 
 
 
@@ -98,7 +98,7 @@ if the first *clause* (containing *form1*) has been selected, the handler for th
 
 
 
-The *clauses* are searched sequentially from top to bottom. If there is <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> overlap between *typespecs*, the earlier of the *clauses* is selected. 
+The *clauses* are searched sequentially from top to bottom. If there is <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> overlap between *typespecs*, the earlier of the *clauses* is selected. 
 
 
 
@@ -106,23 +106,19 @@ If *var* is not needed, it can be omitted. That is, a *clause* such as:
 
 
 
-(*typespec* (*var*) (declare (ignore *var*)) <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>) 
+(*typespec* (*var*) (declare (ignore *var*)) <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>) 
 
 
 
-can be written (*typespec* () <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>). 
+can be written (*typespec* () <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>). 
 
 
 
-If there are no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a selected *clause*, the case, and therefore <ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks>, returns <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. If execution of <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> returns normally and no *no-error-clause* exists, the values returned by <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> are returned by <ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks>. If execution of <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> returns normally and a *no-error-clause* does exist, the values returned are used as arguments to the function described by constructing (lambda *lambda-list \{form\}*\*) from the *no-error-clause*, and the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of that function call are returned by <ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks>. The handlers which were established around the <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks> are no longer active at the time of this call. 
-
-
+If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> in a selected *clause*, the case, and therefore <DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink>, returns <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. If execution of <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> returns normally and no *no-error-clause* exists, the values returned by <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> are returned by <DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink>. If execution of <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> returns normally and a *no-error-clause* does exist, the values returned are used as arguments to the function described by constructing (lambda *lambda-list \{form\}*\*) from the *no-error-clause*, and the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of that function call are returned by <DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink>. The handlers which were established around the <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm> are no longer active at the time of this call. 
 
 
 
 
-
- 
 
 
 
@@ -130,7 +126,11 @@ If there are no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a
 
 
 
-<ClLinks styled={true} term={"handler-case"}><b>handler-case</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink> 
 
 
 
@@ -159,7 +159,7 @@ If there are no <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a
 
 
 
-<ClLinks styled={true} term={"handler-bind"}><b>handler-bind</b></ClLinks>, <ClLinks styled={true} term={"ignore-errors"}><b>ignore-errors</b></ClLinks>, Section 9.1 (Condition System Concepts) **Notes:** 
+<DictionaryLink styled={true} term={"handler-bind"}><b>handler-bind</b></DictionaryLink>, <DictionaryLink styled={true} term={"ignore-errors"}><b>ignore-errors</b></DictionaryLink>, Section 9.1 (Condition System Concepts) **Notes:** 
 
 
 

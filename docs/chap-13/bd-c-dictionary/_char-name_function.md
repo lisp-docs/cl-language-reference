@@ -1,4 +1,4 @@
-**char-name** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**char-name** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"char-name"}><b>char-name</b></ClLinks> *character → name* 
+<DictionaryLink styled={true} term={"char-name"}><b>char-name</b></DictionaryLink> *character → name* 
 
 
 
@@ -14,11 +14,11 @@
 
 
 
-<ClLinks styled={true} term={"character"}><i>character</i></ClLinks>—a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
+<GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-Returns a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> that is the <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> of the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> has no <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>. 
+Returns a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> that is the <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm>, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if the <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> has no <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>. 
 
 
 
-All <ClLinks styled={true} term={"non-graphic"}><i>non-graphic</i></ClLinks> characters are required to have <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> unless they have some *implementation-defined attribute* which is not <ClLinks styled={true} term={"null"}><i>null</i></ClLinks>. Whether or not other <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> have <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> is *implementation dependent*. 
+All <GlossaryTerm styled={true} term={"non-graphic"}><i>non-graphic</i></GlossaryTerm> characters are required to have <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> unless they have some *implementation-defined attribute* which is not <GlossaryTerm styled={true} term={"null"}><i>null</i></GlossaryTerm>. Whether or not other <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> have <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> is *implementation dependent*. 
 
 
 
-The *standard characters ⟨Newline⟩* and <ClLinks styled={true} term={"space"}><i>⟨Space⟩</i></ClLinks> have the respective names "Newline" and "Space". The *semi-standard characters ⟨Tab⟩*, *⟨Page⟩*, *⟨Rubout⟩*, *⟨Linefeed⟩*, *⟨Return⟩*, and *⟨Backspace⟩* (if they are supported by the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>) have the respective names "Tab", "Page", "Rubout", "Linefeed", "Return", and "Backspace" (in the indicated case, even though name lookup by “#\” and by the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> <ClLinks styled={true} term={"name-char"}><b>name-char</b></ClLinks> is not case sensitive). 
+The *standard characters ⟨Newline⟩* and <ClLinks styled={true} term={"space"}><i>⟨Space⟩</i></ClLinks> have the respective names "Newline" and "Space". The *semi-standard characters ⟨Tab⟩*, *⟨Page⟩*, *⟨Rubout⟩*, *⟨Linefeed⟩*, *⟨Return⟩*, and *⟨Backspace⟩* (if they are supported by the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>) have the respective names "Tab", "Page", "Rubout", "Linefeed", "Return", and "Backspace" (in the indicated case, even though name lookup by “#\” and by the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"name-char"}><b>name-char</b></DictionaryLink> is not case sensitive). 
 
 
 
@@ -62,7 +62,7 @@ The *standard characters ⟨Newline⟩* and <ClLinks styled={true} term={"space"
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> is not a <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
@@ -70,7 +70,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-<ClLinks styled={true} term={"name-char"}><b>name-char</b></ClLinks>, Section 22.1.3.2 (Printing Characters) 
+<DictionaryLink styled={true} term={"name-char"}><b>name-char</b></DictionaryLink>, Section 22.1.3.2 (Printing Characters) 
 
 
 
@@ -78,7 +78,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-*Non-graphic characters* having <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> are written by the *Lisp printer* as “#\” followed by the their <ClLinks styled={true} term={"name"}><i>name</i></ClLinks>; see Section 22.1.3.2 (Printing Characters). 
+*Non-graphic characters* having <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> are written by the *Lisp printer* as “#\” followed by the their <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>; see Section 22.1.3.2 (Printing Characters). 
 
 
 

@@ -1,4 +1,4 @@
-**restart-bind** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**restart-bind** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> (*\{*(*name function \{↓key-val-pair\}*\*)*\}*) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> (*\{*(*name function \{↓key-val-pair\}*\*)*\}*) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
 
 
 
@@ -30,31 +30,31 @@
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>; not evaluated. 
+<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>; not evaluated. 
 
 
 
-<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated. 
+<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated. 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*interactive-function*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated. 
+*interactive-function*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated. 
 
 
 
-*report-function*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated. 
+*report-function*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated. 
 
 
 
-*test-function*—a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>; evaluated. 
+*test-function*—a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>; evaluated. 
 
 
 
-*results*—the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. 
+*results*—the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. 
 
 
 
@@ -62,19 +62,15 @@
 
 
 
-<ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> executes the body of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> with the given <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> are in effect. 
+<DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> executes the body of <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> in a <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> where <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> with the given <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> are in effect. 
 
 
 
-If a <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, it indicates an anonymous restart; if a <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is a *non-nil symbol*, it indicates a named restart. 
-
-
+If a <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, it indicates an anonymous restart; if a <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is a *non-nil symbol*, it indicates a named restart. 
 
 
 
 
-
- 
 
 
 
@@ -82,27 +78,31 @@ If a <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is <ClLinks styl
 
 
 
-<ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> 
+ 
 
 
 
-The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>, *interactive-function*, and *report-function* are unconditionally evaluated in the current lexical and dynamic environment prior to evaluation of the body. Each of these <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> must evaluate to a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks>. 
+<DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> 
 
 
 
-If <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks> is done on that restart, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> which resulted from evaluating <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called, in the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> of the <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, with the <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> given to <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> may either perform a non-local transfer of control or may return normally. 
+The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>, *interactive-function*, and *report-function* are unconditionally evaluated in the current lexical and dynamic environment prior to evaluation of the body. Each of these <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> must evaluate to a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>. 
 
 
 
-If the restart is invoked interactively from the debugger (using <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks>), the arguments are defaulted by calling the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> which resulted from evaluating *interactive-function*. That <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> may optionally prompt interactively on *query I/O*, and should return a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of arguments to be used by <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> when invoking the restart. 
+If <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink> is done on that restart, the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> which resulted from evaluating <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is called, in the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> of the <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>, with the <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> given to <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>. The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> may either perform a non-local transfer of control or may return normally. 
 
 
 
-If a restart is invoked interactively but no *interactive-function* is used, then an argument list of <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is used. In that case, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> must be compatible with an empty argument list. 
+If the restart is invoked interactively from the debugger (using <DictionaryLink styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></DictionaryLink>), the arguments are defaulted by calling the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> which resulted from evaluating *interactive-function*. That <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> may optionally prompt interactively on *query I/O*, and should return a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of arguments to be used by <DictionaryLink styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></DictionaryLink> when invoking the restart. 
 
 
 
-If the restart is presented interactively (*e.g.*, by the debugger), the presentation is done by calling the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> which resulted from evaluating *report-function*. This <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> must be a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. It is expected to print a description of the action that the restart takes to that <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>. This <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called any time the restart is printed while <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+If a restart is invoked interactively but no *interactive-function* is used, then an argument list of <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is used. In that case, the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> must be compatible with an empty argument list. 
+
+
+
+If the restart is presented interactively (*e.g.*, by the debugger), the presentation is done by calling the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> which resulted from evaluating *report-function*. This <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> must be a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one argument, a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. It is expected to print a description of the action that the restart takes to that <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>. This <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is called any time the restart is printed while <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -114,7 +114,7 @@ In the case of interactive invocation, the result is dependent on the value of :
 
 
 
-<ClLinks styled={true} term={"value"}><i>Value</i></ClLinks> is evaluated in the current lexical environment and should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of no arguments which constructs a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of arguments to be used by <ClLinks styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></ClLinks> when invoking this restart. The <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> may prompt interactively using *query I/O* if necessary. 
+<GlossaryTerm styled={true} term={"value"}><i>Value</i></GlossaryTerm> is evaluated in the current lexical environment and should return a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of no arguments which constructs a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of arguments to be used by <DictionaryLink styled={true} term={"invoke-restart-interactively"}><b>invoke-restart-interactively</b></DictionaryLink> when invoking this restart. The <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> may prompt interactively using *query I/O* if necessary. 
 
 
 
@@ -122,7 +122,7 @@ In the case of interactive invocation, the result is dependent on the value of :
 
 
 
-<ClLinks styled={true} term={"value"}><i>Value</i></ClLinks> is evaluated in the current lexical environment and should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, a <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, which prints on the <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> a summary of the action that this restart takes. This <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> is called whenever the restart is reported (printed while <ClLinks styled={true} term={"print-escape"}><b>\*print-escape\*</b></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>). If no :report-function option is provided, the manner in which the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is reported is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"value"}><i>Value</i></GlossaryTerm> is evaluated in the current lexical environment and should return a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one argument, a <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, which prints on the <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> a summary of the action that this restart takes. This <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is called whenever the restart is reported (printed while <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>). If no :report-function option is provided, the manner in which the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is reported is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -130,7 +130,7 @@ In the case of interactive invocation, the result is dependent on the value of :
 
 
 
-<ClLinks styled={true} term={"value"}><i>Value</i></ClLinks> is evaluated in the current lexical environment and should return a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> of one argument, a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, which returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if the restart is to be considered visible. 
+<GlossaryTerm styled={true} term={"value"}><i>Value</i></GlossaryTerm> is evaluated in the current lexical environment and should return a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> of one argument, a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>, which returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if the restart is to be considered visible. 
 
 
 
@@ -158,7 +158,7 @@ In the case of interactive invocation, the result is dependent on the value of :
 
 
 
-<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>, <ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> 
+<DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>, <DictionaryLink styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink> 
 
 
 
@@ -166,7 +166,7 @@ In the case of interactive invocation, the result is dependent on the value of :
 
 
 
-<ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> is primarily intended to be used to implement <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> and might be useful in implementing other macros. Programmers who are uncertain about whether to use <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> or <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> should prefer <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> for the cases where it is powerful enough, using <ClLinks styled={true} term={"restart-bind"}><b>restart-bind</b></ClLinks> only in cases where its full generality is really needed. 
+<DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> is primarily intended to be used to implement <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> and might be useful in implementing other macros. Programmers who are uncertain about whether to use <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> or <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> should prefer <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> for the cases where it is powerful enough, using <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> only in cases where its full generality is really needed. 
 
 
 

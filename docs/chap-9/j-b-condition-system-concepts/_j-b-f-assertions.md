@@ -2,7 +2,7 @@
 
 
 
-Conditional signaling of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> based on such things as key match, form evaluation, and <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> are handled by assertion <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks>. Figure 9–7 shows <ClLinks styled={true} term={"operator"}><i>operators</i></ClLinks> relating to assertions. 
+Conditional signaling of <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> based on such things as key match, form evaluation, and <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> are handled by assertion <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm>. Figure 9–7 shows <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm> relating to assertions. 
 
 
 

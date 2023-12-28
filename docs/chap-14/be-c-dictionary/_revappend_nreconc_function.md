@@ -1,4 +1,4 @@
-**revappend, nreconc** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**revappend, nreconc** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"revappend"}><b>revappend</b></ClLinks> *list tail → result-list* 
+<DictionaryLink styled={true} term={"revappend"}><b>revappend</b></DictionaryLink> *list tail → result-list* 
 
 
 
-<ClLinks styled={true} term={"nreconc"}><b>nreconc</b></ClLinks> *list tail → result-list* 
+<DictionaryLink styled={true} term={"nreconc"}><b>nreconc</b></DictionaryLink> *list tail → result-list* 
 
 
 
@@ -18,15 +18,15 @@
 
 
 
-<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
+<GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*result-list*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+*result-list*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -34,15 +34,15 @@
 
 
 
-<ClLinks styled={true} term={"revappend"}><b>revappend</b></ClLinks> constructs a <ClLinks styled={true} term={"copy"}><i>copy</i></ClLinks><sub>2</sub> of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, but with the <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> in reverse order. It then appends (as if by <ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks>) the <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> to that reversed list and returns the result. 
+<DictionaryLink styled={true} term={"revappend"}><b>revappend</b></DictionaryLink> constructs a <GlossaryTerm styled={true} term={"copy"}><i>copy</i></GlossaryTerm><sub>2</sub> of <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, but with the <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> in reverse order. It then appends (as if by <DictionaryLink styled={true} term={"nconc"}><b>nconc</b></DictionaryLink>) the <GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm> to that reversed list and returns the result. 
 
 
 
-<ClLinks styled={true} term={"nreconc"}><b>nreconc</b></ClLinks> reverses the order of <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> in <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> (as if by <ClLinks styled={true} term={"nreverse"}><b>nreverse</b></ClLinks>). It then appends (as if by <ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks>) the <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> to that reversed list and returns the result. 
+<DictionaryLink styled={true} term={"nreconc"}><b>nreconc</b></DictionaryLink> reverses the order of <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> (as if by <DictionaryLink styled={true} term={"nreverse"}><b>nreverse</b></DictionaryLink>). It then appends (as if by <DictionaryLink styled={true} term={"nconc"}><b>nconc</b></DictionaryLink>) the <GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm> to that reversed list and returns the result. 
 
 
 
-The resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> shares <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> with <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>. 
+The resulting <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> shares <GlossaryTerm styled={true} term={"list structure"}><i>list structure</i></GlossaryTerm> with <GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm>. 
 
 
 
@@ -92,15 +92,15 @@ The resulting <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> shares 
 
 
 
-<ClLinks styled={true} term={"revappend"}><b>revappend</b></ClLinks> does not modify either of its <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>. <ClLinks styled={true} term={"nreconc"}><b>nreconc</b></ClLinks> is permitted to modify <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> but not <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>. 
+<DictionaryLink styled={true} term={"revappend"}><b>revappend</b></DictionaryLink> does not modify either of its <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>. <DictionaryLink styled={true} term={"nreconc"}><b>nreconc</b></DictionaryLink> is permitted to modify <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> but not <GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm>. 
 
 
 
-Although it might be implemented differently, <ClLinks styled={true} term={"nreconc"}><b>nreconc</b></ClLinks> is constrained to have side-effect behavior equivalent to: 
+Although it might be implemented differently, <DictionaryLink styled={true} term={"nreconc"}><b>nreconc</b></DictionaryLink> is constrained to have side-effect behavior equivalent to: 
 
 
 
-(nconc (nreverse <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>) 
+(nconc (nreverse <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>) <GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm>) 
 
 
 
@@ -108,7 +108,7 @@ Although it might be implemented differently, <ClLinks styled={true} term={"nrec
 
 
 
-<ClLinks styled={true} term={"reverse"}><b>reverse</b></ClLinks>, <ClLinks styled={true} term={"nreverse"}><b>nreverse</b></ClLinks>, <ClLinks styled={true} term={"nconc"}><b>nconc</b></ClLinks> 
+<DictionaryLink styled={true} term={"reverse"}><b>reverse</b></DictionaryLink>, <DictionaryLink styled={true} term={"nreverse"}><b>nreverse</b></DictionaryLink>, <DictionaryLink styled={true} term={"nconc"}><b>nconc</b></DictionaryLink> 
 
 
 
@@ -116,7 +116,7 @@ Although it might be implemented differently, <ClLinks styled={true} term={"nrec
 
 
 
-The following functional equivalences are true, although good <ClLinks styled={true} term={"implementation"}><i>implementations</i></ClLinks> will typically use a faster algorithm for achieving the same effect: 
+The following functional equivalences are true, although good <GlossaryTerm styled={true} term={"implementation"}><i>implementations</i></GlossaryTerm> will typically use a faster algorithm for achieving the same effect: 
 
 
 
@@ -132,11 +132,11 @@ The following functional equivalences are true, although good <ClLinks styled={t
 
 
 
-(revappend *list tail*) *≡* (nconc (reverse <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>) 
+(revappend *list tail*) *≡* (nconc (reverse <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>) <GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm>) 
 
 
 
-(nreconc *list tail*) *≡* (nconc (nreverse <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>) 
+(nreconc *list tail*) *≡* (nconc (nreverse <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>) <GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm>) 
 
 
 

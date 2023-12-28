@@ -2,23 +2,23 @@
 
 
 
-A <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a chain of *conses* in which the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of each <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, and the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of each <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is either the next link in the chain or a terminating <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is a chain of *conses* in which the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of each <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> is an <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, and the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> of each <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> is either the next link in the chain or a terminating <GlossaryTerm styled={true} term={"atom"}><i>atom</i></GlossaryTerm>. 
 
 
 
-A <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm> is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> terminated by the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>, but is not a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> terminated by the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. The <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>, but is not a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>. 
 
 
 
-An *improper list* is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>; that is, it is a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
+An *improper list* is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> that is not a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>; that is, it is a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
 
 
 
-A <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> is a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> that has a terminating <ClLinks styled={true} term={"atom"}><i>atom</i></ClLinks> that is not the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. A *non-nil atom* by itself is not considered to be a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of any kind—not even a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
+A <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> that has a terminating <GlossaryTerm styled={true} term={"atom"}><i>atom</i></GlossaryTerm> that is not the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. A *non-nil atom* by itself is not considered to be a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of any kind—not even a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. 
 
 
 
-A <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm> is a chain of *conses* that has no termination because some <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> in the chain is the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of a later <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
+A <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm> is a chain of *conses* that has no termination because some <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> in the chain is the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> of a later <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>. 
 
 
 

@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks>, <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"simple-condition"}><b>simple-condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks> represents <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> that are signaled by <ClLinks styled={true} term={"signal"}><b>signal</b></ClLinks> whenever a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm> is supplied as the function’s first argument. The <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm> are initialized with the initialization arguments named :format-control and :format-arguments to <ClLinks styled={true} term={"make-condition"}><b>make-condition</b></ClLinks>, and are *accessed* by the <ClLinks styled={true} term={"function"}><i>functions</i></ClLinks> **simple-condition-format-control** and **simple-condition-format-arguments**. If format arguments are not supplied to <ClLinks styled={true} term={"make-condition"}><b>make-condition</b></ClLinks>, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is used as a default. 
+The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"simple-condition"}><b>simple-condition</b></DictionaryLink> represents <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> that are signaled by <DictionaryLink styled={true} term={"signal"}><b>signal</b></DictionaryLink> whenever a <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm> is supplied as the function’s first argument. The <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm> are initialized with the initialization arguments named :format-control and :format-arguments to <DictionaryLink styled={true} term={"make-condition"}><b>make-condition</b></DictionaryLink>, and are *accessed* by the <GlossaryTerm styled={true} term={"function"}><i>functions</i></GlossaryTerm> **simple-condition-format-control** and **simple-condition-format-arguments**. If format arguments are not supplied to <DictionaryLink styled={true} term={"make-condition"}><b>make-condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is used as a default. 
 
 
 
@@ -58,7 +58,7 @@ The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={
 
 
 
-<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"simple-condition"}><b>simple-condition</b></DictionaryLink>. 
 
 
 
@@ -66,7 +66,7 @@ The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={
 
 
 
-*format-arguments*—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+*format-arguments*—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
@@ -74,11 +74,11 @@ The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={
 
 
 
-**simple-condition-format-control** returns the <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm> needed to process the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>’s <GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm>. 
+**simple-condition-format-control** returns the <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm> needed to process the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>’s <GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm>. 
 
 
 
-**simple-condition-format-arguments** returns a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> of <GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm> needed to process the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>’s <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>. 
+**simple-condition-format-arguments** returns a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"format argument"}><i>format arguments</i></GlossaryTerm> needed to process the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>’s <GlossaryTerm styled={true} term={"format control"}><i>format control</i></GlossaryTerm>. 
 
 
 
@@ -96,7 +96,7 @@ The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={
 
 
 
-<ClLinks styled={true} term={"simple-condition"}><b>simple-condition</b></ClLinks>, Section 9.1 (Condition System Concepts) 
+<DictionaryLink styled={true} term={"simple-condition"}><b>simple-condition</b></DictionaryLink>, Section 9.1 (Condition System Concepts) 
 
 
 

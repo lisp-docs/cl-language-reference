@@ -2,7 +2,7 @@
 
 
 
-If *arg* is not <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> to the integer 1, a lowercase s is printed; if *arg* is <ClLinks styled={true} term={"eql"}><b>eql</b></ClLinks> to 1, nothing is printed. If *arg* is a floating-point 1.0, the s is printed. 
+If *arg* is not <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> to the integer 1, a lowercase s is printed; if *arg* is <DictionaryLink styled={true} term={"eql"}><b>eql</b></DictionaryLink> to 1, nothing is printed. If *arg* is a floating-point 1.0, the s is printed. 
 
 
 

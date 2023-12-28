@@ -1,4 +1,4 @@
-**with-simple-restart** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**with-simple-restart** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> (*name format-control \{format-argument\}*\*) <ClLinks styled={true} term={"form"}><i>\{form\}</i></ClLinks>\* 
+<DictionaryLink styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink> (*name format-control \{format-argument\}*\*) <GlossaryTerm styled={true} term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-<ClLinks styled={true} term={"name"}><i>name</i></ClLinks>—a <ClLinks styled={true} term={"symbol"}><i>symbol</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 
@@ -26,15 +26,15 @@
 
 
 
-*format-argument*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> (*i.e.*, a <GlossaryTerm styled={true} term={"format argument"}><i>format argument</i></GlossaryTerm>). 
+*format-argument*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> (*i.e.*, a <GlossaryTerm styled={true} term={"format argument"}><i>format argument</i></GlossaryTerm>). 
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
-*results*—in the normal situation, the <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> returned by the <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>; in the exceptional situation where the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> named <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is invoked, two values—<ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> and <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. 
+*results*—in the normal situation, the <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> returned by the <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>; in the exceptional situation where the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> named <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is invoked, two values—<DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> and <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>. 
 
 
 
@@ -42,27 +42,23 @@
 
 
 
-<ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> establishes a restart. 
+<DictionaryLink styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink> establishes a restart. 
 
 
 
-If the restart designated by <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is not invoked while executing <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, all values returned by the last of <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> are returned. If the restart designated by <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is invoked, control is transferred to <ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks>, which returns two values, <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> and <ClLinks styled={true} term={"t"}><b>t</b></ClLinks>. 
+If the restart designated by <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is not invoked while executing <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>, all values returned by the last of <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are returned. If the restart designated by <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is invoked, control is transferred to <DictionaryLink styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink>, which returns two values, <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> and <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>. 
 
 
 
-If <ClLinks styled={true} term={"name"}><i>name</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, an anonymous restart is established. 
+If <GlossaryTerm styled={true} term={"name"}><i>name</i></GlossaryTerm> is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, an anonymous restart is established. 
 
 
 
-The *format-control* and *format-arguments* are used report the <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>. 
-
-
+The *format-control* and *format-arguments* are used report the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>. 
 
 
 
 
-
- 
 
 
 
@@ -70,7 +66,11 @@ The *format-control* and *format-arguments* are used report the <ClLinks styled=
 
 
 
-<ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink> 
 
 
 
@@ -117,7 +117,7 @@ COMPUTE-POWER-OF-2
 
 
 
-<ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks> 
+<DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink> 
 
 
 
@@ -125,7 +125,7 @@ COMPUTE-POWER-OF-2
 
 
 
-<ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> is shorthand for one of the most common uses of <ClLinks styled={true} term={"restart-case"}><b>restart-case</b></ClLinks>. 
+<DictionaryLink styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink> is shorthand for one of the most common uses of <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>. 
 
 
 
@@ -137,7 +137,7 @@ COMPUTE-POWER-OF-2
 
 
 
-<ClLinks styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></ClLinks> could be defined by: 
+<DictionaryLink styled={true} term={"with-simple-restart"}><b>with-simple-restart</b></DictionaryLink> could be defined by: 
 
 
 
@@ -173,11 +173,11 @@ COMPUTE-POWER-OF-2
 
 
 
-Because the second return value is <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> in the exceptional case, it is common (but not required) to arrange for the second return value in the normal case to be missing or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> so that the two situations can be distinguished. 
+Because the second return value is <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> in the exceptional case, it is common (but not required) to arrange for the second return value in the normal case to be missing or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> so that the two situations can be distinguished. 
 
 
 
-**abort** <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> 
+**abort** <GlossaryTerm styled={true} term={"restart"}><i>Restart</i></GlossaryTerm> 
 
 
 
@@ -205,7 +205,7 @@ The intent of the **abort** restart is to allow return to the innermost “comma
 
 
 
-Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, **abort** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>) 
+Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>, **abort** (<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>) 
 
 
 
@@ -221,7 +221,7 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks
 
 
 
-**continue** <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> 
+**continue** <GlossaryTerm styled={true} term={"restart"}><i>Restart</i></GlossaryTerm> 
 
 
 
@@ -237,7 +237,7 @@ None.
 
 
 
-The **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is generally part of protocols where there is a single “obvious” way to continue, such as in <ClLinks styled={true} term={"break"}><b>break</b></ClLinks> and <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>. Some user-defined protocols may also wish to incorporate it for similar reasons. In general, however, it is more reliable to design a special purpose restart with a name that more directly suits the particular application. 
+The **continue** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is generally part of protocols where there is a single “obvious” way to continue, such as in <DictionaryLink styled={true} term={"break"}><b>break</b></DictionaryLink> and <DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink>. Some user-defined protocols may also wish to incorporate it for similar reasons. In general, however, it is more reliable to design a special purpose restart with a name that more directly suits the particular application. 
 
 
 
@@ -257,11 +257,11 @@ The **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks
 
 
 
-Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, **continue** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>), <ClLinks styled={true} term={"assert"}><b>assert</b></ClLinks>, <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks> 
+Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>, **continue** (<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>), <DictionaryLink styled={true} term={"assert"}><b>assert</b></DictionaryLink>, <DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink> 
 
 
 
-**muffle-warning** <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> 
+**muffle-warning** <GlossaryTerm styled={true} term={"restart"}><i>Restart</i></GlossaryTerm> 
 
 
 
@@ -277,7 +277,7 @@ None.
 
 
 
-This <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is established by <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> so that <ClLinks styled={true} term={"handler"}><i>handlers</i></ClLinks> of <ClLinks styled={true} term={"warning"}><b>warning</b></ClLinks> <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> have a way to tell <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> that a warning has already been dealt with and that no further action is warranted. 
+This <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is established by <DictionaryLink styled={true} term={"warn"}><b>warn</b></DictionaryLink> so that <GlossaryTerm styled={true} term={"handler"}><i>handlers</i></GlossaryTerm> of <DictionaryLink styled={true} term={"warning"}><b>warning</b></DictionaryLink> <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> have a way to tell <DictionaryLink styled={true} term={"warn"}><b>warn</b></DictionaryLink> that a warning has already been dealt with and that no further action is warranted. 
 
 
 
@@ -319,11 +319,11 @@ This <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is establi
 
 
 
-Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, **muffle-warning** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>), <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> 
+Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>, **muffle-warning** (<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>), <DictionaryLink styled={true} term={"warn"}><b>warn</b></DictionaryLink> 
 
 
 
-**store-value** <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> 
+**store-value** <GlossaryTerm styled={true} term={"restart"}><i>Restart</i></GlossaryTerm> 
 
 
 
@@ -339,7 +339,7 @@ a value to use instead (on an ongoing basis).
 
 
 
-The **store-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is generally used by <ClLinks styled={true} term={"handler"}><i>handlers</i></ClLinks> trying to recover from errors of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> such as <ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks> or <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks>, which may wish to supply a replacement datum to be stored permanently. 
+The **store-value** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is generally used by <GlossaryTerm styled={true} term={"handler"}><i>handlers</i></GlossaryTerm> trying to recover from errors of <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> such as <DictionaryLink styled={true} term={"cell-error"}><b>cell-error</b></DictionaryLink> or <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink>, which may wish to supply a replacement datum to be stored permanently. 
 
 
 
@@ -364,11 +364,11 @@ x)) → 3.0
 
 
 
-Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, **store-value** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>), <ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks>, <ClLinks styled={true} term={"check-type"}><b>check-type</b></ClLinks>, <ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks>, **use-value** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks> and <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>) 
+Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>, **store-value** (<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>), <DictionaryLink styled={true} term={"ccase"}><b>ccase</b></DictionaryLink>, <DictionaryLink styled={true} term={"check-type"}><b>check-type</b></DictionaryLink>, <DictionaryLink styled={true} term={"ctypecase"}><b>ctypecase</b></DictionaryLink>, **use-value** (<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>) 
 
 
 
-**use-value** <ClLinks styled={true} term={"restart"}><i>Restart</i></ClLinks> 
+**use-value** <GlossaryTerm styled={true} term={"restart"}><i>Restart</i></GlossaryTerm> 
 
 
 
@@ -384,7 +384,7 @@ a value to use instead (once).
 
 
 
-The **use-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is generally used by <ClLinks styled={true} term={"handler"}><i>handlers</i></ClLinks> trying to recover from errors of <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> such as <ClLinks styled={true} term={"cell-error"}><b>cell-error</b></ClLinks>, where the handler may wish to supply a replacement datum for one-time use. 
+The **use-value** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is generally used by <GlossaryTerm styled={true} term={"handler"}><i>handlers</i></GlossaryTerm> trying to recover from errors of <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> such as <DictionaryLink styled={true} term={"cell-error"}><b>cell-error</b></DictionaryLink>, where the handler may wish to supply a replacement datum for one-time use. 
 
 
 
@@ -392,7 +392,7 @@ The **use-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLink
 
 
 
-Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, **use-value** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks>), **store-value** (<ClLinks styled={true} term={"function"}><i>function</i></ClLinks> and <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>) 
+Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>, **use-value** (<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm>), **store-value** (<GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>) 
 
 
 
@@ -408,7 +408,7 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks
 
 
 
-**continue** &amp;optional *condition →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+**continue** &amp;optional *condition →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -416,11 +416,11 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks
 
 
 
-**store-value** <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> &amp;optional *condition →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+**store-value** <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> &amp;optional *condition →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
-**use-value** <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> &amp;optional *condition →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+**use-value** <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> &amp;optional *condition →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -444,11 +444,11 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks
 
 
 
-<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>—a *condition object*, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+<GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>—a *condition object*, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -456,15 +456,15 @@ Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks
 
 
 
-Transfers control to the most recently established <GlossaryTerm styled={true} term={"applicable restart"}><i>applicable restart</i></GlossaryTerm> having the same name as the function. That is, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **abort** searches for an <ClLinks styled={true} term={"applicable"}><i>applicable</i></ClLinks> **abort** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **continue** searches for an <ClLinks styled={true} term={"applicable"}><i>applicable</i></ClLinks> **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>, and so on. 
+Transfers control to the most recently established <GlossaryTerm styled={true} term={"applicable restart"}><i>applicable restart</i></GlossaryTerm> having the same name as the function. That is, the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> **abort** searches for an <GlossaryTerm styled={true} term={"applicable"}><i>applicable</i></GlossaryTerm> **abort** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> **continue** searches for an <GlossaryTerm styled={true} term={"applicable"}><i>applicable</i></GlossaryTerm> **continue** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>, and so on. 
 
 
 
-If no such <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> exists, the functions **continue**, **store-value**, and **use-value** return <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, and the functions **abort** and **muffle-warning** signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"control-error"}><b>control-error</b></ClLinks>. 
+If no such <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> exists, the functions **continue**, **store-value**, and **use-value** return <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, and the functions **abort** and **muffle-warning** signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"control-error"}><b>control-error</b></DictionaryLink>. 
 
 
 
-When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <ClLinks styled={true} term={"non-nil"}><i>non-nil</i></ClLinks>, only those <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are considered that are either explicitly associated with that <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, or not associated with any <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>; that is, the excluded <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are those that are associated with a non-empty set of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks> of which the given <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks>. If <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>, all <ClLinks styled={true} term={"restart"}><i>restarts</i></ClLinks> are considered. 
+When <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"non-nil"}><i>non-nil</i></GlossaryTerm>, only those <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> are considered that are either explicitly associated with that <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>, or not associated with any <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>; that is, the excluded <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> are those that are associated with a non-empty set of <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm> of which the given <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is not an <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm>. If <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, all <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm> are considered. 
 
 
 
@@ -576,7 +576,7 @@ When <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is <Cl
 
 
 
-A transfer of control may occur if an appropriate <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is available, or (in the case of the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **abort** or the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **muffle-warning**) execution may be stopped. 
+A transfer of control may occur if an appropriate <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is available, or (in the case of the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> **abort** or the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> **muffle-warning**) execution may be stopped. 
 
 
 
@@ -584,7 +584,7 @@ A transfer of control may occur if an appropriate <ClLinks styled={true} term={"
 
 
 
-Each of these functions can be affected by the presence of a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> having the same name. 
+Each of these functions can be affected by the presence of a <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> having the same name. 
 
 
 
@@ -604,7 +604,7 @@ Each of these functions can be affected by the presence of a <ClLinks styled={tr
 
 
 
-If an appropriate **abort** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is not available for the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **abort**, or an appropriate **muffle-warning** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> is not available for the <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> **muffle-warning**, an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"control-error"}><b>control-error</b></ClLinks> is signaled. 
+If an appropriate **abort** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is not available for the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> **abort**, or an appropriate **muffle-warning** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> is not available for the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> **muffle-warning**, an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"control-error"}><b>control-error</b></DictionaryLink> is signaled. 
 
 
 
@@ -612,7 +612,7 @@ If an appropriate **abort** <ClLinks styled={true} term={"restart"}><i>restart</
 
 
 
-<ClLinks styled={true} term={"invoke-restart"}><b>invoke-restart</b></ClLinks>, Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <ClLinks styled={true} term={"assert"}><b>assert</b></ClLinks>, <ClLinks styled={true} term={"ccase"}><b>ccase</b></ClLinks>, <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>, <ClLinks styled={true} term={"check-type"}><b>check-type</b></ClLinks>, <ClLinks styled={true} term={"ctypecase"}><b>ctypecase</b></ClLinks>, **use-value**, <ClLinks styled={true} term={"warn"}><b>warn</b></ClLinks> 
+<DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>, Section 9.1.4.2 (Restarts), Section 9.1.4.2.2 (Interfaces to Restarts), <DictionaryLink styled={true} term={"assert"}><b>assert</b></DictionaryLink>, <DictionaryLink styled={true} term={"ccase"}><b>ccase</b></DictionaryLink>, <DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink>, <DictionaryLink styled={true} term={"check-type"}><b>check-type</b></DictionaryLink>, <DictionaryLink styled={true} term={"ctypecase"}><b>ctypecase</b></DictionaryLink>, **use-value**, <DictionaryLink styled={true} term={"warn"}><b>warn</b></DictionaryLink> 
 
 
 
@@ -632,5 +632,5 @@ If an appropriate **abort** <ClLinks styled={true} term={"restart"}><i>restart</
 
 
 
-No functions defined in this specification are required to provide a **use-value** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>. 
+No functions defined in this specification are required to provide a **use-value** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>. 
 

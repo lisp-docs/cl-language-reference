@@ -1,4 +1,4 @@
-**get-properties** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**get-properties** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"get-properties"}><b>get-properties</b></ClLinks> *plist indicator-list → indicator, value, tail* 
+<DictionaryLink styled={true} term={"get-properties"}><b>get-properties</b></DictionaryLink> *plist indicator-list → indicator, value, tail* 
 
 
 
@@ -26,23 +26,23 @@
 
 
 
-<ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks>—a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
+<GlossaryTerm styled={true} term={"plist"}><i>plist</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm>. 
 
 
 
-*indicator-list*—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm> (of <ClLinks styled={true} term={"indicator"}><i>indicators</i></ClLinks>). 
+*indicator-list*—a <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm> (of <GlossaryTerm styled={true} term={"indicator"}><i>indicators</i></GlossaryTerm>). 
 
 
 
-<ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> that is an <ClLinks styled={true} term={"element"}><i>element</i></ClLinks> of *indicator-list*. 
+<GlossaryTerm styled={true} term={"indicator"}><i>indicator</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> that is an <GlossaryTerm styled={true} term={"element"}><i>element</i></GlossaryTerm> of *indicator-list*. 
 
 
 
-<ClLinks styled={true} term={"value"}><i>value</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-<ClLinks styled={true} term={"get-properties"}><b>get-properties</b></ClLinks> is used to look up any of several <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> entries all at once. 
+<DictionaryLink styled={true} term={"get-properties"}><b>get-properties</b></DictionaryLink> is used to look up any of several <GlossaryTerm styled={true} term={"property list"}><i>property list</i></GlossaryTerm> entries all at once. 
 
 
 
-It searches the <ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks> for the first entry whose <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks> is <ClLinks styled={true} term={"identical"}><i>identical</i></ClLinks> to one of the <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> in *indicator-list*. If such an entry is found, the <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks> and <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> returned are the <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> and its associated <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm>, and the <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> returned is the <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> of the <ClLinks styled={true} term={"plist"}><i>plist</i></ClLinks> that begins with the found entry (*i.e.*, whose <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> is the <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>). If no such entry is found, the <ClLinks styled={true} term={"indicator"}><i>indicator</i></ClLinks>, <ClLinks styled={true} term={"value"}><i>value</i></ClLinks>, and <ClLinks styled={true} term={"tail"}><i>tail</i></ClLinks> are all <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+It searches the <GlossaryTerm styled={true} term={"plist"}><i>plist</i></GlossaryTerm> for the first entry whose <GlossaryTerm styled={true} term={"indicator"}><i>indicator</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"identical"}><i>identical</i></GlossaryTerm> to one of the <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> in *indicator-list*. If such an entry is found, the <GlossaryTerm styled={true} term={"indicator"}><i>indicator</i></GlossaryTerm> and <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> returned are the <GlossaryTerm styled={true} term={"property indicator"}><i>property indicator</i></GlossaryTerm> and its associated <GlossaryTerm styled={true} term={"property value"}><i>property value</i></GlossaryTerm>, and the <GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm> returned is the <GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"plist"}><i>plist</i></GlossaryTerm> that begins with the found entry (*i.e.*, whose <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> is the <GlossaryTerm styled={true} term={"indicator"}><i>indicator</i></GlossaryTerm>). If no such entry is found, the <GlossaryTerm styled={true} term={"indicator"}><i>indicator</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm>, and <GlossaryTerm styled={true} term={"tail"}><i>tail</i></GlossaryTerm> are all <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -72,7 +72,7 @@ x → (PROP1 VAL1)
 
 
 
-<ClLinks styled={true} term={"get"}><b>get</b></ClLinks>, <ClLinks styled={true} term={"getf"}><b>getf</b></ClLinks> 
+<DictionaryLink styled={true} term={"get"}><b>get</b></DictionaryLink>, <DictionaryLink styled={true} term={"getf"}><b>getf</b></DictionaryLink> 
 
 
 

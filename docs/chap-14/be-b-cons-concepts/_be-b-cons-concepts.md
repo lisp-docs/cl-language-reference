@@ -2,7 +2,7 @@
 
 
 
-A <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is a compound data <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> having two components called the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> and the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> . 
+A <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> is a compound data <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> having two components called the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> and the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> . 
 
 
 

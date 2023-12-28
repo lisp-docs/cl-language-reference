@@ -2,19 +2,19 @@
 
 
 
-<ClLinks styled={true} term={"character"}><i>Characters</i></ClLinks> that are classified as <ClLinks styled={true} term={"graphic"}><i>graphic</i></ClLinks>, or displayable, are each associated with a glyph, a visual representation of the <ClLinks styled={true} term={"character"}><i>character</i></ClLinks> . 
+<GlossaryTerm styled={true} term={"character"}><i>Characters</i></GlossaryTerm> that are classified as <GlossaryTerm styled={true} term={"graphic"}><i>graphic</i></GlossaryTerm>, or displayable, are each associated with a glyph, a visual representation of the <GlossaryTerm styled={true} term={"character"}><i>character</i></GlossaryTerm> . 
 
 
 
-A *graphic character* is one that has a standard textual representation as a single <ClLinks styled={true} term={"glyph"}><i>glyph</i></ClLinks>, such as A or \* or =. <ClLinks styled={true} term={"space"}><i>Space</i></ClLinks>, which effectively has a blank <ClLinks styled={true} term={"glyph"}><i>glyph</i></ClLinks>, is defined to be a <ClLinks styled={true} term={"graphic"}><i>graphic</i></ClLinks>. 
+A *graphic character* is one that has a standard textual representation as a single <GlossaryTerm styled={true} term={"glyph"}><i>glyph</i></GlossaryTerm>, such as A or \* or =. <GlossaryTerm styled={true} term={"space"}><i>Space</i></GlossaryTerm>, which effectively has a blank <GlossaryTerm styled={true} term={"glyph"}><i>glyph</i></GlossaryTerm>, is defined to be a <GlossaryTerm styled={true} term={"graphic"}><i>graphic</i></GlossaryTerm>. 
 
 
 
-Of the <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"newline"}><i>newline</i></GlossaryTerm> is <ClLinks styled={true} term={"non-graphic"}><i>non-graphic</i></ClLinks> and all others are <ClLinks styled={true} term={"graphic"}><i>graphic</i></ClLinks>; see Section 2.1.3 (Standard Characters). 
+Of the <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"newline"}><i>newline</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"non-graphic"}><i>non-graphic</i></GlossaryTerm> and all others are <GlossaryTerm styled={true} term={"graphic"}><i>graphic</i></GlossaryTerm>; see Section 2.1.3 (Standard Characters). 
 
 
 
-<ClLinks styled={true} term={"character"}><i>Characters</i></ClLinks> that are not <ClLinks styled={true} term={"graphic"}><i>graphic</i></ClLinks> are called <ClLinks styled={true} term={"non-graphic"}><i>non-graphic</i></ClLinks>. *Non-graphic characters* are sometimes informally called “formatting characters” or “control characters.” 
+<GlossaryTerm styled={true} term={"character"}><i>Characters</i></GlossaryTerm> that are not <GlossaryTerm styled={true} term={"graphic"}><i>graphic</i></GlossaryTerm> are called <GlossaryTerm styled={true} term={"non-graphic"}><i>non-graphic</i></GlossaryTerm>. *Non-graphic characters* are sometimes informally called “formatting characters” or “control characters.” 
 
 
 

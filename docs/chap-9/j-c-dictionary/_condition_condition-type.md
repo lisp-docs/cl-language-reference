@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,35 +14,35 @@
 
 
 
-All types of <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks>, whether error or non-error, must inherit from this <ClLinks styled={true} term={"type"}><i>type</i></ClLinks>. 
+All types of <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm>, whether error or non-error, must inherit from this <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. 
 
 
 
-No additional <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> relationships among the specified <ClLinks styled={true} term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks> are allowed, except when explicitly mentioned in the text; however implementations are permitted to introduce additional <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> and one of these <ClLinks styled={true} term={"type"}><i>types</i></ClLinks> can be a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of any number of the <ClLinks styled={true} term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"condition"}><b>condition</b></ClLinks>. 
+No additional <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> relationships among the specified <GlossaryTerm styled={true} term={"subtype"}><i>subtypes</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink> are allowed, except when explicitly mentioned in the text; however implementations are permitted to introduce additional <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> and one of these <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm> can be a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of any number of the <GlossaryTerm styled={true} term={"subtype"}><i>subtypes</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"condition"}><b>condition</b></DictionaryLink>. 
 
 
 
-Whether a user-defined *condition type* has <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> that are accessible by *with-slots* is *implementation dependent*. Furthermore, even in an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> in which user-defined *condition types* would have <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks>, it is <ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks> whether any *condition types* defined in this document have such <ClLinks styled={true} term={"slot"}><i>slots</i></ClLinks> or, if they do, what their <ClLinks styled={true} term={"name"}><i>names</i></ClLinks> might be; only the reader functions documented by this specification may be relied upon by portable code. 
+Whether a user-defined *condition type* has <GlossaryTerm styled={true} term={"slot"}><i>slots</i></GlossaryTerm> that are accessible by *with-slots* is *implementation dependent*. Furthermore, even in an <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> in which user-defined *condition types* would have <GlossaryTerm styled={true} term={"slot"}><i>slots</i></GlossaryTerm>, it is <GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> whether any *condition types* defined in this document have such <GlossaryTerm styled={true} term={"slot"}><i>slots</i></GlossaryTerm> or, if they do, what their <GlossaryTerm styled={true} term={"name"}><i>names</i></GlossaryTerm> might be; only the reader functions documented by this specification may be relied upon by portable code. 
 
 
 
-<GlossaryTerm styled={true} term={"conforming code"}><i>Conforming code</i></GlossaryTerm> must observe the following restrictions related to <ClLinks styled={true} term={"condition"}><i>conditions</i></ClLinks>: 
+<GlossaryTerm styled={true} term={"conforming code"}><i>Conforming code</i></GlossaryTerm> must observe the following restrictions related to <GlossaryTerm styled={true} term={"condition"}><i>conditions</i></GlossaryTerm>: 
 
 
 
-*•* <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks>, not <ClLinks styled={true} term={"defclass"}><b>defclass</b></ClLinks>, must be used to define new *condition types*. 
+*•* <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink>, not <DictionaryLink styled={true} term={"defclass"}><b>defclass</b></DictionaryLink>, must be used to define new *condition types*. 
 
 
 
-*•* <ClLinks styled={true} term={"make-condition"}><b>make-condition</b></ClLinks>, not <ClLinks styled={true} term={"make-instance"}><b>make-instance</b></ClLinks>, must be used to create *condition objects* explicitly. 
+*•* <DictionaryLink styled={true} term={"make-condition"}><b>make-condition</b></DictionaryLink>, not <DictionaryLink styled={true} term={"make-instance"}><b>make-instance</b></DictionaryLink>, must be used to create *condition objects* explicitly. 
 
 
 
-*•* The :report option of <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks>, not <ClLinks styled={true} term={"defmethod"}><b>defmethod</b></ClLinks> for <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks>, must be used to define a condition reporter. 
+*•* The :report option of <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink>, not <DictionaryLink styled={true} term={"defmethod"}><b>defmethod</b></DictionaryLink> for <DictionaryLink styled={true} term={"print-object"}><b>print-object</b></DictionaryLink>, must be used to define a condition reporter. 
 
 
 
-*•* <ClLinks styled={true} term={"slot-value"}><b>slot-value</b></ClLinks>, <ClLinks styled={true} term={"slot-boundp"}><b>slot-boundp</b></ClLinks>, <ClLinks styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></ClLinks>, and <ClLinks styled={true} term={"with-slots"}><b>with-slots</b></ClLinks> must not be used on *condition objects*. Instead, the appropriate accessor functions (defined by <ClLinks styled={true} term={"define-condition"}><b>define-condition</b></ClLinks>) should be used. 
+*•* <DictionaryLink styled={true} term={"slot-value"}><b>slot-value</b></DictionaryLink>, <DictionaryLink styled={true} term={"slot-boundp"}><b>slot-boundp</b></DictionaryLink>, <DictionaryLink styled={true} term={"slot-makunbound"}><b>slot-makunbound</b></DictionaryLink>, and <DictionaryLink styled={true} term={"with-slots"}><b>with-slots</b></DictionaryLink> must not be used on *condition objects*. Instead, the appropriate accessor functions (defined by <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink>) should be used. 
 
 
 

@@ -1,4 +1,4 @@
-**+, ++, +++** <ClLinks styled={true} term={"variable"}><i>Variable</i></ClLinks> 
+**+, ++, +++** <GlossaryTerm styled={true} term={"variable"}><i>Variable</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -14,7 +14,7 @@ an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>.
 
 
 
-<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -22,11 +22,11 @@ an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>.
 
 
 
-The <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks> <ClLinks styled={true} term={"+"}><b>+</b></ClLinks>, <ClLinks styled={true} term={"++"}><b>++</b></ClLinks>, and <ClLinks styled={true} term={"+++"}><b>+++</b></ClLinks> are maintained by the *Lisp read-eval-print loop* to save <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> that were recently *evaluated*. 
+The <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm> <ClLinks styled={true} term={"+"}><b>+</b></ClLinks>, <ClLinks styled={true} term={"++"}><b>++</b></ClLinks>, and <ClLinks styled={true} term={"+++"}><b>+++</b></ClLinks> are maintained by the *Lisp read-eval-print loop* to save <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> that were recently *evaluated*. 
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"+"}><b>+</b></ClLinks> is the last <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> that was *evaluated*, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"++"}><b>++</b></ClLinks> is the previous value of <ClLinks styled={true} term={"+"}><b>+</b></ClLinks>, and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"+++"}><b>+++</b></ClLinks> is the previous value of <ClLinks styled={true} term={"++"}><b>++</b></ClLinks>. 
+The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <ClLinks styled={true} term={"+"}><b>+</b></ClLinks> is the last <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> that was *evaluated*, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <ClLinks styled={true} term={"++"}><b>++</b></ClLinks> is the previous value of <ClLinks styled={true} term={"+"}><b>+</b></ClLinks>, and the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <ClLinks styled={true} term={"+++"}><b>+++</b></ClLinks> is the previous value of <ClLinks styled={true} term={"++"}><b>++</b></ClLinks>. 
 
 
 
@@ -57,7 +57,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-<ClLinks styled={true} term={"-"}><b>-</b></ClLinks> (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), **\*** (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), <ClLinks styled={true} term={"/"}><b>/</b></ClLinks> (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), Section 25.1.1 (Top level loop) 
+<DictionaryLink styled={true} term={"-"}><b>-</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), **\*** (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <ClLinks styled={true} term={"/"}><b>/</b></ClLinks> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
 
 
 
@@ -69,7 +69,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks sty
 
 
 
-an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -77,7 +77,7 @@ an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>.
 
 
 
-<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -85,19 +85,19 @@ an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>.
 
 
 
-The <ClLinks styled={true} term={"variable"}><i>variables</i></ClLinks> **\***, **\*\***, and **\*\*\*** are maintained by the *Lisp read-eval-print loop* to save the values of results that are printed each time through the loop. 
+The <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm> **\***, **\*\***, and **\*\*\*** are maintained by the *Lisp read-eval-print loop* to save the values of results that are printed each time through the loop. 
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*** is the most recent <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> that was printed, the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*\*** is the previous value of **\***, and the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*\*\*** is the previous value of **\*\***. 
+The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of **\*** is the most recent <GlossaryTerm styled={true} term={"primary value"}><i>primary value</i></GlossaryTerm> that was printed, the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of **\*\*** is the previous value of **\***, and the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of **\*\*\*** is the previous value of **\*\***. 
 
 
 
-If several values are produced, **\*** contains the first value only; **\*** contains <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> if zero values are produced. 
+If several values are produced, **\*** contains the first value only; **\*** contains <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> if zero values are produced. 
 
 
 
-The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of **\***, **\*\***, and **\*\*\*** are updated immediately prior to printing the <GlossaryTerm styled={true} term={"return value"}><i>return value</i></GlossaryTerm> of a top-level <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> by the *Lisp read-eval-print loop*. If the <ClLinks styled={true} term={"evaluation"}><i>evaluation</i></ClLinks> of such a <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> is aborted prior to its normal return, the values of **\***, **\*\***, and **\*\*\*** are not updated. 
+The <GlossaryTerm styled={true} term={"value"}><i>values</i></GlossaryTerm> of **\***, **\*\***, and **\*\*\*** are updated immediately prior to printing the <GlossaryTerm styled={true} term={"return value"}><i>return value</i></GlossaryTerm> of a top-level <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> by the *Lisp read-eval-print loop*. If the <GlossaryTerm styled={true} term={"evaluation"}><i>evaluation</i></GlossaryTerm> of such a <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> is aborted prior to its normal return, the values of **\***, **\*\***, and **\*\*\*** are not updated. 
 
 
 
@@ -136,7 +136,7 @@ The <ClLinks styled={true} term={"value"}><i>values</i></ClLinks> of **\***, **\
 
 
 
-<ClLinks styled={true} term={"-"}><b>-</b></ClLinks> (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), <ClLinks styled={true} term={"+"}><b>+</b></ClLinks> (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), <ClLinks styled={true} term={"/"}><b>/</b></ClLinks> (<ClLinks styled={true} term={"variable"}><i>variable</i></ClLinks>), Section 25.1.1 (Top level loop) 
+<DictionaryLink styled={true} term={"-"}><b>-</b></DictionaryLink> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <ClLinks styled={true} term={"+"}><b>+</b></ClLinks> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), <ClLinks styled={true} term={"/"}><b>/</b></ClLinks> (<GlossaryTerm styled={true} term={"variable"}><i>variable</i></GlossaryTerm>), Section 25.1.1 (Top level loop) 
 
 
 

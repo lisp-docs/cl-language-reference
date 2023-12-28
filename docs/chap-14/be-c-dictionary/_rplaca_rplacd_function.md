@@ -1,4 +1,4 @@
-**rplaca, rplacd** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**rplaca, rplacd** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,11 +6,11 @@
 
 
 
-<ClLinks styled={true} term={"rplaca"}><b>rplaca</b></ClLinks> *cons object → cons* 
+<DictionaryLink styled={true} term={"rplaca"}><b>rplaca</b></DictionaryLink> *cons object → cons* 
 
 
 
-<ClLinks styled={true} term={"rplacd"}><b>rplacd</b></ClLinks> *cons object → cons* 
+<DictionaryLink styled={true} term={"rplacd"}><b>rplacd</b></DictionaryLink> *cons object → cons* 
 
 
 
@@ -18,11 +18,11 @@
 
 
 
-<ClLinks styled={true} term={"rplaca"}><b>rplaca</b></ClLinks>: [ **r—e plak***  ] or [ **r***  **plak***  ] 
+<DictionaryLink styled={true} term={"rplaca"}><b>rplaca</b></DictionaryLink>: [ **r—e plak***  ] or [ **r***  **plak***  ] 
 
 
 
-<ClLinks styled={true} term={"rplacd"}><b>rplacd</b></ClLinks>: [ **r—e plakd***  ] or [ **r***  **plakd***  ] or [ **r—e plakd—e** ] or [ **r***  **plakd—e** ] 
+<DictionaryLink styled={true} term={"rplacd"}><b>rplacd</b></DictionaryLink>: [ **r—e plakd***  ] or [ **r***  **plakd***  ] or [ **r—e plakd—e** ] or [ **r***  **plakd—e** ] 
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-<ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>—a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -42,11 +42,11 @@
 
 
 
-<ClLinks styled={true} term={"rplaca"}><b>rplaca</b></ClLinks> replaces the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> with <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink styled={true} term={"rplaca"}><b>rplaca</b></DictionaryLink> replaces the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> with <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-<ClLinks styled={true} term={"rplacd"}><b>rplacd</b></ClLinks> replaces the <ClLinks styled={true} term={"cdr"}><i>cdr</i></ClLinks> of the <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> with <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<DictionaryLink styled={true} term={"rplacd"}><b>rplacd</b></DictionaryLink> replaces the <GlossaryTerm styled={true} term={"cdr"}><i>cdr</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> with <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -63,11 +63,11 @@
 
 
 
-The <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is modified. 
+The <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> is modified. 
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks> is not a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>. 
 
 
 

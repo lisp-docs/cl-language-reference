@@ -1,4 +1,4 @@
-**nth** <ClLinks styled={true} term={"accessor"}><i>Accessor</i></ClLinks> 
+**nth** <GlossaryTerm styled={true} term={"accessor"}><i>Accessor</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"nth"}><b>nth</b></ClLinks> *n list → object* 
+<DictionaryLink styled={true} term={"nth"}><b>nth</b></DictionaryLink> *n list → object* 
 
 
 
@@ -23,15 +23,15 @@
 
 
 
-<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a *dotted list* or a *circular list*. 
+<GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, which might be a *dotted list* or a *circular list*. 
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
-*new-object*—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>. 
+*new-object*—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>. 
 
 
 
@@ -39,11 +39,11 @@
 
 
 
-<ClLinks styled={true} term={"nth"}><b>nth</b></ClLinks> locates the *n*th element of <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, where the <ClLinks styled={true} term={"car"}><i>car</i></ClLinks> of the <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is the “zeroth” element. Specifically, (nth *n list<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (car (nthcdr *n list*)) 
+<DictionaryLink styled={true} term={"nth"}><b>nth</b></DictionaryLink> locates the *n*th element of <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, where the <GlossaryTerm styled={true} term={"car"}><i>car</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is the “zeroth” element. Specifically, (nth *n list<ClLinks styled={true} term={"t"}><i>) </i></ClLinks>≡* (car (nthcdr *n list*)) 
 
 
 
-<ClLinks styled={true} term={"nth"}><b>nth</b></ClLinks> may be used to specify a <ClLinks styled={true} term={"place"}><i>place</i></ClLinks> to <ClLinks styled={true} term={"setf"}><b>setf</b></ClLinks>. Specifically, 
+<DictionaryLink styled={true} term={"nth"}><b>nth</b></DictionaryLink> may be used to specify a <GlossaryTerm styled={true} term={"place"}><i>place</i></GlossaryTerm> to <DictionaryLink styled={true} term={"setf"}><b>setf</b></DictionaryLink>. Specifically, 
 
 
 
@@ -64,7 +64,7 @@
 
 
 
-<ClLinks styled={true} term={"elt"}><b>elt</b></ClLinks>, <ClLinks styled={true} term={"first"}><b>first</b></ClLinks>, <ClLinks styled={true} term={"nthcdr"}><b>nthcdr</b></ClLinks> 
+<DictionaryLink styled={true} term={"elt"}><b>elt</b></DictionaryLink>, <DictionaryLink styled={true} term={"first"}><b>first</b></DictionaryLink>, <DictionaryLink styled={true} term={"nthcdr"}><b>nthcdr</b></DictionaryLink> 
 
 
 

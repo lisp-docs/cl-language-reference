@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"compile-verbose"}><b>*compile-verbose*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"compile-verbose"}><b>*compile-verbose*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-<ClLinks styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 
@@ -22,7 +22,7 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*compile-print\*** is the default value of the :print <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>. The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"compile-verbose"}><b>\*compile-verbose\*</b></ClLinks> is the default value of the :verbose <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to <ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks>. 
+The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of **\*compile-print\*** is the default value of the :print <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> to <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink>. The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"compile-verbose"}><b>\*compile-verbose\*</b></DictionaryLink> is the default value of the :verbose <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> to <DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink>. 
 
 
 
@@ -30,7 +30,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*compile-
 
 
 
-<ClLinks styled={true} term={"compile-file"}><b>compile-file</b></ClLinks> 
+<DictionaryLink styled={true} term={"compile-file"}><b>compile-file</b></DictionaryLink> 
 
 
 

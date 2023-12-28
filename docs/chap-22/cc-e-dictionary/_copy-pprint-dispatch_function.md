@@ -1,4 +1,4 @@
-**copy-pprint-dispatch** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**copy-pprint-dispatch** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"copy-pprint-dispatch"}><b>copy-pprint-dispatch</b></ClLinks> &amp;optional *table → new-table* 
+<DictionaryLink styled={true} term={"copy-pprint-dispatch"}><b>copy-pprint-dispatch</b></DictionaryLink> &amp;optional *table → new-table* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-*table*—a <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm>, or <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks>. 
+*table*—a <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm>, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Creates and returns a copy of the specified *table*, or of the <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks> if no *table* is specified, or of the initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></ClLinks> if <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> is specified. 
+Creates and returns a copy of the specified *table*, or of the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></DictionaryLink> if no *table* is specified, or of the initial <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"print-pprint-dispatch"}><b>\*print-pprint-dispatch\*</b></DictionaryLink> if <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is specified. 
 
 
 
@@ -34,7 +34,7 @@ Creates and returns a copy of the specified *table*, or of the <ClLinks styled={
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if *table* is not a <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm>. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if *table* is not a <GlossaryTerm styled={true} term={"pprint dispatch table"}><i>pprint dispatch table</i></GlossaryTerm>. 
 
 
 

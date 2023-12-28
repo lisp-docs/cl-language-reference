@@ -2,7 +2,7 @@
 
 
 
-Use of #+ and #- does not automatically disqualify a program from being conforming. A program which uses #+ and #- is considered conforming if there is no set of <ClLinks styled={true} term={"feature"}><i>features</i></ClLinks> in which the program would not be conforming. Of course, <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> are not necessarily working programs. The following program is conforming: 
+Use of #+ and #- does not automatically disqualify a program from being conforming. A program which uses #+ and #- is considered conforming if there is no set of <GlossaryTerm styled={true} term={"feature"}><i>features</i></GlossaryTerm> in which the program would not be conforming. Of course, <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> are not necessarily working programs. The following program is conforming: 
 
 
 
@@ -18,7 +18,7 @@ Use of #+ and #- does not automatically disqualify a program from being conformi
 
 
 
-However, this program might or might not work, depending on whether the presence of the feature ACME really implies that a function named acme:initialize-something is present in the environment. In effect, using #+ or #- in a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> means that the variable <ClLinks styled={true} term={"features"}><b>\*features\*</b></ClLinks> becomes just one more piece of input data to that program. Like any other data coming into a program, the 
+However, this program might or might not work, depending on whether the presence of the feature ACME really implies that a function named acme:initialize-something is present in the environment. In effect, using #+ or #- in a <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> means that the variable <DictionaryLink styled={true} term={"features"}><b>\*features\*</b></DictionaryLink> becomes just one more piece of input data to that program. Like any other data coming into a program, the 
 
 
 

@@ -6,7 +6,7 @@ This information is used by dictionary entries such as “Declarations” in ord
 
 
 
-A given “Declaration” might appear in a <ClLinks styled={true} term={"declaration"}><i>declaration</i></ClLinks> (*i.e.*, a <ClLinks styled={true} term={"declare"}><b>declare</b></ClLinks> <ClLinks styled={true} term={"expression"}><i>expression</i></ClLinks>), a <ClLinks styled={true} term={"proclamation"}><i>proclamation</i></ClLinks> (*i.e.*, a <ClLinks styled={true} term={"declaim"}><b>declaim</b></ClLinks> or <ClLinks styled={true} term={"proclaim"}><b>proclaim</b></ClLinks> <ClLinks styled={true} term={"form"}><i>form</i></ClLinks>), or both. 
+A given “Declaration” might appear in a <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> (*i.e.*, a <DictionaryLink styled={true} term={"declare"}><b>declare</b></DictionaryLink> <GlossaryTerm styled={true} term={"expression"}><i>expression</i></GlossaryTerm>), a <GlossaryTerm styled={true} term={"proclamation"}><i>proclamation</i></GlossaryTerm> (*i.e.*, a <DictionaryLink styled={true} term={"declaim"}><b>declaim</b></DictionaryLink> or <DictionaryLink styled={true} term={"proclaim"}><b>proclaim</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>), or both. 
 
 
 

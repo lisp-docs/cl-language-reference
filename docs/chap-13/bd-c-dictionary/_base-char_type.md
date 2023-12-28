@@ -1,4 +1,4 @@
-**base-char** <ClLinks styled={true} term={"type"}><i>Type</i></ClLinks> 
+**base-char** <GlossaryTerm styled={true} term={"type"}><i>Type</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks>, <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"base-char"}><b>base-char</b></DictionaryLink>, <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks> is defined as the <GlossaryTerm styled={true} term={"upgraded array element type"}><i>upgraded array element type</i></GlossaryTerm> of <ClLinks styled={true} term={"standard-char"}><b>standard-char</b></ClLinks>. An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> can support additional <ClLinks styled={true} term={"subtype"}><i>subtypes</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"character"}><b>character</b></ClLinks> (besides the ones listed in this standard) that might or might not be <ClLinks styled={true} term={"supertype"}><i>supertypes</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks>. In addition, an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> can define <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks> to be the *same type* as <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>. 
+The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"base-char"}><b>base-char</b></DictionaryLink> is defined as the <GlossaryTerm styled={true} term={"upgraded array element type"}><i>upgraded array element type</i></GlossaryTerm> of <DictionaryLink styled={true} term={"standard-char"}><b>standard-char</b></DictionaryLink>. An <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> can support additional <GlossaryTerm styled={true} term={"subtype"}><i>subtypes</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink> (besides the ones listed in this standard) that might or might not be <GlossaryTerm styled={true} term={"supertype"}><i>supertypes</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"base-char"}><b>base-char</b></DictionaryLink>. In addition, an <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> can define <DictionaryLink styled={true} term={"base-char"}><b>base-char</b></DictionaryLink> to be the *same type* as <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>. 
 
 
 
@@ -22,7 +22,7 @@ The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={
 
 
 
-1\. The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"standard-char"}><b>standard-char</b></ClLinks> is a <ClLinks styled={true} term={"subrepertoire"}><i>subrepertoire</i></ClLinks> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks>. 
+1\. The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"standard-char"}><b>standard-char</b></DictionaryLink> is a <GlossaryTerm styled={true} term={"subrepertoire"}><i>subrepertoire</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"base-char"}><b>base-char</b></DictionaryLink>. 
 
 
 
@@ -30,23 +30,19 @@ The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={
 
 
 
-3\. Only <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks> can be <ClLinks styled={true} term={"element"}><i>elements</i></ClLinks> of a <GlossaryTerm styled={true} term={"base string"}><i>base string</i></GlossaryTerm>. 
+3\. Only <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"base-char"}><b>base-char</b></DictionaryLink> can be <GlossaryTerm styled={true} term={"element"}><i>elements</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"base string"}><i>base string</i></GlossaryTerm>. 
 
 
 
-4\. No upper bound is specified for the number of characters in the <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks> <ClLinks styled={true} term={"repertoire"}><i>repertoire</i></ClLinks>; the size of that <ClLinks styled={true} term={"repertoire"}><i>repertoire</i></ClLinks> is <ClLinks styled={true} term={"implementation-defined"}><i>implementation-defined</i></ClLinks>. The lower bound is 96, the number of <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>. 
+4\. No upper bound is specified for the number of characters in the <DictionaryLink styled={true} term={"base-char"}><b>base-char</b></DictionaryLink> <GlossaryTerm styled={true} term={"repertoire"}><i>repertoire</i></GlossaryTerm>; the size of that <GlossaryTerm styled={true} term={"repertoire"}><i>repertoire</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"implementation-defined"}><i>implementation-defined</i></GlossaryTerm>. The lower bound is 96, the number of <GlossaryTerm styled={true} term={"standard character"}><i>standard characters</i></GlossaryTerm>. 
 
 
 
-Whether a character is a <GlossaryTerm styled={true} term={"base character"}><i>base character</i></GlossaryTerm> depends on the way that an <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> represents <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>, and not any other properties of the <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> or the host operating system. For example, one implementation might encode all <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks> as characters having 16-bit encodings, and another might have two kinds of <ClLinks styled={true} term={"string"}><i>strings</i></ClLinks>: those with characters having 8-bit encodings and those with characters having 16-bit encodings. In the first <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>, the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks> is 
-
-
+Whether a character is a <GlossaryTerm styled={true} term={"base character"}><i>base character</i></GlossaryTerm> depends on the way that an <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> represents <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>, and not any other properties of the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> or the host operating system. For example, one implementation might encode all <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm> as characters having 16-bit encodings, and another might have two kinds of <GlossaryTerm styled={true} term={"string"}><i>strings</i></GlossaryTerm>: those with characters having 8-bit encodings and those with characters having 16-bit encodings. In the first <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"base-char"}><b>base-char</b></DictionaryLink> is 
 
 
 
 
-
- 
 
 
 
@@ -54,11 +50,15 @@ Whether a character is a <GlossaryTerm styled={true} term={"base character"}><i>
 
 
 
-equivalent to the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>: there is only one kind of <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>. In the second <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks>, the <GlossaryTerm styled={true} term={"base character"}><i>base characters</i></GlossaryTerm> might be those <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> that could be stored in a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks> of <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> having 8-bit encodings. In such an implementation, the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks> is a <GlossaryTerm styled={true} term={"proper subtype"}><i>proper subtype</i></GlossaryTerm> of the <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"character"}><b>character</b></ClLinks>. 
+ 
 
 
 
-The <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"standard-char"}><b>standard-char</b></ClLinks> is a <ClLinks styled={true} term={"subtype"}><i>subtype</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"base-char"}><b>base-char</b></ClLinks>. 
+equivalent to the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>: there is only one kind of <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>. In the second <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"base character"}><i>base characters</i></GlossaryTerm> might be those <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> that could be stored in a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> having 8-bit encodings. In such an implementation, the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"base-char"}><b>base-char</b></DictionaryLink> is a <GlossaryTerm styled={true} term={"proper subtype"}><i>proper subtype</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"character"}><b>character</b></DictionaryLink>. 
+
+
+
+The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"standard-char"}><b>standard-char</b></DictionaryLink> is a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"base-char"}><b>base-char</b></DictionaryLink>. 
 
 
 

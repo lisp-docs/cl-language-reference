@@ -1,4 +1,4 @@
-**cerror** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**cerror** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks> *continue-format-control datum* &amp;rest *arguments →* <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink> *continue-format-control datum* &amp;rest *arguments →* <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-*datum*, <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks>—<ClLinks styled={true} term={"designator"}><i>designators</i></ClLinks> for a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> of default type <ClLinks styled={true} term={"simple-error"}><b>simple-error</b></ClLinks>. 
+*datum*, <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>—<GlossaryTerm styled={true} term={"designator"}><i>designators</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of default type <DictionaryLink styled={true} term={"simple-error"}><b>simple-error</b></DictionaryLink>. 
 
 
 
@@ -26,11 +26,11 @@
 
 
 
-<ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks> effectively invokes <ClLinks styled={true} term={"error"}><b>error</b></ClLinks> on the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> named by *datum*. As with any function that implicitly calls <ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, if the <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks> is not handled, (invoke-debugger <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>) is executed. While signaling is going on, and while in the debugger if it is reached, it is possible to continue code execution (*i.e.*, to return from <ClLinks styled={true} term={"cerror"}><b>cerror</b></ClLinks>) using the **continue** <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks>. 
+<DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink> effectively invokes <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink> on the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> named by *datum*. As with any function that implicitly calls <DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>, if the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is not handled, (invoke-debugger <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>) is executed. While signaling is going on, and while in the debugger if it is reached, it is possible to continue code execution (*i.e.*, to return from <DictionaryLink styled={true} term={"cerror"}><b>cerror</b></DictionaryLink>) using the **continue** <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>. 
 
 
 
-If *datum* is a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLinks>, <ClLinks styled={true} term={"argument"}><i>arguments</i></ClLinks> can be supplied, but are used only in conjunction with the *continue-format-control*. 
+If *datum* is a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>, <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> can be supplied, but are used only in conjunction with the *continue-format-control*. 
 
 
 
@@ -137,7 +137,7 @@ If *datum* is a <ClLinks styled={true} term={"condition"}><i>condition</i></ClLi
 
 
 
-<ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>. 
+<DictionaryLink styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></DictionaryLink>. 
 
 
 
@@ -149,7 +149,7 @@ Existing handler bindings.
 
 
 
-<ClLinks styled={true} term={"error"}><b>error</b></ClLinks>, <ClLinks styled={true} term={"format"}><b>format</b></ClLinks>, <ClLinks styled={true} term={"handler-bind"}><b>handler-bind</b></ClLinks>, <ClLinks styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></ClLinks>, <ClLinks styled={true} term={"simple-type-error"}><b>simple-type-error</b></ClLinks> 
+<DictionaryLink styled={true} term={"error"}><b>error</b></DictionaryLink>, <DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink>, <DictionaryLink styled={true} term={"handler-bind"}><b>handler-bind</b></DictionaryLink>, <DictionaryLink styled={true} term={"break-on-signals"}><b>\*break-on-signals\*</b></DictionaryLink>, <DictionaryLink styled={true} term={"simple-type-error"}><b>simple-type-error</b></DictionaryLink> 
 
 
 
@@ -157,7 +157,7 @@ Existing handler bindings.
 
 
 
-If *datum* is a *condition type* rather than a <ClLinks styled={true} term={"string"}><i>string</i></ClLinks>, the <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> directive &#126;\* may be especially useful in the *continue-format-control* in order to ignore the <ClLinks styled={true} term={"keyword"}><i>keywords</i></ClLinks> in the <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. For example: 
+If *datum* is a *condition type* rather than a <GlossaryTerm styled={true} term={"string"}><i>string</i></GlossaryTerm>, the <DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink> directive &#126;\* may be especially useful in the *continue-format-control* in order to ignore the <GlossaryTerm styled={true} term={"keyword"}><i>keywords</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"initialization argument list"}><i>initialization argument list</i></GlossaryTerm>. For example: 
 
 
 

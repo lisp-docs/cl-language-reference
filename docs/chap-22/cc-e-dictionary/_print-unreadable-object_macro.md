@@ -1,4 +1,4 @@
-**print-unreadable-object** <ClLinks styled={true} term={"macro"}><i>Macro</i></ClLinks> 
+**print-unreadable-object** <GlossaryTerm styled={true} term={"macro"}><i>Macro</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"print-unreadable-object"}><b>print-unreadable-object</b></ClLinks> (*object stream* &amp;key *type identity*) *\{form\}*\* → <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> 
+<DictionaryLink styled={true} term={"print-unreadable-object"}><b>print-unreadable-object</b></DictionaryLink> (*object stream* &amp;key *type identity*) *\{form\}*\* → <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> 
 
 
 
@@ -14,15 +14,15 @@
 
 
 
-<ClLinks styled={true} term={"object"}><i>object</i></ClLinks>—an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>; evaluated. 
+<GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>; evaluated. 
 
 
 
-<ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>—a <GlossaryTerm styled={true} term={"stream designator"}><i>stream designator</i></GlossaryTerm> ; evaluated. 
+<GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"stream designator"}><i>stream designator</i></GlossaryTerm> ; evaluated. 
 
 
 
-<ClLinks styled={true} term={"type"}><i>type</i></ClLinks>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>; evaluated. 
+<GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolean</i></GlossaryTerm>; evaluated. 
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-<ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
+<GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm>. 
 
 
 
@@ -50,11 +50,11 @@
 
 
 
-Outputs a printed representation of <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> on <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks>, beginning with “#&lt;” and ending with “&gt;”. Everything output to <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> by the body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> is enclosed in the the angle brackets. If <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the output from <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> is preceded by a brief description of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>’s <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> and a space character. If *identity* is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the output from <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks> is followed by a space character and a representation of the <ClLinks styled={true} term={"object"}><i>object</i></ClLinks>’s identity, typically a storage address. 
+Outputs a printed representation of <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> on <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm>, beginning with “#&lt;” and ending with “&gt;”. Everything output to <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> by the body <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> is enclosed in the the angle brackets. If <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, the output from <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> is preceded by a brief description of the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>’s <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> and a space character. If *identity* is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, the output from <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> is followed by a space character and a representation of the <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm>’s identity, typically a storage address. 
 
 
 
-If either <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> or *identity* is not supplied, its value is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. It is valid to omit the body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>. If <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> and *identity* are both true and there are no body <ClLinks styled={true} term={"form"}><i>forms</i></ClLinks>, only one space character separates the type and the identity. 
+If either <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> or *identity* is not supplied, its value is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. It is valid to omit the body <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>. If <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> and *identity* are both true and there are no body <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm>, only one space character separates the type and the identity. 
 
 
 
@@ -72,7 +72,7 @@ If either <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> or *identit
 
 
 
-If <ClLinks styled={true} term={"print-readably"}><b>\*print-readably\*</b></ClLinks> is <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, <ClLinks styled={true} term={"print-unreadable-object"}><b>print-unreadable-object</b></ClLinks> signals an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"print-not-readable"}><b>print-not-readable</b></ClLinks> without printing anything. 
+If <DictionaryLink styled={true} term={"print-readably"}><b>\*print-readably\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, <DictionaryLink styled={true} term={"print-unreadable-object"}><b>print-unreadable-object</b></DictionaryLink> signals an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"print-not-readable"}><b>print-not-readable</b></DictionaryLink> without printing anything. 
 
 
 

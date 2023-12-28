@@ -2,7 +2,7 @@
 
 
 
-The set of *alphanumeric characters* is the union of the set of <ClLinks styled={true} term={"alphabetic"}><i>alphabetic</i></ClLinks><sub>1</sub> <ClLinks styled={true} term={"character"}><i>characters</i></ClLinks> and the set of *numeric characters*. 
+The set of *alphanumeric characters* is the union of the set of <GlossaryTerm styled={true} term={"alphabetic"}><i>alphabetic</i></GlossaryTerm><sub>1</sub> <GlossaryTerm styled={true} term={"character"}><i>characters</i></GlossaryTerm> and the set of *numeric characters*. 
 
 
 

@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"print-circle"}><b>*print-circle*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"print-circle"}><b>*print-circle*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-<ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. 
+<GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -22,19 +22,19 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-Controls the attempt to detect circularity and sharing in an <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> being printed. 
+Controls the attempt to detect circularity and sharing in an <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> being printed. 
 
 
 
-If <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>, the printing process merely proceeds by recursive descent without attempting to detect circularity and sharing. 
+If <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>, the printing process merely proceeds by recursive descent without attempting to detect circularity and sharing. 
 
 
 
-If <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, the printer will endeavor to detect cycles and sharing in the structure to be printed, and to use #*n*= and #*n*# syntax to indicate the circularities or shared components. 
+If <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, the printer will endeavor to detect cycles and sharing in the structure to be printed, and to use #*n*= and #*n*# syntax to indicate the circularities or shared components. 
 
 
 
-If <ClLinks styled={true} term={"true"}><i>true</i></ClLinks>, a user-defined <ClLinks styled={true} term={"print-object"}><b>print-object</b></ClLinks> <ClLinks styled={true} term={"method"}><i>method</i></ClLinks> can print <ClLinks styled={true} term={"object"}><i>objects</i></ClLinks> to the supplied <ClLinks styled={true} term={"stream"}><i>stream</i></ClLinks> using <ClLinks styled={true} term={"write"}><b>write</b></ClLinks>, <ClLinks styled={true} term={"prin1"}><b>prin1</b></ClLinks>, <ClLinks styled={true} term={"princ"}><b>princ</b></ClLinks>, or <ClLinks styled={true} term={"format"}><b>format</b></ClLinks> and expect circularities and sharing to be detected and printed using the 
+If <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm>, a user-defined <DictionaryLink styled={true} term={"print-object"}><b>print-object</b></DictionaryLink> <GlossaryTerm styled={true} term={"method"}><i>method</i></GlossaryTerm> can print <GlossaryTerm styled={true} term={"object"}><i>objects</i></GlossaryTerm> to the supplied <GlossaryTerm styled={true} term={"stream"}><i>stream</i></GlossaryTerm> using <DictionaryLink styled={true} term={"write"}><b>write</b></DictionaryLink>, <DictionaryLink styled={true} term={"prin1"}><b>prin1</b></DictionaryLink>, <DictionaryLink styled={true} term={"princ"}><b>princ</b></DictionaryLink>, or <DictionaryLink styled={true} term={"format"}><b>format</b></DictionaryLink> and expect circularities and sharing to be detected and printed using the 
 
 
 
@@ -72,7 +72,7 @@ Note that implementations should not use #*n*# notation when the *Lisp reader* w
 
 
 
-<ClLinks styled={true} term={"write"}><b>write</b></ClLinks> 
+<DictionaryLink styled={true} term={"write"}><b>write</b></DictionaryLink> 
 
 
 
@@ -80,7 +80,7 @@ Note that implementations should not use #*n*# notation when the *Lisp reader* w
 
 
 
-An attempt to print a circular structure with <ClLinks styled={true} term={"print-circle"}><b>\*print-circle\*</b></ClLinks> set to <ClLinks styled={true} term={"nil"}><b>nil</b></ClLinks> may lead to looping behavior and failure to terminate. 
+An attempt to print a circular structure with <DictionaryLink styled={true} term={"print-circle"}><b>\*print-circle\*</b></DictionaryLink> set to <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> may lead to looping behavior and failure to terminate. 
 
 
 

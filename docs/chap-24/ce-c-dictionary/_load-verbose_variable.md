@@ -1,4 +1,4 @@
-*∗<ClLinks styled={true} term={"load-verbose"}><b>*load-verbose*</b></ClLinks>∗ Variable* 
+*∗<DictionaryLink styled={true} term={"load-verbose"}><b>*load-verbose*</b></DictionaryLink>∗ Variable* 
 
 
 
@@ -14,7 +14,7 @@ a <GlossaryTerm styled={true} term={"generalized boolean"}><i>generalized boolea
 
 
 
-The initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*load-print\*** is <ClLinks styled={true} term={"false"}><i>false</i></ClLinks>. The initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"load-verbose"}><b>\*load-verbose\*</b></ClLinks> is *implementation dependent*. 
+The initial <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of **\*load-print\*** is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. The initial <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"load-verbose"}><b>\*load-verbose\*</b></DictionaryLink> is *implementation dependent*. 
 
 
 
@@ -22,7 +22,7 @@ The initial <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*
 
 
 
-The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*load-print\*** is the default value of the :print <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to <ClLinks styled={true} term={"load"}><b>load</b></ClLinks>. The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of <ClLinks styled={true} term={"load-verbose"}><b>\*load-verbose\*</b></ClLinks> is the default value of the :verbose <ClLinks styled={true} term={"argument"}><i>argument</i></ClLinks> to <ClLinks styled={true} term={"load"}><b>load</b></ClLinks>. 
+The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of **\*load-print\*** is the default value of the :print <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> to <DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink>. The <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"load-verbose"}><b>\*load-verbose\*</b></DictionaryLink> is the default value of the :verbose <GlossaryTerm styled={true} term={"argument"}><i>argument</i></GlossaryTerm> to <DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink>. 
 
 
 
@@ -30,7 +30,7 @@ The <ClLinks styled={true} term={"value"}><i>value</i></ClLinks> of **\*load-pri
 
 
 
-<ClLinks styled={true} term={"load"}><b>load</b></ClLinks> 
+<DictionaryLink styled={true} term={"load"}><b>load</b></DictionaryLink> 
 
 
 

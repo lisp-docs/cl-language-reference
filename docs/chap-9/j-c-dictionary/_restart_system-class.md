@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"restart"}><b>restart</b></ClLinks>, <ClLinks styled={true} term={"t"}><b>t</b></ClLinks> 
+<DictionaryLink styled={true} term={"restart"}><b>restart</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink> 
 
 
 
@@ -14,19 +14,15 @@
 
 
 
-An <ClLinks styled={true} term={"object"}><i>object</i></ClLinks> of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"restart"}><b>restart</b></ClLinks> represents a <ClLinks styled={true} term={"function"}><i>function</i></ClLinks> that can be called to perform some form of recovery action, usually a transfer of control to an outer point in the running program. 
+An <GlossaryTerm styled={true} term={"object"}><i>object</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"restart"}><b>restart</b></DictionaryLink> represents a <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> that can be called to perform some form of recovery action, usually a transfer of control to an outer point in the running program. 
 
 
 
-An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks> is free to implement a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> in whatever manner is most convenient; a <ClLinks styled={true} term={"restart"}><i>restart</i></ClLinks> has only <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> relative to the scope of the binding <ClLinks styled={true} term={"form"}><i>form</i></ClLinks> which *establishes* it. 
-
-
+An <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm> is free to implement a <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> in whatever manner is most convenient; a <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> has only <GlossaryTerm styled={true} term={"dynamic extent"}><i>dynamic extent</i></GlossaryTerm> relative to the scope of the binding <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> which *establishes* it. 
 
 
 
 
-
- 
 
 
 
@@ -34,7 +30,11 @@ An <ClLinks styled={true} term={"implementation"}><i>implementation</i></ClLinks
 
 
 
-<ClLinks styled={true} term={"compute-restarts"}><b>compute-restarts</b></ClLinks> 
+ 
+
+
+
+<DictionaryLink styled={true} term={"compute-restarts"}><b>compute-restarts</b></DictionaryLink> 
 
 
 

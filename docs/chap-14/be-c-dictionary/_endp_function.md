@@ -1,4 +1,4 @@
-**endp** <ClLinks styled={true} term={"function"}><i>Function</i></ClLinks> 
+**endp** <GlossaryTerm styled={true} term={"function"}><i>Function</i></GlossaryTerm> 
 
 
 
@@ -6,7 +6,7 @@
 
 
 
-<ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> *list → generalized-boolean* 
+<DictionaryLink styled={true} term={"endp"}><b>endp</b></DictionaryLink> *list → generalized-boolean* 
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-<ClLinks styled={true} term={"list"}><i>list</i></ClLinks>—a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>, which might be a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm>. 
+<GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>—a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>, which might be a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> or a <GlossaryTerm styled={true} term={"circular list"}><i>circular list</i></GlossaryTerm>. 
 
 
 
@@ -26,7 +26,7 @@
 
 
 
-Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. Returns <ClLinks styled={true} term={"false"}><i>false</i></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>. 
+Returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>. Returns <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm> if <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>. 
 
 
 
@@ -40,7 +40,7 @@ Returns <ClLinks styled={true} term={"true"}><i>true</i></ClLinks> if <ClLinks s
 
 
 
-Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLinks> <ClLinks styled={true} term={"type-error"}><b>type-error</b></ClLinks> if <ClLinks styled={true} term={"list"}><i>list</i></ClLinks> is not a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>. 
+Should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"type-error"}><b>type-error</b></DictionaryLink> if <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> is not a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>. 
 
 
 
@@ -48,7 +48,7 @@ Should signal an error of <ClLinks styled={true} term={"type"}><i>type</i></ClLi
 
 
 
-The purpose of <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> is to test for the end of <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. Since <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> does not descend into a <ClLinks styled={true} term={"cons"}><i>cons</i></ClLinks>, it is well-defined to pass it a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. However, if shorter “lists” are iteratively produced by calling <ClLinks styled={true} term={"cdr"}><b>cdr</b></ClLinks> on such a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> and those “lists” are tested with <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks>, a situation that has undefined consequences will eventually result when the *non-nil atom* (which is not in fact a <ClLinks styled={true} term={"list"}><i>list</i></ClLinks>) finally becomes the argument to <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks>. Since this is the usual way in which <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> is used, it is conservative programming style and consistent with the intent of <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> to treat <ClLinks styled={true} term={"endp"}><b>endp</b></ClLinks> as simply a function on <GlossaryTerm styled={true} term={"proper list"}><i>proper lists</i></GlossaryTerm> which happens not to enforce an argument type of <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm> except when the argument is <ClLinks styled={true} term={"atomic"}><i>atomic</i></ClLinks>. 
+The purpose of <DictionaryLink styled={true} term={"endp"}><b>endp</b></DictionaryLink> is to test for the end of <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm>. Since <DictionaryLink styled={true} term={"endp"}><b>endp</b></DictionaryLink> does not descend into a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>, it is well-defined to pass it a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm>. However, if shorter “lists” are iteratively produced by calling <DictionaryLink styled={true} term={"cdr"}><b>cdr</b></DictionaryLink> on such a <GlossaryTerm styled={true} term={"dotted list"}><i>dotted list</i></GlossaryTerm> and those “lists” are tested with <DictionaryLink styled={true} term={"endp"}><b>endp</b></DictionaryLink>, a situation that has undefined consequences will eventually result when the *non-nil atom* (which is not in fact a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm>) finally becomes the argument to <DictionaryLink styled={true} term={"endp"}><b>endp</b></DictionaryLink>. Since this is the usual way in which <DictionaryLink styled={true} term={"endp"}><b>endp</b></DictionaryLink> is used, it is conservative programming style and consistent with the intent of <DictionaryLink styled={true} term={"endp"}><b>endp</b></DictionaryLink> to treat <DictionaryLink styled={true} term={"endp"}><b>endp</b></DictionaryLink> as simply a function on <GlossaryTerm styled={true} term={"proper list"}><i>proper lists</i></GlossaryTerm> which happens not to enforce an argument type of <GlossaryTerm styled={true} term={"proper list"}><i>proper list</i></GlossaryTerm> except when the argument is <GlossaryTerm styled={true} term={"atomic"}><i>atomic</i></GlossaryTerm>. 
 
 
 
