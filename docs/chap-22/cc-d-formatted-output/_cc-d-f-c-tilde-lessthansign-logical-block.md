@@ -22,7 +22,7 @@ The body segment can be any arbitrary <i>format string</i>. This <i>format strin
 
 
 
-&#126;&lt;...&#126;:&gt; supports a feature not supported by <DictionaryLink styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></DictionaryLink>. If &#126;:@&gt; is used to terminate the directive (*i.e.*, &#126;&lt;...&#126;:@&gt;), then a fill-style conditional newline is automatically inserted after each group of blanks immediately contained in the body (except for blanks after a <ClLinks styled={true} term={"newline"}><i>⟨Newline⟩</i></ClLinks> directive). This makes it easy to achieve the equivalent of paragraph filling. 
+&#126;&lt;...&#126;:&gt; supports a feature not supported by <DictionaryLink styled={true} term={"pprint-logical-block"}><b>pprint-logical-block</b></DictionaryLink>. If &#126;:@&gt; is used to terminate the directive (*i.e.*, &#126;&lt;...&#126;:@&gt;), then a fill-style conditional newline is automatically inserted after each group of blanks immediately contained in the body (except for blanks after a <GlossaryTerm styled={true} term={"newline"}><i>⟨Newline⟩</i></GlossaryTerm> directive). This makes it easy to achieve the equivalent of paragraph filling. 
 
 
 

@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (macro-function** <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> &amp;optional *environment<ClLinks  term={"t"}><b>*)</b></ClLinks> *new-function***)**  -->
+<!-- **(setf (macro-function** <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> &amp;optional *environment<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink> *new-function***)**  -->
 **(setf (macro-function** *symbol* &amp;optional *environment***)** *new-function***)** 
 
 

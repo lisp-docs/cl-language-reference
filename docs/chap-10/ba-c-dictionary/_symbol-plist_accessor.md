@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (symbol-plist** <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>**)** *new-plist<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (symbol-plist** <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>**)** *new-plist<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink>  -->
 **(setf (symbol-plist** *symbol***)** *new-plist***)** 
 
 

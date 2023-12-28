@@ -124,123 +124,123 @@
 
 **(setf (cddddr** *x***)** *new-object***)** 
 
-<!-- **(setf (car** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+<!-- **(setf (car** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cdr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cdr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (caar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (caar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cadr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cdar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cdar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cddr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (caaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (caaar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (caadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (caadr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cadar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cadar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (caddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (caddr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cdaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cdaar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cdadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cdadr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cddar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cddar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cdddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cdddr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (caaaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (caaaar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (caaadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (caaadr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (caadar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (caadar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (caaddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (caaddr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cadaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cadaar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cadadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cadadr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (caddar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (caddar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cadddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cadddr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cdaaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cdaaar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cdaadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cdaadr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cdadar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cdadar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cdaddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cdaddr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cddaar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cddaar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cddadr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cddadr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cdddar** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> 
+**(setf (cdddar** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> 
 
 
 
-**(setf (cddddr** *x***)** *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
+**(setf (cddddr** *x***)** *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink>  -->
 
 
 

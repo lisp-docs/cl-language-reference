@@ -14,7 +14,7 @@ In addition, the following are constraints on the handling of *literal objects* 
 
 
 
-<ClLinks  term={"array"}><b>array:</b></ClLinks> If an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the source code is a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>, then the corresponding <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the compiled code will also be a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>. If an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the source code is displaced, has a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , or is <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>, the corresponding <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the compiled code might lack any or all of these qualities. If an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the source code has a fill pointer, then the corresponding <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the compiled code might be only the size implied by the fill pointer.  
+<DictionaryLink  term={"array"}><b>array:</b></DictionaryLink> If an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the source code is a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>, then the corresponding <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the compiled code will also be a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>. If an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the source code is displaced, has a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , or is <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>, the corresponding <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the compiled code might lack any or all of these qualities. If an <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the source code has a fill pointer, then the corresponding <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> in the compiled code might be only the size implied by the fill pointer.  
 
 
 
@@ -26,7 +26,7 @@ In addition, the following are constraints on the handling of *literal objects* 
 
 
 
-<ClLinks  term={"random-state"}><b>random-state:</b></ClLinks> A constant <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> object cannot be used as the state argument to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> because <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> modifies this data structure. 
+<DictionaryLink  term={"random-state"}><b>random-state:</b></DictionaryLink> A constant <GlossaryTerm styled={true} term={"random state"}><i>random state</i></GlossaryTerm> object cannot be used as the state argument to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> because <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> modifies this data structure. 
 
 
 
@@ -38,7 +38,7 @@ The <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></Glo
 
 
 
-<ClLinks  term={"symbol"}><b>symbol:</b></ClLinks> In order to guarantee that <GlossaryTerm styled={true} term={"compiled file"}><i>compiled files</i></GlossaryTerm> can be *loaded* correctly, users must ensure that the <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> referenced in those <GlossaryTerm  term={"file"}><i>files</i></GlossaryTerm> are defined consistently at compile time and load time. <GlossaryTerm styled={true} term={"conforming program"}><i>Conforming programs</i></GlossaryTerm> must satisfy the following requirements: 
+<DictionaryLink  term={"symbol"}><b>symbol:</b></DictionaryLink> In order to guarantee that <GlossaryTerm styled={true} term={"compiled file"}><i>compiled files</i></GlossaryTerm> can be *loaded* correctly, users must ensure that the <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> referenced in those <GlossaryTerm  term={"file"}><i>files</i></GlossaryTerm> are defined consistently at compile time and load time. <GlossaryTerm styled={true} term={"conforming program"}><i>Conforming programs</i></GlossaryTerm> must satisfy the following requirements: 
 
 
 

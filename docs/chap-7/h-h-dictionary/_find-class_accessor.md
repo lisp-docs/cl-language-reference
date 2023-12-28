@@ -4,7 +4,7 @@
 
 <DictionaryLink  term={"find-class"}><b>find-class</b></DictionaryLink> <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> &amp;optional *errorp environment → class*
 
-<!-- **(setf (find-class** <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> &amp;optional *errorp environment<ClLinks  term={"t"}><b>*)</b></ClLinks> *new-class***)**  -->
+<!-- **(setf (find-class** <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> &amp;optional *errorp environment<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink> *new-class***)**  -->
 **(setf (find-class** *symbol* &amp;optional *errorp environment***)** *new-class***)**
 
 **Arguments and Values:**

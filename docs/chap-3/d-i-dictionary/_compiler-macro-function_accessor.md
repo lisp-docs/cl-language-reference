@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (compiler-macro-function** <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> &amp;optional *environment<ClLinks  term={"t"}><b>*)</b></ClLinks> *new-function***)**  -->
+<!-- **(setf (compiler-macro-function** <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> &amp;optional *environment<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink> *new-function***)**  -->
 **(setf (compiler-macro-function** *name* &amp;optional *environment***)** *new-function***)** 
 
 

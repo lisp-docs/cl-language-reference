@@ -15,11 +15,11 @@
 
 
 
-<!-- **(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink>  -->
 
 
 
-<!-- **(setf (sbit** *bit-array* &amp;rest *subscripts***)** *new-bit<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (sbit** *bit-array* &amp;rest *subscripts***)** *new-bit<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink>  -->
 **(setf (bit** *bit-array* &amp;rest *subscripts***)** *new-bit***)** 
 
 

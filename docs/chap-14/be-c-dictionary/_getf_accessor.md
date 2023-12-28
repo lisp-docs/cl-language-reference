@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (getf** *place indicator* &amp;optional *default<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> *new-value***)**  -->
+<!-- **(setf (getf** *place indicator* &amp;optional *default<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> *new-value***)**  -->
 **(setf (getf** *place indicator* &amp;optional *default***)** *new-value***)** 
 
 

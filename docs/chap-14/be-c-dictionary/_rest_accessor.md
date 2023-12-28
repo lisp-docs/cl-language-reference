@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (rest** *list<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> *new-tail***)**  -->
+<!-- **(setf (rest** *list<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> *new-tail***)**  -->
 **(setf (rest** *list***)** *new-tail***)** 
 
 

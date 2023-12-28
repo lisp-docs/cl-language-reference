@@ -86,7 +86,7 @@ The <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>.
 
 
 
-<ClLinks  term={"string"}><b>string/</b></ClLinks>= *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
+<DictionaryLink  term={"string"}><b>string/</b></DictionaryLink>= *string1 string2* &amp;key *start1 end1 start2 end2 → mismatch-index* 
 
 
 
@@ -146,7 +146,7 @@ The <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>.
 
 
 
-These functions perform lexicographic comparisons on *string1* and *string2*. <ClLinks  term={"string"}><b>string=</b></ClLinks> and **string-equal** are called equality functions; the others are called inequality functions. The 
+These functions perform lexicographic comparisons on *string1* and *string2*. <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink> and **string-equal** are called equality functions; the others are called inequality functions. The 
 
 
 
@@ -190,19 +190,19 @@ The comparison has one of the following results:
 
 
 
-<ClLinks  term={"string"}><b>string=</b></ClLinks> 
+<DictionaryLink  term={"string"}><b>string=</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"string"}><b>string=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the supplied substrings are of the same length and contain the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> characters in corresponding positions; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
+<DictionaryLink  term={"string"}><b>string=</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the supplied substrings are of the same length and contain the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> characters in corresponding positions; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
-<ClLinks  term={"string"}><b>string/=</b></ClLinks> 
+<DictionaryLink  term={"string"}><b>string/=</b></DictionaryLink> 
 
 
 
-<ClLinks  term={"string"}><b>string/=</b></ClLinks> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the supplied substrings are different; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
+<DictionaryLink  term={"string"}><b>string/=</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> if the supplied substrings are different; otherwise it is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. 
 
 
 
@@ -210,7 +210,7 @@ The comparison has one of the following results:
 
 
 
-**string-equal** is just like <ClLinks  term={"string"}><b>string=</b></ClLinks> except that differences in case are ignored; two characters are considered to be the same if <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> of them. 
+**string-equal** is just like <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink> except that differences in case are ignored; two characters are considered to be the same if <DictionaryLink  term={"char-equal"}><b>char-equal</b></DictionaryLink> is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> of them. 
 
 
 
@@ -293,7 +293,7 @@ The comparison has one of the following results:
 
 
 
-<DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> calls <ClLinks  term={"string"}><b>string=</b></ClLinks> if applied to two <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm>. 
+<DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> calls <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink> if applied to two <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm>. 
 
 
 

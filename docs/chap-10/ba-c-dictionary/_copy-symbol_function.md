@@ -30,7 +30,7 @@
 
 
 
-<DictionaryLink  term={"copy-symbol"}><b>copy-symbol</b></DictionaryLink> returns a <GlossaryTerm  term={"fresh"}><i>fresh</i></GlossaryTerm>, *uninterned symbol*, the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of which is <ClLinks  term={"string"}><b>string=</b></ClLinks> to and possibly the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> as the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of the given <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
+<DictionaryLink  term={"copy-symbol"}><b>copy-symbol</b></DictionaryLink> returns a <GlossaryTerm  term={"fresh"}><i>fresh</i></GlossaryTerm>, *uninterned symbol*, the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of which is <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink> to and possibly the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> as the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of the given <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>. 
 
 
 

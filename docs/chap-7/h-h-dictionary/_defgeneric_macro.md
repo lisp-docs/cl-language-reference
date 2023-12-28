@@ -70,7 +70,7 @@
 
 
 
-*method-combination-argument*—an <ClLinks  term={"object"}><i>object.</i></ClLinks> 
+*method-combination-argument*—an <GlossaryTerm  term={"object"}><i>object.</i></GlossaryTerm> 
 
 
 

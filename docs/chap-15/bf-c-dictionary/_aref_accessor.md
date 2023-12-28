@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (aref** <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> &amp;rest *subscripts***)** *new-element<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (aref** <GlossaryTerm  term={"array"}><i>array</i></GlossaryTerm> &amp;rest *subscripts***)** *new-element<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink>  -->
 **(setf (aref** *array* &amp;rest *subscripts***)** *new-element***)** 
 
 

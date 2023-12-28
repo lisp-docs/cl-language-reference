@@ -26,7 +26,7 @@
 
 
 
-<DictionaryLink  term={"find-all-symbols"}><b>find-all-symbols</b></DictionaryLink> searches every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> for <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that have a <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> that is the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. A <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of all such <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> is returned. Whether or how the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> is ordered is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
+<DictionaryLink  term={"find-all-symbols"}><b>find-all-symbols</b></DictionaryLink> searches every <GlossaryTerm styled={true} term={"registered package"}><i>registered package</i></GlossaryTerm> for <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> that have a <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> that is the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> (under <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink>) as <GlossaryTerm  term={"string"}><i>string</i></GlossaryTerm>. A <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of all such <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> is returned. Whether or how the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> is ordered is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>. 
 
 
 

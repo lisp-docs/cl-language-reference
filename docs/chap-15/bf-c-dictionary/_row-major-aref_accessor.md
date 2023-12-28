@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (row-major-aref** *array index***)** *new-element<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (row-major-aref** *array index***)** *new-element<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink>  -->
 **(setf (row-major-aref** *array index***)** *new-element***)** 
 
 

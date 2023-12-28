@@ -42,7 +42,7 @@ to the previous value, consistency is maintained. The rules can be violated by c
 
 
 
-An inconsistency only applies if one of the restrictions is violated between two of the named <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>. <DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink>, <DictionaryLink  term={"unexport"}><b>unexport</b></DictionaryLink>, <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink>, and <DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> can only affect the consistency of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> with the same <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) as the ones supplied as arguments.  
+An inconsistency only applies if one of the restrictions is violated between two of the named <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm>. <DictionaryLink  term={"shadow"}><b>shadow</b></DictionaryLink>, <DictionaryLink  term={"unexport"}><b>unexport</b></DictionaryLink>, <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink>, and <DictionaryLink  term={"shadowing-import"}><b>shadowing-import</b></DictionaryLink> can only affect the consistency of <GlossaryTerm  term={"symbol"}><i>symbols</i></GlossaryTerm> with the same <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> (under <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink>) as the ones supplied as arguments.  
 
 
 

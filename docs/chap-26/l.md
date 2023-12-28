@@ -207,7 +207,7 @@ run-time <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm>. 
 
 
 
-**loop keyword** *n. Trad.* a symbol that is a specially recognized part of the syntax of an extended <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. Such symbols are recognized by their <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> (using <ClLinks  term={"string"}><b>string=</b></ClLinks>), not by their identity; as such, they may be in any package. A <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> is not a <GlossaryTerm  term={"keyword"}><i>keyword</i></GlossaryTerm>. 
+**loop keyword** *n. Trad.* a symbol that is a specially recognized part of the syntax of an extended <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. Such symbols are recognized by their <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> (using <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink>), not by their identity; as such, they may be in any package. A <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> is not a <GlossaryTerm  term={"keyword"}><i>keyword</i></GlossaryTerm>. 
 
 
 

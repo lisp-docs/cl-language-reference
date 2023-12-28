@@ -42,7 +42,7 @@ from left to right. If the *pathname-list* is <DictionaryLink styled={true} term
 
 
 
-Both functions use <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks> to test for the presence of a *module-name*. 
+Both functions use <DictionaryLink styled={true} term={"string"}><b>string=</b></DictionaryLink> to test for the presence of a *module-name*. 
 
 
 

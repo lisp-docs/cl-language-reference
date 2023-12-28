@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (svref** *simple-vector index***)** *new-element<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (svref** *simple-vector index***)** *new-element<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink>  -->
 **(setf (svref** *simple-vector index***)** *new-element***)** 
 
 

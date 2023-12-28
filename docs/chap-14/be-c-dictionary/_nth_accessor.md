@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (nth** *n list<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks> *new-object<ClLinks styled={true} term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (nth** *n list<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink> *new-object<DictionaryLink styled={true} term={"t"}><b>*)</b></DictionaryLink>  -->
 **(setf (nth** *n list***)** *new-object***)** 
 
 

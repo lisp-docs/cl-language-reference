@@ -275,7 +275,7 @@ Since <GlossaryTerm  term={"implementation"}><i>implementations</i></GlossaryTer
 
 
 
-The collection of *symbol-name* arguments given to the options :shadow, :intern, :import-from, and :shadowing-import-from must all be disjoint; additionally, the *symbol-name* arguments given to :export and :intern must be disjoint. Disjoint in this context is defined as no two of the *symbol-names* being <ClLinks  term={"string"}><b>string=</b></ClLinks> with each other. If either condition is violated, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> should be signaled. 
+The collection of *symbol-name* arguments given to the options :shadow, :intern, :import-from, and :shadowing-import-from must all be disjoint; additionally, the *symbol-name* arguments given to :export and :intern must be disjoint. Disjoint in this context is defined as no two of the *symbol-names* being <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink> with each other. If either condition is violated, an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"program-error"}><b>program-error</b></DictionaryLink> should be signaled. 
 
 
 

@@ -14,7 +14,7 @@ The syntax of a *logical pathname namestring* is as follows. (Note that unlike m
 
 
 
-[<ClLinks  term={"name"}><i>↓name</i></ClLinks>] [*type-marker ↓type* [*version-marker ↓version*]] 
+[<GlossaryTerm  term={"name"}><i>↓name</i></GlossaryTerm>] [*type-marker ↓type* [*version-marker ↓version*]] 
 
 
 
@@ -26,11 +26,11 @@ The syntax of a *logical pathname namestring* is as follows. (Note that unlike m
 
 
 
-<ClLinks  term={"name"}><i>name::</i></ClLinks>=*↓word | ↓wildcard-word* 
+<GlossaryTerm  term={"name"}><i>name::</i></GlossaryTerm>=*↓word | ↓wildcard-word* 
 
 
 
-<ClLinks  term={"type"}><i>type::</i></ClLinks>=*↓word | ↓wildcard-word* 
+<GlossaryTerm  term={"type"}><i>type::</i></GlossaryTerm>=*↓word | ↓wildcard-word* 
 
 
 

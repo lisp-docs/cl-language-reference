@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (logical-pathname-translations** *host<ClLinks  term={"t"}><b>*)</b></ClLinks> *new-translations***)**  -->
+<!-- **(setf (logical-pathname-translations** *host<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink> *new-translations***)**  -->
 **(setf (logical-pathname-translations** *host***)** *new-translations***)** 
 
 

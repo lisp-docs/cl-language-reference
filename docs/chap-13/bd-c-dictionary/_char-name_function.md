@@ -34,7 +34,7 @@ All <GlossaryTerm styled={true} term={"non-graphic"}><i>non-graphic</i></Glossar
 
 
 
-The *standard characters ⟨Newline⟩* and <ClLinks styled={true} term={"space"}><i>⟨Space⟩</i></ClLinks> have the respective names "Newline" and "Space". The *semi-standard characters ⟨Tab⟩*, *⟨Page⟩*, *⟨Rubout⟩*, *⟨Linefeed⟩*, *⟨Return⟩*, and *⟨Backspace⟩* (if they are supported by the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>) have the respective names "Tab", "Page", "Rubout", "Linefeed", "Return", and "Backspace" (in the indicated case, even though name lookup by “#\” and by the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"name-char"}><b>name-char</b></DictionaryLink> is not case sensitive). 
+The *standard characters ⟨Newline⟩* and <GlossaryTerm styled={true} term={"space"}><i>⟨Space⟩</i></GlossaryTerm> have the respective names "Newline" and "Space". The *semi-standard characters ⟨Tab⟩*, *⟨Page⟩*, *⟨Rubout⟩*, *⟨Linefeed⟩*, *⟨Return⟩*, and *⟨Backspace⟩* (if they are supported by the <GlossaryTerm styled={true} term={"implementation"}><i>implementation</i></GlossaryTerm>) have the respective names "Tab", "Page", "Rubout", "Linefeed", "Return", and "Backspace" (in the indicated case, even though name lookup by “#\” and by the <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink styled={true} term={"name-char"}><b>name-char</b></DictionaryLink> is not case sensitive). 
 
 
 

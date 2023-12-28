@@ -1386,7 +1386,7 @@ This alters the x-position of ship2 to be 100. This works because **defstruct** 
 
 
 
-If any two slot names (whether present directly or inherited by the :include option) are the <GlossaryTerm styled={true} term={"same"}><i>same</i></GlossaryTerm> under <ClLinks styled={true} term={"string"}><b>string=</b></ClLinks>, <DictionaryLink styled={true} term={"defstruct"}><b>defstruct</b></DictionaryLink> should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"program-error"}><b>program-error</b></DictionaryLink>. 
+If any two slot names (whether present directly or inherited by the :include option) are the <GlossaryTerm styled={true} term={"same"}><i>same</i></GlossaryTerm> under <DictionaryLink styled={true} term={"string"}><b>string=</b></DictionaryLink>, <DictionaryLink styled={true} term={"defstruct"}><b>defstruct</b></DictionaryLink> should signal an error of <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"program-error"}><b>program-error</b></DictionaryLink>. 
 
 
 

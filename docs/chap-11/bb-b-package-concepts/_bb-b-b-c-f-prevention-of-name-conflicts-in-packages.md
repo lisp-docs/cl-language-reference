@@ -14,7 +14,7 @@ The following rules apply to name conflicts:
 
 
 
-– If the *same symbol* is <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> to a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> through more than one path, there is no name conflict. A <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> cannot conflict with itself. Name conflicts occur only between *distinct symbols* with the same name (under <ClLinks  term={"string"}><b>string=</b></ClLinks>). 
+– If the *same symbol* is <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> to a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> through more than one path, there is no name conflict. A <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> cannot conflict with itself. Name conflicts occur only between *distinct symbols* with the same name (under <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink>). 
 
 
 
@@ -66,7 +66,7 @@ given a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of <GlossaryTerm
 
 
 
-– A name conflict in <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> or <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> due to a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>’s inheriting two *distinct symbols* with the *same name* (under <ClLinks  term={"string"}><b>string=</b></ClLinks>) from two other <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> can be resolved in favor of either <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> by importing it into the using <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> and making it a <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbol</i></GlossaryTerm>, just as with <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>. 
+– A name conflict in <DictionaryLink  term={"export"}><b>export</b></DictionaryLink> or <DictionaryLink  term={"unintern"}><b>unintern</b></DictionaryLink> due to a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>’s inheriting two *distinct symbols* with the *same name* (under <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink>) from two other <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> can be resolved in favor of either <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> by importing it into the using <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> and making it a <GlossaryTerm styled={true} term={"shadowing symbol"}><i>shadowing symbol</i></GlossaryTerm>, just as with <DictionaryLink  term={"use-package"}><b>use-package</b></DictionaryLink>. 
 
 
 

@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (elt** *sequence index***)** *new-object<ClLinks  term={"t"}><b>*)</b></ClLinks>  -->
+<!-- **(setf (elt** *sequence index***)** *new-object<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink>  -->
 **(setf (elt** *sequence index***)** *new-object***)** 
 
 

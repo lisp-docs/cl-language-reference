@@ -10,7 +10,7 @@
 
 
 
-<!-- **(setf (gethash** *key hash-table* &amp;optional *default<ClLinks  term={"t"}><b>*)</b></ClLinks> *new-value***)**  -->
+<!-- **(setf (gethash** *key hash-table* &amp;optional *default<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink> *new-value***)**  -->
 **(setf (gethash** *key hash-table* &amp;optional *default***)** *new-value***)** 
 
 

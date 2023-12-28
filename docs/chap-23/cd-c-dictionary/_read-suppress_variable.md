@@ -78,7 +78,7 @@ The ## notation always produces <DictionaryLink  term={"nil"}><b>nil</b></Dictio
 
 
 
-No matter what the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"read-suppress"}><b>\*read-suppress\*</b></DictionaryLink>, parentheses still continue to delimit and construct <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm>; the #( notation continues to delimit <GlossaryTerm  term={"vector"}><i>vectors</i></GlossaryTerm>; and comments, <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm>, and the <GlossaryTerm  term={"single-quote"}><i>single-quote</i></GlossaryTerm> and <GlossaryTerm  term={"backquote"}><i>backquote</i></GlossaryTerm> notations continue to be interpreted properly. Such situations as ’), #&lt;, #), and #<ClLinks  term={"space"}><i>⟨Space⟩</i></ClLinks> continue to signal errors. 
+No matter what the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink  term={"read-suppress"}><b>\*read-suppress\*</b></DictionaryLink>, parentheses still continue to delimit and construct <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm>; the #( notation continues to delimit <GlossaryTerm  term={"vector"}><i>vectors</i></GlossaryTerm>; and comments, <GlossaryTerm  term={"string"}><i>strings</i></GlossaryTerm>, and the <GlossaryTerm  term={"single-quote"}><i>single-quote</i></GlossaryTerm> and <GlossaryTerm  term={"backquote"}><i>backquote</i></GlossaryTerm> notations continue to be interpreted properly. Such situations as ’), #&lt;, #), and #<GlossaryTerm  term={"space"}><i>⟨Space⟩</i></GlossaryTerm> continue to signal errors. 
 
 
 
