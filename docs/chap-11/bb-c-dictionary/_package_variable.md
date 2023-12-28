@@ -1,4 +1,4 @@
-*∗<ClLinks  term={"package"}><b><GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm></b></ClLinks>∗ Variable* 
+*∗<DictionaryLink  term={"package"}><b><GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm></b></DictionaryLink>∗ Variable* 
 
 
 

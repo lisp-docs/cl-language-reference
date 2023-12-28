@@ -14,7 +14,7 @@ Certain <GlossaryTerm styled={true} term={"stream variable"}><i>stream variables
 
 | :- |
 
-|<p>*debug I/O* **\*debug-io\*** </p><p>*error output<ClLinks  term={"t"}><i> </i></ClLinks>*\*error-output\*** </p><p>*query I/O* **\*query-io\*** </p><p>*standard input<ClLinks  term={"t"}><i> </i></ClLinks>*\*standard-input\*** </p><p>*standard output<ClLinks  term={"t"}><i> </i></ClLinks>*\*standard-output\*** </p><p>*terminal I/O* <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink> </p><p>*trace output<ClLinks  term={"t"}><i> </i></ClLinks>*\*trace-output\***</p>|
+|<p>*debug I/O* **\*debug-io\*** </p><p>*error output<GlossaryTerm  term={"t"}><i> </i></ClLinks>*\*error-output\*** </p><p>*query I/O* **\*query-io\*** </p><p>*standard input<ClLinks  term={"t"}><i> </i></ClLinks>*\*standard-input\*** </p><p>*standard output<ClLinks  term={"t"}><i> </i></ClLinks>*\*standard-output\*** </p><p>*terminal I/O* <DictionaryLink  term={"terminal-io"}><b>\*terminal-io\*</b></DictionaryLink> </p><p>*trace output<ClLinks  term={"t"}><i> </i></GlossaryTerm>*\*trace-output\***</p>|
 
 
 

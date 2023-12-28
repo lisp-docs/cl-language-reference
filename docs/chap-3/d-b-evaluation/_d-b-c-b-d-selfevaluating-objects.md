@@ -2,7 +2,7 @@
 
 
 
-A <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that is neither a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> nor a <GlossaryTerm  term={"cons"}><i>cons</i></GlossaryTerm> is defined to be a *self-evaluating object<ClLinks  term={"t"}><i>. </i></ClLinks>Evaluating* such an *object yields* the *same object* as a result. 
+A <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that is neither a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> nor a <GlossaryTerm  term={"cons"}><i>cons</i></GlossaryTerm> is defined to be a *self-evaluating object<GlossaryTerm  term={"t"}><i>. </i></GlossaryTerm>Evaluating* such an *object yields* the *same object* as a result. 
 
 
 

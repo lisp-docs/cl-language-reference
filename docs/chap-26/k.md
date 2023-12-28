@@ -7,7 +7,7 @@ sidebar_position: 107
 
 
 
-**key** *n.* an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> used for selection during retrieval. See *association list<ClLinks  term={"t"}><i>, </i></ClLinks>property list*, and <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. Also, see Section 17.1 (Sequence Concepts). 
+**key** *n.* an <GlossaryTerm  term={"object"}><i>object</i></GlossaryTerm> used for selection during retrieval. See *association list<GlossaryTerm  term={"t"}><i>, </i></GlossaryTerm>property list*, and <GlossaryTerm styled={true} term={"hash table"}><i>hash table</i></GlossaryTerm>. Also, see Section 17.1 (Sequence Concepts). 
 
 
 
