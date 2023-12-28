@@ -397,7 +397,7 @@ sidebar_position: 1
 | `comment` | 2–24, 2–38 |
 | `:common` | 19–5 |
 | `COMMON-LISP *package` | 1–35, 11–4 |
-| `COMMON-LISP-USER` <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> | 11–7 |
+| `COMMON-LISP-USER` *package* | 11–7 |
 | `commonp` | A–1 |
 | `compilation` | 26–11 |
 | `compilation environment` | 3–14, 26–11 |
@@ -960,7 +960,7 @@ sidebar_position: 1
 | `lexical scope` | 26–34 |
 | `lexical variable` | 26–34 |
 | `linear-style conditional newline` | 22–17, 22–54 |
-| `LISP` <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> | A–1 |
+| `LISP` *package* | A–1 |
 |
 | `Lisp image` | 26–34 |
 | `Lisp printer` | 26–35 |
@@ -1449,7 +1449,7 @@ sidebar_position: 1
 | `Right-Brace (format directive)` | 22–39 |
 | `Right-Bracket` (format directive) | 22–37 |
 | `Right-Paren` (format directive) | 22–40 |
-| `<GlossaryTerm styled={true} term={"right-parenthesis"}><i>right-parenthesis</i></GlossaryTerm>` | 26–49 |
+| `*right-parenthesis*` | 26–49 |
 | `Right-Parenthesis (reader macro)` | 2–23 |
 | `room` | 25–21 |
 | `rotatef` | 5–103 |
@@ -1730,7 +1730,7 @@ sidebar_position: 1
 | `synonym-stream` | 21–10 |
 | `synonym-stream-symbol` | 21–46 |
 | `syntax type` | 2–5, 26–57 |
-| `SYSTEM` <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> | A–1 |
+| `SYSTEM` *package* | A–1 |
 | `system class` | 26–58 |
 | `system code` | 26–58 |
 | `t` | 26–58 |
@@ -1866,7 +1866,7 @@ sidebar_position: 1
 | `use-package` | 11–28 |
 | `use-value` | 9–68 |
 | `user` | 26–61 |
-| `USER` <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm> | A–1 |
+| `USER` *package* | A–1 |
 | `user-homedir-pathname` | 25–32 |
 | `valid array dimension` | 26–61 |
 | `valid array index` | 26–62 |

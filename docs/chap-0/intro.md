@@ -121,8 +121,8 @@ sidebar_position: 0
 | 5–9. Read-Modify-Write Macros | 5–12 |
 | 5–10. Macros that have implicit tagbodies. | 5–49 |
 | 5–11. Operators that always prefer EQ over EQL | 5–58 |
-| 5–12. Summary and priorities of behavior of <DictionaryLink styled={true} term={"equal"}><b>equal</b></DictionaryLink> | 5–61 |
-| 5–13. Summary and priorities of behavior of <DictionaryLink styled={true} term={"equalp"}><b>equalp</b></DictionaryLink> | 5–63  |
+| 5–12. Summary and priorities of behavior of **equal** | 5–61 |
+| 5–13. Summary and priorities of behavior of **equalp** | 5–63  |
 
 ### Chapter 6 (Iteration)
 
