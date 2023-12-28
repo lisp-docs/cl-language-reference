@@ -138,57 +138,76 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
+        style: 'dark',
         links: [
           {
-            title: "Docs",
+            title: 'Docs',
             items: [
               {
-                label: "CL Technical Reference",
-                to: "/",
+                label: 'Common Lisp Tutorial',
+                to: 'https://lisp-docs.github.io/docs/tutorial',
               },
               {
-                label: "CL Tutorial",
-                to: "https://lisp-docs.github.io/",
+                label: 'Common Lisp Technical Reference',
+                to: 'https://lisp-docs.github.io/cl-language-reference/',
+              },
+              {
+                label: 'Help',
+                to: 'https://lisp-docs.github.io/docs/help',
+              }
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/common-lisp',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/hhk46CE',
+              },
+              {
+                label: 'Reddit',
+                href: 'https://www.reddit.com/r/common_lisp',
+              },
+              {
+                label: 'IRC',
+                href: 'https://irclog.tymoon.eu/libera/commonlisp',
               },
             ],
           },
           {
-            title: "Community",
+            title: 'More',
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/common-lisp",
+                label: 'Blog',
+                to: 'https://lisp-docs.github.io/blog',
               },
               {
-                label: "Discord",
-                href: "https://discord.gg/hhk46CE",
+                label: 'Tutorial and General Content GitHub',
+                href: 'https://github.com/lisp-docs/lisp-docs.github.io',
               },
               {
-                label: "Reddit",
-                href: "https://www.reddit.com/r/common_lisp",
+                label: 'Technical Reference GitHub',
+                href: 'https://github.com/lisp-docs/cl-language-reference/',
               },
-              {
-                label: "IRC",
-                href: "https://irclog.tymoon.eu/libera/commonlisp",
-              },
+              {label: 'Contribute to the Docs', to: 'https://lisp-docs.github.io/docs/contribute'},
             ],
           },
           {
-            title: "More",
+            title: 'Common Lisp Docs',
             items: [
-              {
-                label: "Blog",
-                to: "https://lisp-docs.github.io//blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/lisp-docs/cl-language-reference/",
-              },
+              {label: 'About', to: 'https://lisp-docs.github.io/docs/about'},
+              {label: 'Why Lisp', to: 'https://lisp-docs.github.io/docs/whylisp'},
+              {label: 'Getting Started', to: 'https://lisp-docs.github.io/docs/getting-started'},
+              {label: 'FAQ', to: 'https://lisp-docs.github.io/docs/faq'},
+              {label: 'Getting Help', to: 'https://lisp-docs.github.io/docs/help'},
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} LISP Docs, MIT License. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Common Lisp Docs, MIT License (see GitHub Repo).`,
       },
       prism: {
         theme: prismThemes.github,
