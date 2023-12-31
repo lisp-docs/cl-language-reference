@@ -133,6 +133,7 @@ const config = {
             label: "Why Lisp?",
             position: "left",
           },
+          { to: "https://lisp-docs.github.io/docs/howto", label: "Guides", position: "left" },
 
           {
             to: "https://lisp-docs.github.io/docs/contribute",
@@ -237,6 +238,7 @@ const config = {
                 label: "Getting Help",
                 to: "https://lisp-docs.github.io/docs/help",
               },
+              { label: "How To Guides", to: "https://lisp-docs.github.io/docs/howto" },
             ],
           },
         ],
