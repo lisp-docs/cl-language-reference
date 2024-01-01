@@ -47,6 +47,7 @@ const config = {
         docs: {
           sidebarPath: "./sidebars.js",
           routeBasePath: "/",
+          showLastUpdateAuthor: true,
           editUrl:
             "https://github.com/lisp-docs/cl-language-reference/tree/develop/",
           remarkPlugins: [remarkDefinitionList],
