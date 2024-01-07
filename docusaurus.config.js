@@ -118,10 +118,11 @@ const config = {
         },
         items: [
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
+            // type: "docSidebar",
+            // sidebarId: "tutorialSidebar",
+            to: "https://lisp-docs.github.io/docs/tutorial/",
             label: "Tutorial",
+            position: "left",
           },
           {
             to: "https://lisp-docs.github.io/cl-language-reference/",
