@@ -18,10 +18,9 @@ Here are a few examples of using this declaration:
 
 ```lisp
 (let ((x 24)) (declare (ignorable x)))
-
 ```
 
-Notice how the `declare` statement is *after* the `x` is bound. See also the syntax for <DictionaryLink term={"let"}><b>let</b></DictionaryLink> where the *declaration* is explicitly specified after the *variables* and before the *forms*.
+Notice how the <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> is *after* the `x` is bound. See also the syntax for <DictionaryLink term={"let"}><b>let</b></DictionaryLink> where the <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> is explicitly specified after the <GlossaryTerm styled={true} term={"variable"}><i>variables</i></GlossaryTerm> and before the *forms*.
 
 Without an ignore declararation we get the expected compiler warning:
 
@@ -44,7 +43,7 @@ NIL
 CL-USER> (defun foo (x) (declare (ignore x)) (format T "Hello World!"))
 ```
 
-Notice again that the `declare` statement is *after* the `x` is bound.
+Notice again that the <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> is *after* the `x` is bound.
 
 ```lisp
 CL-USER> (foo 24)
@@ -53,7 +52,7 @@ Hello World!NIL
 
 And there is no compiler warning about `x` not being used.
 
-However without the ignore declaration a compiler warning is issued:
+However without the ignore <GlossaryTerm styled={true} term={"declaration"}><i>declaration</i></GlossaryTerm> a compiler warning is issued:
 
 ```lisp
 CL-USER> (defun foo (x)  (format T "Hello World!"))
