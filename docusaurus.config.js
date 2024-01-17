@@ -49,13 +49,13 @@ const config = {
           routeBasePath: "/",
           showLastUpdateAuthor: true,
           editUrl:
-            "https://github.com/lisp-docs/cl-language-reference/tree/develop/",
+            "https://github.com/lisp-docs/cl-language-reference/tree/main/",
           remarkPlugins: [remarkDefinitionList],
         },
         // blog: {
         //   showReadingTime: true,
         //   editUrl:
-        //     "https://github.com/lisp-docs/cl-language-reference/tree/develop/",
+        //     "https://github.com/lisp-docs/cl-language-reference/tree/main/",
         // },
         blog: false,
         theme: {
