@@ -154,9 +154,18 @@ const sidebars = {
       label: "26. Environments",
       items: [
         "environments/index",
-        "chap-7/h-h-dictionary/find-class_accessor",
-        "chap-5/f-d-dictionary/fdefinition_accessor",
-        "chap-10/ba-c-dictionary/symbol-value_accessor",
+        {
+          type: "category", label: "Environments Dictionary",
+          link: {
+            type: 'generated-index',
+            title: 'Environments Dictionary',
+          },
+          items: [
+            "chap-7/h-h-dictionary/find-class_accessor",
+            "chap-5/f-d-dictionary/fdefinition_accessor",
+            "chap-10/ba-c-dictionary/symbol-value_accessor",
+          ],
+        },
       ],
     },
     "dictionary-entries",
