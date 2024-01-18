@@ -11,6 +11,7 @@ Some class metaobject classes allow their instances to be redefined. When permis
 
 An example of creating an anonymous class directly using [make-instance](/docs/meta-object-protocol/make-instance) follows:
 
+```lisp
     (flet ((zero () 0)
            (propellor () *propellor*))
       (make-instance 'standard-class
@@ -30,6 +31,7 @@ An example of creating an anonymous class directly using [make-instance](/docs/m
                          :readers (position-y)
                          :writers ((setf position-y))))
         :direct-default-initargs `((:engine *propellor* ,#'propellor))))
+```
 
 ##### Comments and remarks
 
