@@ -1,7 +1,7 @@
 validate-superclass-class-class
 ===============================
 
-[*Method* **VALIDATE-SUPERCLASS**]()
+*Method* **VALIDATE-SUPERCLASS**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ validate-superclass-class-class
 
 **Description:**
 
-[This is a method on the generic function]()[validate-superclass](validate-superclass.md).
+This is a method on the generic function[validate-superclass](validate-superclass.md).
 
 This method returns true in three situations:
 

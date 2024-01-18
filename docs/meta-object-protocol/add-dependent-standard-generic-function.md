@@ -1,7 +1,7 @@
 add-dependent-standard-generic-function
 =======================================
 
-[*Method* **ADD-DEPENDENT**]()
+*Method* **ADD-DEPENDENT**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ add-dependent-standard-generic-function
 
 **Description:**
 
-[This is a method on the generic function]()[add-dependent](add-dependent.md).
+This is a method on the generic function[add-dependent](add-dependent.md).
 
 No behavior is specified for this method beyond that which is specified for the generic function.
 

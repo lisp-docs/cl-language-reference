@@ -1,7 +1,7 @@
 class-direct-subclasses
 =======================
 
-[*Generic Function* **CLASS-DIRECT-SUBCLASSES**]()
+*Generic Function* **CLASS-DIRECT-SUBCLASSES**
 
 **Syntax:**
 
@@ -15,7 +15,7 @@ class-direct-subclasses
 
 **Description:**
 
-[Returns a set of the direct subclasses of *class*. The elements of this set are class metaobjects that all mention this class among their direct superclasses. The empty set is returned if *class* has no direct subclasses. This value is maintained by the generic functions]()[add-direct-subclass](add-direct-subclass.md) and [remove-direct-subclass](remove-direct-subclass.md).
+Returns a set of the direct subclasses of *class*. The elements of this set are class metaobjects that all mention this class among their direct superclasses. The empty set is returned if *class* has no direct subclasses. This value is maintained by the generic functions[add-direct-subclass](add-direct-subclass.md) and [remove-direct-subclass](remove-direct-subclass.md).
 
 **Methods:**
 

@@ -1,7 +1,7 @@
 extract-lambda-list
 ===================
 
-[*Function* **EXTRACT-LAMBDA-LIST**]()
+*Function* **EXTRACT-LAMBDA-LIST**
 
 **Syntax:**
 

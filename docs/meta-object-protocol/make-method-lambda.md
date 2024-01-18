@@ -1,7 +1,7 @@
 make-method-lambda
 ==================
 
-[*Generic Function* **MAKE-METHOD-LAMBDA**]()
+*Generic Function* **MAKE-METHOD-LAMBDA**
 
 **Syntax:**
 
@@ -15,7 +15,7 @@ make-method-lambda
 
 *lambda-expression* -- A lambda expression.
 
-[*environment* -- An]()[environment object](http://www.lispworks.com/documentation/HyperSpec/Body/03_aad.htm).
+*environment* -- An[environment object](http://www.lispworks.com/documentation/HyperSpec/Body/03_aad.htm).
 
 *resulting-lambda-expression* -- A lambda expression.
 

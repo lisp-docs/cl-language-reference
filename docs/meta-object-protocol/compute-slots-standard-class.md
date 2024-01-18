@@ -1,7 +1,7 @@
 compute-slots-standard-class
 ============================
 
-[*Method* **COMPUTE-SLOTS**]()
+*Method* **COMPUTE-SLOTS**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ compute-slots-standard-class
 
 **Description:**
 
-[This is a method on the generic function]()[compute-slots](compute-slots.md).
+This is a method on the generic function[compute-slots](compute-slots.md).
 
 This method implements the specified behavior of the generic function.
 

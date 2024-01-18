@@ -1,7 +1,7 @@
 ensure-class-using-class-null
 =============================
 
-[*Method* **ENSURE-CLASS-USING-CLASS**]()
+*Method* **ENSURE-CLASS-USING-CLASS**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ ensure-class-using-class-null
 
 **Description:**
 
-[This is a method on the generic function]()[ensure-class-using-class](ensure-class-using-class.md).
+This is a method on the generic function[ensure-class-using-class](ensure-class-using-class.md).
 
 This method implements the behavior of the generic function in the case where the *class* argument is `nil`.

@@ -1,7 +1,7 @@
 allocate-instance
 =================
 
-[*Generic Function* **ALLOCATE-INSTANCE**]()
+*Generic Function* **ALLOCATE-INSTANCE**
 
 **Syntax:**
 
@@ -19,7 +19,7 @@ allocate-instance
 
 This generic function is called to create a new, uninitialized instance of a class. The interpretation of the concept of an ``uninitialized'' instance depends on the class metaobject class.
 
-[Before allocating the new instance,]()[class-finalized-p](class-finalized-p.md) is called to see if *class* has been finalized. If it has not been finalized, [finalize-inheritance](finalize-inheritance.md) is called before the new instance is allocated.
+Before allocating the new instance,[class-finalized-p](class-finalized-p.md) is called to see if *class* has been finalized. If it has not been finalized, [finalize-inheritance](finalize-inheritance.md) is called before the new instance is allocated.
 
 **Methods:**
 

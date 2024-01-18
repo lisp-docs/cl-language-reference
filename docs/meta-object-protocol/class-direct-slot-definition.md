@@ -3,7 +3,7 @@ DIRECT-SLOT-DEFINITION
 
 ------------------------------------------------------------------------
 
-[*Class* **DIRECT-SLOT-DEFINITION**]()
+*Class* **DIRECT-SLOT-DEFINITION**
 
 **Direct superclasses:**
 

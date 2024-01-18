@@ -1,7 +1,7 @@
 slot-definition-initargs
 ========================
 
-[*Generic Function* **SLOT-DEFINITION-INITARGS**]()
+*Generic Function* **SLOT-DEFINITION-INITARGS**
 
 **Syntax:**
 

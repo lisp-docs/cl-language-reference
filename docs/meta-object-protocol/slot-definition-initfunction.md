@@ -1,7 +1,7 @@
 slot-definition-initfunction
 ============================
 
-[*Generic Function* **SLOT-DEFINITION-INITFUNCTION**]()
+*Generic Function* **SLOT-DEFINITION-INITFUNCTION**
 
 **Syntax:**
 
@@ -29,4 +29,4 @@ An error is signaled if the argument *slot* is not a slot definition metaobject.
 
 **Note:**
 
-[The initfunction of a slot-definition is typically created from the *initform* given in the `defclass` macro call, and then passed to the]()[ensure-class](ensure-class.md) function as described in the [section about the `defclass` macro](the-defclass-macro.md).
+The initfunction of a slot-definition is typically created from the *initform* given in the `defclass` macro call, and then passed to the[ensure-class](ensure-class.md) function as described in the [section about the `defclass` macro](the-defclass-macro.md).

@@ -1,7 +1,7 @@
 method-qualifiers
 =================
 
-[*Generic Function* **METHOD-QUALIFIERS**]()
+*Generic Function* **METHOD-QUALIFIERS**
 
 **Syntax:**
 

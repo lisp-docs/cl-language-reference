@@ -1,7 +1,7 @@
 slot-value-using-class
 ======================
 
-[*Generic Function* **SLOT-VALUE-USING-CLASS**]()
+*Generic Function* **SLOT-VALUE-USING-CLASS**
 
 **Syntax:**
 
@@ -19,7 +19,7 @@ slot-value-using-class
 
 **Description:**
 
-[This generic function implements the behavior of the]()[slot-value](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_va.htm#slot-value) function. It is called by [slot-value](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_va.htm#slot-value) with the class of *object* as its first argument and the pertinent effective slot definition metaobject as its third argument.
+This generic function implements the behavior of the[slot-value](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_va.htm#slot-value) function. It is called by [slot-value](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_va.htm#slot-value) with the class of *object* as its first argument and the pertinent effective slot definition metaobject as its third argument.
 
 The generic function `slot-value-using-class` returns the value contained in the given slot of the given object. If the slot is unbound [slot-unbound](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_un.htm#slot-unbound) is called.
 

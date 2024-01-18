@@ -1,7 +1,7 @@
 map-dependents
 ==============
 
-[*Generic Function* **MAP-DEPENDENTS**]()
+*Generic Function* **MAP-DEPENDENTS**
 
 **Syntax:**
 
@@ -17,7 +17,7 @@ map-dependents
 
 **Description:**
 
-[This generic function applies *function* to each of the dependents of *metaobject*. The order in which the dependents are processed is not specified, but *function* is applied to each dependent once and only once. If, during the mapping,]()[add-dependent](add-dependent.md) or [remove-dependent](remove-dependent.md) is called to alter the dependents of *metaobject*, it is not specified whether the newly added or removed dependent will have *function* applied to it.
+This generic function applies *function* to each of the dependents of *metaobject*. The order in which the dependents are processed is not specified, but *function* is applied to each dependent once and only once. If, during the mapping,[add-dependent](add-dependent.md) or [remove-dependent](remove-dependent.md) is called to alter the dependents of *metaobject*, it is not specified whether the newly added or removed dependent will have *function* applied to it.
 
 **Methods:**
 

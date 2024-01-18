@@ -1,7 +1,7 @@
 slot-definition-writers
 =======================
 
-[*Generic Function* **SLOT-DEFINITION-WRITERS**]()
+*Generic Function* **SLOT-DEFINITION-WRITERS**
 
 **Syntax:**
 

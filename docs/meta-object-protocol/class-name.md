@@ -1,7 +1,7 @@
 class-name
 ==========
 
-[*Generic Function* **CLASS-NAME**]()
+*Generic Function* **CLASS-NAME**
 
 **Syntax:**
 
@@ -15,7 +15,7 @@ class-name
 
 **Description:**
 
-[Returns the name of *class*. This value can be any Lisp object, but is usually a symbol, or `nil` if the class has no name. This is the defaulted value of the `:name` initialization argument that was associated with the class during initialization or reinitialization. (Also see]()[(setf class-name)](setf-class-name.md).)
+Returns the name of *class*. This value can be any Lisp object, but is usually a symbol, or `nil` if the class has no name. This is the defaulted value of the `:name` initialization argument that was associated with the class during initialization or reinitialization. (Also see[(setf class-name)](setf-class-name.md).)
 
 **Methods:**
 

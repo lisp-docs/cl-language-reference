@@ -1,7 +1,7 @@
 method-specializers
 ===================
 
-[*Generic Function* **METHOD-SPECIALIZERS**]()
+*Generic Function* **METHOD-SPECIALIZERS**
 
 **Syntax:**
 

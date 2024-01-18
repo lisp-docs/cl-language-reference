@@ -1,7 +1,7 @@
 find-method-combination
 =======================
 
-[*Generic Function* **FIND-METHOD-COMBINATION**]()
+*Generic Function* **FIND-METHOD-COMBINATION**
 
 **Syntax:**
 

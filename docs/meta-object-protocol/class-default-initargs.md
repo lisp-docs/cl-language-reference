@@ -1,7 +1,7 @@
 class-default-initargs
 ======================
 
-[*Generic Function* **CLASS-DEFAULT-INITARGS**]()
+*Generic Function* **CLASS-DEFAULT-INITARGS**
 
 **Syntax:**
 
@@ -17,7 +17,7 @@ class-default-initargs
 
 Returns a list of the default initialization arguments for *class*. Each element of this list is a canonicalized default initialization argument. The empty list is returned if *class* has no default initialization arguments.
 
-[During finalization]()[finalize-inheritance](finalize-inheritance.md) calls [compute-default-initargs](compute-default-initargs.md) to compute the default initialization arguments for the class. That value is associated with the class metaobject and is returned by **class-default-initargs**.
+During finalization[finalize-inheritance](finalize-inheritance.md) calls [compute-default-initargs](compute-default-initargs.md) to compute the default initialization arguments for the class. That value is associated with the class metaobject and is returned by **class-default-initargs**.
 
 This generic function signals an error if *class* has not been finalized.
 

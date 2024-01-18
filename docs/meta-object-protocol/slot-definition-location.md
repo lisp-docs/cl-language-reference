@@ -1,7 +1,7 @@
 slot-definition-location
 ========================
 
-[*Generic Function* **SLOT-DEFINITION-LOCATION**]()
+*Generic Function* **SLOT-DEFINITION-LOCATION**
 
 **Syntax:**
 
@@ -15,7 +15,7 @@ slot-definition-location
 
 **Description:**
 
-[Returns the location of *effective-slot-definition*. The meaning and interpretation of this value is described in**]()**[the section called ``Instance Structure Protocol.''](instance-structure-protocol.md)**
+Returns the location of *effective-slot-definition*. The meaning and interpretation of this value is described in****[the section called ``Instance Structure Protocol.''](instance-structure-protocol.md)**
 
 ****
 

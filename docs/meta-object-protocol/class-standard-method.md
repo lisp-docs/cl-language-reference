@@ -3,7 +3,7 @@ STANDARD-METHOD
 
 ------------------------------------------------------------------------
 
-[*Class* **STANDARD-METHOD**]()
+*Class* **STANDARD-METHOD**
 
 **Direct superclasses:**
 

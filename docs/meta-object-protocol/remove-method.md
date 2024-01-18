@@ -1,7 +1,7 @@
 remove-method
 =============
 
-[*Generic Function* **REMOVE-METHOD**]()
+*Generic Function* **REMOVE-METHOD**
 
 **Syntax:**
 
@@ -21,7 +21,7 @@ No error is signaled if the method is not among the methods of the generic funct
 
 Breaking the association between the method and the generic function proceeds in four steps:
 
-1.  [remove *method* from the set returned by]()[generic-function-methods](generic-function-methods.md) and arrange for [method-generic-function](method-generic-function.md) to return `nil`;
+1.  remove *method* from the set returned by[generic-function-methods](generic-function-methods.md) and arrange for [method-generic-function](method-generic-function.md) to return `nil`;
 2.  call [remove-direct-method](remove-direct-method.md) for each of the method's specializers;
 3.  call [compute-discriminating-function](compute-discriminating-function.md) and install its result with [set-funcallable-instance-function](set-funcallable-instance-function.md); and
 4.  update the dependents of the generic function.

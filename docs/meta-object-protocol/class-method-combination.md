@@ -3,7 +3,7 @@ METHOD-COMBINATION
 
 ------------------------------------------------------------------------
 
-[*Class* **METHOD-COMBINATION**]()
+*Class* **METHOD-COMBINATION**
 
 **Direct superclasses:**
 

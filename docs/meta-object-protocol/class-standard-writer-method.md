@@ -3,7 +3,7 @@ STANDARD-WRITER-METHOD
 
 ------------------------------------------------------------------------
 
-[*Class* **STANDARD-WRITER-METHOD**]()
+*Class* **STANDARD-WRITER-METHOD**
 
 **Direct superclasses:**
 

@@ -1,7 +1,7 @@
 class-default-initargs-forward-referenced-class
 ===============================================
 
-[*Method* **CLASS-DEFAULT-INITARGS**]()
+*Method* **CLASS-DEFAULT-INITARGS**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ class-default-initargs-forward-referenced-class
 
 **Description:**
 
-[This is a method on the generic function]()[class-default-initargs](class-default-initargs.md).
+This is a method on the generic function[class-default-initargs](class-default-initargs.md).
 
 This method signals an error.

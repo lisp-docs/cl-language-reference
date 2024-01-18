@@ -1,7 +1,7 @@
 intern-eql-specializer
 ======================
 
-[*Function* **INTERN-EQL-SPECIALIZER**]()
+*Function* **INTERN-EQL-SPECIALIZER**
 
 **Syntax:**
 
@@ -19,6 +19,6 @@ This function returns the unique `eql>` specializer metaobject for *object*, cre
 
 **Remarks:**
 
-[The result of calling]()[eql-specializer-object](eql-specializer-object.md) on the result of a call to `intern-eql-special-izer} is only     guaranteed to be eql` to the original *object* argument, not necessarily `eq`.
+The result of calling[eql-specializer-object](eql-specializer-object.md) on the result of a call to `intern-eql-special-izer} is only     guaranteed to be eql` to the original *object* argument, not necessarily `eq`.
 
 `    `

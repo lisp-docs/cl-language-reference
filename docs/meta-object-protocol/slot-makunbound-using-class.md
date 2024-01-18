@@ -1,7 +1,7 @@
 slot-makunbound-using-class
 ===========================
 
-[*Generic Function* **SLOT-MAKUNBOUND-USING-CLASS**]()
+*Generic Function* **SLOT-MAKUNBOUND-USING-CLASS**
 
 **Syntax:**
 
@@ -17,7 +17,7 @@ slot-makunbound-using-class
 
 **Description:**
 
-[This generic function implements the behavior of the]()[slot-makunbound](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_ma.htm) function. It is called by [slot-makunbound](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_ma.htm) with the class of *object* as its first argument and the pertinent effective slot definition metaobject as its third argument.
+This generic function implements the behavior of the[slot-makunbound](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_ma.htm) function. It is called by [slot-makunbound](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_ma.htm) with the class of *object* as its first argument and the pertinent effective slot definition metaobject as its third argument.
 
 The generic function `slot-makunbound-using-class` restores a slot in an object to its unbound state. The interpretation of ``restoring a slot to its unbound state'' depends on the class metaobject class.
 

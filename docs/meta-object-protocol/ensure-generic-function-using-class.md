@@ -1,7 +1,7 @@
 ensure-generic-function-using-class
 ===================================
 
-[*Generic Function* **ENSURE-GENERIC-FUNCTION-USING-CLASS**]()
+*Generic Function* **ENSURE-GENERIC-FUNCTION-USING-CLASS**
 
 **Syntax:**
 
@@ -15,7 +15,7 @@ ensure-generic-function-using-class
 
 *function-name* -- A symbol or a list of the form `(setf symbol)`.
 
-[`:generic-function-class` -- A class metaobject or a class name. If it is not supplied, it defaults to the class named]()[standard-generic-function](class-standard-generic-function.md). If a class name is supplied, it is interpreted as the class with that name. If a class name is supplied, but there is no such class, an error is signaled.
+`:generic-function-class` -- A class metaobject or a class name. If it is not supplied, it defaults to the class named[standard-generic-function](class-standard-generic-function.md). If a class name is supplied, it is interpreted as the class with that name. If a class name is supplied, but there is no such class, an error is signaled.
 
 For the interpretation of additional keyword arguments, see [``Initialization of Generic Function Metaobjects''](initialization-of-generic-function-metaobjects.md).
 

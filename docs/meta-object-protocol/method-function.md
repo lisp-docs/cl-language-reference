@@ -1,7 +1,7 @@
 method-function
 ===============
 
-[*Generic Function* **METHOD-FUNCTION**]()
+*Generic Function* **METHOD-FUNCTION**
 
 **Syntax:**
 

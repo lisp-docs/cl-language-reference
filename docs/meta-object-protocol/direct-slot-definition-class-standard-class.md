@@ -1,7 +1,7 @@
 direct-slot-definition-class-standard-class
 ===========================================
 
-[*Method* **DIRECT-SLOT-DEFINITION-CLASS**]()
+*Method* **DIRECT-SLOT-DEFINITION-CLASS**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ direct-slot-definition-class-standard-class
 
 **Description:**
 
-[This is a method on the generic function]()[direct-slot-definition-class](direct-slot-definition-class.md).
+This is a method on the generic function[direct-slot-definition-class](direct-slot-definition-class.md).
 
 This method returns the class [standard-direct-slot-definition](class-standard-direct-slot-definition.md).
 

@@ -1,7 +1,7 @@
 class-name-built-in-class
 =========================
 
-[*Method* **CLASS-NAME**]()
+*Method* **CLASS-NAME**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ class-name-built-in-class
 
 **Description:**
 
-[This is a method on the generic function]()[class-name](class-name.md).
+This is a method on the generic function[class-name](class-name.md).
 
 This method returns the name of the built-in class.

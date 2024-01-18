@@ -1,7 +1,7 @@
 class-finalized-p-built-in-class
 ================================
 
-[*Method* **CLASS-FINALIZED-P**]()
+*Method* **CLASS-FINALIZED-P**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ class-finalized-p-built-in-class
 
 **Description:**
 
-[This is a method on the generic function]()[class-finalized-p](class-finalized-p.md).
+This is a method on the generic function[class-finalized-p](class-finalized-p.md).
 
 This method returns true.

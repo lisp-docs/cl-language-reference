@@ -1,7 +1,7 @@
 generic-function-method-class
 =============================
 
-[*Generic Function* **GENERIC-FUNCTION-METHOD-CLASS**]()
+*Generic Function* **GENERIC-FUNCTION-METHOD-CLASS**
 
 **Syntax:**
 

@@ -1,7 +1,7 @@
 class-direct-superclasses
 =========================
 
-[*Generic Function* **CLASS-DIRECT-SUPERCLASSES**]()
+*Generic Function* **CLASS-DIRECT-SUPERCLASSES**
 
 **Syntax:**
 

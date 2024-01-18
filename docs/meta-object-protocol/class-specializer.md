@@ -3,7 +3,7 @@ SPECIALIZER
 
 ------------------------------------------------------------------------
 
-[*Class* **SPECIALIZER**]()
+*Class* **SPECIALIZER**
 
 **Direct superclasses:**
 

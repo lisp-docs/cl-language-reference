@@ -1,7 +1,7 @@
 class-direct-default-initargs-forward-referenced-class
 ======================================================
 
-[*Method* **CLASS-DIRECT-DEFAULT-INITARGS**]()
+*Method* **CLASS-DIRECT-DEFAULT-INITARGS**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ class-direct-default-initargs-forward-referenced-class
 
 **Description:**
 
-[This is a method on the generic function]()[class-direct-default-initargs](class-direct-default-initargs.md).
+This is a method on the generic function[class-direct-default-initargs](class-direct-default-initargs.md).
 
 This method returns the empty list.

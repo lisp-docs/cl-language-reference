@@ -1,7 +1,7 @@
 compute-slots
 =============
 
-[*Generic Function* **COMPUTE-SLOTS**]()
+*Generic Function* **COMPUTE-SLOTS**
 
 **Syntax:**
 
@@ -20,7 +20,7 @@ This generic function computes a set of effective slot definition metaobjects fo
 This generic function proceeds in 3 steps:
 
 1.  The first step collects the full set of direct slot definitions from the superclasses of *class*.
-2.  [The direct slot definitions are then collected into individual lists, one list for each slot name associated with any of the direct slot definitions. The slot names are compared with]()[eql](http://www.lispworks.com/documentation/HyperSpec/Body/f_eql.htm). Each such list is then sorted into class precedence list order. Direct slot definitions coming from classes earlier in the class precedence list of *class* appear before those coming from classes later in the class precedence list. For each slot name, the generic function [compute-effective-slot-definition](compute-effective-slot-definition.md) is called to compute an effective slot definition. The result of [compute-slots](compute-slots.md) is a list of these effective slot definitions, in unspecified order.
+2.  The direct slot definitions are then collected into individual lists, one list for each slot name associated with any of the direct slot definitions. The slot names are compared with[eql](http://www.lispworks.com/documentation/HyperSpec/Body/f_eql.htm). Each such list is then sorted into class precedence list order. Direct slot definitions coming from classes earlier in the class precedence list of *class* appear before those coming from classes later in the class precedence list. For each slot name, the generic function [compute-effective-slot-definition](compute-effective-slot-definition.md) is called to compute an effective slot definition. The result of [compute-slots](compute-slots.md) is a list of these effective slot definitions, in unspecified order.
 3.  In the final step, the location for each effective slot definition is set. This is done by specified around-methods; portable methods cannot take over this behavior. For more information on the slot definition locations, see the section [``Instance Structure Protocol.''](instance-structure-protocol.md)
 
 **Methods:**

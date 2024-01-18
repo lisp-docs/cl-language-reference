@@ -1,7 +1,7 @@
 make-instance-symbol
 ====================
 
-[*Method* **MAKE-INSTANCE**]()
+*Method* **MAKE-INSTANCE**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ make-instance-symbol
 
 **Description:**
 
-[This is a method on the generic function]()[make-instance](make-instance.md).
+This is a method on the generic function[make-instance](make-instance.md).
 
 This method simply invokes [make-instance](make-instance.md) recursively on the arguments ([find-class](http://www.lispworks.com/documentation/HyperSpec/Body/f_find_c.htm#find-class) *class*) and *initargs*.

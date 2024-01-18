@@ -1,7 +1,7 @@
 add-direct-method-class
 =======================
 
-[*Method* **ADD-DIRECT-METHOD**]()
+*Method* **ADD-DIRECT-METHOD**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ add-direct-method-class
 
 **Description:**
 
-[This is a method on the generic function]()[add-direct-method](add-direct-method.md).
+This is a method on the generic function[add-direct-method](add-direct-method.md).
 
 This method implements the behavior of the generic function for class specializers. No behavior is specified for this method beyond that which is specified for the generic function.
 

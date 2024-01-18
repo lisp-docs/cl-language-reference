@@ -1,7 +1,7 @@
 ensure-generic-function-using-class-null
 ========================================
 
-[*Method* **ENSURE-GENERIC-FUNCTION-USING-CLASS**]()
+*Method* **ENSURE-GENERIC-FUNCTION-USING-CLASS**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ ensure-generic-function-using-class-null
 
 **Description:**
 
-[This is a method on the generic function]()[ensure-generic-function-using-class](ensure-generic-function-using-class.md).
+This is a method on the generic function[ensure-generic-function-using-class](ensure-generic-function-using-class.md).
 
 This method implements the behavior of the generic function in the case where *function-name* names no function, generic function, macro or special form.

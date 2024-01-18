@@ -3,7 +3,7 @@ FORWARD-REFERENCED-CLASS
 
 ------------------------------------------------------------------------
 
-[*Class* **FORWARD-REFERENCED-CLASS**]()
+*Class* **FORWARD-REFERENCED-CLASS**
 
 **Direct superclasses:**
 

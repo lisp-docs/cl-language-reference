@@ -1,7 +1,7 @@
 funcallable-standard-instance-access
 ====================================
 
-[*Function* **FUNCALLABLE-STANDARD-INSTANCE-ACCESS**]()
+*Function* **FUNCALLABLE-STANDARD-INSTANCE-ACCESS**
 
 **Syntax:**
 
@@ -23,7 +23,7 @@ The following restrictions apply to the use of this function:
 
 -   []()
 
-    [The *instance *argument must be a funcallable instance (it must have been returned by**]()**[allocate-instance (class funcallable-standard-class)](allocate-instance-funcallable-standard-class.md).**
+    The *instance *argument must be a funcallable instance (it must have been returned by****[allocate-instance (class funcallable-standard-class)](allocate-instance-funcallable-standard-class.md).**
 
 -   The *instance* argument cannot be an non-updated obsolete instance.
 

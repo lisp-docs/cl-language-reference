@@ -1,7 +1,7 @@
 validate-superclass
 ===================
 
-[*Generic Function* **VALIDATE-SUPERCLASS**]()
+*Generic Function* **VALIDATE-SUPERCLASS**
 
 **Syntax:**
 

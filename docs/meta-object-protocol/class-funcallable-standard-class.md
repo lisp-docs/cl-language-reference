@@ -3,7 +3,7 @@ FUNCALLABLE-STANDARD-CLASS
 
 ------------------------------------------------------------------------
 
-[*Class* **FUNCALLABLE-STANDARD-CLASS**]()
+*Class* **FUNCALLABLE-STANDARD-CLASS**
 
 **Direct superclasses:**
 

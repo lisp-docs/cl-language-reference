@@ -1,7 +1,7 @@
 remove-direct-subclass-class-class
 ==================================
 
-[*Method* **REMOVE-DIRECT-SUBCLASS**]()
+*Method* **REMOVE-DIRECT-SUBCLASS**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ remove-direct-subclass-class-class
 
 **Description:**
 
-[This is a method on the generic function]()[remove-direct-subclass](remove-direct-subclass.md).
+This is a method on the generic function[remove-direct-subclass](remove-direct-subclass.md).
 
 No behavior is specified for this method beyond that which is specified for the generic function.
 

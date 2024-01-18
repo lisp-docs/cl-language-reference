@@ -1,7 +1,7 @@
 compute-applicable-methods-using-classes
 ========================================
 
-[*Generic Function* **COMPUTE-APPLICABLE-METHODS-USING-CLASSES**]()
+*Generic Function* **COMPUTE-APPLICABLE-METHODS-USING-CLASSES**
 
 **Syntax:**
 
@@ -25,7 +25,7 @@ If it is possible to completely determine the ordered list of applicable methods
 
 If it is not possible to completely determine the ordered list of applicable methods based only on the supplied classes, this generic function returns an unspecified first value and false as its second value.
 
-[When a generic function is invoked, the discriminating function must determine the ordered list of methods applicable to the arguments. Depending on the generic function and the arguments, this is done in one of three ways: using a memoized value; calling **compute-applicable-methods-using-classes** or calling]()[compute-applicable-methods](compute-applicable-methods.md). (Refer to the description of [compute-discriminating-function](compute-discriminating-function.md) for the details of this process.)
+When a generic function is invoked, the discriminating function must determine the ordered list of methods applicable to the arguments. Depending on the generic function and the arguments, this is done in one of three ways: using a memoized value; calling **compute-applicable-methods-using-classes** or calling[compute-applicable-methods](compute-applicable-methods.md). (Refer to the description of [compute-discriminating-function](compute-discriminating-function.md) for the details of this process.)
 
 The following consistency relationship between **compute-applicable-methods-using-classes** and [compute-applicable-methods](compute-applicable-methods.md) must be maintained: for any given generic function and set of arguments, if **compute-applicable-methods-using-classes** returns a second value of true, the first value must be equal to the value that would be returned by a corresponding call to [compute-applicable-methods](compute-applicable-methods.md). The results are undefined if a portable method on either of these generic functions causes this consistency to be violated.
 

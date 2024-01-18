@@ -3,7 +3,7 @@ STANDARD-EFFECTIVE-SLOT-DEFINITION
 
 ------------------------------------------------------------------------
 
-[*Class* **STANDARD-EFFECTIVE-SLOT-DEFINITION**]()
+*Class* **STANDARD-EFFECTIVE-SLOT-DEFINITION**
 
 **Direct superclasses:**
 

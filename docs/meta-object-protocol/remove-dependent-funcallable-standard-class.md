@@ -1,7 +1,7 @@
 remove-dependent-funcallable-standard-class
 ===========================================
 
-[*Method* **REMOVE-DEPENDENT**]()
+*Method* **REMOVE-DEPENDENT**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ remove-dependent-funcallable-standard-class
 
 **Description:**
 
-[This is a method on the generic function]()[remove-dependent](remove-dependent.md).
+This is a method on the generic function[remove-dependent](remove-dependent.md).
 
 No behavior is specified for this method beyond that which is specified for the generic function.
 

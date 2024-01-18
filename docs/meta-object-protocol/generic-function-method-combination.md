@@ -1,7 +1,7 @@
 generic-function-method-combination
 ===================================
 
-[*Generic Function* **GENERIC-FUNCTION-METHOD-COMBINATION**]()
+*Generic Function* **GENERIC-FUNCTION-METHOD-COMBINATION**
 
 **Syntax:**
 

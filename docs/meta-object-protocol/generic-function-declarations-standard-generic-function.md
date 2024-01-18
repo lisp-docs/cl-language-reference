@@ -1,7 +1,7 @@
 generic-function-declarations-standard-generic-function
 =======================================================
 
-[*Method* **GENERIC-FUNCTION-DECLARATIONS**]()
+*Method* **GENERIC-FUNCTION-DECLARATIONS**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ generic-function-declarations-standard-generic-function
 
 **Description:**
 
-[This is a method on the generic function]()[generic-function-declarations](generic-function-declarations.md).
+This is a method on the generic function[generic-function-declarations](generic-function-declarations.md).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

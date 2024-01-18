@@ -1,7 +1,7 @@
 finalize-inheritance
 ====================
 
-[*Generic Function* **FINALIZE-INHERITANCE**]()
+*Generic Function* **FINALIZE-INHERITANCE**
 
 **Syntax:**
 
@@ -13,7 +13,7 @@ finalize-inheritance
 
 **Description:**
 
-[This generic function is called to finalize a class metaobject. This is described in]()[the Section named ``Class Finalization Protocol.''](class-finalization-protocol.md)
+This generic function is called to finalize a class metaobject. This is described in[the Section named ``Class Finalization Protocol.''](class-finalization-protocol.md)
 
 After [finalize-inheritance](finalize-inheritance.md) returns, the class metaobject is finalized and the result of calling [class-finalized-p](class-finalized-p.md) on the class metaobject will be true.
 

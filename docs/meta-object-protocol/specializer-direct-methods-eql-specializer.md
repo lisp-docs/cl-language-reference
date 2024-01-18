@@ -1,7 +1,7 @@
 specializer-direct-methods-eql-specializer
 ==========================================
 
-[*Method* **SPECIALIZER-DIRECT-METHODS**]()
+*Method* **SPECIALIZER-DIRECT-METHODS**
 
 **Syntax:**
 

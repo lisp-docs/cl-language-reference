@@ -1,7 +1,7 @@
 add-direct-subclass
 ===================
 
-[*Generic Function* **ADD-DIRECT-SUBCLASS**]()
+*Generic Function* **ADD-DIRECT-SUBCLASS**
 
 **Syntax:**
 
@@ -19,7 +19,7 @@ This generic function is called to maintain a set of backpointers from a class t
 
 When a class is initialized, this generic function is called once for each direct superclass of the class.
 
-[When a class is reinitialized, this generic function is called once for each added direct superclass of the class. The generic function]()[**remove-direct-subclass**](remove-direct-subclass.md) is called once for each deleted direct superclass of the class.
+When a class is reinitialized, this generic function is called once for each added direct superclass of the class. The generic function[**remove-direct-subclass**](remove-direct-subclass.md) is called once for each deleted direct superclass of the class.
 
 **Methods:**
 

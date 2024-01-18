@@ -3,7 +3,7 @@ STANDARD-SLOT-DEFINITION
 
 ------------------------------------------------------------------------
 
-[*Class* **STANDARD-SLOT-DEFINITION**]()
+*Class* **STANDARD-SLOT-DEFINITION**
 
 **Standard superclasses:**
 

@@ -1,7 +1,7 @@
 map-dependents-standard-generic-function
 ========================================
 
-[*Method* **MAP-DEPENDENTS**]()
+*Method* **MAP-DEPENDENTS**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ map-dependents-standard-generic-function
 
 **Description:**
 
-[This is a method on the generic function]()[map-dependents](map-dependents.md).
+This is a method on the generic function[map-dependents](map-dependents.md).
 
 This method has no specified behavior beyond that which is specified for the generic function.
 

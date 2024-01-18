@@ -1,7 +1,7 @@
 compute-discriminating-function
 ===============================
 
-[*Generic Function* **COMPUTE-DISCRIMINATING-FUNCTION**]()
+*Generic Function* **COMPUTE-DISCRIMINATING-FUNCTION**
 
 **Syntax:**
 
@@ -17,7 +17,7 @@ compute-discriminating-function
 
 This generic function is called to determine the discriminating function for a generic function. When a generic function is called, the *installed* discriminating function is called with the full set of arguments received by the generic function, and must implement the behavior of calling the generic function: determining the ordered set of applicable methods, determining the effective method, and running the effective method.
 
-[To determine the ordered set of applicable methods, the discriminating function first calls]()[compute-applicable-methods-using-classes](compute-applicable-methods-using-classes.md). If [compute-applicable-methods-using-classes](compute-applicable-methods-using-classes.md) returns a second value of false, the discriminating function then calls [compute-applicable-methods](compute-applicable-methods.md).
+To determine the ordered set of applicable methods, the discriminating function first calls[compute-applicable-methods-using-classes](compute-applicable-methods-using-classes.md). If [compute-applicable-methods-using-classes](compute-applicable-methods-using-classes.md) returns a second value of false, the discriminating function then calls [compute-applicable-methods](compute-applicable-methods.md).
 
 When [compute-applicable-methods-using-classes](compute-applicable-methods-using-classes.md) returns a second value of true, the discriminating function is permitted to memoize the first returned value as follows. The discriminating function may reuse the list of applicable methods without calling [compute-applicable-methods-using-classes](compute-applicable-methods-using-classes.md) again provided that:
 

@@ -1,7 +1,7 @@
 remove-method-standard-generic-function-standard-method
 =======================================================
 
-[*Method* **REMOVE-METHOD**]()
+*Method* **REMOVE-METHOD**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ remove-method-standard-generic-function-standard-method
 
 **Description:**
 
-[This is a method on the generic function]()[remove-method](remove-method.md).
+This is a method on the generic function[remove-method](remove-method.md).
 
 No behavior is specified for this method beyond that which is specified for the generic function.

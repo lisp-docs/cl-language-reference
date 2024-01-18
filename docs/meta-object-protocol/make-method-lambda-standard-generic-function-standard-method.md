@@ -1,7 +1,7 @@
 make-method-lambda-standard-generic-function-standard-method
 ============================================================
 
-[*Method* **MAKE-METHOD-LAMBDA**]()
+*Method* **MAKE-METHOD-LAMBDA**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ make-method-lambda-standard-generic-function-standard-method
 
 **Description:**
 
-[This is a method on the generic function]()[make-method-lambda](make-method-lambda.md).
+This is a method on the generic function[make-method-lambda](make-method-lambda.md).
 
 This method returns a method lambda which accepts two arguments, the list of arguments to the generic function, and the list of next methods. What initialization arguments may be returned in the second value are unspecified.
 

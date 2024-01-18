@@ -1,7 +1,7 @@
 class-finalized-p
 =================
 
-[*Generic Function* **CLASS-FINALIZED-P**]()
+*Generic Function* **CLASS-FINALIZED-P**
 
 **Syntax:**
 

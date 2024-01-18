@@ -1,7 +1,7 @@
 ensure-class
 ============
 
-[*Function* **ENSURE-CLASS**]()
+*Function* **ENSURE-CLASS**
 
 **Syntax:**
 
@@ -15,7 +15,7 @@ ensure-class
 
 **Description:**
 
-[Some of the keyword arguments accepted by this function are actually processed by]()[ensure-class-using-class](ensure-class-using-class.md), others are processed during initialization of the class metaobject (as described in the section called [``Initialization of Class Metaobjects''](initialization-of-class-metaobjects.md)).
+Some of the keyword arguments accepted by this function are actually processed by[ensure-class-using-class](ensure-class-using-class.md), others are processed during initialization of the class metaobject (as described in the section called [``Initialization of Class Metaobjects''](initialization-of-class-metaobjects.md)).
 
 This function is called to define or redefine a class with the specified name, and can be called by the user or the implementation. It is the functional equivalent of [defclass](http://www.lispworks.com/documentation/HyperSpec/Body/m_defcla.htm#defclass), and is called by the expansion of the [defclass](http://www.lispworks.com/documentation/HyperSpec/Body/m_defcla.htm#defclass) macro.
 

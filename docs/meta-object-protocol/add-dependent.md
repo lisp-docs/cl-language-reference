@@ -1,7 +1,7 @@
 add-dependent
 =============
 
-[*Generic Function* **ADD-DEPENDENT**]()
+*Generic Function* **ADD-DEPENDENT**
 
 **Syntax:**
 
@@ -17,7 +17,7 @@ add-dependent
 
 This generic function adds *dependent* to the dependents of *metaobject*. If *dependent* is already in the set of dependents it is not added again (no error is signaled).
 
-[The generic function]()[map-dependents](map-dependents.md) can be called to access the set of dependents of a class or generic function. The generic function [remove-dependent](remove-dependent.md) can be called to remove an object from the set of dependents of a class or generic function. The effect of calling **add-dependent** or [remove-dependent](remove-dependent.md) while a call to [map-dependents](map-dependents.md) on the same class or generic function is in progress is unspecified.
+The generic function[map-dependents](map-dependents.md) can be called to access the set of dependents of a class or generic function. The generic function [remove-dependent](remove-dependent.md) can be called to remove an object from the set of dependents of a class or generic function. The effect of calling **add-dependent** or [remove-dependent](remove-dependent.md) while a call to [map-dependents](map-dependents.md) on the same class or generic function is in progress is unspecified.
 
 The situations in which **add-dependent** is called are not specified.
 

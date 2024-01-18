@@ -1,7 +1,7 @@
 class-direct-slots
 ==================
 
-[*Generic Function* **CLASS-DIRECT-SLOTS**]()
+*Generic Function* **CLASS-DIRECT-SLOTS**
 
 **Syntax:**
 

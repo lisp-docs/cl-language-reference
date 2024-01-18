@@ -1,7 +1,7 @@
 method-specializers-standard-method
 ===================================
 
-[*Method* **METHOD-SPECIALIZERS**]()
+*Method* **METHOD-SPECIALIZERS**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ method-specializers-standard-method
 
 **Description:**
 
-[This is a method on the generic function]()[method-specializers](method-specializers.md).
+This is a method on the generic function[method-specializers](method-specializers.md).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

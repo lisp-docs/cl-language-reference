@@ -1,7 +1,7 @@
 class-slots-forward-referenced-class
 ====================================
 
-[*Method* **CLASS-SLOTS**]()
+*Method* **CLASS-SLOTS**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ class-slots-forward-referenced-class
 
 **Description:**
 
-[This is a method on the generic function]()[class-slots](class-slots.md).
+This is a method on the generic function[class-slots](class-slots.md).
 
 This method signals an error.

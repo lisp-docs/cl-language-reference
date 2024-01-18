@@ -1,7 +1,7 @@
 generic-function-declarations
 =============================
 
-[*Generic Function* **GENERIC-FUNCTION-DECLARATIONS**]()
+*Generic Function* **GENERIC-FUNCTION-DECLARATIONS**
 
 **Syntax:**
 

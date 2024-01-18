@@ -1,7 +1,7 @@
 compute-default-initargs
 ========================
 
-[*Generic Function* **COMPUTE-DEFAULT-INITARGS**]()
+*Generic Function* **COMPUTE-DEFAULT-INITARGS**
 
 **Syntax:**
 
@@ -21,7 +21,7 @@ The result is a list of canonicalized default initialization arguments, with no 
 
 All methods on this generic function must compute the default initialization arguments as a function of only: (i) the class precedence list of *class*, and (ii) the direct default initialization arguments of each class in that list. The results are undefined if the rules used to compute the default initialization arguments depend on any other factors.
 
-[When a class is finalized,]()[finalize-inheritance](finalize-inheritance.md) calls this generic function and associates the returned value with the class metaobject. The value can then be accessed by calling [class-default-initargs](class-default-initargs.md).
+When a class is finalized,[finalize-inheritance](finalize-inheritance.md) calls this generic function and associates the returned value with the class metaobject. The value can then be accessed by calling [class-default-initargs](class-default-initargs.md).
 
 The list returned by this generic function will not be mutated by the implementation. The results are undefined if a portable program mutates the list returned by this generic function.
 

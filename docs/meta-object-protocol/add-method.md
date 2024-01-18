@@ -1,7 +1,7 @@
 add-method
 ==========
 
-[*Generic Function* **ADD-METHOD**]()
+*Generic Function* **ADD-METHOD**
 
 **Syntax:**
 
@@ -19,7 +19,7 @@ This generic function associates an unattached method with a generic function.
 
 An error is signaled if the lambda list of the method is not congruent with the lambda list of the generic function. An error is also signaled if the method is already associated with some other generic function.
 
-[If the given method agrees with an existing method of the generic function on parameter specializers and qualifiers, the existing method is removed by calling]()[**remove-method**](remove-method.md) before the new method is added. See the section of the CLOS Specification called [``Agreement on Parameter Specializers and Qualifiers''](http://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node280.md#SECTION003216300000000000000) for a definition of agreement in this context.
+If the given method agrees with an existing method of the generic function on parameter specializers and qualifiers, the existing method is removed by calling[**remove-method**](remove-method.md) before the new method is added. See the section of the CLOS Specification called [``Agreement on Parameter Specializers and Qualifiers''](http://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node280.md#SECTION003216300000000000000) for a definition of agreement in this context.
 
 Associating the method with the generic function then proceeds in four steps:
 

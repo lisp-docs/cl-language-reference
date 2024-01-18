@@ -1,7 +1,7 @@
 class-prototype
 ===============
 
-[*Generic Function* **CLASS-PROTOTYPE**]()
+*Generic Function* **CLASS-PROTOTYPE**
 
 **Syntax:**
 

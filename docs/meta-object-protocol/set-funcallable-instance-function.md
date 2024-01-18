@@ -1,7 +1,7 @@
 set-funcallable-instance-function
 =================================
 
-[*Function* **SET-FUNCALLABLE-INSTANCE-FUNCTION**]()
+*Function* **SET-FUNCALLABLE-INSTANCE-FUNCTION**
 
 **Syntax:**
 

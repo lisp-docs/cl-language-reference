@@ -1,7 +1,7 @@
 slot-definition-name
 ====================
 
-[*Generic Function* **SLOT-DEFINITION-NAME**]()
+*Generic Function* **SLOT-DEFINITION-NAME**
 
 **Syntax:**
 

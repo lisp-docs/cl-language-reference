@@ -3,7 +3,7 @@ STANDARD-CLASS
 
 ------------------------------------------------------------------------
 
-[*Class* **STANDARD-CLASS**]()
+*Class* **STANDARD-CLASS**
 
 **Direct superclasses:**
 

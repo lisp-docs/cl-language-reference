@@ -1,7 +1,7 @@
 update-dependent
 ================
 
-[*Generic Function* **UPDATE-DEPENDENT**]()
+*Generic Function* **UPDATE-DEPENDENT**
 
 **Syntax:**
 
@@ -21,7 +21,7 @@ update-dependent
 
 This generic function is called to update a dependent of *metaobject*.
 
-[When a class or a generic function is reinitialized each of its dependents is updated. The *initargs* argument to `update-dependent` is the set of initialization arguments received by]()[reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance).
+When a class or a generic function is reinitialized each of its dependents is updated. The *initargs* argument to `update-dependent` is the set of initialization arguments received by[reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance).
 
 When a method is added to a generic function, each of the generic function's dependents is updated. The *initargs* argument is a list of two elements: the symbol `add-method`, and the method that was added.
 

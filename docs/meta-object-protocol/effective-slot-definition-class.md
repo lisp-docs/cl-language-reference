@@ -1,7 +1,7 @@
 effective-slot-definition-class
 ===============================
 
-[*Generic Function* **EFFECTIVE-SLOT-DEFINITION-CLASS**]()
+*Generic Function* **EFFECTIVE-SLOT-DEFINITION-CLASS**
 
 **Syntax:**
 
@@ -17,7 +17,7 @@ effective-slot-definition-class
 
 **Description:**
 
-[The value returned is a subclass of the class]()[effective-slot-definition](class-effective-slot-definition.md).
+The value returned is a subclass of the class[effective-slot-definition](class-effective-slot-definition.md).
 
 This generic function is called by [compute-effective-slot-definition](compute-effective-slot-definition.md) to determine the class of the resulting effective slot definition metaobject. The *initargs* argument is the set of initialization arguments and values that will be passed to [make-instance](make-instance.md) when the effective slot definition metaobject is created.
 

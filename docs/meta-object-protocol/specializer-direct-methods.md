@@ -1,7 +1,7 @@
 specializer-direct-methods
 ==========================
 
-[*Generic Function* **SPECIALIZER-DIRECT-METHODS**]()
+*Generic Function* **SPECIALIZER-DIRECT-METHODS**
 
 **Syntax:**
 
@@ -15,7 +15,7 @@ specializer-direct-methods
 
 **Description:**
 
-[This generic function returns the possibly empty set of those methods, connected to generic functions, which have *specializer* as a specializer. The elements of this set are method metaobjects. This value is maintained by the generic functions]()[add-direct-method](add-direct-method.md) and [remove-direct-method](remove-direct-method.md).
+This generic function returns the possibly empty set of those methods, connected to generic functions, which have *specializer* as a specializer. The elements of this set are method metaobjects. This value is maintained by the generic functions[add-direct-method](add-direct-method.md) and [remove-direct-method](remove-direct-method.md).
 
 **Methods:**
 

@@ -1,7 +1,7 @@
 class-direct-default-initargs
 =============================
 
-[*Generic Function* **CLASS-DIRECT-DEFAULT-INITARGS**]()
+*Generic Function* **CLASS-DIRECT-DEFAULT-INITARGS**
 
 **Syntax:**
 

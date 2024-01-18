@@ -1,7 +1,7 @@
 compute-applicable-methods-standard-generic-function
 ====================================================
 
-[*Method* **COMPUTE-APPLICABLE-METHODS**]()
+*Method* **COMPUTE-APPLICABLE-METHODS**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ compute-applicable-methods-standard-generic-function
 
 **Description:**
 
-[This is a method on the generic function]()[compute-applicable-methods](compute-applicable-methods.md).
+This is a method on the generic function[compute-applicable-methods](compute-applicable-methods.md).
 
 This method signals an error if any method of the generic function has a specializer which is neither a class metaobject nor an **eql** specializer metaobject.
 

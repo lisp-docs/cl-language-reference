@@ -1,7 +1,7 @@
 class-slots
 ===========
 
-[*Generic Function* **CLASS-SLOTS**]()
+*Generic Function* **CLASS-SLOTS**
 
 **Syntax:**
 
@@ -17,7 +17,7 @@ class-slots
 
 Returns a possibly empty set of the slots accessible in instances of *class*. The elements of this set are effective slot definition metaobjects.
 
-[During class finalization]()[finalize-inheritance](finalize-inheritance.md) calls [compute-slots](compute-slots.md) to compute the slots of the class. That value is associated with the class metaobject and is returned by **class-slots**.
+During class finalization[finalize-inheritance](finalize-inheritance.md) calls [compute-slots](compute-slots.md) to compute the slots of the class. That value is associated with the class metaobject and is returned by **class-slots**.
 
 This generic function signals an error if *class* has not been finalized.
 

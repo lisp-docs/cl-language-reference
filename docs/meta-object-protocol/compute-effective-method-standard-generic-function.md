@@ -1,7 +1,7 @@
 compute-effective-method-standard-generic-function
 ==================================================
 
-[*Method* **COMPUTE-EFFECTIVE-METHOD**]()
+*Method* **COMPUTE-EFFECTIVE-METHOD**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ compute-effective-method-standard-generic-function
 
 **Description:**
 
-[This is a method on the generic function]()[compute-effective-method](compute-effective-method.md).
+This is a method on the generic function[compute-effective-method](compute-effective-method.md).
 
 This method computes the effective method according to the rules of the method combination type implemented by *method-combination*.
 

@@ -1,7 +1,7 @@
 extract-specializer-names
 =========================
 
-[*Function* **EXTRACT-SPECIALIZER-NAMES**]()
+*Function* **EXTRACT-SPECIALIZER-NAMES**
 
 **Syntax:**
 

@@ -1,7 +1,7 @@
 class-precedence-list
 =====================
 
-[*Generic Function* **CLASS-PRECEDENCE-LIST**]()
+*Generic Function* **CLASS-PRECEDENCE-LIST**
 
 **Syntax:**
 
@@ -17,7 +17,7 @@ class-precedence-list
 
 Returns the class precedence list of *class*. The elements of this list are class metaobjects.
 
-[During class finalization]()[finalize-inheritance](finalize-inheritance.md) calls [compute-class-precedence-list](compute-class-precedence-list.md) calls to compute the class precedence list of the class. That value is associated with the class metaobject and is returned by **class-precedence-list**.
+During class finalization[finalize-inheritance](finalize-inheritance.md) calls [compute-class-precedence-list](compute-class-precedence-list.md) calls to compute the class precedence list of the class. That value is associated with the class metaobject and is returned by **class-precedence-list**.
 
 This generic function signals an error if *class* has not been finalized.
 

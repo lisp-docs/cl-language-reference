@@ -1,7 +1,7 @@
 ensure-generic-function
 =======================
 
-[*Function* **ENSURE-GENERIC-FUNCTION**]()
+*Function* **ENSURE-GENERIC-FUNCTION**
 
 **Syntax:**
 
@@ -13,7 +13,7 @@ ensure-generic-function
 
 *generic function* -- A generic function metaobject.
 
-[Some of the keyword arguments accepted by this function are actually processed by]()[ensure-generic-function-using-class](ensure-generic-function-using-class.md), others are processed during initialization of the generic function metaobject (as described in the section called [``Initialization of Generic Function Metaobjects''](initialization-of-generic-function-metaobjects.md)).
+Some of the keyword arguments accepted by this function are actually processed by[ensure-generic-function-using-class](ensure-generic-function-using-class.md), others are processed during initialization of the generic function metaobject (as described in the section called [``Initialization of Generic Function Metaobjects''](initialization-of-generic-function-metaobjects.md)).
 
 **Description:**
 

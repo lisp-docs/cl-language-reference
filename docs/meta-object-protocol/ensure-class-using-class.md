@@ -1,7 +1,7 @@
 ensure-class-using-class
 ========================
 
-[*Generic Function* **ENSURE-CLASS-USING-CLASS**]()
+*Generic Function* **ENSURE-CLASS-USING-CLASS**
 
 **Syntax:**
 
@@ -17,7 +17,7 @@ ensure-class-using-class
 
 `:direct-superclasses` -- A list of which each element is a class metaobject or a class name. An error is signaled if this argument is not a proper list.
 
-[For the interpretation of additional keyword arguments, see]()[Initialization of Class Metaobjects](initialization-of-class-metaobjects.md).
+For the interpretation of additional keyword arguments, see[Initialization of Class Metaobjects](initialization-of-class-metaobjects.md).
 
 *resulting-class* -- A class metaobject.
 

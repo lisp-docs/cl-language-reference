@@ -1,7 +1,7 @@
 writer-method-class
 ===================
 
-[*Generic Function* **WRITER-METHOD-CLASS**]()
+*Generic Function* **WRITER-METHOD-CLASS**
 
 **Syntax:**
 
@@ -19,7 +19,7 @@ writer-method-class
 
 **Description:**
 
-[This generic function is called to determine the class of writer methods created during class initialization and reinitialization. The result must be a subclass of]()[standard-writer-method](class-standard-writer-method.md).
+This generic function is called to determine the class of writer methods created during class initialization and reinitialization. The result must be a subclass of[standard-writer-method](class-standard-writer-method.md).
 
 The *initargs* argument must be the same as will be passed to [make-instance](make-instance.md) to create the writer method. The *initargs* must include `:slot-definition` with *slot-definition* as its value.
 

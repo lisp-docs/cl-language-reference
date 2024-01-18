@@ -1,7 +1,7 @@
 generic-function-name
 =====================
 
-[*Generic Function* **GENERIC-FUNCTION-NAME**]()
+*Generic Function* **GENERIC-FUNCTION-NAME**
 
 **Syntax:**
 
@@ -15,7 +15,7 @@ generic-function-name
 
 **Description:**
 
-[This generic function returns the name of the generic function, or `nil` if the generic function has no name. This is the defaulted value of the `:name` initialization argument that was associated with the generic function metaobject during initialization or reinitialization. (Also see]()[(setf generic-function-name)](setf-generic-function-name.md).)
+This generic function returns the name of the generic function, or `nil` if the generic function has no name. This is the defaulted value of the `:name` initialization argument that was associated with the generic function metaobject during initialization or reinitialization. (Also see[(setf generic-function-name)](setf-generic-function-name.md).)
 
 This generic function can be called by the user or the implementation.
 

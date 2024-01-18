@@ -1,7 +1,7 @@
 generic-function-methods
 ========================
 
-[*Generic Function* **GENERIC-FUNCTION-METHODS**]()
+*Generic Function* **GENERIC-FUNCTION-METHODS**
 
 **Syntax:**
 
@@ -15,7 +15,7 @@ generic-function-methods
 
 **Description:**
 
-[This generic function returns the set of methods currently connected to the generic function. This is a set of method metaobjects. This value is maintained by the generic functions]()[add-method](add-method.md) and [remove-method](remove-method.md).
+This generic function returns the set of methods currently connected to the generic function. This is a set of method metaobjects. This value is maintained by the generic functions[add-method](add-method.md) and [remove-method](remove-method.md).
 
 This generic function can be called by the user or the implementation.
 

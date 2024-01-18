@@ -1,7 +1,7 @@
 method-lambda-list
 ==================
 
-[*Generic Function* **METHOD-LAMBDA-LIST**]()
+*Generic Function* **METHOD-LAMBDA-LIST**
 
 **Syntax:**
 

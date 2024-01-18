@@ -3,7 +3,7 @@ FUNCTION
 
 ------------------------------------------------------------------------
 
-[*Class* **FUNCTION**]()
+*Class* **FUNCTION**
 
 **Direct superclasses:**
 

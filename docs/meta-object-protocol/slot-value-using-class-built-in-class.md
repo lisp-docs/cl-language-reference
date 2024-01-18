@@ -1,7 +1,7 @@
 slot-value-using-class-built-in-class
 =====================================
 
-[*Method* **SLOT-VALUE-USING-CLASS**]()
+*Method* **SLOT-VALUE-USING-CLASS**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ slot-value-using-class-built-in-class
 
 **Description:**
 
-[This is a method on the generic function]()[slot-value-using-class](slot-value-using-class.md).
+This is a method on the generic function[slot-value-using-class](slot-value-using-class.md).
 
 This method signals an error.

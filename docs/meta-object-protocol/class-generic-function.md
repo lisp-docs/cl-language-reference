@@ -3,7 +3,7 @@ GENERIC-FUNCTION
 
 ------------------------------------------------------------------------
 
-[*Class* **GENERIC-FUNCTION**]()
+*Class* **GENERIC-FUNCTION**
 
 **Direct superclasses:**
 

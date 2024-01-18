@@ -1,7 +1,7 @@
 specializer-direct-methods-class
 ================================
 
-[*Method* **SPECIALIZER-DIRECT-METHODS**]()
+*Method* **SPECIALIZER-DIRECT-METHODS**
 
 **Syntax:**
 

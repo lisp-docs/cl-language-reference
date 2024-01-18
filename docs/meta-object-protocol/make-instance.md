@@ -1,7 +1,7 @@
 make-instance
 =============
 
-[*Generic Function* **MAKE-INSTANCE**]()
+*Generic Function* **MAKE-INSTANCE**
 
 **Syntax:**
 
@@ -29,4 +29,4 @@ The generic function `make-instance` creates and returns a new instance of the g
 
 **Comments and remarks:**
 
-[See also]()[the entry in the Common Lisp HyperSpec](http://www.lispworks.com/documentation/HyperSpec/Body/f_mk_ins.htm#make-instance) for this function.
+See also[the entry in the Common Lisp HyperSpec](http://www.lispworks.com/documentation/HyperSpec/Body/f_mk_ins.htm#make-instance) for this function.

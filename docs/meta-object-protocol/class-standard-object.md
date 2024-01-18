@@ -3,7 +3,7 @@ STANDARD-OBJECT
 
 ------------------------------------------------------------------------
 
-[*Class* **STANDARD-OBJECT**]()
+*Class* **STANDARD-OBJECT**
 
 **Direct superclasses:**
 

@@ -1,7 +1,7 @@
 generic-function-lambda-list
 ============================
 
-[*Generic Function* **GENERIC-FUNCTION-LAMBDA-LIST**]()
+*Generic Function* **GENERIC-FUNCTION-LAMBDA-LIST**
 
 **Syntax:**
 

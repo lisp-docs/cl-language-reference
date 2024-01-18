@@ -1,7 +1,7 @@
 slot-definition-readers
 =======================
 
-[*Generic Function* **SLOT-DEFINITION-READERS**]()
+*Generic Function* **SLOT-DEFINITION-READERS**
 
 **Syntax:**
 

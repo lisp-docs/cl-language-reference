@@ -1,7 +1,7 @@
 class-prototype-built-in-class
 ==============================
 
-[*Method* **CLASS-PROTOTYPE**]()
+*Method* **CLASS-PROTOTYPE**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ class-prototype-built-in-class
 
 **Description:**
 
-[This is a method on the generic function]()[class-prototype](class-prototype.md).
+This is a method on the generic function[class-prototype](class-prototype.md).
 
 No behavior is specified for this method beyond that specified for the generic function.

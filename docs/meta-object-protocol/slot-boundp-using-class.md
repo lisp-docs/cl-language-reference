@@ -1,7 +1,7 @@
 slot-boundp-using-class
 =======================
 
-[*Generic Function* **SLOT-BOUNDP-USING-CLASS**]()
+*Generic Function* **SLOT-BOUNDP-USING-CLASS**
 
 **Syntax:**
 
@@ -19,7 +19,7 @@ slot-boundp-using-class
 
 **Description:**
 
-[This generic function implements the behavior of the]()[slot-boundp](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_bo.htm#slot-boundp) function. It is called by [slot-boundp](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_bo.htm#slot-boundp) with the class of *object* as its first argument and the pertinent effective slot definition metaobject as its third argument.
+This generic function implements the behavior of the[slot-boundp](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_bo.htm#slot-boundp) function. It is called by [slot-boundp](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_bo.htm#slot-boundp) with the class of *object* as its first argument and the pertinent effective slot definition metaobject as its third argument.
 
 The generic function `slot-boundp-using-class` tests whether a specific slot in an instance is bound.
 

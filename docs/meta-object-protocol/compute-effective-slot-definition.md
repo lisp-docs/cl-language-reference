@@ -1,7 +1,7 @@
 compute-effective-slot-definition
 =================================
 
-[*Generic Function* **COMPUTE-EFFECTIVE-SLOT-DEFINITION**]()
+*Generic Function* **COMPUTE-EFFECTIVE-SLOT-DEFINITION**
 
 **Syntax:**
 
@@ -19,7 +19,7 @@ compute-effective-slot-definition
 
 **Description:**
 
-[This generic function determines the effective slot definition for a slot in a class. It is called by]()[compute-slots](compute-slots.md) once for each slot accessible in instances of *class*.
+This generic function determines the effective slot definition for a slot in a class. It is called by[compute-slots](compute-slots.md) once for each slot accessible in instances of *class*.
 
 This generic function uses the supplied list of direct slot definition metaobjects to compute the inheritance of slot properties for a single slot. The returned effective slot definition represents the result of computing the inheritance. The name of the new effective slot definition is the same as the name of the direct slot definitions supplied.
 

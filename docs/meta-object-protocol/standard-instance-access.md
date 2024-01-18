@@ -1,7 +1,7 @@
 standard-instance-access
 ========================
 
-[*Function* **STANDARD-INSTANCE-ACCESS**]()
+*Function* **STANDARD-INSTANCE-ACCESS**
 
 **Syntax:**
 
@@ -23,7 +23,7 @@ The following restrictions apply to the use of this function:
 
 -   []()
 
-    [The *instance* argument must be a standard instance (it must have been returned by]()[allocate-instance (*class* standard-class)](allocate-instance-standard-class.md)).
+    The *instance* argument must be a standard instance (it must have been returned by[allocate-instance (*class* standard-class)](allocate-instance-standard-class.md)).
 
 -   The *instance* argument cannot be an non-updated obsolete instance.
 

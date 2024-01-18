@@ -1,7 +1,7 @@
 direct-slot-definition-class
 ============================
 
-[*Generic Function* **DIRECT-SLOT-DEFINITION-CLASS**]()
+*Generic Function* **DIRECT-SLOT-DEFINITION-CLASS**
 
 **Syntax:**
 
@@ -17,7 +17,7 @@ direct-slot-definition-class
 
 **Description:**
 
-[The value returned is a subclass of the class]()[direct-slot-definition](class-direct-slot-definition.md).
+The value returned is a subclass of the class[direct-slot-definition](class-direct-slot-definition.md).
 
 When a class is initialized, each of the canonicalized slot specifications must be converted to a direct slot definition metaobject. This generic function is called to determine the class of that direct slot definition metaobject.
 

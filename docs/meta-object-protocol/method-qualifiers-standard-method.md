@@ -1,7 +1,7 @@
 method-qualifiers-standard-method
 =================================
 
-[*Method* **METHOD-QUALIFIERS**]()
+*Method* **METHOD-QUALIFIERS**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ method-qualifiers-standard-method
 
 **Description:**
 
-[This is a method on the generic function]()[method-qualifiers](method-qualifiers.md).
+This is a method on the generic function[method-qualifiers](method-qualifiers.md).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

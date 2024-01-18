@@ -3,7 +3,7 @@ STANDARD-ACCESSOR-METHOD
 
 ------------------------------------------------------------------------
 
-[*Class* **STANDARD-ACCESSOR-METHOD**]()
+*Class* **STANDARD-ACCESSOR-METHOD**
 
 **Direct superclasses:**
 

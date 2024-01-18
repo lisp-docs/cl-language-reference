@@ -3,7 +3,7 @@ FUNCALLABLE-STANDARD-OBJECT
 
 ------------------------------------------------------------------------
 
-[*Class* **FUNCALLABLE-STANDARD-OBJECT**]()
+*Class* **FUNCALLABLE-STANDARD-OBJECT**
 
 **Direct superclasses:**
 

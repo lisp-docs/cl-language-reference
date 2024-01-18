@@ -3,7 +3,7 @@ EQL-SPECIALIZER
 
 ------------------------------------------------------------------------
 
-[*Class* **EQL-SPECIALIZER**]()
+*Class* **EQL-SPECIALIZER**
 
 **Direct superclasses:**
 

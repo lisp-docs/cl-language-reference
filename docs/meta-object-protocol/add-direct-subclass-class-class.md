@@ -1,7 +1,7 @@
 add-direct-subclass-class-class
 ===============================
 
-[*Method* **ADD-DIRECT-SUBCLASS**]()
+*Method* **ADD-DIRECT-SUBCLASS**
 
 **Syntax:**
 
@@ -9,7 +9,7 @@ add-direct-subclass-class-class
 
 **Description:**
 
-[This is a method on the generic function]()[add-direct-subclass](add-direct-subclass.md).
+This is a method on the generic function[add-direct-subclass](add-direct-subclass.md).
 
 No behavior is specified for this method beyond that which is specified for the generic function.
 

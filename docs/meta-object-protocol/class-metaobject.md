@@ -3,7 +3,7 @@ METAOBJECT
 
 ------------------------------------------------------------------------
 
-[*Class* **METAOBJECT**]()
+*Class* **METAOBJECT**
 
 **Direct superclasses:**
 

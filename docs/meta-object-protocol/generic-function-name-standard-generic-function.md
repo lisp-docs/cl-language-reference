@@ -1,7 +1,7 @@
 generic-function-name-standard-generic-function
 ===============================================
 
-[*Method* **GENERIC-FUNCTION-NAME**]()
+*Method* **GENERIC-FUNCTION-NAME**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ generic-function-name-standard-generic-function
 
 **Description:**
 
-[This is a method on the generic function]()[generic-function-name](generic-function-name.md).
+This is a method on the generic function[generic-function-name](generic-function-name.md).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

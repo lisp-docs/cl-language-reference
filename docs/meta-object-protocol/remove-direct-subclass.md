@@ -1,7 +1,7 @@
 remove-direct-subclass
 ======================
 
-[*Generic Function* **REMOVE-DIRECT-SUBCLASS**]()
+*Generic Function* **REMOVE-DIRECT-SUBCLASS**
 
 **Syntax:**
 

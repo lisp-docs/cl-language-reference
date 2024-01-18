@@ -1,7 +1,7 @@
 accessor-method-slot-definition
 ===============================
 
-[*Generic Function* **ACCESSOR-METHOD-SLOT-DEFINITION**]()
+*Generic Function* **ACCESSOR-METHOD-SLOT-DEFINITION**
 
 **Syntax:**
 

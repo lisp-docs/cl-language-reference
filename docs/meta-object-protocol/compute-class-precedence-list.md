@@ -1,7 +1,7 @@
 compute-class-precedence-list
 =============================
 
-[*Generic Function* **COMPUTE-CLASS-PRECEDENCE-LIST**]()
+*Generic Function* **COMPUTE-CLASS-PRECEDENCE-LIST**
 
 **Syntax:**
 
@@ -21,7 +21,7 @@ The result is a list which contains each of *class* and its superclasses once an
 
 All methods on this generic function must compute the class precedence list as a function of the ordered direct superclasses of the superclasses of *class*. The results are undefined if the rules used to compute the class precedence list depend on any other factors.
 
-[When a class is finalized,]()[finalize-inheritance](finalize-inheritance.md) calls this generic function and associates the returned value with the class metaobject. The value can then be accessed by calling [class-precedence-list](class-precedence-list.md).
+When a class is finalized,[finalize-inheritance](finalize-inheritance.md) calls this generic function and associates the returned value with the class metaobject. The value can then be accessed by calling [class-precedence-list](class-precedence-list.md).
 
 **Methods:**
 

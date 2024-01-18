@@ -1,7 +1,7 @@
 reader-method-class-standard-class-standard-direct-slot-definition
 ==================================================================
 
-[*Method* **READER-METHOD-CLASS**]()
+*Method* **READER-METHOD-CLASS**
 
 **Syntax:**
 
@@ -9,6 +9,6 @@ reader-method-class-standard-class-standard-direct-slot-definition
 
 **Description:**
 
-[This is a method on the generic function]()[reader-method-class](reader-method-class.md).
+This is a method on the generic function[reader-method-class](reader-method-class.md).
 
 This method return the class [standard-reader-method](class-standard-reader-method.md). This method can be overridden.

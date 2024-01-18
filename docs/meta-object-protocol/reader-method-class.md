@@ -1,7 +1,7 @@
 reader-method-class
 ===================
 
-[*Generic Function* **READER-METHOD-CLASS**]()
+*Generic Function* **READER-METHOD-CLASS**
 
 **Syntax:**
 
@@ -19,7 +19,7 @@ reader-method-class
 
 **Description:**
 
-[This generic function is called to determine the class of reader methods created during class initialization and reinitialization. The result must be a subclass of]()[standard-reader-method](class-standard-reader-method.md).
+This generic function is called to determine the class of reader methods created during class initialization and reinitialization. The result must be a subclass of[standard-reader-method](class-standard-reader-method.md).
 
 The *initargs* argument must be the same as will be passed to [make-instance](make-instance.md) to create the reader method. The *initargs* must include `:slot-definition` with *slot-definition* as its value.
 

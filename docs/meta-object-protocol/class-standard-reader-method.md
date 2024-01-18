@@ -3,7 +3,7 @@ STANDARD-READER-METHOD
 
 ------------------------------------------------------------------------
 
-[*Class* **STANDARD-READER-METHOD**]()
+*Class* **STANDARD-READER-METHOD**
 
 **Direct superclasses:**
 

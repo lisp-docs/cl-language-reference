@@ -1,7 +1,7 @@
 setf-slot-value-using-class
 ===========================
 
-[*Generic Function* **(SETF SLOT-VALUE-USING-CLASS)**]()
+*Generic Function* **(SETF SLOT-VALUE-USING-CLASS)**
 
 **Syntax:**
 
@@ -19,7 +19,7 @@ setf-slot-value-using-class
 
 **Description:**
 
-[The generic function `(setf slot-value-using-class)` implements the behavior of the]()[(setf slot-value)](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_va.htm#slot-value) function. It is called by [(setf slot-value)](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_va.htm#slot-value) with the class of *object* as its second argument and the pertinent effective slot definition metaobject as its fourth argument.
+The generic function `(setf slot-value-using-class)` implements the behavior of the[(setf slot-value)](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_va.htm#slot-value) function. It is called by [(setf slot-value)](http://www.lispworks.com/documentation/HyperSpec/Body/f_slt_va.htm#slot-value) with the class of *object* as its second argument and the pertinent effective slot definition metaobject as its fourth argument.
 
 The generic function `(setf slot-value-using-class)` sets the value contained in the given slot of the given object to the given new value; any previous value is lost.
 

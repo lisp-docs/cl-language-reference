@@ -1,7 +1,7 @@
 generic-function-argument-precedence-order
 ==========================================
 
-[*Generic Function* **GENERIC-FUNCTION-ARGUMENT-PRECEDENCE-ORDER**]()
+*Generic Function* **GENERIC-FUNCTION-ARGUMENT-PRECEDENCE-ORDER**
 
 **Syntax:**
 

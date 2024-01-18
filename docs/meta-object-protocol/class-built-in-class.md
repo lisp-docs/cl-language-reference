@@ -3,7 +3,7 @@ BUILT-IN-CLASS
 
 ------------------------------------------------------------------------
 
-[*Class* **BUILT-IN-CLASS**]()
+*Class* **BUILT-IN-CLASS**
 
 **Direct superclasses:**
 
