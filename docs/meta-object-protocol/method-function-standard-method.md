@@ -9,6 +9,6 @@ method-function-standard-method
 
 **Description:**
 
-This is a method on the generic function[method-function](/docs/meta-object-protocol/method-function).
+This is a method on the generic function[method-function](/meta-object-protocol/method-function).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

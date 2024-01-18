@@ -9,7 +9,7 @@ compute-effective-slot-definition-funcallable-standard-class
 
 **Description:**
 
-This is a method on the generic function[compute-effective-slot-definition](/docs/meta-object-protocol/compute-effective-slot-definition).
+This is a method on the generic function[compute-effective-slot-definition](/meta-object-protocol/compute-effective-slot-definition).
 
 This method implements the inheritance and defaulting of slot options following the rules described in the [``Inheritance of Slots and Options''](http://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node270.md#SECTION003213200000000000000) section of the CLOS Specification.
 

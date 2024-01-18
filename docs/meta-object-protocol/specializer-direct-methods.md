@@ -15,13 +15,13 @@ specializer-direct-methods
 
 **Description:**
 
-This generic function returns the possibly empty set of those methods, connected to generic functions, which have *specializer* as a specializer. The elements of this set are method metaobjects. This value is maintained by the generic functions[add-direct-method](/docs/meta-object-protocol/add-direct-method) and [remove-direct-method](/docs/meta-object-protocol/remove-direct-method).
+This generic function returns the possibly empty set of those methods, connected to generic functions, which have *specializer* as a specializer. The elements of this set are method metaobjects. This value is maintained by the generic functions[add-direct-method](/meta-object-protocol/add-direct-method) and [remove-direct-method](/meta-object-protocol/remove-direct-method).
 
 **Methods:**
 
   -----------------------------------------------------------------------------------------------------------------
-  [**specializer-direct-methods** (*specializer* class)](/docs/meta-object-protocol/specializer-direct-methods-class)
-  [**specializer-direct-methods** (*specializer* eql-specializer)](/docs/meta-object-protocol/specializer-direct-methods-eql-specializer)
+  [**specializer-direct-methods** (*specializer* class)](/meta-object-protocol/specializer-direct-methods-class)
+  [**specializer-direct-methods** (*specializer* eql-specializer)](/meta-object-protocol/specializer-direct-methods-eql-specializer)
   -----------------------------------------------------------------------------------------------------------------
 
 

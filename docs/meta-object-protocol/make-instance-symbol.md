@@ -9,6 +9,6 @@ make-instance-symbol
 
 **Description:**
 
-This is a method on the generic function[make-instance](/docs/meta-object-protocol/make-instance).
+This is a method on the generic function[make-instance](/meta-object-protocol/make-instance).
 
-This method simply invokes [make-instance](/docs/meta-object-protocol/make-instance) recursively on the arguments ([find-class](http://www.lispworks.com/documentation/HyperSpec/Body/f_find_c.htm#find-class) *class*) and *initargs*.
+This method simply invokes [make-instance](/meta-object-protocol/make-instance) recursively on the arguments ([find-class](http://www.lispworks.com/documentation/HyperSpec/Body/f_find_c.htm#find-class) *class*) and *initargs*.

@@ -26,7 +26,7 @@ The list returned by this function will not be mutated by the implementation. Th
 **Methods:**
 
   ------------------------------------------------------------------------------------------------------------------------
-  [**slot-definition-initargs** (*slot* standard-slot-definition)](/docs/meta-object-protocol/slot-definition-initargs-standard-slot-definition)
+  [**slot-definition-initargs** (*slot* standard-slot-definition)](/meta-object-protocol/slot-definition-initargs-standard-slot-definition)
   ------------------------------------------------------------------------------------------------------------------------
 
 

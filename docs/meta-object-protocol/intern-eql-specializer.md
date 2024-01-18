@@ -19,6 +19,6 @@ This function returns the unique `eql>` specializer metaobject for *object*, cre
 
 **Remarks:**
 
-The result of calling[eql-specializer-object](/docs/meta-object-protocol/eql-specializer-object) on the result of a call to `intern-eql-special-izer} is only     guaranteed to be eql` to the original *object* argument, not necessarily `eq`.
+The result of calling[eql-specializer-object](/meta-object-protocol/eql-specializer-object) on the result of a call to `intern-eql-special-izer} is only     guaranteed to be eql` to the original *object* argument, not necessarily `eq`.
 
 `    `

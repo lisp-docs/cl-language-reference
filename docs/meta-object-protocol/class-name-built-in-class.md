@@ -9,6 +9,6 @@ class-name-built-in-class
 
 **Description:**
 
-This is a method on the generic function[class-name](/docs/meta-object-protocol/class-name).
+This is a method on the generic function[class-name](/meta-object-protocol/class-name).
 
 This method returns the name of the built-in class.

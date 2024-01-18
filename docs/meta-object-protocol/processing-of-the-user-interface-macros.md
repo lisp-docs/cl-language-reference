@@ -14,11 +14,11 @@ Converting a user interface macro form into the arguments to the appropriate fun
 
 In the syntax of the [defclass](http://www.lispworks.com/documentation/HyperSpec/Body/m_defcla.htm#defclass) macro, the *initform* and *default-initarg-initial-value-form* arguments are forms which will be evaluated one or more times after the macro form is evaluated or executed. Special processing must be done on these arguments to ensure that the lexical scope of the forms is captured properly. This is done by building a function of zero arguments which, when called, returns the result of evaluating the form in the proper lexical environment.
 
-In the syntax of the [defmethod](http://www.lispworks.com/documentation/HyperSpec/Body/m_defmet.htm#defmethod) macro the *form** argument is a list of forms that comprise the body of the method definition. This list of forms must be processed specially to capture the lexical scope of the macro form. In addition, the lexical functions available only in the body of methods must be introduced. To allow this and any other special processing (such as slot access optimization), a specializable protocol is used for processing the body of methods. This is discussed in [the section ``Processing Method Bodies.''](/docs/meta-object-protocol/processing-method-bodies)
+In the syntax of the [defmethod](http://www.lispworks.com/documentation/HyperSpec/Body/m_defmet.htm#defmethod) macro the *form** argument is a list of forms that comprise the body of the method definition. This list of forms must be processed specially to capture the lexical scope of the macro form. In addition, the lexical functions available only in the body of methods must be introduced. To allow this and any other special processing (such as slot access optimization), a specializable protocol is used for processing the body of methods. This is discussed in [the section ``Processing Method Bodies.''](/meta-object-protocol/processing-method-bodies)
 
--   [Compile-file processing of the user interface macros.](/docs/meta-object-protocol/compile-file-processing-of-the-user-interface-macros)
--   [The `defclass` macro.](/docs/meta-object-protocol/the-defclass-macro)
--   [The `defmethod` macro.](/docs/meta-object-protocol/the-defmethod-macro)
--   [Processing method bodies.](/docs/meta-object-protocol/processing-method-bodies)
--   [The `defgeneric` macro.](/docs/meta-object-protocol/the-defgeneric-macro)
+-   [Compile-file processing of the user interface macros.](/meta-object-protocol/compile-file-processing-of-the-user-interface-macros)
+-   [The `defclass` macro.](/meta-object-protocol/the-defclass-macro)
+-   [The `defmethod` macro.](/meta-object-protocol/the-defmethod-macro)
+-   [Processing method bodies.](/meta-object-protocol/processing-method-bodies)
+-   [The `defgeneric` macro.](/meta-object-protocol/the-defgeneric-macro)
 

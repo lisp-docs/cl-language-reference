@@ -26,9 +26,9 @@ The results are undefined if the *class* argument is not the class of the *objec
 **Methods:**
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**slot-makunbound-using-class** (*class* standard-class) *object* (*slot* standard-effective-slot-definition)](/docs/meta-object-protocol/slot-makunbound-using-class-standard-class-standard-effective-slot-definition)
-  [**slot-makunbound-using-class** (*class* funcallable-standard-class) *object* (*slot* standard-effective-slot-definition)](/docs/meta-object-protocol/slot-makunbound-using-class-funcallable-standard-class-standard-effective-slot-definition)
-  [**slot-makunbound-using-class** (*class* built-in-class) *object* *slot*](/docs/meta-object-protocol/slot-makunbound-using-class-built-in-class)
+  [**slot-makunbound-using-class** (*class* standard-class) *object* (*slot* standard-effective-slot-definition)](/meta-object-protocol/slot-makunbound-using-class-standard-class-standard-effective-slot-definition)
+  [**slot-makunbound-using-class** (*class* funcallable-standard-class) *object* (*slot* standard-effective-slot-definition)](/meta-object-protocol/slot-makunbound-using-class-funcallable-standard-class-standard-effective-slot-definition)
+  [**slot-makunbound-using-class** (*class* built-in-class) *object* *slot*](/meta-object-protocol/slot-makunbound-using-class-built-in-class)
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Comments and remarks:**

@@ -9,6 +9,6 @@ generic-function-name-standard-generic-function
 
 **Description:**
 
-This is a method on the generic function[generic-function-name](/docs/meta-object-protocol/generic-function-name).
+This is a method on the generic function[generic-function-name](/meta-object-protocol/generic-function-name).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

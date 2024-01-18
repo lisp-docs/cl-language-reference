@@ -21,4 +21,4 @@
 ```
 ------------------------------------------------------------------------
 
-An example `defmethod` form and one possible correct expansion. In the expansion, *method-lambda* is the result of calling [make-method-lambda](/docs/meta-object-protocol/make-method-lambda) as described in [the section ``Processing Method Bodies''.](/docs/meta-object-protocol/processing-method-bodies) The initargs appearing after `function` are assumed to be additional initargs returned from the call to [make-method-lambda](/docs/meta-object-protocol/make-method-lambda).
+An example `defmethod` form and one possible correct expansion. In the expansion, *method-lambda* is the result of calling [make-method-lambda](/meta-object-protocol/make-method-lambda) as described in [the section ``Processing Method Bodies''.](/meta-object-protocol/processing-method-bodies) The initargs appearing after `function` are assumed to be additional initargs returned from the call to [make-method-lambda](/meta-object-protocol/make-method-lambda).

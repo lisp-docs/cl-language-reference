@@ -9,6 +9,6 @@ slot-definition-readers-standard-direct-slot-definition
 
 **Description:**
 
-This is a method on the generic function[slot-definition-readers](/docs/meta-object-protocol/slot-definition-readers).
+This is a method on the generic function[slot-definition-readers](/meta-object-protocol/slot-definition-readers).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

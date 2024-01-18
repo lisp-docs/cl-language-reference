@@ -9,7 +9,7 @@ slot-value-using-class-funcallable-standard-class-standard-effective-slot-defini
 
 **Description:**
 
-This is a method on the generic function[slot-value-using-class](/docs/meta-object-protocol/slot-value-using-class).
+This is a method on the generic function[slot-value-using-class](/meta-object-protocol/slot-value-using-class).
 
 This method implements the full behavior of this generic function for slots with allocation `:instance` and `:class`. If the supplied slot has an allocation other than `:instance` or `:class` an error is signaled.
 

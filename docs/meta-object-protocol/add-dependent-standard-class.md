@@ -9,15 +9,15 @@ add-dependent-standard-class
 
 **Description:**
 
-This is a method on the generic function[add-dependent](/docs/meta-object-protocol/add-dependent).
+This is a method on the generic function[add-dependent](/meta-object-protocol/add-dependent).
 
 No behavior is specified for this method beyond that which is specified for the generic function.
 
 This method cannot be overridden unless the following methods are overridden as well:
 
   --------------------------------------------------------------------------------------------------------
-  [**remove-dependent** (*metaobject* standard-class) *dependent***](/docs/meta-object-protocol/remove-dependent-standard-class)
-  [**map-dependents** (*metaobject* standard-class) *function*](/docs/meta-object-protocol/map-dependents-standard-class)
+  [**remove-dependent** (*metaobject* standard-class) *dependent***](/meta-object-protocol/remove-dependent-standard-class)
+  [**map-dependents** (*metaobject* standard-class) *function*](/meta-object-protocol/map-dependents-standard-class)
   --------------------------------------------------------------------------------------------------------
 
 

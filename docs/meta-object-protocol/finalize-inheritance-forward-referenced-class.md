@@ -9,6 +9,6 @@ finalize-inheritance-forward-referenced-class
 
 **Description:**
 
-This is a method on the generic function[finalize-inheritance](/docs/meta-object-protocol/finalize-inheritance).
+This is a method on the generic function[finalize-inheritance](/meta-object-protocol/finalize-inheritance).
 
 This method signals an error.

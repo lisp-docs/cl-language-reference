@@ -9,6 +9,6 @@ add-direct-method-eql-specializer
 
 **Description:**
 
-This is a method on the generic function[add-direct-method](/docs/meta-object-protocol/add-direct-method).
+This is a method on the generic function[add-direct-method](/meta-object-protocol/add-direct-method).
 
 This method implements the behavior of the generic function for **eql** specializers. No behavior is specified for this method beyond that which is specified for the generic function.

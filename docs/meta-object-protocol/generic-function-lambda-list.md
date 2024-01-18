@@ -26,7 +26,7 @@ The list returned by this generic function will not be mutated by the implementa
 **Methods:**
 
   ----------------------------------------------------------------------------------------------------------------------------------------------
-  [**generic-function-lambda-list** (*generic-function* standard-generic-function)](/docs/meta-object-protocol/generic-function-lambda-list-standard-generic-function)
+  [**generic-function-lambda-list** (*generic-function* standard-generic-function)](/meta-object-protocol/generic-function-lambda-list-standard-generic-function)
   ----------------------------------------------------------------------------------------------------------------------------------------------
 
 

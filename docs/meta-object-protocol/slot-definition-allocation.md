@@ -24,7 +24,7 @@ An error is signaled if the argument *slot* is not a slot definition metaobject.
 **Methods:**
 
   ----------------------------------------------------------------------------------------------------------------------------
-  [**slot-definition-allocation** (*slot* standard-slot-definition)](/docs/meta-object-protocol/slot-definition-allocation-standard-slot-definition)
+  [**slot-definition-allocation** (*slot* standard-slot-definition)](/meta-object-protocol/slot-definition-allocation-standard-slot-definition)
   ----------------------------------------------------------------------------------------------------------------------------
 
 

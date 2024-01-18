@@ -3,9 +3,9 @@ Funcallable Instances
 
 ### Funcallable Instances
 
-Instances of classes which are themselves instances of [funcallable-standard-class](/docs/meta-object-protocol/class-funcallable-standard-class) or one of its subclasses are called *funcallable instances*. Funcallable instances can only be created by [allocate-instance (class funcallable-standard-class)](/docs/meta-object-protocol/allocate-instance-funcallable-standard-class).
+Instances of classes which are themselves instances of [funcallable-standard-class](/meta-object-protocol/class-funcallable-standard-class) or one of its subclasses are called *funcallable instances*. Funcallable instances can only be created by [allocate-instance (class funcallable-standard-class)](/meta-object-protocol/allocate-instance-funcallable-standard-class).
 
-Like standard instances, funcallable instances have slots with the normal behavior. They differ from standard instances in that they can be used as functions as well; that is, they can be passed to [funcall](http://www.lispworks.com/documentation/HyperSpec/Body/f_funcal.htm#funcall) and [apply](http://www.lispworks.com/documentation/HyperSpec/Body/f_apply.htm#apply), and they can be stored as the definition of a function name. Associated with each funcallable instance is the function which it runs when it is called. This function can be changed with [set-funcallable-instance-function](/docs/meta-object-protocol/set-funcallable-instance-function)
+Like standard instances, funcallable instances have slots with the normal behavior. They differ from standard instances in that they can be used as functions as well; that is, they can be passed to [funcall](http://www.lispworks.com/documentation/HyperSpec/Body/f_funcal.htm#funcall) and [apply](http://www.lispworks.com/documentation/HyperSpec/Body/f_apply.htm#apply), and they can be stored as the definition of a function name. Associated with each funcallable instance is the function which it runs when it is called. This function can be changed with [set-funcallable-instance-function](/meta-object-protocol/set-funcallable-instance-function)
 
 #### Example
 

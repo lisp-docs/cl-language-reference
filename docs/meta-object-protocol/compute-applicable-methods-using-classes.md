@@ -25,22 +25,22 @@ If it is possible to completely determine the ordered list of applicable methods
 
 If it is not possible to completely determine the ordered list of applicable methods based only on the supplied classes, this generic function returns an unspecified first value and false as its second value.
 
-When a generic function is invoked, the discriminating function must determine the ordered list of methods applicable to the arguments. Depending on the generic function and the arguments, this is done in one of three ways: using a memoized value; calling **compute-applicable-methods-using-classes** or calling[compute-applicable-methods](/docs/meta-object-protocol/compute-applicable-methods). (Refer to the description of [compute-discriminating-function](/docs/meta-object-protocol/compute-discriminating-function) for the details of this process.)
+When a generic function is invoked, the discriminating function must determine the ordered list of methods applicable to the arguments. Depending on the generic function and the arguments, this is done in one of three ways: using a memoized value; calling **compute-applicable-methods-using-classes** or calling[compute-applicable-methods](/meta-object-protocol/compute-applicable-methods). (Refer to the description of [compute-discriminating-function](/meta-object-protocol/compute-discriminating-function) for the details of this process.)
 
-The following consistency relationship between **compute-applicable-methods-using-classes** and [compute-applicable-methods](/docs/meta-object-protocol/compute-applicable-methods) must be maintained: for any given generic function and set of arguments, if **compute-applicable-methods-using-classes** returns a second value of true, the first value must be equal to the value that would be returned by a corresponding call to [compute-applicable-methods](/docs/meta-object-protocol/compute-applicable-methods). The results are undefined if a portable method on either of these generic functions causes this consistency to be violated.
+The following consistency relationship between **compute-applicable-methods-using-classes** and [compute-applicable-methods](/meta-object-protocol/compute-applicable-methods) must be maintained: for any given generic function and set of arguments, if **compute-applicable-methods-using-classes** returns a second value of true, the first value must be equal to the value that would be returned by a corresponding call to [compute-applicable-methods](/meta-object-protocol/compute-applicable-methods). The results are undefined if a portable method on either of these generic functions causes this consistency to be violated.
 
 The list returned by this generic function will not be mutated by the implementation. The results are undefined if a portable program mutates the list returned by this generic function.
 
 **Methods:**
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**compute-applicable-methods-using-classes** (*generic-function* standard-generic-function) *arguments*](/docs/meta-object-protocol/compute-applicable-methods-using-classes-standard-generic-function)
+  [**compute-applicable-methods-using-classes** (*generic-function* standard-generic-function) *arguments*](/meta-object-protocol/compute-applicable-methods-using-classes-standard-generic-function)
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Remarks:**
 
 This generic function exists to allow user extensions which alter method lookup rules, but which base the new rules only on the classes of the required arguments, to take advantage of the class-based method lookup memoization found in many implementations. (There is of course no requirement for an implementation to provide this optimization.)
 
-Such an extension can be implemented by two methods, one on this generic function and one on [compute-applicable-methods](/docs/meta-object-protocol/compute-applicable-methods). Whenever the user extension is in effect, the first method will return a second value of true. This should allow the implementation to absorb these cases into its own memoization scheme.
+Such an extension can be implemented by two methods, one on this generic function and one on [compute-applicable-methods](/meta-object-protocol/compute-applicable-methods). Whenever the user extension is in effect, the first method will return a second value of true. This should allow the implementation to absorb these cases into its own memoization scheme.
 
-To get appropriate performance, other kinds of extensions may require methods on [compute-discriminating-function](/docs/meta-object-protocol/compute-discriminating-function) which implement their own memoization scheme.
+To get appropriate performance, other kinds of extensions may require methods on [compute-discriminating-function](/meta-object-protocol/compute-discriminating-function) which implement their own memoization scheme.

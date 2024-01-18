@@ -15,7 +15,7 @@ slot-definition-location
 
 **Description:**
 
-Returns the location of *effective-slot-definition*. The meaning and interpretation of this value is described in****[the section called ``Instance Structure Protocol.''](/docs/meta-object-protocol/instance-structure-protocol)**
+Returns the location of *effective-slot-definition*. The meaning and interpretation of this value is described in****[the section called ``Instance Structure Protocol.''](/meta-object-protocol/instance-structure-protocol)**
 
 ****
 
@@ -26,7 +26,7 @@ An error is signaled if the argument *slot* is not a slot definition metaobject.
 **Methods:**
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**slot-definition-location** (*effective-slot-definition* standard-effective-slot-definition)](/docs/meta-object-protocol/slot-definition-location-standard-effective-slot-definition)
+  [**slot-definition-location** (*effective-slot-definition* standard-effective-slot-definition)](/meta-object-protocol/slot-definition-location-standard-effective-slot-definition)
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

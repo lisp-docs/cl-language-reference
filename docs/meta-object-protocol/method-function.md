@@ -24,7 +24,7 @@ An error is signaled if the argument *method* is not a method metaobject. An err
 **Methods:**
 
   --------------------------------------------------------------------------------------
-  [**method-function** (*method* standard-method)](/docs/meta-object-protocol/method-function-standard-method)
+  [**method-function** (*method* standard-method)](/meta-object-protocol/method-function-standard-method)
   --------------------------------------------------------------------------------------
 
 

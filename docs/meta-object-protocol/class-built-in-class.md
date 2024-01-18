@@ -7,11 +7,11 @@ BUILT-IN-CLASS
 
 **Direct superclasses:**
 
-[class](/docs/meta-object-protocol/class-class)
+[class](/meta-object-protocol/class-class)
 
 **Metaclass:**
 
-[standard-class](/docs/meta-object-protocol/class-standard-class)
+[standard-class](/meta-object-protocol/class-standard-class)
 
 **Description:**
 

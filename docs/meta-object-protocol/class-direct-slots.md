@@ -20,10 +20,10 @@ Returns a set of the direct slots of *class*. The elements of this set are direc
 **Methods:**
 
   -----------------------------------------------------------------------------------------------------------------
-  [**class-direct-slots** (*class* standard-class)](/docs/meta-object-protocol/class-direct-slots-standard-class)
-  [**class-direct-slots** (*class* funcallable-standard-class)](/docs/meta-object-protocol/class-direct-slots-funcallable-standard-class)
-  [**class-direct-slots** (*class* forward-referenced-class)](/docs/meta-object-protocol/class-direct-slots-forward-referenced-class)
-  [**class-direct-slots** (*class* built-in-class)](/docs/meta-object-protocol/class-direct-slots-built-in-class)
+  [**class-direct-slots** (*class* standard-class)](/meta-object-protocol/class-direct-slots-standard-class)
+  [**class-direct-slots** (*class* funcallable-standard-class)](/meta-object-protocol/class-direct-slots-funcallable-standard-class)
+  [**class-direct-slots** (*class* forward-referenced-class)](/meta-object-protocol/class-direct-slots-forward-referenced-class)
+  [**class-direct-slots** (*class* built-in-class)](/meta-object-protocol/class-direct-slots-built-in-class)
   -----------------------------------------------------------------------------------------------------------------
 
 

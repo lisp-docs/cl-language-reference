@@ -27,7 +27,7 @@ When a method is added to a generic function, each of the generic function's dep
 
 When a method is removed from a generic function, each of the generic function's dependents is updated. The *initargs* argument is a list of two elements: the symbol `remove-method`, and the method that was removed.
 
-In each case, [map-dependents](/docs/meta-object-protocol/map-dependents) is used to call `update-dependent` on each of the dependents. So, for example, the update of a generic function's dependents when a method is added could be performed by the following code:
+In each case, [map-dependents](/meta-object-protocol/map-dependents) is used to call `update-dependent` on each of the dependents. So, for example, the update of a generic function's dependents when a method is added could be performed by the following code:
 
         (map-dependents generic-function
                         #'(lambda (dep)
@@ -43,4 +43,4 @@ There are no specified methods on this generic function.
 
 **Comments and remarks:**
 
-See the [``Dependent Maintenance Protocol'' section](/docs/meta-object-protocol/dependent-maintenance-protocol) for remarks about the use of this facility.
+See the [``Dependent Maintenance Protocol'' section](/meta-object-protocol/dependent-maintenance-protocol) for remarks about the use of this facility.

@@ -9,6 +9,6 @@ ensure-generic-function-using-class-null
 
 **Description:**
 
-This is a method on the generic function[ensure-generic-function-using-class](/docs/meta-object-protocol/ensure-generic-function-using-class).
+This is a method on the generic function[ensure-generic-function-using-class](/meta-object-protocol/ensure-generic-function-using-class).
 
 This method implements the behavior of the generic function in the case where *function-name* names no function, generic function, macro or special form.

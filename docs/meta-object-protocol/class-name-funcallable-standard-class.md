@@ -9,6 +9,6 @@ class-name-funcallable-standard-class
 
 **Description:**
 
-This is a method on the generic function[class-name](/docs/meta-object-protocol/class-name).
+This is a method on the generic function[class-name](/meta-object-protocol/class-name).
 
 This method returns the value which was associated with the class metaobject during initialization or reinitialization.

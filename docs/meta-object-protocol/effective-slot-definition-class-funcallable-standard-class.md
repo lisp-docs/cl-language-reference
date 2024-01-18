@@ -9,8 +9,8 @@ effective-slot-definition-class-funcallable-standard-class
 
 **Description:**
 
-This is a method on the generic function[effective-slot-definition-class](/docs/meta-object-protocol/effective-slot-definition-class).
+This is a method on the generic function[effective-slot-definition-class](/meta-object-protocol/effective-slot-definition-class).
 
-This method returns the class [standard-effective-slot-definition](/docs/meta-object-protocol/class-standard-effective-slot-definition).
+This method returns the class [standard-effective-slot-definition](/meta-object-protocol/class-standard-effective-slot-definition).
 
 This method can be overridden.

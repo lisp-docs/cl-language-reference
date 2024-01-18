@@ -9,8 +9,8 @@ direct-slot-definition-class-standard-class
 
 **Description:**
 
-This is a method on the generic function[direct-slot-definition-class](/docs/meta-object-protocol/direct-slot-definition-class).
+This is a method on the generic function[direct-slot-definition-class](/meta-object-protocol/direct-slot-definition-class).
 
-This method returns the class [standard-direct-slot-definition](/docs/meta-object-protocol/class-standard-direct-slot-definition).
+This method returns the class [standard-direct-slot-definition](/meta-object-protocol/class-standard-direct-slot-definition).
 
 This method can be overridden.

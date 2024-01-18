@@ -15,7 +15,7 @@ method-generic-function
 
 **Description:**
 
-Returns the generic function that *method* is currently connected to, or `nil` if it is not currently connected to any generic function. This value is either a generic function metaobject or `nil`. When a method is first created it is not connected to any generic function. This connection is maintained by the generic functions[add-method](/docs/meta-object-protocol/add-method) and [remove-method](/docs/meta-object-protocol/remove-method).
+Returns the generic function that *method* is currently connected to, or `nil` if it is not currently connected to any generic function. This value is either a generic function metaobject or `nil`. When a method is first created it is not connected to any generic function. This connection is maintained by the generic functions[add-method](/meta-object-protocol/add-method) and [remove-method](/meta-object-protocol/remove-method).
 
 This generic function can be called by the user or the implementation.
 
@@ -24,7 +24,7 @@ An error is signaled if the argument *method* is not a method metaobject. An err
 **Methods:**
 
   ------------------------------------------------------------------------------------------------------
-  [**method-generic-function** (*method* standard-method)](/docs/meta-object-protocol/method-generic-function-standard-method)
+  [**method-generic-function** (*method* standard-method)](/meta-object-protocol/method-generic-function-standard-method)
   ------------------------------------------------------------------------------------------------------
 
 

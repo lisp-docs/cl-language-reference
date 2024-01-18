@@ -9,6 +9,6 @@ allocate-instance-built-in-class
 
 **Description:**
 
-This is a method on the generic function[allocate-instance](/docs/meta-object-protocol/allocate-instance).
+This is a method on the generic function[allocate-instance](/meta-object-protocol/allocate-instance).
 
 This method signals an error.

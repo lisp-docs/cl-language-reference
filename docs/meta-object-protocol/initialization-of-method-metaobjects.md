@@ -3,9 +3,9 @@ Initialization of Method Metaobjects
 
 ### Initialization of Method Metaobjects
 
-A method metaobject can be created by calling [make-instance](/docs/meta-object-protocol/make-instance). The initialization arguments establish the definition of the method. A method metaobject cannot be redefined; calling [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance) signals an error.
+A method metaobject can be created by calling [make-instance](/meta-object-protocol/make-instance). The initialization arguments establish the definition of the method. A method metaobject cannot be redefined; calling [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance) signals an error.
 
-Initialization of a method metaobject must be done by calling [make-instance](/docs/meta-object-protocol/make-instance) and allowing it to call [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance). Portable programs must not call [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance) directly to initialize a method metaoject. Portable programs must not call [shared-initialize](http://www.lispworks.com/documentation/HyperSpec/Body/f_shared.htm#shared-initialize) directly to initialize a method metaobject. Portable programs must not call [change-class](http://www.lispworks.com/documentation/HyperSpec/Body/f_chg_cl.htm#change-class) to change the class of any method metaobject or to turn a non-method object into a method metaobject.
+Initialization of a method metaobject must be done by calling [make-instance](/meta-object-protocol/make-instance) and allowing it to call [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance). Portable programs must not call [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance) directly to initialize a method metaoject. Portable programs must not call [shared-initialize](http://www.lispworks.com/documentation/HyperSpec/Body/f_shared.htm#shared-initialize) directly to initialize a method metaobject. Portable programs must not call [change-class](http://www.lispworks.com/documentation/HyperSpec/Body/f_chg_cl.htm#change-class) to change the class of any method metaobject or to turn a non-method object into a method metaobject.
 
 Since metaobject classes may not be redefined, no behavior is specified for the result of calls to [update-instance-for-redefined-class](http://www.lispworks.com/documentation/HyperSpec/Body/f_upda_1.htm#update-instance-for-redefined-class) on method metaobjects. Since the class of a method metaobject cannot be changed, no behavior is specified for the result of calls to [update-instance-for-different-class](http://www.lispworks.com/documentation/HyperSpec/Body/f_update.htm#update-instance-for-different-class) on method metaobjects.
 
@@ -21,7 +21,7 @@ In these descriptions, the phrase ``this argument defaults to *value*'' means th
 
 -   The `:specializers` argument is a list of the specializer metaobjects for the method. An error is signaled if this value is not a proper list, or if the length of the list differs from the number of required arguments in the `:lambda-list` argument, or if any element of the list is not a specializer metaobject. If this value is not supplied, an error is signaled.
 
--   The `:function` argument is a method function. It must be compatible with the methods on [compute-effective-method](/docs/meta-object-protocol/compute-effective-method) defined for this class of method and generic function with which it will be used. That is, it must accept the same number of arguments as all uses of [call-method](/docs/meta-object-protocol/call-method) that will call it supply. (See [compute-effective-method](/docs/meta-object-protocol/compute-effective-method) for more information.) An error is signaled if this argument is not supplied.
+-   The `:function` argument is a method function. It must be compatible with the methods on [compute-effective-method](/meta-object-protocol/compute-effective-method) defined for this class of method and generic function with which it will be used. That is, it must accept the same number of arguments as all uses of [call-method](/meta-object-protocol/call-method) that will call it supply. (See [compute-effective-method](/meta-object-protocol/compute-effective-method) for more information.) An error is signaled if this argument is not supplied.
 
 -   When the method being initialized is an instance of a subclass of `standard-accessor-method`, the `:slot-definition` initialization argument must be provided. Its value is the direct slot definition metaobject which defines this accessor method. An error is signaled if the value is not an instance of a subclass of `direct-slot-definition`.
 
@@ -31,11 +31,11 @@ After the processing and defaulting of initialization arguments described above,
 
   Initialization Argument   Generic Function
   ------------------------- ---------------------------------------------------------------------------------------------------
-  `:qualifiers`             [method-qualifiers](/docs/meta-object-protocol/method-qualifiers)
-  `:lambda-list`            [method-lambda-list](/docs/meta-object-protocol/method-lambda-list)
-  `:specializers`           [method-specializers](/docs/meta-object-protocol/method-specializers)
-  `:function`               [method-function](/docs/meta-object-protocol/method-function)
-  `:slot-definition`        [accessor-method-slot-definition](/docs/meta-object-protocol/accessor-method-slot-definition)
+  `:qualifiers`             [method-qualifiers](/meta-object-protocol/method-qualifiers)
+  `:lambda-list`            [method-lambda-list](/meta-object-protocol/method-lambda-list)
+  `:specializers`           [method-specializers](/meta-object-protocol/method-specializers)
+  `:function`               [method-function](/meta-object-protocol/method-function)
+  `:slot-definition`        [accessor-method-slot-definition](/meta-object-protocol/accessor-method-slot-definition)
   `:documentation`          [documentation](http://www.lispworks.com/documentation/HyperSpec/Body/f_docume.htm#documentation)
 
   : Initialization arguments and accessors for method metaobjects.

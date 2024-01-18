@@ -9,6 +9,6 @@ method-qualifiers-standard-method
 
 **Description:**
 
-This is a method on the generic function[method-qualifiers](/docs/meta-object-protocol/method-qualifiers).
+This is a method on the generic function[method-qualifiers](/meta-object-protocol/method-qualifiers).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

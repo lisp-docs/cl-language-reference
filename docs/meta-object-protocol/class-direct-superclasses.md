@@ -20,10 +20,10 @@ Returns a list of the direct superclasses of *class*. The elements of this list 
 **Methods:**
 
   -------------------------------------------------------------------------------------------------------------------------------
-  [**class-direct-superclasses** (*class* standard-class)](/docs/meta-object-protocol/class-direct-superclasses-standard-class)
-  [**class-direct-superclasses** (*class* funcallable-standard-class)](/docs/meta-object-protocol/class-direct-superclasses-funcallable-standard-class)
-  [**class-direct-superclasses** (*class* forward-referenced-class)](/docs/meta-object-protocol/class-direct-superclasses-forward-referenced-class)
-  [**class-direct-superclasses** (*class* built-in-class)](/docs/meta-object-protocol/class-direct-superclasses-built-in-class)
+  [**class-direct-superclasses** (*class* standard-class)](/meta-object-protocol/class-direct-superclasses-standard-class)
+  [**class-direct-superclasses** (*class* funcallable-standard-class)](/meta-object-protocol/class-direct-superclasses-funcallable-standard-class)
+  [**class-direct-superclasses** (*class* forward-referenced-class)](/meta-object-protocol/class-direct-superclasses-forward-referenced-class)
+  [**class-direct-superclasses** (*class* built-in-class)](/meta-object-protocol/class-direct-superclasses-built-in-class)
   -------------------------------------------------------------------------------------------------------------------------------
 
 

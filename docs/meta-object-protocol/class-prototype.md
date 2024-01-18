@@ -20,10 +20,10 @@ Returns a prototype instance of *class*. Whether the instance is initialized is 
 **Methods:**
 
   --------------------------------------------------------------------------------------------------------------------
-  [**class-prototype** (*class* standard-class) *method*](/docs/meta-object-protocol/class-prototype-standard-class)
-  [**class-prototype** (*class* funcallable-standard-class) *method*](/docs/meta-object-protocol/class-prototype-funcallable-standard-class)
-  [**class-prototype** (*class* forward-referenced-class) *method*](/docs/meta-object-protocol/class-prototype-forward-referenced-class)
-  [**class-prototype** (*class* built-in-class) *method*](/docs/meta-object-protocol/class-prototype-built-in-class)
+  [**class-prototype** (*class* standard-class) *method*](/meta-object-protocol/class-prototype-standard-class)
+  [**class-prototype** (*class* funcallable-standard-class) *method*](/meta-object-protocol/class-prototype-funcallable-standard-class)
+  [**class-prototype** (*class* forward-referenced-class) *method*](/meta-object-protocol/class-prototype-forward-referenced-class)
+  [**class-prototype** (*class* built-in-class) *method*](/meta-object-protocol/class-prototype-built-in-class)
   --------------------------------------------------------------------------------------------------------------------
 
 

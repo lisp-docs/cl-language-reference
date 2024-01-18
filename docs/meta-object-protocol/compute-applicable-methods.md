@@ -19,7 +19,7 @@ compute-applicable-methods
 
 This generic function determines the method applicability of a generic function given a list of required arguments. The returned list of method metaobjects is sorted by precedence order with the most specific method appearing first. If no methods are applicable to the supplied arguments the empty list is returned.
 
-When a generic function is invoked, the discriminating function must determine the ordered list of methods applicable to the arguments. Depending on the generic function and the arguments, this is done in one of three ways: using a memoized value; calling[compute-applicable-methods-using-classes](/docs/meta-object-protocol/compute-applicable-methods-using-classes); or calling **compute-applicable-methods**. (Refer to the description of [compute-discriminating-function](/docs/meta-object-protocol/compute-discriminating-function) for the details of this process.)
+When a generic function is invoked, the discriminating function must determine the ordered list of methods applicable to the arguments. Depending on the generic function and the arguments, this is done in one of three ways: using a memoized value; calling[compute-applicable-methods-using-classes](/meta-object-protocol/compute-applicable-methods-using-classes); or calling **compute-applicable-methods**. (Refer to the description of [compute-discriminating-function](/meta-object-protocol/compute-discriminating-function) for the details of this process.)
 
 The *arguments* argument is permitted to contain more elements than the generic function accepts required arguments; in these cases the extra arguments will be ignored. An error is signaled if *arguments* contains fewer elements than the generic function accepts required arguments.
 
@@ -28,7 +28,7 @@ The list returned by this generic function will not be mutated by the implementa
 **Methods:**
 
   ------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**compute-applicable-methods** (*generic-function* standard-generic-function) *arguments*](/docs/meta-object-protocol/compute-applicable-methods-standard-generic-function)
+  [**compute-applicable-methods** (*generic-function* standard-generic-function) *arguments*](/meta-object-protocol/compute-applicable-methods-standard-generic-function)
   ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

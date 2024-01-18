@@ -7,11 +7,11 @@ EQL-SPECIALIZER
 
 **Direct superclasses:**
 
-[specializer](/docs/meta-object-protocol/class-specializer)
+[specializer](/meta-object-protocol/class-specializer)
 
 **Metaclass:**
 
-[standard-class](/docs/meta-object-protocol/class-standard-class)
+[standard-class](/meta-object-protocol/class-standard-class)
 
 **Description:**
 

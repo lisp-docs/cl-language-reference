@@ -29,16 +29,16 @@ Either the function [compile](http://www.lispworks.com/documentation/HyperSpec/B
 
 When a method is actually called by an effective method, its first argument will be a list of the arguments to the generic function. Its remaining arguments will be all but the first argument passed to [call-method](http://www.lispworks.com/documentation/HyperSpec/Body/m_call_m.htm#call-method). By default, all method functions must accept two arguments: the list of arguments to the generic function and the list of next methods.
 
-For a given generic function and method class, the applicable methods on `make-method-lambda` and [compute-effective-method](/docs/meta-object-protocol/compute-effective-method) must be consistent in the following way: each use of [call-method](http://www.lispworks.com/documentation/HyperSpec/Body/m_call_m.htm#call-method) returned by the method on [compute-effective-method](/docs/meta-object-protocol/compute-effective-method) must have the same number of arguments, and the method lambda returned by the method on `make-method-lambda` must accept a corresponding number of arguments.
+For a given generic function and method class, the applicable methods on `make-method-lambda` and [compute-effective-method](/meta-object-protocol/compute-effective-method) must be consistent in the following way: each use of [call-method](http://www.lispworks.com/documentation/HyperSpec/Body/m_call_m.htm#call-method) returned by the method on [compute-effective-method](/meta-object-protocol/compute-effective-method) must have the same number of arguments, and the method lambda returned by the method on `make-method-lambda` must accept a corresponding number of arguments.
 
 Note that the system-supplied implementation of [call-next-method](http://www.lispworks.com/documentation/HyperSpec/Body/f_call_n.htm#call-next-method) is not required to handle extra arguments to the method function. Users who define additional arguments to the method function must either redefine or forego [call-next-method](http://www.lispworks.com/documentation/HyperSpec/Body/f_call_n.htm#call-next-method). (See the example below.)
 
-When the method metaobject is created with [make-instance](/docs/meta-object-protocol/make-instance), the method function must be the value of the `:function` initialization argument. The additional initialization arguments, returned as the second value of this generic function, must also be passed in this call to [make-instance](/docs/meta-object-protocol/make-instance).
+When the method metaobject is created with [make-instance](/meta-object-protocol/make-instance), the method function must be the value of the `:function` initialization argument. The additional initialization arguments, returned as the second value of this generic function, must also be passed in this call to [make-instance](/meta-object-protocol/make-instance).
 
 **Methods:**
 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**make-method-lambda** (*generic-function* standard-generic-function) (*method* standard-method) *lambda-expression* *environment*](/docs/meta-object-protocol/make-method-lambda-standard-generic-function-standard-method)
+  [**make-method-lambda** (*generic-function* standard-generic-function) (*method* standard-method) *lambda-expression* *environment*](/meta-object-protocol/make-method-lambda-standard-generic-function-standard-method)
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Example:**

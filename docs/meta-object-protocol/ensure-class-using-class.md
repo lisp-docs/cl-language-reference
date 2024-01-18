@@ -17,7 +17,7 @@ ensure-class-using-class
 
 `:direct-superclasses` -- A list of which each element is a class metaobject or a class name. An error is signaled if this argument is not a proper list.
 
-For the interpretation of additional keyword arguments, see[Initialization of Class Metaobjects](/docs/meta-object-protocol/initialization-of-class-metaobjects).
+For the interpretation of additional keyword arguments, see[Initialization of Class Metaobjects](/meta-object-protocol/initialization-of-class-metaobjects).
 
 *resulting-class* -- A class metaobject.
 
@@ -31,7 +31,7 @@ The first step performed by this generic function is to compute the set of initi
 -   If the `:direct-superclasses` argument was received by this generic function, it is converted into a list of class metaobjects. This conversion does not affect the structure of the supplied `:direct-superclasses` argument. For each element in the `:direct-superclasses` argument:
     -   If the element is a class metaobject, that class metaobject is used.
     -   If the element names a class, that class metaobject is used.
-    -   Otherwise an instance of the class [forward-referenced-class](/docs/meta-object-protocol/class-forward-referenced-class) is created and used. The proper name of the newly created forward referenced class metaobject is set to *name*.
+    -   Otherwise an instance of the class [forward-referenced-class](/meta-object-protocol/class-forward-referenced-class) is created and used. The proper name of the newly created forward referenced class metaobject is set to *name*.
 -   All other keyword arguments are included directly in the initialization arguments.
 
 If the *class* argument is `nil`, a new class metaobject is created by calling the `make-instance` generic function with the value of the `:metaclass` argument as its first argument, and the previously computed initialization arguments. The proper name of the newly created class metaobject is set to *name*. The newly created class metaobject is returned.
@@ -45,9 +45,9 @@ Otherwise, the class metaobject *class* is redefined by calling the `reinitializ
 **Methods:**
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**ensure-class-using-class** (*class* class) *name* `&key` `:metaclass` `:direct-superclasses` `&allow-other-keys`](/docs/meta-object-protocol/ensure-class-using-class-class)
-  [**ensure-class-using-class** (*class* forward-referenced-class) *name* `&key` `:metaclass` `:direct-superclasses` `&allow-other-keys`](/docs/meta-object-protocol/ensure-class-using-class-forward-referenced-class)
-  [**ensure-class-using-class** (*class* null) *name* `&key` `:metaclass` `:direct-superclasses` `&allow-other-keys`](/docs/meta-object-protocol/ensure-class-using-class-null)
+  [**ensure-class-using-class** (*class* class) *name* `&key` `:metaclass` `:direct-superclasses` `&allow-other-keys`](/meta-object-protocol/ensure-class-using-class-class)
+  [**ensure-class-using-class** (*class* forward-referenced-class) *name* `&key` `:metaclass` `:direct-superclasses` `&allow-other-keys`](/meta-object-protocol/ensure-class-using-class-forward-referenced-class)
+  [**ensure-class-using-class** (*class* null) *name* `&key` `:metaclass` `:direct-superclasses` `&allow-other-keys`](/meta-object-protocol/ensure-class-using-class-null)
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

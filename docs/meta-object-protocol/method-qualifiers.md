@@ -26,7 +26,7 @@ The list returned by this function will not be mutated by the implementation. Th
 **Methods:**
 
   ------------------------------------------------------------------------------------------
-  [**method-qualifiers** (*method* standard-method)](/docs/meta-object-protocol/method-qualifiers-standard-method)
+  [**method-qualifiers** (*method* standard-method)](/meta-object-protocol/method-qualifiers-standard-method)
   ------------------------------------------------------------------------------------------
 
 

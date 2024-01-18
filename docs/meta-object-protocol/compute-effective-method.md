@@ -23,7 +23,7 @@ compute-effective-method
 
 This generic function is called to determine the effective method from a sorted list of method metaobjects.
 
-An effective method is a form that describes how the applicable methods are to be combined. Inside of effective method forms are[call-method](http://www.lispworks.com/documentation/HyperSpec/Body/m_call_m.htm#call-method) forms which indicate that a particular method is to be called. The arguments to the [call-method](http://www.lispworks.com/documentation/HyperSpec/Body/m_call_m.htm#call-method) form indicate exactly how the method function of the method should be called. (See [make-method-lambda](/docs/meta-object-protocol/make-method-lambda) for more details about method functions.)
+An effective method is a form that describes how the applicable methods are to be combined. Inside of effective method forms are[call-method](http://www.lispworks.com/documentation/HyperSpec/Body/m_call_m.htm#call-method) forms which indicate that a particular method is to be called. The arguments to the [call-method](http://www.lispworks.com/documentation/HyperSpec/Body/m_call_m.htm#call-method) form indicate exactly how the method function of the method should be called. (See [make-method-lambda](/meta-object-protocol/make-method-lambda) for more details about method functions.)
 
 An effective method option has the same interpretation and syntax as either the `:arguments` or the `:generic-function` option in the long form of [define-method-combination](http://www.lispworks.com/documentation/HyperSpec/Body/m_defi_4.htm#define-method-combination).
 
@@ -34,7 +34,7 @@ This generic function can be called by the user or the implementation. It is cal
 **Methods:**
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**compute-effective-method** (*generic-function* standard-generic-function) *method-combination* *methods*](/docs/meta-object-protocol/compute-effective-method-standard-generic-function)
+  [**compute-effective-method** (*generic-function* standard-generic-function) *method-combination* *methods*](/meta-object-protocol/compute-effective-method-standard-generic-function)
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

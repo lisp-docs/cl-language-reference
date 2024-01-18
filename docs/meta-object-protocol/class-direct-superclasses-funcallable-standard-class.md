@@ -9,6 +9,6 @@ class-direct-superclasses-funcallable-standard-class
 
 **Description:**
 
-This is a method on the generic function[class-direct-superclasses](/docs/meta-object-protocol/class-direct-superclasses).
+This is a method on the generic function[class-direct-superclasses](/meta-object-protocol/class-direct-superclasses).
 
 This method returns the value which was associated with the class metaobject during initialization or reinitialization.

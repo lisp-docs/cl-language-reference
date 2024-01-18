@@ -17,7 +17,7 @@ direct-slot-definition-class
 
 **Description:**
 
-The value returned is a subclass of the class[direct-slot-definition](/docs/meta-object-protocol/class-direct-slot-definition).
+The value returned is a subclass of the class[direct-slot-definition](/meta-object-protocol/class-direct-slot-definition).
 
 When a class is initialized, each of the canonicalized slot specifications must be converted to a direct slot definition metaobject. This generic function is called to determine the class of that direct slot definition metaobject.
 
@@ -26,8 +26,8 @@ The *initargs* argument is simply the canonicalized slot specification for the s
 **Methods:**
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**direct-slot-definition-class** (*class* standard-class) `&rest` *initargs*](/docs/meta-object-protocol/direct-slot-definition-class-standard-class)
-  [**direct-slot-definition-class** (*class* funcallable-standard-class) `&rest` *initargs*](/docs/meta-object-protocol/direct-slot-definition-class-funcallable-standard-class)
+  [**direct-slot-definition-class** (*class* standard-class) `&rest` *initargs*](/meta-object-protocol/direct-slot-definition-class-standard-class)
+  [**direct-slot-definition-class** (*class* funcallable-standard-class) `&rest` *initargs*](/meta-object-protocol/direct-slot-definition-class-funcallable-standard-class)
   --------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

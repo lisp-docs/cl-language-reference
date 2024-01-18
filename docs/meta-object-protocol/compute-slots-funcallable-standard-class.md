@@ -9,7 +9,7 @@ compute-slots-funcallable-standard-class
 
 **Description:**
 
-This is a method on the generic function[compute-slots](/docs/meta-object-protocol/compute-slots).
+This is a method on the generic function[compute-slots](/meta-object-protocol/compute-slots).
 
 This method implements the specified behavior of the generic function.
 

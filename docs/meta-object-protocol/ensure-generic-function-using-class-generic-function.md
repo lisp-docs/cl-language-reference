@@ -9,7 +9,7 @@ ensure-generic-function-using-class-generic-function
 
 **Description:**
 
-This is a method on the generic function[ensure-generic-function-using-class](/docs/meta-object-protocol/ensure-generic-function-using-class).
+This is a method on the generic function[ensure-generic-function-using-class](/meta-object-protocol/ensure-generic-function-using-class).
 
 This method implements the behavior of the generic function in the case where *function-name* names an existing generic function.
 

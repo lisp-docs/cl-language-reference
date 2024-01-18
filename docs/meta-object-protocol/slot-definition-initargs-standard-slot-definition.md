@@ -9,6 +9,6 @@ slot-definition-initargs-standard-slot-definition
 
 **Description:**
 
-This is a method on the generic function[slot-definition-initargs](/docs/meta-object-protocol/slot-definition-initargs).
+This is a method on the generic function[slot-definition-initargs](/meta-object-protocol/slot-definition-initargs).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

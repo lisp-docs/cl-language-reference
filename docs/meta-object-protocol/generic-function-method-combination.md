@@ -24,7 +24,7 @@ An error is signaled if the argument *generic-function* is not a generic functio
 **Methods:**
 
   ------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**generic-function-method-combination** (*generic-function* standard-generic-function)](/docs/meta-object-protocol/generic-function-method-combination-standard-generic-function)
+  [**generic-function-method-combination** (*generic-function* standard-generic-function)](/meta-object-protocol/generic-function-method-combination-standard-generic-function)
   ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

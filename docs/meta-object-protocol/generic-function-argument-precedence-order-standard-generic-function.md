@@ -9,6 +9,6 @@ generic-function-argument-precedence-order-standard-generic-function
 
 **Description:**
 
-This is a method on the generic function[generic-function-argument-precedence-order](/docs/meta-object-protocol/generic-function-argument-precedence-order).
+This is a method on the generic function[generic-function-argument-precedence-order](/meta-object-protocol/generic-function-argument-precedence-order).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

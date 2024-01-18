@@ -9,6 +9,6 @@ slot-definition-initform-standard-slot-definition
 
 **Description:**
 
-This is a method on the generic function[slot-definition-initform](/docs/meta-object-protocol/slot-definition-initform).
+This is a method on the generic function[slot-definition-initform](/meta-object-protocol/slot-definition-initform).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

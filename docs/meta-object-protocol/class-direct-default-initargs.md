@@ -20,10 +20,10 @@ Returns a list of the direct default initialization arguments for *class*. Each 
 **Methods:**
 
   ---------------------------------------------------------------------------------------------------------------------------------------
-  [**class-direct-default-initargs** (*class* standard-class)](/docs/meta-object-protocol/class-direct-default-initargs-standard-class)
-  [**class-direct-default-initargs** (*class* funcallable-standard-class)](/docs/meta-object-protocol/class-direct-default-initargs-funcallable-standard-class)
-  [**class-direct-default-initargs** (*class* forward-referenced-class)](/docs/meta-object-protocol/class-direct-default-initargs-forward-referenced-class)
-  [**class-direct-default-initargs** (*class* built-in-class)](/docs/meta-object-protocol/class-direct-default-initargs-built-in-class)
+  [**class-direct-default-initargs** (*class* standard-class)](/meta-object-protocol/class-direct-default-initargs-standard-class)
+  [**class-direct-default-initargs** (*class* funcallable-standard-class)](/meta-object-protocol/class-direct-default-initargs-funcallable-standard-class)
+  [**class-direct-default-initargs** (*class* forward-referenced-class)](/meta-object-protocol/class-direct-default-initargs-forward-referenced-class)
+  [**class-direct-default-initargs** (*class* built-in-class)](/meta-object-protocol/class-direct-default-initargs-built-in-class)
   ---------------------------------------------------------------------------------------------------------------------------------------
 
 

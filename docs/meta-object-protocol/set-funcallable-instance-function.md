@@ -15,7 +15,7 @@ set-funcallable-instance-function
 
 *unspecified* -- An unspecified value.
 
-The argument *funcallable-instance* must have been returned by [allocate-instance (*class* funcallable-standard-class)](/docs/meta-object-protocol/allocate-instance-funcallable-standard-class).
+The argument *funcallable-instance* must have been returned by [allocate-instance (*class* funcallable-standard-class)](/meta-object-protocol/allocate-instance-funcallable-standard-class).
 
 **Description:**
 

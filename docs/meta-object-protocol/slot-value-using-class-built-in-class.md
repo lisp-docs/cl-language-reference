@@ -9,6 +9,6 @@ slot-value-using-class-built-in-class
 
 **Description:**
 
-This is a method on the generic function[slot-value-using-class](/docs/meta-object-protocol/slot-value-using-class).
+This is a method on the generic function[slot-value-using-class](/meta-object-protocol/slot-value-using-class).
 
 This method signals an error.

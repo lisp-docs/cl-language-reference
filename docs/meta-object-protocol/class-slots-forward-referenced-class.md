@@ -9,6 +9,6 @@ class-slots-forward-referenced-class
 
 **Description:**
 
-This is a method on the generic function[class-slots](/docs/meta-object-protocol/class-slots).
+This is a method on the generic function[class-slots](/meta-object-protocol/class-slots).
 
 This method signals an error.

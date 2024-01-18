@@ -26,7 +26,7 @@ The list returned by this function will not be mutated by the implementation. Th
 **Methods:**
 
   ------------------------------------------------------------------------------------------------------------------------------------
-  [**slot-definition-readers** (*slot* standard-direct-slot-definition)](/docs/meta-object-protocol/slot-definition-readers-standard-direct-slot-definition)
+  [**slot-definition-readers** (*slot* standard-direct-slot-definition)](/meta-object-protocol/slot-definition-readers-standard-direct-slot-definition)
   ------------------------------------------------------------------------------------------------------------------------------------
 
 

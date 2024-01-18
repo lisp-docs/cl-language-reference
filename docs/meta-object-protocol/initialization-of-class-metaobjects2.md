@@ -3,9 +3,9 @@ Initialization of Class Metaobjects
 
 ### Initialization of Class Metaobjects
 
-A class metaobject can be created by calling [make-instance](/docs/meta-object-protocol/make-instance). The initialization arguments establish the definition of the class. A class metaobject can be redefined by calling [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance). Some classes of class metaobject do not support redefinition; in these cases, [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance) signals an error.
+A class metaobject can be created by calling [make-instance](/meta-object-protocol/make-instance). The initialization arguments establish the definition of the class. A class metaobject can be redefined by calling [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance). Some classes of class metaobject do not support redefinition; in these cases, [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance) signals an error.
 
-Initialization of a class metaobject must be done by calling [make-instance](/docs/meta-object-protocol/make-instance) and allowing it to call [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance). Reinitialization of a class metaobject must be done by calling [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance). Portable programs must not call [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance) directly to initialize a class metaobject. Portable programs must not call [shared-initialize](http://www.lispworks.com/documentation/HyperSpec/Body/f_shared.htm#shared-initialize) directly to initialize or reinitialize a class metaobject. Portable programs must not call [change-class](http://www.lispworks.com/documentation/HyperSpec/Body/f_chg_cl.htm#change-class) to change the class of any class metaobject or to turn a non-class object into a class metaobject.
+Initialization of a class metaobject must be done by calling [make-instance](/meta-object-protocol/make-instance) and allowing it to call [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance). Reinitialization of a class metaobject must be done by calling [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance). Portable programs must not call [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance) directly to initialize a class metaobject. Portable programs must not call [shared-initialize](http://www.lispworks.com/documentation/HyperSpec/Body/f_shared.htm#shared-initialize) directly to initialize or reinitialize a class metaobject. Portable programs must not call [change-class](http://www.lispworks.com/documentation/HyperSpec/Body/f_chg_cl.htm#change-class) to change the class of any class metaobject or to turn a non-class object into a class metaobject.
 
 Since metaobject classes may not be redefined, no behavior is specified for the result of calls to [update-instance-for-redefined-class](http://www.lispworks.com/documentation/HyperSpec/Body/f_upda_1.htm#update-instance-for-redefined-class) on class metaobjects. Since the class of class metaobjects may not be changed, no behavior is specified for the result of calls to [update-instance-for-different-class](http://www.lispworks.com/documentation/HyperSpec/Body/f_update.htm#update-instance-for-different-class) on class metaobjects.
 
@@ -27,7 +27,7 @@ Unless there is a specific note to the contrary, then during reinitialization, i
 
     An error is signaled if this value is not a proper list or if any element of the list is not a canonicalized slot specification.
 
-    After error checking, this value is converted to a list of direct slot definition metaobjects before it is associated with the class metaobject. Conversion of each canonicalized slot specification to a direct slot definition metaobject is a two-step process. First, the generic function [direct-slot-definition-class](/docs/meta-object-protocol/direct-slot-definition-class) is called with the class metaobject and the canonicalized slot specification to determine the class of the new direct slot definition metaobject; this permits both the class metaobject and the canonicalized slot specification to control the resulting direct slot definition metaobject class. Second, [make-instance](/docs/meta-object-protocol/make-instance) is applied to the direct slot definition metaobject class and the canonicalized slot specification. This conversion could be implemented as shown in the following code:
+    After error checking, this value is converted to a list of direct slot definition metaobjects before it is associated with the class metaobject. Conversion of each canonicalized slot specification to a direct slot definition metaobject is a two-step process. First, the generic function [direct-slot-definition-class](/meta-object-protocol/direct-slot-definition-class) is called with the class metaobject and the canonicalized slot specification to determine the class of the new direct slot definition metaobject; this permits both the class metaobject and the canonicalized slot specification to control the resulting direct slot definition metaobject class. Second, [make-instance](/meta-object-protocol/make-instance) is applied to the direct slot definition metaobject class and the canonicalized slot specification. This conversion could be implemented as shown in the following code:
 
         (defun convert-to-direct-slot-definition (class canonicalized-slot)
           (apply #'make-instance
@@ -37,17 +37,17 @@ Unless there is a specific note to the contrary, then during reinitialization, i
 
     If the class metaobject is being initialized, this argument defaults to the empty list.
 
-    Once the direct slot definition metaobjects have been created, the specified reader and writer methods are created. The generic functions [reader-method-class](/docs/meta-object-protocol/reader-method-class) and [writer-method-class](/docs/meta-object-protocol/writer-method-class) are called to determine the classes of the method metaobjects created.
+    Once the direct slot definition metaobjects have been created, the specified reader and writer methods are created. The generic functions [reader-method-class](/meta-object-protocol/reader-method-class) and [writer-method-class](/meta-object-protocol/writer-method-class) are called to determine the classes of the method metaobjects created.
 
 -   The `:direct-superclasses` argument is a list of class metaobjects. Classes which do not support multiple inheritance signal an error if the list contains more than one element.
 
-    An error is signaled if this value is not a proper list or if [validate-superclass](/docs/meta-object-protocol/validate-superclass) applied to *class* and any element of this list returns false.
+    An error is signaled if this value is not a proper list or if [validate-superclass](/meta-object-protocol/validate-superclass) applied to *class* and any element of this list returns false.
 
-    When the class metaobject is being initialized, and this argument is either not supplied or is the empty list, this argument defaults as follows: if the class is an instance of [standard-class](/docs/meta-object-protocol/class-standard-class) or one of its subclasses the default value is a list of the class [standard-object](http://www.lispworks.com/documentation/HyperSpec/Body/t_std_ob.htm#standard-object); if the class is an instance of [funcallable-standard-class](/docs/meta-object-protocol/class-funcallable-standard-class) or one of its subclasses the default value is list of the class [funcallable-standard-object](/docs/meta-object-protocol/class-funcallable-standard-object).
+    When the class metaobject is being initialized, and this argument is either not supplied or is the empty list, this argument defaults as follows: if the class is an instance of [standard-class](/meta-object-protocol/class-standard-class) or one of its subclasses the default value is a list of the class [standard-object](http://www.lispworks.com/documentation/HyperSpec/Body/t_std_ob.htm#standard-object); if the class is an instance of [funcallable-standard-class](/meta-object-protocol/class-funcallable-standard-class) or one of its subclasses the default value is list of the class [funcallable-standard-object](/meta-object-protocol/class-funcallable-standard-object).
 
-    After any defaulting of the value, the generic function [add-direct-subclass](/docs/meta-object-protocol/add-direct-subclass) is called once for each element of the list.
+    After any defaulting of the value, the generic function [add-direct-subclass](/meta-object-protocol/add-direct-subclass) is called once for each element of the list.
 
-    When the class metaobject is being reinitialized and this argument is supplied, the generic function [remove-direct-subclass](/docs/meta-object-protocol/remove-direct-subclass) is called once for each class metaobject in the previously stored value but not in the new value; the generic function [add-direct-subclass](/docs/meta-object-protocol/add-direct-subclass) is called once for each class metaobject in the new value but not in the previously stored value.
+    When the class metaobject is being reinitialized and this argument is supplied, the generic function [remove-direct-subclass](/meta-object-protocol/remove-direct-subclass) is called once for each class metaobject in the previously stored value but not in the new value; the generic function [add-direct-subclass](/meta-object-protocol/add-direct-subclass) is called once for each class metaobject in the new value but not in the previously stored value.
 
 -   The `:documentation` argument is a string or `nil`.
 
@@ -63,17 +63,17 @@ After the processing and defaulting of initialization arguments described above,
 
   Initialization Argument        Generic Function
   ------------------------------ ---------------------------------------------------------------------------------------------------
-  **:direct-default-initargs**   [class-direct-default-initargs](/docs/meta-object-protocol/class-direct-default-initargs)
-  **:direct-slots**              [class-direct-slots](/docs/meta-object-protocol/class-direct-slots)
-  **:direct-superclasses**       [class-direct-superclasses](/docs/meta-object-protocol/class-direct-superclasses)
+  **:direct-default-initargs**   [class-direct-default-initargs](/meta-object-protocol/class-direct-default-initargs)
+  **:direct-slots**              [class-direct-slots](/meta-object-protocol/class-direct-slots)
+  **:direct-superclasses**       [class-direct-superclasses](/meta-object-protocol/class-direct-superclasses)
   **:documentation**             [documentation](http://www.lispworks.com/documentation/HyperSpec/Body/f_docume.htm#documentation)
-  **:name**                      [class-name](/docs/meta-object-protocol/class-name)
+  **:name**                      [class-name](/meta-object-protocol/class-name)
 
 Initialization arguments and accessors for class metaobjects.
 
-Instances of the class [standard-class](/docs/meta-object-protocol/class-standard-class) support multiple inheritance and reinitialization. Instances of the class [funcallable-standard-class](/docs/meta-object-protocol/class-funcallable-standard-class) support multiple inheritance and reinitialization. For forward referenced classes, all of the initialization arguments default to `nil`.
+Instances of the class [standard-class](/meta-object-protocol/class-standard-class) support multiple inheritance and reinitialization. Instances of the class [funcallable-standard-class](/meta-object-protocol/class-funcallable-standard-class) support multiple inheritance and reinitialization. For forward referenced classes, all of the initialization arguments default to `nil`.
 
-Since built-in classes cannot be created or reinitialized by the user, an error is signaled if [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance) or [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance) are called to initialize or reinitialize a derived instance of the class [built-in-class](/docs/meta-object-protocol/class-built-in-class).
+Since built-in classes cannot be created or reinitialized by the user, an error is signaled if [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance) or [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance) are called to initialize or reinitialize a derived instance of the class [built-in-class](/meta-object-protocol/class-built-in-class).
 
 Methods
 -------
@@ -99,4 +99,4 @@ The results are undefined if any of these restrictions are violated.
 Comments and remarks
 --------------------
 
-This section is named *Initialization of Class Metaobjects* and appears in Chapter 6 (Generic functions and methods) of the original text. There is [a section with the same name in Chapter 5 (Concepts) of the original text.](/docs/meta-object-protocol/initialization-of-class-metaobjects) When sections are referred to in the text, it is not specified which one.
+This section is named *Initialization of Class Metaobjects* and appears in Chapter 6 (Generic functions and methods) of the original text. There is [a section with the same name in Chapter 5 (Concepts) of the original text.](/meta-object-protocol/initialization-of-class-metaobjects) When sections are referred to in the text, it is not specified which one.

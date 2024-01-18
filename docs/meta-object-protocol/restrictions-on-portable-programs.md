@@ -11,9 +11,9 @@ Portable programs are allowed to define subclasses of specified classes, and are
 
 -   Portable programs may define methods that override specified methods only when the description of the specified method explicitly allows this. Typically, when a method is allowed to be overridden, a small number of related methods will need to be overridden as well.
 
-    An example of this is the specified methods on the generic functions [add-dependent](/docs/meta-object-protocol/add-dependent), [remove-dependent](/docs/meta-object-protocol/remove-dependent), and [map-dependents](/docs/meta-object-protocol/map-dependents). Overriding a specified method on one of these generic functions requires that the corresponding method on the other two generic functions be overridden as well.
+    An example of this is the specified methods on the generic functions [add-dependent](/meta-object-protocol/add-dependent), [remove-dependent](/meta-object-protocol/remove-dependent), and [map-dependents](/meta-object-protocol/map-dependents). Overriding a specified method on one of these generic functions requires that the corresponding method on the other two generic functions be overridden as well.
 
--   Portable methods on specified generic functions specialized to portable metaobject classes must be defined before any instances of those classes (or any subclasses) are created, either directly or indirectly by a call to [make-instance](/docs/meta-object-protocol/make-instance). Methods can be defined after instances are created by [allocate-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_alloca.htm#allocate-instance) however. Portable metaobject classes cannot be redefined.
+-   Portable methods on specified generic functions specialized to portable metaobject classes must be defined before any instances of those classes (or any subclasses) are created, either directly or indirectly by a call to [make-instance](/meta-object-protocol/make-instance). Methods can be defined after instances are created by [allocate-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_alloca.htm#allocate-instance) however. Portable metaobject classes cannot be redefined.
 
     **Implementation note:**
 
