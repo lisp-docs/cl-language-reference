@@ -9,6 +9,6 @@ add-method-standard-generic-function-standard-method
 
 **Description:**
 
-This is a method on the generic function[add-method](add-method.md).
+This is a method on the generic function[add-method](/docs/meta-object-protocol/add-method).
 
 No behavior is specified for this method beyond that which is specified for the generic function.

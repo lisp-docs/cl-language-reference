@@ -9,7 +9,7 @@ compute-effective-method-standard-generic-function
 
 **Description:**
 
-This is a method on the generic function[compute-effective-method](compute-effective-method.md).
+This is a method on the generic function[compute-effective-method](/docs/meta-object-protocol/compute-effective-method).
 
 This method computes the effective method according to the rules of the method combination type implemented by *method-combination*.
 

@@ -22,9 +22,9 @@ The generic function `make-instance` creates and returns a new instance of the g
 **Methods:**
 
   --------------------------------------------------------------------------------------------------------------------------
-  [**make-instance** (*class* symbol) `&rest` *initargs*](make-instance-symbol.md)
-  [**make-instance** (*class* standard-class) `&rest` *initargs*](make-instance-standard-class.md)
-  [**make-instance** (*class* funcallable-standard-class) `&rest` *initargs*](make-instance-funcallable-standard-class.md)
+  [**make-instance** (*class* symbol) `&rest` *initargs*](/docs/meta-object-protocol/make-instance-symbol)
+  [**make-instance** (*class* standard-class) `&rest` *initargs*](/docs/meta-object-protocol/make-instance-standard-class)
+  [**make-instance** (*class* funcallable-standard-class) `&rest` *initargs*](/docs/meta-object-protocol/make-instance-funcallable-standard-class)
   --------------------------------------------------------------------------------------------------------------------------
 
 **Comments and remarks:**

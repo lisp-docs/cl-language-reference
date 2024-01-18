@@ -16,16 +16,16 @@ For any of these generic functions which returns a list, such lists will not be 
 #### Functions
 
   ------------------ -----------------------------------------------------------------------
-  Generic Function   [**class-default-initargs**](class-default-initargs.md)
-  Generic Function   [**class-direct-default-initargs**](class-direct-default-initargs.md)
-  Generic Function   [**class-direct-slots**](class-direct-slots.md)
-  Generic Function   [**class-direct-subclasses**](class-direct-subclasses.md)
-  Generic Function   [**class-direct-superclasses**](class-direct-superclasses.md)
-  Generic Function   [**class-finalized-p**](class-finalized-p.md)
-  Generic Function   [**class-name**](class-name.md)
-  Generic Function   [**class-precedence-list**](class-precedence-list.md)
-  Generic Function   [**class-prototype**](class-prototype.md)
-  Generic Function   [**class-slots**](class-slots.md)
+  Generic Function   [**class-default-initargs**](/docs/meta-object-protocol/class-default-initargs)
+  Generic Function   [**class-direct-default-initargs**](/docs/meta-object-protocol/class-direct-default-initargs)
+  Generic Function   [**class-direct-slots**](/docs/meta-object-protocol/class-direct-slots)
+  Generic Function   [**class-direct-subclasses**](/docs/meta-object-protocol/class-direct-subclasses)
+  Generic Function   [**class-direct-superclasses**](/docs/meta-object-protocol/class-direct-superclasses)
+  Generic Function   [**class-finalized-p**](/docs/meta-object-protocol/class-finalized-p)
+  Generic Function   [**class-name**](/docs/meta-object-protocol/class-name)
+  Generic Function   [**class-precedence-list**](/docs/meta-object-protocol/class-precedence-list)
+  Generic Function   [**class-prototype**](/docs/meta-object-protocol/class-prototype)
+  Generic Function   [**class-slots**](/docs/meta-object-protocol/class-slots)
   ------------------ -----------------------------------------------------------------------
 
 #### Methods
@@ -71,7 +71,7 @@ Each entry in the table indicates a method on one of the reader generic function
 
 1.  This method returns the value which was associated with the class metaobject during initialization or reinitialization.
 
-2.  This method returns the value associated with the class metaobject by [`finalize-inheritance` (*class* standard-class)](finalize-inheritance-standard-class.md) or [`finalize-inheritance` (*class* funcallable-standard-class)](finalize-inheritance-funcallable-standard-class.md).
+2.  This method returns the value associated with the class metaobject by [`finalize-inheritance` (*class* standard-class)](/docs/meta-object-protocol/finalize-inheritance-standard-class) or [`finalize-inheritance` (*class* funcallable-standard-class)](/docs/meta-object-protocol/finalize-inheritance-funcallable-standard-class).
 
 3.  This method signals an error.
 
@@ -81,11 +81,11 @@ Each entry in the table indicates a method on one of the reader generic function
 
 6.  This method returns false.
 
-7.  This method returns a value derived from the information in [this table](table-class-inheritance.md), except that implementation-specific modifications are permitted as described in [section ``Implementation and User Specialization.''](implementation-and-user-specialization.md)
+7.  This method returns a value derived from the information in [this table](/docs/meta-object-protocol/table-class-inheritance), except that implementation-specific modifications are permitted as described in [section ``Implementation and User Specialization.''](/docs/meta-object-protocol/implementation-and-user-specialization)
 
 8.  This method returns the name of the built-in class.
 
-9.  This methods returns a value which is maintained by [`add-direct-subclass` (*superclass* class) (*subclass* class)](add-direct-subclass-class-class.md) and [`remove-direct-subclass` (*superclass* class) (*subclass* class)](remove-direct-subclass-class-class.md) This method can be overridden only if those methods are overridden as well.
+9.  This methods returns a value which is maintained by [`add-direct-subclass` (*superclass* class) (*subclass* class)](/docs/meta-object-protocol/add-direct-subclass-class-class) and [`remove-direct-subclass` (*superclass* class) (*subclass* class)](/docs/meta-object-protocol/remove-direct-subclass-class-class) This method can be overridden only if those methods are overridden as well.
 
 10. No behavior is specified for this method beyond that specified for the generic function.
 

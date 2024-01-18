@@ -9,6 +9,6 @@ slot-makunbound-using-class-built-in-class
 
 **Description:**
 
-This is a method on the generic function[slot-makunbound-using-class](slot-makunbound-using-class.md).
+This is a method on the generic function[slot-makunbound-using-class](/docs/meta-object-protocol/slot-makunbound-using-class).
 
 This method signals an error.

@@ -9,12 +9,12 @@ map-dependents-standard-generic-function
 
 **Description:**
 
-This is a method on the generic function[map-dependents](map-dependents.md).
+This is a method on the generic function[map-dependents](/docs/meta-object-protocol/map-dependents).
 
 This method has no specified behavior beyond that which is specified for the generic function.
 
 This method cannot be overridden unless the following methods are overridden as well:
 
--   [add-dependent (*class* standard-generic-function) *dependent*](add-dependent-standard-generic-function.md)
--   [remove-dependent (*class* standard-generic-function) *dependent*](remove-dependent-standard-generic-function.md)
+-   [add-dependent (*class* standard-generic-function) *dependent*](/docs/meta-object-protocol/add-dependent-standard-generic-function)
+-   [remove-dependent (*class* standard-generic-function) *dependent*](/docs/meta-object-protocol/remove-dependent-standard-generic-function)
 

@@ -7,11 +7,11 @@ GENERIC-FUNCTION
 
 **Direct superclasses:**
 
-[]()[funcallable-standard-object](class-funcallable-standard-object.md) [metaobject](class-metaobject.md)
+[funcallable-standard-object](/docs/meta-object-protocol/class-funcallable-standard-object) [metaobject](/docs/meta-object-protocol/class-metaobject)
 
 **Metaclass:**
 
-[funcallable-standard-class](class-funcallable-standard-class.md)
+[funcallable-standard-class](/docs/meta-object-protocol/class-funcallable-standard-class)
 
 **Description:**
 

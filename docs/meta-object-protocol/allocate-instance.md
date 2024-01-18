@@ -19,18 +19,18 @@ allocate-instance
 
 This generic function is called to create a new, uninitialized instance of a class. The interpretation of the concept of an ``uninitialized'' instance depends on the class metaobject class.
 
-Before allocating the new instance,[class-finalized-p](class-finalized-p.md) is called to see if *class* has been finalized. If it has not been finalized, [finalize-inheritance](finalize-inheritance.md) is called before the new instance is allocated.
+Before allocating the new instance,[class-finalized-p](/docs/meta-object-protocol/class-finalized-p) is called to see if *class* has been finalized. If it has not been finalized, [finalize-inheritance](/docs/meta-object-protocol/finalize-inheritance) is called before the new instance is allocated.
 
 **Methods:**
 
   ------------------------------------------------------------------------------------------------------------------------------------
-  [**allocate-instance** (*class* standard-class) *`&rest`* *initargs*](allocate-instance-standard-class.md)
-  [**allocate-instance** (*class* funcallable-standard-class) *`&rest`* *initargs*](allocate-instance-funcallable-standard-class.md)
-  [**allocate-instance** (*class* built-in-class) *`&rest`* *initargs*](allocate-instance-built-in-class.md)
+  [**allocate-instance** (*class* standard-class) *`&rest`* *initargs*](/docs/meta-object-protocol/allocate-instance-standard-class)
+  [**allocate-instance** (*class* funcallable-standard-class) *`&rest`* *initargs*](/docs/meta-object-protocol/allocate-instance-funcallable-standard-class)
+  [**allocate-instance** (*class* built-in-class) *`&rest`* *initargs*](/docs/meta-object-protocol/allocate-instance-built-in-class)
   ------------------------------------------------------------------------------------------------------------------------------------
 
 **Comments and remarks:**
 
 See also the [description of this function in the Common Lisp HyperSpec](http://www.lispworks.com/documentation/HyperSpec/Body/f_alloca.htm#allocate-instance).
 
-The description above suggests that `allocate-instance` checks to see whether the class is finalized and if not, calls [finalize-inheritance](finalize-inheritance.md). However, the *initargs* passed to `allocate-instance` should be the defaulted initargs, and computing those initargs requires the class to be finalized. Therefore, [finalize-inheritance](finalize-inheritance.md) must be called *before* `allocate-instance` is called. Peeking at PCL source confirms that [finalize-inheritance](finalize-inheritance.md) is called from [make-instance](make-instance.md) before `allocate-instance` is called.
+The description above suggests that `allocate-instance` checks to see whether the class is finalized and if not, calls [finalize-inheritance](/docs/meta-object-protocol/finalize-inheritance). However, the *initargs* passed to `allocate-instance` should be the defaulted initargs, and computing those initargs requires the class to be finalized. Therefore, [finalize-inheritance](/docs/meta-object-protocol/finalize-inheritance) must be called *before* `allocate-instance` is called. Peeking at PCL source confirms that [finalize-inheritance](/docs/meta-object-protocol/finalize-inheritance) is called from [make-instance](/docs/meta-object-protocol/make-instance) before `allocate-instance` is called.

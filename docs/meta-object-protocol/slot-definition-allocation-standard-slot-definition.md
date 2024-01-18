@@ -9,6 +9,6 @@ slot-definition-allocation-standard-slot-definition
 
 **Description:**
 
-This is a method on the generic function[slot-definition-allocation](slot-definition-allocation.md).
+This is a method on the generic function[slot-definition-allocation](/docs/meta-object-protocol/slot-definition-allocation).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

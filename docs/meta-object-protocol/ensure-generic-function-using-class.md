@@ -15,15 +15,15 @@ ensure-generic-function-using-class
 
 *function-name* -- A symbol or a list of the form `(setf symbol)`.
 
-`:generic-function-class` -- A class metaobject or a class name. If it is not supplied, it defaults to the class named[standard-generic-function](class-standard-generic-function.md). If a class name is supplied, it is interpreted as the class with that name. If a class name is supplied, but there is no such class, an error is signaled.
+`:generic-function-class` -- A class metaobject or a class name. If it is not supplied, it defaults to the class named[standard-generic-function](/docs/meta-object-protocol/class-standard-generic-function). If a class name is supplied, it is interpreted as the class with that name. If a class name is supplied, but there is no such class, an error is signaled.
 
-For the interpretation of additional keyword arguments, see [``Initialization of Generic Function Metaobjects''](initialization-of-generic-function-metaobjects.md).
+For the interpretation of additional keyword arguments, see [``Initialization of Generic Function Metaobjects''](/docs/meta-object-protocol/initialization-of-generic-function-metaobjects).
 
 *generic-function* -- A generic function metaobject.
 
 **Description:**
 
-The generic function [ensure-generic-function-using-class](ensure-generic-function-using-class.md) is called to define or modify the definition of a globally named generic function. It is called by the [ensure-generic-function](ensure-generic-function.md) function. It can also be called directly.
+The generic function [ensure-generic-function-using-class](/docs/meta-object-protocol/ensure-generic-function-using-class) is called to define or modify the definition of a globally named generic function. It is called by the [ensure-generic-function](/docs/meta-object-protocol/ensure-generic-function) function. It can also be called directly.
 
 The first step performed by this generic function is to compute the set of initialization arguments which will be used to create or reinitialize the globally named generic function. These initialization arguments are computed from the full set of keyword arguments received by this generic function as follows:
 
@@ -33,7 +33,7 @@ The first step performed by this generic function is to compute the set of initi
 
 -   All other keyword arguments are included directly in the initialization arguments.
 
-If the *generic-function-or-nil* argument is `nil`, an instance of the class specified by the `:generic-function-class` argument is created by calling [make-instance](make-instance.md) with the previously computed initialization arguments. The function name *function-name* is set to name the generic function. The newly created generic function metaobject is returned.
+If the *generic-function-or-nil* argument is `nil`, an instance of the class specified by the `:generic-function-class` argument is created by calling [make-instance](/docs/meta-object-protocol/make-instance) with the previously computed initialization arguments. The function name *function-name* is set to name the generic function. The newly created generic function metaobject is returned.
 
 If the class of the *generic-function-or-nil* argument is not the same as the class specified by the `:generic-function-class` argument, an error is signaled.
 
@@ -42,8 +42,8 @@ Otherwise the generic function *generic-function-or-nil* is redefined by calling
 **Methods:**
 
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**ensure-generic-function-using-class** (*generic-function* generic-function) *function-name* `&key` `:generic-function-class` `&allow-other-keys`](ensure-generic-function-using-class-generic-function.md)
-  [**ensure-generic-function-using-class** (*generic-function* null) *function-name* `&key` `:generic-function-class` `&allow-other-keys`](ensure-generic-function-using-class-null.md)
+  [**ensure-generic-function-using-class** (*generic-function* generic-function) *function-name* `&key` `:generic-function-class` `&allow-other-keys`](/docs/meta-object-protocol/ensure-generic-function-using-class-generic-function)
+  [**ensure-generic-function-using-class** (*generic-function* null) *function-name* `&key` `:generic-function-class` `&allow-other-keys`](/docs/meta-object-protocol/ensure-generic-function-using-class-null)
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

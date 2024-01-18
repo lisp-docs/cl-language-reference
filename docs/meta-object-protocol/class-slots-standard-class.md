@@ -9,6 +9,6 @@ class-slots-standard-class
 
 **Description:**
 
-This is a method on the generic function[class-slots](class-slots.md).
+This is a method on the generic function[class-slots](/docs/meta-object-protocol/class-slots).
 
-This method returns the value associated with the class metaobject by the method [finalize-inheritance (*class* `standard-class`)](finalize-inheritance-standard-class.md).
+This method returns the value associated with the class metaobject by the method [finalize-inheritance (*class* `standard-class`)](/docs/meta-object-protocol/finalize-inheritance-standard-class).

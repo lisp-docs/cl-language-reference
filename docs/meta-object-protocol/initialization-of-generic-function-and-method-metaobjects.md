@@ -3,7 +3,7 @@ Initialization of generic function and method metaobjects
 
 #### Initialization of generic function and method metaobjects
 
-An example of creating a generic function and a method metaobject, and then adding the method to the generic function is shown below. This example is comparable to the method definition shown in [this figure](fig-defmethod-1.md).
+An example of creating a generic function and a method metaobject, and then adding the method to the generic function is shown below. This example is comparable to the method definition shown in [this figure](/docs/meta-object-protocol/fig-defmethod-1).
 
     (let* ((gf (make-instance 'standard-generic-function
                               :lambda-list '(p l &optional visiblyp &key)))

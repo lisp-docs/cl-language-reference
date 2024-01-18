@@ -28,9 +28,9 @@ The results are undefined if the *class* argument is not the class of the *objec
 **Methods:**
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**(setf slot-value-using-class)** *new-value* (*class* standard-class) (*slot* standard-effective-slot-definition)](setf-slot-value-using-class-standard-class-standard-effective-slot-definition.md)
-  [**(setf slot-value-using-class)** *new-value* (*class* funcallable-standard-class) (*slot* standard-effective-slot-definition)](setf-slot-value-using-class-funcallable-standard-class-standard-effective-slot-definition.md)
-  [**(setf slot-value-using-class)** *new-value* (*class* built-in-class) (*slot* standard-effective-slot-definition)](setf-slot-value-using-class-built-in-class.md)
+  [**(setf slot-value-using-class)** *new-value* (*class* standard-class) (*slot* standard-effective-slot-definition)](/docs/meta-object-protocol/setf-slot-value-using-class-standard-class-standard-effective-slot-definition)
+  [**(setf slot-value-using-class)** *new-value* (*class* funcallable-standard-class) (*slot* standard-effective-slot-definition)](/docs/meta-object-protocol/setf-slot-value-using-class-funcallable-standard-class-standard-effective-slot-definition)
+  [**(setf slot-value-using-class)** *new-value* (*class* built-in-class) (*slot* standard-effective-slot-definition)](/docs/meta-object-protocol/setf-slot-value-using-class-built-in-class)
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

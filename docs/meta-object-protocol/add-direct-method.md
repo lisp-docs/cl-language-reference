@@ -17,17 +17,17 @@ add-direct-method
 
 This generic function is called to maintain a set of backpointers from a specializer to the set of methods specialized to it. If *method* is already in the set, it is not added again (no error is signaled).
 
-This set can be accessed as a list by calling the generic function[specializer-direct-methods](specializer-direct-methods.md). Methods are removed from the set by [remove-direct-method](remove-direct-method.md).
+This set can be accessed as a list by calling the generic function[specializer-direct-methods](/docs/meta-object-protocol/specializer-direct-methods). Methods are removed from the set by [remove-direct-method](/docs/meta-object-protocol/remove-direct-method).
 
-The generic function **add-direct-method** is called by [add-method](add-method.md) whenever a method is added to a generic function. It is called once for each of the specializers of the method. Note that in cases where a specializer appears more than once in the specializers of a method, this generic function will be called more than once with the same specializer as argument.
+The generic function **add-direct-method** is called by [add-method](/docs/meta-object-protocol/add-method) whenever a method is added to a generic function. It is called once for each of the specializers of the method. Note that in cases where a specializer appears more than once in the specializers of a method, this generic function will be called more than once with the same specializer as argument.
 
 The results are undefined if the *specializer* argument is not one of the specializers of the *method* argument.
 
 **Methods:**
 
   -----------------------------------------------------------------------------------------------------------------
-  [**add-direct-method** (*specializer* class) (*method* method)](add-direct-method-class.md)
-  [**add-direct-method** (*specializer* eql-specializer) (*method* method)](add-direct-method-eql-specializer.md)
+  [**add-direct-method** (*specializer* class) (*method* method)](/docs/meta-object-protocol/add-direct-method-class)
+  [**add-direct-method** (*specializer* eql-specializer) (*method* method)](/docs/meta-object-protocol/add-direct-method-eql-specializer)
   -----------------------------------------------------------------------------------------------------------------
 
 

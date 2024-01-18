@@ -15,7 +15,7 @@ generic-function-name
 
 **Description:**
 
-This generic function returns the name of the generic function, or `nil` if the generic function has no name. This is the defaulted value of the `:name` initialization argument that was associated with the generic function metaobject during initialization or reinitialization. (Also see[(setf generic-function-name)](setf-generic-function-name.md).)
+This generic function returns the name of the generic function, or `nil` if the generic function has no name. This is the defaulted value of the `:name` initialization argument that was associated with the generic function metaobject during initialization or reinitialization. (Also see[(setf generic-function-name)](/docs/meta-object-protocol/setf-generic-function-name).)
 
 This generic function can be called by the user or the implementation.
 
@@ -24,7 +24,7 @@ An error is signaled if the argument *generic-function* is not a generic functio
 **Methods:**
 
   --------------------------------------------------------------------------------------------------------------------------------
-  [**generic-function-name** (*generic-function* standard-generic-function)](generic-function-name-standard-generic-function.md)
+  [**generic-function-name** (*generic-function* standard-generic-function)](/docs/meta-object-protocol/generic-function-name-standard-generic-function)
   --------------------------------------------------------------------------------------------------------------------------------
 
 

@@ -19,12 +19,12 @@ This generic function is called to maintain a set of backpointers from a class t
 
 When a class is initialized, this generic function is called once for each direct superclass of the class.
 
-When a class is reinitialized, this generic function is called once for each added direct superclass of the class. The generic function[**remove-direct-subclass**](remove-direct-subclass.md) is called once for each deleted direct superclass of the class.
+When a class is reinitialized, this generic function is called once for each added direct superclass of the class. The generic function[**remove-direct-subclass**](/docs/meta-object-protocol/remove-direct-subclass) is called once for each deleted direct superclass of the class.
 
 **Methods:**
 
   -------------------------------------------------------------------------------------------------------
-  [**add-direct-subclass** (*superclass* class) (*subclass* class)](add-direct-subclass-class-class.md)
+  [**add-direct-subclass** (*superclass* class) (*subclass* class)](/docs/meta-object-protocol/add-direct-subclass-class-class)
   -------------------------------------------------------------------------------------------------------
 
 

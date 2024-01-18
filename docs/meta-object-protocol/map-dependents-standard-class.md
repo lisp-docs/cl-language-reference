@@ -9,12 +9,12 @@ map-dependents-standard-class
 
 **Description:**
 
-This is a method on the generic function[map-dependents](map-dependents.md).
+This is a method on the generic function[map-dependents](/docs/meta-object-protocol/map-dependents).
 
 This method has no specified behavior beyond that which is specified for the generic function.
 
 This method cannot be overridden unless the following methods are overridden as well:
 
--   [add-dependent (*class* standard-class) *dependent*](add-dependent-standard-class.md)
--   [remove-dependent (*class* standard-class) *dependent*](remove-dependent-standard-class.md)
+-   [add-dependent (*class* standard-class) *dependent*](/docs/meta-object-protocol/add-dependent-standard-class)
+-   [remove-dependent (*class* standard-class) *dependent*](/docs/meta-object-protocol/remove-dependent-standard-class)
 

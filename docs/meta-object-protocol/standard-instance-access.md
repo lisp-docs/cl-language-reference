@@ -21,9 +21,9 @@ This function is called to provide direct access to a slot in an instance. By us
 
 The following restrictions apply to the use of this function:
 
--   []()
+-   
 
-    The *instance* argument must be a standard instance (it must have been returned by[allocate-instance (*class* standard-class)](allocate-instance-standard-class.md)).
+    The *instance* argument must be a standard instance (it must have been returned by[allocate-instance (*class* standard-class)](/docs/meta-object-protocol/allocate-instance-standard-class)).
 
 -   The *instance* argument cannot be an non-updated obsolete instance.
 

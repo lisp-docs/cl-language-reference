@@ -17,15 +17,15 @@ effective-slot-definition-class
 
 **Description:**
 
-The value returned is a subclass of the class[effective-slot-definition](class-effective-slot-definition.md).
+The value returned is a subclass of the class[effective-slot-definition](/docs/meta-object-protocol/class-effective-slot-definition).
 
-This generic function is called by [compute-effective-slot-definition](compute-effective-slot-definition.md) to determine the class of the resulting effective slot definition metaobject. The *initargs* argument is the set of initialization arguments and values that will be passed to [make-instance](make-instance.md) when the effective slot definition metaobject is created.
+This generic function is called by [compute-effective-slot-definition](/docs/meta-object-protocol/compute-effective-slot-definition) to determine the class of the resulting effective slot definition metaobject. The *initargs* argument is the set of initialization arguments and values that will be passed to [make-instance](/docs/meta-object-protocol/make-instance) when the effective slot definition metaobject is created.
 
 **Methods:**
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**effective-slot-definition-class** (*class* standard-class) `&rest` *initargs*](effective-slot-definition-class-standard-class.md)
-  [**effective-slot-definition-class** (*class* funcallable-standard-class) `&rest` *initargs*](effective-slot-definition-class-funcallable-standard-class.md)
+  [**effective-slot-definition-class** (*class* standard-class) `&rest` *initargs*](/docs/meta-object-protocol/effective-slot-definition-class-standard-class)
+  [**effective-slot-definition-class** (*class* funcallable-standard-class) `&rest` *initargs*](/docs/meta-object-protocol/effective-slot-definition-class-funcallable-standard-class)
   --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Remarks:**

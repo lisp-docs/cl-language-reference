@@ -3,7 +3,7 @@ Readers for Method Metaobjects
 
 ### Readers for Method Metaobjects
 
-The reader generic functions which simply return information associated with method metaobjects are presented together here in the format described under [``Readers for Class Metaobjects.''](readers-for-class-metaobjects.md)
+The reader generic functions which simply return information associated with method metaobjects are presented together here in the format described under [``Readers for Class Metaobjects.''](/docs/meta-object-protocol/readers-for-class-metaobjects)
 
 Each of these reader generic functions have the same syntax, accepting one required argument called *method*, which must be a method metaobject; otherwise, an error is signaled. An error is also signaled if the method metaobject has not been initialized.
 
@@ -14,12 +14,12 @@ For any of these generic functions which returns a list, such lists will not be 
 #### Functions
 
   ------------------ ---------------------------------------------------------------------------
-  Generic Function   [**method-function**](method-function.md)
-  Generic Function   [**method-generic-function**](method-generic-function.md)
-  Generic Function   [**method-lambda-list**](method-lambda-list.md)
-  Generic Function   [**method-specializers**](method-specializers.md)
-  Generic Function   [**method-qualifiers**](method-qualifiers.md)
-  Generic Function   [**accessor-method-slot-definition**](accessor-method-slot-definition.md)
+  Generic Function   [**method-function**](/docs/meta-object-protocol/method-function)
+  Generic Function   [**method-generic-function**](/docs/meta-object-protocol/method-generic-function)
+  Generic Function   [**method-lambda-list**](/docs/meta-object-protocol/method-lambda-list)
+  Generic Function   [**method-specializers**](/docs/meta-object-protocol/method-specializers)
+  Generic Function   [**method-qualifiers**](/docs/meta-object-protocol/method-qualifiers)
+  Generic Function   [**accessor-method-slot-definition**](/docs/meta-object-protocol/accessor-method-slot-definition)
   ------------------ ---------------------------------------------------------------------------
 
 #### Methods
@@ -27,24 +27,24 @@ For any of these generic functions which returns a list, such lists will not be 
 The specified methods for the method metaobject reader generic functions are presented below.
 
   -------- ----------------------------------------------------------------------------------------------
-  Method   [**method-function** (*method* standard-method)](method-function-standard-method.md)
-  Method   [**method-lambda-list** (*method* standard-method)](method-lambda-list-standard-method.md)
-  Method   [**method-specializers** (*method* standard-method)](method-specializers-standard-method.md)
-  Method   [**method-qualifiers** (*method* standard-method)](method-qualifiers-standard-method.md)
+  Method   [**method-function** (*method* standard-method)](/docs/meta-object-protocol/method-function-standard-method)
+  Method   [**method-lambda-list** (*method* standard-method)](/docs/meta-object-protocol/method-lambda-list-standard-method)
+  Method   [**method-specializers** (*method* standard-method)](/docs/meta-object-protocol/method-specializers-standard-method)
+  Method   [**method-qualifiers** (*method* standard-method)](/docs/meta-object-protocol/method-qualifiers-standard-method)
   -------- ----------------------------------------------------------------------------------------------
 
 No behavior is specified for these methods beyond that which is specified for their respective generic functions.
 
   -------- ------------------------------------------------------------------------------------------------------
-  Method   [**method-generic-function** (*method* standard-method)](method-generic-function-standard-method.md)
+  Method   [**method-generic-function** (*method* standard-method)](/docs/meta-object-protocol/method-generic-function-standard-method)
   -------- ------------------------------------------------------------------------------------------------------
 
 No behavior is specified for this method beyond that which is specified for their respective generic functions.
 
-The value returned by this method is maintained by [`add-method` (*generic-function* standard-generic-function) (*method* standard-method)](add-method-standard-generic-function-standard-method.md) and [`remove-method` (*generic-function* standard-generic-function) (*method* standard-method)](remove-method-standard-generic-function-standard-method.md).
+The value returned by this method is maintained by [`add-method` (*generic-function* standard-generic-function) (*method* standard-method)](/docs/meta-object-protocol/add-method-standard-generic-function-standard-method) and [`remove-method` (*generic-function* standard-generic-function) (*method* standard-method)](/docs/meta-object-protocol/remove-method-standard-generic-function-standard-method).
 
   -------- ----------------------------------------------------------------------------------------------------------------------------------------
-  Method   [**accessor-method-slot-definition** (*method* standard-accessor-method)](accessor-method-slot-definition-standard-accessor-method.md)
+  Method   [**accessor-method-slot-definition** (*method* standard-accessor-method)](/docs/meta-object-protocol/accessor-method-slot-definition-standard-accessor-method)
   -------- ----------------------------------------------------------------------------------------------------------------------------------------
 
 No behavior is specified for this method beyond that which is specified for their respective generic functions.

@@ -9,6 +9,6 @@ slot-boundp-using-class-built-in-class
 
 **Description:**
 
-This is a method on the generic function[slot-boundp-using-class](slot-boundp-using-class.md).
+This is a method on the generic function[slot-boundp-using-class](/docs/meta-object-protocol/slot-boundp-using-class).
 
 This method signals an error.

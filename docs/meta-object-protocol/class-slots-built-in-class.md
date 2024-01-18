@@ -9,6 +9,6 @@ class-slots-built-in-class
 
 **Description:**
 
-This is a method on the generic function[class-slots](class-slots.md).
+This is a method on the generic function[class-slots](/docs/meta-object-protocol/class-slots).
 
 This method returns the empty list.

@@ -7,11 +7,11 @@ FORWARD-REFERENCED-CLASS
 
 **Direct superclasses:**
 
-[]()[class](class-class.md)
+[class](/docs/meta-object-protocol/class-class)
 
 **Metaclass:**
 
-[standard-class](class-standard-class.md)
+[standard-class](/docs/meta-object-protocol/class-standard-class)
 
 **Description:**
 

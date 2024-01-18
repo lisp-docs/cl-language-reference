@@ -24,9 +24,9 @@ An error is signaled if the argument *slot* is not a slot definition metaobject.
 **Methods:**
 
   --------------------------------------------------------------------------------------------------------------------------------
-  [**slot-definition-initfunction** (*slot* standard-slot-definition)](slot-definition-initfunction-standard-slot-definition.md)
+  [**slot-definition-initfunction** (*slot* standard-slot-definition)](/docs/meta-object-protocol/slot-definition-initfunction-standard-slot-definition)
   --------------------------------------------------------------------------------------------------------------------------------
 
 **Note:**
 
-The initfunction of a slot-definition is typically created from the *initform* given in the `defclass` macro call, and then passed to the[ensure-class](ensure-class.md) function as described in the [section about the `defclass` macro](the-defclass-macro.md).
+The initfunction of a slot-definition is typically created from the *initform* given in the `defclass` macro call, and then passed to the[ensure-class](/docs/meta-object-protocol/ensure-class) function as described in the [section about the `defclass` macro](/docs/meta-object-protocol/the-defclass-macro).

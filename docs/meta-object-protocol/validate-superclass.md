@@ -24,7 +24,7 @@ This generic function can be be called by the implementation or user code. It is
 **Methods:**
 
   ----------------------------------------------------------------------------------------------------
-  [**validate-superclass** (*class* class) (*superclass* class)](validate-superclass-class-class.md)
+  [**validate-superclass** (*class* class) (*superclass* class)](/docs/meta-object-protocol/validate-superclass-class-class)
   ----------------------------------------------------------------------------------------------------
 
 **Comments and Remarks:**

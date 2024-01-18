@@ -9,7 +9,7 @@ compute-default-initargs-funcallable-standard-class
 
 **Description:**
 
-This is a method on the generic function[compute-default-initargs](compute-default-initargs.md).
+This is a method on the generic function[compute-default-initargs](/docs/meta-object-protocol/compute-default-initargs).
 
 This method computes the default initialization arguments according to the rules described in the section of the CLOS Specification called [``Defaulting of Initialization Arguments.''](http://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node295.md#SECTION003219300000000000000)
 

@@ -28,9 +28,9 @@ The results are undefined if the *class* argument is not the class of the *objec
 **Methods:**
 
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  [**slot-value-using-class** (*class* standard-class) *object* (*slot* standard-effective-slot-definition)](slot-value-using-class-standard-class-standard-effective-slot-definition.md)
-  [**slot-value-using-class** (*class* funcallable-standard-class) *object* (*slot* standard-effective-slot-definition)](slot-value-using-class-funcallable-standard-class-standard-effective-slot-definition.md)
-  [**slot-value-using-class** (*class* built-in-class) *object* *slot*](slot-value-using-class-built-in-class.md)
+  [**slot-value-using-class** (*class* standard-class) *object* (*slot* standard-effective-slot-definition)](/docs/meta-object-protocol/slot-value-using-class-standard-class-standard-effective-slot-definition)
+  [**slot-value-using-class** (*class* funcallable-standard-class) *object* (*slot* standard-effective-slot-definition)](/docs/meta-object-protocol/slot-value-using-class-funcallable-standard-class-standard-effective-slot-definition)
+  [**slot-value-using-class** (*class* built-in-class) *object* *slot*](/docs/meta-object-protocol/slot-value-using-class-built-in-class)
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

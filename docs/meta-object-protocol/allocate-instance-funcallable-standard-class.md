@@ -9,8 +9,8 @@ allocate-instance-funcallable-standard-class
 
 **Description:**
 
-This is a method on the generic function[allocate-instance](allocate-instance.md).
+This is a method on the generic function[allocate-instance](/docs/meta-object-protocol/allocate-instance).
 
 This method allocates storage in the instance for each slot with allocation `:instance`. These slots are unbound. Slots with any other allocation are ignored by this method (no error is signaled).
 
-The funcallable instance function of the instance is undefined --- the results are undefined if the instance is applied to arguments before [set-funcallable-instance-function](set-funcallable-instance-function.md) has been used to set the funcallable instance function.
+The funcallable instance function of the instance is undefined --- the results are undefined if the instance is applied to arguments before [set-funcallable-instance-function](/docs/meta-object-protocol/set-funcallable-instance-function) has been used to set the funcallable instance function.

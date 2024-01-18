@@ -26,7 +26,7 @@ The list returned by this generic function will not be mutated by the implementa
 **Methods:**
 
   ------------------------------------------------------------------------------------------------------------------------------------------------
-  [**generic-function-declarations** (*generic-function* standard-generic-function)](generic-function-declarations-standard-generic-function.md)
+  [**generic-function-declarations** (*generic-function* standard-generic-function)](/docs/meta-object-protocol/generic-function-declarations-standard-generic-function)
   ------------------------------------------------------------------------------------------------------------------------------------------------
 
 

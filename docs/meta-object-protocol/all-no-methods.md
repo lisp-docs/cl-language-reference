@@ -1,320 +1,320 @@
 Index of all functions excluding methods
 ========================================
 
-[Include methods.](all.md) Methods excluded.
+[Include methods.](/docs/meta-object-protocol/all) Methods excluded.
 
 Generic Function
 
-[**accessor-method-slot-definition**](accessor-method-slot-definition.md)
+[**accessor-method-slot-definition**](/docs/meta-object-protocol/accessor-method-slot-definition)
 
 Generic Function
 
-[**add-dependent**](add-dependent.md)
+[**add-dependent**](/docs/meta-object-protocol/add-dependent)
 
 Generic Function
 
-[**add-direct-method**](add-direct-method.md)
+[**add-direct-method**](/docs/meta-object-protocol/add-direct-method)
 
 Generic Function
 
-[**add-direct-subclass**](add-direct-subclass.md)
+[**add-direct-subclass**](/docs/meta-object-protocol/add-direct-subclass)
 
 Generic Function
 
-[**add-method**](add-method.md)
+[**add-method**](/docs/meta-object-protocol/add-method)
 
 Generic Function
 
-[**allocate-instance**](allocate-instance.md)
+[**allocate-instance**](/docs/meta-object-protocol/allocate-instance)
 
 Generic Function
 
-[**class-default-initargs**](class-default-initargs.md)
+[**class-default-initargs**](/docs/meta-object-protocol/class-default-initargs)
 
 Generic Function
 
-[**class-direct-default-initargs**](class-direct-default-initargs.md)
+[**class-direct-default-initargs**](/docs/meta-object-protocol/class-direct-default-initargs)
 
 Generic Function
 
-[**class-direct-slots**](class-direct-slots.md)
+[**class-direct-slots**](/docs/meta-object-protocol/class-direct-slots)
 
 Generic Function
 
-[**class-direct-subclasses**](class-direct-subclasses.md)
+[**class-direct-subclasses**](/docs/meta-object-protocol/class-direct-subclasses)
 
 Generic Function
 
-[**class-direct-superclasses**](class-direct-superclasses.md)
+[**class-direct-superclasses**](/docs/meta-object-protocol/class-direct-superclasses)
 
 Generic Function
 
-[**class-finalized-p**](class-finalized-p.md)
+[**class-finalized-p**](/docs/meta-object-protocol/class-finalized-p)
 
 Generic Function
 
-[**class-name**](class-name.md)
+[**class-name**](/docs/meta-object-protocol/class-name)
 
 Generic Function
 
-[**class-precedence-list**](class-precedence-list.md)
+[**class-precedence-list**](/docs/meta-object-protocol/class-precedence-list)
 
 Generic Function
 
-[**class-prototype**](class-prototype.md)
+[**class-prototype**](/docs/meta-object-protocol/class-prototype)
 
 Generic Function
 
-[**class-slots**](class-slots.md)
+[**class-slots**](/docs/meta-object-protocol/class-slots)
 
 Generic Function
 
-[**compute-applicable-methods**](compute-applicable-methods.md)
+[**compute-applicable-methods**](/docs/meta-object-protocol/compute-applicable-methods)
 
 Generic Function
 
-[**compute-applicable-methods-using-classes**](compute-applicable-methods-using-classes.md)
+[**compute-applicable-methods-using-classes**](/docs/meta-object-protocol/compute-applicable-methods-using-classes)
 
 Generic Function
 
-[**compute-class-precedence-list**](compute-class-precedence-list.md)
+[**compute-class-precedence-list**](/docs/meta-object-protocol/compute-class-precedence-list)
 
 Generic Function
 
-[**compute-default-initargs**](compute-default-initargs.md)
+[**compute-default-initargs**](/docs/meta-object-protocol/compute-default-initargs)
 
 Generic Function
 
-[**compute-discriminating-function**](compute-discriminating-function.md)
+[**compute-discriminating-function**](/docs/meta-object-protocol/compute-discriminating-function)
 
 Generic Function
 
-[**compute-effective-method**](compute-effective-method.md)
+[**compute-effective-method**](/docs/meta-object-protocol/compute-effective-method)
 
 Generic Function
 
-[**compute-effective-slot-definition**](compute-effective-slot-definition.md)
+[**compute-effective-slot-definition**](/docs/meta-object-protocol/compute-effective-slot-definition)
 
 Generic Function
 
-[**compute-slots**](compute-slots.md)
+[**compute-slots**](/docs/meta-object-protocol/compute-slots)
 
 Generic Function
 
-[**direct-slot-definition-class**](direct-slot-definition-class.md)
+[**direct-slot-definition-class**](/docs/meta-object-protocol/direct-slot-definition-class)
 
 Generic Function
 
-[**effective-slot-definition-class**](effective-slot-definition-class.md)
-
-Function
-
-[**ensure-class**](ensure-class.md)
-
-Generic Function
-
-[**ensure-class-using-class**](ensure-class-using-class.md)
+[**effective-slot-definition-class**](/docs/meta-object-protocol/effective-slot-definition-class)
 
 Function
 
-[**ensure-generic-function**](ensure-generic-function.md)
+[**ensure-class**](/docs/meta-object-protocol/ensure-class)
 
 Generic Function
 
-[**ensure-generic-function-using-class**](ensure-generic-function-using-class.md)
+[**ensure-class-using-class**](/docs/meta-object-protocol/ensure-class-using-class)
 
 Function
 
-[**eql-specializer-object**](eql-specializer-object.md)
+[**ensure-generic-function**](/docs/meta-object-protocol/ensure-generic-function)
+
+Generic Function
+
+[**ensure-generic-function-using-class**](/docs/meta-object-protocol/ensure-generic-function-using-class)
 
 Function
 
-[**extract-lambda-list**](extract-lambda-list.md)
+[**eql-specializer-object**](/docs/meta-object-protocol/eql-specializer-object)
 
 Function
 
-[**extract-specializer-names**](extract-specializer-names.md)
-
-Generic Function
-
-[**finalize-inheritance**](finalize-inheritance.md)
-
-Generic Function
-
-[**find-method-combination**](find-method-combination.md)
+[**extract-lambda-list**](/docs/meta-object-protocol/extract-lambda-list)
 
 Function
 
-[**funcallable-standard-instance-access**](funcallable-standard-instance-access.md)
+[**extract-specializer-names**](/docs/meta-object-protocol/extract-specializer-names)
 
 Generic Function
 
-[**generic-function-argument-precedence-order**](generic-function-argument-precedence-order.md)
+[**finalize-inheritance**](/docs/meta-object-protocol/finalize-inheritance)
 
 Generic Function
 
-[**generic-function-declarations**](generic-function-declarations.md)
-
-Generic Function
-
-[**generic-function-lambda-list**](generic-function-lambda-list.md)
-
-Generic Function
-
-[**generic-function-method-class**](generic-function-method-class.md)
-
-Generic Function
-
-[**generic-function-method-combination**](generic-function-method-combination.md)
-
-Generic Function
-
-[**generic-function-methods**](generic-function-methods.md)
-
-Generic Function
-
-[**generic-function-name**](generic-function-name.md)
+[**find-method-combination**](/docs/meta-object-protocol/find-method-combination)
 
 Function
 
-[**intern-eql-specializer**](intern-eql-specializer.md)
+[**funcallable-standard-instance-access**](/docs/meta-object-protocol/funcallable-standard-instance-access)
 
 Generic Function
 
-[**make-instance**](make-instance.md)
+[**generic-function-argument-precedence-order**](/docs/meta-object-protocol/generic-function-argument-precedence-order)
 
 Generic Function
 
-[**make-method-lambda**](make-method-lambda.md)
+[**generic-function-declarations**](/docs/meta-object-protocol/generic-function-declarations)
 
 Generic Function
 
-[**map-dependents**](map-dependents.md)
+[**generic-function-lambda-list**](/docs/meta-object-protocol/generic-function-lambda-list)
 
 Generic Function
 
-[**method-function**](method-function.md)
+[**generic-function-method-class**](/docs/meta-object-protocol/generic-function-method-class)
 
 Generic Function
 
-[**method-generic-function**](method-generic-function.md)
+[**generic-function-method-combination**](/docs/meta-object-protocol/generic-function-method-combination)
 
 Generic Function
 
-[**method-lambda-list**](method-lambda-list.md)
+[**generic-function-methods**](/docs/meta-object-protocol/generic-function-methods)
 
 Generic Function
 
-[**method-specializers**](method-specializers.md)
-
-Generic Function
-
-[**method-qualifiers**](method-qualifiers.md)
-
-Generic Function
-
-[**slot-definition-allocation**](slot-definition-allocation.md)
-
-Generic Function
-
-[**slot-definition-initargs**](slot-definition-initargs.md)
-
-Generic Function
-
-[**slot-definition-initform**](slot-definition-initform.md)
-
-Generic Function
-
-[**slot-definition-initfunction**](slot-definition-initfunction.md)
-
-Generic Function
-
-[**slot-definition-name**](slot-definition-name.md)
-
-Generic Function
-
-[**slot-definition-type**](slot-definition-type.md)
-
-Generic Function
-
-[**slot-definition-readers**](slot-definition-readers.md)
-
-Generic Function
-
-[**slot-definition-writers**](slot-definition-writers.md)
-
-Generic Function
-
-[**slot-definition-location**](slot-definition-location.md)
-
-Generic Function
-
-[**reader-method-class**](reader-method-class.md)
-
-Generic Function
-
-[**remove-dependent**](remove-dependent.md)
-
-Generic Function
-
-[**remove-direct-method**](remove-direct-method.md)
-
-Generic Function
-
-[**remove-direct-subclass**](remove-direct-subclass.md)
-
-Generic Function
-
-[**remove-method**](remove-method.md)
+[**generic-function-name**](/docs/meta-object-protocol/generic-function-name)
 
 Function
 
-[**set-funcallable-instance-function**](set-funcallable-instance-function.md)
+[**intern-eql-specializer**](/docs/meta-object-protocol/intern-eql-specializer)
 
 Generic Function
 
-[(`setf` **class-name**)](setf-class-name.md)
+[**make-instance**](/docs/meta-object-protocol/make-instance)
 
 Generic Function
 
-[(`setf` **generic-function-name**)](setf-generic-function-name.md)
+[**make-method-lambda**](/docs/meta-object-protocol/make-method-lambda)
 
 Generic Function
 
-[(`setf` **slot-value-using-class**)](setf-slot-value-using-class.md)
+[**map-dependents**](/docs/meta-object-protocol/map-dependents)
 
 Generic Function
 
-[**slot-boundp-using-class**](slot-boundp-using-class.md)
+[**method-function**](/docs/meta-object-protocol/method-function)
 
 Generic Function
 
-[**slot-makunbound-using-class**](slot-makunbound-using-class.md)
+[**method-generic-function**](/docs/meta-object-protocol/method-generic-function)
 
 Generic Function
 
-[**slot-value-using-class**](slot-value-using-class.md)
+[**method-lambda-list**](/docs/meta-object-protocol/method-lambda-list)
 
 Generic Function
 
-[**specializer-direct-generic-functions**](specializer-direct-generic-functions.md)
+[**method-specializers**](/docs/meta-object-protocol/method-specializers)
 
 Generic Function
 
-[**specializer-direct-methods**](specializer-direct-methods.md)
+[**method-qualifiers**](/docs/meta-object-protocol/method-qualifiers)
+
+Generic Function
+
+[**slot-definition-allocation**](/docs/meta-object-protocol/slot-definition-allocation)
+
+Generic Function
+
+[**slot-definition-initargs**](/docs/meta-object-protocol/slot-definition-initargs)
+
+Generic Function
+
+[**slot-definition-initform**](/docs/meta-object-protocol/slot-definition-initform)
+
+Generic Function
+
+[**slot-definition-initfunction**](/docs/meta-object-protocol/slot-definition-initfunction)
+
+Generic Function
+
+[**slot-definition-name**](/docs/meta-object-protocol/slot-definition-name)
+
+Generic Function
+
+[**slot-definition-type**](/docs/meta-object-protocol/slot-definition-type)
+
+Generic Function
+
+[**slot-definition-readers**](/docs/meta-object-protocol/slot-definition-readers)
+
+Generic Function
+
+[**slot-definition-writers**](/docs/meta-object-protocol/slot-definition-writers)
+
+Generic Function
+
+[**slot-definition-location**](/docs/meta-object-protocol/slot-definition-location)
+
+Generic Function
+
+[**reader-method-class**](/docs/meta-object-protocol/reader-method-class)
+
+Generic Function
+
+[**remove-dependent**](/docs/meta-object-protocol/remove-dependent)
+
+Generic Function
+
+[**remove-direct-method**](/docs/meta-object-protocol/remove-direct-method)
+
+Generic Function
+
+[**remove-direct-subclass**](/docs/meta-object-protocol/remove-direct-subclass)
+
+Generic Function
+
+[**remove-method**](/docs/meta-object-protocol/remove-method)
 
 Function
 
-[**standard-instance-access**](standard-instance-access.md)
+[**set-funcallable-instance-function**](/docs/meta-object-protocol/set-funcallable-instance-function)
 
 Generic Function
 
-[**update-dependent**](update-dependent.md)
+[(`setf` **class-name**)](/docs/meta-object-protocol/setf-class-name)
 
 Generic Function
 
-[**validate-superclass**](validate-superclass.md)
+[(`setf` **generic-function-name**)](/docs/meta-object-protocol/setf-generic-function-name)
 
 Generic Function
 
-[**writer-method-class**](writer-method-class.md)
+[(`setf` **slot-value-using-class**)](/docs/meta-object-protocol/setf-slot-value-using-class)
+
+Generic Function
+
+[**slot-boundp-using-class**](/docs/meta-object-protocol/slot-boundp-using-class)
+
+Generic Function
+
+[**slot-makunbound-using-class**](/docs/meta-object-protocol/slot-makunbound-using-class)
+
+Generic Function
+
+[**slot-value-using-class**](/docs/meta-object-protocol/slot-value-using-class)
+
+Generic Function
+
+[**specializer-direct-generic-functions**](/docs/meta-object-protocol/specializer-direct-generic-functions)
+
+Generic Function
+
+[**specializer-direct-methods**](/docs/meta-object-protocol/specializer-direct-methods)
+
+Function
+
+[**standard-instance-access**](/docs/meta-object-protocol/standard-instance-access)
+
+Generic Function
+
+[**update-dependent**](/docs/meta-object-protocol/update-dependent)
+
+Generic Function
+
+[**validate-superclass**](/docs/meta-object-protocol/validate-superclass)
+
+Generic Function
+
+[**writer-method-class**](/docs/meta-object-protocol/writer-method-class)

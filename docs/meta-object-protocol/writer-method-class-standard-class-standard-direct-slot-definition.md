@@ -9,6 +9,6 @@ writer-method-class-standard-class-standard-direct-slot-definition
 
 **Description:**
 
-This is a method on the generic function[writer-method-class](writer-method-class.md).
+This is a method on the generic function[writer-method-class](/docs/meta-object-protocol/writer-method-class).
 
-This method return the class [standard-writer-method](class-standard-writer-method.md). This method can be overridden.
+This method return the class [standard-writer-method](/docs/meta-object-protocol/class-standard-writer-method). This method can be overridden.

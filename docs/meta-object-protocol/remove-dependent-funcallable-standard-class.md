@@ -9,15 +9,15 @@ remove-dependent-funcallable-standard-class
 
 **Description:**
 
-This is a method on the generic function[remove-dependent](remove-dependent.md).
+This is a method on the generic function[remove-dependent](/docs/meta-object-protocol/remove-dependent).
 
 No behavior is specified for this method beyond that which is specified for the generic function.
 
 This method cannot be overridden unless the following methods are overridden as well:
 
   -------------------------------------------------------------------------------------------------------------------------
-  [**add-dependent** (*metaobject* funcallable-standard-class) *dependent*](add-dependent-funcallable-standard-class.md)
-  [**map-dependents** (*metaobject* funcallable-standard-class) *function*](map-dependents-funcallable-standard-class.md)
+  [**add-dependent** (*metaobject* funcallable-standard-class) *dependent*](/docs/meta-object-protocol/add-dependent-funcallable-standard-class)
+  [**map-dependents** (*metaobject* funcallable-standard-class) *function*](/docs/meta-object-protocol/map-dependents-funcallable-standard-class)
   -------------------------------------------------------------------------------------------------------------------------
 
 

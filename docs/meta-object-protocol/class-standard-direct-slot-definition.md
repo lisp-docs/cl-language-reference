@@ -7,12 +7,12 @@ STANDARD-DIRECT-SLOT-DEFINITION
 
 **Direct superclasses:**
 
-[]()[direct-slot-definition](class-direct-slot-definition.md) [standard-slot-definition](class-standard-slot-definition.md)
+[direct-slot-definition](/docs/meta-object-protocol/class-direct-slot-definition) [standard-slot-definition](/docs/meta-object-protocol/class-standard-slot-definition)
 
 **Metaclass:**
 
-[standard-class](class-standard-class.md)
+[standard-class](/docs/meta-object-protocol/class-standard-class)
 
 **Description:**
 
-This class is a *standard metaobject class*. This is the class that is returned by the method [direct-slot-definition-class (class standard-class) &`rest` *initargs*](direct-slot-definition-class-standard-class.md) and the method [direct-slot-definition-class (class funcallable-standard-class) &`rest` *initargs*](direct-slot-definition-class-funcallable-standard-class.md) This is also a class on which user specializations are normally based.
+This class is a *standard metaobject class*. This is the class that is returned by the method [direct-slot-definition-class (class standard-class) &`rest` *initargs*](/docs/meta-object-protocol/direct-slot-definition-class-standard-class) and the method [direct-slot-definition-class (class funcallable-standard-class) &`rest` *initargs*](/docs/meta-object-protocol/direct-slot-definition-class-funcallable-standard-class) This is also a class on which user specializations are normally based.

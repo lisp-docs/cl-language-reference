@@ -9,6 +9,6 @@ generic-function-method-combination-standard-generic-function
 
 **Description:**
 
-This is a method on the generic function[generic-function-method-combination](generic-function-method-combination.md).
+This is a method on the generic function[generic-function-method-combination](/docs/meta-object-protocol/generic-function-method-combination).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

@@ -15,7 +15,7 @@ generic-function-methods
 
 **Description:**
 
-This generic function returns the set of methods currently connected to the generic function. This is a set of method metaobjects. This value is maintained by the generic functions[add-method](add-method.md) and [remove-method](remove-method.md).
+This generic function returns the set of methods currently connected to the generic function. This is a set of method metaobjects. This value is maintained by the generic functions[add-method](/docs/meta-object-protocol/add-method) and [remove-method](/docs/meta-object-protocol/remove-method).
 
 This generic function can be called by the user or the implementation.
 
@@ -26,7 +26,7 @@ The list returned by this generic function will not be mutated by the implementa
 **Methods:**
 
   --------------------------------------------------------------------------------------------------------------------------------------
-  [**generic-function-methods** (*generic-function* standard-generic-function)](generic-function-methods-standard-generic-function.md)
+  [**generic-function-methods** (*generic-function* standard-generic-function)](/docs/meta-object-protocol/generic-function-methods-standard-generic-function)
   --------------------------------------------------------------------------------------------------------------------------------------
 
 

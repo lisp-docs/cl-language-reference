@@ -9,7 +9,7 @@ validate-superclass-class-class
 
 **Description:**
 
-This is a method on the generic function[validate-superclass](validate-superclass.md).
+This is a method on the generic function[validate-superclass](/docs/meta-object-protocol/validate-superclass).
 
 This method returns true in three situations:
 
@@ -17,7 +17,7 @@ i.  If the *superclass* argument is the class named `t`,
 
 ii. if the class of the *class* argument is the same as the class of the *superclass* argument, or
 
-iii. if the classes one of the arguments is [standard-class](class-standard-class.md) and the class of the other is [funcallable-standard-class](class-funcallable-standard-class.md).
+iii. if the classes one of the arguments is [standard-class](/docs/meta-object-protocol/class-standard-class) and the class of the other is [funcallable-standard-class](/docs/meta-object-protocol/class-funcallable-standard-class).
 
 In all other cases, this method returns false.
 

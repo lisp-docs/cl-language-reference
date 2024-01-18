@@ -24,7 +24,7 @@ An error is signaled if the argument *method* is not a method metaobject. An err
 **Methods:**
 
   ----------------------------------------------------------------------------------------------------------------------------------------
-  [**accessor-method-slot-definition** (*method* standard-accessor-method)](accessor-method-slot-definition-standard-accessor-method.md)
+  [**accessor-method-slot-definition** (*method* standard-accessor-method)](/docs/meta-object-protocol/accessor-method-slot-definition-standard-accessor-method)
   ----------------------------------------------------------------------------------------------------------------------------------------
 
 

@@ -7,11 +7,11 @@ FUNCTION
 
 **Direct superclasses:**
 
-[]()[T](class-t.md)
+[T](/docs/meta-object-protocol/class-t)
 
 **Metaclass:**
 
-[built-in-class](class-built-in-class.md)
+[built-in-class](/docs/meta-object-protocol/class-built-in-class)
 
 **Description:**
 

@@ -4,16 +4,16 @@ Chapter 6: Generic Functions and Methods
 Chapter 6: Generic Functions and Methods
 ----------------------------------------
 
--   [Sections](chapter-6-sections.md)
+-   [Sections](/docs/meta-object-protocol/chapter-6-sections)
 
-    -   [Initialization of class metaobjects](initialization-of-class-metaobjects2.md)
-    -   [Initialization of generic function metaobjects](initialization-of-generic-function-metaobjects.md)
-    -   [Initialization of method metaobjects](initialization-of-method-metaobjects.md)
-    -   [Initialization of slot definition metaobjects](initialization-of-slot-definition-metaobjects.md)
-    -   [Readers for class metaobjects](readers-for-class-metaobjects.md)
-    -   [Readers for generic function metaobjects](readers-for-generic-function-metaobjects.md)
-    -   [Readers for method metaobjects](readers-for-method-metaobjects.md)
-    -   [Readers for slot definition metaobjects](readers-for-slot-definition-metaobjects.md)
--   [Generic functions and methods](all.md)
+    -   [Initialization of class metaobjects](/docs/meta-object-protocol/initialization-of-class-metaobjects2)
+    -   [Initialization of generic function metaobjects](/docs/meta-object-protocol/initialization-of-generic-function-metaobjects)
+    -   [Initialization of method metaobjects](/docs/meta-object-protocol/initialization-of-method-metaobjects)
+    -   [Initialization of slot definition metaobjects](/docs/meta-object-protocol/initialization-of-slot-definition-metaobjects)
+    -   [Readers for class metaobjects](/docs/meta-object-protocol/readers-for-class-metaobjects)
+    -   [Readers for generic function metaobjects](/docs/meta-object-protocol/readers-for-generic-function-metaobjects)
+    -   [Readers for method metaobjects](/docs/meta-object-protocol/readers-for-method-metaobjects)
+    -   [Readers for slot definition metaobjects](/docs/meta-object-protocol/readers-for-slot-definition-metaobjects)
+-   [Generic functions and methods](/docs/meta-object-protocol/all)
 
 

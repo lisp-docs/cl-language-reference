@@ -9,7 +9,7 @@ compute-slots-standard-class
 
 **Description:**
 
-This is a method on the generic function[compute-slots](compute-slots.md).
+This is a method on the generic function[compute-slots](/docs/meta-object-protocol/compute-slots).
 
 This method implements the specified behavior of the generic function.
 

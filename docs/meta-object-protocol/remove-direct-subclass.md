@@ -22,7 +22,7 @@ Whenever a class is reinitialized, this generic function is called once with eac
 **Methods:**
 
   -------------------------------------------------------------------------------------------------------------
-  [**remove-direct-subclass** (*superclass* class) (*subclass* class)](remove-direct-subclass-class-class.md)
+  [**remove-direct-subclass** (*superclass* class) (*subclass* class)](/docs/meta-object-protocol/remove-direct-subclass-class-class)
   -------------------------------------------------------------------------------------------------------------
 
 

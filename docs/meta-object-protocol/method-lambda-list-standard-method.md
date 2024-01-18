@@ -9,6 +9,6 @@ method-lambda-list-standard-method
 
 **Description:**
 
-This is a method on the generic function[method-lambda-list](method-lambda-list.md).
+This is a method on the generic function[method-lambda-list](/docs/meta-object-protocol/method-lambda-list).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

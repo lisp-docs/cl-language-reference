@@ -9,6 +9,6 @@ specializer-direct-generic-functions-eql-specializer
 
 **Description:**
 
-This is a method on the generic function[specializer-direct-generic-functions](specializer-direct-generic-functions.md).
+This is a method on the generic function[specializer-direct-generic-functions](/docs/meta-object-protocol/specializer-direct-generic-functions).
 
 No behavior is specified for this method beyond that which is specified for the generic function.

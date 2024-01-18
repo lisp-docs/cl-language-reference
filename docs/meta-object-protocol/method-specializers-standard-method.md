@@ -9,6 +9,6 @@ method-specializers-standard-method
 
 **Description:**
 
-This is a method on the generic function[method-specializers](method-specializers.md).
+This is a method on the generic function[method-specializers](/docs/meta-object-protocol/method-specializers).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.

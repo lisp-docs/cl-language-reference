@@ -9,7 +9,7 @@ slot-makunbound-using-class-funcallable-standard-class-standard-effective-slot-d
 
 **Description:**
 
-This is a method on the generic function[slot-makunbound-using-class](slot-makunbound-using-class.md).
+This is a method on the generic function[slot-makunbound-using-class](/docs/meta-object-protocol/slot-makunbound-using-class).
 
 This method implements the full behavior of this generic function for slots with allocation `:instance` and `:class`. If the supplied slot has an allocation other than `:instance` or `:class` an error is signaled.
 
