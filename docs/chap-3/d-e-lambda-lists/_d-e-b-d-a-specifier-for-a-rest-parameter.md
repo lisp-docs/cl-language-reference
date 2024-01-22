@@ -7,7 +7,7 @@ Note that the syntax order specifies that the `&rest` parameter must occur *befo
 
 Also note that if there are keyword parameters, then the rest parameter will have to be of the form of keyword arguments, meaning keyword value pairs. Therefore the rest parameter in a lambda list which also has a key parameter will always expect an even number of arguments provided that the lambda list represents as the `&rest` parameter.
 
-If there are no keyword parameters, then the rest arguments do not have to have keys, which allows for an odd number of arguments.
+If there are no keyword parameters, then the rest arguments are not taken to be keyword arguments, which allows for an odd number of arguments.
 
 ##### `&rest` Parameter Example Without `&key` Parameters
 
