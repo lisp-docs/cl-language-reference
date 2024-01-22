@@ -3,11 +3,13 @@
 
 #### Additional Notes and Examples
 
-Note that the syntax order specifies that `&rest` parameters must be written *before* the `&key` parameters.
+Note that the syntax order specifies that the `&rest` parameter must occur *before* the `&key` parameter(s).
 
-Also note that if there are keyword parameters, then all the rest parameters will have to be keyword parameters and therefore it will always have to be an even number of parameters that the lambda list represents as the `&rest` parameters. Meaning it will always expect all additional parameters to be of the form `:key value` pairs.
+Also note that if there are keyword parameters, then the rest parameter will have to be of the form of keyword arguments, meaning keyword value pairs. Therefore the rest parameter in a lambda list which also has a key parameter will always expect an even number of arguments provided that the lambda list represents as the `&rest` parameter.
 
-If there are no keyword parameters, then the rest parameters do not have to have keys, which allows for an odd number of parameters.
+If there are no keyword parameters, then the rest arguments do not have to have keys, which allows for an odd number of arguments.
+
+##### `&rest` Parameter Example Without `&key` Parameters
 
 ```lisp
 (flet ((hello (a b &rest c)
@@ -25,7 +27,11 @@ If there are no keyword parameters, then the rest parameters do not have to have
 
 Notes:
 
-- `&rest` is taking in all the additional passed in parameters as a list, so even if there was just one additional parameter it would still be in a list.
+- `&rest` is taking in all the additional arguments passed in as a list.
+- Even if there was just one additional argument to the required parameters, the rest parameter it would still be in a list as in the second example.
+
+##### `&rest` Parameter Example With `&key` Parameters
+
 
 ```lisp
 (flet ((hello (a b &rest rest &key c &allow-other-keys)
@@ -34,9 +40,14 @@ Notes:
 => (1 2 3 (:C 3 :D 4 :E 5 :F 6 :G 7))
 ```
 
-Things to note:
+Notes:
 
-- `&allow-other-keys` does not take in another parameter like `t`, rather it's presence is all that is required.
-- `&allow-other-keys` together with `&rest` is what is allowing us to take in any parameters as long as they are in keyword value pairs.
-- If `&key` was not specified, then we would not need `&allow-other-keys` for `&rest` to be able to take in more parameters. Like we see in the first set of examples.
-- It is **not possible** to both have a lambda list which defines keys (keyword value pairs) and takes in an unspecified number of parameters with `&rest`.
+- `&allow-other-keys` does not take in another argument like `t`, rather it's presence is all that is required.
+- `&allow-other-keys` together with `&rest` is what is allowing us to take in any arguments as long as they are in keyword value pairs.
+- If `&key` was not specified, then we would not need `&allow-other-keys` for `&rest` to be able to take in more arguments. Like we see in the first set of examples.
+- It is **not possible** to both have a lambda list which defines keys (keyword value pairs) and takes in an unspecified number of arguments with `&rest` unless those arguments have corresponding keys. 
+ 
+
+In short:
+- If the key parameter was specified: all arguments taken in by the rest parameter must be keyword value pairs
+- If the key parameter was not specified, then the rest parameter can accept any number of arguments even without keywords
