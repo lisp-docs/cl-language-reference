@@ -48,11 +48,11 @@ Notes:
 Notes:
 
 - `&allow-other-keys` does not take in another parameter like `t`, rather it's presence is all that is required.
-- `&allow-other-keys` together with `&rest` is what is allowing us to take in any arguments as long as they are in keyword value pairs.
-  - However note that `&allow-other-keys` does not actually have to be specified in the lambda list of parameters, rather it can even be supplied as an argument and the functionality will be the same. See the second example for this.
+- `&allow-other-keys` together with `&rest` is what allows taking in any arguments as long as they are in keyword value pairs.
+  - Note that `&allow-other-keys` does not need to be specified in the lambda list of parameters, rather it can be supplied as an argument and the functionality will be the same. See the second example for this.
 - If `&key` was not specified, then we would not need `&allow-other-keys` for `&rest` to be able to take in more arguments. Like we see in the first set of examples.
 - It is **not possible** to both have a lambda list which defines keys (keyword value pairs) and takes in an unspecified number of arguments with `&rest` unless those arguments have corresponding keys.
-- The rest parameter includes all non required parameters which means that it includes the key parameters' arguments. Take a look at the example how the pair `:c 3` is both used in the list as `c` and as the first value in `rest`, that's why the resulting list includes it twice: `(1 2 3 (:C 3 ... ))`.
+- The rest parameter includes all non required and non optional parameters. Therefore it includes the key parameters' arguments. Note in the example how the pair `:c 3` is both used in the list as `c` and as the first value in `rest`, that is why the resulting list includes it twice: `(1 2 3 (:C 3 ... ))`.
 
 In short:
 - If the key parameter was specified: all arguments taken in by the rest parameter must be keyword value pairs
