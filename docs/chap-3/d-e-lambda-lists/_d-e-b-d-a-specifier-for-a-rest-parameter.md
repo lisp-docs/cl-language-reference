@@ -38,12 +38,18 @@ Notes:
 	 (list a b c rest)))
   (hello 1 2 :c 3 :d 4 :e 5 :f 6 :g 7))
 => (1 2 3 (:C 3 :D 4 :E 5 :F 6 :G 7))
+
+(flet ((foo (a b &rest r &key c)
+	 (list a b c r)))
+  (foo 1 2 :allow-other-keys t :c 234 :d 345 :c 11))
+=> (1 2 234 (:ALLOW-OTHER-KEYS T :C 234 :D 345 :C 11))
 ```
 
 Notes:
 
 - `&allow-other-keys` does not take in another argument like `t`, rather it's presence is all that is required.
 - `&allow-other-keys` together with `&rest` is what is allowing us to take in any arguments as long as they are in keyword value pairs.
+  - However note that `&allow-other-keys` does not actually have to be specified in the lambda list of parameters, rather it can even be supplied as an argument and the functionality will be the same. See the second example for this.
 - If `&key` was not specified, then we would not need `&allow-other-keys` for `&rest` to be able to take in more arguments. Like we see in the first set of examples.
 - It is **not possible** to both have a lambda list which defines keys (keyword value pairs) and takes in an unspecified number of arguments with `&rest` unless those arguments have corresponding keys.
 - The rest parameter includes all non required parameters which means that it includes the key parameters' arguments. Take a look at the example how the pair `:c 3` is both used in the list as `c` and as the first value in `rest`, that's why the resulting list includes it twice: `(1 2 3 (:C 3 ... ))`.

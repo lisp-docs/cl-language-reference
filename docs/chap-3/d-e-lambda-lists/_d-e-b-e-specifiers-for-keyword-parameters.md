@@ -5,11 +5,15 @@ Arguments). The keyword parameter specifiers may optionally be followed by the <
 
 In each keyword parameter specifier must be a name *var* for the parameter variable. If the *var* appears alone or in a (*var init-form*) combination, the keyword name used when matching <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> to <GlossaryTerm  term={"parameter"}><i>parameters</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> in the KEYWORD <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> whose <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> is the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> (under <DictionaryLink  term={"string"}><b>string=</b></DictionaryLink>) as *var*’s. If the notation ((*keyword-name var*) *init-form*) is used, then the keyword name used to match <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> to <GlossaryTerm  term={"parameter"}><i>parameters</i></GlossaryTerm> is *keyword-name*, which may be a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> in any <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. (Of course, if it is not a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> in the KEYWORD <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>, it does not necessarily self-evaluate, so care must be taken when calling the function to make sure that normal evaluation still yields the keyword name.) Thus
 
+```lisp
 (defun foo (&amp;key radix (type ’integer)) ...)
+```
 
 means exactly the same as
 
+```lisp
 (defun foo (&amp;key ((:radix radix)) ((:type type) ’integer)) ...)
+```
 
 The keyword parameter specifiers are, like all parameter specifiers, effectively processed from left to right. For each keyword parameter specifier, if there is an argument pair whose name matches that specifier’s name (that is, the names are <DictionaryLink  term={"eq"}><b>eq</b></DictionaryLink>), then the parameter variable for that specifier is bound to the second item (the value) of that argument pair. If more than one such argument pair
 
