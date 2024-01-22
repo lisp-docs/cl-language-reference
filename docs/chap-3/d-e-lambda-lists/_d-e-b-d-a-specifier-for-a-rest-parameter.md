@@ -27,8 +27,8 @@ If there are no keyword parameters, then the rest arguments are not taken to be 
 
 Notes:
 
-- `&rest` is taking in all the additional arguments passed in as a list.
-- Even if there was just one additional argument to the required parameters, the rest parameter it would still be in a list as in the second example.
+- `&rest` is taking in all the additional arguments passed in, as a list.
+- Even if there was just one additional argument to the required and optional arguments, the rest parameter still contains a list, in this case with a single element in it. See the second example.
 
 ##### `&rest` Parameter Example With `&key` Parameters
 
@@ -47,7 +47,7 @@ Notes:
 
 Notes:
 
-- `&allow-other-keys` does not take in another argument like `t`, rather it's presence is all that is required.
+- `&allow-other-keys` does not take in another parameter like `t`, rather it's presence is all that is required.
 - `&allow-other-keys` together with `&rest` is what is allowing us to take in any arguments as long as they are in keyword value pairs.
   - However note that `&allow-other-keys` does not actually have to be specified in the lambda list of parameters, rather it can even be supplied as an argument and the functionality will be the same. See the second example for this.
 - If `&key` was not specified, then we would not need `&allow-other-keys` for `&rest` to be able to take in more arguments. Like we see in the first set of examples.
