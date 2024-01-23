@@ -122,79 +122,79 @@ import GBCBIterationControl from './g-b-the-loop-facility/_g-b-c-b-iteration-con
 
 <GBCBIterationControl />
 
-#### 6.1.2.1.1 The for
+#### 6.1.2.1.1 The for-as-arithmetic-subclause
 
 import GBCBBTheforasarithmeticsubclause from './g-b-the-loop-facility/_g-b-c-b-b-the-forasarithmetic-subclause.md';
 
 <GBCBBTheforasarithmeticsubclause />
 
-##### 6.1.2.1.1.1 Examples of for
+##### 6.1.2.1.1.1 Examples of for-as-arithmetic-subclause
 
 import GBCBBBExamplesofforasarithmeticsubclause from './g-b-the-loop-facility/_g-b-c-b-b-b-examples-of-forasarithmetic-subclause.md';
 
 <GBCBBBExamplesofforasarithmeticsubclause />
 
-#### 6.1.2.1.2 The for
+#### 6.1.2.1.2 The for-as-inlist-subclause
 
 import GBCBCTheforasinlistsubclause from './g-b-the-loop-facility/_g-b-c-b-c-the-forasinlist-subclause.md';
 
 <GBCBCTheforasinlistsubclause />
 
-##### 6.1.2.1.2.1 Examples of for
+##### 6.1.2.1.2.1 Examples of for-as-inlist-subclause
 
 import GBCBCBExamplesofforasinlistsubclause from './g-b-the-loop-facility/_g-b-c-b-c-b-examples-of-forasinlist-subclause.md';
 
 <GBCBCBExamplesofforasinlistsubclause />
 
-#### 6.1.2.1.3 The for
+#### 6.1.2.1.3 The for-as-onlist-subclause
 
 import GBCBDTheforasonlistsubclause from './g-b-the-loop-facility/_g-b-c-b-d-the-forasonlist-subclause.md';
 
 <GBCBDTheforasonlistsubclause />
 
-##### 6.1.2.1.3.1 Examples of for
+##### 6.1.2.1.3.1 Examples of for-as-onlist-subclause
 
 import GBCBDBExamplesofforasonlistsubclause from './g-b-the-loop-facility/_g-b-c-b-d-b-examples-of-forasonlist-subclause.md';
 
 <GBCBDBExamplesofforasonlistsubclause />
 
-#### 6.1.2.1.4 The for
+#### 6.1.2.1.4 The for-as-equalsthen-subclause
 
 import GBCBETheforasequalsthensubclause from './g-b-the-loop-facility/_g-b-c-b-e-the-forasequalsthen-subclause.md';
 
 <GBCBETheforasequalsthensubclause />
 
-##### 6.1.2.1.4.1 Examples of for
+##### 6.1.2.1.4.1 Examples of for-as-equalsthen-subclause
 
 import GBCBEBExamplesofforasequalsthensubclause from './g-b-the-loop-facility/_g-b-c-b-e-b-examples-of-forasequalsthen-subclause.md';
 
 <GBCBEBExamplesofforasequalsthensubclause />
 
-#### 6.1.2.1.5 The for
+#### 6.1.2.1.5 The for-as-across-subclause
 
 import GBCBFTheforasacrosssubclause from './g-b-the-loop-facility/_g-b-c-b-f-the-forasacross-subclause.md';
 
 <GBCBFTheforasacrosssubclause />
 
-##### 6.1.2.1.5.1 Examples of for
+##### 6.1.2.1.5.1 Examples of for-as-across-subclause
 
 import GBCBFBExamplesofforasacrosssubclause from './g-b-the-loop-facility/_g-b-c-b-f-b-examples-of-forasacross-subclause.md';
 
 <GBCBFBExamplesofforasacrosssubclause />
 
-#### 6.1.2.1.6 The for
+#### 6.1.2.1.6 The for-as-hash-subclause
 
 import GBCBGTheforashashsubclause from './g-b-the-loop-facility/_g-b-c-b-g-the-forashash-subclause.md';
 
 <GBCBGTheforashashsubclause />
 
-#### 6.1.2.1.7 The for
+#### 6.1.2.1.7 The for-as-package-subclause
 
 import GBCBHTheforaspackagesubclause from './g-b-the-loop-facility/_g-b-c-b-h-the-foraspackage-subclause.md';
 
 <GBCBHTheforaspackagesubclause />
 
-##### 6.1.2.1.7.1 Examples of for
+##### 6.1.2.1.7.1 Examples of for-as-package-subclause
 
 import GBCBHBExamplesofforaspackagesubclause from './g-b-the-loop-facility/_g-b-c-b-h-b-examples-of-foraspackage-subclause.md';
 
