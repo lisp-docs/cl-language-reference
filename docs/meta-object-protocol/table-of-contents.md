@@ -42,6 +42,6 @@ Table of contents
         -   [Readers for slot definition metaobjects](/meta-object-protocol/readers-for-slot-definition-metaobjects)
     -   [Generic functions and methods](/meta-object-protocol/all)
 -   Additional material
-    -   [Inheritance graph of metaobject classes](/meta-object-protocol/graph.png)
+    -   [Inheritance graph of metaobject classes](/img/docs/graph.png)
     -   [A list of all classes of the metaobject protocol](/meta-object-protocol/list-of-classes)
 
