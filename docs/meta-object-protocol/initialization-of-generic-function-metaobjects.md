@@ -41,7 +41,7 @@ Unless there is a specific note to the contrary, then during reinitialization, i
 
     When the generic function is being initialized, and this argument is not supplied, the generic function's lambda list is not initialized. The lambda list will be initialized later, either when the first method is added to the generic function, or a later reinitialization of the generic function.
 
--   The `:method-combination` argument is a method combination metaobject.
+-   The `:method-combination` argument is a method combination metaobject. (But see the note at the end of this page. [RS])
 -   The `:method-class` argument is a class metaobject. (But see the note at the end of this page. [RS])
 
     An error is signaled if this value is not a subclass of the class [method](/meta-object-protocol/method).
