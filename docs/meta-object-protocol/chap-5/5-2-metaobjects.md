@@ -1,8 +1,8 @@
 ---
-title: "Chapter 5.2 - Metaobjects"
+title: "5.2 Metaobjects"
 ---
 
-# Chapter 5.2 - Metaobjects
+# 5.2 Metaobjects
 
 import Metaobjects from './_5-2-metaobjects/metaobjects.md';
 
