@@ -1,7 +1,11 @@
-Introduction
+---
+sidebar_position: 1
+---
+
+5.1 Introduction
 ============
 
-Introduction
+5.1 Introduction
 ------------
 
 The [CLOS Specification](http://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node260.md#SECTION003200000000000000000) describes the standard Programmer Interface for the Common Lisp Object System (CLOS). This document extends that specification by defining a metaobject protocol for CLOS---that is, a description of CLOS itself as an extensible CLOS program. In this description, the fundamental elements of CLOS programs (classes, slot definitions, generic functions, methods, specializers and method combinations) are represented by first-class objects. The behavior of CLOS is provided by these objects, or, more precisely, by methods specialized to the classes of these objects.
