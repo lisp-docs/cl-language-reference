@@ -20,10 +20,10 @@ Returns a set of the direct subclasses of *class*. The elements of this set are 
 **Methods:**
 
   ---------------------------------------------------------------------------------------------------------------------------
-  [**class-direct-subclasses** (*class* standard-class)](/meta-object-protocol/class-direct-subclasses-standard-class)
-  [**class-direct-subclasses** (*class* funcallable-standard-class)](/meta-object-protocol/class-direct-subclasses-funcallable-standard-class)
-  [**class-direct-subclasses** (*class* forward-referenced-class)](/meta-object-protocol/class-direct-subclasses-forward-referenced-class)
-  [**class-direct-subclasses** (*class* built-in-class)](/meta-object-protocol/class-direct-subclasses-built-in-class)
+  \[**class-direct-subclasses** (*class* standard-class)\]\(/meta-object-protocol/class-direct-subclasses-standard-class\)
+  \[**class-direct-subclasses** (*class* funcallable-standard-class)\]\(/meta-object-protocol/class-direct-subclasses-funcallable-standard-class\)
+  \[**class-direct-subclasses** (*class* forward-referenced-class)\]\(/meta-object-protocol/class-direct-subclasses-forward-referenced-class\)
+  \[**class-direct-subclasses** (*class* built-in-class)\]\(/meta-object-protocol/class-direct-subclasses-built-in-class\)
   ---------------------------------------------------------------------------------------------------------------------------
 
 
