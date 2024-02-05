@@ -26,3 +26,8 @@ If keyword argument checking is suppressed, then it is permitted for an argument
 Note that if **&amp;key** is present, a keyword argument of :allow-other-keys is always permitted— regardless of whether the associated value is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> or <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>. However, if the value is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>, other non-matching keywords are not tolerated (unless **&amp;allow-other-keys** was used).
 
 Furthermore, if the receiving argument list specifies a regular argument which would be flagged by :allow-other-keys, then :allow-other-keys has both its special-cased meaning (identifying whether additional keywords are permitted) and its normal meaning (data flow into the function in question).
+
+#### Additional Notes and Examples
+
+```lisp
+```
