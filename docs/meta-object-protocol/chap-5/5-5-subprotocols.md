@@ -1,49 +1,62 @@
 ---
-title: "5.2 Metaobjects"
+title: "5.5 Subprotocols"
 ---
 
-# 5.2 Metaobjects
+import Subprotocols from './_5-5-subprotocols/subprotocols.md';
 
-import Metaobjects from './_5-2-metaobjects/metaobjects.md';
+<Subprotocols />
 
-<Metaobjects />
+## 5.5.1 Metaobject Initialization Protocols
 
-## 5.2.1 Classes
+import MOPInitProt from './_5-5-subprotocols/metaobject-initialization-protocols.md';
 
-import MOPClasses from './_5-2-metaobjects/classes.md';
+<MOPInitProt />
 
-<MOPClasses />
+### 5.5.1.1 Initialization Of Class Metaobjects
 
-## 5.2.2 Slot Definitions
+import InitClassMOP from './_5-5-subprotocols/initialization-of-class-metaobjects.md';
 
-import MOPSlotDefinitions from './_5-2-metaobjects/slot-definitions.md'
+<InitClassMOP />
 
-<MOPSlotDefinitions />
+### 5.5.1.2 Reinitialization Of Class Metaobjects
 
-## 5.2.3 Generic Functions
+import ReinitClassMOP from './_5-5-subprotocols/reinitialization-of-class-metaobjects.md';
 
-import MOPGenericFunctions from './_5-2-metaobjects/generic-functions.md'
+<ReinitClassMOP />
 
-<MOPGenericFunctions />
+### 5.5.1.3 Initialization Of Generic Function And Method Metaobjects
 
+import InitGeneric from './_5-5-subprotocols/initialization-of-generic-function-and-method-metaobjects.md';
 
-## 5.2.4 Methods
+<InitGeneric />
 
-import MOPMethods from './_5-2-metaobjects/methods.md'
+## 5.5.2 Class Finalization Protocol
 
-<MOPMethods />
+import ClassFinalization from './_5-5-subprotocols/class-finalization-protocol.md';
 
+<ClassFinalization />
 
-## 5.2.5 Specializers
+## 5.5.3 Instance Structure Protocol
 
-import MOPSpecializers from './_5-2-metaobjects/specializers.md'
+import InstanceProt from './_5-5-subprotocols/instance-structure-protocol.md';
 
-<MOPSpecializers />
+<InstanceProt />
 
+## 5.5.4 Funcallable Instances
 
-## 5.2.6 Method Combinations
+import FuncallInstance from './_5-5-subprotocols/funcallable-instances.md';
 
-import MOPMethodCombinations from './_5-2-metaobjects/method-combinations.md'
+<FuncallInstance />
 
-<MOPMethodCombinations />
+## 5.5.5 Generic Function Invocation Protocol
+
+import GenericFuncInvoc from './_5-5-subprotocols/generic-function-invocation-protocol.md';
+
+<GenericFuncInvoc />
+
+## 5.5.6 Dependent Maintenance Protocol
+
+import DependentMaintProt from './_5-5-subprotocols/dependent-maintenance-protocol.md';
+
+<DependentMaintProt />
 

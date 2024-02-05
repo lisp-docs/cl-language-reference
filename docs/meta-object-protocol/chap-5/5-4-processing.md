@@ -1,49 +1,39 @@
 ---
-title: "5.2 Metaobjects"
+title: "5.4 Processing Of The User Interface Macros"
 ---
 
-# 5.2 Metaobjects
+import ProcessingUIMacros from './_5-4-processing/processing-of-the-user-interface-macros.md'
 
-import Metaobjects from './_5-2-metaobjects/metaobjects.md';
+<ProcessingUIMacros />
 
-<Metaobjects />
+## 5.4.1 Compile File Processing Of The User Interface Macros
 
-## 5.2.1 Classes
+import CompileFileProcessingOfTheUserInterfaceMacros from './_5-4-processing/compile-file-processing-of-the-user-interface-macros.md'
 
-import MOPClasses from './_5-2-metaobjects/classes.md';
+<CompileFileProcessingOfTheUserInterfaceMacros />
 
-<MOPClasses />
+## 5.4.2 The Defclass Macro
 
-## 5.2.2 Slot Definitions
+import Defclass from './_5-4-processing/the-defclass-macro.md'
 
-import MOPSlotDefinitions from './_5-2-metaobjects/slot-definitions.md'
+<Defclass />
 
-<MOPSlotDefinitions />
+## 5.4.3 The Defmethod Macro
 
-## 5.2.3 Generic Functions
+import Defmethod from './_5-4-processing/the-defmethod-macro.md'
 
-import MOPGenericFunctions from './_5-2-metaobjects/generic-functions.md'
+<Defmethod />
 
-<MOPGenericFunctions />
+## 5.4.4 Processing Method Bodies
 
+import ProcessingMethodsBodies from './_5-4-processing/processing-method-bodies.md'
 
-## 5.2.4 Methods
+<ProcessingMethodsBodies />
 
-import MOPMethods from './_5-2-metaobjects/methods.md'
+## 5.4.5 The Defgeneric Macro
 
-<MOPMethods />
+import DefGeneric from './_5-4-processing/the-defgeneric-macro.md'
 
+<DefGeneric />
 
-## 5.2.5 Specializers
-
-import MOPSpecializers from './_5-2-metaobjects/specializers.md'
-
-<MOPSpecializers />
-
-
-## 5.2.6 Method Combinations
-
-import MOPMethodCombinations from './_5-2-metaobjects/method-combinations.md'
-
-<MOPMethodCombinations />
 

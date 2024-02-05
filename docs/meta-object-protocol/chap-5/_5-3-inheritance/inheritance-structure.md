@@ -1,8 +1,8 @@
-Inheritance structure of metaobject classes
-===========================================
+<!-- Inheritance structure of metaobject classes
+=========================================== -->
 
-Inheritance structure of metaobject classes
--------------------------------------------
+<!-- Inheritance structure of metaobject classes
+------------------------------------------- -->
 
 The inheritance structure of the specified metaobject classes is shown in the table below (FIXME: insert anchor).
 

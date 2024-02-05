@@ -1,49 +1,28 @@
 ---
-title: "5.2 Metaobjects"
+title: "5.3 Inheritance Structure Of Metaobject Classes"
 ---
 
-# 5.2 Metaobjects
+<!-- # 5.3 Inheritance Structure Of Metaobject Classes -->
 
-import Metaobjects from './_5-2-metaobjects/metaobjects.md';
+import InheritanceStructure from './_5-3-inheritance/inheritance-structure.md';
 
-<Metaobjects />
+<InheritanceStructure />
 
-## 5.2.1 Classes
+## 5.3.1 Implementation And User Specialization
 
-import MOPClasses from './_5-2-metaobjects/classes.md';
+import Implementation from './_5-3-inheritance/implementation-and-user-specialization.md';
 
-<MOPClasses />
+<Implementation />
 
-## 5.2.2 Slot Definitions
+### 5.3.2 Restrictions On Implementations
 
-import MOPSlotDefinitions from './_5-2-metaobjects/slot-definitions.md'
+import RestrictionsImpl from './_5-3-inheritance/restrictions-on-implementations.md'
 
-<MOPSlotDefinitions />
+<RestrictionsImpl />
 
-## 5.2.3 Generic Functions
+### 5.3.3 Restrictions On Portable Programs
 
-import MOPGenericFunctions from './_5-2-metaobjects/generic-functions.md'
+import RestrictionsOnPortable from './_5-3-inheritance/restrictions-on-portable-programs.md'
 
-<MOPGenericFunctions />
-
-
-## 5.2.4 Methods
-
-import MOPMethods from './_5-2-metaobjects/methods.md'
-
-<MOPMethods />
-
-
-## 5.2.5 Specializers
-
-import MOPSpecializers from './_5-2-metaobjects/specializers.md'
-
-<MOPSpecializers />
-
-
-## 5.2.6 Method Combinations
-
-import MOPMethodCombinations from './_5-2-metaobjects/method-combinations.md'
-
-<MOPMethodCombinations />
+<RestrictionsOnPortable />
 
