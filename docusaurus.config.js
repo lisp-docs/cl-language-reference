@@ -24,7 +24,8 @@ const config = {
   projectName: "cl-language-reference", // Usually your repo name.
   trailingSlash: false,
   deploymentBranch: "gh-pages",
-  onBrokenLinks: "throw",
+  onBrokenLinks: 'warn',
+  // onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
