@@ -44,9 +44,13 @@ Unless there is a specific note to the contrary, then during reinitialization, i
 -   The `:method-combination` argument is a method combination metaobject. (But see the note at the end of this page. [RS])
 -   The `:method-class` argument is a class metaobject. (But see the note at the end of this page. [RS])
 
-    An error is signaled if this value is not a subclass of the class [method](/meta-object-protocol/method).
+    An error is signaled if this value is not a subclass of the class [method](/meta-object-protocol/method-generic-function).
 
-    When the generic function is being initialized, and this argument is not supplied, it defaults to the class [standard-method](/meta-object-protocol/standard-method).
+<!-- /meta-object-protocol/method -->
+
+    When the generic function is being initialized, and this argument is not supplied, it defaults to the class [standard-method](/meta-object-protocol/class-standard-method.md).
+
+<!-- /meta-object-protocol/standard-method -->
 
 -   The `:name` argument is an object.
 
@@ -69,7 +73,9 @@ Methods
 
 It is not specified which methods provide the initialization and reinitialization behavior described above. Instead, the information needed to allow portable programs to specialize this behavior is presented as a set of restrictions on the methods a portable program can define. The model is that portable initialization methods have access to the generic function metaobject when either all or none of the specified initialization has taken effect.
 
-These restrictions govern the methods that a portable program can define on the generic functions [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance), [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance), and [shared-initialize](http://www.lispworks.com/documentation/HyperSpec/Body/f_shared.htm#shared-initialize). These restrictions apply only to methods on these generic functions for which the first specializer is a subclass of the class [generic-function](/meta-object-protocol/generic-function). Other portable methods on these generic functions are not affected by these restrictions.
+These restrictions govern the methods that a portable program can define on the generic functions [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance), [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance), and [shared-initialize](http://www.lispworks.com/documentation/HyperSpec/Body/f_shared.htm#shared-initialize). These restrictions apply only to methods on these generic functions for which the first specializer is a subclass of the class [generic-function](/meta-object-protocol/class-generic-function.md). Other portable methods on these generic functions are not affected by these restrictions.
+
+<!-- /meta-object-protocol/generic-function -->
 
 -   Portable programs must not define methods on [shared-initialize](http://www.lispworks.com/documentation/HyperSpec/Body/f_shared.htm#shared-initialize).
 -   For [initialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_init_i.htm#initialize-instance) and [reinitialize-instance](http://www.lispworks.com/documentation/HyperSpec/Body/f_reinit.htm#reinitialize-instance):

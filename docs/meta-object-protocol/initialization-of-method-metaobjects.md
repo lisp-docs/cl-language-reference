@@ -21,7 +21,9 @@ In these descriptions, the phrase ``this argument defaults to *value*'' means th
 
 -   The `:specializers` argument is a list of the specializer metaobjects for the method. An error is signaled if this value is not a proper list, or if the length of the list differs from the number of required arguments in the `:lambda-list` argument, or if any element of the list is not a specializer metaobject. If this value is not supplied, an error is signaled.
 
--   The `:function` argument is a method function. It must be compatible with the methods on [compute-effective-method](/meta-object-protocol/compute-effective-method) defined for this class of method and generic function with which it will be used. That is, it must accept the same number of arguments as all uses of [call-method](/meta-object-protocol/call-method) that will call it supply. (See [compute-effective-method](/meta-object-protocol/compute-effective-method) for more information.) An error is signaled if this argument is not supplied.
+-   The `:function` argument is a method function. It must be compatible with the methods on [compute-effective-method](/meta-object-protocol/compute-effective-method) defined for this class of method and generic function with which it will be used. That is, it must accept the same number of arguments as all uses of [call-method](/chap-7/h-h-dictionary/call-method_make-method_local-macro.md) that will call it supply. (See [compute-effective-method](/meta-object-protocol/compute-effective-method) for more information.) An error is signaled if this argument is not supplied.
+<!-- /meta-object-protocol/call-method -->
+
 
 -   When the method being initialized is an instance of a subclass of `standard-accessor-method`, the `:slot-definition` initialization argument must be provided. Its value is the direct slot definition metaobject which defines this accessor method. An error is signaled if the value is not an instance of a subclass of `direct-slot-definition`.
 

@@ -81,7 +81,7 @@ Each entry in the table indicates a method on one of the reader generic function
 
 6.  This method returns false.
 
-7.  This method returns a value derived from the information in [this table](/meta-object-protocol/table-class-inheritance), except that implementation-specific modifications are permitted as described in [section ``Implementation and User Specialization.''](/meta-object-protocol/implementation-and-user-specialization)
+7.  This method returns a value derived from the information in \[this table\]\(/meta-object-protocol/table-class-inheritance\), except that implementation-specific modifications are permitted as described in [section ``Implementation and User Specialization.''](/meta-object-protocol/implementation-and-user-specialization)
 
 8.  This method returns the name of the built-in class.
 

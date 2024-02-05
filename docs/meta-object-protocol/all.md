@@ -132,7 +132,7 @@ Methods included. [Exclude methods.](/meta-object-protocol/all-no-methods)
   Method             [**make-instance** (*class* standard-class) `&rest` *initargs*](/meta-object-protocol/make-instance-standard-class)
   Method             [**make-instance** (*class* funcallable-standard-class) `&rest` *initargs*](/meta-object-protocol/make-instance-funcallable-standard-class)
   Generic Function   [**make-method-lambda**](/meta-object-protocol/make-method-lambda)
-  Method             [**make-method-lambda** (*generic-function* standard-generic-function) (*method* standard-method) *lambda-expression* *environment*](/meta-object-protocol/make-method-lambda-symbol)
+  <!-- Method             [**make-method-lambda** (*generic-function* standard-generic-function) (*method* standard-method) *lambda-expression* *environment*](/meta-object-protocol/make-method-lambda-symbol) -->
   Generic Function   [**map-dependents**](/meta-object-protocol/map-dependents)
   Method             [**map-dependents** (*metaobject* standard-class) *function*](/meta-object-protocol/map-dependents-standard-class)
   Method             [**map-dependents** (*metaobject* funcallable-standard-class) *function*](/meta-object-protocol/map-dependents-funcallable-standard-class)

@@ -17,7 +17,7 @@ This method cannot be overridden unless the following methods are overridden as 
 
   ---------------------------------------------------------------------------
   [**add-direct-subclass** class class](/meta-object-protocol/add-direct-subclass-class-class)
-  [**class-direct-subclasses** class](/meta-object-protocol/class-direct-subclasses-class)
+  [**class-direct-subclasses** class](/meta-object-protocol/class-direct-subclasses.md)
   ---------------------------------------------------------------------------
-
+<!-- /meta-object-protocol/class-direct-subclasses-class -->
 

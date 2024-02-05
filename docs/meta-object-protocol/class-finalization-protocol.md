@@ -15,6 +15,8 @@ The behavior of [compute-slots](/meta-object-protocol/compute-slots) is itself l
 
 The final step of class finalization is computing the full set of initialization arguments for the class. This is done by calling the generic function [compute-default-initargs](/meta-object-protocol/compute-default-initargs). The value returned by this generic function is associated with the class metaobject and can be accessed by calling [class-default-initargs](/meta-object-protocol/class-default-initargs).
 
-If the class was previously finalized, [finalize-inheritance](/meta-object-protocol/finalize-inheritance) may call [make-instances-obsolete](/meta-object-protocol/make-instances-obsolete). The circumstances under which this happens are describe in [the section of the CLOS specification called ``Redefining Classes.''](http://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node300.md#SECTION0032110000000000000000)
+If the class was previously finalized, [finalize-inheritance](/meta-object-protocol/finalize-inheritance) may call [make-instances-obsolete](/chap-7/h-h-dictionary/make-instances-obsolete_standard-generic-function). The circumstances under which this happens are describe in [the section of the CLOS specification called ``Redefining Classes.''](http://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node300.md#SECTION0032110000000000000000).
+
+<!-- /meta-object-protocol/make-instances-obsolete -->
 
 Forward-referenced classes, which provide a temporary definition for a class which has been referenced but not yet defined, can never be finalized. An error is signalled if [finalize-inheritance](/meta-object-protocol/finalize-inheritance) is called on a forward-referenced class.

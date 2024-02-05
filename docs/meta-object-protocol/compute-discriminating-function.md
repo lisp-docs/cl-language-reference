@@ -27,9 +27,14 @@ iii. no method has been added to or removed from the generic function,
 iv. for all the specializers of all the generic function's methods which are classes, their class precedence lists have not changed and
 v.  for any such memoized value, the class precedence list of the class of each of the required arguments has not changed.
 
-Determination of the effective method is done by calling [compute-effective-method](/meta-object-protocol/compute-effective-method) When the effective method is run, each method's function is called, and receives as arguments: (i) a list of the arguments to the generic function, and (ii) whatever other arguments are specified in the [call-method](/meta-object-protocol/call-method) form indicating that the method should be called. (See [make-method-lambda](/meta-object-protocol/make-method-lambda) for more information about how method functions are called.)
+Determination of the effective method is done by calling [compute-effective-method](/meta-object-protocol/compute-effective-method) When the effective method is run, each method's function is called, and receives as arguments: (i) a list of the arguments to the generic function, and (ii) whatever other arguments are specified in the [call-method](/chap-7/h-h-dictionary/call-method_make-method_local-macro) form indicating that the method should be called. (See [make-method-lambda](/meta-object-protocol/make-method-lambda) for more information about how method functions are called.)
 
-The generic function [compute-discriminating-function](/meta-object-protocol/compute-discriminating-function) is called, and its result installed, by [add-method](/meta-object-protocol/add-method), [remove-method](/meta-object-protocol/remove-method), [initialize-instance](/meta-object-protocol/initialize-instance), and [reinitialize-instance](/meta-object-protocol/reinitialize-instance).
+<!-- /meta-object-protocol/call-method -->
+
+The generic function [compute-discriminating-function](/meta-object-protocol/compute-discriminating-function) is called, and its result installed, by [add-method](/meta-object-protocol/add-method), [remove-method](/meta-object-protocol/remove-method), [initialize-instance](/chap-7/h-h-dictionary/initialize-instance_standard-generic-function), and [reinitialize-instance](/chap-7/h-h-dictionary/reinitialize-instance_standard-generic-function).
+
+<!-- /meta-object-protocol/initialize-instance -->
+<!-- /meta-object-protocol/reinitialize-instance -->
 
 **Methods:**
 
