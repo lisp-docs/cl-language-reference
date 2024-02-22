@@ -21,9 +21,9 @@ CL-USER> (foo 3)
 
 This can be useful when wanting to bind a function returned from another function to a global name.
 
-Notice that FDEFINITION is a function, so that its arguments are evaluated.  Thus, if it is desirable to use a literal function name, it must be quoted.
+Notice that `fdefinition` is a function, so that its arguments are evaluated. Thus, if it is desirable to use a literal function name, it must be quoted.
 
-If the NAME argument is not quoted, it will be taken to be the name of a variable, and if that variable does not have a value, an error will be signaled:
+If the `name` argument is not quoted, it will be taken to be the name of a variable, and if that variable does not have a value, an error will be signaled:
 
 ```lisp
 CL-USER> (setf (fdefinition bar) (lambda (x) (+ x 1)))
