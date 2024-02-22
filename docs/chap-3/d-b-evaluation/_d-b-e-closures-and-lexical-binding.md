@@ -5,8 +5,8 @@ Consider this code, where x is not declared <DictionaryLink  term={"special"}><b
 
 ```lisp
 (defun two-funs (x) 
-(list (function (lambda () x)) 
-(function (lambda (y) (setq x y))))) 
+  (list (function (lambda () x)) 
+        (function (lambda (y) (setq x y))))) 
 (setq funs (two-funs 6)) 
 (funcall (car funs)) → 6 
 (funcall (cadr funs) 43) → 43 
@@ -20,23 +20,23 @@ The function two-funs returns a <GlossaryTerm  term={"list"}><i>list</i></Glossa
 In situations where a <GlossaryTerm  term={"closure"}><i>closure</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> over the same set of <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> may be produced more than once, the various resulting <GlossaryTerm  term={"closure"}><i>closures</i></GlossaryTerm> may or may not be <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm>, at the discretion of the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. That is, two <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> that are behaviorally indistinguishable might or might not be <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm>. Two <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> that are behaviorally distinguishable are <GlossaryTerm  term={"distinct"}><i>distinct</i></GlossaryTerm>. For example:
 ```lisp
 (let ((x 5) (funs ’()))
-(dotimes (j 10)
-(push #’(lambda (z)
-(if (null z) (setq x 0) (+ x z)))
-funs))
-funs)
+  (dotimes (j 10)
+    (push #’(lambda (z)
+              (if (null z) (setq x 0) (+ x z)))
+            funs))
+  funs)
 ```
 
 The result of the above <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of ten <GlossaryTerm  term={"closure"}><i>closures</i></GlossaryTerm>. Each requires only the <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> of x. It is the same <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> in each case, but the ten *closure objects* might or might not be <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm>. On the other hand, the result of the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>
 
 ```lisp
 (let ((funs ’()))
-(dotimes (j 10)
-(let ((x 5))
-(push (function (lambda (z)
-(if (null z) (setq x 0) (+ x z))))
-funs)))
-funs)
+  (dotimes (j 10)
+    (let ((x 5))
+      (push (function (lambda (z)
+              (if (null z) (setq x 0) (+ x z))))
+            funs)))
+  funs)
 ```
 
 is also a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of ten <GlossaryTerm  term={"closure"}><i>closures</i></GlossaryTerm>. However, in this case no two of the *closure objects* can be <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm> because each <GlossaryTerm  term={"closure"}><i>closure</i></GlossaryTerm> is closed over a distinct <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> of x, and these <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> can be behaviorally distinguished because of the use of <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink>.
@@ -45,21 +45,21 @@ The result of the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>
 
 ```lisp
 (let ((funs ’()))
-(dotimes (j 10)
-(let ((x 5))
-(push (function (lambda (z) (+ x z)))
-funs)))
-funs)
+  (dotimes (j 10)
+    (let ((x 5))
+      (push (function (lambda (z) (+ x z)))
+            funs)))
+  funs)
 ```
 
 is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of ten *closure objects* that might or might not be <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm>. A different <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> of x is involved for each <GlossaryTerm  term={"closure"}><i>closure</i></GlossaryTerm>, but the <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> cannot be distinguished because their values are the <GlossaryTerm  term={"same"}><i>same</i></GlossaryTerm> and immutable (there being no occurrence of <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> on x). A compiler could internally transform the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> to
 
 ```lisp
 (let ((funs ’()))
-(dotimes (j 10)
-(push (function (lambda (z) (+ 5 z)))
-funs))
-funs)  
+  (dotimes (j 10)
+    (push (function (lambda (z) (+ 5 z)))
+          funs))
+  funs)  
 ```
 
 where the <GlossaryTerm  term={"closure"}><i>closures</i></GlossaryTerm> may be <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm>.
