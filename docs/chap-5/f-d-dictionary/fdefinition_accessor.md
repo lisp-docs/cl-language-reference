@@ -21,7 +21,7 @@ CL-USER> (foo 3)
 
 This can be useful when wanting to bind a function returned from another function to a global name.
 
-Note however that when passing in the function name argument, it must be quoted so that it is available in the function as a symbol and not evaluated.
+Notice that FDEFINITION is a function, so that its arguments are evaluated.  Thus, if it is desirable to use a literal function name, it must be quoted.
 
 If it's not quoted a condition will be raised:
 
