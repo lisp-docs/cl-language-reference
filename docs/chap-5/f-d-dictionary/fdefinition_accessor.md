@@ -19,6 +19,8 @@ CL-USER> (foo 3)
 4 (3 bits, #x4, #o4, #b100)
 ```
 
+This can be useful when wanting to bind a function returned from another function to a global name.
+
 Note however that when passing in the function name argument, it must be quoted so that it is available in the function as a symbol and not evaluated.
 
 If it's not quoted a condition will be raised:
