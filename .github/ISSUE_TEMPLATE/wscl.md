@@ -25,10 +25,10 @@ Proposal (OPTIONAL ADD OPERATOR-NAME HERE):
 
 Test case:
 
-```lisp
+
 ADD TEST CODE HERE
 ;; COMMENTS ARE OPTIONAL
-```
+
 
 
 Rationale:
