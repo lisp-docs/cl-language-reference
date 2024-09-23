@@ -166,122 +166,41 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
 
 ```common-lisp
 (handler-case form 
-
-
-
 (*type1* (*var1*) . *body1*) 
-
-
-
 (*type2* (*var2*) . *body2*) ...) 
 ```
 
-
 is approximately equivalent to: 
-
 
 ```common-lisp
 (block #1=#:g0001 
-
-
-
 (let ((#2=#:g0002 nil)) 
-
-
-
 (tagbody 
-
-
-
 (handler-bind ((*type1* #’(lambda (temp) 
-
-
-
 (setq #1# temp) 
-
-
-
 (go #3=#:g0003))) 
-
-
-
 (*type2* #’(lambda (temp) 
-
-
-
 (setq #2# temp) 
-
-
-
 (go #4=#:g0004))) ...) 
-
-
-
 (return-from #1# form)) 
-
-
 
 #3# (return-from #1# (let ((*var1* #2#)) . *body1*)) 
 
-
-
 #4# (return-from #1# (let ((*var2* #2#)) . *body2*)) ...))) 
 
-
-
 (handler-case form 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
 (*type1 (var1)* . *body1*) 
-
-
-
 ... 
-
-
-
 (:no-error (*varN-1 varN-2* ...) . *bodyN*)) 
 ```
-
-```common-lisp
 is approximately equivalent to: 
-
-
-
+```common-lisp
 (block #1=#:error-return 
-
-
-
 (multiple-value-call #’(lambda (*varN-1 varN-2* ...) . *bodyN*) 
-
-
-
 (block #2=#:normal-return 
-
-
-
 (return-from #1# 
-
-
-
 (handler-case (return-from #2# form) 
-```
-
-
 (*type1* (*var1*) . *body1*) ...))))) 
-
+```
 
 
