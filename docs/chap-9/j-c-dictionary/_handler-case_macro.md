@@ -159,10 +159,12 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
 
 
 
-<DictionaryLink styled={true} term={"handler-bind"}><b>handler-bind</b></DictionaryLink>, <DictionaryLink styled={true} term={"ignore-errors"}><b>ignore-errors</b></DictionaryLink>, Section 9.1 (Condition System Concepts) **Notes:** 
+<DictionaryLink styled={true} term={"handler-bind"}><b>handler-bind</b></DictionaryLink>, <DictionaryLink styled={true} term={"ignore-errors"}><b>ignore-errors</b></DictionaryLink>, Section 9.1 (Condition System Concepts) 
+
+**Notes:** 
 
 
-
+```common-lisp
 (handler-case form 
 
 
@@ -172,13 +174,13 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
 
 
 (*type2* (*var2*) . *body2*) ...) 
-
+```
 
 
 is approximately equivalent to: 
 
 
-
+```common-lisp
 (block #1=#:g0001 
 
 
@@ -252,9 +254,9 @@ is approximately equivalent to:
 
 
 (:no-error (*varN-1 varN-2* ...) . *bodyN*)) 
+```
 
-
-
+```common-lisp
 is approximately equivalent to: 
 
 
@@ -276,7 +278,7 @@ is approximately equivalent to:
 
 
 (handler-case (return-from #2# form) 
-
+```
 
 
 (*type1* (*var1*) . *body1*) ...))))) 
