@@ -16,7 +16,7 @@ TODO: Please contribute to this page by adding explanations and examples
 
 ### Looping over a Hash Table
 ```lisp
-> (let ((given-ht (serapeum:dict "a" 1 "b" 2)))
+(let ((given-ht (serapeum:dict "a" 1 "b" 2)))
   (loop for key being each hash-key of given-ht
           using (hash-value value)
         do (format t "~A: ~A ~%" key value)))
