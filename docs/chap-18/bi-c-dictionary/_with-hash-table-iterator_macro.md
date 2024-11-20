@@ -71,10 +71,11 @@ Any number of invocations of <DictionaryLink  term={"with-hash-table-iterator"}>
 
 
 **Examples:**
-```lisp
+
 The following function should return **t** on any *hash table*, and signal an error if the usage of **with-hash-table-iterator** does not agree with the corresponding usage of **maphash**. 
 Hash 
 
+```lisp
 (defun test-hash-table-iterator (hash-table) 
   (let ((all-entries ’()) 
 	(generated-entries ’()) 
@@ -93,8 +94,12 @@ Hash
 	       (length (union all-entries generated-entries 
 			      :key #’car :test (hash-table-test hash-table)))) 
       (error "Generated entries and Maphash entries don’t correspond")) 
-    t)) 
+    t))
+```
+
 The following could be an acceptable definition of **maphash**, implemented by **with-hash-table-iterator**. 
+
+```lisp
 (defun maphash (function hash-table) 
   (with-hash-table-iterator (next-entry hash-table) 
     (loop (multiple-value-bind (more key value) (next-entry) 
