@@ -15,5 +15,8 @@ TODO: Please contribute to this page by adding explanations and examples
 :::
 
 ```lisp
-(gethash )
+(let ((ht (make-hash-table :test #'equal)))
+  (setf (gethash :foo ht) 1)
+  (gethash :foo ht))
+;; => 1, T
 ```

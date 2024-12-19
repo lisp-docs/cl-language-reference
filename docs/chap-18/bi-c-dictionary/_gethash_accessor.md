@@ -8,12 +8,10 @@
 
 <DictionaryLink  term={"gethash"}><b>gethash</b></DictionaryLink> *key hash-table* &amp;optional *default → value, present-p* 
 
-
-
 <!-- **(setf (gethash** *key hash-table* &amp;optional *default<DictionaryLink  term={"t"}><b>*)</b></DictionaryLink> *new-value***)**  -->
-**(setf (gethash** *key hash-table* &amp;optional *default***)** *new-value***)** 
-
-
+```
+(setf (gethash key hash-table &optional default) new-value)
+```
 
 **Arguments and Values:** 
 
