@@ -80,3 +80,14 @@ Note the usage of the word `with` below.
 19 
 NIL
 ```
+
+This is similar to the alternative of wrapping the `loop` form in a `let` form.
+
+```lisp
+(let ((i 0))
+  (loop for x below 50
+        when (and (< i 10)
+                  (not (evenp x)))
+          do (print x)
+          and do (setf i (1+ i))))
+```
