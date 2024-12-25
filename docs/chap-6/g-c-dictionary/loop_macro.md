@@ -59,6 +59,8 @@ NIL
 
 ### Looping and declaring lexical variables
 
+Note the usage of the word `with` below.
+
 ```lisp
 (loop for x below 50
       with i = 0
