@@ -15,6 +15,7 @@ TODO: Please contribute to this page by adding explanations and examples
 :::
 
 ### Looping over a Hash Table
+
 ```lisp
 (let ((given-ht (serapeum:dict "a" 1 "b" 2)))
   (loop for key being each hash-key of given-ht
@@ -39,5 +40,41 @@ NIL
 
 a
 b
+NIL
+```
+
+### Looping over a list
+
+```lisp
+(let ((lst (list 5 4 3 "b" "a")))
+  (loop for el in lst
+      do (print el)))
+5 
+4 
+3 
+"b" 
+"a" 
+NIL
+```
+
+### Looping and declaring lexical variables
+
+```lisp
+(loop for x below 50
+      with i = 0
+      when (and (< i 10)
+                (not (evenp x)))
+        do (print x)
+        and do (setf i (1+ i)))
+1 
+3 
+5 
+7 
+9 
+11 
+13 
+15 
+17 
+19 
 NIL
 ```
