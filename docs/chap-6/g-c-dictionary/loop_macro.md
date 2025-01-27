@@ -24,11 +24,9 @@ import LoopMacro from './_loop_macro.md';
 NIL
 ```
 
-### Looping and declaring lexical variables
+### Looping and declaring lexical variables `with`
 
 Note the usage of the word `with` below. `with` will be executed once at the beginning of the loop. See below the usage of `for` which updates the binding on each run of the loop.
-
-**Note:** the `with` form will not have the value of any preceeding variable bound at the beginning of the loop. For that use `for`.
 
 ```lisp
 (loop for x below 50
@@ -58,7 +56,43 @@ This is similar to the alternative of wrapping the `loop` form in a `let` form.
         when (and (< i 10)
                   (not (evenp x)))
           do (print x)
-             (setf i (1+ i))))
+             (incf i)))
+```
+
+#### Loop using `with` keyword to declare variables that depend on each other
+
+The `with` form will not have the value of any preceeding variable bound with `for` at the beginning of the loop. However variables bound with another `with` will be available.
+
+```lisp
+(loop for x in (list 1 2 3)
+      with a = 1
+      with b = (* 8 a)
+      do (print b))
+
+8 
+8 
+8 
+NIL
+```
+
+However using the `x` variable would not work:
+
+```lisp
+(loop for x in (list 1 2 3)
+      with a = 1
+      with b = (* 8 x)
+      do (print b))
+
+Value of X in (* 8 X) is NIL, not a NUMBER.
+   [Condition of type SIMPLE-TYPE-ERROR]
+```
+
+**Note**: The preferred style when using both the `with` and `for` keywords is to write the `with` clauses first:
+
+```lisp
+(loop with a = 2
+      for y in (list 1 2 3)
+      do (print y))
 ```
 
 ### Loop with lexical variables and updates
