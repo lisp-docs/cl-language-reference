@@ -36,7 +36,7 @@ Note the usage of the word `with` below. `with` will be executed once at the beg
       when (and (< i 10)
                 (not (evenp x)))
         do (print x)
-        and do (setf i (1+ i)))
+           (setf i (1+ i)))
 1 
 3 
 5 
@@ -58,7 +58,7 @@ This is similar to the alternative of wrapping the `loop` form in a `let` form.
         when (and (< i 10)
                   (not (evenp x)))
           do (print x)
-          and do (setf i (1+ i))))
+             (setf i (1+ i))))
 ```
 
 ### Loop with lexical variables and updates
