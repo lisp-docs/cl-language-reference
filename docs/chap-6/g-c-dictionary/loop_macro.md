@@ -34,7 +34,7 @@ Note the usage of the word `with` below. `with` will be executed once at the beg
       when (and (< i 10)
                 (not (evenp x)))
         do (print x)
-           (setf i (1+ i)))
+           (incf i))
 1 
 3 
 5 
