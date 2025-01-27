@@ -28,7 +28,7 @@ NIL
 
 Note the usage of the word `with` below. `with` will be executed once at the beginning of the loop. See below the usage of `for` which updates the binding on each run of the loop.
 
-**Note:** the `with` form will not have the value of any preceeding variable bound at the beginning of the loop. For that, use `for`.
+**Note:** the `with` form will not have the value of any preceeding variable bound at the beginning of the loop. For that use `for`.
 
 ```lisp
 (loop for x below 50
