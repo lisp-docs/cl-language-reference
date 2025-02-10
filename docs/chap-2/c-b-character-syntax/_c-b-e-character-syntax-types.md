@@ -29,44 +29,44 @@ Figure 2–7 lists the <GlossaryTerm styled={true} term={"syntax type"}><i>synta
 
 | Character | Syntax Type |
 |---|---|
-| Backspace | constituent |
-| 0–9 | constituent |
-| Tab | whitespace<sub>2</sub> |
-| : | constituent |
-| Newline | whitespace<sub>2</sub> |
-| ; | terminating macro char |
-| Linefeed | whitespace<sub>2</sub> |
-| < | constituent |
-| = | constituent |
-| > | constituent |
-| ? | constituent |
-| ! | constituent |
-| @ | constituent |
-| " | terminating macro char |
-| A–Z | constituent |
-| # | non-terminating macro char |
-| [ | constituent |
-| $ | constituent |
-| \ | single escape |
-| % | constituent |
-| ] | constituent |
-| & | constituent |
-| ’ | terminating macro char |
-| ( | terminating macro char |
-| ‘ | terminating macro char |
-| ) | terminating macro char |
-| a–z | constituent |
-| * | constituent |
-| { | constituent |
-| + | constituent |
-| | | multiple escape |
-| , | terminating macro char |
-| } | constituent |
-| - | constituent |
-| ~ | constituent |
-| . | constituent |
-| Rubout | constituent |
-| / | constituent |
+| `Backspace` | constituent |
+| `0–9` | constituent |
+| `Tab` | whitespace<sub>2</sub> |
+| `:` | constituent |
+| `Newline` | whitespace<sub>2</sub> |
+| `;` | terminating macro char |
+| `Linefeed` | whitespace<sub>2</sub> |
+| `<` | constituent |
+| `=` | constituent |
+| `>` | constituent |
+| `?` | constituent |
+| `!` | constituent |
+| `@` | constituent |
+| `"` | terminating macro char |
+| `A–Z` | constituent |
+| `#` | non-terminating macro char |
+| `[` | constituent |
+| `$` | constituent |
+| `\` | single escape |
+| `%` | constituent |
+| `]` | constituent |
+| `&` | constituent |
+| `’` | terminating macro char |
+| `(` | terminating macro char |
+| `‘` | terminating macro char |
+| `)` | terminating macro char |
+| `a–z` | constituent |
+| `*` | constituent |
+| `{` | constituent |
+| `+` | constituent |
+| `|` | multiple escape |
+| `,` | terminating macro char |
+| `}` | constituent |
+| `-` | constituent |
+| `~` | constituent |
+| `.` | constituent |
+| `Rubout` | constituent |
+| `/` | constituent |
 
 |**character syntax type character syntax type**|
 | :- |

@@ -115,7 +115,34 @@ The <DictionaryLink  term={"standard-char"}><b>standard-char</b></DictionaryLink
 
 |**Graphic ID Glyph Description**|
 | :- |
-|<p>SP02 ! exclamation mark </p><p>SC03 $ dollar sign </p><p>SP04 " quotation mark, or double quote SP05 ’ apostrophe, or [single] quote </p><p>SP06 ( left parenthesis, or open parenthesis SP07 ) right parenthesis, or close parenthesis SP08 , comma </p><p>SP09 low line, or underscore </p><p>SP10 - hyphen, or minus [sign] </p><p>SP11 . full stop, period, or dot </p><p>SP12 / solidus, or slash </p><p>SP13 : colon </p><p>SP14 ; semicolon </p><p>SP15 ? question mark </p><p>SA01 + plus [sign] </p><p>SA03 &lt; less-than [sign] </p><p>SA04 = equals [sign] </p><p>SA05 &gt; greater-than [sign] </p><p>SM01 # number sign, or sharp[sign] </p><p>SM02 % percent [sign] </p><p>SM03 &amp; ampersand </p><p>SM04 \* asterisk, or star </p><p>SM05 @ commercial at, or at-sign </p><p>SM06 [ left [square] bracket </p><p>SM07 \ reverse solidus, or backslash </p><p>SM08 ] right [square] bracket </p><p>SM11 \{ left curly bracket, or left brace </p><p>SM13 | vertical bar </p><p>SM14 \} right curly bracket, or right brace SD13 ‘ grave accent, or backquote </p><p>SD15 <i><sup>∧</sup></i> circumflex accent </p><p>SD19 &#126; tilde</p>|
+| SP02 ! exclamation mark |
+| SC03 $ dollar sign |
+| SP04 " quotation mark, or double quote SP05 ’ apostrophe, or [single] quote |
+| SP06 ( left parenthesis, or open parenthesis SP07 ) right parenthesis, or close parenthesis SP08 , comma |
+| SP09 low line, or underscore |
+| SP10 - hyphen, or minus [sign] |
+| SP11 . full stop, period, or dot |
+| SP12 / solidus, or slash |
+| SP13 : colon |
+| SP14 ; semicolon |
+| SP15 ? question mark |
+| SA01 + plus [sign] |
+| SA03 &lt; less-than [sign] |
+| SA04 = equals [sign] |
+| SA05 &gt; greater-than [sign] |
+| SM01 # number sign, or sharp[sign] |
+| SM02 % percent [sign] |
+| SM03 &amp; ampersand |
+| SM04 \* asterisk, or star |
+| SM05 @ commercial at, or at-sign |
+| SM06 [ left [square] bracket |
+| SM07 \ reverse solidus, or backslash |
+| SM08 ] right [square] bracket |
+| SM11 \{ left curly bracket, or left brace |
+| SM13 | vertical bar |
+| SM14 \} right curly bracket, or right brace SD13 ‘ grave accent, or backquote |
+| SD15 <i><sup>∧</sup></i> circumflex accent |
+| SD19 &#126; tilde |
 
 **(Figure 2–5. Standard Character Subrepertoire (Part 3 of 3: Special Characters))**
 
