@@ -8,73 +8,73 @@ The <DictionaryLink  term={"standard-char"}><b>standard-char</b></DictionaryLink
 
 | Graphic ID | Glyph | Description |
 |---|---|---|
-| LA01 | a | small a |
-| LA02 | A | capital A |
-| LB01 | b | small b |
-| LB02 | B | capital B |
-| LC01 | c | small c |
-| LC02 | C | capital C |
-| LD01 | d | small d |
-| LD02 | D | capital D |
-| LE01 | e | small e |
-| LE02 | E | capital E |
-| LF01 | f | small f |
-| LF02 | F | capital F |
-| LG01 | g | small g |
-| LG02 | G | capital G |
-| LH01 | h | small h |
-| LH02 | H | capital H |
-| LI01 | i | small i |
-| LI02 | I | capital I |
-| LJ01 | j | small j |
-| LJ02 | J | capital J |
-| LK01 | k | small k |
-| LK02 | K | capital K |
-| LL01 | l | small l |
-| LL02 | L | capital L |
-| LM01 | m | small m |
-| LM02 | M | capital M |
-| LN01 | n | small n |
-| LN02 | N | capital N |
-| LO01 | o | small o |
-| LO02 | O | capital O |
-| LP01 | p | small p |
-| LP02 | P | capital P |
-| LQ01 | q | small q |
-| LQ02 | Q | capital Q |
-| LR01 | r | small r |
-| LR02 | R | capital R |
-| LS01 | s | small s |
-| LS02 | S | capital S |
-| LT01 | t | small t |
-| LT02 | T | capital T |
-| LU01 | u | small u |
-| LU02 | U | capital U |
-| LV01 | v | small v |
-| LV02 | V | capital V |
-| LW01 | w | small w |
-| LW02 | W | capital W |
-| LX01 | x | small x |
-| LX02 | X | capital X |
-| LY01 | y | small y |
-| LY02 | Y | capital Y |
-| LZ01 | z | small z |
-| LZ02 | Z | capital Z |
+| LA01 | `a` | small a |
+| LA02 | `A` | capital A |
+| LB01 | `b` | small b |
+| LB02 | `B` | capital B |
+| LC01 | `c` | small c |
+| LC02 | `C` | capital C |
+| LD01 | `d` | small d |
+| LD02 | `D` | capital D |
+| LE01 | `e` | small e |
+| LE02 | `E` | capital E |
+| LF01 | `f` | small f |
+| LF02 | `F` | capital F |
+| LG01 | `g` | small g |
+| LG02 | `G` | capital G |
+| LH01 | `h` | small h |
+| LH02 | `H` | capital H |
+| LI01 | `i` | small i |
+| LI02 | `I` | capital I |
+| LJ01 | `j` | small j |
+| LJ02 | `J` | capital J |
+| LK01 | `k` | small k |
+| LK02 | `K` | capital K |
+| LL01 | `l` | small l |
+| LL02 | `L` | capital L |
+| LM01 | `m` | small m |
+| LM02 | `M` | capital M |
+| LN01 | `n` | small n |
+| LN02 | `N` | capital N |
+| LO01 | `o` | small o |
+| LO02 | `O` | capital O |
+| LP01 | `p` | small p |
+| LP02 | `P` | capital P |
+| LQ01 | `q` | small q |
+| LQ02 | `Q` | capital Q |
+| LR01 | `r` | small r |
+| LR02 | `R` | capital R |
+| LS01 | `s` | small s |
+| LS02 | `S` | capital S |
+| LT01 | `t` | small t |
+| LT02 | `T` | capital T |
+| LU01 | `u` | small u |
+| LU02 | `U` | capital U |
+| LV01 | `v` | small v |
+| LV02 | `V` | capital V |
+| LW01 | `w` | small w |
+| LW02 | `W` | capital W |
+| LX01 | `x` | small x |
+| LX02 | `X` | capital X |
+| LY01 | `y` | small y |
+| LY02 | `Y` | capital Y |
+| LZ01 | `z` | small z |
+| LZ02 | `Z` | capital Z |
 
 **(Figure 2–3. Standard Character Subrepertoire (Part 1 of 3: Latin Characters))**
 
 | Graphic ID | Glyph | Description |
 |---|---|---|
-| ND01 | 1 | digit 1 |
-| ND02 | 2 | digit 2 |
-| ND03 | 3 | digit 3 |
-| ND04 | 4 | digit 4 |
-| ND05 | 5 | digit 5 |
-| ND06 | 6 | digit 6 |
-| ND07 | 7 | digit 7 |
-| ND08 | 8 | digit 8 |
-| ND09 | 9 | digit 9 |
-| ND10 | 0 | digit 0 |
+| ND01 | `1` | digit 1 |
+| ND02 | `2` | digit 2 |
+| ND03 | `3` | digit 3 |
+| ND04 | `4` | digit 4 |
+| ND05 | `5` | digit 5 |
+| ND06 | `6` | digit 6 |
+| ND07 | `7` | digit 7 |
+| ND08 | `8` | digit 8 |
+| ND09 | `9` | digit 9 |
+| ND10 | `0` | digit 0 |
 
 **(Figure 2–4. Standard Character Subrepertoire (Part 2 of 3: Numeric Characters))**
 
@@ -107,7 +107,7 @@ The <DictionaryLink  term={"standard-char"}><b>standard-char</b></DictionaryLink
 | SM07 | `\` reverse solidus, or backslash |
 | SM08 | `]` right [square] bracket |
 | SM11 | `{` left curly bracket, or left brace |
-| SM13 | `|` vertical bar |
+| SM13 | `\|` vertical bar |
 | SM14 | `}` right curly bracket, or right brace |
 | SD13 | `‘` grave accent, or backquote |
 | SD15 | <i><sup>`^`</sup></i> circumflex accent |
