@@ -1,16 +1,16 @@
 Function
-string=, string/=, string<, string>, string<=, string>=, string-equal, string-not-equal, string-lessp, string-greaterp, string-not-greaterp, string-not-lessp
+string=, string/=, string&lt, string&gt, string&lt=, string&gt=, string-equal, string-not-equal, string-lessp, string-greaterp, string-not-greaterp, string-not-lessp
 string= string1 string2 &key start1 end1 start2 end2 ⇒ generalized-boolean
 
 string/= string1 string2 &key start1 end1 start2 end2 ⇒ mismatch-index
 
-string< string1 string2 &key start1 end1 start2 end2 ⇒ mismatch-index
+string&lt string1 string2 &key start1 end1 start2 end2 ⇒ mismatch-index
 
-string> string1 string2 &key start1 end1 start2 end2 ⇒ mismatch-index
+string&gt string1 string2 &key start1 end1 start2 end2 ⇒ mismatch-index
 
-string<= string1 string2 &key start1 end1 start2 end2 ⇒ mismatch-index
+string&lt= string1 string2 &key start1 end1 start2 end2 ⇒ mismatch-index
 
-string>= string1 string2 &key start1 end1 start2 end2 ⇒ mismatch-index
+string&gt= string1 string2 &key start1 end1 start2 end2 ⇒ mismatch-index
 
 string-equal string1 string2 &key start1 end1 start2 end2 ⇒ generalized-boolean
 
@@ -39,7 +39,7 @@ These functions perform lexicographic comparisons on string1 and string2. string
 
 A string a is equal to a string b if it contains the same number of characters, and the corresponding characters are the same under char= or char-equal, as appropriate.
 
-A string a is less than a string b if in the first position in which they differ the character of a is less than the corresponding character of b according to char< or char-lessp as appropriate, or if string a is a proper prefix of string b (of shorter length and matching in all the characters of a).
+A string a is less than a string b if in the first position in which they differ the character of a is less than the corresponding character of b according to char&lt or char-lessp as appropriate, or if string a is a proper prefix of string b (of shorter length and matching in all the characters of a).
 
 The equality functions return a generalized boolean that is true if the strings are equal, or false otherwise.
 
@@ -56,23 +56,23 @@ string/= is true if the supplied substrings are different; otherwise it is false
 string-equal
 string-equal is just like string= except that differences in case are ignored; two characters are considered to be the same if char-equal is true of them.
 
-string<
-string< is true if substring1 is less than substring2; otherwise it is false.
+string&lt
+string&lt is true if substring1 is less than substring2; otherwise it is false.
 
-string>
-string> is true if substring1 is greater than substring2; otherwise it is false.
+string&gt
+string&gt is true if substring1 is greater than substring2; otherwise it is false.
 
 string-lessp, string-greaterp
-string-lessp and string-greaterp are exactly like string< and string>, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if char-lessp were used instead of char< for comparing characters.
+string-lessp and string-greaterp are exactly like string&lt and string&gt, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if char-lessp were used instead of char&lt for comparing characters.
 
-string<=
-string<= is true if substring1 is less than or equal to substring2; otherwise it is false.
+string&lt=
+string&lt= is true if substring1 is less than or equal to substring2; otherwise it is false.
 
-string>=
-string>= is true if substring1 is greater than or equal to substring2; otherwise it is false.
+string&gt=
+string&gt= is true if substring1 is greater than or equal to substring2; otherwise it is false.
 
 string-not-greaterp, string-not-lessp
-string-not-greaterp and string-not-lessp are exactly like string<= and string>=, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if char-lessp were used instead of char< for comparing characters.
+string-not-greaterp and string-not-lessp are exactly like string&lt= and string&gt=, respectively, except that distinctions between uppercase and lowercase letters are ignored. It is as if char-lessp were used instead of char&lt for comparing characters.
 
 Examples
  (string= "foo" "foo") ⇒  true
@@ -81,13 +81,13 @@ Examples
  (string= "together" "frog" :start1 1 :end1 3 :start2 2) ⇒  true
  (string-equal "foo" "Foo") ⇒  true
  (string= "abcd" "01234abcd9012" :start2 5 :end2 9) ⇒  true
- (string< "aaaa" "aaab") ⇒  3
- (string>= "aaaaa" "aaaa") ⇒  4
+ (string&lt "aaaa" "aaab") ⇒  3
+ (string&gt= "aaaaa" "aaaa") ⇒  4
  (string-not-greaterp "Abcde" "abcdE") ⇒  5
  (string-lessp "012AAAA789" "01aaab6" :start1 3 :end1 7
                                       :start2 2 :end2 6) ⇒  6
  (string-not-equal "AAAA" "aaaA") ⇒  false
 See Also
-char=; char/=; char<; char>; char<=; char>=; char-equal; char-not-equal; char-lessp; char-greaterp; char-not-greaterp; char-not-lessp
+char=; char/=; char&lt; char&gt; char&lt=; char&gt=; char-equal; char-not-equal; char-lessp; char-greaterp; char-not-greaterp; char-not-lessp
 Notes
 equal calls string= if applied to two strings.
