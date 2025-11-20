@@ -88,7 +88,7 @@ The <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <Dictio
 			   :format-control "Hi ~S" 
 			   :format-arguments ’(ho))) 
 → #<SIMPLE-CONDITION 26223553> 
-(apply #’format nil (simple-condition-format-control foo) 
+(apply #'format nil (simple-condition-format-control foo) 
 	 (simple-condition-format-arguments foo)) 
 → "Hi HO" 
 ```
