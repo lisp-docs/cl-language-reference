@@ -18,13 +18,13 @@ An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryL
 
 
 
-"""lisp
+```lisp
 boundp let progv
 defconstant let* psetq
 defparameter makunbound set
 defvar multiple-value-bind setq
 lambda multiple-value-setq symbol-value
-"""
+```
 
 
 

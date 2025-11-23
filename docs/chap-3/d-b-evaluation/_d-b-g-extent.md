@@ -1,10 +1,10 @@
 Contorted-example works only because the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> named by f is invoked during the <GlossaryTerm  term={"extent"}><i>extent</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm>. Once the flow of execution has left the block, the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> is *disestablished*. For example:
 
-"""lisp
+```lisp
 (defun invalid-example ()
   (let ((y (block here #’(lambda (z) (return-from here z)))))
     (if (numberp y) y (funcall y 5))))
-"""
+```
 
 One might expect the call `(invalid-example)` to produce `5` by the following incorrect reasoning: <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> binds `y` to the value of <DictionaryLink  term={"block"}><b>block</b></DictionaryLink>; this value is a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> resulting from the <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>. Because `y` is not a number, it is invoked on the value `5`. The <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> should then return this value from the <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> named here, thereby exiting from the block again and giving `y` the value `5` which, being a number, is then returned as the value of the call to `invalid-example`.
 
@@ -14,7 +14,7 @@ The argument fails only because <GlossaryTerm styled={true} term={"exit point"}>
 
 A reference by name to a dynamic <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> binding such as a <GlossaryTerm styled={true} term={"catch tag"}><i>catch tag</i></GlossaryTerm> refers to the most recently *established binding* of that name that has not been *disestablished*. For example:
 
-"""lisp
+```lisp
 (defun fun1 (x)
   (catch ’trap (+ 3 (fun2 x))))
 
@@ -23,14 +23,14 @@ A reference by name to a dynamic <GlossaryTerm styled={true} term={"exit point"}
 
 (defun fun3 (z)
   (throw ’trap z))
-"""
+```
 
 Consider the call `(fun1 7)`. The result is `10`. At the time the <DictionaryLink  term={"throw"}><b>throw</b></DictionaryLink> is executed, there are two outstanding catchers with the name `trap`: one established within procedure `fun1`, and the other within procedure `fun2`. The latter is the more recent, and so the value `7` is returned from <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> in `fun2`. Viewed from within `fun3`, the <DictionaryLink  term={"catch"}><b>catch</b></DictionaryLink> in `fun2` shadows the one in `fun1`. Had `fun2` been defined as
 
-"""lisp
+```lisp
 (defun fun2 (y)
   (catch ’snare (* 5 (fun3 y))))
-"""
+```
 
 then the two <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> would have different <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm>, and therefore the one in `fun1` would not be shadowed. The result would then have been `7`.
 

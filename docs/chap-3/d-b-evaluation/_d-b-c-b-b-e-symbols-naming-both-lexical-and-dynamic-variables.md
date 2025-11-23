@@ -2,13 +2,13 @@ The same <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> can name bo
 
 In the following example, the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> x is used, at different times, as the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"lexical variable"}><i>lexical variable</i></GlossaryTerm> and as the <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm>.
 
-"""lisp
+```lisp
 (let ((x 1)) ;Binds a special variable X
   (declare (special x))
   (let ((x 2)) ;Binds a lexical variable X
     (+ x ;Reads a lexical variable X
        (locally (declare (special x))
          x)))) ;Reads a special variable X
-"""
+```
 → 3
 

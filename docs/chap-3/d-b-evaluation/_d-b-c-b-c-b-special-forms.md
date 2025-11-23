@@ -14,7 +14,7 @@ The set of *special operator names* is fixed in Common Lisp; no way is provided 
 
 
 
-"""lisp
+```lisp
 block let* return-from
 catch load-time-value setq
 eval-when locally symbol-macrolet flet macrolet tagbody
@@ -22,7 +22,7 @@ function multiple-value-call the
 go multiple-value-prog1 throw
 if progn unwind-protect labels progv
 let quote
-"""
+```
 
 **Figure 3–2. Common Lisp Special Operators** 
 
