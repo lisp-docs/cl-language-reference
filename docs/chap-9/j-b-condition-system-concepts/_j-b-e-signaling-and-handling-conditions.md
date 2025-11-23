@@ -8,6 +8,7 @@ A <GlossaryTerm styled={true} term={"handler"}><i>handler</i></GlossaryTerm> is 
 *Active handlers* can be *established* within the dynamic scope of other *active handlers*.
 At any point during program execution, there is a set of *active handlers*.
 When a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is signaled, the *most* *recent* active <GlossaryTerm styled={true} term={"applicable handler"}><i>applicable handler</i></GlossaryTerm> for that <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is selected from this set.
+
 Given a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>, the order of recentness of active <GlossaryTerm styled={true} term={"applicable handler"}><i>applicable handlers</i></GlossaryTerm> is defined by the following two rules:
 
 1.  Each handler in a set of active handlers *H*<sub>1</sub> is more recent than every handler in a set *H*<sub>2</sub> if the handlers in *H*<sub>2</sub> were active when the handlers in *H*<sub>1</sub> were established.
