@@ -1,4 +1,4 @@
-```lisp
+"""lisp
 ;; Make sure I is always less than 11 (two ways). 
 ;; The FOR construct terminates these loops. 
 (loop for i from 0 to 10 
@@ -46,4 +46,4 @@
 		  (loop for y below z 
 			thereis (= (+ (expt x n) (expt y n)) 
 				   (expt z n)))))) 
-```
+"""
