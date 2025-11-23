@@ -98,19 +98,15 @@ In addition, if *S* is a <GlossaryTerm styled={true} term={"simple array"}><i>si
 
 
 
-Two *hash tables S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if they meet the following three requirements: 1. They both have the same test (*e.g.*, they are both <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>). 
+Two *hash tables S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if they meet the following three requirements:
 
+1. They both have the same test (*e.g.*, they are both <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>).
 
+2. There is a unique one-to-one correspondence between the keys of the two <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>, such that the corresponding keys are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm>.
 
-2\. There is a unique one-to-one correspondence between the keys of the two <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>, such that the corresponding keys are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
+3. For all keys, the values associated with two corresponding keys are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm>.
 
-
-
-3\. For all keys, the values associated with two corresponding keys are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
-
-
-
-If there is more than one possible one-to-one correspondence between the keys of *S* and *C*, the consequences are unspecified. A <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> cannot use a table such as *S* as an *externalizable constant*.  
+If there is more than one possible one-to-one correspondence between the keys of *S* and *C*, the consequences are unspecified. A <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> cannot use a table such as *S* as an *externalizable constant*.
 
 
 
