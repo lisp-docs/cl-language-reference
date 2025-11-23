@@ -66,7 +66,7 @@ sea is used instead. Any arguments following the third argument are collected in
 
 
 
-If keyword arguments of the form ((*key var*) [*default* [*svar* ]]) are specified, the *slot name* is matched with *var* (not <GlossaryTerm  term={"key"}><i>key</i></GlossaryTerm>). 
+If keyword arguments of the form `((*key var*) [default [svar ]])` are specified, the *slot name* is matched with *var* (not <GlossaryTerm term={"key"}><i>key</i></GlossaryTerm>).
 
 
 
