@@ -2,21 +2,10 @@ A <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environmen
 
 
 
-*• bindings* for <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm>. 
-
-
-
-*•* information about *active catch tags*. 
-
-
-
-*•* information about <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> established by <DictionaryLink  term={"unwind-protect"}><b>unwind-protect</b></DictionaryLink>. 
-
-
-
-*•* information about *active handlers* and <GlossaryTerm  term={"restart"}><i>restarts</i></GlossaryTerm>. 
-
-
+*• bindings* for <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variables</i></GlossaryTerm>.
+*•* information about *active catch tags*.
+*•* information about <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> established by `unwind-protect`.
+*•* information about *active handlers* and <GlossaryTerm  term={"restart"}><i>restarts</i></GlossaryTerm>.
 
 The <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm> that is active at any given point in the *execution* of a <GlossaryTerm  term={"program"}><i>program</i></GlossaryTerm> is referred to by definite reference as “the current <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>,” or sometimes as just “the <GlossaryTerm styled={true} term={"dynamic environment"}><i>dynamic environment</i></GlossaryTerm>.”
 
