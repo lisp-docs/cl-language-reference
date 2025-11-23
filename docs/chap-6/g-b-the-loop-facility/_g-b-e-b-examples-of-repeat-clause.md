@@ -8,6 +8,4 @@
 (loop repeat -15 
       do (format t "What you see is what you expect~%")) 
 → NIL 
-
-
 ```

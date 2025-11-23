@@ -10,11 +10,11 @@ The repeat construct causes termination after a specified number of iterations. 
 
 
 
-The while construct takes one <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, a *test*, and terminates the iteration if the *test* evaluates to <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. A while clause is equivalent to the expression (if (not *test*) (loop-finish)). 
+The while construct takes one <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, a *test*, and terminates the iteration if the *test* evaluates to <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. A while clause is equivalent to the expression `(if (not *test*) (loop-finish))`.
 
 
 
-The until construct is the inverse of while; it terminates the iteration if the *test* evaluates to any <GlossaryTerm styled={true} term={"non-nil"}><i>non-nil</i></GlossaryTerm> value. An until clause is equivalent to the expression (if *test* (loop-finish)). 
+The until construct is the inverse of while; it terminates the iteration if the *test* evaluates to any <GlossaryTerm styled={true} term={"non-nil"}><i>non-nil</i></GlossaryTerm> value. An until clause is equivalent to the expression `(if *test* (loop-finish))`.
 
 
 

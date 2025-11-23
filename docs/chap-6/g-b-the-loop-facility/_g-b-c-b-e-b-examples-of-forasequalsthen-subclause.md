@@ -4,6 +4,4 @@
       for iteration from 1 to 5 
       collect item) 
 → (1 11 21 31 41) 
-
-
 ```

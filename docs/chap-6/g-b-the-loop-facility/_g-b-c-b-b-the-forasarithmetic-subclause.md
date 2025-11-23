@@ -19,24 +19,16 @@ by
 
 
 The prepositional phrases in each subclause may appear in any order. For example, either “from x by y” or “by y from x” is permitted. However, because left-to-right order of evaluation is preserved, the effects will be different in the case of side effects. Consider: 
-
-
-
+```lisp
 (let ((x 1)) (loop for i from x by (incf x) to 10 collect i)) 
-
-
-
 → (1 3 5 7 9) 
+```
 
 
-
+```lisp
 (let ((x 1)) (loop for i by (incf x) from x to 10 collect i)) 
-
-
-
 → (2 4 6 8 10) 
-
-
+```
 
 The descriptions of the prepositions follow: 
 

@@ -22,95 +22,53 @@ The constructs append, appending, nconc, and nconcing are similar to collect exc
 
 
 
- 
+*•* The `append` keyword causes its <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> values to be concatenated into a single <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, as if they were arguments to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"append"}><b>append</b></DictionaryLink>.
 
 
+*•* The `nconc` keyword causes its <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> values to be concatenated into a single <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, as if they were arguments to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"nconc"}><b>nconc</b></DictionaryLink>.
 
- 
 
 
+The argument *var* is set to the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of concatenated values; if *var* is supplied, <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> does not return the final <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> automatically. The *var* argument is bound as if by the construct `with`. A <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> cannot be supplied for *var*; it must be of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>. The construct `nconc` destructively modifies its argument <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm>.
 
-*•* The append keyword causes its <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> values to be concatenated into a single <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, as if they were arguments to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"append"}><b>append</b></DictionaryLink>. 
 
 
+The count construct counts the number of times that the supplied <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. The argument *var* accumulates the number of occurrences; if *var* is supplied, <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> does not return the final count automatically. The *var* argument is bound as if by the construct `with` to a zero of the appropriate type. Subsequent values (including any necessary coercions) are computed as if by the function <DictionaryLink  term={"1+"}><b>1+</b></DictionaryLink>. If into *var* is used, a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> can be supplied for *var* with the *type-spec* argument; the consequences are unspecified if a nonnumeric <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is supplied. If there is no into variable, the optional *type-spec* argument applies to the internal variable that is keeping the count. The default <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>; but it must be a <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"fixnum"}><b>fixnum</b></DictionaryLink>.
 
-*•* The nconc keyword causes its <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> values to be concatenated into a single <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, as if they were arguments to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"nconc"}><b>nconc</b></DictionaryLink>. 
 
 
+The maximize and minimize constructs compare the value of the supplied <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> obtained during the first iteration with values obtained in successive iterations. The maximum (for maximize) or minimum (for minimize) value encountered is determined (as if by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"max"}><b>max</b></DictionaryLink> for maximize and as if by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"min"}><b>min</b></DictionaryLink> for minimize) and returned. If the maximize or minimize clause is never executed, the accumulated value is unspecified. The argument *var* accumulates the maximum or minimum value; if *var* is supplied, <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> does not return the maximum or minimum automatically. The *var* argument is bound as if by the construct `with`. If into *var* is used, a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> can be supplied for *var* with the *type-spec* argument; the consequences are unspecified if a nonnumeric <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is supplied. If there is no into variable, the optional *type-spec* argument applies to the internal variable that is keeping the maximum or minimum value. The default <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>; but it must be a <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"real"}><b>real</b></DictionaryLink>.
 
-The argument *var* is set to the <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of concatenated values; if *var* is supplied, <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> does not return the final <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> automatically. The *var* argument is bound as if by the construct with. A <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> cannot be supplied for *var*; it must be of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"list"}><b>list</b></DictionaryLink>. The construct nconc destructively modifies its argument <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm>. 
 
 
+The sum construct forms a cumulative sum of the successive <GlossaryTerm styled={true} term={"primary value"}><i>primary values</i></GlossaryTerm> of the supplied <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> at each iteration. The argument *var* is used to accumulate the sum; if *var* is supplied, <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> does not return the final sum automatically. The *var* argument is bound as if by the construct `with` to a zero of the appropriate type. Subsequent values (including any necessary coercions) are computed as if by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"+"}><b>+</b></DictionaryLink>. If into *var* is used, a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> can be supplied for *var* with the *type-spec* argument; the consequences are unspecified if a nonnumeric <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is supplied. If there is no into variable, the optional *type-spec* argument applies to the internal variable that is keeping the sum. The default <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>; but it must be a <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>.
 
-The count construct counts the number of times that the supplied <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> returns <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm>. The argument *var* accumulates the number of occurrences; if *var* is supplied, <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> does not return the final count automatically. The *var* argument is bound as if by the construct with to a zero of the appropriate type. Subsequent values (including any necessary coercions) are computed as if by the function <DictionaryLink  term={"1+"}><b>1+</b></DictionaryLink>. If into *var* is used, a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> can be supplied for *var* with the *type-spec* argument; the consequences are unspecified if a nonnumeric <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is supplied. If there is no into variable, the optional *type-spec* argument applies to the internal variable that is keeping the count. The default <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>; but it must be a <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"fixnum"}><b>fixnum</b></DictionaryLink>. 
 
 
+If `into` is used, the construct does not provide a default return value; however, the variable is available for use in any `finally` clause.
 
-The maximize and minimize constructs compare the value of the supplied <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> obtained during the first iteration with values obtained in successive iterations. The maximum (for maximize) or minimum (for minimize) value encountered is determined (as if by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"max"}><b>max</b></DictionaryLink> for maximize and as if by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"min"}><b>min</b></DictionaryLink> for minimize) and returned. If the maximize or minimize clause is never executed, the accumulated value is unspecified. The argument *var* accumulates the maximum or minimum value; if *var* is supplied, <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> does not return the maximum or minimum automatically. The *var* argument is bound as if by the construct with. If into *var* is used, a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> can be supplied for *var* with the *type-spec* argument; the consequences are unspecified if a nonnumeric <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is supplied. If there is no into variable, the optional *type-spec* argument applies to the internal variable that is keeping the maximum or minimum value. The default <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>; but it must be a <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"real"}><b>real</b></DictionaryLink>. 
 
 
+Certain kinds of accumulation clauses can be combined in a <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> if their destination is the same (the result of <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> or an `into` *var*) because they are considered to accumulate conceptually compatible quantities. In particular, any elements of following sets of accumulation clauses can be mixed with other elements of the same set for the same destination in a <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>:
+*•* `collect`, `append`, `nconc`
 
-The sum construct forms a cumulative sum of the successive <GlossaryTerm styled={true} term={"primary value"}><i>primary values</i></GlossaryTerm> of the supplied <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> at each iteration. The argument *var* is used to accumulate the sum; if *var* is supplied, <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> does not return the final sum automatically. The *var* argument is bound as if by the construct with to a zero of the appropriate type. Subsequent values (including any necessary coercions) are computed as if by the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"+"}><b>+</b></DictionaryLink>. If into *var* is used, a <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> can be supplied for *var* with the *type-spec* argument; the consequences are unspecified if a nonnumeric <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is supplied. If there is no into variable, the optional *type-spec* argument applies to the internal variable that is keeping the sum. The default <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm>; but it must be a <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>. 
 
+*•* `sum`, `count`
 
 
-If into is used, the construct does not provide a default return value; however, the variable is available for use in any finally clause. 
+*•* `maximize`, `minimize`
 
 
 
-Certain kinds of accumulation clauses can be combined in a <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> if their destination is the same (the result of <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> or an into *var*) because they are considered to accumulate conceptually compatible quantities. In particular, any elements of following sets of accumulation clauses can be 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-mixed with other elements of the same set for the same destination in a <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>: *•* collect, append, nconc 
-
-
-
-*•* sum, count 
-
-
-
-*•* maximize, minimize 
-
-
-
-;; Collect every name and the kids in one list by using 
-
-
-
-;; COLLECT and APPEND. 
-
-
-
-(loop for name in ’(fred sue alice joe june) 
-
-
-
-for kids in ’((bob ken) () () (kris sunshine) ()) 
-
-
-
-collect name 
-
-
-
-append kids) 
-
-
-
-→ (FRED BOB KEN SUE ALICE JOE KRIS SUNSHINE JUNE) 
+```lisp
+;; Collect every name and the kids in one list by using
+;; COLLECT and APPEND.
+(loop for name in ’(fred sue alice joe june)
+      for kids in ’((bob ken) () () (kris sunshine) ())
+      collect name
+      append kids)
+→ (FRED BOB KEN SUE ALICE JOE KRIS SUNSHINE JUNE)
+```
 
 
 

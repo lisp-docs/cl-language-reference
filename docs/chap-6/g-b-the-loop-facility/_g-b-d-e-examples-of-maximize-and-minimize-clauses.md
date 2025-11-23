@@ -16,6 +16,4 @@
       minimize (round v) into result of-type fixnum 
       finally (return result)) 
 → 1 
-
-
 ```

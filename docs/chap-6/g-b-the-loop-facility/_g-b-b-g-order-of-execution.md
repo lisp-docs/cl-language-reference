@@ -1,25 +1,8 @@
- 
-
-
-
 With the exceptions listed below, clauses are executed in the loop body in the order in which they appear in the source. Execution is repeated until a clause terminates the <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> or until a <DictionaryLink styled={true} term={"return"}><b>return</b></DictionaryLink>, <DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink>, or <DictionaryLink styled={true} term={"throw"}><b>throw</b></DictionaryLink> form is encountered which transfers control to a point outside of the loop. The following actions are exceptions to the linear order of execution: 
 
 
 
 *•* All variables are initialized first, regardless of where the establishing clauses appear in the source. The order of initialization follows the order of these clauses. 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
 
 
 *•* The code for any initially clauses is collected into one <DictionaryLink styled={true} term={"progn"}><b>progn</b></DictionaryLink> in the order in which the clauses appear in the source. The collected code is executed once in the loop prologue after any implicit variable initializations. 

@@ -1,8 +1,4 @@
- 
-
-
-
-Iteration control clauses allow direction of <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> iteration. The <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</i></GlossaryTerm> for and as designate iteration control clauses. Iteration control clauses differ with respect to the specification of termination tests and to the initialization and *stepping*<sub>1</sub> of loop variables. Iteration clauses by themselves do not cause the Loop Facility to return values, but they can be used in conjunction with value-accumulation clauses to return values. 
+Iteration control clauses allow direction of <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> iteration. The <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</i></GlossaryTerm> `for` and `as` designate iteration control clauses. Iteration control clauses differ with respect to the specification of termination tests and to the initialization and *stepping*<sub>1</sub> of loop variables. Iteration clauses by themselves do not cause the Loop Facility to return values, but they can be used in conjunction with value-accumulation clauses to return values. 
 
 
 
@@ -14,11 +10,11 @@ The variable argument in iteration control clauses can be a destructuring list. 
 
 
 
-The iteration control clauses for, as, and repeat must precede any other loop clauses, except initially, with, and named, since they establish variable <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm>. When iteration control clauses are used in a <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink>, the corresponding termination tests in the loop body are evaluated before any other loop body code is executed. 
+The iteration control clauses `for`, `as`, and `repeat` must precede any other loop clauses, except `initially`, `with`, and `named`, since they establish variable <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm>. When iteration control clauses are used in a <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink>, the corresponding termination tests in the loop body are evaluated before any other loop body code is executed. 
 
 
 
-If multiple iteration clauses are used to control iteration, variable initialization and *stepping*<sub>1</sub> occur <GlossaryTerm  term={"sequentially"}><i>sequentially</i></GlossaryTerm> by default. The and construct can be used to connect two or more iteration clauses when *sequential binding* and *stepping*<sub>1</sub> are not necessary. The iteration behavior of clauses joined by and is analogous to the behavior of the macro <DictionaryLink  term={"do"}><b>do</b></DictionaryLink> with respect to <DictionaryLink  term={"do"}><b>do\*</b></DictionaryLink>. 
+If multiple iteration clauses are used to control iteration, variable initialization and *stepping*<sub>1</sub> occur <GlossaryTerm  term={"sequentially"}><i>sequentially</i></GlossaryTerm> by default. The `and` construct can be used to connect two or more iteration clauses when *sequential binding* and *stepping*<sub>1</sub> are not necessary. The iteration behavior of clauses joined by `and` is analogous to the behavior of the macro <DictionaryLink  term={"do"}><b>do</b></DictionaryLink> with respect to <DictionaryLink  term={"do"}><b>do\*</b></DictionaryLink>. 
 
 
 
@@ -38,7 +34,7 @@ The for and as clauses iterate by using one or more local loop variables that ar
 
 
 
-The for and as keywords are synonyms; they can be used interchangeably. There are seven syntactic formats for these constructs. In each syntactic format, the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> of *var* can be supplied by the optional *type-spec* argument. If *var* is a destructuring list, the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> supplied by the *type-spec* argument must appropriately match the elements of the list. By convention, for introduces new iterations and as introduces iterations that depend on a previous iteration specification. 
+The `for` and `as` keywords are synonyms; they can be used interchangeably. There are seven syntactic formats for these constructs. In each syntactic format, the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> of `var` can be supplied by the optional `type-spec` argument. If `var` is a destructuring list, the <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> supplied by the `type-spec` argument must appropriately match the elements of the list. By convention, `for` introduces new iterations and `as` introduces iterations that depend on a previous iteration specification. 
 
 
 

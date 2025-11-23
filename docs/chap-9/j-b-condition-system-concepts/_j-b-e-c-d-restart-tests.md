@@ -1,20 +1,2 @@
- 
-
-
-
-Each <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> has an associated test, which is a function of one argument (a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>) which returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> should be visible in the current <GlossaryTerm styled={true} term={"situation"}><i>situation</i></GlossaryTerm>. This test is created by the :test-function option to <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> or the :test option to <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>. 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
+Each <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> has an associated test, which is a function of one argument (a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>) which returns <GlossaryTerm styled={true} term={"true"}><i>true</i></GlossaryTerm> if the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> should be visible in the current <GlossaryTerm styled={true} term={"situation"}><i>situation</i></GlossaryTerm>. This test is created by the :test-function option to <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> or the :test option to <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>.
 

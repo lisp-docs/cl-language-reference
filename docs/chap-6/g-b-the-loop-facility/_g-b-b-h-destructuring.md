@@ -1,36 +1,29 @@
- 
+The *d-type-spec* argument is used for destructuring. If the *d-type-spec* argument consists solely of the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"fixnum"}><b>fixnum</b></DictionaryLink>, <DictionaryLink styled={true} term={"float"}><b>float</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, the of-type keyword is optional. The of-type construct is optional in these cases to provide backwards compatibility; thus, the following two expressions are the same:
 
 
 
-The *d-type-spec* argument is used for destructuring. If the *d-type-spec* argument consists solely of the <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink styled={true} term={"fixnum"}><b>fixnum</b></DictionaryLink>, <DictionaryLink styled={true} term={"float"}><b>float</b></DictionaryLink>, <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>, or <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, the of-type keyword is optional. The of-type construct is optional in these cases to provide backwards compatibility; thus, the following two expressions are the same: 
+;;; This expression uses the old syntax for type specifiers.
+
+```lisp
+(loop for i fixnum upfrom 3 ...)
+```
 
 
 
-;;; This expression uses the old syntax for type specifiers. 
+;;; This expression uses the new syntax for type specifiers.
+
+```lisp
+(loop for i of-type fixnum upfrom 3 ...)
+```
 
 
 
-(loop for i fixnum upfrom 3 ...) 
+;; Declare X and Y to be of type VECTOR and FIXNUM respectively.
 
-
-
-;;; This expression uses the new syntax for type specifiers. 
-
-
-
-(loop for i of-type fixnum upfrom 3 ...) 
-
-
-
-;; Declare X and Y to be of type VECTOR and FIXNUM respectively. 
-
-
-
-(loop for (x y) of-type (vector fixnum) 
-
-
-
-in l do ...) 
+```lisp
+(loop for (x y) of-type (vector fixnum)
+      in l do ...)
+```
 
 
 
@@ -38,11 +31,9 @@ A <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></Glo
 
 
 
-*•* When aligning the <GlossaryTerm styled={true} term={"tree"}><i>trees</i></GlossaryTerm>, an <GlossaryTerm styled={true} term={"atom"}><i>atom</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"tree"}><i>tree</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> that matches a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> in the variable tree declares the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> for each variable in the subtree rooted at the <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>. 
+* When aligning the <GlossaryTerm styled={true} term={"tree"}><i>trees</i></GlossaryTerm>, an <GlossaryTerm styled={true} term={"atom"}><i>atom</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"tree"}><i>tree</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> that matches a <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> in the variable tree declares the same <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm> for each variable in the subtree rooted at the <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm>.
 
-
-
-*•* A <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"tree"}><i>tree</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> that matches an <GlossaryTerm styled={true} term={"atom"}><i>atom</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"tree"}><i>tree</i></GlossaryTerm> of *variable names* is a *compound type specifer* . 
+* A <GlossaryTerm styled={true} term={"cons"}><i>cons</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"tree"}><i>tree</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></GlossaryTerm> that matches an <GlossaryTerm styled={true} term={"atom"}><i>atom</i></GlossaryTerm> in the <GlossaryTerm styled={true} term={"tree"}><i>tree</i></GlossaryTerm> of *variable names* is a *compound type specifer* .
 
 
 
@@ -62,7 +53,7 @@ Destructuring allows <GlossaryTerm styled={true} term={"binding"}><i>binding</i>
 
 
 
-variable list is matched with the values in the values list. If there are more variables in the variable list than there are values in the values list, the remaining variables are given a value of <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. If there are more values than variables listed, the extra values are discarded. 
+variable list is matched with the values in the values list. If there are more variables in the variable list than there are values in the values list, the remaining variables are given a value of <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>. If there are more values than variables listed, the extra values are discarded.
 
 
 
@@ -70,31 +61,17 @@ To assign values from a list to the variables a, b, and c, the for clause could 
 
 
 
-;; Collect values by using FOR constructs. 
+;; Collect values by using FOR constructs.
 
+```lisp
+(loop for numlist in ’((1 2 4.0) (5 6 8.3) (8 9 10.4))
+      for a of-type integer = (first numlist)
+      and b of-type integer = (second numlist)
+      and c of-type float = (third numlist)
+      collect (list c b a))
+```
 
-
-(loop for numlist in ’((1 2 4.0) (5 6 8.3) (8 9 10.4)) 
-
-
-
-for a of-type integer = (first numlist) 
-
-
-
-and b of-type integer = (second numlist) 
-
-
-
-and c of-type float = (third numlist) 
-
-
-
-collect (list c b a)) 
-
-
-
-→ ((4.0 2 1) (8.3 6 5) (10.4 9 8)) 
+→ ((4.0 2 1) (8.3 6 5) (10.4 9 8))
 
 
 
@@ -102,67 +79,40 @@ Destructuring makes this process easier by allowing the variables to be bound in
 
 
 
-;; Destructuring simplifies the process. 
+;; Destructuring simplifies the process.
+
+```lisp
+(loop for (a b c) of-type (integer integer float) in
+      ’((1 2 4.0) (5 6 8.3) (8 9 10.4))
+      collect (list c b a))
+```
+
+→ ((4.0 2 1) (8.3 6 5) (10.4 9 8))
 
 
 
-(loop for (a b c) of-type (integer integer float) in 
+;; If all the types are the same, this way is even simpler.
+
+```lisp
+(loop for (a b c) of-type float in
+      ’((1.0 2.0 4.0) (5.0 6.0 8.3) (8.0 9.0 10.4))
+      collect (list c b a))
+```
+
+→ ((4.0 2.0 1.0) (8.3 6.0 5.0) (10.4 9.0 8.0))
 
 
 
-’((1 2 4.0) (5 6 8.3) (8 9 10.4)) 
+If destructuring is used to declare or initialize a number of groups of variables into <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> `and` can be used to simplify the process further.
 
+```lisp
+(loop with (a b) of-type float = ’(1.0 2.0)
+      and (c d) of-type integer = ’(3 4)
+      and (e f)
+      return (list a b c d e f))
+```
 
-
-collect (list c b a)) 
-
-
-
-→ ((4.0 2 1) (8.3 6 5) (10.4 9 8)) 
-
-
-
-;; If all the types are the same, this way is even simpler. 
-
-
-
-(loop for (a b c) of-type float in 
-
-
-
-’((1.0 2.0 4.0) (5.0 6.0 8.3) (8.0 9.0 10.4)) 
-
-
-
-collect (list c b a)) 
-
-
-
-→ ((4.0 2.0 1.0) (8.3 6.0 5.0) (10.4 9.0 8.0)) 
-
-
-
-If destructuring is used to declare or initialize a number of groups of variables into <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> and can be used to simplify the process further. ;; Initialize and declare variables in parallel by using the AND construct. 
-
-
-
-(loop with (a b) of-type float = ’(1.0 2.0) 
-
-
-
-and (c d) of-type integer = ’(3 4) 
-
-
-
-and (e f) 
-
-
-
-return (list a b c d e f)) 
-
-
-
-→ (1.0 2.0 3 4 NIL NIL) 
+→ (1.0 2.0 3 4 NIL NIL)
 
 
 
@@ -170,19 +120,12 @@ If <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is use
 
 
 
-(loop for (a nil b) = ’(1 2 3) 
+```lisp
+(loop for (a nil b) = ’(1 2 3)
+      do (return (list a b)))
+```
 
-
-
-do (return (list a b))) 
-
-
-
-→ (1 3) 
-
-
-
-
+→ (1 3)
 
 
 
@@ -190,39 +133,24 @@ do (return (list a b)))
 
 
 
- 
+Note that <GlossaryTerm styled={true} term={"dotted list"}><i>dotted lists</i></GlossaryTerm> can specify destructuring.
+
+```lisp
+(loop for (x . y) = ’(1 . 2)
+      do (return y))
+```
+
+→ 2
 
 
 
-Note that <GlossaryTerm styled={true} term={"dotted list"}><i>dotted lists</i></GlossaryTerm> can specify destructuring. 
+```lisp
+(loop for ((a . b) (c . d)) of-type ((float . float) (integer . integer)) in
+      ’(((1.2 . 2.4) (3 . 4)) ((3.4 . 4.6) (5 . 6)))
+      collect (list a b c d))
+```
 
-
-
-(loop for (x . y) = ’(1 . 2) 
-
-
-
-do (return y)) 
-
-
-
-→ 2 
-
-
-
-(loop for ((a . b) (c . d)) of-type ((float . float) (integer . integer)) in 
-
-
-
-’(((1.2 . 2.4) (3 . 4)) ((3.4 . 4.6) (5 . 6))) 
-
-
-
-collect (list a b c d)) 
-
-
-
-→ ((1.2 2.4 3 4) (3.4 4.6 5 6)) 
+→ ((1.2 2.4 3 4) (3.4 4.6 5 6))
 
 
 

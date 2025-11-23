@@ -1,7 +1,3 @@
- 
-
-
-
 If the :report argument to <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink> is used, a print function is defined that is called whenever the defined <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is printed while the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b></DictionaryLink> is <GlossaryTerm styled={true} term={"false"}><i>false</i></GlossaryTerm>. This function is called the <GlossaryTerm styled={true} term={"condition reporter"}><i>condition reporter</i></GlossaryTerm>; the text which it outputs is called a <GlossaryTerm styled={true} term={"report message"}><i>report message</i></GlossaryTerm>. 
 
 
@@ -14,19 +10,7 @@ When <DictionaryLink styled={true} term={"print-escape"}><b>\*print-escape\*</b>
 
 
 
-No <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is provided for directly *accessing* or invoking <GlossaryTerm styled={true} term={"condition reporter"}><i>condition reporters</i></GlossaryTerm>. 
-
-
-
-
-
-
-
- 
-
-
-
- 
+No <GlossaryTerm styled={true} term={"function"}><i>function</i></GlossaryTerm> is provided for directly *accessing* or invoking <GlossaryTerm styled={true} term={"condition reporter"}><i>condition reporters</i></GlossaryTerm>.
 
 
 
