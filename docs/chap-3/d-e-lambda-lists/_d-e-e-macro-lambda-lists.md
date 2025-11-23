@@ -21,7 +21,7 @@ With the additional restriction that an <GlossaryTerm styled={true} term={"envir
 
 
 
-"""text
+```text
 reqvars::={var | ↓pattern}*
 optvars::=[&optional {var | ({var | ↓pattern} [init-form [supplied-p-parameter]])}*]
 restvar::=[{&rest | &body} {var | ↓pattern}]
@@ -36,7 +36,7 @@ lambda-list::=(↓wholevar ↓envvar ↓reqvars ↓envvar ↓optvars ↓envvar
 
 pattern::=(↓wholevar ↓reqvars ↓optvars ↓restvar ↓keyvars ↓auxvars) |
   (↓wholevar ↓reqvars ↓optvars . var)
-"""
+```
 
 
 

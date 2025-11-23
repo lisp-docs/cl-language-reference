@@ -10,14 +10,14 @@ A <GlossaryTerm styled={true} term={"defsetf lambda list"}><i>defsetf lambda lis
 
 
 
-"""text
+```text
 lambda-list::=({var}*
   [&optional {var | (var [init-form [supplied-p-parameter]])}*]
   [&rest var]
   [&key {var | ({var | (keyword-name var)} [init-form [supplied-p-parameter]])}*
     [&allow-other-keys]]
   [&environment var])
-"""
+```
 
 
 

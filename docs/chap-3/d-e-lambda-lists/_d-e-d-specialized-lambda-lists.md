@@ -35,14 +35,14 @@ A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized la
 
 
 
-"""text
+```text
 lambda-list::=({var | (var [specializer])}*
   [&optional {var | (var [init-form [supplied-p-parameter]])}*]
   [&rest var]
   [&key {var | ({var | (keyword-name var)} [init-form [supplied-p-parameter]])}*
     [&allow-other-keys]]
   [&aux {var | (var [init-form])}*])
-"""
+```
 
 
 
