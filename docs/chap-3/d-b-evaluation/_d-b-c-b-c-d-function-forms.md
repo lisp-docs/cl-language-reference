@@ -26,19 +26,13 @@ Although the order of <GlossaryTerm  term={"evaluation"}><i>evaluation</i></Glos
 
 
 
-(defun foo (x) (+ x 3))  
+```lisp
+(defun foo (x) (+ x 3))
 
+(defun bar () (setf (symbol-function ’foo) #’(lambda (x) (+ x 4))))
 
-
-
-
-
-
-(defun bar () (setf (symbol-function ’foo) #’(lambda (x) (+ x 4)))) 
-
-
-
-(foo (progn (bar) 20)) 
+(foo (progn (bar) 20))
+```
 
 
 

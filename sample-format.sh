@@ -1,0 +1,7 @@
+for FILE in *.md ; do 
+    aider --message-file=~/Development/projects/reactjs/lisp-docs/cl-language-reference/FORMAT-FIX-INSTRUCTIONS.md $FILE 
+done
+
+# --model=gemini/gemini-2.0-flash-lite
+# --model=gemini/gemini-2.5-flash-lite
+# --model=gemini/gemini-2.0-flash

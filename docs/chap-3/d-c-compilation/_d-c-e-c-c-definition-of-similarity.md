@@ -1,8 +1,4 @@
- 
-
-
-
-Two *objects S* (in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm>) and *C* (in <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm>) are defined to be <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if and only if they are both of one of the <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> listed here (or defined by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>) and they both satisfy all additional requirements of <GlossaryTerm  term={"similarity"}><i>similarity</i></GlossaryTerm> indicated for that <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>. 
+Two *objects S* (in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm>) and *C* (in <GlossaryTerm styled={true} term={"compiled code"}><i>compiled code</i></GlossaryTerm>) are defined to be <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if and only if they are both of one of the <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> listed here (or defined by the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>) and they both satisfy all additional requirements of <GlossaryTerm  term={"similarity"}><i>similarity</i></GlossaryTerm> indicated for that <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>.
 
 
 
@@ -22,7 +18,7 @@ Two *simple characters S* and *C* are <GlossaryTerm  term={"similar"}><i>similar
 
 
 
-<GlossaryTerm  term={"implementation"}><i>Implementations</i></GlossaryTerm> providing additional, *implementation-defined attributes* must define whether and how *non-simple characters* can be regarded as <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
+<GlossaryTerm  term={"implementation"}><i>Implementations</i></GlossaryTerm> providing additional, *implementation-defined attributes* must define whether and how *non-simple characters* can be regarded as <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm>.
 
 
 
@@ -30,7 +26,7 @@ Two *simple characters S* and *C* are <GlossaryTerm  term={"similar"}><i>similar
 
 
 
-Two *apparently uninterned symbols S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if their <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
+Two *apparently uninterned symbols S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if their <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm>.
 
 
 
@@ -46,7 +42,7 @@ Two <GlossaryTerm  term={"interned"}><i>interned</i></GlossaryTerm> symbols *S* 
 
 
 
-Two *packages S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if their <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
+Two *packages S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if their <GlossaryTerm  term={"name"}><i>names</i></GlossaryTerm> are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm>.
 
 
 
@@ -58,7 +54,7 @@ Note that although a *package object* is an <GlossaryTerm styled={true} term={"e
 
 
 
-referencing it as a *literal object* is *loaded*. The <GlossaryTerm  term={"loader"}><i>loader</i></GlossaryTerm> finds the corresponding *package object* as if by calling <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> with that <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> as an <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm>. An error is signaled by the <GlossaryTerm  term={"loader"}><i>loader</i></GlossaryTerm> if no <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> exists at load time. 
+referencing it as a *literal object* is *loaded*. The <GlossaryTerm  term={"loader"}><i>loader</i></GlossaryTerm> finds the corresponding *package object* as if by calling <DictionaryLink  term={"find-package"}><b>find-package</b></DictionaryLink> with that <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> as an <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm>. An error is signaled by the <GlossaryTerm  term={"loader"}><i>loader</i></GlossaryTerm> if no <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> exists at load time.
 
 
 
@@ -70,7 +66,7 @@ Two *random states S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i>
 
 
 
-(Note that since *C* has been processed by the <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm> , it cannot be used directly as an <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> to <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> because <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> would perform a side effect.) 
+(Note that since *C* has been processed by the <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></GlossaryTerm>, it cannot be used directly as an <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> to <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> because <DictionaryLink  term={"random"}><b>random</b></DictionaryLink> would perform a side effect.)
 
 
 
@@ -94,7 +90,7 @@ Two <GlossaryTerm  term={"array"}><i>arrays</i></GlossaryTerm> of <GlossaryTerm 
 
 
 
-In addition, if *S* is a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>, then *C* must also be a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>. If *S* is a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>, has a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm> , or is <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>, *C* is permitted to lack any or all of these qualities. 
+In addition, if *S* is a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>, then *C* must also be a <GlossaryTerm styled={true} term={"simple array"}><i>simple array</i></GlossaryTerm>. If *S* is a <GlossaryTerm styled={true} term={"displaced array"}><i>displaced array</i></GlossaryTerm>, has a <GlossaryTerm styled={true} term={"fill pointer"}><i>fill pointer</i></GlossaryTerm>, or is <GlossaryTerm styled={true} term={"actually adjustable"}><i>actually adjustable</i></GlossaryTerm>, *C* is permitted to lack any or all of these qualities.
 
 
 
@@ -102,19 +98,15 @@ In addition, if *S* is a <GlossaryTerm styled={true} term={"simple array"}><i>si
 
 
 
-Two *hash tables S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if they meet the following three requirements: 1. They both have the same test (*e.g.*, they are both <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>). 
+Two *hash tables S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if they meet the following three requirements:
 
+1. They both have the same test (*e.g.*, they are both <DictionaryLink  term={"eql"}><b>eql</b></DictionaryLink> <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>).
 
+2. There is a unique one-to-one correspondence between the keys of the two <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>, such that the corresponding keys are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm>.
 
-2\. There is a unique one-to-one correspondence between the keys of the two <GlossaryTerm styled={true} term={"hash table"}><i>hash tables</i></GlossaryTerm>, such that the corresponding keys are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
+3. For all keys, the values associated with two corresponding keys are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm>.
 
-
-
-3\. For all keys, the values associated with two corresponding keys are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
-
-
-
-If there is more than one possible one-to-one correspondence between the keys of *S* and *C*, the consequences are unspecified. A <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> cannot use a table such as *S* as an *externalizable constant*.  
+If there is more than one possible one-to-one correspondence between the keys of *S* and *C*, the consequences are unspecified. A <GlossaryTerm styled={true} term={"conforming program"}><i>conforming program</i></GlossaryTerm> cannot use a table such as *S* as an *externalizable constant*.
 
 
 
@@ -126,7 +118,7 @@ If there is more than one possible one-to-one correspondence between the keys of
 
 
 
-Two *pathnames S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if all corresponding *pathname components* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> . 
+Two *pathnames S* and *C* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> if all corresponding *pathname components* are <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm>.
 
 
 

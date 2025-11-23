@@ -64,6 +64,6 @@ is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of ten *closure obj
 
 where the <GlossaryTerm  term={"closure"}><i>closures</i></GlossaryTerm> may be <GlossaryTerm  term={"identical"}><i>identical</i></GlossaryTerm>.
 
-It is possible that a <GlossaryTerm  term={"closure"}><i>closure</i></GlossaryTerm> does not close over any variable bindings. In the code fragment (mapcar (function (lambda (x) (+ x 2))) y)
+It is possible that a <GlossaryTerm  term={"closure"}><i>closure</i></GlossaryTerm> does not close over any variable bindings. In the code fragment `(mapcar (function (lambda (x) (+ x 2))) y)`
 
-the function (lambda (x) (+ x 2)) contains no references to any outside object. In this case, the same <GlossaryTerm  term={"closure"}><i>closure</i></GlossaryTerm> might be returned for all evaluations of the <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>.
+the function `(lambda (x) (+ x 2))` contains no references to any outside object. In this case, the same <GlossaryTerm  term={"closure"}><i>closure</i></GlossaryTerm> might be returned for all evaluations of the <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>.

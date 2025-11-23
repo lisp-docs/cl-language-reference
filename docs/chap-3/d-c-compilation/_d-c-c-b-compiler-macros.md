@@ -22,9 +22,11 @@ argument. The <GlossaryTerm styled={true} term={"macroexpand hook"}><i>macroexpa
 
 
 
-|**\*macroexpand-hook\* compiler-macro-function define-compiler-macro**|
-
-| :- |
+| Name                      |
+| :------------------------ |
+| `*macroexpand-hook*`      |
+| `compiler-macro-function` |
+| `define-compiler-macro`   |
 
 
 

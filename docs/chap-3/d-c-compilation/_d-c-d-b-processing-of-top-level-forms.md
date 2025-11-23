@@ -6,7 +6,7 @@ Processing of <GlossaryTerm styled={true} term={"top level form"}><i>top level f
 
 
 
-1\. If the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"compiler macro form"}><i>compiler macro form</i></GlossaryTerm> (not disabled by a <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>), the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> might or might not choose to compute the <GlossaryTerm styled={true} term={"compiler macro expansion"}><i>compiler macro expansion</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> and, having performed the expansion, might or might not choose to process the result as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the same processing mode (compile-time-too or not-compile time). If it declines to obtain or use the expansion, it must process the original <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
+1\. If the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"compiler macro form"}><i>compiler macro form</i></GlossaryTerm> (not disabled by a <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm>), the <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> might or might not choose to compute the <GlossaryTerm styled={true} term={"compiler macro expansion"}><i>compiler macro expansion</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> and, having performed the expansion, might or might not choose to process the result as a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in the same processing mode (compile-time-too or not-compile-time). If it declines to obtain or use the expansion, it must process the original <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
 
@@ -30,11 +30,16 @@ Processing of <GlossaryTerm styled={true} term={"top level form"}><i>top level f
 
 
 
-|**CT LT E Mode Action New Mode**|
-
-| :- |
-
-|<p>Yes Yes — — Process compile-time-too No Yes Yes CTT Process compile-time-too No Yes Yes NCT Process not-compile-time No Yes No — Process not-compile-time Yes No — — Evaluate — </p><p>No No Yes CTT Evaluate — No No Yes NCT Discard — No No No — Discard —</p>|
+| **CT** | **LT** | **E** | **Mode** | **Action** | **New Mode** |
+| :----- | :----- | :---- | :------- | :--------- | :----------- |
+| Yes    | Yes    | —     | —        | Process    | compile-time-too |
+| No     | Yes    | Yes   | CTT      | Process    | compile-time-too |
+| No     | Yes    | Yes   | NCT      | Process    | not-compile-time |
+| No     | Yes    | No    | —        | Process    | not-compile-time |
+| Yes    | No     | —     | —        | Evaluate   | —            |
+| No     | No     | Yes   | CTT      | Evaluate   | —            |
+| No     | No     | Yes   | NCT      | Discard    | —            |
+| No     | No     | No    | —        | Discard    | —            |
 
 
 
@@ -44,25 +49,17 @@ Processing of <GlossaryTerm styled={true} term={"top level form"}><i>top level f
 
 
 
-Column **CT** indicates whether :compile-toplevel is specified. Column **LT** indicates whether :load-toplevel is specified. Column **E** indicates whether :execute is specified. Column **Mode** indicates the processing mode; a dash (—) indicates that the processing mode is not relevant. 
+Column **CT** indicates whether `:compile-toplevel` is specified. Column **LT** indicates whether `:load-toplevel` is specified. Column **E** indicates whether `:execute` is specified. Column **Mode** indicates the processing mode; a dash (—) indicates that the processing mode is not relevant. 
 
 
 
-The
- **Action**
- column specifies one of three actions: 
+The **Action** column specifies one of three actions:
 
+- **Process:** process the body as <GlossaryTerm styled={true} term={"top level form"}>_top level forms_</GlossaryTerm> in the specified mode.
 
+- **Evaluate:** evaluate the body in the dynamic execution context of the compiler, using the <GlossaryTerm styled={true} term={"evaluation environment"}>_evaluation environment_</GlossaryTerm> as the global environment and the <GlossaryTerm styled={true} term={"lexical environment"}>_lexical environment_</GlossaryTerm> in which the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> appears.
 
-**Process:** process the body as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> in the specified mode. 
-
-
-
-**Evaluate:** evaluate the body in the dynamic execution context of the compiler, using the <GlossaryTerm styled={true} term={"evaluation environment"}><i>evaluation environment</i></GlossaryTerm> as the global environment and the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> appears. 
-
-
-
-**Discard:** ignore the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
+- **Discard:** ignore the <GlossaryTerm  term={"form"}>_form_</GlossaryTerm>.
 
 
 
@@ -70,7 +67,7 @@ The **New Mode** column indicates the new processing mode. A dash (—) indicate
 
 
 
-6\. Otherwise, the form is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> that is not one of the special cases. In compile time-too mode, the compiler first evaluates the form in the evaluation <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> and then minimally compiles it. In not-compile-time mode, the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is simply minimally compiled. All <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> are treated as <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. 
+6\. Otherwise, the form is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> that is not one of the special cases. In compile-time-too mode, the compiler first evaluates the form in the evaluation <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> and then minimally compiles it. In not-compile-time mode, the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is simply minimally compiled. All <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> are treated as <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. 
 
 
 
@@ -78,19 +75,9 @@ Note that <GlossaryTerm styled={true} term={"top level form"}><i>top level forms
 
 
 
-semantics are preserved. 
+semantics are preserved.
 
-
-
-<DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> forms cause compile-time evaluation only at top level. Both :compile-toplevel and :load-toplevel situation specifications are ignored for <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. For *non-top-level*  
-
-
-
-
-
-
-
-<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, an <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> specifying the :execute situation is treated as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> including the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the body of the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; otherwise, the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the body are ignored. 
+<DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> forms cause compile-time evaluation only at top level. Both `:compile-toplevel` and `:load-toplevel` situation specifications are ignored for <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. For *non-top-level* <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, an <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> specifying the `:execute` situation is treated as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> including the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the body of the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; otherwise, the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the body are ignored.
 
 
 

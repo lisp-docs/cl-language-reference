@@ -1,10 +1,4 @@
- 
-
-
-
 All <GlossaryTerm styled={true} term={"conforming program"}><i>conforming programs</i></GlossaryTerm> must obey the following constraints, which are designed to minimize the observable differences between compiled and interpreted programs: 
-
-
 
 *•* Definitions of any referenced <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> must be present in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm>. Any <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that is a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> beginning with a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> that does not name a <GlossaryTerm styled={true} term={"special operator"}><i>special operator</i></GlossaryTerm> or a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm> defined in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> is treated by the compiler as a function call. 
 
@@ -26,15 +20,9 @@ All <GlossaryTerm styled={true} term={"conforming program"}><i>conforming progra
 
 
 
-*•* The argument syntax and number of return values for all functions whose <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink> is declared at compile time must remain the same at run time.  
+*•* The argument syntax and number of return values for all functions whose <DictionaryLink  term={"ftype"}><b>ftype</b></DictionaryLink> is declared at compile time must remain the same at run time. 
 
-
-
-
-
-
-
-*• Constant variables* defined in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must have a <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> value at run time. A reference to a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm> is equivalent to a reference to a *literal object* that is the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
+*•* Constant variables* defined in the <GlossaryTerm styled={true} term={"compilation environment"}><i>compilation environment</i></GlossaryTerm> must have a <GlossaryTerm  term={"similar"}><i>similar</i></GlossaryTerm> value at run time. A reference to a <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm> in <GlossaryTerm styled={true} term={"source code"}><i>source code</i></GlossaryTerm> is equivalent to a reference to a *literal object* that is the <GlossaryTerm  term={"value"}><i>value</i></GlossaryTerm> of the <GlossaryTerm styled={true} term={"constant variable"}><i>constant variable</i></GlossaryTerm>. 
 
 
 
@@ -56,23 +44,15 @@ This implies that <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm>/
 
 <GlossaryTerm styled={true} term={"conforming program"}><i>Conforming programs</i></GlossaryTerm> should not be written using any additional assumptions about consistency between the run-time <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> and the startup, evaluation, and compilation <GlossaryTerm  term={"environment"}><i>environments</i></GlossaryTerm>. 
 
-
-
 Except where noted, when a compile-time and a run-time definition are different, one of the following occurs at run time: 
 
 
 
 *•* an error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"error"}><b>error</b></DictionaryLink> is signaled 
 
-
-
 *•* the compile-time definition prevails 
 
-
-
 *•* the run-time definition prevails 
-
-
 
 If the <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> processes a <GlossaryTerm styled={true} term={"function form"}><i>function form</i></GlossaryTerm> whose <GlossaryTerm  term={"operator"}><i>operator</i></GlossaryTerm> is not defined at compile time, no error is signaled at compile time. 
 

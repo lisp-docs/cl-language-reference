@@ -21,7 +21,6 @@ There are two situations in which a <GlossaryTerm styled={true} term={"compiler 
 *•* The global function name binding associated with the compiler macro is shadowed by a lexical binding of the function name. 
 
 
-
 *•* The function name has been declared or proclaimed <DictionaryLink  term={"notinline"}><b>notinline</b></DictionaryLink> and the call form appears within the scope of the declaration. 
 
 
