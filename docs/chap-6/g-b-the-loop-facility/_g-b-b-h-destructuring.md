@@ -4,26 +4,26 @@ The *d-type-spec* argument is used for destructuring. If the *d-type-spec* argum
 
 ;;; This expression uses the old syntax for type specifiers.
 
-"""lisp
+```lisp
 (loop for i fixnum upfrom 3 ...)
-"""
+```
 
 
 
 ;;; This expression uses the new syntax for type specifiers.
 
-"""lisp
+```lisp
 (loop for i of-type fixnum upfrom 3 ...)
-"""
+```
 
 
 
 ;; Declare X and Y to be of type VECTOR and FIXNUM respectively.
 
-"""lisp
+```lisp
 (loop for (x y) of-type (vector fixnum)
       in l do ...)
-"""
+```
 
 
 
@@ -63,13 +63,13 @@ To assign values from a list to the variables a, b, and c, the for clause could 
 
 ;; Collect values by using FOR constructs.
 
-"""lisp
+```lisp
 (loop for numlist in ’((1 2 4.0) (5 6 8.3) (8 9 10.4))
       for a of-type integer = (first numlist)
       and b of-type integer = (second numlist)
       and c of-type float = (third numlist)
       collect (list c b a))
-"""
+```
 
 → ((4.0 2 1) (8.3 6 5) (10.4 9 8))
 
@@ -81,11 +81,11 @@ Destructuring makes this process easier by allowing the variables to be bound in
 
 ;; Destructuring simplifies the process.
 
-"""lisp
+```lisp
 (loop for (a b c) of-type (integer integer float) in
       ’((1 2 4.0) (5 6 8.3) (8 9 10.4))
       collect (list c b a))
-"""
+```
 
 → ((4.0 2 1) (8.3 6 5) (10.4 9 8))
 
@@ -93,11 +93,11 @@ Destructuring makes this process easier by allowing the variables to be bound in
 
 ;; If all the types are the same, this way is even simpler.
 
-"""lisp
+```lisp
 (loop for (a b c) of-type float in
       ’((1.0 2.0 4.0) (5.0 6.0 8.3) (8.0 9.0 10.4))
       collect (list c b a))
-"""
+```
 
 → ((4.0 2.0 1.0) (8.3 6.0 5.0) (10.4 9.0 8.0))
 
@@ -105,12 +105,12 @@ Destructuring makes this process easier by allowing the variables to be bound in
 
 If destructuring is used to declare or initialize a number of groups of variables into <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> `and` can be used to simplify the process further.
 
-"""lisp
+```lisp
 (loop with (a b) of-type float = ’(1.0 2.0)
       and (c d) of-type integer = ’(3 4)
       and (e f)
       return (list a b c d e f))
-"""
+```
 
 → (1.0 2.0 3 4 NIL NIL)
 
@@ -120,10 +120,10 @@ If <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is use
 
 
 
-"""lisp
+```lisp
 (loop for (a nil b) = ’(1 2 3)
       do (return (list a b)))
-"""
+```
 
 → (1 3)
 
@@ -135,20 +135,20 @@ If <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink> is use
 
 Note that <GlossaryTerm styled={true} term={"dotted list"}><i>dotted lists</i></GlossaryTerm> can specify destructuring.
 
-"""lisp
+```lisp
 (loop for (x . y) = ’(1 . 2)
       do (return y))
-"""
+```
 
 → 2
 
 
 
-"""lisp
+```lisp
 (loop for ((a . b) (c . d)) of-type ((float . float) (integer . integer)) in
       ’(((1.2 . 2.4) (3 . 4)) ((3.4 . 4.6) (5 . 6)))
       collect (list a b c d))
-"""
+```
 
 → ((1.2 2.4 3 4) (3.4 4.6 5 6))
 

@@ -29,9 +29,9 @@ In the *for-as-hash* subclause the for or as construct iterates over the element
 
 In effect
 
-"""lisp
+```lisp
 being *\{*each *|* the*\} \{*hash-value *|* hash-values *|* hash-key *|* hash-keys*\} \{*in *|* of*\}*
-"""
+```
 
 is a compound preposition.
 

@@ -1,4 +1,4 @@
-"""lisp
+```lisp
 ;; These bindings occur in sequence. 
 
 (loop with a = 1 
@@ -24,4 +24,4 @@
 (loop with (a b c) of-type float 
       return (format nil "~A ~A ~A" a b c)) 
 → "0.0 0.0 0.0" 
-"""
+```

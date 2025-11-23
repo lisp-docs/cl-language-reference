@@ -60,7 +60,7 @@ Certain kinds of accumulation clauses can be combined in a <DictionaryLink  term
 
 
 
-"""lisp
+```lisp
 ;; Collect every name and the kids in one list by using
 ;; COLLECT and APPEND.
 (loop for name in ’(fred sue alice joe june)
@@ -68,7 +68,7 @@ Certain kinds of accumulation clauses can be combined in a <DictionaryLink  term
       collect name
       append kids)
 → (FRED BOB KEN SUE ALICE JOE KRIS SUNSHINE JUNE)
-"""
+```
 
 
 

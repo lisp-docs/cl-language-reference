@@ -1,4 +1,4 @@
-"""lisp
+```lisp
 (loop for i in ’(2 1 5 3 4) 
       maximize i) 
 → 5 
@@ -16,4 +16,4 @@
       minimize (round v) into result of-type fixnum 
       finally (return result)) 
 → 1 
-"""
+```

@@ -1,4 +1,4 @@
-"""lisp
+```lisp
 ;; Use APPEND to concatenate some sublists. 
 (loop for x in ’((a) (b) ((c))) 
       append x) 
@@ -9,4 +9,4 @@
       as x in ’(a b (c)) 
       nconc (if (evenp i) (list x) nil)) 
 → (A (C)) 
-"""
+```

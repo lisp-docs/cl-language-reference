@@ -1,4 +1,4 @@
-"""lisp
+```lisp
 ;; Print some numbers. 
 (loop for i from 1 to 3 
       do (print i)) 
@@ -22,4 +22,4 @@
 ▷ 1 
 ▷ 2 
 → NIL 
-"""
+```

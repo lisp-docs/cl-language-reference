@@ -1,4 +1,4 @@
-""""lisp
+```"lisp
 ;; Collect all the symbols in a list. 
 (loop for i in ’(bird 3 4 turtle (1 . 4) horse cat) 
       when (symbolp i) collect i) 
@@ -13,4 +13,4 @@
       finally (print my-list)) 
 ▷ (A C) 
 → NIL 
-""""
+```"
