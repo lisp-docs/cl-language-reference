@@ -1,7 +1,3 @@
- 
-
-
-
 If two <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> that *establish lexical bindings* with the same *name N* are textually nested, then references to *N* within the inner <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> refer to the <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> established by the inner <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; the inner <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> for *N shadows* the outer <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> for *N*. Outside the inner <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> but inside the outer one, references to *N* refer to the <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> established by the outer <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. For example: 
 
 
@@ -94,15 +90,11 @@ Consider the call (contorted-example nil nil 2). This produces 4. During the cou
 
 
 
-where f → #’(lambda () (return-from here<sub>1</sub> 4))  
+where `f` → `#’(lambda () (return-from here<sub>1</sub> 4))`
 
-
-
-
-
-
-
-(return-from here<sub>1</sub> 4) 
+```lisp"
+(return-from here<sub>1</sub> 4)
+"```
 
 
 
@@ -114,7 +106,7 @@ If, in this example, one were to change the (funcall f) to (funcall g), then the
 
 
 
-When that occurs, the value 4 is returned from the middle invocation of contorted-example, 5 is added to that to get 9, and that value is returned from the outer block and the outermost call to contorted-example. The point is that the choice of <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> returned from has nothing to do with its being innermost or outermost; rather, it depends on the lexical environment that is packaged up with a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> when <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> is executed. 
+When that occurs, the value `4` is returned from the middle invocation of `contorted-example`, `5` is added to that to get `9`, and that value is returned from the outer block and the outermost call to `contorted-example`. The point is that the choice of <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> returned from has nothing to do with its being innermost or outermost; rather, it depends on the lexical environment that is packaged up with a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm> when <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> is executed. 
 
 
 
