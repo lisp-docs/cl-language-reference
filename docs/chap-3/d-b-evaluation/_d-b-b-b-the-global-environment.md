@@ -22,11 +22,5 @@ The <GlossaryTerm styled={true} term={"global environment"}><i>global environmen
 
 
 
-*•* information about <GlossaryTerm  term={"proclamation"}><i>proclamations</i></GlossaryTerm>.  
-
-
-
-
-
-
+*•* information about <GlossaryTerm  term={"proclamation"}><i>proclamations</i></GlossaryTerm>.
 
