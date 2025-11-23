@@ -6,5 +6,6 @@ You are to fix formatting issues with this files related to:
 - Sometimes a new lines are missing
 - Keep in mind that for bullet lists to show as separate lines, they need 2 new line characters
 - Code is disperesed without it being surrounded by the code block or inline code format
+- Code blocks should use quote characters instead of backticks. Inline code however, which only uses one backtick, can still use one backtick.
 - The default language for code blocks is `lisp`
 Keep in mind that sometimes there are no issues with the text and nothing needs to be changed.
