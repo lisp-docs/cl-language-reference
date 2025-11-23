@@ -10,12 +10,12 @@ In particular, the information stored by the defining <GlossaryTerm  term={"macr
 
 
 
-"""lisp
+```lisp
 (defmacro foo (x) ‘(car ,x))
 
 (eval-when (:execute :compile-toplevel :load-toplevel)
   (print (foo ’(a b c))))
-"""
+```
 
 
 
@@ -23,11 +23,11 @@ A portable way to do the same thing would be to include the macro definition ins
 
 
 
-"""lisp
+```lisp
 (eval-when (:execute :compile-toplevel :load-toplevel)
   (defmacro foo (x) ‘(car ,x))
   (print (foo ’(a b c))))
-"""
+```
 
 
 
@@ -35,9 +35,9 @@ Figure 3–8 lists macros that make definitions available both in the compilatio
 
 
 
-"""lisp
+```lisp
 declaim define-modify-macro defsetf defclass define-setf-expander defstruct defconstant defmacro deftype define-compiler-macro defpackage defvar define-condition defparameter
-"""
+```
 
 
 
