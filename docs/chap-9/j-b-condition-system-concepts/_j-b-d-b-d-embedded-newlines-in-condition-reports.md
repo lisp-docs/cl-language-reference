@@ -6,59 +6,37 @@ If the calling routine conventionally inserts some additional prefix (such as �
 
 
 
+"""lisp
 (defun test () 
+  (error "This is an error message.&#126;%It has two lines."))
+"""
 
 
 
-(error "This is an error message.&#126;%It has two lines.")) 
+"""lisp
+;; Implementation A
+(test)
+This is an error message.
+It has two lines.
+"""
 
 
 
-;; Implementation A 
+"""lisp
+;; Implementation B
+(test)
+;; Error: This is an error message.
+;; It has two lines.
+"""
 
 
 
-(test) 
-
-
-
-This is an error message. 
-
-
-
-It has two lines. 
-
-
-
-;; Implementation B 
-
-
-
-(test) 
-
-
-
-;; Error: This is an error message. 
-
-
-
-;; It has two lines. 
-
-
-
-;; Implementation C 
-
-
-
-(test) 
-
-
-
-» Error: This is an error message. 
-
-
-
-It has two lines. 
+"""lisp
+;; Implementation C
+(test)
+» Error: This is an error message.
+It has two lines.
+"""
 
 
 
