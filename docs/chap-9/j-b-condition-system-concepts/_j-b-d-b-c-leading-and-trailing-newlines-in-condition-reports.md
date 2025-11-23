@@ -10,19 +10,27 @@ It is recommended that a <GlossaryTerm styled={true} term={"report message"}><i>
 
 
 
+"""lisp
 (error "This is a message.&#126;%") ; Not recommended 
+"""
 
 
 
+"""lisp
 (error "&#126;&amp;This is a message.") ; Not recommended 
+"""
 
 
 
+"""lisp
 (error "&#126;&amp;This is a message.&#126;%") ; Not recommended 
+"""
 
 
 
+"""lisp
 (error "This is a message.") ; Recommended instead 
+"""
 
 
 
