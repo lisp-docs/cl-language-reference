@@ -5,8 +5,7 @@
 For interactive handling, two pieces of information are needed from a <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm>: a report function and an interactive function. 
 
 
-
-The report function is used by a program such as the debugger to present a description of the action the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> will take. The report function is specified and established by the :report-function keyword to <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> or the :report keyword to <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>. 
+The report function is used by a program such as the debugger to present a description of the action the <GlossaryTerm styled={true} term={"restart"}><i>restart</i></GlossaryTerm> will take. The report function is specified and established by the :report-function keyword to <DictionaryLink styled={true} term={"restart-bind"}><b>restart-bind</b></DictionaryLink> or the :report keyword to <DictionaryLink styled={true} term={"restart-case"}><b>restart-case</b></DictionaryLink>.
 
 
 
