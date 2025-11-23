@@ -10,15 +10,12 @@ A <GlossaryTerm styled={true} term={"define-modify-macro lambda list"}><i>define
 
 
 
-|**&amp;optional &amp;rest**|
+| Keywords |
+| :------- |
+| **&amp;optional** |
+| **&amp;rest** |
 
-| :- |
-
-
-
-
-
-**Figure 3–20. Lambda List Keywords used by Define-modify-macro Lambda Lists** 
+**Figure 3–20. Lambda List Keywords used by Define-modify-macro Lambda Lists**
 
 
 

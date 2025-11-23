@@ -6,15 +6,12 @@ A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized la
 
 
 
-|**defmethod defgeneric**|
+| Operators |
+| :-------- |
+| **defmethod** |
+| **defgeneric** |
 
-| :- |
-
-
-
-
-
-**Figure 3–15. Standardized Operators that use Specialized Lambda Lists** 
+**Figure 3–15. Standardized Operators that use Specialized Lambda Lists**
 
 
 
@@ -22,15 +19,15 @@ A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized la
 
 
 
-|<p>**&amp;allow-other-keys &amp;key &amp;rest** </p><p>**&amp;aux &amp;optional**</p>|
+| Keywords |
+| :------- |
+| **&amp;allow-other-keys** |
+| **&amp;key** |
+| **&amp;rest** |
+| **&amp;aux** |
+| **&amp;optional** |
 
-| :- |
-
-
-
-
-
-**Figure 3–16. Lambda List Keywords used by Specialized Lambda Lists** 
+**Figure 3–16. Lambda List Keywords used by Specialized Lambda Lists**
 
 
 
@@ -38,19 +35,14 @@ A <GlossaryTerm styled={true} term={"specialized lambda list"}><i>specialized la
 
 
 
-*lambda-list::*=(*\{var |* (*var* [*specializer*])*\}*\* 
-
-
-
-[&amp;optional *\{var |* (*var* [*init-form* [*supplied-p-parameter*]])*\}*\*] 
-
-
-
-[&amp;rest *var*] 
-
-
-
-[&amp;key *\{var |* (*\{var |* (*keyword-name var*)*\}* [*init-form* [*supplied-p-parameter*]])*\}*\* [&amp;allow-other-keys[&amp;aux *\{var |* (*var* [*init-form*])*\}*\*])  
+"""text
+lambda-list::=({var | (var [specializer])}*
+  [&optional {var | (var [init-form [supplied-p-parameter]])}*]
+  [&rest var]
+  [&key {var | ({var | (keyword-name var)} [init-form [supplied-p-parameter]])}*
+    [&allow-other-keys]]
+  [&aux {var | (var [init-form])}*])
+"""
 
 
 

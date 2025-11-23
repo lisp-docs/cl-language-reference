@@ -6,15 +6,14 @@ A <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda list</i
 
 
 
-|<p>**define-compiler-macro defmacro macrolet** </p><p><DictionaryLink  term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink></p>|
+| Operators |
+| :-------- |
+| **define-compiler-macro** |
+| **defmacro** |
+| **macrolet** |
+| <DictionaryLink term={"define-setf-expander"}><b>define-setf-expander</b></DictionaryLink> |
 
-| :- |
-
-
-
-
-
-**Figure 3–17. Operators that use Macro Lambda Lists** 
+**Figure 3–17. Operators that use Macro Lambda Lists**
 
 
 
@@ -22,51 +21,22 @@ With the additional restriction that an <GlossaryTerm styled={true} term={"envir
 
 
 
-*reqvars::*=*\{var | ↓pattern\}*\* 
+"""text
+reqvars::={var | ↓pattern}*
+optvars::=[&optional {var | ({var | ↓pattern} [init-form [supplied-p-parameter]])}*]
+restvar::=[{&rest | &body} {var | ↓pattern}]
+keyvars::=[&key {var | ({var | (keyword-name {var | ↓pattern})} [init-form [supplied-p-parameter]])}* [&allow-other-keys]]
+auxvars::=[&aux {var | (var [init-form])}*]
+envvar::=[&environment var]
+wholevar::=[&whole var]
 
+lambda-list::=(↓wholevar ↓envvar ↓reqvars ↓envvar ↓optvars ↓envvar
+  ↓restvar ↓envvar ↓keyvars ↓envvar ↓auxvars ↓envvar) |
+  (↓wholevar ↓envvar ↓reqvars ↓envvar ↓optvars ↓envvar . var)
 
-
-*optvars::*=[&amp;optional *\{var |* (*\{var | ↓pattern\}* [*init-form* [*supplied-p-parameter*]])*\}*\*] 
-
-
-
-*restvar::*=[*\{*&amp;rest *|* &amp;body*\} \{var | ↓pattern\}*] 
-
-
-
-*keyvars::*=[&amp;key *\{var |* (*\{var |* (*keyword-name \{var | ↓pattern\}*)*\}* [*init-form* [*supplied-p-parameter*]])*\}*\* [&amp;allow-other-keys]] 
-
-
-
-*auxvars::*=[&amp;aux *\{var |* (*var* [*init-form*])*\}*\*] 
-
-
-
-*envvar::*=[&amp;environment *var*] 
-
-
-
-*wholevar::*=[&amp;whole *var*] 
-
-
-
-*lambda-list::*=(*↓wholevar ↓envvar ↓reqvars ↓envvar ↓optvars ↓envvar* 
-
-
-
-*↓restvar ↓envvar ↓keyvars ↓envvar ↓auxvars ↓envvar*) *|* 
-
-
-
-(*↓wholevar ↓envvar ↓reqvars ↓envvar ↓optvars ↓envvar* . *var*) 
-
-
-
-*pattern::*=(*↓wholevar ↓reqvars ↓optvars ↓restvar ↓keyvars ↓auxvars*) *|* 
-
-
-
-(*↓wholevar ↓reqvars ↓optvars* . *var*) 
+pattern::=(↓wholevar ↓reqvars ↓optvars ↓restvar ↓keyvars ↓auxvars) |
+  (↓wholevar ↓reqvars ↓optvars . var)
+"""
 
 
 
@@ -74,15 +44,18 @@ A <GlossaryTerm styled={true} term={"macro lambda list"}><i>macro lambda list</i
 
 
 
-|<p>**&amp;allow-other-keys &amp;environment &amp;rest** </p><p>**&amp;aux &amp;key &amp;whole** </p><p>**&amp;body &amp;optional**</p>|
+| Keywords |
+| :------- |
+| **&amp;allow-other-keys** |
+| **&amp;environment** |
+| **&amp;rest** |
+| **&amp;aux** |
+| **&amp;key** |
+| **&amp;whole** |
+| **&amp;body** |
+| **&amp;optional** |
 
-| :- |
-
-
-
-
-
-**Figure 3–18. Lambda List Keywords used by Macro Lambda Lists**  
+**Figure 3–18. Lambda List Keywords used by Macro Lambda Lists**
 
 
 

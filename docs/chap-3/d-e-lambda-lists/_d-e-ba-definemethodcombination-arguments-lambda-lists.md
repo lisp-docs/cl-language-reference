@@ -10,15 +10,16 @@ A *define-method-combination arguments lambda list* can contain the <GlossaryTer
 
 
 
-|<p>**&amp;allow-other-keys &amp;key &amp;rest** </p><p>**&amp;aux &amp;optional &amp;whole**</p>|
+| Keywords |
+| :------- |
+| **&amp;allow-other-keys** |
+| **&amp;key** |
+| **&amp;rest** |
+| **&amp;aux** |
+| **&amp;optional** |
+| **&amp;whole** |
 
-| :- |
-
-
-
-
-
-**Figure 3–21. Lambda List Keywords used by Define-method-combination arguments Lambda Lists** 
+**Figure 3–21. Lambda List Keywords used by Define-method-combination arguments Lambda Lists**
 
 
 
