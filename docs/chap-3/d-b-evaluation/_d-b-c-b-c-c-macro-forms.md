@@ -1,7 +1,3 @@
- 
-
-
-
 If the <GlossaryTerm  term={"operator"}><i>operator</i></GlossaryTerm> names a <GlossaryTerm  term={"macro"}><i>macro</i></GlossaryTerm>, its associated <GlossaryTerm styled={true} term={"macro function"}><i>macro function</i></GlossaryTerm> is applied to the entire <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> and the result of that application is used in place of the original <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
@@ -34,7 +30,7 @@ Figure 3–3 lists some <GlossaryTerm styled={true} term={"defined name"}><i>def
 
 
 
-|**\*macroexpand-hook\* macro-function macroexpand-1 defmacro macroexpand macrolet**|
+|**`*macroexpand-hook*` `macro-function` `macroexpand-1` `defmacro` `macroexpand` `macrolet`**|
 
 | :- |
 
