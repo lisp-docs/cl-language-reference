@@ -1,7 +1,3 @@
- 
-
-
-
 The following terminology is used in this section. 
 
 
