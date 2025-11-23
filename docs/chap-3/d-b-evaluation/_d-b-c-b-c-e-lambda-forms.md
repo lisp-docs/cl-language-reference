@@ -10,7 +10,5 @@ A <GlossaryTerm styled={true} term={"lambda form"}><i>lambda form</i></GlossaryT
 
 
 
-For further information, see Section 3.1.3 (Lambda Expressions). 
-
-
+For further information, see Section 3.1.3 (Lambda Expressions).
 
