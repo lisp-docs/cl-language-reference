@@ -10,27 +10,14 @@ A <GlossaryTerm styled={true} term={"defsetf lambda list"}><i>defsetf lambda lis
 
 
 
-*lambda-list::*=(*\{var\}*\* 
-
-
-
-[&amp;optional *\{var |* (*var* [*init-form* [*supplied-p-parameter*]])*\}*\*] 
-
-
-
-[&amp;rest *var*] 
-
-
-
-[&amp;key *\{var |* (*\{var |* (*keyword-name var*)*\}* [*init-form* [*supplied-p-parameter*]])*\}*\* 
-
-
-
-[&amp;allow-other-keys]] 
-
-
-
-[&amp;environment *var*] 
+"""text
+lambda-list::=({var}*
+  [&optional {var | (var [init-form [supplied-p-parameter]])}*]
+  [&rest var]
+  [&key {var | ({var | (keyword-name var)} [init-form [supplied-p-parameter]])}*
+    [&allow-other-keys]]
+  [&environment var])
+"""
 
 
 
@@ -38,15 +25,15 @@ A <GlossaryTerm styled={true} term={"defsetf lambda list"}><i>defsetf lambda lis
 
 
 
-|<p>**&amp;allow-other-keys &amp;key &amp;rest** </p><p>**&amp;environment &amp;optional**</p>|
+| Keywords |
+| :------- |
+| **&amp;allow-other-keys** |
+| **&amp;key** |
+| **&amp;rest** |
+| **&amp;environment** |
+| **&amp;optional** |
 
-| :- |
-
-
-
-
-
-**Figure 3–19. Lambda List Keywords used by Defsetf Lambda Lists** 
+**Figure 3–19. Lambda List Keywords used by Defsetf Lambda Lists**
 
 
 
