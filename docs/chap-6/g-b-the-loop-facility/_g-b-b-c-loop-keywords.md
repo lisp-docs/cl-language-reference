@@ -10,19 +10,7 @@ In general, <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</
 
 
 
-If no <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</i></GlossaryTerm> are supplied in a <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, the Loop Facility executes the loop body repeatedly; see Section 6.1.1.1.1 (Simple Loop). 
-
-
-
-
-
-
-
- 
-
-
-
- 
+If no <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keywords</i></GlossaryTerm> are supplied in a <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>, the Loop Facility executes the loop body repeatedly; see Section 6.1.1.1.1 (Simple Loop).
 
 
 
