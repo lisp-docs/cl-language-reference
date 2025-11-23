@@ -10,9 +10,10 @@ An <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda 
 
 
 
-|<p>**define-method-combination handler-case restart-case defun labels** </p><p>**flet lambda**</p>|
-
-| :- |
+| Operators |
+| :-------- |
+| **define-method-combination handler-case restart-case defun labels** |
+| **flet lambda** |
 
 
 
@@ -26,9 +27,10 @@ An <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordinary lambda 
 
 
 
-|<p>**&amp;allow-other-keys &amp;key &amp;rest** </p><p>**&amp;aux &amp;optional**</p>|
-
-| :- |
+| Keywords |
+| :------- |
+| **&amp;allow-other-keys &amp;key &amp;rest** |
+| **&amp;aux &amp;optional** |
 
 
 
