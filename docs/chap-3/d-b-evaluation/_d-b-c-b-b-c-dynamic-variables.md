@@ -30,7 +30,5 @@ A <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i><
 
 
 
-A <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> is <GlossaryTerm  term={"unbound"}><i>unbound</i></GlossaryTerm> unless and until explicitly assigned a value, except for those variables whose initial value is defined in this specification or by an <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>. 
-
-
+A <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> is <GlossaryTerm  term={"unbound"}><i>unbound</i></GlossaryTerm> unless and until explicitly assigned a value, except for those variables whose initial value is defined in this specification or by an <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm>.
 
