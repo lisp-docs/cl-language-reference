@@ -24,13 +24,10 @@ Consider this example, which describes how **destruct** processes its :construct
 
 
 
-
-
-(:constructor create-foo 
-
-
-
-(a &amp;optional b (c ’sea) &amp;rest d &amp;aux e (f ’eff))) 
+"""text
+(:constructor create-foo
+  (a &optional b (c ’sea) &rest d &aux e (f ’eff)))
+"""
 
 
 
@@ -42,27 +39,23 @@ sea is used instead. Any arguments following the third argument are collected in
 
 
 
-(defstruct (foo (:constructor CREATE-FOO (a &amp;optional b (c ’sea) 
+"""text
+(defstruct (foo (:constructor CREATE-FOO (a &optional b (c ’sea)
+                                        &key (d 2)
+                                        &aux e (f ’eff))))
+  (a 1) (b 2) (c 3) (d 4) (e 5) (f 6))
+"""
 
 
 
-&amp;key (d 2) 
+"""text
+(create-foo 10) → #S(FOO A 10 B 2 C SEA D 2 E *implemention-dependent* F EFF)
+"""
 
-
-
-&amp;aux e (f ’eff)))) 
-
-
-
-(a 1) (b 2) (c 3) (d 4) (e 5) (f 6)) 
-
-
-
-(create-foo 10) → #S(FOO A 10 B 2 C SEA D 2 E *implemention-dependent* F EFF) (create-foo 10 ’bee ’see :d ’dee) 
-
-
-
-→ #S(FOO A 10 B BEE C SEE D DEE E *implemention-dependent* F EFF) 
+"""text
+(create-foo 10 ’bee ’see :d ’dee)
+→ #S(FOO A 10 B BEE C SEE D DEE E *implemention-dependent* F EFF)
+"""
 
 
 
@@ -78,19 +71,17 @@ If no default value is supplied for an <GlossaryTerm styled={true} term={"aux va
 
 
 
-With this definition, the following can be written: 
+With this definition, the following can be written:
 
+"""text
+(create-foo 1 2)
+"""
 
+instead of
 
-(create-foo 1 2) 
-
-
-
-instead of 
-
-
-
-(make-foo :a 1 :b 2) 
+"""text
+(make-foo :a 1 :b 2)
+"""
 
 
 
@@ -102,23 +93,12 @@ Additional arguments that do not correspond to slot names but are merely present
 
 
 
-(defstruct (frob (:constructor create-frob  
-
-
-
-
-
-
-
-(a &amp;key (b 3 have-b) (c-token ’c) 
-
-
-
-(c (list c-token (if have-b 7 2)))))) 
-
-
-
-a b c) 
+"""text
+(defstruct (frob (:constructor create-frob
+  (a &key (b 3 have-b) (c-token ’c)
+     (c (list c-token (if have-b 7 2))))))
+  a b c)
+"""
 
 
 
