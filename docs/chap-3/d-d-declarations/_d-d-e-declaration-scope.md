@@ -25,21 +25,15 @@ The <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of a <GlossaryTerm
 Unless explicitly stated otherwise, the <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of a <GlossaryTerm styled={true} term={"free declaration"}><i>free declaration</i></GlossaryTerm> includes only the body <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> of the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> at whose head it appears, and no other <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm>. The <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of <GlossaryTerm styled={true} term={"free declaration"}><i>free declarations</i></GlossaryTerm> specifically does not include <GlossaryTerm styled={true} term={"initialization form"}><i>initialization forms</i></GlossaryTerm> for <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> established by the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> containing the <GlossaryTerm  term={"declaration"}><i>declarations</i></GlossaryTerm>. 
 
 
-
 Some <GlossaryTerm styled={true} term={"iteration form"}><i>iteration forms</i></GlossaryTerm> include step, end-test, or result <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> that are also included in the <GlossaryTerm  term={"scope"}><i>scope</i></GlossaryTerm> of <GlossaryTerm  term={"declaration"}><i>declarations</i></GlossaryTerm> that appear in the <GlossaryTerm styled={true} term={"iteration form"}><i>iteration form</i></GlossaryTerm>. Specifically, the <GlossaryTerm styled={true} term={"iteration form"}><i>iteration forms</i></GlossaryTerm> and <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> involved are: 
 
+* <DictionaryLink  term={"do"}><b>do</b></DictionaryLink>, <DictionaryLink  term={"do"}><b>do\*</b></DictionaryLink>: `step-forms`, `end-test-form`, and `result-forms`.
 
 
-*•* <DictionaryLink  term={"do"}><b>do</b></DictionaryLink>, <DictionaryLink  term={"do"}><b>do\*</b></DictionaryLink>: *step-forms*, *end-test-form*, and *result-forms*. 
+* <DictionaryLink  term={"dolist"}><b>dolist</b></DictionaryLink>, <DictionaryLink  term={"dotimes"}><b>dotimes</b></DictionaryLink>: `result-form`
 
 
-
-*•* <DictionaryLink  term={"dolist"}><b>dolist</b></DictionaryLink>, <DictionaryLink  term={"dotimes"}><b>dotimes</b></DictionaryLink>: *result-form* 
-
-
-
-*•* <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink>, <DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink>, <DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink>: *result-form*  
-
+* <DictionaryLink  term={"do-all-symbols"}><b>do-all-symbols</b></DictionaryLink>, <DictionaryLink  term={"do-external-symbols"}><b>do-external-symbols</b></DictionaryLink>, <DictionaryLink  term={"do-symbols"}><b>do-symbols</b></DictionaryLink>: `result-form`
 
 
 
