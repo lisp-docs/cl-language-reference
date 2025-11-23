@@ -2,8 +2,8 @@ Conditional signaling of <GlossaryTerm styled={true} term={"condition"}><i>condi
 
 | Operator                 |
 | :----------------------- |
-| **assert check-type ecase** |
-| **ccase ctypecase etypecase** |
+| `assert` `check-type` `ecase` |
+| `ccase` `ctypecase` `etypecase` |
 
 **Figure 9–7. Operators relating to assertions.**
 
