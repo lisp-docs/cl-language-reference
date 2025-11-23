@@ -1,7 +1,3 @@
- 
-
-
-
 A <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"dynamic variable"}><i>dynamic variable</i></GlossaryTerm> if one of the following conditions hold: 
 
 
