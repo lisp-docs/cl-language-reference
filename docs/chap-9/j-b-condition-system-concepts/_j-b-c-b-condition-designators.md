@@ -6,7 +6,7 @@ A number of the functions in the condition system take arguments which are ident
 
 
 
-`*datum* &amp;rest <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>`
+`*datum* &rest` <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>
 
 Taken together, the *datum* and the <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> are “<GlossaryTerm styled={true} term={"designator"}><i>designators</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of default type *default-type*.”
 
@@ -30,7 +30,7 @@ The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></Glo
 ```lisp
 (make-condition *defaulted-type* 
   :format-control *datum* 
-  :format-arguments <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>)
+  :format-arguments *arguments*)
 ```
 
 where the *defaulted-type* is a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of *default-type*.
