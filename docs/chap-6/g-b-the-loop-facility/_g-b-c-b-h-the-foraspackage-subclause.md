@@ -38,6 +38,6 @@ These loop prepositions introduce <GlossaryTerm styled={true} term={"package"}><
 
 
 
-In effect `being {each | the} {<GlossaryTerm styled={true} term={"symbol"}><i>symbol </i></GlossaryTerm>| symbols | present-symbol | present-symbols | external-symbol | external-symbols} {in | of}` is a compound preposition.
+In effect `being {each | the} {symbol | symbols | present-symbol | present-symbols | external-symbol | external-symbols} {in | of}` is a compound preposition.
 
 Iteration stops when there are no more <GlossaryTerm styled={true} term={"symbol"}><i>symbols</i></GlossaryTerm> to be referenced in the supplied <GlossaryTerm styled={true} term={"package"}><i>package</i></GlossaryTerm>.
