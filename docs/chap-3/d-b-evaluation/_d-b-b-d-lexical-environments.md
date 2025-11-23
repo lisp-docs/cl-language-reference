@@ -1,7 +1,3 @@
- 
-
-
-
 A <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> for <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> at some position in a <GlossaryTerm  term={"program"}><i>program</i></GlossaryTerm> is that part of the <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> that contains information having <GlossaryTerm styled={true} term={"lexical scope"}><i>lexical scope</i></GlossaryTerm> within the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> containing that position. A <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> contains, among other things, the following: 
 
 
