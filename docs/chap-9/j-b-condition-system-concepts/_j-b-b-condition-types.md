@@ -4,7 +4,7 @@
 
 Figure 9–1 lists the *standardized condition types*. Additional *condition types* can be defined by using <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink>. 
 
-|**arithmetic-error floating-point-overflow simple-type-error cell-error floating-point-underflow simple-warning condition package-error storage-condition control-error parse-error stream-error division-by-zero print-not-readable style-warning end-of-file program-error type-error error reader-error unbound-slot file-error serious-condition unbound-variable floating-point-inexact simple-condition undefined-function floating-point-invalid-operation simple-error warning**|
+|`arithmetic-error` `floating-point-overflow` `simple-type-error` `cell-error` `floating-point-underflow` `simple-warning` `condition` `package-error` `storage-condition` `control-error` `parse-error` `stream-error` `division-by-zero` `print-not-readable` `style-warning` `end-of-file` `program-error` `type-error` `error` `reader-error` `unbound-slot` `file-error` `serious-condition` `unbound-variable` `floating-point-inexact` `simple-condition` `undefined-function` `floating-point-invalid-operation` `simple-error` `warning`|
 | :- |
 
 
@@ -39,8 +39,7 @@ Figure 9–2 shows <GlossaryTerm styled={true} term={"operator"}><i>operators</i
 
 
 
-|**define-condition make-condition**|
-
+|`define-condition` `make-condition`|
 | :- |
 
 
@@ -67,7 +66,7 @@ Figure 9–3 shows <GlossaryTerm styled={true} term={"operator"}><i>operators</i
 
 
 
-|<p>**arithmetic-error-operands simple-condition-format-arguments arithmetic-error-operation simple-condition-format-control cell-error-name stream-error-stream** </p><p>**file-error-pathname type-error-datum** </p><p>**package-error-package type-error-expected-type** </p><p>**print-not-readable-object unbound-slot-instance**</p>|
+|<p>`arithmetic-error-operands` `simple-condition-format-arguments` `arithmetic-error-operation` `simple-condition-format-control` `cell-error-name` `stream-error-stream` </p><p>`file-error-pathname` `type-error-datum` </p><p>`package-error-package` `type-error-expected-type` </p><p>`print-not-readable-object` `unbound-slot-instance`</p>|
 
 | :- |
 
