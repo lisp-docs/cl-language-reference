@@ -106,11 +106,7 @@ All other standardized types
 
 
 
-[This category includes, for example, <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>, <DictionaryLink  term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, 
-
-
-
-<DictionaryLink  term={"method-combination"}><b>method-combination</b></DictionaryLink>, <DictionaryLink  term={"method"}><b>method</b></DictionaryLink>, <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink  term={"package"}><b>package</b></DictionaryLink>, <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"restart"}><b>restart</b></DictionaryLink>, and <DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink>.] There are no *standardized destructive* operations defined on <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> of these <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>. 
+[This category includes, for example, <DictionaryLink  term={"character"}><b>character</b></DictionaryLink>, <DictionaryLink  term={"condition"}><b>condition</b></DictionaryLink>, <DictionaryLink  term={"function"}><b>function</b></DictionaryLink>, <DictionaryLink  term={"method-combination"}><b>method-combination</b></DictionaryLink>, <DictionaryLink  term={"method"}><b>method</b></DictionaryLink>, <DictionaryLink  term={"number"}><b>number</b></DictionaryLink>, <DictionaryLink  term={"package"}><b>package</b></DictionaryLink>, <DictionaryLink  term={"pathname"}><b>pathname</b></DictionaryLink>, <DictionaryLink  term={"restart"}><b>restart</b></DictionaryLink>, and <DictionaryLink  term={"symbol"}><b>symbol</b></DictionaryLink>.] There are no *standardized destructive* operations defined on <GlossaryTerm  term={"object"}><i>objects</i></GlossaryTerm> of these <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>. 
 
 
 
