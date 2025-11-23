@@ -1,7 +1,3 @@
- 
-
-
-
 If a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm>, then it is either a <GlossaryTerm styled={true} term={"symbol macro"}><i>symbol macro</i></GlossaryTerm> or a <GlossaryTerm  term={"variable"}><i>variable</i></GlossaryTerm>. 
 
 
@@ -34,9 +30,13 @@ An error of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryL
 
 
 
-|<p>**boundp let progv** </p><p>**defconstant let\* psetq** </p><p>**defparameter makunbound set** </p><p>**defvar multiple-value-bind setq** </p><p>**lambda multiple-value-setq symbol-value**</p>|
-
-| :- |
+"""lisp
+boundp let progv
+defconstant let* psetq
+defparameter makunbound set
+defvar multiple-value-bind setq
+lambda multiple-value-setq symbol-value
+"""
 
 
 
