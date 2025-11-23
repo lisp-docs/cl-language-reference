@@ -48,14 +48,14 @@ The syntax for <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordi
 
 
 
-"""text
+```text
 lambda-list::=({var}*
   [&optional {var | (var [init-form [supplied-p-parameter]])}*]
   [&rest var]
   [&key {var | ({var | (keyword-name var)} [init-form [supplied-p-parameter]])}*
     [&allow-other-keys]]
   [&aux {var | (var [init-form])}*])
-"""
+```
 
 
 
