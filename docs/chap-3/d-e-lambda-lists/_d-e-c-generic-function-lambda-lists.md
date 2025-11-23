@@ -38,15 +38,14 @@ A <GlossaryTerm styled={true} term={"generic function lambda list"}><i>generic f
 
 
 
-|<p>**&amp;allow-other-keys &amp;optional** </p><p>**&amp;key &amp;rest**</p>|
+| Keywords |
+| :------- |
+| **&amp;allow-other-keys** |
+| **&amp;optional** |
+| **&amp;key** |
+| **&amp;rest** |
 
-| :- |
-
-
-
-
-
-**Figure 3–14. Lambda List Keywords used by Generic Function Lambda Lists** Evaluation and 
+**Figure 3–14. Lambda List Keywords used by Generic Function Lambda Lists**
 
 
 
