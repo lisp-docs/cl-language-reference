@@ -6,7 +6,9 @@ A <GlossaryTerm styled={true} term={"handler"}><i>handler</i></GlossaryTerm> is 
 *Active handlers* are *established* by using <DictionaryLink styled={true} term={"handler-bind"}><b>handler-bind</b></DictionaryLink> (or an abstraction based on <DictionaryLink styled={true} term={"handler-bind"}><b>handler-bind</b></DictionaryLink>, such as <DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink> or <DictionaryLink styled={true} term={"ignore-errors"}><b>ignore-errors</b></DictionaryLink>).
 
 *Active handlers* can be *established* within the dynamic scope of other *active handlers*.
+
 At any point during program execution, there is a set of *active handlers*.
+
 When a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is signaled, the *most* *recent* active <GlossaryTerm styled={true} term={"applicable handler"}><i>applicable handler</i></GlossaryTerm> for that <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is selected from this set.
 
 Given a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm>, the order of recentness of active <GlossaryTerm styled={true} term={"applicable handler"}><i>applicable handlers</i></GlossaryTerm> is defined by the following two rules:
