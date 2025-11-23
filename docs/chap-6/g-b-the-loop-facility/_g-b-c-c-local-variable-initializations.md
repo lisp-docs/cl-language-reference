@@ -2,23 +2,7 @@ When a <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> 
 
 
 
-The with construct initializes variables that are local to a loop. The variables are initialized one time only. If the optional `*type-spec*` argument is supplied for the variable `*var*`, but there is no related expression to be evaluated, `*var*` is initialized to an appropriate default value for its <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. For example, for the types <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>, <DictionaryLink styled={true} term={"number"}><b>number</b></DictionaryLink>, and <DictionaryLink styled={true} term={"float"}><b>float</b></DictionaryLink>, the default values are <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, `0`, and `0.0` respectively. The consequences are undefined if a `*type-spec*` argument is supplied for `*var*` if the related expression returns a value that is not of the supplied <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. By default, the with construct initializes variables <GlossaryTerm styled={true} term={"sequentially"}><i>sequentially</i></GlossaryTerm>; that is, one variable is assigned a value before the next expression is evaluated. However, by using the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> and to join several with clauses, initializations can be forced to 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-occur in <GlossaryTerm styled={true} term={"parallel"}><i>parallel</i></GlossaryTerm>; that is, all of the supplied <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are evaluated, and the results are bound to the respective variables simultaneously. 
+The with construct initializes variables that are local to a loop. The variables are initialized one time only. If the optional `*type-spec*` argument is supplied for the variable `*var*`, but there is no related expression to be evaluated, `*var*` is initialized to an appropriate default value for its <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. For example, for the types <DictionaryLink styled={true} term={"t"}><b>t</b></DictionaryLink>, <DictionaryLink styled={true} term={"number"}><b>number</b></DictionaryLink>, and <DictionaryLink styled={true} term={"float"}><b>float</b></DictionaryLink>, the default values are <DictionaryLink styled={true} term={"nil"}><b>nil</b></DictionaryLink>, `0`, and `0.0` respectively. The consequences are undefined if a `*type-spec*` argument is supplied for `*var*` if the related expression returns a value that is not of the supplied <GlossaryTerm styled={true} term={"type"}><i>type</i></GlossaryTerm>. By default, the with construct initializes variables <GlossaryTerm styled={true} term={"sequentially"}><i>sequentially</i></GlossaryTerm>; that is, one variable is assigned a value before the next expression is evaluated. However, by using the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> and to join several with clauses, initializations can be forced to occur in <GlossaryTerm styled={true} term={"parallel"}><i>parallel</i></GlossaryTerm>; that is, all of the supplied <GlossaryTerm styled={true} term={"form"}><i>forms</i></GlossaryTerm> are evaluated, and the results are bound to the respective variables simultaneously. 
 
 
 

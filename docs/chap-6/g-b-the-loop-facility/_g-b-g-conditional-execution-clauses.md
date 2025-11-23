@@ -2,11 +2,7 @@
 
 
 
-The if, when, and unless constructs establish conditional control in a <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink>. If the test passes, the succeeding loop clause is executed. If the test does not pass, the succeeding clause is skipped, and program control moves to the clause that follows the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> else. If the test does not pass and no else clause is supplied, control is transferred to the clause or construct following the entire 
-
-
-
-conditional clause. 
+The if, when, and unless constructs establish conditional control in a <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink>. If the test passes, the succeeding loop clause is executed. If the test does not pass, the succeeding clause is skipped, and program control moves to the clause that follows the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> else. If the test does not pass and no else clause is supplied, control is transferred to the clause or construct following the entire conditional clause. 
 
 
 
