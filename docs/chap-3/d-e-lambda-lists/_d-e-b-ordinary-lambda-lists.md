@@ -48,27 +48,14 @@ The syntax for <GlossaryTerm styled={true} term={"ordinary lambda list"}><i>ordi
 
 
 
-*lambda-list::*=(*\{var\}*\* 
-
-
-
-[&amp;optional *\{var |* (*var* [*init-form* [*supplied-p-parameter*]])*\}*\*] 
-
-
-
-[&amp;rest *var*] 
-
-
-
-[&amp;key *\{var |* (*\{var |* (*keyword-name var*)*\}* [*init-form* [*supplied-p-parameter*]])*\}*\* 
-
-
-
-[&amp;allow-other-keys]] 
-
-
-
-[&amp;aux *\{var |* (*var* [*init-form*])*\}*\*]) 
+"""text
+lambda-list::=({var}*
+  [&optional {var | (var [init-form [supplied-p-parameter]])}*]
+  [&rest var]
+  [&key {var | ({var | (keyword-name var)} [init-form [supplied-p-parameter]])}*
+    [&allow-other-keys]]
+  [&aux {var | (var [init-form])}*])
+"""
 
 
 
