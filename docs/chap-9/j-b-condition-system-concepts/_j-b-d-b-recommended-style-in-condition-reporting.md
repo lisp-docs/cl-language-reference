@@ -2,7 +2,7 @@
 
 
 
-In order to ensure a properly aesthetic result when presenting <GlossaryTerm styled={true} term={"report message"}><i>report messages</i></GlossaryTerm> to the user, certain stylistic conventions are recommended. 
+In order to ensure a properly aesthetic result when presenting <GlossaryTerm styled={true} term={"report message"}><i>report messages</i></GlossaryTerm> to the user, certain stylistic conventions are recommended.
 
 
 
