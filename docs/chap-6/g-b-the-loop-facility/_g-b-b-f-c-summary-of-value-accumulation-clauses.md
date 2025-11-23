@@ -1,9 +1,5 @@
 
- 
-
-
-
-The collect (or collecting) construct takes one <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> in its clause and adds the value of that <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> to the end of a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of values. By default, the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of values is returned when the <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> finishes. 
+The collect (or collecting) construct takes one <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> in its clause and adds the value of that <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm> to the end of a <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of values. By default, the <GlossaryTerm styled={true} term={"list"}><i>list</i></GlossaryTerm> of values is returned when the <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> finishes.
 
 
 
