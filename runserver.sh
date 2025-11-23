@@ -1,1 +1,1 @@
-npx docusaurus start
+yarn run docusaurus start
