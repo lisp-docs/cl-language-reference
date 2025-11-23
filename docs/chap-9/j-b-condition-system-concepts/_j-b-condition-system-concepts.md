@@ -38,25 +38,9 @@ It can decline to <GlossaryTerm styled={true} term={"handle"}><i>handle</i></Glo
 
 
 
-It can <GlossaryTerm styled={true} term={"handle"}><i>handle</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> by performing a non-local transfer of control. This can be done either primitively by using <DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink>, <DictionaryLink styled={true} term={"return"}><b>return</b></DictionaryLink>, <DictionaryLink styled={true} term={"throw"}><b>throw</b></DictionaryLink> or more abstractly by using a function such as **abort** or <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>. 
+It can <GlossaryTerm styled={true} term={"handle"}><i>handle</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> by performing a non-local transfer of control. This can be done either primitively by using <DictionaryLink styled={true} term={"go"}><b>go</b></DictionaryLink>, <DictionaryLink styled={true} term={"return"}><b>return</b></DictionaryLink>, <DictionaryLink styled={true} term={"throw"}><b>throw</b></DictionaryLink> or more abstractly by using a function such as `abort` or <DictionaryLink styled={true} term={"invoke-restart"}><b>invoke-restart</b></DictionaryLink>.
 
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-**Defer** 
-
-
+**Defer**
 
 It can put off a decision about whether to <GlossaryTerm styled={true} term={"handle"}><i>handle</i></GlossaryTerm> or <GlossaryTerm styled={true} term={"decline"}><i>decline</i></GlossaryTerm>, by any of a number of actions, but most commonly by signaling another condition, resignaling the same condition, or forcing entry into the debugger. 
 
