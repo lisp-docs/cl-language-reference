@@ -1,7 +1,3 @@
- 
-
-
-
 <GlossaryTerm  term={"declaration"}><i>Declarations</i></GlossaryTerm> can be divided into two kinds: those that apply to the <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm> of <GlossaryTerm  term={"variable"}><i>variables</i></GlossaryTerm> or <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm>; and those that do not apply to <GlossaryTerm  term={"binding"}><i>bindings</i></GlossaryTerm>. 
 
 
@@ -14,7 +10,7 @@ A <GlossaryTerm  term={"declaration"}><i>declaration</i></GlossaryTerm> that app
 
 
 
-A <GlossaryTerm styled={true} term={"free declaration"}><i>free declaration</i></GlossaryTerm> in a *form F*1 that applies to a <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> for a *name N established* by some *form F*2 of which *F*1 is a <GlossaryTerm  term={"subform"}><i>subform</i></GlossaryTerm> affects only references to *N* within *F*1; it does not to apply to other references to *N* outside of *F*1, nor does it affect the manner in which the <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> of *N* by *F*2 is *established*. 
+A <GlossaryTerm styled={true} term={"free declaration"}><i>free declaration</i></GlossaryTerm> in a `form F1` that applies to a <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> for a `name N` established by some `form F2` of which `F1` is a <GlossaryTerm  term={"subform"}><i>subform</i></GlossaryTerm> affects only references to `N` within `F1`; it does not to apply to other references to `N` outside of `F1`, nor does it affect the manner in which the <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> of `N` by `F2` is established.
 
 
 
