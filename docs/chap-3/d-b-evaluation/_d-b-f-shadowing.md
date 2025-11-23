@@ -2,21 +2,12 @@ If two <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> that *establish 
 
 
 
-(defun test (x z) 
-
-
-
-(let ((z (\* x 2))) 
-
-
-
-(print z)) 
-
-
-
-z) 
-
-
+```lisp"
+(defun test (x z)
+  (let ((z (\* x 2)))
+    (print z))
+  z)
+"```
 
 The <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> of the variable z by <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> shadows the <GlossaryTerm  term={"parameter"}><i>parameter</i></GlossaryTerm> binding for the function test. The reference to the variable z in the <DictionaryLink  term={"print"}><b>print</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> refers to the <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> binding. The reference to z at the end of the function test refers to the <GlossaryTerm  term={"parameter"}><i>parameter</i></GlossaryTerm> named z. 
 
@@ -26,67 +17,29 @@ Constructs that are lexically scoped act as if new names were generated for each
 
 
 
-(defun contorted-example (f g x) 
+```lisp"
+(defun contorted-example (f g x)
+  (if (= x 0)
+      (funcall f)
+      (block here
+        (+ 5 (contorted-example g
+                                #’(lambda () (return-from here 4))
+                                (- x 1))))))
+"```
 
+Consider the call `(contorted-example nil nil 2)`. This produces `4`. During the course of execution, there are three calls to `contorted-example`, interleaved with two `blocks`:
 
+```lisp"
+(contorted-example nil nil 2)
+(block here<sub>1</sub> ...)
+(contorted-example nil #’(lambda () (return-from here<sub>1</sub> 4)) 1)
+(block here<sub>2</sub> ...)
+(contorted-example #’(lambda () (return-from here<sub>1</sub> 4))
+                   #’(lambda () (return-from here<sub>2</sub> 4))
+                   \0)
+"```
 
-(if (= x 0) 
-
-
-
-(funcall f) 
-
-
-
-(block here 
-
-
-
-(+ 5 (contorted-example g 
-
-
-
-#’(lambda () (return-from here 4)) 
-
-
-
-(- x 1)))))) 
-
-
-
-Consider the call (contorted-example nil nil 2). This produces 4. During the course of execution, there are three calls to contorted-example, interleaved with two blocks: 
-
-
-
-(contorted-example nil nil 2) 
-
-
-
-(block here<sub>1</sub> ...) 
-
-
-
-(contorted-example nil #’(lambda () (return-from here<sub>1</sub> 4)) 1) 
-
-
-
-(block here<sub>2</sub> ...) 
-
-
-
-(contorted-example #’(lambda () (return-from here<sub>1</sub> 4)) 
-
-
-
-#’(lambda () (return-from here<sub>2</sub> 4)) 
-
-
-
-\0) 
-
-
-
-(funcall f) 
+`(funcall f)`
 
 
 
@@ -98,11 +51,8 @@ where `f` → `#’(lambda () (return-from here<sub>1</sub> 4))`
 
 
 
-At the time the funcall is executed there are two <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> outstanding, each apparently named here. The <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> executed as a result of the funcall operation refers to the outer outstanding <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> (here<sub>1</sub>), not the inner one (here<sub>2</sub>). It refers to that <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> textually visible at the point of execution of <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> (here abbreviated by the #’ syntax) that resulted in creation of the *function object* actually invoked by <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>. 
-
-
-
-If, in this example, one were to change the (funcall f) to (funcall g), then the value of the call (contorted-example nil nil 2) would be 9. The value would change because <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink> would cause the execution of (return-from here<sub>2</sub> 4), thereby causing a return from the inner <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> (here<sub>2</sub>). 
+At the time the `funcall` is executed there are two <DictionaryLink  term={"block"}><b>block</b></DictionaryLink> <GlossaryTerm styled={true} term={"exit point"}><i>exit points</i></GlossaryTerm> outstanding, each apparently named `here`. The <DictionaryLink  term={"return-from"}><b>return-from</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> executed as a result of the `funcall` operation refers to the outer outstanding <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> (`here<sub>1</sub>`), not the inner one (`here<sub>2</sub>`). It refers to that <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> textually visible at the point of execution of <DictionaryLink  term={"function"}><b>function</b></DictionaryLink> (`here` abbreviated by the `#’` syntax) that resulted in creation of the *function object* actually invoked by <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink>. 
+If, in this example, one were to change the `(funcall f)` to `(funcall g)`, then the value of the call `(contorted-example nil nil 2)` would be `9`. The value would change because <DictionaryLink  term={"funcall"}><b>funcall</b></DictionaryLink> would cause the execution of `(return-from here<sub>2</sub> 4)`, thereby causing a return from the inner <GlossaryTerm styled={true} term={"exit point"}><i>exit point</i></GlossaryTerm> (`here<sub>2</sub>`). 
 
 
 
