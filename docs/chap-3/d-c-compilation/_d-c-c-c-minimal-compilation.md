@@ -1,7 +1,3 @@
- 
-
-
-
 <GlossaryTerm styled={true} term={"minimal compilation"}><i>Minimal compilation</i></GlossaryTerm> is defined as follows: 
 
 
