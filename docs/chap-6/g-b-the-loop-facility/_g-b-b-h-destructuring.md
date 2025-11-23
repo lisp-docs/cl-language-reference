@@ -105,25 +105,14 @@ Destructuring makes this process easier by allowing the variables to be bound in
 
 If destructuring is used to declare or initialize a number of groups of variables into <GlossaryTerm styled={true} term={"type"}><i>types</i></GlossaryTerm>, the <GlossaryTerm styled={true} term={"loop keyword"}><i>loop keyword</i></GlossaryTerm> `and` can be used to simplify the process further.
 
+"""lisp
+(loop with (a b) of-type float = ’(1.0 2.0)
+      and (c d) of-type integer = ’(3 4)
+      and (e f)
+      return (list a b c d e f))
+"""
 
-
-(loop with (a b) of-type float = ’(1.0 2.0) 
-
-
-
-and (c d) of-type integer = ’(3 4) 
-
-
-
-and (e f) 
-
-
-
-return (list a b c d e f)) 
-
-
-
-→ (1.0 2.0 3 4 NIL NIL) 
+→ (1.0 2.0 3 4 NIL NIL)
 
 
 
