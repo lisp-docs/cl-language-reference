@@ -1,7 +1,3 @@
- 
-
-
-
 Defining <GlossaryTerm  term={"macro"}><i>macros</i></GlossaryTerm> (such as <DictionaryLink  term={"defmacro"}><b>defmacro</b></DictionaryLink> or <DictionaryLink  term={"defvar"}><b>defvar</b></DictionaryLink>) appearing within a file being processed by <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> normally have compile-time side effects which affect how subsequent <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the same <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> are compiled. A convenient model for explaining how these side effects happen is that the defining macro expands into one or more <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, and that the calls which cause the compile-time side effects to happen appear in the body of an (eval-when (:compile-toplevel) ...) <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
 
 
@@ -14,15 +10,12 @@ In particular, the information stored by the defining <GlossaryTerm  term={"macr
 
 
 
-(defmacro foo (x) ‘(car ,x)) 
+"""lisp
+(defmacro foo (x) ‘(car ,x))
 
-
-
-(eval-when (:execute :compile-toplevel :load-toplevel) 
-
-
-
-(print (foo ’(a b c)))) 
+(eval-when (:execute :compile-toplevel :load-toplevel)
+  (print (foo ’(a b c))))
+"""
 
 
 
@@ -30,15 +23,11 @@ A portable way to do the same thing would be to include the macro definition ins
 
 
 
-(eval-when (:execute :compile-toplevel :load-toplevel) 
-
-
-
-(defmacro foo (x) ‘(car ,x)) 
-
-
-
-(print (foo ’(a b c)))) 
+"""lisp
+(eval-when (:execute :compile-toplevel :load-toplevel)
+  (defmacro foo (x) ‘(car ,x))
+  (print (foo ’(a b c))))
+"""
 
 
 
@@ -46,9 +35,9 @@ Figure 3–8 lists macros that make definitions available both in the compilatio
 
 
 
-|**declaim define-modify-macro defsetf defclass define-setf-expander defstruct defconstant defmacro deftype define-compiler-macro defpackage defvar define-condition defparameter**|
-
-| :- |
+"""lisp
+declaim define-modify-macro defsetf defclass define-setf-expander defstruct defconstant defmacro deftype define-compiler-macro defpackage defvar define-condition defparameter
+"""
 
 
 
