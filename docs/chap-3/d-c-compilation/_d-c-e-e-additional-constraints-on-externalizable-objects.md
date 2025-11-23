@@ -48,19 +48,7 @@ The <GlossaryTerm styled={true} term={"file compiler"}><i>file compiler</i></Glo
 
 a. Any <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> in a <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> that alters the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> must change it to a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> of the same <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> both at compile time and at load time. 
 
-b. If the first *non-atomic top level form* in the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> is not an <DictionaryLink  term={"in-package"}><b>in-package</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, 
-
-
-
-then the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at the time <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> is called must be a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> with 
-
-
-
-the same <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> as the package that was the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at the time 
-
-
-
-<DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> was called. 
+b. If the first *non-atomic top level form* in the <GlossaryTerm  term={"file"}><i>file</i></GlossaryTerm> is not an <DictionaryLink  term={"in-package"}><b>in-package</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>, then the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at the time <DictionaryLink  term={"load"}><b>load</b></DictionaryLink> is called must be a <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm> with the same <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> as the package that was the <GlossaryTerm styled={true} term={"current package"}><i>current package</i></GlossaryTerm> at the time <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> was called. 
 
 
 
