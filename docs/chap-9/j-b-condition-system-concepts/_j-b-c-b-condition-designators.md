@@ -6,23 +6,19 @@ A number of the functions in the condition system take arguments which are ident
 
 
 
-*datum* &amp;rest <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> 
+*datum* &amp;rest <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>
 
+Taken together, the *datum* and the <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> are “<GlossaryTerm styled={true} term={"designator"}><i>designators</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of default type *default-type*.”
 
+How the denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is computed depends on the type of the *datum*:
 
-Taken together, the *datum* and the <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm> are “<GlossaryTerm styled={true} term={"designator"}><i>designators</i></GlossaryTerm> for a <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> of default type *default-type*.” How the denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is computed depends on the type of the *datum*: 
+*•* If the *datum* is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> naming a *condition type . . .*
 
+The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is the result of
 
-
-*•* If the *datum* is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> naming a *condition type . . .* 
-
-
-
-The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is the result of 
-
-
-
-(apply #’make-condition *datum arguments*) 
+"""lisp
+(apply #'make-condition *datum arguments*)
+"""
 
 
 
