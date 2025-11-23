@@ -24,10 +24,10 @@ Consider this example, which describes how **destruct** processes its :construct
 
 
 
-"""text
+```lisp
 (:constructor create-foo
   (a &optional b (c ’sea) &rest d &aux e (f ’eff)))
-"""
+```
 
 
 
@@ -39,23 +39,23 @@ sea is used instead. Any arguments following the third argument are collected in
 
 
 
-"""text
+```lisp
 (defstruct (foo (:constructor CREATE-FOO (a &optional b (c ’sea)
                                         &key (d 2)
                                         &aux e (f ’eff))))
   (a 1) (b 2) (c 3) (d 4) (e 5) (f 6))
-"""
+```
 
 
 
-"""text
+```lisp
 (create-foo 10) → #S(FOO A 10 B 2 C SEA D 2 E *implemention-dependent* F EFF)
-"""
+```
 
-"""text
+```lisp
 (create-foo 10 ’bee ’see :d ’dee)
 → #S(FOO A 10 B BEE C SEE D DEE E *implemention-dependent* F EFF)
-"""
+```
 
 
 
@@ -73,15 +73,15 @@ If no default value is supplied for an <GlossaryTerm styled={true} term={"aux va
 
 With this definition, the following can be written:
 
-"""text
+```lisp
 (create-foo 1 2)
-"""
+```
 
 instead of
 
-"""text
+```lisp
 (make-foo :a 1 :b 2)
-"""
+```
 
 
 
@@ -93,12 +93,12 @@ Additional arguments that do not correspond to slot names but are merely present
 
 
 
-"""text
+```lisp
 (defstruct (frob (:constructor create-frob
   (a &key (b 3 have-b) (c-token ’c)
      (c (list c-token (if have-b 7 2))))))
   a b c)
-"""
+```
 
 
 
