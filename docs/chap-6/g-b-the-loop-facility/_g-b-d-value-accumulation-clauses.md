@@ -22,19 +22,10 @@ The constructs append, appending, nconc, and nconcing are similar to collect exc
 
 
 
- 
+*•* The `append` keyword causes its <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> values to be concatenated into a single <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, as if they were arguments to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"append"}><b>append</b></DictionaryLink>.
 
 
-
- 
-
-
-
-*•* The append keyword causes its <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> values to be concatenated into a single <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, as if they were arguments to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"append"}><b>append</b></DictionaryLink>. 
-
-
-
-*•* The nconc keyword causes its <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> values to be concatenated into a single <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, as if they were arguments to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"nconc"}><b>nconc</b></DictionaryLink>. 
+*•* The `nconc` keyword causes its <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> values to be concatenated into a single <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm>, as if they were arguments to the <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"nconc"}><b>nconc</b></DictionaryLink>.
 
 
 
@@ -58,59 +49,26 @@ If `into` is used, the construct does not provide a default return value; howeve
 
 
 
-Certain kinds of accumulation clauses can be combined in a <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> if their destination is the same (the result of <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> or an into *var*) because they are considered to accumulate conceptually compatible quantities. In particular, any elements of following sets of accumulation clauses can be 
+Certain kinds of accumulation clauses can be combined in a <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> if their destination is the same (the result of <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> or an `into` *var*) because they are considered to accumulate conceptually compatible quantities. In particular, any elements of following sets of accumulation clauses can be mixed with other elements of the same set for the same destination in a <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>:
+*•* `collect`, `append`, `nconc`
+
+
+*•* `sum`, `count`
+
+
+*•* `maximize`, `minimize`
 
 
 
-
-
-
-
- 
-
-
-
- 
-
-
-
-mixed with other elements of the same set for the same destination in a <DictionaryLink  term={"loop"}><b>loop</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>: *•* collect, append, nconc 
-
-
-
-*•* sum, count 
-
-
-
-*•* maximize, minimize 
-
-
-
-;; Collect every name and the kids in one list by using 
-
-
-
-;; COLLECT and APPEND. 
-
-
-
-(loop for name in ’(fred sue alice joe june) 
-
-
-
-for kids in ’((bob ken) () () (kris sunshine) ()) 
-
-
-
-collect name 
-
-
-
-append kids) 
-
-
-
-→ (FRED BOB KEN SUE ALICE JOE KRIS SUNSHINE JUNE) 
+"""lisp
+;; Collect every name and the kids in one list by using
+;; COLLECT and APPEND.
+(loop for name in ’(fred sue alice joe june)
+      for kids in ’((bob ken) () () (kris sunshine) ())
+      collect name
+      append kids)
+→ (FRED BOB KEN SUE ALICE JOE KRIS SUNSHINE JUNE)
+"""
 
 
 
