@@ -2,12 +2,12 @@ If two <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> that *establish 
 
 
 
-```lisp"
+```lisp
 (defun test (x z)
   (let ((z (\* x 2)))
     (print z))
   z)
-"```
+```
 
 The <GlossaryTerm  term={"binding"}><i>binding</i></GlossaryTerm> of the variable z by <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> shadows the <GlossaryTerm  term={"parameter"}><i>parameter</i></GlossaryTerm> binding for the function test. The reference to the variable z in the <DictionaryLink  term={"print"}><b>print</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> refers to the <DictionaryLink  term={"let"}><b>let</b></DictionaryLink> binding. The reference to z at the end of the function test refers to the <GlossaryTerm  term={"parameter"}><i>parameter</i></GlossaryTerm> named z. 
 
@@ -17,7 +17,7 @@ Constructs that are lexically scoped act as if new names were generated for each
 
 
 
-```lisp"
+```lisp
 (defun contorted-example (f g x)
   (if (= x 0)
       (funcall f)
@@ -25,11 +25,11 @@ Constructs that are lexically scoped act as if new names were generated for each
         (+ 5 (contorted-example g
                                 #’(lambda () (return-from here 4))
                                 (- x 1))))))
-"```
+```
 
 Consider the call `(contorted-example nil nil 2)`. This produces `4`. During the course of execution, there are three calls to `contorted-example`, interleaved with two `blocks`:
 
-```lisp"
+```lisp
 (contorted-example nil nil 2)
 (block here<sub>1</sub> ...)
 (contorted-example nil #’(lambda () (return-from here<sub>1</sub> 4)) 1)
@@ -37,7 +37,7 @@ Consider the call `(contorted-example nil nil 2)`. This produces `4`. During the
 (contorted-example #’(lambda () (return-from here<sub>1</sub> 4))
                    #’(lambda () (return-from here<sub>2</sub> 4))
                    \0)
-"```
+```
 
 `(funcall f)`
 
@@ -45,9 +45,9 @@ Consider the call `(contorted-example nil nil 2)`. This produces `4`. During the
 
 where `f` → `#’(lambda () (return-from here<sub>1</sub> 4))`
 
-```lisp"
+```lisp
 (return-from here<sub>1</sub> 4)
-"```
+```
 
 
 
