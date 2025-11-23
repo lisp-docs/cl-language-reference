@@ -14,25 +14,12 @@ How the denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i><
 
 *•* If the *datum* is a <GlossaryTerm styled={true} term={"symbol"}><i>symbol</i></GlossaryTerm> naming a *condition type . . .*
 
+
 The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is the result of
 
-```lisp
+"""lisp
 (apply #'make-condition *datum arguments*)
-```
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
+"""
 
 *•* If the *datum* is a *format control . . .* 
 
