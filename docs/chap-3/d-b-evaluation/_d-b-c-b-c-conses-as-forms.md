@@ -1,7 +1,3 @@
- 
-
-
-
 A <GlossaryTerm  term={"cons"}><i>cons</i></GlossaryTerm> that is used as a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is called a <GlossaryTerm styled={true} term={"compound form"}><i>compound form</i></GlossaryTerm>. 
 
 
