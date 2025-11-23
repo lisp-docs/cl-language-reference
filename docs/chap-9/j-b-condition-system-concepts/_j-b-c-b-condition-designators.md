@@ -17,9 +17,9 @@ How the denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i><
 
 The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is the result of
 
-"""lisp
+```lisp
 (apply #'make-condition *datum arguments*)
-"""
+```
 
 *•* If the *datum* is a *format control . . .* 
 
@@ -27,11 +27,11 @@ The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></Glo
 
 The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is the result of 
 
-"""lisp
+```lisp
 (make-condition *defaulted-type* 
   :format-control *datum* 
   :format-arguments <GlossaryTerm styled={true} term={"argument"}><i>arguments</i></GlossaryTerm>)
-"""
+```
 
 where the *defaulted-type* is a <GlossaryTerm styled={true} term={"subtype"}><i>subtype</i></GlossaryTerm> of *default-type*.
 
@@ -49,24 +49,24 @@ Here are some illustrations of how different <GlossaryTerm styled={true} term={"
 
 
 
-"""lisp
+```lisp
 (let ((c (make-condition ’arithmetic-error :operator ’/ :operands ’(7 0)))) 
   (error c))
-"""
+```
 
 *≡* 
-"""lisp
+```lisp
 (error ’arithmetic-error :operator ’/ :operands ’(7 0))
-"""
+```
 
-"""lisp
+```lisp
 (error "Bad luck.")
-"""
+```
 
 *≡* 
-"""lisp
+```lisp
 (error ’simple-error :format-control "Bad luck." :format-arguments ’())
-"""
+```
 
 
 

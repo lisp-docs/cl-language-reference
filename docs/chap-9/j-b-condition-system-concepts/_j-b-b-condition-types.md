@@ -15,9 +15,9 @@ All <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTer
 
 
 
-"""lisp
+```lisp
 (typep *c* ’condition) → true
-"""
+```
 
 
 
