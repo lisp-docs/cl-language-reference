@@ -53,21 +53,13 @@ Column **CT** indicates whether `:compile-toplevel` is specified. Column **LT** 
 
 
 
-The
- **Action**
- column specifies one of three actions: 
+The **Action** column specifies one of three actions:
 
+- **Process:** process the body as <GlossaryTerm styled={true} term={"top level form"}>_top level forms_</GlossaryTerm> in the specified mode.
 
+- **Evaluate:** evaluate the body in the dynamic execution context of the compiler, using the <GlossaryTerm styled={true} term={"evaluation environment"}>_evaluation environment_</GlossaryTerm> as the global environment and the <GlossaryTerm styled={true} term={"lexical environment"}>_lexical environment_</GlossaryTerm> in which the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> appears.
 
-**Process:** process the body as <GlossaryTerm styled={true} term={"top level form"}><i>top level forms</i></GlossaryTerm> in the specified mode. 
-
-
-
-**Evaluate:** evaluate the body in the dynamic execution context of the compiler, using the <GlossaryTerm styled={true} term={"evaluation environment"}><i>evaluation environment</i></GlossaryTerm> as the global environment and the <GlossaryTerm styled={true} term={"lexical environment"}><i>lexical environment</i></GlossaryTerm> in which the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> appears. 
-
-
-
-**Discard:** ignore the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>. 
+- **Discard:** ignore the <GlossaryTerm  term={"form"}>_form_</GlossaryTerm>.
 
 
 
@@ -83,19 +75,9 @@ Note that <GlossaryTerm styled={true} term={"top level form"}><i>top level forms
 
 
 
-semantics are preserved. 
+semantics are preserved.
 
-
-
-<DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> forms cause compile-time evaluation only at top level. Both :compile-toplevel and :load-toplevel situation specifications are ignored for <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. For *non-top-level*  
-
-
-
-
-
-
-
-<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, an <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> specifying the :execute situation is treated as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> including the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the body of the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; otherwise, the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the body are ignored. 
+<DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> forms cause compile-time evaluation only at top level. Both `:compile-toplevel` and `:load-toplevel` situation specifications are ignored for <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. For *non-top-level* <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, an <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> specifying the `:execute` situation is treated as an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> including the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the body of the <DictionaryLink  term={"eval-when"}><b>eval-when</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm>; otherwise, the <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> in the body are ignored.
 
 
 
