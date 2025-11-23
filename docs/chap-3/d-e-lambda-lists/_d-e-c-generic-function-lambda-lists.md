@@ -14,23 +14,13 @@ A <GlossaryTerm styled={true} term={"generic function lambda list"}><i>generic f
 
 
 
-*lambda-list::*=(*\{var\}*\* 
-
-
-
-[&amp;optional *\{var |* (*var*)*\}*\*] 
-
-
-
-[&amp;rest *var*] 
-
-
-
-[&amp;key *\{var |* (*\{var |* (*keyword-name var*)*\}*)*\}*\* 
-
-
-
-[&amp;allow-other-keys]]) 
+"""text
+lambda-list::=({var}*
+  [&optional {var | (var)}*]
+  [&rest var]
+  [&key {var | ({var | (keyword-name var)}) }*
+    [&allow-other-keys]])
+"""
 
 
 
