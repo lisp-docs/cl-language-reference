@@ -30,119 +30,57 @@ occur in <GlossaryTerm styled={true} term={"parallel"}><i>parallel</i></Glossary
 
 
 
-(loop with a = 1 
+"""lisp
+(loop with a = 1
+      with b = (+ a 2)
+      with c = (+ b 3)
+      return (list a b c))
+"""
 
+→ `(1 3 6)`
 
 
-with b = (+ a 2) 
 
+The execution of the above <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> is equivalent to the execution of the following code:
 
+"""lisp
+(block nil
+  (let* ((a 1)
+         (b (+ a 2))
+         (c (+ b 3)))
+    (tagbody
+      (next-loop (return (list a b c))
+                 (go next-loop)
+                 end-loop))))
+"""
 
-with c = (+ b 3) 
+If the values of previously bound variables are not needed for the initialization of other local variables, an `and` clause can be used to specify that the bindings are to occur in <GlossaryTerm styled={true} term={"parallel"}><i>parallel</i></GlossaryTerm>:
 
 
 
-return (list a b c)) 
+"""lisp
+(loop with a = 1
+      and b = 2
+      and c = 3
+      return (list a b c))
+"""
 
+→ `(1 2 3)`
 
 
-→ (1 3 6) 
 
+The execution of the above `loop` is equivalent to the execution of the following code:
 
-
-The execution of the above <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> is equivalent to the execution of the following code: 
-
-
-
-(block nil 
-
-
-
-(let\* ((a 1) 
-
-
-
-(b (+ a 2)) 
-
-
-
-(c (+ b 3))) 
-
-
-
-(tagbody 
-
-
-
-(next-loop (return (list a b c)) 
-
-
-
-(go next-loop) 
-
-
-
-end-loop)))) 
-
-
-
-If the values of previously bound variables are not needed for the initialization of other local variables, an and clause can be used to specify that the bindings are to occur in <GlossaryTerm styled={true} term={"parallel"}><i>parallel</i></GlossaryTerm>: 
-
-
-
-(loop with a = 1 
-
-
-
-and b = 2 
-
-
-
-and c = 3 
-
-
-
-return (list a b c)) 
-
-
-
-→ (1 2 3) 
-
-
-
-The execution of the above loop is equivalent to the execution of the following code: 
-
-
-
-(block nil 
-
-
-
-(let ((a 1) 
-
-
-
-(b 2) 
-
-
-
-(c 3)) 
-
-
-
-(tagbody 
-
-
-
-(next-loop (return (list a b c)) 
-
-
-
-(go next-loop) 
-
-
-
-end-loop)))) 
+"""lisp
+(block nil
+  (let ((a 1)
+        (b 2)
+        (c 3))
+    (tagbody
+      (next-loop (return (list a b c))
+                 (go next-loop)
+                 end-loop))))
+"""
 
 
 
