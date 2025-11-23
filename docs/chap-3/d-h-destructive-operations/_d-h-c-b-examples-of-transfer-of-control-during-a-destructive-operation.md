@@ -1,9 +1,4 @@
- 
-
-
-
-The following examples illustrate some of the many ways in which the <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> nature of the modification can manifest itself. 
-
+The following examples illustrate some of the many ways in which the <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> nature of the modification can manifest itself.
 
 
 (let ((a (list 2 1 4 3 7 6 ’five))) 
