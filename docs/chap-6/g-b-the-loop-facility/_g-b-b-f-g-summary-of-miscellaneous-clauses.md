@@ -1,8 +1,4 @@
- 
-
-
-
-The <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> named construct gives a name for the <GlossaryTerm styled={true} term={"block"}><i>block</i></GlossaryTerm> of the loop. 
+The <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> named construct gives a name for the <GlossaryTerm styled={true} term={"block"}><i>block</i></GlossaryTerm> of the loop.
 
 
 
@@ -14,7 +10,6 @@ The <DictionaryLink styled={true} term={"loop"}><b>loop</b></DictionaryLink> fin
 
 
 
-For more information, see Section 6.1.7 (Miscellaneous Clauses). 
-
+For more information, see Section 6.1.7 (Miscellaneous Clauses).
 
 
