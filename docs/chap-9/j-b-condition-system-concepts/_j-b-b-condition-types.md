@@ -1,8 +1,4 @@
- 
-
-
-
-Figure 9–1 lists the *standardized condition types*. Additional *condition types* can be defined by using <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink>. 
+Figure 9–1 lists the *standardized condition types*. Additional *condition types* can be defined by using <DictionaryLink styled={true} term={"define-condition"}><b>define-condition</b></DictionaryLink>.
 
 |`arithmetic-error` `floating-point-overflow` `simple-type-error` `cell-error` `floating-point-underflow` `simple-warning` `condition` `package-error` `storage-condition` `control-error` `parse-error` `stream-error` `division-by-zero` `print-not-readable` `style-warning` `end-of-file` `program-error` `type-error` `error` `reader-error` `unbound-slot` `file-error` `serious-condition` `unbound-variable` `floating-point-inexact` `simple-condition` `undefined-function` `floating-point-invalid-operation` `simple-error` `warning`|
 | :- |
@@ -19,7 +15,9 @@ All <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTer
 
 
 
-(typep *c* ’condition) → true 
+"""lisp
+(typep *c* ’condition) → true
+"""
 
 
 
@@ -46,23 +44,9 @@ Figure 9–2 shows <GlossaryTerm styled={true} term={"operator"}><i>operators</i
 
 
 
-**Figure 9–2. Operators that define and create conditions.** 
+**Figure 9–2. Operators that define and create conditions.**
 
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-Figure 9–3 shows <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm> that <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of *condition slots*. 
+Figure 9–3 shows <GlossaryTerm styled={true} term={"operator"}><i>operators</i></GlossaryTerm> that <GlossaryTerm styled={true} term={"read"}><i>read</i></GlossaryTerm> the <GlossaryTerm styled={true} term={"value"}><i>value</i></GlossaryTerm> of *condition slots*.
 
 
 
