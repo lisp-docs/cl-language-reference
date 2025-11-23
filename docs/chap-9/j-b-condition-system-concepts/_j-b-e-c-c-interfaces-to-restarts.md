@@ -2,7 +2,7 @@ Some <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm>
 
 Figure 9–6 shows <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to <GlossaryTerm styled={true} term={"restart"}><i>restarts</i></GlossaryTerm>.
 
-| **abort invoke-restart-interactively store-value compute-restarts muffle-warning use-value** | **continue restart-bind with-simple-restart find-restart restart-case** | **invoke-restart restart-name** |
+| `abort` `invoke-restart-interactively` `store-value` `compute-restarts` `muffle-warning` `use-value` | `continue` `restart-bind` `with-simple-restart` `find-restart` `restart-case` | `invoke-restart` `restart-name` |
 |:---|:---|:---|
 
 **Figure 9–6. Defined names relating to restarts.**
