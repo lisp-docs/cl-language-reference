@@ -1,7 +1,3 @@
- 
-
-
-
 A <GlossaryTerm styled={true} term={"lambda form"}><i>lambda form</i></GlossaryTerm> is similar to a <GlossaryTerm styled={true} term={"function form"}><i>function form</i></GlossaryTerm>, except that the <GlossaryTerm styled={true} term={"function name"}><i>function name</i></GlossaryTerm> is replaced by a <GlossaryTerm styled={true} term={"lambda expression"}><i>lambda expression</i></GlossaryTerm>. 
 
 
