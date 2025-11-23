@@ -16,9 +16,9 @@ How the denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i><
 
 The denoted <GlossaryTerm styled={true} term={"condition"}><i>condition</i></GlossaryTerm> is the result of
 
-"""lisp
+```lisp
 (apply #'make-condition *datum arguments*)
-"""
+```
 
 
 
