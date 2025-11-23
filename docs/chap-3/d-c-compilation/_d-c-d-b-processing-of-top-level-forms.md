@@ -30,11 +30,16 @@ Processing of <GlossaryTerm styled={true} term={"top level form"}><i>top level f
 
 
 
-|**CT LT E Mode Action New Mode**|
-
-| :- |
-
-|<p>Yes Yes — — Process compile-time-too No Yes Yes CTT Process compile-time-too No Yes Yes NCT Process not-compile-time No Yes No — Process not-compile-time Yes No — — Evaluate — </p><p>No No Yes CTT Evaluate — No No Yes NCT Discard — No No No — Discard —</p>|
+| **CT** | **LT** | **E** | **Mode** | **Action** | **New Mode** |
+| :----- | :----- | :---- | :------- | :--------- | :----------- |
+| Yes    | Yes    | —     | —        | Process    | compile-time-too |
+| No     | Yes    | Yes   | CTT      | Process    | compile-time-too |
+| No     | Yes    | Yes   | NCT      | Process    | not-compile-time |
+| No     | Yes    | No    | —        | Process    | not-compile-time |
+| Yes    | No     | —     | —        | Evaluate   | —            |
+| No     | No     | Yes   | CTT      | Evaluate   | —            |
+| No     | No     | Yes   | NCT      | Discard    | —            |
+| No     | No     | No    | —        | Discard    | —            |
 
 
 
@@ -44,7 +49,7 @@ Processing of <GlossaryTerm styled={true} term={"top level form"}><i>top level f
 
 
 
-Column **CT** indicates whether :compile-toplevel is specified. Column **LT** indicates whether :load-toplevel is specified. Column **E** indicates whether :execute is specified. Column **Mode** indicates the processing mode; a dash (—) indicates that the processing mode is not relevant. 
+Column **CT** indicates whether `:compile-toplevel` is specified. Column **LT** indicates whether `:load-toplevel` is specified. Column **E** indicates whether `:execute` is specified. Column **Mode** indicates the processing mode; a dash (—) indicates that the processing mode is not relevant. 
 
 
 
@@ -70,7 +75,7 @@ The **New Mode** column indicates the new processing mode. A dash (—) indicate
 
 
 
-6\. Otherwise, the form is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> that is not one of the special cases. In compile time-too mode, the compiler first evaluates the form in the evaluation <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> and then minimally compiles it. In not-compile-time mode, the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is simply minimally compiled. All <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> are treated as <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. 
+6\. Otherwise, the form is a <GlossaryTerm styled={true} term={"top level form"}><i>top level form</i></GlossaryTerm> that is not one of the special cases. In compile-time-too mode, the compiler first evaluates the form in the evaluation <GlossaryTerm  term={"environment"}><i>environment</i></GlossaryTerm> and then minimally compiles it. In not-compile-time mode, the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> is simply minimally compiled. All <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> are treated as <GlossaryTerm styled={true} term={"non-top-level form"}><i>non-top-level forms</i></GlossaryTerm>. 
 
 
 
