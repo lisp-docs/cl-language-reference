@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkcl_language_reference=globalThis.webpackChunkcl_language_reference||[]).push([[80957],{40936:e=>{e.exports=JSON.parse('{"name":"docusaurus-theme-search-algolia","id":"default"}')}}]);
