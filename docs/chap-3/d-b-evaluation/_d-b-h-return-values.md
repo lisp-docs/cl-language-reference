@@ -14,7 +14,7 @@ Figure 3–5 lists some <GlossaryTerm  term={"operator"}><i>operators</i></Gloss
 
 
 
-|<p>**multiple-value-bind multiple-value-prog1 return-from multiple-value-call multiple-value-setq throw** </p><p>**multiple-value-list return**</p>|
+|<p>`multiple-value-bind` `multiple-value-prog1` `return-from` `multiple-value-call` `multiple-value-setq` `throw`</p><p>`multiple-value-list` `return`</p>|
 
 | :- |
 
@@ -30,7 +30,7 @@ The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryL
 
 
 
-See <DictionaryLink  term={"multiple-values-limit"}><b>multiple-values-limit</b></DictionaryLink> and <DictionaryLink  term={"values-list"}><b>values-list</b></DictionaryLink>.  
+See <DictionaryLink  term={"multiple-values-limit"}><b>multiple-values-limit</b></DictionaryLink> and <DictionaryLink  term={"values-list"}><b>values-list</b></DictionaryLink>.
 
 
 
