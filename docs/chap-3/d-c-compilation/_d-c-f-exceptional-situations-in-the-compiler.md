@@ -1,8 +1,5 @@
  
-
-
-
-<DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> and <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> are permitted to signal errors and warnings, including errors due to compile-time processing of (eval-when (:compile-toplevel) ...) forms, macro expansion, and conditions signaled by the compiler itself. 
+<DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> and <DictionaryLink  term={"compile-file"}><b>compile-file</b></DictionaryLink> are permitted to signal errors and warnings, including errors due to compile-time processing of `(eval-when (:compile-toplevel) ...)` forms, macro expansion, and conditions signaled by the compiler itself.
 
 
 
@@ -26,15 +23,5 @@ Both <DictionaryLink  term={"compile"}><b>compile</b></DictionaryLink> and <Dict
 
 
 
-Some warnings might be deferred until the end of compilation. See <DictionaryLink  term={"with-compilation-unit"}><b>with-compilation-unit</b></DictionaryLink>. 
-
-
-
-
-
-
-
-
-
-
+Some warnings might be deferred until the end of compilation. See <DictionaryLink  term={"with-compilation-unit"}><b>with-compilation-unit</b></DictionaryLink>.
 
