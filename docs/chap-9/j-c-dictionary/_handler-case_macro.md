@@ -90,9 +90,9 @@ The *clauses* are searched sequentially from top to bottom. If there is <Glossar
 
 If *var* is not needed, it can be omitted. That is, a *clause* such as:
 
-```lisp
+"""lisp
 (*typespec* (*var*) (declare (ignore *var*)) form)
-```
+"""
 
 can be written `(*typespec* () form)`.
 
@@ -120,7 +120,7 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
 
 **Examples:**
 
-```lisp
+"""lisp
 (defun assess-condition (condition) 
   (handler-case (signal condition) 
     (warning () "Lots of smoke, but no fire.") 
@@ -138,8 +138,8 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
 	     (princ "Yow" stream)))) 
 → RANDOM-CONDITION 
 (assess-condition (make-condition ’random-condition)) 
-→ "Hardly worth mentioning." 
-```
+→ "Hardly worth mentioning."
+"""
 **See Also:** 
 
 
@@ -152,8 +152,8 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
 ```lisp
 (handler-case form 
   (*type1* (*var1*) . *body1*) 
-  (*type2* (*var2*) . *body2*) ...) 
-```
+  (*type2* (*var2*) . *body2*) ...)
+"""
 
 is approximately equivalent to: 
 
@@ -187,7 +187,7 @@ is approximately equivalent to:
 (block #2=#:normal-return 
 (return-from #1# 
 (handler-case (return-from #2# form) 
-  (*type1* (*var1*) . *body1*) ...))))) 
-```
+  (*type1* (*var1*) . *body1*) ...)))))
+"""
 
 
