@@ -15,4 +15,9 @@ We are building an expanded reference for dictionary entries of the language fea
 ```lisp
 (handler-bind )
 ```
+
+You can remove that first empty block when adding examples.
+
 You are to add the examples to each file provided. Don't write any meta information about what you are doing, just provide progressively more useful examples of the CL item and say what the example does. Sometimes you can add a very concise bullet point list of what the example is doing for clarity, where the explanations are only or mainly explaining the usage of the item. This is a technical reference, so we assume the reader is well acquiented with the language. So most examples should not need more than a title of the example and maybe a line describing the point the example is teaching.
+
+The examples should be ready to be pasted into a CL REPL and they should work. 
