@@ -59,13 +59,18 @@ If no appropriate <GlossaryTerm styled={true} term={"handler"}><i>handler</i></G
 
 
 **Examples:**
-```lisp
-In the following code, if an unbound variable error is signaled in the body (and not handled by an intervening handler), the first function is called. 
 
+In the following code, if an unbound variable error is signaled in the body (and not handled by an intervening handler), the first function is called.
+
+"""lisp
 (handler-bind ((unbound-variable #’(lambda ...)) 
 	       (error #’(lambda ...))) 
   ...) 
-If any other kind of error is signaled, the second function is called. In either case, neither handler is active while executing the code in the associated function. 
+"""
+
+If any other kind of error is signaled, the second function is called. In either case, neither handler is active while executing the code in the associated function.
+
+"""lisp
 (defun trap-error-handler (condition) 
   (format \*error-output\* "~&~A~&" condition) 
   (throw ’trap-errors nil)) 
@@ -78,8 +83,9 @@ If any other kind of error is signaled, the second function is called. In either
       (+ 1 2)) 
 ▷ Bar. 
 → (1 NIL 3) 
-Note that “Foo.” is not printed because the condition made by **signal** is a *simple condition*, which is not of *type* **error**, so it doesn’t trigger the handler for **error** set up by trap-errors. 
-```
+"""
+
+Note that “Foo.” is not printed because the condition made by **signal** is a *simple condition*, which is not of *type* **error**, so it doesn’t trigger the handler for **error** set up by `trap-errors`.
 **See Also:** 
 
 
