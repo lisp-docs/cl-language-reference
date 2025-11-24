@@ -173,13 +173,15 @@ is approximately equivalent to:
 
 #4# (return-from #1# (let ((*var2* #2#)) . *body2*)) ...))) 
 
+"""lisp
 (handler-case form 
-(*type1 (var1)* . *body1*) 
-... 
-(:no-error (*varN-1 varN-2* ...) . *bodyN*)) 
-```
+  (*type1 (var1)* . *body1*) 
+  ... 
+  (:no-error (*varN-1 varN-2* ...) . *bodyN*))
+"""
+
 is approximately equivalent to: 
-```common-lisp
+"""common-lisp
 (block #1=#:error-return 
 (multiple-value-call #’(lambda (*varN-1 varN-2* ...) . *bodyN*) 
 (block #2=#:normal-return 
