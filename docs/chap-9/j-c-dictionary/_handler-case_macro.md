@@ -149,7 +149,7 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
 **Notes:** 
 
 
-```common-lisp
+```lisp
 (handler-case form 
   (*type1* (*var1*) . *body1*) 
   (*type2* (*var2*) . *body2*) ...) 
@@ -157,7 +157,7 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
 
 is approximately equivalent to: 
 
-```common-lisp
+```lisp
 (block #1=#:g0001 
 (let ((#2=#:g0002 nil)) 
 (tagbody 
@@ -181,7 +181,7 @@ is approximately equivalent to:
 
 is approximately equivalent to: 
 
-```common-lisp
+```lisp
 (block #1=#:error-return 
 (multiple-value-call #’(lambda (*varN-1 varN-2* ...) . *bodyN*) 
 (block #2=#:normal-return 
