@@ -14,11 +14,7 @@
 
 
 
-*•* An implementation may be extended to add other <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> relationships between the specified <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>, as long as they do not violate the type relationships and disjointness requirements specified here. An implementation may define additional <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> that are <GlossaryTerm  term={"subtype"}><i>subtypes</i></GlossaryTerm> or <GlossaryTerm  term={"supertype"}><i>supertypes</i></GlossaryTerm> of any specified <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>, as long as each additional <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of 
-
-
-
-<GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> and a <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> and the disjointness requirements are not violated. 
+*•* An implementation may be extended to add other <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> relationships between the specified <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>, as long as they do not violate the type relationships and disjointness requirements specified here. An implementation may define additional <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> that are <GlossaryTerm  term={"subtype"}><i>subtypes</i></GlossaryTerm> or <GlossaryTerm  term={"supertype"}><i>supertypes</i></GlossaryTerm> of any specified <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm>, as long as each additional <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> is a <GlossaryTerm  term={"subtype"}><i>subtype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"t"}><b>t</b></DictionaryLink> and a <GlossaryTerm  term={"supertype"}><i>supertype</i></GlossaryTerm> of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> and the disjointness requirements are not violated. 
 
 
 
