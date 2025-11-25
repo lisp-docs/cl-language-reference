@@ -40,12 +40,9 @@ The following leaves the length unspecified:
 
 
 
-
-
-
-(vector double-float \*) 
-
-
+"""lisp
+(vector double-float \*)
+"""
 
 The following leaves the element type unspecified: 
 
@@ -77,9 +74,9 @@ If a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> has one or more uns
 
 Figure 4–4 show the <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> that can be used as *compound type specifier names* but that cannot be used as <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifiers</i></GlossaryTerm>. 
 
-
-
-|<p>**and mod satisfies** </p><p>**eql not values** </p><p>**member or**</p>|
+|<p>**and mod satisfies** </p>|
+|<p>**eql not values** </p>|
+|<p>**member or**</p>|
 
 | :- |
 
@@ -121,9 +118,11 @@ of that <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>.
 
 Figure 4–5 shows some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> and <GlossaryTerm  term={"declaration"}><i>declarations</i></GlossaryTerm>. 
 
-
-
-|<p>**coerce defstruct subtypep** </p><p>**declaim deftype the** </p><p>**declare ftype type** </p><p>**defclass locally type-of** </p><p>**define-condition proclaim typep**</p>|
+|<p>**coerce defstruct subtypep** </p>|
+|<p>**declaim deftype the** </p>|
+|<p>**declare ftype type** </p>|
+|<p>**defclass locally type-of** </p>|
+|<p>**define-condition proclaim typep**</p>|
 
 | :- |
 
