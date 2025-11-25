@@ -54,9 +54,9 @@ Data and Control
 
 
 
-|<p>**decf pop pushnew** </p><p>**incf push remf**</p>|
-
-| :- |
+| **Operators**                                               |
+| :---------------------------------------------------------- |
+| <p>**decf pop pushnew** </p><p>**incf push remf**</p> |
 
 
 
