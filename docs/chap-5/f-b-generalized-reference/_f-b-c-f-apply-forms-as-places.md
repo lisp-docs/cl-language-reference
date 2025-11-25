@@ -1,20 +1,23 @@
- 
-
-
-
 The following situations involving <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink> of <DictionaryLink  term={"apply"}><b>apply</b></DictionaryLink> must be supported: 
 
 
 
-*•* (setf (apply #’aref *array \{subscript\}*\* *more-subscripts*) *new-element*) 
+-
+"""lisp
+(setf (apply #’aref *array {subscript}*\* *more-subscripts*) *new-element*)
+"""
 
 
+-
+"""lisp
+(setf (apply #’bit *array {subscript}*\* *more-subscripts*) *new-element*)
+"""
 
-*•* (setf (apply #’bit *array \{subscript\}*\* *more-subscripts*) *new-element*) 
 
-
-
-*•* (setf (apply #’sbit *array \{subscript\}*\* *more-subscripts*) *new-element*) 
+-
+"""lisp
+(setf (apply #’sbit *array {subscript}*\* *more-subscripts*) *new-element*)
+"""
 
 
 
@@ -30,11 +33,14 @@ If a user-defined <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm
 
 
 
-(setf (apply #’*name \{arg\}*\*) *val*) 
+"""lisp
+(setf (apply #’*name {arg}*\*) *val*)
+"""
 
-
-
-*≡* (apply #’(setf <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>) *val \{arg\}*\*) 
+*≡*
+"""lisp
+(apply #’(setf <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>) *val {arg}*\*)
+"""
 
 
 
