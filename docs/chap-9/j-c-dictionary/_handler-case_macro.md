@@ -30,21 +30,7 @@
 
 
 
-*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
+*typespec*—a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm>.
 
 <DictionaryLink styled={true} term={"handler-case"}><b>handler-case</b></DictionaryLink> 
 
@@ -102,15 +88,13 @@ The *clauses* are searched sequentially from top to bottom. If there is <Glossar
 
 
 
-If *var* is not needed, it can be omitted. That is, a *clause* such as: 
+If *var* is not needed, it can be omitted. That is, a *clause* such as:
 
+```lisp
+(*typespec* (*var*) (declare (ignore *var*)) form)
+```
 
-
-(*typespec* (*var*) (declare (ignore *var*)) <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>) 
-
-
-
-can be written (*typespec* () <GlossaryTerm styled={true} term={"form"}><i>form</i></GlossaryTerm>). 
+can be written `(*typespec* () form)`.
 
 
 
@@ -135,6 +119,7 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
 
 
 **Examples:**
+
 ```lisp
 (defun assess-condition (condition) 
   (handler-case (signal condition) 
@@ -153,7 +138,7 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
 	     (princ "Yow" stream)))) 
 → RANDOM-CONDITION 
 (assess-condition (make-condition ’random-condition)) 
-→ "Hardly worth mentioning." 
+→ "Hardly worth mentioning."
 ```
 **See Also:** 
 
@@ -164,15 +149,15 @@ If there are no <GlossaryTerm styled={true} term={"form"}><i>forms</i></Glossary
 **Notes:** 
 
 
-```common-lisp
+```lisp
 (handler-case form 
-(*type1* (*var1*) . *body1*) 
-(*type2* (*var2*) . *body2*) ...) 
+  (*type1* (*var1*) . *body1*) 
+  (*type2* (*var2*) . *body2*) ...)
 ```
 
 is approximately equivalent to: 
 
-```common-lisp
+```lisp
 (block #1=#:g0001 
 (let ((#2=#:g0002 nil)) 
 (tagbody 
@@ -189,18 +174,20 @@ is approximately equivalent to:
 #4# (return-from #1# (let ((*var2* #2#)) . *body2*)) ...))) 
 
 (handler-case form 
-(*type1 (var1)* . *body1*) 
-... 
-(:no-error (*varN-1 varN-2* ...) . *bodyN*)) 
+  (*type1 (var1)* . *body1*) 
+  ... 
+  (:no-error (*varN-1 varN-2* ...) . *bodyN*))
 ```
+
 is approximately equivalent to: 
-```common-lisp
+
+```lisp
 (block #1=#:error-return 
 (multiple-value-call #’(lambda (*varN-1 varN-2* ...) . *bodyN*) 
 (block #2=#:normal-return 
 (return-from #1# 
 (handler-case (return-from #2# form) 
-(*type1* (*var1*) . *body1*) ...))))) 
+  (*type1* (*var1*) . *body1*) ...)))))
 ```
 
 
