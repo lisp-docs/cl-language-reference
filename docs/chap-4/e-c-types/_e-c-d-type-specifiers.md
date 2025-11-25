@@ -63,9 +63,9 @@ The following leaves the length unspecified:
 
 
 
-"""lisp
+```lisp
 (vector double-float *)
-"""
+```
 
 The following leaves the element type unspecified:
 
