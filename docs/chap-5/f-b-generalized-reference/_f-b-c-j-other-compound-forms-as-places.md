@@ -10,35 +10,23 @@ regardless of whether *f* or (setf *f* ) is defined as a <GlossaryTerm  term={"f
 
 
 
-(setf (*f arg1 arg2* ...) *new-value*) 
+"""lisp
+(setf (*f arg1 arg2* ...) *new-value*)
+"""
+
+expands into a form with the same effect and value as
 
 
 
-expands into a form with the same effect and value as 
+"""lisp
+(let ((#:temp-1 arg1) ;force correct order of evaluation
+      (#:temp-2 arg2)
+      ...
+      (#:temp-0 *new-value*))
+  (funcall (function (setf *f*)) #:temp-0 #:temp-1 #:temp-2...))
+"""
 
-
-
-(let ((#:temp-1 arg1) ;force correct order of evaluation 
-
-
-
-(#:temp-2 arg2) 
-
-
-
-... 
-
-
-
-(#:temp-0 *new-value*)) 
-
-
-
-(funcall (function (setf *f* )) #:temp-0 #:temp-1 #:temp-2...)) 
-
-
-
-A <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> named (setf *f* ) must return its first argument as its only value in order to preserve the semantics of <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>. 
+A <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> named `(setf *f*)` must return its first argument as its only value in order to preserve the semantics of <DictionaryLink  term={"setf"}><b>setf</b></DictionaryLink>.
 
 
 
