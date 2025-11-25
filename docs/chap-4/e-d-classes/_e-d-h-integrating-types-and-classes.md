@@ -38,7 +38,7 @@ It is possible to determine whether a <GlossaryTerm  term={"class"}><i>class</i>
 
 
 
-Each *structure type* created by <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> without using the :type option has a corresponding <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. This <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"structure-class"}><b>structure-class</b></DictionaryLink>. The :include option of <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> creates a direct <GlossaryTerm  term={"subclass"}><i>subclass</i></GlossaryTerm> of the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> that corresponds to the included *structure type*. 
+Each *structure type* created by <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> without using the `:type` option has a corresponding <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. This <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> is a <GlossaryTerm styled={true} term={"generalized instance"}><i>generalized instance</i></GlossaryTerm> of the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> <DictionaryLink  term={"structure-class"}><b>structure-class</b></DictionaryLink>. The `:include` option of <DictionaryLink  term={"defstruct"}><b>defstruct</b></DictionaryLink> creates a direct <GlossaryTerm  term={"subclass"}><i>subclass</i></GlossaryTerm> of the <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> that corresponds to the included *structure type*.
 
 
 
@@ -46,7 +46,7 @@ It is <GlossaryTerm  term={"implementation-dependent"}><i>implementation-depende
 
 
 
-If in a particular <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> defined in this specification has <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> that are not defined by this specfication, the names of these <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> must not be <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> defined in this specification nor otherwise <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in the CL-USER <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. 
+If in a particular <GlossaryTerm  term={"implementation"}><i>implementation</i></GlossaryTerm> a <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm> defined in this specification has <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> that are not defined by this specfication, the names of these <GlossaryTerm  term={"slot"}><i>slots</i></GlossaryTerm> must not be <GlossaryTerm styled={true} term={"external symbol"}><i>external symbols</i></GlossaryTerm> of <GlossaryTerm  term={"package"}><i>packages</i></GlossaryTerm> defined in this specification nor otherwise <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> in the `CL-USER` <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>.
 
 
 
@@ -66,15 +66,35 @@ Figure 4–8 lists the set of *classes* that correspond to predefined <GlossaryT
 
 
 
-|<p>**arithmetic-error generic-function simple-error array hash-table simple-type-error bit-vector integer simple-warning broadcast-stream list standard-class built-in-class logical-pathname standard-generic-function cell-error method standard-method character method-combination standard-object class null storage-condition complex number stream** </p><p>**concatenated-stream package stream-error condition package-error string** </p><p>**cons parse-error string-stream control-error pathname structure-class division-by-zero print-not-readable structure-object echo-stream program-error style-warning end-of-file random-state symbol** </p><p>**error ratio synonym-stream file-error rational t** </p><p>**file-stream reader-error two-way-stream float readtable type-error floating-point-inexact real unbound-slot floating-point-invalid-operation restart unbound-variable floating-point-overflow sequence undefined-function floating-point-underflow serious-condition vector** </p><p>**function simple-condition warning**</p>|
+| | | |
+|---|---|---|
+| `arithmetic-error` | `generic-function` | `simple-error` |
+| `array` | `hash-table` | `simple-type-error` |
+| `bit-vector` | `integer` | `simple-warning` |
+| `broadcast-stream` | `list` | `standard-class` |
+| `built-in-class` | `logical-pathname` | `standard-generic-function` |
+| `cell-error` | `method` | `standard-method` |
+| `character` | `method-combination` | `standard-object` |
+| `class` | `null` | `storage-condition` |
+| `complex` | `number` | `stream` |
+| `concatenated-stream` | `package` | `stream-error` |
+| `condition` | `package-error` | `string` |
+| `cons` | `parse-error` | `string-stream` |
+| `control-error` | `pathname` | `structure-class` |
+| `division-by-zero` | `print-not-readable` | `structure-object` |
+| `echo-stream` | `program-error` | `style-warning` |
+| `end-of-file` | `random-state` | `symbol` |
+| `error` | `ratio` | `synonym-stream` |
+| `file-error` | `rational` | `t` |
+| `file-stream` | `reader-error` | `two-way-stream` |
+| `float` | `readtable` | `type-error` |
+| `floating-point-inexact` | `real` | `unbound-slot` |
+| `floating-point-invalid-operation` | `restart` | `unbound-variable` |
+| `floating-point-overflow` | `sequence` | `undefined-function` |
+| `floating-point-underflow` | `serious-condition` | `vector` |
+| `function` | `simple-condition` | `warning` |
 
-| :- |
-
-
-
-
-
-**Figure 4–8. Classes that correspond to pre-defined type specifiers** 
+**Figure 4–8. Classes that correspond to pre-defined type specifiers**
 
 
 
