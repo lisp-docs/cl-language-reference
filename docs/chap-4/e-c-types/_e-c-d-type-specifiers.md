@@ -8,11 +8,40 @@
 
 
 
-
-
-|<p>**arithmetic-error function simple-condition array generic-function simple-error atom hash-table simple-string base-char integer simple-type-error base-string keyword simple-vector bignum list simple-warning bit logical-pathname single-float bit-vector long-float standard-char broadcast-stream method standard-class built-in-class method-combination standard-generic-function cell-error nil standard-method character null standard-object class number storage-condition compiled-function package stream** </p><p>**complex package-error stream-error concatenated-stream parse-error string** </p><p>**condition pathname string-stream cons print-not-readable structure-class control-error program-error structure-object division-by-zero random-state style-warning double-float ratio symbol** </p><p>**echo-stream rational synonym-stream end-of-file reader-error t** </p><p>**error readtable two-way-stream extended-char real type-error file-error restart unbound-slot file-stream sequence unbound-variable fixnum serious-condition undefined-function float short-float unsigned-byte floating-point-inexact signed-byte vector** </p><p>**floating-point-invalid-operation simple-array warning** </p><p>**floating-point-overflow simple-base-string** </p><p>**floating-point-underflow simple-bit-vector**</p>|
-
-| :- |
+| **arithmetic-error** | **function** | **simple-condition** |
+| :--- | :--- | :--- |
+| **array** | **generic-function** | **simple-error** |
+| **atom** | **hash-table** | **simple-string** |
+| **base-char** | **integer** | **simple-type-error** |
+| **base-string** | **keyword** | **simple-vector** |
+| **bignum** | **list** | **simple-warning** |
+| **bit** | **logical-pathname** | **single-float** |
+| **bit-vector** | **long-float** | **standard-char** |
+| **broadcast-stream** | **method** | **standard-class** |
+| **built-in-class** | **method-combination** | **standard-generic-function** |
+| **cell-error** | **nil** | **standard-method** |
+| **character** | **null** | **standard-object** |
+| **class** | **number** | **storage-condition** |
+| **compiled-function** | **package** | **stream** |
+| **complex** | **package-error** | **stream-error** |
+| **concatenated-stream** | **parse-error** | **string** |
+| **condition** | **pathname** | **string-stream** |
+| **cons** | **print-not-readable** | **structure-class** |
+| **control-error** | **program-error** | **structure-object** |
+| **division-by-zero** | **random-state** | **style-warning** |
+| **double-float** | **ratio** | **symbol** |
+| **echo-stream** | **rational** | **synonym-stream** |
+| **end-of-file** | **reader-error** | **t** |
+| **error** | **readtable** | **two-way-stream** |
+| **extended-char** | **real** | **type-error** |
+| **file-error** | **restart** | **unbound-slot** |
+| **file-stream** | **sequence** | **unbound-variable** |
+| **fixnum** | **serious-condition** | **undefined-function** |
+| **float** | **short-float** | **unsigned-byte** |
+| **floating-point-inexact** | **signed-byte** | **vector** |
+| **floating-point-invalid-operation** | **simple-array** | **warning** |
+| **floating-point-overflow** | **simple-base-string** | |
+| **floating-point-underflow** | **simple-bit-vector** | |
 
 
 
@@ -26,27 +55,23 @@ If a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></
 
 
 
-(vector double-float 100) 
+`(vector double-float 100)`
 
 
 
-The following leaves the length unspecified:  
+The following leaves the length unspecified:
 
 
 
+```lisp
+(vector double-float *)
+```
+
+The following leaves the element type unspecified:
 
 
 
-
-(vector double-float \*) 
-
-
-
-The following leaves the element type unspecified: 
-
-
-
-(vector \* 100) 
+`(vector * 100)`
 
 
 
@@ -54,13 +79,22 @@ Suppose that two <GlossaryTerm styled={true} term={"type specifier"}><i>type spe
 
 
 
-If a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> has one or more unspecified items at the end, those items can be dropped. If dropping all occurrences of \* results in a *singleton list*, then the parentheses can be dropped as well (the list can be replaced by the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> in its <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> ). For example, (vector double-float \*) can be abbreviated to (vector double-float), and (vector \* \*) can be abbreviated to (vector) and then to vector. 
+If a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> has one or more unspecified items at the end, those items can be dropped. If dropping all occurrences of `*` results in a *singleton list*, then the parentheses can be dropped as well (the list can be replaced by the <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> in its <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> ). For example, `(vector double-float *)` can be abbreviated to `(vector double-float)`, and `(vector * *)` can be abbreviated to `(vector)` and then to `vector`.
 
 
 
-|<p>**and long-float simple-base-string array member simple-bit-vector** </p><p>**base-string mod simple-string** </p><p>**bit-vector not simple-vector** </p><p>**complex or single-float** </p><p>**cons rational string** </p><p>**double-float real unsigned-byte** </p><p>**eql satisfies values** </p><p>**float short-float vector** </p><p>**function signed-byte** </p><p>**integer simple-array**</p>|
-
-| :- |
+| **and** | **long-float** | **simple-array** |
+| :--- | :--- | :--- |
+| **array** | **member** | **simple-base-string** |
+| **base-string** | **mod** | **simple-bit-vector** |
+| **bit-vector** | **not** | **simple-string** |
+| **complex** | **or** | **simple-vector** |
+| **cons** | **rational** | **single-float** |
+| **double-float** | **real** | **string** |
+| **eql** | **satisfies** | **unsigned-byte** |
+| **float** | **short-float** | **values** |
+| **function** | **signed-byte** | **vector** |
+| **integer** | | |
 
 
 
@@ -72,11 +106,10 @@ If a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> has one or more uns
 
 Figure 4–4 show the <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> that can be used as *compound type specifier names* but that cannot be used as <GlossaryTerm styled={true} term={"atomic type specifier"}><i>atomic type specifiers</i></GlossaryTerm>. 
 
-
-
-|<p>**and mod satisfies** </p><p>**eql not values** </p><p>**member or**</p>|
-
-| :- |
+| **and** | **mod** | **satisfies** |
+| :--- | :--- | :--- |
+| **eql** | **not** | **values** |
+| **member** | **or** | |
 
 
 
@@ -98,29 +131,18 @@ New <GlossaryTerm styled={true} term={"type specifier"}><i>type specifiers</i></
 
 
 
-A *class object* can be used as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . When used this way, it denotes the set of all members 
-
-
-
-
-
-
-
-
-
-
-
-of that <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>. 
+A *class object* can be used as a <GlossaryTerm styled={true} term={"type specifier"}><i>type specifier</i></GlossaryTerm> . When used this way, it denotes the set of all members of that <GlossaryTerm  term={"class"}><i>class</i></GlossaryTerm>.
 
 
 
 Figure 4–5 shows some <GlossaryTerm styled={true} term={"defined name"}><i>defined names</i></GlossaryTerm> relating to <GlossaryTerm  term={"type"}><i>types</i></GlossaryTerm> and <GlossaryTerm  term={"declaration"}><i>declarations</i></GlossaryTerm>. 
 
-
-
-|<p>**coerce defstruct subtypep** </p><p>**declaim deftype the** </p><p>**declare ftype type** </p><p>**defclass locally type-of** </p><p>**define-condition proclaim typep**</p>|
-
-| :- |
+| **coerce** | **defstruct** | **subtypep** |
+| :--- | :--- | :--- |
+| **declaim** | **deftype** | **the** |
+| **declare** | **ftype** | **type** |
+| **defclass** | **locally** | **type-of** |
+| **define-condition** | **proclaim** | **typep** |
 
 
 
@@ -138,9 +160,33 @@ Figure 4–6 shows all <GlossaryTerm styled={true} term={"defined name"}><i>defi
 
 
 
-|<p>**and function simple-array arithmetic-error generic-function simple-base-string array hash-table simple-bit-vector atom integer simple-condition base-char keyword simple-error base-string list simple-string bignum logical-pathname simple-type-error bit long-float simple-vector bit-vector member simple-warning broadcast-stream method single-float built-in-class method-combination standard-char cell-error mod standard-class character nil standard-generic-function class not standard-method compiled-function null standard-object complex number storage-condition concatenated-stream or stream** </p><p>**condition package stream-error cons package-error string** </p><p>**control-error parse-error string-stream division-by-zero pathname structure-class double-float print-not-readable structure-object echo-stream program-error style-warning end-of-file random-state symbol** </p><p>**eql ratio synonym-stream error rational t** </p><p>**extended-char reader-error two-way-stream file-error readtable type-error file-stream real unbound-slot fixnum restart unbound-variable float satisfies undefined-function floating-point-inexact sequence unsigned-byte floating-point-invalid-operation serious-condition values** </p><p>**floating-point-overflow short-float vector** </p><p>**floating-point-underflow signed-byte warning**</p>|
-
-| :- |
+| **and** | **extended-char** | **nil** | **serious-condition** | **standard-object** |
+| :--- | :--- | :--- | :--- | :--- |
+| **arithmetic-error** | **file-error** | **not** | **short-float** | **storage-condition** |
+| **array** | **file-stream** | **null** | **signed-byte** | **stream** |
+| **atom** | **fixnum** | **number** | **simple-array** | **stream-error** |
+| **base-char** | **float** | **or** | **simple-base-string** | **string** |
+| **base-string** | **floating-point-inexact** | **package** | **simple-bit-vector** | **string-stream** |
+| **bignum** | **floating-point-invalid-operation** | **package-error** | **simple-condition** | **structure-class** |
+| **bit** | **floating-point-overflow** | **parse-error** | **simple-error** | **structure-object** |
+| **bit-vector** | **floating-point-underflow** | **pathname** | **simple-string** | **style-warning** |
+| **broadcast-stream** | **function** | **print-not-readable** | **simple-type-error** | **symbol** |
+| **built-in-class** | **generic-function** | **program-error** | **simple-vector** | **synonym-stream** |
+| **cell-error** | **hash-table** | **random-state** | **simple-warning** | **t** |
+| **character** | **integer** | **ratio** | **single-float** | **two-way-stream** |
+| **class** | **keyword** | **rational** | **standard-char** | **type-error** |
+| **compiled-function** | **list** | **reader-error** | **standard-class** | **unbound-slot** |
+| **complex** | **logical-pathname** | **readtable** | **standard-generic-function** | **unbound-variable** |
+| **concatenated-stream** | **long-float** | **real** | **standard-method** | **undefined-function** |
+| **condition** | **member** | **restart** | **unsigned-byte** |
+| **cons** | **method** | **satisfies** | **values** |
+| **control-error** | **method-combination** | **sequence** | **vector** |
+| **division-by-zero** | **mod** | **warning** |
+| **double-float** |
+| **echo-stream** |
+| **end-of-file** |
+| **eql** |
+| **error** |
 
 
 

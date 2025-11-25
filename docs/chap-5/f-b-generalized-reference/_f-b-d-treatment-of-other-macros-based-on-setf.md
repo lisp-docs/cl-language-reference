@@ -8,11 +8,9 @@ For each of the “read-modify-write” <GlossaryTerm  term={"operator"}><i>oper
 
 Specifically, each of these <GlossaryTerm  term={"operator"}><i>operators</i></GlossaryTerm> can be viewed as involving a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> with the following general syntax: 
 
-
-
-(*operator \{preceding-form\}*\* *place \{following-form\}*\*) 
-
-
+```lisp
+(*operator \{preceding-form\}*\* *place \{following-form\}*\*)
+```
 
 The evaluation of each such <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> proceeds like this: 
 
@@ -54,9 +52,9 @@ Data and Control
 
 
 
-|<p>**decf pop pushnew** </p><p>**incf push remf**</p>|
-
-| :- |
+| **Operators**                                               |
+| :---------------------------------------------------------- |
+| <p>**decf pop pushnew** </p><p>**incf push remf**</p> |
 
 
 

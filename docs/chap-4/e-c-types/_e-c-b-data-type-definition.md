@@ -6,11 +6,17 @@ Information about <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> usage 
 
 
 
-|**Section** Data Type|
-
-| :- |
-
-|<p>Section 4.3 (Classes) Object System types </p><p>Section 7.5 (Slots) Object System types </p><p>Chapter 7 (Objects) Object System types </p><p>Section 7.6 (Generic Functions and Methods) Object System types </p><p>Section 9.1 (Condition System Concepts) Condition System types Chapter 4 (Types and Classes) Miscellaneous types </p><p>Chapter 2 (Syntax) All types—read and print syntax Section 22.1 (The Lisp Printer) All types—print syntax Section 3.2 (Compilation) All types—compilation issues</p>|
+| **Section Data Type** |
+| :-------------------- |
+| Section 4.3 (Classes) Object System types |
+| Section 7.5 (Slots) Object System types |
+| Chapter 7 (Objects) Object System types |
+| Section 7.6 (Generic Functions and Methods) Object System types |
+| Section 9.1 (Condition System Concepts) Condition System types |
+| Chapter 4 (Types and Classes) Miscellaneous types |
+| Chapter 2 (Syntax) All types—read and print syntax |
+| Section 22.1 (The Lisp Printer) All types—print syntax |
+| Section 3.2 (Compilation) All types—compilation issues |
 
 
 

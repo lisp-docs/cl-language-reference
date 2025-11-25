@@ -1,7 +1,4 @@
  
-
-
-
 The following rules apply to the <GlossaryTerm  term={"evaluation"}><i>evaluation</i></GlossaryTerm> of <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> in a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>: 
 
 
@@ -14,7 +11,9 @@ The following rules apply to the <GlossaryTerm  term={"evaluation"}><i>evaluatio
 
 
 
-(defmacro wrong-order (x y) ‘(getf ,y ,x)) 
+```lisp
+(defmacro wrong-order (x y) ‘(getf ,y ,x))
+```
 
 
 
@@ -22,7 +21,9 @@ This following <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> evaluates
 
 
 
-(push value (wrong-order place1 place2)) 
+```lisp
+(push value (wrong-order place1 place2))
+```
 
 
 
@@ -34,7 +35,9 @@ This following <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> evaluates
 
 
 
-(setf place1 value1 place2 value2 ...) 
+```lisp
+(setf place1 value1 place2 value2 ...)
+```
 
 
 
