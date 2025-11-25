@@ -10,20 +10,9 @@ A *function form* can be used as a <GlossaryTerm  term={"place"}><i>place</i></G
 
 
 
-Data and Control 
+Data and Control
 
-
-
-
-
-
-
-
-
-
-
-|<p>**aref cdadr get** </p><p>**bit cdar gethash** </p><p>**caaaar cddaar logical-pathname-translations caaadr cddadr macro-function** </p><p>**caaar cddar ninth** </p><p>**caadar cdddar nth** </p><p>**caaddr cddddr readtable-case** </p><p>**caadr cdddr rest** </p><p>**caar cddr row-major-aref** </p><p>**cadaar cdr sbit** </p><p>**cadadr char schar** </p><p>**cadar class-name second** </p><p>**caddar compiler-macro-function seventh** </p><p>**cadddr documentation sixth** </p><p>**caddr eighth slot-value** </p><p>**cadr elt subseq** </p><p>**car fdefinition svref** </p><p>**cdaaar fifth symbol-function** </p><p>**cdaadr fill-pointer symbol-plist** </p><p>**cdaar find-class symbol-value** </p><p>**cdadar first tenth** </p><p>**cdaddr fourth third**</p>|
-
+| `aref` `cdadr` `get`<br/>`bit` `cdar` `gethash`<br/>`caaaar` `cddaar` `logical-pathname-translations`<br/>`caaadr` `cddadr` `macro-function`<br/>`caaar` `cddar` `ninth`<br/>`caadar` `cdddar` `nth`<br/>`caaddr` `cddddr` `readtable-case`<br/>`caadr` `cdddr` `rest`<br/>`caar` `cddr` `row-major-aref`<br/>`cadaar` `cdr` `sbit`<br/>`cadadr` `char` `schar`<br/>`cadar` `class-name` `second`<br/>`caddar` `compiler-macro-function` `seventh`<br/>`cadddr` `documentation` `sixth`<br/>`caddr` `eighth` `slot-value`<br/>`cadr` `elt` `subseq`<br/>`car` `fdefinition` `svref`<br/>`cdaaar` `fifth` `symbol-function`<br/>`cdaadr` `fill-pointer` `symbol-plist`<br/>`cdaar` `find-class` `symbol-value`<br/>`cdadar` `first` `tenth`<br/>`cdaddr` `fourth` `third` |
 | :- |
 
 
@@ -58,11 +47,11 @@ In the case of <DictionaryLink  term={"subseq"}><b>subseq</b></DictionaryLink>, 
 
 
 
-|**Function name Argument that is a** <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> **Update function used**|
-
-| :- |
-
-|<p><DictionaryLink  term={"ldb"}><b>ldb</b></DictionaryLink> second <DictionaryLink  term={"dpb"}><b>dpb</b></DictionaryLink> </p><p><DictionaryLink  term={"mask-field"}><b>mask-field</b></DictionaryLink> second <DictionaryLink  term={"deposit-field"}><b>deposit-field</b></DictionaryLink> </p><p><DictionaryLink  term={"getf"}><b>getf</b></DictionaryLink> first <GlossaryTerm  term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm></p>|
+| Function name | Argument that is a <GlossaryTerm term={"place"}><i>place</i></GlossaryTerm> | Update function used |
+| :- | :- | :- |
+| <DictionaryLink term={"ldb"}>`ldb`</DictionaryLink> | `second` | <DictionaryLink term={"dpb"}>`dpb`</DictionaryLink> |
+| <DictionaryLink term={"mask-field"}>`mask-field`</DictionaryLink> | `second` | <DictionaryLink term={"deposit-field"}>`deposit-field`</DictionaryLink> |
+| <DictionaryLink term={"getf"}>`getf`</DictionaryLink> | `first` | <GlossaryTerm term={"implementation-dependent"}><i>implementation-dependent</i></GlossaryTerm> |
 
 
 
