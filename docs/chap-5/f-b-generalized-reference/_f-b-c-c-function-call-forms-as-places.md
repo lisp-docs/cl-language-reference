@@ -77,9 +77,9 @@ In a form such as:
 
 
 
-"""lisp
+```lisp
 (setf (ldb *byte-spec place-form*) *value-form*)
-"""
+```
 
 
 
@@ -207,9 +207,9 @@ In a form such as:
 
 
 
-"""lisp
+```lisp
 (setf (getf *place-form ind-form*) *value-form*)
-"""
+```
 
 
 

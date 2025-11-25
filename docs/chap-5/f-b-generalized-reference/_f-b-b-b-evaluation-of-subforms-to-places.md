@@ -11,9 +11,9 @@ The following rules apply to the <GlossaryTerm  term={"evaluation"}><i>evaluatio
 
 
 
-"""lisp
+```lisp
 (defmacro wrong-order (x y) ‘(getf ,y ,x))
-"""
+```
 
 
 
@@ -21,9 +21,9 @@ This following <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> evaluates
 
 
 
-"""lisp
+```lisp
 (push value (wrong-order place1 place2))
-"""
+```
 
 
 
@@ -35,9 +35,9 @@ This following <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> evaluates
 
 
 
-"""lisp
+```lisp
 (setf place1 value1 place2 value2 ...)
-"""
+```
 
 
 

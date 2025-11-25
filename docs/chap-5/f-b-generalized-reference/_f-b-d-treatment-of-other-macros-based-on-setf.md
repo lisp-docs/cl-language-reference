@@ -8,9 +8,9 @@ For each of the “read-modify-write” <GlossaryTerm  term={"operator"}><i>oper
 
 Specifically, each of these <GlossaryTerm  term={"operator"}><i>operators</i></GlossaryTerm> can be viewed as involving a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> with the following general syntax: 
 
-"""lisp
+```lisp
 (*operator \{preceding-form\}*\* *place \{following-form\}*\*)
-"""
+```
 
 The evaluation of each such <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> proceeds like this: 
 

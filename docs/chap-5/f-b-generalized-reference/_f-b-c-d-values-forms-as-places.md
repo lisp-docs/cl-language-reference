@@ -1,8 +1,8 @@
 A <DictionaryLink  term={"values"}><b>values</b></DictionaryLink> <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> can be used as a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm>, provided that each of its <GlossaryTerm  term={"subform"}><i>subforms</i></GlossaryTerm> is also a <GlossaryTerm  term={"place"}><i>place</i></GlossaryTerm> form. A form such as
 
-"""lisp
+```lisp
 (setf (values *place-1 . . . place-n*) *values-form*)
-"""
+```
 
 does the following:
 

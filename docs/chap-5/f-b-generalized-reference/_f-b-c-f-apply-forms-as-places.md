@@ -3,21 +3,21 @@ The following situations involving <DictionaryLink  term={"setf"}><b>setf</b></D
 
 
 -
-"""lisp
+```lisp
 (setf (apply #’aref *array {subscript}*\* *more-subscripts*) *new-element*)
-"""
+```
 
 
 -
-"""lisp
+```lisp
 (setf (apply #’bit *array {subscript}*\* *more-subscripts*) *new-element*)
-"""
+```
 
 
 -
-"""lisp
+```lisp
 (setf (apply #’sbit *array {subscript}*\* *more-subscripts*) *new-element*)
-"""
+```
 
 
 
@@ -33,14 +33,14 @@ If a user-defined <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm
 
 
 
-"""lisp
+```lisp
 (setf (apply #’*name {arg}*\*) *val*)
-"""
+```
 
 *≡*
-"""lisp
+```lisp
 (apply #’(setf <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm>) *val {arg}*\*)
-"""
+```
 
 
 

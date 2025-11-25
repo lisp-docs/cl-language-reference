@@ -2,17 +2,17 @@ A <DictionaryLink  term={"the"}><b>the</b></DictionaryLink> <GlossaryTerm  term=
 
 For example,
 
-"""lisp
+```lisp
 (setf (the integer (cadr x)) (+ y 3))
-"""
+```
 
 
 
 is processed as if it were
 
-"""lisp
+```lisp
 (setf (cadr x) (the integer (+ y 3)))
-"""
+```
 
 Data and Control
 
