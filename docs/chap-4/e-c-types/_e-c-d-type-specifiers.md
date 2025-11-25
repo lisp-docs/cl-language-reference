@@ -8,9 +8,14 @@
 
 
 
-
-
-|<p>**arithmetic-error function simple-condition array generic-function simple-error atom hash-table simple-string base-char integer simple-type-error base-string keyword simple-vector bignum list simple-warning bit logical-pathname single-float bit-vector long-float standard-char broadcast-stream method standard-class built-in-class method-combination standard-generic-function cell-error nil standard-method character null standard-object class number storage-condition compiled-function package stream** </p><p>**complex package-error stream-error concatenated-stream parse-error string** </p><p>**condition pathname string-stream cons print-not-readable structure-class control-error program-error structure-object division-by-zero random-state style-warning double-float ratio symbol** </p><p>**echo-stream rational synonym-stream end-of-file reader-error t** </p><p>**error readtable two-way-stream extended-char real type-error file-error restart unbound-slot file-stream sequence unbound-variable fixnum serious-condition undefined-function float short-float unsigned-byte floating-point-inexact signed-byte vector** </p><p>**floating-point-invalid-operation simple-array warning** </p><p>**floating-point-overflow simple-base-string** </p><p>**floating-point-underflow simple-bit-vector**</p>|
+|<p>**arithmetic-error function simple-condition array generic-function simple-error atom hash-table simple-string base-char integer simple-type-error base-string keyword simple-vector bignum list simple-warning bit logical-pathname single-float bit-vector long-float standard-char broadcast-stream method standard-class built-in-class method-combination standard-generic-function cell-error nil standard-method character null standard-object class number storage-condition compiled-function package stream** </p>|
+|<p>**complex package-error stream-error concatenated-stream parse-error string** </p>|
+|<p>**condition pathname string-stream cons print-not-readable structure-class control-error program-error structure-object division-by-zero random-state style-warning double-float ratio symbol** </p>|
+|<p>**echo-stream rational synonym-stream end-of-file reader-error t** </p>|
+|<p>**error readtable two-way-stream extended-char real type-error file-error restart unbound-slot file-stream sequence unbound-variable fixnum serious-condition undefined-function float short-float unsigned-byte floating-point-inexact signed-byte vector** </p>|
+|<p>**floating-point-invalid-operation simple-array warning** </p>|
+|<p>**floating-point-overflow simple-base-string** </p>|
+|<p>**floating-point-underflow simple-bit-vector**</p>|
 
 | :- |
 
