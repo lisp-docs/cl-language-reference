@@ -50,7 +50,7 @@
 
 
 
-<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> that must compute and return the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that specifies how the <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> are combined, that is, the <GlossaryTerm styled={true} term={"effective method"}><i>effective method</i></GlossaryTerm>. 
+<GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>—an <GlossaryTerm styled={true} term={"implicit progn"}><i>implicit progn</i></GlossaryTerm> that must compute and return the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that specifies how the <GlossaryTerm  term={"method"}><i>methods</i></GlossaryTerm> are combined, that is, the *effective method*. 
 
 
 
