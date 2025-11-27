@@ -14,43 +14,11 @@
 
 
 
-<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> *name lambda-list* 
+<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> *name lambda-list* (*\{method-group-specifier\}*\*) [(:arguments *. args-lambda-list*)] [(:generic-function *generic-function-symbol*)] [[<GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *| documentation*]] <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* → name 
 
 
 
-(*\{method-group-specifier\}*\*) 
-
-
-
-[(:arguments *. args-lambda-list*)] 
-
-
-
-[(:generic-function *generic-function-symbol*)] 
-
-
-
-[[ <GlossaryTerm  term={"declaration"}><i>\{declaration\}</i></GlossaryTerm>\* *| documentation* ]] 
-
-
-
-<GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\* 
-
-
-
-→ name 
-
-
-
-*short-form-option::*=:documentation *documentation |* 
-
-
-
-:identity-with-one-argument *identity-with-one-argument |* 
-
-
-
-:operator <GlossaryTerm  term={"operator"}><i>operator</i></GlossaryTerm> 
+*short-form-option* ::= :documentation *documentation* | :identity-with-one-argument *identity-with-one-argument* | :operator <GlossaryTerm  term={"operator"}><i>operator</i></GlossaryTerm>
 
 
 
@@ -58,15 +26,7 @@
 
 
 
-*long-form-option::*=:description *description |* 
-
-
-
-:order *order |* 
-
-
-
-:required *required-p* 
+*long-form-option* ::= :description *description* | :order *order* | :required *required-p*
 
 
 
@@ -178,23 +138,7 @@ Keyword options for the short form are the following:
 
 
 
-*•* The :identity-with-one-argument option enables an optimization when its value is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> (the default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>). If there is exactly one applicable method and it is a 
-
-
-
-primary method, that method serves as the effective method and <GlossaryTerm  term={"operator"}><i>operator</i></GlossaryTerm> is not 
-
-
-
-called. This optimization avoids the need to create a new effective method and 
-
-
-
-avoids the overhead of a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> call. This option is designed to be used with 
-
-
-
-operators such as <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink>, <DictionaryLink  term={"and"}><b>and</b></DictionaryLink>, +, and <DictionaryLink  term={"max"}><b>max</b></DictionaryLink>. 
+*•* The :identity-with-one-argument option enables an optimization when its value is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> (the default is <GlossaryTerm  term={"false"}><i>false</i></GlossaryTerm>). If there is exactly one applicable method and it is a primary method, that method serves as the effective method and <GlossaryTerm  term={"operator"}><i>operator</i></GlossaryTerm> is not called. This optimization avoids the need to create a new effective method and avoids the overhead of a <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> call. This option is designed to be used with operators such as <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink>, <DictionaryLink  term={"and"}><b>and</b></DictionaryLink>, `+`, and <DictionaryLink  term={"max"}><b>max</b></DictionaryLink>. 
 
 
 
@@ -262,27 +206,7 @@ The <GlossaryTerm  term={"car"}><i>car</i></GlossaryTerm> of each *method-group-
 
 
 
-If *qualifier-pattern* is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> it must be **\***. A method matches a *qualifier-pattern* if the method’s list of <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm> is <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> to the *qualifier-pattern* (except that the symbol **\*** in a *qualifier-pattern* matches anything). Thus a *qualifier-pattern* can be one of the following: the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>, which matches <GlossaryTerm styled={true} term={"unqualified method"}><i>unqualified methods</i></GlossaryTerm>; the symbol **\***, which matches all methods; a true list, which matches methods with the same number of <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm> as the length of the list when each <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> matches the corresponding list element; or a dotted list that ends 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> 
-
-
-
-in the symbol **\*** (the **\*** matches any number of additional <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm>). 
+If *qualifier-pattern* is a <GlossaryTerm  term={"symbol"}><i>symbol</i></GlossaryTerm> it must be **\***. A method matches a *qualifier-pattern* if the method’s list of <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm> is <DictionaryLink  term={"equal"}><b>equal</b></DictionaryLink> to the *qualifier-pattern* (except that the symbol **\*** in a *qualifier-pattern* matches anything). Thus a *qualifier-pattern* can be one of the following: the <GlossaryTerm styled={true} term={"empty list"}><i>empty list</i></GlossaryTerm>, which matches <GlossaryTerm styled={true} term={"unqualified method"}><i>unqualified methods</i></GlossaryTerm>; the symbol **\***, which matches all methods; a true list, which matches methods with the same number of <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm> as the length of the list when each <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> matches the corresponding list element; or a dotted list that ends in the symbol **\*** (the **\*** matches any number of additional <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm>). 
 
 
 
@@ -302,59 +226,15 @@ Method group specifiers can have keyword options following the <GlossaryTerm  te
 
 
 
-*•* The :description option is used to provide a description of the role of methods in the method group. Programming environment tools use (apply #’format stream 
+*•* The :description option is used to provide a description of the role of methods in the method group. Programming environment tools use `(apply #’format stream *format-control* (method-qualifiers method))` to print this description, which is expected to be concise. This keyword option allows the description of a method <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> to be defined in the same module that defines the meaning of the method <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm>. In most cases, *format-control* will not contain any <DictionaryLink  term={"format"}><b>format</b></DictionaryLink> directives, but they are available for generality. If :description is not supplied, a default description is generated based on the variable name and the <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> patterns and on whether this method group includes the <GlossaryTerm styled={true} term={"unqualified method"}><i>unqualified methods</i></GlossaryTerm>. 
 
 
 
-*format-control* (method-qualifiers <GlossaryTerm  term={"method"}><i>method</i></GlossaryTerm>)) to print this description, which is 
+*•* The :order option specifies the order of methods. The *order* argument is a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that evaluates to :most-specific-first or :most-specific-last. If it evaluates to any other value, an error is signaled. If :order is not supplied, it defaults to :most-specific-first. 
 
 
 
-expected to be concise. This keyword option allows the description of a method 
-
-
-
-<GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> to be defined in the same module that defines the meaning of the method 
-
-
-
-<GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> . In most cases, *format-control* will not contain any <DictionaryLink  term={"format"}><b>format</b></DictionaryLink> directives, 
-
-
-
-but they are available for generality. If :description is not supplied, a default 
-
-
-
-description is generated based on the variable name and the <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> patterns and 
-
-
-
-on whether this method group includes the <GlossaryTerm styled={true} term={"unqualified method"}><i>unqualified methods</i></GlossaryTerm>. 
-
-
-
-*•* The :order option specifies the order of methods. The *order* argument is a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that evaluates to :most-specific-first or :most-specific-last. If it evaluates 
-
-
-
-to any other value, an error is signaled. If :order is not supplied, it defaults to 
-
-
-
-:most-specific-first. 
-
-
-
-*•* The :required option specifies whether at least one method in this method group is required. If its value is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> and the method group is empty (that is, no 
-
-
-
-applicable methods match the <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> patterns or satisfy the predicate), an error 
-
-
-
-is signaled. If :required is not supplied, it defaults to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
+*•* The :required option specifies whether at least one method in this method group is required. If its value is <GlossaryTerm  term={"true"}><i>true</i></GlossaryTerm> and the method group is empty (that is, no applicable methods match the <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> patterns or satisfy the predicate), an error is signaled. If :required is not supplied, it defaults to <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink>. 
 
 
 
@@ -362,31 +242,15 @@ The use of method group specifiers provides a convenient syntax to select method
 
 
 
-It is permissible to use <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> on the variables named in the method group specifiers and 
+It is permissible to use <DictionaryLink  term={"setq"}><b>setq</b></DictionaryLink> on the variables named in the method group specifiers and to bind additional variables. It is also possible to bypass the method group specifier mechanism and do everything in the body <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. This is accomplished by writing a single method group with **\*** as its only *qualifier-pattern*; the variable is then bound to a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of all of the <GlossaryTerm styled={true} term={"applicable method"}><i>applicable methods</i></GlossaryTerm>, in most-specific-first order. 
 
 
 
- 
+The body <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> compute and return the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that specifies how the methods are combined, that is, the effective method. The effective method is evaluated in the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> augmented with a local macro definition for <DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink> and with bindings named by symbols not <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> from the COMMON-LISP-USER <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. Given a method object in one of the <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm> produced by the method group specifiers and a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of next methods, <DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink> will invoke the method such that <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> has available the next methods. 
 
 
 
- 
-
-
-
-<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> 
-
-
-
-to bind additional variables. It is also possible to bypass the method group specifier mechanism and do everything in the body <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>. This is accomplished by writing a single method group with **\*** as its only *qualifier-pattern*; the variable is then bound to a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of all of the <GlossaryTerm styled={true} term={"applicable method"}><i>applicable methods</i></GlossaryTerm>, in most-specific-first order. 
-
-
-
-The body <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm> compute and return the <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that specifies how the methods are combined, that is, the e↵ective method. The e↵ective method is evaluated in the <GlossaryTerm styled={true} term={"null lexical environment"}><i>null lexical environment</i></GlossaryTerm> augmented with a local macro definition for <DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink> and with bindings named by symbols not <GlossaryTerm  term={"accessible"}><i>accessible</i></GlossaryTerm> from the COMMON-LISP-USER <GlossaryTerm  term={"package"}><i>package</i></GlossaryTerm>. Given a method object in one of the <GlossaryTerm  term={"list"}><i>lists</i></GlossaryTerm> produced by the method group specifiers and a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of next methods, <DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink> will invoke the method such that <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> has available the next methods. 
-
-
-
-When an e↵ective method has no e↵ect other than to call a single method, some implementations employ an optimization that uses the single method directly as the e↵ective method, thus avoiding the need to create a new e↵ective method. This optimization is active when the e↵ective method form consists entirely of an invocation of the <DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink> macro whose first <GlossaryTerm  term={"subform"}><i>subform</i></GlossaryTerm> is a method object and whose second <GlossaryTerm  term={"subform"}><i>subform</i></GlossaryTerm> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> or unsupplied. Each <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> body is responsible for stripping o↵ redundant invocations of <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink>, <DictionaryLink  term={"and"}><b>and</b></DictionaryLink>, <DictionaryLink  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></DictionaryLink>, and the like, if this optimization is desired. 
+When an effective method has no effect other than to call a single method, some implementations employ an optimization that uses the single method directly as the effective method, thus avoiding the need to create a new effective method. This optimization is active when the effective method form consists entirely of an invocation of the <DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink> macro whose first <GlossaryTerm  term={"subform"}><i>subform</i></GlossaryTerm> is a method object and whose second <GlossaryTerm  term={"subform"}><i>subform</i></GlossaryTerm> is <DictionaryLink  term={"nil"}><b>nil</b></DictionaryLink> or unsupplied. Each <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> body is responsible for stripping off redundant invocations of <DictionaryLink  term={"progn"}><b>progn</b></DictionaryLink>, <DictionaryLink  term={"and"}><b>and</b></DictionaryLink>, <DictionaryLink  term={"multiple-value-prog1"}><b>multiple-value-prog1</b></DictionaryLink>, and the like, if this optimization is desired. 
 
 
 
@@ -394,23 +258,7 @@ The list (:arguments . *lambda-list*) can appear before any declarations or <Glo
 
 
 
-In addition, **&amp;whole** *var* can be placed first in the :arguments *lambda-list*. It causes *var* to 
-
-
-
- 
-
-
-
- 
-
-
-
-<DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink> 
-
-
-
-be <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm> to a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that <GlossaryTerm  term={"evaluate"}><i>evaluates</i></GlossaryTerm> to a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of all of the <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> supplied to the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. This is di↵erent from **&amp;rest** because it accesses all of the arguments, not just the keyword/rest <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>. 
+be <GlossaryTerm  term={"bound"}><i>bound</i></GlossaryTerm> to a <GlossaryTerm  term={"form"}><i>form</i></GlossaryTerm> that <GlossaryTerm  term={"evaluate"}><i>evaluates</i></GlossaryTerm> to a <GlossaryTerm  term={"list"}><i>list</i></GlossaryTerm> of all of the <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm> supplied to the <GlossaryTerm styled={true} term={"generic function"}><i>generic function</i></GlossaryTerm>. This is different from `&rest` because it accesses all of the arguments, not just the keyword/rest <GlossaryTerm  term={"argument"}><i>arguments</i></GlossaryTerm>. 
 
 
 
@@ -418,7 +266,7 @@ Erroneous conditions detected by the body should be reported with
 
 
 
-<DictionaryLink  term={"method-combination-error"}><b>method-combination-error</b></DictionaryLink> or <DictionaryLink  term={"invalid-method-error"}><b>invalid-method-error</b></DictionaryLink>; these <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> add any nec essary contextual information to the error message and will signal the appropriate error. 
+<DictionaryLink  term={"method-combination-error"}><b>method-combination-error</b></DictionaryLink> or <DictionaryLink  term={"invalid-method-error"}><b>invalid-method-error</b></DictionaryLink>; these <GlossaryTerm  term={"function"}><i>functions</i></GlossaryTerm> add any necessary contextual information to the error message and will signal the appropriate error. 
 
 
 
@@ -430,15 +278,11 @@ Within the body <GlossaryTerm  term={"form"}><i>forms</i></GlossaryTerm>, *gener
 
 
 
-*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> (as kind 
+*Documentation* is attached as a <GlossaryTerm styled={true} term={"documentation string"}><i>documentation string</i></GlossaryTerm> to <GlossaryTerm  term={"name"}><i>name</i></GlossaryTerm> (as kind <DictionaryLink  term={"method-combination"}><b>method-combination</b></DictionaryLink>) and to the *method combination object*. 
 
 
 
-<DictionaryLink  term={"method-combination"}><b>method-combination</b></DictionaryLink>) and to the *method combination object*. 
-
-
-
-Note that two methods with identical specializers, but with di↵erent <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm>, are not ordered by the algorithm described in Step 2 of the method selection and combination process described in Section 7.6.6 (Method Selection and Combination). Normally the two methods play di↵erent roles in the e↵ective method because they have di↵erent <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm>, and no matter how they are ordered in the result of Step 2, the e↵ective method is the same. If the two methods play the same role and their order matters, an error is signaled. This happens as part of the <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> pattern matching in <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>. 
+Note that two methods with identical specializers, but with different <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm>, are not ordered by the algorithm described in Step 2 of the method selection and combination process described in Section 7.6.6 (Method Selection and Combination). Normally the two methods play different roles in the effective method because they have different <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm>, and no matter how they are ordered in the result of Step 2, the effective method is the same. If the two methods play the same role and their order matters, an error is signaled. This happens as part of the <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> pattern matching in <DictionaryLink  term={"define-method-combination"}><b>define-method-combination</b></DictionaryLink>. 
 
 
 
@@ -447,29 +291,26 @@ If a <DictionaryLink  term={"define-method-combination"}><b>define-method-combin
 
 
 **Examples:**
-```lisp
+"""lisp
 Most examples of the long form of **define-method-combination** also illustrate the use of the related *functions* that are provided as part of the declarative method combination facility. 
 ;;; Examples of the short form of define-method-combination 
 (define-method-combination and :identity-with-one-argument t) 
 (defmethod func and ((x class1) y) ...) 
 ;;; The equivalent of this example in the long form is: 
-(define-method-combination and 
-    
-    
-    **define-method-combination** 
-  (&optional (order :most-specific-first)) 
-  ((around (:around)) 
-   (primary (and) :order order :required t)) 
-  (let ((form (if (rest primary) 
-		  ‘(and ,@(mapcar #’(lambda (method) 
-				      ‘(call-method ,method)) 
-				    primary)) 
-		   ‘(call-method ,(first primary))))) 
-    (if around 
-	‘(call-method ,(first around) 
-		      (,@(rest around) 
-			 (make-method ,form))) 
-	 form))) 
+(define-method-combination and
+  (&optional (order :most-specific-first))
+  ((around (:around))
+   (primary (and) :order order :required t))
+  (let ((form (if (rest primary)
+                  '(and ,@(mapcar #'(lambda (method)
+                                      '(call-method ,method))
+                                    primary))
+                  '(call-method ,(first primary)))))
+    (if around
+        '(call-method ,(first around)
+                      (,@(rest around)
+                         (make-method ,form)))
+        form)))
 ;;; Examples of the long form of define-method-combination 
 					;The default method-combination technique 
 (define-method-combination standard () 
@@ -568,12 +409,12 @@ Most examples of the long form of **define-method-combination** also illustrate 
 			     ‘(call-method ,method)) 
 			   methods)) 
      (unlock (object-lock ,object)))) 
-```
-**Side Eects:** 
+"""
+**Side Effects:** 
 
 
 
-The <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> is not required to perform any compile-time side-e↵ects. 
+The <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> is not required to perform any compile-time side-effects. 
 
 
 
@@ -613,7 +454,7 @@ If the :order option evaluates to a value other than :most-specific-first or :mo
 
 
 
-<DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink>, <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink>, **documentation**, <DictionaryLink  term={"method-qualifiers"}><b>method-qualifiers</b></DictionaryLink>, <DictionaryLink  term={"method-combination-error"}><b>method-combination-error</b></DictionaryLink>, <DictionaryLink  term={"invalid-method-error"}><b>invalid-method-error</b></DictionaryLink>, <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>, Section 7.6.6 (Method Selection and Combination), Sec tion 7.6.6.4 (Built-in Method Combination Types), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
+<DictionaryLink  term={"call-method"}><b>call-method</b></DictionaryLink>, <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink>, **documentation**, <DictionaryLink  term={"method-qualifiers"}><b>method-qualifiers</b></DictionaryLink>, <DictionaryLink  term={"method-combination-error"}><b>method-combination-error</b></DictionaryLink>, <DictionaryLink  term={"invalid-method-error"}><b>invalid-method-error</b></DictionaryLink>, <DictionaryLink  term={"defgeneric"}><b>defgeneric</b></DictionaryLink>, Section 7.6.6 (Method Selection and Combination), Section 7.6.6.4 (Built-in Method Combination Types), Section 3.4.11 (Syntactic Interaction of Documentation Strings and Declarations) 
 
 
 
