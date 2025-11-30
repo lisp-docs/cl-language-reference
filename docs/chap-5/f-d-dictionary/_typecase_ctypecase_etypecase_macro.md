@@ -12,24 +12,6 @@
 
 <DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> *keyplace \{↓normal-clause\}*\* → \{result\}\* 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-**typecase, ctypecase, etypecase** 
-
-
-
 <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink> *keyform \{↓normal-clause\}*\* → \{result\}\* 
 
 
@@ -110,27 +92,11 @@ If there is no *otherwise-clause*, <DictionaryLink  term={"typecase"}><b>typecas
 
 
 
-If no *normal-clause* matches, a *correctable error* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to (or *type1 type2* ...). The **store-value** <GlossaryTerm  term={"restart"}><i>restart</i></GlossaryTerm> can be used to correct the error. 
+If no *normal-clause* matches, a *correctable error* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is *type equivalent* to `(or type1 type2 ...)`. The **store-value** <GlossaryTerm  term={"restart"}><i>restart</i></GlossaryTerm> can be used to correct the error. 
 
 
 
-If the **store-value** <GlossaryTerm  term={"restart"}><i>restart</i></GlossaryTerm> is invoked, its <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> becomes the new *test-key*, and is stored Data and Control 
-
-
-
-
-
-
-
-
-
-
-
-**typecase, ctypecase, etypecase** 
-
-
-
-in *keyplace* as if by (setf *keyplace test-key*). Then <DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> starts over, considering each *clause* anew. 
+If the **store-value** <GlossaryTerm  term={"restart"}><i>restart</i></GlossaryTerm> is invoked, its <GlossaryTerm  term={"argument"}><i>argument</i></GlossaryTerm> becomes the new *test-key*, and is stored in *keyplace* as if by `(setf keyplace test-key)`. Then <DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> starts over, considering each *clause* anew. 
 
 
 
@@ -146,7 +112,7 @@ The subforms of *keyplace* might be evaluated again if none of the cases holds.
 
 
 
-If no *normal-clause* matches, a *non-correctable error* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to (or *type1 type2* ...). 
+If no *normal-clause* matches, a *non-correctable error* of <GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm> <DictionaryLink  term={"type-error"}><b>type-error</b></DictionaryLink> is signaled. The offending datum is the *test-key* and the expected type is <GlossaryTerm styled={true} term={"type equivalent"}><i>type equivalent</i></GlossaryTerm> to `(or type1 type2 ...)`. 
 
 
 
@@ -159,7 +125,7 @@ In all three cases, is permissible for more than one *clause* to specify a match
 
 
 **Examples:**
-```lisp
+"""lisp
 ;;; (Note that the parts of this example which use TYPE-OF 
 ;;; are implementation-dependent.) 
 (defun what-is-it (x) 
@@ -170,7 +136,7 @@ In all three cases, is permissible for more than one *clause* to specify a match
 	      (list "a list") 
 	      (t (format nil "a(n) ~(~A~)" (type-of x)))))) 
 → WHAT-IS-IT 
-(map ’nil #’what-is-it ’(nil (a b) 7.0 7 box)) 
+(map 'nil #'what-is-it '(nil (a b) 7.0 7 box)) 
 ▷ NIL is a symbol, boolean false, or the empty list. 
 ▷ (A B) is a list. 
 ▷ 7.0 is a float. 
@@ -180,7 +146,7 @@ In all three cases, is permissible for more than one *clause* to specify a match
 (setq x 1/3) 
 → 1/3 
 (ctypecase x 
-  (integer (\* x 4)) 
+  (integer (* x 4)) 
   (symbol (symbol-value x))) 
 ▷ Error: The value of X, 1/3, is neither an integer nor a symbol. 
 ▷ To continue, type :CONTINUE followed by an option number: 
@@ -195,14 +161,14 @@ In all three cases, is permissible for more than one *clause* to specify a match
 ▷ 2: Return to Lisp Toplevel. 
 ▷ Debug> :CONTINUE 1 
 ▷ Use value: 12 
-*!* 48 
-x *!* 12 
-```
-**Aected By:** 
+→ 48 
+x → 12 
+"""
+**Affected By:** 
 
 
 
-<DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> and <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink>, since they might signal an error, are potentially a↵ected by existing <GlossaryTerm  term={"handler"}><i>handlers</i></GlossaryTerm> and **\*debug-io\***. 
+<DictionaryLink  term={"ctypecase"}><b>ctypecase</b></DictionaryLink> and <DictionaryLink  term={"etypecase"}><b>etypecase</b></DictionaryLink>, since they might signal an error, are potentially affected by existing <GlossaryTerm  term={"handler"}><i>handlers</i></GlossaryTerm> and `*debug-io*`. 
 
 
 
@@ -230,23 +196,13 @@ The <GlossaryTerm  term={"compiler"}><i>compiler</i></GlossaryTerm> may choose t
 
 
 
-(typecase *test-key* 
-
-
-
-*\{*(*type \{form\}*\*)*\}*\*) 
-
-
+(typecase *test-key* *\{*(*type \{form\}*\*)*\}*\*) 
 
 *⌘* 
 
-
-
 (let ((#1=#:g0001 *test-key*)) 
 
-
-
-(cond *\{*((typep #1# ’<GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>) <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\*)*\}*\*)) 
+(cond *\{*((typep #1# '<GlossaryTerm  term={"type"}><i>type</i></GlossaryTerm>) <GlossaryTerm  term={"form"}><i>\{form\}</i></GlossaryTerm>\*)*\}*\*)) 
 
 
 
