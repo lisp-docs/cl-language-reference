@@ -14,7 +14,7 @@ import TypecaseMacro from './_typecase_ctypecase_etypecase_macro.md';
 
 The `typecase` macro evaluates a keyform and then selects a clause based on the type of the resulting value.
 
-"""lisp
+```lisp
 (defun describe-thing (thing)
   (typecase thing
     (string (format nil "The string is ~S." thing))
@@ -33,24 +33,24 @@ The `typecase` macro evaluates a keyform and then selects a clause based on the 
 
 (describe-thing #\A)
 ; => "It's a CHARACTER."
-"""
+```
 
 ### No matching clause
 
 If no clause matches and there is no `t` or `otherwise` clause, `typecase` returns `NIL`.
 
-"""lisp
+```lisp
 (typecase 123
   (string "It's a string.")
   (list "It's a list."))
 ; => NIL
-"""
+```
 
 ### ctypecase
 
 `ctypecase` is similar to `typecase`, but it signals a correctable `type-error` if no clause is selected.
 
-"""lisp
+```lisp
 (defun process-numeric (num)
   (ctypecase num
     (integer (format nil "Processing integer: ~D" num))
@@ -61,13 +61,13 @@ If no clause matches and there is no `t` or `otherwise` clause, `typecase` retur
 
 (process-numeric 3.14)
 ; => "Processing float: 3.14"
-"""
+```
 
 ### `ctypecase` with no matching clause
 
 When no type matches, a correctable error is signaled. An interactive debugger would typically offer a `store-value` restart to provide a new value.
 
-"""lisp
+```lisp
 (handler-case (ctypecase "a string"
                 (integer "an integer")
                 (float "a float"))
@@ -76,13 +76,13 @@ When no type matches, a correctable error is signaled. An interactive debugger w
     t))
 ; >> Correctable error signaled: "a string" is not of type (OR INTEGER FLOAT).
 ; => T
-"""
+```
 
 ### etypecase
 
 `etypecase` is like `typecase`, but it signals a non-correctable `type-error` if no clause is selected.
 
-"""lisp
+```lisp
 (defun classify-pet (pet)
   (etypecase pet
     ((member :dog :cat) "It's a mammal.")
@@ -93,13 +93,13 @@ When no type matches, a correctable error is signaled. An interactive debugger w
 
 (classify-pet :snake)
 ; => "It's a reptile."
-"""
+```
 
 ### `etypecase` with no matching clause
 
 When no type matches, a non-correctable error is signaled.
 
-"""lisp
+```lisp
 (handler-case (etypecase :bird
                 ((member :dog :cat) "mammal")
                 ((member :lizard :snake) "reptile"))
@@ -108,4 +108,4 @@ When no type matches, a non-correctable error is signaled.
     t))
 ; >> Error signaled: :BIRD is not of type (OR (MEMBER :DOG :CAT) (MEMBER :LIZARD :SNAKE)).
 ; => T
-"""
+```
