@@ -125,7 +125,7 @@ In all three cases, is permissible for more than one *clause* to specify a match
 
 
 **Examples:**
-"""lisp
+```lisp
 ;;; (Note that the parts of this example which use TYPE-OF 
 ;;; are implementation-dependent.) 
 (defun what-is-it (x) 
@@ -163,7 +163,7 @@ In all three cases, is permissible for more than one *clause* to specify a match
 ▷ Use value: 12 
 → 48 
 x → 12 
-"""
+```
 **Affected By:** 
 
 
