@@ -10,19 +10,19 @@ Primary methods define the main action of the effective method, while auxiliary 
 
 
 
-An auxiliary method is a method whose <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> is :before, :after, or :around. Standard method combination allows no more than one <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> per method; if a method definition specifies more than one <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> per method, an error is signaled. 
+An auxiliary method is a method whose <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> is `:before`, `:after`, or `:around`. Standard method combination allows no more than one <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> per method; if a method definition specifies more than one <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> per method, an error is signaled. 
 
 
 
-*•* A <GlossaryTerm styled={true} term={"before method"}><i>before method</i></GlossaryTerm> has the keyword :before as its only <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> . A <GlossaryTerm styled={true} term={"before method"}><i>before method</i></GlossaryTerm> specifies <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> that is to be run before any <GlossaryTerm styled={true} term={"primary method"}><i>primary methods</i></GlossaryTerm>. 
+*•* A <GlossaryTerm styled={true} term={"before method"}><i>before method</i></GlossaryTerm> has the keyword `:before` as its only <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> . A <GlossaryTerm styled={true} term={"before method"}><i>before method</i></GlossaryTerm> specifies <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> that is to be run before any <GlossaryTerm styled={true} term={"primary method"}><i>primary methods</i></GlossaryTerm>. 
 
 
 
-*•* An <GlossaryTerm styled={true} term={"after method"}><i>after method</i></GlossaryTerm> has the keyword :after as its only <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> . An <GlossaryTerm styled={true} term={"after method"}><i>after method</i></GlossaryTerm> specifies <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> that is to be run after <GlossaryTerm styled={true} term={"primary method"}><i>primary methods</i></GlossaryTerm>. 
+*•* An <GlossaryTerm styled={true} term={"after method"}><i>after method</i></GlossaryTerm> has the keyword `:after` as its only <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> . An <GlossaryTerm styled={true} term={"after method"}><i>after method</i></GlossaryTerm> specifies <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> that is to be run after <GlossaryTerm styled={true} term={"primary method"}><i>primary methods</i></GlossaryTerm>. 
 
 
 
-*•* An <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> has the keyword :around as its only <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> . An <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> specifies <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> that is to be run instead of other <GlossaryTerm styled={true} term={"applicable method"}><i>applicable methods</i></GlossaryTerm>, but which might contain explicit <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> which calls some of those *shadowed methods* (via <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink>). 
+*•* An <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> has the keyword `:around` as its only <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> . An <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> specifies <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> that is to be run instead of other <GlossaryTerm styled={true} term={"applicable method"}><i>applicable methods</i></GlossaryTerm>, but which might contain explicit <GlossaryTerm  term={"code"}><i>code</i></GlossaryTerm> which calls some of those *shadowed methods* (via <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink>). 
 
 
 
@@ -39,17 +39,6 @@ The semantics of standard method combination is as follows:
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
 *•* If an <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> invokes <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink>, the next most specific <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm> is called, if one is applicable. If there are no <GlossaryTerm styled={true} term={"around method"}><i>around methods</i></GlossaryTerm> or if <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is called by the least specific <GlossaryTerm styled={true} term={"around method"}><i>around method</i></GlossaryTerm>, the other methods are called as follows: 
 
 
@@ -58,43 +47,11 @@ The semantics of standard method combination is as follows:
 
 
 
-– The most specific primary method is called. Inside the body of a primary 
+– The most specific primary method is called. Inside the body of a primary method, <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> may be used to call the next most specific primary method. When that method returns, the previous primary method can execute more code, perhaps based on the returned value or values. The generic function <DictionaryLink  term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is invoked if <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used and there are no more applicable primary methods. The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"next-method-p"}><b>next-method-p</b></DictionaryLink> may be used to determine whether a <GlossaryTerm styled={true} term={"next method"}><i>next method</i></GlossaryTerm> exists. If <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is not used, only the most specific <GlossaryTerm styled={true} term={"primary method"}><i>primary method</i></GlossaryTerm> is called. 
 
 
 
-method, <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> may be used to call the next most specific primary 
-
-
-
-method. When that method returns, the previous primary method can execute 
-
-
-
-more code, perhaps based on the returned value or values. The generic function 
-
-
-
-<DictionaryLink  term={"no-next-method"}><b>no-next-method</b></DictionaryLink> is invoked if <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used and there are no more 
-
-
-
-applicable primary methods. The <GlossaryTerm  term={"function"}><i>function</i></GlossaryTerm> <DictionaryLink  term={"next-method-p"}><b>next-method-p</b></DictionaryLink> may be used to 
-
-
-
-determine whether a <GlossaryTerm styled={true} term={"next method"}><i>next method</i></GlossaryTerm> exists. If <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is not used, only 
-
-
-
-the most specific <GlossaryTerm styled={true} term={"primary method"}><i>primary method</i></GlossaryTerm> is called. 
-
-
-
-– All the <GlossaryTerm styled={true} term={"after method"}><i>after methods</i></GlossaryTerm> are called in most-specific-last order. Their values are 
-
-
-
-ignored. An error is signaled if <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used in an <GlossaryTerm styled={true} term={"after method"}><i>after method</i></GlossaryTerm>. 
+– All the <GlossaryTerm styled={true} term={"after method"}><i>after methods</i></GlossaryTerm> are called in most-specific-last order. Their values are ignored. An error is signaled if <DictionaryLink  term={"call-next-method"}><b>call-next-method</b></DictionaryLink> is used in an <GlossaryTerm styled={true} term={"after method"}><i>after method</i></GlossaryTerm>. 
 
 
 

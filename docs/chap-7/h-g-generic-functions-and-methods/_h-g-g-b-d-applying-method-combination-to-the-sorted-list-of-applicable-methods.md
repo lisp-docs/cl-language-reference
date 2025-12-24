@@ -10,23 +10,7 @@ In general, the effective method is some combination of the applicable methods. 
 
 
 
-The role of each method in the effective method is determined by its <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm> and the specificity of the method. A <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> serves to mark a method, and the meaning of a <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> is determined 
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
-by the way that these marks are used by this step of the procedure. If an applicable method has an unrecognized <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> , this step signals an error and does not include that method in the effective method. 
+The role of each method in the effective method is determined by its <GlossaryTerm  term={"qualifier"}><i>qualifiers</i></GlossaryTerm> and the specificity of the method. A <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> serves to mark a method, and the meaning of a <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> is determined by the way that these marks are used by this step of the procedure. If an applicable method has an unrecognized <GlossaryTerm  term={"qualifier"}><i>qualifier</i></GlossaryTerm> , this step signals an error and does not include that method in the effective method. 
 
 
 

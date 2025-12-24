@@ -1,5 +1,5 @@
 ---
-title: "7.4 Meta"
+title: "7.4 Meta-Objects"
 ---
 
 # 7.4 Meta
