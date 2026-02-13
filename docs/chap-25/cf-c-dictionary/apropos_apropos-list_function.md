@@ -10,10 +10,47 @@ import AproposFunction from './_apropos_apropos-list_function.md';
 
 ## Expanded Reference: apropos, apropos-list
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Finding symbols by substring with apropos
+
+`apropos` prints information about all symbols whose names contain the given string as a substring. It returns no useful value.
 
 ```lisp
-(apropos, apropos-list )
+(apropos "MAKE-HASH")
+; Prints matching symbols, e.g.:
+; MAKE-HASH-TABLE (fbound)
+→ ; no useful return value (implementation-dependent)
+```
+
+### Getting a list of matching symbols with apropos-list
+
+`apropos-list` is the functional equivalent -- it returns a list of matching symbols rather than printing them.
+
+```lisp
+(let ((results (apropos-list "MAKE-HASH")))
+  (member 'make-hash-table results))
+→ (MAKE-HASH-TABLE ...)  ; MAKE-HASH-TABLE will be in the list
+```
+
+### Restricting search to a specific package
+
+Both functions accept an optional package argument to restrict the search.
+
+```lisp
+;; Search only in the COMMON-LISP package
+(member 'make-hash-table
+        (apropos-list "MAKE-HASH" (find-package "COMMON-LISP")))
+→ (MAKE-HASH-TABLE ...)
+```
+
+### Case-insensitive matching
+
+The search is typically case-insensitive (though this is implementation-dependent). Symbol names in Common Lisp are usually uppercase internally.
+
+```lisp
+;; These produce the same results
+(length (apropos-list "CONS"))
+→ 10  ; implementation-dependent count
+
+(length (apropos-list "cons"))
+→ 10  ; same count; implementation-dependent
 ```

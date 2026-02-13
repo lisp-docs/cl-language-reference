@@ -10,10 +10,58 @@ import IntegerLengthFunction from './_integer-length_function.md';
 
 ## Expanded Reference: integer-length
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Bit width of non-negative integers
+
+`integer-length` returns the number of bits needed to represent the integer in binary two's-complement format.
 
 ```lisp
-(integer-length )
+(integer-length 0)  ; → 0
+(integer-length 1)  ; → 1 (binary: 1)
+(integer-length 3)  ; → 2 (binary: 11)
+(integer-length 4)  ; → 3 (binary: 100)
+(integer-length 7)  ; → 3 (binary: 111)
+(integer-length 15) ; → 4 (binary: 1111)
+```
+
+### Bit width of negative integers
+
+For negative integers, `integer-length` counts the number of bits needed in two's-complement, not counting the infinite leading ones.
+
+```lisp
+(integer-length -1) ; → 0 (two's-complement: ...1111)
+(integer-length -2) ; → 1 (two's-complement: ...10)
+(integer-length -4) ; → 2 (two's-complement: ...100)
+(integer-length -7) ; → 3
+(integer-length -8) ; → 3 (two's-complement: ...1000)
+```
+
+### Powers of two
+
+For powers of two, `integer-length` returns one more than the exponent.
+
+```lisp
+(integer-length (expt 2 9))  ; → 10
+(integer-length (1- (expt 2 9))) ; → 9 (511 = 111111111 in binary)
+(integer-length (expt 2 100)) ; → 101
+```
+
+### Practical use: computing required bit width
+
+`integer-length` is useful to determine how many bits are needed to store a value.
+
+```lisp
+;; How many bits to represent a color channel value (0-255)?
+(integer-length 255) ; → 8
+
+;; How many bits for a Unicode code point (max #x10FFFF)?
+(integer-length #x10FFFF) ; → 21
+```
+
+### Relationship to log base 2
+
+For positive integers, `integer-length` is equivalent to ceiling of log base 2 of (n+1).
+
+```lisp
+(integer-length 100) ; → 7
+(ceiling (log 101 2)) ; → 7 (approximately)
 ```

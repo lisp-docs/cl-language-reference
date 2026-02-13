@@ -10,10 +10,32 @@ import SynonymStreamSymbolFunction from './_synonym-stream-symbol_function.md';
 
 ## Expanded Reference: synonym-stream-symbol
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Basic Usage
+
+`synonym-stream-symbol` returns the symbol whose value the synonym stream uses as its target.
 
 ```lisp
-(synonym-stream-symbol )
+(let ((syn (make-synonym-stream '*standard-output*)))
+  (synonym-stream-symbol syn))
+→ *STANDARD-OUTPUT*
+```
+
+### With a Custom Variable
+
+```lisp
+(defvar *my-custom-stream* (make-string-output-stream))
+
+(let ((syn (make-synonym-stream '*my-custom-stream*)))
+  (synonym-stream-symbol syn))
+→ *MY-CUSTOM-STREAM*
+```
+
+### Practical Use
+
+Knowing the symbol lets you understand which dynamic variable a synonym stream is tracking.
+
+```lisp
+(let ((syn (make-synonym-stream '*standard-input*)))
+  (eq (synonym-stream-symbol syn) '*standard-input*))
+→ T
 ```

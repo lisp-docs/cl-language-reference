@@ -141,3 +141,183 @@ a
 b
 NIL
 ```
+
+### Collecting values
+
+The `collect` clause accumulates results into a list and returns it.
+
+```lisp
+(loop for i from 1 to 5
+      collect (* i i))
+→ (1 4 9 16 25)
+```
+
+### Collecting with a filter
+
+```lisp
+(loop for x in '(1 "a" 2 "b" 3 "c")
+      when (stringp x)
+        collect x)
+→ ("a" "b" "c")
+```
+
+### Counting, summing, maximizing, minimizing
+
+```lisp
+(loop for x in '(3 1 4 1 5 9 2 6)
+      count (evenp x))
+→ 2
+
+(loop for x in '(1 2 3 4 5)
+      sum x)
+→ 15
+
+(loop for x in '(3 1 4 1 5 9 2 6)
+      maximize x)
+→ 9
+
+(loop for x in '(3 1 4 1 5 9 2 6)
+      minimize x)
+→ 1
+```
+
+### Multiple accumulations with named variables
+
+Using `into` to accumulate into named variables allows multiple accumulations in a single loop.
+
+```lisp
+(loop for x in '(1 -2 3 -4 5)
+      when (plusp x) collect x into positives
+      when (minusp x) collect x into negatives
+      finally (return (list positives negatives)))
+→ ((1 3 5) (-2 -4))
+```
+
+### Iterating over a range of numbers
+
+```lisp
+;; from/to is inclusive
+(loop for i from 0 to 4 collect i)
+→ (0 1 2 3 4)
+
+;; below is exclusive (same as "from 0 to n-1")
+(loop for i below 4 collect i)
+→ (0 1 2 3)
+
+;; counting downward
+(loop for i from 10 downto 1 collect i)
+→ (10 9 8 7 6 5 4 3 2 1)
+
+;; with a step
+(loop for i from 0 to 20 by 5 collect i)
+→ (0 5 10 15 20)
+```
+
+### Iterating over a string
+
+```lisp
+(loop for c across "hello"
+      collect (char-upcase c))
+→ (#\H #\E #\L #\L #\O)
+```
+
+### Destructuring in for clauses
+
+```lisp
+(loop for (name . age) in '(("Alice" . 30) ("Bob" . 25) ("Carol" . 35))
+      when (> age 28)
+        collect name)
+→ ("Alice" "Carol")
+```
+
+### Iterating with multiple for clauses (parallel termination)
+
+When multiple `for` clauses are used, the loop terminates when *any* of them is exhausted.
+
+```lisp
+(loop for x in '(a b c d e)
+      for i from 1
+      collect (list i x))
+→ ((1 A) (2 B) (3 C) (4 D) (5 E))
+
+;; Terminates when the shorter list runs out
+(loop for x in '(a b c)
+      for y in '(1 2 3 4 5)
+      collect (list x y))
+→ ((A 1) (B 2) (C 3))
+```
+
+### Using finally for cleanup or post-processing
+
+```lisp
+(loop for x in '(1 2 3 4 5)
+      sum x into total
+      count t into n
+      finally (return (/ total n)))
+→ 3
+```
+
+### Conditional execution with if/else
+
+```lisp
+(loop for x in '(1 2 3 4 5 6)
+      if (evenp x)
+        collect x into evens
+      else
+        collect x into odds
+      end
+      finally (return (values evens odds)))
+→ (2 4 6), (1 3 5)
+```
+
+### Simple (non-extended) loop
+
+Without any loop keywords, `loop` creates an infinite loop. Use `return` to exit.
+
+```lisp
+(let ((i 0))
+  (loop
+    (when (> i 4) (return i))
+    (incf i)))
+→ 5
+```
+
+### Looping across multiple lists simultaneously
+
+```lisp
+(loop for x in '(1 2 3)
+      for y in '(10 20 30)
+      collect (+ x y))
+→ (11 22 33)
+```
+
+### Repeat a fixed number of times
+
+```lisp
+(loop repeat 3
+      do (format t "hello "))
+hello hello hello
+NIL
+
+(loop repeat 4 collect (random 100))
+;; → e.g. (42 17 83 5)
+```
+
+### Using thereis, always, and never
+
+```lisp
+;; thereis returns the first non-nil value
+(loop for x in '(nil nil 42 nil)
+      thereis x)
+→ 42
+
+;; always returns T if every test passes, NIL otherwise
+(loop for x in '(2 4 6 8)
+      always (evenp x))
+→ T
+
+;; never returns T if no element satisfies the test
+(loop for x in '(1 3 5 7)
+      never (evenp x))
+→ T
+```

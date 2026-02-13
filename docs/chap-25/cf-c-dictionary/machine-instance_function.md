@@ -10,10 +10,41 @@ import MachineInstanceFunction from './_machine-instance_function.md';
 
 ## Expanded Reference: machine-instance
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Basic Usage
+
+`machine-instance` returns a string that identifies the particular machine (host) on which the Lisp implementation is running. The exact content is implementation-dependent.
 
 ```lisp
-(machine-instance )
+(machine-instance)
+; → "myworkstation"
 ```
+
+### Typical Return Values
+
+Different implementations may return hostnames, fully qualified domain names, or other identifiers. The function may also return `NIL` if no meaningful value can be determined.
+
+```lisp
+;; On SBCL running on a Linux host
+(machine-instance)
+; → "dev-server.example.com"
+
+;; On some implementations where host info is unavailable
+(machine-instance)
+; → NIL
+```
+
+### Using in Diagnostic Output
+
+`machine-instance` is commonly used alongside other environment-querying functions to produce diagnostic or logging information.
+
+```lisp
+(format nil "Running on ~A (~A ~A)"
+        (or (machine-instance) "unknown host")
+        (or (machine-type) "unknown type")
+        (or (machine-version) "unknown version"))
+; → "Running on dev-server.example.com (X86-64 Intel(R) Core(TM) i7)"
+```
+
+### Important Notes
+
+The return value is a string or `NIL`. The format and content are entirely implementation-dependent -- there is no portable way to rely on the structure of the returned string.

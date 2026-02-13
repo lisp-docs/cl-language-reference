@@ -10,10 +10,69 @@ import DisassembleFunction from './_disassemble_function.md';
 
 ## Expanded Reference: disassemble
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Basic Usage
+
+`disassemble` prints the disassembled machine code or intermediate representation for a compiled function. The exact format is implementation-dependent.
 
 ```lisp
-(disassemble )
+(defun square (x) (* x x))
+
+(disassemble #'square)
+; >> ; disassembly for SQUARE
+; >> ; Size: 23 bytes. Origin: #x10055A0D63
+; >> ; 63:       488B4510         MOV RAX, [RBP+16]
+; >> ; 67:       480FAFC0         IMUL RAX, RAX
+; >> ; ...
+; → NIL
 ```
+
+### Disassembling a Lambda Expression
+
+You can pass a lambda expression directly, and the implementation will compile it first before disassembling.
+
+```lisp
+(disassemble '(lambda (x y) (+ x y)))
+; >> ; disassembly for (LAMBDA (X Y))
+; >> ; ...
+; → NIL
+```
+
+### Disassembling by Name
+
+You can pass a function name as a symbol instead of a function object. The implementation looks up the current function binding.
+
+```lisp
+(defun add1 (n) (+ n 1))
+
+(disassemble 'add1)
+; >> ; disassembly for ADD1
+; >> ; ...
+; → NIL
+```
+
+### Comparing Optimized vs. Unoptimized Code
+
+Disassembly can reveal how declarations affect generated code. The exact output varies by implementation.
+
+```lisp
+(defun safe-add (x y)
+  (declare (optimize (safety 3)))
+  (+ x y))
+
+(defun fast-add (x y)
+  (declare (optimize (speed 3) (safety 0))
+           (type fixnum x y))
+  (the fixnum (+ x y)))
+
+(disassemble 'safe-add)
+; >> ; (larger output with type checks and overflow handling)
+; → NIL
+
+(disassemble 'fast-add)
+; >> ; (smaller output with direct fixnum arithmetic)
+; → NIL
+```
+
+### Important Notes
+
+The output of `disassemble` is entirely implementation-dependent. It always returns `NIL` and produces its output as a side effect to `*standard-output*`. Not all implementations produce native machine code -- some may show bytecode or other intermediate representations.

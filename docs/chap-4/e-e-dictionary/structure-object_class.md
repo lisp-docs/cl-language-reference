@@ -10,10 +10,24 @@ import StructureObjectClass from './_structure-object_class.md';
 
 ## Expanded Reference: structure-object
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### The structure-object Class
+
+`structure-object` is the superclass of all structures defined by `defstruct` (when no `:type` option is used). Every structure instance is of type `structure-object`.
 
 ```lisp
-(structure-object )
+(defstruct point x y)
+;; => POINT
+
+(typep (make-point) 'structure-object)
+;; => T
+```
+
+### Subtype Relationships
+
+```lisp
+(subtypep 'point 'structure-object)
+;; => T, T
+
+(subtypep 'structure-object t)
+;; => T, T
 ```

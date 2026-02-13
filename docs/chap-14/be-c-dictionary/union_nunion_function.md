@@ -10,10 +10,55 @@ import UnionFunction from './_union_nunion_function.md';
 
 ## Expanded Reference: union, nunion
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Basic set union
+
+`union` returns a list containing every element that appears in either list. Duplicates between the two lists are removed (one copy is kept).
 
 ```lisp
-(union, nunion )
+(union '(1 2 3) '(3 4 5))
+; → (1 2 3 4 5)  ; order may vary
+
+(union '(a b c) '(a b c))
+; → (A B C)  ; order may vary
+```
+
+### Using :test for value comparison
+
+Use `:test` to control how elements are compared.
+
+```lisp
+(union '("apple" "banana") '("banana" "cherry") :test #'equal)
+; → ("apple" "banana" "cherry")  ; order may vary
+
+(union '("Hello") '("hello") :test #'equalp)
+; → ("Hello")  ; order may vary
+```
+
+### Using :key to compare by a component
+
+The `:key` function extracts the comparison part from each element.
+
+```lisp
+(union '((id 1 name "Alice") (id 2 name "Bob"))
+       '((id 2 name "Robert") (id 3 name "Carol"))
+       :key #'cadr)
+; → ((ID 1 NAME "Alice") (ID 2 NAME "Bob") (ID 3 NAME "Carol"))  ; order may vary
+```
+
+### nunion is destructive
+
+`nunion` may modify either list to construct the result. Always use the return value.
+
+```lisp
+(let ((a (list 1 2 3))
+      (b (list 3 4 5)))
+  (nunion a b))
+; → (1 2 3 4 5)  ; order may vary
+```
+
+### Merging keyword sets
+
+```lisp
+(union '(:bold :italic) '(:italic :underline))
+; → (:BOLD :ITALIC :UNDERLINE)  ; order may vary
 ```

@@ -10,10 +10,41 @@ import ParseErrorConditionType from './_parse-error_condition-type.md';
 
 ## Expanded Reference: parse-error
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### The parse-error Type
+
+`parse-error` is a condition type for errors encountered during parsing. It is a subtype of `error`.
 
 ```lisp
-(parse-error )
+(subtypep 'parse-error 'error)
+```
+
+```lisp
+→ T, T
+```
+
+### Catching Parse Errors
+
+Parse errors are typically signaled by functions like `parse-integer` when they encounter invalid input.
+
+```lisp
+(handler-case
+    (parse-integer "abc")
+  (parse-error ()
+    :parse-failed))
+```
+
+```lisp
+→ :PARSE-FAILED
+```
+
+### Reader Errors Are Parse Errors
+
+Errors during `read` that involve malformed input may also be of type `parse-error` (specifically `reader-error`, which is a subtype of `parse-error`).
+
+```lisp
+(subtypep 'reader-error 'parse-error)
+```
+
+```lisp
+→ T, T
 ```

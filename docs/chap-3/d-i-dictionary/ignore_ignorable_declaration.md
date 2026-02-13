@@ -70,13 +70,34 @@ WARNING: redefining COMMON-LISP-USER::FOO in DEFUN
 FOO
 ```
 
-### Other Examples
+### Using ignorable for Macro-Generated Code
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+`ignorable` is preferred over `ignore` in macros where a variable may or may not be used depending on the expansion.
 
 ```lisp
-(ignore, ignorable )
+(defmacro with-result ((var form) &body body)
+  `(let ((,var ,form))
+     (declare (ignorable ,var))
+     ,@body))
+;; => WITH-RESULT
 
+;; var is used:
+(with-result (x (+ 1 2)) (* x x))
+;; => 9
+
+;; var is not used (no warning thanks to ignorable):
+(with-result (x (+ 1 2)) 42)
+;; => 42
+```
+
+### Ignoring Multiple Variables
+
+```lisp
+(defun pick-first (a b c)
+  (declare (ignore b c))
+  a)
+;; => PICK-FIRST
+
+(pick-first 'x 'y 'z)
+;; => X
 ```

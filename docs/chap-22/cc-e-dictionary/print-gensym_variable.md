@@ -10,10 +10,50 @@ import PrintGensymVariable from './_print-gensym_variable.md';
 
 ## Expanded Reference: \*print-gensym\*
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Default Behavior (true)
+
+When `*print-gensym*` is true, uninterned symbols are printed with the `#:` prefix to distinguish them from interned symbols.
 
 ```lisp
-*print-gensym*
+(let ((*print-gensym* t))
+  (write-to-string (make-symbol "FOO")))
+; => "#:FOO"
+
+(let ((*print-gensym* t))
+  (write-to-string (gensym)))
+; => "#:G123"  ; exact number is implementation-dependent
+```
+
+### When Set to NIL
+
+When `*print-gensym*` is false, uninterned symbols are printed without the `#:` prefix, making them look like interned symbols.
+
+```lisp
+(let ((*print-gensym* nil))
+  (write-to-string (make-symbol "FOO")))
+; => "FOO"
+```
+
+### Impact on Readability
+
+Without the `#:` prefix, reading the output back would produce an interned symbol rather than an uninterned one, losing the original identity.
+
+```lisp
+(let* ((sym (gensym "TEMP"))
+       (with-prefix    (let ((*print-gensym* t))
+                         (write-to-string sym)))
+       (without-prefix (let ((*print-gensym* nil))
+                         (write-to-string sym))))
+  (list with-prefix without-prefix))
+; => ("#:TEMP1" "TEMP1")  ; exact numbers are implementation-dependent
+```
+
+### print Uses Current Value
+
+`print` (and `prin1`) respect the current binding of `*print-gensym*`.
+
+```lisp
+(let ((*print-gensym* nil))
+  (prin1-to-string (gensym "X")))
+; => "X1"  ; exact number is implementation-dependent
 ```

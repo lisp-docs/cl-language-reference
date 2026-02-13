@@ -10,10 +10,43 @@ import TypeErrorDatumFunction from './_type-error-datum_type-error-expected-type
 
 ## Expanded Reference: type-error-datum, type-error-expected-type
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Extracting Information from a type-error
+
+`type-error-datum` returns the offending object, and `type-error-expected-type` returns the type that was expected.
 
 ```lisp
-(type-error-datum, type-error-expected-type )
+(handler-case
+    (check-type nil string)
+  (type-error (c)
+    (values (type-error-datum c)
+            (type-error-expected-type c))))
+;; => NIL, STRING
+```
+
+### Using Both Accessors for Error Reporting
+
+```lisp
+(defun safe-char (x)
+  (handler-case
+      (coerce x 'character)
+    (type-error (c)
+      (format nil "Cannot coerce ~S to ~A"
+              (type-error-datum c)
+              (type-error-expected-type c)))))
+;; => SAFE-CHAR
+
+(safe-char "hello")
+;; => "Cannot coerce \"hello\" to CHARACTER"
+;; (exact message depends on what the implementation signals)
+```
+
+### With Manually Signaled Errors
+
+```lisp
+(handler-case
+    (error 'type-error :datum 42 :expected-type 'string)
+  (type-error (c)
+    (list :datum (type-error-datum c)
+          :expected (type-error-expected-type c))))
+;; => (:DATUM 42 :EXPECTED STRING)
 ```

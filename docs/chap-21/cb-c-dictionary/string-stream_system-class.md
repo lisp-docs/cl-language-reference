@@ -10,10 +10,43 @@ import StringStreamSystemClass from './_string-stream_system-class.md';
 
 ## Expanded Reference: string-stream
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Overview
+
+`string-stream` is the system class for streams that read from or write to strings. Both string input streams and string output streams are of this type.
+
+### Type Check for Input String Streams
 
 ```lisp
-(string-stream )
+(typep (make-string-input-stream "test") 'string-stream)
+→ T
+```
+
+### Type Check for Output String Streams
+
+```lisp
+(typep (make-string-output-stream) 'string-stream)
+→ T
+```
+
+### Element Type is Always a Subtype of Character
+
+```lisp
+(subtypep (stream-element-type (make-string-input-stream "x")) 'character)
+→ T
+```
+
+### Class Hierarchy
+
+```lisp
+(subtypep 'string-stream 'stream)
+→ T
+```
+
+### Not a File Stream
+
+String streams are distinct from file streams.
+
+```lisp
+(typep (make-string-output-stream) 'file-stream)
+→ NIL
 ```

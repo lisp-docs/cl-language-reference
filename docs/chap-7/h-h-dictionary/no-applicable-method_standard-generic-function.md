@@ -10,10 +10,57 @@ import NoApplicableMethodStandardGenericFunction from './_no-applicable-method_s
 
 ## Expanded Reference: no-applicable-method
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Default Behavior
+
+When a generic function is called and no methods are applicable, `no-applicable-method` is invoked. The default method signals an error.
 
 ```lisp
-(no-applicable-method )
+(defgeneric process-item (item))
+
+;; Only a method for strings
+(defmethod process-item ((item string))
+  (string-upcase item))
+
+;; Calling with an integer has no applicable method:
+(handler-case (process-item 42)
+  (error (c)
+    (format nil "Caught error: ~A" c)))
+;; => "Caught error: ..." (error message about no applicable method)
+```
+
+### Defining a Custom no-applicable-method Handler
+
+You can define a method on `no-applicable-method` to provide a fallback or custom behavior instead of signaling an error.
+
+```lisp
+(defgeneric safe-lookup (key))
+
+(defmethod safe-lookup ((key symbol))
+  (format nil "Found symbol: ~A" key))
+
+(defmethod no-applicable-method ((gf (eql #'safe-lookup)) &rest args)
+  (format nil "No handler for ~A" (first args)))
+
+(safe-lookup :hello)
+;; => "Found symbol: HELLO"
+
+(safe-lookup 42)
+;; => "No handler for 42"
+```
+
+### Providing Default Return Values
+
+A custom `no-applicable-method` can return a sensible default instead of failing.
+
+```lisp
+(defgeneric convert-to-string (obj))
+
+(defmethod convert-to-string ((obj number))
+  (format nil "~A" obj))
+
+(defmethod no-applicable-method ((gf (eql #'convert-to-string)) &rest args)
+  (format nil "~S" (first args)))
+
+(convert-to-string 42)       ;; => "42"
+(convert-to-string '(1 2 3)) ;; => "(1 2 3)"
 ```

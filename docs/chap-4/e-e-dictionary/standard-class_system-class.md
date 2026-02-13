@@ -10,10 +10,27 @@ import StandardClassSystemClass from './_standard-class_system-class.md';
 
 ## Expanded Reference: standard-class
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### The standard-class Metaclass
+
+`standard-class` is the default metaclass for classes defined with `defclass`.
 
 ```lisp
-(standard-class )
+(defclass my-widget () ())
+;; => #<STANDARD-CLASS MY-WIDGET>
+
+(typep (find-class 'my-widget) 'standard-class)
+;; => T
+```
+
+### Distinguished from Other Metaclasses
+
+```lisp
+;; User-defined classes have metaclass standard-class:
+(class-of (find-class 'my-widget))
+;; => #<STANDARD-CLASS STANDARD-CLASS>
+
+;; Structure classes have metaclass structure-class:
+(defstruct my-struct a b)
+(class-of (find-class 'my-struct))
+;; => #<STANDARD-CLASS STRUCTURE-CLASS>
 ```
