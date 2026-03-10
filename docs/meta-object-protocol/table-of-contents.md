@@ -1,0 +1,47 @@
+Table of contents
+=================
+
+-   [Chapter 5 Concepts](/meta-object-protocol/chapter-5)
+    -   Introduction
+    -   Metaobjects
+        -   Classes
+        -   Slot definitions
+        -   Generic functions
+        -   Methods
+        -   Specializers
+        -   Method combinations
+    -   Inheritance structure of metaobject classes
+        -   Implementation and user specialization
+            -   Restrictions on implementations
+            -   Restrictions on portable programs
+    -   Processing of the user interface macros
+        -   Compile-file processing of the user interface macros
+        -   The `defclass` macro
+        -   The `defmethod` macro
+        -   Processing method bodies
+        -   The `defgeneric` macro
+    -   Subprotocols
+        -   Metaobject Initialization Protocols
+            -   Initialization of class metaobjects
+            -   Reinitialization of class metaobjects
+            -   Initialization of generic function and method metaobjects
+        -   Class finalization protocol
+        -   Instance structure protocol
+        -   Funcallable instances
+        -   Generic function invocation protocol
+        -   Dependent maintenance protocol
+-   [Chapter 6 Generic Functions and Methods](/meta-object-protocol/chapter-6)
+    -   [Sections](/meta-object-protocol/chapter-6-sections)
+        -   Initialization of class metaobjects
+        -   Initialization of generic function metaobjects
+        -   Initialization of method metaobjects
+        -   Initialization of slot definition metaobjects
+        -   Readers for class metaobjects
+        -   Readers for generic function metaobjects
+        -   Readers for method metaobjects
+        -   Readers for slot definition metaobjects
+    -   Generic functions and methods
+-   Additional material
+    -   [Inheritance graph of metaobject classes](/img/docs/graph.png)
+    -   [A list of all classes of the metaobject protocol](/meta-object-protocol/additional-material/list-of-classes)
+
