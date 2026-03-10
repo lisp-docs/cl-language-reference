@@ -1,26 +1,26 @@
 Table of contents
 =================
 
--   [Chapter 5 Concepts](/meta-object-protocol/chapter-5)
-    -   Introduction
-    -   Metaobjects
+-   [Chapter 5 Concepts](/category/chapter-5---concepts)
+    -   [Introduction](/meta-object-protocol/chap-5/introduction)
+    -   [Metaobjects](/meta-object-protocol/chap-5/5-2-metaobjects)
         -   Classes
         -   Slot definitions
         -   Generic functions
         -   Methods
         -   Specializers
         -   Method combinations
-    -   Inheritance structure of metaobject classes
+    -   [Inheritance structure of metaobject classes](/meta-object-protocol/chap-5/5-3-inheritance)
         -   Implementation and user specialization
             -   Restrictions on implementations
             -   Restrictions on portable programs
-    -   Processing of the user interface macros
+    -   [Processing of the user interface macros](/meta-object-protocol/chap-5/5-4-processing)
         -   Compile-file processing of the user interface macros
         -   The `defclass` macro
         -   The `defmethod` macro
         -   Processing method bodies
         -   The `defgeneric` macro
-    -   Subprotocols
+    -   [Subprotocols](/meta-object-protocol/chap-5/5-5-subprotocols)
         -   Metaobject Initialization Protocols
             -   Initialization of class metaobjects
             -   Reinitialization of class metaobjects
@@ -30,8 +30,8 @@ Table of contents
         -   Funcallable instances
         -   Generic function invocation protocol
         -   Dependent maintenance protocol
--   [Chapter 6 Generic Functions and Methods](/meta-object-protocol/chapter-6)
-    -   [Sections](/meta-object-protocol/chapter-6-sections)
+-   [Chapter 6 Generic Functions and Methods](/category/chapter-6---generic-functions-and-methods)
+    -   [Sections](/meta-object-protocol/chap-6/6-1-sections)
         -   Initialization of class metaobjects
         -   Initialization of generic function metaobjects
         -   Initialization of method metaobjects
@@ -40,7 +40,7 @@ Table of contents
         -   Readers for generic function metaobjects
         -   Readers for method metaobjects
         -   Readers for slot definition metaobjects
-    -   Generic functions and methods
+    -   [Index of all functions and methods](/meta-object-protocol/chap-6/all)
 -   Additional material
     -   [Inheritance graph of metaobject classes](/img/docs/graph.png)
     -   [A list of all classes of the metaobject protocol](/meta-object-protocol/additional-material/list-of-classes)
