@@ -17,9 +17,9 @@ compute-discriminating-function
 
 This generic function is called to determine the discriminating function for a generic function. When a generic function is called, the *installed* discriminating function is called with the full set of arguments received by the generic function, and must implement the behavior of calling the generic function: determining the ordered set of applicable methods, determining the effective method, and running the effective method.
 
-To determine the ordered set of applicable methods, the discriminating function first calls[compute-applicable-methods-using-classes](/meta-object-protocol/compute-applicable-methods-using-classes). If [compute-applicable-methods-using-classes](/meta-object-protocol/compute-applicable-methods-using-classes) returns a second value of false, the discriminating function then calls [compute-applicable-methods](/meta-object-protocol/compute-applicable-methods).
+To determine the ordered set of applicable methods, the discriminating function first calls[compute-applicable-methods-using-classes](/meta-object-protocol/dictionary/compute-applicable-methods-using-classes). If [compute-applicable-methods-using-classes](/meta-object-protocol/dictionary/compute-applicable-methods-using-classes) returns a second value of false, the discriminating function then calls [compute-applicable-methods](/meta-object-protocol/dictionary/compute-applicable-methods).
 
-When [compute-applicable-methods-using-classes](/meta-object-protocol/compute-applicable-methods-using-classes) returns a second value of true, the discriminating function is permitted to memoize the first returned value as follows. The discriminating function may reuse the list of applicable methods without calling [compute-applicable-methods-using-classes](/meta-object-protocol/compute-applicable-methods-using-classes) again provided that:
+When [compute-applicable-methods-using-classes](/meta-object-protocol/dictionary/compute-applicable-methods-using-classes) returns a second value of true, the discriminating function is permitted to memoize the first returned value as follows. The discriminating function may reuse the list of applicable methods without calling [compute-applicable-methods-using-classes](/meta-object-protocol/dictionary/compute-applicable-methods-using-classes) again provided that:
 
 i.  the generic function is being called again with required arguments which are instances of the same classes,
 ii. the generic function has not been reinitialized,
@@ -27,19 +27,19 @@ iii. no method has been added to or removed from the generic function,
 iv. for all the specializers of all the generic function's methods which are classes, their class precedence lists have not changed and
 v.  for any such memoized value, the class precedence list of the class of each of the required arguments has not changed.
 
-Determination of the effective method is done by calling [compute-effective-method](/meta-object-protocol/compute-effective-method) When the effective method is run, each method's function is called, and receives as arguments: (i) a list of the arguments to the generic function, and (ii) whatever other arguments are specified in the [call-method](/chap-7/h-h-dictionary/call-method_make-method_local-macro) form indicating that the method should be called. (See [make-method-lambda](/meta-object-protocol/make-method-lambda) for more information about how method functions are called.)
+Determination of the effective method is done by calling [compute-effective-method](/meta-object-protocol/dictionary/compute-effective-method) When the effective method is run, each method's function is called, and receives as arguments: (i) a list of the arguments to the generic function, and (ii) whatever other arguments are specified in the [call-method](/chap-7/h-h-dictionary/call-method_make-method_local-macro) form indicating that the method should be called. (See [make-method-lambda](/meta-object-protocol/dictionary/make-method-lambda) for more information about how method functions are called.)
 
-<!-- /meta-object-protocol/call-method -->
+<!-- /meta-object-protocol/dictionary/call-method -->
 
-The generic function [compute-discriminating-function](/meta-object-protocol/compute-discriminating-function) is called, and its result installed, by [add-method](/meta-object-protocol/add-method), [remove-method](/meta-object-protocol/remove-method), [initialize-instance](/chap-7/h-h-dictionary/initialize-instance_standard-generic-function), and [reinitialize-instance](/chap-7/h-h-dictionary/reinitialize-instance_standard-generic-function).
+The generic function [compute-discriminating-function](/meta-object-protocol/dictionary/compute-discriminating-function) is called, and its result installed, by [add-method](/meta-object-protocol/dictionary/add-method), [remove-method](/meta-object-protocol/dictionary/remove-method), [initialize-instance](/chap-7/h-h-dictionary/initialize-instance_standard-generic-function), and [reinitialize-instance](/chap-7/h-h-dictionary/reinitialize-instance_standard-generic-function).
 
-<!-- /meta-object-protocol/initialize-instance -->
-<!-- /meta-object-protocol/reinitialize-instance -->
+<!-- /meta-object-protocol/dictionary/initialize-instance -->
+<!-- /meta-object-protocol/dictionary/reinitialize-instance -->
 
 **Methods:**
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------
-  [**compute-discriminating-function** (*generic-function* standard-generic-function)](/meta-object-protocol/compute-discriminating-function-standard-generic-function)
+  [**compute-discriminating-function** (*generic-function* standard-generic-function)](/meta-object-protocol/dictionary/compute-discriminating-function-standard-generic-function)
   ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Remarks:**

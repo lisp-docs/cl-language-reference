@@ -9,6 +9,6 @@ slot-definition-location-standard-effective-slot-definition
 
 **Description:**
 
-This is a method on the generic function[slot-definition-location](/meta-object-protocol/slot-definition-location).
+This is a method on the generic function[slot-definition-location](/meta-object-protocol/dictionary/slot-definition-location).
 
-This method returns the value stored by [compute-slots `:around` (*class* standard-class)](/meta-object-protocol/compute-slots-around-standard-class) and [compute-slots `:around` (*class* funcallable-standard-class)](/meta-object-protocol/compute-slots-around-funcallable-standard-class).
+This method returns the value stored by [compute-slots `:around` (*class* standard-class)](/meta-object-protocol/dictionary/compute-slots-around-standard-class) and [compute-slots `:around` (*class* funcallable-standard-class)](/meta-object-protocol/dictionary/compute-slots-around-funcallable-standard-class).

@@ -9,7 +9,7 @@ compute-slots-around-funcallable-standard-class
 
 **Description:**
 
-This is a method on the generic function[compute-slots](/meta-object-protocol/compute-slots).
+This is a method on the generic function[compute-slots](/meta-object-protocol/dictionary/compute-slots).
 
 This method implements the specified behavior of computing and storing slot locations.
 

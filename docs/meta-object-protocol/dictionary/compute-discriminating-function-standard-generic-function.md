@@ -9,7 +9,7 @@ compute-discriminating-function-standard-generic-function
 
 **Description:**
 
-This is a method on the generic function[compute-discriminating-function](/meta-object-protocol/compute-discriminating-function).
+This is a method on the generic function[compute-discriminating-function](/meta-object-protocol/dictionary/compute-discriminating-function).
 
 No behavior is specified for this method beyond that specified for the generic function.
 

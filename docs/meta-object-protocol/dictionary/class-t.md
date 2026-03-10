@@ -11,7 +11,7 @@ None
 
 **Metaclass:**
 
-[built-in-class](/meta-object-protocol/class-built-in-class)
+[built-in-class](/meta-object-protocol/dictionary/class-built-in-class)
 
 **Description:**
 

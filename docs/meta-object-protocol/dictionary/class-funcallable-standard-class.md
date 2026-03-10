@@ -7,12 +7,12 @@ FUNCALLABLE-STANDARD-CLASS
 
 **Direct superclasses:**
 
-[class](/meta-object-protocol/class-class)
+[class](/meta-object-protocol/dictionary/class-class)
 
 **Metaclass:**
 
-[standard-class](/meta-object-protocol/class-standard-class)
+[standard-class](/meta-object-protocol/dictionary/class-standard-class)
 
 **Description:**
 
-This class is a *special-purpose class metaobject class*. Instances of this class are called [*funcallable instances*](/meta-object-protocol/funcallable-instances).
+This class is a *special-purpose class metaobject class*. Instances of this class are called [*funcallable instances*](/meta-object-protocol/dictionary/funcallable-instances).

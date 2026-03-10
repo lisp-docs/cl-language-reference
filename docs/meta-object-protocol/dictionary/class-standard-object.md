@@ -7,15 +7,15 @@ STANDARD-OBJECT
 
 **Direct superclasses:**
 
-[T](/meta-object-protocol/class-t)
+[T](/meta-object-protocol/dictionary/class-t)
 
 **Metaclass:**
 
-[standard-class](/meta-object-protocol/class-standard-class)
+[standard-class](/meta-object-protocol/dictionary/class-standard-class)
 
 **Description:**
 
-This class is the default direct superclass of the the class [standard-class](/meta-object-protocol/class-standard-class). When an instance of the class [standard-class](/meta-object-protocol/class-standard-class) is created, and no direct superclasses are explicitly specified, it defaults to this class. In this way, any behavior associated with this class will be inherited, directly or indirectly, by all instances of the class [standard-class](/meta-object-protocol/class-standard-class). A subclass of [standard-class](/meta-object-protocol/class-standard-class) may have a different class as its default direct superclass, but that class must be a subclass of this class.
+This class is the default direct superclass of the the class [standard-class](/meta-object-protocol/dictionary/class-standard-class). When an instance of the class [standard-class](/meta-object-protocol/dictionary/class-standard-class) is created, and no direct superclasses are explicitly specified, it defaults to this class. In this way, any behavior associated with this class will be inherited, directly or indirectly, by all instances of the class [standard-class](/meta-object-protocol/dictionary/class-standard-class). A subclass of [standard-class](/meta-object-protocol/dictionary/class-standard-class) may have a different class as its default direct superclass, but that class must be a subclass of this class.
 
 **Comments and remarks:**
 

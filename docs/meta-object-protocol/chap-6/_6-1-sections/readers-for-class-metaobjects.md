@@ -16,16 +16,16 @@ For any of these generic functions which returns a list, such lists will not be 
 #### Functions
 
   ------------------ -----------------------------------------------------------------------
-  Generic Function   [**class-default-initargs**](/meta-object-protocol/class-default-initargs)
-  Generic Function   [**class-direct-default-initargs**](/meta-object-protocol/class-direct-default-initargs)
-  Generic Function   [**class-direct-slots**](/meta-object-protocol/class-direct-slots)
-  Generic Function   [**class-direct-subclasses**](/meta-object-protocol/class-direct-subclasses)
-  Generic Function   [**class-direct-superclasses**](/meta-object-protocol/class-direct-superclasses)
-  Generic Function   [**class-finalized-p**](/meta-object-protocol/class-finalized-p)
-  Generic Function   [**class-name**](/meta-object-protocol/class-name)
-  Generic Function   [**class-precedence-list**](/meta-object-protocol/class-precedence-list)
-  Generic Function   [**class-prototype**](/meta-object-protocol/class-prototype)
-  Generic Function   [**class-slots**](/meta-object-protocol/class-slots)
+  Generic Function   [**class-default-initargs**](/meta-object-protocol/dictionary/class-default-initargs)
+  Generic Function   [**class-direct-default-initargs**](/meta-object-protocol/dictionary/class-direct-default-initargs)
+  Generic Function   [**class-direct-slots**](/meta-object-protocol/dictionary/class-direct-slots)
+  Generic Function   [**class-direct-subclasses**](/meta-object-protocol/dictionary/class-direct-subclasses)
+  Generic Function   [**class-direct-superclasses**](/meta-object-protocol/dictionary/class-direct-superclasses)
+  Generic Function   [**class-finalized-p**](/meta-object-protocol/dictionary/class-finalized-p)
+  Generic Function   [**class-name**](/meta-object-protocol/dictionary/class-name)
+  Generic Function   [**class-precedence-list**](/meta-object-protocol/dictionary/class-precedence-list)
+  Generic Function   [**class-prototype**](/meta-object-protocol/dictionary/class-prototype)
+  Generic Function   [**class-slots**](/meta-object-protocol/dictionary/class-slots)
   ------------------ -----------------------------------------------------------------------
 
 #### Methods
@@ -71,7 +71,7 @@ Each entry in the table indicates a method on one of the reader generic function
 
 1.  This method returns the value which was associated with the class metaobject during initialization or reinitialization.
 
-2.  This method returns the value associated with the class metaobject by [`finalize-inheritance` (*class* standard-class)](/meta-object-protocol/finalize-inheritance-standard-class) or [`finalize-inheritance` (*class* funcallable-standard-class)](/meta-object-protocol/finalize-inheritance-funcallable-standard-class).
+2.  This method returns the value associated with the class metaobject by [`finalize-inheritance` (*class* standard-class)](/meta-object-protocol/dictionary/finalize-inheritance-standard-class) or [`finalize-inheritance` (*class* funcallable-standard-class)](/meta-object-protocol/dictionary/finalize-inheritance-funcallable-standard-class).
 
 3.  This method signals an error.
 
@@ -81,11 +81,11 @@ Each entry in the table indicates a method on one of the reader generic function
 
 6.  This method returns false.
 
-7.  This method returns a value derived from the information in \[this table\]\(/meta-object-protocol/table-class-inheritance\), except that implementation-specific modifications are permitted as described in [section ``Implementation and User Specialization.''](/meta-object-protocol/implementation-and-user-specialization)
+7.  This method returns a value derived from the information in \[this table\]\(/meta-object-protocol/dictionary/table-class-inheritance\), except that implementation-specific modifications are permitted as described in [section ``Implementation and User Specialization.''](/meta-object-protocol/dictionary/implementation-and-user-specialization)
 
 8.  This method returns the name of the built-in class.
 
-9.  This methods returns a value which is maintained by [`add-direct-subclass` (*superclass* class) (*subclass* class)](/meta-object-protocol/add-direct-subclass-class-class) and [`remove-direct-subclass` (*superclass* class) (*subclass* class)](/meta-object-protocol/remove-direct-subclass-class-class) This method can be overridden only if those methods are overridden as well.
+9.  This methods returns a value which is maintained by [`add-direct-subclass` (*superclass* class) (*subclass* class)](/meta-object-protocol/dictionary/add-direct-subclass-class-class) and [`remove-direct-subclass` (*superclass* class) (*subclass* class)](/meta-object-protocol/dictionary/remove-direct-subclass-class-class) This method can be overridden only if those methods are overridden as well.
 
 10. No behavior is specified for this method beyond that specified for the generic function.
 

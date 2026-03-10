@@ -9,6 +9,6 @@ class-default-initargs-funcallable-standard-class
 
 **Description:**
 
-This is a method on the generic function[class-default-initargs](/meta-object-protocol/class-default-initargs).
+This is a method on the generic function[class-default-initargs](/meta-object-protocol/dictionary/class-default-initargs).
 
-This method returns the value associated with the class metaobject by the method [finalize-inheritance (*class* `funcallable-standard-class`)](/meta-object-protocol/finalize-inheritance-funcallable-standard-class).
+This method returns the value associated with the class metaobject by the method [finalize-inheritance (*class* `funcallable-standard-class`)](/meta-object-protocol/dictionary/finalize-inheritance-funcallable-standard-class).

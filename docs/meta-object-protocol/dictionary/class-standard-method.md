@@ -7,11 +7,11 @@ STANDARD-METHOD
 
 **Direct superclasses:**
 
-[method](/meta-object-protocol/class-method)
+[method](/meta-object-protocol/dictionary/class-method)
 
 **Metaclass:**
 
-[standard-class](/meta-object-protocol/class-standard-class)
+[standard-class](/meta-object-protocol/dictionary/class-standard-class)
 
 **Description:**
 

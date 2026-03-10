@@ -9,6 +9,6 @@ remove-method-standard-generic-function-standard-method
 
 **Description:**
 
-This is a method on the generic function[remove-method](/meta-object-protocol/remove-method).
+This is a method on the generic function[remove-method](/meta-object-protocol/dictionary/remove-method).
 
 No behavior is specified for this method beyond that which is specified for the generic function.

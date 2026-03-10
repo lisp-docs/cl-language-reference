@@ -14,13 +14,13 @@ For any of these generic functions which returns a list, such lists will not be 
 #### Functions
 
   ------------------ -------------------------------------------------------------------------------------------------
-  Generic Function   [**generic-function-argument-precedence-order**](/meta-object-protocol/generic-function-argument-precedence-order)
-  Generic Function   [**generic-function-declarations**](/meta-object-protocol/generic-function-declarations)
-  Generic Function   [**generic-function-lambda-list**](/meta-object-protocol/generic-function-lambda-list)
-  Generic Function   [**generic-function-method-class**](/meta-object-protocol/generic-function-method-class)
-  Generic Function   [**generic-function-method-combination**](/meta-object-protocol/generic-function-method-combination)
-  Generic Function   [**generic-function-methods**](/meta-object-protocol/generic-function-methods)
-  Generic Function   [**generic-function-name**](/meta-object-protocol/generic-function-name)
+  Generic Function   [**generic-function-argument-precedence-order**](/meta-object-protocol/dictionary/generic-function-argument-precedence-order)
+  Generic Function   [**generic-function-declarations**](/meta-object-protocol/dictionary/generic-function-declarations)
+  Generic Function   [**generic-function-lambda-list**](/meta-object-protocol/dictionary/generic-function-lambda-list)
+  Generic Function   [**generic-function-method-class**](/meta-object-protocol/dictionary/generic-function-method-class)
+  Generic Function   [**generic-function-method-combination**](/meta-object-protocol/dictionary/generic-function-method-combination)
+  Generic Function   [**generic-function-methods**](/meta-object-protocol/dictionary/generic-function-methods)
+  Generic Function   [**generic-function-name**](/meta-object-protocol/dictionary/generic-function-name)
   ------------------ -------------------------------------------------------------------------------------------------
 
 #### Methods
@@ -28,23 +28,23 @@ For any of these generic functions which returns a list, such lists will not be 
 The specified methods for the generic function metaobject reader generic functions are presented below.
 
   -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Method   [**generic-function-argument-precedence-order** (*generic-function* standard-generic-function)](/meta-object-protocol/generic-function-argument-precedence-order-standard-generic-function)
-  Method   [**generic-function-declarations** (*generic-function* standard-generic-function)](/meta-object-protocol/generic-function-declarations-standard-generic-function)
-  Method   [**generic-function-lambda-list** (*generic-function* standard-generic-function)](/meta-object-protocol/generic-function-lambda-list-standard-generic-function)
-  Method   [**generic-function-method-class** (*generic-function* standard-generic-function)](/meta-object-protocol/generic-function-method-class-standard-generic-function)
-  Method   [**generic-function-method-combination** (*generic-function* standard-generic-function)](/meta-object-protocol/generic-function-method-combination-standard-generic-function)
-  Method   [**generic-function-name** (*generic-function* standard-generic-function)](/meta-object-protocol/generic-function-name-standard-generic-function)
+  Method   [**generic-function-argument-precedence-order** (*generic-function* standard-generic-function)](/meta-object-protocol/dictionary/generic-function-argument-precedence-order-standard-generic-function)
+  Method   [**generic-function-declarations** (*generic-function* standard-generic-function)](/meta-object-protocol/dictionary/generic-function-declarations-standard-generic-function)
+  Method   [**generic-function-lambda-list** (*generic-function* standard-generic-function)](/meta-object-protocol/dictionary/generic-function-lambda-list-standard-generic-function)
+  Method   [**generic-function-method-class** (*generic-function* standard-generic-function)](/meta-object-protocol/dictionary/generic-function-method-class-standard-generic-function)
+  Method   [**generic-function-method-combination** (*generic-function* standard-generic-function)](/meta-object-protocol/dictionary/generic-function-method-combination-standard-generic-function)
+  Method   [**generic-function-name** (*generic-function* standard-generic-function)](/meta-object-protocol/dictionary/generic-function-name-standard-generic-function)
   -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 No behavior is specified for these methods beyond that which is specified for their respective generic functions.
 
   -------- --------------------------------------------------------------------------------------------------------------------------------------
-  Method   [**generic-function-methods** (*generic-function* standard-generic-function)](/meta-object-protocol/generic-function-methods-standard-generic-function)
+  Method   [**generic-function-methods** (*generic-function* standard-generic-function)](/meta-object-protocol/dictionary/generic-function-methods-standard-generic-function)
   -------- --------------------------------------------------------------------------------------------------------------------------------------
 
 No behavior is specified for this method beyond that which is specified for their respective generic functions.
 
-The value returned by this method is maintained by [`add-method` (*generic-function* standard-generic-function) (*method* standard-method)](/meta-object-protocol/add-method-standard-generic-function-standard-method) and [`remove-method` (*generic-function* standard-generic-function) (*method* standard-method)](/meta-object-protocol/remove-method-standard-generic-function-standard-method).
+The value returned by this method is maintained by [`add-method` (*generic-function* standard-generic-function) (*method* standard-method)](/meta-object-protocol/dictionary/add-method-standard-generic-function-standard-method) and [`remove-method` (*generic-function* standard-generic-function) (*method* standard-method)](/meta-object-protocol/dictionary/remove-method-standard-generic-function-standard-method).
 
 #### Comments and remarks
 

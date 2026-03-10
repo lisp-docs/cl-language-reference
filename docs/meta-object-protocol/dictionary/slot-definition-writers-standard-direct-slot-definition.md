@@ -9,6 +9,6 @@ slot-definition-writers-standard-direct-slot-definition
 
 **Description:**
 
-This is a method on the generic function[slot-definition-writers](/meta-object-protocol/slot-definition-writers).
+This is a method on the generic function[slot-definition-writers](/meta-object-protocol/dictionary/slot-definition-writers).
 
 No behavior is specified for this method beyond that which is specified for the corresponding generic function.
