@@ -21,9 +21,9 @@ import CompileFileFunction from './_compile-file_function.md';
   (write-string "(defun cl-cf-test-fn (x) (* x x))" s))
 
 (compile-file "/tmp/cl-cf-test.lisp")
-→ #P"/tmp/cl-cf-test.fasl"  ; output truename (extension is implementation-dependent)
-→ NIL                         ; warnings-p
-→ NIL                         ; failure-p
+;; => #P"/tmp/cl-cf-test.fasl"  ; output truename (extension is implementation-dependent)
+;; => NIL                         ; warnings-p
+;; => NIL                         ; failure-p
 ```
 
 ### Specifying an output file
@@ -33,9 +33,9 @@ The `:output-file` keyword argument overrides the default output pathname.
 ```lisp
 (compile-file "/tmp/cl-cf-test.lisp"
               :output-file "/tmp/cl-cf-test-compiled.fasl")
-→ #P"/tmp/cl-cf-test-compiled.fasl"  ; implementation-dependent extension
-→ NIL
-→ NIL
+;; => #P"/tmp/cl-cf-test-compiled.fasl"  ; implementation-dependent extension
+;; => NIL
+;; => NIL
 ```
 
 ### Controlling verbosity
@@ -44,9 +44,9 @@ The `:verbose` keyword controls whether `compile-file` prints progress informati
 
 ```lisp
 (compile-file "/tmp/cl-cf-test.lisp" :verbose nil)
-→ #P"/tmp/cl-cf-test.fasl"  ; implementation-dependent
-→ NIL
-→ NIL
+;; => #P"/tmp/cl-cf-test.fasl"  ; implementation-dependent
+;; => NIL
+;; => NIL
 ```
 
 ### Checking for compilation warnings and failures
@@ -59,6 +59,6 @@ The second and third return values indicate whether warnings or failures occurre
   (list :output output
         :warnings warnings-p
         :failure failure-p))
-→ (:OUTPUT #P"/tmp/cl-cf-test.fasl" :WARNINGS NIL :FAILURE NIL)
-; implementation-dependent
+;; => (:OUTPUT #P"/tmp/cl-cf-test.fasl" :WARNINGS NIL :FAILURE NIL)
+;; implementation-dependent
 ```

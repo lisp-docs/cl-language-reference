@@ -16,10 +16,10 @@ Outside of a call to `compile-file`, both `*compile-file-pathname*` and `*compil
 
 ```lisp
 *compile-file-pathname*
-→ NIL
+=> NIL
 
 *compile-file-truename*
-→ NIL
+=> NIL
 ```
 
 ### Bound during compile-file
@@ -39,10 +39,10 @@ During compilation, `*compile-file-pathname*` is bound to the merged pathname of
 (load (compile-file-pathname "/tmp/cl-cft-test.lisp"))
 
 (pathnamep *recorded-cfp*)
-→ T
+;; => T
 
 (pathnamep *recorded-cft*)
-→ T
+;; => T
 ```
 
 ### Useful for locating resources relative to source

@@ -17,7 +17,7 @@ import LoadVerboseVariable from './_load-verbose_variable.md';
 ```lisp
 ;; Check the current value
 (typep *load-verbose* 'boolean)
-→ T  ; it is a generalized boolean
+=> T
 ```
 
 ### Controlling default verbose behavior
@@ -28,7 +28,7 @@ Setting `*load-verbose*` to true causes `load` to print progress information by 
 (let ((*load-verbose* t))
   (load "/tmp/cl-load-test.lisp"))
 ; Implementation may print loading information
-→ T
+=> T
 ```
 
 ### Suppressing verbose output
@@ -39,5 +39,5 @@ Setting it to nil suppresses the default verbose output from `load`.
 (let ((*load-verbose* nil))
   (load "/tmp/cl-load-test.lisp"))
 ; No verbose output printed
-→ T
+=> T
 ```

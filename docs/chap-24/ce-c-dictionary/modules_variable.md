@@ -18,11 +18,11 @@ import ModulesVariable from './_modules_variable.md';
 
 ```lisp
 (listp *modules*)
-→ T
+=> T
 
 ;; All elements are strings
 (every #'stringp *modules*)
-→ T
+=> T
 ```
 
 ### Modified by provide
@@ -33,7 +33,7 @@ The `provide` function adds a module name to `*modules*`.
 (provide "MY-TEST-MODULE")
 
 (member "MY-TEST-MODULE" *modules* :test #'string=)
-→ ("MY-TEST-MODULE" ...)  ; implementation-dependent
+;; => ("MY-TEST-MODULE" ...)  ; implementation-dependent
 ```
 
 ### Checked by require
@@ -44,5 +44,5 @@ The `require` function consults `*modules*` to determine whether a module needs 
 (provide "ALREADY-LOADED")
 ;; require sees it in *modules* and does nothing
 (require "ALREADY-LOADED")
-→ NIL  ; implementation-dependent
+;; => NIL  ; implementation-dependent
 ```

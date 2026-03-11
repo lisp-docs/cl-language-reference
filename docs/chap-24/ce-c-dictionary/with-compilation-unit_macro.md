@@ -52,7 +52,7 @@ The macro returns the values of the last form in its body.
 ```lisp
 (with-compilation-unit ()
   (values 1 2 3))
-→ 1
-→ 2
-→ 3
+=> 1
+=> 2
+=> 3
 ```

@@ -20,7 +20,7 @@ import ProvideFunction from './_provide_require_function.md';
 (provide "MY-UTILITIES")
 
 (member "MY-UTILITIES" *modules* :test #'string=)
-→ ("MY-UTILITIES" ...)  ; implementation-dependent
+;; => ("MY-UTILITIES" ...)  ; implementation-dependent
 ```
 
 ### Using require to conditionally load a module
@@ -31,7 +31,7 @@ import ProvideFunction from './_provide_require_function.md';
 ;; After providing, require does nothing:
 (provide "MY-MODULE")
 (require "MY-MODULE")
-→ NIL  ; implementation-dependent; no loading needed
+;; => NIL  ; implementation-dependent; no loading needed
 ```
 
 ### Supplying an explicit pathname list
@@ -47,7 +47,7 @@ import ProvideFunction from './_provide_require_function.md';
 (require "CL-REQ-MODULE" "/tmp/cl-req-module.lisp")
 
 (member "CL-REQ-MODULE" *modules* :test #'string=)
-→ ("CL-REQ-MODULE" ...)  ; implementation-dependent
+;; => ("CL-REQ-MODULE" ...)  ; implementation-dependent
 ```
 
 ### Checking *modules*
@@ -56,9 +56,9 @@ The `*modules*` variable holds the list of currently loaded module names.
 
 ```lisp
 (listp *modules*)
-→ T
+=> T
 
 ;; Every element is a string
 (every #'stringp *modules*)
-→ T
+=> T
 ```

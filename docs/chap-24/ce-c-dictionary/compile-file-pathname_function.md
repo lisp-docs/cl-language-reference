@@ -16,7 +16,7 @@ import CompileFilePathnameFunction from './_compile-file-pathname_function.md';
 
 ```lisp
 (compile-file-pathname "myfile.lisp")
-→ #P"myfile.fasl"  ; extension is implementation-dependent (e.g., .fasl, .fas, .o)
+;; => #P"myfile.fasl"  ; extension is implementation-dependent (e.g., .fasl, .fas, .o)
 ```
 
 ### The type component changes to the compiled file type
@@ -25,7 +25,7 @@ The primary effect is changing the type component to the implementation's compil
 
 ```lisp
 (pathname-type (compile-file-pathname "test.lisp"))
-→ "fasl"  ; implementation-dependent: could be "fasl", "fas", "o", etc.
+;; => "fasl"  ; implementation-dependent
 ```
 
 ### Specifying a custom output file
@@ -34,7 +34,7 @@ The `:output-file` keyword overrides the default, just as it would with `compile
 
 ```lisp
 (compile-file-pathname "test.lisp" :output-file "/tmp/output.bin")
-→ #P"/tmp/output.bin"
+;; => #P"/tmp/output.bin"
 ```
 
 ### Useful for building file dependency systems
@@ -45,5 +45,5 @@ The `:output-file` keyword overrides the default, just as it would with `compile
 (let* ((source #P"/tmp/cl-cfp-test.lisp")
        (compiled (compile-file-pathname source)))
   (namestring compiled))
-→ "/tmp/cl-cfp-test.fasl"  ; implementation-dependent
+;; => "/tmp/cl-cfp-test.fasl"  ; implementation-dependent
 ```

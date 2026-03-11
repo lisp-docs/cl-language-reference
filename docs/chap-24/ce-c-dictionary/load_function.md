@@ -20,10 +20,10 @@ import LoadFunction from './_load_function.md';
   (write-string "(defun cl-load-test-fn () 42)" s))
 
 (load "/tmp/cl-load-test.lisp")
-→ T
+=> T
 
 (cl-load-test-fn)
-→ 42
+=> 42
 ```
 
 ### Loading with verbose output
@@ -33,7 +33,7 @@ The `:verbose` keyword causes `load` to print information about the loading proc
 ```lisp
 (load "/tmp/cl-load-test.lisp" :verbose t)
 ; Prints loading information to *standard-output*
-→ T
+=> T
 ```
 
 ### Handling missing files
@@ -42,7 +42,7 @@ The `:if-does-not-exist` keyword controls behavior when the file is not found. W
 
 ```lisp
 (load "/tmp/nonexistent-file-xyz.lisp" :if-does-not-exist nil)
-→ NIL
+=> NIL
 ```
 
 ### Loading a compiled file
@@ -56,8 +56,8 @@ After compiling a file with `compile-file`, the compiled version can be loaded f
 
 (compile-file "/tmp/cl-load-compiled.lisp")
 (load (compile-file-pathname "/tmp/cl-load-compiled.lisp"))
-→ T
+;; => T
 
 (cl-load-compiled-fn 5)
-→ 25
+=> 25
 ```

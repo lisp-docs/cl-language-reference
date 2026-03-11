@@ -16,10 +16,10 @@ Outside of a call to `load`, both `*load-pathname*` and `*load-truename*` are ni
 
 ```lisp
 *load-pathname*
-→ NIL
+;; => NIL
 
 *load-truename*
-→ NIL
+;; => NIL
 ```
 
 ### Bound during load
@@ -36,13 +36,13 @@ During loading, `*load-pathname*` is bound to the merged pathname argument, and 
     s))
 
 (load "/tmp/cl-lt-test.lisp")
-→ T
+=> T
 
 (pathnamep *my-load-path*)
-→ T
+=> T
 
 (pathnamep *my-load-true*)
-→ T
+=> T
 ```
 
 ### Locating resources relative to the loaded file
