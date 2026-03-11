@@ -15,8 +15,12 @@ import FloatingPointInvalidOperationConditionType from './_floating-point-invali
 The `floating-point-invalid-operation` condition is a subtype of `arithmetic-error`. It corresponds to the IEEE 754 "invalid operation" exception, which occurs for operations that have no mathematically defined result.
 
 ```lisp
-(subtypep 'floating-point-invalid-operation 'arithmetic-error) ; → T, T
-(subtypep 'floating-point-invalid-operation 'error) ; → T, T
+(subtypep 'floating-point-invalid-operation 'arithmetic-error)
+=> T
+=> T
+(subtypep 'floating-point-invalid-operation 'error)
+=> T
+=> T
 ```
 
 ### When It May Be Signaled
@@ -28,7 +32,7 @@ This condition may be signaled for operations that are mathematically undefined,
 (handler-case (sqrt -1.0)
   (floating-point-invalid-operation ()
     :invalid))
-; → #C(0.0 1.0) or :INVALID  (implementation-dependent)
+=> #C(0.0 1.0)
 ```
 
 ### Handling the Condition
@@ -54,5 +58,5 @@ Like `floating-point-inexact`, this condition may not be signaled by all impleme
 (handler-case (/ 0.0 0.0)
   (arithmetic-error ()
     :undefined-result))
-; → :UNDEFINED-RESULT  (on implementations that signal an error)
+=> :UNDEFINED-RESULT
 ```

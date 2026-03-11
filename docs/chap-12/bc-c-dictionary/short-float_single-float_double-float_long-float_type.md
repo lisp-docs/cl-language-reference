@@ -15,10 +15,14 @@ import ShortFloatType from './_short-float_single-float_double-float_long-float_
 Common Lisp defines four float subtypes. Each is a subtype of `float`. Implementations may merge adjacent types (e.g., short-float with single-float, or double-float with long-float).
 
 ```lisp
-(typep 1.0 'single-float)  ; → T  (default float literal type)
-(typep 1.0d0 'double-float) ; → T (d0 suffix creates double-float)
-(typep 1.0 'float)          ; → T
-(typep 1.0d0 'float)        ; → T
+(typep 1.0 'single-float)
+=> T
+(typep 1.0d0 'double-float)
+=> T
+(typep 1.0 'float)
+=> T
+(typep 1.0d0 'float)
+=> T
 ```
 
 ### Determining Float Type with type-of
@@ -26,10 +30,14 @@ Common Lisp defines four float subtypes. Each is a subtype of `float`. Implement
 The `type-of` function reveals the specific float subtype of a value.
 
 ```lisp
-(type-of 1.0)    ; → SINGLE-FLOAT
-(type-of 1.0d0)  ; → DOUBLE-FLOAT
-(type-of 1.0s0)  ; → SINGLE-FLOAT  (or SHORT-FLOAT, implementation-dependent)
-(type-of 1.0l0)  ; → DOUBLE-FLOAT  (or LONG-FLOAT, implementation-dependent)
+(type-of 1.0)
+=> SINGLE-FLOAT
+(type-of 1.0d0)
+=> DOUBLE-FLOAT
+(type-of 1.0s0)
+=> SINGLE-FLOAT
+(type-of 1.0l0)
+=> DOUBLE-FLOAT
 ```
 
 ### Reader Syntax for Float Types
@@ -56,9 +64,12 @@ Each float type has a corresponding exponent marker in the reader syntax.
 Each float subtype can be used as a type specifier with optional bounds.
 
 ```lisp
-(typep 0.5 '(single-float 0.0 1.0))   ; → T
-(typep 1.5 '(single-float 0.0 1.0))   ; → NIL
-(typep 0.5d0 '(double-float 0.0d0 1.0d0)) ; → T
+(typep 0.5 '(single-float 0.0 1.0))
+=> T
+(typep 1.5 '(single-float 0.0 1.0))
+=> NIL
+(typep 0.5d0 '(double-float 0.0d0 1.0d0))
+=> T
 ```
 
 ### Subtype Relationships
@@ -66,12 +77,24 @@ Each float subtype can be used as a type specifier with optional bounds.
 All four float types are subtypes of `float`, which is a subtype of `real`.
 
 ```lisp
-(subtypep 'short-float 'float)   ; → T, T
-(subtypep 'single-float 'float)  ; → T, T
-(subtypep 'double-float 'float)  ; → T, T
-(subtypep 'long-float 'float)    ; → T, T
+(subtypep 'short-float 'float)
+=> T
+=> T
+(subtypep 'single-float 'float)
+=> T
+=> T
+(subtypep 'double-float 'float)
+=> T
+=> T
+(subtypep 'long-float 'float)
+=> T
+=> T
 
 ;; On many implementations, some types are identical
-(subtypep 'short-float 'single-float)  ; → T, T  (commonly merged)
-(subtypep 'long-float 'double-float)   ; → T, T  (commonly merged)
+(subtypep 'short-float 'single-float)
+=> T
+=> T
+(subtypep 'long-float 'double-float)
+=> T
+=> T
 ```

@@ -15,8 +15,12 @@ import FloatingPointInexactConditionType from './_floating-point-inexact_conditi
 The `floating-point-inexact` condition is a subtype of `arithmetic-error`, which means it inherits the `arithmetic-error-operation` and `arithmetic-error-operands` accessors.
 
 ```lisp
-(subtypep 'floating-point-inexact 'arithmetic-error) ; → T, T
-(subtypep 'floating-point-inexact 'error) ; → T, T
+(subtypep 'floating-point-inexact 'arithmetic-error)
+=> T
+=> T
+(subtypep 'floating-point-inexact 'error)
+=> T
+=> T
 ```
 
 ### Rarely Signaled in Practice
@@ -26,13 +30,14 @@ This condition type is defined by the standard but is very rarely signaled by ac
 ```lisp
 ;; In theory, this could signal floating-point-inexact since
 ;; 1/3 cannot be represented exactly as a float:
-(float 1/3) ; → 0.33333334  (no error signaled on most implementations)
+(float 1/3)
+=> 0.33333334
 
 ;; You can write a handler, but it will rarely be triggered:
 (handler-case (float 1/3)
   (floating-point-inexact ()
     :inexact-result))
-; → 0.33333334  (handler not invoked on most implementations)
+=> 0.33333334
 ```
 
 ### Defensive Handling

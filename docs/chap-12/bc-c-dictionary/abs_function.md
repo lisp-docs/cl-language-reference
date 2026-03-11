@@ -15,9 +15,12 @@ import AbsFunction from './_abs_function.md';
 `abs` returns the absolute value of a number. For real numbers, the result has the same type as the input.
 
 ```lisp
-(abs 0) ; → 0
-(abs 42) ; → 42
-(abs -42) ; → 42
+(abs 0)
+=> 0
+(abs 42)
+=> 42
+(abs -42)
+=> 42
 ```
 
 ### Absolute value of rationals and floats
@@ -25,9 +28,12 @@ import AbsFunction from './_abs_function.md';
 The result preserves the type of the argument.
 
 ```lisp
-(abs -12/13) ; → 12/13
-(abs -1.09) ; → 1.09
-(abs -3.5d0) ; → 3.5d0
+(abs -12/13)
+=> 12/13
+(abs -1.09)
+=> 1.09
+(abs -3.5d0)
+=> 3.5d0
 ```
 
 ### Absolute value of complex numbers
@@ -35,9 +41,12 @@ The result preserves the type of the argument.
 For complex numbers, `abs` returns the magnitude (modulus), which is always a non-negative real.
 
 ```lisp
-(abs #c(3 4)) ; → 5 or 5.0
-(abs #c(5.0 -5.0)) ; → 7.071068
-(abs #c(0 1)) ; → 1 or 1.0
+(abs #c(3 4))
+=> 5.0
+(abs #c(5.0 -5.0))
+=> 7.071068
+(abs #c(0 1))
+=> 1.0
 ```
 
 ### Negative zero
@@ -45,8 +54,10 @@ For complex numbers, `abs` returns the magnitude (modulus), which is always a no
 The absolute value of negative zero is negative zero in IEEE floating-point arithmetic.
 
 ```lisp
-(eql (abs -0.0) -0.0) ; → T
-(abs 0.0) ; → 0.0
+(eql (abs -0.0) -0.0)
+=> NIL
+(abs 0.0)
+=> 0.0
 ```
 
 ### Practical use: computing distance
@@ -57,7 +68,10 @@ The absolute value of negative zero is negative zero in IEEE floating-point arit
 (defun distance (a b)
   (abs (- a b)))
 
-(distance 3 7) ; → 4
-(distance -5 5) ; → 10
-(distance 2.5 2.5) ; → 0.0
+(distance 3 7)
+=> 4
+(distance -5 5)
+=> 10
+(distance 2.5 2.5)
+=> 0.0
 ```

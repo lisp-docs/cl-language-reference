@@ -16,10 +16,10 @@ These constants define the range of the `fixnum` type, which varies across imple
 
 ```lisp
 most-positive-fixnum
-; → 4611686018427387903  (typical on 64-bit SBCL, i.e., 2^62 - 1)
+=> 4611686018427387903
 
 most-negative-fixnum
-; → -4611686018427387904  (typical on 64-bit SBCL, i.e., -2^62)
+=> -4611686018427387904
 ```
 
 ### Boundary Behavior
@@ -27,13 +27,19 @@ most-negative-fixnum
 Adding 1 to `most-positive-fixnum` produces a bignum. Subtracting 1 from `most-negative-fixnum` also produces a bignum.
 
 ```lisp
-(typep most-positive-fixnum 'fixnum) ; → T
-(typep (1+ most-positive-fixnum) 'fixnum) ; → NIL
-(typep (1+ most-positive-fixnum) 'bignum) ; → T
+(typep most-positive-fixnum 'fixnum)
+=> T
+(typep (1+ most-positive-fixnum) 'fixnum)
+=> NIL
+(typep (1+ most-positive-fixnum) 'bignum)
+=> T
 
-(typep most-negative-fixnum 'fixnum) ; → T
-(typep (1- most-negative-fixnum) 'fixnum) ; → NIL
-(typep (1- most-negative-fixnum) 'bignum) ; → T
+(typep most-negative-fixnum 'fixnum)
+=> T
+(typep (1- most-negative-fixnum) 'fixnum)
+=> NIL
+(typep (1- most-negative-fixnum) 'bignum)
+=> T
 ```
 
 ### Portability Note
@@ -45,8 +51,10 @@ Code that depends on specific fixnum ranges is inherently non-portable. The fixn
 (defun fits-in-fixnum-p (n)
   (<= most-negative-fixnum n most-positive-fixnum))
 
-(fits-in-fixnum-p 1000000)          ; → T
-(fits-in-fixnum-p (expt 2 100))     ; → NIL
+(fits-in-fixnum-p 1000000)
+=> T
+(fits-in-fixnum-p (expt 2 100))
+=> NIL
 ```
 
 ### Determining Fixnum Size in Bits
@@ -55,8 +63,8 @@ You can compute how many bits a fixnum occupies on the current implementation.
 
 ```lisp
 (integer-length most-positive-fixnum)
-; → 62  (typical on 64-bit SBCL)
+=> 62
 
 (+ 1 (integer-length most-positive-fixnum))
-; → 63  (total bits including sign, typical)
+=> 63
 ```

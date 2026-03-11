@@ -15,9 +15,12 @@ import RandomStatePFunction from './_random-state-p_function.md';
 `random-state-p` returns true if its argument is of type `random-state`.
 
 ```lisp
-(random-state-p *random-state*)          ; → T
-(random-state-p (make-random-state))     ; → T
-(random-state-p (make-random-state t))   ; → T
+(random-state-p *random-state*)
+=> T
+(random-state-p (make-random-state))
+=> T
+(random-state-p (make-random-state t))
+=> T
 ```
 
 ### Non-random-state objects
@@ -25,11 +28,16 @@ import RandomStatePFunction from './_random-state-p_function.md';
 All other objects return false.
 
 ```lisp
-(random-state-p nil)            ; → NIL
-(random-state-p 42)             ; → NIL
-(random-state-p "random")       ; → NIL
-(random-state-p 'test-function) ; → NIL
-(random-state-p t)              ; → NIL
+(random-state-p nil)
+=> NIL
+(random-state-p 42)
+=> NIL
+(random-state-p "random")
+=> NIL
+(random-state-p 'test-function)
+=> NIL
+(random-state-p t)
+=> NIL
 ```
 
 ### Equivalence to typep
@@ -39,11 +47,11 @@ All other objects return false.
 ```lisp
 (eql (random-state-p *random-state*)
      (typep *random-state* 'random-state))
-; → T
+=> T
 
 (eql (random-state-p 42)
      (typep 42 'random-state))
-; → T
+=> T
 ```
 
 ### Practical use: validating a random state argument
@@ -54,6 +62,8 @@ All other objects return false.
     (error "Expected a random-state, got ~S" state))
   (loop repeat n collect (random 100 state)))
 
-(generate-numbers 3)                     ; → (some 3 numbers)
-(generate-numbers 3 (make-random-state)) ; → (some 3 numbers)
+(generate-numbers 3)
+;; => impl-dependent
+(generate-numbers 3 (make-random-state))
+;; => impl-dependent
 ```

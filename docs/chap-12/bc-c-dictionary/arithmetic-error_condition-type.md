@@ -15,9 +15,15 @@ import ArithmeticErrorConditionType from './_arithmetic-error_condition-type.md'
 The `arithmetic-error` condition type is a subtype of `error` and serves as the supertype for all arithmetic-related conditions such as `division-by-zero`, `floating-point-overflow`, `floating-point-underflow`, `floating-point-inexact`, and `floating-point-invalid-operation`.
 
 ```lisp
-(subtypep 'arithmetic-error 'error) ; → T, T
-(subtypep 'division-by-zero 'arithmetic-error) ; → T, T
-(subtypep 'floating-point-overflow 'arithmetic-error) ; → T, T
+(subtypep 'arithmetic-error 'error)
+=> T
+=> T
+(subtypep 'division-by-zero 'arithmetic-error)
+=> T
+=> T
+(subtypep 'floating-point-overflow 'arithmetic-error)
+=> T
+=> T
 ```
 
 ### Handling Arithmetic Errors
@@ -29,7 +35,7 @@ Use `handler-case` to catch any arithmetic error. The accessors `arithmetic-erro
   (arithmetic-error (c)
     (list :operation (arithmetic-error-operation c)
           :operands (arithmetic-error-operands c))))
-; → (:OPERATION / :OPERANDS (1 0))
+=> (:OPERATION / :OPERANDS (1 0))
 ```
 
 ### Inspecting Operation and Operands
@@ -42,7 +48,7 @@ The `arithmetic-error-operation` accessor returns the function that was being ca
     (format nil "~A was called on ~A"
             (arithmetic-error-operation c)
             (arithmetic-error-operands c))))
-; → "LOG was called on (0)"
+;; => impl-dependent
 ```
 
 ### Catching Specific Subtypes
@@ -57,5 +63,5 @@ Since `arithmetic-error` is a parent type, you can use it as a catch-all for all
             (arithmetic-error-operands c)))
   (arithmetic-error (c)
     (format nil "Other arithmetic error: ~A" c)))
-; → "Division by zero: / on (1.0 0.0)"  ; (implementation-dependent)
+=> "Division by zero: / on (1.0 0.0)"
 ```

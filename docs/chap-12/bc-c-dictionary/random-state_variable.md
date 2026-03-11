@@ -16,9 +16,10 @@ The `*random-state*` variable holds the current default random state used by `ra
 
 ```lisp
 *random-state*
-; → #S(RANDOM-STATE ...)  (implementation-dependent printed form)
+;; => #S(RANDOM-STATE ...)  (implementation-dependent printed form)
 
-(random-state-p *random-state*) ; → T
+(random-state-p *random-state*)
+=> T
 ```
 
 ### How random Uses the State
@@ -27,11 +28,14 @@ Calling `random` without a state argument uses and mutates `*random-state*`. Eac
 
 ```lisp
 ;; These calls use *random-state* implicitly
-(random 100) ; → 42  (some random value)
-(random 100) ; → 87  (a different value, state has advanced)
+(random 100)
+;; => impl-dependent
+(random 100)
+;; => impl-dependent
 
 ;; Equivalent to explicitly passing *random-state*
-(random 100 *random-state*) ; → 13  (some random value)
+(random 100 *random-state*)
+;; => impl-dependent
 ```
 
 ### Binding for Reproducibility
@@ -42,7 +46,7 @@ Binding `*random-state*` with `let` creates a local copy, allowing reproducible 
 (let ((*random-state* (make-random-state nil)))
   ;; This binding is local; the global *random-state* is unaffected
   (list (random 100) (random 100) (random 100)))
-; → (23 71 5)  (some reproducible sequence within this binding)
+;; => impl-dependent
 ```
 
 ### Resetting for Testing
@@ -60,5 +64,5 @@ For deterministic testing, save and restore the random state so that tests produ
 ;; Same result each call (since we copy the same saved state each time)
 (equal (deterministic-random-values 5 100)
        (deterministic-random-values 5 100))
-; → T
+=> T
 ```

@@ -56,7 +56,7 @@ Save a random state before generating random numbers so you can reproduce the sa
     ;; Generate the same sequence again
     (let ((second-run (loop repeat 5 collect (random 100))))
       (equal first-run second-run))))
-; → T
+=> T
 ```
 
 ### Snapshot and resume mid-sequence
@@ -70,5 +70,5 @@ You can capture the state at any point and replay from there.
   (let ((after-5 (loop repeat 3 collect (random 100))))
     (setf *random-state* snapshot)
     (equal after-5 (loop repeat 3 collect (random 100)))))
-; → T
+=> T
 ```

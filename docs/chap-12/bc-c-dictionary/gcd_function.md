@@ -15,10 +15,14 @@ import GcdFunction from './_gcd_function.md';
 `gcd` returns the greatest common divisor of its integer arguments. With no arguments it returns 0 (the identity element).
 
 ```lisp
-(gcd) ; → 0
-(gcd 12) ; → 12
-(gcd 12 8) ; → 4
-(gcd 60 42) ; → 6
+(gcd)
+=> 0
+(gcd 12)
+=> 12
+(gcd 12 8)
+=> 4
+(gcd 60 42)
+=> 6
 ```
 
 ### Multiple arguments
@@ -26,9 +30,12 @@ import GcdFunction from './_gcd_function.md';
 `gcd` accepts any number of integer arguments.
 
 ```lisp
-(gcd 12 8 6) ; → 2
-(gcd 63 -42 35) ; → 7
-(gcd 3333 -33 1002001) ; → 11
+(gcd 12 8 6)
+=> 2
+(gcd 63 -42 35)
+=> 7
+(gcd 3333 -33 1002001)
+=> 11
 ```
 
 ### Negative arguments
@@ -36,9 +43,12 @@ import GcdFunction from './_gcd_function.md';
 `gcd` always returns a non-negative integer. With a single argument, it returns the absolute value.
 
 ```lisp
-(gcd -4) ; → 4
-(gcd 91 -49) ; → 7
-(gcd -12 -8) ; → 4
+(gcd -4)
+=> 4
+(gcd 91 -49)
+=> 7
+(gcd -12 -8)
+=> 4
 ```
 
 ### Coprime numbers
@@ -46,9 +56,12 @@ import GcdFunction from './_gcd_function.md';
 Two numbers are coprime when their GCD is 1.
 
 ```lisp
-(gcd 7 11) ; → 1
-(gcd 3333 -33 101) ; → 1
-(= 1 (gcd 14 15)) ; → T
+(gcd 7 11)
+=> 1
+(gcd 3333 -33 101)
+=> 1
+(= 1 (gcd 14 15))
+=> T
 ```
 
 ### Practical use: simplifying fractions
@@ -60,6 +73,10 @@ Two numbers are coprime when their GCD is 1.
   (let ((g (gcd numer denom)))
     (values (/ numer g) (/ denom g))))
 
-(simplify 12 8) ; → 3, 2
-(simplify 100 75) ; → 4, 3
+(simplify 12 8)
+=> 3
+=> 2
+(simplify 100 75)
+=> 4
+=> 3
 ```

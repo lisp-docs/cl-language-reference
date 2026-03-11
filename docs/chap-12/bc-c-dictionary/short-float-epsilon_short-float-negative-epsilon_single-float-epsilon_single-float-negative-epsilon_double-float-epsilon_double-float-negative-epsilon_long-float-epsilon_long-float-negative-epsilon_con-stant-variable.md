@@ -15,11 +15,15 @@ import ShortFloatEpsilonConstantVariable from './_short-float-epsilon_short-floa
 Each epsilon constant is the smallest positive float such that `(not (= 1.0 (+ 1.0 epsilon)))` is true for that float type. The negative epsilon variants work for subtraction.
 
 ```lisp
-single-float-epsilon          ; → 5.9604645e-8  (typical, ~2^-24)
-single-float-negative-epsilon ; → 2.9802322e-8  (typical, ~2^-25)
+single-float-epsilon
+=> 5.960465e-8
+single-float-negative-epsilon
+=> 2.9802326e-8
 
-double-float-epsilon          ; → 1.1102230246251568d-16  (typical, ~2^-53)
-double-float-negative-epsilon ; → 5.551115123125784d-17   (typical, ~2^-54)
+double-float-epsilon
+=> 1.1102230246251568d-16
+double-float-negative-epsilon
+=> 5.551115123125784d-17
 ```
 
 ### Verifying the Definition
@@ -28,11 +32,15 @@ The epsilon is the smallest value where adding it to 1.0 produces a distinguisha
 
 ```lisp
 ;; Epsilon is distinguishable from zero when added to 1.0
-(/= 1.0 (+ 1.0 single-float-epsilon))  ; → T
-(= 1.0 (+ 1.0 (/ single-float-epsilon 2.0))) ; → T  (half epsilon is too small)
+(/= 1.0 (+ 1.0 single-float-epsilon))
+=> T
+(= 1.0 (+ 1.0 (/ single-float-epsilon 2.0)))
+=> T
 
-(/= 1.0d0 (+ 1.0d0 double-float-epsilon)) ; → T
-(= 1.0d0 (+ 1.0d0 (/ double-float-epsilon 2.0d0))) ; → T
+(/= 1.0d0 (+ 1.0d0 double-float-epsilon))
+=> T
+(= 1.0d0 (+ 1.0d0 (/ double-float-epsilon 2.0d0)))
+=> T
 ```
 
 ### Practical Use: Approximate Float Comparison
@@ -47,10 +55,10 @@ Epsilon values are essential for writing correct floating-point comparison funct
     (<= diff (* scale tolerance))))
 
 (float-nearly-equal 1.0 (+ 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1))
-; → T  (these are nearly but not exactly equal)
+;; => impl-dependent
 
 (= 1.0 (+ 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1))
-; → NIL  (exact comparison fails due to float rounding)
+=> NIL
 ```
 
 ### Relationship Between Float Types
@@ -59,7 +67,8 @@ Double-float epsilon is much smaller than single-float epsilon, reflecting great
 
 ```lisp
 ;; Comparing precision across types
-(< double-float-epsilon single-float-epsilon) ; → T
+(< double-float-epsilon single-float-epsilon)
+=> T
 
 ;; On many implementations:
 ;; short-float-epsilon = single-float-epsilon

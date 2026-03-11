@@ -15,10 +15,14 @@ import LdbAccessor from './_ldb_accessor.md';
 `ldb` (load byte) extracts a field of bits from an integer, returning them right-justified.
 
 ```lisp
-(ldb (byte 2 1) 10)   ; → 1 (10 = #b1010, bits 1-2 are 01)
-(ldb (byte 4 0) #xFF)  ; → 15 (low nibble)
-(ldb (byte 4 4) #xFF)  ; → 15 (high nibble)
-(ldb (byte 8 0) #xABCD) ; → 205 (#xCD)
+(ldb (byte 2 1) 10)
+=> 1
+(ldb (byte 4 0) #xFF)
+=> 15
+(ldb (byte 4 4) #xFF)
+=> 15
+(ldb (byte 8 0) #xABCD)
+=> 205
 ```
 
 ### Extracting individual bits
@@ -26,9 +30,12 @@ import LdbAccessor from './_ldb_accessor.md';
 Use a byte of size 1 to extract a single bit.
 
 ```lisp
-(ldb (byte 1 0) 5) ; → 1 (bit 0 of 101)
-(ldb (byte 1 1) 5) ; → 0 (bit 1 of 101)
-(ldb (byte 1 2) 5) ; → 1 (bit 2 of 101)
+(ldb (byte 1 0) 5)
+=> 1
+(ldb (byte 1 1) 5)
+=> 0
+(ldb (byte 1 2) 5)
+=> 1
 ```
 
 ### setf with ldb
@@ -39,19 +46,21 @@ Use a byte of size 1 to extract a single bit.
 (let ((a (list 8)))
   (setf (ldb (byte 2 1) (car a)) 1)
   a)
-; → (10)
+=> (10)
 
 (let ((x 0))
   (setf (ldb (byte 4 4) x) #xA)
   x)
-; → 160 (#xA0)
+=> 160
 ```
 
 ### Zero-width byte always returns zero
 
 ```lisp
-(ldb (byte 0 0) 12345) ; → 0
-(ldb (byte 0 99) -1)   ; → 0
+(ldb (byte 0 0) 12345)
+=> 0
+(ldb (byte 0 99) -1)
+=> 0
 ```
 
 ### Practical use: extracting fields from a packed integer
@@ -62,7 +71,7 @@ Use a byte of size 1 to extract a single bit.
   (list (ldb (byte 12 9) packed-date)  ; year
         (ldb (byte 4 5) packed-date)   ; month
         (ldb (byte 5 0) packed-date))) ; day
-; → (2025 6 15)
+=> (2025 6 15)
 ```
 
 ### Relationship to dpb
@@ -72,5 +81,5 @@ Use a byte of size 1 to extract a single bit.
 ```lisp
 (let ((bs (byte 4 4)))
   (ldb bs (dpb #xA bs 0)))
-; → 10 (#xA)
+=> 10
 ```
