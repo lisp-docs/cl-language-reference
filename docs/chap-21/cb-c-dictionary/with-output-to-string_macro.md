@@ -19,7 +19,7 @@ import WithOutputToStringMacro from './_with-output-to-string_macro.md';
   (write-string "hello" s)
   (write-char #\Space s)
   (write-string "world" s))
-→ "hello world"
+=> "hello world"
 ```
 
 ### Using with format
@@ -29,7 +29,7 @@ The stream variable can be used as a destination for `format`.
 ```lisp
 (with-output-to-string (s)
   (format s "~D item~:P cost ~,2F total" 5 29.95))
-→ "5 items cost 29.95 total"
+=> "5 items cost 29.95 total"
 ```
 
 ### Capturing Output from Print Functions
@@ -41,7 +41,7 @@ All standard output functions work with the string stream.
   (prin1 'hello s)
   (princ " " s)
   (prin1 42 s))
-→ "HELLO 42"
+=> "HELLO 42"
 ```
 
 ### Writing to an Existing Adjustable String
@@ -55,7 +55,7 @@ When a string with a fill pointer is provided, output is appended to that string
   (with-output-to-string (s str)
     (format s "here's some output"))
   str)
-→ "here's some output"
+=> "here's some output"
 ```
 
 ### Redirecting *standard-output*
@@ -65,5 +65,5 @@ A common idiom is to capture output that would normally go to `*standard-output*
 ```lisp
 (with-output-to-string (*standard-output*)
   (princ "captured"))
-→ "captured"
+=> "captured"
 ```

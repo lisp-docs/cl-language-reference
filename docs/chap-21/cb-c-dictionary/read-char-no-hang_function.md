@@ -19,7 +19,7 @@ import ReadCharNoHangFunction from './_read-char-no-hang_function.md';
   (list (read-char-no-hang s)
         (read-char-no-hang s)
         (read-char-no-hang s)))
-→ (#\a #\b #\c)
+=> (#\a #\b #\c)
 ```
 
 ### End of File Handling
@@ -30,7 +30,7 @@ When the stream is exhausted and `eof-error-p` is false, returns the `eof-value`
 (with-input-from-string (s "x")
   (list (read-char-no-hang s nil :eof)
         (read-char-no-hang s nil :eof)))
-→ (#\x :EOF)
+=> (#\x :EOF)
 ```
 
 ### Returns NIL When No Input Available
@@ -41,7 +41,7 @@ On interactive streams, `read-char-no-hang` returns `NIL` rather than blocking w
 ;; On a string stream this behaves the same as read-char:
 (with-input-from-string (s "")
   (read-char-no-hang s nil nil))
-→ NIL
+=> NIL
 ```
 
 ### Difference from read-char

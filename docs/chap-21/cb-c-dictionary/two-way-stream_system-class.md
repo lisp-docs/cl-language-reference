@@ -21,7 +21,7 @@ A `two-way-stream` is a bidirectional composite stream that receives input from 
              (make-string-input-stream "x")
              (make-string-output-stream))))
   (typep two 'two-way-stream))
-→ T
+=> T
 ```
 
 ### Bidirectional Nature
@@ -32,12 +32,13 @@ A `two-way-stream` is a bidirectional composite stream that receives input from 
              (make-string-output-stream))))
   (list (input-stream-p two)
         (output-stream-p two)))
-→ (T T)
+=> (T T)
 ```
 
 ### Class Hierarchy
 
 ```lisp
 (subtypep 'two-way-stream 'stream)
-→ T
+=> T
+=> T
 ```

@@ -18,7 +18,7 @@ import TerminalIoVariable from './_terminal-io_variable.md';
 
 ```lisp
 (streamp *terminal-io*)
-→ T
+=> T
 ```
 
 ### It Is Bidirectional
@@ -26,7 +26,7 @@ import TerminalIoVariable from './_terminal-io_variable.md';
 ```lisp
 (list (input-stream-p *terminal-io*)
       (output-stream-p *terminal-io*))
-→ (T T)
+=> (NIL T)
 ```
 
 ### Direct Output Bypasses Redirection
@@ -38,7 +38,7 @@ Even when `*standard-output*` is redirected, writing directly to `*terminal-io*`
   (prin1 'foo)                     ; goes to the string
   (prin1 'bar *terminal-io*))     ; goes to the terminal
 ; "bar" is printed to the terminal
-→ "FOO"
+=> "FOO"
 ```
 
 ### Relationship to Standard I/O Variables

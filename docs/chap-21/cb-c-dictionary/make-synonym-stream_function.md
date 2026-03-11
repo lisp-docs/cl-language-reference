@@ -19,7 +19,7 @@ import MakeSynonymStreamFunction from './_make-synonym-stream_function.md';
 
 (let ((syn (make-synonym-stream '*my-stream*)))
   (read syn))
-→ FIRST
+=> FIRST
 ```
 
 ### Dynamic Rebinding
@@ -35,7 +35,7 @@ Changing the value of the symbol redirects the synonym stream to a different tar
     (setq *target* (make-string-input-stream "b-stream"))
     (let ((r2 (read syn)))
       (list r1 r2))))
-→ (A-STREAM B-STREAM)
+=> (A-STREAM B-STREAM)
 ```
 
 ### Output Through a Synonym Stream
@@ -50,7 +50,7 @@ Synonym streams work for output as well.
   (setq *out-target* actual)
   (write-string "routed output" syn)
   (get-output-stream-string actual))
-→ "routed output"
+=> "routed output"
 ```
 
 ### Retrieving the Symbol
@@ -60,5 +60,5 @@ Use `synonym-stream-symbol` to find out which symbol the stream is bound to.
 ```lisp
 (let ((syn (make-synonym-stream '*standard-input*)))
   (synonym-stream-symbol syn))
-→ *STANDARD-INPUT*
+=> *STANDARD-INPUT*
 ```

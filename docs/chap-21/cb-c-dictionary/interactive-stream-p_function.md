@@ -17,14 +17,14 @@ import InteractiveStreamPFunction from './_interactive-stream-p_function.md';
 ```lisp
 ;; String streams are not interactive
 (interactive-stream-p (make-string-input-stream "test"))
-→ NIL
+=> NIL
 ```
 
 ### String Output Stream
 
 ```lisp
 (interactive-stream-p (make-string-output-stream))
-→ NIL
+=> NIL
 ```
 
 ### Conditional Behavior Based on Interactivity

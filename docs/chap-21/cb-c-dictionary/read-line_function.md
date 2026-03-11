@@ -17,7 +17,7 @@ import ReadLineFunction from './_read-line_function.md';
 ```lisp
 (with-input-from-string (s (format nil "hello~%world"))
   (multiple-value-list (read-line s)))
-→ ("hello" NIL)
+=> ("hello" NIL)
 ```
 
 ### Second Return Value
@@ -28,7 +28,7 @@ The secondary value is `NIL` when the line ends with a newline, and `T` when ter
 (with-input-from-string (s (format nil "line1~%line2"))
   (list (multiple-value-list (read-line s))
         (multiple-value-list (read-line s))))
-→ (("line1" NIL) ("line2" T))
+=> (("line1" NIL) ("line2" T))
 ```
 
 ### Handling End of File
@@ -39,7 +39,7 @@ With `eof-error-p` set to `nil`, returns the `eof-value` instead of signaling an
 (with-input-from-string (s "only line")
   (list (read-line s)
         (read-line s nil :done)))
-→ ("only line" :DONE)
+=> ("only line" :DONE)
 ```
 
 ### Reading All Lines from a String
@@ -49,7 +49,7 @@ With `eof-error-p` set to `nil`, returns the `eof-value` instead of signaling an
   (loop for line = (read-line s nil nil)
         while line
         collect line))
-→ ("alpha" "beta" "gamma")
+=> ("alpha" "beta" "gamma")
 ```
 
 ### Empty Lines
@@ -58,9 +58,9 @@ Empty lines produce empty strings.
 
 ```lisp
 (with-input-from-string (s (format nil "~%~%data~%"))
-  (list (read-line s)
-        (read-line s)
+  (list (copy-seq (read-line s))
+        (copy-seq (read-line s))
         (read-line s)
         (read-line s nil :eof)))
-→ ("" "" "data" "")
+=> ("" "" "data" :EOF)
 ```

@@ -17,7 +17,7 @@ import WriteStringFunction from './_write-string_write-line_function.md';
 ```lisp
 (with-output-to-string (s)
   (write-string "hello world" s))
-→ "hello world"
+=> "hello world"
 ```
 
 ### write-string with :start and :end
@@ -27,7 +27,7 @@ The `:start` and `:end` keyword arguments select a substring to write.
 ```lisp
 (with-output-to-string (s)
   (write-string "bookworms" s :end 4))
-→ "book"
+=> "book"
 ```
 
 ### Basic write-line
@@ -38,7 +38,7 @@ The `:start` and `:end` keyword arguments select a substring to write.
 (with-output-to-string (s)
   (write-line "first" s)
   (write-line "second" s))
-→ "first
+=> "first
 second
 "
 ```
@@ -51,7 +51,7 @@ second
   (write-line "Alice" s)
   (write-string "Age: " s)
   (write-string "30" s))
-→ "Name: Alice
+=> "Name: Alice
 Age: 30"
 ```
 
@@ -64,5 +64,5 @@ Both functions return the full original string, not the written substring.
   (let ((result (write-string "bookworms" s :end 4)))
     (write-char #\Space s)
     (write-string result s)))
-→ "book bookworms"
+=> "book bookworms"
 ```

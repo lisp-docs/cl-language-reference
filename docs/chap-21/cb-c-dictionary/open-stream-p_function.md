@@ -16,7 +16,7 @@ import OpenStreamPFunction from './_open-stream-p_function.md';
 
 ```lisp
 (open-stream-p *standard-input*)
-→ T  ; implementation-dependent, but typically true
+=> T
 ```
 
 ### Newly Created Streams Are Open
@@ -24,7 +24,7 @@ import OpenStreamPFunction from './_open-stream-p_function.md';
 ```lisp
 (let ((s (make-string-output-stream)))
   (open-stream-p s))
-→ T
+=> T
 ```
 
 ### After Closing
@@ -33,7 +33,7 @@ import OpenStreamPFunction from './_open-stream-p_function.md';
 (let ((s (make-string-output-stream)))
   (close s)
   (open-stream-p s))
-→ NIL
+=> NIL
 ```
 
 ### Streams Closed by with-open-stream
@@ -47,5 +47,5 @@ Streams are automatically closed on exit from `with-open-stream`.
     (format nil "inside: ~A" (open-stream-p s)))
   ;; After exiting, saved stream is closed
   (list (open-stream-p saved)))
-→ (NIL)
+=> (NIL)
 ```

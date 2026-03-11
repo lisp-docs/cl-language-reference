@@ -23,7 +23,7 @@ import MakeEchoStreamFunction from './_make-echo-stream_function.md';
     (read s)
     (format s " * this-is-direct-output")
     (get-output-stream-string out)))
-→ "this-is-read-and-echoed * this-is-direct-output"
+=> "this-is-read-and-echoed * this-is-direct-output"
 ```
 
 ### Echoed Characters Appear in Output
@@ -39,7 +39,7 @@ Characters read from the input side are automatically copied to the output side.
     (read-char echo)
     (read-char echo)
     (get-output-stream-string out)))
-→ "abc"
+=> "abc"
 ```
 
 ### Direct Output Mixed with Echoed Input
@@ -56,5 +56,5 @@ You can also write directly to an echo stream, which goes to the output stream.
     (read-char echo)
     (write-string "-post" echo)
     (get-output-stream-string out)))
-→ "pre-in-post"
+=> "pre-in-post"
 ```

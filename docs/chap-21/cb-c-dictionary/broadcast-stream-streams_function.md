@@ -19,7 +19,7 @@ import BroadcastStreamStreamsFunction from './_broadcast-stream-streams_function
       (b (make-string-output-stream)))
   (let ((bc (make-broadcast-stream a b)))
     (length (broadcast-stream-streams bc))))
-→ 2
+=> 2
 ```
 
 ### Empty Broadcast Stream
@@ -28,7 +28,7 @@ A broadcast stream with no component streams returns an empty list.
 
 ```lisp
 (broadcast-stream-streams (make-broadcast-stream))
-→ NIL
+=> NIL
 ```
 
 ### Verifying Component Streams
@@ -40,5 +40,5 @@ A broadcast stream with no component streams returns an empty list.
          (components (broadcast-stream-streams bc)))
     (list (eq (first components) a)
           (eq (second components) b))))
-→ (T T)
+=> (T T)
 ```

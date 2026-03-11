@@ -19,7 +19,7 @@ import TerpriFunction from './_terpri_fresh-line_function.md';
   (write-string "line1" s)
   (terpri s)
   (write-string "line2" s))
-→ "line1
+=> "line1
 line2"
 ```
 
@@ -33,7 +33,7 @@ Since `terpri` always writes a newline, consecutive calls produce blank lines.
   (terpri s)
   (terpri s)
   (write-string "below" s))
-→ "above
+=> "above
 
 below"
 ```
@@ -48,7 +48,7 @@ below"
   (fresh-line s)      ; outputs newline (returns T)
   (fresh-line s)      ; already at start of line (returns NIL)
   (write-string "more" s))
-→ "text
+=> "text
 more"
 ```
 
@@ -61,7 +61,7 @@ more"
   (terpri s)
   (terpri s)
   (write-string "more text" s))
-→ "some text
+=> "some text
 
 more text"
 
@@ -71,6 +71,6 @@ more text"
   (fresh-line s)
   (fresh-line s)
   (write-string "more text" s))
-→ "some text
+=> "some text
 more text"
 ```

@@ -21,7 +21,7 @@ import MakeBroadcastStreamFunction from './_make-broadcast-stream_function.md';
     (write-string "hello to both" broadcast))
   (list (get-output-stream-string a)
         (get-output-stream-string b)))
-→ ("hello to both" "hello to both")
+=> ("hello to both" "hello to both")
 ```
 
 ### Using with format
@@ -33,7 +33,7 @@ import MakeBroadcastStreamFunction from './_make-broadcast-stream_function.md';
           "this will go to both streams")
   (list (get-output-stream-string s1)
         (get-output-stream-string s2)))
-→ ("this will go to both streams" "this will go to both streams")
+=> ("this will go to both streams" "this will go to both streams")
 ```
 
 ### Discarding Output (No Component Streams)
@@ -45,7 +45,7 @@ A broadcast stream with no components is a "bit bucket" -- all output is discard
   (write-string "discarded" s)
   (format s "also discarded ~D" 42)
   (output-stream-p s))
-→ T
+=> T
 ```
 
 ### Three or More Streams
@@ -57,5 +57,5 @@ Any number of output streams can be combined.
   (let ((bc (apply #'make-broadcast-stream streams)))
     (write-string "triple" bc))
   (mapcar #'get-output-stream-string streams))
-→ ("triple" "triple" "triple")
+=> ("triple" "triple" "triple")
 ```

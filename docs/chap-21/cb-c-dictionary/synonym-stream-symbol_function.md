@@ -17,7 +17,7 @@ import SynonymStreamSymbolFunction from './_synonym-stream-symbol_function.md';
 ```lisp
 (let ((syn (make-synonym-stream '*standard-output*)))
   (synonym-stream-symbol syn))
-→ *STANDARD-OUTPUT*
+=> *STANDARD-OUTPUT*
 ```
 
 ### With a Custom Variable
@@ -27,7 +27,7 @@ import SynonymStreamSymbolFunction from './_synonym-stream-symbol_function.md';
 
 (let ((syn (make-synonym-stream '*my-custom-stream*)))
   (synonym-stream-symbol syn))
-→ *MY-CUSTOM-STREAM*
+=> *MY-CUSTOM-STREAM*
 ```
 
 ### Practical Use
@@ -37,5 +37,5 @@ Knowing the symbol lets you understand which dynamic variable a synonym stream i
 ```lisp
 (let ((syn (make-synonym-stream '*standard-input*)))
   (eq (synonym-stream-symbol syn) '*standard-input*))
-→ T
+=> T
 ```

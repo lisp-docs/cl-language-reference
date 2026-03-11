@@ -44,5 +44,5 @@ The value represents the difference `file-position` would show after writing the
     (let ((after (file-position s)))
       (when (and before after)
         (- after before)))))
-→ 4  ; typically, but depends on external format
+=> 4
 ```

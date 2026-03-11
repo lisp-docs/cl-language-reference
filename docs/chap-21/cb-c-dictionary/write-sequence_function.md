@@ -17,7 +17,7 @@ import WriteSequenceFunction from './_write-sequence_function.md';
 ```lisp
 (with-output-to-string (s)
   (write-sequence "hello world" s))
-→ "hello world"
+=> "hello world"
 ```
 
 ### Using :start and :end
@@ -27,13 +27,13 @@ The `:start` and `:end` keywords write only a portion of the sequence.
 ```lisp
 (with-output-to-string (s)
   (write-sequence "bookworms" s :end 4))
-→ "book"
+=> "book"
 ```
 
 ```lisp
 (with-output-to-string (s)
   (write-sequence "abcdefgh" s :start 2 :end 6))
-→ "cdef"
+=> "cdef"
 ```
 
 ### Writing Byte Sequences
@@ -52,7 +52,7 @@ The `:start` and `:end` keywords write only a portion of the sequence.
   (let ((buf (make-array 5 :element-type '(unsigned-byte 8))))
     (read-sequence buf in)
     buf))
-→ #(10 20 30 40 50)
+=> #(10 20 30 40 50)
 ```
 
 ### Return Value
@@ -64,5 +64,5 @@ The `:start` and `:end` keywords write only a portion of the sequence.
   (let ((result (write-sequence "test" s)))
     (write-char #\Space s)
     (write-string (string-upcase result) s)))
-→ "test TEST"
+=> "test TEST"
 ```

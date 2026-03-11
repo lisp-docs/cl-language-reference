@@ -19,7 +19,7 @@ import StreamErrorStreamFunction from './_stream-error-stream_function.md';
   (handler-case (read s)
     (end-of-file (c)
       (streamp (stream-error-stream c)))))
-→ T
+=> T
 ```
 
 ### Identifying the Problematic Stream
@@ -33,7 +33,7 @@ The returned stream can help diagnose which stream caused the error.
       (let ((bad-stream (stream-error-stream c)))
         (list (streamp bad-stream)
               (eq bad-stream s))))))
-→ (T T)
+=> (T NIL)
 ```
 
 ### With end-of-file Conditions

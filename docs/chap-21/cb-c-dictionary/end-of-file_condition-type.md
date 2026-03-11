@@ -20,7 +20,7 @@ import EndOfFileConditionType from './_end-of-file_condition-type.md';
 (handler-case
     (read-char (make-string-input-stream ""))
   (end-of-file () :got-eof))
-→ :GOT-EOF
+=> :GOT-EOF
 ```
 
 ### Accessing the Stream from the Condition
@@ -32,7 +32,7 @@ Since `end-of-file` inherits from `stream-error`, you can use `stream-error-stre
     (read (make-string-input-stream ""))
   (end-of-file (c)
     (streamp (stream-error-stream c))))
-→ T
+=> T
 ```
 
 ### Avoiding end-of-file with eof-error-p
@@ -41,15 +41,17 @@ Most read functions accept an `eof-error-p` argument. When false, the function r
 
 ```lisp
 (read-char (make-string-input-stream "") nil :eof)
-→ :EOF
+=> :EOF
 ```
 
 ### Type Hierarchy
 
 ```lisp
 (subtypep 'end-of-file 'stream-error)
-→ T
+=> T
+=> T
 
 (subtypep 'end-of-file 'error)
-→ T
+=> T
+=> T
 ```

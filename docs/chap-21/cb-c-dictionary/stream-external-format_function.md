@@ -18,7 +18,7 @@ import StreamExternalFormatFunction from './_stream-external-format_function.md'
 (with-open-file (s "/tmp/cl-sef-test.txt"
                    :direction :output :if-exists :supersede)
   (stream-external-format s))
-→ :DEFAULT  ; or an implementation-specific value
+=> :UTF-8
 ```
 
 ### Implementation-Dependent Values
@@ -44,7 +44,7 @@ When opening a file with an explicit external format, `stream-external-format` r
                    :if-exists :supersede
                    :external-format :default)
   (stream-external-format s))
-→ :DEFAULT  ; or an implementation-specific equivalent
+=> :UTF-8
 ```
 
 ### Not Meaningful for Binary Streams

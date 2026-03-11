@@ -16,7 +16,7 @@ import ClearInputFunction from './_clear-input_function.md';
 
 ```lisp
 (clear-input)
-→ NIL
+=> NIL
 ```
 
 ### With a Specific Stream
@@ -26,7 +26,7 @@ You can pass a specific input stream. For non-interactive streams such as string
 ```lisp
 (with-input-from-string (s "hello")
   (clear-input s))
-→ NIL
+=> NIL
 ```
 
 ### Typical Use Case
@@ -48,5 +48,5 @@ Regardless of the stream or its state, the return value is always `NIL`.
 (let ((s (make-string-input-stream "data")))
   (read-char s)
   (clear-input s))
-→ NIL
+=> NIL
 ```

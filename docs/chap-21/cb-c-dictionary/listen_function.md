@@ -22,7 +22,7 @@ import ListenFunction from './_listen_function.md';
         (read-char s)
         (read-char s)
         (listen s)))
-→ (T #\a #\b #\c NIL)
+=> (T #\a #\b #\c NIL)
 ```
 
 ### After unread-char
@@ -35,7 +35,7 @@ A character put back with `unread-char` makes `listen` return true.
   (let ((before (listen s)))
     (unread-char #\x s)
     (list before (listen s))))
-→ (NIL T)
+=> (NIL T)
 ```
 
 ### End of File
@@ -44,7 +44,7 @@ At end of file, `listen` returns false.
 
 ```lisp
 (listen (make-string-input-stream ""))
-→ NIL
+=> NIL
 ```
 
 ### Intended for Interactive Use

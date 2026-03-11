@@ -18,7 +18,7 @@ A `broadcast-stream` is an output stream that sends all output to zero or more c
 
 ```lisp
 (typep (make-broadcast-stream) 'broadcast-stream)
-→ T
+=> T
 ```
 
 ### Output Goes to All Components
@@ -30,7 +30,7 @@ A `broadcast-stream` is an output stream that sends all output to zero or more c
     (write-string "sent to both" bc))
   (list (get-output-stream-string a)
         (get-output-stream-string b)))
-→ ("sent to both" "sent to both")
+=> ("sent to both" "sent to both")
 ```
 
 ### Empty Broadcast Stream (Bit Bucket)
@@ -41,12 +41,12 @@ A broadcast stream with no components silently discards all output.
 (let ((s (make-broadcast-stream)))
   (write-string "discarded" s)
   (output-stream-p s))
-→ T
+=> T
 ```
 
 ### Always an Output Stream
 
 ```lisp
 (output-stream-p (make-broadcast-stream))
-→ T
+=> T
 ```

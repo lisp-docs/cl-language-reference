@@ -21,7 +21,7 @@ With one argument, `file-position` returns the current position in the stream.
     (write-string "hello" s)
     (let ((p1 (file-position s)))
       (list p0 p1))))
-→ (0 5)
+=> (0 5)
 ```
 
 ### Setting the Position
@@ -41,7 +41,7 @@ With two arguments, `file-position` moves the stream position. Returns true on s
                    :element-type '(unsigned-byte 8))
   (file-position s 2)      ; skip to third byte
   (read-byte s))
-→ 30
+=> 30
 ```
 
 ### Using :start and :end Designators
@@ -54,7 +54,7 @@ The position-spec can be `:start` to move to the beginning or `:end` to move to 
   (read-byte s)                    ; read first byte
   (file-position s :start)         ; go back to start
   (read-byte s))                   ; read first byte again
-→ 10
+=> 10
 ```
 
 ### Position in Binary vs Character Streams
@@ -68,5 +68,5 @@ In binary streams, position advances by 1 per byte. In character streams, the in
     (read-byte s)
     (let ((p1 (file-position s)))
       (- p1 p0))))
-→ 1
+=> 1
 ```

@@ -18,7 +18,7 @@ A `concatenated-stream` is an input stream that reads from a sequence of other i
 
 ```lisp
 (typep (make-concatenated-stream) 'concatenated-stream)
-→ T
+=> T
 ```
 
 ### Sequential Reading
@@ -30,7 +30,7 @@ A `concatenated-stream` is an input stream that reads from a sequence of other i
   (loop for c = (read-char s nil nil)
         while c collect c into chars
         finally (return (coerce chars 'string))))
-→ "Hello World"
+=> "Hello World"
 ```
 
 ### Always an Input Stream
@@ -39,5 +39,5 @@ A `concatenated-stream` is an input stream that reads from a sequence of other i
 (let ((s (make-concatenated-stream
            (make-string-input-stream "test"))))
   (list (input-stream-p s) (output-stream-p s)))
-→ (T NIL)
+=> (T NIL)
 ```

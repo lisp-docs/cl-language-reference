@@ -17,7 +17,7 @@ import WithInputFromStringMacro from './_with-input-from-string_macro.md';
 ```lisp
 (with-input-from-string (s "hello world")
   (read s))
-→ HELLO
+=> HELLO
 ```
 
 ### Reading Multiple Values
@@ -27,7 +27,7 @@ Multiple read operations can consume the entire string.
 ```lisp
 (with-input-from-string (s "1 2 3 4 5")
   (list (read s) (read s) (read s)))
-→ (1 2 3)
+=> (1 2 3)
 ```
 
 ### Using :start and :end
@@ -38,7 +38,7 @@ The `:start` and `:end` keyword arguments restrict which portion of the string i
 (with-input-from-string (s "XXX1 2 3 4xxx"
                            :start 3 :end 10)
   (+ (read s) (read s) (read s)))
-→ 6
+=> 6
 ```
 
 ### Tracking Position with :index
@@ -50,7 +50,7 @@ The `:index` keyword stores the position in the string where reading stopped.
   (with-input-from-string (s "Animal Crackers" :index ind :start 7)
     (read s))
   ind)
-→ 15
+=> 15
 ```
 
 ### Character-Level Reading
@@ -63,7 +63,7 @@ Character-level operations work just as they do with any input stream.
         (read-char s)
         (peek-char nil s)
         (read-char s)))
-→ (#\a #\b #\c #\c)
+=> (#\a #\b #\c #\c)
 ```
 
 ### Reading Lines
@@ -75,5 +75,5 @@ Character-level operations work just as they do with any input stream.
   (list (read-line s)
         (read-line s)
         (read-line s)))
-→ ("first" "second" "third")
+=> ("first" "second" "third")
 ```

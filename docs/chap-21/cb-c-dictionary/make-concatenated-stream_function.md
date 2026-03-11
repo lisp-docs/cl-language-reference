@@ -22,7 +22,7 @@ import MakeConcatenatedStreamFunction from './_make-concatenated-stream_function
         while c
         collect c into chars
         finally (return (coerce chars 'string))))
-→ "Hello World"
+=> "Hello World"
 ```
 
 ### Reading Lisp Objects Across Boundaries
@@ -33,7 +33,7 @@ The concatenated stream seamlessly joins data from its component streams.
 (read (make-concatenated-stream
         (make-string-input-stream "1")
         (make-string-input-stream "2")))
-→ 12
+=> 12
 ```
 
 ### Multiple Streams
@@ -47,7 +47,7 @@ The concatenated stream seamlessly joins data from its component streams.
         while c
         collect c into chars
         finally (return (coerce chars 'string))))
-→ "aaabbbccc"
+=> "aaabbbccc"
 ```
 
 ### Empty Concatenation
@@ -56,5 +56,5 @@ A concatenated stream with no component streams is immediately at end of file.
 
 ```lisp
 (read-char (make-concatenated-stream) nil :eof)
-→ :EOF
+=> :EOF
 ```

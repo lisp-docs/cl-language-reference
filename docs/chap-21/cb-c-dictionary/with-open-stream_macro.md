@@ -17,7 +17,7 @@ import WithOpenStreamMacro from './_with-open-stream_macro.md';
 ```lisp
 (with-open-stream (s (make-string-input-stream "1 2 3 4"))
   (+ (read s) (read s) (read s)))
-→ 6
+=> 6
 ```
 
 ### Automatic Cleanup
@@ -31,7 +31,7 @@ The stream is closed even if the body exits abnormally.
       (setq saved s)
       (error "bail out")))
   (open-stream-p saved))
-→ NIL
+=> NIL
 ```
 
 ### With Constructed Streams
@@ -45,7 +45,7 @@ The stream is closed even if the body exits abnormally.
                             out))
     (read echo))
   (get-output-stream-string out))
-→ "echo-me"
+=> "echo-me"
 ```
 
 ### Return Value
@@ -55,6 +55,6 @@ Returns the values of the last form in the body.
 ```lisp
 (with-open-stream (s (make-string-input-stream "hello"))
   (values (read-char s) (read-char s)))
-→ #\h
-→ #\e
+=> #\h
+=> #\e
 ```

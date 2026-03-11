@@ -18,7 +18,7 @@ import WriteCharFunction from './_write-char_function.md';
 (with-output-to-string (s)
   (write-char #\H s)
   (write-char #\i s))
-→ "Hi"
+=> "Hi"
 ```
 
 ### Return Value
@@ -30,7 +30,7 @@ import WriteCharFunction from './_write-char_function.md';
   (let ((result (write-char #\x s)))
     (write-char #\Space s)
     (prin1 result s)))
-→ "x #\\x"
+=> "x #\\x"
 ```
 
 ### Writing Special Characters
@@ -42,7 +42,7 @@ Any character can be written, including newlines and other whitespace.
   (write-char #\A s)
   (write-char #\Newline s)
   (write-char #\B s))
-→ "A
+=> "A
 B"
 ```
 
@@ -52,5 +52,5 @@ B"
 (with-output-to-string (s)
   (dolist (c '(#\C #\o #\m #\m #\o #\n #\Space #\L #\i #\s #\p))
     (write-char c s)))
-→ "Common Lisp"
+=> "Common Lisp"
 ```

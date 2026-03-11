@@ -19,7 +19,7 @@ import MakeStringInputStreamFunction from './_make-string-input-stream_function.
   (list (read-char s)
         (read-char s)
         (read-char s)))
-→ (#\h #\e #\l)
+=> (#\h #\e #\l)
 ```
 
 ### Reading Lisp Objects from a String
@@ -31,7 +31,7 @@ The stream can be used with `read` to parse Lisp objects from a string.
   (list (read s nil nil)
         (read s nil nil)
         (read s nil nil)))
-→ (1 ONE NIL)
+=> (1 ONE NIL)
 ```
 
 ### Using Start and End Parameters
@@ -40,7 +40,7 @@ The optional `start` and `end` arguments restrict which portion of the string is
 
 ```lisp
 (read (make-string-input-stream "prefixtargetsuffix" 6 12))
-→ TARGET
+=> TARGET
 ```
 
 ### Detecting End of File
@@ -52,7 +52,7 @@ When all characters have been consumed, the stream reaches end of file.
   (list (read-char s nil :eof)
         (read-char s nil :eof)
         (read-char s nil :eof)))
-→ (#\a #\b :EOF)
+=> (#\a #\b :EOF)
 ```
 
 ### Reading Lines from a String Stream
@@ -64,5 +64,5 @@ When all characters have been consumed, the stream reaches end of file.
   (list (read-line s)
         (read-line s)
         (read-line s nil :done)))
-→ ("line1" "line2" "line3")
+=> ("line1" "line2" "line3")
 ```

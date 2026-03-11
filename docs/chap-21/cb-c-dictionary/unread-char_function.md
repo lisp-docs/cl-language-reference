@@ -19,7 +19,7 @@ import UnreadCharFunction from './_unread-char_function.md';
   (let ((c (read-char s)))
     (unread-char c s)
     (list c (read-char s))))
-→ (#\a #\a)
+=> (#\a #\a)
 ```
 
 ### One-Character Lookahead
@@ -37,7 +37,7 @@ import UnreadCharFunction from './_unread-char_function.md';
 ; 0 #\0
 ; 2 #\1
 ; 4 #\2
-→ NIL
+=> NIL
 ```
 
 ### Reading Until a Delimiter
@@ -52,7 +52,7 @@ A common pattern is to read characters and put back the delimiter.
                      finally (when c (unread-char c s)))))
     (list (coerce chars 'string)
           (read-char s nil nil))))
-→ ("hello" #\Space)
+=> ("hello" #\Space)
 ```
 
 ### Constraint: Only One Unread
@@ -66,5 +66,5 @@ You cannot call `unread-char` twice consecutively without an intervening read op
     (unread-char c1 s)
     (let ((c2 (read-char s)))
       (list c1 c2))))
-→ (#\a #\a)
+=> (#\a #\a)
 ```

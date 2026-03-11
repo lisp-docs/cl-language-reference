@@ -20,7 +20,7 @@ import FileStreamSystemClass from './_file-stream_system-class.md';
 (with-open-file (s "/tmp/cl-fs-test.txt"
                    :direction :output :if-exists :supersede)
   (typep s 'file-stream))
-→ T
+=> T
 ```
 
 ### Distinguishing from String Streams
@@ -29,14 +29,15 @@ String streams are not file streams.
 
 ```lisp
 (typep (make-string-output-stream) 'file-stream)
-→ NIL
+=> NIL
 ```
 
 ### Class Hierarchy
 
 ```lisp
 (subtypep 'file-stream 'stream)
-→ T
+=> T
+=> T
 ```
 
 ### Created by open and with-open-file
@@ -47,5 +48,5 @@ Both `open` and `with-open-file` produce file streams.
 (let ((s (open "/tmp/cl-fs-test.txt" :direction :probe)))
   (prog1 (typep s 'file-stream)
     (close s)))
-→ T
+=> T
 ```

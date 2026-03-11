@@ -21,7 +21,7 @@ import FileLengthFunction from './_file-length_function.md';
 
 (with-open-file (s "/tmp/cl-fl-test.txt")
   (file-length s))
-→ 10
+=> 10
 ```
 
 ### Binary File Length
@@ -38,7 +38,7 @@ For binary files, the length is measured in units of the element type.
 (with-open-file (s "/tmp/cl-fl-test.bin"
                    :element-type '(unsigned-byte 8))
   (file-length s))
-→ 5
+=> 5
 ```
 
 ### Using with file-position
@@ -51,5 +51,5 @@ For binary files, the length is measured in units of the element type.
   (let ((len (file-length s)))
     (file-position s (1- len))    ; seek to last byte
     (read-byte s)))
-→ 4
+=> 4
 ```

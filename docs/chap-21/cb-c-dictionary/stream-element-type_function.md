@@ -17,7 +17,8 @@ String streams have an element type that is a subtype of `character`.
 ```lisp
 (let ((s (make-string-output-stream)))
   (subtypep (stream-element-type s) 'character))
-→ T
+=> T
+=> T
 ```
 
 ### Binary File Stream
@@ -30,7 +31,7 @@ Binary file streams report the element type specified at creation.
                    :element-type '(unsigned-byte 8)
                    :if-exists :supersede)
   (stream-element-type s))
-→ (UNSIGNED-BYTE 8)  ; or a supertype thereof
+=> (UNSIGNED-BYTE 8)
 ```
 
 ### Character File Stream
@@ -40,12 +41,14 @@ Binary file streams report the element type specified at creation.
                    :direction :output
                    :if-exists :supersede)
   (subtypep (stream-element-type s) 'character))
-→ T
+=> T
+=> T
 ```
 
 ### String Input Stream
 
 ```lisp
 (subtypep (stream-element-type (make-string-input-stream "test")) 'character)
-→ T
+=> T
+=> T
 ```

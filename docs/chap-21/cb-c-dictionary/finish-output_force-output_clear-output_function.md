@@ -18,7 +18,7 @@ import FinishOutputFunction from './_finish-output_force-output_clear-output_fun
 (let ((s (make-string-output-stream)))
   (write-string "data" s)
   (finish-output s))
-→ NIL
+=> NIL
 ```
 
 ### force-output
@@ -29,7 +29,7 @@ import FinishOutputFunction from './_finish-output_force-output_clear-output_fun
 (let ((s (make-string-output-stream)))
   (write-string "data" s)
   (force-output s))
-→ NIL
+=> NIL
 ```
 
 ### clear-output
@@ -40,7 +40,7 @@ import FinishOutputFunction from './_finish-output_force-output_clear-output_fun
 (let ((s (make-string-output-stream)))
   (write-string "data" s)
   (clear-output s))
-→ NIL
+=> NIL
 ```
 
 ### Default Stream
@@ -53,7 +53,7 @@ All three functions default to `*standard-output*` when no stream argument is pr
   (finish-output)
   (force-output)
   (clear-output))
-→ "test"
+=> "test"
 ```
 
 ### Practical Difference

@@ -16,7 +16,7 @@ import StreampFunction from './_streamp_function.md';
 
 ```lisp
 (streamp *standard-input*)
-→ T
+=> T
 ```
 
 ### Non-Stream Objects
@@ -25,13 +25,13 @@ Non-stream objects return false.
 
 ```lisp
 (streamp 42)
-→ NIL
+=> NIL
 
 (streamp "hello")
-→ NIL
+=> NIL
 
 (streamp nil)
-→ NIL
+=> NIL
 ```
 
 ### Various Stream Types
@@ -40,13 +40,13 @@ All kinds of streams satisfy `streamp`.
 
 ```lisp
 (streamp (make-string-input-stream "test"))
-→ T
+=> T
 
 (streamp (make-string-output-stream))
-→ T
+=> T
 
 (streamp (make-broadcast-stream))
-→ T
+=> T
 ```
 
 ### Closed Streams
@@ -57,5 +57,5 @@ All kinds of streams satisfy `streamp`.
 (let ((s (make-string-output-stream)))
   (close s)
   (streamp s))
-→ T
+=> T
 ```

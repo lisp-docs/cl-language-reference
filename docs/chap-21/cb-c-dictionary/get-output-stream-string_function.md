@@ -18,7 +18,7 @@ import GetOutputStreamStringFunction from './_get-output-stream-string_function.
 (let ((s (make-string-output-stream)))
   (write-string "abcdefghijklm" s)
   (get-output-stream-string s))
-→ "abcdefghijklm"
+=> "abcdefghijklm"
 ```
 
 ### Clearing Behavior
@@ -33,7 +33,7 @@ Each call to `get-output-stream-string` clears the accumulated characters, so su
     (let ((r2 (get-output-stream-string s)))
       (let ((r3 (get-output-stream-string s)))
         (list r1 r2 r3)))))
-→ ("first" "second" "")
+=> ("first" "second" "")
 ```
 
 ### Collecting Formatted Output
@@ -46,7 +46,7 @@ Useful for building strings incrementally with various output operations.
   (write-char #\Space s)
   (princ "is the answer" s)
   (get-output-stream-string s))
-→ "42 is the answer"
+=> "42 is the answer"
 ```
 
 ### Accumulating Output in a Loop
@@ -59,5 +59,5 @@ A common pattern is writing to a string stream in a loop, then extracting the re
     (write-string word s)
     (write-char #\Space s))
   (string-trim " " (get-output-stream-string s)))
-→ "Common Lisp is great"
+=> "Common Lisp is great"
 ```

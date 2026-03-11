@@ -21,7 +21,7 @@ An `echo-stream` is a bidirectional stream that gets input from an associated in
               (make-string-input-stream "x")
               (make-string-output-stream))))
   (typep echo 'echo-stream))
-→ T
+=> T
 ```
 
 ### Input Is Echoed
@@ -34,7 +34,7 @@ An `echo-stream` is a bidirectional stream that gets input from an associated in
     (read-char echo)
     (read-char echo)
     (get-output-stream-string out)))
-→ "ab"
+=> "ab"
 ```
 
 ### Bidirectional
@@ -47,5 +47,5 @@ An echo stream supports both input and output.
               (make-string-output-stream))))
   (list (input-stream-p echo)
         (output-stream-p echo)))
-→ (T T)
+=> (T T)
 ```

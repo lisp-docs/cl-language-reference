@@ -18,8 +18,8 @@ import ReadSequenceFunction from './_read-sequence_function.md';
 (let ((buf (make-array 15 :initial-element nil)))
   (values (read-sequence buf (make-string-input-stream "test string"))
           buf))
-→ 11
-→ #(#\t #\e #\s #\t #\Space #\s #\t #\r #\i #\n #\g NIL NIL NIL NIL)
+=> 11
+=> #(#\t #\e #\s #\t #\Space #\s #\t #\r #\i #\n #\g NIL NIL NIL NIL)
 ```
 
 ### Partial Reads
@@ -30,8 +30,8 @@ If the stream has fewer elements than the sequence can hold, only the available 
 (let ((buf (make-array 10 :initial-element #\.)))
   (let ((pos (read-sequence buf (make-string-input-stream "Hi"))))
     (values pos (coerce buf 'string))))
-→ 2
-→ "Hi........"
+=> 2
+=> "Hi........"
 ```
 
 ### Using :start and :end
@@ -43,7 +43,7 @@ The `:start` and `:end` keywords control which portion of the sequence is filled
   (read-sequence buf (make-string-input-stream "Hello World")
                  :start 2 :end 7)
   buf)
-→ "--Hello----"
+=> "--Hello---"
 ```
 
 ### Reading into a Vector of Bytes
@@ -63,6 +63,6 @@ The `:start` and `:end` keywords control which portion of the sequence is filled
                     :element-type '(unsigned-byte 8))
   (let ((buf (make-array 5 :element-type '(unsigned-byte 8) :initial-element 0)))
     (values (read-sequence buf in) buf)))
-→ 3
-→ #(10 20 30 0 0)
+=> 3
+=> #(10 20 30 0 0)
 ```

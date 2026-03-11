@@ -19,7 +19,7 @@ import MakeStringOutputStreamFunction from './_make-string-output-stream_functio
   (write-string "hello " s)
   (write-string "world" s)
   (get-output-stream-string s))
-→ "hello world"
+=> "hello world"
 ```
 
 ### Building Strings with Multiple Operations
@@ -31,7 +31,7 @@ Various output functions can write to a string output stream.
   (write-string "testing... " s)
   (prin1 1234 s)
   (get-output-stream-string s))
-→ "testing... 1234"
+=> "testing... 1234"
 ```
 
 ### Clearing on Retrieval
@@ -45,7 +45,7 @@ Calling `get-output-stream-string` clears the stream, so subsequent calls return
     (write-string "second" s)
     (let ((r2 (get-output-stream-string s)))
       (list r1 r2))))
-→ ("first" "second")
+=> ("first" "second")
 ```
 
 ### Using with format
@@ -56,7 +56,7 @@ Calling `get-output-stream-string` clears the stream, so subsequent calls return
 (let ((s (make-string-output-stream)))
   (format s "~D item~:P at ~,2F each" 3 9.5)
   (get-output-stream-string s))
-→ "3 items at 9.50 each"
+=> "3 items at 9.50 each"
 ```
 
 ### Stream Properties
@@ -68,5 +68,5 @@ A string output stream is an output stream but not an input stream.
   (list (output-stream-p s)
         (input-stream-p s)
         (streamp s)))
-→ (T NIL T)
+=> (T NIL T)
 ```

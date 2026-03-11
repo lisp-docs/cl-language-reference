@@ -20,7 +20,7 @@ import MakeTwoWayStreamFunction from './_make-two-way-stream_function.md';
     (let ((two (make-two-way-stream in out)))
       (format two "output...")
       (read two))))
-→ "output..."
+=> "output..."
 ;; The READ above returns INPUT...
 ```
 
@@ -35,7 +35,7 @@ Reading goes to the input stream; writing goes to the output stream.
       (let ((val (read two)))
         (format two "Got: ~D" val)
         (list val (get-output-stream-string out))))))
-→ (42 "Got: 42")
+=> (42 "Got: 42")
 ```
 
 ### Stream Direction Queries
@@ -48,5 +48,5 @@ A two-way stream is both an input and an output stream.
              (make-string-output-stream))))
   (list (input-stream-p two)
         (output-stream-p two)))
-→ (T T)
+=> (T T)
 ```

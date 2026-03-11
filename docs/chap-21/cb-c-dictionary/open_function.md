@@ -18,12 +18,12 @@ By default, `open` creates an input stream. Remember to close it when done. Pref
 (let ((s (open "/tmp/cl-test.txt" :direction :output :if-exists :supersede)))
   (write-string "Hello, file!" s)
   (close s))
-→ T
+=> T
 
 (let ((s (open "/tmp/cl-test.txt" :direction :input)))
   (prog1 (read-line s)
     (close s)))
-→ "Hello, file!"
+=> "Hello, file!"
 ```
 
 ### Direction Options
@@ -35,7 +35,7 @@ The `:direction` keyword controls whether the stream is for input, output, both,
 (let ((s (open "/tmp/cl-test.txt" :direction :probe)))
   (list (streamp s)
         (open-stream-p s)))
-→ (T NIL)
+=> (T NIL)
 ```
 
 ### Handling Nonexistent Files
@@ -47,7 +47,7 @@ The `:if-does-not-exist` keyword controls behavior when a file does not exist.
 (open "/tmp/no-such-file-xyz.txt"
       :direction :input
       :if-does-not-exist nil)
-→ NIL
+=> NIL
 ```
 
 ### Writing with :if-exists Options
@@ -59,13 +59,13 @@ The `:if-exists` keyword controls behavior when writing to a file that already e
 (let ((s (open "/tmp/cl-test.txt" :direction :output :if-exists :supersede)))
   (write-string "New content" s)
   (close s))
-→ T
+=> T
 
 ;; :append adds to the end of the existing file
 (let ((s (open "/tmp/cl-test.txt" :direction :output :if-exists :append)))
   (write-string " appended" s)
   (close s))
-→ T
+=> T
 ```
 
 ### Binary File I/O
@@ -79,11 +79,11 @@ Use `:element-type` to open binary streams.
   (write-byte 72 s)
   (write-byte 101 s)
   (close s))
-→ T
+=> T
 
 (let ((s (open "/tmp/cl-bytes.bin" :direction :input
                :element-type '(unsigned-byte 8))))
   (prog1 (list (read-byte s) (read-byte s))
     (close s)))
-→ (72 101)
+=> (72 101)
 ```

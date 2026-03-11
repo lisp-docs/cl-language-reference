@@ -17,7 +17,7 @@ import CloseFunction from './_close_function.md';
 ```lisp
 (let ((s (make-broadcast-stream)))
   (close s))
-→ T
+=> T
 ```
 
 ### Checking Open Status After Close
@@ -28,7 +28,7 @@ After closing, the stream still satisfies `streamp` but `open-stream-p` returns 
 (let ((s (make-string-output-stream)))
   (close s)
   (list (streamp s) (open-stream-p s)))
-→ (T NIL)
+=> (T NIL)
 ```
 
 ### Closing an Already Closed Stream
@@ -50,7 +50,7 @@ When `:abort` is true and the stream is an output file stream, the file may be d
 (with-open-file (s "/tmp/cl-close-test.txt"
                    :direction :output :if-exists :supersede)
   (write-string "data" s))
-→ NIL
+=> "data"
 
 ;; With :abort t, the implementation may delete the file
 (let ((s (open "/tmp/cl-close-abort.txt"
@@ -67,5 +67,5 @@ Certain pathname-related queries remain valid on closed file streams.
 (let ((s (open "/tmp/cl-close-test.txt" :direction :probe)))
   (list (streamp s)
         (pathnamep (pathname s))))
-→ (T T)
+=> (T T)
 ```

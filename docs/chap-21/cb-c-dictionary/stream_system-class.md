@@ -18,13 +18,13 @@ import StreamSystemClass from './_stream_system-class.md';
 
 ```lisp
 (typep *standard-input* 'stream)
-→ T
+=> T
 
 (typep (make-string-output-stream) 'stream)
-→ T
+=> T
 
 (typep 42 'stream)
-→ NIL
+=> NIL
 ```
 
 ### Class Hierarchy
@@ -33,13 +33,16 @@ All specific stream types are subtypes of `stream`.
 
 ```lisp
 (subtypep 'string-stream 'stream)
-→ T
+=> T
+=> T
 
 (subtypep 'file-stream 'stream)
-→ T
+=> T
+=> T
 
 (subtypep 'broadcast-stream 'stream)
-→ T
+=> T
+=> T
 ```
 
 ### Equivalent to streamp
@@ -49,5 +52,5 @@ Testing `(typep x 'stream)` is equivalent to `(streamp x)`.
 ```lisp
 (let ((s (make-string-input-stream "test")))
   (eql (typep s 'stream) (streamp s)))
-→ T
+=> T
 ```

@@ -22,14 +22,14 @@ import ReadByteFunction from './_read-byte_function.md';
   (write-byte 65 s)
   (write-byte 66 s)
   (write-byte 67 s))
-→ 67
+=> 67
 
 (with-open-file (s "/tmp/cl-bytes.bin"
                    :element-type '(unsigned-byte 8))
   (list (read-byte s)
         (read-byte s)
         (read-byte s)))
-→ (65 66 67)
+=> (65 66 67)
 ```
 
 ### Handling End of File
@@ -43,7 +43,7 @@ When `eof-error-p` is `nil`, returns the `eof-value` at end of file instead of s
         (read-byte s nil :eof)
         (read-byte s nil :eof)
         (read-byte s nil :eof)))
-→ (65 66 67 :EOF)
+=> (65 66 67 :EOF)
 ```
 
 ### Reading All Bytes
@@ -54,5 +54,5 @@ When `eof-error-p` is `nil`, returns the `eof-value` at end of file instead of s
   (loop for byte = (read-byte s nil nil)
         while byte
         collect byte))
-→ (65 66 67)
+=> (65 66 67)
 ```

@@ -18,7 +18,7 @@ A `synonym-stream` is a stream that acts as an alias for whatever stream is the 
 
 ```lisp
 (typep (make-synonym-stream '*standard-input*) 'synonym-stream)
-→ T
+=> T
 ```
 
 ### Dynamic Redirection
@@ -32,12 +32,13 @@ If the dynamic variable is rebound, the synonym stream follows the new binding.
   (let ((r1 (read syn)))
     (setq *my-syn-target* (make-string-input-stream "second"))
     (list r1 (read syn))))
-→ (FIRST SECOND)
+=> (FIRST SECOND)
 ```
 
 ### Class Hierarchy
 
 ```lisp
 (subtypep 'synonym-stream 'stream)
-→ T
+=> T
+=> T
 ```

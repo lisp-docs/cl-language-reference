@@ -20,7 +20,7 @@ import WriteByteFunction from './_write-byte_function.md';
                    :element-type '(unsigned-byte 8)
                    :if-exists :supersede)
   (write-byte 101 s))
-→ 101
+=> 101
 ```
 
 ### Writing Multiple Bytes
@@ -32,7 +32,7 @@ import WriteByteFunction from './_write-byte_function.md';
                    :if-exists :supersede)
   (dolist (b '(72 101 108 108 111))
     (write-byte b s)))
-→ NIL
+=> NIL
 ```
 
 ### Round-Trip with read-byte
@@ -51,5 +51,5 @@ Data written with `write-byte` can be read back with `read-byte`.
 (with-open-file (in "/tmp/cl-wb-rt.bin"
                     :element-type '(unsigned-byte 8))
   (list (read-byte in) (read-byte in) (read-byte in)))
-→ (255 0 128)
+=> (255 0 128)
 ```
