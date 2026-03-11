@@ -17,13 +17,13 @@ import HashTableCountFunction from './_hash-table-count_function.md';
 ```lisp
 (let ((ht (make-hash-table)))
   (hash-table-count ht))
-→ 0
+=> 0
 
 (let ((ht (make-hash-table)))
   (setf (gethash 'a ht) 1)
   (setf (gethash 'b ht) 2)
   (hash-table-count ht))
-→ 2
+=> 2
 ```
 
 ### Count Reflects Insertions and Removals
@@ -35,7 +35,7 @@ import HashTableCountFunction from './_hash-table-count_function.md';
   (setf (gethash 'z ht) 30)
   (remhash 'y ht)
   (hash-table-count ht))
-→ 2
+=> 2
 ```
 
 ### Updating an Existing Key Does Not Change Count
@@ -45,7 +45,7 @@ import HashTableCountFunction from './_hash-table-count_function.md';
   (setf (gethash 'a ht) 1)
   (setf (gethash 'a ht) 999)
   (hash-table-count ht))
-→ 1
+=> 1
 ```
 
 ### Count After clrhash
@@ -57,7 +57,8 @@ import HashTableCountFunction from './_hash-table-count_function.md';
   (let ((before (hash-table-count ht)))
     (clrhash ht)
     (values before (hash-table-count ht))))
-→ 50, 0
+=> 50
+=> 0
 ```
 
 ### Count vs. Size
@@ -70,5 +71,6 @@ import HashTableCountFunction from './_hash-table-count_function.md';
     (setf (gethash i ht) t))
   (values (hash-table-count ht)
           (<= (hash-table-count ht) (hash-table-size ht))))
-→ 10, T
+=> 10
+=> T
 ```

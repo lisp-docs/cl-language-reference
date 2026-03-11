@@ -16,13 +16,13 @@ import HashTablePFunction from './_hash-table-p_function.md';
 
 ```lisp
 (hash-table-p (make-hash-table))
-→ T
+=> T
 
 (hash-table-p 42)
-→ NIL
+=> NIL
 
 (hash-table-p "hello")
-→ NIL
+=> NIL
 ```
 
 ### Not Confused by Similar Structures
@@ -31,26 +31,26 @@ Association lists and property lists are not hash tables.
 
 ```lisp
 (hash-table-p '((a . 1) (b . 2) (c . 3)))
-→ NIL
+=> NIL
 
 (hash-table-p '(a 1 b 2 c 3))
-→ NIL
+=> NIL
 
 (hash-table-p nil)
-→ NIL
+=> NIL
 ```
 
 ### Works with All Hash Table Variants
 
 ```lisp
 (hash-table-p (make-hash-table :test #'eq))
-→ T
+=> T
 
 (hash-table-p (make-hash-table :test #'equal))
-→ T
+=> T
 
 (hash-table-p (make-hash-table :test #'equalp))
-→ T
+=> T
 ```
 
 ### Equivalent to typep
@@ -60,7 +60,7 @@ Association lists and property lists are not hash tables.
 (let ((ht (make-hash-table)))
   (eq (hash-table-p ht)
       (typep ht 'hash-table)))
-→ T
+=> T
 ```
 
 ### Useful in Defensive Programming
@@ -73,5 +73,6 @@ Association lists and property lists are not hash tables.
   (gethash key table))
 
 (safe-lookup 'x (make-hash-table))
-→ NIL, NIL
+=> NIL
+=> NIL
 ```

@@ -21,10 +21,10 @@ import HashTableSystemClass from './_hash-table_system-class.md';
 (let ((ht (make-hash-table)))
   (type-of ht))
 ; Implementation-dependent, but will be a subtype of hash-table
-; e.g. → HASH-TABLE
+; e.g. HASH-TABLE
 
 (typep (make-hash-table) 'hash-table)
-→ T
+=> T
 ```
 
 ### Class Precedence
@@ -32,7 +32,8 @@ import HashTableSystemClass from './_hash-table_system-class.md';
 ```lisp
 ;; hash-table's class precedence list is: hash-table, t
 (subtypep 'hash-table 't)
-→ T, T
+=> T
+=> T
 ```
 
 ### Hash Tables Are Not Sequences or Lists
@@ -40,14 +41,14 @@ import HashTableSystemClass from './_hash-table_system-class.md';
 ```lisp
 ;; Hash tables are distinct from other mapping structures
 (typep (make-hash-table) 'sequence)
-→ NIL
+=> NIL
 
 (typep (make-hash-table) 'list)
-→ NIL
+=> NIL
 
 ;; Alists and plists are not hash tables
 (hash-table-p '((a . 1) (b . 2)))
-→ NIL
+=> NIL
 ```
 
 ### Practical Usage
@@ -59,5 +60,6 @@ import HashTableSystemClass from './_hash-table_system-class.md';
   (setf (gethash "age" ht) 30)
   (values (gethash "name" ht)
           (gethash "age" ht)))
-→ "Alice", 30
+=> "Alice"
+=> 30
 ```

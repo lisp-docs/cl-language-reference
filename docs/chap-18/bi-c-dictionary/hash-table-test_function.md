@@ -16,16 +16,16 @@ import HashTableTestFunction from './_hash-table-test_function.md';
 
 ```lisp
 (hash-table-test (make-hash-table))
-→ EQL
+=> EQL
 
 (hash-table-test (make-hash-table :test #'equal))
-→ EQUAL
+=> EQUAL
 
 (hash-table-test (make-hash-table :test #'equalp))
-→ EQUALP
+=> EQUALP
 
 (hash-table-test (make-hash-table :test #'eq))
-→ EQ
+=> EQ
 ```
 
 ### Using the Test for Comparison
@@ -36,7 +36,7 @@ The returned test can be used to compare keys in user code.
 (let* ((ht (make-hash-table :test #'equal))
        (test (hash-table-test ht)))
   (funcall test "hello" "hello"))
-→ T
+=> T
 ```
 
 ### Cloning a Hash Table with the Same Test
@@ -48,7 +48,8 @@ The returned test can be used to compare keys in user code.
     ;; Clone uses the same test
     (setf (gethash "KEY" clone) "cloned-value")
     (gethash "key" clone)))
-→ "cloned-value", T
+=> "cloned-value"
+=> T
 ```
 
 ### Conditional Logic Based on Test
@@ -61,7 +62,7 @@ The returned test can be used to compare keys in user code.
           (hash-table-count ht)))
 
 (describe-hash-table (make-hash-table :test #'equal))
-→ "Hash table uses EQUAL test with 0 entries"
+=> "Hash table uses EQUAL test with 0 entries"
 ```
 
 ### Verifying Test After Creation
@@ -70,5 +71,5 @@ The returned test can be used to compare keys in user code.
 ;; Whether you pass a symbol or function designator, the result is a symbol
 (eq (hash-table-test (make-hash-table :test 'equal))
     (hash-table-test (make-hash-table :test #'equal)))
-→ T
+=> T
 ```

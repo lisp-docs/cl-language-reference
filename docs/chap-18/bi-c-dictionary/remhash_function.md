@@ -18,12 +18,12 @@ import RemhashFunction from './_remhash_function.md';
 (let ((ht (make-hash-table)))
   (setf (gethash 'a ht) 1)
   (remhash 'a ht))
-→ T
+=> T
 
 (let ((ht (make-hash-table)))
   ;; Removing a key that does not exist
   (remhash 'nonexistent ht))
-→ NIL
+=> NIL
 ```
 
 ### Verifying Removal
@@ -32,13 +32,15 @@ import RemhashFunction from './_remhash_function.md';
 (let ((ht (make-hash-table)))
   (setf (gethash 'x ht) 42)
   (gethash 'x ht))
-→ 42, T
+=> 42
+=> T
 
 (let ((ht (make-hash-table)))
   (setf (gethash 'x ht) 42)
   (remhash 'x ht)
   (gethash 'x ht))
-→ NIL, NIL
+=> NIL
+=> NIL
 ```
 
 ### Effect on Count
@@ -49,7 +51,7 @@ import RemhashFunction from './_remhash_function.md';
   (setf (gethash 'b ht) 2)
   (setf (gethash 'c ht) 3)
   (format nil "Before: ~D" (hash-table-count ht)))
-→ "Before: 3"
+=> "Before: 3"
 
 (let ((ht (make-hash-table)))
   (setf (gethash 'a ht) 1)
@@ -57,7 +59,7 @@ import RemhashFunction from './_remhash_function.md';
   (setf (gethash 'c ht) 3)
   (remhash 'b ht)
   (format nil "After: ~D" (hash-table-count ht)))
-→ "After: 2"
+=> "After: 2"
 ```
 
 ### Idempotent Removal
@@ -69,7 +71,7 @@ Calling `remhash` twice on the same key is safe; the second call simply returns 
   (setf (gethash 'key ht) "value")
   (list (remhash 'key ht)
         (remhash 'key ht)))
-→ (T NIL)
+=> (T NIL)
 ```
 
 ### Removing During Iteration with maphash
@@ -86,5 +88,5 @@ It is permitted to use `remhash` on the current entry during `maphash`.
                (remhash key ht)))
            ht)
   (hash-table-count ht))
-→ 3
+=> 3
 ```

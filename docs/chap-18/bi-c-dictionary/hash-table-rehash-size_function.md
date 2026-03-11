@@ -18,7 +18,7 @@ import HashTableRehashSizeFunction from './_hash-table-rehash-size_function.md';
 ;; Default rehash size is implementation-dependent
 (let ((ht (make-hash-table)))
   (numberp (hash-table-rehash-size ht)))
-→ T
+=> T
 ```
 
 ### Multiplicative Growth (Float)
@@ -28,7 +28,7 @@ When a float is specified, it represents a multiplicative growth factor. For exa
 ```lisp
 (let ((ht (make-hash-table :rehash-size 1.5)))
   (hash-table-rehash-size ht))
-→ 1.5
+=> 1.5
 ```
 
 ### Additive Growth (Integer)
@@ -38,7 +38,7 @@ When an integer is specified, it represents the number of entries to add during 
 ```lisp
 (let ((ht (make-hash-table :rehash-size 200)))
   (integerp (hash-table-rehash-size ht)))
-→ T
+=> T
 ```
 
 ### Querying for Table Duplication
@@ -54,7 +54,7 @@ The rehash size can be used alongside other parameters to create a copy of a has
                 :rehash-threshold (hash-table-rehash-threshold original)
                 :test (hash-table-test original))))
   (hash-table-rehash-size clone))
-→ 2.0
+=> 2.0
 ```
 
 ### Float vs. Integer Rehash Size
@@ -63,10 +63,10 @@ The rehash size can be used alongside other parameters to create a copy of a has
 ;; Float rehash size indicates multiplicative growth
 (let ((ht (make-hash-table :rehash-size 1.7)))
   (floatp (hash-table-rehash-size ht)))
-→ T
+=> T
 
 ;; Integer rehash size indicates additive growth
 (let ((ht (make-hash-table :rehash-size 50)))
   (integerp (hash-table-rehash-size ht)))
-→ T
+=> T
 ```

@@ -16,23 +16,23 @@ import SxhashFunction from './_sxhash_function.md';
 
 ```lisp
 (integerp (sxhash "hello"))
-→ T
+=> T
 
 (>= (sxhash "hello") 0)
-→ T
+=> T
 ```
 
 ### Equal Objects Have Equal Hash Codes
 
 ```lisp
 (= (sxhash "abc") (sxhash "abc"))
-→ T
+=> T
 
 (= (sxhash '(1 2 3)) (sxhash '(1 2 3)))
-→ T
+=> T
 
 (= (sxhash 42) (sxhash 42))
-→ T
+=> T
 ```
 
 ### Consistent Across Equivalent Constructions
@@ -45,10 +45,10 @@ import SxhashFunction from './_sxhash_function.md';
 
 ;; But truly equal constructions always agree
 (= (sxhash (list 'a 'b)) (sxhash (list 'a 'b)))
-→ T
+=> T
 
 (= (sxhash (cons 1 2)) (sxhash (cons 1 2)))
-→ T
+=> T
 ```
 
 ### Non-Equal Objects May Collide
@@ -60,7 +60,7 @@ Hash codes are not guaranteed to be unique. Different objects can have the same 
 (let ((h1 (sxhash "abc"))
       (h2 (sxhash "xyz")))
   (integerp h1))
-→ T
+=> T
 ```
 
 ### Practical Use: Custom Hash-Based Structure
@@ -79,9 +79,9 @@ Hash codes are not guaranteed to be unique. Different objects can have the same 
           ;; Same object always maps to same bucket
           (= (bucket-index "hello" n-buckets)
              (bucket-index "hello" n-buckets))))
-; First two values are implementation-dependent
-; Third value:
-→ T  ; (for the third value)
+;; First two values are implementation-dependent
+;; Third value:
+;; => T
 ```
 
 ### Hash Code Stability Within a Session
@@ -93,5 +93,5 @@ The hash code for an unmodified object remains the same throughout a Lisp sessio
        (h1 (sxhash obj))
        (h2 (sxhash obj)))
   (= h1 h2))
-→ T
+=> T
 ```

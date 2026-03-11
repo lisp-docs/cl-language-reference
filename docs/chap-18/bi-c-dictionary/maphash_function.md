@@ -22,11 +22,11 @@ import MaphashFunction from './_maphash_function.md';
   (maphash (lambda (key value)
              (format t "~A => ~A~%" key value))
            ht))
-; Prints (order may vary):
-; A => 1
-; B => 2
-; C => 3
-→ NIL
+;; Prints (order may vary):
+;; A => 1
+;; B => 2
+;; C => 3
+;; => NIL
 ```
 
 ### Collecting Entries into a List
@@ -40,7 +40,7 @@ import MaphashFunction from './_maphash_function.md';
     (maphash (lambda (k v) (push (cons k v) pairs)) ht)
     ;; Sort for deterministic output
     (sort pairs #'string< :key #'car)))
-→ (("x" . 10) ("y" . 20) ("z" . 30))
+=> (("x" . 10) ("y" . 20) ("z" . 30))
 ```
 
 ### Modifying Values During Iteration
@@ -56,7 +56,7 @@ Within `maphash`, you may use `setf` of `gethash` to change the current entry's 
            ht)
   (list (gethash 0 ht) (gethash 1 ht) (gethash 2 ht)
         (gethash 3 ht) (gethash 4 ht)))
-→ (1 4 9 16 25)
+=> (1 4 9 16 25)
 ```
 
 ### Removing Entries During Iteration
@@ -74,7 +74,7 @@ You may call `remhash` on the current entry during `maphash`.
              (when (< value 3) (remhash key ht)))
            ht)
   (hash-table-count ht))
-→ 2
+=> 2
 ```
 
 ### Summing Values
@@ -90,5 +90,5 @@ You may call `remhash` on the current entry during `maphash`.
                (incf total value))
              ht)
     total))
-→ 25
+=> 25
 ```

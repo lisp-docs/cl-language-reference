@@ -18,7 +18,8 @@ import GethashAccessor from './_gethash_accessor.md';
 (let ((ht (make-hash-table)))
   (setf (gethash 'color ht) "blue")
   (gethash 'color ht))
-→ "blue", T
+=> "blue"
+=> T
 ```
 
 ### Missing Keys and Defaults
@@ -29,12 +30,14 @@ When a key is not found, `gethash` returns `nil` and `nil`. An optional third ar
 (let ((ht (make-hash-table)))
   ;; Key not present: returns NIL, NIL
   (gethash 'missing ht))
-→ NIL, NIL
+=> NIL
+=> NIL
 
 (let ((ht (make-hash-table)))
   ;; Custom default value
   (gethash 'missing ht :not-found))
-→ :NOT-FOUND, NIL
+=> :NOT-FOUND
+=> NIL
 ```
 
 ### Distinguishing NIL Values from Missing Keys
@@ -48,14 +51,14 @@ The second return value is essential when `nil` is a valid stored value.
   (multiple-value-bind (value present-p)
       (gethash 'flag ht)
     (list value present-p)))
-→ (NIL T)
+=> (NIL T)
 
 (let ((ht (make-hash-table)))
   ;; The key is NOT present at all
   (multiple-value-bind (value present-p)
       (gethash 'flag ht)
     (list value present-p)))
-→ (NIL NIL)
+=> (NIL NIL)
 ```
 
 ### Using setf with gethash
@@ -69,7 +72,8 @@ The second return value is essential when `nil` is a valid stored value.
   ;; Update
   (setf (gethash "x" ht) 20)
   (gethash "x" ht))
-→ 20, T
+=> 20
+=> T
 ```
 
 ### Counting Pattern with incf
@@ -82,7 +86,9 @@ The second return value is essential when `nil` is a valid stored value.
   (values (gethash 'a counts)
           (gethash 'b counts)
           (gethash 'c counts)))
-→ 3, 2, 1
+=> 3
+=> 2
+=> 1
 ```
 
 ### Building a Lookup Table
@@ -96,5 +102,7 @@ The second return value is essential when `nil` is a valid stored value.
   (values (gethash 200 status)
           (gethash 404 status)
           (gethash 999 status "Unknown")))
-→ "OK", "Not Found", "Unknown"
+=> "OK"
+=> "Not Found"
+=> "Unknown"
 ```

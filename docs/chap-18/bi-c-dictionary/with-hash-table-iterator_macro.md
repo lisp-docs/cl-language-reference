@@ -25,7 +25,7 @@ import WithHashTableIteratorMacro from './_with-hash-table-iterator_macro.md';
           (unless more (return))
           (push (cons key value) entries))))
     (sort entries #'string< :key (lambda (pair) (symbol-name (car pair))))))
-→ ((A . 1) (B . 2))
+=> ((A . 1) (B . 2))
 ```
 
 ### Collecting Keys and Values Separately
@@ -43,7 +43,7 @@ import WithHashTableIteratorMacro from './_with-hash-table-iterator_macro.md';
           (unless more (return))
           (push key keys))))
     (sort keys #'string<)))
-→ ("x" "y" "z")
+=> ("x" "y" "z")
 ```
 
 ### Implementing a Custom find-if for Hash Tables
@@ -66,7 +66,7 @@ import WithHashTableIteratorMacro from './_with-hash-table-iterator_macro.md';
   (multiple-value-bind (key value)
       (hash-table-find-if (lambda (k v) (declare (ignore k)) (> v 10)) ht)
     (list key value)))
-→ (B 20)
+=> (B 20)
 ```
 
 ### Counting Entries That Match a Condition
@@ -82,7 +82,7 @@ import WithHashTableIteratorMacro from './_with-hash-table-iterator_macro.md';
           (unless more (return))
           (when (> value 20) (incf count)))))
     count))
-→ 4
+=> 5
 ```
 
 ### Implementing maphash Using with-hash-table-iterator
@@ -103,5 +103,5 @@ The spec notes that `maphash` can be implemented in terms of `with-hash-table-it
   (let ((sum 0))
     (my-maphash (lambda (k v) (declare (ignore k)) (incf sum v)) ht)
     sum))
-→ 3
+=> 3
 ```

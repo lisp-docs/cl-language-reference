@@ -27,7 +27,7 @@ import HashTableRehashThresholdFunction from './_hash-table-rehash-threshold_fun
 (let ((ht (make-hash-table)))
   (let ((threshold (hash-table-rehash-threshold ht)))
     (and (<= 0 threshold) (<= threshold 1))))
-→ T
+=> T
 ```
 
 ### Effect of Different Thresholds
@@ -38,12 +38,12 @@ A lower threshold means the table rehashes sooner (more memory, potentially fewe
 ;; Low threshold: eager rehashing
 (let ((ht (make-hash-table :rehash-threshold 0.3)))
   (realp (hash-table-rehash-threshold ht)))
-→ T
+=> T
 
 ;; High threshold: compact storage, later rehashing
 (let ((ht (make-hash-table :rehash-threshold 0.9)))
   (realp (hash-table-rehash-threshold ht)))
-→ T
+=> T
 ```
 
 ### Preserving Configuration When Copying
@@ -55,5 +55,5 @@ A lower threshold means the table rehashes sooner (more memory, potentially fewe
                :test (hash-table-test ht1))))
   (maphash (lambda (k v) (setf (gethash k ht2) v)) ht1)
   (hash-table-test ht2))
-→ EQUAL
+=> EQUAL
 ```

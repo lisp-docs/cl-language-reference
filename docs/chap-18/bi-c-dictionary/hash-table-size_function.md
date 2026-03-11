@@ -28,7 +28,8 @@ import HashTableSizeFunction from './_hash-table-size_function.md';
     (setf (gethash i ht) t))
   (values (hash-table-count ht)
           (>= (hash-table-size ht) (hash-table-count ht))))
-→ 10, T
+=> 10
+=> T
 ```
 
 ### Size May Differ from Requested
@@ -39,7 +40,7 @@ Implementations are free to round up the requested size.
 ;; The actual size may be larger than requested
 (let ((ht (make-hash-table :size 7)))
   (>= (hash-table-size ht) 7))
-→ T
+=> T
 ```
 
 ### Size Can Grow After Insertions
@@ -53,7 +54,7 @@ When enough entries are added, the hash table rehashes and grows.
   (dotimes (i 1000)
     (setf (gethash i ht) i))
   (> (hash-table-size ht) initial-size))
-→ T
+=> T
 ```
 
 ### Using Size to Copy a Hash Table
@@ -69,5 +70,6 @@ The size returned is suitable for passing to `make-hash-table` to create a simil
   (maphash (lambda (k v) (setf (gethash k copy) v)) original)
   (values (hash-table-count copy)
           (gethash 15 copy)))
-→ 20, 15
+=> 20
+=> 15
 ```
