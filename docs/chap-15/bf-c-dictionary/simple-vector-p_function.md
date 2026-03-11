@@ -16,13 +16,13 @@ import SimpleVectorPFunction from './_simple-vector-p_function.md';
 
 ```lisp
 (simple-vector-p (vector 1 2 3))
-→ T
+=> T
 
 (simple-vector-p (make-array 5))
-→ T
+=> T
 
 (simple-vector-p 42)
-→ NIL
+=> NIL
 ```
 
 ### Strings and Bit Vectors Are Not Simple Vectors
@@ -31,10 +31,10 @@ Even though strings and bit vectors are one-dimensional arrays, they have specia
 
 ```lisp
 (simple-vector-p "hello")
-→ NIL
+=> NIL
 
 (simple-vector-p #*10110)
-→ NIL
+=> NIL
 ```
 
 ### Vectors with Fill Pointers or Adjustability
@@ -43,7 +43,7 @@ Vectors with fill pointers are not simple vectors. Adjustable vectors may or may
 
 ```lisp
 (simple-vector-p (make-array 5 :fill-pointer 3))
-→ NIL
+=> NIL
 ```
 
 ### Relationship to Other Predicates
@@ -55,11 +55,11 @@ A simple vector satisfies `vectorp` and `arrayp` as well, but the reverse is not
   (list (simple-vector-p sv)
         (vectorp sv)
         (arrayp sv)))
-→ (T T T)
+=> (T T T)
 
 (let ((fv (make-array 5 :fill-pointer 0)))
   (list (simple-vector-p fv)
         (vectorp fv)
         (arrayp fv)))
-→ (NIL T T)
+=> (NIL T T)
 ```

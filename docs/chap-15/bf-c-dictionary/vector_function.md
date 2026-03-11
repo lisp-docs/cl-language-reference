@@ -16,14 +16,14 @@ import VectorFunction from './_vector_function.md';
 
 ```lisp
 (vector 1 2 3)
-→ #(1 2 3)
+=> #(1 2 3)
 
 (vector 'a 'b 'c 'd)
-→ #(A B C D)
+=> #(A B C D)
 
 ;; No arguments produces an empty vector
 (vector)
-→ #()
+=> #()
 ```
 
 ### Mixed Element Types
@@ -32,10 +32,10 @@ Since `vector` creates a general vector (element-type `t`), it can hold any mix 
 
 ```lisp
 (vector 1 "hello" 'foo #\a 3.14)
-→ #(1 "hello" FOO #\a 3.14)
+=> #(1 "hello" FOO #\a 3.14)
 
 (vector '(1 2) #(3 4) "five")
-→ #((1 2) #(3 4) "five")
+=> #((1 2) #(3 4) "five")
 ```
 
 ### The Result Is Always a Simple Vector
@@ -44,13 +44,13 @@ The vector returned by `vector` is always a simple-vector (no fill pointer, not 
 
 ```lisp
 (simple-vector-p (vector 1 2 3))
-→ T
+=> T
 
 (arrayp (vector 1 2 3))
-→ T
+=> T
 
 (vectorp (vector 1 2 3))
-→ T
+=> T
 ```
 
 ### Equivalence to make-array
@@ -61,5 +61,5 @@ The vector returned by `vector` is always a simple-vector (no fill pointer, not 
 (let ((v1 (vector 10 20 30))
       (v2 (make-array 3 :initial-contents '(10 20 30))))
   (equalp v1 v2))
-→ T
+=> T
 ```

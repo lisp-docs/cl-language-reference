@@ -21,7 +21,7 @@ import VectorPopFunction from './_vector-pop_function.md';
         (vector-pop v)      ; removes and returns B
         (fill-pointer v)
         v))
-→ (C B 1 #(A))
+=> (C B 1 #(A))
 ```
 
 ### Stack-Like Behavior
@@ -36,7 +36,7 @@ import VectorPopFunction from './_vector-pop_function.md';
   (list (vector-pop stack)    ; LIFO: third comes out first
         (vector-pop stack)
         (vector-pop stack)))
-→ (THIRD SECOND FIRST)
+=> (THIRD SECOND FIRST)
 ```
 
 ### Error on Empty Vector
@@ -53,7 +53,7 @@ import VectorPopFunction from './_vector-pop_function.md';
   (if (> (fill-pointer v) 0)
       (vector-pop v)
       :empty))
-→ :EMPTY
+=> :EMPTY
 ```
 
 ### Push/Pop Cycle with vector-push-extend
@@ -69,5 +69,5 @@ Combining `vector-push-extend` and `vector-pop` for a dynamically-sized stack.
       (push (vector-pop stack) results))
     (list :popped (nreverse results)
           :remaining (copy-seq stack))))
-→ (:POPPED (40 30 20) :REMAINING #(0 10))
+=> (:POPPED (40 30 20) :REMAINING #(0 10))
 ```

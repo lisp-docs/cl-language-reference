@@ -21,7 +21,7 @@ import VectorPushFunction from './_vector-push_vector-push-extend_function.md';
         (vector-push 'c v)   ; stored at index 2
         (fill-pointer v)
         v))
-→ (0 1 2 3 #(A B C))
+=> (0 1 2 3 #(A B C))
 ```
 
 ### vector-push Returns NIL When Full
@@ -36,7 +36,7 @@ When the fill pointer equals the array dimension, `vector-push` does nothing and
   (list (vector-push 'd v)   ; vector is full
         (fill-pointer v)
         v))
-→ (NIL 3 #(A B C))
+=> (NIL 3 #(A B C))
 ```
 
 ### vector-push-extend Grows the Vector
@@ -51,7 +51,7 @@ When the fill pointer equals the array dimension, `vector-push` does nothing and
   (vector-push-extend 'd v)  ; triggers extension
   (vector-push-extend 'e v)
   (list (fill-pointer v) v))
-→ (5 #(A B C D E))
+=> (5 #(A B C D E))
 ```
 
 ### Building a Collection Dynamically
@@ -63,7 +63,7 @@ A common pattern is using an adjustable vector with fill pointer as a growable c
   (dotimes (i 6)
     (vector-push-extend (* i i) result))
   result)
-→ #(0 1 4 9 16 25)
+=> #(0 1 4 9 16 25)
 ```
 
 ### Specifying the Extension Amount
@@ -78,5 +78,5 @@ The optional third argument to `vector-push-extend` specifies the minimum number
   (vector-push-extend 'c v 100)
   (list (fill-pointer v)
         (>= (array-total-size v) 102)))
-→ (3 T)
+=> (3 T)
 ```

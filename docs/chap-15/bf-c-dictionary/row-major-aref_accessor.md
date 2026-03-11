@@ -20,7 +20,7 @@ import RowMajorArefAccessor from './_row-major-aref_accessor.md';
         (row-major-aref m 2)    ; element (0,2) = c
         (row-major-aref m 3)    ; element (1,0) = d
         (row-major-aref m 5)))  ; element (1,2) = f
-→ (A C D F)
+=> (A C D F)
 ```
 
 ### Setting Elements with SETF
@@ -32,7 +32,7 @@ import RowMajorArefAccessor from './_row-major-aref_accessor.md';
   (setf (row-major-aref m 1) 10)   ; element (0,1)
   (setf (row-major-aref m 2) 20)   ; element (1,0)
   m)
-→ #2A((0 10) (20 0))
+=> #2A((0 10) (20 0))
 ```
 
 ### Iterating Over All Elements Generically
@@ -46,7 +46,7 @@ import RowMajorArefAccessor from './_row-major-aref_accessor.md';
       (total 0))
   (dotimes (i (array-total-size a) total)
     (incf total (row-major-aref a i))))
-→ 36
+=> 36
 ```
 
 ### Collecting All Elements Into a List
@@ -58,7 +58,7 @@ import RowMajorArefAccessor from './_row-major-aref_accessor.md';
         collect (row-major-aref array i)))
 
 (array-to-list (make-array '(2 3) :initial-contents '((a b c) (d e f))))
-→ (A B C D E F)
+=> (A B C D E F)
 ```
 
 ### Equivalence to aref
@@ -70,5 +70,5 @@ import RowMajorArefAccessor from './_row-major-aref_accessor.md';
                      '((0 1 2 3) (4 5 6 7) (8 9 10 11)))))
   (= (aref m 2 1)
      (row-major-aref m (array-row-major-index m 2 1))))
-→ T
+=> T
 ```

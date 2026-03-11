@@ -16,17 +16,17 @@ The `vector` type represents one-dimensional arrays. Strings, bit vectors, and g
 
 ```lisp
 (typep (make-array 5) 'vector)
-→ T
+=> T
 
 (typep "hello" 'vector)
-→ T
+=> T
 
 (typep #*10110 'vector)
-→ T
+=> T
 
 ;; Multi-dimensional arrays are NOT vectors
 (typep (make-array '(2 3)) 'vector)
-→ NIL
+=> NIL
 ```
 
 ### Parameterized Vector Type
@@ -36,14 +36,14 @@ The `vector` type specifier can be parameterized by element type and size.
 ```lisp
 ;; Vector of any type with any size
 (typep (vector 1 2 3) '(vector * *))
-→ T
+=> T
 
 ;; Vector of exactly 3 elements
 (typep (vector 1 2 3) '(vector * 3))
-→ T
+=> T
 
 (typep (vector 1 2 3) '(vector * 4))
-→ NIL
+=> NIL
 ```
 
 ### Vectors Are Both Arrays and Sequences
@@ -56,18 +56,21 @@ Vectors are the intersection of `array` and `sequence` -- they support both arra
         (elt v 2)            ; sequence access
         (find 30 v)          ; sequence operation
         (reduce #'+ v)))     ; sequence operation
-→ (30 30 30 150)
+=> (30 30 30 150)
 ```
 
 ### Type Relationships
 
 ```lisp
 (subtypep 'vector 'array)
-→ T
+=> T
+=> T
 
 (subtypep 'string 'vector)
-→ T
+=> T
+=> T
 
 (subtypep 'bit-vector 'vector)
-→ T
+=> T
+=> T
 ```

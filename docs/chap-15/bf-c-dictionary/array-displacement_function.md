@@ -17,13 +17,14 @@ import ArrayDisplacementFunction from './_array-displacement_function.md';
 ```lisp
 ;; A non-displaced array
 (array-displacement (make-array 5))
-→ NIL, 0
+=> NIL
+=> 0
 
 ;; A displaced array
 (let* ((base (make-array 10 :initial-element 0))
        (view (make-array 5 :displaced-to base :displaced-index-offset 3)))
   (multiple-value-list (array-displacement view)))
-→ (#(0 0 0 0 0 0 0 0 0 0) 3)
+=> (#(0 0 0 0 0 0 0 0 0 0) 3)
 ```
 
 ### Verifying Displacement Relationships
@@ -36,7 +37,7 @@ You can use `array-displacement` to check whether an array shares storage with a
   (multiple-value-bind (target offset) (array-displacement b)
     (list :displaced-to-a (eq target a)
           :offset offset)))
-→ (:DISPLACED-TO-A T :OFFSET 2)
+=> (:DISPLACED-TO-A T :OFFSET 2)
 ```
 
 ### Chained Displacement
@@ -50,7 +51,7 @@ Displacement is not transitive -- if B is displaced to A, and C is displaced to 
   (multiple-value-bind (target offset) (array-displacement c)
     (list :target-is-b (eq target b)
           :offset offset)))
-→ (:TARGET-IS-B T :OFFSET 1)
+=> (:TARGET-IS-B T :OFFSET 1)
 ```
 
 ### Practical Use: Checking If an Array Is a View
@@ -61,8 +62,8 @@ Displacement is not transitive -- if B is displaced to A, and C is displaced to 
   (not (null (nth-value 0 (array-displacement array)))))
 
 (displaced-array-p (make-array 5))
-→ NIL
+=> NIL
 
 (displaced-array-p (make-array 3 :displaced-to (make-array 10)))
-→ T
+=> T
 ```

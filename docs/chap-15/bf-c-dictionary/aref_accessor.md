@@ -18,12 +18,12 @@ import ArefAccessor from './_aref_accessor.md';
 ;; Access elements of a 1D array (vector)
 (let ((v (make-array 4 :initial-contents '(a b c d))))
   (list (aref v 0) (aref v 2) (aref v 3)))
-→ (A C D)
+=> (A C D)
 
 ;; Access elements of a 2D array
 (let ((m (make-array '(2 3) :initial-contents '((1 2 3) (4 5 6)))))
   (list (aref m 0 0) (aref m 0 2) (aref m 1 1)))
-→ (1 3 5)
+=> (1 3 5)
 ```
 
 ### Setting Elements with SETF
@@ -36,14 +36,14 @@ import ArefAccessor from './_aref_accessor.md';
   (setf (aref v 1) 'second)
   (setf (aref v 2) 'third)
   v)
-→ #(FIRST SECOND THIRD)
+=> #(FIRST SECOND THIRD)
 
 ;; Modify a 2D array
 (let ((m (make-array '(2 2) :initial-element 0)))
   (setf (aref m 0 1) 10)
   (setf (aref m 1 0) 20)
   m)
-→ #2A((0 10) (20 0))
+=> #2A((0 10) (20 0))
 ```
 
 ### Zero-Dimensional Arrays
@@ -53,12 +53,12 @@ A zero-dimensional array holds a single element. `aref` is called with no subscr
 ```lisp
 (let ((a (make-array '() :initial-element 42)))
   (aref a))
-→ 42
+=> 42
 
 (let ((a (make-array '() :initial-element nil)))
   (setf (aref a) :updated)
   (aref a))
-→ :UPDATED
+=> :UPDATED
 ```
 
 ### Using APPLY with AREF
@@ -70,7 +70,7 @@ When subscripts are stored in a list, use `apply` to pass them to `aref`.
                      '((1 2 3) (4 5 6) (7 8 9)))))
   (let ((indices '(2 1)))
     (apply #'aref m indices)))
-→ 8
+=> 8
 ```
 
 ### AREF Ignores Fill Pointers
@@ -82,5 +82,5 @@ Unlike `length` and sequence functions, `aref` can access any element regardless
   (list (length v)    ; respects fill pointer
         (aref v 0)    ; within fill pointer
         (aref v 4)))  ; beyond fill pointer -- still accessible
-→ (2 A E)
+=> (2 A E)
 ```

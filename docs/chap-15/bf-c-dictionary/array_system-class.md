@@ -17,13 +17,13 @@ The `array` type specifier can be used to describe arrays with specific element 
 ```lisp
 ;; Check if something is an array
 (typep (make-array '(2 3)) 'array)
-→ T
+=> T
 
 (typep "hello" 'array)
-→ T
+=> T
 
 (typep 42 'array)
-→ NIL
+=> NIL
 ```
 
 ### Parameterized Array Types
@@ -33,18 +33,18 @@ The `array` type can be parameterized by element type and dimensions.
 ```lisp
 ;; Any 2D array
 (typep (make-array '(3 4)) '(array * 2))
-→ T
+=> T
 
 ;; A 1D array (vector) of any element type
 (typep (vector 1 2 3) '(array * 1))
-→ T
+=> T
 
 ;; Array with specific dimension sizes
 (typep (make-array '(2 3)) '(array * (2 3)))
-→ T
+=> T
 
 (typep (make-array '(2 3)) '(array * (3 2)))
-→ NIL
+=> NIL
 ```
 
 ### Array Type Hierarchy
@@ -59,7 +59,7 @@ Arrays form a type hierarchy: `array` is the most general, with `vector`, `strin
         "hello"                  ; string
         #*10110                  ; bit vector
         (make-array '())))       ; 0D array
-→ T
+=> T
 ```
 
 ### Coercing with the Array Type
@@ -67,8 +67,8 @@ Arrays form a type hierarchy: `array` is the most general, with `vector`, `strin
 ```lisp
 ;; Strings and bit vectors are specialized arrays
 (typep "abc" '(array character (*)))
-→ T
+=> T
 
 (typep #*101 '(array bit (*)))
-→ T
+=> T
 ```

@@ -17,14 +17,14 @@ import ArrayRowMajorIndexFunction from './_array-row-major-index_function.md';
 ```lisp
 ;; For a 1D array, the row-major index equals the subscript
 (array-row-major-index (make-array 5) 3)
-→ 3
+=> 3
 
 ;; For a 3x4 array: index = row * num_cols + col
 (array-row-major-index (make-array '(3 4)) 1 2)
-→ 6  ; 1 * 4 + 2
+=> 6
 
 (array-row-major-index (make-array '(3 4)) 2 3)
-→ 11  ; 2 * 4 + 3
+=> 11
 ```
 
 ### 3D Arrays
@@ -33,10 +33,10 @@ For a 3D array with dimensions (d0, d1, d2), the row-major index of element (i, 
 
 ```lisp
 (array-row-major-index (make-array '(2 3 4)) 1 2 3)
-→ 23  ; 1*12 + 2*4 + 3
+=> 23
 
 (array-row-major-index (make-array '(2 3 4)) 0 0 0)
-→ 0
+=> 0
 ```
 
 ### Use with row-major-aref
@@ -47,7 +47,7 @@ For a 3D array with dimensions (d0, d1, d2), the row-major index of element (i, 
 (let ((m (make-array '(2 3) :initial-contents '((a b c) (d e f)))))
   (let ((idx (array-row-major-index m 1 1)))
     (list idx (row-major-aref m idx))))
-→ (4 E)
+=> (4 E)
 ```
 
 ### Iterating Over All Elements
@@ -59,5 +59,5 @@ Combined with `array-total-size` and `row-major-aref`, this provides a way to it
       (sum 0))
   (dotimes (i (array-total-size m) sum)
     (incf sum (row-major-aref m i))))
-→ 21
+=> 21
 ```

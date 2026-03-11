@@ -17,10 +17,10 @@ import ArrayElementTypeFunction from './_array-element-type_function.md';
 ```lisp
 ;; General arrays have element type T
 (array-element-type (make-array 5))
-→ T
+=> T
 
 (array-element-type (vector 1 2 3))
-→ T
+=> T
 ```
 
 ### Specialized Arrays
@@ -30,15 +30,15 @@ For arrays created with `:element-type`, the actual element type depends on the 
 ```lisp
 ;; Strings have character element types
 (array-element-type "hello")
-→ CHARACTER  ; or a subtype like BASE-CHAR
+=> CHARACTER
 
 ;; Bit vectors have element type BIT
 (array-element-type #*10110)
-→ BIT
+=> BIT
 
 ;; Requested type may be upgraded
 (array-element-type (make-array 4 :element-type 'bit))
-→ BIT
+=> BIT
 ```
 
 ### Implementation-Dependent Upgrading
@@ -49,7 +49,8 @@ Implementations may upgrade requested types. For instance, `(unsigned-byte 5)` m
 ;; The actual element type may be broader than requested
 (let ((a (make-array 4 :element-type '(unsigned-byte 8) :initial-element 0)))
   (subtypep '(unsigned-byte 8) (array-element-type a)))
-→ T  ; the actual type is a supertype of what we asked for
+=> T
+=> T
 ```
 
 ### Checking Array Specialization
@@ -63,5 +64,5 @@ You can use `array-element-type` to determine whether an array is specialized fo
   (list (array-element-type general)
         (array-element-type bits)
         (array-element-type chars)))
-→ (T BIT CHARACTER)  ; CHARACTER could also be BASE-CHAR
+=> (T BIT CHARACTER)
 ```

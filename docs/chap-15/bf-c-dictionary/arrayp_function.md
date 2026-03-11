@@ -16,16 +16,16 @@ import ArraypFunction from './_arrayp_function.md';
 
 ```lisp
 (arrayp (make-array 5))
-→ T
+=> T
 
 (arrayp (make-array '(2 3)))
-→ T
+=> T
 
 (arrayp 42)
-→ NIL
+=> NIL
 
 (arrayp 'hello)
-→ NIL
+=> NIL
 ```
 
 ### Strings and Bit Vectors Are Arrays
@@ -34,17 +34,17 @@ Strings and bit vectors are specialized one-dimensional arrays, so `arrayp` retu
 
 ```lisp
 (arrayp "hello world")
-→ T
+=> T
 
 (arrayp #*10110)
-→ T
+=> T
 ```
 
 ### Vectors Created by vector Are Arrays
 
 ```lisp
 (arrayp (vector 1 2 3))
-→ T
+=> T
 ```
 
 ### Lists and Other Non-Array Types
@@ -53,13 +53,13 @@ Lists, numbers, symbols, and other non-array objects return false.
 
 ```lisp
 (arrayp '(1 2 3))
-→ NIL
+=> NIL
 
 (arrayp #\a)
-→ NIL
+=> NIL
 
 (arrayp nil)
-→ NIL
+=> NIL
 ```
 
 ### Equivalence to typep
@@ -69,5 +69,5 @@ Lists, numbers, symbols, and other non-array objects return false.
 ```lisp
 (let ((a (make-array '(2 3))))
   (eq (arrayp a) (typep a 'array)))
-→ T
+=> T
 ```

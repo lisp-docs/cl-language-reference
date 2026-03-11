@@ -16,13 +16,13 @@ import ArrayTotalSizeFunction from './_array-total-size_function.md';
 
 ```lisp
 (array-total-size (make-array 5))
-→ 5
+=> 5
 
 (array-total-size (make-array '(3 4)))
-→ 12
+=> 12
 
 (array-total-size (make-array '(2 3 4)))
-→ 24
+=> 24
 ```
 
 ### Edge Cases: Zero and Zero-Dimensional Arrays
@@ -31,14 +31,14 @@ An array with any dimension of size 0 has total size 0. A zero-dimensional array
 
 ```lisp
 (array-total-size (make-array 0))
-→ 0
+=> 0
 
 (array-total-size (make-array '(5 0)))
-→ 0
+=> 0
 
 ;; Zero-dimensional array: product of zero dimensions = 1
 (array-total-size (make-array '()))
-→ 1
+=> 1
 ```
 
 ### Fill Pointer Is Ignored
@@ -49,7 +49,7 @@ An array with any dimension of size 0 has total size 0. A zero-dimensional array
 (let ((v (make-array 20 :fill-pointer 5)))
   (list (length v)              ; respects fill pointer
         (array-total-size v)))  ; actual allocated size
-→ (5 20)
+=> (5 20)
 ```
 
 ### Equivalence to Product of Dimensions
@@ -60,5 +60,5 @@ An array with any dimension of size 0 has total size 0. A zero-dimensional array
 (let ((a (make-array '(4 5 6))))
   (= (array-total-size a)
      (apply #'* (array-dimensions a))))
-→ T
+=> T
 ```

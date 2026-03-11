@@ -16,13 +16,13 @@ import VectorpFunction from './_vectorp_function.md';
 
 ```lisp
 (vectorp (make-array 5))
-→ T
+=> T
 
 (vectorp (vector 1 2 3))
-→ T
+=> T
 
 (vectorp 42)
-→ NIL
+=> NIL
 ```
 
 ### Strings and Bit Vectors Are Vectors
@@ -31,10 +31,10 @@ Strings and bit vectors are specialized one-dimensional arrays, so they are vect
 
 ```lisp
 (vectorp "hello")
-→ T
+=> T
 
 (vectorp #*10110)
-→ T
+=> T
 ```
 
 ### Multi-Dimensional Arrays Are Not Vectors
@@ -43,10 +43,10 @@ Only one-dimensional arrays qualify as vectors.
 
 ```lisp
 (vectorp (make-array '(2 3)))
-→ NIL
+=> NIL
 
 (vectorp (make-array '(3 3 3)))
-→ NIL
+=> NIL
 ```
 
 ### Vectors with Fill Pointers
@@ -55,7 +55,7 @@ Vectors with fill pointers are still vectors.
 
 ```lisp
 (vectorp (make-array 10 :fill-pointer 5))
-→ T
+=> T
 ```
 
 ### Equivalence to typep
@@ -65,5 +65,5 @@ Vectors with fill pointers are still vectors.
 ```lisp
 (let ((v (vector 'a 'b 'c)))
   (eq (vectorp v) (typep v 'vector)))
-→ T
+=> T
 ```

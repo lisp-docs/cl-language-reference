@@ -16,13 +16,13 @@ import BitVectorPFunction from './_bit-vector-p_function.md';
 
 ```lisp
 (bit-vector-p #*10110)
-→ T
+=> T
 
 (bit-vector-p #*)
-→ T
+=> T
 
 (bit-vector-p 42)
-→ NIL
+=> NIL
 ```
 
 ### Bit Vectors with Fill Pointers
@@ -32,11 +32,11 @@ Unlike `simple-bit-vector-p`, `bit-vector-p` returns true even for non-simple bi
 ```lisp
 (bit-vector-p
   (make-array 8 :element-type 'bit :fill-pointer 3 :initial-element 0))
-→ T
+=> T
 
 (bit-vector-p
   (make-array 6 :element-type 'bit :initial-element 0))
-→ T
+=> T
 ```
 
 ### Non-Bit-Vector Types
@@ -45,13 +45,13 @@ General vectors, strings, multi-dimensional arrays, and non-arrays return false.
 
 ```lisp
 (bit-vector-p (vector 0 1 0 1))
-→ NIL
+=> NIL
 
 (bit-vector-p "hello")
-→ NIL
+=> NIL
 
 (bit-vector-p (make-array '(2 3) :element-type 'bit :initial-element 0))
-→ NIL
+=> NIL
 ```
 
 ### Equivalence to typep
@@ -61,5 +61,5 @@ General vectors, strings, multi-dimensional arrays, and non-arrays return false.
 ```lisp
 (let ((bv (make-array 4 :element-type 'bit :initial-element 1)))
   (eq (bit-vector-p bv) (typep bv 'bit-vector)))
-→ T
+=> T
 ```

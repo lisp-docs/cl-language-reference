@@ -17,11 +17,11 @@ import ArrayRankLimitConstantVariable from './_array-rank-limit_constant-variabl
 ```lisp
 ;; Check the value (implementation-dependent)
 array-rank-limit
-→ 65529  ; example value, varies by implementation
+;; => 129
 
 ;; It is always at least 8
 (>= array-rank-limit 8)
-→ T
+=> T
 ```
 
 ### Relationship to Array Creation
@@ -31,7 +31,7 @@ The number of dimensions of any array must be less than `array-rank-limit`.
 ```lisp
 ;; Valid: rank 7 is always supported (< 8)
 (array-rank (make-array '(2 2 2 2 2 2 2)))
-→ 7
+=> 7
 ```
 
 ### Checking Rank Limits
@@ -42,8 +42,8 @@ The number of dimensions of any array must be less than `array-rank-limit`.
   (and (>= n 0) (< n array-rank-limit)))
 
 (valid-rank-p 3)
-→ T
+=> T
 
 (valid-rank-p 0)
-→ T
+=> T
 ```

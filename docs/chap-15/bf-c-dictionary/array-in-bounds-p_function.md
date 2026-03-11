@@ -20,7 +20,7 @@ import ArrayInBoundsPFunction from './_array-in-bounds-p_function.md';
         (array-in-bounds-p v 4)     ; last element
         (array-in-bounds-p v 5)     ; out of bounds
         (array-in-bounds-p v -1)))  ; negative index
-→ (T T NIL NIL)
+=> (T T NIL NIL)
 ```
 
 ### Multi-Dimensional Arrays
@@ -33,7 +33,7 @@ For multi-dimensional arrays, provide one subscript per dimension.
         (array-in-bounds-p m 2 3)     ; bottom-right corner
         (array-in-bounds-p m 3 0)     ; row out of bounds
         (array-in-bounds-p m 0 4)))   ; column out of bounds
-→ (T T NIL NIL)
+=> (T T NIL NIL)
 ```
 
 ### Fill Pointer Is Ignored
@@ -45,7 +45,7 @@ For multi-dimensional arrays, provide one subscript per dimension.
   (list (array-in-bounds-p v 5)  ; beyond fill pointer, but in bounds
         (array-in-bounds-p v 9)  ; last actual element
         (array-in-bounds-p v 10)))  ; truly out of bounds
-→ (T T NIL)
+=> (T T NIL)
 ```
 
 ### Safe Array Access Pattern
@@ -61,5 +61,5 @@ Use `array-in-bounds-p` to guard against out-of-bounds errors.
 (let ((v (vector 10 20 30)))
   (list (safe-aref v 1)
         (safe-aref v 5)))
-→ (20 NIL)
+=> (20 NIL)
 ```

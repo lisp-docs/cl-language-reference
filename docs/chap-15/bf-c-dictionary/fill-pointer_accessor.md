@@ -17,7 +17,7 @@ import FillPointerAccessor from './_fill-pointer_accessor.md';
 ```lisp
 (let ((v (make-array 10 :fill-pointer 4 :initial-element 0)))
   (list (fill-pointer v) (length v)))
-→ (4 4)
+=> (4 4)
 ```
 
 ### Setting the Fill Pointer with SETF
@@ -28,7 +28,7 @@ You can change the fill pointer to expose or hide elements. The new value must b
 (let ((v (make-array 8 :fill-pointer 3 :initial-element 'x)))
   (setf (fill-pointer v) 6)
   (list (fill-pointer v) (length v) v))
-→ (6 6 #(X X X X X X))
+=> (6 6 #(X X X X X X))
 ```
 
 ### Shrinking and Growing the Logical Size
@@ -44,7 +44,7 @@ Decreasing the fill pointer hides elements; increasing it reveals elements that 
     ;; Grow back to 5 -- old elements are still there
     (setf (fill-pointer v) 5)
     (list shrunk v)))
-→ (#(A B) #(A B C D E))
+=> (#(A B) #(A B C D E))
 ```
 
 ### Fill Pointer Controls Sequence Operations
@@ -57,7 +57,7 @@ Most sequence functions respect the fill pointer. `length`, `map`, `reduce`, and
   (list (length v)
         (reduce #'+ v)        ; only sums active elements
         (aref v 5)))          ; aref ignores fill pointer
-→ (3 60 60)
+=> (3 60 60)
 ```
 
 ### Resetting a Vector for Reuse
@@ -71,5 +71,5 @@ Setting the fill pointer to 0 effectively clears the vector without deallocating
     (setf (fill-pointer buf) 0)  ; "clear" the buffer
     (dotimes (i 3) (vector-push-extend (* i 10) buf))
     (list first-pass buf)))
-→ (#(0 1 2 3 4) #(0 10 20))
+=> (#(0 1 2 3 4) #(0 10 20))
 ```

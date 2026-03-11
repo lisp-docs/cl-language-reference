@@ -17,17 +17,17 @@ A `simple-array` is an array that is not displaced to another array, has no fill
 ```lisp
 ;; Simple arrays -- created without special options
 (typep (make-array 5) 'simple-array)
-→ T
+=> T
 
 (typep (make-array '(2 3)) 'simple-array)
-→ T
+=> T
 
 ;; Literal vectors and strings are simple arrays
 (typep #(1 2 3) 'simple-array)
-→ T
+=> T
 
 (typep "hello" 'simple-array)
-→ T
+=> T
 ```
 
 ### Non-Simple Arrays
@@ -37,11 +37,11 @@ Arrays with fill pointers, adjustability, or displacement are not guaranteed to 
 ```lisp
 ;; Arrays with fill pointers are not simple
 (typep (make-array 5 :fill-pointer 0) 'simple-array)
-→ NIL
+=> NIL
 
 ;; Explicitly adjustable arrays are not simple
 (typep (make-array 5 :adjustable t) 'simple-array)
-→ NIL  ; implementation-dependent
+=> NIL
 ```
 
 ### Why Simple Arrays Matter
@@ -51,13 +51,16 @@ Simple arrays can often be accessed more efficiently by the compiler. Type decla
 ```lisp
 ;; simple-vector is a subtype of simple-array
 (subtypep 'simple-vector 'simple-array)
-→ T
+=> T
+=> T
 
 ;; simple-string is also a subtype
 (subtypep 'simple-string 'simple-array)
-→ T
+=> T
+=> T
 
 ;; simple-bit-vector as well
 (subtypep 'simple-bit-vector 'simple-array)
-→ T
+=> T
+=> T
 ```

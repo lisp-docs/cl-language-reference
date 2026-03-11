@@ -16,14 +16,14 @@ import ArrayHasFillPointerPFunction from './_array-has-fill-pointer-p_function.m
 
 ```lisp
 (array-has-fill-pointer-p (make-array 5 :fill-pointer 0))
-→ T
+=> T
 
 (array-has-fill-pointer-p (make-array 5 :fill-pointer 3))
-→ T
+=> T
 
 ;; Fill pointer set to T (equals total size)
 (array-has-fill-pointer-p (make-array 5 :fill-pointer t))
-→ T
+=> T
 ```
 
 ### Arrays Without Fill Pointers
@@ -33,11 +33,11 @@ Simple arrays created without `:fill-pointer` may or may not have a fill pointer
 ```lisp
 ;; Multi-dimensional arrays never have fill pointers
 (array-has-fill-pointer-p (make-array '(2 3)))
-→ NIL
+=> NIL
 
 ;; Strings and bit vectors as literals typically do not
 (array-has-fill-pointer-p "hello")
-→ NIL
+=> NIL
 ```
 
 ### Guarding fill-pointer Calls
@@ -51,10 +51,10 @@ Use `array-has-fill-pointer-p` before calling `fill-pointer` to avoid errors.
     (fill-pointer array)))
 
 (safe-fill-pointer (make-array 5 :fill-pointer 3))
-→ 3
+=> 3
 
 (safe-fill-pointer (make-array 5))
-→ NIL  ; or a valid fill pointer, implementation-dependent
+=> NIL
 ```
 
 ### Only Vectors Can Have Fill Pointers
@@ -65,5 +65,5 @@ Arrays of rank other than 1 never have fill pointers.
 (list (array-has-fill-pointer-p (make-array '(3 4)))
       (array-has-fill-pointer-p (make-array '(2 3 4)))
       (array-has-fill-pointer-p (make-array '())))
-→ (NIL NIL NIL)
+=> (NIL NIL NIL)
 ```

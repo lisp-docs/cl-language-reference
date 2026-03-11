@@ -17,15 +17,15 @@ import SimpleBitVectorPFunction from './_simple-bit-vector-p_function.md';
 ```lisp
 ;; Bit vector literals are simple
 (simple-bit-vector-p #*10110)
-→ T
+=> T
 
 ;; Empty bit vector
 (simple-bit-vector-p #*)
-→ T
+=> T
 
 ;; Not a bit vector at all
 (simple-bit-vector-p (vector 1 0 1))
-→ NIL
+=> NIL
 ```
 
 ### Non-Simple Bit Vectors
@@ -35,7 +35,7 @@ Bit vectors with fill pointers, adjustability, or displacement are not simple.
 ```lisp
 (simple-bit-vector-p
   (make-array 5 :element-type 'bit :fill-pointer 3 :initial-element 0))
-→ NIL
+=> NIL
 ```
 
 ### Non-Bit-Vector Types
@@ -44,13 +44,13 @@ Strings, general vectors, numbers, and other types all return false.
 
 ```lisp
 (simple-bit-vector-p "hello")
-→ NIL
+=> NIL
 
 (simple-bit-vector-p (make-array 5))
-→ NIL
+=> NIL
 
 (simple-bit-vector-p 42)
-→ NIL
+=> NIL
 ```
 
 ### Equivalence to typep
@@ -61,5 +61,5 @@ Strings, general vectors, numbers, and other types all return false.
 (let ((bv #*10101))
   (eq (simple-bit-vector-p bv)
       (typep bv 'simple-bit-vector)))
-→ T
+=> T
 ```

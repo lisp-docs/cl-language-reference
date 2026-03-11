@@ -17,11 +17,11 @@ import ArrayTotalSizeLimitConstantVariable from './_array-total-size-limit_const
 ```lisp
 ;; Check the value (implementation-dependent)
 array-total-size-limit
-→ 536870911  ; example value, varies by implementation
+;; => 17592186044416
 
 ;; It is always a positive integer
 (typep array-total-size-limit '(integer 1024))
-→ T
+=> T
 ```
 
 ### Relationship to Array Creation
@@ -31,10 +31,10 @@ The total size of any array (the product of all its dimensions) must be less tha
 ```lisp
 ;; Verify that arrays respect this limit
 (< (array-total-size (make-array 1000)) array-total-size-limit)
-→ T
+=> T
 
 (< (array-total-size (make-array '(10 10 10))) array-total-size-limit)
-→ T
+=> T
 ```
 
 ### Checking Before Creating Large Arrays
@@ -45,8 +45,8 @@ The total size of any array (the product of all its dimensions) must be less tha
   (< (reduce #'* dimensions) array-total-size-limit))
 
 (can-create-array-p '(100 100 100))
-→ T
+=> T
 
 (can-create-array-p '(1000 1000))
-→ T
+=> T
 ```

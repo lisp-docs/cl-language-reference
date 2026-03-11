@@ -17,11 +17,11 @@ import ArrayDimensionLimitConstantVariable from './_array-dimension-limit_consta
 ```lisp
 ;; Check the value (implementation-dependent)
 array-dimension-limit
-→ 536870911  ; example value, varies by implementation
+;; => 17592186044416
 
 ;; It is always at least 1024
 (>= array-dimension-limit 1024)
-→ T
+=> T
 ```
 
 ### Each Dimension Must Be Less Than This Limit
@@ -31,10 +31,10 @@ This constrains the size of any single dimension. Even if `array-total-size-limi
 ```lisp
 ;; Each dimension is independently bounded
 (< 100 array-dimension-limit)
-→ T
+=> T
 
 (< 1000 array-dimension-limit)
-→ T
+=> T
 ```
 
 ### Checking Before Creating Arrays
@@ -45,7 +45,7 @@ This constrains the size of any single dimension. Even if `array-total-size-limi
   (every (lambda (d) (< d array-dimension-limit)) dimensions))
 
 (valid-dimensions-p '(100 200 300))
-→ T
+=> T
 ```
 
 ### Relationship to Other Limits
@@ -56,6 +56,5 @@ The three array limit constants work together: `array-rank-limit` limits the num
 (list :rank-limit array-rank-limit
       :dim-limit array-dimension-limit
       :total-size-limit array-total-size-limit)
-→ (:RANK-LIMIT 65529 :DIM-LIMIT 536870911 :TOTAL-SIZE-LIMIT 536870911)
-;; values are implementation-dependent
+=> (:RANK-LIMIT 129 :DIM-LIMIT 17592186044416 :TOTAL-SIZE-LIMIT 17592186044416)
 ```

@@ -16,13 +16,13 @@ A `simple-vector` is a one-dimensional simple array with element-type `t`. It ha
 
 ```lisp
 (typep (vector 1 2 3) 'simple-vector)
-→ T
+=> T
 
 (typep (make-array 5) 'simple-vector)
-→ T
+=> T
 
 (typep #(a b c) 'simple-vector)
-→ T
+=> T
 ```
 
 ### What Is Not a Simple Vector
@@ -31,13 +31,13 @@ Strings, bit vectors, adjustable vectors, and vectors with fill pointers are not
 
 ```lisp
 (typep "hello" 'simple-vector)
-→ NIL
+=> NIL
 
 (typep #*10110 'simple-vector)
-→ NIL
+=> NIL
 
 (typep (make-array 5 :fill-pointer 0) 'simple-vector)
-→ NIL
+=> NIL
 ```
 
 ### Parameterized simple-vector Type
@@ -46,22 +46,24 @@ The `simple-vector` type can be parameterized by size.
 
 ```lisp
 (typep (vector 1 2 3) '(simple-vector 3))
-→ T
+=> T
 
 (typep (vector 1 2 3) '(simple-vector 4))
-→ NIL
+=> NIL
 ```
 
 ### Type Relationships
 
 ```lisp
 (subtypep 'simple-vector 'vector)
-→ T
+=> T
+=> T
 
 (subtypep 'simple-vector 'simple-array)
-→ T
+=> T
+=> T
 
 ;; svref requires a simple-vector
 (svref (vector 'a 'b 'c) 1)
-→ B
+=> B
 ```

@@ -17,7 +17,7 @@ import SvrefAccessor from './_svref_accessor.md';
 ```lisp
 (let ((v (vector 'a 'b 'c 'd)))
   (list (svref v 0) (svref v 2)))
-→ (A C)
+=> (A C)
 ```
 
 ### Setting Elements with SETF
@@ -28,7 +28,7 @@ import SvrefAccessor from './_svref_accessor.md';
 (let ((v (vector 1 2 3 4 5)))
   (setf (svref v 2) 99)
   v)
-→ #(1 2 99 4 5)
+=> #(1 2 99 4 5)
 ```
 
 ### Only Works on Simple Vectors
@@ -38,13 +38,13 @@ import SvrefAccessor from './_svref_accessor.md';
 ```lisp
 ;; This works: vector creates a simple vector
 (svref (vector 'x 'y 'z) 1)
-→ Y
+=> Y
 
 ;; simple-vector-p can verify the argument type
 (let ((v (make-array 3 :initial-element 0)))
   (list (simple-vector-p v)
         (svref v 0)))
-→ (T 0)
+=> (T 0)
 ```
 
 ### Performance Consideration
@@ -55,5 +55,5 @@ When you know your array is a simple vector, using `svref` communicates this to 
 (let ((v (vector 10 20 30 40 50)))
   ;; svref and aref return the same value
   (= (svref v 3) (aref v 3)))
-→ T
+=> T
 ```
