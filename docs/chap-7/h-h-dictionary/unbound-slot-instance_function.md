@@ -27,7 +27,7 @@ import UnboundSlotInstanceFunction from './_unbound-slot-instance_function.md';
                 (cell-error-name c)
                 (slot-value inst 'name)
                 (class-name (class-of inst)))))))
-;; => "Slot PRICE unbound in Widget (a ITEM)"
+=> "Slot PRICE unbound in Widget (a ITEM)"
 ```
 
 ### Combining with cell-error-name
@@ -44,5 +44,5 @@ Together, `unbound-slot-instance` and `cell-error-name` provide complete informa
     (unbound-slot (condition)
       (list :slot-name (cell-error-name condition)
             :same-instance-p (eq c (unbound-slot-instance condition))))))
-;; => (:SLOT-NAME PORT :SAME-INSTANCE-P T)
+=> (:SLOT-NAME PORT :SAME-INSTANCE-P T)
 ```

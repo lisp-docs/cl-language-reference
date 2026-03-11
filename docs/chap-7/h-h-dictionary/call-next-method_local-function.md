@@ -29,7 +29,7 @@ import CallNextMethodLocalFunction from './_call-next-method_local-function.md';
   (format nil "Dog! ~A" (call-next-method)))
 
 (describe-it (make-instance 'dog :name "Rex"))
-;; => "Dog! Animal: Rex"
+=> "Dog! Animal: Rex"
 ```
 
 ### Building Results Through the Chain
@@ -53,7 +53,7 @@ Each method in the chain can contribute to the final result by combining its own
   (cons :top (call-next-method)))
 
 (get-layers (make-instance 'top))
-;; => (:TOP :MIDDLE :BASE)
+=> (:TOP :MIDDLE :BASE)
 ```
 
 ### Using call-next-method in :around Methods
@@ -70,7 +70,7 @@ In `:around` methods, `call-next-method` is used to invoke the rest of the metho
   (format nil "[~A]" (call-next-method)))
 
 (process "hello")
-;; => "[HELLO]"
+=> "[HELLO]"
 ```
 
 ### Passing Different Arguments
@@ -88,8 +88,10 @@ You can pass explicit arguments to `call-next-method`. The new arguments must pr
       (call-next-method (- x))   ;; Pass the absolute value
       (call-next-method)))
 
-(transform -5)  ;; => 50
-(transform 3)   ;; => 30
+(transform -5)
+=> 50
+(transform 3)
+=> 30
 ```
 
 ### Conditional Delegation
@@ -114,5 +116,5 @@ A method can test conditions before deciding whether to delegate to the next met
 
 (let ((obj (make-instance 'cacheable)))
   (list (compute obj 5) (compute obj 5)))
-;; => (25 25)
+=> (25 25)
 ```

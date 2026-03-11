@@ -30,7 +30,8 @@ The short form of `define-method-combination` uses `call-method` implicitly. You
 (defmethod all-valid-p my-and ((obj number))
   (plusp obj))
 
-(all-valid-p 5) ;; => T
+(all-valid-p 5)
+=> T
 ```
 
 ### Usage in define-method-combination (Long Form)

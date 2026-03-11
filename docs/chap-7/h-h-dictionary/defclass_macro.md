@@ -21,11 +21,11 @@ The simplest use of `defclass` defines a class with named slots. Each slot can h
    (age  :initarg :age
          :accessor person-age
          :initform 0)))
-;; => #<STANDARD-CLASS PERSON>
+==> #<STANDARD-CLASS PERSON>
 
 (let ((p (make-instance 'person :name "Alice" :age 30)))
   (list (person-name p) (person-age p)))
-;; => ("Alice" 30)
+=> ("Alice" 30)
 ```
 
 ### Inheritance
@@ -46,11 +46,12 @@ A class can inherit from one or more superclasses. Slots from all superclasses a
 
 (let ((dog (make-instance 'pet :species "Canis familiaris" :name "Rex")))
   (list (animal-species dog) (pet-name dog) (pet-owner dog)))
-;; => ("Canis familiaris" "Rex" NIL)
+=> ("Canis familiaris" "Rex" NIL)
 
 ;; The class also defines a type
-(typep dog 'pet)    ;; => T
-(typep dog 'animal) ;; => T
+(let ((dog (make-instance 'pet :species "Canis familiaris" :name "Rex")))
+  (list (typep dog 'pet) (typep dog 'animal)))
+=> (T T)
 ```
 
 ### Slot Options -- :reader, :writer, and :accessor
@@ -65,13 +66,13 @@ The `:reader` option creates only a reader generic function, `:writer` creates o
 (let ((p (make-instance 'point :x 3 :y 4)))
   ;; Reader works
   (list (point-x p) (point-y p)))
-;; => (3 4)
+=> (3 4)
 
 ;; To modify, use slot-value since we only defined readers
 (let ((p (make-instance 'point :x 0 :y 0)))
   (setf (slot-value p 'x) 10)
   (point-x p))
-;; => 10
+=> 10
 ```
 
 ### Shared (Class-Allocated) Slots
@@ -92,7 +93,7 @@ Using `:allocation :class`, a slot is shared among all instances. Changes to the
   (incf (counter-count b))
   ;; Both see the shared count
   (list (counter-count a) (counter-count b)))
-;; => (2 2)
+=> (2 2)
 ```
 
 ### Default Initargs
@@ -107,7 +108,7 @@ The `:default-initargs` class option provides defaults for initialization argume
 
 (let ((obj (make-instance 'timestamped)))
   (integerp (created-at obj)))
-;; => T
+=> T
 ```
 
 ### Documentation and Type Declarations
@@ -127,5 +128,5 @@ Slots and classes can have documentation strings and type declarations.
 
 (let ((r (make-instance 'temperature-reading :value 36.6)))
   (list (reading-value r) (reading-unit r)))
-;; => (36.6 :CELSIUS)
+=> (36.6 :CELSIUS)
 ```

@@ -25,7 +25,7 @@ import ComputeApplicableMethodsStandardGenericFunction from './_compute-applicab
 
 (let ((methods (compute-applicable-methods #'speak '("hello"))))
   (length methods))
-;; => 1
+=> 1
 ```
 
 ### Inspecting Method Ordering
@@ -46,7 +46,7 @@ The returned list is in precedence order, most specific first. This shows the ac
 (let* ((obj (make-instance 'c))
        (methods (compute-applicable-methods #'process-obj (list obj))))
   (length methods))
-;; => 3
+=> 3
 ;; The methods are in order: C, B, A (most specific first)
 ```
 
@@ -59,7 +59,7 @@ When no methods match, an empty list is returned.
 (defmethod typed-op ((x string)) x)
 
 (compute-applicable-methods #'typed-op '(42))
-;; => NIL
+=> NIL
 ```
 
 ### Checking Qualifiers on Applicable Methods
@@ -74,6 +74,5 @@ You can combine `compute-applicable-methods` with `method-qualifiers` to inspect
 
 (let ((methods (compute-applicable-methods #'do-work '(42))))
   (mapcar #'method-qualifiers methods))
-;; => ((:BEFORE) NIL NIL (:AFTER))
-;; (The exact order depends on the implementation's method list ordering)
+;; => ((:AFTER) (:BEFORE) NIL)
 ```

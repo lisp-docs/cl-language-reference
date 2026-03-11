@@ -23,7 +23,7 @@ import AddMethodStandardGenericFunction from './_add-method_standard-generic-fun
 
 ;; The method is now on the generic function
 (greet "World")
-;; => "Hello, World!"
+=> "Hello, World!"
 ```
 
 ### Replacing an Existing Method
@@ -37,14 +37,14 @@ If a method with the same specializers and qualifiers already exists, `add-metho
   "an integer")
 
 (describe-number 42)
-;; => "an integer"
+=> "an integer"
 
 ;; Redefining with defmethod replaces via add-method internally
 (defmethod describe-number ((n integer))
   "a whole number")
 
 (describe-number 42)
-;; => "a whole number"
+=> "a whole number"
 ```
 
 ### Using add-method with find-method and remove-method
@@ -56,7 +56,8 @@ You can combine `add-method` with `find-method` and `remove-method` for dynamic 
 
 (defmethod op ((x number)) (* x 2))
 
-(op 5) ;; => 10
+(op 5)
+=> 10
 
 ;; Find and remove the method
 (let ((m (find-method #'op '() (list (find-class 'number)))))
@@ -65,5 +66,5 @@ You can combine `add-method` with `find-method` and `remove-method` for dynamic 
 ;; Now no method is applicable for numbers
 (handler-case (op 5)
   (error () "no method"))
-;; => "no method"
+=> "no method"
 ```

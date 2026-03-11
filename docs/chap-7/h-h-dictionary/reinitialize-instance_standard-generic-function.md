@@ -22,7 +22,7 @@ import ReinitializeInstanceStandardGenericFunction from './_reinitialize-instanc
 (let ((c (make-instance 'config)))
   (reinitialize-instance c :port 3000)
   (list (config-host c) (config-port c)))
-;; => ("localhost" 3000)
+=> ("localhost" 3000)
 ```
 
 ### Difference from make-instance
@@ -38,7 +38,7 @@ Unlike `make-instance`, `reinitialize-instance` does not evaluate `:initform` fo
   ;; Only update count; label remains unchanged
   (reinitialize-instance c :count 0)
   (list (counter-count c) (counter-label c)))
-;; => (0 "hits")
+=> (0 "hits")
 ```
 
 ### Custom :after Methods for Reinitialization
@@ -61,6 +61,7 @@ You can define `:after` methods to perform additional actions when an instance i
   (format t "Area: ~A~%" (rect-area r))
   (reinitialize-instance r :width 5)
   (rect-area r))
-;; >> Area: 12
-;; => 20
+.. Area: 12
+..
+=> 20
 ```

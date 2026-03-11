@@ -22,7 +22,7 @@ import SharedInitializeStandardGenericFunction from './_shared-initialize_standa
 ;; shared-initialize is called internally by make-instance
 (let ((p (make-instance 'point :x 5)))
   (list (point-x p) (point-y p)))
-;; => (5 0)
+=> (5 0)
 ```
 
 ### Custom :after Method on shared-initialize
@@ -43,13 +43,13 @@ Defining a method on `shared-initialize` is the most general way to customize in
 ;; Works at creation time
 (let ((v (make-instance 'normalized-vector :x 3.0 :y 4.0)))
   (vec-magnitude v))
-;; => 5.0
+=> 5.0
 
 ;; Also works at reinitialization time
 (let ((v (make-instance 'normalized-vector :x 3.0 :y 4.0)))
   (reinitialize-instance v :x 0.0 :y 1.0)
   (vec-magnitude v))
-;; => 1.0
+=> 1.0
 ```
 
 ### The slot-names Argument
@@ -64,12 +64,12 @@ The `slot-names` argument controls which slots get their `:initform` values when
 ;; At creation time, slot-names = t, so both get initforms
 (let ((d (make-instance 'demo)))
   (list (demo-a d) (demo-b d)))
-;; => (10 20)
+=> (10 20)
 
 ;; At reinitialization, slot-names = nil, so initforms are NOT applied
 (let ((d (make-instance 'demo :a 1 :b 2)))
   (reinitialize-instance d :a 100)
   ;; b keeps its old value, not the initform
   (list (demo-a d) (demo-b d)))
-;; => (100 2)
+=> (100 2)
 ```

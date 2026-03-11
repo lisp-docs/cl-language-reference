@@ -33,8 +33,8 @@ import FunctionKeywordsStandardGenericFunction from './_function-keywords_standa
 ;; Inspect keywords via a method found through the generic function
 (let* ((methods (compute-applicable-methods #'create-item '(:circle)))
        (m (first methods)))
-  (function-keywords m))
-;; => (:RADIUS :COLOR), NIL
+  (multiple-value-list (function-keywords m)))
+=> ((:RADIUS :COLOR) NIL)
 ```
 
 ### Detecting &allow-other-keys
@@ -50,7 +50,7 @@ The second return value indicates whether the method accepts arbitrary keyword a
 (let* ((methods (compute-applicable-methods #'flexible-op '(42)))
        (m (first methods)))
   (multiple-value-list (function-keywords m)))
-;; => ((:START :END) T)
+=> ((:START :END) T)
 ```
 
 ### Methods with No Keywords
@@ -65,5 +65,5 @@ A method without `&key` returns empty keyword information.
 (let* ((methods (compute-applicable-methods #'simple-op '(42)))
        (m (first methods)))
   (multiple-value-list (function-keywords m)))
-;; => (NIL NIL)
+=> (NIL NIL)
 ```

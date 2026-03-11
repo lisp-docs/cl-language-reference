@@ -16,10 +16,10 @@ import ClassNameStandardGenericFunction from './_class-name_standard-generic-fun
 
 ```lisp
 (class-name (find-class 'integer))
-;; => INTEGER
+=> INTEGER
 
 (class-name (find-class 'string))
-;; => STRING
+=> STRING
 ```
 
 ### With User-Defined Classes
@@ -29,7 +29,7 @@ import ClassNameStandardGenericFunction from './_class-name_standard-generic-fun
   ((make :initarg :make)))
 
 (class-name (find-class 'vehicle))
-;; => VEHICLE
+=> VEHICLE
 ```
 
 ### Using class-name with class-of
@@ -41,7 +41,7 @@ A common pattern is to get the class name of an object by combining `class-of` a
 
 (let ((d (make-instance 'dog)))
   (class-name (class-of d)))
-;; => DOG
+=> DOG
 ```
 
 ### Setting the Class Name
@@ -53,5 +53,5 @@ A common pattern is to get the class name of an object by combining `class-of` a
 (let ((cls (find-class 'temp-class)))
   (setf (class-name cls) 'renamed-class)
   (class-name cls))
-;; => RENAMED-CLASS
+=> RENAMED-CLASS
 ```

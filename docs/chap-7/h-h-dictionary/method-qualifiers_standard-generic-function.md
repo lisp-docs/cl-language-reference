@@ -37,7 +37,7 @@ An unqualified (primary) method has `()` as its qualifier list.
 
 (let ((method (first (compute-applicable-methods #'foo '(42)))))
   (method-qualifiers method))
-;; => NIL
+=> NIL
 ;; (i.e., the empty list ())
 ```
 
@@ -55,5 +55,5 @@ You can use `method-qualifiers` to filter methods by their role.
        (primary (remove-if-not (lambda (m) (null (method-qualifiers m))) methods))
        (before  (remove-if-not (lambda (m) (equal (method-qualifiers m) '(:before))) methods)))
   (list (length primary) (length before)))
-;; => (1 1)
+=> (1 1)
 ```

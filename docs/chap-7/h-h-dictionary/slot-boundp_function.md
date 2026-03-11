@@ -22,7 +22,7 @@ import SlotBoundpFunction from './_slot-boundp_function.md';
 (let ((i (make-instance 'item :name "Widget")))
   (list (slot-boundp i 'name)
         (slot-boundp i 'price)))
-;; => (T NIL)
+=> (T NIL)
 ```
 
 ### Checking Before Accessing Unbound Slots
@@ -39,10 +39,10 @@ Use `slot-boundp` to avoid the error that occurs when reading an unbound slot.
       :not-set))
 
 (safe-get-value (make-instance 'optional-field :value 42))
-;; => 42
+=> 42
 
 (safe-get-value (make-instance 'optional-field))
-;; => :NOT-SET
+=> :NOT-SET
 ```
 
 ### Conditional Initialization in :after Methods
@@ -60,10 +60,10 @@ Use `slot-boundp` to avoid the error that occurs when reading an unbound slot.
           (format nil "Record-~A" (record-id r)))))
 
 (record-label (make-instance 'record :id 1))
-;; => "Record-1"
+=> "Record-1"
 
 (record-label (make-instance 'record :id 1 :label "Custom"))
-;; => "Custom"
+=> "Custom"
 ```
 
 ### After slot-makunbound
@@ -78,5 +78,5 @@ A slot that was once bound can be made unbound again using `slot-makunbound`. `s
   (list (slot-boundp c 'content)
         (progn (slot-makunbound c 'content)
                (slot-boundp c 'content))))
-;; => (T NIL)
+=> (T NIL)
 ```

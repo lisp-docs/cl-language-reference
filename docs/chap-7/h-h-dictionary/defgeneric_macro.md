@@ -22,7 +22,7 @@ import DefgenericMacro from './_defgeneric_macro.md';
   (format nil "Hello, ~A!" p))
 
 (greet "World")
-;; => "Hello, World!"
+=> "Hello, World!"
 ```
 
 ### Inline Method Definitions
@@ -35,8 +35,10 @@ Methods can be defined directly within the `defgeneric` form using `:method`. Th
   (:method ((shape (eql :unit-square))) 1)
   (:method ((shape (eql :unit-circle))) (coerce pi 'single-float)))
 
-(area :unit-square) ;; => 1
-(area :unit-circle) ;; => 3.1415927
+(area :unit-square)
+=> 1
+(area :unit-circle)
+=> 3.1415927
 ```
 
 ### Method Combination
@@ -57,7 +59,7 @@ The `:method-combination` option selects how methods are combined. Built-in type
 
 ;; Methods are combined with +, so all applicable methods contribute
 (priority (make-instance 'urgent-item))
-;; => 16
+=> 16
 ```
 
 ### Argument Precedence Order
@@ -75,8 +77,10 @@ The `:argument-precedence-order` option controls which arguments are considered 
 (defmethod render ((format (eql :html)) (object string))
   (format nil "<p>~A</p>" object))
 
-(render :html "hello") ;; => "<p>hello</p>"
-(render :text "hello") ;; => "TEXT: hello"
+(render :html "hello")
+=> "<p>hello</p>"
+(render :text "hello")
+=> "TEXT: hello"
 ```
 
 ### Declaring a Generic Function with Keywords
@@ -92,6 +96,8 @@ The generic function lambda list establishes the contract for all methods. It ca
       (format nil "String ~S of length ~D" thing (length thing))
       (format nil "~S" thing)))
 
-(describe-thing "hi")              ;; => "\"hi\""
-(describe-thing "hi" :verbose t)   ;; => "String \"hi\" of length 2"
+(describe-thing "hi")
+=> "\"hi\""
+(describe-thing "hi" :verbose t)
+=> "String \"hi\" of length 2"
 ```

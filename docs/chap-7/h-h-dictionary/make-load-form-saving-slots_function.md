@@ -25,7 +25,7 @@ import MakeLoadFormSavingSlotsFunction from './_make-load-form-saving-slots_func
 (let ((s (make-instance 'settings :theme :dark :volume 80)))
   (multiple-value-bind (creation init) (make-load-form s)
     (list (not (null creation)) (not (null init)))))
-;; => (T T)
+=> (T T)
 ```
 
 ### Selecting Specific Slots

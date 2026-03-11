@@ -22,7 +22,7 @@ import SlotUnboundStandardGenericFunction from './_slot-unbound_standard-generic
   (handler-case (slot-value obj 'value)
     (unbound-slot (c)
       (format nil "Unbound: ~A" (cell-error-name c)))))
-;; => "Unbound: VALUE"
+=> "Unbound: VALUE"
 ```
 
 ### Providing a Default Value for Unbound Slots
@@ -41,7 +41,7 @@ You can define a method on `slot-unbound` to return a default value instead of s
 (let ((obj (make-instance 'lazy-default)))
   ;; First access triggers slot-unbound, which initializes the slot
   (lazy-data obj))
-;; => (:DEFAULT)
+=> (:DEFAULT)
 ```
 
 ### Lazy Initialization Pattern
@@ -59,5 +59,5 @@ You can define a method on `slot-unbound` to return a default value instead of s
 
 (let ((r (make-instance 'expensive-resource)))
   (consp (resource-connection r)))
-;; => T
+=> T
 ```

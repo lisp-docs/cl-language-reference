@@ -31,7 +31,7 @@ The short form of `define-method-combination` creates a combination that applies
 
 ;; All applicable methods are combined with *
 (scaling-factor (make-instance 'double-scaled))
-;; => 30  (= 5 * 3 * 2)
+;; => 30
 ```
 
 ### Short Form with :around Methods
@@ -56,8 +56,9 @@ Short-form method combinations automatically support `:around` methods.
     p))
 
 (priority (make-instance 'urgent-task))
-;; >> Priority computed: 10
-;; => 10
+.. Priority computed: 10
+..
+=> 10
 ```
 
 ### Built-In Method Combination Types
@@ -80,7 +81,7 @@ Common Lisp provides several built-in method combination types: `+`, `and`, `or`
   (format nil "~A ~A" (obj-title obj) (obj-name obj)))
 
 (all-names (make-instance 'titled :name "Smith" :title "Dr."))
-;; => ("Dr. Smith" "Smith")
+=> ("Dr. Smith" "Smith")
 ```
 
 ### Short Form with Ordering
@@ -101,7 +102,8 @@ Short-form method combinations accept an optional ordering argument (`:most-spec
   (format t "logging stage~%"))
 
 (stages (make-instance 'logging-pipeline))
-;; >> base stage
-;; >> logging stage
+.. base stage
+.. logging stage
+..
 ;; (base runs first due to :most-specific-last)
 ```

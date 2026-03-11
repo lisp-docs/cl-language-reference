@@ -23,7 +23,7 @@ import SlotExistsPFunction from './_slot-exists-p_function.md';
   (list (slot-exists-p p 'name)
         (slot-exists-p p 'age)
         (slot-exists-p p 'address)))
-;; => (T T NIL)
+=> (T T NIL)
 ```
 
 ### Guarding Against Missing Slots
@@ -45,10 +45,10 @@ import SlotExistsPFunction from './_slot-exists-p_function.md';
       "(slot not available)"))
 
 (safe-get-notes (make-instance 'extended-record :id 1 :notes "important"))
-;; => "important"
+=> "important"
 
 (safe-get-notes (make-instance 'base-record :id 2))
-;; => "(slot not available)"
+=> "(slot not available)"
 ```
 
 ### Works with Structures Too
@@ -61,5 +61,5 @@ import SlotExistsPFunction from './_slot-exists-p_function.md';
 (let ((p (make-point :x 1 :y 2)))
   (list (slot-exists-p p 'x)
         (slot-exists-p p 'z)))
-;; => (T NIL)
+=> (T NIL)
 ```

@@ -20,18 +20,21 @@ import RemoveMethodStandardGenericFunction from './_remove-method_standard-gener
 (defmethod transform ((x integer)) (* x 2))
 (defmethod transform ((x string)) (string-upcase x))
 
-(transform 5)       ;; => 10
-(transform "hello") ;; => "HELLO"
+(transform 5)
+=> 10
+(transform "hello")
+=> "HELLO"
 
 ;; Remove the integer method
 (let ((m (find-method #'transform '() (list (find-class 'integer)))))
   (remove-method #'transform m))
 
-(transform "hello") ;; => "HELLO"
+(transform "hello")
+=> "HELLO"
 
 ;; Integer method is gone
 (find-method #'transform '() (list (find-class 'integer)) nil)
-;; => NIL
+=> NIL
 ```
 
 ### Removing Qualified Methods
@@ -45,15 +48,16 @@ You can also remove `:before`, `:after`, and `:around` methods.
 (defmethod process :before ((x number)) (format t "before~%"))
 
 (process 42)
-;; >> before
-;; => 42
+.. before
+..
+=> 42
 
 ;; Remove the :before method
 (let ((m (find-method #'process '(:before) (list (find-class 'number)))))
   (remove-method #'process m))
 
 (process 42)
-;; => 42  (no "before" printed)
+=> 42
 ```
 
 ### Safe Removal (No Error on Missing Method)

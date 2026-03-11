@@ -20,9 +20,8 @@ import SlotMissingStandardGenericFunction from './_slot-missing_standard-generic
 
 (let ((s (make-instance 'simple :x 1)))
   (handler-case (slot-value s 'nonexistent)
-    (error (c)
-      (format nil "Error: ~A" c))))
-;; => "Error: ..." (error about missing slot)
+    (error () :caught-error)))
+=> :CAUGHT-ERROR
 ```
 
 ### Custom slot-missing for Dynamic Properties
@@ -45,7 +44,7 @@ You can define a method on `slot-missing` to implement a property-list-like fall
 (let ((obj (make-instance 'flexible-object)))
   (setf (slot-value obj 'color) :red)
   (slot-value obj 'color))
-;; => :RED
+=> :RED
 ```
 
 ### The operation Argument
@@ -62,5 +61,5 @@ The `operation` argument tells you which function triggered the call: `slot-valu
 
 (let ((obj (make-instance 'logged :data 1)))
   (slot-value obj 'no-such-slot))
-;; => "Missing slot NO-SUCH-SLOT, operation SLOT-VALUE"
+=> "Missing slot NO-SUCH-SLOT, operation SLOT-VALUE"
 ```

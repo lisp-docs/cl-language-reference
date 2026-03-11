@@ -29,7 +29,7 @@ import MakeLoadFormStandardGenericFunction from './_make-load-form_standard-gene
 
 (let ((red (make-instance 'color :r 255 :g 0 :b 0)))
   (make-load-form red))
-;; => (MAKE-INSTANCE 'COLOR :R 255 :G 0 :B 0)
+=> (MAKE-INSTANCE 'COLOR :R 255 :G 0 :B 0)
 ```
 
 ### Using make-load-form-saving-slots
@@ -46,8 +46,8 @@ For simple cases, `make-load-form-saving-slots` provides a convenient default im
 
 ;; Returns two values: creation form and initialization form
 (let ((p (make-instance 'point :x 3 :y 4)))
-  (multiple-value-list (make-load-form p)))
-;; => (<creation-form> <initialization-form>)
+  (length (multiple-value-list (make-load-form p))))
+=> 2
 ```
 
 ### Two-Form Pattern for Circular Structures

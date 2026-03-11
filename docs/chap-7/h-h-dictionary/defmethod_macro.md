@@ -21,7 +21,7 @@ import DefmethodMacro from './_defmethod_macro.md';
   (format nil "~A says something" a))
 
 (speak "The parrot")
-;; => "The parrot says something"
+=> "The parrot says something"
 ```
 
 ### Class-Based Specialization
@@ -44,9 +44,9 @@ Methods are most commonly specialized on classes defined with `defclass`.
   (format nil "~A is an independent cat" (cat-name a)))
 
 (describe-animal (make-instance 'dog :name "Rex"))
-;; => "Rex is a good dog"
+=> "Rex is a good dog"
 (describe-animal (make-instance 'cat :name "Whiskers"))
-;; => "Whiskers is an independent cat"
+=> "Whiskers is an independent cat"
 ```
 
 ### EQL Specializers
@@ -62,8 +62,10 @@ Methods can be specialized on specific values using `(eql value)`. This is usefu
 (defmethod factorial ((n integer))
   (* n (factorial (1- n))))
 
-(factorial 0)  ;; => 1
-(factorial 5)  ;; => 120
+(factorial 0)
+=> 1
+(factorial 5)
+=> 120
 ```
 
 ### Qualified Methods -- :before, :after, :around
@@ -88,9 +90,10 @@ The standard method combination supports `:before`, `:after`, and `:around` qual
 
 (let ((acc (make-instance 'account :balance 100)))
   (withdraw acc 30))
-;; >> Attempting to withdraw 30
-;; >> Balance is now 70
-;; => 70
+.. Attempting to withdraw 30
+.. Balance is now 70
+..
+=> 70
 ```
 
 ### :around Methods
@@ -98,6 +101,15 @@ The standard method combination supports `:before`, `:after`, and `:around` qual
 An `:around` method wraps the entire method call. It can choose whether to call the next method via `call-next-method`.
 
 ```lisp
+(defclass account ()
+  ((balance :initarg :balance :accessor account-balance :initform 0)))
+
+(defgeneric withdraw (account amount))
+
+(defmethod withdraw ((acc account) amount)
+  (decf (account-balance acc) amount)
+  (account-balance acc))
+
 (defclass logged-account (account) ())
 
 (defmethod withdraw :around ((acc logged-account) amount)
@@ -107,7 +119,7 @@ An `:around` method wraps the entire method call. It can choose whether to call 
 
 (let ((acc (make-instance 'logged-account :balance 50)))
   (withdraw acc 100))
-;; => "Insufficient funds: balance is 50"
+=> "Insufficient funds: balance is 50"
 ```
 
 ### Multiple Dispatch
@@ -126,7 +138,10 @@ Methods can specialize on more than one argument simultaneously.
 (defmethod collide ((a string) (b number))
   (format nil "~A~D" a b))
 
-(collide "foo" "bar") ;; => "foobar"
-(collide 3 4)         ;; => 7
-(collide "x" 42)      ;; => "x42"
+(collide "foo" "bar")
+=> "foobar"
+(collide 3 4)
+=> 7
+(collide "x" 42)
+=> "x42"
 ```

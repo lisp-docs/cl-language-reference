@@ -28,7 +28,7 @@ import ChangeClassStandardGenericFunction from './_change-class_standard-generic
   (list (person-name e)
         (class-name (class-of e))
         (retiree-pension e)))
-;; => ("Alice" RETIREE 0)
+=> ("Alice" RETIREE 0)
 ```
 
 ### Slots Are Retained or Dropped
@@ -48,7 +48,7 @@ Slots with matching names between the old and new class keep their values. Slots
 (let ((p (make-instance 'point-2d :x 1 :y 2)))
   (change-class p 'point-3d)
   (list (point-x p) (point-y p) (point-z p)))
-;; => (1 2 0)
+=> (1 2 0)
 ```
 
 ### Using Initargs During change-class
@@ -56,10 +56,19 @@ Slots with matching names between the old and new class keep their values. Slots
 You can pass keyword arguments to `change-class` to initialize the new slots.
 
 ```lisp
+(defclass point-2d ()
+  ((x :initarg :x :accessor point-x)
+   (y :initarg :y :accessor point-y)))
+
+(defclass point-3d ()
+  ((x :initarg :x :accessor point-x)
+   (y :initarg :y :accessor point-y)
+   (z :initarg :z :accessor point-z :initform 0)))
+
 (let ((p (make-instance 'point-2d :x 5 :y 10)))
   (change-class p 'point-3d :z 15)
   (list (point-x p) (point-y p) (point-z p)))
-;; => (5 10 15)
+=> (5 10 15)
 ```
 
 ### Customizing with update-instance-for-different-class
@@ -85,5 +94,5 @@ The `update-instance-for-different-class` generic function is called during `cha
 (let ((c (make-instance 'cartesian :x 3.0 :y 4.0)))
   (change-class c 'polar)
   (list (coord-rho c) (coord-theta c)))
-;; => (5.0 0.9272952)
+=> (5.0 0.9272952)
 ```

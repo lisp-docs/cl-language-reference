@@ -23,9 +23,8 @@ When a generic function is called and no methods are applicable, `no-applicable-
 
 ;; Calling with an integer has no applicable method:
 (handler-case (process-item 42)
-  (error (c)
-    (format nil "Caught error: ~A" c)))
-;; => "Caught error: ..." (error message about no applicable method)
+  (error () :caught-error))
+=> :CAUGHT-ERROR
 ```
 
 ### Defining a Custom no-applicable-method Handler
@@ -42,10 +41,10 @@ You can define a method on `no-applicable-method` to provide a fallback or custo
   (format nil "No handler for ~A" (first args)))
 
 (safe-lookup :hello)
-;; => "Found symbol: HELLO"
+=> "Found symbol: HELLO"
 
 (safe-lookup 42)
-;; => "No handler for 42"
+=> "No handler for 42"
 ```
 
 ### Providing Default Return Values
@@ -61,6 +60,8 @@ A custom `no-applicable-method` can return a sensible default instead of failing
 (defmethod no-applicable-method ((gf (eql #'convert-to-string)) &rest args)
   (format nil "~S" (first args)))
 
-(convert-to-string 42)       ;; => "42"
-(convert-to-string '(1 2 3)) ;; => "(1 2 3)"
+(convert-to-string 42)
+=> "42"
+(convert-to-string '(1 2 3))
+=> "(1 2 3)"
 ```

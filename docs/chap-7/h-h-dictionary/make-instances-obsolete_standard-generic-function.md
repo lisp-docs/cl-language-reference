@@ -23,7 +23,7 @@ import MakeInstancesObsoleteStandardGenericFunction from './_make-instances-obso
   (make-instances-obsolete 'versioned)
   ;; Next access triggers the update protocol
   (versioned-data obj))
-;; => "v1"
+=> "v1"
 ```
 
 ### Automatic Invocation on Class Redefinition
@@ -41,7 +41,7 @@ When you redefine a class with `defclass`, `make-instances-obsolete` is called a
   ;; The system calls make-instances-obsolete automatically
   ;; and instances are updated on next access.
   (point-x p))
-;; => 1
+=> 1
 ```
 
 ### Using with a Class Object
@@ -52,5 +52,5 @@ When you redefine a class with `defclass`, `make-instances-obsolete` is called a
 (defclass demo () ((val :initarg :val :accessor demo-val)))
 
 (make-instances-obsolete (find-class 'demo))
-;; => #<STANDARD-CLASS DEMO>
+==> #<STANDARD-CLASS DEMO>
 ```

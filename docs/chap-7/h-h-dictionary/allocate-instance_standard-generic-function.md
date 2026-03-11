@@ -22,7 +22,7 @@ import AllocateInstanceStandardGenericFunction from './_allocate-instance_standa
 ;; allocate-instance creates an instance with unbound slots
 (let ((p (allocate-instance (find-class 'point))))
   (list (slot-boundp p 'x) (slot-boundp p 'y)))
-;; => (NIL NIL)
+=> (NIL NIL)
 ```
 
 ### Difference from make-instance
@@ -35,10 +35,10 @@ Unlike `make-instance`, `allocate-instance` does not process initargs, initforms
 
 ;; make-instance applies the initform
 (widget-label (make-instance 'widget))
-;; => "default"
+=> "default"
 
 ;; allocate-instance leaves the slot unbound
 (let ((w (allocate-instance (find-class 'widget))))
   (slot-boundp w 'label))
-;; => NIL
+=> NIL
 ```

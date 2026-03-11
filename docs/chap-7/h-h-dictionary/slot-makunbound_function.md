@@ -22,8 +22,9 @@ import SlotMakunboundFunction from './_slot-makunbound_function.md';
   (format t "Bound: ~A~%" (slot-boundp b 'content))
   (slot-makunbound b 'content)
   (slot-boundp b 'content))
-;; >> Bound: T
-;; => NIL
+.. Bound: T
+..
+=> NIL
 ```
 
 ### Resetting Slots
@@ -42,7 +43,7 @@ import SlotMakunboundFunction from './_slot-makunbound_function.md';
 (let ((e (make-instance 'cache-entry :key :x :value 42)))
   (clear-cache-value e)
   (slot-boundp e 'value))
-;; => NIL
+=> NIL
 ```
 
 ### Returns the Instance
@@ -56,5 +57,5 @@ import SlotMakunboundFunction from './_slot-makunbound_function.md';
 
 (let ((p (make-instance 'pair :a 1 :b 2)))
   (eq p (slot-makunbound p 'a)))
-;; => T
+=> T
 ```

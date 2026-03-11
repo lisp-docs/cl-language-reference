@@ -22,7 +22,7 @@ import WithAccessorsMacro from './_with-accessors_macro.md';
 (let ((p (make-instance 'person :name "Alice" :age 30)))
   (with-accessors ((n person-name) (a person-age)) p
     (list n a)))
-;; => ("Alice" 30)
+=> ("Alice" 30)
 ```
 
 ### Modifying Through Accessors
@@ -30,12 +30,16 @@ import WithAccessorsMacro from './_with-accessors_macro.md';
 Writes through `with-accessors` call the `setf` accessor, which means `:before` and `:after` methods on the writer are invoked.
 
 ```lisp
+(defclass person ()
+  ((name :initarg :name :accessor person-name)
+   (age  :initarg :age  :accessor person-age)))
+
 (let ((p (make-instance 'person :name "Bob" :age 25)))
   (with-accessors ((n person-name) (a person-age)) p
     (setf n "Robert")
     (incf a 5))
   (list (person-name p) (person-age p)))
-;; => ("Robert" 30)
+=> ("Robert" 30)
 ```
 
 ### Difference from with-slots
@@ -53,14 +57,15 @@ The key difference is that `with-accessors` invokes accessor methods (which may 
 (let ((obj (make-instance 'tracked :value 0)))
   (with-accessors ((v tracked-value)) obj
     (setf v 42)))
-;; >> Setting value to 42
-;; => 42
+.. Setting value to 42
+..
+=> 42
 
 ;; with-slots bypasses accessor methods
 (let ((obj (make-instance 'tracked :value 0)))
   (with-slots (value) obj
     (setf value 42)))
-;; => 42 (no output printed)
+=> 42
 ```
 
 ### Working with Multiple Objects
@@ -83,5 +88,5 @@ Like `with-slots`, `with-accessors` forms can be nested to work with multiple ob
       (b (make-instance 'point :x 3 :y 4)))
   (swap-points a b)
   (list (point-x a) (point-y a) (point-x b) (point-y b)))
-;; => (3 4 1 2)
+=> (3 4 1 2)
 ```

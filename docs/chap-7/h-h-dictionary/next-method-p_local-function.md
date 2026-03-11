@@ -31,10 +31,10 @@ import NextMethodPLocalFunction from './_next-method-p_local-function.md';
       (format nil "Derived (no more methods)")))
 
 (greet (make-instance 'derived))
-;; => "Derived -> Base (no more methods)"
+=> "Derived -> Base (no more methods)"
 
 (greet (make-instance 'base))
-;; => "Base (no more methods)"
+=> "Base (no more methods)"
 ```
 
 ### Safely Avoiding no-next-method Errors
@@ -50,7 +50,7 @@ Without `next-method-p`, calling `call-next-method` when there is no next method
       :default-result))
 
 (safe-process 42)
-;; => :DEFAULT-RESULT
+=> :DEFAULT-RESULT
 ```
 
 ### Using next-method-p in :around Methods
@@ -71,6 +71,7 @@ In `:around` methods, `next-method-p` indicates whether the standard method chai
   (format nil "Handling integer: ~A" thing))
 
 (handle 42)
-;; >> Proceeding with number handling
-;; => "Handling integer: 42"
+.. Proceeding with number handling
+..
+=> "Handling integer: 42"
 ```

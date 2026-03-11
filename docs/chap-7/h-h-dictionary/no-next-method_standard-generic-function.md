@@ -22,9 +22,8 @@ import NoNextMethodStandardGenericFunction from './_no-next-method_standard-gene
   (call-next-method))
 
 (handler-case (only-one 42)
-  (error (c)
-    (format nil "Caught: ~A" c)))
-;; => "Caught: ..." (error about no next method)
+  (error () :caught-error))
+=> :CAUGHT-ERROR
 ```
 
 ### Avoiding the Error with next-method-p
@@ -40,7 +39,7 @@ The standard way to avoid `no-next-method` errors is to check with `next-method-
       :end-of-chain))
 
 (safe-chain 42)
-;; => :END-OF-CHAIN
+=> :END-OF-CHAIN
 ```
 
 ### Defining a Custom no-next-method Handler
@@ -58,5 +57,5 @@ You can define a method on `no-next-method` to customize the behavior when no ne
   0)  ;; Return 0 as the base case
 
 (chained-op 5)
-;; => 5
+=> 5
 ```

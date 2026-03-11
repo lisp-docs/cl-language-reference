@@ -22,7 +22,7 @@ import WithSlotsMacro from './_with-slots_macro.md';
 (let ((p (make-instance 'point :x 3 :y 4)))
   (with-slots (x y) p
     (list x y)))
-;; => (3 4)
+=> (3 4)
 ```
 
 ### Modifying Slots
@@ -30,12 +30,16 @@ import WithSlotsMacro from './_with-slots_macro.md';
 Both `setf` and `setq` can be used within `with-slots` to modify slot values.
 
 ```lisp
+(defclass point ()
+  ((x :initarg :x :initform 0)
+   (y :initarg :y :initform 0)))
+
 (let ((p (make-instance 'point :x 0 :y 0)))
   (with-slots (x y) p
     (setf x 10)
     (setq y 20))
   (list (slot-value p 'x) (slot-value p 'y)))
-;; => (10 20)
+=> (10 20)
 ```
 
 ### Renaming Slots to Local Variables
@@ -43,6 +47,10 @@ Both `setf` and `setq` can be used within `with-slots` to modify slot values.
 When a slot name would conflict with another variable, or for clarity, you can rename it using the `(variable-name slot-name)` form.
 
 ```lisp
+(defclass point ()
+  ((x :initarg :x :initform 0)
+   (y :initarg :y :initform 0)))
+
 (let ((p1 (make-instance 'point :x 1 :y 2))
       (p2 (make-instance 'point :x 3 :y 4)))
   (with-slots ((x1 x) (y1 y)) p1
@@ -50,7 +58,7 @@ When a slot name would conflict with another variable, or for clarity, you can r
       ;; Euclidean distance
       (sqrt (+ (expt (- x2 x1) 2)
                (expt (- y2 y1) 2))))))
-;; => 2.828427
+=> 2.828427
 ```
 
 ### Computing Derived Values
@@ -75,7 +83,7 @@ When a slot name would conflict with another variable, or for clarity, you can r
 
 (let ((r (make-instance 'rectangle :width 5 :height 3)))
   (list (area r) (perimeter r)))
-;; => (15 16)
+=> (15 16)
 ```
 
 ### Swapping Slot Values
@@ -83,9 +91,13 @@ When a slot name would conflict with another variable, or for clarity, you can r
 Because the slot references are genuine places, you can use `rotatef` and `psetf` within `with-slots`.
 
 ```lisp
+(defclass point ()
+  ((x :initarg :x :initform 0)
+   (y :initarg :y :initform 0)))
+
 (let ((p (make-instance 'point :x 10 :y 20)))
   (with-slots (x y) p
     (rotatef x y))
   (list (slot-value p 'x) (slot-value p 'y)))
-;; => (20 10)
+=> (20 10)
 ```

@@ -23,7 +23,7 @@ The `unbound-slot` condition is signaled when `slot-value` attempts to read an u
     (unbound-slot (c)
       (list :slot (cell-error-name c)
             :instance-class (class-name (class-of (unbound-slot-instance c)))))))
-;; => (:SLOT VALUE :INSTANCE-CLASS DATA-HOLDER)
+=> (:SLOT VALUE :INSTANCE-CLASS DATA-HOLDER)
 ```
 
 ### Using handler-bind for Recovery
@@ -39,10 +39,10 @@ You can use `handler-bind` to handle the condition without unwinding the stack.
     (unbound-slot () :unbound)))
 
 (safe-read (make-instance 'optional-slot :data 42) 'data)
-;; => 42
+=> 42
 
 (safe-read (make-instance 'optional-slot) 'data)
-;; => :UNBOUND
+=> :UNBOUND
 ```
 
 ### Class Precedence List
@@ -50,6 +50,10 @@ You can use `handler-bind` to handle the condition without unwinding the stack.
 `unbound-slot` inherits from `cell-error`, `error`, `serious-condition`, `condition`, and `t`.
 
 ```lisp
-(subtypep 'unbound-slot 'cell-error) ;; => T, T
-(subtypep 'unbound-slot 'error)      ;; => T, T
+(subtypep 'unbound-slot 'cell-error)
+=> T
+=> T
+(subtypep 'unbound-slot 'error)
+=> T
+=> T
 ```

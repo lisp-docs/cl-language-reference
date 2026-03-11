@@ -21,7 +21,7 @@ import SlotValueFunction from './_slot-value_function.md';
 
 (let ((p (make-instance 'point :x 10 :y 20)))
   (list (slot-value p 'x) (slot-value p 'y)))
-;; => (10 20)
+=> (10 20)
 ```
 
 ### Setting Slot Values with setf
@@ -29,11 +29,15 @@ import SlotValueFunction from './_slot-value_function.md';
 `slot-value` is a `setf`-able place. You can write to slots that have no accessor defined.
 
 ```lisp
+(defclass point ()
+  ((x :initarg :x)
+   (y :initarg :y)))
+
 (let ((p (make-instance 'point :x 0 :y 0)))
   (setf (slot-value p 'x) 42)
   (setf (slot-value p 'y) 99)
   (list (slot-value p 'x) (slot-value p 'y)))
-;; => (42 99)
+=> (42 99)
 ```
 
 ### Accessing Slots Without Accessors
@@ -47,7 +51,7 @@ import SlotValueFunction from './_slot-value_function.md';
 ;; No accessor -- must use slot-value
 (let ((s (make-instance 'secret :data "classified")))
   (slot-value s 'data))
-;; => "classified"
+=> "classified"
 ```
 
 ### Using slot-value Inside Methods
@@ -72,7 +76,7 @@ Within method bodies, `slot-value` provides direct access to any slot, even priv
   (increment c)
   (increment c)
   (get-count c))
-;; => 3
+=> 3
 ```
 
 ### Unbound Slot Access
@@ -88,5 +92,5 @@ Accessing a slot that has no value (unbound) invokes `slot-unbound`, which by de
   (handler-case (slot-value obj 'val)
     (unbound-slot (c)
       (format nil "Slot ~A is unbound" (cell-error-name c)))))
-;; => "Slot VAL is unbound"
+=> "Slot VAL is unbound"
 ```

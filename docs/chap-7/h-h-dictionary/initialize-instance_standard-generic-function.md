@@ -26,7 +26,7 @@ import InitializeInstanceStandardGenericFunction from './_initialize-instance_st
 
 (let ((p (make-instance 'person :first-name "Jane" :last-name "Doe")))
   (full-name p))
-;; => "Jane Doe"
+=> "Jane Doe"
 ```
 
 ### Validation During Initialization
@@ -46,7 +46,7 @@ An `:after` method can signal an error if required slots are missing or invalid.
 
 (let ((pp (make-instance 'positive-pair :x 3 :y 5)))
   (list (pair-x pp) (pair-y pp)))
-;; => (3 5)
+=> (3 5)
 
 ;; This would signal an error:
 ;; (make-instance 'positive-pair :x -1 :y 5)
@@ -72,7 +72,7 @@ Custom initargs can be accepted via `&key` and used for initialization logic tha
   (list (circle-radius c)
         (circle-diameter c)
         (floor (circle-perimeter c))))
-;; => (5 10 31)
+=> (5 10 31)
 ```
 
 ### Conditional Slot Initialization
@@ -90,10 +90,10 @@ Use `slot-boundp` inside an `:after` method to initialize only those slots that 
           (string-capitalize (string (entry-key e))))))
 
 (entry-label (make-instance 'entry :key :hello))
-;; => "Hello"
+=> "Hello"
 
 (entry-label (make-instance 'entry :key :hello :label "Custom"))
-;; => "Custom"
+=> "Custom"
 ```
 
 ### Inheritance of :after Methods
@@ -119,6 +119,6 @@ When classes form an inheritance chain, `:after` methods from all classes in the
   ;; Both :after methods ran: base-widget's first, then labeled-widget's
   (values (symbolp (widget-id w))
           (stringp (display-label w))))
-;; => T
-;; => T
+=> T
+=> T
 ```

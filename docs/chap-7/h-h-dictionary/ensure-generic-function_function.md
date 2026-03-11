@@ -22,7 +22,8 @@ import EnsureGenericFunctionFunction from './_ensure-generic-function_function.m
 (defmethod my-operation ((x number) (y number))
   (+ x y))
 
-(my-operation 3 4) ;; => 7
+(my-operation 3 4)
+=> 7
 ```
 
 ### Modifying an Existing Generic Function
@@ -38,7 +39,7 @@ If the named function already exists as a generic function, `ensure-generic-func
   :documentation "Updated documentation.")
 
 (documentation 'flexible-op 'function)
-;; => "Updated documentation."
+=> "Updated documentation."
 ```
 
 ### Difference from defgeneric
@@ -53,5 +54,5 @@ If the named function already exists as a generic function, `ensure-generic-func
 (defmethod compute ((x string)) (length x))
 
 (list (compute 5) (compute "hello"))
-;; => (25 5)
+=> (25 5)
 ```

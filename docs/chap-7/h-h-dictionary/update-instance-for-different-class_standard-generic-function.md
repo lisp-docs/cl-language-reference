@@ -33,7 +33,7 @@ import UpdateInstanceForDifferentClassStandardGenericFunction from './_update-in
 (let ((p (make-instance 'cartesian-point :x 3.0 :y 4.0)))
   (change-class p 'polar-point)
   (list (point-radius p) (point-angle p)))
-;; => (5.0 0.9272952)
+=> (5.0 0.9272952)
 ```
 
 ### The previous and current Arguments
@@ -57,7 +57,7 @@ The `previous` argument is a snapshot of the old state. The `current` argument i
 (let ((e (make-instance 'employee :name "Bob" :salary 104000)))
   (change-class e 'consultant)
   (list (consultant-name e) (consultant-rate e)))
-;; => ("Bob" 50.0)
+=> ("Bob" 50.0)
 ```
 
 ### Passing Initargs Through change-class
@@ -75,5 +75,5 @@ Initargs passed to `change-class` are forwarded to `update-instance-for-differen
 (let ((u (make-instance 'basic-user :username "alice")))
   (change-class u 'admin-user :level 5)
   (list (user-name u) (admin-level u)))
-;; => ("alice" 5)
+=> ("alice" 5)
 ```
