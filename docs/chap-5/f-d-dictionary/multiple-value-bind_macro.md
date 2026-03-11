@@ -18,7 +18,7 @@ import MultipleValueBindMacro from './_multiple-value-bind_macro.md';
 (multiple-value-bind (quotient remainder)
     (floor 17 5)
   (list quotient remainder))
-→ (3 2)
+=> (3 2)
 ```
 
 ### Decomposing a floating point number
@@ -29,7 +29,7 @@ import MultipleValueBindMacro from './_multiple-value-bind_macro.md';
 (multiple-value-bind (significand exponent sign)
     (decode-float -3.5)
   (list significand exponent sign))
-→ (0.875 2 -1.0)
+=> (0.875 2 -1.0)
 ```
 
 ### Extra variables are bound to NIL
@@ -40,7 +40,7 @@ If the form returns fewer values than there are variables, the excess variables 
 (multiple-value-bind (a b c)
     (values 1 2)
   (list a b c))
-→ (1 2 NIL)
+=> (1 2 NIL)
 ```
 
 ### Excess values are discarded
@@ -51,7 +51,7 @@ If the form returns more values than there are variables, the extra values are s
 (multiple-value-bind (q)
     (floor 10 3)
   q)
-→ 3
+=> 3
 ```
 
 ### Using with truncate for integer division
@@ -64,10 +64,10 @@ A practical use case: getting just the integer part and remainder of a division.
       (truncate dividend divisor)
     (format nil "~A divided by ~A is ~A remainder ~A"
             dividend divisor quotient remainder)))
-→ DIVIDE-WITH-REMAINDER
+=> DIVIDE-WITH-REMAINDER
 
 (divide-with-remainder 17 5)
-→ "17 divided by 5 is 3 remainder 2"
+=> "17 divided by 5 is 3 remainder 2"
 ```
 
 ### Capturing hash table lookup results
@@ -82,5 +82,5 @@ A practical use case: getting just the integer part and remainder of a division.
     (if found-p
         (format nil "Found: ~A" value)
         "Not found")))
-→ "Not found"
+=> "Not found"
 ```

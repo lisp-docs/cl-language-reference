@@ -16,10 +16,10 @@ import WhenMacro from './_when_unless_macro.md';
 
 ```lisp
 (when t "hello")
-; => "hello"
+=> "hello"
 
 (when nil "hello")
-; => NIL
+=> NIL
 ```
 
 ### Basic usage of unless
@@ -28,10 +28,10 @@ import WhenMacro from './_when_unless_macro.md';
 
 ```lisp
 (unless nil "hello")
-; => "hello"
+=> "hello"
 
 (unless t "hello")
-; => NIL
+=> NIL
 ```
 
 ### when and unless allow multiple body forms
@@ -40,12 +40,13 @@ Unlike `if`, both `when` and `unless` accept multiple body forms (an implicit `p
 
 ```lisp
 (when (> 5 3)
-  (print "first")
-  (print "second")
+  (format t "first~%")
+  (format t "second~%")
   "done")
-; >> "first"
-; >> "second"
-; => "done"
+.. first
+.. second
+..
+=> "done"
 ```
 
 ### Using when for one-sided conditionals
@@ -59,11 +60,12 @@ Unlike `if`, both `when` and `unless` accept multiple body forms (an implicit `p
     t))
 
 (maybe-print "hello")
-; >> Got a string: hello
-; => T
+.. Got a string: hello
+..
+=> T
 
 (maybe-print 42)
-; => NIL
+=> NIL
 ```
 
 ### Using unless for guard clauses
@@ -75,8 +77,10 @@ Unlike `if`, both `when` and `unless` accept multiple body forms (an implicit `p
   (unless (zerop b)
     (/ a b)))
 
-(safe-divide 10 3)   ; => 10/3
-(safe-divide 10 0)   ; => NIL
+(safe-divide 10 3)
+=> 10/3
+(safe-divide 10 0)
+=> NIL
 ```
 
 ### Side effects and return values
@@ -89,5 +93,5 @@ Both `when` and `unless` return `NIL` when they do not execute their body, which
     (when (minusp x)
       (push x warnings)))
   warnings)
-; => (-2 -3)
+=> (-2 -3)
 ```

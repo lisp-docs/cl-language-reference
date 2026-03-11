@@ -18,7 +18,7 @@ At its simplest, `setf` works like `setq` for variable assignment.
 (let ((x 0))
   (setf x 42)
   x)
-→ 42
+=> 42
 ```
 
 ### Setting elements of a list
@@ -30,7 +30,7 @@ At its simplest, `setf` works like `setq` for variable assignment.
   (setf (car lst) :first)
   (setf (caddr lst) :third)
   lst)
-→ (:FIRST 2 :THIRD)
+=> (:FIRST 2 :THIRD)
 ```
 
 ### Setting elements of an array or vector
@@ -39,7 +39,7 @@ At its simplest, `setf` works like `setq` for variable assignment.
 (let ((v (vector 'a 'b 'c 'd)))
   (setf (aref v 1) :replaced)
   v)
-→ #(A :REPLACED C D)
+=> #(A :REPLACED C D)
 ```
 
 ### Setting hash table entries
@@ -50,7 +50,7 @@ At its simplest, `setf` works like `setq` for variable assignment.
         (gethash :age ht) 30)
   (list (gethash :name ht)
         (gethash :age ht)))
-→ ("Alice" 30)
+=> ("Alice" 30)
 ```
 
 ### Multiple sequential assignments with setf
@@ -62,7 +62,7 @@ Like `setq`, `setf` can take multiple place/value pairs, processed sequentially.
   (setf (first lst) 10
         (second lst) (+ (first lst) 5))
   lst)
-→ (10 15 3)
+=> (10 15 3)
 ```
 
 ### Parallel assignment with psetf
@@ -73,5 +73,5 @@ Like `setq`, `setf` can take multiple place/value pairs, processed sequentially.
 (let ((a 1) (b 2))
   (psetf a b b a)
   (list a b))
-→ (2 1)
+=> (2 1)
 ```

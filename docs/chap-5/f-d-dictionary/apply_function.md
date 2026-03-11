@@ -16,7 +16,7 @@ import ApplyFunction from './_apply_function.md';
 
 ```lisp
 (apply #'+ '(1 2 3 4))
-→ 10
+=> 10
 ```
 
 ### Mixing individual arguments with a final list
@@ -25,7 +25,7 @@ Arguments before the final list are prepended to it. This is useful when you kno
 
 ```lisp
 (apply #'+ 1 2 '(3 4 5))
-→ 15
+=> 15
 ```
 
 ### Using a function designator (symbol)
@@ -34,7 +34,7 @@ A symbol naming a function can be used instead of a function object.
 
 ```lisp
 (apply 'max '(3 7 2 9 4))
-→ 9
+=> 9
 ```
 
 ### Applying to an empty list
@@ -43,10 +43,10 @@ When applied to an empty list, the function is called with no arguments.
 
 ```lisp
 (apply #'+ '())
-→ 0
+=> 0
 
 (apply #'list '())
-→ NIL
+=> NIL
 ```
 
 ### Constructing argument lists dynamically
@@ -56,10 +56,10 @@ When applied to an empty list, the function is called with no arguments.
 ```lisp
 (defun sum-squares (&rest numbers)
   (apply #'+ (mapcar (lambda (n) (* n n)) numbers)))
-→ SUM-SQUARES
+=> SUM-SQUARES
 
 (sum-squares 3 4 5)
-→ 50
+=> 50
 ```
 
 ### Passing keyword arguments through apply
@@ -68,5 +68,5 @@ When applied to an empty list, the function is called with no arguments.
 
 ```lisp
 (apply #'make-list 3 '(:initial-element :x))
-→ (:X :X :X)
+=> (:X :X :X)
 ```

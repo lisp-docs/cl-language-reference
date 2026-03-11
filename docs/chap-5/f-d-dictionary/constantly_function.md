@@ -26,10 +26,10 @@ import ConstantlyFunction from './_constantly_function.md';
 
 ```lisp
 (mapcar (constantly 0) '(a b c d e))
-→ (0 0 0 0 0)
+=> (0 0 0 0 0)
 
 (mapcar (constantly :default) '(1 2 3))
-→ (:DEFAULT :DEFAULT :DEFAULT)
+=> (:DEFAULT :DEFAULT :DEFAULT)
 ```
 
 ### As a callback that ignores its arguments
@@ -39,7 +39,7 @@ When an API requires a function argument but you want to return a fixed value, `
 ```lisp
 ;; Replace every element in a tree with the same value
 (subst-if :replaced (constantly t) '(a (b c) (d (e f))))
-→ :REPLACED
+=> :REPLACED
 
 ;; Use with maphash to collect all keys
 (let ((ht (make-hash-table)))
@@ -57,5 +57,5 @@ When an API requires a function argument but you want to return a fixed value, `
   (mapcar (lambda (x)
             (if (numberp x) x (funcall get-default)))
           '(1 :missing 3 :missing 5)))
-→ (1 "N/A" 3 "N/A" 5)
+;; => (1 "N/A" 3 "N/A" 5)
 ```

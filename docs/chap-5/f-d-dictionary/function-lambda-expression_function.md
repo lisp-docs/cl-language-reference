@@ -17,7 +17,7 @@ import FunctionLambdaExpressionFunction from './_function-lambda-expression_func
 ```lisp
 ;; Results are implementation-dependent; the lambda may or may not be available
 (function-lambda-expression #'(lambda (x) (1+ x)))
-; → (LAMBDA (X) (1+ X)), NIL, NIL   (or NIL, T, NIL on some implementations)
+;; => (LAMBDA (X) (1+ X))  ; implementation-dependent
 ```
 
 ### Named Functions
@@ -30,7 +30,7 @@ For named functions defined with `defun`, the third value is typically the funct
 (multiple-value-bind (lambda-expr closure-p name)
     (function-lambda-expression #'double)
   (list :lambda lambda-expr :closure-p closure-p :name name))
-; → (:LAMBDA NIL :CLOSURE-P NIL :NAME DOUBLE)  (implementation-dependent)
+;; => (:LAMBDA NIL :CLOSURE-P NIL :NAME DOUBLE)  ; implementation-dependent
 ```
 
 ### Closures May Not Return the Lambda
@@ -41,7 +41,7 @@ When a function closes over variables, the second return value indicates this, a
 (let ((counter 0))
   (let ((incrementer (lambda () (incf counter))))
     (multiple-value-list (function-lambda-expression incrementer))))
-; → (NIL T NIL)  (implementation-dependent; closure-p is T)
+;; => (NIL T NIL)  ; implementation-dependent
 ```
 
 ### Compiled Functions
@@ -51,5 +51,5 @@ Compiled functions frequently return nil for the lambda expression since the sou
 ```lisp
 (multiple-value-list
  (function-lambda-expression (compile nil (lambda (x) (* x x)))))
-; → (NIL T NIL)  (implementation-dependent)
+;; => (NIL T NIL)  ; implementation-dependent
 ```

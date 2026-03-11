@@ -16,7 +16,9 @@ import ValuesAccessor from './_values_accessor.md';
 
 ```lisp
 (values 1 2 3)
-→ 1, 2, 3
+=> 1
+=> 2
+=> 3
 ```
 
 ### Returning no values
@@ -25,7 +27,7 @@ Called with no arguments, `values` returns zero values.
 
 ```lisp
 (values)
-→ ; no values
+;; => (no values returned)
 ```
 
 ### Defining a function that returns multiple values
@@ -34,10 +36,11 @@ Called with no arguments, `values` returns zero values.
 (defun divide (dividend divisor)
   (values (floor dividend divisor)
           (mod dividend divisor)))
-→ DIVIDE
+=> DIVIDE
 
 (divide 17 5)
-→ 3, 2
+=> 3
+=> 2
 ```
 
 ### Suppressing extra return values
@@ -46,10 +49,11 @@ Wrapping a form in `values` truncates its results to a single value. This is use
 
 ```lisp
 (floor 17 5)
-→ 3, 2
+=> 3
+=> 2
 
 (values (floor 17 5))
-→ 3
+=> 3
 ```
 
 ### Using setf with values to assign to multiple places
@@ -60,7 +64,7 @@ Wrapping a form in `values` truncates its results to a single value. This is use
 (let (a b c)
   (setf (values a b c) (values 1 2 3))
   (list a b c))
-→ (1 2 3)
+=> (1 2 3)
 ```
 
 ### Only primary values are passed as function arguments
@@ -69,5 +73,7 @@ Since `values` is a function, it receives only the primary values of its argumen
 
 ```lisp
 (values (values 1 2 3) 4 5)
-→ 1, 4, 5
+=> 1
+=> 4
+=> 5
 ```

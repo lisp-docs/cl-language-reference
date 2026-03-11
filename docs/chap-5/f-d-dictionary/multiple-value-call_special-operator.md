@@ -16,7 +16,7 @@ import MultipleValueCallSpecialOperator from './_multiple-value-call_special-ope
 
 ```lisp
 (multiple-value-call #'list (values 1 2) (values 3 4))
-→ (1 2 3 4)
+=> (1 2 3 4)
 ```
 
 ### Collecting all values from floor
@@ -26,13 +26,13 @@ With a normal function call, only the primary value is used. `multiple-value-cal
 ```lisp
 ;; Normal call: only primary values are used
 (+ (floor 5 3) (floor 19 4))
-→ 5
+=> 5
 
 ;; multiple-value-call: ALL values are passed
 ;; (floor 5 3) → 1, 2  and  (floor 19 4) → 4, 3
 ;; So this becomes (+ 1 2 4 3)
 (multiple-value-call #'+ (floor 5 3) (floor 19 4))
-→ 10
+=> 10
 ```
 
 ### Mixing single-value and multiple-value forms
@@ -41,10 +41,10 @@ Single-value forms contribute exactly one argument, and multiple-value forms con
 
 ```lisp
 (multiple-value-call #'list 1 (values 2 3) 4 (values 5 6))
-→ (1 2 3 4 5 6)
+=> (1 2 3 4 5 6)
 
 (multiple-value-call #'list (values) (values 'a 'b))
-→ (A B)
+=> (A B)
 ```
 
 ### Equivalent to multiple-value-list with apply
@@ -53,16 +53,16 @@ Single-value forms contribute exactly one argument, and multiple-value forms con
 
 ```lisp
 (multiple-value-call #'list (floor 10 3))
-→ (3 1)
+=> (3 1)
 
 (multiple-value-list (floor 10 3))
-→ (3 1)
+=> (3 1)
 ```
 
 ### Practical example: combining quotient and remainder
 
 ```lisp
 (multiple-value-call #'format t "~D remainder ~D" (floor 17 5))
-17 remainder 2
-→ NIL
+.. 3 remainder 2
+=> NIL
 ```

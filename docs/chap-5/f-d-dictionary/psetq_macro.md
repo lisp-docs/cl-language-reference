@@ -18,7 +18,7 @@ import PsetqMacro from './_psetq_macro.md';
 (let ((a 1) (b 2) (c 3))
   (psetq a 10 b 20 c 30)
   (list a b c))
-→ (10 20 30)
+=> (10 20 30)
 ```
 
 ### Swapping two variables
@@ -29,7 +29,7 @@ The parallel nature of `psetq` makes swapping values trivial, with no need for a
 (let ((a 1) (b 2))
   (psetq a b b a)
   (list a b))
-→ (2 1)
+=> (2 1)
 ```
 
 ### Difference from setq
@@ -41,13 +41,13 @@ With `setq`, assignments happen sequentially, so later assignments see the effec
 (let ((a 1) (b 2))
   (setq a (+ b 1) b (+ a 1))  ; a becomes 3, then b becomes 4
   (list a b))
-→ (3 4)
+=> (3 4)
 
 ;; With psetq: parallel assignment
 (let ((a 1) (b 2))
   (psetq a (+ b 1) b (+ a 1))  ; both see original values
   (list a b))
-→ (3 2)
+=> (3 2)
 ```
 
 ### Rotating values among three variables
@@ -56,7 +56,7 @@ With `setq`, assignments happen sequentially, so later assignments see the effec
 (let ((x 'a) (y 'b) (z 'c))
   (psetq x y y z z x)
   (list x y z))
-→ (B C A)
+=> (B C A)
 ```
 
 ### psetq always returns NIL
@@ -66,5 +66,5 @@ Regardless of the assignments, `psetq` always returns NIL.
 ```lisp
 (let ((a 1) (b 2))
   (psetq a 10 b 20))
-→ NIL
+=> NIL
 ```

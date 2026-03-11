@@ -17,9 +17,12 @@ import MultipleValueProg1SpecialOperator from './_multiple-value-prog1_special-o
 ```lisp
 (multiple-value-prog1
     (values 1 2 3)
-  (print "side effect"))
-"side effect"
-→ 1, 2, 3
+  (format t "side effect~%"))
+.. side effect
+..
+=> 1
+=> 2
+=> 3
 ```
 
 ### Comparison with prog1
@@ -28,14 +31,18 @@ import MultipleValueProg1SpecialOperator from './_multiple-value-prog1_special-o
 
 ```lisp
 ;; prog1 returns only the primary value
-(prog1 (values 'a 'b 'c) (print "done"))
-"done"
-→ A
+(prog1 (values 'a 'b 'c) (format t "done~%"))
+.. done
+..
+=> A
 
 ;; multiple-value-prog1 preserves all values
-(multiple-value-prog1 (values 'a 'b 'c) (print "done"))
-"done"
-→ A, B, C
+(multiple-value-prog1 (values 'a 'b 'c) (format t "done~%"))
+.. done
+..
+=> A
+=> B
+=> C
 ```
 
 ### Preserving values while performing cleanup
@@ -48,7 +55,9 @@ A common use is to save the result of an operation before performing side effect
       (values-list temp)
     (setq temp nil)
     (values-list temp)))
-→ 1, 2, 3
+=> 1
+=> 2
+=> 3
 ```
 
 ### Practical use with floor
@@ -59,5 +68,5 @@ A common use is to save the result of an operation before performing side effect
     (multiple-value-prog1
         (floor 17 5)
       (setq x 42))))
-→ (3 2)
+=> (3 2)
 ```

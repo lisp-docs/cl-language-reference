@@ -17,7 +17,11 @@ import GetSetfExpansionFunction from './_get-setf-expansion_function.md';
 ```lisp
 ;; Expand a simple variable place
 (get-setf-expansion 'x)
-; → NIL, NIL, (#:NEW-0), (SETQ X #:NEW-0), X
+;; => NIL
+;; => NIL
+;; => (#:NEW-0)
+;; => (SETQ X #:NEW-0)
+;; => X
 ;; (Five values: no temps needed, one store var, setq to store, x to access)
 ```
 
@@ -33,9 +37,9 @@ For accessor forms like `(car lst)`, the expansion includes temporary bindings t
         :stores stores
         :store-form store-form
         :access-form access-form))
-; → (:TEMPS (#:G0) :VALS (MY-LIST) :STORES (#:G1)
-;    :STORE-FORM (SB-KERNEL:%RPLACA #:G0 #:G1) :ACCESS-FORM (CAR #:G0))
-;    (implementation-dependent details)
+;; => (:TEMPS (#:G0) :VALS (MY-LIST) :STORES (#:G1)
+;;    :STORE-FORM (SB-KERNEL:%RPLACA #:G0 #:G1) :ACCESS-FORM (CAR #:G0))
+;;    (implementation-dependent details)
 ```
 
 ### Using the Expansion in a Macro
@@ -56,7 +60,8 @@ The five values from `get-setf-expansion` are used when writing macros that need
 
 (let ((x 5))
   (values (post-incf x) x))
-; → 5, 6
+=> 5
+=> 6
 ```
 
 ### Expansion for Nested Places
@@ -66,8 +71,8 @@ The five values from `get-setf-expansion` are used when writing macros that need
 ```lisp
 (multiple-value-bind (temps vals stores store-form access-form)
     (get-setf-expansion '(aref vec (+ i 1)))
+  (declare (ignore stores store-form access-form))
   (list :num-temps (length temps)
-        :num-vals (length vals)
-        :stores stores))
-; → (:NUM-TEMPS 2 :NUM-VALS 2 :STORES (#:NEW))  (implementation-dependent)
+        :num-vals (length vals)))
+=> (:NUM-TEMPS 2 :NUM-VALS 2)
 ```

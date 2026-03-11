@@ -16,13 +16,13 @@ import SetqSpecialForm from './_setq_special-form.md';
 
 ```lisp
 (defvar *x*)
-→ *X*
+=> *X*
 
 (setq *x* 42)
-→ 42
+=> 42
 
 *x*
-→ 42
+=> 42
 ```
 
 ### Multiple sequential assignments
@@ -33,7 +33,7 @@ import SetqSpecialForm from './_setq_special-form.md';
 (let (a b c)
   (setq a 1 b 2 c 3)
   (list a b c))
-→ (1 2 3)
+=> (1 2 3)
 ```
 
 ### Sequential evaluation means later assignments see earlier ones
@@ -44,7 +44,7 @@ Because pairs are processed left to right, later values can depend on earlier as
 (let ((a 0) (b 0))
   (setq a 10 b (+ a 5))
   (list a b))
-→ (10 15)
+=> (10 15)
 ```
 
 ### Assigning to lexical variables inside let
@@ -56,7 +56,7 @@ Because pairs are processed left to right, later values can depend on earlier as
   (dotimes (i 5)
     (setq count (+ count i)))
   count)
-→ 10
+=> 10
 ```
 
 ### Returns the value of the last assignment
@@ -66,12 +66,12 @@ When given multiple pairs, `setq` returns the value of the last form.
 ```lisp
 (let (x y)
   (setq x 'first y 'second))
-→ SECOND
+=> SECOND
 ```
 
 ### setq with no pairs returns NIL
 
 ```lisp
 (setq)
-→ NIL
+=> NIL
 ```

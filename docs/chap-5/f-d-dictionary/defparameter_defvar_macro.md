@@ -16,10 +16,10 @@ import DefparameterMacro from './_defparameter_defvar_macro.md';
 
 ```lisp
 (defparameter *max-retries* 3)
-→ *MAX-RETRIES*
+=> *MAX-RETRIES*
 
 *max-retries*
-→ 3
+=> 3
 ```
 
 ### defparameter always reassigns on re-evaluation
@@ -28,20 +28,20 @@ Every time `defparameter` is evaluated, the variable is unconditionally set to t
 
 ```lisp
 (defparameter *color* :red)
-→ *COLOR*
+=> *COLOR*
 
 *color*
-→ :RED
+=> :RED
 
 (setq *color* :blue)
-→ :BLUE
+=> :BLUE
 
 ;; Re-evaluating defparameter resets the value
 (defparameter *color* :red)
-→ *COLOR*
+=> *COLOR*
 
 *color*
-→ :RED
+=> :RED
 ```
 
 ### defvar only assigns if unbound
@@ -50,20 +50,20 @@ Every time `defparameter` is evaluated, the variable is unconditionally set to t
 
 ```lisp
 (defvar *counter* 0)
-→ *COUNTER*
+=> *COUNTER*
 
 *counter*
-→ 0
+=> 0
 
 (setq *counter* 42)
-→ 42
+=> 42
 
 ;; Re-evaluating defvar does NOT reset the value
 (defvar *counter* 0)
-→ *COUNTER*
+=> *COUNTER*
 
 *counter*
-→ 42
+=> 42
 ```
 
 ### defvar without an initial value
@@ -72,10 +72,10 @@ Every time `defparameter` is evaluated, the variable is unconditionally set to t
 
 ```lisp
 (defvar *uninitialized*)
-→ *UNINITIALIZED*
+=> *UNINITIALIZED*
 
 (boundp '*uninitialized*)
-→ NIL
+=> NIL
 ```
 
 ### Dynamic binding behavior
@@ -84,20 +84,20 @@ Both `defparameter` and `defvar` create dynamic (special) variables, which can b
 
 ```lisp
 (defparameter *debug-level* 0)
-→ *DEBUG-LEVEL*
+=> *DEBUG-LEVEL*
 
 (defun current-debug-level ()
   *debug-level*)
-→ CURRENT-DEBUG-LEVEL
+=> CURRENT-DEBUG-LEVEL
 
 (current-debug-level)
-→ 0
+=> 0
 
 (let ((*debug-level* 3))
   (current-debug-level))
-→ 3
+=> 3
 
 ;; Outside the let, the original value is restored
 (current-debug-level)
-→ 0
+=> 0
 ```

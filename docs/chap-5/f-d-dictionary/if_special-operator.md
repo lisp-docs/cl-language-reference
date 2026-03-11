@@ -16,10 +16,10 @@ import IfSpecialOperator from './_if_special-operator.md';
 
 ```lisp
 (if t "yes" "no")
-; => "yes"
+=> "yes"
 
 (if nil "yes" "no")
-; => "no"
+=> "no"
 ```
 
 ### The else-form is optional
@@ -28,10 +28,10 @@ When the else-form is omitted and the test is false, `if` returns `NIL`.
 
 ```lisp
 (if t "true")
-; => "true"
+=> "true"
 
 (if nil "true")
-; => NIL
+=> NIL
 ```
 
 ### Any non-NIL value is true
@@ -40,13 +40,13 @@ In Common Lisp, every value except `NIL` is considered true. Numbers, strings, l
 
 ```lisp
 (if 0 "zero is true" "zero is false")
-; => "zero is true"
+=> "zero is true"
 
 (if "" "empty string is true" "empty string is false")
-; => "empty string is true"
+=> "empty string is true"
 
 (if '() "empty list is true" "empty list is false")
-; => "empty list is false"  ; because '() is NIL
+=> "empty list is false"
 ```
 
 ### Using if with computed test expressions
@@ -60,10 +60,10 @@ The test form can be any expression that returns a value.
       "not positive"))
 
 (check-sign 5)
-; => "positive"
+=> "positive"
 
 (check-sign -3)
-; => "not positive"
+=> "not positive"
 ```
 
 ### if only takes a single form per branch
@@ -74,13 +74,14 @@ Unlike `when` or `cond`, each branch of `if` is a single form. Use `progn` to ex
 (let ((x 10))
   (if (> x 5)
       (progn
-        (print "big number")
+        (format t "big number~%")
         (* x 2))
       (progn
-        (print "small number")
+        (format t "small number~%")
         (* x 3))))
-; >> "big number"
-; => 20
+.. big number
+..
+=> 20
 ```
 
 ### Nested if forms
@@ -97,8 +98,12 @@ Unlike `when` or `cond`, each branch of `if` is a single form. Use `progn` to ex
               "zero"
               "positive"))))
 
-(classify 42)    ; => "positive"
-(classify -7)    ; => "negative"
-(classify 0)     ; => "zero"
-(classify "hi")  ; => "not a number"
+(classify 42)
+=> "positive"
+(classify -7)
+=> "negative"
+(classify 0)
+=> "zero"
+(classify "hi")
+=> "not a number"
 ```

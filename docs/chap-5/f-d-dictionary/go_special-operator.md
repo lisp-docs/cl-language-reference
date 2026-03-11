@@ -23,7 +23,7 @@ import GoSpecialOperator from './_go_special-operator.md';
    skip
      (push 'c result))
   (nreverse result))
-→ (A C)
+=> (A C)
 ```
 
 ### Building a simple loop with go
@@ -40,7 +40,7 @@ import GoSpecialOperator from './_go_special-operator.md';
      (go top)
    end)
   sum)
-→ 15
+=> 15
 ```
 
 ### go within prog
@@ -53,7 +53,7 @@ import GoSpecialOperator from './_go_special-operator.md';
    (if (>= x 5) (return x))
    (setq x (+ x 1))
    (go start))
-→ 5
+=> 5
 ```
 
 ### Tags can be integers
@@ -69,7 +69,7 @@ Go tags can be integers as well as symbols.
    10
      (setq x (list x 'after)))
   x)
-→ (BEFORE AFTER)
+=> (BEFORE AFTER)
 ```
 
 ### The scope of go is lexical
@@ -87,5 +87,5 @@ Go tags can be integers as well as symbols.
      (push 'outer result)
    done)
   (nreverse result))
-→ (INNER OUTER)
+=> (INNER OUTER)
 ```

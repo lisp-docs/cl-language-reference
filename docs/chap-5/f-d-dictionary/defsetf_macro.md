@@ -28,7 +28,8 @@ The short form of `defsetf` maps an accessor directly to an updater function. Th
 (defsetf my-prop set-my-prop)
 
 (setf (my-prop :color) "blue")
-(my-prop :color) ; → "blue"
+(values (my-prop :color))
+=> "blue"
 ```
 
 ### Long Form defsetf
@@ -49,7 +50,7 @@ The long form gives you control over the storing computation. It receives the ac
 (let ((g (make-grid :data (make-array 9 :initial-element 0) :width 3)))
   (setf (grid-ref g 1 2) 42)
   (grid-ref g 1 2))
-; → 42
+=> 42
 ```
 
 ### Short Form with Built-in Functions
@@ -73,5 +74,5 @@ The short form is convenient for wrapping existing setter functions.
 (let ((alist (list (cons :x 1) (cons :y 2))))
   (setf (assoc-value :x alist) 10)
   alist)
-; → ((:X . 10) (:Y . 2))
+=> ((:X . 10) (:Y . 2))
 ```

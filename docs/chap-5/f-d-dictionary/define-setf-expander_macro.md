@@ -40,7 +40,7 @@ import DefineSetfExpanderMacro from './_define-setf-expander_macro.md';
 (let ((v (vector 0 0 0)))
   (setf (clamped-ref v 1 0 10) 25)
   v)
-; → #(0 10 0)  (value was clamped to max of 10)
+=> #(0 10 0)
 ```
 
 ### setf Expander for a Computed Place
@@ -66,5 +66,5 @@ Here is a simpler example that makes `(middle lst)` a setf-able place targeting 
 (let ((data (list 1 2 3 4 5)))
   (setf (middle data) 99)
   data)
-; → (1 2 99 4 5)
+=> (1 2 99 4 5)
 ```

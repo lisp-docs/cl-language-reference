@@ -16,10 +16,12 @@ The value of `call-arguments-limit` is implementation-dependent but must be at l
 
 ```lisp
 ;; Check the implementation's limit
-call-arguments-limit ; → 4611686018427387903  (implementation-dependent)
+call-arguments-limit
+=> 1073741824
 
 ;; The standard guarantees at least 50
-(>= call-arguments-limit 50) ; → T
+(>= call-arguments-limit 50)
+=> T
 ```
 
 ### Relationship to Other Limits
@@ -31,11 +33,12 @@ call-arguments-limit ; → 4611686018427387903  (implementation-dependent)
 (list call-arguments-limit
       lambda-parameters-limit
       multiple-values-limit)
-; → (4611686018427387903 4611686018427387903 536870911)  (implementation-dependent)
+=> (1073741824 1073741824 1073741824)
 
 ;; call-arguments-limit bounds what you can pass via apply
 ;; This is fine for small lists:
-(apply #'+ '(1 2 3 4 5)) ; → 15
+(apply #'+ '(1 2 3 4 5))
+=> 15
 ```
 
 ### Defensive Use with apply
@@ -50,5 +53,6 @@ When using `apply` with dynamically constructed argument lists, it is good pract
       (error "Too many arguments: ~D (limit is ~D)"
              (length args) call-arguments-limit)))
 
-(safe-apply #'+ '(1 2 3)) ; → 6
+(safe-apply #'+ '(1 2 3))
+=> 6
 ```

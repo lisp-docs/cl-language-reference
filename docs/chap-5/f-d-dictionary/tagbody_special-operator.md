@@ -22,7 +22,7 @@ import TagbodySpecialOperator from './_tagbody_special-operator.md';
      (when (< x 5)
        (go start)))
   x)
-; => 5
+=> 5
 ```
 
 ### Implementing a simple loop with tagbody
@@ -39,7 +39,7 @@ import TagbodySpecialOperator from './_tagbody_special-operator.md';
      (when (<= i 10)
        (go loop)))
   sum)
-; => 55
+=> 55
 ```
 
 ### Jumping between multiple tags
@@ -63,7 +63,7 @@ Control can jump forward and backward to any tag in the same `tagbody`.
    point-b
      (incf val 8))
   val)
-; => 15
+=> 15
 ```
 
 ### Tags can be symbols or integers
@@ -78,7 +78,7 @@ Both symbols and integers are valid as tags.
      (when (< x 3)
        (go 0)))
   x)
-; => 3
+=> 3
 ```
 
 ### tagbody always returns NIL
@@ -87,11 +87,12 @@ The return value of `tagbody` is always `NIL`, regardless of the forms evaluated
 
 ```lisp
 (tagbody
-  (print "hello")
-  (print "world"))
-; >> "hello"
-; >> "world"
-; => NIL
+  (format t "hello~%")
+  (format t "world~%"))
+.. hello
+.. world
+..
+=> NIL
 ```
 
 ### Using go with a closure
@@ -110,10 +111,10 @@ A `go` tag has lexical scope, so a closure created within the `tagbody` can tran
   (if flag (funcall escape) 2))
 
 (f1 nil)
-; >> 2
-; => NIL
+.. 2
+=> NIL
 
 (f1 t)
-; >> 1
-; => NIL
+.. 1
+=> NIL
 ```

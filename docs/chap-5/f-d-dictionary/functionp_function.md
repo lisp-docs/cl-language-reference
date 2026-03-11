@@ -16,15 +16,22 @@ import FunctionpFunction from './_functionp_function.md';
 
 ```lisp
 ;; Function objects
-(functionp #'car) ; → T
-(functionp #'+) ; → T
-(functionp (lambda (x) x)) ; → T
+(functionp #'car)
+=> T
+(functionp #'+)
+=> T
+(functionp (lambda (x) x))
+=> T
 
 ;; Not function objects
-(functionp 'car) ; → NIL  (a symbol, not a function)
-(functionp 42) ; → NIL
-(functionp "hello") ; → NIL
-(functionp '(lambda (x) x)) ; → NIL  (a list, not a function)
+(functionp 'car)
+=> NIL
+(functionp 42)
+=> NIL
+(functionp "hello")
+=> NIL
+(functionp '(lambda (x) x))
+=> NIL
 ```
 
 ### Compiled and Interpreted Functions
@@ -32,8 +39,10 @@ import FunctionpFunction from './_functionp_function.md';
 Both compiled and interpreted function objects satisfy `functionp`.
 
 ```lisp
-(functionp (compile nil (lambda (x) (1+ x)))) ; → T
-(functionp #'(lambda (x) (1+ x))) ; → T
+(functionp (compile nil (lambda (x) (1+ x))))
+=> T
+(functionp #'(lambda (x) (1+ x)))
+=> T
 ```
 
 ### Equivalence to typep
@@ -44,10 +53,12 @@ Both compiled and interpreted function objects satisfy `functionp`.
 (let ((f #'list))
   (values (functionp f)
           (typep f 'function)))
-; → T, T
+=> T
+=> T
 
 (let ((s 'list))
   (values (functionp s)
           (typep s 'function)))
-; → NIL, NIL
+=> NIL
+=> NIL
 ```

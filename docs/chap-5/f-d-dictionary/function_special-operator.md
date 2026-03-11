@@ -18,10 +18,10 @@ The last paragraph of the description implies that if <DictionaryLink  term={"fu
 
 ```lisp
 (function car)
-→ #<FUNCTION CAR>
+==> #<FUNCTION CAR>
 
 #'cdr
-→ #<FUNCTION CDR>
+==> #<FUNCTION CDR>
 ```
 
 ### Using function with funcall
@@ -30,10 +30,10 @@ The function object obtained by `function` can be passed to `funcall` or `apply`
 
 ```lisp
 (funcall (function +) 10 20 30)
-→ 60
+=> 60
 
 (apply (function list) '(a b c))
-→ (A B C)
+=> (A B C)
 ```
 
 ### Creating a closure from a lambda expression
@@ -43,10 +43,10 @@ When given a lambda expression, `function` creates a lexical closure that captur
 ```lisp
 (defun make-adder (n)
   (function (lambda (x) (+ x n))))
-→ MAKE-ADDER
+=> MAKE-ADDER
 
 (funcall (make-adder 10) 5)
-→ 15
+=> 15
 ```
 
 ### Capturing lexical function bindings
@@ -55,11 +55,11 @@ When given a lambda expression, `function` creates a lexical closure that captur
 
 ```lisp
 (defun outer () :outer)
-→ OUTER
+=> OUTER
 
 (flet ((outer () :inner))
   (funcall #'outer))
-→ :INNER
+=> :INNER
 ```
 
 ### Shorthand #' is identical to function
@@ -68,9 +68,9 @@ The reader macro `#'` is syntactic sugar for the `function` special operator.
 
 ```lisp
 (mapcar #'1+ '(1 2 3 4))
-→ (2 3 4 5)
+=> (2 3 4 5)
 
 ;; Equivalent to:
 (mapcar (function 1+) '(1 2 3 4))
-→ (2 3 4 5)
+=> (2 3 4 5)
 ```

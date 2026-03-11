@@ -18,7 +18,7 @@ import FletSpecialOperator from './_flet_labels_macrolet_special-operator.md';
 (flet ((double (x) (* x 2))
        (add1 (x) (+ x 1)))
   (double (add1 3)))
-→ 8
+=> 8
 ```
 
 ### flet shadows global functions
@@ -27,15 +27,15 @@ import FletSpecialOperator from './_flet_labels_macrolet_special-operator.md';
 
 ```lisp
 (defun add (a b) (+ a b))
-→ ADD
+=> ADD
 
 (flet ((add (a b) (* a b)))
   (add 3 4))
-→ 12
+=> 12
 
 ;; The global definition is unchanged
 (add 3 4)
-→ 7
+=> 7
 ```
 
 ### flet functions cannot call themselves
@@ -44,13 +44,13 @@ In `flet`, a function's name within its own body refers to the outer definition,
 
 ```lisp
 (defun double (x) (* x 2))
-→ DOUBLE
+=> DOUBLE
 
 (flet ((double (x)
          ;; This calls the GLOBAL double, not the local one
          (+ 10 (double x))))
   (double 3))
-→ 16
+=> 16
 ```
 
 ### Recursive local functions with labels
@@ -63,7 +63,7 @@ In `flet`, a function's name within its own body refers to the outer definition,
                1
                (* n (factorial (1- n))))))
   (factorial 6))
-→ 720
+=> 720
 ```
 
 ### Mutually recursive functions with labels
@@ -76,7 +76,7 @@ In `flet`, a function's name within its own body refers to the outer definition,
          (odd-p (n)
            (if (zerop n) nil (even-p (1- n)))))
   (list (even-p 4) (odd-p 7)))
-→ (T T)
+=> (T T)
 ```
 
 ### Local macros with macrolet
@@ -88,5 +88,5 @@ In `flet`, a function's name within its own body refers to the outer definition,
              `(let ((val ,x))
                 (* val val))))
   (square 5))
-→ 25
+=> 25
 ```

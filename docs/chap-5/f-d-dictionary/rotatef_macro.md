@@ -18,7 +18,7 @@ The simplest use of `rotatef` is swapping two values.
 (let ((a 1) (b 2))
   (rotatef a b)
   (list a b))
-→ (2 1)
+=> (2 1)
 ```
 
 ### Rotating three or more values to the left
@@ -29,7 +29,7 @@ The simplest use of `rotatef` is swapping two values.
 (let ((a 'x) (b 'y) (c 'z))
   (rotatef a b c)
   (list a b c))
-→ (Y Z X)
+=> (Y Z X)
 ```
 
 ### Working with generalized places
@@ -40,7 +40,7 @@ The simplest use of `rotatef` is swapping two values.
 (let ((lst (list 'a 'b 'c)))
   (rotatef (first lst) (second lst) (third lst))
   lst)
-→ (B C A)
+=> (B C A)
 ```
 
 ### Rotating elements in a vector
@@ -49,7 +49,7 @@ The simplest use of `rotatef` is swapping two values.
 (let ((v (vector 10 20 30 40)))
   (rotatef (aref v 0) (aref v 1) (aref v 2) (aref v 3))
   v)
-→ #(20 30 40 10)
+=> #(20 30 40 10)
 ```
 
 ### rotatef always returns NIL
@@ -57,7 +57,7 @@ The simplest use of `rotatef` is swapping two values.
 ```lisp
 (let ((a 1) (b 2))
   (rotatef a b))
-→ NIL
+=> NIL
 ```
 
 ### Subforms are evaluated only once
@@ -71,5 +71,5 @@ Each place's subforms are evaluated exactly once, which matters when subforms ha
            (nth (incf n) x)
            (nth (incf n) x))
   x)
-→ (A C D B E F G)
+=> (A C D B E F G)
 ```

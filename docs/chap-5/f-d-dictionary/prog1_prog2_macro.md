@@ -26,11 +26,11 @@ The classic use of `prog1` is to capture a value before a side effect modifies i
 ```lisp
 (let ((x 10))
   (prog1 x (setq x 20)))
-→ 10
+=> 10
 
 (let ((lst (list 'a 'b 'c)))
   (prog1 (car lst) (setf (car lst) 'z)))
-→ A
+=> A
 ```
 
 ### prog1 with printed side effects
@@ -39,10 +39,11 @@ All forms are evaluated for their side effects; only the first form's primary va
 
 ```lisp
 (let ((temp 1))
-  (prog1 temp (print temp) (incf temp) (print temp)))
-1
-2
-→ 1
+  (prog1 temp (format t "~S~%" temp) (incf temp) (format t "~S~%" temp)))
+.. 1
+.. 2
+..
+=> 1
 ```
 
 ### prog2: evaluate forms, return the second value
@@ -54,7 +55,7 @@ All forms are evaluated for their side effects; only the first form's primary va
 
 (let ((x 1))
   (prog2 (incf x) (incf x) (incf x)))
-→ 3
+=> 3
 ```
 
 ### prog1 only returns the primary value
@@ -62,9 +63,10 @@ All forms are evaluated for their side effects; only the first form's primary va
 Note that `prog1` returns only the primary value, not multiple values. Use `multiple-value-prog1` if you need all values preserved.
 
 ```lisp
-(prog1 (values 1 2 3) (print "done"))
-"done"
-→ 1
+(prog1 (values 1 2 3) (format t "done~%"))
+.. done
+..
+=> 1
 
 ;; Compare with multiple-value-prog1:
 ;; (multiple-value-prog1 (values 1 2 3) (print "done"))
@@ -79,5 +81,5 @@ Note that `prog1` returns only the primary value, not multiple values. Use `mult
 (let ((stack (list 1 2 3)))
   (let ((top (prog1 (car stack) (setq stack (cdr stack)))))
     (list top stack)))
-→ (1 (2 3))
+=> (1 (2 3))
 ```

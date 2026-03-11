@@ -19,14 +19,14 @@ import PrognSpecialOperator from './_progn_special-operator.md';
   (+ 1 2)
   (+ 3 4)
   (+ 5 6))
-; => 11
+=> 11
 ```
 
 ### An empty progn returns NIL
 
 ```lisp
 (progn)
-; => NIL
+=> NIL
 ```
 
 ### Side effects in sequence
@@ -36,11 +36,12 @@ import PrognSpecialOperator from './_progn_special-operator.md';
 ```lisp
 (if (> 3 1)
     (progn
-      (print "condition is true")
+      (format t "condition is true~%")
       :yes)
     :no)
-; >> "condition is true"
-; => :YES
+.. condition is true
+..
+=> :YES
 ```
 
 ### Returning multiple values
@@ -51,7 +52,9 @@ import PrognSpecialOperator from './_progn_special-operator.md';
 (progn
   (+ 1 2)
   (values :a :b :c))
-; => :A, :B, :C
+=> :A
+=> :B
+=> :C
 ```
 
 ### Only the last form's value matters
@@ -65,7 +68,7 @@ All forms except the last are evaluated purely for their side effects. Their ret
     (incf x)
     (incf x)
     x))
-; => 3
+=> 3
 ```
 
 ### Top-level progn
@@ -78,7 +81,10 @@ When `progn` appears as a top-level form in a file being compiled, each of its b
   (defun increment-counter ()
     (incf *counter*)))
 
-(increment-counter) ; => 1
-(increment-counter) ; => 2
-*counter*           ; => 2
+(increment-counter)
+=> 1
+(increment-counter)
+=> 2
+*counter*
+=> 2
 ```

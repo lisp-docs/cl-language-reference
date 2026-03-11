@@ -15,8 +15,12 @@ import ProgramErrorConditionType from './_program-error_condition-type.md';
 `program-error` is a subtype of `error` that represents errors resulting from incorrect program syntax or semantics detected at runtime (e.g., wrong number of arguments, invalid keyword arguments).
 
 ```lisp
-(subtypep 'program-error 'error) ; → T, T
-(subtypep 'program-error 'condition) ; → T, T
+(subtypep 'program-error 'error)
+=> T
+=> T
+(subtypep 'program-error 'condition)
+=> T
+=> T
 ```
 
 ### Handling program-error with handler-case
@@ -29,7 +33,7 @@ A `program-error` may be signaled when calling a function with the wrong number 
     (funcall (lambda (x) x) 1 2 3)
   (program-error (c)
     (format nil "Caught program-error: ~A" c)))
-; → "Caught program-error: ..."  (message is implementation-dependent)
+;; => "Caught program-error: ..."  (message is implementation-dependent)
 ```
 
 ### Checking with typep
@@ -44,7 +48,8 @@ You can inspect a captured condition to confirm it is a `program-error`.
           (error (c) c))))
   (values (typep condition 'program-error)
           (typep condition 'error)))
-; → T, T  (implementation-dependent; some may signal a different error subtype)
+=> T
+=> T
 ```
 
 ### Signaling program-error Manually
@@ -61,5 +66,5 @@ You can signal a `program-error` in your own code to indicate a static programmi
 (handler-case (validate-mode :delete)
   (program-error (c)
     (format nil "Caught: ~A" c)))
-; → "Caught: ..."  (implementation-dependent)
+;; => "Caught: ..."  (message is implementation-dependent)
 ```

@@ -15,9 +15,15 @@ import UndefinedFunctionConditionType from './_undefined-function_condition-type
 `undefined-function` is a subtype of `cell-error` (and thus `error`) that is signaled when an attempt is made to call a function that has no definition.
 
 ```lisp
-(subtypep 'undefined-function 'cell-error) ; → T, T
-(subtypep 'undefined-function 'error) ; → T, T
-(subtypep 'undefined-function 'condition) ; → T, T
+(subtypep 'undefined-function 'cell-error)
+=> T
+=> T
+(subtypep 'undefined-function 'error)
+=> T
+=> T
+(subtypep 'undefined-function 'condition)
+=> T
+=> T
 ```
 
 ### Handling undefined-function with handler-case
@@ -29,7 +35,7 @@ When you call an undefined function, this condition is signaled. You can catch i
     (funcall 'this-function-does-not-exist)
   (undefined-function (c)
     (format nil "Function ~S is not defined" (cell-error-name c))))
-; → "Function THIS-FUNCTION-DOES-NOT-EXIST is not defined"
+=> "Function THIS-FUNCTION-DOES-NOT-EXIST is not defined"
 ```
 
 ### Recovering from undefined-function
@@ -45,7 +51,7 @@ You can use `handler-case` to provide fallback behavior when a function might no
       (format nil "~S is unavailable, using fallback" fn-name))))
 
 (try-call 'nonexistent-processor 1 2 3)
-; → "NONEXISTENT-PROCESSOR is unavailable, using fallback"
+=> "NONEXISTENT-PROCESSOR is unavailable, using fallback"
 ```
 
 ### Inspecting the Condition Object
@@ -59,5 +65,7 @@ The condition carries the name of the missing function accessible via `cell-erro
   (values (type-of cond)
           (cell-error-name cond)
           (typep cond 'undefined-function)))
-; → UNDEFINED-FUNCTION, NO-SUCH-FN, T
+=> UNDEFINED-FUNCTION
+=> NO-SUCH-FN
+=> T
 ```

@@ -42,7 +42,7 @@ A common use is to extract just the remainder (second value) from division funct
   (setf (gethash 'x ht) nil)
   ;; Value is NIL, but the key does exist
   (nth-value 1 (gethash 'x ht)))
-→ T
+=> T
 ```
 
 ### The index is evaluated
@@ -52,7 +52,7 @@ The first argument to `nth-value` is evaluated, so it can be computed at runtime
 ```lisp
 (let ((n 1))
   (nth-value n (values 'zero 'one 'two)))
-→ ONE
+=> ONE
 ```
 
 ### Equivalence with multiple-value-list and nth

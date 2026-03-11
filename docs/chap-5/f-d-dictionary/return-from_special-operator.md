@@ -18,12 +18,12 @@ import ReturnFromSpecialOperator from './_return-from_special-operator.md';
 (block alpha
   (return-from alpha 42)
   (print "not reached"))
-; => 42
+=> 42
 
 (block alpha
   (return-from alpha)
   (print "not reached"))
-; => NIL
+=> NIL
 ```
 
 ### Returning from a named function
@@ -37,8 +37,10 @@ Functions defined with `defun` establish an implicit block with the function's n
       (return-from first-negative x)))
   nil)
 
-(first-negative '(3 7 -2 5))  ; => -2
-(first-negative '(3 7 5))     ; => NIL
+(first-negative '(3 7 -2 5))
+=> -2
+(first-negative '(3 7 5))
+=> NIL
 ```
 
 ### Returning multiple values
@@ -48,7 +50,9 @@ Functions defined with `defun` establish an implicit block with the function's n
 ```lisp
 (block calc
   (return-from calc (values 1 2 3)))
-; => 1, 2, 3
+=> 1
+=> 2
+=> 3
 ```
 
 ### Exiting through nested blocks
@@ -61,7 +65,7 @@ Functions defined with `defun` establish an implicit block with the function's n
           (return-from outer 10)
           20))
   30)
-; => 10
+=> 10
 ```
 
 ### Using return-from inside a flet
@@ -76,7 +80,7 @@ Since `return-from` uses lexical scope, a local function defined by `flet` can e
     (maybe-exit 5)
     (maybe-exit 15)
     :done))
-; => :TOO-BIG
+=> :TOO-BIG
 ```
 
 ### Interaction with unwind-protect
@@ -87,7 +91,8 @@ When `return-from` causes a non-local exit, the cleanup forms of any intervening
 (block outer
   (unwind-protect
       (return-from outer :exiting)
-    (print "cleanup runs")))
-; >> "cleanup runs"
-; => :EXITING
+    (format t "cleanup runs~%")))
+.. cleanup runs
+..
+=> :EXITING
 ```

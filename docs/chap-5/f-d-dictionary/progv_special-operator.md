@@ -19,10 +19,11 @@ import ProgvSpecialOperator from './_progv_special-operator.md';
 
 (progv '(*x*) '(42)
   *x*)
-; → 42
+=> 42
 
 ;; After progv, the old binding is restored
-*x* ; → 10
+*x*
+=> 10
 ```
 
 ### Binding Multiple Variables
@@ -35,10 +36,11 @@ import ProgvSpecialOperator from './_progv_special-operator.md';
 
 (progv '(*a* *b*) '(100 200)
   (list *a* *b*))
-; → (100 200)
+=> (100 200)
 
 ;; Original values are restored
-(list *a* *b*) ; → (1 2)
+(list *a* *b*)
+=> (1 2)
 ```
 
 ### Runtime-Determined Variable Names
@@ -57,7 +59,7 @@ Unlike `let`, the symbol names in `progv` are evaluated, so you can compute whic
 
 (with-config '((*debug-level* . 3) (*verbose* . t))
   (lambda () (list *debug-level* *verbose*)))
-; → (3 T)
+=> (3 T)
 ```
 
 ### Fewer Values Than Symbols
@@ -72,8 +74,9 @@ If there are more symbols than values, the extra symbols become unbound (not nil
       *p*)
   (unbound-variable (c)
     (format nil "~A is unbound" (cell-error-name c))))
-; → "*P* is unbound"
+=> "*P* is unbound"
 
 ;; Restored after progv
-*p* ; → :ORIGINAL
+*p*
+=> :ORIGINAL
 ```

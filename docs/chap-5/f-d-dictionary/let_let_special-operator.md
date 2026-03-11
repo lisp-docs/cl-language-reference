@@ -18,7 +18,7 @@ import LetSpecialOperator from './_let_let_special-operator.md';
 (let ((x 10)
       (y 20))
   (+ x y))
-→ 30
+=> 30
 ```
 
 ### Variables without init-forms default to NIL
@@ -28,7 +28,7 @@ If no init-form is provided, the variable is initialized to `nil`.
 ```lisp
 (let (x y z)
   (list x y z))
-→ (NIL NIL NIL)
+=> (NIL NIL NIL)
 ```
 
 ### Parallel binding with let
@@ -40,7 +40,7 @@ In `let`, all init-forms are evaluated before any variable is bound. Here, `b` g
   (let ((a 2)
         (b a))
     (list a b)))
-→ (2 1)
+=> (2 1)
 ```
 
 ### Sequential binding with let*
@@ -52,7 +52,7 @@ In `let*`, each binding is completed before the next init-form is evaluated. Her
        (b (+ a 10))
        (c (+ a b)))
   (list a b c))
-→ (1 11 12)
+=> (1 11 12)
 ```
 
 ### Nested let for building up local context
@@ -65,7 +65,7 @@ In `let*`, each binding is completed before the next init-form is evaluated. Her
   (let ((message (concatenate 'string greeting ", " name "!")))
     (length message)
     message))
-→ "Hello, Alice!"
+=> "Hello, Alice!"
 ```
 
 ### Shadowing outer bindings
@@ -77,5 +77,5 @@ Inner `let` bindings shadow outer ones without affecting them.
   (list
     (let ((x 1)) x)
     x))
-→ (1 100)
+=> (1 100)
 ```

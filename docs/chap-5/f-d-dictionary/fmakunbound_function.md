@@ -16,11 +16,14 @@ import FmakunboundFunction from './_fmakunbound_function.md';
 
 ```lisp
 (defun temp-helper (x) (* x 2))
-(fboundp 'temp-helper) ; → T
-(temp-helper 5) ; → 10
+(not (null (fboundp 'temp-helper)))
+=> T
+(temp-helper 5)
+=> 10
 
 (fmakunbound 'temp-helper)
-(fboundp 'temp-helper) ; → NIL
+(fboundp 'temp-helper)
+=> NIL
 ```
 
 ### Return Value
@@ -29,13 +32,14 @@ import FmakunboundFunction from './_fmakunbound_function.md';
 
 ```lisp
 (defun foo () :foo)
-(fmakunbound 'foo) ; → FOO
+(fmakunbound 'foo)
+=> FOO
 
 ;; Calling the function now signals an error
 (handler-case (foo)
   (undefined-function (c)
     (cell-error-name c)))
-; → FOO
+=> FOO
 ```
 
 ### Removing setf Function Bindings
@@ -47,7 +51,9 @@ import FmakunboundFunction from './_fmakunbound_function.md';
   (declare (ignore new-value))
   nil)
 
-(fboundp '(setf my-val)) ; → T
+(not (null (fboundp '(setf my-val))))
+=> T
 (fmakunbound '(setf my-val))
-(fboundp '(setf my-val)) ; → NIL
+(fboundp '(setf my-val))
+=> NIL
 ```

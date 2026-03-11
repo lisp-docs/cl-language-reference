@@ -16,15 +16,19 @@ import FboundpFunction from './_fboundp_function.md';
 
 ```lisp
 ;; Built-in functions are fbound
-(fboundp 'car) ; → T
-(fboundp '+) ; → T
+(not (null (fboundp 'car)))
+=> T
+(not (null (fboundp '+)))
+=> T
 
 ;; User-defined functions
 (defun greet (name) (format nil "Hello, ~A!" name))
-(fboundp 'greet) ; → T
+(not (null (fboundp 'greet)))
+=> T
 
 ;; An unbound symbol
-(fboundp 'completely-undefined-function-xyz) ; → NIL
+(fboundp 'completely-undefined-function-xyz)
+=> NIL
 ```
 
 ### Testing setf Functions
@@ -33,15 +37,18 @@ import FboundpFunction from './_fboundp_function.md';
 
 ```lisp
 ;; Check if a setf function exists
-(fboundp '(setf car)) ; → T
+(not (null (fboundp '(setf car))))
+=> T
 
 (defun my-accessor () nil)
-(fboundp '(setf my-accessor)) ; → NIL
+(fboundp '(setf my-accessor))
+=> NIL
 
 (defun (setf my-accessor) (value)
   (declare (ignore value))
   nil)
-(fboundp '(setf my-accessor)) ; → T
+(not (null (fboundp '(setf my-accessor))))
+=> T
 ```
 
 ### Guarding Against Undefined Functions
@@ -52,5 +59,5 @@ import FboundpFunction from './_fboundp_function.md';
 ;; Safely call an optional function
 (when (fboundp 'optional-plugin-init)
   (funcall 'optional-plugin-init))
-; → NIL  (no error, function just was not called)
+=> NIL
 ```

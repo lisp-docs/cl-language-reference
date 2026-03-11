@@ -16,21 +16,23 @@ import ValuesListFunction from './_values-list_function.md';
 
 ```lisp
 (values-list '(1 2 3))
-→ 1, 2, 3
+=> 1
+=> 2
+=> 3
 ```
 
 ### Empty list returns no values
 
 ```lisp
 (values-list '())
-→ ; no values
+;; => (no values returned)
 ```
 
 ### Single-element list returns one value
 
 ```lisp
 (values-list '(42))
-→ 42
+=> 42
 ```
 
 ### Using with multiple-value-bind
@@ -41,7 +43,7 @@ import ValuesListFunction from './_values-list_function.md';
 (multiple-value-bind (x y z)
     (values-list '(10 20 30))
   (+ x y z))
-→ 60
+=> 60
 ```
 
 ### Round-tripping with multiple-value-list
@@ -50,8 +52,9 @@ import ValuesListFunction from './_values-list_function.md';
 
 ```lisp
 (multiple-value-list (values-list '(a b c)))
-→ (A B C)
+=> (A B C)
 
 (values-list (multiple-value-list (floor 17 5)))
-→ 3, 2
+=> 3
+=> 2
 ```

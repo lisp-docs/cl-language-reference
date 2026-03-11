@@ -16,7 +16,7 @@ import FuncallFunction from './_funcall_function.md';
 
 ```lisp
 (funcall #'+ 1 2 3)
-→ 6
+=> 6
 ```
 
 ### Calling a function stored in a variable
@@ -26,7 +26,7 @@ import FuncallFunction from './_funcall_function.md';
 ```lisp
 (let ((op #'*))
   (funcall op 3 4))
-→ 12
+=> 12
 ```
 
 ### Using a symbol as a function designator
@@ -35,7 +35,7 @@ When given a symbol, `funcall` looks up its global function definition.
 
 ```lisp
 (funcall 'list 'a 'b 'c)
-→ (A B C)
+=> (A B C)
 ```
 
 ### Higher-order programming with funcall
@@ -45,13 +45,13 @@ When given a symbol, `funcall` looks up its global function definition.
 ```lisp
 (defun apply-twice (f x)
   (funcall f (funcall f x)))
-→ APPLY-TWICE
+=> APPLY-TWICE
 
 (apply-twice #'1+ 5)
-→ 7
+=> 7
 
 (apply-twice #'reverse '(1 2 3))
-→ (1 2 3)
+=> (1 2 3)
 ```
 
 ### Difference between funcall with #' and a symbol
@@ -60,10 +60,10 @@ Using `#'name` captures the lexical function binding, while using a symbol alway
 
 ```lisp
 (defun foo () :global)
-→ FOO
+=> FOO
 
 (flet ((foo () :local))
   (list (funcall #'foo)
         (funcall 'foo)))
-→ (:LOCAL :GLOBAL)
+=> (:LOCAL :GLOBAL)
 ```

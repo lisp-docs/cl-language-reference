@@ -16,7 +16,7 @@ A block with no body forms returns `NIL`.
 
 ```lisp
 (block done)
-; => NIL
+=> NIL
 ```
 
 ### Normal return from a block
@@ -28,7 +28,7 @@ When no `return-from` is used, the block returns the values of its last form, li
   (+ 1 2)
   (+ 3 4)
   (+ 5 6))
-; => 11
+=> 11
 ```
 
 ### Early exit with return-from
@@ -41,7 +41,7 @@ When no `return-from` is used, the block returns the values of its last form, li
     (when (= x 3)
       (return-from search x)))
   nil)
-; => 3
+=> 3
 ```
 
 ### Blocks established by defun
@@ -55,8 +55,10 @@ Every function defined with `defun` has an implicit block named after the functi
       (return-from find-even x)))
   nil)
 
-(find-even '(1 3 5 4 7)) ; => 4
-(find-even '(1 3 5 7))   ; => NIL
+(find-even '(1 3 5 4 7))
+=> 4
+(find-even '(1 3 5 7))
+=> NIL
 ```
 
 ### Blocks have lexical scope
@@ -68,7 +70,7 @@ A `return-from` must be lexically contained within the block it refers to. Inner
   (block twin
     (return-from twin 1))
   2)
-; => 2
+=> 2
 ```
 
 ### Returning multiple values from a block
@@ -79,5 +81,7 @@ A `return-from` must be lexically contained within the block it refers to. Inner
 (block multi
   (return-from multi (values 10 20 30))
   (print "not reached"))
-; => 10, 20, 30
+=> 10
+=> 20
+=> 30
 ```

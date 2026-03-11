@@ -23,9 +23,12 @@ import CaseMacro from './_case_ccase_ecase_macro.md';
     (:sunday    "Weekend!")
     (otherwise  "Midweek")))
 
-(describe-day :monday)    ; => "Start of the work week"
-(describe-day :wednesday) ; => "Midweek"
-(describe-day :saturday)  ; => "Weekend!"
+(describe-day :monday)
+=> "Start of the work week"
+(describe-day :wednesday)
+=> "Midweek"
+(describe-day :saturday)
+=> "Weekend!"
 ```
 
 ### Grouping multiple keys in a single clause
@@ -38,8 +41,10 @@ A clause can match multiple keys by providing them as a list.
     ((:saturday :sunday) t)
     (otherwise nil)))
 
-(weekend-p :saturday) ; => T
-(weekend-p :tuesday)  ; => NIL
+(weekend-p :saturday)
+=> T
+(weekend-p :tuesday)
+=> NIL
 ```
 
 ### case returns NIL when no clause matches and there is no otherwise
@@ -49,7 +54,7 @@ A clause can match multiple keys by providing them as a list.
   (1 "one")
   (2 "two")
   (3 "three"))
-; => NIL
+=> NIL
 ```
 
 ### Using ecase for exhaustive matching
@@ -64,8 +69,10 @@ A clause can match multiple keys by providing them as a list.
     (:east  '(1 0))
     (:west  '(-1 0))))
 
-(direction-vector :north) ; => (0 1)
-(direction-vector :east)  ; => (1 0)
+(direction-vector :north)
+=> (0 1)
+(direction-vector :east)
+=> (1 0)
 
 ;; (direction-vector :up)
 ;; would signal a TYPE-ERROR because :UP is not one of the expected keys.
@@ -82,9 +89,12 @@ In `case`, the symbols `t` and `otherwise` in the key position designate the def
     ((nil) "false")
     (otherwise "unknown")))
 
-(bool-to-string t)     ; => "true"
-(bool-to-string nil)   ; => "false"
-(bool-to-string 42)    ; => "unknown"
+(bool-to-string t)
+=> "true"
+(bool-to-string nil)
+=> "false"
+(bool-to-string 42)
+=> "unknown"
 ```
 
 ### case uses eql for comparison
@@ -96,10 +106,10 @@ Because `case` uses `eql`, it works with numbers, characters, and symbols, but n
   (1 "one")
   (2 "two")
   (3 "three"))
-; => "two"
+=> "two"
 
 (case #\a
   (#\a "lowercase a")
   (#\A "uppercase A"))
-; => "lowercase a"
+=> "lowercase a"
 ```

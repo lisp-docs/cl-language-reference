@@ -26,11 +26,11 @@ import ComplementFunction from './_complement_function.md';
 ```lisp
 ;; Find the first non-alphabetic character
 (find-if (complement #'alpha-char-p) "hello world!")
-→ #\Space
+=> #\Space
 
 ;; Remove non-numeric elements (equivalent to remove-if-not)
 (remove-if (complement #'numberp) '(1 a 2 b 3 c))
-→ (1 2 3)
+=> (1 2 3)
 ```
 
 ### Replacing -if-not functions
@@ -40,11 +40,11 @@ The `-if-not` family of functions is deprecated. Use the corresponding `-if` fun
 ```lisp
 ;; Instead of (find-if-not #'zerop '(0 0 3)):
 (find-if (complement #'zerop) '(0 0 3))
-→ 3
+=> 3
 
 ;; Instead of (remove-if-not #'evenp '(1 2 3 4 5)):
 (remove-if (complement #'evenp) '(1 2 3 4 5))
-→ (2 4)
+=> (2 4)
 ```
 
 ### Works with multi-argument predicates

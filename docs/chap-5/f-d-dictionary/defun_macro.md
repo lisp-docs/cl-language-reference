@@ -17,10 +17,10 @@ import DefunMacro from './_defun_macro.md';
 ```lisp
 (defun square (x)
   (* x x))
-→ SQUARE
+=> SQUARE
 
 (square 5)
-→ 25
+=> 25
 ```
 
 ### Optional parameters with default values
@@ -30,13 +30,13 @@ Functions can have optional parameters using `&optional`. Each can specify a def
 ```lisp
 (defun greet (name &optional (greeting "Hello"))
   (concatenate 'string greeting ", " name "!"))
-→ GREET
+=> GREET
 
 (greet "Alice")
-→ "Hello, Alice!"
+=> "Hello, Alice!"
 
 (greet "Bob" "Goodbye")
-→ "Goodbye, Bob!"
+=> "Goodbye, Bob!"
 ```
 
 ### Rest parameters to accept variable arguments
@@ -46,13 +46,13 @@ The `&rest` parameter collects all remaining arguments into a list.
 ```lisp
 (defun sum-all (&rest numbers)
   (apply #'+ numbers))
-→ SUM-ALL
+=> SUM-ALL
 
 (sum-all 1 2 3 4 5)
-→ 15
+=> 15
 
 (sum-all)
-→ 0
+=> 0
 ```
 
 ### Keyword parameters
@@ -62,13 +62,13 @@ The `&rest` parameter collects all remaining arguments into a list.
 ```lisp
 (defun make-person (&key name age (occupation "unknown"))
   (list name age occupation))
-→ MAKE-PERSON
+=> MAKE-PERSON
 
 (make-person :name "Alice" :age 30)
-→ ("Alice" 30 "unknown")
+=> ("Alice" 30 "unknown")
 
 (make-person :age 25 :occupation "engineer" :name "Bob")
-→ ("Bob" 25 "engineer")
+=> ("Bob" 25 "engineer")
 ```
 
 ### Documentation strings
@@ -81,13 +81,13 @@ A string before the body serves as a documentation string.
   (if (zerop n)
       1
       (* n (factorial (1- n)))))
-→ FACTORIAL
+=> FACTORIAL
 
 (factorial 10)
-→ 3628800
+=> 3628800
 
 (documentation 'factorial 'function)
-→ "Compute the factorial of a non-negative integer N."
+=> "Compute the factorial of a non-negative integer N."
 ```
 
 ### Early return with return-from
@@ -100,11 +100,11 @@ A string before the body serves as a documentation string.
     (when (minusp item)
       (return-from find-first-negative item)))
   nil)
-→ FIND-FIRST-NEGATIVE
+=> FIND-FIRST-NEGATIVE
 
 (find-first-negative '(3 7 -2 5))
-→ -2
+=> -2
 
 (find-first-negative '(1 2 3))
-→ NIL
+=> NIL
 ```

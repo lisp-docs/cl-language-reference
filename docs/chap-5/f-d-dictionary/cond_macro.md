@@ -21,9 +21,12 @@ import CondMacro from './_cond_macro.md';
     ((= n 0) "zero")
     (t "positive")))
 
-(describe-number -5) ; => "negative"
-(describe-number 0)  ; => "zero"
-(describe-number 42) ; => "positive"
+(describe-number -5)
+=> "negative"
+(describe-number 0)
+=> "zero"
+(describe-number 42)
+=> "positive"
 ```
 
 ### The t clause as a default
@@ -37,9 +40,12 @@ A clause with `t` as the test form always matches. It is conventionally placed l
     ((digit-char-p ch) :digit)
     (t :other)))
 
-(classify-char #\a)  ; => :LETTER
-(classify-char #\5)  ; => :DIGIT
-(classify-char #\!)  ; => :OTHER
+(classify-char #\a)
+=> :LETTER
+(classify-char #\5)
+=> :DIGIT
+(classify-char #\!)
+=> :OTHER
 ```
 
 ### Returning NIL when no clause matches
@@ -50,7 +56,7 @@ If no test form evaluates to true and there is no default clause, `cond` returns
 (cond
   ((> 1 2) "impossible")
   ((< 5 3) "also impossible"))
-; => NIL
+=> NIL
 ```
 
 ### Clauses with no body forms
@@ -62,7 +68,7 @@ When a clause has no body forms, the primary value of the test form itself is re
   (nil)
   (42)
   (t "not reached"))
-; => 42
+=> 42
 ```
 
 ### Multiple body forms in a clause
@@ -81,8 +87,9 @@ Each clause supports multiple body forms (an implicit `progn`). All forms are ev
     (t
      (format t "Small~%")
      :small)))
-; >> Moderate
-; => :MODERATE
+.. Moderate
+..
+=> :MODERATE
 ```
 
 ### Using cond to implement FizzBuzz
@@ -97,8 +104,12 @@ A practical example showing `cond` with compound test expressions.
     ((zerop (mod n 5))  "Buzz")
     (t                   n)))
 
-(fizzbuzz 3)  ; => "Fizz"
-(fizzbuzz 5)  ; => "Buzz"
-(fizzbuzz 15) ; => "FizzBuzz"
-(fizzbuzz 7)  ; => 7
+(fizzbuzz 3)
+=> "Fizz"
+(fizzbuzz 5)
+=> "Buzz"
+(fizzbuzz 15)
+=> "FizzBuzz"
+(fizzbuzz 7)
+=> 7
 ```

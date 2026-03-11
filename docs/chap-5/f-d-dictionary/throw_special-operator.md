@@ -17,7 +17,7 @@ import ThrowSpecialOperator from './_throw_special-operator.md';
 ```lisp
 (catch 'done
   (throw 'done 99))
-; => 99
+=> 99
 ```
 
 ### throw across function boundaries
@@ -34,7 +34,7 @@ import ThrowSpecialOperator from './_throw_special-operator.md';
 
 (catch 'abort
   (middle))
-; => :BAILED-OUT
+=> :BAILED-OUT
 ```
 
 ### Throwing multiple values
@@ -49,7 +49,8 @@ The result form of `throw` can produce multiple values, which are all passed to 
       (incf i)
       (when (= i 3)
         (throw 'result (values i j))))))
-; => 3, 9
+=> 3
+=> 9
 ```
 
 ### Error when no matching catch exists
@@ -72,7 +73,7 @@ The tag argument to `throw` is evaluated, so it can be a variable or expression.
 
 (catch 'exit
   (throw-to 'exit :done))
-; => :DONE
+=> :DONE
 ```
 
 ### Interaction with unwind-protect
@@ -83,7 +84,8 @@ When `throw` transfers control, any intervening `unwind-protect` cleanup forms a
 (catch 'outer
   (unwind-protect
       (throw 'outer :result)
-    (print "cleanup")))
-; >> "cleanup"
-; => :RESULT
+    (format t "cleanup~%")))
+.. cleanup
+..
+=> :RESULT
 ```

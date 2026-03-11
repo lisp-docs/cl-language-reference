@@ -17,8 +17,8 @@ import LambdaListKeywordsConstantVariable from './_lambda-list-keywords_constant
 ```lisp
 ;; Display all lambda-list keywords (implementation-dependent)
 lambda-list-keywords
-; → (&ALLOW-OTHER-KEYS &AUX &BODY &ENVIRONMENT &KEY &OPTIONAL &REST &WHOLE)
-;    (exact contents are implementation-dependent)
+;; => (&ALLOW-OTHER-KEYS &AUX &BODY &ENVIRONMENT &KEY &OPTIONAL &REST &WHOLE)
+;; (exact contents are implementation-dependent)
 ```
 
 ### Required Keywords
@@ -29,7 +29,7 @@ The Common Lisp standard mandates that certain keywords appear in this list. You
 ;; Check for required keywords
 (every (lambda (kw) (member kw lambda-list-keywords))
        '(&optional &rest &key &allow-other-keys &aux &body &whole &environment))
-; → T
+=> T
 ```
 
 ### Using the List Programmatically
@@ -47,5 +47,6 @@ The Common Lisp standard mandates that certain keywords appear in this list. You
     (values (nreverse params) (nreverse keywords))))
 
 (split-lambda-list '(x y &optional z &key verbose))
-; → (X Y Z VERBOSE), (&OPTIONAL &KEY)
+=> (X Y Z VERBOSE)
+=> (&OPTIONAL &KEY)
 ```

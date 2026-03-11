@@ -22,7 +22,7 @@ import DefineModifyMacroMacro from './_define-modify-macro_macro.md';
 (let ((items '(1 2 3)))
   (appendf items '(4 5) '(6))
   items)
-; → (1 2 3 4 5 6)
+=> (1 2 3 4 5 6)
 ```
 
 ### Defining togglef for Booleans
@@ -36,12 +36,12 @@ A toggle macro flips a generalized boolean in place.
 (let ((flag t))
   (togglef flag)
   flag)
-; → NIL
+=> NIL
 
 (let ((flag nil))
   (togglef flag)
   flag)
-; → T
+=> T
 ```
 
 ### Defining multf for Numeric Places
@@ -56,7 +56,7 @@ You can define modify macros for any two-argument function that takes the curren
 (let ((price 100))
   (multf price 1.1)
   price)
-; → 110.0
+=> 110.0
 ```
 
 ### Works with Generalized Places
@@ -69,5 +69,5 @@ Modify macros defined with `define-modify-macro` work with any setf-able place, 
 (let ((alist (list (cons :a (list 1 2)))))
   (nconcf (cdr (assoc :a alist)) (list 3 4))
   alist)
-; → ((:A 1 2 3 4))
+=> ((:A 1 2 3 4))
 ```

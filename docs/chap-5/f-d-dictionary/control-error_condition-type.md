@@ -16,8 +16,12 @@ import ControlErrorConditionType from './_control-error_condition-type.md';
 
 ```lisp
 ;; control-error sits in the condition hierarchy
-(subtypep 'control-error 'error) ; → T, T
-(subtypep 'control-error 'condition) ; → T, T
+(subtypep 'control-error 'error)
+=> T
+=> T
+(subtypep 'control-error 'condition)
+=> T
+=> T
 ```
 
 ### Handling control-error with handler-case
@@ -30,7 +34,7 @@ A `control-error` is signaled when a `throw` targets a catch tag that does not e
     (throw 'nonexistent-tag 42)
   (control-error (c)
     (format nil "Caught control-error: ~A" c)))
-; → "Caught control-error: ..."  (message is implementation-dependent)
+;; => "Caught control-error: ..."  (message is implementation-dependent)
 ```
 
 ### Using typep to Identify control-error
@@ -46,5 +50,7 @@ You can test whether a condition object is of type `control-error` using `typep`
   (values (typep condition 'control-error)
           (typep condition 'error)
           (typep condition 'condition)))
-; → T, T, T
+=> T
+=> T
+=> T
 ```

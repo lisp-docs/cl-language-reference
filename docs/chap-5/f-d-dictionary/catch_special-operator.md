@@ -19,7 +19,7 @@ import CatchSpecialOperator from './_catch_special-operator.md';
   (+ 1 2)
   (throw 'done 42)
   (+ 3 4))
-; => 42
+=> 42
 ```
 
 ### Normal return when no throw occurs
@@ -30,7 +30,7 @@ If no `throw` is executed, `catch` returns the value of its last body form, just
 (catch 'done
   (+ 1 2)
   (+ 3 4))
-; => 7
+=> 7
 ```
 
 ### catch/throw across function boundaries
@@ -46,7 +46,7 @@ Unlike `block`/`return-from`, `catch`/`throw` has dynamic scope, meaning `throw`
   (check-value 5)
   (check-value -3)
   (check-value 10))
-; => "negative value"
+=> "negative value"
 ```
 
 ### Tags are compared with eq
@@ -56,7 +56,7 @@ The catch tag can be any object, but symbols are conventional. Since comparison 
 ```lisp
 (catch 'my-tag
   (throw 'my-tag :found))
-; => :FOUND
+=> :FOUND
 ```
 
 ### Nested catches with the same tag
@@ -68,7 +68,7 @@ When multiple catches with the same tag are nested, `throw` targets the dynamica
   (catch 'c
     (throw 'c 1))
   2)
-; => 2
+=> 2
 ```
 
 The inner `catch` receives the value 1 and returns it. The outer `catch` then continues and returns 2.
@@ -80,5 +80,7 @@ The inner `catch` receives the value 1 and returns it. The outer `catch` then co
 ```lisp
 (catch 'result
   (throw 'result (values 10 20 30)))
-; => 10, 20, 30
+=> 10
+=> 20
+=> 30
 ```

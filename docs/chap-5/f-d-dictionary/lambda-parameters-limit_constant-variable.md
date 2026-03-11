@@ -16,10 +16,12 @@ import LambdaParametersLimitConstantVariable from './_lambda-parameters-limit_co
 
 ```lisp
 ;; Check the implementation's limit
-lambda-parameters-limit ; → 4611686018427387903  (implementation-dependent)
+lambda-parameters-limit
+=> 1073741824
 
 ;; Guaranteed to be at least 50
-(>= lambda-parameters-limit 50) ; → T
+(>= lambda-parameters-limit 50)
+=> T
 ```
 
 ### Relationship to call-arguments-limit
@@ -30,7 +32,8 @@ lambda-parameters-limit ; → 4611686018427387903  (implementation-dependent)
 ;; Compare the two limits
 (values lambda-parameters-limit
         call-arguments-limit)
-; → 4611686018427387903, 4611686018427387903  (implementation-dependent)
+=> 1073741824
+=> 1073741824
 ```
 
 ### Practical Note
@@ -44,5 +47,6 @@ In practice, this limit is astronomically large on most implementations and you 
       (format nil "~D parameters: OK" n)
       (format nil "~D parameters: exceeds limit" n)))
 
-(check-param-count 100) ; → "100 parameters: OK"
+(check-param-count 100)
+=> "100 parameters: OK"
 ```

@@ -16,10 +16,12 @@ import MultipleValuesLimitConstantVariable from './_multiple-values-limit_consta
 
 ```lisp
 ;; Check the implementation's limit
-multiple-values-limit ; → 536870911  (implementation-dependent)
+multiple-values-limit
+=> 1073741824
 
 ;; Guaranteed to be at least 20
-(>= multiple-values-limit 20) ; → T
+(>= multiple-values-limit 20)
+=> T
 ```
 
 ### Returning Multiple Values
@@ -29,11 +31,11 @@ In practice, `values` can return many values, but the limit determines the maxim
 ```lisp
 ;; Returning a modest number of values is always fine
 (multiple-value-list (values 1 2 3 4 5))
-; → (1 2 3 4 5)
+=> (1 2 3 4 5)
 
 ;; The limit is typically very large
 (format nil "Can return up to ~:D values" (1- multiple-values-limit))
-; → "Can return up to 536,870,910 values"  (implementation-dependent)
+=> "Can return up to 1,073,741,823 values"
 ```
 
 ### Relationship to Other Limits
@@ -44,7 +46,5 @@ In practice, `values` can return many values, but the limit determines the maxim
 (list :call-args call-arguments-limit
       :lambda-params lambda-parameters-limit
       :multiple-values multiple-values-limit)
-; → (:CALL-ARGS 4611686018427387903
-;    :LAMBDA-PARAMS 4611686018427387903
-;    :MULTIPLE-VALUES 536870911)  (implementation-dependent)
+=> (:CALL-ARGS 1073741824 :LAMBDA-PARAMS 1073741824 :MULTIPLE-VALUES 1073741824)
 ```
