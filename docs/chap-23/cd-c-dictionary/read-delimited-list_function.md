@@ -24,7 +24,7 @@ import ReadDelimitedListFunction from './_read-delimited-list_function.md';
       (read-delimited-list #\} stream t)))
   (with-input-from-string (s "{1 2 3}")
     (read s)))
-; => (1 2 3)
+=> (1 2 3)
 ```
 
 ### Implementing a set literal reader macro
@@ -41,7 +41,7 @@ import ReadDelimitedListFunction from './_read-delimited-list_function.md';
       (remove-duplicates (read-delimited-list #\} stream t))))
   (with-input-from-string (s "#{1 2 3 2 1}")
     (read s)))
-; => (3 2 1)  ; order may vary based on remove-duplicates behavior
+=> (3 2 1)
 ```
 
 ### Nested structures are handled
@@ -57,7 +57,7 @@ import ReadDelimitedListFunction from './_read-delimited-list_function.md';
       (read-delimited-list #\} stream t)))
   (with-input-from-string (s "{(a b) \"hello\" 42}")
     (read s)))
-; => ((A B) "hello" 42)
+=> ((A B) "hello" 42)
 ```
 
 ### Important: the delimiter must be a terminating macro character
@@ -75,5 +75,5 @@ The delimiter character must be set up as a terminating macro character, otherwi
       (coerce (read-delimited-list #\] stream t) 'vector)))
   (with-input-from-string (s "[10 20 30]")
     (read s)))
-; => #(10 20 30)
+=> #(10 20 30)
 ```

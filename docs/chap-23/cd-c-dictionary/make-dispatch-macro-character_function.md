@@ -20,7 +20,7 @@ import MakeDispatchMacroCharacterFunction from './_make-dispatch-macro-character
   (make-dispatch-macro-character #\!)
   ;; Verify it is now a macro character
   (not (null (get-macro-character #\!))))
-; => T
+=> T
 ```
 
 ### Defining sub-character handlers
@@ -37,7 +37,7 @@ After making a character a dispatch character, use `set-dispatch-macro-character
         (list 'keyword sym))))
   (with-input-from-string (s "!kfoo")
     (read s)))
-; => (KEYWORD FOO)
+=> (KEYWORD FOO)
 ```
 
 ### Terminating vs. non-terminating dispatch characters
@@ -52,7 +52,7 @@ By default, `make-dispatch-macro-character` creates a terminating macro characte
     (lambda (s c a) (declare (ignore s c a)) :bang))
   (with-input-from-string (s "abc!tdef")
     (list (read s) (read s))))
-; => (ABC :BANG)
+=> (ABC :BANG)
 ;; Note: "def" is still in the stream as a separate token
 ```
 
@@ -69,5 +69,5 @@ The standard `#` character is already a dispatching macro character in the stand
       (list 'shebang (read stream t nil t))))
   (with-input-from-string (s "#!test")
     (read s)))
-; => (SHEBANG TEST)
+=> (SHEBANG TEST)
 ```

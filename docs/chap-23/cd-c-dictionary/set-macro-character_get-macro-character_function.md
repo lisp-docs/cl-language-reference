@@ -19,15 +19,16 @@ import SetMacroCharacterFunction from './_set-macro-character_get-macro-characte
 (multiple-value-bind (fn non-term-p)
     (get-macro-character #\')
   (list (not (null fn)) non-term-p))
-; => (T NIL)
+=> (T NIL)
 
 ;; The semicolon is a standard terminating macro character
 (not (null (get-macro-character #\;)))
-; => T
+=> T
 
 ;; A letter is not a macro character
 (get-macro-character #\a)
-; => NIL
+=> NIL
+=> NIL
 ```
 
 ### Defining a simple reader macro
@@ -43,7 +44,7 @@ import SetMacroCharacterFunction from './_set-macro-character_get-macro-characte
       (list 'not (read stream t nil t))))
   (with-input-from-string (s "!x")
     (read s)))
-; => (NOT X)
+=> (NOT X)
 ```
 
 ### Implementing a single-quote-like reader macro
@@ -58,7 +59,7 @@ Here is an example of how the `'` (single-quote) reader macro could be defined.
       (list 'quote (read stream t nil t))))
   (with-input-from-string (s "'hello")
     (read s)))
-; => (QUOTE HELLO)
+=> (QUOTE HELLO)
 ```
 
 ### Terminating vs. non-terminating macro characters
@@ -75,7 +76,7 @@ A terminating macro character ends a token when encountered. A non-terminating m
     nil)  ; terminating (default)
   (with-input-from-string (s "abc!def")
     (list (read s) (read s))))
-; => (ABC :BANG)
+=> (ABC :BANG)
 ```
 
 ### Specifying a readtable
@@ -92,5 +93,5 @@ Both functions accept an optional readtable argument. This lets you install or q
     rt)
   ;; Query the macro character in that specific readtable
   (not (null (get-macro-character #\@ rt))))
-; => T
+=> T
 ```

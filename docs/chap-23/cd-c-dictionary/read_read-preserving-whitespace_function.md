@@ -17,15 +17,15 @@ import ReadFunction from './_read_read-preserving-whitespace_function.md';
 ```lisp
 (with-input-from-string (s "42")
   (read s))
-; => 42
+=> 42
 
 (with-input-from-string (s "(a b c)")
   (read s))
-; => (A B C)
+=> (A B C)
 
 (with-input-from-string (s "#(1 2 3)")
   (read s))
-; => #(1 2 3)
+=> #(1 2 3)
 ```
 
 ### Handling end-of-file
@@ -35,12 +35,12 @@ When `eof-error-p` is true (the default), reaching EOF signals an error. Set it 
 ```lisp
 (with-input-from-string (s "")
   (read s nil :eof))
-; => :EOF
+=> :EOF
 
 (with-input-from-string (s "hello")
   (list (read s nil :eof)
         (read s nil :eof)))
-; => (HELLO :EOF)
+=> (HELLO :EOF)
 ```
 
 ### Reading multiple objects from a stream
@@ -50,11 +50,11 @@ You can call `read` repeatedly to consume successive objects from the same strea
 ```lisp
 (with-input-from-string (s "1 2 3")
   (list (read s) (read s) (read s)))
-; => (1 2 3)
+=> (1 2 3)
 
 (with-input-from-string (s "'foo \"hello\" 3.14")
   (list (read s) (read s) (read s)))
-; => ((QUOTE FOO) "hello" 3.14)
+=> ((QUOTE FOO) "hello" 3.14)
 ```
 
 ### read-preserving-whitespace
@@ -66,13 +66,13 @@ You can call `read` repeatedly to consume successive objects from the same strea
 (with-input-from-string (s "abc def")
   (read s)
   (read-char s))
-; => #\d
+=> #\d
 
 ;; With read-preserving-whitespace, the space is preserved
 (with-input-from-string (s "abc def")
   (read-preserving-whitespace s)
   (read-char s))
-; => #\Space
+=> #\Space
 ```
 
 ### Reading with different readtable settings
@@ -83,10 +83,10 @@ You can call `read` repeatedly to consume successive objects from the same strea
 (let ((*read-base* 16))
   (with-input-from-string (s "FF")
     (read s)))
-; => 255
+=> 255
 
 (let ((*package* (find-package :keyword)))
   (with-input-from-string (s "foo")
     (read s)))
-; => :FOO
+=> :FOO
 ```

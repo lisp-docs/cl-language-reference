@@ -17,12 +17,12 @@ With no arguments, `copy-readtable` copies the current readtable (`*readtable*`)
 ```lisp
 (let ((rt (copy-readtable)))
   (readtablep rt))
-; => T
+=> T
 
 ;; The copy is a distinct object
 (let ((rt (copy-readtable)))
   (eq rt *readtable*))
-; => NIL
+=> NIL
 ```
 
 ### Getting a fresh standard readtable
@@ -32,7 +32,7 @@ Passing `nil` as the first argument copies the standard readtable. This is the s
 ```lisp
 (let ((*readtable* (copy-readtable nil)))
   (readtable-case *readtable*))
-; => :UPCASE
+=> :UPCASE
 ```
 
 ### Restoring the standard readtable after modifications
@@ -48,7 +48,7 @@ If you have modified the current readtable and want to revert to standard syntax
   ;; The ! modification is gone; ! is a normal constituent again
   (with-input-from-string (s "hello")
     (read s)))
-; => HELLO
+=> HELLO
 ```
 
 ### Copying into an existing readtable
@@ -64,7 +64,7 @@ When a second argument is provided, `copy-readtable` modifies and returns that r
   ;; rt2 now has the same macro character definitions as rt1
   (eq (get-macro-character #\! rt2)
       (get-macro-character #\! rt1)))
-; => T
+=> T
 ```
 
 ### Isolating readtable modifications with LET
@@ -80,11 +80,11 @@ A common pattern is to locally bind `*readtable*` to a copy so that modification
     (read-from-string string)))
 
 (read-with-custom-syntax "!foo")
-; => (NOT FOO)
-; => 4
+=> (NOT FOO)
+=> 4
 
 ;; The original readtable is unaffected
 (with-input-from-string (s "!test")
   (read s))
-; => !TEST   ; ! is still a normal constituent
+=> !TEST
 ```

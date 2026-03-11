@@ -16,7 +16,7 @@ import ReadSuppressVariable from './_read-suppress_variable.md';
 
 ```lisp
 *read-suppress*
-; => NIL
+=> NIL
 ```
 
 ### When true, read returns NIL
@@ -26,13 +26,13 @@ When `*read-suppress*` is true, `read` and `read-from-string` parse the printed 
 ```lisp
 (let ((*read-suppress* t))
   (read-from-string "(a b c)"))
-; => NIL
-; => 7
+=> NIL
+=> 7
 
 (let ((*read-suppress* t))
   (read-from-string "123"))
-; => NIL
-; => 3
+=> NIL
+=> 3
 ```
 
 ### Suppressing errors from non-portable syntax
@@ -42,11 +42,11 @@ The primary purpose of `*read-suppress*` is to support `#+` and `#-` read-time c
 ```lisp
 (let ((*read-suppress* t))
   (values (read-from-string "#P(:type :lisp)")))
-; => NIL
+=> NIL
 
 (let ((*read-suppress* t))
   (values (read-from-string "#c(1.0 2.0)")))
-; => NIL
+=> NIL
 ```
 
 ### Multiple suppressed forms
@@ -57,7 +57,7 @@ You can use `*read-suppress*` to skip multiple forms in sequence.
 (let ((*read-suppress* t))
   (mapcar (lambda (s) (values (read-from-string s)))
           '("#(foo bar baz)" "#S(INTEGER)" "#\\GARBAGE")))
-; => (NIL NIL NIL)
+=> (NIL NIL NIL)
 ```
 
 ### Parentheses and strings still delimit correctly
@@ -70,5 +70,5 @@ Even under `*read-suppress*`, parentheses still delimit lists and strings still 
     (read s)           ; skips (unknown-stuff 1 2 3) returning NIL
     (let ((*read-suppress* nil))
       (read s))))      ; reads hello normally
-; => HELLO
+=> HELLO
 ```

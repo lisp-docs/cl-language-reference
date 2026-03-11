@@ -17,11 +17,11 @@ A readtable is an object that maps characters to syntax types for the Lisp reade
 ```lisp
 ;; *readtable* always holds a readtable object
 (typep *readtable* 'readtable)
-; => T
+=> T
 
 ;; copy-readtable produces new readtable objects
 (typep (copy-readtable) 'readtable)
-; => T
+=> T
 ```
 
 ### Class precedence list
@@ -30,8 +30,8 @@ The class precedence list for `readtable` is: `readtable`, `t`.
 
 ```lisp
 (subtypep 'readtable t)
-; => T
-; => T
+=> T
+=> T
 ```
 
 ### Readtables are not printed readably
@@ -42,7 +42,7 @@ Readtable objects have no standard printed representation that can be read back 
 ;; The printed representation is implementation-dependent, typically something like:
 ;; #<READTABLE ...>
 (readtablep (copy-readtable))
-; => T
+=> T
 ```
 
 ### Key operations on readtables
@@ -54,6 +54,6 @@ The primary operations for working with readtables are `copy-readtable`, `readta
   (list (readtable-case rt)
         (null (get-macro-character #\( rt))
         (null (get-macro-character #\a rt))))
-; => (:UPCASE NIL T)
+=> (:UPCASE NIL T)
 ;; ( is a macro character, a is not
 ```

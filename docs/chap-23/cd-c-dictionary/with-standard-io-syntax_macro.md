@@ -22,7 +22,7 @@ import WithStandardIoSyntaxMacro from './_with-standard-io-syntax_macro.md';
         *read-suppress*
         *print-base*
         *print-case*))
-; => (10 SINGLE-FLOAT T NIL 10 :UPCASE)
+=> (10 SINGLE-FLOAT T NIL 10 :UPCASE)
 ```
 
 ### Ensuring round-trip consistency for data serialization
@@ -37,7 +37,7 @@ The primary use case is to ensure that objects printed under standard syntax can
   (with-standard-io-syntax
     (let ((str (prin1-to-string 255)))
       (list str (read-from-string str)))))
-; => ("255" 255)
+=> ("255" 255)
 ```
 
 ### Writing and reading data files
@@ -61,8 +61,8 @@ A common pattern is to use `with-standard-io-syntax` when writing data to a file
                (prin1-to-string data))))
     (with-standard-io-syntax
       (read-from-string str))))
-; => (HELLO 42 "world" 3.14)
-; => 27
+=> (HELLO 42 "world" 3.14)
+=> 62
 ```
 
 ### The readtable is bound to the standard readtable
@@ -77,7 +77,7 @@ Inside `with-standard-io-syntax`, `*readtable*` is bound to the standard readtab
   (with-standard-io-syntax
     (with-input-from-string (s "!test")
       (symbol-name (read s)))))
-; => "!TEST"
+=> "!TEST"
 ```
 
 ### Package is bound to CL-USER
@@ -88,5 +88,5 @@ Inside the form, `*package*` is bound to the `CL-USER` package.
 (in-package :cl-user)
 (with-standard-io-syntax
   (package-name *package*))
-; => "COMMON-LISP-USER"
+=> "COMMON-LISP-USER"
 ```

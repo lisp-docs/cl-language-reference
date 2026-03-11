@@ -16,27 +16,27 @@ import ReadtablepFunction from './_readtablep_function.md';
 
 ```lisp
 (readtablep *readtable*)
-; => T
+=> T
 
 (readtablep (copy-readtable))
-; => T
+=> T
 ```
 
 ### Non-readtable objects return NIL
 
 ```lisp
 (readtablep 42)
-; => NIL
+=> NIL
 
 (readtablep "hello")
-; => NIL
+=> NIL
 
 (readtablep nil)
-; => NIL
+=> NIL
 
 ;; The symbol *readtable* is not itself a readtable
 (readtablep '*readtable*)
-; => NIL
+=> NIL
 ```
 
 ### Equivalence to TYPEP
@@ -47,9 +47,9 @@ import ReadtablepFunction from './_readtablep_function.md';
 (let ((rt (copy-readtable)))
   (list (readtablep rt)
         (typep rt 'readtable)))
-; => (T T)
+=> (T T)
 
 (list (readtablep :keyword)
       (typep :keyword 'readtable))
-; => (NIL NIL)
+=> (NIL NIL)
 ```

@@ -16,10 +16,10 @@ import ReadtableVariable from './_readtable_variable.md';
 
 ```lisp
 (readtablep *readtable*)
-; => T
+=> T
 
 (readtable-case *readtable*)
-; => :UPCASE
+=> :UPCASE
 ```
 
 ### Binding a modified readtable locally
@@ -30,11 +30,11 @@ The standard idiom for making temporary readtable modifications is to bind `*rea
 (let ((*readtable* (copy-readtable)))
   (setf (readtable-case *readtable*) :preserve)
   (symbol-name (read-from-string "Hello")))
-; => "Hello"
+=> "Hello"
 
 ;; Outside the LET, the original readtable is still in effect
 (readtable-case *readtable*)
-; => :UPCASE
+=> :UPCASE
 ```
 
 ### Resetting to the standard readtable
@@ -50,7 +50,7 @@ Assigning a copy of the standard readtable (via `nil`) restores standard syntax.
   ;; Now z is a normal constituent again
   (with-input-from-string (s "zebra")
     (read s)))
-; => ZEBRA
+=> ZEBRA
 ```
 
 ### Custom reader syntax via *readtable*
@@ -65,5 +65,5 @@ All reader macros and syntax changes operate through the current readtable.
       (list 'at-sign (read stream t nil t))))
   (with-input-from-string (s "@foo")
     (read s)))
-; => (AT-SIGN FOO)
+=> (AT-SIGN FOO)
 ```

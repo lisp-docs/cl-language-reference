@@ -16,10 +16,10 @@ import ReadDefaultFloatFormatVariable from './_read-default-float-format_variabl
 
 ```lisp
 *read-default-float-format*
-; => SINGLE-FLOAT
+=> SINGLE-FLOAT
 
 (type-of (read-from-string "1.0"))
-; => SINGLE-FLOAT
+=> SINGLE-FLOAT
 ```
 
 ### Changing the default float format
@@ -29,11 +29,11 @@ By binding `*read-default-float-format*` to `double-float`, numbers without an e
 ```lisp
 (let ((*read-default-float-format* 'double-float))
   (type-of (read-from-string "1.0")))
-; => DOUBLE-FLOAT
+=> DOUBLE-FLOAT
 
 (let ((*read-default-float-format* 'double-float))
   (type-of (read-from-string "3.14e0")))
-; => DOUBLE-FLOAT
+=> DOUBLE-FLOAT
 ```
 
 ### Explicit exponent markers override the default
@@ -47,7 +47,7 @@ The exponent markers `s`, `f`, `d`, and `l` always specify their corresponding f
         (type-of (read-from-string "1.0f0"))   ; single-float
         (type-of (read-from-string "1.0d0"))   ; double-float
         (type-of (read-from-string "1.0l0")))) ; long-float
-; => (DOUBLE-FLOAT SHORT-FLOAT SINGLE-FLOAT DOUBLE-FLOAT LONG-FLOAT)
+=> (DOUBLE-FLOAT SHORT-FLOAT SINGLE-FLOAT DOUBLE-FLOAT LONG-FLOAT)
 ;; Note: some implementations merge certain float types
 ```
 
@@ -58,11 +58,11 @@ The exponent markers `s`, `f`, `d`, and `l` always specify their corresponding f
 ```lisp
 (let ((*read-default-float-format* 'single-float))
   (format nil "~S ~S" 1.0 1.0d0))
-; => "1.0 1.0d0"
+=> "1.0 1.0d0"
 
 (let ((*read-default-float-format* 'double-float))
   (format nil "~S ~S" 1.0 1.0d0))
-; => "1.0f0 1.0"
+=> "1.0f0 1.0"
 ;; The double-float is now the default so it drops the marker;
 ;; the single-float must use f0 to distinguish itself
 ```

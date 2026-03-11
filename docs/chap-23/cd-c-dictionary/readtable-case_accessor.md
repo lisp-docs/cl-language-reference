@@ -16,7 +16,7 @@ import ReadtableCaseAccessor from './_readtable-case_accessor.md';
 
 ```lisp
 (readtable-case *readtable*)
-; => :UPCASE
+=> :UPCASE
 ```
 
 ### The four readtable case modes
@@ -28,21 +28,21 @@ The valid modes are `:upcase`, `:downcase`, `:preserve`, and `:invert`.
 (let ((*readtable* (copy-readtable)))
   (setf (readtable-case *readtable*) :upcase)
   (read-from-string "hello"))
-; => HELLO
-; => 5
+=> HELLO
+=> 5
 
 ;; :DOWNCASE - unescaped letters are lowercased
 (let ((*readtable* (copy-readtable)))
   (setf (readtable-case *readtable*) :downcase)
   (read-from-string "HELLO"))
-; => |hello|   ; the symbol name is "hello"
-; => 5
+=> |hello|
+=> 5
 
 ;; :PRESERVE - letters are not changed
 (let ((*readtable* (copy-readtable)))
   (setf (readtable-case *readtable*) :preserve)
   (symbol-name (read-from-string "Hello")))
-; => "Hello"
+=> "Hello"
 
 ;; :INVERT - if all unescaped letters in a token have the same case,
 ;;           that case is inverted; mixed case is preserved
@@ -51,7 +51,7 @@ The valid modes are `:upcase`, `:downcase`, `:preserve`, and `:invert`.
   (list (symbol-name (read-from-string "hello"))
         (symbol-name (read-from-string "HELLO"))
         (symbol-name (read-from-string "Hello"))))
-; => ("HELLO" "hello" "Hello")
+=> ("HELLO" "hello" "Hello")
 ```
 
 ### Setting readtable case with SETF
@@ -62,7 +62,7 @@ The valid modes are `:upcase`, `:downcase`, `:preserve`, and `:invert`.
 (let ((*readtable* (copy-readtable)))
   (setf (readtable-case *readtable*) :preserve)
   (readtable-case *readtable*))
-; => :PRESERVE
+=> :PRESERVE
 ```
 
 ### Readtable case affects symbol printing too
@@ -74,5 +74,5 @@ The readtable case influences how the printer writes symbols, ensuring round-tri
   (setf (readtable-case *readtable*) :invert)
   ;; Standard symbols (all uppercase internally) print as lowercase
   (format nil "~A" 'hello))
-; => "hello"
+=> "hello"
 ```
