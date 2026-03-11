@@ -19,7 +19,7 @@ import FileErrorConditionType from './_file-error_condition-type.md';
     (open "/tmp/nonexistent-directory-xyz/no-file.txt")
   (file-error (c)
     (format nil "File error: ~A" c)))
-→ "File error: ..."  ; implementation-dependent message
+;; => "File error: ..."  ; implementation-dependent message
 ```
 
 ### The file-error type hierarchy
@@ -28,10 +28,12 @@ import FileErrorConditionType from './_file-error_condition-type.md';
 
 ```lisp
 (subtypep 'file-error 'error)
-→ T, T
+=> T
+=> T
 
 (subtypep 'file-error 'serious-condition)
-→ T, T
+=> T
+=> T
 ```
 
 ### Extracting the offending pathname
@@ -43,7 +45,7 @@ The `file-error-pathname` function retrieves the pathname that caused the error.
     (open "/tmp/nonexistent-dir-xyz/test.txt")
   (file-error (c)
     (pathnamep (file-error-pathname c))))
-→ T  ; the offending pathname is accessible; implementation-dependent
+=> T
 ```
 
 ### Signaling file-error with make-condition
@@ -53,5 +55,5 @@ You can create file-error conditions programmatically with the `:pathname` inita
 ```lisp
 (let ((c (make-condition 'file-error :pathname #P"/bad/path.txt")))
   (file-error-pathname c))
-→ #P"/bad/path.txt"
+=> #P"/bad/path.txt"
 ```

@@ -19,7 +19,7 @@ import FileErrorPathnameFunction from './_file-error-pathname_function.md';
     (open "/tmp/nonexistent-dir-xyz/test.txt")
   (file-error (c)
     (file-error-pathname c)))
-→ #P"/tmp/nonexistent-dir-xyz/test.txt"  ; implementation-dependent
+=> #P"/tmp/nonexistent-dir-xyz/test.txt"
 ```
 
 ### Using with handler-bind for logging
@@ -32,8 +32,7 @@ You can use `file-error-pathname` within a handler to log or report which file c
   (file-error (c)
     (format nil "Cannot operate on: ~A"
             (namestring (file-error-pathname c)))))
-→ "Cannot operate on: /tmp/absolutely-no-such-file-xyz.txt"
-; implementation-dependent (some implementations may not error on delete of nonexistent)
+=> "Cannot operate on: /tmp/absolutely-no-such-file-xyz.txt"
 ```
 
 ### Works with programmatically created conditions
@@ -44,5 +43,5 @@ The function also works on conditions created with `make-condition`.
 (let ((c (make-condition 'file-error
                          :pathname "/missing/file.txt")))
   (file-error-pathname c))
-→ "/missing/file.txt"  ; returns whatever was passed as :pathname
+=> "/missing/file.txt"
 ```

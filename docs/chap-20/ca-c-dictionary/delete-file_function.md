@@ -20,13 +20,13 @@ import DeleteFileFunction from './_delete-file_function.md';
   (write-string "temporary data" s))
 
 (probe-file "/tmp/cl-delete-test.txt")
-→ #P"/tmp/cl-delete-test.txt"  ; file exists
+=> #P"/tmp/cl-delete-test.txt"
 
 (delete-file "/tmp/cl-delete-test.txt")
-→ T
+=> T
 
 (probe-file "/tmp/cl-delete-test.txt")
-→ NIL  ; file is gone
+=> NIL
 ```
 
 ### Deleting via a pathname object
@@ -39,7 +39,7 @@ import DeleteFileFunction from './_delete-file_function.md';
   (write-string "temporary" s))
 
 (delete-file #P"/tmp/cl-delete-test2.txt")
-→ T
+=> T
 ```
 
 ### Error on nonexistent file
@@ -63,5 +63,5 @@ A common pattern is creating a temporary file, using it, then deleting it.
   ;; ... use the file ...
   (delete-file path)
   (null (probe-file path)))
-→ T
+=> T
 ```

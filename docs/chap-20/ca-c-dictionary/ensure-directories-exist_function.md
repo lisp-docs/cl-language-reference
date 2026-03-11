@@ -16,8 +16,8 @@ import EnsureDirectoriesExistFunction from './_ensure-directories-exist_function
 
 ```lisp
 (ensure-directories-exist "/tmp/cl-test-ede/sub/dir/file.txt")
-→ #P"/tmp/cl-test-ede/sub/dir/file.txt"
-→ T  ; T if directories were created, NIL if they already existed
+;; => #P"/tmp/cl-test-ede/sub/dir/file.txt"
+;; => T
 ```
 
 ### Directories already exist
@@ -26,8 +26,8 @@ If all directories in the path already exist, the second value is nil.
 
 ```lisp
 (ensure-directories-exist "/tmp/file.txt")
-→ #P"/tmp/file.txt"
-→ NIL  ; /tmp/ already exists
+;; => #P"/tmp/file.txt"
+;; => NIL
 ```
 
 ### Composing with file operations
@@ -40,7 +40,7 @@ Because `ensure-directories-exist` returns the pathspec as its primary value, it
                    :direction :output
                    :if-exists :supersede)
   (write-string "data" s))
-→ "data"
+=> "data"
 ```
 
 ### Using the :verbose keyword
@@ -50,7 +50,7 @@ When `:verbose` is true, the implementation may print information about which di
 ```lisp
 (ensure-directories-exist "/tmp/cl-test-ede3/a/b/c/file.txt"
                           :verbose t)
-; May print information about directory creation
-→ #P"/tmp/cl-test-ede3/a/b/c/file.txt"
-→ T
+;; May print information about directory creation
+;; => #P"/tmp/cl-test-ede3/a/b/c/file.txt"
+;; => T
 ```

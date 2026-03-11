@@ -20,7 +20,7 @@ import TruenameFunction from './_truename_function.md';
   (write-string "test" s))
 
 (truename "/tmp/cl-truename-test.txt")
-→ #P"/tmp/cl-truename-test.txt"  ; implementation-dependent
+=> #P"/tmp/cl-truename-test.txt"
 ```
 
 ### Using truename with a stream
@@ -30,7 +30,7 @@ import TruenameFunction from './_truename_function.md';
 ```lisp
 (with-open-file (s "/tmp/cl-truename-test.txt")
   (truename s))
-→ #P"/tmp/cl-truename-test.txt"  ; implementation-dependent
+=> #P"/tmp/cl-truename-test.txt"
 ```
 
 ### Truename vs. pathname
@@ -41,8 +41,8 @@ While `pathname` returns the name used to open a file, `truename` returns the ac
 (with-open-file (s "/tmp/cl-truename-test.txt")
   (values (pathname s)
           (truename s)))
-→ #P"/tmp/cl-truename-test.txt"
-→ #P"/tmp/cl-truename-test.txt"  ; may differ with symlinks
+=> #P"/tmp/cl-truename-test.txt"
+=> #P"/tmp/cl-truename-test.txt"
 ```
 
 ### Error on nonexistent files

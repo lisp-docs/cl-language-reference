@@ -17,7 +17,7 @@ import DirectoryFunction from './_directory_function.md';
 ```lisp
 ;; List all .lisp files in /tmp (if any exist)
 (directory #P"/tmp/*.lisp")
-→ (#P"/tmp/test.lisp" #P"/tmp/utils.lisp")  ; implementation-dependent
+;; => (#P"/tmp/test.lisp" #P"/tmp/utils.lisp")  ; implementation-dependent
 ```
 
 ### Non-wild pathspec returns zero or one matches
@@ -27,14 +27,14 @@ If the pathspec contains no wildcards, the result is either an empty list or a l
 ```lisp
 ;; Check for a specific file
 (directory #P"/tmp/nonexistent-file-xyz.txt")
-→ ()
+=> ()
 
 ;; An existing file returns a one-element list
 (with-open-file (s "/tmp/cl-dir-test.txt" :direction :output
                    :if-exists :supersede)
   (write-string "test" s))
 (directory #P"/tmp/cl-dir-test.txt")
-→ (#P"/tmp/cl-dir-test.txt")  ; the truename; implementation-dependent
+=> (#P"/tmp/cl-dir-test.txt")
 ```
 
 ### Using :wild-inferiors for recursive listing
@@ -46,7 +46,7 @@ Use `:wild-inferiors` in the directory component to match files in subdirectorie
 (directory (make-pathname :directory '(:absolute "home" "user" :wild-inferiors)
                           :name :wild
                           :type "lisp"))
-→ (...)  ; all .lisp files found recursively; implementation-dependent
+;; => (...)  ; implementation-dependent
 ```
 
 ### The result is always a fresh list
@@ -57,5 +57,5 @@ Each call to `directory` returns a new list, even for the same pattern.
 (let ((a (directory #P"/tmp/*.txt"))
       (b (directory #P"/tmp/*.txt")))
   (eq a b))
-→ NIL
+=> NIL
 ```

@@ -17,7 +17,7 @@ import ProbeFileFunction from './_probe-file_function.md';
 ```lisp
 ;; A file that does not exist
 (probe-file "/tmp/nonexistent-file-xyz-12345.txt")
-→ NIL
+=> NIL
 ```
 
 ### Getting the truename of an existing file
@@ -30,7 +30,7 @@ When the file exists, `probe-file` returns its truename as a physical pathname.
   (write-string "hello" s))
 
 (probe-file "/tmp/cl-probe-test.txt")
-→ #P"/tmp/cl-probe-test.txt"  ; the truename; implementation-dependent
+=> #P"/tmp/cl-probe-test.txt"
 ```
 
 ### Using probe-file for conditional file operations
@@ -42,7 +42,7 @@ A common pattern is to test for file existence before performing operations.
   (if (probe-file path)
       (format nil "File ~A exists" path)
       (format nil "File ~A does not exist" path)))
-→ "File /tmp/cl-probe-test.txt exists"  ; if the file exists
+=> "File /tmp/cl-probe-test.txt exists"
 ```
 
 ### probe-file works with pathname objects
@@ -54,5 +54,5 @@ The argument can be a string, a pathname, or a stream.
                         :name "cl-probe-test"
                         :type "txt")))
   (if (probe-file p) "found" "not found"))
-→ "found"  ; if the file exists
+=> "found"
 ```

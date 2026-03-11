@@ -21,9 +21,9 @@ import RenameFileFunction from './_rename-file_function.md';
   (write-string "data" s))
 
 (rename-file "/tmp/cl-rename-old.txt" "/tmp/cl-rename-new.txt")
-→ #P"/tmp/cl-rename-new.txt"    ; defaulted-new-name
-→ #P"/tmp/cl-rename-old.txt"    ; old-truename
-→ #P"/tmp/cl-rename-new.txt"    ; new-truename
+=> #P"/tmp/cl-rename-new.txt"
+=> #P"/tmp/cl-rename-old.txt"
+=> #P"/tmp/cl-rename-new.txt"
 ```
 
 ### New name defaults from the old name
@@ -38,9 +38,9 @@ Missing components of the new name are filled in from the original filename usin
 ;; Only changing the name component; type defaults from the original
 (rename-file "/tmp/cl-rename2-old.txt"
              (make-pathname :name "cl-rename2-new"))
-→ #P"/tmp/cl-rename2-new.txt"   ; type filled in from old name
-→ #P"/tmp/cl-rename2-old.txt"
-→ #P"/tmp/cl-rename2-new.txt"   ; implementation-dependent
+=> #P"/tmp/cl-rename2-new.txt"
+=> #P"/tmp/cl-rename2-old.txt"
+=> #P"/tmp/cl-rename2-new.txt"
 ```
 
 ### Verifying the rename
@@ -56,6 +56,6 @@ After renaming, the old file no longer exists and the new one does.
 
 (values (probe-file "/tmp/cl-rename3.txt")
         (not (null (probe-file "/tmp/cl-rename3-done.txt"))))
-→ NIL
-→ T
+=> NIL
+=> T
 ```

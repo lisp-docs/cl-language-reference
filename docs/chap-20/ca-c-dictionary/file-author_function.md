@@ -21,7 +21,7 @@ import FileAuthorFunction from './_file-author_function.md';
   (write-string "test" s))
 
 (file-author "/tmp/cl-author-test.txt")
-→ "username"  ; or NIL, implementation-dependent
+;; => "username"  ; implementation-dependent
 ```
 
 ### Result type is string or nil
@@ -31,7 +31,7 @@ The return value is always either a string or nil. Many modern file systems do n
 ```lisp
 (let ((author (file-author "/tmp/cl-author-test.txt")))
   (or (stringp author) (null author)))
-→ T
+=> T
 ```
 
 ### Accepts pathname designators
@@ -40,9 +40,9 @@ Like most file functions, `file-author` accepts strings, pathnames, and streams 
 
 ```lisp
 (file-author #P"/tmp/cl-author-test.txt")
-→ "username"  ; or NIL, implementation-dependent
+;; => "username"  ; implementation-dependent
 
 (with-open-file (s "/tmp/cl-author-test.txt")
   (file-author s))
-→ "username"  ; or NIL, implementation-dependent
+;; => "username"  ; implementation-dependent
 ```
