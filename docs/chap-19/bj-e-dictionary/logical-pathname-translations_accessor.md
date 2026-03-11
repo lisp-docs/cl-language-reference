@@ -17,7 +17,7 @@ Use `setf` with `logical-pathname-translations` to define or replace the transla
 ```lisp
 (setf (logical-pathname-translations "MYAPP")
       '(("**;*.*.*" "/opt/myapp/**/*.*")))
-→ (("**;*.*.*" "/opt/myapp/**/*.*"))
+;; => (("**;*.*.*" "/opt/myapp/**/*.*"))
 ```
 
 ### Retrieving translations
@@ -30,8 +30,8 @@ Call `logical-pathname-translations` with a host name to retrieve the current tr
         ("DATA;*.*.*" "/home/user/data/*.*")))
 
 (logical-pathname-translations "DEMO")
-→ (("CODE;*.*.*" "/home/user/code/*.*")
-   ("DATA;*.*.*" "/home/user/data/*.*"))  ; implementation-dependent form
+;; => (("CODE;*.*.*" "/home/user/code/*.*")
+;;    ("DATA;*.*.*" "/home/user/data/*.*"))  ; implementation-dependent form
 ```
 
 ### Multiple translation rules with ordering
@@ -44,10 +44,10 @@ Translations are tried in order. More specific patterns should appear before mor
         ("**;*.*.*" "/usr/lib/**/*.*")))
 
 (translate-logical-pathname "LIB:SPECIAL;CONFIG.YAML")
-→ #P"/etc/lib/config.yaml"  ; implementation-dependent
+;; => #P"/etc/lib/config.yaml"  ; implementation-dependent
 
 (translate-logical-pathname "LIB:SRC;MAIN.LISP")
-→ #P"/usr/lib/src/main.lisp"  ; implementation-dependent
+;; => #P"/usr/lib/src/main.lisp"  ; implementation-dependent
 ```
 
 ### Replacing translations
@@ -62,5 +62,5 @@ Setting the translations replaces any previously defined rules for that host.
       '(("**;*.*.*" "/new/**/*.*")))
 
 (translate-logical-pathname "REPLACE-TEST:FILE.TXT")
-→ #P"/new/file.txt"  ; implementation-dependent
+;; => #P"/new/file.txt"  ; implementation-dependent
 ```

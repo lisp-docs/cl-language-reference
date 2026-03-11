@@ -16,10 +16,10 @@ import WildPathnamePFunction from './_wild-pathname-p_function.md';
 
 ```lisp
 (wild-pathname-p (make-pathname :name :wild))
-→ T
+=> T
 
 (wild-pathname-p #P"/home/user/data.txt")
-→ NIL
+=> NIL
 ```
 
 ### Testing a specific component for wildcards
@@ -28,10 +28,10 @@ A field-key argument restricts the test to a specific pathname component.
 
 ```lisp
 (wild-pathname-p (make-pathname :name :wild) :name)
-→ T
+=> T
 
 (wild-pathname-p (make-pathname :name :wild) :type)
-→ NIL
+=> NIL
 ```
 
 ### Wildcard directory components
@@ -42,19 +42,19 @@ Wildcards can appear in the directory component as well.
 (wild-pathname-p (make-pathname :directory '(:absolute :wild-inferiors)
                                 :name "test"
                                 :type "lisp"))
-→ T
+=> T
 
 (wild-pathname-p (make-pathname :directory '(:absolute :wild-inferiors)
                                 :name "test"
                                 :type "lisp")
                  :directory)
-→ T
+=> T
 
 (wild-pathname-p (make-pathname :directory '(:absolute :wild-inferiors)
                                 :name "test"
                                 :type "lisp")
                  :name)
-→ NIL
+=> NIL
 ```
 
 ### Non-wild pathnames
@@ -68,7 +68,7 @@ Ordinary pathnames without wildcards return nil for all field tests.
   (values (wild-pathname-p p)
           (wild-pathname-p p :name)
           (wild-pathname-p p :directory)))
-→ NIL
-→ NIL
-→ NIL
+=> NIL
+=> NIL
+=> NIL
 ```

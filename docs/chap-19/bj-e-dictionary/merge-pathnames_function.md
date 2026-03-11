@@ -16,7 +16,7 @@ import MergePathnamesFunction from './_merge-pathnames_function.md';
 
 ```lisp
 (merge-pathnames "output.dat" #P"/home/user/input.txt")
-→ #P"/home/user/output.dat"
+=> #P"/home/user/output.dat"
 ```
 
 ### Supplying only a name
@@ -25,7 +25,7 @@ When only a name is given, the directory and type come from the defaults.
 
 ```lisp
 (merge-pathnames "report" #P"/var/log/old.txt")
-→ #P"/var/log/report.txt"
+=> #P"/var/log/report.txt"
 ```
 
 ### Merging relative directories
@@ -38,7 +38,7 @@ If the first pathname has a relative directory, it is appended to the default's 
                  :name "file"
                  :type "lisp")
   #P"/home/user/")
-→ #P"/home/user/sub/file.lisp"
+=> #P"/home/user/sub/file.lisp"
 ```
 
 ### An absolute directory overrides the default
@@ -47,7 +47,7 @@ If the first pathname specifies an absolute directory, it is used rather than th
 
 ```lisp
 (merge-pathnames #P"/opt/bin/tool" #P"/home/user/data.txt")
-→ #P"/opt/bin/tool"
+=> #P"/opt/bin/tool.txt"
 ```
 
 ### Changing just the file type
@@ -58,5 +58,5 @@ A common pattern is to produce an output pathname that differs from the input on
 (merge-pathnames
   (make-pathname :type "fasl")
   #P"/home/user/code.lisp")
-→ #P"/home/user/code.fasl"
+=> #P"/home/user/code.fasl"
 ```

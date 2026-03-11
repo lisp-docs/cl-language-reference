@@ -16,7 +16,8 @@ A logical pathname provides a portable, implementation-independent way to specif
 
 ```lisp
 (subtypep 'logical-pathname 'pathname)
-→ T, T
+=> T
+=> T
 ```
 
 ### Creating and recognizing logical pathnames
@@ -28,10 +29,10 @@ Logical pathnames are created by establishing translations and then using logica
       '(("**;*.*.*" "/usr/lib/mylib/**/*.*")))
 
 (typep (logical-pathname "MYLIB:SRC;UTILS.LISP") 'logical-pathname)
-→ T
+=> T
 
 (typep #P"/tmp/test.lisp" 'logical-pathname)
-→ NIL
+=> NIL
 ```
 
 ### Logical pathnames satisfy pathnamep
@@ -45,6 +46,6 @@ Since logical-pathname is a subclass of pathname, logical pathnames also satisfy
 (let ((lp (logical-pathname "TESTH:DATA;FILE.TXT")))
   (values (pathnamep lp)
           (typep lp 'logical-pathname)))
-→ T
-→ T
+=> T
+=> T
 ```

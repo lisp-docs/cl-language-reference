@@ -16,10 +16,10 @@ A pathname is a structured object representing a filename. There are two kinds o
 
 ```lisp
 (type-of #P"/usr/local/bin/sbcl")
-→ PATHNAME  ; or a subtype, implementation-dependent
+;; => PATHNAME  ; or a subtype, implementation-dependent
 
 (typep #P"/tmp/test.lisp" 'pathname)
-→ T
+=> T
 ```
 
 ### Pathnames have six components
@@ -33,7 +33,7 @@ Every pathname has a host, device, directory, name, type, and version component.
   (list (pathname-directory p)
         (pathname-name p)
         (pathname-type p)))
-→ ((:ABSOLUTE "home" "user") "data" "csv")
+=> ((:ABSOLUTE "home" "user") "data" "csv")
 ```
 
 ### Pathnames from strings
@@ -42,10 +42,10 @@ Strings are automatically coerced to pathnames in many contexts. The `pathname` 
 
 ```lisp
 (pathnamep "foo.lisp")
-→ NIL
+=> NIL
 
 (pathnamep (pathname "foo.lisp"))
-→ T
+=> T
 ```
 
 ### Logical pathnames are a subtype
@@ -54,5 +54,6 @@ Logical pathnames are a subtype of pathname that provide a portable way to refer
 
 ```lisp
 (subtypep 'logical-pathname 'pathname)
-→ T, T
+=> T
+=> T
 ```

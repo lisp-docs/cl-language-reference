@@ -19,10 +19,10 @@ The `logical-pathname` function converts a logical pathname namestring (which mu
       '(("**;*.*.*" "/opt/app/**/*.*")))
 
 (logical-pathname "APPHOST:CODE;MAIN.LISP")
-→ #P"APPHOST:CODE;MAIN.LISP"
+=> #P"APPHOST:CODE;MAIN.LISP"
 
 (typep (logical-pathname "APPHOST:CODE;MAIN.LISP") 'logical-pathname)
-→ T
+=> T
 ```
 
 ### Passing through an existing logical pathname
@@ -35,7 +35,7 @@ If the argument is already a logical pathname, it is returned as-is.
 
 (let ((lp (logical-pathname "LPH:DATA;FILE.TXT")))
   (eq lp (logical-pathname lp)))
-→ T
+=> T
 ```
 
 ### Accessing components of a logical pathname
@@ -47,12 +47,10 @@ Once created, the components of a logical pathname can be examined with the stan
       '(("**;*.*.*" "/home/dev/proj/**/*.*")))
 
 (let ((lp (logical-pathname "PROJ:SRC;UTILS.LISP.1")))
-  (values (pathname-host lp)
-          (pathname-directory lp)
+  (values (pathname-directory lp)
           (pathname-name lp)
           (pathname-type lp)))
-→ "PROJ"
-→ (:ABSOLUTE "SRC")
-→ "UTILS"
-→ "LISP"
+=> (:ABSOLUTE "SRC")
+=> "UTILS"
+=> "LISP"
 ```

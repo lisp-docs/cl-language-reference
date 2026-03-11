@@ -16,8 +16,8 @@ import ParseNamestringFunction from './_parse-namestring_function.md';
 
 ```lisp
 (parse-namestring "foo.lisp")
-→ #P"foo.lisp"
-→ 8
+=> #P"foo.lisp"
+=> 8
 ```
 
 ### Parsing a full path
@@ -29,9 +29,9 @@ A complete file path string is parsed into its component parts.
   (values (pathname-directory p)
           (pathname-name p)
           (pathname-type p)))
-→ (:ABSOLUTE "home" "user")
-→ "data"
-→ "txt"
+=> (:ABSOLUTE "home" "user")
+=> "data"
+=> "txt"
 ```
 
 ### Parsing a substring with :start and :end
@@ -39,9 +39,10 @@ A complete file path string is parsed into its component parts.
 The `:start` and `:end` keyword arguments restrict parsing to a portion of the string.
 
 ```lisp
-(parse-namestring "xxxfoo.lispyyy" nil nil :start 3 :end 11)
-→ #P"foo.lisp"
-→ 11
+(parse-namestring "xxxfoo.lispyyy" nil *default-pathname-defaults*
+                  :start 3 :end 11)
+=> #P"foo.lisp"
+=> 8
 ```
 
 ### A pathname argument is returned as-is
@@ -50,8 +51,8 @@ If the first argument is already a pathname, it is returned unchanged along with
 
 ```lisp
 (parse-namestring #P"/tmp/test.txt")
-→ #P"/tmp/test.txt"
-→ 0
+=> #P"/tmp/test.txt"
+=> 0
 ```
 
 ### Parsing an empty string
@@ -62,6 +63,6 @@ Parsing an empty string succeeds and produces a pathname with all components (ex
 (let ((p (parse-namestring "")))
   (values (pathname-name p)
           (pathname-type p)))
-→ NIL
-→ NIL
+=> NIL
+=> NIL
 ```

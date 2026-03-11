@@ -16,10 +16,10 @@ import PathnamepFunction from './_pathnamep_function.md';
 
 ```lisp
 (pathnamep #P"/tmp/test.lisp")
-→ T
+=> T
 
 (pathnamep "just-a-string")
-→ NIL
+=> NIL
 ```
 
 ### Strings are not pathnames
@@ -28,10 +28,10 @@ Even though strings can designate pathnames in many contexts, they are not thems
 
 ```lisp
 (pathnamep "/usr/local/bin")
-→ NIL
+=> NIL
 
 (pathnamep (pathname "/usr/local/bin"))
-→ T
+=> T
 ```
 
 ### Logical pathnames are also pathnames
@@ -43,7 +43,7 @@ Since `logical-pathname` is a subtype of `pathname`, logical pathnames satisfy `
       '(("**;*.*.*" "/tmp/**/*.*")))
 
 (pathnamep (logical-pathname "MYHOST:CODE;UTILS.LISP"))
-→ T
+=> T
 ```
 
 ### Equivalent to typep
@@ -54,6 +54,6 @@ Since `logical-pathname` is a subtype of `pathname`, logical pathnames satisfy `
 (let ((p (make-pathname :name "test")))
   (values (pathnamep p)
           (typep p 'pathname)))
-→ T
-→ T
+=> T
+=> T
 ```

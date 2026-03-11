@@ -19,7 +19,7 @@ import PathnameMatchPFunction from './_pathname-match-p_function.md';
                   (make-pathname :directory '(:absolute "tmp")
                                  :name :wild
                                  :type "lisp"))
-→ T
+=> T
 ```
 
 ### Matching with :wild name
@@ -29,11 +29,11 @@ The `:wild` component in a pattern matches any single name.
 ```lisp
 (pathname-match-p (make-pathname :name "foo" :type "lisp")
                   (make-pathname :name :wild :type "lisp"))
-→ T
+=> T
 
 (pathname-match-p (make-pathname :name "foo" :type "txt")
                   (make-pathname :name :wild :type "lisp"))
-→ NIL
+=> NIL
 ```
 
 ### Matching with :wild-inferiors
@@ -46,7 +46,7 @@ The `:wild-inferiors` directory component matches any number of directory levels
                  :name "main" :type "lisp")
   (make-pathname :directory '(:absolute :wild-inferiors)
                  :name :wild :type "lisp"))
-→ T
+=> T
 ```
 
 ### Non-matching pathnames
@@ -56,5 +56,5 @@ When the pathname does not match the pattern, nil is returned.
 ```lisp
 (pathname-match-p (make-pathname :name "data" :type "csv")
                   (make-pathname :name "data" :type "txt"))
-→ NIL
+=> NIL
 ```

@@ -16,11 +16,11 @@ import DefaultPathnameDefaultsVariable from './_default-pathname-defaults_variab
 
 ```lisp
 (pathnamep *default-pathname-defaults*)
-→ T
+=> T
 
 ;; The value is implementation-dependent, e.g.:
 *default-pathname-defaults*
-→ #P"/home/user/"  ; typical on Unix
+;; => #P"/home/user/"  ; typical on Unix
 ```
 
 ### Functions that use the default
@@ -31,7 +31,7 @@ Many pathname functions such as `merge-pathnames`, `parse-namestring`, and `enou
 ;; merge-pathnames fills in from *default-pathname-defaults*
 (let ((*default-pathname-defaults* #P"/home/user/projects/"))
   (merge-pathnames "report.txt"))
-→ #P"/home/user/projects/report.txt"
+;; => #P"/home/user/projects/report.txt"
 ```
 
 ### Temporarily binding the default
@@ -41,7 +41,7 @@ You can use `let` to temporarily change the default pathname for a dynamic scope
 ```lisp
 (let ((*default-pathname-defaults* #P"/tmp/"))
   (namestring (merge-pathnames "output.log")))
-→ "/tmp/output.log"
+=> "/tmp/output.log"
 ```
 
 ### Effect on make-pathname
@@ -50,6 +50,6 @@ You can use `let` to temporarily change the default pathname for a dynamic scope
 
 ```lisp
 (let ((*default-pathname-defaults* #P"/var/data/"))
-  (namestring (make-pathname :name "info" :type "txt")))
-→ "/var/data/info.txt"
+  (namestring (merge-pathnames (make-pathname :name "info" :type "txt"))))
+=> "/var/data/info.txt"
 ```

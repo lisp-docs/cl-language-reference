@@ -19,7 +19,7 @@ import TranslatePathnameFunction from './_translate-pathname_function.md';
   (translate-pathname "/usr/me/init.lisp"
                       "/usr/me/*.lisp"
                       "/usr/me/backup/*.bak"))
-→ "/usr/me/backup/init.bak"
+=> "/usr/me/backup/init.bak"
 ```
 
 ### Translating name components
@@ -28,10 +28,10 @@ The matched wildcard portions of the source replace the wildcard portions in the
 
 ```lisp
 (pathname-name (translate-pathname "foobar" "foo*" "*baz"))
-→ "barbaz"
+=> "barbaz"
 
 (pathname-name (translate-pathname "bar" "*" "foo*"))
-→ "foobar"
+=> "foobar"
 ```
 
 ### Using translate-pathname for file migration
@@ -43,7 +43,7 @@ A common use case is moving files between directory structures while preserving 
   (translate-pathname "/home/user/src/main.lisp"
                       "/home/user/src/*.lisp"
                       "/home/user/backup/*.lisp"))
-→ "/home/user/backup/main.lisp"
+=> "/home/user/backup/main.lisp"
 ```
 
 ### Source must match from-wildcard
@@ -52,11 +52,11 @@ The source pathname must match the from-wildcard (as determined by `pathname-mat
 
 ```lisp
 (pathname-match-p "/usr/me/test.lisp" "/usr/me/*.lisp")
-→ T
+=> T
 
 ;; This succeeds because source matches from-wildcard:
 (translate-pathname "/usr/me/test.lisp"
                     "/usr/me/*.lisp"
                     "/usr/you/*.lisp")
-→ #P"/usr/you/test.lisp"
+=> #P"/usr/you/test.lisp"
 ```

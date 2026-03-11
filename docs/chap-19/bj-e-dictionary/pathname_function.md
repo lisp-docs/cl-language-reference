@@ -16,10 +16,10 @@ The `pathname` function converts a pathname designator (a string, stream, or pat
 
 ```lisp
 (pathname "foo.lisp")
-→ #P"foo.lisp"
+=> #P"foo.lisp"
 
 (pathnamep (pathname "foo.lisp"))
-→ T
+=> T
 ```
 
 ### A pathname passed through is returned as-is
@@ -29,7 +29,7 @@ When the argument is already a pathname, `pathname` returns it unchanged (it is 
 ```lisp
 (let ((p #P"/tmp/test.txt"))
   (eq p (pathname p)))
-→ T
+=> T
 ```
 
 ### Converting from a file stream
@@ -41,7 +41,7 @@ When given a stream associated with a file, `pathname` returns the pathname used
                    :direction :output
                    :if-exists :supersede)
   (pathname s))
-→ #P"/tmp/cl-test-pathname.txt"
+=> #P"/tmp/cl-test-pathname.txt"
 ```
 
 ### Extracting components after conversion
@@ -52,6 +52,6 @@ A common pattern is to convert a string to a pathname and then access its compon
 (let ((p (pathname "/home/user/document.txt")))
   (values (pathname-name p)
           (pathname-type p)))
-→ "document"
-→ "txt"
+=> "document"
+=> "txt"
 ```

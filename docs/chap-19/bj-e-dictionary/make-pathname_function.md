@@ -18,7 +18,7 @@ import MakePathnameFunction from './_make-pathname_function.md';
 (make-pathname :directory '(:absolute "usr" "local")
                :name "config"
                :type "lisp")
-→ #P"/usr/local/config.lisp"
+=> #P"/usr/local/config.lisp"
 ```
 
 ### Building a relative pathname
@@ -29,7 +29,7 @@ Use `:relative` as the first element of the directory list to construct a relati
 (make-pathname :directory '(:relative "src")
                :name "main"
                :type "lisp")
-→ #P"src/main.lisp"
+=> #P"src/main.lisp"
 ```
 
 ### Name and type only
@@ -38,10 +38,10 @@ If only name and type are supplied, the resulting pathname has no directory comp
 
 ```lisp
 (make-pathname :name "data" :type "csv")
-→ #P"data.csv"
+=> #P"data.csv"
 
 (pathname-directory (make-pathname :name "data" :type "csv"))
-→ NIL
+=> NIL
 ```
 
 ### Using defaults to fill in missing components
@@ -51,7 +51,7 @@ The `:defaults` keyword provides fallback values for components not explicitly s
 ```lisp
 (make-pathname :name "output"
                :defaults #P"/home/user/input.txt")
-→ #P"/home/user/output.txt"
+=> #P"/home/user/output.txt"
 ```
 
 ### Directory with wild components
@@ -62,8 +62,8 @@ Wildcard components can be used in directory specifications.
 (make-pathname :directory '(:absolute "usr" :wild)
                :name :wild
                :type "lisp")
-→ #P"/usr/*//*.lisp"  ; exact format is implementation-dependent
+;; => #P"/usr/*//*.lisp"  ; exact format is implementation-dependent
 
 (wild-pathname-p (make-pathname :name :wild))
-→ T
+=> T
 ```

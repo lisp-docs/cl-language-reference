@@ -17,7 +17,7 @@ import LoadLogicalPathnameTranslationsFunction from './_load-logical-pathname-tr
 ```lisp
 ;; If "SYS" is already a known logical host, returns false
 (load-logical-pathname-translations "SYS")
-→ NIL  ; host already defined, implementation-dependent
+;; => NIL  ; host already defined, implementation-dependent
 ```
 
 ### Returns false for already-defined hosts
@@ -29,7 +29,7 @@ If the host is already defined (e.g., via a prior `setf` of `logical-pathname-tr
       '(("**;*.*.*" "/tmp/**/*.*")))
 
 (load-logical-pathname-translations "MYKNOWNHOST")
-→ NIL
+=> NIL
 ```
 
 ### Error on unknown host with no definition file
