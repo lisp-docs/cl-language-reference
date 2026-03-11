@@ -16,82 +16,82 @@ import TypepFunction from './_typep_function.md';
 
 ```lisp
 (typep 42 'integer)
-;; => T
+=> T
 
 (typep "hello" 'string)
-;; => T
+=> T
 
 (typep 3.14 'float)
-;; => T
+=> T
 
 (typep 'foo 'symbol)
-;; => T
+=> T
 ```
 
 ### Everything Is of Type t, Nothing Is of Type nil
 
 ```lisp
 (typep 42 t)
-;; => T
+=> T
 
 (typep nil t)
-;; => T
+=> T
 
 (typep 42 nil)
-;; => NIL
+=> NIL
 
 (typep nil nil)
-;; => NIL
+=> NIL
 ```
 
 ### Compound Type Specifiers
 
 ```lisp
 (typep 5 '(integer 0 10))
-;; => T
+=> T
 
 (typep 15 '(integer 0 10))
-;; => NIL
+=> NIL
 
 (typep 1 '(mod 4))
-;; => T
+=> T
 
 (typep "hello" '(string 5))
-;; => T
+=> T
 ```
 
 ### Using or, and, not Type Specifiers
 
 ```lisp
 (typep 42 '(or string integer))
-;; => T
+=> T
 
 (typep "hi" '(or string integer))
-;; => T
+=> T
 
 (typep 'foo '(and symbol (not keyword)))
-;; => T
+=> T
 
 (typep :foo '(not keyword))
-;; => NIL
+=> NIL
 ```
 
 ### Using satisfies
 
 ```lisp
 (typep 4 '(satisfies evenp))
-;; => T
+=> T
 
 (typep 3 '(satisfies evenp))
-;; => NIL
+=> NIL
 ```
 
 ### Checking member Types
 
 ```lisp
 (typep :red '(member :red :green :blue))
-;; => T
+=> T
 
 (typep :yellow '(member :red :green :blue))
-;; => NIL
+=> NIL
 ```

@@ -16,14 +16,14 @@ import MethodSystemClass from './_method_system-class.md';
 
 ```lisp
 (defgeneric greet (obj))
-;; => #<STANDARD-GENERIC-FUNCTION GREET>
+==> #<STANDARD-GENERIC-FUNCTION GREET>
 
 (defmethod greet ((obj string))
   (format nil "Hello, ~A!" obj))
-;; => #<STANDARD-METHOD GREET (STRING)>
+==> #<STANDARD-METHOD GREET (STRING)>
 
 (greet "world")
-;; => "Hello, world!"
+=> "Hello, world!"
 ```
 
 ### Inspecting Methods

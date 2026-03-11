@@ -16,10 +16,10 @@ import BuiltInClassSystemClass from './_built-in-class_system-class.md';
 
 ```lisp
 (typep (find-class 'integer) 'built-in-class)
-;; => T  (implementation-dependent, but typically true)
+=> T
 
 (typep (find-class 'cons) 'built-in-class)
-;; => T
+=> T
 ```
 
 ### Not a CLOS standard-class
@@ -28,8 +28,8 @@ Built-in classes cannot be subclassed with `defclass` in a portable way. They ha
 
 ```lisp
 (class-of (find-class 'integer))
-;; => #<STANDARD-CLASS BUILT-IN-CLASS>
+==> #<STANDARD-CLASS BUILT-IN-CLASS>
 
 (class-of (find-class 'standard-object))
-;; => #<STANDARD-CLASS STANDARD-CLASS>
+==> #<STANDARD-CLASS STANDARD-CLASS>
 ```

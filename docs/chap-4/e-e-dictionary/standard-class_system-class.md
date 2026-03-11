@@ -16,10 +16,10 @@ import StandardClassSystemClass from './_standard-class_system-class.md';
 
 ```lisp
 (defclass my-widget () ())
-;; => #<STANDARD-CLASS MY-WIDGET>
+==> #<STANDARD-CLASS MY-WIDGET>
 
 (typep (find-class 'my-widget) 'standard-class)
-;; => T
+=> T
 ```
 
 ### Distinguished from Other Metaclasses
@@ -27,10 +27,10 @@ import StandardClassSystemClass from './_standard-class_system-class.md';
 ```lisp
 ;; User-defined classes have metaclass standard-class:
 (class-of (find-class 'my-widget))
-;; => #<STANDARD-CLASS STANDARD-CLASS>
+;; ==> #<STANDARD-CLASS STANDARD-CLASS>
 
 ;; Structure classes have metaclass structure-class:
 (defstruct my-struct a b)
 (class-of (find-class 'my-struct))
-;; => #<STANDARD-CLASS STRUCTURE-CLASS>
+;; ==> #<STANDARD-CLASS STRUCTURE-CLASS>
 ```

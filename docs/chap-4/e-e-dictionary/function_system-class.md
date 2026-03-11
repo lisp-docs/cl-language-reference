@@ -16,31 +16,33 @@ All function objects are of type `function`. This includes named functions, lamb
 
 ```lisp
 (typep #'car 'function)
-;; => T
+=> T
 
 (typep (lambda (x) x) 'function)
-;; => T
+=> T
 
 (typep #'+ 'function)
-;; => T
+=> T
 ```
 
 ### Non-Functions
 
 ```lisp
 (typep 'car 'function)
-;; => NIL  (a symbol is not a function)
+=> NIL
 
 (typep '(lambda (x) x) 'function)
-;; => NIL  (a list is not a function)
+=> NIL
 ```
 
 ### Subtype Relationships
 
 ```lisp
 (subtypep 'compiled-function 'function)
-;; => T, T
+=> T
+=> T
 
 (subtypep 'function t)
-;; => T, T
+=> T
+=> T
 ```

@@ -15,12 +15,14 @@ import TypeErrorDatumFunction from './_type-error-datum_type-error-expected-type
 `type-error-datum` returns the offending object, and `type-error-expected-type` returns the type that was expected.
 
 ```lisp
-(handler-case
-    (check-type nil string)
-  (type-error (c)
-    (values (type-error-datum c)
-            (type-error-expected-type c))))
-;; => NIL, STRING
+(let ((x nil))
+  (handler-case
+      (check-type x string)
+    (type-error (c)
+      (values (type-error-datum c)
+              (type-error-expected-type c)))))
+=> NIL
+=> STRING
 ```
 
 ### Using Both Accessors for Error Reporting
@@ -33,11 +35,10 @@ import TypeErrorDatumFunction from './_type-error-datum_type-error-expected-type
       (format nil "Cannot coerce ~S to ~A"
               (type-error-datum c)
               (type-error-expected-type c)))))
-;; => SAFE-CHAR
+=> SAFE-CHAR
 
 (safe-char "hello")
-;; => "Cannot coerce \"hello\" to CHARACTER"
-;; (exact message depends on what the implementation signals)
+=> "Cannot coerce \"hello\" to (OR CHARACTER (STRING 1))"
 ```
 
 ### With Manually Signaled Errors
@@ -48,5 +49,5 @@ import TypeErrorDatumFunction from './_type-error-datum_type-error-expected-type
   (type-error (c)
     (list :datum (type-error-datum c)
           :expected (type-error-expected-type c))))
-;; => (:DATUM 42 :EXPECTED STRING)
+=> (:DATUM 42 :EXPECTED STRING)
 ```

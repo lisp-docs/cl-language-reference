@@ -17,13 +17,13 @@ import DeftypeMacro from './_deftype_macro.md';
 ```lisp
 (deftype non-negative-integer ()
   '(integer 0 *))
-;; => NON-NEGATIVE-INTEGER
+=> NON-NEGATIVE-INTEGER
 
 (typep 5 'non-negative-integer)
-;; => T
+=> T
 
 (typep -1 'non-negative-integer)
-;; => NIL
+=> NIL
 ```
 
 ### Parameterized Type Definitions
@@ -33,16 +33,16 @@ import DeftypeMacro from './_deftype_macro.md';
 ```lisp
 (deftype string-of-length (&optional (length '*))
   `(string ,length))
-;; => STRING-OF-LENGTH
+=> STRING-OF-LENGTH
 
 (typep "hello" '(string-of-length 5))
-;; => T
+=> T
 
 (typep "hi" '(string-of-length 5))
-;; => NIL
+=> NIL
 
 (typep "anything" 'string-of-length)
-;; => T  (length defaults to *)
+=> T
 ```
 
 ### Defining a Type Using satisfies
@@ -50,17 +50,17 @@ import DeftypeMacro from './_deftype_macro.md';
 ```lisp
 (defun non-empty-list-p (x)
   (and (listp x) (not (null x))))
-;; => NON-EMPTY-LIST-P
+=> NON-EMPTY-LIST-P
 
 (deftype non-empty-list ()
   '(and list (satisfies non-empty-list-p)))
-;; => NON-EMPTY-LIST
+=> NON-EMPTY-LIST
 
 (typep '(1 2) 'non-empty-list)
-;; => T
+=> T
 
 (typep nil 'non-empty-list)
-;; => NIL
+=> NIL
 ```
 
 ### Compound Types with deftype
@@ -68,13 +68,13 @@ import DeftypeMacro from './_deftype_macro.md';
 ```lisp
 (deftype unsigned-byte-8 ()
   '(unsigned-byte 8))
-;; => UNSIGNED-BYTE-8
+=> UNSIGNED-BYTE-8
 
 (typep 255 'unsigned-byte-8)
-;; => T
+=> T
 
 (typep 256 'unsigned-byte-8)
-;; => NIL
+=> NIL
 ```
 
 ### Using the Type in Declarations
@@ -82,10 +82,10 @@ import DeftypeMacro from './_deftype_macro.md';
 ```lisp
 (deftype probability ()
   '(float 0.0 1.0))
-;; => PROBABILITY
+=> PROBABILITY
 
 (let ((p 0.5))
   (declare (type probability p))
   p)
-;; => 0.5
+=> 0.5
 ```

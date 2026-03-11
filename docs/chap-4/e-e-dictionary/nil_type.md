@@ -16,13 +16,13 @@ As a type specifier, `nil` denotes the empty type -- no object is of type `nil`.
 
 ```lisp
 (typep nil nil)
-;; => NIL
+=> NIL
 
 (typep 42 nil)
-;; => NIL
+=> NIL
 
 (typep t nil)
-;; => NIL
+=> NIL
 ```
 
 ### Subtype of Everything
@@ -31,13 +31,16 @@ The `nil` type is a subtype of every type.
 
 ```lisp
 (subtypep nil 'integer)
-;; => T, T
+=> T
+=> T
 
 (subtypep nil 'string)
-;; => T, T
+=> T
+=> T
 
 (subtypep nil t)
-;; => T, T
+=> T
+=> T
 ```
 
 ### Coercing to nil Always Fails
@@ -45,5 +48,5 @@ The `nil` type is a subtype of every type.
 ```lisp
 (handler-case (coerce 42 nil)
   (type-error () "type-error signaled"))
-;; => "type-error signaled"
+=> "type-error signaled"
 ```

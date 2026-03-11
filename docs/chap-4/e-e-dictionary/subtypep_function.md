@@ -16,13 +16,16 @@ import SubtypepFunction from './_subtypep_function.md';
 
 ```lisp
 (subtypep 'integer 'number)
-;; => T, T
+=> T
+=> T
 
 (subtypep 'string 'sequence)
-;; => T, T
+=> T
+=> T
 
 (subtypep 'null 'list)
-;; => T, T
+=> T
+=> T
 ```
 
 ### Negative Results
@@ -31,10 +34,12 @@ When type-1 is definitely not a subtype of type-2, the first value is `nil` and 
 
 ```lisp
 (subtypep 'integer 'string)
-;; => NIL, T
+=> NIL
+=> T
 
 (subtypep 'symbol 'number)
-;; => NIL, T
+=> NIL
+=> T
 ```
 
 ### Uncertain Results
@@ -43,39 +48,47 @@ When `subtypep` cannot determine the relationship, it returns `nil, nil`.
 
 ```lisp
 (subtypep '(satisfies evenp) 'integer)
-;; => NIL, NIL  (or T, T in some implementations)
+=> NIL
+=> NIL
 ```
 
 ### Numeric Range Types
 
 ```lisp
 (subtypep '(integer 1 3) '(integer 1 4))
-;; => T, T
+=> T
+=> T
 
 (subtypep '(integer 1 10) '(integer 0 5))
-;; => NIL, T
+=> NIL
+=> T
 ```
 
 ### Class Hierarchy
 
 ```lisp
 (subtypep 'compiled-function 'function)
-;; => T, T
+=> T
+=> T
 
 (subtypep 'null 'symbol)
-;; => T, T
+=> T
+=> T
 
 (subtypep 'fixnum 'integer)
-;; => T, T
+=> T
+=> T
 ```
 
 ### Identical Types
 
 ```lisp
 (subtypep 'integer 'integer)
-;; => T, T
+=> T
+=> T
 
 ;; The empty type is a subtype of everything:
 (subtypep nil 'integer)
-;; => T, T
+=> T
+=> T
 ```

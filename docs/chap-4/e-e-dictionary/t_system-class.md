@@ -16,29 +16,32 @@ As a type specifier, `t` denotes the set of all objects. Every object is of type
 
 ```lisp
 (typep 42 t)
-;; => T
+=> T
 
 (typep "hello" t)
-;; => T
+=> T
 
 (typep nil t)
-;; => T
+=> T
 
 (typep #'car t)
-;; => T
+=> T
 ```
 
 ### Every Type Is a Subtype of t
 
 ```lisp
 (subtypep 'integer t)
-;; => T, T
+=> T
+=> T
 
 (subtypep 'string t)
-;; => T, T
+=> T
+=> T
 
 (subtypep nil t)
-;; => T, T
+=> T
+=> T
 ```
 
 ### t as a Class
@@ -47,8 +50,8 @@ As a type specifier, `t` denotes the set of all objects. Every object is of type
 
 ```lisp
 (find-class t)
-;; => #<BUILT-IN-CLASS T>
+==> #<BUILT-IN-CLASS T>
 
 (class-name (find-class t))
-;; => T
+=> T
 ```

@@ -16,49 +16,49 @@ import TypeOfFunction from './_type-of_function.md';
 
 ```lisp
 (type-of 42)
-;; => FIXNUM  (or (INTEGER 0 4611686018427387903), etc.)
+=> (INTEGER 0 4611686018427387903)
 
 (type-of 'hello)
-;; => SYMBOL
+=> SYMBOL
 
 (type-of "hello")
-;; => (SIMPLE-BASE-STRING 5)  (or STRING, etc.)
+=> (SIMPLE-ARRAY CHARACTER (5))
 
 (type-of #\A)
-;; => STANDARD-CHAR  (or CHARACTER, etc.)
+=> STANDARD-CHAR
 ```
 
 ### Structures Return Their Type Name
 
 ```lisp
 (defstruct point x y)
-;; => POINT
+=> POINT
 
 (type-of (make-point :x 1 :y 2))
-;; => POINT
+=> POINT
 ```
 
 ### Lists and Cons Cells
 
 ```lisp
 (type-of '(1 . 2))
-;; => CONS
+=> CONS
 
 (type-of nil)
-;; => NULL
+=> NULL
 
 (type-of '())
-;; => NULL
+=> NULL
 ```
 
 ### Floats Return Specific Float Types
 
 ```lisp
 (type-of 1.0)
-;; => SINGLE-FLOAT  (or DOUBLE-FLOAT depending on read default)
+=> SINGLE-FLOAT
 
 (type-of 1.0d0)
-;; => DOUBLE-FLOAT
+=> DOUBLE-FLOAT
 ```
 
 ### The Result Is Always a Valid typep Argument
@@ -66,5 +66,5 @@ import TypeOfFunction from './_type-of_function.md';
 ```lisp
 (let ((obj (list 1 2 3)))
   (typep obj (type-of obj)))
-;; => T
+=> T
 ```

@@ -18,8 +18,8 @@ import StandardGenericFunctionSystemClass from './_standard-generic-function_sys
 (defgeneric volume (shape))
 
 (typep #'volume 'standard-generic-function)
-;; => T
+=> T
 
 (typep #'volume 'generic-function)
-;; => T
+=> T
 ```

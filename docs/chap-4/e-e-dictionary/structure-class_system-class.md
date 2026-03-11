@@ -16,20 +16,20 @@ import StructureClassSystemClass from './_structure-class_system-class.md';
 
 ```lisp
 (defstruct color r g b)
-;; => COLOR
+=> COLOR
 
 (typep (find-class 'color) 'structure-class)
-;; => T
+=> T
 ```
 
 ### Distinguishing from standard-class
 
 ```lisp
 (defclass my-object () ())
-;; => #<STANDARD-CLASS MY-OBJECT>
+==> #<STANDARD-CLASS MY-OBJECT>
 
 (typep (find-class 'my-object) 'structure-class)
-;; => NIL
+=> NIL
 
 (typep (find-class 'color) 'standard-class)
 ;; => NIL

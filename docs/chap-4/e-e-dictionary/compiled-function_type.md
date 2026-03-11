@@ -16,25 +16,28 @@ import CompiledFunctionType from './_compiled-function_type.md';
 
 ```lisp
 (defun my-fn (x) (+ x 1))
-;; => MY-FN
+=> MY-FN
 
 (compile 'my-fn)
-;; => MY-FN
+=> MY-FN
+=> NIL
+=> NIL
 
 (typep #'my-fn 'compiled-function)
-;; => T
+=> T
 ```
 
 ### Compiling a Lambda
 
 ```lisp
 (typep (compile nil '(lambda (x) (* x x))) 'compiled-function)
-;; => T
+=> T
 ```
 
 ### Subtype of function
 
 ```lisp
 (subtypep 'compiled-function 'function)
-;; => T, T
+=> T
+=> T
 ```

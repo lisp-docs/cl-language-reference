@@ -16,15 +16,16 @@ import StandardObjectClass from './_standard-object_class.md';
 
 ```lisp
 (defclass my-thing () ())
-;; => #<STANDARD-CLASS MY-THING>
+==> #<STANDARD-CLASS MY-THING>
 
 (typep (make-instance 'my-thing) 'standard-object)
-;; => T
+=> T
 ```
 
 ### Subtype Relationships
 
 ```lisp
 (subtypep 'standard-object t)
-;; => T, T
+=> T
+=> T
 ```

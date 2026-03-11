@@ -16,24 +16,26 @@ The type `boolean` contains exactly two elements: `t` and `nil`. It is equivalen
 
 ```lisp
 (typep t 'boolean)
-;; => T
+=> T
 
 (typep nil 'boolean)
-;; => T
+=> T
 
 (typep 42 'boolean)
-;; => NIL
+=> NIL
 
 (typep :true 'boolean)
-;; => NIL
+=> NIL
 ```
 
 ### Subtype Relationships
 
 ```lisp
 (subtypep 'boolean 'symbol)
-;; => T, T
+=> T
+=> T
 
 (subtypep 'null 'boolean)
-;; => T, T
+=> T
+=> T
 ```

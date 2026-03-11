@@ -16,18 +16,20 @@ import StructureObjectClass from './_structure-object_class.md';
 
 ```lisp
 (defstruct point x y)
-;; => POINT
+=> POINT
 
 (typep (make-point) 'structure-object)
-;; => T
+=> T
 ```
 
 ### Subtype Relationships
 
 ```lisp
 (subtypep 'point 'structure-object)
-;; => T, T
+;; => T
+;; => T
 
 (subtypep 'structure-object t)
-;; => T, T
+=> T
+=> T
 ```

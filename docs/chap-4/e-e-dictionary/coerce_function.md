@@ -16,13 +16,13 @@ Lists can be coerced to vectors and vice versa.
 
 ```lisp
 (coerce '(a b c) 'vector)
-;; => #(A B C)
+=> #(A B C)
 
 (coerce #(1 2 3) 'list)
-;; => (1 2 3)
+=> (1 2 3)
 
 (coerce '(#\h #\i) 'string)
-;; => "hi"
+=> "hi"
 ```
 
 ### Coercing Characters
@@ -31,47 +31,47 @@ A character designator (a string of length 1, or a symbol with a one-character n
 
 ```lisp
 (coerce 'a 'character)
-;; => #\A
+=> #\A
 
 (coerce "z" 'character)
-;; => #\z
+=> #\z
 ```
 
 ### Coercing Numbers to Float
 
 ```lisp
 (coerce 5 'float)
-;; => 5.0
+=> 5.0
 
 (coerce 7/2 'float)
-;; => 3.5
+=> 3.5
 
 (coerce 0 'short-float)
-;; => 0.0s0
+=> 0.0s0
 
 (coerce 1 'double-float)
-;; => 1.0d0
+=> 1.0d0
 ```
 
 ### Coercing to Complex
 
 ```lisp
 (coerce 4.5 'complex)
-;; => #C(4.5 0.0)
+=> #C(4.5 0.0)
 
 ;; Rational numbers remain rational (canonical representation rule):
 (coerce 3 'complex)
-;; => 3
+=> 3
 ```
 
 ### Coercing Lambda Expressions to Functions
 
 ```lisp
 (coerce '(lambda (x) (* x x)) 'function)
-;; => #<FUNCTION ...>
+==> #<FUNCTION ...>
 
 (funcall (coerce '(lambda (x) (+ x 1)) 'function) 10)
-;; => 11
+=> 11
 ```
 
 ### Identity Coercion with t
@@ -80,5 +80,5 @@ Any object can be coerced to type `t`, which returns the object unchanged.
 
 ```lisp
 (coerce '(1 . 2) t)
-;; => (1 . 2)
+=> (1 . 2)
 ```

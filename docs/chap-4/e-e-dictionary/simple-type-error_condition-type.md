@@ -23,7 +23,7 @@ import SimpleTypeErrorConditionType from './_simple-type-error_condition-type.md
            :format-arguments '(integer "hello"))
   (simple-type-error (c)
     (format nil "~A" c)))
-;; => "Expected INTEGER but got \"hello\""
+=> "Expected INTEGER but got \"hello\""
 ```
 
 ### Accessing Both Sets of Slots
@@ -39,5 +39,5 @@ import SimpleTypeErrorConditionType from './_simple-type-error_condition-type.md
     (list :datum (type-error-datum c)
           :expected (type-error-expected-type c)
           :message (simple-condition-format-control c))))
-;; => (:DATUM 3.14 :EXPECTED INTEGER :MESSAGE "~S is not an integer")
+=> (:DATUM 3.14 :EXPECTED INTEGER :MESSAGE "~S is not an integer")
 ```

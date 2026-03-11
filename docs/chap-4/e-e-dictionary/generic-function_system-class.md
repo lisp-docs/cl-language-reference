@@ -18,15 +18,15 @@ import GenericFunctionSystemClass from './_generic-function_system-class.md';
 (defgeneric area (shape))
 
 (typep #'area 'generic-function)
-;; => T
+=> T
 
 (typep #'area 'function)
-;; => T
+=> T
 ```
 
 ### Ordinary Functions Are Not Generic
 
 ```lisp
 (typep #'car 'generic-function)
-;; => NIL
+=> NIL
 ```

@@ -32,7 +32,7 @@ import MethodCombinationSystemClass from './_method-combination_system-class.md'
 ;; Before: test
 ;; Primary: test
 ;; After: test
-;; => NIL
+=> NIL
 ```
 
 ### Built-in Method Combinations
@@ -50,5 +50,5 @@ Common Lisp provides several built-in method combinations including `+`, `list`,
 (defmethod total-weight + ((obj heavy-container)) 50)
 
 (total-weight (make-instance 'heavy-container))
-;; => 60  (10 + 50)
+=> 60
 ```

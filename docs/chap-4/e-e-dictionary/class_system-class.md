@@ -16,18 +16,18 @@ import ClassSystemClass from './_class_system-class.md';
 
 ```lisp
 (typep (find-class 'integer) 'class)
-;; => T
+=> T
 
 (typep (find-class 't) 'class)
-;; => T
+=> T
 ```
 
 ### Finding Classes
 
 ```lisp
 (find-class 'string)
-;; => #<BUILT-IN-CLASS STRING>
+==> #<BUILT-IN-CLASS STRING>
 
 (class-name (find-class 'string))
-;; => STRING
+=> STRING
 ```
