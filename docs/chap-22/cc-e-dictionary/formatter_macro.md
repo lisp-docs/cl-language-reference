@@ -16,8 +16,8 @@ import FormatterMacro from './_formatter_macro.md';
 
 ```lisp
 (funcall (formatter "~A + ~A = ~A") *standard-output* 2 3 5)
-; >> 2 + 3 = 5
-; => NIL
+.. 2 + 3 = 5
+=> NIL
 ```
 
 ### Using with format
@@ -26,11 +26,12 @@ The function returned by `formatter` can be passed to `format` in place of a str
 
 ```lisp
 (format t (formatter "Hello, ~A!~%") "world")
-; >> Hello, world!
-; => NIL
+.. Hello, world!
+..
+=> NIL
 
 (format nil (formatter "~D items") 42)
-; => "42 items"
+=> "42 items"
 ```
 
 ### Return Value -- Remaining Arguments
@@ -39,8 +40,8 @@ When called directly with `funcall`, the function returns the tail of the argume
 
 ```lisp
 (funcall (formatter "~A ~A") *standard-output* 'x 'y 'z 'w)
-; >> X Y
-; => (Z W)
+.. X Y
+=> (Z W)
 ```
 
 ### Pre-compiled for Efficiency
@@ -52,9 +53,9 @@ When called directly with `funcall`, the function returns the tail of the argume
   (with-output-to-string (s)
     (funcall fmt s "Widget" 10)
     (funcall fmt s "Gadget" 5)))
-; => "Item: Widget, Qty: 10
-; Item: Gadget, Qty: 5
-; "
+=> "Item: Widget, Qty: 10
+Item: Gadget, Qty: 5
+"
 ```
 
 ### Using with set-pprint-dispatch
@@ -65,7 +66,7 @@ When called directly with `funcall`, the function returns the tail of the argume
 (let ((*print-pprint-dispatch* (copy-pprint-dispatch))
       (*print-pretty* t))
   (set-pprint-dispatch '(cons (eql :pair))
-    (formatter "~:<~W ~:_~W~:>"))
+    (formatter "~:<~W ~:_~W ~:_~W~:>"))
   (write-to-string '(:pair "key" "value")))
-; => "(:PAIR \"key\" \"value\")"
+=> "(:PAIR \"key\" \"value\")"
 ```

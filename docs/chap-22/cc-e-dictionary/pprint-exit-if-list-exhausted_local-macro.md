@@ -23,7 +23,7 @@ import PprintExitIfListExhaustedLocalMacro from './_pprint-exit-if-list-exhauste
         (write (pprint-pop) :stream s)
         (pprint-exit-if-list-exhausted)
         (write-char #\Space s)))))
-; => "(A B C)"
+=> "(A B C)"
 ```
 
 ### Controlling Loop Termination
@@ -41,7 +41,7 @@ It is commonly used as the loop termination condition when iterating over list e
         (pprint-exit-if-list-exhausted)
         (write-char #\Space s)
         (pprint-newline :fill s)))))
-; => "[1 2 3 4 5]"
+=> "[1 2 3 4 5]"
 ```
 
 ### Empty List Handling
@@ -54,5 +54,5 @@ When the list is empty, `pprint-exit-if-list-exhausted` immediately terminates t
     (pprint-logical-block (s '() :prefix "(" :suffix ")")
       (pprint-exit-if-list-exhausted)
       (write (pprint-pop) :stream s))))
-; => "()"
+=> "()"
 ```

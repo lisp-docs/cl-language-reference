@@ -24,7 +24,7 @@ User-defined classes can have custom print representations by defining a method 
     (format stream "~A age ~D" (person-name p) (person-age p))))
 
 (make-instance 'person :name "Alice" :age 30)
-; => #<PERSON Alice age 30 {10042A0003}>
+==> #<PERSON Alice age 30 {10042A0003}>
 ```
 
 ### Respecting *print-escape*
@@ -44,7 +44,7 @@ A well-written `print-object` method should check `*print-escape*` to decide whe
 (let ((c (make-instance 'color :name "red")))
   (list (prin1-to-string c)
         (princ-to-string c)))
-; => ("#<COLOR \"red\">" "red")
+=> ("#<COLOR \"red\">" "red")
 ```
 
 ### Printing Structures
@@ -55,7 +55,7 @@ Structures use the default `#S(...)` notation unless a `:print-function` or `:pr
 (defstruct point x y)
 
 (make-point :x 3 :y 4)
-; => #S(POINT :X 3 :Y 4)
+;; => #S(POINT :X 3 :Y 4)
 
 ;; Custom print-object for a structure
 (defstruct (vec2 (:constructor make-vec2 (x y)))
@@ -66,5 +66,5 @@ Structures use the default `#S(...)` notation unless a `:print-function` or `:pr
     (format stream "(~A, ~A)" (vec2-x v) (vec2-y v))))
 
 (make-vec2 3.0 4.0)
-; => #<VEC2 (3.0, 4.0)>
+==> #<VEC2 (3.0, 4.0)>
 ```

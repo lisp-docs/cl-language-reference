@@ -17,7 +17,7 @@ When `*print-length*` is nil, there is no limit on the number of elements printe
 ```lisp
 (let ((*print-length* nil))
   (write-to-string '(a b c d e f g)))
-; => "(A B C D E F G)"
+=> "(A B C D E F G)"
 ```
 
 ### Truncating Lists
@@ -27,15 +27,15 @@ When `*print-length*` is an integer, only that many elements of each list level 
 ```lisp
 (let ((*print-length* 3))
   (write-to-string '(a b c d e f)))
-; => "(A B C ...)"
+=> "(A B C ...)"
 
 (let ((*print-length* 0))
   (write-to-string '(a b c)))
-; => "(...)"
+=> "(...)"
 
 (let ((*print-length* 1))
   (write-to-string '(a b c)))
-; => "(A ...)"
+=> "(A ...)"
 ```
 
 ### Effect on Vectors
@@ -45,7 +45,7 @@ When `*print-length*` is an integer, only that many elements of each list level 
 ```lisp
 (let ((*print-length* 3))
   (write-to-string #(1 2 3 4 5)))
-; => "#(1 2 3 ...)"
+=> "#(1 2 3 ...)"
 ```
 
 ### Combined with *print-level*
@@ -56,7 +56,7 @@ When `*print-length*` is an integer, only that many elements of each list level 
 (let ((*print-level* 2)
       (*print-length* 3))
   (write-to-string '(if (member x y) (+ (car x) 3) (foo a b c d))))
-; => "(IF (MEMBER X ...) (+ # 3) ...)"
+;; => "(IF (MEMBER X Y) (+ # 3) ...)"
 ```
 
 ### Does Not Affect Strings or Bit Vectors
@@ -64,9 +64,9 @@ When `*print-length*` is an integer, only that many elements of each list level 
 ```lisp
 (let ((*print-length* 3))
   (write-to-string "abcdefg"))
-; => "\"abcdefg\""
+=> "\"abcdefg\""
 
 (let ((*print-length* 3))
   (write-to-string #*11001100))
-; => "#*11001100"
+=> "#*11001100"
 ```

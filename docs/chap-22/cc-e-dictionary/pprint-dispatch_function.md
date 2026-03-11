@@ -19,7 +19,7 @@ import PprintDispatchFunction from './_pprint-dispatch_function.md';
 (multiple-value-bind (fn found-p)
     (pprint-dispatch 42)
   (list (functionp fn) found-p))
-; => (T T)
+=> (T NIL)
 ```
 
 ### Checking for Custom Entries
@@ -33,7 +33,7 @@ The second return value indicates whether a matching type specifier was found in
   (multiple-value-bind (fn found-p)
       (pprint-dispatch "hello")
     found-p))
-; => T
+=> T
 ```
 
 ### Using the Initial Table
@@ -44,7 +44,7 @@ Passing nil as the table argument looks up in the initial (standard) pprint disp
 (multiple-value-bind (fn found-p)
     (pprint-dispatch '(defun foo () nil) nil)
   found-p)
-; => T
+=> T
 ```
 
 ### Equivalence to Pretty Printing
@@ -60,5 +60,5 @@ Calling the returned function on a stream and object is equivalent to pretty-pri
       (pprint-dispatch obj)
     (with-output-to-string (s)
       (funcall fn s obj))))
-; => "(+ 1 2)"
+=> "(+ 1 2)"
 ```

@@ -23,7 +23,7 @@ import PprintPopLocalMacro from './_pprint-pop_local-macro.md';
       (write (pprint-pop) :stream s)    ; pops B
       (write-char #\Space s)
       (write (pprint-pop) :stream s)))) ; pops C
-; => "(A B C)"
+=> "(A B C)"
 ```
 
 ### Respects *print-length*
@@ -39,7 +39,7 @@ import PprintPopLocalMacro from './_pprint-pop_local-macro.md';
             (write (pprint-pop) :stream s)
             (pprint-exit-if-list-exhausted)
             (write-char #\Space s)))))
-; => "(A B C ...)"
+=> "(A B C ...)"
 ```
 
 ### Handles Dotted Lists
@@ -54,7 +54,7 @@ If the remaining tail is not a list (i.e., a dotted pair), `pprint-pop` prints `
             (write (pprint-pop) :stream s)
             (pprint-exit-if-list-exhausted)
             (write-char #\Space s)))))
-; => "(A B . C)"
+=> "(A B . C)"
 ```
 
 ### With nil Object for Non-List Printing
@@ -70,5 +70,5 @@ When `pprint-logical-block` is given nil as the object, `pprint-pop` always retu
         (unless (zerop i) (write-char #\Space s))
         (pprint-pop)  ; for *print-length* tracking
         (write i :stream s)))))
-; => "#(0 1 2 ...)"
+=> "#(0 1 2 ...)"
 ```

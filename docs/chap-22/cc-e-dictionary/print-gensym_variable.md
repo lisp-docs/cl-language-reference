@@ -17,11 +17,11 @@ When `*print-gensym*` is true, uninterned symbols are printed with the `#:` pref
 ```lisp
 (let ((*print-gensym* t))
   (write-to-string (make-symbol "FOO")))
-; => "#:FOO"
+=> "#:FOO"
 
 (let ((*print-gensym* t))
   (write-to-string (gensym)))
-; => "#:G123"  ; exact number is implementation-dependent
+;; => "#:G123"
 ```
 
 ### When Set to NIL
@@ -31,7 +31,7 @@ When `*print-gensym*` is false, uninterned symbols are printed without the `#:` 
 ```lisp
 (let ((*print-gensym* nil))
   (write-to-string (make-symbol "FOO")))
-; => "FOO"
+=> "FOO"
 ```
 
 ### Impact on Readability
@@ -45,7 +45,7 @@ Without the `#:` prefix, reading the output back would produce an interned symbo
        (without-prefix (let ((*print-gensym* nil))
                          (write-to-string sym))))
   (list with-prefix without-prefix))
-; => ("#:TEMP1" "TEMP1")  ; exact numbers are implementation-dependent
+;; => ("#:TEMP1" "TEMP1")
 ```
 
 ### print Uses Current Value
@@ -55,5 +55,5 @@ Without the `#:` prefix, reading the output back would produce an interned symbo
 ```lisp
 (let ((*print-gensym* nil))
   (prin1-to-string (gensym "X")))
-; => "X1"  ; exact number is implementation-dependent
+;; => "X1"
 ```

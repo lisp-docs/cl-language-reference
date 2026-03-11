@@ -19,11 +19,11 @@ import PprintFillFunction from './_pprint-fill_pprint-linear_pprint-tabular_func
       (*print-right-margin* 30))
   (with-output-to-string (s)
     (pprint-linear s '(alpha beta gamma delta epsilon))))
-; => "(ALPHA
-;  BETA
-;  GAMMA
-;  DELTA
-;  EPSILON)"
+=> "(ALPHA
+ BETA
+ GAMMA
+ DELTA
+ EPSILON)"
 ```
 
 ### pprint-fill -- Fill as Many as Fit
@@ -35,8 +35,8 @@ import PprintFillFunction from './_pprint-fill_pprint-linear_pprint-tabular_func
       (*print-right-margin* 30))
   (with-output-to-string (s)
     (pprint-fill s '(alpha beta gamma delta epsilon zeta))))
-; => "(ALPHA BETA GAMMA DELTA
-;  EPSILON ZETA)"
+=> "(ALPHA BETA GAMMA DELTA
+ EPSILON ZETA)"
 ```
 
 ### pprint-tabular -- Columnar Output
@@ -48,8 +48,8 @@ import PprintFillFunction from './_pprint-fill_pprint-linear_pprint-tabular_func
       (*print-right-margin* 40))
   (with-output-to-string (s)
     (pprint-tabular s '(one two three four five six) t nil 10)))
-; => "(ONE       TWO       THREE
-;  FOUR      FIVE      SIX)"
+=> "(ONE       TWO       THREE     FOUR
+ FIVE      SIX)"
 ```
 
 ### The colon-p Argument Controls Parentheses
@@ -61,13 +61,13 @@ When `colon-p` is true (the default), the output is enclosed in parentheses. Whe
       (*print-right-margin* 40))
   (with-output-to-string (s)
     (pprint-fill s '(a b c d) nil)))
-; => "A B C D"
+=> "A B C D"
 
 (let ((*print-pretty* t)
       (*print-right-margin* 40))
   (with-output-to-string (s)
     (pprint-fill s '(a b c d) t)))
-; => "(A B C D)"
+=> "(A B C D)"
 ```
 
 ### Non-List Arguments Are Printed with write
@@ -78,5 +78,5 @@ If the object is not a list, these functions print it using `write`.
 (let ((*print-pretty* t))
   (with-output-to-string (s)
     (pprint-fill s 42)))
-; => "42"
+=> "42"
 ```

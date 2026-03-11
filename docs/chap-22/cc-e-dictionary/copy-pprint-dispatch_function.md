@@ -17,7 +17,7 @@ With no arguments, `copy-pprint-dispatch` copies the current value of `*print-pp
 ```lisp
 (let ((my-table (copy-pprint-dispatch)))
   (not (eq my-table *print-pprint-dispatch*)))
-; => T
+=> T
 ```
 
 ### Getting the Initial (Standard) Dispatch Table
@@ -29,7 +29,7 @@ Passing nil returns a copy of the initial dispatch table, which contains the sta
 (let ((*print-pprint-dispatch* (copy-pprint-dispatch nil))
       (*print-pretty* t))
   (write-to-string '(defun foo (x) (+ x 1))))
-; => "(DEFUN FOO (X) (+ X 1))"  ; standard pretty printing
+=> "(DEFUN FOO (X) (+ X 1))"
 ```
 
 ### Safe Modification Without Affecting Global State
@@ -44,12 +44,12 @@ Copying ensures that modifications to the new table do not affect the original.
       (format stream "STR(~A)" obj)))
   ;; Only affects the local copy
   (write-to-string "hello"))
-; => "STR(hello)"
+;; => "STR(hello)"
 
 ;; The global table is unmodified
 (let ((*print-pretty* t))
   (write-to-string "hello"))
-; => "\"hello\""
+;; => "\"hello\""
 ```
 
 ### Copying a Specific Table
@@ -60,5 +60,5 @@ You can pass an existing dispatch table to copy it.
 (let* ((table-a (copy-pprint-dispatch))
        (table-b (copy-pprint-dispatch table-a)))
   (not (eq table-a table-b)))
-; => T
+=> T
 ```

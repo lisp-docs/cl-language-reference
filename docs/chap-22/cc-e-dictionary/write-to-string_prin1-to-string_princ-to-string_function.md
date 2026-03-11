@@ -16,17 +16,17 @@ import WriteToStringFunction from './_write-to-string_prin1-to-string_princ-to-s
 
 ```lisp
 (write-to-string 42)
-; => "42"
+=> "42"
 
 (write-to-string '(a b c))
-; => "(A B C)"
+=> "(A B C)"
 
 ;; With keyword arguments
 (write-to-string 255 :base 16 :radix t)
-; => "#xFF"
+=> "#xFF"
 
 (write-to-string 'hello :case :downcase)
-; => "hello"
+=> "hello"
 ```
 
 ### prin1-to-string -- Readable String Representation
@@ -35,16 +35,16 @@ import WriteToStringFunction from './_write-to-string_prin1-to-string_princ-to-s
 
 ```lisp
 (prin1-to-string "abc")
-; => "\"abc\""
+=> "\"abc\""
 
 (prin1-to-string 'hello)
-; => "HELLO"
+=> "HELLO"
 
 (prin1-to-string #\Space)
-; => "#\\Space"
+=> "#\\ "
 
 (prin1-to-string '(1 "two" three))
-; => "(1 \"two\" THREE)"
+=> "(1 \"two\" THREE)"
 ```
 
 ### princ-to-string -- Human-Readable String Representation
@@ -53,16 +53,16 @@ import WriteToStringFunction from './_write-to-string_prin1-to-string_princ-to-s
 
 ```lisp
 (princ-to-string "abc")
-; => "abc"
+=> "abc"
 
 (princ-to-string 'hello)
-; => "HELLO"
+=> "HELLO"
 
 (princ-to-string #\Space)
-; => " "
+=> " "
 
 (princ-to-string '(1 "two" three))
-; => "(1 two THREE)"
+=> "(1 two THREE)"
 ```
 
 ### Comparing All Three
@@ -73,9 +73,9 @@ import WriteToStringFunction from './_write-to-string_prin1-to-string_princ-to-s
   (list (write-to-string obj :escape t)
         (prin1-to-string obj)
         (princ-to-string obj)))
-; => ("\"He said \\\"hi\\\"\"" "\"He said \\\"hi\\\"\"" "He said \"hi\"")
+=> ("\"He said \\\"hi\\\"\"" "\"He said \\\"hi\\\"\"" "He said \"hi\"")
 
 ;; write-to-string with custom settings
 (write-to-string '(a b c d e f) :pretty nil :length 3)
-; => "(A B C ...)"
+=> "(A B C ...)"
 ```

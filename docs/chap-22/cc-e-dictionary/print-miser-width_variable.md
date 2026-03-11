@@ -20,8 +20,8 @@ Miser mode is a compact pretty-printing style that is activated when the availab
       (*print-right-margin* 30)
       (*print-miser-width* 20))
   (write-to-string '(let ((a 1) (b 2)) (+ a b))))
-; => "(LET ((A 1) (B 2))
-;   (+ A B))"
+=> "(LET ((A 1) (B 2))
+  (+ A B))"
 ```
 
 ### Disabling Miser Mode
@@ -33,8 +33,8 @@ When `*print-miser-width*` is nil, miser mode is never activated.
       (*print-right-margin* 40)
       (*print-miser-width* nil))
   (write-to-string '(let ((a 1) (b 2) (c 3)) (+ a b c))))
-; => "(LET ((A 1) (B 2) (C 3))
-;   (+ A B C))"
+=> "(LET ((A 1) (B 2) (C 3))
+  (+ A B C))"
 ```
 
 ### Miser Mode Ignores pprint-indent

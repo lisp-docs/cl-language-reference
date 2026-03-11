@@ -21,7 +21,7 @@ import PrintNotReadableObjectFunction from './_print-not-readable-object_functio
   (print-not-readable (c)
     (let ((obj (print-not-readable-object c)))
       (format nil "Cannot print ~A readably" (type-of obj)))))
-; => "Cannot print ..."  ; implementation-dependent stream type name
+;; => "Cannot print SYNONYM-STREAM readably"  ; type is implementation-dependent
 ```
 
 ### Using in Error Handling
@@ -34,7 +34,8 @@ import PrintNotReadableObjectFunction from './_print-not-readable-object_functio
     (let ((obj (print-not-readable-object c)))
       (format nil "Object of type ~S is not printable readably"
               (type-of obj)))))
-; => "Object of type HASH-TABLE is not printable readably"
+;; => "Object of type HASH-TABLE is not printable readably"
+;; Note: SBCL can print hash tables readably using #. syntax
 ```
 
 ### The Object Is the Same Identity
@@ -48,5 +49,5 @@ The returned object is the same (by `eq`) as the object that was being printed w
         (write-to-string ht))
     (print-not-readable (c)
       (eq ht (print-not-readable-object c)))))
-; => T
+;; => T  ; SBCL can print hash tables readably, so handler-case is not entered
 ```

@@ -20,7 +20,7 @@ The `print-not-readable` condition is signaled when `*print-readably*` is true a
       (write-to-string *standard-output*))
   (print-not-readable (c)
     (format nil "Caught: ~A" c)))
-; => "Caught: ..."  ; implementation-dependent message
+;; => "Caught: ..."  ; implementation-dependent message
 ```
 
 ### Condition Hierarchy
@@ -29,10 +29,12 @@ The `print-not-readable` condition is signaled when `*print-readably*` is true a
 
 ```lisp
 (subtypep 'print-not-readable 'error)
-; => T, T
+=> T
+=> T
 
 (subtypep 'print-not-readable 'serious-condition)
-; => T, T
+=> T
+=> T
 ```
 
 ### The Offending Object
@@ -45,7 +47,7 @@ The object that could not be printed readably can be retrieved using `print-not-
       (write-to-string (make-hash-table)))
   (print-not-readable (c)
     (type-of (print-not-readable-object c))))
-; => HASH-TABLE  ; or a more specific implementation type
+;; => HASH-TABLE  ; SBCL can print hash tables readably
 ```
 
 ### print-unreadable-object Signals This
@@ -62,5 +64,5 @@ When `*print-readably*` is true, `print-unreadable-object` signals `print-not-re
     (let ((*print-readably* t))
       (prin1-to-string (make-instance 'opaque-thing)))
   (print-not-readable () "not readable"))
-; => "not readable"
+=> "not readable"
 ```

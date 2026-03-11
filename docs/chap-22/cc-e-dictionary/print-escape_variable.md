@@ -17,15 +17,15 @@ When `*print-escape*` is true (the default), objects are printed with escape cha
 ```lisp
 (let ((*print-escape* t))
   (write-to-string "hello"))
-; => "\"hello\""
+=> "\"hello\""
 
 (let ((*print-escape* t))
   (write-to-string #\Space))
-; => "#\\Space"
+=> "#\\ "
 
 (let ((*print-escape* t))
   (write-to-string 'foo))
-; => "FOO"
+=> "FOO"
 ```
 
 ### When Set to NIL
@@ -35,11 +35,11 @@ When `*print-escape*` is false, escape characters and package prefixes are omitt
 ```lisp
 (let ((*print-escape* nil))
   (write-to-string "hello"))
-; => "hello"
+=> "hello"
 
 (let ((*print-escape* nil))
   (write-to-string #\Space))
-; => " "
+=> " "
 ```
 
 ### Relationship to prin1 and princ
@@ -49,11 +49,11 @@ When `*print-escape*` is false, escape characters and package prefixes are omitt
 ```lisp
 ;; prin1 uses escape characters
 (prin1-to-string "She said \"hi\"")
-; => "\"She said \\\"hi\\\"\""
+=> "\"She said \\\"hi\\\"\""
 
 ;; princ suppresses escape characters
 (princ-to-string "She said \"hi\"")
-; => "She said \"hi\""
+=> "She said \"hi\""
 ```
 
 ### Effect on Symbols with Special Characters
@@ -61,9 +61,9 @@ When `*print-escape*` is false, escape characters and package prefixes are omitt
 ```lisp
 (let ((*print-escape* t))
   (write-to-string '|hello world|))
-; => "|hello world|"
+=> "|hello world|"
 
 (let ((*print-escape* nil))
   (write-to-string '|hello world|))
-; => "hello world"
+=> "hello world"
 ```

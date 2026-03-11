@@ -26,17 +26,17 @@ If the section cannot fit on one line, line breaks are inserted at every `:linea
 
 ```lisp
 (let ((*print-pretty* t)
-      (*print-right-margin* 20))
+      (*print-right-margin* 8))
   (with-output-to-string (s)
     (pprint-logical-block (s '(a b c d) :prefix "(" :suffix ")")
       (loop (write (pprint-pop) :stream s)
             (pprint-exit-if-list-exhausted)
             (write-char #\Space s)
             (pprint-newline :linear s)))))
-; => "(A
-;  B
-;  C
-;  D)"
+=> "(A
+ B
+ C
+ D)"
 ```
 
 ### :fill -- Pack as Many as Fit
@@ -45,15 +45,15 @@ A `:fill` newline inserts a line break only when the next item would not fit on 
 
 ```lisp
 (let ((*print-pretty* t)
-      (*print-right-margin* 20))
+      (*print-right-margin* 15))
   (with-output-to-string (s)
     (pprint-logical-block (s '(aa bb cc dd ee) :prefix "(" :suffix ")")
       (loop (write (pprint-pop) :stream s)
             (pprint-exit-if-list-exhausted)
             (write-char #\Space s)
             (pprint-newline :fill s)))))
-; => "(AA BB CC DD
-;  EE)"
+=> "(AA BB CC DD
+ EE)"
 ```
 
 ### :mandatory -- Always Break
@@ -69,9 +69,9 @@ A `:mandatory` newline always inserts a line break.
       (write 'b :stream s)
       (pprint-newline :mandatory s)
       (write 'c :stream s))))
-; => "(A
-;  B
-;  C)"
+=> "(A
+ B
+ C)"
 ```
 
 ### No Effect Outside Pretty Printing
@@ -82,5 +82,5 @@ When `*print-pretty*` is false, `pprint-newline` has no effect.
 (let ((*print-pretty* nil))
   (with-output-to-string (s)
     (pprint-newline :mandatory s)))
-; => ""
+=> ""
 ```

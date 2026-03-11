@@ -23,7 +23,7 @@ import PrintUnreadableObjectMacro from './_print-unreadable-object_macro.md';
     (format stream "WIDGET id=~A" (widget-id w))))
 
 (make-instance 'widget :id 42)
-; => #<WIDGET id=42>
+==> #<WIDGET id=42>
 ```
 
 ### Using :type and :identity
@@ -40,7 +40,7 @@ The `:type` option prints the object's type, and `:identity` prints an implement
     (princ (gadget-name g) stream)))
 
 (make-instance 'gadget :name "Sprocket")
-; => #<GADGET Sprocket>
+==> #<GADGET Sprocket>
 
 ;; With both :type and :identity
 (defmethod print-object ((g gadget) stream)
@@ -48,7 +48,7 @@ The `:type` option prints the object's type, and `:identity` prints an implement
     (princ (gadget-name g) stream)))
 
 (make-instance 'gadget :name "Sprocket")
-; => #<GADGET Sprocket {1003AB0123}>
+==> #<GADGET Sprocket {1003AB0123}>
 ```
 
 ### Empty Body with :type and :identity
@@ -62,7 +62,7 @@ When no body forms are given, only the type and/or identity are printed.
   (print-unreadable-object (tok stream :type t :identity t)))
 
 (make-instance 'token)
-; => #<TOKEN {1004CD0003}>
+==> #<TOKEN {1004CD0003}>
 ```
 
 ### Signals Error Under *print-readably*
@@ -81,5 +81,5 @@ If `*print-readably*` is true, `print-unreadable-object` signals a `print-not-re
   (print-not-readable (c)
     (format nil "Cannot print ~S readably"
             (type-of (print-not-readable-object c)))))
-; => "Cannot print OPAQUE readably"
+=> "Cannot print OPAQUE readably"
 ```

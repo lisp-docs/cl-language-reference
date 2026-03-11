@@ -28,7 +28,7 @@ When `*print-circle*` is true, the printer detects circular references and uses 
   (setf (cdddr a) a)
   (let ((*print-circle* t))
     (write-to-string a)))
-; => "#1=(1 2 3 . #1#)"
+=> "#1=(1 2 3 . #1#)"
 ```
 
 ### Detecting Shared Structure
@@ -40,7 +40,7 @@ Shared substructures are also detected and represented using the `#n=`/`#n#` not
        (data (list shared shared)))
   (let ((*print-circle* t))
     (write-to-string data)))
-; => "(#1=(X Y) #1#)"
+=> "(#1=(X Y) #1#)"
 ```
 
 ### Circular Structures in Trees
@@ -50,7 +50,7 @@ Shared substructures are also detected and represented using the `#n=`/`#n#` not
   (setf (second a) a)
   (let ((*print-circle* t))
     (write-to-string a)))
-; => "#1=(1 #1#)"
+=> "#1=(1 #1#)"
 ```
 
 ### Interned Symbols Are Not Marked
@@ -61,5 +61,5 @@ The printer does not use `#n#` notation for interned symbols, since the reader a
 (let ((x (list 'foo 'foo)))
   (let ((*print-circle* t))
     (write-to-string x)))
-; => "(FOO FOO)"
+=> "(FOO FOO)"
 ```

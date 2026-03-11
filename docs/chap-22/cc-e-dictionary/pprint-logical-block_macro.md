@@ -16,15 +16,15 @@ import PprintLogicalBlockMacro from './_pprint-logical-block_macro.md';
 
 ```lisp
 (let ((*print-pretty* t)
-      (*print-right-margin* 25))
+      (*print-right-margin* 10))
   (with-output-to-string (s)
     (pprint-logical-block (s '(a b c d e) :prefix "(" :suffix ")")
       (loop (write (pprint-pop) :stream s)
             (pprint-exit-if-list-exhausted)
             (write-char #\Space s)
             (pprint-newline :fill s)))))
-; => "(A B C D
-;  E)"
+=> "(A B C D
+ E)"
 ```
 
 ### Using :prefix and :suffix
@@ -38,7 +38,7 @@ The `:prefix` and `:suffix` options specify strings printed before and after the
       (loop (write (pprint-pop) :stream s)
             (pprint-exit-if-list-exhausted)
             (write-char #\Space s)))))
-; => "[1 2 3]"
+=> "[1 2 3]"
 ```
 
 ### Using :per-line-prefix
@@ -47,15 +47,15 @@ The `:per-line-prefix` option prints a string at the start of every line in the 
 
 ```lisp
 (let ((*print-pretty* t)
-      (*print-right-margin* 20))
+      (*print-right-margin* 10))
   (with-output-to-string (s)
     (pprint-logical-block (s '(a b c d e) :per-line-prefix ";; " :suffix "")
       (loop (write (pprint-pop) :stream s)
             (pprint-exit-if-list-exhausted)
             (write-char #\Space s)
             (pprint-newline :fill s)))))
-; => ";; A B C D
-;; E"
+=> ";; A B C
+;; D E"
 ```
 
 ### Automatic Handling of Non-Lists
@@ -67,7 +67,7 @@ If the object is not a list, it is printed with `write` and the body forms are s
   (with-output-to-string (s)
     (pprint-logical-block (s 42 :prefix "(" :suffix ")")
       (write (pprint-pop) :stream s))))
-; => "42"
+=> "42"
 ```
 
 ### Respects *print-level*
@@ -82,5 +82,5 @@ Logical blocks automatically handle `*print-level*` depth abbreviation.
       (loop (write (pprint-pop) :stream s)
             (pprint-exit-if-list-exhausted)
             (write-char #\Space s)))))
-; => "(A #)"
+=> "(A #)"
 ```

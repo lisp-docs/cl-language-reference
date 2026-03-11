@@ -17,12 +17,13 @@ import FormatFunction from './_format_function.md';
 ```lisp
 ;; Return a formatted string
 (format nil "Hello, ~A!" "world")
-; => "Hello, world!"
+=> "Hello, world!"
 
 ;; Print to standard output (returns NIL)
 (format t "Hello, ~A!~%" "world")
-; >> Hello, world!
-; => NIL
+.. Hello, world!
+..
+=> NIL
 ```
 
 ### Common Directives: ~A, ~S, ~D, ~F
@@ -31,16 +32,16 @@ import FormatFunction from './_format_function.md';
 
 ```lisp
 (format nil "Name: ~A, Symbol: ~S, Count: ~D" "Alice" :hello 42)
-; => "Name: Alice, Symbol: :HELLO, Count: 42"
+=> "Name: Alice, Symbol: :HELLO, Count: 42"
 
 (format nil "Pi is approximately ~F" 3.14159)
-; => "Pi is approximately 3.14159"
+=> "Pi is approximately 3.14159"
 
 (format nil "~5D" 42)
-; => "   42"
+=> "   42"
 
 (format nil "~5,'0D" 42)
-; => "00042"
+=> "00042"
 ```
 
 ### Padding and Alignment with ~A and ~S
@@ -49,13 +50,13 @@ Use column width and padding parameters to align output.
 
 ```lisp
 (format nil "|~10A|" "hello")
-; => "|hello     |"
+=> "|hello     |"
 
 (format nil "|~10@A|" "hello")
-; => "|     hello|"
+=> "|     hello|"
 
 (format nil "|~10,,,'*A|" "hi")
-; => "|hi********|"
+=> "|hi********|"
 ```
 
 ### Radix and Number Formatting
@@ -64,13 +65,13 @@ Use column width and padding parameters to align output.
 
 ```lisp
 (format nil "Binary: ~B, Octal: ~O, Hex: ~X" 255 255 255)
-; => "Binary: 11111111, Octal: 377, Hex: FF"
+=> "Binary: 11111111, Octal: 377, Hex: FF"
 
 (format nil "~R" 42)
-; => "forty-two"
+=> "forty-two"
 
 (format nil "~:R" 3)
-; => "third"
+=> "third"
 ```
 
 ### Iteration with ~\{ and ~\}
@@ -79,10 +80,10 @@ Use column width and padding parameters to align output.
 
 ```lisp
 (format nil "Items: ~{~A~^, ~}" '("apple" "banana" "cherry"))
-; => "Items: apple, banana, cherry"
+=> "Items: apple, banana, cherry"
 
 (format nil "~{(~A ~A)~^ ~}" '("a" 1 "b" 2 "c" 3))
-; => "(a 1) (b 2) (c 3)"
+=> "(a 1) (b 2) (c 3)"
 ```
 
 ### Conditional Expressions with ~\[, ~;, ~\]
@@ -92,14 +93,14 @@ Use column width and padding parameters to align output.
 ```lisp
 ;; Boolean conditional: ~:[ picks false-branch ~; true-branch ~]
 (format nil "~:[no~;yes~]" t)
-; => "yes"
+=> "yes"
 
 (format nil "~:[no~;yes~]" nil)
-; => "no"
+=> "no"
 
 ;; Numeric selection (0-indexed)
 (format nil "~[zero~;one~;two~;other~]" 1)
-; => "one"
+=> "one"
 ```
 
 ### Freshline, Newline, and Tilde
@@ -108,10 +109,10 @@ Use column width and padding parameters to align output.
 
 ```lisp
 (format nil "Line 1~%Line 2~%Line 3")
-; => "Line 1
-; Line 2
-; Line 3"
+=> "Line 1
+Line 2
+Line 3"
 
 (format nil "100~~ complete")
-; => "100~ complete"
+=> "100~ complete"
 ```

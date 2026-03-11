@@ -16,7 +16,7 @@ import PrintPprintDispatchVariable from './_print-pprint-dispatch_variable.md';
 
 ```lisp
 (type-of *print-pprint-dispatch*)
-; => ; implementation-dependent, but it is a pprint dispatch table
+;; => SB-PRETTY:PPRINT-DISPATCH-TABLE  ; implementation-dependent
 ```
 
 ### Using a Custom Dispatch Table
@@ -31,7 +31,7 @@ You can bind `*print-pprint-dispatch*` to a custom table to change pretty-printi
     (lambda (stream obj)
       (format stream "[~D]" obj)))
   (write-to-string '(+ 1 2 3)))
-; => "(+ [1] [2] [3])"
+;; => "(+ [1] [2] [3])"
 ```
 
 ### Restoring Default Behavior
@@ -43,7 +43,7 @@ Passing nil to `copy-pprint-dispatch` returns a copy of the initial (standard) d
 (let ((*print-pprint-dispatch* (copy-pprint-dispatch nil))
       (*print-pretty* t))
   (write-to-string '(defun foo (x) (+ x 1))))
-; => "(DEFUN FOO (X) (+ X 1))"  ; or with standard pretty-printing
+=> "(DEFUN FOO (X) (+ X 1))"
 ```
 
 ### The Dispatch Table and *print-pretty*
@@ -54,5 +54,5 @@ The dispatch table is only consulted when `*print-pretty*` is true. When false, 
 (let ((*print-pretty* nil))
   ;; dispatch table entries are ignored
   (write-to-string '(a b c)))
-; => "(A B C)"
+=> "(A B C)"
 ```

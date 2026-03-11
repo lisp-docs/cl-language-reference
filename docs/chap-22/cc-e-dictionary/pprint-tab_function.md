@@ -30,7 +30,7 @@ Tabs to an absolute column position on the line.
       (write-string "Name" s)
       (pprint-tab :line 20 1 s)
       (write-string "Value" s))))
-; => "Name                Value"
+=> "Name                Value"
 ```
 
 ### :section-relative -- Relative Within Section
@@ -39,7 +39,7 @@ Tabs relative to the current position, used with column increments for alignment
 
 ```lisp
 (let ((*print-pretty* t)
-      (*print-right-margin* 60))
+      (*print-right-margin* 35))
   (with-output-to-string (s)
     (pprint-logical-block (s '(alpha beta gamma delta) :prefix "(" :suffix ")")
       (loop (write (pprint-pop) :stream s)
@@ -47,8 +47,8 @@ Tabs relative to the current position, used with column increments for alignment
             (write-char #\Space s)
             (pprint-tab :section-relative 0 12 s)
             (pprint-newline :fill s)))))
-; => "(ALPHA       BETA        GAMMA
-;  DELTA)"
+=> "(ALPHA       BETA        GAMMA
+ DELTA)"
 ```
 
 ### No Effect Outside Pretty Printing
@@ -59,5 +59,5 @@ Like other pretty-printing functions, `pprint-tab` has no effect when `*print-pr
 (let ((*print-pretty* nil))
   (with-output-to-string (s)
     (pprint-tab :line 10 1 s)))
-; => ""
+=> ""
 ```
