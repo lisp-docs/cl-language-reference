@@ -20,9 +20,9 @@ By default (or with `nil` as the second argument), `copy-symbol` creates an unin
   (values (symbol-name copy)
           (symbol-package copy)
           (eq original copy)))
-; → "MY-SYM"
-;   NIL
-;   NIL
+=> "MY-SYM"
+=> NIL
+=> NIL
 ```
 
 ### Copy without properties leaves symbol unbound
@@ -32,8 +32,8 @@ By default (or with `nil` as the second argument), `copy-symbol` creates an unin
 (let ((copy (copy-symbol 'source nil)))
   (values (boundp 'source)
           (boundp copy)))
-; → T
-;   NIL
+=> T
+=> NIL
 ```
 
 ### Copy with properties
@@ -48,9 +48,9 @@ When the second argument is true, the new symbol gets a copy of the original's v
   (values (symbol-value copy)
           (get copy 'color)
           (eq copy 'original)))
-; → 100
-;   RED
-;   NIL
+=> 100
+=> RED
+=> NIL
 ```
 
 ### Property lists are independent copies
@@ -65,8 +65,8 @@ Modifying the copy's property list does not affect the original.
   (setf (get clone 'x) 999)
   (values (get 'proto 'x)
           (get clone 'x)))
-; → 1
-;   999
+=> 1
+=> 999
 ```
 
 ### The copy is always uninterned
@@ -78,9 +78,9 @@ Regardless of whether the original is interned, the copy is always a fresh, unin
   (values (symbol-name copy)
           (symbol-package copy)
           (keywordp copy)))
-; → "SOME-KEYWORD"
-;   NIL
-;   NIL
+=> "SOME-KEYWORD"
+=> NIL
+=> NIL
 ```
 
 ### Each copy is a distinct object
@@ -92,6 +92,6 @@ Multiple copies of the same symbol are distinct from each other.
       (b (copy-symbol 'foo)))
   (values (string= (symbol-name a) (symbol-name b))
           (eq a b)))
-; → T
-;   NIL
+=> T
+=> NIL
 ```

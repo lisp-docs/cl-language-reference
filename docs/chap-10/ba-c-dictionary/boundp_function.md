@@ -16,9 +16,11 @@ import BoundpFunction from './_boundp_function.md';
 
 ```lisp
 (defvar *my-var* 42)
-(boundp '*my-var*) ; → T
+(boundp '*my-var*)
+=> T
 
-(boundp (gensym)) ; → NIL  (fresh gensym has no value)
+(boundp (gensym))
+=> NIL
 ```
 
 ### After makunbound
@@ -27,10 +29,12 @@ import BoundpFunction from './_boundp_function.md';
 
 ```lisp
 (setf (symbol-value 'temp-var) 100)
-(boundp 'temp-var) ; → T
+(boundp 'temp-var)
+=> T
 
 (makunbound 'temp-var)
-(boundp 'temp-var) ; → NIL
+(boundp 'temp-var)
+=> NIL
 ```
 
 ### boundp does not see lexical bindings
@@ -42,7 +46,7 @@ import BoundpFunction from './_boundp_function.md';
 
 (let ((lex-test 99))
   (boundp 'lex-test))
-; → NIL  (the lexical binding is invisible to boundp)
+=> NIL
 ```
 
 ### boundp sees dynamic (special) bindings
@@ -55,7 +59,7 @@ When a variable is declared special, `boundp` can see its dynamic binding.
 (let ((dyn-test 99))
   (declare (special dyn-test))
   (boundp 'dyn-test))
-; → T
+=> T
 ```
 
 ### Safe value access pattern
@@ -69,15 +73,21 @@ When a variable is declared special, `boundp` can see its dynamic binding.
       default))
 
 (setf (symbol-value 'configured) :yes)
-(safe-value 'configured) ; → :YES
-(safe-value (gensym) :not-set) ; → :NOT-SET
+(safe-value 'configured)
+=> :YES
+(safe-value (gensym) :not-set)
+=> :NOT-SET
 ```
 
 ### Keywords and constants are always bound
 
 ```lisp
-(boundp :any-keyword) ; → T
-(boundp t) ; → T
-(boundp nil) ; → T
-(boundp 'pi) ; → T
+(boundp :any-keyword)
+=> T
+(boundp t)
+=> T
+(boundp nil)
+=> T
+(boundp 'pi)
+=> T
 ```

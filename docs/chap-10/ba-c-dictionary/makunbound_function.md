@@ -16,10 +16,13 @@ import MakunboundFunction from './_makunbound_function.md';
 
 ```lisp
 (setf (symbol-value 'temp) 42)
-(boundp 'temp) ; → T
+(boundp 'temp)
+=> T
 
-(makunbound 'temp) ; → TEMP
-(boundp 'temp) ; → NIL
+(makunbound 'temp)
+=> TEMP
+(boundp 'temp)
+=> NIL
 ```
 
 ### Accessing an unbound symbol signals an error
@@ -32,7 +35,7 @@ After `makunbound`, attempting to read the symbol's value signals an `unbound-va
 
 (handler-case (symbol-value 'doomed)
   (unbound-variable () :caught))
-; → :CAUGHT
+=> :CAUGHT
 ```
 
 ### makunbound on an already unbound symbol
@@ -41,10 +44,10 @@ Calling `makunbound` on a symbol that is already unbound is harmless.
 
 ```lisp
 (let ((sym (gensym)))
-  (boundp sym)       ; → NIL
-  (makunbound sym)   ; no error
+  (boundp sym)
+  (makunbound sym)
   (boundp sym))
-; → NIL
+=> NIL
 ```
 
 ### makunbound does not affect lexical bindings
@@ -57,7 +60,7 @@ Calling `makunbound` on a symbol that is already unbound is harmless.
 (let ((outer :lexical))
   (makunbound 'outer)
   outer)
-; → :LEXICAL  (the lexical binding is unaffected)
+=> :LEXICAL
 ```
 
 ### Round-trip with boundp
@@ -67,12 +70,12 @@ Calling `makunbound` on a symbol that is already unbound is harmless.
 ```lisp
 (let ((sym (gensym)))
   (values
-    (boundp sym)                          ; → NIL
+    (boundp sym)
     (progn (setf (symbol-value sym) 1)
-           (boundp sym))                  ; → T
+           (boundp sym))
     (progn (makunbound sym)
-           (boundp sym))))                ; → NIL
-; → NIL
-;   T
-;   NIL
+           (boundp sym))))
+=> NIL
+=> T
+=> NIL
 ```

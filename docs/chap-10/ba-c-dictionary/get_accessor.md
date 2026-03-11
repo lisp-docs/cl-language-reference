@@ -20,8 +20,8 @@ import GetAccessor from './_get_accessor.md';
   (setf (get sym 'age) 30)
   (values (get sym 'name)
           (get sym 'age)))
-; → "Alice"
-;   30
+=> "Alice"
+=> 30
 ```
 
 ### Default value for missing properties
@@ -34,9 +34,9 @@ When a property is not found, `get` returns `nil` by default, or an optional def
   (values (get sym 'color)
           (get sym 'weight)
           (get sym 'weight 'unknown)))
-; → BLUE
-;   NIL
-;   UNKNOWN
+=> BLUE
+=> NIL
+=> UNKNOWN
 ```
 
 ### Setting properties with setf
@@ -48,7 +48,7 @@ When a property is not found, `get` returns `nil` by default, or an optional def
   (setf (get sym 'debug) nil)
   (setf (get sym 'verbose) t)
   (get sym 'debug))
-; → NIL
+=> NIL
 ```
 
 ### Using symbols as simple data records
@@ -70,7 +70,7 @@ Property lists on gensyms can serve as lightweight record-like structures.
 (let ((a (make-point 0 0))
       (b (make-point 3 4)))
   (point-distance a b))
-; → 5.0
+=> 5.0
 ```
 
 ### Indicators are compared with eq
@@ -81,9 +81,9 @@ Because `get` uses `eq` for comparison, symbols should be used as indicators rat
 (let ((sym (make-symbol "TEST")))
   (setf (get sym 'status) 'active)
   (values (get sym 'status)
-          (get sym 'STATUS)))  ; same symbol due to reader upcasing
-; → ACTIVE
-;   ACTIVE
+          (get sym 'STATUS)))
+=> ACTIVE
+=> ACTIVE
 ```
 
 ### Equivalence with getf on symbol-plist
@@ -95,5 +95,5 @@ Because `get` uses `eq` for comparison, symbols should be used as indicators rat
   (setf (get sym 'key) 'value)
   (eq (get sym 'key)
       (getf (symbol-plist sym) 'key)))
-; → T
+=> T
 ```

@@ -15,9 +15,12 @@ import SymbolNameFunction from './_symbol-name_function.md';
 `symbol-name` returns the name of a symbol as a string. By default, the Lisp reader upcases symbol names.
 
 ```lisp
-(symbol-name 'hello) ; → "HELLO"
-(symbol-name 'car) ; → "CAR"
-(symbol-name 'my-variable) ; → "MY-VARIABLE"
+(symbol-name 'hello)
+=> "HELLO"
+(symbol-name 'car)
+=> "CAR"
+(symbol-name 'my-variable)
+=> "MY-VARIABLE"
 ```
 
 ### Keywords
@@ -25,15 +28,19 @@ import SymbolNameFunction from './_symbol-name_function.md';
 Keywords also have string names. The leading colon is not part of the name.
 
 ```lisp
-(symbol-name :test) ; → "TEST"
-(symbol-name :key-name) ; → "KEY-NAME"
+(symbol-name :test)
+=> "TEST"
+(symbol-name :key-name)
+=> "KEY-NAME"
 ```
 
 ### Special symbols: NIL and T
 
 ```lisp
-(symbol-name nil) ; → "NIL"
-(symbol-name t) ; → "T"
+(symbol-name nil)
+=> "NIL"
+(symbol-name t)
+=> "T"
 ```
 
 ### Uninterned and generated symbols
@@ -41,8 +48,10 @@ Keywords also have string names. The leading colon is not part of the name.
 `symbol-name` works on uninterned symbols and gensyms as well.
 
 ```lisp
-(symbol-name (make-symbol "my-sym")) ; → "my-sym"
-(symbol-name '#:foo) ; → "FOO"
+(symbol-name (make-symbol "my-sym"))
+=> "my-sym"
+(symbol-name '#:foo)
+=> "FOO"
 ```
 
 ### Comparing symbol names
@@ -50,11 +59,13 @@ Keywords also have string names. The leading colon is not part of the name.
 Since `symbol-name` returns a string, you can use string comparison functions on symbol names.
 
 ```lisp
-(string= (symbol-name 'hello) "HELLO") ; → T
-(string-equal (symbol-name 'hello) "hello") ; → T  (case-insensitive)
+(string= (symbol-name 'hello) "HELLO")
+=> T
+(string-equal (symbol-name 'hello) "hello")
+=> T
 
 (sort '(banana apple cherry) #'string< :key #'symbol-name)
-; → (APPLE BANANA CHERRY)
+=> (APPLE BANANA CHERRY)
 ```
 
 ### The returned string should not be modified
@@ -67,6 +78,6 @@ The string returned by `symbol-name` may share structure with the symbol's inter
        (copy (copy-seq name)))
   (setf (char copy 0) #\e)
   (values name copy))
-; → "EXAMPLE"
-;   "eXAMPLE"
+=> "EXAMPLE"
+=> "eXAMPLE"
 ```

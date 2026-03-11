@@ -15,10 +15,14 @@ import SymbolSystemClass from './_symbol_system-class.md';
 The `symbol` system class represents all symbols. Use `typep` to check if an object is a symbol.
 
 ```lisp
-(typep 'hello 'symbol) ; → T
-(typep :key 'symbol) ; → T
-(typep nil 'symbol) ; → T
-(typep 42 'symbol) ; → NIL
+(typep 'hello 'symbol)
+=> T
+(typep :key 'symbol)
+=> T
+(typep nil 'symbol)
+=> T
+(typep 42 'symbol)
+=> NIL
 ```
 
 ### The five attributes of a symbol
@@ -27,12 +31,12 @@ Every symbol has a name, package, value cell, function cell, and property list.
 
 ```lisp
 (let ((sym 'example-sym))
-  (values (symbol-name sym)        ; name
-          (symbol-package sym)     ; home package
-          (symbol-plist sym)))     ; property list (initially empty)
-; → "EXAMPLE-SYM"
-;   #<PACKAGE "COMMON-LISP-USER">
-;   NIL
+  (values (symbol-name sym)
+          (symbol-package sym)
+          (symbol-plist sym)))
+;; => "EXAMPLE-SYM"
+;; => #<PACKAGE "COMMON-LISP-USER">
+;; => NIL
 ```
 
 ### Interned vs. uninterned symbols
@@ -45,9 +49,9 @@ Interned symbols belong to a package and are found by the reader. Uninterned sym
   (values (symbol-package interned)
           (symbol-package uninterned)
           (eq interned uninterned)))
-; → #<PACKAGE "COMMON-LISP-USER">
-;   NIL
-;   NIL
+;; => #<PACKAGE "COMMON-LISP-USER">
+;; => NIL
+;; => NIL
 ```
 
 ### Symbols in the class hierarchy
@@ -55,9 +59,15 @@ Interned symbols belong to a package and are found by the reader. Uninterned sym
 `symbol` is a subtype of `t`. The type `keyword` is a subtype of `symbol`.
 
 ```lisp
-(subtypep 'symbol 't) ; → T, T
-(subtypep 'keyword 'symbol) ; → T, T
-(subtypep 'symbol 'keyword) ; → NIL, T
+(subtypep 'symbol 't)
+=> T
+=> T
+(subtypep 'keyword 'symbol)
+=> T
+=> T
+(subtypep 'symbol 'keyword)
+=> NIL
+=> T
 ```
 
 ### Using symbols as identifiers
@@ -70,6 +80,6 @@ Symbols serve as names for variables, functions, classes, and other entities in 
 
 (values (symbol-value '*counter*)
         (symbol-function 'increment))
-; → 0
-;   #<FUNCTION INCREMENT>
+;; => 0
+;; => #<FUNCTION INCREMENT>
 ```

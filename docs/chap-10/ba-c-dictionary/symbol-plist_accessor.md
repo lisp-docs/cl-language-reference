@@ -17,7 +17,7 @@ import SymbolPlistAccessor from './_symbol-plist_accessor.md';
 ```lisp
 (let ((sym (gensym)))
   (symbol-plist sym))
-; → NIL
+=> NIL
 ```
 
 ### Viewing properties after adding them with get/setf
@@ -29,7 +29,7 @@ Properties are typically added with `(setf (get ...))`. `symbol-plist` reveals t
   (setf (get sym 'color) 'red)
   (setf (get sym 'size) 42)
   (symbol-plist sym))
-; → (SIZE 42 COLOR RED)  (order may vary)
+;; => (SIZE 42 COLOR RED)  (order may vary)
 ```
 
 ### Directly setting the property list
@@ -43,9 +43,9 @@ You can replace the entire property list with `setf`, though this is generally d
   (format nil "Before: ~S" (symbol-plist sym))
   (setf (symbol-plist sym) '(x 10 y 20))
   (values (get sym 'x) (get sym 'y) (get sym 'a)))
-; → 10
-;   20
-;   NIL
+=> 10
+=> 20
+=> NIL
 ```
 
 ### Property list structure
@@ -59,8 +59,8 @@ The property list is a flat list of alternating indicators and values.
   (let ((plist (symbol-plist sym)))
     (values (length plist)
             (evenp (length plist)))))
-; → 4
-;   T
+=> 4
+=> T
 ```
 
 ### Empty property list for standard symbols
@@ -69,5 +69,6 @@ Most standard symbols do not have property list entries by default (though imple
 
 ```lisp
 ;; Check the type of what symbol-plist returns
-(listp (symbol-plist (make-symbol "FRESH"))) ; → T
+(listp (symbol-plist (make-symbol "FRESH")))
+=> T
 ```

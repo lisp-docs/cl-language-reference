@@ -18,12 +18,11 @@ import RempropFunction from './_remprop_function.md';
 (let ((sym (make-symbol "DEMO")))
   (setf (get sym 'color) 'red)
   (setf (get sym 'size) 10)
-  (values (get sym 'color)
-          (remprop sym 'color)
-          (get sym 'color)))
-; → RED
-;   T  (implementation may return any true value)
-;   NIL
+  (let ((before (get sym 'color)))
+    (remprop sym 'color)
+    (values before (get sym 'color))))
+=> RED
+=> NIL
 ```
 
 ### Removing a non-existent property
@@ -35,8 +34,8 @@ If the property does not exist, `remprop` returns `nil` (false) and makes no cha
   (setf (get sym 'a) 1)
   (values (remprop sym 'b)
           (symbol-plist sym)))
-; → NIL
-;   (A 1)
+=> NIL
+=> (A 1)
 ```
 
 ### Removing properties one by one
@@ -50,7 +49,7 @@ If the property does not exist, `remprop` returns `nil` (false) and makes no cha
   (setf (get sym 'z) 3)
   (remprop sym 'y)
   (symbol-plist sym))
-; → (Z 3 X 1)  (order may vary, Y removed)
+;; => (Z 3 X 1)  (order may vary, Y removed)
 ```
 
 ### Distinguishing nil value from absent property
@@ -60,13 +59,13 @@ Setting a property to `nil` is different from removing it. `remprop` truly remov
 ```lisp
 (let ((sym (make-symbol "NIL-TEST")))
   (setf (get sym 'flag) nil)
-  (values (get sym 'flag)         ; → NIL (property exists, value is nil)
-          (get sym 'flag :missing) ; → NIL (property exists, default ignored)
+  (values (get sym 'flag)
+          (get sym 'flag :missing)
           (progn (remprop sym 'flag)
-                 (get sym 'flag :missing)))) ; → :MISSING (property gone)
-; → NIL
-;   NIL
-;   :MISSING
+                 (get sym 'flag :missing))))
+=> NIL
+=> NIL
+=> :MISSING
 ```
 
 ### Practical cleanup of all properties
@@ -81,5 +80,5 @@ You can remove all properties from a symbol by iterating over its property list.
   (loop for (key nil) on (symbol-plist sym) by #'cddr
         do (remprop sym key))
   (symbol-plist sym))
-; → NIL
+=> NIL
 ```

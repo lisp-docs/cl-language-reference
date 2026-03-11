@@ -19,8 +19,10 @@ import GentempFunction from './_gentemp_function.md';
 `gentemp` creates a fresh symbol that is automatically interned in the current package. The default prefix is "T".
 
 ```lisp
-(gentemp) ; → T1  (exact number depends on internal counter)
-(gentemp) ; → T2
+(gentemp)
+;; => T1  (exact number depends on internal counter)
+(gentemp)
+;; => T2
 ```
 
 ### Custom prefix
@@ -28,8 +30,10 @@ import GentempFunction from './_gentemp_function.md';
 A string argument specifies a prefix other than "T".
 
 ```lisp
-(gentemp "FOO") ; → FOO3  (exact number varies)
-(gentemp "BAR") ; → BAR4
+(gentemp "FOO")
+;; => FOO3  (exact number varies)
+(gentemp "BAR")
+;; => BAR4
 ```
 
 ### The symbol is interned
@@ -40,8 +44,8 @@ Unlike `gensym`, the symbol created by `gentemp` is interned and can be found wi
 (let ((sym (gentemp "INTERNED")))
   (values (symbol-package sym)
           (find-symbol (symbol-name sym))))
-; → #<PACKAGE "COMMON-LISP-USER">
-;   The symbol and :INTERNAL
+;; => #<PACKAGE "COMMON-LISP-USER">
+;; => The symbol and :INTERNAL
 ```
 
 ### Specifying a package
@@ -52,7 +56,7 @@ You can specify which package to intern the symbol in.
 (defpackage "TEMP-PKG" (:use))
 (let ((sym (gentemp "X" (find-package "TEMP-PKG"))))
   (symbol-package sym))
-; → #<PACKAGE "TEMP-PKG">
+;; => #<PACKAGE "TEMP-PKG">
 ```
 
 ### Skips existing symbols
@@ -65,7 +69,7 @@ If a symbol with the generated name already exists in the package, `gentemp` inc
   (values (boundp sym)
           (fboundp sym)
           (symbol-plist sym)))
-; → NIL
-;   NIL
-;   NIL
+=> NIL
+=> NIL
+=> NIL
 ```

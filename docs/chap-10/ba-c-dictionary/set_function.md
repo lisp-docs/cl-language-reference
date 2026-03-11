@@ -20,7 +20,8 @@ import SetFunction from './_set_function.md';
 
 ```lisp
 (set 'my-var 42)
-(symbol-value 'my-var) ; → 42
+(symbol-value 'my-var)
+=> 42
 ```
 
 ### set cannot change lexical variables
@@ -33,8 +34,8 @@ Like `symbol-value`, `set` only affects the dynamic (special) value of a symbol,
 (let ((x 20))
   (set 'x 30)
   (values x (symbol-value 'x)))
-; → 20   (lexical x unchanged)
-;   30   (dynamic x changed)
+=> 20
+=> 30
 ```
 
 ### set with dynamic (special) variables
@@ -47,19 +48,22 @@ Like `symbol-value`, `set` only affects the dynamic (special) value of a symbol,
 (let ((*setting* :temporary))
   (set '*setting* :modified)
   *setting*)
-; → :MODIFIED
+=> :MODIFIED
 
-*setting* ; → :INITIAL  (original value restored after let)
+*setting*
+=> :INITIAL
 ```
 
 ### Equivalence with setf of symbol-value
 
 ```lisp
 (set 'equiv-test 'via-set)
-(symbol-value 'equiv-test) ; → VIA-SET
+(symbol-value 'equiv-test)
+=> VIA-SET
 
 (setf (symbol-value 'equiv-test) 'via-setf)
-(symbol-value 'equiv-test) ; → VIA-SETF
+(symbol-value 'equiv-test)
+=> VIA-SETF
 ```
 
 ### Using set with a computed symbol
@@ -74,6 +78,6 @@ One advantage of `set` over `setq` is that the symbol argument is evaluated, all
   (set (first pair) (second pair)))
 
 (values *a* *b*)
-; → 10
-;   20
+=> 10
+=> 20
 ```

@@ -17,9 +17,11 @@ import SymbolValueAccessor from './_symbol-value_accessor.md';
 ```lisp
 (defvar *count* 10)
 
-(symbol-value '*count*) ; → 10
+(symbol-value '*count*)
+=> 10
 (setf (symbol-value '*count*) 20)
-(symbol-value '*count*) ; → 20
+(symbol-value '*count*)
+=> 20
 ```
 
 ### symbol-value cannot see lexical variables
@@ -31,7 +33,7 @@ import SymbolValueAccessor from './_symbol-value_accessor.md';
 
 (let ((x 999))
   (symbol-value 'x))
-; → 100  (not 999 -- the lexical binding is invisible)
+=> 100
 ```
 
 ### symbol-value can see dynamic bindings
@@ -43,9 +45,10 @@ When a variable is declared special, `symbol-value` sees the dynamic binding.
 
 (let ((*level* 2))
   (symbol-value '*level*))
-; → 2
+=> 2
 
-(symbol-value '*level*) ; → 1  (back to global after let exits)
+(symbol-value '*level*)
+=> 1
 ```
 
 ### Keywords evaluate to themselves
@@ -53,8 +56,10 @@ When a variable is declared special, `symbol-value` sees the dynamic binding.
 Keywords are constant variables whose value is the keyword symbol itself.
 
 ```lisp
-(symbol-value :test) ; → :TEST
-(symbol-value :hello) ; → :HELLO
+(symbol-value :test)
+=> :TEST
+(symbol-value :hello)
+=> :HELLO
 ```
 
 ### Constants
@@ -62,9 +67,12 @@ Keywords are constant variables whose value is the keyword symbol itself.
 `symbol-value` can retrieve the value of constant variables like `nil`, `t`, and `pi`.
 
 ```lisp
-(symbol-value 'nil) ; → NIL
-(symbol-value 't) ; → T
-(symbol-value 'pi) ; → 3.141592653589793d0  (precision is implementation-dependent)
+(symbol-value 'nil)
+=> NIL
+(symbol-value 't)
+=> T
+(symbol-value 'pi)
+;; => 3.141592653589793d0  (precision is implementation-dependent)
 ```
 
 ### Error on unbound symbols
@@ -75,5 +83,5 @@ Attempting to read the value of an unbound symbol signals an `unbound-variable` 
 (handler-case (symbol-value (gensym))
   (unbound-variable (c)
     (format nil "Caught unbound variable: ~A" (cell-error-name c))))
-; → "Caught unbound variable: G..."  (exact gensym name varies)
+;; => "Caught unbound variable: G..."  (exact gensym name varies)
 ```

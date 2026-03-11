@@ -17,9 +17,9 @@ import GensymCounterVariable from './_gensym-counter_variable.md';
 ```lisp
 (let ((*gensym-counter* 0))
   (values (gensym) (gensym) (gensym)))
-; → #:G0
-;   #:G1
-;   #:G2
+;; => #:G0
+;; => #:G1
+;; => #:G2
 ```
 
 ### Reading the current counter value
@@ -31,9 +31,9 @@ You can inspect the counter to see what number the next gensym will use.
   (values *gensym-counter*
           (gensym)
           *gensym-counter*))
-; → 42
-;   #:G42
-;   43
+;; => 42
+;; => #:G42
+;; => 43
 ```
 
 ### Setting the counter for deterministic names
@@ -43,7 +43,7 @@ Binding `*gensym-counter*` is the recommended way to control gensym suffixes, re
 ```lisp
 (let ((*gensym-counter* 1000))
   (list (gensym "VAR") (gensym "VAR") (gensym "VAR")))
-; → (#:VAR1000 #:VAR1001 #:VAR1002)
+;; => (#:VAR1000 #:VAR1001 #:VAR1002)
 ```
 
 ### The counter must be a non-negative integer
@@ -54,7 +54,7 @@ Binding `*gensym-counter*` is the recommended way to control gensym suffixes, re
 (let ((*gensym-counter* 0))
   (dotimes (i 5) (gensym))
   *gensym-counter*)
-; → 5
+=> 5
 ```
 
 ### Independent of gentemp counter
@@ -65,6 +65,6 @@ Binding `*gensym-counter*` is the recommended way to control gensym suffixes, re
 (let ((*gensym-counter* 500))
   (values (symbol-name (gensym))
           *gensym-counter*))
-; → "G500"
-;   501
+=> "G500"
+=> 501
 ```
