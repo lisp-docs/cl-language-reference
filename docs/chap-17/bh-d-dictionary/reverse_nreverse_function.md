@@ -15,9 +15,12 @@ import ReverseFunction from './_reverse_nreverse_function.md';
 `reverse` returns a new sequence with elements in the opposite order. The original sequence is not modified.
 
 ```lisp
-(reverse '(1 2 3 4 5)) ; → (5 4 3 2 1)
-(reverse "abcdef") ; → "fedcba"
-(reverse #(a b c)) ; → #(C B A)
+(reverse '(1 2 3 4 5))
+=> (5 4 3 2 1)
+(reverse "abcdef")
+=> "fedcba"
+(reverse #(a b c))
+=> #(C B A)
 ```
 
 ### reverse does not modify the original
@@ -26,7 +29,7 @@ import ReverseFunction from './_reverse_nreverse_function.md';
 (let ((lst '(1 2 3)))
   (reverse lst)
   lst)
-; → (1 2 3)
+=> (1 2 3)
 ```
 
 ### nreverse is destructive
@@ -36,7 +39,7 @@ import ReverseFunction from './_reverse_nreverse_function.md';
 ```lisp
 (let ((lst (list 1 2 3 4 5)))
   (nreverse lst))
-; → (5 4 3 2 1)
+=> (5 4 3 2 1)
 ```
 
 ### Safely using nreverse
@@ -47,7 +50,7 @@ The idiomatic pattern is to capture the return value and not rely on the origina
 (let ((lst (list 'a 'b 'c)))
   (setq lst (nreverse lst))
   lst)
-; → (C B A)
+=> (C B A)
 ```
 
 ### Reversing strings
@@ -55,8 +58,10 @@ The idiomatic pattern is to capture the return value and not rely on the origina
 Both `reverse` and `nreverse` work with strings, since strings are sequences.
 
 ```lisp
-(reverse "Hello") ; → "olleH"
-(nreverse (copy-seq "Common Lisp")) ; → "psiL nommoC"
+(reverse "Hello")
+=> "olleH"
+(nreverse (copy-seq "Common Lisp"))
+=> "psiL nommoC"
 ```
 
 ### Practical example: building a list by pushing then reversing
@@ -68,5 +73,5 @@ A common pattern is to build a list by pushing elements onto the front, then rev
   (dotimes (i 5)
     (push i result))
   (nreverse result))
-; → (0 1 2 3 4)
+=> (0 1 2 3 4)
 ```

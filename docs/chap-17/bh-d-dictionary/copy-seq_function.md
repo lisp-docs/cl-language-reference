@@ -19,7 +19,8 @@ import CopySeqFunction from './_copy-seq_function.md';
        (copy (copy-seq original)))
   (setf (first copy) 99)
   (values original copy))
-; → (1 2 3), (99 2 3)
+=> (1 2 3)
+=> (99 2 3)
 ```
 
 ### Copying strings
@@ -30,7 +31,7 @@ Strings in Common Lisp are often literal and thus not modifiable. `copy-seq` pro
 (let ((str (copy-seq "hello")))
   (setf (char str 0) #\H)
   str)
-; → "Hello"
+=> "Hello"
 ```
 
 ### The copy is equalp but not eql
@@ -41,7 +42,8 @@ The copy has equal content but is a distinct object.
 (let* ((s "test")
        (c (copy-seq s)))
   (values (equalp s c) (eql s c)))
-; → T, NIL
+=> T
+=> NIL
 ```
 
 ### Copying vectors
@@ -49,8 +51,10 @@ The copy has equal content but is a distinct object.
 When given a vector, `copy-seq` returns a fresh simple array of the same element type.
 
 ```lisp
-(copy-seq #(a b c)) ; → #(A B C)
-(copy-seq #()) ; → #()
+(copy-seq #(a b c))
+=> #(A B C)
+(copy-seq #())
+=> #()
 ```
 
 ### Practical use: safe destructive operations
@@ -60,5 +64,5 @@ When given a vector, `copy-seq` returns a fresh simple array of the same element
 ```lisp
 (let ((data '(3 1 4 1 5 9)))
   (sort (copy-seq data) #'<))
-; → (1 1 3 4 5 9)
+=> (1 1 3 4 5 9)
 ```

@@ -15,9 +15,12 @@ import EltAccessor from './_elt_accessor.md';
 `elt` accesses an element of any sequence by its zero-based index. It works uniformly on lists, vectors, and strings.
 
 ```lisp
-(elt '(a b c d) 2) ; → C
-(elt "hello" 0) ; → #\h
-(elt #(10 20 30) 1) ; → 20
+(elt '(a b c d) 2)
+=> C
+(elt "hello" 0)
+=> #\h
+(elt #(10 20 30) 1)
+=> 20
 ```
 
 ### Using setf with elt
@@ -28,7 +31,7 @@ import EltAccessor from './_elt_accessor.md';
 (let ((lst (list 1 2 3 4 5)))
   (setf (elt lst 2) 99)
   lst)
-; → (1 2 99 4 5)
+=> (1 2 99 4 5)
 ```
 
 ### Modifying string characters
@@ -39,7 +42,7 @@ Since strings are sequences, `elt` can read and write individual characters.
 (let ((str (copy-seq "hello")))
   (setf (elt str 0) #\H)
   str)
-; → "Hello"
+=> "Hello"
 ```
 
 ### elt vs. nth and aref
@@ -50,9 +53,12 @@ Since strings are sequences, `elt` can read and write individual characters.
 (defun second-element (seq)
   (elt seq 1))
 
-(second-element '(a b c)) ; → B
-(second-element "abc") ; → #\b
-(second-element #(10 20 30)) ; → 20
+(second-element '(a b c))
+=> B
+(second-element "abc")
+=> #\b
+(second-element #(10 20 30))
+=> 20
 ```
 
 ### Out-of-bounds access signals an error
