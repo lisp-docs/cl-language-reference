@@ -16,10 +16,8 @@ import IgnoreErrorsMacro from './_ignore-errors_macro.md';
 
 ```lisp
 (ignore-errors (/ 1 0))
-```
-
-```lisp
-→ NIL, #<DIVISION-BY-ZERO ...>
+=> NIL
+==> #<DIVISION-BY-ZERO {00000000}>
 ```
 
 ### Normal Return
@@ -28,10 +26,8 @@ When no error is signaled, `ignore-errors` returns the values of the last form.
 
 ```lisp
 (ignore-errors (+ 1 2))
-```
 
-```lisp
-→ 3
+=> 3
 ```
 
 ### Distinguishing Success from Error
@@ -44,10 +40,8 @@ By convention, the second return value is the condition object when an error occ
   (if condition
       (format nil "Error: ~A" condition)
       (format nil "Result: ~A" result)))
-```
 
-```lisp
-→ "Error: ..."  ; implementation-dependent error message
+=> "Error: ..."
 ```
 
 ### Only Catches error Conditions
@@ -56,10 +50,8 @@ By convention, the second return value is the condition object when an error occ
 
 ```lisp
 (ignore-errors (+ 3 4))
-```
 
-```lisp
-→ 7
+=> 7
 ```
 
 ```lisp
@@ -71,10 +63,8 @@ By convention, the second return value is the condition object when an error occ
 
 ```
 WARNING: just a warning
-```
 
-```lisp
-→ :DONE
+=> :DONE
 ```
 
 ### Practical Example: Safe File Operation
@@ -88,10 +78,8 @@ WARNING: just a warning
 
 ;; When the file does not exist:
 (file-size-or-nil "/nonexistent/file.txt")
-```
-
-```lisp
-→ NIL, #<FILE-ERROR ...>
+=> NIL
+==> #<FILE-ERROR {00000000}>
 ```
 
 ### Equivalent to handler-case
@@ -101,8 +89,6 @@ WARNING: just a warning
 ```lisp
 (handler-case (progn (/ 10 2))
   (error (c) (values nil c)))
-```
 
-```lisp
-→ 5
+=> 5
 ```

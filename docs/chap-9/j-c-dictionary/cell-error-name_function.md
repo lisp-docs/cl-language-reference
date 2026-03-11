@@ -19,10 +19,8 @@ import CellErrorNameFunction from './_cell-error-name_function.md';
     (symbol-value 'some-unbound-var-xyz)
   (unbound-variable (c)
     (cell-error-name c)))
-```
 
-```lisp
-→ SOME-UNBOUND-VAR-XYZ
+=> SOME-UNBOUND-VAR-XYZ
 ```
 
 ### With Undefined Functions
@@ -32,10 +30,8 @@ import CellErrorNameFunction from './_cell-error-name_function.md';
     (fdefinition 'no-such-function-xyz)
   (undefined-function (c)
     (cell-error-name c)))
-```
 
-```lisp
-→ NO-SUCH-FUNCTION-XYZ
+=> NO-SUCH-FUNCTION-XYZ
 ```
 
 ### Using cell-error-name in a Handler
@@ -49,8 +45,6 @@ A practical pattern: reporting which name caused the error.
       (symbol-value 'my-temp-var))
   (cell-error (c)
     (format nil "The cell ~S is not accessible" (cell-error-name c))))
-```
 
-```lisp
-→ "The cell MY-TEMP-VAR is not accessible"
+=> "The cell MY-TEMP-VAR is not accessible"
 ```

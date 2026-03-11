@@ -18,10 +18,8 @@ import CheckTypeMacro from './_check-type_macro.md';
 (let ((x 42))
   (check-type x integer)
   x)
-```
 
-```lisp
-→ 42
+=> 42
 ```
 
 ### Type Check Failure
@@ -35,10 +33,8 @@ When the check fails, a correctable error is signaled with a `store-value` resta
                      (invoke-restart 'store-value 99))))
     (check-type x integer)
     x))
-```
 
-```lisp
-→ 99
+=> 99
 ```
 
 ### Custom Type Description String
@@ -63,20 +59,16 @@ This produces an error message like: `The value of PORT, -1, is not a valid port
 (let ((name "Alice"))
   (check-type name (or string symbol))
   name)
-```
 
-```lisp
-→ "Alice"
+=> "Alice"
 ```
 
 ```lisp
 (let ((scores '(90 85 92)))
   (check-type scores list)
   (length scores))
-```
 
-```lisp
-→ 3
+=> 3
 ```
 
 ### Practical Example: Validating Slot Values
@@ -89,10 +81,8 @@ A common use of `check-type` is in functions that need to validate their argumen
   (list :person person :age age))
 
 (set-age "Alice" 30)
-```
 
-```lisp
-→ (:PERSON "Alice" :AGE 30)
+=> (:PERSON "Alice" :AGE 30)
 ```
 
 ```lisp
@@ -101,8 +91,6 @@ A common use of `check-type` is in functions that need to validate their argumen
     ((type-error (lambda (c)
                    (invoke-restart 'store-value 0))))
   (set-age "Bob" -5))
-```
 
-```lisp
-→ (:PERSON "Bob" :AGE 0)
+=> (:PERSON "Bob" :AGE 0)
 ```

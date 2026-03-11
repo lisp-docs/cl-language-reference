@@ -22,10 +22,8 @@ import DefineConditionMacro from './_define-condition_macro.md';
              (write-string "My condition occurred" stream))))
 
 (format nil "~A" (make-condition 'my-condition))
-```
 
-```lisp
-→ "My condition occurred"
+=> "My condition occurred"
 ```
 
 ### Condition with Slots and Readers
@@ -43,10 +41,8 @@ Slots are defined similarly to `defclass` slots. Use `:initarg` to set values at
     (error 'file-not-found :path "/tmp/missing.txt")
   (file-not-found (c)
     (file-not-found-path c)))
-```
 
-```lisp
-→ "/tmp/missing.txt"
+=> "/tmp/missing.txt"
 ```
 
 ### Inheriting from Another Condition
@@ -71,10 +67,8 @@ A condition type can inherit slots and report behavior from its parent types.
     (error 'timeout-error :host "example.com" :seconds 30)
   (network-error (c)
     (format nil "~A" c)))
-```
 
-```lisp
-→ "Timeout after 30 seconds on host example.com"
+=> "Timeout after 30 seconds on host example.com"
 ```
 
 ### Using :report with a String
@@ -91,10 +85,8 @@ The `:report` option can be a simple string for conditions that always report th
                           (muffle-warning))))
   (warn 'out-of-coffee)
   :warned)
-```
 
-```lisp
-→ :WARNED
+=> :WARNED
 ```
 
 ### Slots with Default Values
@@ -117,20 +109,16 @@ Use `:initform` to provide default values for slots.
 (handler-case (error 'retry-error)
   (retry-error (c)
     (format nil "~A" c)))
-```
 
-```lisp
-→ "Failed after 3 attempts: unknown"
+=> "Failed after 3 attempts: unknown"
 ```
 
 ```lisp
 (handler-case (error 'retry-error :attempts 5 :reason "server down")
   (retry-error (c)
     (format nil "~A" c)))
-```
 
-```lisp
-→ "Failed after 5 attempts: server down"
+=> "Failed after 5 attempts: server down"
 ```
 
 ### Multiple Inheritance
@@ -162,8 +150,6 @@ A condition can inherit from multiple parent types.
                                 (muffle-warning))))
   (warn 'suspicious-data :data '(1 2 nil 4))
   :ok)
-```
 
-```lisp
-→ :OK
+=> :OK
 ```

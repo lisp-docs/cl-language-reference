@@ -16,28 +16,25 @@ import CellErrorConditionType from './_cell-error_condition-type.md';
 
 ```lisp
 (subtypep 'cell-error 'error)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Subtypes of cell-error
 
 ```lisp
 (subtypep 'unbound-variable 'cell-error)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ```lisp
 (subtypep 'undefined-function 'cell-error)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Catching Cell Errors
@@ -47,8 +44,6 @@ import CellErrorConditionType from './_cell-error_condition-type.md';
     (symbol-value (gensym))
   (cell-error (c)
     (format nil "Cell error on: ~S" (cell-error-name c))))
-```
 
-```lisp
-→ "Cell error on: #:Gxxxx"  ; gensym name varies
+=> "Cell error on: #:Gxxxx"
 ```

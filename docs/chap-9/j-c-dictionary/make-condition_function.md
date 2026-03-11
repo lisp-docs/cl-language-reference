@@ -18,10 +18,7 @@ import MakeConditionFunction from './_make-condition_function.md';
 (make-condition 'simple-error
                 :format-control "File ~A not found"
                 :format-arguments '("data.txt"))
-```
-
-```lisp
-→ #<SIMPLE-ERROR ...>
+==> #<SIMPLE-ERROR {00000000}>
 ```
 
 ### Printing a Condition
@@ -33,10 +30,8 @@ The format of the printed representation is controlled by the condition's `:repo
                          :format-control "Disk ~A% full"
                          :format-arguments '(90))))
   (format nil "~A" c))
-```
 
-```lisp
-→ "Disk 90% full"
+=> "Disk 90% full"
 ```
 
 ### Creating a Custom Condition
@@ -57,10 +52,8 @@ You can create instances of user-defined condition types.
                          :value "not-an-email")))
   (values (validation-error-field c)
           (validation-error-value c)))
-```
 
-```lisp
-→ "email", "not-an-email"
+=> "email"
 ```
 
 ### Passing a Condition to error
@@ -74,10 +67,8 @@ A pre-constructed condition can be passed directly to `error`, `signal`, or `war
   (handler-case (error c)
     (simple-error (caught)
       (format nil "~A" caught))))
-```
 
-```lisp
-→ "Unexpected value: :BAD"
+=> "Unexpected value: :BAD"
 ```
 
 ### Default Initform Values
@@ -95,16 +86,12 @@ If the condition type defines `:initform` defaults, `make-condition` uses them w
                      (server-error-message c)))))
 
 (format nil "~A" (make-condition 'server-error))
-```
 
-```lisp
-→ "500: Internal Server Error"
+=> "500: Internal Server Error"
 ```
 
 ```lisp
 (format nil "~A" (make-condition 'server-error :code 404 :message "Not Found"))
-```
 
-```lisp
-→ "404: Not Found"
+=> "404: Not Found"
 ```

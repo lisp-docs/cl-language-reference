@@ -25,7 +25,7 @@ Even when handlers would normally intercept a condition, `invoke-debugger` bypas
 ;; (ignore-errors
 ;;   (handler-bind ((error #'invoke-debugger))
 ;;     (error "Foo.")))
-;; => enters the debugger despite ignore-errors
+=> enters the debugger despite ignore-errors
 ```
 
 ### The *debugger-hook* Protocol
@@ -55,5 +55,5 @@ Custom debugger: test error
 ```lisp
 ;; (invoke-debugger (make-condition 'simple-condition
 ;;                                   :format-control "Debug me"))
-;; => enters debugger; does not return unless a restart transfers control
+=> enters debugger; does not return unless a restart transfers control
 ```

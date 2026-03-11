@@ -19,10 +19,8 @@ import CerrorFunction from './_cerror_function.md';
                         (declare (ignore c))
                         (invoke-restart 'continue))))
   (cerror "Skip the operation." "Cannot perform operation X."))
-```
 
-```lisp
-→ NIL
+=> NIL
 ```
 
 ### Continuing Past a Correctable Error
@@ -41,10 +39,8 @@ import CerrorFunction from './_cerror_function.md';
                         (declare (ignore c))
                         (invoke-restart 'continue))))
   (safe-sqrt -9))
-```
 
-```lisp
-→ 3.0
+=> 3.0
 ```
 
 ### Cerror with a Condition Type
@@ -61,10 +57,8 @@ You can pass a condition type name instead of a string for the error datum. The 
                                 (declare (ignore c))
                                 (invoke-restart 'continue))))
   (cerror "Use a default value." 'invalid-input :value "abc"))
-```
 
-```lisp
-→ NIL
+=> NIL
 ```
 
 ### Looping Until a Valid Value is Provided
@@ -86,8 +80,6 @@ A classic pattern: keep signaling a continuable error until a valid value is sup
                         (declare (ignore c))
                         (invoke-restart 'continue))))
   (require-positive -5))
-```
 
-```lisp
-→ 42
+=> 42
 ```

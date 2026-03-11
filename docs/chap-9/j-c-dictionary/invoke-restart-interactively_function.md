@@ -20,10 +20,8 @@ import InvokeRestartInteractivelyFunction from './_invoke-restart-interactively_
   (my-restart ()
     :report "Do the thing."
     :done))
-```
 
-```lisp
-→ :DONE
+=> :DONE
 ```
 
 ### Restart with :interactive Option
@@ -37,10 +35,8 @@ The `:interactive` option in `restart-case` specifies a function of no arguments
     :report "Use a value."
     :interactive (lambda () (list 42))
     v))
-```
 
-```lisp
-→ 42
+=> 42
 ```
 
 ### Used Internally by Debuggers
@@ -64,10 +60,8 @@ The `:interactive` option in `restart-case` specifies a function of no arguments
 (restart-case
     (invoke-restart 'use-value 100)
   (use-value (v) v))
-```
 
-```lisp
-→ 100
+=> 100
 ```
 
 ```lisp
@@ -77,8 +71,6 @@ The `:interactive` option in `restart-case` specifies a function of no arguments
   (use-value (v)
     :interactive (lambda () (list 200))
     v))
-```
 
-```lisp
-→ 200
+=> 200
 ```

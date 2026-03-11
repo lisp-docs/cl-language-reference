@@ -20,10 +20,8 @@ import WarnFunction from './_warn_function.md';
 
 ```
 WARNING: The configuration file is missing.
-```
 
-```lisp
-→ NIL
+=> NIL
 ```
 
 ### Warning with Format Arguments
@@ -36,10 +34,8 @@ Like `error`, `warn` accepts format control strings with arguments.
 
 ```
 WARNING: Variable X has suspicious value -1
-```
 
-```lisp
-→ NIL
+=> NIL
 ```
 
 ### Muffling a Warning
@@ -52,10 +48,8 @@ A handler can invoke the `muffle-warning` restart to suppress the warning output
                           (muffle-warning))))
   (warn "This warning will not be printed.")
   :done)
-```
 
-```lisp
-→ :DONE
+=> :DONE
 ```
 
 ### Collecting Warnings
@@ -70,10 +64,8 @@ You can capture warnings instead of printing them, using `handler-bind` and the 
     (warn "First issue")
     (warn "Second issue"))
   (nreverse collected))
-```
 
-```lisp
-→ ("First issue" "Second issue")
+=> ("First issue" "Second issue")
 ```
 
 ### Warning with a Condition Type
@@ -92,8 +84,6 @@ You can pass a warning condition type symbol instead of a string.
                   (muffle-warning))))
   (warn 'deprecation-warning :name 'old-function)
   :ok)
-```
 
-```lisp
-→ :OK
+=> :OK
 ```

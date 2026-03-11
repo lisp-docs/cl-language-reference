@@ -16,10 +16,9 @@ import WarningConditionType from './_warning_condition-type.md';
 
 ```lisp
 (subtypep 'warning 'condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Warning Is Not a Serious Condition
@@ -28,10 +27,8 @@ Warnings are not subtypes of `serious-condition` or `error`.
 
 ```lisp
 (subtypep 'warning 'serious-condition)
-```
-
-```lisp
-→ NIL, T
+=> NIL
+=> T
 ```
 
 ### Handling All Warnings
@@ -43,26 +40,22 @@ Warnings are not subtypes of `serious-condition` or `error`.
   (warn "First")
   (warn "Second")
   :done)
-```
 
-```lisp
-→ :DONE
+=> :DONE
 ```
 
 ### Standard Warning Subtypes
 
 ```lisp
 (subtypep 'simple-warning 'warning)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ```lisp
 (subtypep 'style-warning 'warning)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```

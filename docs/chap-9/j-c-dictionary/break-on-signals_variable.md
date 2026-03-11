@@ -16,10 +16,8 @@ import BreakOnSignalsVariable from './_break-on-signals_variable.md';
 
 ```lisp
 *break-on-signals*
-```
 
-```lisp
-→ NIL
+=> NIL
 ```
 
 ### Breaking on All Errors
@@ -30,7 +28,8 @@ Setting `*break-on-signals*` to a type specifier causes the debugger to be enter
 ;; (let ((*break-on-signals* 'error))
 ;;   (ignore-errors (error "test")))
 ;; => enters debugger BEFORE the error is signaled
-;; => after continuing, ignore-errors handles the error normally
+;; => after continuing
+;; => ignore-errors handles the error normally
 ```
 
 ### Breaking on Warnings
@@ -40,7 +39,7 @@ You can use it to debug warning conditions too.
 ```lisp
 ;; (let ((*break-on-signals* 'warning))
 ;;   (warn "something suspicious"))
-;; => enters debugger before the warning is signaled
+=> enters debugger before the warning is signaled
 ```
 
 ### Using a Specific Type

@@ -16,10 +16,9 @@ import StyleWarningConditionType from './_style-warning_condition-type.md';
 
 ```lisp
 (subtypep 'style-warning 'warning)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Signaling a Style Warning
@@ -32,10 +31,8 @@ import StyleWarningConditionType from './_style-warning_condition-type.md';
         :format-control "Variable ~S is unused"
         :format-arguments '(x))
   :done)
-```
 
-```lisp
-→ :DONE
+=> :DONE
 ```
 
 ### Distinguishing Style Warnings from Other Warnings
@@ -45,8 +42,6 @@ import StyleWarningConditionType from './_style-warning_condition-type.md';
     (warn 'simple-warning :format-control "regular warning")
   (style-warning () :style)
   (warning () :other-warning))
-```
 
-```lisp
-→ :OTHER-WARNING
+=> :OTHER-WARNING
 ```

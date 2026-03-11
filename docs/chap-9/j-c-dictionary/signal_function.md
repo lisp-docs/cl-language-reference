@@ -16,10 +16,8 @@ import SignalFunction from './_signal_function.md';
 
 ```lisp
 (signal "Something happened")
-```
 
-```lisp
-→ NIL
+=> NIL
 ```
 
 ### Signaling a Custom Condition
@@ -38,10 +36,8 @@ You can signal custom condition types. Handlers established via `handler-bind` o
       :normal-return)
   (note (c)
     (format nil "Handled: ~A" (note-text c))))
-```
 
-```lisp
-→ "Handled: Just an FYI"
+=> "Handled: Just an FYI"
 ```
 
 ### Unhandled Signals Return NIL
@@ -54,10 +50,8 @@ Unlike `error`, if no handler matches, execution continues normally.
 (progn
   (signal 'my-condition)
   :continued)
-```
 
-```lisp
-→ :CONTINUED
+=> :CONTINUED
 ```
 
 ### Collecting Signaled Conditions with handler-bind
@@ -71,10 +65,8 @@ Since `handler-bind` does not unwind the stack, you can observe a signal and let
     (signal "event one")
     (signal "event two"))
   (nreverse log))
-```
 
-```lisp
-→ ("event one" "event two")
+=> ("event one" "event two")
 ```
 
 ### Difference Between signal and error
@@ -84,18 +76,14 @@ Since `handler-bind` does not unwind the stack, you can observe a signal and let
 ```lisp
 ;; signal returns NIL when unhandled
 (signal "advisory notice")
-```
 
-```lisp
-→ NIL
+=> NIL
 ```
 
 ```lisp
 ;; error would enter the debugger if unhandled
 (handler-case (error "real problem")
   (error () :caught))
-```
 
-```lisp
-→ :CAUGHT
+=> :CAUGHT
 ```

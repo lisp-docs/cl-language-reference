@@ -20,10 +20,8 @@ import RestartBindMacro from './_restart-bind_macro.md';
                 :report-function (lambda (stream)
                                   (write-string "Invoke my-restart" stream))))
   (invoke-restart 'my-restart))
-```
 
-```lisp
-→ :RESTARTED
+=> :RESTARTED
 ```
 
 ### Restart with Arguments
@@ -35,10 +33,8 @@ The restart function receives whatever arguments are passed to `invoke-restart`.
                 :report-function (lambda (stream)
                                   (write-string "Use a provided value" stream))))
   (invoke-restart 'use-value 42))
-```
 
-```lisp
-→ 42
+=> 42
 ```
 
 ### Restart Without Unwinding
@@ -56,10 +52,8 @@ A key difference from `restart-case`: the restart function in `restart-bind` exe
     (invoke-restart 'log-and-continue)
     (push :after log))
   (nreverse log))
-```
 
-```lisp
-→ (:BEFORE :RESTART-INVOKED :AFTER)
+=> (:BEFORE :RESTART-INVOKED :AFTER)
 ```
 
 ### Using restart-bind with handler-bind
@@ -76,10 +70,8 @@ A key difference from `restart-case`: the restart function in `restart-bind` exe
                     :report-function (lambda (s)
                                       (write-string "Recover from the error" s))))
       (error "Something failed"))))
-```
 
-```lisp
-→ :RECOVERED
+=> :RECOVERED
 ```
 
 ### Comparing restart-bind and restart-case
@@ -93,8 +85,6 @@ Most programs should prefer `restart-case` for its simpler syntax. Use `restart-
                         (invoke-restart 'fix-it))))
   (restart-case (error "problem")
     (fix-it () :fixed)))
-```
 
-```lisp
-→ :FIXED
+=> :FIXED
 ```

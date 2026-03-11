@@ -33,10 +33,8 @@ When a handler invokes the `use-default` restart:
     (use-default ()
       :report "Use a default value."
       42)))
-```
 
-```lisp
-→ 42
+=> 42
 ```
 
 ### Restart with Arguments
@@ -52,10 +50,8 @@ Restart clauses can accept arguments passed by `invoke-restart`.
     (use-value (v)
       :report "Supply a value to use."
       v)))
-```
 
-```lisp
-→ 99
+=> 99
 ```
 
 ### Multiple Restarts
@@ -80,10 +76,8 @@ You can define multiple restarts for a single signaling form, giving the handler
                         (declare (ignore c))
                         (invoke-restart 'use-zero))))
   (parse-integer-or-restart "abc"))
-```
 
-```lisp
-→ 0
+=> 0
 ```
 
 ### Normal Return When No Restart Is Invoked
@@ -96,10 +90,8 @@ If the restartable form completes normally, its return values are returned by `r
   (abort ()
     :report "Abort the computation."
     nil))
-```
 
-```lisp
-→ 3
+=> 3
 ```
 
 ### Restart with :report and :test
@@ -126,10 +118,8 @@ The `:report` option describes the restart for the user. The `:test` option cont
         :report "Retry the operation."
         ;; After transfer, restart-case returns this:
         :retried))))
-```
 
-```lisp
-→ :RETRIED
+=> :RETRIED
 ```
 
 ### Practical Pattern: Retry Loop with restart-case
@@ -154,8 +144,6 @@ A common idiom wraps `restart-case` in a loop so that the `retry` restart re-ent
                         (let ((r (find-restart 'retry)))
                           (when r (invoke-restart r))))))
   (fetch-data "server.example.com"))
-```
 
-```lisp
-→ "Data from server.example.com"
+=> "Data from server.example.com"
 ```

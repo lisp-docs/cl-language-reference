@@ -19,10 +19,8 @@ import FindRestartFunction from './_find-restart_function.md';
     (let ((r (find-restart 'my-restart)))
       (if r :found :not-found))
   (my-restart () nil))
-```
 
-```lisp
-→ :FOUND
+=> :FOUND
 ```
 
 ### No Matching Restart
@@ -31,10 +29,8 @@ When no restart with the given name is active, `find-restart` returns `nil`.
 
 ```lisp
 (find-restart 'nonexistent)
-```
 
-```lisp
-→ NIL
+=> NIL
 ```
 
 ### Checking Before Invoking
@@ -47,10 +43,8 @@ A common pattern is to check whether a restart exists before invoking it. This a
                             (when r (invoke-restart r))))))
   (warn "This will be muffled.")
   :done)
-```
 
-```lisp
-→ :DONE
+=> :DONE
 ```
 
 ### Getting the Restart Name
@@ -62,10 +56,8 @@ A common pattern is to check whether a restart exists before invoking it. This a
     (let ((r (find-restart 'do-something)))
       (restart-name r))
   (do-something () nil))
-```
 
-```lisp
-→ DO-SOMETHING
+=> DO-SOMETHING
 ```
 
 ### Filtering by Condition
@@ -83,8 +75,6 @@ The optional second argument restricts the search to restarts associated with a 
   (fix ()
     :report "Fix the problem."
     :fixed))
-```
 
-```lisp
-→ :FIXED
+=> :FIXED
 ```

@@ -19,10 +19,8 @@ The simplest usage of `error` passes a format control string and optional argume
     (error "Expected a number, got: ~S" 'foo)
   (simple-error (c)
     (format nil "Caught: ~A" c)))
-```
 
-```lisp
-→ "Caught: Expected a number, got: FOO"
+=> "Caught: Expected a number, got: FOO"
 ```
 
 ### Error Never Returns Normally
@@ -35,10 +33,8 @@ The simplest usage of `error` passes a format control string and optional argume
       (error "fatal problem")
       :unreachable)
   (error () :handled))
-```
 
-```lisp
-→ :HANDLED
+=> :HANDLED
 ```
 
 ### Signaling a Condition Type by Name
@@ -52,10 +48,8 @@ Instead of a string, you can pass a condition type symbol along with initargs. T
     (format nil "~S is not of type ~S"
             (type-error-datum c)
             (type-error-expected-type c))))
-```
 
-```lisp
-→ "\"hello\" is not of type INTEGER"
+=> "\"hello\" is not of type INTEGER"
 ```
 
 ### Signaling a Pre-made Condition Object
@@ -69,10 +63,8 @@ You can also pass an already-constructed condition object to `error`.
   (handler-case (error c)
     (simple-error (caught)
       (format nil "Caught: ~A" caught))))
-```
 
-```lisp
-→ "Caught: Disk C is full"
+=> "Caught: Disk C is full"
 ```
 
 ### Using Error in a Validation Function
@@ -86,18 +78,14 @@ A typical pattern is to signal an error when input validation fails.
   (if (zerop n) 1 (* n (factorial (1- n)))))
 
 (factorial 5)
-```
 
-```lisp
-→ 120
+=> 120
 ```
 
 ```lisp
 (handler-case (factorial -3)
   (simple-error (c)
     (format nil "~A" c)))
-```
 
-```lisp
-→ "-3 is not a non-negative integer"
+=> "-3 is not a non-negative integer"
 ```

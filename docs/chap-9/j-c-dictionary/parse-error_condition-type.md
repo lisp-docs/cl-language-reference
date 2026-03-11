@@ -16,10 +16,9 @@ import ParseErrorConditionType from './_parse-error_condition-type.md';
 
 ```lisp
 (subtypep 'parse-error 'error)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Catching Parse Errors
@@ -31,10 +30,8 @@ Parse errors are typically signaled by functions like `parse-integer` when they 
     (parse-integer "abc")
   (parse-error ()
     :parse-failed))
-```
 
-```lisp
-→ :PARSE-FAILED
+=> :PARSE-FAILED
 ```
 
 ### Reader Errors Are Parse Errors
@@ -43,8 +40,7 @@ Errors during `read` that involve malformed input may also be of type `parse-err
 
 ```lisp
 (subtypep 'reader-error 'parse-error)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```

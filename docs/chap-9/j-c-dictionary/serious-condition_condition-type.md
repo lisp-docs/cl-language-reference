@@ -16,18 +16,16 @@ import SeriousConditionConditionType from './_serious-condition_condition-type.m
 
 ```lisp
 (subtypep 'serious-condition 'condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ```lisp
 (subtypep 'error 'serious-condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Handling Serious Conditions
@@ -38,27 +36,21 @@ You can catch all serious conditions (not just errors) by handling `serious-cond
 (handler-case (error "Something bad")
   (serious-condition (c)
     (format nil "Serious: ~A" c)))
-```
 
-```lisp
-→ "Serious: Something bad"
+=> "Serious: Something bad"
 ```
 
 ### Type Checking
 
 ```lisp
 (typep (make-condition 'simple-error :format-control "test") 'serious-condition)
-```
 
-```lisp
-→ T
+=> T
 ```
 
 ```lisp
 ;; Warnings are NOT serious conditions
 (typep (make-condition 'simple-warning :format-control "test") 'serious-condition)
-```
 
-```lisp
-→ NIL
+=> NIL
 ```

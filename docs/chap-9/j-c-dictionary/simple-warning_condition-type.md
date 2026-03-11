@@ -16,18 +16,16 @@ import SimpleWarningConditionType from './_simple-warning_condition-type.md';
 
 ```lisp
 (subtypep 'simple-warning 'warning)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ```lisp
 (subtypep 'simple-warning 'simple-condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Created Implicitly by warn
@@ -38,10 +36,8 @@ import SimpleWarningConditionType from './_simple-warning_condition-type.md';
                                  (muffle-warning))))
   (warn "Low disk space")
   :warned)
-```
 
-```lisp
-→ :WARNED
+=> :WARNED
 ```
 
 ### Accessing Format Information
@@ -51,8 +47,6 @@ import SimpleWarningConditionType from './_simple-warning_condition-type.md';
     (warn "~D files remaining" 3)
   (simple-warning (c)
     (simple-condition-format-arguments c)))
-```
 
-```lisp
-→ (3)
+=> (3)
 ```

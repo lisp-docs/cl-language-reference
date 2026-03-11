@@ -17,10 +17,8 @@ import ConditionConditionType from './_condition_condition-type.md';
 ```lisp
 (typep (make-condition 'simple-error :format-control "oops")
        'condition)
-```
 
-```lisp
-→ T
+=> T
 ```
 
 ### Checking the Type Hierarchy
@@ -29,26 +27,23 @@ All standard condition types are subtypes of `condition`.
 
 ```lisp
 (subtypep 'error 'condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ```lisp
 (subtypep 'warning 'condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ```lisp
 (subtypep 'serious-condition 'condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Defining Custom Conditions
@@ -62,10 +57,8 @@ User-defined conditions must be defined with `define-condition`, not `defclass`.
              (format stream "Notice: ~A" (notice-message c)))))
 
 (typep (make-condition 'my-notice :message "test") 'condition)
-```
 
-```lisp
-→ T
+=> T
 ```
 
 ### Signaling a Plain Condition
@@ -75,8 +68,6 @@ A condition that is not an error or warning can be signaled with `signal`. If un
 ```lisp
 (signal (make-condition 'simple-condition
                         :format-control "Just informing"))
-```
 
-```lisp
-→ NIL
+=> NIL
 ```

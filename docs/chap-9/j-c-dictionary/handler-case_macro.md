@@ -19,10 +19,8 @@ import HandlerCaseMacro from './_handler-case_macro.md';
     (error "Something went wrong")
   (error (c)
     (format nil "Caught: ~A" c)))
-```
 
-```lisp
-→ "Caught: Something went wrong"
+=> "Caught: Something went wrong"
 ```
 
 ### Handling Different Condition Types
@@ -36,10 +34,8 @@ Multiple clauses can handle different condition types. Clauses are searched sequ
     (format nil "Simple error: ~A" c))
   (error (c)
     (format nil "General error: ~A" c)))
-```
 
-```lisp
-→ "Simple error: A simple error"
+=> "Simple error: A simple error"
 ```
 
 ### Ignoring the Condition Variable
@@ -51,10 +47,8 @@ If you do not need to reference the condition object, you can omit the variable 
     (/ 1 0)
   (division-by-zero ()
     :infinity))
-```
 
-```lisp
-→ :INFINITY
+=> :INFINITY
 ```
 
 ### Normal Return Values
@@ -65,10 +59,9 @@ When no condition is signaled, `handler-case` returns the values of the expressi
 (handler-case
     (values 1 2 3)
   (error () :oops))
-```
-
-```lisp
-→ 1, 2, 3
+=> 1
+=> 2
+=> 3
 ```
 
 ### The :no-error Clause
@@ -81,10 +74,8 @@ A `:no-error` clause is executed when the expression returns normally. Its lambd
   (error (c) (format nil "Error: ~A" c))
   (:no-error (a b)
     (+ a b)))
-```
 
-```lisp
-→ 30
+=> 30
 ```
 
 ### Practical Example: Safe Division
@@ -99,24 +90,18 @@ A function that catches division-by-zero and returns a default value.
       (format nil "Type error: ~A" c))))
 
 (safe-divide 10 3)
-```
 
-```lisp
-→ 10/3
+=> 10/3
 ```
 
 ```lisp
 (safe-divide 10 0)
-```
 
-```lisp
-→ 0
+=> 0
 ```
 
 ```lisp
 (safe-divide 10 0 :infinity)
-```
 
-```lisp
-→ :INFINITY
+=> :INFINITY
 ```

@@ -17,10 +17,8 @@ import WithSimpleRestartMacro from './_with-simple-restart_macro.md';
 ```lisp
 (with-simple-restart (abort "Abort the computation.")
   (+ 1 2))
-```
 
-```lisp
-→ 3
+=> 3
 ```
 
 ### Invoking the Restart
@@ -33,10 +31,8 @@ When the restart is invoked, the macro returns two values: `nil` and `t`. This d
                         (invoke-restart 'skip))))
   (with-simple-restart (skip "Skip this step.")
     (error "Step failed")))
-```
-
-```lisp
-→ NIL, T
+=> NIL
+=> T
 ```
 
 ### Distinguishing Normal vs. Restart Return
@@ -56,10 +52,8 @@ Use `multiple-value-bind` to detect whether the restart was taken.
                         (declare (ignore c))
                         (invoke-restart 'skip))))
   (try-operation))
-```
 
-```lisp
-→ :SKIPPED
+=> :SKIPPED
 ```
 
 ### Using with-simple-restart in a Loop
@@ -79,10 +73,8 @@ A practical pattern: wrapping each iteration in `with-simple-restart` so individ
                         (declare (ignore c))
                         (invoke-restart 'skip))))
   (process-items '(1 2 "bad" 4)))
-```
 
-```lisp
-→ (2 4 NIL 8)
+=> (2 4 NIL 8)
 ```
 
 ### Equivalent to restart-case
@@ -103,8 +95,6 @@ A practical pattern: wrapping each iteration in `with-simple-restart` so individ
     (bail ()
       :report "Bail out."
       (values nil t))))
-```
-
-```lisp
-→ NIL, T
+=> NIL
+=> T
 ```

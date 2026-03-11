@@ -16,18 +16,16 @@ import SimpleErrorConditionType from './_simple-error_condition-type.md';
 
 ```lisp
 (subtypep 'simple-error 'error)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ```lisp
 (subtypep 'simple-error 'simple-condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Created Implicitly by error
@@ -36,10 +34,8 @@ import SimpleErrorConditionType from './_simple-error_condition-type.md';
 (handler-case (error "File ~A not found" "test.txt")
   (simple-error (c)
     (format nil "~A" c)))
-```
 
-```lisp
-→ "File test.txt not found"
+=> "File test.txt not found"
 ```
 
 ### Creating Directly with make-condition
@@ -49,8 +45,6 @@ import SimpleErrorConditionType from './_simple-error_condition-type.md';
                          :format-control "Expected ~S, got ~S"
                          :format-arguments '(integer "hello"))))
   (simple-condition-format-control c))
-```
 
-```lisp
-→ "Expected ~S, got ~S"
+=> "Expected ~S, got ~S"
 ```

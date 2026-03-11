@@ -19,10 +19,8 @@ import InvokeRestartFunction from './_invoke-restart_function.md';
     (invoke-restart 'my-restart)
   (my-restart ()
     :invoked))
-```
 
-```lisp
-→ :INVOKED
+=> :INVOKED
 ```
 
 ### Passing Arguments to a Restart
@@ -34,10 +32,8 @@ Any additional arguments to `invoke-restart` are passed to the restart function.
     (invoke-restart 'use-value 42)
   (use-value (v)
     (format nil "Got value: ~A" v)))
-```
 
-```lisp
-→ "Got value: 42"
+=> "Got value: 42"
 ```
 
 ### Invoking a Restart from a Handler
@@ -53,10 +49,8 @@ The most common use of `invoke-restart` is from within a condition handler.
     (skip-item ()
       :report "Skip the bad item."
       :skipped)))
-```
 
-```lisp
-→ :SKIPPED
+=> :SKIPPED
 ```
 
 ### Invoking the store-value Restart
@@ -69,10 +63,8 @@ The most common use of `invoke-restart` is from within a condition handler.
                                (invoke-restart 'store-value 0))))
     (check-type x number)
     x))
-```
 
-```lisp
-→ 0
+=> 0
 ```
 
 ### Invoking the continue Restart
@@ -85,10 +77,8 @@ The `continue` restart is established by `cerror` and allows execution to procee
                         (invoke-restart 'continue))))
   (cerror "Proceed anyway." "Something is wrong.")
   :continued)
-```
 
-```lisp
-→ :CONTINUED
+=> :CONTINUED
 ```
 
 ### Error When Restart Does Not Exist
@@ -100,8 +90,6 @@ If the named restart is not active in the current dynamic environment, `invoke-r
     (invoke-restart 'nonexistent-restart)
   (control-error ()
     :no-such-restart))
-```
 
-```lisp
-→ :NO-SUCH-RESTART
+=> :NO-SUCH-RESTART
 ```

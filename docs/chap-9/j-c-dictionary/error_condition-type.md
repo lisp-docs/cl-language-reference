@@ -16,10 +16,9 @@ import ErrorConditionType from './_error_condition-type.md';
 
 ```lisp
 (subtypep 'error 'serious-condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Type Checking with error
@@ -28,18 +27,14 @@ All error conditions are of type `error`.
 
 ```lisp
 (typep (make-condition 'simple-error :format-control "oops") 'error)
-```
 
-```lisp
-→ T
+=> T
 ```
 
 ```lisp
 (typep (make-condition 'type-error :datum 1 :expected-type 'string) 'error)
-```
 
-```lisp
-→ T
+=> T
 ```
 
 ### Catching All Errors
@@ -50,10 +45,8 @@ All error conditions are of type `error`.
 (handler-case (error 'division-by-zero)
   (error (c)
     (format nil "Caught an error of type ~S" (type-of c))))
-```
 
-```lisp
-→ "Caught an error of type DIVISION-BY-ZERO"
+=> "Caught an error of type DIVISION-BY-ZERO"
 ```
 
 ### Standard Error Subtypes
@@ -62,16 +55,14 @@ The standard defines many subtypes of `error`, including `type-error`, `cell-err
 
 ```lisp
 (subtypep 'type-error 'error)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ```lisp
 (subtypep 'arithmetic-error 'error)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```

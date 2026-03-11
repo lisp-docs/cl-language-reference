@@ -26,10 +26,8 @@ Restart objects are returned by `find-restart` and `compute-restarts`. You can q
   (my-restart ()
     :report "Do something."
     nil))
-```
 
-```lisp
-→ "Restart: Do something., name: MY-RESTART"
+=> "Restart: Do something., name: MY-RESTART"
 ```
 
 ### Restarts Are Not Conditions
@@ -41,10 +39,8 @@ Restarts and conditions are separate concepts. Conditions describe what went wro
     (let ((restarts (compute-restarts)))
       (every (lambda (r) (typep r 'restart)) restarts))
   (my-restart () nil))
-```
 
-```lisp
-→ T
+=> T
 ```
 
 ### Anonymous Restarts

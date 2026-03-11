@@ -16,20 +16,17 @@ import StorageConditionConditionType from './_storage-condition_condition-type.m
 
 ```lisp
 (subtypep 'storage-condition 'serious-condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Not a Subtype of error
 
 ```lisp
 (subtypep 'storage-condition 'error)
-```
-
-```lisp
-→ NIL, T
+=> NIL
+=> T
 ```
 
 ### Handling Storage Conditions

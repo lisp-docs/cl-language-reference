@@ -62,10 +62,8 @@ A common debugging pattern is to call `break` inside a conditional.
   (* item item))
 
 (mapcar #'process-item '(1 2 3))
-```
 
-```lisp
-→ (1 4 9)
+=> (1 4 9)
 ```
 
 ### Equivalent Definition

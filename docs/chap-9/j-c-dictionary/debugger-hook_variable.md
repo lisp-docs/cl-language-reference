@@ -16,10 +16,8 @@ import DebuggerHookVariable from './_debugger-hook_variable.md';
 
 ```lisp
 *debugger-hook*
-```
 
-```lisp
-→ NIL
+=> NIL
 ```
 
 ### Installing a Custom Debugger Hook

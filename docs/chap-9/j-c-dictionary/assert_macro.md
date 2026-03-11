@@ -16,10 +16,8 @@ import AssertMacro from './_assert_macro.md';
 
 ```lisp
 (assert (= 2 (+ 1 1)))
-```
 
-```lisp
-→ NIL
+=> NIL
 ```
 
 ### Assertion Failure with a Custom Error Message
@@ -33,10 +31,8 @@ When the assertion fails, you can supply an error message using datum and argume
         "Expected an even number, got ~D." x)
     (error (c)
       (format nil "~A" c))))
-```
 
-```lisp
-→ "Expected an even number, got 5."
+=> "Expected an even number, got 5."
 ```
 
 ### Specifying Places for Interactive Correction
@@ -52,10 +48,7 @@ The second argument to `assert` is a list of places whose values the user can ch
                 (continue c))))
     (assert (plusp x) (x) "X must be positive, but got ~D." x)
     x))
-```
-
-```lisp
-→ 10
+;; => 10  (requires interactive input for places)
 ```
 
 ### Simple Assertion Without Places or Message
@@ -82,8 +75,6 @@ This signals an error with an implementation-dependent message about the failed 
   (list :rectangle :width width :height height))
 
 (make-rectangle 10 20)
-```
 
-```lisp
-→ (:RECTANGLE :WIDTH 10 :HEIGHT 20)
+=> (:RECTANGLE :WIDTH 10 :HEIGHT 20)
 ```

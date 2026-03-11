@@ -56,8 +56,6 @@ Use `with-condition-restarts` when you need to associate restarts with condition
     (resolve ()
       :report "Resolve the problem."
       :resolved)))
-```
 
-```lisp
-→ :RESOLVED
+=> :RESOLVED
 ```

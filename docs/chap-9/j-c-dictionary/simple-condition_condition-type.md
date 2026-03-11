@@ -19,10 +19,8 @@ import SimpleConditionConditionType from './_simple-condition_condition-type.md'
                          :format-control "Event ~A occurred at ~A"
                          :format-arguments '("X" "12:00"))))
   (format nil "~A" c))
-```
 
-```lisp
-→ "Event X occurred at 12:00"
+=> "Event X occurred at 12:00"
 ```
 
 ### Accessing Format Control and Arguments
@@ -33,10 +31,8 @@ import SimpleConditionConditionType from './_simple-condition_condition-type.md'
                          :format-arguments '(5))))
   (values (simple-condition-format-control c)
           (simple-condition-format-arguments c)))
-```
 
-```lisp
-→ "~D items", (5)
+=> "~D items"
 ```
 
 ### simple-condition Is a Mixin
@@ -45,18 +41,16 @@ import SimpleConditionConditionType from './_simple-condition_condition-type.md'
 
 ```lisp
 (subtypep 'simple-error 'simple-condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ```lisp
 (subtypep 'simple-warning 'simple-condition)
-```
 
-```lisp
-→ T, T
+=> T
+=> T
 ```
 
 ### Created Implicitly by signal
@@ -68,8 +62,6 @@ When `signal` receives a string, it creates a `simple-condition`.
     (signal "something happened")
   (simple-condition (c)
     (simple-condition-format-control c)))
-```
 
-```lisp
-→ "something happened"
+=> "something happened"
 ```

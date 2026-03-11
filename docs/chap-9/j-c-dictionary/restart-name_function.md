@@ -18,10 +18,8 @@ import RestartNameFunction from './_restart-name_function.md';
 (restart-case
     (restart-name (find-restart 'my-restart))
   (my-restart () nil))
-```
 
-```lisp
-→ MY-RESTART
+=> MY-RESTART
 ```
 
 ### Listing Names of All Active Restarts
