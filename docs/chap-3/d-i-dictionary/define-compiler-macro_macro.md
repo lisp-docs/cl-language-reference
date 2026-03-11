@@ -16,17 +16,17 @@ import DefineCompilerMacroMacro from './_define-compiler-macro_macro.md';
 
 ```lisp
 (defun square (x) (* x x))
-;; => SQUARE
+=> SQUARE
 
 (define-compiler-macro square (&whole form arg)
   (if (atom arg)
       `(* ,arg ,arg)
       form))
-;; => SQUARE
+=> SQUARE
 
 ;; The function still works:
 (square 5)
-;; => 25
+=> 25
 ```
 
 ### Declining to Expand
@@ -38,13 +38,13 @@ A compiler macro can decline to provide an expansion by returning the original f
   (if (and (numberp a) (numberp b))
       (+ a b)          ; constant-fold at compile time
       form))           ; decline: let the function handle it
-;; => MY-ADD
+=> MY-ADD
 
 (defun my-add (a b) (+ a b))
-;; => MY-ADD
+=> MY-ADD
 
 (my-add 3 4)
-;; => 7
+=> 7
 ```
 
 ### Inspecting the Compiler Macro
@@ -57,15 +57,15 @@ You can call the compiler macro function directly to see what expansion it would
 
 ;; macroexpand does NOT expand compiler macros:
 (macroexpand '(square x))
-;; => (SQUARE X), NIL
+;; => (SQUARE X)
 ```
 
 ### Checking if a Compiler Macro Exists
 
 ```lisp
 (compiler-macro-function 'square)
-;; => #<FUNCTION ...>   (non-nil: compiler macro exists)
+;; ==> #<FUNCTION ...>
 
 (compiler-macro-function 'car)
-;; => NIL   (no compiler macro for car)
+;; => NIL
 ```

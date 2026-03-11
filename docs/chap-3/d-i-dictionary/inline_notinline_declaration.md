@@ -18,12 +18,12 @@ The `inline` declaration advises the compiler to expand calls to the named funct
 (declaim (inline square))
 
 (defun square (x) (* x x))
-;; => SQUARE
+=> SQUARE
 
 ;; Calls to square may be expanded inline by the compiler.
 (defun sum-of-squares (a b)
   (+ (square a) (square b)))
-;; => SUM-OF-SQUARES
+=> SUM-OF-SQUARES
 ```
 
 ### Preventing Inlining with notinline
@@ -34,7 +34,7 @@ The `notinline` declaration tells the compiler not to inline the function. This 
 (defun compute (x)
   (declare (notinline square))
   (square x))
-;; => COMPUTE
+=> COMPUTE
 ;; The call to square will NOT be inlined here.
 ```
 
@@ -46,12 +46,12 @@ These declarations can be used locally within a form.
 (defun fast-path (x)
   (locally (declare (inline square))
     (square x)))
-;; => FAST-PATH
+=> FAST-PATH
 
 (defun debug-path (x)
   (locally (declare (notinline square))
     (square x)))
-;; => DEBUG-PATH
+=> DEBUG-PATH
 ```
 
 ### Scope of the Declaration
@@ -63,5 +63,5 @@ An `inline` declaration applies only within the scope of the declaration, not to
   (let ((x (square a)))            ; NOT affected by inline below
     (locally (declare (inline square))
       (+ x (square b)))))          ; this call may be inlined
-;; => EXAMPLE
+=> EXAMPLE
 ```

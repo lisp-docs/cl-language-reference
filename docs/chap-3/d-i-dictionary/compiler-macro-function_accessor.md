@@ -16,17 +16,17 @@ import CompilerMacroFunctionAccessor from './_compiler-macro-function_accessor.m
 
 ```lisp
 (defun my-fn (x) x)
-;; => MY-FN
+=> MY-FN
 
 (compiler-macro-function 'my-fn)
-;; => NIL
+=> NIL
 
 (define-compiler-macro my-fn (&whole form x)
   (if (constantp x) x form))
-;; => MY-FN
+=> MY-FN
 
 (compiler-macro-function 'my-fn)
-;; => #<FUNCTION ...>
+==> #<FUNCTION ...>
 ```
 
 ### Invoking the Compiler Macro Function Directly
@@ -35,18 +35,18 @@ The returned function takes two arguments: the form and an environment object.
 
 ```lisp
 (funcall (compiler-macro-function 'my-fn) '(my-fn 42) nil)
-;; => 42  (constant argument, so the compiler macro returns it directly)
+;; => 42
 
 (funcall (compiler-macro-function 'my-fn) '(my-fn x) nil)
-;; => (MY-FN X)  (non-constant, declined to expand)
+;; => (MY-FN X)
 ```
 
 ### Removing a Compiler Macro with setf
 
 ```lisp
 (setf (compiler-macro-function 'my-fn) nil)
-;; => NIL
+=> NIL
 
 (compiler-macro-function 'my-fn)
-;; => NIL
+=> NIL
 ```

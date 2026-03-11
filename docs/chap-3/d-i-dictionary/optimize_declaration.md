@@ -18,7 +18,7 @@ The `optimize` declaration specifies priorities among optimization qualities: `s
 (defun fast-add (a b)
   (declare (optimize (speed 3) (safety 0)))
   (+ a b))
-;; => FAST-ADD
+=> FAST-ADD
 ```
 
 ### Prioritizing Safety
@@ -27,7 +27,7 @@ The `optimize` declaration specifies priorities among optimization qualities: `s
 (defun safe-access (list index)
   (declare (optimize (safety 3) (speed 0)))
   (nth index list))
-;; => SAFE-ACCESS
+=> SAFE-ACCESS
 ```
 
 ### Global Optimization with declaim
@@ -46,7 +46,7 @@ The `optimize` declaration specifies priorities among optimization qualities: `s
       (declare (type fixnum sum n))
       (dotimes (i n sum)
         (incf sum i)))))
-;; => HOT-LOOP
+=> HOT-LOOP
 ```
 
 ### Minimizing Code Size
@@ -55,5 +55,5 @@ The `optimize` declaration specifies priorities among optimization qualities: `s
 (defun compact-fn (x)
   (declare (optimize (space 3) (speed 0)))
   (list x x x))
-;; => COMPACT-FN
+=> COMPACT-FN
 ```

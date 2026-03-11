@@ -16,29 +16,29 @@ import SpecialOperatorPFunction from './_special-operator-p_function.md';
 
 ```lisp
 (special-operator-p 'if)
-;; => T
+=> T
 
 (special-operator-p 'let)
-;; => T
+=> T
 
 (special-operator-p 'quote)
-;; => T
+=> T
 
 (special-operator-p 'progn)
-;; => T
+=> T
 ```
 
 ### Regular Functions and Macros Return NIL
 
 ```lisp
 (special-operator-p 'car)
-;; => NIL
+=> NIL
 
 (special-operator-p 'defun)
-;; => NIL  (defun is a macro, not a special operator)
+=> NIL
 
 (special-operator-p 'list)
-;; => NIL
+=> NIL
 ```
 
 ### Checking Several Standard Special Operators
@@ -47,21 +47,21 @@ The standard defines exactly 25 special operators. Here are a few more tests:
 
 ```lisp
 (special-operator-p 'setq)
-;; => T
+=> T
 
 (special-operator-p 'function)
-;; => T
+=> T
 
 (special-operator-p 'go)
-;; => T
+=> T
 
 (special-operator-p 'tagbody)
-;; => T
+=> T
 ```
 
 ### Non-Existent Symbols
 
 ```lisp
 (special-operator-p 'not-a-real-thing)
-;; => NIL
+=> NIL
 ```

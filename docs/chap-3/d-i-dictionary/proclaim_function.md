@@ -18,10 +18,10 @@ import ProclaimFunction from './_proclaim_function.md';
 (proclaim '(special *my-global*))
 
 (setq *my-global* 42)
-;; => 42
+=> 42
 
 *my-global*
-;; => 42
+=> 42
 ```
 
 ### Declaring Type Information

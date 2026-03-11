@@ -18,7 +18,7 @@ import DeclaimMacro from './_declaim_macro.md';
 (declaim (special *verbose*))
 
 (setq *verbose* t)
-;; => T
+=> T
 ```
 
 ### Declaring Optimization Settings
@@ -57,6 +57,6 @@ import DeclaimMacro from './_declaim_macro.md';
 (declaim (inline square))
 
 (defun square (x) (* x x))
-;; => SQUARE
+=> SQUARE
 ;; The compiler is advised to inline calls to square.
 ```

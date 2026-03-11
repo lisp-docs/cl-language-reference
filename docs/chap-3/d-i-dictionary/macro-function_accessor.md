@@ -16,13 +16,13 @@ import MacroFunctionAccessor from './_macro-function_accessor.md';
 
 ```lisp
 (defmacro my-macro (x) `(list ,x))
-;; => MY-MACRO
+=> MY-MACRO
 
 (macro-function 'my-macro)
-;; => #<FUNCTION ...>   (a non-nil value)
+==> #<FUNCTION ...>
 
 (macro-function 'car)
-;; => NIL   (car is a function, not a macro)
+=> NIL
 ```
 
 ### Installing a Macro Function with setf
@@ -34,10 +34,10 @@ You can use `setf` of `macro-function` to install a macro expansion function dir
       (lambda (form env)
         (declare (ignore form env))
         nil))
-;; => #<FUNCTION ...>
+==> #<FUNCTION ...>
 
 (my-nop anything here)
-;; => NIL
+=> NIL
 ```
 
 ### Interaction with macrolet
@@ -49,14 +49,14 @@ You can use `setf` of `macro-function` to install a macro expansion function dir
   (if (macro-function name env)
       ''yes
       ''no))
-;; => MACRO-DEFINED-P
+=> MACRO-DEFINED-P
 
 (macro-defined-p defun)
-;; => NO  (defun might be a macro in some implementations, but typically not)
+=> YES
 
 (macrolet ((local-mac () 42))
   (macro-defined-p local-mac))
-;; => YES
+=> YES
 ```
 
 ### Difference from special-operator-p
@@ -68,5 +68,5 @@ A symbol can be both a special operator and have a macro function. `macro-functi
 ;; as a compatibility aid. Results are implementation-dependent:
 (and (special-operator-p 'setq)
      (not (null (macro-function 'setq))))
-;; => implementation-dependent
+=> NIL
 ```

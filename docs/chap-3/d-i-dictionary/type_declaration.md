@@ -20,7 +20,7 @@ The `type` declaration specifies the type of values a variable will hold. This c
   (declare (type integer x)
            (type string name))
   (format nil "~A is ~D years old" name x))
-;; => "Alice is 10 years old"
+=> "Alice is 10 years old"
 ```
 
 ### Shorthand Type Declarations
@@ -33,7 +33,7 @@ Instead of `(type fixnum x)`, you can write `(fixnum x)` as a shorthand when the
   (dotimes (i 10)
     (incf count i))
   count)
-;; => 45
+=> 45
 ```
 
 ### Type Declarations in defun
@@ -44,10 +44,10 @@ Instead of `(type fixnum x)`, you can write `(fixnum x)` as a shorthand when the
   (if (zerop b)
       (error "Division by zero")
       (/ a b)))
-;; => SAFE-DIVIDE
+=> SAFE-DIVIDE
 
 (safe-divide 10 3)
-;; => 10/3
+=> 10/3
 ```
 
 ### Compound Type Specifiers
@@ -56,5 +56,5 @@ Instead of `(type fixnum x)`, you can write `(fixnum x)` as a shorthand when the
 (let ((items '(1 2 3)))
   (declare (type list items))
   (length items))
-;; => 3
+=> 3
 ```

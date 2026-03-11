@@ -19,10 +19,10 @@ The `dynamic-extent` declaration asserts that the value of a variable has dynami
   (let ((fn (lambda (x) (* x x))))
     (declare (dynamic-extent fn))
     (reduce #'+ numbers :key fn)))
-;; => SUM-LIST
+=> SUM-LIST
 
 (sum-list '(1 2 3 4))
-;; => 30
+=> 30
 ```
 
 ### With &rest Arguments
@@ -33,7 +33,7 @@ A common use is declaring `&rest` list arguments as having dynamic extent, allow
 (defun my-format (stream control &rest args)
   (declare (dynamic-extent args))
   (apply #'format stream control args))
-;; => MY-FORMAT
+=> MY-FORMAT
 ```
 
 ### With Closures Passed to Higher-Order Functions
@@ -42,10 +42,10 @@ A common use is declaring `&rest` list arguments as having dynamic extent, allow
 (defun count-matching (predicate list)
   (declare (dynamic-extent predicate))
   (count-if predicate list))
-;; => COUNT-MATCHING
+=> COUNT-MATCHING
 
 (count-matching #'evenp '(1 2 3 4 5 6))
-;; => 3
+=> 3
 ```
 
 ### Important Constraint

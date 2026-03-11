@@ -19,7 +19,7 @@ The `ftype` declaration specifies the function type signature of named functions
 
 (defun my-add (a b)
   (+ a b))
-;; => MY-ADD
+=> MY-ADD
 ```
 
 ### Local ftype Declarations
@@ -28,7 +28,7 @@ The `ftype` declaration specifies the function type signature of named functions
 (defun compute (x y)
   (declare (ftype (function (number number) number) my-add))
   (my-add x y))
-;; => COMPUTE
+=> COMPUTE
 ```
 
 ### Declaring Multiple Functions
@@ -45,5 +45,5 @@ The `ftype` declaration specifies the function type signature of named functions
 
 (defun add-opt (a &optional (b 0))
   (+ a b))
-;; => ADD-OPT
+=> ADD-OPT
 ```

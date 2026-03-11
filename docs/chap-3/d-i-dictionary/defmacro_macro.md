@@ -17,11 +17,11 @@ import DefmacroMacro from './_defmacro_macro.md';
 ```lisp
 (defmacro my-when (test &body body)
   `(if ,test (progn ,@body)))
-;; => MY-WHEN
+=> MY-WHEN
 
 (my-when t (print "hello") 42)
 ;; prints: "hello"
-;; => 42
+=> 42
 ```
 
 ### Macro with Documentation String
@@ -30,13 +30,13 @@ import DefmacroMacro from './_defmacro_macro.md';
 (defmacro square (x)
   "Multiplies X by itself."
   `(* ,x ,x))
-;; => SQUARE
+=> SQUARE
 
 (square 5)
-;; => 25
+=> 25
 
 (documentation 'square 'function)
-;; => "Multiplies X by itself."
+=> "Multiplies X by itself."
 ```
 
 ### Destructuring Lambda Lists
@@ -48,7 +48,7 @@ Macro lambda lists support destructuring, allowing nested patterns to be matched
   `(let ((,a (car pair))
          (,b (cdr pair)))
      ,@body))
-;; => WITH-PAIR
+=> WITH-PAIR
 ```
 
 ### Using &whole to Access the Entire Form
@@ -59,7 +59,7 @@ Macro lambda lists support destructuring, allowing nested patterns to be matched
   `(progn
      (format t "~&Evaluating: ~S~%" ',form)
      ,(second form)))
-;; => DEBUG-FORM
+=> DEBUG-FORM
 ```
 
 ### Using &optional and &rest in Macros
@@ -67,17 +67,17 @@ Macro lambda lists support destructuring, allowing nested patterns to be matched
 ```lisp
 (defmacro my-list (&rest elements)
   `(list ,@elements))
-;; => MY-LIST
+=> MY-LIST
 
 (my-list 1 2 3)
-;; => (1 2 3)
+=> (1 2 3)
 
 (defmacro with-default (x &optional (default nil))
   `(if ,x ,x ,default))
-;; => WITH-DEFAULT
+=> WITH-DEFAULT
 
 (with-default nil 42)
-;; => 42
+=> 42
 ```
 
 ### Verifying Expansion with macroexpand-1
@@ -87,8 +87,9 @@ Macro lambda lists support destructuring, allowing nested patterns to be matched
   `(let ((temp ,a))
      (setf ,a ,b)
      (setf ,b temp)))
-;; => SWAP
+=> SWAP
 
 (macroexpand-1 '(swap x y))
-;; => (LET ((TEMP X)) (SETF X Y) (SETF Y TEMP)), T
+=> (LET ((TEMP X)) (SETF X Y) (SETF Y TEMP))
+=> T
 ```

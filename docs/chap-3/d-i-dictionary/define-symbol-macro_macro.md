@@ -16,13 +16,13 @@ import DefineSymbolMacroMacro from './_define-symbol-macro_macro.md';
 
 ```lisp
 (defvar *things* (list 'alpha 'beta 'gamma))
-;; => *THINGS*
+=> *THINGS*
 
 (define-symbol-macro thing1 (first *things*))
-;; => THING1
+=> THING1
 
 thing1
-;; => ALPHA
+=> ALPHA
 ```
 
 ### setq Acts as setf

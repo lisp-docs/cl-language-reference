@@ -17,11 +17,11 @@ import LoadTimeValueSpecialOperator from './_load-time-value_special-operator.md
 ```lisp
 (defun get-load-time ()
   (load-time-value (get-universal-time) t))
-;; => GET-LOAD-TIME
+=> GET-LOAD-TIME
 
 ;; Every call returns the same value -- the time when the code was loaded:
 (get-load-time)
-;; => 3920000000  (some universal time value, always the same)
+;; => implementation-dependent
 ```
 
 ### Random Value Fixed at Load Time
@@ -29,11 +29,11 @@ import LoadTimeValueSpecialOperator from './_load-time-value_special-operator.md
 ```lisp
 (defun lucky-number ()
   (load-time-value (random 100) t))
-;; => LUCKY-NUMBER
+=> LUCKY-NUMBER
 
 ;; The random number is chosen once at load time, then remains constant:
 (lucky-number)
-;; => 42  (some fixed number, same on every call)
+;; => implementation-dependent
 ```
 
 ### Mutable vs. Read-Only

@@ -28,10 +28,10 @@ Without an ignore declararation we get the expected compiler warning:
 CL-USER> (let ((x 24)))
 ; in: LET ((X 24))
 ;     (X 24)
-; 
+;
 ; caught STYLE-WARNING:
 ;   The variable X is defined but never used.
-; 
+;
 ; compilation unit finished
 ;   caught 1 STYLE-WARNING condition
 NIL
@@ -60,10 +60,10 @@ CL-USER> (defun foo (x) (format T "Hello World!"))
 ;     (SB-INT:NAMED-LAMBDA FOO
 ;         (X)
 ;       (BLOCK FOO (FORMAT T "Hello World!")))
-; 
+;
 ; caught STYLE-WARNING:
 ;   The variable X is defined but never used.
-; 
+;
 ; compilation unit finished
 ;   caught 1 STYLE-WARNING condition
 WARNING: redefining COMMON-LISP-USER::FOO in DEFUN
@@ -79,15 +79,15 @@ FOO
   `(let ((,var ,form))
      (declare (ignorable ,var))
      ,@body))
-;; => WITH-RESULT
+=> WITH-RESULT
 
 ;; var is used:
 (with-result (x (+ 1 2)) (* x x))
-;; => 9
+=> 9
 
 ;; var is not used (no warning thanks to ignorable):
 (with-result (x (+ 1 2)) 42)
-;; => 42
+=> 42
 ```
 
 ### Ignoring Multiple Variables
@@ -96,8 +96,8 @@ FOO
 (defun pick-first (a b c)
   (declare (ignore b c))
   a)
-;; => PICK-FIRST
+=> PICK-FIRST
 
 (pick-first 'x 'y 'z)
-;; => X
+=> X
 ```

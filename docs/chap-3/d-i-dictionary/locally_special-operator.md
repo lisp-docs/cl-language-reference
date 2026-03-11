@@ -17,7 +17,7 @@ import LocallySpecialOperator from './_locally_special-operator.md';
 ```lisp
 (locally (declare (optimize (speed 3) (safety 0)))
   (+ 1 2 3))
-;; => 6
+=> 6
 ```
 
 ### Accessing a Special Variable Locally
@@ -31,10 +31,10 @@ A common use of `locally` is to declare a free reference to a variable as specia
     (list y
           (locally (declare (special y))
             y))))                     ; accesses the special binding
-;; => SAMPLE
+=> SAMPLE
 
 (sample nil)
-;; => (T NIL)
+=> (T NIL)
 ```
 
 ### Local Optimization Declarations
@@ -45,7 +45,7 @@ A common use of `locally` is to declare a free reference to a variable as specia
     (if (zerop b)
         (error "Division by zero")
         (/ a b))))
-;; => SAFE-DIVIDE
+=> SAFE-DIVIDE
 ```
 
 ### Multiple Declarations
@@ -55,5 +55,6 @@ A common use of `locally` is to declare a free reference to a variable as specia
                   (notinline car cdr))
   (declare (optimize space))
   (floor 7 2))
-;; => 3, 1
+=> 3
+=> 1
 ```

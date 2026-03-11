@@ -16,10 +16,10 @@ import TheSpecialOperator from './_the_special-operator.md';
 
 ```lisp
 (the integer (+ 3 4))
-;; => 7
+=> 7
 
 (the string "hello")
-;; => "hello"
+=> "hello"
 ```
 
 ### Using the with fixnum Arithmetic
@@ -30,7 +30,7 @@ A common use is to assert fixnum types for performance hints.
 (let ((i 100))
   (declare (fixnum i))
   (the fixnum (+ i 1)))
-;; => 101
+=> 101
 ```
 
 ### Multiple Values with the
@@ -39,7 +39,8 @@ The `values` type specifier can be used to declare types for multiple return val
 
 ```lisp
 (the (values integer float) (truncate 7.5))
-;; => 7, 0.5
+=> 7
+=> 0.5
 ```
 
 ### the as a Place for setf
@@ -50,15 +51,15 @@ The `values` type specifier can be used to declare types for multiple return val
 (let ((x (list 'a 'b 'c)))
   (setf (the symbol (car x)) 'z)
   x)
-;; => (Z B C)
+=> (Z B C)
 ```
 
 ### Declaring Broader Types
 
 ```lisp
 (the number (* 2.5 3))
-;; => 7.5
+=> 7.5
 
 (the (or string symbol) (if t 'foo "bar"))
-;; => FOO
+=> FOO
 ```

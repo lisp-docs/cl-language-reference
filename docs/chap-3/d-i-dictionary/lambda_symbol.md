@@ -16,7 +16,7 @@ The symbol `lambda` heads a lambda expression, which describes an anonymous func
 
 ```lisp
 ((lambda (x) (* x x)) 5)
-;; => 25
+=> 25
 ```
 
 ### Using #' (function) with Lambda
@@ -25,17 +25,17 @@ The `#'` reader macro, which expands to the `function` special operator, convert
 
 ```lisp
 (funcall #'(lambda (x y) (+ x y)) 3 4)
-;; => 7
+=> 7
 ```
 
 ### Lambda with Optional and Rest Parameters
 
 ```lisp
 ((lambda (a &optional (b 10)) (+ a b)) 5)
-;; => 15
+=> 15
 
 ((lambda (a &rest others) (cons a others)) 1 2 3)
-;; => (1 2 3)
+=> (1 2 3)
 ```
 
 ### Lambda with Declarations and Documentation
@@ -46,5 +46,5 @@ The `#'` reader macro, which expands to the `function` special operator, convert
              (declare (type integer x))
              (* x 2))
          21)
-;; => 42
+=> 42
 ```

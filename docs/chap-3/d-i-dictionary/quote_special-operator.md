@@ -16,13 +16,13 @@ import QuoteSpecialOperator from './_quote_special-operator.md';
 
 ```lisp
 (quote hello)
-;; => HELLO
+=> HELLO
 
 'hello
-;; => HELLO
+=> HELLO
 
 (quote (1 2 3))
-;; => (1 2 3)
+=> (1 2 3)
 ```
 
 ### Preventing Evaluation
@@ -31,16 +31,16 @@ Without `quote`, a symbol would be looked up as a variable and a list would be t
 
 ```lisp
 (setq a 42)
-;; => 42
+=> 42
 
 a
-;; => 42
+=> 42
 
 'a
-;; => A
+=> A
 
 (list 'a 'b 'c)
-;; => (A B C)
+=> (A B C)
 ```
 
 ### Self-Evaluating Objects
@@ -49,26 +49,26 @@ Numbers, strings, and characters are self-evaluating -- quoting them is permitte
 
 ```lisp
 42
-;; => 42
+=> 42
 
 '42
-;; => 42
+=> 42
 
 "hello"
-;; => "hello"
+=> "hello"
 
 '"hello"
-;; => "hello"
+=> "hello"
 ```
 
 ### Nested quote
 
 ```lisp
 ''a
-;; => (QUOTE A)
+=> (QUOTE A)
 
 '''a
-;; => (QUOTE (QUOTE A))
+=> (QUOTE (QUOTE A))
 ```
 
 ### Important: Do Not Modify Quoted Objects

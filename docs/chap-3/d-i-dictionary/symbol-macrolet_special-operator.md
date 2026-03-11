@@ -17,7 +17,7 @@ import SymbolMacroletSpecialOperator from './_symbol-macrolet_special-operator.m
 ```lisp
 (symbol-macrolet ((x 'foo))
   (list x x))
-;; => (FOO FOO)
+=> (FOO FOO)
 ```
 
 ### Shadowing by let
@@ -27,7 +27,7 @@ A `let` binding shadows a `symbol-macrolet` definition, just as it would shadow 
 ```lisp
 (symbol-macrolet ((x 'foo))
   (list x (let ((x 'bar)) x)))
-;; => (FOO BAR)
+=> (FOO BAR)
 ```
 
 ### Accessing Structure Slots
@@ -41,7 +41,7 @@ A `let` binding shadows a `symbol-macrolet` definition, just as it would shadow 
     (setq first-elem 10)
     (setq second-elem 20)
     data))
-;; => (10 20 3)
+=> (10 20 3)
 ```
 
 ### setq Becomes setf
@@ -53,7 +53,7 @@ When `setq` is used on a symbol macro, it is treated as `setf` of the expansion.
   (symbol-macrolet ((head (car pair)))
     (setq head 'z)
     pair))
-;; => (Z . B)
+=> (Z . B)
 ```
 
 ### Nested Expansion
@@ -63,5 +63,5 @@ The expansion of a symbol macro is itself subject to further macro expansion in 
 ```lisp
 (symbol-macrolet ((x '(foo x)))
   (list x))
-;; => ((FOO X))
+=> ((FOO X))
 ```

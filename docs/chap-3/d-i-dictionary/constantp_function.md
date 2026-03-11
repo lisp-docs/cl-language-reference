@@ -16,13 +16,13 @@ Numbers, characters, strings, and arrays are always recognized as constant forms
 
 ```lisp
 (constantp 42)
-;; => T
+=> T
 
 (constantp #\A)
-;; => T
+=> T
 
 (constantp "hello")
-;; => T
+=> T
 ```
 
 ### Quoted Forms
@@ -31,10 +31,10 @@ A `quote` form is always a constant form.
 
 ```lisp
 (constantp '(quote (a b c)))
-;; => T
+=> T
 
 (constantp ''foo)
-;; => T
+=> T
 ```
 
 ### Keywords and Defined Constants
@@ -43,23 +43,23 @@ Keywords, `t`, `nil`, and symbols defined with `defconstant` are constant.
 
 ```lisp
 (constantp :my-keyword)
-;; => T
+=> T
 
 (constantp t)
-;; => T
+=> T
 
 (constantp nil)
-;; => T
+=> T
 
 (constantp 'pi)
-;; => T
+=> T
 ```
 
 ### Ordinary Variables Are Not Constant
 
 ```lisp
 (constantp 'some-variable)
-;; => NIL
+=> NIL
 ```
 
 ### Implementation-Dependent Cases
@@ -68,7 +68,7 @@ Some forms may or may not be recognized as constant depending on the implementat
 
 ```lisp
 (constantp '(+ 1 2))
-;; => implementation-dependent
+=> T
 
 (constantp '(sqrt pi))
 ;; => implementation-dependent

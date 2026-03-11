@@ -16,10 +16,10 @@ import EvalFunction from './_eval_function.md';
 
 ```lisp
 (eval '(+ 1 2 3))
-;; => 6
+=> 6
 
 (eval '(list 'a 'b 'c))
-;; => (A B C)
+=> (A B C)
 ```
 
 ### Evaluating a Symbol: Dynamic Lookup
@@ -28,15 +28,15 @@ import EvalFunction from './_eval_function.md';
 
 ```lisp
 (setq my-var 42)
-;; => 42
+=> 42
 
 (eval 'my-var)
-;; => 42
+=> 42
 
 ;; Lexical bindings are NOT visible to eval:
 (let ((my-var 100))
   (eval 'my-var))
-;; => 42
+=> 42
 ```
 
 ### Two Levels of Evaluation
@@ -45,23 +45,23 @@ When calling `eval`, the argument is first evaluated normally, then the result i
 
 ```lisp
 (setq form '(+ 10 20))
-;; => (+ 10 20)
+=> (+ 10 20)
 
 (eval form)
-;; => 30
+=> 30
 
 (eval 'form)
-;; => (+ 10 20)
+=> (+ 10 20)
 ```
 
 ### Constructing and Evaluating Forms Dynamically
 
 ```lisp
 (eval (list '* 6 7))
-;; => 42
+=> 42
 
 (eval (list 'if t ''yes ''no))
-;; => YES
+=> YES
 ```
 
 ### eval vs. symbol-value
@@ -70,11 +70,11 @@ For simply obtaining the dynamic value of a symbol, `symbol-value` is preferred 
 
 ```lisp
 (defvar *counter* 10)
-;; => *COUNTER*
+=> *COUNTER*
 
 (symbol-value '*counter*)
-;; => 10
+=> 10
 
 (eval '*counter*)
-;; => 10
+=> 10
 ```

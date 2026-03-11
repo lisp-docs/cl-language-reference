@@ -17,10 +17,11 @@ import MacroexpandFunction from './_macroexpand_macroexpand-1_function.md';
 ```lisp
 (defmacro my-when (test &body body)
   `(if ,test (progn ,@body)))
-;; => MY-WHEN
+=> MY-WHEN
 
 (macroexpand-1 '(my-when (> x 0) (print x) x))
-;; => (IF (> X 0) (PROGN (PRINT X) X)), T
+=> (IF (> X 0) (PROGN (PRINT X) X))
+=> T
 ```
 
 ### Full Expansion with macroexpand
@@ -30,15 +31,17 @@ import MacroexpandFunction from './_macroexpand_macroexpand-1_function.md';
 ```lisp
 (defmacro my-unless (test &body body)
   `(my-when (not ,test) ,@body))
-;; => MY-UNLESS
+=> MY-UNLESS
 
 ;; macroexpand-1 only expands one layer:
 (macroexpand-1 '(my-unless flag (print "nope")))
-;; => (MY-WHEN (NOT FLAG) (PRINT "nope")), T
+=> (MY-WHEN (NOT FLAG) (PRINT "nope"))
+=> T
 
 ;; macroexpand expands all the way through:
 (macroexpand '(my-unless flag (print "nope")))
-;; => (IF (NOT FLAG) (PROGN (PRINT "nope"))), T
+;; => (IF (NOT FLAG) (PROGN (PRINT "nope")))
+;; => T
 ```
 
 ### Non-Macro Forms Return Unchanged
@@ -47,10 +50,12 @@ When the form is not a macro form, both functions return the form unchanged with
 
 ```lisp
 (macroexpand-1 '(+ 1 2))
-;; => (+ 1 2), NIL
+=> (+ 1 2)
+=> NIL
 
 (macroexpand 'some-variable)
-;; => SOME-VARIABLE, NIL
+=> SOME-VARIABLE
+=> NIL
 ```
 
 ### Expanding Standard Macros
@@ -59,7 +64,7 @@ When the form is not a macro form, both functions return the form unchanged with
 ;; push is a standard macro:
 (macroexpand-1 '(push item my-list))
 ;; Expansion is implementation-dependent, but might be something like:
-;; => (SETQ MY-LIST (CONS ITEM MY-LIST)), T
+=> (SETQ MY-LIST (CONS ITEM MY-LIST))
 ```
 
 ### Note on Subforms
@@ -68,9 +73,10 @@ Neither `macroexpand` nor `macroexpand-1` expands macro calls nested inside the 
 
 ```lisp
 (defmacro double (x) `(+ ,x ,x))
-;; => DOUBLE
+=> DOUBLE
 
 (macroexpand '(double (double 3)))
-;; => (+ (DOUBLE 3) (DOUBLE 3)), T
+;; => (+ (DOUBLE 3) (DOUBLE 3))
+;; => T
 ;; Note: the inner (double 3) is NOT expanded
 ```

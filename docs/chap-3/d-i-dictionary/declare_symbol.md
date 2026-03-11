@@ -18,10 +18,10 @@ import DeclareSymbol from './_declare_symbol.md';
 (defun add-ints (a b)
   (declare (type integer a b))
   (+ a b))
-;; => ADD-INTS
+=> ADD-INTS
 
 (add-ints 3 4)
-;; => 7
+=> 7
 ```
 
 ### Multiple Declarations
@@ -34,7 +34,7 @@ Multiple declaration specifiers can appear in a single `declare`, or in multiple
            (type integer y))
   (declare (optimize (speed 3)))
   (format nil "~A: ~D" x y))
-;; => PROCESS
+=> PROCESS
 ```
 
 ### Declarations in let
@@ -44,7 +44,7 @@ Multiple declaration specifiers can appear in a single `declare`, or in multiple
       (y 20))
   (declare (type fixnum x y))
   (+ x y))
-;; => 30
+=> 30
 ```
 
 ### Declarations in lambda
@@ -54,7 +54,7 @@ Multiple declaration specifiers can appear in a single `declare`, or in multiple
            (declare (type number x))
            (* x x))
          5)
-;; => 25
+=> 25
 ```
 
 ### declare Is Not a Form

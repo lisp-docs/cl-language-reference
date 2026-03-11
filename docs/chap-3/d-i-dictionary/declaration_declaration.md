@@ -22,7 +22,7 @@ The `declaration` proclamation advises the system that certain names are valid d
   (declare (my-author "Alice")
            (my-version 2))
   (* x x))
-;; => FOO
+=> FOO
 ;; No warning about unrecognized declarations.
 ```
 
