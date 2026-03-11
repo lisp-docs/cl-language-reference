@@ -10,10 +10,43 @@ import LambdaParametersLimitConstantVariable from './_lambda-parameters-limit_co
 
 ## Expanded Reference: lambda-parameters-limit
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Inspecting the Value
+
+`lambda-parameters-limit` is an upper exclusive bound on the number of parameters that can appear in a single lambda list. The standard requires this to be at least 50.
 
 ```lisp
-(lambda-parameters-limit )
+;; Check the implementation's limit
+lambda-parameters-limit
+=> 1073741824
+
+;; Guaranteed to be at least 50
+(>= lambda-parameters-limit 50)
+=> T
+```
+
+### Relationship to call-arguments-limit
+
+`lambda-parameters-limit` constrains the definition side (how many parameters a function can declare), while `call-arguments-limit` constrains the call side (how many arguments can be passed).
+
+```lisp
+;; Compare the two limits
+(values lambda-parameters-limit
+        call-arguments-limit)
+=> 1073741824
+=> 1073741824
+```
+
+### Practical Note
+
+In practice, this limit is astronomically large on most implementations and you will never approach it. However, code generators or macro-writing tools that produce lambda lists programmatically should be aware of this bound.
+
+```lisp
+;; Verify that a generated parameter list is within bounds
+(defun check-param-count (n)
+  (if (< n lambda-parameters-limit)
+      (format nil "~D parameters: OK" n)
+      (format nil "~D parameters: exceeds limit" n)))
+
+(check-param-count 100)
+=> "100 parameters: OK"
 ```

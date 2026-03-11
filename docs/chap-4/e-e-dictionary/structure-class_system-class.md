@@ -10,10 +10,27 @@ import StructureClassSystemClass from './_structure-class_system-class.md';
 
 ## Expanded Reference: structure-class
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### The structure-class Metaclass
+
+`structure-class` is the metaclass of classes created by `defstruct` (when no `:type` option is used).
 
 ```lisp
-(structure-class )
+(defstruct color r g b)
+=> COLOR
+
+(typep (find-class 'color) 'structure-class)
+=> T
+```
+
+### Distinguishing from standard-class
+
+```lisp
+(defclass my-object () ())
+==> #<STANDARD-CLASS MY-OBJECT>
+
+(typep (find-class 'my-object) 'structure-class)
+=> NIL
+
+(typep (find-class 'color) 'standard-class)
+;; => NIL
 ```

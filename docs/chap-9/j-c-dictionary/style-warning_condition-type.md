@@ -10,10 +10,38 @@ import StyleWarningConditionType from './_style-warning_condition-type.md';
 
 ## Expanded Reference: style-warning
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### The style-warning Type
+
+`style-warning` is a subtype of `warning` used for conditions related to code style issues, such as unused variables or redefined functions. Implementations typically signal `style-warning` conditions during compilation.
 
 ```lisp
-(style-warning )
+(subtypep 'style-warning 'warning)
+
+=> T
+=> T
+```
+
+### Signaling a Style Warning
+
+```lisp
+(handler-bind ((style-warning (lambda (c)
+                                (declare (ignore c))
+                                (muffle-warning))))
+  (warn 'style-warning
+        :format-control "Variable ~S is unused"
+        :format-arguments '(x))
+  :done)
+
+=> :DONE
+```
+
+### Distinguishing Style Warnings from Other Warnings
+
+```lisp
+(handler-case
+    (warn 'simple-warning :format-control "regular warning")
+  (style-warning () :style)
+  (warning () :other-warning))
+
+=> :OTHER-WARNING
 ```

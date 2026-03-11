@@ -10,10 +10,16 @@ import StandardGenericFunctionSystemClass from './_standard-generic-function_sys
 
 ## Expanded Reference: standard-generic-function
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### The standard-generic-function System Class
+
+`standard-generic-function` is the default class of generic functions created with `defgeneric` or `defmethod`.
 
 ```lisp
-(standard-generic-function )
+(defgeneric volume (shape))
+
+(typep #'volume 'standard-generic-function)
+=> T
+
+(typep #'volume 'generic-function)
+=> T
 ```

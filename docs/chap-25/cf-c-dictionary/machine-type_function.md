@@ -10,10 +10,43 @@ import MachineTypeFunction from './_machine-type_function.md';
 
 ## Expanded Reference: machine-type
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### Basic Usage
+
+`machine-type` returns a string identifying the hardware type (CPU architecture) of the machine running the Lisp implementation. The exact value is implementation-dependent.
 
 ```lisp
-(machine-type )
+(machine-type)
+=> "X86-64"
 ```
+
+### Typical Return Values
+
+The returned string varies by implementation and platform. Common values include architecture names.
+
+```lisp
+;; On a 64-bit x86 system (SBCL): "X86-64"
+;; On an ARM system (Apple Silicon): "ARM64"
+;; If unknown: NIL
+(or (stringp (machine-type)) (null (machine-type)))
+;; => T
+```
+
+### Conditional Behavior Based on Architecture
+
+You can use `machine-type` to adjust behavior based on the hardware platform, though relying on specific strings is inherently non-portable.
+
+```lisp
+(defun pointer-size-heuristic ()
+  (let ((mt (machine-type)))
+    (cond
+      ((and mt (search "64" mt)) "Likely 64-bit architecture")
+      ((and mt (search "86" mt)) "Likely 32-bit x86 architecture")
+      (t "Unknown architecture"))))
+
+(pointer-size-heuristic)
+=> "Likely 64-bit architecture"
+```
+
+### Important Notes
+
+The return value is a string or `NIL`. There is no standard format for the returned string, so portable code should not depend on its exact contents.

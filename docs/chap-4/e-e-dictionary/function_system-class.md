@@ -8,12 +8,41 @@ import FunctionSystemClass from './_function_system-class.md';
 
 <FunctionSystemClass />
 
-## Expanded Reference: function
+## Expanded Reference: function (System Class)
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
-:::
+### The function Type
+
+All function objects are of type `function`. This includes named functions, lambda closures, and compiled functions.
 
 ```lisp
-(function )
+(typep #'car 'function)
+=> T
+
+(typep (lambda (x) x) 'function)
+=> T
+
+(typep #'+ 'function)
+=> T
+```
+
+### Non-Functions
+
+```lisp
+(typep 'car 'function)
+=> NIL
+
+(typep '(lambda (x) x) 'function)
+=> NIL
+```
+
+### Subtype Relationships
+
+```lisp
+(subtypep 'compiled-function 'function)
+=> T
+=> T
+
+(subtypep 'function t)
+=> T
+=> T
 ```

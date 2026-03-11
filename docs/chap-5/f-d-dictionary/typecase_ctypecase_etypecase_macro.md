@@ -23,16 +23,16 @@ The `typecase` macro evaluates a keyform and then selects a clause based on the 
     (t (format nil "It's a ~A." (type-of thing)))))
 
 (describe-thing "hello")
-; => "The string is \"hello\"."
+=> "The string is \"hello\"."
 
 (describe-thing 42)
-; => "The integer is 42."
+=> "The integer is 42."
 
 (describe-thing '(1 2 3))
-; => "The list is (1 2 3)."
+=> "The list is (1 2 3)."
 
 (describe-thing #\A)
-; => "It's a CHARACTER."
+=> "It's a STANDARD-CHAR."
 ```
 
 ### No matching clause
@@ -43,7 +43,7 @@ If no clause matches and there is no `t` or `otherwise` clause, `typecase` retur
 (typecase 123
   (string "It's a string.")
   (list "It's a list."))
-; => NIL
+=> NIL
 ```
 
 ### ctypecase
@@ -57,10 +57,10 @@ If no clause matches and there is no `t` or `otherwise` clause, `typecase` retur
     (float (format nil "Processing float: ~F" num))))
 
 (process-numeric 10)
-; => "Processing integer: 10"
+=> "Processing integer: 10"
 
 (process-numeric 3.14)
-; => "Processing float: 3.14"
+=> "Processing float: 3.14"
 ```
 
 ### `ctypecase` with no matching clause
@@ -68,14 +68,13 @@ If no clause matches and there is no `t` or `otherwise` clause, `typecase` retur
 When no type matches, a correctable error is signaled. An interactive debugger would typically offer a `store-value` restart to provide a new value.
 
 ```lisp
-(handler-case (ctypecase "a string"
-                (integer "an integer")
-                (float "a float"))
-  (type-error (c)
-    (format t "Correctable error signaled: ~A" c)
-    t))
-; >> Correctable error signaled: "a string" is not of type (OR INTEGER FLOAT).
-; => T
+(let ((val "a string"))
+  (handler-case (ctypecase val
+                  (integer "an integer")
+                  (float "a float"))
+    (type-error (c)
+      (format nil "Correctable error signaled: ~S" (type-error-datum c)))))
+=> "Correctable error signaled: \"a string\""
 ```
 
 ### etypecase
@@ -89,10 +88,10 @@ When no type matches, a correctable error is signaled. An interactive debugger w
     ((member :lizard :snake) "It's a reptile.")))
 
 (classify-pet :dog)
-; => "It's a mammal."
+=> "It's a mammal."
 
 (classify-pet :snake)
-; => "It's a reptile."
+=> "It's a reptile."
 ```
 
 ### `etypecase` with no matching clause
@@ -104,8 +103,6 @@ When no type matches, a non-correctable error is signaled.
                 ((member :dog :cat) "mammal")
                 ((member :lizard :snake) "reptile"))
   (type-error (c)
-    (format t "Error signaled: ~A" c)
-    t))
-; >> Error signaled: :BIRD is not of type (OR (MEMBER :DOG :CAT) (MEMBER :LIZARD :SNAKE)).
-; => T
+    (format nil "Error signaled for datum: ~S" (type-error-datum c))))
+=> "Error signaled for datum: :BIRD"
 ```

@@ -10,10 +10,74 @@ import SetFunction from './_set_function.md';
 
 ## Expanded Reference: set
 
-:::tip
-TODO: Please contribute to this page by adding explanations and examples
+:::warning
+`set` is deprecated. Use `(setf (symbol-value ...) ...)` instead.
 :::
 
+### Basic usage
+
+`set` changes the value cell of a symbol. It is equivalent to `(setf (symbol-value symbol) value)`.
+
 ```lisp
-(set )
+(set 'my-var 42)
+(symbol-value 'my-var)
+=> 42
+```
+
+### set cannot change lexical variables
+
+Like `symbol-value`, `set` only affects the dynamic (special) value of a symbol, not lexical bindings.
+
+```lisp
+(set 'x 10)
+
+(let ((x 20))
+  (set 'x 30)
+  (values x (symbol-value 'x)))
+=> 20
+=> 30
+```
+
+### set with dynamic (special) variables
+
+`set` works with dynamically bound variables as expected.
+
+```lisp
+(defvar *setting* :initial)
+
+(let ((*setting* :temporary))
+  (set '*setting* :modified)
+  *setting*)
+=> :MODIFIED
+
+*setting*
+=> :INITIAL
+```
+
+### Equivalence with setf of symbol-value
+
+```lisp
+(set 'equiv-test 'via-set)
+(symbol-value 'equiv-test)
+=> VIA-SET
+
+(setf (symbol-value 'equiv-test) 'via-setf)
+(symbol-value 'equiv-test)
+=> VIA-SETF
+```
+
+### Using set with a computed symbol
+
+One advantage of `set` over `setq` is that the symbol argument is evaluated, allowing dynamic dispatch.
+
+```lisp
+(defvar *a* 0)
+(defvar *b* 0)
+
+(dolist (pair '((*a* 10) (*b* 20)))
+  (set (first pair) (second pair)))
+
+(values *a* *b*)
+=> 10
+=> 20
 ```
