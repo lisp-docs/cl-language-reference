@@ -16,16 +16,16 @@ import StringEquality from './_string-equality.md';
 
 ```lisp
 (string= "foo" "foo")
-→ T
+=> T
 
 (string= "foo" "Foo")
-→ NIL
+=> NIL
 
 (string= "foo" "bar")
-→ NIL
+=> NIL
 
 (string= "" "")
-→ T
+=> T
 ```
 
 ### Case-insensitive equality with string-equal
@@ -34,13 +34,13 @@ import StringEquality from './_string-equality.md';
 
 ```lisp
 (string-equal "foo" "Foo")
-→ T
+=> T
 
 (string-equal "HELLO" "hello")
-→ T
+=> T
 
 (string-equal "abc" "abd")
-→ NIL
+=> NIL
 ```
 
 ### Inequality returns the mismatch index
@@ -49,16 +49,16 @@ The inequality functions (`string/=`, `string<`, etc.) return the index of the f
 
 ```lisp
 (string< "aaaa" "aaab")
-→ 3
+=> 3
 
 (string> "aaab" "aaaa")
-→ 3
+=> 3
 
 (string/= "hello" "help!")
-→ 3
+=> 3
 
 (string/= "hello" "hello")
-→ NIL
+=> NIL
 ```
 
 ### Ordering comparisons
@@ -67,16 +67,16 @@ The inequality functions (`string/=`, `string<`, etc.) return the index of the f
 
 ```lisp
 (string< "apple" "banana")
-→ 0
+=> 0
 
 (string>= "aaaaa" "aaaa")
-→ 4
+=> 4
 
 (string<= "abc" "abc")
-→ 3
+=> 3
 
 (string> "abc" "abc")
-→ NIL
+=> NIL
 ```
 
 ### Using :start and :end to compare substrings
@@ -85,13 +85,13 @@ All comparison functions accept `:start1`, `:end1`, `:start2`, and `:end2` to re
 
 ```lisp
 (string= "together" "frog" :start1 1 :end1 3 :start2 2)
-→ T
+=> T
 
 (string= "abcd" "01234abcd9012" :start2 5 :end2 9)
-→ T
+=> T
 
 (string-lessp "012AAAA789" "01aaab6" :start1 3 :end1 7 :start2 2 :end2 6)
-→ 6
+=> 6
 ```
 
 ### Case-insensitive ordering with string-lessp and friends
@@ -100,13 +100,13 @@ All comparison functions accept `:start1`, `:end1`, `:start2`, and `:end2` to re
 
 ```lisp
 (string-lessp "apple" "Banana")
-→ 0
+=> 0
 
 (string-not-greaterp "Abcde" "abcdE")
-→ 5
+=> 5
 
 (string-not-equal "AAAA" "aaaA")
-→ NIL
+=> NIL
 ```
 
 ### Symbols as string designators
@@ -115,8 +115,8 @@ These functions accept string designators, so symbols can be compared directly.
 
 ```lisp
 (string= 'hello 'hello)
-→ T
+=> T
 
 (string< 'abc 'abd)
-→ 2
+=> 2
 ```

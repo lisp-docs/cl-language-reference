@@ -16,13 +16,13 @@ import StringpFunction from './_stringp_function.md';
 
 ```lisp
 (stringp "hello")
-→ T
+=> T
 
 (stringp "")
-→ T
+=> T
 
 (stringp (make-string 5 :initial-element #\x))
-→ T
+=> T
 ```
 
 ### Non-string objects return NIL
@@ -31,16 +31,16 @@ Characters, symbols, numbers, and lists are not strings.
 
 ```lisp
 (stringp #\a)
-→ NIL
+=> NIL
 
 (stringp 'hello)
-→ NIL
+=> NIL
 
 (stringp 42)
-→ NIL
+=> NIL
 
 (stringp '(#\h #\i))
-→ NIL
+=> NIL
 ```
 
 ### Vectors of characters that are strings
@@ -49,10 +49,10 @@ Arrays with character element types are strings. A general vector containing cha
 
 ```lisp
 (stringp (make-array 3 :element-type 'character :initial-element #\a))
-→ T
+=> T
 
 (stringp #(#\h #\e #\l #\l #\o))
-→ NIL
+=> NIL
 ```
 
 ### Strings with fill pointers are still strings
@@ -63,7 +63,7 @@ Even non-simple strings (with fill pointers or adjustable) satisfy `stringp`.
 (stringp (make-array 10 :element-type 'character
                         :fill-pointer 5
                         :initial-element #\z))
-→ T
+=> T
 ```
 
 ### Equivalence with typep
@@ -73,5 +73,5 @@ Even non-simple strings (with fill pointers or adjustable) satisfy `stringp`.
 ```lisp
 (let ((s "test"))
   (eql (stringp s) (typep s 'string)))
-→ T
+=> T
 ```

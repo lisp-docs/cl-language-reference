@@ -15,14 +15,17 @@ import SimpleBaseStringType from './_simple-base-string_type.md';
 A `simple-base-string` is a simple string whose elements are of type `base-char`. It is both a simple-string and a base-string.
 
 ```lisp
+;; In SBCL, string literals have element-type CHARACTER, not BASE-CHAR
 (typep "hello" 'simple-base-string)
-→ T
+=> NIL
 
 (subtypep 'simple-base-string 'simple-string)
-→ T, T
+=> T
+=> T
 
 (subtypep 'simple-base-string 'base-string)
-→ T, T
+=> T
+=> T
 ```
 
 ### Compound type specifier with size
@@ -30,14 +33,15 @@ A `simple-base-string` is a simple string whose elements are of type `base-char`
 The compound form `(simple-base-string size)` restricts to simple base-strings of a given length.
 
 ```lisp
+;; In SBCL, string literals are not simple-base-strings
 (typep "abc" '(simple-base-string 3))
-→ T
+=> NIL
 
 (typep "abc" '(simple-base-string 4))
-→ NIL
+=> NIL
 
 (typep "abc" '(simple-base-string *))
-→ T
+=> NIL
 ```
 
 ### String literals are typically simple-base-strings
@@ -45,8 +49,9 @@ The compound form `(simple-base-string size)` restricts to simple base-strings o
 In most implementations, string literals are simple-base-strings because they contain only standard characters.
 
 ```lisp
+;; In SBCL, string literals have element-type CHARACTER
 (typep "Hello, World!" 'simple-base-string)
-→ T
+=> NIL
 ```
 
 ### Non-simple strings are not simple-base-strings
@@ -58,7 +63,7 @@ Strings with fill pointers or that are adjustable do not qualify as simple-base-
                      :fill-pointer 3
                      :initial-element #\a)
        'simple-base-string)
-→ NIL
+=> NIL
 ```
 
 ### Type hierarchy
@@ -67,11 +72,14 @@ Strings with fill pointers or that are adjustable do not qualify as simple-base-
 
 ```lisp
 (subtypep 'simple-base-string 'string)
-→ T, T
+=> T
+=> T
 
 (subtypep 'simple-base-string 'simple-array)
-→ T, T
+=> T
+=> T
 
 (subtypep 'simple-base-string 'sequence)
-→ T, T
+=> T
+=> T
 ```

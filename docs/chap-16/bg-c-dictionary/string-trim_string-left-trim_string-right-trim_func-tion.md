@@ -16,10 +16,10 @@ import StringTrimFunction from './_string-trim_string-left-trim_string-right-tri
 
 ```lisp
 (string-trim " " "  hello world  ")
-→ "hello world"
+=> "hello world"
 
 (string-trim "abc" "abcaakaaakabcaaa")
-→ "kaaak"
+=> "kaaak"
 ```
 
 ### Trimming whitespace characters
@@ -28,11 +28,11 @@ The character-bag can be any sequence of characters, including a list.
 
 ```lisp
 (string-trim '(#\Space #\Tab #\Newline) "   hello   ")
-→ "hello"
+=> "hello"
 
 (string-trim '(#\Space #\Tab #\Newline)
              (format nil "  garbanzo beans  ~%"))
-→ "garbanzo beans"
+=> "garbanzo beans"
 ```
 
 ### Trimming only the left side with string-left-trim
@@ -41,13 +41,13 @@ The character-bag can be any sequence of characters, including a list.
 
 ```lisp
 (string-left-trim " " "   hello   ")
-→ "hello   "
+=> "hello   "
 
 (string-left-trim "0" "000123")
-→ "123"
+=> "123"
 
 (string-left-trim "abc" "labcabcabc")
-→ "labcabcabc"
+=> "labcabcabc"
 ```
 
 ### Trimming only the right side with string-right-trim
@@ -56,10 +56,10 @@ The character-bag can be any sequence of characters, including a list.
 
 ```lisp
 (string-right-trim " " "   hello   ")
-→ "   hello"
+=> "   hello"
 
 (string-right-trim "." "sentence...")
-→ "sentence"
+=> "sentence"
 ```
 
 ### The character-bag as a string
@@ -68,10 +68,10 @@ A string can serve as the character-bag, specifying all characters to strip.
 
 ```lisp
 (string-trim "xyz" "xxyyzzhaborxyz")
-→ "habor"
+=> "habor"
 
 (string-trim " (*)" " ( *three (silly) words* ) ")
-→ "three (silly) words"
+=> "three (silly) words"
 ```
 
 ### Using with string designators
@@ -80,8 +80,8 @@ These functions accept string designators, so you can pass symbols as the string
 
 ```lisp
 (string-trim " " 'hello)
-→ "HELLO"
+=> "HELLO"
 
 (string-left-trim "HE" 'hello)
-→ "LLO"
+=> "LLO"
 ```

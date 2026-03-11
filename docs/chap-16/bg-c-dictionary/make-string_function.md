@@ -16,10 +16,10 @@ import MakeStringFunction from './_make-string_function.md';
 
 ```lisp
 (make-string 5 :initial-element #\a)
-→ "aaaaa"
+=> "aaaaa"
 
 (make-string 0)
-→ ""
+=> ""
 ```
 
 ### The result is always a simple string
@@ -28,7 +28,7 @@ The string returned by `make-string` is always a simple string -- it has no fill
 
 ```lisp
 (simple-string-p (make-string 10 :initial-element #\x))
-→ T
+=> T
 ```
 
 ### Checking the length of the result
@@ -37,10 +37,10 @@ The resulting string has exactly the requested length.
 
 ```lisp
 (length (make-string 8 :initial-element #\*))
-→ 8
+=> 8
 
 (length (make-string 0))
-→ 0
+=> 0
 ```
 
 ### Specifying element-type
@@ -50,11 +50,11 @@ The `:element-type` keyword controls the character subtype. Using `base-char` cr
 ```lisp
 (let ((s (make-string 3 :initial-element #\z :element-type 'base-char)))
   (list s (typep s 'base-string)))
-→ ("zzz" T)
+=> ("zzz" T)
 
 (let ((s (make-string 3 :initial-element #\z :element-type 'character)))
   (list s (typep s 'string)))
-→ ("zzz" T)
+=> ("zzz" T)
 ```
 
 ### Practical use: building a separator line
@@ -62,5 +62,5 @@ The `:element-type` keyword controls the character subtype. Using `base-char` cr
 ```lisp
 (let ((line (make-string 40 :initial-element #\-)))
   (concatenate 'string "+" line "+"))
-→ "+----------------------------------------+"
+=> "+----------------------------------------+"
 ```

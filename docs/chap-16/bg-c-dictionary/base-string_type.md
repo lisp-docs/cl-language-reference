@@ -15,11 +15,13 @@ import BaseStringType from './_base-string_type.md';
 A `base-string` is a string whose elements are of type `base-char`. It is the most efficient string representation for standard characters.
 
 ```lisp
+;; In SBCL, string literals have element-type CHARACTER, not BASE-CHAR
 (typep "hello" 'base-string)
-→ T
+=> NIL
 
 (subtypep 'base-string 'string)
-→ T, T
+=> T
+=> T
 ```
 
 ### Type checking with the compound type specifier
@@ -27,14 +29,15 @@ A `base-string` is a string whose elements are of type `base-char`. It is the mo
 The compound form `(base-string size)` specifies a base-string of a particular length.
 
 ```lisp
+;; In SBCL, string literals are not base-strings
 (typep "abc" '(base-string 3))
-→ T
+=> NIL
 
 (typep "abc" '(base-string 5))
-→ NIL
+=> NIL
 
 (typep "abc" '(base-string *))
-→ T
+=> NIL
 ```
 
 ### Relationship to other string types
@@ -43,13 +46,16 @@ The compound form `(base-string size)` specifies a base-string of a particular l
 
 ```lisp
 (subtypep 'base-string 'string)
-→ T, T
+=> T
+=> T
 
 (subtypep 'simple-base-string 'base-string)
-→ T, T
+=> T
+=> T
 
 (subtypep 'base-string 'vector)
-→ T, T
+=> T
+=> T
 ```
 
 ### Creating base-strings with make-string
@@ -59,5 +65,5 @@ The compound form `(base-string size)` specifies a base-string of a particular l
 ```lisp
 (let ((s (make-string 4 :initial-element #\Z :element-type 'base-char)))
   (list s (typep s 'base-string)))
-→ ("ZZZZ" T)
+=> ("ZZZZ" T)
 ```

@@ -16,10 +16,10 @@ import CharAccessor from './_char_schar_accessor.md';
 
 ```lisp
 (char "Hello" 0)
-→ #\H
+=> #\H
 
 (char "Hello" 4)
-→ #\o
+=> #\o
 ```
 
 ### Using schar for simple strings
@@ -28,10 +28,10 @@ import CharAccessor from './_char_schar_accessor.md';
 
 ```lisp
 (schar "Common Lisp" 0)
-→ #\C
+=> #\C
 
 (schar "Common Lisp" 7)
-→ #\L
+=> #\L
 ```
 
 ### Modifying characters with setf
@@ -42,12 +42,12 @@ Both `char` and `schar` are setf-able, allowing in-place modification of string 
 (let ((s (copy-seq "hello")))
   (setf (char s 0) #\H)
   s)
-→ "Hello"
+=> "Hello"
 
 (let ((s (make-string 5 :initial-element #\a)))
   (setf (schar s 2) #\X)
   s)
-→ "aaXaa"
+=> "aaXaa"
 ```
 
 ### char ignores fill pointers when accessing elements
@@ -60,7 +60,7 @@ Both `char` and `schar` are setf-able, allowing in-place modification of string 
                        :initial-contents "abcdef")))
   (list (char s 4)        ; accesses beyond fill pointer
         (length s)))       ; length respects fill pointer
-→ (#\e 3)
+=> (#\e 3)
 ```
 
 ### char is equivalent to aref on strings
@@ -70,5 +70,5 @@ Both `char` and `schar` are setf-able, allowing in-place modification of string 
 ```lisp
 (let ((s "abcdef"))
   (list (char s 2) (aref s 2) (eql (char s 2) (aref s 2))))
-→ (#\c #\c T)
+=> (#\c #\c T)
 ```

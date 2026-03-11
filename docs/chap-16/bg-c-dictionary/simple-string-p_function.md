@@ -16,10 +16,10 @@ String literals are simple strings -- they have no fill pointer and are not disp
 
 ```lisp
 (simple-string-p "hello")
-→ T
+=> T
 
 (simple-string-p "")
-→ T
+=> T
 ```
 
 ### Strings from make-string are simple
@@ -28,7 +28,7 @@ String literals are simple strings -- they have no fill pointer and are not disp
 
 ```lisp
 (simple-string-p (make-string 10 :initial-element #\x))
-→ T
+=> T
 ```
 
 ### Strings with fill pointers are not simple
@@ -40,7 +40,7 @@ A string created with a fill pointer is not a simple string.
   (make-array 6 :element-type 'character
                 :fill-pointer t
                 :initial-element #\a))
-→ NIL
+=> NIL
 ```
 
 ### Adjustable strings are not simple
@@ -52,7 +52,7 @@ Adjustable arrays (including adjustable strings) are not simple strings.
   (make-array 5 :element-type 'character
                 :adjustable t
                 :initial-element #\z))
-→ NIL
+=> NIL
 ```
 
 ### Non-string objects return NIL
@@ -61,16 +61,16 @@ Adjustable arrays (including adjustable strings) are not simple strings.
 
 ```lisp
 (simple-string-p #\a)
-→ NIL
+=> NIL
 
 (simple-string-p 42)
-→ NIL
+=> NIL
 
 (simple-string-p '(h e l l o))
-→ NIL
+=> NIL
 
 (simple-string-p #(#\h #\e #\l #\l #\o))
-→ NIL
+=> NIL
 ```
 
 ### Equivalence with typep
@@ -80,5 +80,5 @@ Adjustable arrays (including adjustable strings) are not simple strings.
 ```lisp
 (let ((s "test"))
   (eql (simple-string-p s) (typep s 'simple-string)))
-→ T
+=> T
 ```
