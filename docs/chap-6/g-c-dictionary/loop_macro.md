@@ -15,13 +15,14 @@ import LoopMacro from './_loop_macro.md';
 ```lisp
 (let ((lst (list 5 4 3 "b" "a")))
   (loop for el in lst
-      do (print el)))
-5 
-4 
-3 
-"b" 
-"a" 
-NIL
+      do (format t "~S~%" el)))
+.. 5
+.. 4
+.. 3
+.. "b"
+.. "a"
+..
+=> NIL
 ```
 
 ### Looping and declaring lexical variables `with`
@@ -33,19 +34,20 @@ Note the usage of the word `with` below. `with` will be executed once at the beg
       with i = 0
       when (and (< i 10)
                 (not (evenp x)))
-        do (print x)
+        do (format t "~D~%" x)
            (incf i))
-1 
-3 
-5 
-7 
-9 
-11 
-13 
-15 
-17 
-19 
-NIL
+.. 1
+.. 3
+.. 5
+.. 7
+.. 9
+.. 11
+.. 13
+.. 15
+.. 17
+.. 19
+..
+=> NIL
 ```
 
 This is similar to the alternative of wrapping the `loop` form in a `let` form.
@@ -67,12 +69,12 @@ The `with` form will not have the value of any preceeding variable bound with `f
 (loop for x in (list 1 2 3)
       with a = 1
       with b = (* 8 a)
-      do (print b))
-
-8 
-8 
-8 
-NIL
+      do (format t "~D~%" b))
+.. 8
+.. 8
+.. 8
+..
+=> NIL
 ```
 
 However using the `x` variable would not work:
@@ -102,13 +104,13 @@ Notice the usage of the `for` keyword which indicates the binding should be upda
 ```lisp
 (loop for x in (list 1 2 3 4)
       for y = (* x 2)
-      do (print y))
-
-2 
-4 
-6 
-8 
-NIL
+      do (format t "~D~%" y))
+.. 2
+.. 4
+.. 6
+.. 8
+..
+=> NIL
 ```
 
 The `y` variable will be updated on each run based on the given form `(* x 2)`
@@ -116,30 +118,24 @@ The `y` variable will be updated on each run based on the given form `(* x 2)`
 ### Looping over a Hash Table
 
 ```lisp
-(let ((given-ht (serapeum:dict "a" 1 "b" 2)))
-  (loop for key being each hash-key of given-ht
+(let ((ht (make-hash-table :test #'equal)))
+  (setf (gethash "a" ht) 1
+        (gethash "b" ht) 2)
+  (loop for key being each hash-key of ht
           using (hash-value value)
-        do (format t "~A: ~A ~%" key value)))
+        do (format t "~A: ~A~%" key value)))
 
-a: 1 
-b: 2 
-NIL
-
-(let ((given-ht (serapeum:dict "a" 1 "b" 2)))
-  (loop for value being each hash-value of given-ht
+(let ((ht (make-hash-table :test #'equal)))
+  (setf (gethash "a" ht) 1
+        (gethash "b" ht) 2)
+  (loop for value being each hash-value of ht
         do (format t "~A~%" value)))
 
-1
-2
-NIL
-
-(let ((given-ht (serapeum:dict "a" 1 "b" 2)))
-  (loop for key being each hash-key of given-ht
+(let ((ht (make-hash-table :test #'equal)))
+  (setf (gethash "a" ht) 1
+        (gethash "b" ht) 2)
+  (loop for key being each hash-key of ht
         do (format t "~A~%" key)))
-
-a
-b
-NIL
 ```
 
 ### Collecting values
@@ -149,7 +145,7 @@ The `collect` clause accumulates results into a list and returns it.
 ```lisp
 (loop for i from 1 to 5
       collect (* i i))
-→ (1 4 9 16 25)
+=> (1 4 9 16 25)
 ```
 
 ### Collecting with a filter
@@ -158,7 +154,7 @@ The `collect` clause accumulates results into a list and returns it.
 (loop for x in '(1 "a" 2 "b" 3 "c")
       when (stringp x)
         collect x)
-→ ("a" "b" "c")
+=> ("a" "b" "c")
 ```
 
 ### Counting, summing, maximizing, minimizing
@@ -166,19 +162,19 @@ The `collect` clause accumulates results into a list and returns it.
 ```lisp
 (loop for x in '(3 1 4 1 5 9 2 6)
       count (evenp x))
-→ 2
+=> 3
 
 (loop for x in '(1 2 3 4 5)
       sum x)
-→ 15
+=> 15
 
 (loop for x in '(3 1 4 1 5 9 2 6)
       maximize x)
-→ 9
+=> 9
 
 (loop for x in '(3 1 4 1 5 9 2 6)
       minimize x)
-→ 1
+=> 1
 ```
 
 ### Multiple accumulations with named variables
@@ -190,7 +186,7 @@ Using `into` to accumulate into named variables allows multiple accumulations in
       when (plusp x) collect x into positives
       when (minusp x) collect x into negatives
       finally (return (list positives negatives)))
-→ ((1 3 5) (-2 -4))
+=> ((1 3 5) (-2 -4))
 ```
 
 ### Iterating over a range of numbers
@@ -198,19 +194,19 @@ Using `into` to accumulate into named variables allows multiple accumulations in
 ```lisp
 ;; from/to is inclusive
 (loop for i from 0 to 4 collect i)
-→ (0 1 2 3 4)
+=> (0 1 2 3 4)
 
 ;; below is exclusive (same as "from 0 to n-1")
 (loop for i below 4 collect i)
-→ (0 1 2 3)
+=> (0 1 2 3)
 
 ;; counting downward
 (loop for i from 10 downto 1 collect i)
-→ (10 9 8 7 6 5 4 3 2 1)
+=> (10 9 8 7 6 5 4 3 2 1)
 
 ;; with a step
 (loop for i from 0 to 20 by 5 collect i)
-→ (0 5 10 15 20)
+=> (0 5 10 15 20)
 ```
 
 ### Iterating over a string
@@ -218,7 +214,7 @@ Using `into` to accumulate into named variables allows multiple accumulations in
 ```lisp
 (loop for c across "hello"
       collect (char-upcase c))
-→ (#\H #\E #\L #\L #\O)
+=> (#\H #\E #\L #\L #\O)
 ```
 
 ### Destructuring in for clauses
@@ -227,7 +223,7 @@ Using `into` to accumulate into named variables allows multiple accumulations in
 (loop for (name . age) in '(("Alice" . 30) ("Bob" . 25) ("Carol" . 35))
       when (> age 28)
         collect name)
-→ ("Alice" "Carol")
+=> ("Alice" "Carol")
 ```
 
 ### Iterating with multiple for clauses (parallel termination)
@@ -238,13 +234,13 @@ When multiple `for` clauses are used, the loop terminates when *any* of them is 
 (loop for x in '(a b c d e)
       for i from 1
       collect (list i x))
-→ ((1 A) (2 B) (3 C) (4 D) (5 E))
+=> ((1 A) (2 B) (3 C) (4 D) (5 E))
 
 ;; Terminates when the shorter list runs out
 (loop for x in '(a b c)
       for y in '(1 2 3 4 5)
       collect (list x y))
-→ ((A 1) (B 2) (C 3))
+=> ((A 1) (B 2) (C 3))
 ```
 
 ### Using finally for cleanup or post-processing
@@ -254,7 +250,7 @@ When multiple `for` clauses are used, the loop terminates when *any* of them is 
       sum x into total
       count t into n
       finally (return (/ total n)))
-→ 3
+=> 3
 ```
 
 ### Conditional execution with if/else
@@ -267,7 +263,8 @@ When multiple `for` clauses are used, the loop terminates when *any* of them is 
         collect x into odds
       end
       finally (return (values evens odds)))
-→ (2 4 6), (1 3 5)
+=> (2 4 6)
+=> (1 3 5)
 ```
 
 ### Simple (non-extended) loop
@@ -279,7 +276,7 @@ Without any loop keywords, `loop` creates an infinite loop. Use `return` to exit
   (loop
     (when (> i 4) (return i))
     (incf i)))
-→ 5
+=> 5
 ```
 
 ### Looping across multiple lists simultaneously
@@ -288,19 +285,22 @@ Without any loop keywords, `loop` creates an infinite loop. Use `return` to exit
 (loop for x in '(1 2 3)
       for y in '(10 20 30)
       collect (+ x y))
-→ (11 22 33)
+=> (11 22 33)
 ```
 
 ### Repeat a fixed number of times
 
 ```lisp
 (loop repeat 3
-      do (format t "hello "))
-hello hello hello
-NIL
+      do (format t "hello~%"))
+.. hello
+.. hello
+.. hello
+..
+=> NIL
 
 (loop repeat 4 collect (random 100))
-;; → e.g. (42 17 83 5)
+;; result varies, e.g. (42 17 83 5)
 ```
 
 ### Using thereis, always, and never
@@ -309,15 +309,15 @@ NIL
 ;; thereis returns the first non-nil value
 (loop for x in '(nil nil 42 nil)
       thereis x)
-→ 42
+=> 42
 
 ;; always returns T if every test passes, NIL otherwise
 (loop for x in '(2 4 6 8)
       always (evenp x))
-→ T
+=> T
 
 ;; never returns T if no element satisfies the test
 (loop for x in '(1 3 5 7)
       never (evenp x))
-→ T
+=> T
 ```

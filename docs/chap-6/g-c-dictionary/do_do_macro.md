@@ -18,13 +18,14 @@ import DoMacro from './_do_do_macro.md';
 ;; Count from 0 to 4
 (do ((i 0 (1+ i)))
     ((= i 5) 'done)
-  (print i))
-0
-1
-2
-3
-4
-DONE
+  (format t "~D~%" i))
+.. 0
+.. 1
+.. 2
+.. 3
+.. 4
+..
+=> DONE
 ```
 
 ### Multiple variables with parallel stepping
@@ -37,10 +38,11 @@ In `do`, all step-forms are evaluated before any variable is updated (parallel a
      (y 5 (1- y)))
     ((> x y) (list x y))
   (format t "x=~D y=~D~%" x y))
-x=0 y=5
-x=1 y=4
-x=2 y=3
-(3 2)
+.. x=0 y=5
+.. x=1 y=4
+.. x=2 y=3
+..
+=> (3 2)
 ```
 
 ### do* with sequential stepping
@@ -53,11 +55,12 @@ x=2 y=3
       (y 0 x))         ; y gets the NEW value of x
      ((= x 4) (list x y))
   (format t "x=~D y=~D~%" x y))
-x=0 y=0
-x=1 y=1
-x=2 y=2
-x=3 y=3
-(4 4)
+.. x=0 y=0
+.. x=1 y=1
+.. x=2 y=2
+.. x=3 y=3
+..
+=> (4 4)
 ```
 
 Compare with `do` where `y` sees the old value:
@@ -68,11 +71,12 @@ Compare with `do` where `y` sees the old value:
      (y 0 x))          ; y gets the OLD value of x
     ((= x 4) (list x y))
   (format t "x=~D y=~D~%" x y))
-x=0 y=0
-x=1 y=0
-x=2 y=1
-x=3 y=2
-(4 3)
+.. x=0 y=0
+.. x=1 y=0
+.. x=2 y=1
+.. x=3 y=2
+..
+=> (4 3)
 ```
 
 ### Accumulating a result
@@ -85,7 +89,7 @@ x=3 y=2
       ((null rest) result)))
 
 (my-reverse '(a b c d))
-→ (D C B A)
+=> (D C B A)
 ```
 
 ### Iterating with no body
@@ -97,7 +101,7 @@ The body of `do` is optional — all the work can happen in the variable step-fo
 (do ((lst '(a b c d e) (cdr lst))
      (count 0 (1+ count)))
     ((null lst) count))
-→ 5
+=> 5
 ```
 
 ### Infinite loop with early exit
@@ -109,7 +113,7 @@ Using `nil` as the end-test creates a loop that runs forever until explicitly te
     (nil)  ; never terminates naturally
   (when (> (* i i i) 1000)
     (return i)))
-→ 11
+=> 11
 ```
 
 ### Variables without step-forms
@@ -120,7 +124,17 @@ A variable with no step-form keeps its initial value throughout the loop.
 (do ((i 0 (1+ i))
      (limit 10))           ; limit stays at 10
     ((= i limit) 'done)
-  (format t "~D " i))
-0 1 2 3 4 5 6 7 8 9
-DONE
+  (format t "~D~%" i))
+.. 0
+.. 1
+.. 2
+.. 3
+.. 4
+.. 5
+.. 6
+.. 7
+.. 8
+.. 9
+..
+=> DONE
 ```

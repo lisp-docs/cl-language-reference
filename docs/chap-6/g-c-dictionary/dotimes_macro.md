@@ -16,13 +16,14 @@ import DotimesMacro from './_dotimes_macro.md';
 
 ```lisp
 (dotimes (i 5)
-  (print i))
-0
-1
-2
-3
-4
-NIL
+  (format t "~D~%" i))
+.. 0
+.. 1
+.. 2
+.. 3
+.. 4
+..
+=> NIL
 ```
 
 ### Returning a result
@@ -31,12 +32,12 @@ The optional third element in the variable spec is evaluated and returned when t
 
 ```lisp
 (dotimes (i 10 i))
-→ 10
+=> 10
 
 (let ((sum 0))
   (dotimes (i 5 sum)
     (incf sum i)))
-→ 10
+=> 10
 ```
 
 ### Building a list with dotimes
@@ -45,7 +46,7 @@ The optional third element in the variable spec is evaluated and returned when t
 (let ((squares '()))
   (dotimes (i 6 (nreverse squares))
     (push (* i i) squares)))
-→ (0 1 4 9 16 25)
+=> (0 1 4 9 16 25)
 ```
 
 ### Early exit with return
@@ -56,7 +57,7 @@ The optional third element in the variable spec is evaluated and returned when t
 (dotimes (i 100)
   (when (> (* i i) 50)
     (return i)))
-→ 8
+=> 8
 ```
 
 ### Zero or negative count
@@ -66,11 +67,11 @@ If the count-form evaluates to zero or a negative number, the body is not execut
 ```lisp
 (dotimes (i 0)
   (print "this never prints"))
-→ NIL
+=> NIL
 
 (dotimes (i -5)
   (print "neither does this"))
-→ NIL
+=> NIL
 ```
 
 ### Nested dotimes — multiplication table
@@ -80,9 +81,10 @@ If the count-form evaluates to zero or a negative number, the body is not execut
   (dotimes (col 4)
     (format t "~3D" (* (1+ row) (1+ col))))
   (terpri))
-  1  2  3  4
-  2  4  6  8
-  3  6  9 12
-  4  8 12 16
-NIL
+..   1  2  3  4
+..   2  4  6  8
+..   3  6  9 12
+..   4  8 12 16
+..
+=> NIL
 ```

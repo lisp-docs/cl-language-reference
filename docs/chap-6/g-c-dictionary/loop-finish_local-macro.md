@@ -19,7 +19,7 @@ import LoopFinishLocalMacro from './_loop-finish_local-macro.md';
 (loop for x in '(1 2 3 :stop 4 5)
       when (keywordp x) do (loop-finish)
       collect x)
-→ (1 2 3)
+=> (1 2 3)
 ```
 
 ### loop-finish vs return
@@ -30,14 +30,14 @@ import LoopFinishLocalMacro from './_loop-finish_local-macro.md';
       when (keywordp x) do (loop-finish)
       collect x into result
       finally (return (cons :finished result)))
-→ (:FINISHED 1 2 3)
+=> (:FINISHED 1 2 3)
 
 ;; With return: the finally clause does NOT run
 (loop for x in '(1 2 3 :stop 4 5)
       when (keywordp x) do (return (cons :aborted result))
       collect x into result
       finally (return (cons :finished result)))
-→ (:ABORTED 1 2 3)
+=> (:ABORTED 1 2 3)
 ```
 
 ### Using loop-finish in deeply nested code
@@ -52,8 +52,9 @@ import LoopFinishLocalMacro from './_loop-finish_local-macro.md';
         do (format t "Error at value ~A, stopping.~%" value)
            (loop-finish)
       sum value)
-Error at value 3, stopping.
-3
+.. Error at value 3, stopping.
+..
+=> 3
 ```
 
 ### loop-finish with a finally clause for cleanup
@@ -65,6 +66,7 @@ Error at value 3, stopping.
       count t into processed
       finally (format t "Processed ~D lines.~%" processed)
               (return processed))
-Processed 2 lines.
-2
+.. Processed 2 lines.
+..
+=> 2
 ```
