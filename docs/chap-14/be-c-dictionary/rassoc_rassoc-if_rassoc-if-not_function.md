@@ -16,10 +16,10 @@ import RassocFunction from './_rassoc_rassoc-if_rassoc-if-not_function.md';
 
 ```lisp
 (rassoc 2 '((a . 1) (b . 2) (c . 3)))
-→ (B . 2)
+=> (B . 2)
 
 (rassoc 99 '((a . 1) (b . 2) (c . 3)))
-→ NIL
+=> NIL
 ```
 
 ### Finding a key by its value
@@ -28,7 +28,7 @@ import RassocFunction from './_rassoc_rassoc-if_rassoc-if-not_function.md';
 
 ```lisp
 (car (rassoc 'green '((apple . green) (banana . yellow) (cherry . red))))
-→ APPLE
+=> APPLE
 ```
 
 ### String values require a :test argument
@@ -37,10 +37,10 @@ Like `assoc`, the default test is `eql`, which does not work for string comparis
 
 ```lisp
 (rassoc "two" '((2 . "two") (3 . "three")) :test #'equal)
-→ (2 . "two")
+=> (2 . "two")
 
 (rassoc "two" '((2 . "two") (3 . "three")))
-→ NIL
+=> NIL
 ```
 
 ### rassoc-if: search by predicate on the value
@@ -49,10 +49,10 @@ Like `assoc`, the default test is `eql`, which does not work for string comparis
 
 ```lisp
 (rassoc-if #'stringp '((1 . 100) (2 . "hello") (3 . "world")))
-→ (2 . "hello")
+=> (2 . "hello")
 
 (rassoc-if #'zerop '((a . 5) (b . 0) (c . 3)))
-→ (B . 0)
+=> (B . 0)
 ```
 
 ### Using :key for custom extraction
@@ -61,7 +61,7 @@ The `:key` function is applied to the cdr of each pair before testing.
 
 ```lisp
 (rassoc 3 '((a . (1 2 3)) (b . (4 5 6))) :key #'length)
-→ (A 1 2 3)
+=> (A 1 2 3)
 ```
 
 ### Practical use: reverse lookup in a bidirectional mapping
@@ -76,5 +76,5 @@ The `:key` function is applied to the cdr of each pair before testing.
   (cdr (assoc :uk codes))
   ;; Reverse lookup
   (car (rassoc "France" codes :test #'equal)))
-→ :FR
+=> :FR
 ```

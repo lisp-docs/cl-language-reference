@@ -16,10 +16,10 @@ import SubsetpFunction from './_subsetp_function.md';
 
 ```lisp
 (subsetp '(1 2) '(1 2 3 4))
-; → T
+=> T
 
 (subsetp '(1 5) '(1 2 3 4))
-; → NIL
+=> NIL
 ```
 
 ### Empty list is a subset of everything
@@ -28,23 +28,23 @@ The empty list is always a subset of any list.
 
 ```lisp
 (subsetp '() '(a b c))
-; → T
+=> T
 
 (subsetp '() '())
-; → T
+=> T
 ```
 
 ### Using :test for value comparison
 
 ```lisp
 (subsetp '("a" "b") '("a" "b" "c") :test #'equal)
-; → T
+=> T
 
 (subsetp '("Hello") '("hello" "world") :test #'equalp)
-; → T
+=> T
 
 (subsetp '("Hello") '("hello" "world"))
-; → NIL
+=> NIL
 ```
 
 ### Using :key to compare by a component
@@ -53,12 +53,12 @@ The empty list is always a subset of any list.
 (subsetp '((a 1) (b 2))
          '((a 10) (b 20) (c 30))
          :key #'car)
-; → T
+=> T
 
 (subsetp '((d 4))
          '((a 10) (b 20) (c 30))
          :key #'car)
-; → NIL
+=> NIL
 ```
 
 ### Practical example: permission checking
@@ -67,10 +67,10 @@ The empty list is always a subset of any list.
 (let ((required-permissions '(:read :write))
       (user-permissions '(:read :write :execute :admin)))
   (subsetp required-permissions user-permissions))
-; → T
+=> T
 
 (let ((required-permissions '(:read :write :admin))
       (user-permissions '(:read :write)))
   (subsetp required-permissions user-permissions))
-; → NIL
+=> NIL
 ```

@@ -16,10 +16,10 @@ import AdjoinFunction from './_adjoin_function.md';
 
 ```lisp
 (adjoin 'a '(b c d))
-; → (A B C D)
+=> (A B C D)
 
 (adjoin 'b '(b c d))
-; → (B C D)
+=> (B C D)
 ```
 
 ### Non-destructive behavior
@@ -30,7 +30,7 @@ import AdjoinFunction from './_adjoin_function.md';
 (let ((lst '(1 2 3)))
   (adjoin 4 lst)
   lst)
-; → (1 2 3)
+=> (1 2 3)
 ```
 
 ### Using :test for custom comparison
@@ -39,10 +39,10 @@ By default, `adjoin` uses `eql`, which does not compare lists by structure. Use 
 
 ```lisp
 (adjoin '(a b) '((a b) (c d)))
-; → ((A B) (A B) (C D))
+=> ((A B) (A B) (C D))
 
 (adjoin '(a b) '((a b) (c d)) :test #'equal)
-; → ((A B) (C D))
+=> ((A B) (C D))
 ```
 
 ### Using :key to compare by a component
@@ -51,10 +51,10 @@ The `:key` function extracts the part of each element to compare against the ite
 
 ```lisp
 (adjoin '(name "Bob") '((name "Alice") (age 30)) :key #'car)
-; → ((NAME "Alice") (AGE 30))
+=> ((NAME "Alice") (AGE 30))
 
 (adjoin '(email "bob@test.com") '((name "Alice") (age 30)) :key #'car)
-; → ((EMAIL "bob@test.com") (NAME "Alice") (AGE 30))
+=> ((EMAIL "bob@test.com") (NAME "Alice") (AGE 30))
 ```
 
 ### Building a set from a sequence
@@ -65,5 +65,5 @@ The `:key` function extracts the part of each element to compare against the ite
 (reduce (lambda (lst item) (adjoin item lst))
         '(a b a c b d a)
         :initial-value '())
-; → (D C B A)
+=> (D C B A)
 ```

@@ -16,13 +16,13 @@ The type `null` has exactly one object: NIL. NIL is simultaneously the empty lis
 
 ```lisp
 (typep nil 'null)
-; → T
+=> T
 
 (typep '() 'null)
-; → T
+=> T
 
 (typep t 'null)
-; → NIL
+=> NIL
 ```
 
 ### Class precedence list
@@ -31,13 +31,13 @@ The class precedence list for `null` is: `null`, `symbol`, `list`, `sequence`, `
 
 ```lisp
 (typep nil 'symbol)
-; → T
+=> T
 
 (typep nil 'list)
-; → T
+=> T
 
 (typep nil 'sequence)
-; → T
+=> T
 ```
 
 ### NIL as empty list and false value
@@ -47,17 +47,17 @@ NIL plays dual roles in Common Lisp: it is the empty list and the canonical fals
 ```lisp
 ;; As the empty list
 (length nil)
-; → 0
+=> 0
 
 (append nil '(a b))
-; → (A B)
+=> (A B)
 
 ;; As false
 (if nil "true" "false")
-; → "false"
+=> "false"
 
 (not nil)
-; → T
+=> T
 ```
 
 ### Null is the only type with a single member
@@ -66,7 +66,7 @@ NIL plays dual roles in Common Lisp: it is the empty list and the canonical fals
 ;; Only NIL is of type null
 (remove-if-not (lambda (x) (typep x 'null))
                '(0 nil "" () t))
-; → (NIL NIL)
+=> (NIL NIL)
 ```
 
 ### Relationship to cons and list
@@ -75,8 +75,10 @@ The types `cons` and `null` form an exhaustive partition of the type `list`. Eve
 
 ```lisp
 (subtypep 'null 'list)
-; → T, T
+=> T
+=> T
 
 (subtypep 'null 'cons)
-; → NIL, T
+=> NIL
+=> T
 ```

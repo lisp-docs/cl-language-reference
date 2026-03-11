@@ -16,19 +16,19 @@ These accessors provide readable, English-named alternatives to car/cdr composit
 
 ```lisp
 (first '(a b c d e))
-→ A
+=> A
 
 (second '(a b c d e))
-→ B
+=> B
 
 (third '(a b c d e))
-→ C
+=> C
 
 (fourth '(a b c d e))
-→ D
+=> D
 
 (fifth '(a b c d e))
-→ E
+=> E
 ```
 
 ### Accessing positions beyond the list length
@@ -37,10 +37,10 @@ If the list is shorter than the requested position, NIL is returned.
 
 ```lisp
 (sixth '(a b c))
-→ NIL
+=> NIL
 
 (tenth '(1 2 3))
-→ NIL
+=> NIL
 ```
 
 ### All ten accessors
@@ -51,7 +51,7 @@ If the list is shorter than the requested position, NIL is returned.
         (fourth lst) (fifth lst) (sixth lst)
         (seventh lst) (eighth lst) (ninth lst)
         (tenth lst)))
-→ (1 2 3 4 5 6 7 8 9 10)
+=> (1 2 3 4 5 6 7 8 9 10)
 ```
 
 ### Using setf with positional accessors
@@ -62,7 +62,7 @@ All of these accessors are setf-able, allowing modification of list elements by 
 (let ((lst (list 'a 'b 'c 'd 'e)))
   (setf (third lst) 'C-PRIME)
   lst)
-→ (A B C-PRIME D E)
+=> (A B C-PRIME D E)
 ```
 
 ### Equivalence with car/cdr and nth
@@ -74,17 +74,17 @@ All of these accessors are setf-able, allowing modification of list elements by 
   (values (first lst)
           (car lst)
           (nth 0 lst)))
-→ 10
-→ 10
-→ 10
+=> 10
+=> 10
+=> 10
 
 (let ((lst '(10 20 30 40 50)))
   (values (third lst)
           (caddr lst)
           (nth 2 lst)))
-→ 30
-→ 30
-→ 30
+=> 30
+=> 30
+=> 30
 ```
 
 ### Working with nested lists
@@ -95,11 +95,11 @@ These accessors can be combined with each other for structured data access.
 (defvar *students* '(("Alice" 95) ("Bob" 87) ("Carol" 92)))
 
 (first (first *students*))
-→ "Alice"
+=> "Alice"
 
 (second (second *students*))
-→ 87
+=> 87
 
 (first (third *students*))
-→ "Carol"
+=> "Carol"
 ```

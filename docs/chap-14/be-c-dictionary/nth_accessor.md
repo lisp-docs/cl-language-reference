@@ -16,13 +16,13 @@ import NthAccessor from './_nth_accessor.md';
 
 ```lisp
 (nth 0 '(a b c d))
-→ A
+=> A
 
 (nth 2 '(a b c d))
-→ C
+=> C
 
 (nth 3 '(a b c d))
-→ D
+=> D
 ```
 
 ### Out-of-bounds access returns NIL
@@ -31,10 +31,10 @@ If n is greater than or equal to the length of the list, `nth` returns NIL.
 
 ```lisp
 (nth 5 '(a b c))
-→ NIL
+=> NIL
 
 (nth 0 nil)
-→ NIL
+=> NIL
 ```
 
 ### Using setf with nth
@@ -45,7 +45,7 @@ If n is greater than or equal to the length of the list, `nth` returns NIL.
 (let ((lst (list 'x 'y 'z)))
   (setf (nth 1 lst) 'Y-REPLACED)
   lst)
-→ (X Y-REPLACED Z)
+=> (X Y-REPLACED Z)
 ```
 
 ### Relationship to car and nthcdr
@@ -56,8 +56,8 @@ If n is greater than or equal to the length of the list, `nth` returns NIL.
 (let ((lst '(10 20 30 40 50)))
   (values (nth 3 lst)
           (car (nthcdr 3 lst))))
-→ 40
-→ 40
+=> 40
+=> 40
 ```
 
 ### Practical use: indexed access in a loop
@@ -69,7 +69,7 @@ If n is greater than or equal to the length of the list, `nth` returns NIL.
   (list (nth 0 colors)
         (nth 2 colors)
         (nth 4 colors)))
-→ ("red" "blue" "purple")
+=> ("red" "blue" "purple")
 ```
 
 ### Note: nth takes the index first
@@ -79,9 +79,9 @@ Unlike `elt` (which takes the sequence first), `nth` takes the index as its firs
 ```lisp
 ;; nth: index first, list second
 (nth 1 '(a b c))
-→ B
+=> B
 
 ;; elt: sequence first, index second
 (elt '(a b c) 1)
-→ B
+=> B
 ```

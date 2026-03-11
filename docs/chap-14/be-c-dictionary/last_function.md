@@ -16,10 +16,10 @@ import LastFunction from './_last_function.md';
 
 ```lisp
 (last '(a b c))
-→ (C)
+=> (C)
 
 (last '(1 2 3 4 5))
-→ (5)
+=> (5)
 ```
 
 ### Getting the last element itself
@@ -28,10 +28,10 @@ Since `last` returns the last cons, use `car` to extract the actual last element
 
 ```lisp
 (car (last '(a b c)))
-→ C
+=> C
 
 (car (last '(1)))
-→ 1
+=> 1
 ```
 
 ### last with the optional n argument
@@ -40,19 +40,19 @@ The optional second argument specifies how many trailing conses to return.
 
 ```lisp
 (last '(a b c d) 0)
-→ NIL
+=> NIL
 
 (last '(a b c d) 1)
-→ (D)
+=> (D)
 
 (last '(a b c d) 2)
-→ (C D)
+=> (C D)
 
 (last '(a b c d) 3)
-→ (B C D)
+=> (B C D)
 
 (last '(a b c d) 10)
-→ (A B C D)
+=> (A B C D)
 ```
 
 ### last on the empty list
@@ -61,7 +61,7 @@ When applied to NIL, `last` returns NIL.
 
 ```lisp
 (last nil)
-→ NIL
+=> NIL
 ```
 
 ### last with dotted lists
@@ -70,13 +70,13 @@ For dotted lists, `last` returns the last cons cell, which includes the non-nil 
 
 ```lisp
 (last '(a b . c))
-→ (B . C)
+=> (B . C)
 
 (last '(a . b))
-→ (A . B)
+=> (A . B)
 
 (last '(a . b) 0)
-→ B
+=> B
 ```
 
 ### Practical use: appending to the end of a list
@@ -87,5 +87,5 @@ For dotted lists, `last` returns the last cons cell, which includes the non-nil 
 (let ((lst (list 1 2 3)))
   (rplacd (last lst) (list 4 5))
   lst)
-→ (1 2 3 4 5)
+=> (1 2 3 4 5)
 ```

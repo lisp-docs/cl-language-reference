@@ -16,16 +16,16 @@ import CarAccessor from './_car_cdr_caar_cadr_cdar_cddr_caaar_caadr_cadar_caddr_
 
 ```lisp
 (car '(a b c))
-→ A
+=> A
 
 (cdr '(a b c))
-→ (B C)
+=> (B C)
 
 (car '(1 . 2))
-→ 1
+=> 1
 
 (cdr '(1 . 2))
-→ 2
+=> 2
 ```
 
 ### car and cdr of NIL
@@ -34,10 +34,10 @@ Both `car` and `cdr` return NIL when applied to the empty list.
 
 ```lisp
 (car nil)
-→ NIL
+=> NIL
 
 (cdr nil)
-→ NIL
+=> NIL
 ```
 
 ### Two-level compositions: caar, cadr, cdar, cddr
@@ -46,16 +46,16 @@ The letter sequence between C and R describes a chain of car/cdr operations, rea
 
 ```lisp
 (cadr '(a b c))
-→ B
+=> B
 
 (cddr '(a b c))
-→ (C)
+=> (C)
 
 (caar '((x y) (z w)))
-→ X
+=> X
 
 (cdar '((x y) (z w)))
-→ (Y)
+=> (Y)
 ```
 
 ### Three-level compositions for nested structures
@@ -64,13 +64,13 @@ The letter sequence between C and R describes a chain of car/cdr operations, rea
 
 ```lisp
 (caddr '(a b c d))
-→ C
+=> C
 
 (cadar '((1 2 3) (4 5 6)))
-→ 2
+=> 2
 
-(cdaar '((1 2 3) (4 5 6)))
-→ (2 3)
+(cdaar '(((a b c) d) e))
+=> (B C)
 ```
 
 ### Using setf with car and cdr
@@ -81,12 +81,12 @@ The letter sequence between C and R describes a chain of car/cdr operations, rea
 (let ((lst (list 1 2 3)))
   (setf (car lst) 10)
   lst)
-→ (10 2 3)
+=> (10 2 3)
 
 (let ((lst (list 1 2 3)))
   (setf (cadr lst) 20)
   lst)
-→ (1 20 3)
+=> (1 20 3)
 ```
 
 ### Practical example: accessing structured data
@@ -98,13 +98,13 @@ When data is organized in nested lists, car/cdr compositions provide direct acce
 
 ;; Name
 (car *record*)
-→ "Alice"
+=> "Alice"
 
 ;; Birth year
 (caadr *record*)
-→ 1990
+=> 1990
 
 ;; Department
 (caaddr *record*)
-→ "Engineering"
+=> "Engineering"
 ```

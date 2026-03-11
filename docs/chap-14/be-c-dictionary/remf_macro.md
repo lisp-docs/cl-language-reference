@@ -17,7 +17,8 @@ import RemfMacro from './_remf_macro.md';
 ```lisp
 (let ((plist (list :a 1 :b 2 :c 3)))
   (values (remf plist :b) plist))
-; → T, (:A 1 :C 3)
+=> T
+=> (:A 1 :C 3)
 ```
 
 ### Removing a non-existent property
@@ -27,7 +28,8 @@ When the indicator is not present, `remf` returns NIL and the plist is unchanged
 ```lisp
 (let ((plist (list :x 10 :y 20)))
   (values (remf plist :z) plist))
-; → NIL, (:X 10 :Y 20)
+=> NIL
+=> (:X 10 :Y 20)
 ```
 
 ### Successive removals
@@ -39,7 +41,7 @@ When the indicator is not present, `remf` returns NIL and the plist is unchanged
   (remf plist :age)
   (remf plist :email)
   plist)
-; → (:NAME "Alice")
+=> (:NAME "Alice")
 ```
 
 ### Only the first occurrence is removed
@@ -50,7 +52,7 @@ When duplicate indicators exist, only the first one is removed.
 (let ((plist (list :a 1 :b 2 :a 3)))
   (remf plist :a)
   plist)
-; → (:B 2 :A 3)
+=> (:B 2 :A 3)
 ```
 
 ### Using with setf and getf
@@ -64,5 +66,5 @@ When duplicate indicators exist, only the first one is removed.
   (setf (getf plist :weight) 10)
   (remf plist :size)
   plist)
-; → (:WEIGHT 10 :COLOR RED)
+=> (:WEIGHT 10 :COLOR RED)
 ```

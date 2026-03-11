@@ -16,13 +16,13 @@ The type `list` is the union of `cons` and `null`. It includes all proper lists,
 
 ```lisp
 (typep '(1 2 3) 'list)
-; → T
+=> T
 
 (typep nil 'list)
-; → T
+=> T
 
 (typep 42 'list)
-; → NIL
+=> NIL
 ```
 
 ### Three kinds of lists
@@ -32,15 +32,15 @@ Lists come in three varieties: proper lists (terminated by NIL), dotted lists (t
 ```lisp
 ;; Proper list
 (typep '(a b c) 'list)
-; → T
+=> T
 
 ;; Dotted list
 (typep '(a b . c) 'list)
-; → T
+=> T
 
 ;; NIL (the empty list)
 (typep '() 'list)
-; → T
+=> T
 ```
 
 ### Cons and null partition list
@@ -51,7 +51,7 @@ Every object of type `list` is either of type `cons` (non-empty list) or of type
 (let ((items (list '(a b) nil '(x) '() '(1 . 2))))
   (every (lambda (x) (or (typep x 'cons) (typep x 'null)))
          items))
-; → T
+=> T
 ```
 
 ### Class precedence list
@@ -60,13 +60,14 @@ The class precedence list for `list` is: `list`, `sequence`, `t`. Since `list` i
 
 ```lisp
 (subtypep 'list 'sequence)
-; → T, T
+=> T
+=> T
 
 (length '(a b c))
-; → 3
+=> 3
 
 (elt '(a b c) 1)
-; → B
+=> B
 ```
 
 ### Difference between list type and listp
@@ -75,8 +76,10 @@ The type `list` and the predicate `listp` test the same thing: whether an object
 
 ```lisp
 (values (typep '(1) 'list) (listp '(1)))
-; → T, T
+=> T
+=> T
 
 (values (typep 42 'list) (listp 42))
-; → NIL, NIL
+=> NIL
+=> NIL
 ```

@@ -20,9 +20,9 @@ import CopyTreeFunction from './_copy-tree_function.md';
   (values copy
           (equal original copy)
           (eq original copy)))
-→ ((1 2) (3 (4 5)))
-→ T
-→ NIL
+=> ((1 2) (3 (4 5)))
+=> T
+=> NIL
 ```
 
 ### Modifications to the deep copy do not affect the original
@@ -34,8 +34,8 @@ Because all cons cells are copied, even nested modifications are isolated.
        (copy (copy-tree original)))
   (setf (caar copy) 99)
   (values original copy))
-→ ((1 2) (3 4))
-→ ((99 2) (3 4))
+=> ((1 2) (3 4))
+=> ((99 2) (3 4))
 ```
 
 ### Contrast with copy-list
@@ -47,10 +47,10 @@ Because all cons cells are copied, even nested modifications are isolated.
        (original (list nested 'z))
        (shallow (copy-list original))
        (deep (copy-tree original)))
-  (values (eq (car original) (car shallow))    ; shared
-          (eq (car original) (car deep))))      ; not shared
-→ T
-→ NIL
+  (values (eq (car original) (car shallow))
+          (eq (car original) (car deep))))
+=> T
+=> NIL
 ```
 
 ### copy-tree with non-cons atoms
@@ -59,13 +59,13 @@ If the argument is not a cons, `copy-tree` returns it as-is (atoms are not copie
 
 ```lisp
 (copy-tree 42)
-→ 42
+=> 42
 
 (copy-tree "hello")
-→ "hello"
+=> "hello"
 
 (copy-tree nil)
-→ NIL
+=> NIL
 ```
 
 ### Practical use: safe tree manipulation
@@ -76,10 +76,10 @@ Use `copy-tree` when you need to modify a deeply nested structure without affect
 (let ((template '(:html (:head (:title "Default"))
                         (:body (:p "Content")))))
   (let ((page (copy-tree template)))
-    (setf (cadr (caddr (cadr page))) "My Page")
+    (setf (cadr (cadadr page)) "My Page")
     (values template page)))
-→ (:HTML (:HEAD (:TITLE "Default")) (:BODY (:P "Content")))
-→ (:HTML (:HEAD (:TITLE "My Page")) (:BODY (:P "Content")))
+=> (:HTML (:HEAD (:TITLE "Default")) (:BODY (:P "Content")))
+=> (:HTML (:HEAD (:TITLE "My Page")) (:BODY (:P "Content")))
 ```
 
 ### copy-tree with dotted pairs
@@ -91,6 +91,6 @@ Dotted pairs within the tree are also recursively copied.
        (copy (copy-tree original)))
   (setf (cdar copy) 99)
   (values original copy))
-→ ((A . 1) (B . 2))
-→ ((A . 99) (B . 2))
+=> ((A . 1) (B . 2))
+=> ((A . 99) (B . 2))
 ```

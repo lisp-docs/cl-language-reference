@@ -16,10 +16,10 @@ import SubstFunction from './_subst_subst-if_subst-if-not_nsubst_nsubst-if_nsubs
 
 ```lisp
 (subst 'x 'b '(a b (c b d)))
-; → (A X (C X D))
+=> (A X (C X D))
 
 (subst "new" 'old '(old is (not old)))
-; → ("new" IS (NOT "new"))
+=> (#1="new" IS (NOT #1#))
 ```
 
 ### subst replaces in both car and cdr positions
@@ -28,10 +28,10 @@ Since `subst` operates on a tree (not just a flat list), it replaces leaves in b
 
 ```lisp
 (subst 'z nil '(a b c))
-; → (A B C . Z)
+=> (A B C . Z)
 
 (subst 'end 'x '(a . x))
-; → (A . END)
+=> (A . END)
 ```
 
 ### Using :test for custom comparison
@@ -40,7 +40,7 @@ Since `subst` operates on a tree (not just a flat list), it replaces leaves in b
 (subst 'new '(old item)
        '(a (old item) b (old item))
        :test #'equal)
-; → (A NEW B NEW)
+=> (A NEW B NEW)
 ```
 
 ### subst-if replaces based on a predicate
@@ -48,11 +48,12 @@ Since `subst` operates on a tree (not just a flat list), it replaces leaves in b
 `subst-if` replaces every subtree or leaf that satisfies the predicate.
 
 ```lisp
-(subst-if 0 #'oddp '(1 2 (3 4) 5))
-; → (0 2 (0 4) 0)
+(subst-if 0 #'(lambda (x) (and (numberp x) (oddp x)))
+          '(1 2 (3 4) 5))
+=> (0 2 (0 4) 0)
 
 (subst-if :empty #'null '(a nil (b nil) nil))
-; → (A :EMPTY (B :EMPTY) :EMPTY)
+=> (A :EMPTY (B :EMPTY . :EMPTY) :EMPTY . :EMPTY)
 ```
 
 ### nsubst is destructive
@@ -63,7 +64,7 @@ Since `subst` operates on a tree (not just a flat list), it replaces leaves in b
 (let ((tree (list 1 (list 2 3) (list 4 5))))
   (nsubst 99 3 tree)
   tree)
-; → (1 (2 99) (4 5))
+=> (1 (2 99) (4 5))
 ```
 
 ### Practical example: template substitution
@@ -73,5 +74,5 @@ Since `subst` operates on a tree (not just a flat list), it replaces leaves in b
                   :name :age)))
   (subst "Alice" :name
     (subst 30 :age template)))
-; → (FORMAT T "Hello, ~A! You are ~A years old." "Alice" 30)
+=> (FORMAT T "Hello, ~A! You are ~A years old." "Alice" 30)
 ```

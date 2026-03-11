@@ -16,7 +16,7 @@ import PairlisFunction from './_pairlis_function.md';
 
 ```lisp
 (pairlis '(a b c) '(1 2 3))
-; → ((A . 1) (B . 2) (C . 3))  ; order may vary
+=> ((C . 3) (B . 2) (A . 1))
 ```
 
 ### Prepending to an existing alist
@@ -25,7 +25,7 @@ An optional third argument provides an existing alist to append the new pairs on
 
 ```lisp
 (pairlis '(x y) '(10 20) '((z . 30)))
-; → ((X . 10) (Y . 20) (Z . 30))  ; order of new pairs may vary
+=> ((Y . 20) (X . 10) (Z . 30))
 ```
 
 ### Building a simple symbol table
@@ -34,7 +34,7 @@ An optional third argument provides an existing alist to append the new pairs on
 (let ((vars '(width height depth))
       (vals '(100 200 50)))
   (pairlis vars vals))
-; → ((WIDTH . 100) (HEIGHT . 200) (DEPTH . 50))  ; order may vary
+=> ((DEPTH . 50) (HEIGHT . 200) (WIDTH . 100))
 ```
 
 ### The original alist is not modified
@@ -43,7 +43,7 @@ An optional third argument provides an existing alist to append the new pairs on
 (let ((existing '((old . value))))
   (pairlis '(new) '(data) existing)
   existing)
-; → ((OLD . VALUE))
+=> ((OLD . VALUE))
 ```
 
 ### Looking up values in the result
@@ -54,5 +54,6 @@ The resulting alist works with `assoc` as expected.
 (let ((env (pairlis '(name age) '("Alice" 30))))
   (values (cdr (assoc 'name env))
           (cdr (assoc 'age env))))
-; → "Alice", 30
+=> "Alice"
+=> 30
 ```

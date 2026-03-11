@@ -16,10 +16,10 @@ import EndpFunction from './_endp_function.md';
 
 ```lisp
 (endp nil)
-→ T
+=> T
 
 (endp '(a b c))
-→ NIL
+=> NIL
 ```
 
 ### Traversing a list with endp
@@ -32,7 +32,7 @@ import EndpFunction from './_endp_function.md';
   (do ((tail lst (cdr tail)))
       ((endp tail) sum)
     (incf sum (car tail))))
-→ 60
+=> 60
 ```
 
 ### endp checks that the argument is a list
@@ -41,10 +41,10 @@ Unlike `null`, `endp` should signal a type-error if given something that is neit
 
 ```lisp
 (endp '())
-→ T
+=> T
 
 (endp '(x))
-→ NIL
+=> NIL
 
 ;; (endp 42) would signal a TYPE-ERROR
 ```
@@ -60,10 +60,10 @@ Unlike `null`, `endp` should signal a type-error if given something that is neit
       (+ (car lst) (sum-list (cdr lst)))))
 
 (sum-list '(1 2 3 4 5))
-→ 15
+=> 15
 
 (sum-list '())
-→ 0
+=> 0
 ```
 
 ### endp with cddr for pairwise processing
@@ -79,5 +79,5 @@ When processing list elements in pairs, `endp` can test the remaining tail at ea
             (pairwise-max (cddr lst)))))
 
 (pairwise-max '(3 7 2 9 5 1))
-→ (7 9 5)
+=> (7 9 5)
 ```

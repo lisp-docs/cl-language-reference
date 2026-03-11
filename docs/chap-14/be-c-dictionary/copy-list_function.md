@@ -20,9 +20,9 @@ import CopyListFunction from './_copy-list_function.md';
   (values copy
           (equal original copy)
           (eq original copy)))
-→ (A B C)
-→ T
-→ NIL
+=> (A B C)
+=> T
+=> NIL
 ```
 
 ### Modifications to the copy do not affect the original
@@ -34,8 +34,8 @@ Since the top-level cons cells are new, structural changes to the copy leave the
        (copy (copy-list original)))
   (setf (car copy) 10)
   (values original copy))
-→ (1 2 3)
-→ (10 2 3)
+=> (1 2 3)
+=> (10 2 3)
 ```
 
 ### Shared substructure: nested lists are not copied
@@ -47,8 +47,8 @@ Since the top-level cons cells are new, structural changes to the copy leave the
        (copy (copy-list original)))
   (setf (caar copy) 99)
   (values original copy))
-→ ((99 2) (3 4))
-→ ((99 2) (3 4))
+=> ((99 2) (3 4))
+=> ((99 2) (3 4))
 ```
 
 ### copy-list with dotted lists
@@ -57,7 +57,7 @@ Since the top-level cons cells are new, structural changes to the copy leave the
 
 ```lisp
 (copy-list '(a b . c))
-→ (A B . C)
+=> (A B . C)
 ```
 
 ### Practical use: safe destructive operations
@@ -67,7 +67,7 @@ Use `copy-list` to protect a list before performing destructive operations on it
 ```lisp
 (let ((data '(3 1 4 1 5 9)))
   (sort (copy-list data) #'<))
-→ (1 1 3 4 5 9)
+=> (1 1 3 4 5 9)
 
 ;; data is unchanged because we sorted a copy
 ```

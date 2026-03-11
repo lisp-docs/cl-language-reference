@@ -16,7 +16,7 @@ import ConsFunction from './_cons_function.md';
 
 ```lisp
 (cons 'a 'b)
-→ (A . B)
+=> (A . B)
 ```
 
 ### Building a list element by element
@@ -25,10 +25,10 @@ When the second argument is a list (or NIL), `cons` prepends the first argument 
 
 ```lisp
 (cons 1 nil)
-→ (1)
+=> (1)
 
 (cons 1 '(2 3 4))
-→ (1 2 3 4)
+=> (1 2 3 4)
 ```
 
 ### Building a list from scratch
@@ -37,7 +37,7 @@ You can nest `cons` calls to construct a proper list, terminating with NIL.
 
 ```lisp
 (cons 'a (cons 'b (cons 'c nil)))
-→ (A B C)
+=> (A B C)
 ```
 
 ### Cons cells hold any types of objects
@@ -46,10 +46,10 @@ The car and cdr of a cons can be any Lisp object, including other cons cells, st
 
 ```lisp
 (cons "hello" 42)
-→ ("hello" . 42)
+=> ("hello" . 42)
 
 (cons '(1 2) '(3 4))
-→ ((1 2) 3 4)
+=> ((1 2) 3 4)
 ```
 
 ### Using cons to prepend to an association list
@@ -60,5 +60,5 @@ A common pattern is using `cons` to add a new key-value pair to an alist.
 (defvar *settings* '((:width . 80) (:height . 24)))
 
 (setq *settings* (cons '(:color . :blue) *settings*))
-→ ((:COLOR . :BLUE) (:WIDTH . 80) (:HEIGHT . 24))
+=> ((:COLOR . :BLUE) (:WIDTH . 80) (:HEIGHT . 24))
 ```

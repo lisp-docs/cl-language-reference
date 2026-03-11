@@ -18,7 +18,7 @@ import PushMacro from './_push_macro.md';
 (let ((lst '(b c d)))
   (push 'a lst)
   lst)
-→ (A B C D)
+=> (A B C D)
 ```
 
 ### Building a list with push
@@ -31,7 +31,7 @@ import PushMacro from './_push_macro.md';
   (push 2 result)
   (push 1 result)
   result)
-→ (1 2 3)
+=> (1 2 3)
 ```
 
 ### push returns the new list
@@ -41,7 +41,7 @@ The return value of `push` is the new value of the place.
 ```lisp
 (let ((lst '(2 3)))
   (push 1 lst))
-→ (1 2 3)
+=> (1 2 3)
 ```
 
 ### push with generalized places
@@ -53,7 +53,7 @@ The return value of `push` is the new value of the place.
   (push 'a (car lst))
   (push 'b (car lst))
   lst)
-→ ((B A))
+=> ((B A))
 ```
 
 ### Practical use: collecting results
@@ -65,7 +65,7 @@ The return value of `push` is the new value of the place.
   (dotimes (i 5)
     (push (* (1+ i) (1+ i)) squares))
   (nreverse squares))
-→ (1 4 9 16 25)
+=> (1 4 9 16 25)
 ```
 
 ### push is equivalent to cons plus setf
@@ -76,5 +76,5 @@ The return value of `push` is the new value of the place.
 (let ((x '(2 3)))
   (setf x (cons 1 x))
   x)
-→ (1 2 3)
+=> (1 2 3)
 ```

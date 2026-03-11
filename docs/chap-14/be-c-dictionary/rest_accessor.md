@@ -16,13 +16,13 @@ import RestAccessor from './_rest_accessor.md';
 
 ```lisp
 (rest '(a b c))
-→ (B C)
+=> (B C)
 
 (rest '(1))
-→ NIL
+=> NIL
 
 (rest nil)
-→ NIL
+=> NIL
 ```
 
 ### rest with dotted lists
@@ -31,10 +31,10 @@ When applied to a dotted pair, `rest` returns the cdr, which may be a non-list a
 
 ```lisp
 (rest '(a . b))
-→ B
+=> B
 
 (rest '(1 2 . 3))
-→ (2 . 3)
+=> (2 . 3)
 ```
 
 ### Using setf with rest
@@ -45,7 +45,7 @@ When applied to a dotted pair, `rest` returns the cdr, which may be a non-list a
 (let ((lst (list 1 2 3)))
   (setf (rest lst) '(20 30))
   lst)
-→ (1 20 30)
+=> (1 20 30)
 ```
 
 ### Idiomatic use: first and rest for head/tail decomposition
@@ -60,7 +60,7 @@ The pair `first`/`rest` is the idiomatic way to decompose a list into its head e
               (list (first lst)))))
 
 (my-reverse '(1 2 3 4 5))
-→ (5 4 3 2 1)
+=> (5 4 3 2 1)
 ```
 
 ### Successive applications of rest
@@ -69,14 +69,14 @@ Calling `rest` repeatedly walks down the list, peeling off one element at a time
 
 ```lisp
 (rest '(a b c d))
-→ (B C D)
+=> (B C D)
 
 (rest (rest '(a b c d)))
-→ (C D)
+=> (C D)
 
 (rest (rest (rest '(a b c d))))
-→ (D)
+=> (D)
 
 (rest (rest (rest (rest '(a b c d)))))
-→ NIL
+=> NIL
 ```

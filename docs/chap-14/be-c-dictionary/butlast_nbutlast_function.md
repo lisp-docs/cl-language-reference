@@ -16,10 +16,10 @@ import ButlastFunction from './_butlast_nbutlast_function.md';
 
 ```lisp
 (butlast '(1 2 3 4 5))
-; → (1 2 3 4)
+=> (1 2 3 4)
 
 (butlast '(1 2 3 4 5) 2)
-; → (1 2 3)
+=> (1 2 3)
 ```
 
 ### butlast does not modify the original list
@@ -30,7 +30,7 @@ import ButlastFunction from './_butlast_nbutlast_function.md';
 (let ((lst '(a b c d)))
   (butlast lst)
   lst)
-; → (A B C D)
+=> (A B C D)
 ```
 
 ### Removing more elements than exist
@@ -39,13 +39,13 @@ When n is greater than or equal to the length of the list, `butlast` returns NIL
 
 ```lisp
 (butlast '(a b c) 3)
-; → NIL
+=> NIL
 
 (butlast '(a b c) 10)
-; → NIL
+=> NIL
 
 (butlast '() 1)
-; → NIL
+=> NIL
 ```
 
 ### nbutlast is the destructive version
@@ -55,12 +55,12 @@ When n is greater than or equal to the length of the list, `butlast` returns NIL
 ```lisp
 (let ((lst (list 1 2 3 4 5)))
   (nbutlast lst 2))
-; → (1 2 3)
+=> (1 2 3)
 
 (let ((lst (list 'a 'b 'c)))
   (nbutlast lst)
   lst)
-; → (A B)
+=> (A B)
 ```
 
 ### Practical use: removing trailing elements
@@ -71,5 +71,5 @@ When n is greater than or equal to the length of the list, `butlast` returns NIL
 ;; Join all path components except the filename
 (let ((path-parts '("home" "user" "docs" "file.txt")))
   (butlast path-parts))
-; → ("home" "user" "docs")
+=> ("home" "user" "docs")
 ```

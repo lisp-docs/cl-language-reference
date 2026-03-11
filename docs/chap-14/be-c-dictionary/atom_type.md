@@ -16,16 +16,16 @@ The type `atom` is equivalent to `(not cons)`. It includes everything that is no
 
 ```lisp
 (typep 42 'atom)
-; → T
+=> T
 
 (typep "hello" 'atom)
-; → T
+=> T
 
 (typep 'foo 'atom)
-; → T
+=> T
 
 (typep '(1 2) 'atom)
-; → NIL
+=> NIL
 ```
 
 ### NIL is an atom
@@ -34,10 +34,10 @@ NIL (the empty list) is an atom, not a cons. This is an important distinction si
 
 ```lisp
 (typep nil 'atom)
-; → T
+=> T
 
 (typep '() 'atom)
-; → T
+=> T
 ```
 
 ### Using atom type in declarations
@@ -47,7 +47,7 @@ The `atom` type can be used in type checks and declarations.
 ```lisp
 (let ((items '(1 "two" (3 4) x nil #\a)))
   (remove-if-not (lambda (x) (typep x 'atom)) items))
-; → (1 "two" X NIL #\a)
+=> (1 "two" X NIL #\a)
 ```
 
 ### Relationship to cons type
@@ -57,9 +57,11 @@ The types `atom` and `cons` form an exhaustive partition of the type `t`. Every 
 ```lisp
 (let ((obj '(a . b)))
   (values (typep obj 'atom) (typep obj 'cons)))
-; → NIL, T
+=> NIL
+=> T
 
 (let ((obj 42))
   (values (typep obj 'atom) (typep obj 'cons)))
-; → T, NIL
+=> T
+=> NIL
 ```

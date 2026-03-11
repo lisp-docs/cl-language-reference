@@ -17,8 +17,8 @@ import PopMacro from './_pop_macro.md';
 ```lisp
 (let ((stack '(a b c)))
   (values (pop stack) stack))
-→ A
-→ (B C)
+=> A
+=> (B C)
 ```
 
 ### Using push and pop as a stack
@@ -33,7 +33,7 @@ import PopMacro from './_pop_macro.md';
   (list (pop stack)
         (pop stack)
         (pop stack)))
-→ (3 2 1)
+=> (3 2 1)
 ```
 
 ### pop on the empty list
@@ -43,8 +43,8 @@ Popping from an empty list (NIL) returns NIL and leaves the place as NIL.
 ```lisp
 (let ((lst nil))
   (values (pop lst) lst))
-→ NIL
-→ NIL
+=> NIL
+=> NIL
 ```
 
 ### pop with generalized places
@@ -54,8 +54,8 @@ Popping from an empty list (NIL) returns NIL and leaves the place as NIL.
 ```lisp
 (let ((data (list '(1 2 3))))
   (values (pop (car data)) data))
-→ 1
-→ ((2 3))
+=> 1
+=> ((2 3))
 ```
 
 ### Processing a list element by element with pop
@@ -67,5 +67,5 @@ Popping from an empty list (NIL) returns NIL and leaves the place as NIL.
       (sum 0))
   (loop while lst do (incf sum (pop lst)))
   sum)
-→ 60
+=> 60
 ```

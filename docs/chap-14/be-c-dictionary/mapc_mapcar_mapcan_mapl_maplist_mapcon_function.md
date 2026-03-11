@@ -16,10 +16,10 @@ import MapcFunction from './_mapc_mapcar_mapcan_mapl_maplist_mapcon_function.md'
 
 ```lisp
 (mapcar #'1+ '(1 2 3 4))
-→ (2 3 4 5)
+=> (2 3 4 5)
 
 (mapcar #'string-upcase '("hello" "world"))
-→ ("HELLO" "WORLD")
+=> ("HELLO" "WORLD")
 ```
 
 ### mapcar with multiple lists
@@ -28,13 +28,13 @@ When given multiple lists, `mapcar` applies the function to corresponding elemen
 
 ```lisp
 (mapcar #'+ '(1 2 3) '(10 20 30))
-→ (11 22 33)
+=> (11 22 33)
 
 (mapcar #'list '(a b c) '(1 2 3))
-→ ((A 1) (B 2) (C 3))
+=> ((A 1) (B 2) (C 3))
 
 (mapcar #'cons '(a b c) '(1 2 3))
-→ ((A . 1) (B . 2) (C . 3))
+=> ((A . 1) (B . 2) (C . 3))
 ```
 
 ### mapc: apply for side effects only
@@ -42,11 +42,10 @@ When given multiple lists, `mapcar` applies the function to corresponding elemen
 `mapc` is like `mapcar` but discards the results and returns the first list argument. Use it when you only care about side effects.
 
 ```lisp
-(mapc #'print '(1 2 3))
-1
-2
-3
-→ (1 2 3)
+(let ((sum 0))
+  (mapc #'(lambda (x) (incf sum x)) '(1 2 3))
+  sum)
+=> 6
 ```
 
 ### mapcan: transform and splice results
@@ -57,11 +56,11 @@ When given multiple lists, `mapcar` applies the function to corresponding elemen
 (mapcan #'(lambda (x)
             (if (evenp x) (list x) nil))
         '(1 2 3 4 5 6))
-→ (2 4 6)
+=> (2 4 6)
 
 (mapcan #'(lambda (x) (list x (* x x)))
         '(1 2 3))
-→ (1 1 2 4 3 9)
+=> (1 1 2 4 3 9)
 ```
 
 ### maplist: operate on successive tails
@@ -70,10 +69,10 @@ When given multiple lists, `mapcar` applies the function to corresponding elemen
 
 ```lisp
 (maplist #'identity '(a b c))
-→ ((A B C) (B C) (C))
+=> ((A . #1=(B . #2=(C))) #1# #2#)
 
 (maplist #'length '(1 2 3 4))
-→ (4 3 2 1)
+=> (4 3 2 1)
 ```
 
 ### mapl: side effects on successive tails
@@ -84,7 +83,7 @@ When given multiple lists, `mapcar` applies the function to corresponding elemen
 (let ((result nil))
   (mapl #'(lambda (tail) (push tail result)) '(a b c))
   (nreverse result))
-→ ((A B C) (B C) (C))
+=> ((A . #1=(B . #2=(C))) #1# #2#)
 ```
 
 ### mapcon: splice results from tail processing
@@ -93,5 +92,5 @@ When given multiple lists, `mapcar` applies the function to corresponding elemen
 
 ```lisp
 (mapcon #'copy-list '(1 2 3))
-→ (1 2 3 2 3 3)
+=> (1 2 3 2 3 3)
 ```

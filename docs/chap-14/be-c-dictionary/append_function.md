@@ -16,7 +16,7 @@ import AppendFunction from './_append_function.md';
 
 ```lisp
 (append '(a b c) '(d e f))
-→ (A B C D E F)
+=> (A B C D E F)
 ```
 
 ### Concatenating multiple lists
@@ -25,10 +25,10 @@ import AppendFunction from './_append_function.md';
 
 ```lisp
 (append '(1 2) '(3 4) '(5 6))
-→ (1 2 3 4 5 6)
+=> (1 2 3 4 5 6)
 
 (append '(a) '(b) '(c) '(d))
-→ (A B C D)
+=> (A B C D)
 ```
 
 ### append does not modify the original lists
@@ -40,8 +40,8 @@ All arguments except the last are copied. The original lists remain unchanged.
       (y '(4 5 6)))
   (append x y)
   (values x y))
-→ (1 2 3)
-→ (4 5 6)
+=> (1 2 3)
+=> (4 5 6)
 ```
 
 ### The last argument is shared, not copied
@@ -53,7 +53,7 @@ The last argument becomes the tail of the result without being copied. This mean
        (result (append '(1 2 3) tail)))
   (setf (car tail) 40)
   result)
-→ (1 2 3 40 5)
+=> (1 2 3 40 5)
 ```
 
 ### append with NIL arguments
@@ -62,13 +62,13 @@ NIL arguments are effectively skipped.
 
 ```lisp
 (append nil '(a b c))
-→ (A B C)
+=> (A B C)
 
 (append '(a b c) nil)
-→ (A B C)
+=> (A B C)
 
 (append nil nil nil)
-→ NIL
+=> NIL
 ```
 
 ### The last argument need not be a list
@@ -77,10 +77,10 @@ If the last argument is not a list, the result is a dotted list.
 
 ```lisp
 (append '(a b c) 'd)
-→ (A B C . D)
+=> (A B C . D)
 
 (append '(1 2) 3)
-→ (1 2 . 3)
+=> (1 2 . 3)
 ```
 
 ### append with no arguments
@@ -89,5 +89,5 @@ Calling `append` with no arguments returns NIL.
 
 ```lisp
 (append)
-→ NIL
+=> NIL
 ```

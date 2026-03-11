@@ -16,10 +16,10 @@ import TreeEqualFunction from './_tree-equal_function.md';
 
 ```lisp
 (tree-equal '(a (b c) d) '(a (b c) d))
-; → T
+=> T
 
 (tree-equal '(a b) '(a c))
-; → NIL
+=> NIL
 ```
 
 ### Comparing different structures
@@ -28,10 +28,10 @@ Trees with different shapes are never equal, even if they contain the same atoms
 
 ```lisp
 (tree-equal '(a b c) '(a (b c)))
-; → NIL
+=> NIL
 
 (tree-equal '((a) b) '(a b))
-; → NIL
+=> NIL
 ```
 
 ### Using :test for custom leaf comparison
@@ -40,10 +40,10 @@ The `:test` function is applied only to leaves (atoms), not to cons cells. Use `
 
 ```lisp
 (tree-equal '("hello" ("world")) '("hello" ("world")) :test #'equal)
-; → T
+=> T
 
 (tree-equal '("Hello") '("hello") :test #'equalp)
-; → T
+=> T
 ```
 
 ### Comparison with equal
@@ -53,12 +53,12 @@ The `:test` function is applied only to leaves (atoms), not to cons cells. Use `
 ```lisp
 ;; equal compares strings by value, tree-equal (default) uses eql
 (equal '("a") '("a"))
-; → T
+=> T
 
 ;; tree-equal with eql may return NIL for separate string objects
 ;; (implementation-dependent for literal strings)
 (tree-equal '(1 2 3) '(1 2 3))
-; → T
+=> T
 ```
 
 ### Nested tree comparison with custom test
@@ -66,6 +66,6 @@ The `:test` function is applied only to leaves (atoms), not to cons cells. Use `
 ```lisp
 (tree-equal '((1.0 2.0) (3.0 4.0))
             '((1 2) (3 4))
-            :test #'=)
-; → T
+            :test #'equalp)
+=> T
 ```

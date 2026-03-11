@@ -16,13 +16,13 @@ import NullFunction from './_null_function.md';
 
 ```lisp
 (null nil)
-→ T
+=> T
 
 (null '())
-→ T
+=> T
 
 (null '(1 2 3))
-→ NIL
+=> NIL
 ```
 
 ### Non-NIL values return NIL
@@ -31,13 +31,13 @@ Any object that is not NIL causes `null` to return NIL.
 
 ```lisp
 (null t)
-→ NIL
+=> NIL
 
 (null 0)
-→ NIL
+=> NIL
 
 (null "")
-→ NIL
+=> NIL
 ```
 
 ### null vs. not
@@ -47,11 +47,11 @@ Any object that is not NIL causes `null` to return NIL.
 ```lisp
 ;; Use null when checking list emptiness
 (null (cdr '(only-one)))
-→ T
+=> T
 
 ;; Use not when inverting a boolean condition
 (not (> 3 5))
-→ T
+=> T
 ```
 
 ### Common pattern: checking if a list is empty
@@ -65,10 +65,10 @@ Any object that is not NIL causes `null` to return NIL.
       (+ 1 (my-length (cdr lst)))))
 
 (my-length '(a b c d))
-→ 4
+=> 4
 
 (my-length nil)
-→ 0
+=> 0
 ```
 
 ### Using null with conditional expressions
@@ -79,5 +79,5 @@ Any object that is not NIL causes `null` to return NIL.
 (let ((items '()))
   (when (null items)
     "The list is empty"))
-→ "The list is empty"
+=> "The list is empty"
 ```

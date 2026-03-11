@@ -18,7 +18,7 @@ import RplacaFunction from './_rplaca_rplacd_function.md';
 (let ((cell (cons 'a 'b)))
   (rplaca cell 'x)
   cell)
-; → (X . B)
+=> (X . B)
 ```
 
 ### Basic rplacd usage
@@ -29,7 +29,7 @@ import RplacaFunction from './_rplaca_rplacd_function.md';
 (let ((cell (cons 'a 'b)))
   (rplacd cell 'y)
   cell)
-; → (A . Y)
+=> (A . Y)
 ```
 
 ### Modifying a list element
@@ -40,7 +40,7 @@ import RplacaFunction from './_rplaca_rplacd_function.md';
 (let ((lst (list 1 2 3 4)))
   (rplaca (cdr lst) 99)  ; replace second element
   lst)
-; → (1 99 3 4)
+=> (1 99 3 4)
 ```
 
 ### Modifying list structure with rplacd
@@ -52,15 +52,15 @@ import RplacaFunction from './_rplaca_rplacd_function.md';
 (let ((lst (list 'a 'b 'c 'd)))
   (rplacd (cdr lst) nil)
   lst)
-; → (A B)
+=> (A B)
 
 ;; Splice another list in
 (let ((lst (list 1 2 5))
       (insert (list 3 4)))
-  (rplacd insert (cddr lst))
+  (rplacd (cdr insert) (cddr lst))
   (rplacd (cdr lst) insert)
   lst)
-; → (1 2 3 4 5)
+=> (1 2 3 4 5)
 ```
 
 ### Relationship to setf of car/cdr
@@ -70,5 +70,5 @@ import RplacaFunction from './_rplaca_rplacd_function.md';
 ```lisp
 (let ((cell (cons 'a 'b)))
   (eq (rplaca cell 'x) cell))
-; → T
+=> T
 ```

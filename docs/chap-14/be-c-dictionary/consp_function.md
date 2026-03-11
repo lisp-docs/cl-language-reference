@@ -16,13 +16,13 @@ import ConspFunction from './_consp_function.md';
 
 ```lisp
 (consp '(1 2 3))
-→ T
+=> T
 
 (consp '(a . b))
-→ T
+=> T
 
 (consp nil)
-→ NIL
+=> NIL
 ```
 
 ### Distinguishing consp from listp
@@ -31,16 +31,16 @@ import ConspFunction from './_consp_function.md';
 
 ```lisp
 (consp nil)
-→ NIL
+=> NIL
 
 (listp nil)
-→ T
+=> T
 
 (consp '(1))
-→ T
+=> T
 
 (listp '(1))
-→ T
+=> T
 ```
 
 ### Using consp for type checking in recursive functions
@@ -57,7 +57,7 @@ import ConspFunction from './_consp_function.md';
       0))
 
 (count-conses '(a (b c) d))
-→ 5
+=> 5
 ```
 
 ### Non-list objects are not conses
@@ -66,14 +66,14 @@ Numbers, strings, symbols, and other atoms all return NIL for `consp`.
 
 ```lisp
 (consp 42)
-→ NIL
+=> NIL
 
 (consp "hello")
-→ NIL
+=> NIL
 
 (consp 'foo)
-→ NIL
+=> NIL
 
 (consp #\A)
-→ NIL
+=> NIL
 ```

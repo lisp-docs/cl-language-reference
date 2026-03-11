@@ -16,10 +16,10 @@ import UnionFunction from './_union_nunion_function.md';
 
 ```lisp
 (union '(1 2 3) '(3 4 5))
-; → (1 2 3 4 5)  ; order may vary
+=> (2 1 3 4 5)
 
 (union '(a b c) '(a b c))
-; → (A B C)  ; order may vary
+=> (A B C)
 ```
 
 ### Using :test for value comparison
@@ -28,10 +28,10 @@ Use `:test` to control how elements are compared.
 
 ```lisp
 (union '("apple" "banana") '("banana" "cherry") :test #'equal)
-; → ("apple" "banana" "cherry")  ; order may vary
+=> ("apple" "banana" "cherry")
 
 (union '("Hello") '("hello") :test #'equalp)
-; → ("Hello")  ; order may vary
+=> ("hello")
 ```
 
 ### Using :key to compare by a component
@@ -42,7 +42,7 @@ The `:key` function extracts the comparison part from each element.
 (union '((id 1 name "Alice") (id 2 name "Bob"))
        '((id 2 name "Robert") (id 3 name "Carol"))
        :key #'cadr)
-; → ((ID 1 NAME "Alice") (ID 2 NAME "Bob") (ID 3 NAME "Carol"))  ; order may vary
+=> ((ID 1 NAME "Alice") (ID 2 NAME "Robert") (ID 3 NAME "Carol"))
 ```
 
 ### nunion is destructive
@@ -53,12 +53,12 @@ The `:key` function extracts the comparison part from each element.
 (let ((a (list 1 2 3))
       (b (list 3 4 5)))
   (nunion a b))
-; → (1 2 3 4 5)  ; order may vary
+=> (2 1 3 4 5)
 ```
 
 ### Merging keyword sets
 
 ```lisp
 (union '(:bold :italic) '(:italic :underline))
-; → (:BOLD :ITALIC :UNDERLINE)  ; order may vary
+=> (:BOLD :ITALIC :UNDERLINE)
 ```

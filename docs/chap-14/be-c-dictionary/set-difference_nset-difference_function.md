@@ -16,10 +16,10 @@ import SetDifferenceFunction from './_set-difference_nset-difference_function.md
 
 ```lisp
 (set-difference '(1 2 3 4 5) '(3 4 5 6 7))
-; → (1 2)  ; order may vary
+=> (2 1)
 
 (set-difference '(a b c) '(a b c))
-; → NIL
+=> NIL
 ```
 
 ### Order matters
@@ -28,10 +28,10 @@ Set difference is not symmetric. The result only contains elements from the firs
 
 ```lisp
 (set-difference '(1 2 3) '(2 3 4 5))
-; → (1)  ; order may vary
+=> (1)
 
 (set-difference '(2 3 4 5) '(1 2 3))
-; → (4 5)  ; order may vary
+=> (5 4)
 ```
 
 ### Using :test for value comparison
@@ -40,12 +40,12 @@ Set difference is not symmetric. The result only contains elements from the firs
 (set-difference '("apple" "banana" "cherry")
                 '("banana" "date")
                 :test #'equal)
-; → ("apple" "cherry")  ; order may vary
+=> ("cherry" "apple")
 
 (set-difference '("Hello" "World")
                 '("hello" "world")
                 :test #'equalp)
-; → NIL
+=> NIL
 ```
 
 ### Using :key to compare by a component
@@ -54,7 +54,7 @@ Set difference is not symmetric. The result only contains elements from the firs
 (set-difference '((a . 1) (b . 2) (c . 3))
                 '((b . 9) (d . 4))
                 :key #'car)
-; → ((A . 1) (C . 3))  ; order may vary
+=> ((C . 3) (A . 1))
 ```
 
 ### nset-difference is destructive
@@ -65,7 +65,7 @@ Set difference is not symmetric. The result only contains elements from the firs
 (let ((a (list 1 2 3 4 5))
       (b (list 2 4)))
   (nset-difference a b))
-; → (1 3 5)  ; order may vary
+=> (5 3 1)
 ```
 
 ### Practical example: finding missing items
@@ -74,5 +74,5 @@ Set difference is not symmetric. The result only contains elements from the firs
 (let ((required '(:name :email :password))
       (provided '(:name :password)))
   (set-difference required provided))
-; → (:EMAIL)  ; order may vary
+=> (:EMAIL)
 ```

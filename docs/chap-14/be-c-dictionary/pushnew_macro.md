@@ -18,12 +18,12 @@ import PushnewMacro from './_pushnew_macro.md';
 (let ((lst '(a b c)))
   (pushnew 'd lst)
   lst)
-→ (D A B C)
+=> (D A B C)
 
 (let ((lst '(a b c)))
   (pushnew 'b lst)
   lst)
-→ (A B C)
+=> (A B C)
 ```
 
 ### Building a set of unique elements
@@ -35,7 +35,7 @@ import PushnewMacro from './_pushnew_macro.md';
   (dolist (x '(a b a c b d c))
     (pushnew x seen))
   seen)
-→ (D C B A)
+=> (D C B A)
 ```
 
 ### Using the :test keyword
@@ -46,12 +46,12 @@ You can specify a different comparison function with `:test`.
 (let ((lst '("apple" "banana")))
   (pushnew "apple" lst :test #'string=)
   lst)
-→ ("apple" "banana")
+=> ("apple" "banana")
 
 (let ((lst '("apple" "banana")))
   (pushnew "cherry" lst :test #'string=)
   lst)
-→ ("cherry" "apple" "banana")
+=> ("cherry" "apple" "banana")
 ```
 
 ### Using the :key keyword
@@ -62,12 +62,12 @@ The `:key` function extracts the part of each element to compare.
 (let ((lst '((a 1) (b 2) (c 3))))
   (pushnew '(b 99) lst :key #'car)
   lst)
-→ ((A 1) (B 2) (C 3))
+=> ((A 1) (B 2) (C 3))
 
 (let ((lst '((a 1) (b 2) (c 3))))
   (pushnew '(d 4) lst :key #'car)
   lst)
-→ ((D 4) (A 1) (B 2) (C 3))
+=> ((D 4) (A 1) (B 2) (C 3))
 ```
 
 ### pushnew returns the new list value
@@ -78,6 +78,6 @@ The return value is the new value of the place, whether or not the item was adde
 (let ((lst '(1 2 3)))
   (values (pushnew 4 lst)
           (pushnew 2 lst)))
-→ (4 1 2 3)
-→ (4 1 2 3)
+=> (4 1 2 3)
+=> (4 1 2 3)
 ```

@@ -16,16 +16,16 @@ import NthcdrFunction from './_nthcdr_function.md';
 
 ```lisp
 (nthcdr 0 '(a b c d))
-→ (A B C D)
+=> (A B C D)
 
 (nthcdr 1 '(a b c d))
-→ (B C D)
+=> (B C D)
 
 (nthcdr 2 '(a b c d))
-→ (C D)
+=> (C D)
 
 (nthcdr 4 '(a b c d))
-→ NIL
+=> NIL
 ```
 
 ### nthcdr beyond the end of the list
@@ -34,13 +34,13 @@ If n is greater than the length of the list, `nthcdr` returns NIL.
 
 ```lisp
 (nthcdr 10 '(a b c))
-→ NIL
+=> NIL
 
 (nthcdr 0 nil)
-→ NIL
+=> NIL
 
 (nthcdr 3 nil)
-→ NIL
+=> NIL
 ```
 
 ### nthcdr with dotted lists
@@ -49,10 +49,10 @@ When applied to a dotted list, `nthcdr` can return the non-nil terminating atom.
 
 ```lisp
 (nthcdr 1 '(a . b))
-→ B
+=> B
 
 (nthcdr 2 '(a b . c))
-→ C
+=> C
 ```
 
 ### Relationship to nth
@@ -63,8 +63,8 @@ When applied to a dotted list, `nthcdr` can return the non-nil terminating atom.
 (let ((lst '(10 20 30 40)))
   (values (nth 2 lst)
           (car (nthcdr 2 lst))))
-→ 30
-→ 30
+=> 30
+=> 30
 ```
 
 ### Practical use: dropping elements from a list
@@ -77,11 +77,11 @@ When applied to a dotted list, `nthcdr` can return the non-nil terminating atom.
   (nthcdr n lst))
 
 (drop 2 '(a b c d e))
-→ (C D E)
+=> (C D E)
 
 (drop 0 '(a b c))
-→ (A B C)
+=> (A B C)
 
 (drop 5 '(a b c))
-→ NIL
+=> NIL
 ```

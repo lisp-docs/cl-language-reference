@@ -16,10 +16,10 @@ import AssocFunction from './_assoc_assoc-if_assoc-if-not_function.md';
 
 ```lisp
 (assoc 'b '((a . 1) (b . 2) (c . 3)))
-→ (B . 2)
+=> (B . 2)
 
 (assoc 'z '((a . 1) (b . 2) (c . 3)))
-→ NIL
+=> NIL
 ```
 
 ### Extracting the value from the result
@@ -28,7 +28,7 @@ import AssocFunction from './_assoc_assoc-if_assoc-if-not_function.md';
 
 ```lisp
 (cdr (assoc 'y '((x . 10) (y . 20) (z . 30))))
-→ 20
+=> 20
 ```
 
 ### String keys require a :test argument
@@ -37,10 +37,10 @@ The default `eql` test does not work for string keys. Use `:test #'equal` or `:t
 
 ```lisp
 (assoc "two" '(("one" . 1) ("two" . 2) ("three" . 3)) :test #'equal)
-→ ("two" . 2)
+=> ("two" . 2)
 
 (assoc "two" '(("one" . 1) ("two" . 2) ("three" . 3)))
-→ NIL
+=> NIL
 ```
 
 ### assoc-if: search by predicate on the key
@@ -49,10 +49,10 @@ The default `eql` test does not work for string keys. Use `:test #'equal` or `:t
 
 ```lisp
 (assoc-if #'evenp '((1 . "odd") (2 . "even") (3 . "odd")))
-→ (2 . "even")
+=> (2 . "even")
 
 (assoc-if #'stringp '((1 . :num) ("hello" . :str) (t . :bool)))
-→ ("hello" . :STR)
+=> ("hello" . :STR)
 ```
 
 ### Using :key for custom extraction
@@ -62,7 +62,7 @@ The `:key` function is applied to the car of each alist entry before the test.
 ```lisp
 (assoc 3 '(((1 2) . "a") ((3 4) . "b") ((5 6) . "c"))
        :key #'car)
-→ ((3 4) . "b")
+=> ((3 4) . "b")
 ```
 
 ### Practical use: a simple configuration lookup
@@ -76,7 +76,7 @@ Alists are commonly used for configuration data, and `assoc` provides the lookup
   (values (cdr (assoc :host config))
           (cdr (assoc :port config))
           (cdr (assoc :debug config))))
-→ "localhost"
-→ 8080
-→ T
+=> "localhost"
+=> 8080
+=> T
 ```

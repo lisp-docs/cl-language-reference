@@ -16,13 +16,13 @@ import ListLengthFunction from './_list-length_function.md';
 
 ```lisp
 (list-length '(a b c d))
-; → 4
+=> 4
 
 (list-length '(1 (2 3) 4))
-; → 3
+=> 3
 
 (list-length '())
-; → 0
+=> 0
 ```
 
 ### Detecting circular lists
@@ -33,7 +33,7 @@ Unlike `length`, `list-length` returns NIL for circular lists instead of looping
 (let ((lst (list 1 2 3)))
   (setf (cdr (last lst)) lst)  ; make it circular
   (list-length lst))
-; → NIL
+=> NIL
 ```
 
 ### Circular list of one element
@@ -42,7 +42,7 @@ Unlike `length`, `list-length` returns NIL for circular lists instead of looping
 (let ((lst (list 'a)))
   (setf (cdr lst) lst)  ; circular: (a a a ...)
   (list-length lst))
-; → NIL
+=> NIL
 ```
 
 ### Comparison with length
@@ -53,7 +53,8 @@ Unlike `length`, `list-length` returns NIL for circular lists instead of looping
 (let ((lst '(x y z)))
   (values (list-length lst)
           (length lst)))
-; → 3, 3
+=> 3
+=> 3
 ```
 
 ### Practical use: safe list length check
@@ -65,8 +66,8 @@ Unlike `length`, `list-length` returns NIL for circular lists instead of looping
        (not (null (list-length x)))))
 
 (safe-list-p '(1 2 3))
-; → T
+=> T
 
 (safe-list-p nil)
-; → T
+=> T
 ```

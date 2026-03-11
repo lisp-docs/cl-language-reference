@@ -16,13 +16,13 @@ A cons is a compound object with two components: a car and a cdr. Every non-empt
 
 ```lisp
 (typep '(a . b) 'cons)
-; → T
+=> T
 
 (typep '(1 2 3) 'cons)
-; → T
+=> T
 
 (typep nil 'cons)
-; → NIL
+=> NIL
 ```
 
 ### Class precedence
@@ -31,10 +31,12 @@ The class precedence list for `cons` is: `cons`, `list`, `sequence`, `t`.
 
 ```lisp
 (subtypep 'cons 'list)
-; → T, T
+=> T
+=> T
 
 (subtypep 'cons 'sequence)
-; → T, T
+=> T
+=> T
 ```
 
 ### Compound type specifier
@@ -43,13 +45,13 @@ The compound type specifier `(cons car-type cdr-type)` constrains the types of t
 
 ```lisp
 (typep '(1 . "hello") '(cons integer string))
-; → T
+=> T
 
 (typep '(1 . 2) '(cons integer string))
-; → NIL
+=> NIL
 
 (typep '(a . b) '(cons symbol symbol))
-; → T
+=> T
 ```
 
 ### Cons vs null partition the list type
@@ -58,13 +60,13 @@ Every list is either a cons (non-empty) or null (the empty list). There is no ov
 
 ```lisp
 (typep '(a) 'cons)
-; → T
+=> T
 
 (typep '() 'cons)
-; → NIL
+=> NIL
 
 (typep '() 'null)
-; → T
+=> T
 ```
 
 ### Cons cells are the building blocks of lists
@@ -75,5 +77,5 @@ A proper list is a chain of cons cells where the cdr of the last cons is NIL.
 ;; (1 2 3) is really (cons 1 (cons 2 (cons 3 nil)))
 (equal '(1 2 3)
        (cons 1 (cons 2 (cons 3 nil))))
-; → T
+=> T
 ```

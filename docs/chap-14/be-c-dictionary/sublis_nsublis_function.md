@@ -17,7 +17,7 @@ import SublisFunction from './_sublis_nsublis_function.md';
 ```lisp
 (sublis '((a . 1) (b . 2) (c . 3))
         '(a b c d))
-; → (1 2 3 D)
+=> (1 2 3 D)
 ```
 
 ### Multiple substitutions happen simultaneously
@@ -27,7 +27,7 @@ Unlike calling `subst` multiple times, `sublis` applies all substitutions at onc
 ```lisp
 (sublis '((a . b) (b . a))
         '(a b c))
-; → (B A C)
+=> (B A C)
 ```
 
 ### Working with nested trees
@@ -37,7 +37,7 @@ Unlike calling `subst` multiple times, `sublis` applies all substitutions at onc
 ```lisp
 (sublis '((x . 10) (y . 20))
         '(+ (* x x) (* y y)))
-; → (+ (* 10 10) (* 20 20))
+=> (+ (* 10 10) (* 20 20))
 ```
 
 ### Using :test for custom comparison
@@ -48,7 +48,7 @@ By default, `sublis` uses `eql`. Use `:test #'equal` to match structured keys.
 (sublis '(((+ x y) . sum) ((* x y) . product))
         '(list (+ x y) (* x y))
         :test #'equal)
-; → (LIST SUM PRODUCT)
+=> (LIST SUM PRODUCT)
 ```
 
 ### nsublis is destructive
@@ -58,7 +58,7 @@ By default, `sublis` uses `eql`. Use `:test #'equal` to match structured keys.
 ```lisp
 (let ((tree (list 'a (list 'b 'c) 'd)))
   (nsublis '((b . x) (d . z)) tree))
-; → (A (X C) Z)
+=> (A (X C) Z)
 ```
 
 ### Dotted pair substitution
@@ -68,5 +68,5 @@ By default, `sublis` uses `eql`. Use `:test #'equal` to match structured keys.
 ```lisp
 (sublis '((old . new))
         '(a old b . old))
-; → (A NEW B . NEW)
+=> (A NEW B . NEW)
 ```

@@ -16,10 +16,10 @@ import SetExclusiveOrFunction from './_set-exclusive-or_nset-exclusive-or_functi
 
 ```lisp
 (set-exclusive-or '(1 2 3 4) '(3 4 5 6))
-; → (1 2 5 6)  ; order may vary
+=> (6 5 2 1)
 
 (set-exclusive-or '(a b c) '(a b c))
-; → NIL
+=> NIL
 ```
 
 ### Symmetric operation
@@ -28,17 +28,17 @@ Unlike `set-difference`, the result includes unmatched elements from both lists.
 
 ```lisp
 (set-exclusive-or '(1 2 3) '(2 3 4 5))
-; → (1 4 5)  ; order may vary
+=> (5 4 1)
 ```
 
 ### Using :test for value comparison
 
 ```lisp
 (set-exclusive-or '("apple" "banana") '("banana" "cherry") :test #'equal)
-; → ("apple" "cherry")  ; order may vary
+=> ("cherry" "apple")
 
 (set-exclusive-or '("Hello") '("hello") :test #'equalp)
-; → NIL
+=> NIL
 ```
 
 ### Using :key to compare by a component
@@ -47,7 +47,7 @@ Unlike `set-difference`, the result includes unmatched elements from both lists.
 (set-exclusive-or '((a . 1) (b . 2) (c . 3))
                   '((b . 9) (c . 8) (d . 4))
                   :key #'car)
-; → ((A . 1) (D . 4))  ; order may vary
+=> ((D . 4) (A . 1))
 ```
 
 ### nset-exclusive-or is destructive
@@ -58,7 +58,7 @@ Unlike `set-difference`, the result includes unmatched elements from both lists.
 (let ((a (list 1 2 3))
       (b (list 2 3 4)))
   (nset-exclusive-or a b))
-; → (1 4)  ; order may vary
+=> (1 4)
 ```
 
 ### Practical example: detecting changes
@@ -67,5 +67,5 @@ Unlike `set-difference`, the result includes unmatched elements from both lists.
 (let ((old-features '(:logging :auth :cache))
       (new-features '(:auth :cache :metrics)))
   (set-exclusive-or old-features new-features))
-; → (:LOGGING :METRICS)  ; order may vary
+=> (:METRICS :LOGGING)
 ```

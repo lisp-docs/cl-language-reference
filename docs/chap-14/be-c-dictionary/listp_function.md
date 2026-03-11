@@ -16,13 +16,13 @@ import ListpFunction from './_listp_function.md';
 
 ```lisp
 (listp '(1 2 3))
-→ T
+=> T
 
 (listp nil)
-→ T
+=> T
 
 (listp '())
-→ T
+=> T
 ```
 
 ### Non-list objects return NIL
@@ -31,16 +31,16 @@ Numbers, strings, symbols (other than NIL), arrays, and other non-list objects a
 
 ```lisp
 (listp 42)
-→ NIL
+=> NIL
 
 (listp "hello")
-→ NIL
+=> NIL
 
 (listp 'foo)
-→ NIL
+=> NIL
 
 (listp (make-array 3))
-→ NIL
+=> NIL
 ```
 
 ### listp does not check for proper lists
@@ -49,10 +49,10 @@ Numbers, strings, symbols (other than NIL), arrays, and other non-list objects a
 
 ```lisp
 (listp '(a . b))
-→ T
+=> T
 
 (listp '(1 2 . 3))
-→ T
+=> T
 ```
 
 ### Difference from consp
@@ -61,16 +61,16 @@ The only difference between `listp` and `consp` is their treatment of NIL. `list
 
 ```lisp
 (listp nil)
-→ T
+=> T
 
 (consp nil)
-→ NIL
+=> NIL
 
 (listp '(a))
-→ T
+=> T
 
 (consp '(a))
-→ T
+=> T
 ```
 
 ### Using listp for input validation
@@ -85,8 +85,8 @@ The only difference between `listp` and `consp` is their treatment of NIL. `list
       :not-a-list))
 
 (safe-length '(a b c))
-→ 3
+=> 3
 
 (safe-length 42)
-→ :NOT-A-LIST
+=> :NOT-A-LIST
 ```

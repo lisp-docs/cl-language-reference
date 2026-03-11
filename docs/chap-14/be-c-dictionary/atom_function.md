@@ -16,13 +16,13 @@ import AtomFunction from './_atom_function.md';
 
 ```lisp
 (atom 'hello)
-→ T
+=> T
 
 (atom 42)
-→ T
+=> T
 
 (atom "a string")
-→ T
+=> T
 ```
 
 ### NIL is an atom
@@ -31,10 +31,10 @@ NIL (the empty list) is an atom, not a cons.
 
 ```lisp
 (atom nil)
-→ T
+=> T
 
 (atom '())
-→ T
+=> T
 ```
 
 ### Cons cells are not atoms
@@ -43,10 +43,10 @@ Any cons cell returns NIL for `atom`. This is the complement of `consp`.
 
 ```lisp
 (atom '(1 2 3))
-→ NIL
+=> NIL
 
 (atom (cons 'a 'b))
-→ NIL
+=> NIL
 ```
 
 ### Relationship between atom and consp
@@ -55,16 +55,16 @@ Any cons cell returns NIL for `atom`. This is the complement of `consp`.
 
 ```lisp
 (atom '(x))
-→ NIL
+=> NIL
 
 (consp '(x))
-→ T
+=> T
 
 (atom 5)
-→ T
+=> T
 
 (consp 5)
-→ NIL
+=> NIL
 ```
 
 ### Using atom to test for leaf nodes in a tree
@@ -80,5 +80,5 @@ Any cons cell returns NIL for `atom`. This is the complement of `consp`.
                    (flatten (cdr tree))))))
 
 (flatten '(a (b (c d) e) f))
-→ (A B C D E F)
+=> (A B C D E F)
 ```

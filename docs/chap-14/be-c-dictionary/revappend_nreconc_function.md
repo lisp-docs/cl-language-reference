@@ -16,10 +16,10 @@ import RevappendFunction from './_revappend_nreconc_function.md';
 
 ```lisp
 (revappend '(1 2 3) '(4 5 6))
-; → (3 2 1 4 5 6)
+=> (3 2 1 4 5 6)
 
 (revappend '(a b c) '())
-; → (C B A)
+=> (C B A)
 ```
 
 ### revappend does not modify its arguments
@@ -29,7 +29,8 @@ import RevappendFunction from './_revappend_nreconc_function.md';
       (tail '(a b)))
   (revappend lst tail)
   (values lst tail))
-; → (1 2 3), (A B)
+=> (1 2 3)
+=> (A B)
 ```
 
 ### Non-list tail values
@@ -38,10 +39,10 @@ The tail argument does not have to be a list. It becomes the cdr of the last con
 
 ```lisp
 (revappend '(1 2 3) 'end)
-; → (3 2 1 . END)
+=> (3 2 1 . END)
 
 (revappend '() 'x)
-; → X
+=> X
 ```
 
 ### nreconc is the destructive version
@@ -51,7 +52,7 @@ The tail argument does not have to be a list. It becomes the cdr of the last con
 ```lisp
 (let ((lst (list 1 2 3)))
   (nreconc lst '(a b c)))
-; → (3 2 1 A B C)
+=> (3 2 1 A B C)
 ```
 
 ### Practical use: accumulate-and-reverse pattern
@@ -68,5 +69,6 @@ The tail argument does not have to be a list. It becomes the cdr of the last con
        (values (revappend acc '()) rest))))
 
 (take-while #'evenp '(2 4 6 7 8))
-; → (2 4 6), (7 8)
+=> (2 4 6)
+=> (7 8)
 ```

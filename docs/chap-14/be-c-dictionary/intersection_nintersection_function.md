@@ -16,10 +16,10 @@ import IntersectionFunction from './_intersection_nintersection_function.md';
 
 ```lisp
 (intersection '(1 2 3 4 5) '(3 4 5 6 7))
-; → (3 4 5)  ; order may vary
+=> (5 4 3)
 
 (intersection '(a b c) '(x y z))
-; → NIL
+=> NIL
 ```
 
 ### Using :test for string comparison
@@ -30,12 +30,12 @@ By default, separate string objects are not `eql`. Use `:test #'equal` or `:test
 (intersection '("apple" "banana" "cherry")
               '("banana" "date" "cherry")
               :test #'equal)
-; → ("banana" "cherry")  ; order may vary
+=> ("cherry" "banana")
 
 (intersection '("Hello" "World")
               '("hello" "world")
               :test #'equalp)
-; → ("Hello" "World")  ; order may vary
+=> ("World" "Hello")
 ```
 
 ### Using :key to compare by a component
@@ -47,7 +47,7 @@ The `:key` function extracts the part of each element to be compared.
               '((name "Bob") (name "Carol"))
               :key #'cadr
               :test #'equal)
-; → ((NAME "Bob"))  ; order may vary
+=> ((NAME "Bob"))
 ```
 
 ### nintersection is destructive
@@ -58,7 +58,7 @@ The `:key` function extracts the part of each element to be compared.
 (let ((a (list 1 2 3 4 5))
       (b (list 2 4 6)))
   (nintersection a b))
-; → (2 4)  ; order may vary
+=> (4 2)
 ```
 
 ### Finding common elements in association lists
@@ -67,5 +67,5 @@ The `:key` function extracts the part of each element to be compared.
 (intersection '((a . 1) (b . 2) (c . 3))
               '((b . 5) (c . 6) (d . 7))
               :key #'car)
-; → ((B . 2) (C . 3))  ; order may vary
+=> ((C . 3) (B . 2))
 ```
