@@ -18,7 +18,7 @@ import PackageErrorPackageFunction from './_package-error-package_function.md';
 (let ((c (make-condition 'package-error
                          :package (find-package "COMMON-LISP"))))
   (package-error-package c))
-;; → #<PACKAGE "COMMON-LISP">
+==> #<PACKAGE "COMMON-LISP">
 ```
 
 ### Using with handler-case
@@ -31,7 +31,7 @@ When handling a `package-error`, you can use `package-error-package` to identify
   (package-error (c)
     (format nil "Error involving package: ~A"
             (package-error-package c))))
-;; → "Error involving package: THIS-PACKAGE-DOES-NOT-EXIST"
+=> "Error involving package: THIS-PACKAGE-DOES-NOT-EXIST"
 ;; (exact output is implementation-dependent)
 ```
 
@@ -44,5 +44,5 @@ The specification says `package-error-package` returns a package designator, whi
                          :package "KEYWORD")))
   (let ((result (package-error-package c)))
     (or (packagep result) (stringp result))))
-;; → T
+=> T
 ```

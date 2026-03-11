@@ -16,10 +16,12 @@ import FindSymbolFunction from './_find-symbol_function.md';
 
 ```lisp
 (find-symbol "CAR" "COMMON-LISP")
-;; → CAR, :EXTERNAL
+=> CAR
+=> :EXTERNAL
 
 (find-symbol "CAR" "COMMON-LISP-USER")
-;; → CAR, :INHERITED
+=> CAR
+=> :INHERITED
 ```
 
 ### When No Symbol is Found
@@ -28,7 +30,8 @@ Both return values are NIL when the symbol does not exist.
 
 ```lisp
 (find-symbol "XYZZY-NONEXISTENT" "COMMON-LISP-USER")
-;; → NIL, NIL
+=> NIL
+=> NIL
 ```
 
 ### Status Values Explained
@@ -38,17 +41,20 @@ The second value indicates the symbol's accessibility in the specified package.
 ```lisp
 ;; :EXTERNAL - present and exported
 (find-symbol "CONS" "COMMON-LISP")
-;; → CONS, :EXTERNAL
+=> CONS
+=> :EXTERNAL
 
 ;; :INHERITED - accessible via use-package, not directly present
 (find-symbol "CONS" "COMMON-LISP-USER")
-;; → CONS, :INHERITED
+=> CONS
+=> :INHERITED
 
 ;; :INTERNAL - present but not exported
 (make-package "FS-DEMO" :use '())
 (intern "SECRET" "FS-DEMO")
 (find-symbol "SECRET" "FS-DEMO")
-;; → FS-DEMO::SECRET, :INTERNAL
+;; => FS-DEMO::SECRET
+;; => :INTERNAL
 ```
 
 ### Case Sensitivity
@@ -57,10 +63,12 @@ The second value indicates the symbol's accessibility in the specified package.
 
 ```lisp
 (find-symbol "car" "COMMON-LISP")
-;; → NIL, NIL
+=> NIL
+=> NIL
 
 (find-symbol "CAR" "COMMON-LISP")
-;; → CAR, :EXTERNAL
+=> CAR
+=> :EXTERNAL
 ```
 
 ### Finding NIL in Different Packages
@@ -69,11 +77,13 @@ The symbol NIL can be tricky because it is also the boolean false.
 
 ```lisp
 (find-symbol "NIL" "COMMON-LISP")
-;; → NIL, :EXTERNAL
+=> NIL
+=> :EXTERNAL
 ;; The first value is the symbol NIL, the second is :EXTERNAL
 
 (find-symbol "NIL" "COMMON-LISP-USER")
-;; → NIL, :INHERITED
+=> NIL
+=> :INHERITED
 ```
 
 ### Using find-symbol to Check Before Acting
@@ -85,13 +95,16 @@ The symbol NIL can be tricky because it is also the boolean false.
 
 ;; Does "MAYBE" exist? No.
 (find-symbol "MAYBE" "CHECK-FIRST")
-;; → NIL, NIL
+=> NIL
+=> NIL
 
 ;; Now create it with intern
 (intern "MAYBE" "CHECK-FIRST")
-;; → CHECK-FIRST::MAYBE, NIL
+;; => CHECK-FIRST::MAYBE
+;; => NIL
 
 ;; Now find-symbol can find it
 (find-symbol "MAYBE" "CHECK-FIRST")
-;; → CHECK-FIRST::MAYBE, :INTERNAL
+;; => CHECK-FIRST::MAYBE
+;; => :INTERNAL
 ```

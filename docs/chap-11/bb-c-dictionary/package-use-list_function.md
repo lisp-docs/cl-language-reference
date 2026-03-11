@@ -18,7 +18,7 @@ import PackageUseListFunction from './_package-use-list_function.md';
 (defpackage "MY-PKG" (:use "COMMON-LISP"))
 
 (package-use-list "MY-PKG")
-;; → (#<PACKAGE "COMMON-LISP">)
+;; => (#<PACKAGE "COMMON-LISP">)
 ```
 
 ### A Package That Uses Nothing
@@ -26,7 +26,7 @@ import PackageUseListFunction from './_package-use-list_function.md';
 ```lisp
 (make-package "EMPTY-PKG" :use '())
 (package-use-list "EMPTY-PKG")
-;; → ()
+=> ()
 ```
 
 ### After use-package and unuse-package
@@ -40,15 +40,15 @@ The use list changes dynamically as packages are used or unused.
 
 (use-package "BASE-A" "COMBINED")
 (package-use-list "COMBINED")
-;; → (#<PACKAGE "BASE-A">)
+;; => (#<PACKAGE "BASE-A">)
 
 (use-package "BASE-B" "COMBINED")
 (package-use-list "COMBINED")
-;; → (#<PACKAGE "BASE-A"> #<PACKAGE "BASE-B">)  ; order is implementation-dependent
+;; => (#<PACKAGE "BASE-A"> #<PACKAGE "BASE-B">)
 
 (unuse-package "BASE-A" "COMBINED")
 (package-use-list "COMBINED")
-;; → (#<PACKAGE "BASE-B">)
+;; => (#<PACKAGE "BASE-B">)
 ```
 
 ### The COMMON-LISP-USER Package
@@ -57,5 +57,5 @@ The use list changes dynamically as packages are used or unused.
 ;; CL-USER typically uses at least COMMON-LISP
 (member (find-package "COMMON-LISP")
         (package-use-list "COMMON-LISP-USER"))
-;; → (#<PACKAGE "COMMON-LISP"> ...)  ; a non-NIL value
+;; => (#<PACKAGE "COMMON-LISP"> ...)
 ```

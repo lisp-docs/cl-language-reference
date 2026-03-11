@@ -16,14 +16,14 @@ import ListAllPackagesFunction from './_list-all-packages_function.md';
 
 ```lisp
 (listp (list-all-packages))
-;; → T
+=> T
 
 ;; Standard packages are always present
 (member (find-package "COMMON-LISP") (list-all-packages))
-;; → (#<PACKAGE "COMMON-LISP"> ...)  ; non-NIL
+;; => (#<PACKAGE "COMMON-LISP"> ...)
 
 (member (find-package "KEYWORD") (list-all-packages))
-;; → (#<PACKAGE "KEYWORD"> ...)  ; non-NIL
+;; => (#<PACKAGE "KEYWORD"> ...)
 ```
 
 ### Detecting Newly Created Packages
@@ -34,7 +34,7 @@ import ListAllPackagesFunction from './_list-all-packages_function.md';
   (let ((after (list-all-packages)))
     (mapcar #'package-name
             (set-difference after before))))
-;; → ("LAP-NEW")
+=> ("LAP-NEW")
 ```
 
 ### Deleted Packages Disappear from the List
@@ -42,14 +42,14 @@ import ListAllPackagesFunction from './_list-all-packages_function.md';
 ```lisp
 (make-package "LAP-GONE" :use '())
 (member (find-package "LAP-GONE") (list-all-packages))
-;; → (#<PACKAGE "LAP-GONE"> ...)  ; non-NIL
+;; => (#<PACKAGE "LAP-GONE"> ...)
 
 (delete-package "LAP-GONE")
-;; → T
+=> T
 
 (find-if (lambda (p) (string= (package-name p) "LAP-GONE"))
          (list-all-packages))
-;; → NIL
+=> NIL
 ```
 
 ### The List is Fresh Each Time
@@ -60,5 +60,5 @@ Each call returns a new list that can be modified without affecting the package 
 (let ((a (list-all-packages))
       (b (list-all-packages)))
   (eq a b))
-;; → NIL
+=> NIL
 ```

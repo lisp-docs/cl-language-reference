@@ -16,10 +16,10 @@ import PackagepFunction from './_packagep_function.md';
 
 ```lisp
 (packagep (find-package "COMMON-LISP"))
-;; → T
+=> T
 
 (packagep *package*)
-;; → T
+=> T
 ```
 
 ### Non-Package Objects
@@ -28,16 +28,16 @@ Symbols, strings, and other objects are not packages.
 
 ```lisp
 (packagep 'common-lisp)
-;; → NIL
+=> NIL
 
 (packagep "COMMON-LISP")
-;; → NIL
+=> NIL
 
 (packagep 42)
-;; → NIL
+=> NIL
 
 (packagep nil)
-;; → NIL
+=> NIL
 ```
 
 ### Deleted Packages Still Satisfy packagep
@@ -48,7 +48,7 @@ Even after deletion, the package object still has type `package`.
 (let ((pkg (make-package "PKGP-DEMO" :use '())))
   (delete-package pkg)
   (packagep pkg))
-;; → T
+=> T
 ```
 
 ### Equivalence with typep
@@ -59,5 +59,5 @@ Even after deletion, the package object still has type `package`.
 (let ((pkg (find-package "COMMON-LISP")))
   (eq (packagep pkg)
       (typep pkg 'package)))
-;; → T
+=> T
 ```

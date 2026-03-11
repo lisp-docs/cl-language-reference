@@ -20,7 +20,7 @@ import PackageNicknamesFunction from './_package-nicknames_function.md';
   (:nicknames "GLIB" "GL"))
 
 (package-nicknames "GRAPHICS-LIBRARY")
-;; → ("GLIB" "GL")  ; order is implementation-dependent
+=> ("GLIB" "GL")
 ```
 
 ### Package with No Nicknames
@@ -29,21 +29,21 @@ A package without nicknames returns an empty list.
 
 ```lisp
 (package-nicknames "COMMON-LISP-USER")
-;; → ("CL-USER")  ; most implementations define this nickname
+=> ("CL-USER")
 
 (make-package "NO-NICKS" :use '())
 (package-nicknames "NO-NICKS")
-;; → ()
+=> ()
 ```
 
 ### Using make-package with Nicknames
 
 ```lisp
 (make-package "NETWORKING" :nicknames '("NET" "NW") :use '())
-;; → #<PACKAGE "NETWORKING">
+==> #<PACKAGE "NETWORKING">
 
 (package-nicknames "NETWORKING")
-;; → ("NET" "NW")  ; or ("NW" "NET")
+=> ("NET" "NW")
 ```
 
 ### Nicknames After rename-package
@@ -53,9 +53,9 @@ A package without nicknames returns an empty list.
 ```lisp
 (make-package "OLD-NAME" :nicknames '("ON") :use '())
 (package-nicknames "OLD-NAME")
-;; → ("ON")
+=> ("ON")
 
 (rename-package "OLD-NAME" "NEW-NAME" '("NN" "N"))
 (package-nicknames "NEW-NAME")
-;; → ("NN" "N")  ; or ("N" "NN")
+=> ("NN" "N")
 ```

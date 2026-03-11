@@ -17,7 +17,7 @@ import PackageShadowingSymbolsFunction from './_package-shadowing-symbols_functi
 ```lisp
 (defpackage "PSS-DEMO" (:use "COMMON-LISP") (:shadow "LIST"))
 (package-shadowing-symbols "PSS-DEMO")
-;; → (PSS-DEMO::LIST)
+;; => (PSS-DEMO::LIST)
 ```
 
 ### A Package with No Shadowing Symbols
@@ -25,7 +25,7 @@ import PackageShadowingSymbolsFunction from './_package-shadowing-symbols_functi
 ```lisp
 (make-package "NO-SHADOW" :use '())
 (package-shadowing-symbols "NO-SHADOW")
-;; → ()
+=> ()
 ```
 
 ### After shadow Creates a Shadowing Symbol
@@ -33,13 +33,13 @@ import PackageShadowingSymbolsFunction from './_package-shadowing-symbols_functi
 ```lisp
 (defpackage "PSS-2" (:use "COMMON-LISP"))
 (package-shadowing-symbols "PSS-2")
-;; → ()
+=> ()
 
 (shadow "CAR" "PSS-2")
-;; → T
+=> T
 
 (package-shadowing-symbols "PSS-2")
-;; → (PSS-2::CAR)
+;; => (PSS-2::CAR)
 ```
 
 ### After shadowing-import
@@ -49,10 +49,10 @@ import PackageShadowingSymbolsFunction from './_package-shadowing-symbols_functi
 (intern "FOO" "PSS-3")
 
 (shadowing-import 'cl:car "PSS-3")
-;; → T
+=> T
 
 (mapcar #'symbol-name (package-shadowing-symbols "PSS-3"))
-;; → ("CAR")
+=> ("CAR")
 ```
 
 ### Multiple Shadowing Symbols
@@ -64,5 +64,5 @@ import PackageShadowingSymbolsFunction from './_package-shadowing-symbols_functi
 
 (let ((syms (package-shadowing-symbols "PSS-MULTI")))
   (sort (mapcar #'symbol-name syms) #'string<))
-;; → ("CAR" "CDR" "CONS")
+=> ("CAR" "CDR" "CONS")
 ```

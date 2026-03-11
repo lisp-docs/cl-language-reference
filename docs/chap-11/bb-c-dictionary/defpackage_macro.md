@@ -17,10 +17,10 @@ import DefpackageMacro from './_defpackage_macro.md';
 ```lisp
 (defpackage "MY-APP"
   (:use "COMMON-LISP"))
-;; → #<PACKAGE "MY-APP">
+==> #<PACKAGE "MY-APP">
 
 (find-package "MY-APP")
-;; → #<PACKAGE "MY-APP">
+==> #<PACKAGE "MY-APP">
 ```
 
 ### Defining Nicknames
@@ -31,13 +31,13 @@ The `:nicknames` option provides alternative names for the package.
 (defpackage "UTILITIES"
   (:use "COMMON-LISP")
   (:nicknames "UTIL" "U"))
-;; → #<PACKAGE "UTILITIES">
+==> #<PACKAGE "UTILITIES">
 
 (find-package "UTIL")
-;; → #<PACKAGE "UTILITIES">
+==> #<PACKAGE "UTILITIES">
 
 (find-package "U")
-;; → #<PACKAGE "UTILITIES">
+==> #<PACKAGE "UTILITIES">
 ```
 
 ### Exporting Symbols
@@ -48,13 +48,15 @@ The `:export` option specifies which symbols should be external.
 (defpackage "MATH-LIB"
   (:use "COMMON-LISP")
   (:export "ADD" "SUBTRACT" "MULTIPLY"))
-;; → #<PACKAGE "MATH-LIB">
+==> #<PACKAGE "MATH-LIB">
 
 (find-symbol "ADD" "MATH-LIB")
-;; → MATH-LIB:ADD, :EXTERNAL
+;; => MATH-LIB:ADD
+;; => :EXTERNAL
 
 (find-symbol "SUBTRACT" "MATH-LIB")
-;; → MATH-LIB:SUBTRACT, :EXTERNAL
+;; => MATH-LIB:SUBTRACT
+;; => :EXTERNAL
 ```
 
 ### Importing From Other Packages
@@ -70,10 +72,11 @@ The `:import-from` option selectively imports specific symbols from another pack
   (:use "COMMON-LISP")
   (:import-from "HELPERS" "SAFE-DIVIDE")
   (:export "COMPUTE"))
-;; → #<PACKAGE "CALCULATOR">
+==> #<PACKAGE "CALCULATOR">
 
 (find-symbol "SAFE-DIVIDE" "CALCULATOR")
-;; → HELPERS:SAFE-DIVIDE, :INTERNAL
+;; => HELPERS:SAFE-DIVIDE
+;; => :INTERNAL
 ```
 
 ### Shadowing Inherited Symbols
@@ -84,15 +87,16 @@ The `:shadow` option creates local symbols that shadow any inherited symbols wit
 (defpackage "MY-LISP"
   (:use "COMMON-LISP")
   (:shadow "CAR" "CDR"))
-;; → #<PACKAGE "MY-LISP">
+==> #<PACKAGE "MY-LISP">
 
 ;; MY-LISP has its own CAR, distinct from CL:CAR
 (find-symbol "CAR" "MY-LISP")
-;; → MY-LISP::CAR, :INTERNAL
+;; => MY-LISP::CAR
+;; => :INTERNAL
 
 (eq (find-symbol "CAR" "MY-LISP")
     (find-symbol "CAR" "COMMON-LISP"))
-;; → NIL
+;; => NIL
 ```
 
 ### Shadowing-Import From Another Package
@@ -107,12 +111,12 @@ The `:shadowing-import-from` option imports a symbol and places it on the shadow
 (defpackage "EXTENDED"
   (:use "COMMON-LISP" "BASE")
   (:shadowing-import-from "COMMON-LISP" "PRINT-OBJECT"))
-;; → #<PACKAGE "EXTENDED">
+==> #<PACKAGE "EXTENDED">
 
 ;; COMMON-LISP:PRINT-OBJECT wins over BASE:PRINT-OBJECT
 (eq (find-symbol "PRINT-OBJECT" "EXTENDED")
     (find-symbol "PRINT-OBJECT" "COMMON-LISP"))
-;; → T
+=> T
 ```
 
 ### A Package That Uses No Other Packages
@@ -122,11 +126,13 @@ Passing `(:use)` with no arguments creates an isolated package that inherits not
 ```lisp
 (defpackage "ISOLATED"
   (:use))
-;; → #<PACKAGE "ISOLATED">
+==> #<PACKAGE "ISOLATED">
 
 (find-symbol "CAR" "ISOLATED")
-;; → NIL, NIL
+=> NIL
+=> NIL
 
 (find-symbol "NIL" "ISOLATED")
-;; → NIL, NIL
+=> NIL
+=> NIL
 ```

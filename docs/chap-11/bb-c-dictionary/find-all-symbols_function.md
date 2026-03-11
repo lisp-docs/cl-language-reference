@@ -18,7 +18,7 @@ import FindAllSymbolsFunction from './_find-all-symbols_function.md';
 ;; CAR exists in COMMON-LISP and is inherited by many packages,
 ;; but find-all-symbols returns each distinct symbol only once
 (member 'car (find-all-symbols "CAR"))
-;; → (CAR ...)  ; non-NIL
+;; => (CAR ...)
 ```
 
 ### Finding a Symbol That Exists in Multiple Packages
@@ -30,7 +30,7 @@ import FindAllSymbolsFunction from './_find-all-symbols_function.md';
 ;; These are two distinct symbols with the same name
 (let ((results (find-all-symbols "SHARED")))
   (>= (length results) 2))
-;; → T
+=> T
 ```
 
 ### Using a Symbol as the Argument
@@ -40,7 +40,7 @@ When a symbol is passed, its name string is used for the search.
 ```lisp
 (let ((results (find-all-symbols 'car)))
   (member (find-symbol "CAR" "COMMON-LISP") results))
-;; → (CAR ...)  ; non-NIL
+;; => (CAR ...)
 ```
 
 ### Symbols in Bare Packages Are Also Found
@@ -50,7 +50,7 @@ When a symbol is passed, its name string is used for the search.
 (intern "UNIQUE-FAS-SYM" "FAS-HIDDEN")
 
 (find-all-symbols "UNIQUE-FAS-SYM")
-;; → (FAS-HIDDEN::UNIQUE-FAS-SYM)
+;; => (FAS-HIDDEN::UNIQUE-FAS-SYM)
 ```
 
 ### The Order of Results is Implementation-Dependent
@@ -59,5 +59,5 @@ When a symbol is passed, its name string is used for the search.
 ;; The returned list may be in any order
 (let ((results (find-all-symbols "CAR")))
   (every #'symbolp results))
-;; → T
+=> T
 ```

@@ -20,17 +20,19 @@ import ShadowingImportFunction from './_shadowing-import_function.md';
 (intern "ITEM" "DEST-SI")  ; a different symbol with the same name
 
 (find-symbol "ITEM" "DEST-SI")
-;; → DEST-SI::ITEM, :INTERNAL
+;; => DEST-SI::ITEM
+;; => :INTERNAL
 
 ;; shadowing-import replaces DEST-SI::ITEM with ORIGIN-SI:ITEM
 (shadowing-import (find-symbol "ITEM" "ORIGIN-SI") "DEST-SI")
-;; → T
+;; => T
 
 (find-symbol "ITEM" "DEST-SI")
-;; → ORIGIN-SI:ITEM, :INTERNAL
+;; => ORIGIN-SI:ITEM
+;; => :INTERNAL
 
 (package-shadowing-symbols "DEST-SI")
-;; → (ORIGIN-SI:ITEM)
+;; => (ORIGIN-SI:ITEM)
 ```
 
 ### Resolving Name Conflicts Between Used Packages
@@ -45,10 +47,11 @@ import ShadowingImportFunction from './_shadowing-import_function.md';
 ;; Import A's CLASH as the shadowing symbol before using both packages
 (shadowing-import (find-symbol "CLASH" "A-SI") "C-SI")
 (use-package '("A-SI" "B-SI") "C-SI")
-;; → T  ; no conflict because C-SI::CLASH shadows B-SI:CLASH
+=> T
 
 (find-symbol "CLASH" "C-SI")
-;; → A-SI:CLASH, :INTERNAL
+;; => A-SI:CLASH
+;; => :INTERNAL
 ```
 
 ### Difference from import
@@ -64,11 +67,12 @@ Regular `import` would signal an error if a different symbol with the same name 
 
 ;; import would signal an error here, but shadowing-import does not
 (shadowing-import (find-symbol "THING" "OTHER-SI") "NEW-SI")
-;; → T
+=> T
 
 ;; The old THING is gone, replaced by OTHER-SI's THING
 (find-symbol "THING" "NEW-SI")
-;; → OTHER-SI:THING, :INTERNAL
+;; => OTHER-SI:THING
+;; => :INTERNAL
 ```
 
 ### The Symbol is Added to package-shadowing-symbols
@@ -76,11 +80,11 @@ Regular `import` would signal an error if a different symbol with the same name 
 ```lisp
 (make-package "SHADOW-LIST-SI" :use '())
 (package-shadowing-symbols "SHADOW-LIST-SI")
-;; → ()
+=> ()
 
 (shadowing-import 'cl:car "SHADOW-LIST-SI")
-;; → T
+=> T
 
 (package-shadowing-symbols "SHADOW-LIST-SI")
-;; → (CAR)
+=> (CAR)
 ```

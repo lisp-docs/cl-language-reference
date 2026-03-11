@@ -16,10 +16,10 @@ import PackageNameFunction from './_package-name_function.md';
 
 ```lisp
 (package-name *package*)
-;; → "COMMON-LISP-USER"
+;; => "COMMON-LISP-USER"
 
 (package-name (find-package "COMMON-LISP"))
-;; → "COMMON-LISP"
+=> "COMMON-LISP"
 ```
 
 ### Using a String Designator
@@ -28,17 +28,17 @@ The argument can be a string (package name) or symbol, not just a package object
 
 ```lisp
 (package-name "KEYWORD")
-;; → "KEYWORD"
+=> "KEYWORD"
 
 (package-name 'keyword)
-;; → "KEYWORD"
+=> "KEYWORD"
 ```
 
 ### The KEYWORD Package
 
 ```lisp
 (package-name (symbol-package :test))
-;; → "KEYWORD"
+=> "KEYWORD"
 ```
 
 ### Deleted Packages Return NIL
@@ -49,7 +49,7 @@ After a package is deleted, `package-name` returns NIL for the deleted package o
 (let ((pkg (make-package "DOOMED" :use '())))
   (delete-package pkg)
   (package-name pkg))
-;; → NIL
+=> NIL
 ```
 
 ### The Name Reflects Renaming
@@ -58,9 +58,9 @@ If a package has been renamed, `package-name` returns the new name.
 
 ```lisp
 (make-package "ORIGINAL" :use '())
-;; → #<PACKAGE "ORIGINAL">
+==> #<PACKAGE "ORIGINAL">
 
 (rename-package "ORIGINAL" "RENAMED")
 (package-name (find-package "RENAMED"))
-;; → "RENAMED"
+=> "RENAMED"
 ```

@@ -22,7 +22,7 @@ import DoSymbolsMacro from './_do-symbols_do-external-symbols_do-all-symbols_mac
   (do-symbols (s "DS-DEMO")
     (push (symbol-name s) syms))
   (sort syms #'string<))
-;; → ("PRIV" "PUB")
+=> ("PRIV" "PUB")
 ```
 
 ### do-external-symbols: Iterating Over Only External Symbols
@@ -37,7 +37,7 @@ import DoSymbolsMacro from './_do-symbols_do-external-symbols_do-all-symbols_mac
   (do-external-symbols (s "EXT-DEMO")
     (push (symbol-name s) syms))
   (sort syms #'string<))
-;; → ("ALPHA" "BETA")
+=> ("ALPHA" "BETA")
 ;; "GAMMA" is not included because it is internal
 ```
 
@@ -52,7 +52,7 @@ import DoSymbolsMacro from './_do-symbols_do-external-symbols_do-all-symbols_mac
     (when (string= (symbol-name s) "CAR")
       (incf count)))
   (> count 0))
-;; → T
+=> T
 ```
 
 ### Using the Result Form
@@ -71,7 +71,7 @@ The optional result form is evaluated after iteration completes. The variable is
   (do-external-symbols (s "RES-DEMO")
     (push s result))
   (length result))
-;; → 2
+=> 2
 ```
 
 ### Early Termination with return
@@ -84,7 +84,7 @@ An implicit block named NIL surrounds the iteration, so `return` can exit early.
 (do-external-symbols (s "EARLY-DEMO")
   (when (string= (symbol-name s) "B")
     (return s)))
-;; → EARLY-DEMO:B  ; or whichever symbol named "B" is encountered
+;; => EARLY-DEMO:B  ; or whichever symbol named "B" is encountered
 ```
 
 ### Counting Symbols in a Package
@@ -94,5 +94,5 @@ An implicit block named NIL surrounds the iteration, so `return` can exit early.
   (do-symbols (s "COMMON-LISP")
     (incf count))
   (> count 500))
-;; → T  ; COMMON-LISP has hundreds of symbols
+=> T
 ```

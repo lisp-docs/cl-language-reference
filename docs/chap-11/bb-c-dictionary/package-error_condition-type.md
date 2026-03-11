@@ -16,7 +16,8 @@ import PackageErrorConditionType from './_package-error_condition-type.md';
 
 ```lisp
 (subtypep 'package-error 'error)
-;; → T, T
+=> T
+=> T
 ```
 
 ### Creating a package-error Condition
@@ -27,7 +28,7 @@ You can create a `package-error` condition with `make-condition`, providing the 
 (let ((c (make-condition 'package-error
                          :package (find-package "COMMON-LISP"))))
   (typep c 'package-error))
-;; → T
+=> T
 ```
 
 ### Catching package-error with handler-case
@@ -48,8 +49,10 @@ Package errors can be caught and handled programmatically.
 ```lisp
 ;; package-error inherits from error, serious-condition, condition, and t
 (subtypep 'package-error 'serious-condition)
-;; → T, T
+=> T
+=> T
 
 (subtypep 'package-error 'condition)
-;; → T, T
+=> T
+=> T
 ```

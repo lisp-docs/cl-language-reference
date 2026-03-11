@@ -19,13 +19,15 @@ import UnusePackageFunction from './_unuse-package_function.md';
 (defpackage "TARGET-UU" (:use "SOURCE-UU"))
 
 (find-symbol "DATA" "TARGET-UU")
-;; → SOURCE-UU:DATA, :INHERITED
+;; => SOURCE-UU:DATA
+;; => :INHERITED
 
 (unuse-package "SOURCE-UU" "TARGET-UU")
-;; → T
+;; => T
 
 (find-symbol "DATA" "TARGET-UU")
-;; → NIL, NIL
+;; => NIL
+;; => NIL
 ```
 
 ### The Use List is Updated
@@ -35,13 +37,13 @@ import UnusePackageFunction from './_unuse-package_function.md';
 (defpackage "APP-UU" (:use "LIB-UU"))
 
 (mapcar #'package-name (package-use-list "APP-UU"))
-;; → ("LIB-UU")
+=> ("LIB-UU")
 
 (unuse-package "LIB-UU" "APP-UU")
-;; → T
+=> T
 
 (package-use-list "APP-UU")
-;; → ()
+=> ()
 ```
 
 ### Imported Symbols Remain After unuse-package
@@ -56,14 +58,16 @@ Symbols that were explicitly imported (not just inherited) remain present even a
 ;; Import makes it directly present
 (import (find-symbol "ITEM" "PROVIDER-UU") "RECEIVER-UU")
 (find-symbol "ITEM" "RECEIVER-UU")
-;; → PROVIDER-UU:ITEM, :INTERNAL
+;; => PROVIDER-UU:ITEM
+;; => :INTERNAL
 
 (unuse-package "PROVIDER-UU" "RECEIVER-UU")
-;; → T
+;; => T
 
 ;; Still present because it was imported
 (find-symbol "ITEM" "RECEIVER-UU")
-;; → PROVIDER-UU:ITEM, :INTERNAL
+;; => PROVIDER-UU:ITEM
+;; => :INTERNAL
 ```
 
 ### Unusing Multiple Packages
@@ -76,8 +80,8 @@ Symbols that were explicitly imported (not just inherited) remain present even a
 (defpackage "Z-UU" (:use "X-UU" "Y-UU"))
 
 (unuse-package '("X-UU" "Y-UU") "Z-UU")
-;; → T
+=> T
 
 (package-use-list "Z-UU")
-;; → ()
+=> ()
 ```

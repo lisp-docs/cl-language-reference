@@ -21,15 +21,17 @@ import ExportFunction from './_export_function.md';
 
 ;; The symbol is internal by default
 (find-symbol "GREET" "MY-LIB")
-;; → MY-LIB::GREET, :INTERNAL
+;; => MY-LIB::GREET
+;; => :INTERNAL
 
 ;; Export it
 (export (find-symbol "GREET" "MY-LIB") "MY-LIB")
-;; → T
+;; => T
 
 ;; Now it is external
 (find-symbol "GREET" "MY-LIB")
-;; → MY-LIB:GREET, :EXTERNAL
+;; => MY-LIB:GREET
+;; => :EXTERNAL
 ```
 
 ### Exporting Makes Symbols Inherited by Using Packages
@@ -42,13 +44,15 @@ When a symbol is exported, it becomes visible to all packages that use the expor
 
 (intern "ADD" "MATH-UTILS")
 (find-symbol "ADD" "APP")
-;; → NIL, NIL  ; not yet visible
+=> NIL
+=> NIL
 
 (export (find-symbol "ADD" "MATH-UTILS") "MATH-UTILS")
-;; → T
+=> T
 
 (find-symbol "ADD" "APP")
-;; → MATH-UTILS:ADD, :INHERITED
+;; => MATH-UTILS:ADD
+;; => :INHERITED
 ```
 
 ### Exporting Multiple Symbols at Once
@@ -64,11 +68,17 @@ When a symbol is exported, it becomes visible to all packages that use the expor
 (export (list (find-symbol "HAMMER" "TOOLS")
               (find-symbol "SAW" "TOOLS"))
         "TOOLS")
-;; → T
+=> T
 
-(find-symbol "HAMMER" "TOOLS") ;; → TOOLS:HAMMER, :EXTERNAL
-(find-symbol "SAW" "TOOLS")    ;; → TOOLS:SAW, :EXTERNAL
-(find-symbol "DRILL" "TOOLS")  ;; → TOOLS::DRILL, :INTERNAL
+(find-symbol "HAMMER" "TOOLS")
+;; => TOOLS:HAMMER
+;; => :EXTERNAL
+(find-symbol "SAW" "TOOLS")
+;; => TOOLS:SAW
+;; => :EXTERNAL
+(find-symbol "DRILL" "TOOLS")
+;; => TOOLS::DRILL
+;; => :INTERNAL
 ```
 
 ### Exporting an Already-External Symbol is a No-Op
@@ -76,11 +86,12 @@ When a symbol is exported, it becomes visible to all packages that use the expor
 ```lisp
 (defpackage "ALREADY-EXT" (:use) (:export "FOO"))
 (find-symbol "FOO" "ALREADY-EXT")
-;; → ALREADY-EXT:FOO, :EXTERNAL
+;; => ALREADY-EXT:FOO
+;; => :EXTERNAL
 
 ;; Exporting again has no effect and returns T
 (export (find-symbol "FOO" "ALREADY-EXT") "ALREADY-EXT")
-;; → T
+;; => T
 ```
 
 ### Using export with the Current Package
@@ -93,9 +104,10 @@ When the optional package argument is omitted, `export` operates on the current 
 (defun helper () "I help")
 
 (export 'helper)
-;; → T
+;; => T
 
 (in-package "COMMON-LISP-USER")
 (find-symbol "HELPER" "WORK")
-;; → WORK:HELPER, :EXTERNAL
+;; => WORK:HELPER
+;; => :EXTERNAL
 ```

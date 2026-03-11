@@ -17,13 +17,13 @@ import DeletePackageFunction from './_delete-package_function.md';
 ```lisp
 (make-package "TEMP-DEL" :use '())
 (find-package "TEMP-DEL")
-;; → #<PACKAGE "TEMP-DEL">
+==> #<PACKAGE "TEMP-DEL">
 
 (delete-package "TEMP-DEL")
-;; → T
+=> T
 
 (find-package "TEMP-DEL")
-;; → NIL
+=> NIL
 ```
 
 ### Deleted Package Objects Still Satisfy packagep
@@ -35,15 +35,18 @@ After deletion, the package object still exists but has no name.
   (delete-package pkg)
   (values (packagep pkg)
           (package-name pkg)))
-;; → T, NIL
+=> T
+=> NIL
 ```
 
 ### Deleting an Already-Deleted Package Returns NIL
 
 ```lisp
 (let ((pkg (make-package "TWICE" :use '())))
-  (delete-package pkg)   ;; → T
-  (delete-package pkg))  ;; → NIL
+  (delete-package pkg)
+=> T
+  (delete-package pkg))
+=> NIL
 ```
 
 ### Symbols From Deleted Packages Lose Their Home
@@ -55,7 +58,7 @@ Symbols whose home package was the deleted package may become uninterned (printe
 (let ((sym (intern "THING" "MORTAL")))
   (delete-package "MORTAL")
   (symbol-package sym))
-;; → NIL  ; or implementation-dependent
+=> NIL
 ```
 
 ### Deletion Requires No Dependent Packages
@@ -69,5 +72,5 @@ If other packages use the package being deleted, a correctable error is signaled
 ;; Must unuse first to avoid the error
 (unuse-package "DEL-BASE" "DEL-USER")
 (delete-package "DEL-BASE")
-;; → T
+=> T
 ```

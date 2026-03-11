@@ -19,8 +19,8 @@ import PackageUsedByListFunction from './_package-used-by-list_function.md';
 (defpackage "APP-A" (:use "FOUNDATION"))
 (defpackage "APP-B" (:use "FOUNDATION"))
 
-(mapcar #'package-name (package-used-by-list "FOUNDATION"))
-;; → ("APP-A" "APP-B")  ; or ("APP-B" "APP-A")
+(sort (mapcar #'package-name (package-used-by-list "FOUNDATION")) #'string<)
+=> ("APP-A" "APP-B")
 ```
 
 ### A Package Not Used by Anyone
@@ -28,7 +28,7 @@ import PackageUsedByListFunction from './_package-used-by-list_function.md';
 ```lisp
 (make-package "LONELY" :use '())
 (package-used-by-list "LONELY")
-;; → ()
+=> ()
 ```
 
 ### The COMMON-LISP Package Is Widely Used
@@ -36,7 +36,7 @@ import PackageUsedByListFunction from './_package-used-by-list_function.md';
 ```lisp
 ;; COMMON-LISP is typically used by many packages
 (not (null (package-used-by-list "COMMON-LISP")))
-;; → T
+=> T
 ```
 
 ### Relationship Between package-use-list and package-used-by-list
@@ -49,9 +49,9 @@ These two functions are inverses: if A uses B, then B is used-by A.
 
 (member (find-package "PROVIDER-X")
         (package-use-list "CONSUMER-X"))
-;; → (#<PACKAGE "PROVIDER-X">)  ; non-NIL
+;; => (#<PACKAGE "PROVIDER-X">)
 
 (member (find-package "CONSUMER-X")
         (package-used-by-list "PROVIDER-X"))
-;; → (#<PACKAGE "CONSUMER-X">)  ; non-NIL
+;; => (#<PACKAGE "CONSUMER-X">)
 ```

@@ -16,10 +16,10 @@ import MakePackageFunction from './_make-package_function.md';
 
 ```lisp
 (make-package "NETWORK")
-;; → #<PACKAGE "NETWORK">
+==> #<PACKAGE "NETWORK">
 
 (find-package "NETWORK")
-;; → #<PACKAGE "NETWORK">
+==> #<PACKAGE "NETWORK">
 ```
 
 ### Creating a Package with Nicknames
@@ -28,13 +28,13 @@ The `:nicknames` keyword specifies alternative names for the package.
 
 ```lisp
 (make-package "TEMPORARY-STORAGE" :nicknames '("TEMP-STORE" "TS"))
-;; → #<PACKAGE "TEMPORARY-STORAGE">
+==> #<PACKAGE "TEMPORARY-STORAGE">
 
 (find-package "TS")
-;; → #<PACKAGE "TEMPORARY-STORAGE">
+==> #<PACKAGE "TEMPORARY-STORAGE">
 
 (package-nicknames "TEMPORARY-STORAGE")
-;; → ("TEMP-STORE" "TS")  ; or ("TS" "TEMP-STORE")
+=> ("TEMP-STORE" "TS")
 ```
 
 ### Creating a Package with No Inherited Symbols
@@ -43,14 +43,16 @@ Use `:use '()` to create a bare package that inherits nothing from COMMON-LISP.
 
 ```lisp
 (make-package "BARE" :use '())
-;; → #<PACKAGE "BARE">
+==> #<PACKAGE "BARE">
 
 ;; No inherited symbols at all
 (find-symbol "CAR" "BARE")
-;; → NIL, NIL
+=> NIL
+=> NIL
 
 (find-symbol "+" "BARE")
-;; → NIL, NIL
+=> NIL
+=> NIL
 ```
 
 ### Creating a Package That Uses Another Package
@@ -60,13 +62,15 @@ The `:use` keyword specifies which packages' external symbols should be inherite
 ```lisp
 (defpackage "PROVIDER" (:use) (:export "SERVE"))
 (make-package "CONSUMER" :use '("COMMON-LISP" "PROVIDER"))
-;; → #<PACKAGE "CONSUMER">
+==> #<PACKAGE "CONSUMER">
 
 (find-symbol "SERVE" "CONSUMER")
-;; → PROVIDER:SERVE, :INHERITED
+;; => PROVIDER:SERVE
+;; => :INHERITED
 
 (find-symbol "CAR" "CONSUMER")
-;; → CAR, :INHERITED
+=> CAR
+=> :INHERITED
 ```
 
 ### Symbol Names vs Package Names
@@ -75,8 +79,8 @@ Package names are strings. When a symbol is given, its name (a string) is used.
 
 ```lisp
 (make-package 'my-demo :use '())
-;; → #<PACKAGE "MY-DEMO">
+==> #<PACKAGE "MY-DEMO">
 
 (package-name (find-package 'my-demo))
-;; → "MY-DEMO"
+=> "MY-DEMO"
 ```

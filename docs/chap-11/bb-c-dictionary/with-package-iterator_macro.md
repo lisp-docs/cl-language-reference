@@ -24,7 +24,7 @@ import WithPackageIteratorMacro from './_with-package-iterator_macro.md';
         (unless more? (return))
         (push (list (symbol-name sym) accessibility) syms))))
   syms)
-;; → (("BETA" :EXTERNAL) ("ALPHA" :EXTERNAL))
+=> (("BETA" :EXTERNAL) ("ALPHA" :EXTERNAL))
 ;; order is implementation-dependent
 ```
 
@@ -43,7 +43,7 @@ You can specify multiple symbol types.
         (unless more? (return))
         (push (list (symbol-name sym) accessibility) syms))))
   (sort syms #'string< :key #'first))
-;; → (("PRIV" :INTERNAL) ("PUB" :EXTERNAL))
+=> (("PRIV" :INTERNAL) ("PUB" :EXTERNAL))
 ```
 
 ### Including Inherited Symbols
@@ -63,7 +63,7 @@ The `:inherited` type includes symbols inherited through `use-package`.
         (push (list (symbol-name sym) accessibility (package-name pkg))
               syms))))
   (sort syms #'string< :key #'first))
-;; → (("BASE-FN" :INHERITED "WPI-CHILD") ("OWN-FN" :INTERNAL "WPI-CHILD"))
+;; => (("BASE-FN" :INHERITED "WPI-CHILD") ("OWN-FN" :INTERNAL "WPI-CHILD"))
 ```
 
 ### The Fourth Value Identifies the Source Package
@@ -76,7 +76,7 @@ The `:inherited` type includes symbols inherited through `use-package`.
   (multiple-value-bind (more? sym accessibility pkg) (next)
     (when more?
       (package-name pkg))))
-;; → "WPI-DST"
+=> "WPI-DST"
 ```
 
 ### Collecting All Present Symbols Across Multiple Packages
@@ -92,5 +92,5 @@ The `:inherited` type includes symbols inherited through `use-package`.
         (unless more? (return))
         (push (symbol-name sym) syms))))
   (sort syms #'string<))
-;; → ("X" "Y")
+=> ("X" "Y")
 ```

@@ -16,10 +16,10 @@ import PackageVariable from './_package_variable.md';
 
 ```lisp
 *package*
-;; → #<PACKAGE "COMMON-LISP-USER">
+;; ==> #<PACKAGE "COMMON-LISP-USER">
 
 (package-name *package*)
-;; → "COMMON-LISP-USER"
+;; => "COMMON-LISP-USER"
 ```
 
 ### Changing the Current Package with in-package
@@ -29,7 +29,7 @@ import PackageVariable from './_package_variable.md';
 (in-package "PKG-VAR-DEMO")
 
 (package-name *package*)
-;; → "PKG-VAR-DEMO"
+;; => "PKG-VAR-DEMO"
 
 (in-package "COMMON-LISP-USER")
 ```
@@ -43,11 +43,11 @@ You can dynamically bind `*package*` to control symbol lookup temporarily.
 
 (let ((*package* (find-package "TEMP-BIND")))
   (package-name *package*))
-;; → "TEMP-BIND"
+=> "TEMP-BIND"
 
 ;; Outside the let, *package* is unchanged
 (package-name *package*)
-;; → "COMMON-LISP-USER"
+;; => "COMMON-LISP-USER"
 ```
 
 ### Effect on the Reader
@@ -59,11 +59,11 @@ The value of `*package*` affects where `read` and `read-from-string` intern symb
 
 (let ((*package* (find-package "READ-DEMO")))
   (symbol-package (read-from-string "MY-SYM")))
-;; → #<PACKAGE "READ-DEMO">
+==> #<PACKAGE "READ-DEMO">
 
 (let ((*package* (find-package "COMMON-LISP-USER")))
   (symbol-package (read-from-string "MY-SYM")))
-;; → #<PACKAGE "COMMON-LISP-USER">
+==> #<PACKAGE "COMMON-LISP-USER">
 ```
 
 ### Default Value
@@ -72,5 +72,5 @@ The initial value of `*package*` is the COMMON-LISP-USER package.
 
 ```lisp
 (eq *package* (find-package "COMMON-LISP-USER"))
-;; → T  ; in a fresh session
+;; => T  ; in a fresh session
 ```

@@ -18,13 +18,15 @@ import UnexportFunction from './_unexport_function.md';
 (defpackage "SVC" (:use) (:export "PUBLIC-FN"))
 
 (find-symbol "PUBLIC-FN" "SVC")
-;; → SVC:PUBLIC-FN, :EXTERNAL
+;; => SVC:PUBLIC-FN
+;; => :EXTERNAL
 
 (unexport (find-symbol "PUBLIC-FN" "SVC") "SVC")
-;; → T
+;; => T
 
 (find-symbol "PUBLIC-FN" "SVC")
-;; → SVC::PUBLIC-FN, :INTERNAL
+;; => SVC::PUBLIC-FN
+;; => :INTERNAL
 ```
 
 ### Inherited Symbols Become Inaccessible After Unexport
@@ -36,13 +38,15 @@ When a symbol is unexported, packages that were inheriting it can no longer see 
 (defpackage "APP-U" (:use "LIB-U"))
 
 (find-symbol "HELPER" "APP-U")
-;; → LIB-U:HELPER, :INHERITED
+;; => LIB-U:HELPER
+;; => :INHERITED
 
 (unexport (find-symbol "HELPER" "LIB-U") "LIB-U")
-;; → T
+;; => T
 
 (find-symbol "HELPER" "APP-U")
-;; → NIL, NIL
+;; => NIL
+;; => NIL
 ```
 
 ### Unexporting an Already-Internal Symbol is a No-Op
@@ -52,14 +56,16 @@ When a symbol is unexported, packages that were inheriting it can no longer see 
 (intern "SECRET" "INT-PKG")
 
 (find-symbol "SECRET" "INT-PKG")
-;; → INT-PKG::SECRET, :INTERNAL
+;; => INT-PKG::SECRET
+;; => :INTERNAL
 
 ;; Already internal, so unexport does nothing special
 (unexport (find-symbol "SECRET" "INT-PKG") "INT-PKG")
-;; → T
+;; => T
 
 (find-symbol "SECRET" "INT-PKG")
-;; → INT-PKG::SECRET, :INTERNAL
+;; => INT-PKG::SECRET
+;; => :INTERNAL
 ```
 
 ### Unexporting Multiple Symbols
@@ -71,9 +77,15 @@ When a symbol is unexported, packages that were inheriting it can no longer see 
 (unexport (list (find-symbol "A" "MULTI-U")
                 (find-symbol "B" "MULTI-U"))
           "MULTI-U")
-;; → T
+=> T
 
-(find-symbol "A" "MULTI-U") ;; → MULTI-U::A, :INTERNAL
-(find-symbol "B" "MULTI-U") ;; → MULTI-U::B, :INTERNAL
-(find-symbol "C" "MULTI-U") ;; → MULTI-U:C, :EXTERNAL
+(find-symbol "A" "MULTI-U")
+;; => MULTI-U::A
+;; => :INTERNAL
+(find-symbol "B" "MULTI-U")
+;; => MULTI-U::B
+;; => :INTERNAL
+(find-symbol "C" "MULTI-U")
+;; => MULTI-U:C
+;; => :EXTERNAL
 ```

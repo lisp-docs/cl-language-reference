@@ -16,10 +16,10 @@ A package is a namespace that maps symbol names to symbols. The `package` system
 
 ```lisp
 (type-of (find-package "COMMON-LISP"))
-;; → PACKAGE
+=> PACKAGE
 
 (typep (find-package "COMMON-LISP") 'package)
-;; → T
+=> T
 ```
 
 ### Packages in the Class Hierarchy
@@ -28,10 +28,11 @@ A package is a namespace that maps symbol names to symbols. The `package` system
 
 ```lisp
 (subtypep 'package 't)
-;; → T, T
+=> T
+=> T
 
 (class-name (class-of (find-package "COMMON-LISP")))
-;; → PACKAGE
+=> PACKAGE
 ```
 
 ### Creating Package Objects
@@ -41,7 +42,7 @@ Packages are created with `defpackage` or `make-package`, not with `make-instanc
 ```lisp
 (let ((pkg (make-package "PKG-CLASS-DEMO" :use '())))
   (typep pkg 'package))
-;; → T
+=> T
 ```
 
 ### Printing Package Objects
@@ -50,5 +51,5 @@ Packages are printed in an implementation-dependent fashion, typically as `#<PAC
 
 ```lisp
 (format nil "~A" (find-package "COMMON-LISP"))
-;; → "COMMON-LISP"  ; or implementation-dependent representation
+;; => "COMMON-LISP"  ; implementation-dependent printing
 ```

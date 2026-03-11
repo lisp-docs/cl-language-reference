@@ -19,18 +19,20 @@ import ShadowFunction from './_shadow_function.md';
 
 ;; CAR is inherited from COMMON-LISP
 (find-symbol "CAR" "SHADOW-DEMO")
-;; → CAR, :INHERITED
+=> CAR
+=> :INHERITED
 
 (shadow "CAR" "SHADOW-DEMO")
-;; → T
+=> T
 
 ;; Now there is a local symbol that shadows CL:CAR
 (find-symbol "CAR" "SHADOW-DEMO")
-;; → SHADOW-DEMO::CAR, :INTERNAL
+;; => SHADOW-DEMO::CAR
+;; => :INTERNAL
 
 (eq (find-symbol "CAR" "SHADOW-DEMO")
     (find-symbol "CAR" "COMMON-LISP"))
-;; → NIL
+;; => NIL
 ```
 
 ### The Shadowed Symbol Appears on the Shadowing Symbols List
@@ -38,13 +40,13 @@ import ShadowFunction from './_shadow_function.md';
 ```lisp
 (defpackage "SH-LIST" (:use "COMMON-LISP"))
 (package-shadowing-symbols "SH-LIST")
-;; → ()
+=> ()
 
 (shadow "LIST" "SH-LIST")
-;; → T
+=> T
 
 (package-shadowing-symbols "SH-LIST")
-;; → (SH-LIST::LIST)
+;; => (SH-LIST::LIST)
 ```
 
 ### Shadowing Prevents Name Conflicts During use-package
@@ -57,15 +59,18 @@ Shadowing is primarily used to prevent name conflicts when using packages that e
 
 (defpackage "APP-SH" (:use))
 (shadow "PROCESS" "APP-SH")
-;; → T
+=> T
 
 ;; Now both can be used without conflict
-(use-package "LIB-1-SH" "APP-SH") ;; → T
-(use-package "LIB-2-SH" "APP-SH") ;; → T
+(use-package "LIB-1-SH" "APP-SH")
+=> T
+(use-package "LIB-2-SH" "APP-SH")
+=> T
 
 ;; APP-SH's own PROCESS shadows both
 (find-symbol "PROCESS" "APP-SH")
-;; → APP-SH::PROCESS, :INTERNAL
+;; => APP-SH::PROCESS
+;; => :INTERNAL
 ```
 
 ### Shadowing Multiple Names
@@ -75,10 +80,10 @@ Shadowing is primarily used to prevent name conflicts when using packages that e
 ```lisp
 (defpackage "MULTI-SH" (:use "COMMON-LISP"))
 (shadow '("CAR" "CDR" "CONS") "MULTI-SH")
-;; → T
+=> T
 
-(mapcar #'symbol-name (package-shadowing-symbols "MULTI-SH"))
-;; → ("CAR" "CDR" "CONS")  ; order may vary
+(sort (mapcar #'symbol-name (package-shadowing-symbols "MULTI-SH")) #'string<)
+=> ("CAR" "CDR" "CONS")
 ```
 
 ### Shadowing an Already-Present Symbol
@@ -90,9 +95,9 @@ If a symbol with the given name is already present (not just inherited), `shadow
 (intern "MINE" "ALREADY-SH")
 
 (shadow "MINE" "ALREADY-SH")
-;; → T
+=> T
 
 ;; The existing symbol is now a shadowing symbol
 (package-shadowing-symbols "ALREADY-SH")
-;; → (ALREADY-SH::MINE)
+;; => (ALREADY-SH::MINE)
 ```
