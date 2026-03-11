@@ -18,7 +18,7 @@ import AproposFunction from './_apropos_apropos-list_function.md';
 (apropos "MAKE-HASH")
 ; Prints matching symbols, e.g.:
 ; MAKE-HASH-TABLE (fbound)
-→ ; no useful return value (implementation-dependent)
+=> ; no useful return value (implementation-dependent)
 ```
 
 ### Getting a list of matching symbols with apropos-list
@@ -27,8 +27,8 @@ import AproposFunction from './_apropos_apropos-list_function.md';
 
 ```lisp
 (let ((results (apropos-list "MAKE-HASH")))
-  (member 'make-hash-table results))
-→ (MAKE-HASH-TABLE ...)  ; MAKE-HASH-TABLE will be in the list
+  (not (null (member 'make-hash-table results))))
+;; => T
 ```
 
 ### Restricting search to a specific package
@@ -37,9 +37,9 @@ Both functions accept an optional package argument to restrict the search.
 
 ```lisp
 ;; Search only in the COMMON-LISP package
-(member 'make-hash-table
-        (apropos-list "MAKE-HASH" (find-package "COMMON-LISP")))
-→ (MAKE-HASH-TABLE ...)
+(not (null (member 'make-hash-table
+                   (apropos-list "MAKE-HASH" (find-package "COMMON-LISP")))))
+;; => T
 ```
 
 ### Case-insensitive matching
@@ -48,9 +48,7 @@ The search is typically case-insensitive (though this is implementation-dependen
 
 ```lisp
 ;; These produce the same results
-(length (apropos-list "CONS"))
-→ 10  ; implementation-dependent count
-
-(length (apropos-list "cons"))
-→ 10  ; same count; implementation-dependent
+(= (length (apropos-list "CONS"))
+   (length (apropos-list "cons")))
+;; => impl-dependent
 ```

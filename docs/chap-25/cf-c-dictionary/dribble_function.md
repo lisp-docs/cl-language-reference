@@ -53,7 +53,7 @@ The exact behavior of `dribble` is implementation-dependent. Some implementation
 ```lisp
 ;; dribble returns implementation-dependent values
 ;; (dribble "/tmp/test.txt")
-;; => ; implementation-dependent
+=> ; implementation-dependent
 ;; (dribble)
-;; => ; implementation-dependent
+=> ; implementation-dependent
 ```

@@ -16,19 +16,11 @@ The variables `+`, `++`, and `+++` hold the last three forms evaluated by the RE
 
 ```lisp
 (+ 1 2)
-; → 3
+=> 3
 
-+
-; → (+ 1 2)
-
-(* 3 4)
-; → 12
-
-+
-; → (* 3 4)
-
-++
-; → +        ; the form that evaluated + itself was the previous one
+;; In an interactive REPL:
+;; +   => (+ 1 2)
+;; ++  => the form before that
 ```
 
 ### How the History Shifts
@@ -37,22 +29,18 @@ Each time the REPL reads and evaluates a form, the history shifts: the old `+` b
 
 ```lisp
 (list 'a)
-; → (A)
+=> (A)
 
 (list 'b)
-; → (B)
+=> (B)
 
 (list 'c)
-; → (C)
+=> (C)
 
-+
-; → (LIST 'C)
-
-++
-; → (LIST 'C)   ; ++ is the form from when we evaluated +
-
-+++
-; → (LIST 'B)
+;; In an interactive REPL after the above:
+;; +   => (LIST 'C)     ; the most recently read form
+;; ++  => the form that read +
+;; +++ => (LIST 'B)
 ```
 
 ### Re-evaluating Previous Forms
@@ -61,16 +49,14 @@ Since `+`, `++`, and `+++` hold the actual forms, you can re-evaluate a previous
 
 ```lisp
 (defvar *counter* 0)
-; → *COUNTER*
+=> *COUNTER*
 
 (incf *counter*)
-; → 1
+=> 1
 
-(eval +)
-; → 2
-
-(eval +)
-; → 3
+;; In an interactive REPL, (eval +) would re-evaluate (incf *counter*)
+;; (eval +)  => 2
+;; (eval +)  => 3
 ```
 
 ### Distinction from /, //, ///
@@ -79,15 +65,13 @@ The `+` family tracks the **forms** (unevaluated expressions) that were read, wh
 
 ```lisp
 (values 1 2 3)
-; → 1
-; → 2
-; → 3
+=> 1
+=> 2
+=> 3
 
-+
-; → (VALUES 1 2 3)    ; the form
-
-/
-; → (1 2 3)           ; the list of result values
+;; In an interactive REPL after the above:
+;; +   => (VALUES 1 2 3)   ; the form that was read
+;; /   => (1 2 3)          ; the list of values produced
 ```
 
 ### Important Notes

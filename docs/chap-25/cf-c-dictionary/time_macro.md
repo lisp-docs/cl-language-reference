@@ -20,7 +20,7 @@ import TimeMacro from './_time_macro.md';
 ;   0.003 seconds of real time
 ;   0.003 seconds of total run time
 ;   ...
-→ 500000500000  ; the actual return value
+=> 500000500000  ; the actual return value
 ```
 
 ### Timing a function call
@@ -30,7 +30,7 @@ import TimeMacro from './_time_macro.md';
 ; Evaluation took:
 ;   0.100 seconds of real time
 ;   ...
-→ NIL
+=> NIL
 ```
 
 ### The return value passes through
@@ -41,7 +41,7 @@ import TimeMacro from './_time_macro.md';
 (multiple-value-bind (q r) (time (floor 17 5))
   (list q r))
 ; Prints timing information
-→ (3 2)
+=> (3 2)
 ```
 
 ### Timing a computation
@@ -49,9 +49,7 @@ import TimeMacro from './_time_macro.md';
 The printed information is implementation-dependent but typically includes real time, run time, and memory allocation.
 
 ```lisp
-(time (make-list 100000))
-; Evaluation took:
-;   ... seconds of real time
-;   ... bytes consed
-→ (NIL NIL NIL ...)  ; a list of 100000 NILs
+(listp (time (make-list 100000)))
+;; prints timing information (implementation-dependent)
+;; => T
 ```

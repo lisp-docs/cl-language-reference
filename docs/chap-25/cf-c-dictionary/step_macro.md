@@ -19,7 +19,7 @@ import StepMacro from './_step_macro.md';
 ;; (step (+ 1 2 3))
 ;; The implementation provides an interactive stepper UI.
 ;; Eventually returns:
-;; => 6
+=> 6
 ```
 
 ### Stepping through a function call
@@ -30,7 +30,7 @@ import StepMacro from './_step_macro.md';
 ;; (step (mapcar #'1+ '(1 2 3)))
 ;; The stepper lets you step into each sub-evaluation.
 ;; Eventually returns:
-;; => (2 3 4)
+=> (2 3 4)
 ```
 
 ### Return value
@@ -40,9 +40,9 @@ import StepMacro from './_step_macro.md';
 ```lisp
 ;; In non-interactive mode or after stepping through:
 (step (values 1 2 3))
-→ 1
-→ 2
-→ 3
+=> 1
+=> 2
+=> 3
 ```
 
 ### Practical use at the REPL
@@ -55,6 +55,6 @@ import StepMacro from './_step_macro.md';
 (+ 1 2 3)
 ; 0: (+ 1 2 3)
 ; 0: + returned 6
-→ 6
+=> 6
 (untrace +)
 ```

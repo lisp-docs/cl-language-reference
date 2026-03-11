@@ -42,5 +42,5 @@ Since `inspect` is interactive, it is primarily useful at the REPL during develo
 ;; For non-interactive output, use describe instead:
 (describe (make-hash-table))
 ; Prints hash table details to *standard-output*
-→ ; no useful return value
+=> ; no useful return value
 ```

@@ -15,11 +15,11 @@ import SoftwareTypeFunction from './_software-type_software-version_function.md'
 `software-type` returns a string identifying the operating system or generic software environment, while `software-version` returns a string identifying the version of that software. Both may return `NIL` if the information is unavailable.
 
 ```lisp
-(software-type)
-; → "Linux"
+(stringp (software-type))
+;; => T
 
-(software-version)
-; → "6.1.0-17-amd64"
+(or (stringp (software-version)) (null (software-version)))
+;; => T
 ```
 
 ### Typical Return Values Across Platforms
@@ -27,17 +27,12 @@ import SoftwareTypeFunction from './_software-type_software-version_function.md'
 The returned strings are implementation-dependent and vary by both the Lisp implementation and the host operating system.
 
 ```lisp
-;; On SBCL running on Linux
-(software-type)    ; → "Linux"
-(software-version) ; → "6.1.0-17-amd64"
-
-;; On SBCL running on macOS
-(software-type)    ; → "Darwin"
-(software-version) ; → "23.1.0"
-
-;; On SBCL running on Windows
-(software-type)    ; → "Win32"
-(software-version) ; → NIL
+;; On SBCL running on Linux:  (software-type) => "Linux"
+;; On SBCL running on macOS:  (software-type) => "Darwin"
+;; On SBCL running on Windows: (software-type) => "Win32"
+;; (software-version) returns the kernel version string or NIL
+(stringp (software-type))
+;; => T
 ```
 
 ### Building an Environment Description
@@ -55,8 +50,8 @@ These functions are commonly used with the `machine-*` family to produce compreh
           (lisp-implementation-type)
           (lisp-implementation-version)))
 
-(environment-report)
-; → "Linux 6.1.0-17-amd64 on myhost (X86-64 Intel Core i7), Lisp: SBCL 2.4.0"
+(stringp (environment-report))
+;; => T
 ```
 
 ### Important Notes

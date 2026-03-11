@@ -16,10 +16,10 @@ import GetUniversalTimeFunction from './_get-universal-time_get-decoded-time_fun
 
 ```lisp
 (integerp (get-universal-time))
-→ T
+=> T
 
 (> (get-universal-time) 0)
-→ T
+=> T
 ```
 
 ### Getting the current time as decoded values
@@ -29,9 +29,9 @@ import GetUniversalTimeFunction from './_get-universal-time_get-decoded-time_fun
 ```lisp
 (multiple-value-bind (sec min hour day month year dow dst tz)
     (get-decoded-time)
-  (format nil "~4D-~2,'0D-~2,'0D ~2,'0D:~2,'0D:~2,'0D"
-          year month day hour min sec))
-→ "2025-04-15 14:30:00"  ; depends on current time
+  (stringp (format nil "~4D-~2,'0D-~2,'0D ~2,'0D:~2,'0D:~2,'0D"
+                   year month day hour min sec)))
+;; => T
 ```
 
 ### Relationship between the two functions
@@ -53,5 +53,5 @@ Universal time is useful for recording timestamps in a compact format.
   (sleep 1)
   (let ((elapsed (- (get-universal-time) start)))
     (>= elapsed 1)))
-→ T
+=> T
 ```

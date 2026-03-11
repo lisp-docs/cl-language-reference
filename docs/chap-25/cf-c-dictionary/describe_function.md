@@ -22,7 +22,7 @@ import DescribeFunction from './_describe_function.md';
 ;   CAR names a compiled function:
 ;     Lambda-list: (LIST)
 ;     ...
-→ ; no useful return value
+=> ; no useful return value
 ```
 
 ### Describing different types of objects
@@ -33,17 +33,17 @@ import DescribeFunction from './_describe_function.md';
 (describe 42)
 ; 42
 ;   [fixnum]
-→ ; no useful return value
+=> ; no useful return value
 
 (describe "hello")
 ; "hello"
 ;   [simple-base-string]
-→ ; no useful return value
+=> ; no useful return value
 
 (describe #'cons)
 ; #<FUNCTION CONS>
 ;   [compiled-function]
-→ ; no useful return value
+=> ; no useful return value
 ```
 
 ### Directing output to a specific stream
@@ -51,9 +51,10 @@ import DescribeFunction from './_describe_function.md';
 The optional second argument specifies the output stream. It defaults to `*standard-output*`.
 
 ```lisp
-(with-output-to-string (s)
-  (describe 'cons s))
-→ "..."  ; implementation-dependent string containing description
+(> (length (with-output-to-string (s)
+             (describe 'cons s)))
+   0)
+=> T
 ```
 
 ### Describing compound objects
@@ -66,5 +67,5 @@ Structures, hash tables, arrays, and other compound objects get detailed descrip
 ;   [simple-vector]
 ;   Element-type: T
 ;   Length: 5
-→ ; no useful return value
+=> ; no useful return value
 ```

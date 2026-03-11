@@ -15,8 +15,8 @@ import MachineInstanceFunction from './_machine-instance_function.md';
 `machine-instance` returns a string that identifies the particular machine (host) on which the Lisp implementation is running. The exact content is implementation-dependent.
 
 ```lisp
-(machine-instance)
-; → "myworkstation"
+(or (stringp (machine-instance)) (null (machine-instance)))
+;; => T
 ```
 
 ### Typical Return Values
@@ -24,13 +24,10 @@ import MachineInstanceFunction from './_machine-instance_function.md';
 Different implementations may return hostnames, fully qualified domain names, or other identifiers. The function may also return `NIL` if no meaningful value can be determined.
 
 ```lisp
-;; On SBCL running on a Linux host
-(machine-instance)
-; → "dev-server.example.com"
-
-;; On some implementations where host info is unavailable
-(machine-instance)
-; → NIL
+;; On SBCL running on a Linux host, returns the hostname string
+;; On some implementations where host info is unavailable, returns NIL
+(stringp (machine-instance))
+;; => impl-dependent
 ```
 
 ### Using in Diagnostic Output
@@ -38,11 +35,11 @@ Different implementations may return hostnames, fully qualified domain names, or
 `machine-instance` is commonly used alongside other environment-querying functions to produce diagnostic or logging information.
 
 ```lisp
-(format nil "Running on ~A (~A ~A)"
-        (or (machine-instance) "unknown host")
-        (or (machine-type) "unknown type")
-        (or (machine-version) "unknown version"))
-; → "Running on dev-server.example.com (X86-64 Intel(R) Core(TM) i7)"
+(stringp (format nil "Running on ~A (~A ~A)"
+                 (or (machine-instance) "unknown host")
+                 (or (machine-type) "unknown type")
+                 (or (machine-version) "unknown version")))
+;; => T
 ```
 
 ### Important Notes

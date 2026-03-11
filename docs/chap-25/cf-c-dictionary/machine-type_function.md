@@ -16,7 +16,7 @@ import MachineTypeFunction from './_machine-type_function.md';
 
 ```lisp
 (machine-type)
-; → "X86-64"
+=> "X86-64"
 ```
 
 ### Typical Return Values
@@ -24,17 +24,11 @@ import MachineTypeFunction from './_machine-type_function.md';
 The returned string varies by implementation and platform. Common values include architecture names.
 
 ```lisp
-;; On a 64-bit x86 system (SBCL)
-(machine-type)
-; → "X86-64"
-
-;; On an ARM system (e.g., Apple Silicon via an implementation that reports it)
-(machine-type)
-; → "ARM64"
-
-;; If the implementation cannot determine the type
-(machine-type)
-; → NIL
+;; On a 64-bit x86 system (SBCL): "X86-64"
+;; On an ARM system (Apple Silicon): "ARM64"
+;; If unknown: NIL
+(or (stringp (machine-type)) (null (machine-type)))
+;; => T
 ```
 
 ### Conditional Behavior Based on Architecture
@@ -50,7 +44,7 @@ You can use `machine-type` to adjust behavior based on the hardware platform, th
       (t "Unknown architecture"))))
 
 (pointer-size-heuristic)
-; → "Likely 64-bit architecture"
+=> "Likely 64-bit architecture"
 ```
 
 ### Important Notes

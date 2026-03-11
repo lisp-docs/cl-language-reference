@@ -16,13 +16,13 @@ import InternalTimeUnitsPerSecondConstantVariable from './_internal-time-units-p
 
 ```lisp
 (integerp internal-time-units-per-second)
-→ T
+=> T
 
 (> internal-time-units-per-second 0)
-→ T
+=> T
 
 internal-time-units-per-second
-→ 1000000  ; typical value; implementation-dependent (e.g., 1000 or 1000000)
+;; => impl-dependent (e.g., 1000 or 1000000)
 ```
 
 ### Converting internal time to seconds
@@ -33,8 +33,8 @@ Divide an internal time value by this constant to get seconds as a ratio or floa
 (let ((start (get-internal-real-time)))
   (sleep 1)
   (let ((elapsed (- (get-internal-real-time) start)))
-    (float (/ elapsed internal-time-units-per-second))))
-→ 1.0  ; approximately
+    (> (float (/ elapsed internal-time-units-per-second)) 0.9)))
+;; => T
 ```
 
 ### Converting seconds to internal time units
@@ -43,8 +43,8 @@ Multiply seconds by this constant to get internal time units.
 
 ```lisp
 ;; 0.5 seconds in internal time units
-(* 0.5 internal-time-units-per-second)
-→ 500000.0  ; implementation-dependent; depends on units-per-second
+(> (* 0.5 internal-time-units-per-second) 0)
+;; => T
 ```
 
 ### This is a constant, not a function
@@ -53,5 +53,5 @@ Unlike most entries, `internal-time-units-per-second` is a constant variable, no
 
 ```lisp
 (constantp 'internal-time-units-per-second)
-→ T
+=> T
 ```

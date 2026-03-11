@@ -24,7 +24,7 @@ import DescribeObjectStandardGenericFunction from './_describe-object_standard-g
 
 (describe (make-instance 'point :x 3 :y 4))
 ; Prints: A point at (3, 4)
-→ ; no useful return value
+=> ; no useful return value
 ```
 
 ### Default behavior
@@ -38,7 +38,7 @@ The default method provides a generic description based on the object's type and
 
 (describe (make-instance 'person :name "Alice" :age 30))
 ; Implementation-dependent output showing class and slot values
-→ ; no useful return value
+=> ; no useful return value
 ```
 
 ### The stream argument
@@ -46,11 +46,15 @@ The default method provides a generic description based on the object's type and
 Methods must write to the provided stream rather than to `*standard-output*` directly. This allows `describe` to redirect output.
 
 ```lisp
+(defclass point ()
+  ((x :initarg :x :accessor point-x)
+   (y :initarg :y :accessor point-y)))
+
 (defmethod describe-object ((p point) stream)
   ;; Correct: write to the stream argument
   (format stream "Point(~A, ~A)" (point-x p) (point-y p)))
 
 (with-output-to-string (s)
   (describe-object (make-instance 'point :x 1 :y 2) s))
-→ "Point(1, 2)"
+=> "Point(1, 2)"
 ```

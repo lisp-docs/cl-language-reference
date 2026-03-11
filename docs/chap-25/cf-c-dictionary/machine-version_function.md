@@ -15,8 +15,8 @@ import MachineVersionFunction from './_machine-version_function.md';
 `machine-version` returns a string identifying the version of the hardware on which the Lisp implementation is running. The exact value is implementation-dependent.
 
 ```lisp
-(machine-version)
-; → "Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz"
+(or (stringp (machine-version)) (null (machine-version)))
+;; => T
 ```
 
 ### Typical Return Values
@@ -24,13 +24,10 @@ import MachineVersionFunction from './_machine-version_function.md';
 Some implementations return detailed CPU model strings, while others return simpler identifiers or `NIL`.
 
 ```lisp
-;; On SBCL (Linux)
-(machine-version)
-; → "Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz"
-
-;; On some implementations where version info is unavailable
-(machine-version)
-; → NIL
+;; On SBCL (Linux), returns a CPU model string
+;; On some implementations where version info is unavailable, returns NIL
+(stringp (machine-version))
+;; => impl-dependent
 ```
 
 ### Gathering Full Machine Identity
@@ -43,8 +40,8 @@ Some implementations return detailed CPU model strings, while others return simp
         :type     (machine-type)
         :version  (machine-version)))
 
-(machine-info)
-; → (:INSTANCE "myhost" :TYPE "X86-64" :VERSION "Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz")
+(listp (machine-info))
+;; => T
 ```
 
 ### Important Notes

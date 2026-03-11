@@ -19,7 +19,7 @@ import GetInternalRunTimeFunction from './_get-internal-run-time_function.md';
   (loop for i from 1 to 1000000 sum i)
   (let ((elapsed (- (get-internal-run-time) start)))
     (>= elapsed 0)))
-→ T
+=> T
 ```
 
 ### Converting to seconds
@@ -29,9 +29,9 @@ Divide by `internal-time-units-per-second` to get seconds.
 ```lisp
 (let ((start (get-internal-run-time)))
   (dotimes (i 1000000) (sqrt (float i)))
-  (float (/ (- (get-internal-run-time) start)
-            internal-time-units-per-second)))
-→ 0.02  ; approximate CPU seconds; implementation-dependent
+  (numberp (float (/ (- (get-internal-run-time) start)
+                     internal-time-units-per-second))))
+;; => T
 ```
 
 ### Difference from get-internal-real-time
@@ -47,5 +47,5 @@ Divide by `internal-time-units-per-second` to get seconds.
         (run-elapsed (/ (- (get-internal-run-time) run-start)
                         (float internal-time-units-per-second))))
     (> real-elapsed run-elapsed)))
-→ T  ; real time includes sleep; run time does not
+=> T
 ```

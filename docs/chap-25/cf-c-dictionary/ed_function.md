@@ -32,7 +32,7 @@ When given a pathname argument, `ed` opens that file in the editor.
 ```lisp
 ;; (ed #P"/home/user/project/main.lisp")
 ;; Opens the file in the implementation's editor
-→ ; implementation-dependent
+=> ; implementation-dependent
 ```
 
 ### Editing a function definition
@@ -43,7 +43,7 @@ When given a symbol naming a function, some implementations can locate and edit 
 ;; (defun greet (name) (format nil "Hello, ~A!" name))
 ;; (ed 'greet)
 ;; Opens the source of GREET in the editor (if supported)
-→ ; implementation-dependent
+=> ; implementation-dependent
 ```
 
 ### Return value
@@ -52,5 +52,5 @@ The return value of `ed` is implementation-dependent.
 
 ```lisp
 ;; (ed)
-;; => NIL  ; or implementation-dependent value
+=> NIL  ; or implementation-dependent value
 ```

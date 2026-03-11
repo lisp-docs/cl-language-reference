@@ -19,7 +19,7 @@ import RoomFunction from './_room_function.md';
 ; Dynamic space usage:   ...
 ; Read-only space usage: ...
 ; ...
-→ ; no useful return value
+=> ; no useful return value
 ```
 
 ### Verbosity levels
@@ -29,17 +29,17 @@ import RoomFunction from './_room_function.md';
 ```lisp
 ;; Brief summary
 (room nil)
-; Total: ... bytes
-→ ; no useful return value
+;; prints brief memory statistics (implementation-dependent)
+;; => ; no useful return value
 
 ;; Detailed breakdown
 (room t)
-; Detailed per-type memory statistics...
-→ ; no useful return value
+;; prints detailed per-type memory statistics
+;; => ; no useful return value
 
 ;; Default level of detail
 (room :default)
-→ ; no useful return value
+;; => ; no useful return value
 ```
 
 ### Using room for memory profiling
@@ -52,5 +52,5 @@ import RoomFunction from './_room_function.md';
 (defparameter *big-list* (make-list 1000000))
 (room nil)
 ; Compare the output to see memory impact
-→ ; no useful return value
+=> ; no useful return value
 ```

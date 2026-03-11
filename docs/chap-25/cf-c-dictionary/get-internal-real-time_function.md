@@ -19,7 +19,7 @@ import GetInternalRealTimeFunction from './_get-internal-real-time_function.md';
   (sleep 0.1)
   (let ((elapsed (- (get-internal-real-time) start)))
     (> elapsed 0)))
-→ T
+=> T
 ```
 
 ### Converting to seconds
@@ -30,8 +30,8 @@ Divide by `internal-time-units-per-second` to convert to seconds.
 (let ((start (get-internal-real-time)))
   (sleep 0.5)
   (let ((elapsed (- (get-internal-real-time) start)))
-    (float (/ elapsed internal-time-units-per-second))))
-→ 0.5  ; approximately, depending on system precision
+    (> (float (/ elapsed internal-time-units-per-second)) 0.4)))
+;; => T
 ```
 
 ### Higher resolution than universal time
@@ -40,14 +40,14 @@ Unlike `get-universal-time` which has one-second resolution, `get-internal-real-
 
 ```lisp
 (> internal-time-units-per-second 1)
-→ T  ; typically 1000 or 1000000
+=> T
 
 ;; Can measure sub-second intervals
 (let ((start (get-internal-real-time)))
   (loop for i from 1 to 10000 sum i)
   (let ((elapsed (- (get-internal-real-time) start)))
     (>= elapsed 0)))
-→ T
+=> T
 ```
 
 ### Benchmarking with get-internal-real-time
@@ -61,6 +61,6 @@ A common pattern for benchmarking code.
     (float (/ (- (get-internal-real-time) start)
               internal-time-units-per-second))))
 
-(benchmark (lambda () (make-list 100)) 10000)
-→ 0.05  ; approximate seconds; implementation-dependent
+(numberp (benchmark (lambda () (make-list 100)) 10000))
+;; => T
 ```

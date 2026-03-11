@@ -18,12 +18,8 @@ import DisassembleFunction from './_disassemble_function.md';
 (defun square (x) (* x x))
 
 (disassemble #'square)
-; >> ; disassembly for SQUARE
-; >> ; Size: 23 bytes. Origin: #x10055A0D63
-; >> ; 63:       488B4510         MOV RAX, [RBP+16]
-; >> ; 67:       480FAFC0         IMUL RAX, RAX
-; >> ; ...
-; → NIL
+;; .. assembly output (implementation-dependent)
+=> NIL
 ```
 
 ### Disassembling a Lambda Expression
@@ -32,9 +28,8 @@ You can pass a lambda expression directly, and the implementation will compile i
 
 ```lisp
 (disassemble '(lambda (x y) (+ x y)))
-; >> ; disassembly for (LAMBDA (X Y))
-; >> ; ...
-; → NIL
+;; .. assembly output (implementation-dependent)
+=> NIL
 ```
 
 ### Disassembling by Name
@@ -45,9 +40,8 @@ You can pass a function name as a symbol instead of a function object. The imple
 (defun add1 (n) (+ n 1))
 
 (disassemble 'add1)
-; >> ; disassembly for ADD1
-; >> ; ...
-; → NIL
+;; .. assembly output (implementation-dependent)
+=> NIL
 ```
 
 ### Comparing Optimized vs. Unoptimized Code
@@ -65,12 +59,12 @@ Disassembly can reveal how declarations affect generated code. The exact output 
   (the fixnum (+ x y)))
 
 (disassemble 'safe-add)
-; >> ; (larger output with type checks and overflow handling)
-; → NIL
+;; .. assembly output (implementation-dependent)
+=> NIL
 
 (disassemble 'fast-add)
-; >> ; (smaller output with direct fixnum arithmetic)
-; → NIL
+;; .. assembly output (implementation-dependent)
+=> NIL
 ```
 
 ### Important Notes
