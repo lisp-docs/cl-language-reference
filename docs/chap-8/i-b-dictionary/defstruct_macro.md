@@ -16,22 +16,22 @@ import DefstructMacro from './_defstruct_macro.md';
 
 ```lisp
 (defstruct point x y)
-;; => POINT
+=> POINT
 
 (setq p (make-point :x 3 :y 4))
 ;; => #S(POINT :X 3 :Y 4)
 
 (point-x p)
-;; => 3
+=> 3
 
 (point-y p)
-;; => 4
+=> 4
 
 (point-p p)
-;; => T
+=> T
 
 (point-p "not a point")
-;; => NIL
+=> NIL
 ```
 
 ### Slots with Default Values and Types
@@ -43,16 +43,16 @@ import DefstructMacro from './_defstruct_macro.md';
   (firetrucks 1 :type fixnum)
   population
   (elevation 5128 :read-only t))
-;; => TOWN
+=> TOWN
 
 (setq t1 (make-town :area 100 :watertowers 2))
 ;; => #S(TOWN ...)
 
 (town-firetrucks t1)
-;; => 1  (default value)
+=> 1
 
 (town-elevation t1)
-;; => 5128  (read-only, cannot be modified with setf)
+=> 5128
 ```
 
 ### Modifying Slots with setf
@@ -70,27 +70,27 @@ import DefstructMacro from './_defstruct_macro.md';
 ```lisp
 (defstruct (door (:conc-name dr-))
   knob-color width material)
-;; => DOOR
+=> DOOR
 
 (setq my-door (make-door :knob-color 'red :width 5.0))
 ;; => #S(DOOR ...)
 
 (dr-width my-door)
-;; => 5.0
+=> 5.0
 
 (dr-knob-color my-door)
-;; => RED
+=> RED
 ```
 
 ### Structure Inheritance with :include
 
 ```lisp
 (defstruct person name age)
-;; => PERSON
+=> PERSON
 
 (defstruct (employee (:include person))
   company salary)
-;; => EMPLOYEE
+=> EMPLOYEE
 
 (setq emp (make-employee :name "Alice" :age 30
                          :company "Acme" :salary 50000))
@@ -98,14 +98,14 @@ import DefstructMacro from './_defstruct_macro.md';
 
 ;; Person accessors work on employees:
 (person-name emp)
-;; => "Alice"
+=> "Alice"
 
 ;; Type hierarchy:
 (typep emp 'person)
-;; => T
+=> T
 
 (typep emp 'employee)
-;; => T
+=> T
 ```
 
 ### BOA (By Order of Arguments) Constructor
@@ -114,13 +114,13 @@ import DefstructMacro from './_defstruct_macro.md';
 (defstruct (vec3
              (:constructor make-vec3 (x y z)))
   x y z)
-;; => VEC3
+=> VEC3
 
 (setq v (make-vec3 1.0 2.0 3.0))
 ;; => #S(VEC3 ...)
 
 (vec3-x v)
-;; => 1.0
+=> 1.0
 ```
 
 ### List-Based Structures with :type
@@ -128,11 +128,11 @@ import DefstructMacro from './_defstruct_macro.md';
 ```lisp
 (defstruct (pair (:type list) :named)
   first second)
-;; => PAIR
+=> PAIR
 
 (make-pair :first 'a :second 'b)
-;; => (PAIR A B)
+=> (PAIR A B)
 
 (pair-p '(pair x y))
-;; => T
+=> T
 ```

@@ -16,7 +16,7 @@ import CopyStructureFunction from './_copy-structure_function.md';
 
 ```lisp
 (defstruct point x y)
-;; => POINT
+=> POINT
 
 (setq p1 (make-point :x 1 :y 2))
 ;; => #S(POINT :X 1 :Y 2)
@@ -25,10 +25,10 @@ import CopyStructureFunction from './_copy-structure_function.md';
 ;; => #S(POINT :X 1 :Y 2)
 
 (point-x p2)
-;; => 1
+=> 1
 
 (point-y p2)
-;; => 2
+=> 2
 ```
 
 ### The Copy Is a Distinct Object
@@ -48,7 +48,7 @@ import CopyStructureFunction from './_copy-structure_function.md';
 ;; => 99
 
 (point-x p1)
-;; => 1  (unchanged)
+;; => 1
 
 (point-x p2)
 ;; => 99
@@ -60,7 +60,7 @@ The copy shares the same slot value objects -- it is not a deep copy.
 
 ```lisp
 (defstruct container items)
-;; => CONTAINER
+=> CONTAINER
 
 (setq c1 (make-container :items (list 1 2 3)))
 ;; => #S(CONTAINER :ITEMS (1 2 3))
@@ -68,12 +68,12 @@ The copy shares the same slot value objects -- it is not a deep copy.
 (setq c2 (copy-structure c1))
 
 (eq (container-items c1) (container-items c2))
-;; => T  (same list object)
+=> T
 
 (push 0 (container-items c2))
-;; Modifying the shared list affects both:
+;; push creates a new cons in c2's slot; c1's slot still points to the old list:
 (container-items c1)
-;; => (0 1 2 3)  (also modified, since both point to the same cons cells)
+=> (1 2 3)
 ```
 
 ### Equivalent to the Auto-Generated Copier
