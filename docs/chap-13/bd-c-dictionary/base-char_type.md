@@ -15,10 +15,14 @@ import BaseCharType from './_base-char_type.md';
 `base-char` is the type of characters that can be elements of a base string. All standard characters are base characters.
 
 ```lisp
-(typep #\a 'base-char) ; → T
-(typep #\Z 'base-char) ; → T
-(typep #\5 'base-char) ; → T
-(typep #\Space 'base-char) ; → T
+(typep #\a 'base-char)
+=> T
+(typep #\Z 'base-char)
+=> T
+(typep #\5 'base-char)
+=> T
+(typep #\Space 'base-char)
+=> T
 ```
 
 ### Relationship to character and standard-char
@@ -26,8 +30,12 @@ import BaseCharType from './_base-char_type.md';
 `standard-char` is a subtype of `base-char`, which is a subtype of `character`. In many implementations, `base-char` is the same type as `character`.
 
 ```lisp
-(subtypep 'standard-char 'base-char) ; → T, T
-(subtypep 'base-char 'character)     ; → T, T
+(subtypep 'standard-char 'base-char)
+=> T
+=> T
+(subtypep 'base-char 'character)
+=> T
+=> T
 ```
 
 ### Base strings use base-char elements
@@ -35,9 +43,12 @@ import BaseCharType from './_base-char_type.md';
 The element type of a base string is `base-char`. This is the connection between the character type and string storage.
 
 ```lisp
-(typep "hello" 'base-string)                    ; → T
-(array-element-type (make-string 5))             ; → BASE-CHAR (implementation-dependent)
-(upgraded-array-element-type 'standard-char)     ; → BASE-CHAR (implementation-dependent)
+(typep "hello" 'base-string)
+;; => T or NIL (implementation-dependent)
+(array-element-type (make-string 5))
+;; => CHARACTER or BASE-CHAR (implementation-dependent)
+(upgraded-array-element-type 'standard-char)
+=> BASE-CHAR
 ```
 
 ### Using base-char as a type specifier
@@ -49,6 +60,6 @@ You can use `base-char` in type declarations and `coerce` operations.
                            :initial-contents '(#\a #\b #\c))))
   (values (aref chars 0)
           (array-element-type chars)))
-; → #\a
-; → BASE-CHAR (implementation-dependent)
+=> #\a
+=> BASE-CHAR
 ```

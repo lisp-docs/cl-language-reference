@@ -15,10 +15,14 @@ import CharNameFunction from './_char-name_function.md';
 `char-name` returns the name of a character as a string, or NIL if the character has no name. Non-graphic characters are required to have names.
 
 ```lisp
-(char-name #\Space)   ; → "Space"
-(char-name #\Newline) ; → "Newline"
-(char-name #\Tab)     ; → "Tab"      (if Tab is supported)
-(char-name #\Return)  ; → "Return"   (if Return is supported)
+(char-name #\Space)
+=> "Space"
+(char-name #\Newline)
+=> "Newline"
+(char-name #\Tab)
+=> "Tab"
+(char-name #\Return)
+=> "Return"
 ```
 
 ### Graphic characters may or may not have names
@@ -26,9 +30,12 @@ import CharNameFunction from './_char-name_function.md';
 Whether graphic characters (letters, digits, punctuation) have names is implementation-dependent. Most implementations return NIL for them.
 
 ```lisp
-(char-name #\a) ; → NIL (or an implementation-defined name)
-(char-name #\A) ; → NIL (or an implementation-defined name)
-(char-name #\5) ; → NIL (or an implementation-defined name)
+(char-name #\a)
+;; => NIL or implementation-defined name
+(char-name #\A)
+;; => NIL or implementation-defined name
+(char-name #\5)
+;; => NIL or implementation-defined name
 ```
 
 ### The Space character has a name
@@ -36,8 +43,10 @@ Whether graphic characters (letters, digits, punctuation) have names is implemen
 The space character is the only standard graphic character that has a required name.
 
 ```lisp
-(char-name #\ )     ; → "Space"
-(char-name #\Space) ; → "Space"
+(char-name #\ )
+=> "Space"
+(char-name #\Space)
+=> "Space"
 ```
 
 ### Round-tripping with name-char
@@ -45,13 +54,16 @@ The space character is the only standard graphic character that has a required n
 `char-name` and `name-char` are inverses for characters that have names.
 
 ```lisp
-(name-char (char-name #\Space))   ; → #\Space
-(name-char (char-name #\Newline)) ; → #\Newline
+(name-char (char-name #\Space))
+=> #\Space
+(name-char (char-name #\Newline))
+=> #\Newline
 
 ;; For characters with names, the round trip always works
 (let ((name (char-name #\Space)))
   (when name
-    (char= (name-char name) #\Space))) ; → T
+    (char= (name-char name) #\Space)))
+=> T
 ```
 
 ### Listing names of characters in a string
@@ -60,6 +72,5 @@ You can inspect which characters in a string have names.
 
 ```lisp
 (mapcar #'char-name (coerce (format nil "A B~%C") 'list))
-; → (NIL "Space" NIL "Newline" NIL)
-;   (or implementation-dependent names for graphic characters)
+;; => (NIL "Space" NIL "Newline" NIL) or implementation-dependent
 ```

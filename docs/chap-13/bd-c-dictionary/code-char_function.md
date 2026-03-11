@@ -16,10 +16,14 @@ import CodeCharFunction from './_code-char_function.md';
 
 ```lisp
 ;; On ASCII-based implementations:
-(code-char 65) ; → #\A
-(code-char 97) ; → #\a
-(code-char 48) ; → #\0
-(code-char 32) ; → #\Space
+(code-char 65)
+=> #\A
+(code-char 97)
+=> #\a
+(code-char 48)
+=> #\0
+(code-char 32)
+=> #\Space
 ```
 
 ### Round-tripping with char-code
@@ -27,9 +31,12 @@ import CodeCharFunction from './_code-char_function.md';
 `code-char` and `char-code` are inverse operations for valid character codes.
 
 ```lisp
-(code-char (char-code #\A))     ; → #\A
-(code-char (char-code #\Space)) ; → #\Space
-(char-code (code-char 65))      ; → 65 (on ASCII-based implementations)
+(code-char (char-code #\A))
+=> #\A
+(code-char (char-code #\Space))
+=> #\Space
+(char-code (code-char 65))
+=> 65
 ```
 
 ### Invalid codes return NIL
@@ -51,13 +58,12 @@ You can use `code-char` with `char-code` to iterate over a range of characters.
 ```lisp
 (loop for code from (char-code #\A) to (char-code #\Z)
       collect (code-char code))
-; → (#\A #\B #\C #\D #\E #\F #\G #\H #\I #\J #\K #\L #\M
-;    #\N #\O #\P #\Q #\R #\S #\T #\U #\V #\W #\X #\Y #\Z)
+=> (#\A #\B #\C #\D #\E #\F #\G #\H #\I #\J #\K #\L #\M #\N #\O #\P #\Q #\R #\S #\T #\U #\V #\W #\X #\Y #\Z)
 ```
 
 ### Generating a string from character codes
 
 ```lisp
 (map 'string #'code-char '(72 101 108 108 111))
-; → "Hello"  (on ASCII-based implementations)
+=> "Hello"
 ```

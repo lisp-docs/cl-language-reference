@@ -15,9 +15,12 @@ import CharacterFunction from './_character_function.md';
 When given a character object, `character` simply returns it.
 
 ```lisp
-(character #\a) ; → #\a
-(character #\Z) ; → #\Z
-(character #\Space) ; → #\Space
+(character #\a)
+=> #\a
+(character #\Z)
+=> #\Z
+(character #\Space)
+=> #\Space
 ```
 
 ### Converting a single-character string
@@ -25,9 +28,12 @@ When given a character object, `character` simply returns it.
 A string of length one is a valid character designator.
 
 ```lisp
-(character "a") ; → #\a
-(character "Z") ; → #\Z
-(character " ") ; → #\Space
+(character "a")
+=> #\a
+(character "Z")
+=> #\Z
+(character " ")
+=> #\Space
 ```
 
 ### Converting a symbol with a single-character name
@@ -35,8 +41,10 @@ A string of length one is a valid character designator.
 A symbol whose name is a single character is also a valid character designator. Note that symbol names are typically uppercase by default.
 
 ```lisp
-(character 'a) ; → #\A
-(character 'z) ; → #\Z
+(character 'a)
+=> #\A
+(character 'z)
+=> #\Z
 ```
 
 ### Invalid designators signal an error
@@ -55,7 +63,10 @@ Multi-character strings, multi-character symbol names, and numbers are not valid
 The `character` function is equivalent to `(coerce object 'character)`.
 
 ```lisp
-(eql (character "x") (coerce "x" 'character)) ; → T
-(eql (character #\y) (coerce #\y 'character))  ; → T
-(eql (character 'z) (coerce 'z 'character))    ; → T
+(eql (character "x") (coerce "x" 'character))
+=> T
+(eql (character #\y) (coerce #\y 'character))
+=> T
+(eql (character 'z) (coerce 'z 'character))
+=> T
 ```

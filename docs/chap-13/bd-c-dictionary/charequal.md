@@ -15,11 +15,16 @@ import Charequal from './_charequal.md';
 `char=` tests whether characters are identical (case-sensitive). `char/=` tests whether all characters are pairwise different.
 
 ```lisp
-(char= #\a #\a) ; → T
-(char= #\a #\A) ; → NIL
-(char= #\a #\b) ; → NIL
-(char/= #\a #\b) ; → T
-(char/= #\a #\a) ; → NIL
+(char= #\a #\a)
+=> T
+(char= #\a #\A)
+=> NIL
+(char= #\a #\b)
+=> NIL
+(char/= #\a #\b)
+=> T
+(char/= #\a #\a)
+=> NIL
 ```
 
 ### Ordering with char&lt;, char&gt;, char&lt;=, char&gt;=
@@ -27,12 +32,18 @@ import Charequal from './_charequal.md';
 These test monotonic ordering of characters. Uppercase letters are ordered A through Z, lowercase a through z, and digits 0 through 9. The relative order of uppercase vs. lowercase is implementation-dependent.
 
 ```lisp
-(char< #\a #\b #\c)    ; → T
-(char< #\a #\b #\b)    ; → NIL
-(char<= #\a #\b #\b)   ; → T
-(char> #\z #\m #\a)     ; → T
-(char>= #\z #\z #\a)   ; → T
-(char< #\0 #\1 #\9)    ; → T
+(char< #\a #\b #\c)
+=> T
+(char< #\a #\b #\b)
+=> NIL
+(char<= #\a #\b #\b)
+=> T
+(char> #\z #\m #\a)
+=> T
+(char>= #\z #\z #\a)
+=> T
+(char< #\0 #\1 #\9)
+=> T
 ```
 
 ### Multiple argument comparisons
@@ -40,10 +51,14 @@ These test monotonic ordering of characters. Uppercase letters are ordered A thr
 All these functions accept one or more characters. With multiple arguments, they check that the ordering relation holds between every consecutive pair (or every pair for `char/=`).
 
 ```lisp
-(char= #\x #\x #\x #\x)  ; → T
-(char= #\x #\x #\y #\x)  ; → NIL
-(char/= #\a #\b #\c)      ; → T   (all pairwise different)
-(char/= #\a #\b #\a)      ; → NIL (first and third are the same)
+(char= #\x #\x #\x #\x)
+=> T
+(char= #\x #\x #\y #\x)
+=> NIL
+(char/= #\a #\b #\c)
+=> T
+(char/= #\a #\b #\a)
+=> NIL
 ```
 
 ### Case-insensitive comparison with char-equal and friends
@@ -51,12 +66,18 @@ All these functions accept one or more characters. With multiple arguments, they
 `char-equal`, `char-not-equal`, `char-lessp`, `char-greaterp`, `char-not-greaterp`, and `char-not-lessp` work like their case-sensitive counterparts but ignore case differences.
 
 ```lisp
-(char-equal #\A #\a)        ; → T
-(char-not-equal #\A #\a)    ; → NIL
-(char-lessp #\a #\B)        ; → T
-(char-greaterp #\Z #\a)     ; → T
-(char-not-greaterp #\a #\A) ; → T
-(char-not-lessp #\Z #\z)    ; → T
+(char-equal #\A #\a)
+=> T
+(char-not-equal #\A #\a)
+=> NIL
+(char-lessp #\a #\B)
+=> T
+(char-greaterp #\Z #\a)
+=> T
+(char-not-greaterp #\a #\A)
+=> T
+(char-not-lessp #\Z #\z)
+=> T
 ```
 
 ### Sorting characters
@@ -65,10 +86,10 @@ The case-insensitive comparison functions are useful for sorting characters with
 
 ```lisp
 (sort (list #\C #\a #\B #\d) #'char-lessp)
-; → (#\a #\B #\C #\d)
+=> (#\a #\B #\C #\d)
 
 (sort (list #\C #\a #\B #\d) #'char<)
-; → implementation-dependent ordering of upper/lowercase
+;; => implementation-dependent ordering of upper/lowercase
 ```
 
 ### Practical use: case-insensitive string character comparison
@@ -78,6 +99,8 @@ The case-insensitive comparison functions are useful for sorting characters with
   "Compare characters at the same index in two strings, ignoring case."
   (char-equal (char s1 index) (char s2 index)))
 
-(char-equal-at "Hello" "HELLO" 0) ; → T
-(char-equal-at "Hello" "World" 0) ; → NIL
+(char-equal-at "Hello" "HELLO" 0)
+=> T
+(char-equal-at "Hello" "World" 0)
+=> NIL
 ```
